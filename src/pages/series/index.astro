@@ -1,0 +1,53 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const series = (await getCollection('editorialCollections', ({ data }) => data.kind === 'series')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+---
+
+<Layout title="Series editoriales" description="Investigaciones de varias entregas sobre IA, poder y cultura digital, para leer en orden.">
+  <section class="container header">
+    <p class="eyebrow">Series editoriales</p>
+    <h1>Investigaciones en varias entregas</h1>
+    <p class="sub">Cada serie examina un tema a fondo, artículo por artículo, en el orden pensado para leerse.</p>
+  </section>
+
+  <section class="container grid">
+    {series.map((s) => (
+      <a href={`/series/${s.id}/`} class="card" data-status={s.data.status}>
+        <p class="eyebrow">{s.data.status === 'coming-soon' ? 'Próximamente' : `${s.data.postSlugs.length} artículos`}</p>
+        <h2>{s.data.title}</h2>
+        <p class="dek">{s.data.description}</p>
+      </a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 40px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
+  .sub { color: var(--text-muted); font-size: 1.05rem; }
+
+  .grid {
+    padding: 0 24px 72px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  .card {
+    padding: 30px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    color: var(--text);
+  }
+  .card:hover { outline: 1.5px solid var(--accent); }
+  .card h2 { font-size: 1.5rem; margin: 10px 0 12px; }
+  .card .dek { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+  .card[data-status='coming-soon'] { opacity: 0.6; }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

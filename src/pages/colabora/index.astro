@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const categories = [
+  {
+    title: 'Core Tech',
+    items: ['Tecnología y software (SaaS, APIs, dev tools)', 'IA y automatización', 'Plataformas digitales y redes sociales'],
+  },
+  {
+    title: 'Startup & Founders',
+    items: ['Fintech y finanzas personales', 'Educación online y upskilling', 'Productividad y herramientas digitales', 'Servicios B2B'],
+  },
+  {
+    title: 'Lifestyle Tech',
+    items: ['Gadgets y hardware', 'Workspace y remote work', 'Bienestar y salud mental', 'Cultura digital'],
+  },
+];
+
+const criteria = [
+  'No prometemos reseñas positivas',
+  'No publicamos textos promocionales planos',
+  'No forzamos mensajes, enlaces ni claims',
+  'El enfoque se escribe para la audiencia, no para la marca',
+];
+---
+
+<Layout
+  title="Colabora"
+  description="Publicamos colaboraciones editoriales seleccionadas que encajan con nuestra línea y aportan valor real a una audiencia que ya sabe detectar el bullshit."
+>
+  <PageHeader
+    eyebrow="Colaboraciones editoriales"
+    title="Contenido que aporta. No publicidad disfrazada."
+    dek="Publicamos colaboraciones editoriales seleccionadas que encajan con nuestra línea y aportan valor real a una audiencia que ya sabe detectar el bullshit."
+  />
+
+  <section class="container prose">
+    <h2>Categorías que aceptamos</h2>
+  </section>
+
+  <section class="container cat-grid">
+    {categories.map((c) => (
+      <div class="cat-card">
+        <h3>{c.title}</h3>
+        <ul>{c.items.map((i) => <li>{i}</li>)}</ul>
+      </div>
+    ))}
+  </section>
+
+  <section class="container prose">
+    <p class="footnote">* Todas las colaboraciones pasan por nuestro filtro editorial. No publicamos comunicados disfrazados de artículos ni contenido que trate al lector como funnel.</p>
+
+    <h2>Nuestro criterio editorial</h2>
+    <ul class="checks">
+      {criteria.map((c) => <li>✓ {c}</li>)}
+    </ul>
+    <p>El mejor branded content es el que no parece publicidad, pero sí es honesto.</p>
+
+    <h2>Audiencia</h2>
+    <ul>
+      <li>Profesionales y estudiantes hispanohablantes (LATAM + España) que toman decisiones sobre herramientas digitales, IA y tecnología.</li>
+      <li>Early adopters de todas las generaciones con afinidad por SaaS, fintech y plataformas de productividad.</li>
+      <li>Usuarios tech-aware que consumen contenido crítico, no tutoriales básicos.</li>
+      <li>Lectores que buscan contexto antes que ruido — y que valoran el análisis honesto sobre las promesas exageradas.</li>
+    </ul>
+
+    <h2>El Índice GlitchMentalMX</h2>
+    <p>Como parte de nuestro criterio editorial, publicamos el <a href="/indice-glitchmentalmx/">Índice GlitchMentalMX</a>, un ranking mensual que evalúa tecnologías, herramientas y tendencias según impacto operativo real, adopción verificable y utilidad B2B. El índice no funciona como patrocinio ni como listado promocional: es una referencia editorial independiente para separar señal de ruido.</p>
+
+    <h2>Transparencia</h2>
+    <p>Todas las colaboraciones se identifican con una nota clara: <em>"Este contenido forma parte de una colaboración editorial. glitchmentalMX mantiene control total sobre el enfoque y la publicación."</em></p>
+
+    <h2>¿Te interesa colaborar?</h2>
+    <p>Si tu marca, producto o proyecto encaja con el enfoque de glitchmentalMX, escríbenos con: breve descripción del proyecto, objetivo de la colaboración y tipo de contenido que tienes en mente. Evaluamos cada propuesta de forma individual.</p>
+  </section>
+
+  <section class="container actions">
+    <a class="btn btn-primary" href="mailto:contacto@glitchmental.com">contacto@glitchmental.com</a>
+    <a class="btn btn-ghost" href="/publicidad-en-glitchmentalmx/">Ver opciones de publicidad →</a>
+  </section>
+</Layout>
+
+<style>
+  .prose { padding: 8px 24px; }
+  .prose .footnote { font-size: 0.85rem; color: var(--text-faint); }
+  .checks { list-style: none; padding: 0; }
+  .checks li { margin-bottom: 6px; }
+
+  .cat-grid {
+    padding: 8px 24px 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .cat-card { background: var(--bg-inset); border-radius: var(--radius); padding: 22px; }
+  .cat-card h3 { font-size: 1.05rem; margin-bottom: 12px; }
+  .cat-card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  .cat-card li { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; }
+
+  .actions { padding: 16px 24px 96px; display: flex; flex-wrap: wrap; gap: 14px; }
+
+  @media (max-width: 800px) {
+    .cat-grid { grid-template-columns: 1fr; }
+  }
+</style>

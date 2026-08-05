@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const series = await getCollection('editorialCollections', ({ data }) => data.kind === 'series');
+  return series.map((s) => ({ params: { slug: s.id }, props: { series: s } }));
+}
+
+const { series } = Astro.props;
+const posts = (
+  await Promise.all(series.data.postSlugs.map((slug: string) => getEntry('posts', slug)))
+).filter((p): p is NonNullable<typeof p> => Boolean(p));
+---
+
+<Layout title={series.data.title} description={series.data.description}>
+  <section class="container header">
+    <p class="eyebrow">{series.data.status === 'coming-soon' ? 'Serie editorial · Próximamente' : `Serie editorial · ${posts.length} artículos`}</p>
+    <h1>{series.data.title}</h1>
+    <p class="dek">{series.data.description}</p>
+  </section>
+
+  {series.data.status === 'coming-soon' ? (
+    <section class="container empty">
+      <p>Todavía no hay artículos publicados en esta serie. Vuelve pronto.</p>
+    </section>
+  ) : (
+    <section class="container list">
+      <p class="eyebrow list-label">Los artículos — en orden de lectura</p>
+      {posts.map((post, i) => (
+        <CollectionArticleRow
+          index={i + 1}
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          heroImage={post.data.heroImage}
+          heroImageAlt={post.data.heroImageAlt}
+          body={post.body}
+        />
+      ))}
+    </section>
+  )}
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 24px; max-width: 720px; }
+  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
+  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+
+  .empty { padding: 40px 24px 96px; color: var(--text-muted); }
+
+  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list-label { margin-bottom: 6px; }
+</style>

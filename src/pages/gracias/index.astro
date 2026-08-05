@@ -1,0 +1,89 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const indice = [
+  { label: 'Agosto 2026', href: 'https://drive.google.com/file/d/1qJlPltrp1rgbl7FWZpV7zJeVbSVLbT6K/view?usp=sharing', isNew: true },
+  { label: 'Julio 2026', href: 'https://drive.google.com/file/d/1ErtgNPHWrne1lOWVuOTiYQoYdhbD5_Tn/view?usp=sharing' },
+  { label: 'Junio 2026', href: 'https://drive.google.com/file/d/1Mz0wSSvVgbTmQ446iIdOHbB1jtsmdQ1e/view?usp=sharing' },
+  { label: 'Mayo 2026', href: 'https://drive.google.com/file/d/1u77SnHO5NypzpN4qON4PfHxUbk_IMSqp/view?usp=sharing' },
+  { label: 'Abril 2026', href: 'https://drive.google.com/file/d/15kVXZyhDkDxFNvEeAxKhv1fexb20WUyu/view?usp=sharing' },
+  { label: 'Marzo 2026', href: 'https://drive.google.com/file/d/1hTDT8Tzou_0qbsvsG8w_GWerh9UWhjHX/view?usp=sharing' },
+  { label: 'Febrero 2026', href: 'https://drive.google.com/file/d/1Gq2KKYxymrJW1Tkw0V67BtfNjxcg-6_Y/view?usp=sharing' },
+  { label: 'Enero 2026', href: 'https://drive.google.com/file/d/16_ufNH4PEcsmpRFr2uChdvrb12WwPS3U/view?usp=sharing' },
+];
+
+const manual = [
+  { label: 'Agosto 2026', title: 'Los Arquitectos del Apocalipsis piden que alguien los detenga', href: 'https://drive.google.com/file/d/1C1rXlhhHtJITtsp7laf-fvFvDzocK8Tv/view?usp=sharing', isNew: true },
+  { label: 'Julio 2026', title: 'El Fin del Trabajo en Solitario', href: 'https://drive.google.com/file/d/16EOOHmBaQ0I_ExpsAxel_5yhAduYscSH/view?usp=sharing' },
+  { label: 'Junio 2026', title: 'La IA Que Te Conoce Demasiado', href: 'https://drive.google.com/file/d/1ujjorHbKXrch0Tibp7tMWE04LS_gj9uX/view?usp=sharing' },
+  { label: 'Mayo 2026', title: 'Ya Delegaste. Ahora, ¿Quién Responde?', href: 'https://drive.google.com/file/d/1Q2r4dAhCVijb3lXV3GiMJOgr2k5L2MPg/view?usp=sharing' },
+  { label: 'Abril 2026', title: 'Tu Skillset Está Sobreentrenado', href: 'https://drive.google.com/file/d/1Ml6HqTTF4w-CqNY7HpWZ5AlFphK0F1UU/view?usp=sharing' },
+  { label: 'Marzo 2026', title: 'Tu Trabajo ya tiene Reemplazo', href: 'https://drive.google.com/file/d/1gECtRZmqrFVAO8jguLSzcJ6igvgs_GLX/view?usp=sharing' },
+  { label: 'Febrero 2026', title: 'Deepfakes en Política 2026', href: 'https://drive.google.com/file/d/1cUVGhY8ITE5G9LzV0qkTrsQgDnYv93u9/view?usp=sharing' },
+  { label: 'Enero 2026', title: 'Agentes de IA Autónomos', href: 'https://drive.google.com/file/d/1RW_EUgErFDRRlnUVy445yypR9wvJ0O-l/view?usp=sharing' },
+  { label: 'Diciembre 2025', title: 'Navegando la Realidad Digital sin Hype', href: 'https://drive.google.com/file/d/1LzInYzijfB85jSjqdLPufKSz4TFeQxYK/view?usp=sharing' },
+];
+---
+
+<Layout title="Ya eres parte de glitchmentalMX" description="Sin hype, sin spam. Análisis crítico de tech e IA directo a tu inbox." noIndex>
+  <PageHeader
+    eyebrow="Acceso confirmado"
+    title="Ya eres parte de glitchmentalMX."
+    dek="Sin hype, sin spam. Análisis crítico de tech e IA directo a tu inbox. Mientras tanto, descarga los archivos del mes."
+  />
+
+  <section class="container archive">
+    <h2>Índice GlitchMentalMX</h2>
+    <p class="sub">Versión ejecutiva — ranking mensual de tecnologías.</p>
+    <ul class="file-list">
+      {indice.map((f) => (
+        <li>
+          <a href={f.href} target="_blank" rel="noopener">
+            <span>{f.label}{f.isNew && <span class="tag new">Nuevo</span>}</span>
+            <span class="dl">Descargar ↗</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="container archive">
+    <h2>Manual del Caos Digital</h2>
+    <p class="sub">Ensayo mensual sobre tecnología y cultura digital.</p>
+    <ul class="file-list">
+      {manual.map((f) => (
+        <li>
+          <a href={f.href} target="_blank" rel="noopener">
+            <span>{f.label} — {f.title}{f.isNew && <span class="tag new">Nuevo</span>}</span>
+            <span class="dl">Descargar ↗</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="container help">
+    <p>¿Algo no funciona? <a href="/contacto/" class="link-accent">Escríbenos</a>.</p>
+  </section>
+</Layout>
+
+<style>
+  .archive { padding: 24px 24px 16px; max-width: 760px; }
+  .archive h2 { font-size: 1.4rem; }
+  .sub { color: var(--text-muted); margin: 6px 0 20px; }
+  .file-list { list-style: none; margin: 0; padding: 0; }
+  .file-list li { border-bottom: 1px solid var(--border); }
+  .file-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 4px;
+    color: var(--text);
+  }
+  .file-list a:hover { color: var(--accent); }
+  .dl { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-faint); flex-shrink: 0; }
+  .tag.new { margin-left: 10px; }
+  .help { padding: 32px 24px 96px; color: var(--text-muted); }
+</style>

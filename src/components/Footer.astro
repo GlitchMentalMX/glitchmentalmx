@@ -1,0 +1,151 @@
+---
+const year = new Date().getFullYear();
+
+const columns = [
+  {
+    title: 'Explorar',
+    links: [
+      { href: '/archivo/', label: 'Archivo' },
+      { href: '/series/', label: 'Series editoriales' },
+      { href: '/colecciones/', label: 'Colecciones' },
+      { href: '/indice-glitchmentalmx/', label: 'Índice GlitchMentalMX' },
+      { href: '/insights-visuales/', label: 'Insights Visuales' },
+      { href: '/dato-incomodo/', label: 'Dato Incómodo' },
+    ],
+  },
+  {
+    title: 'Herramientas',
+    links: [
+      { href: '/glitchsearch/', label: 'GlitchSearch' },
+      { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', label: 'Calculadora de Riesgo IA' },
+    ],
+  },
+  {
+    title: 'GlitchMentalMX',
+    links: [
+      { href: '/acerca-de/', label: 'Acerca de' },
+      { href: '/autor/', label: 'Autor' },
+      { href: '/contacto/', label: 'Contacto' },
+      { href: '/colabora/', label: 'Colabora' },
+      { href: '/publicidad-en-glitchmentalmx/', label: 'Publicidad' },
+      { href: '/servicios-editoriales-glitchmentalmx/', label: 'Servicios editoriales' },
+    ],
+  },
+  {
+    title: 'Legal',
+    links: [
+      { href: '/politica-de-privacidad/', label: 'Política de privacidad' },
+      { href: '/aviso-legal-y-condiciones-de-uso/', label: 'Aviso legal' },
+    ],
+  },
+];
+
+const social = [
+  { href: 'https://x.com/GlitchMentalMX', label: 'X (Twitter)' },
+  { href: 'https://www.linkedin.com/in/jorgediazelizondo', label: 'LinkedIn' },
+  { href: 'https://www.facebook.com/GlitchMentalMX/', label: 'Facebook' },
+  { href: 'https://mastodon.social/@GlitchMentalMX', label: 'Mastodon' },
+  { href: 'https://bsky.app/profile/glitchmentalmx.bsky.social', label: 'Bluesky' },
+];
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="cta">
+      <div>
+        <p class="cta-title">Lo que nadie te cuenta sobre la IA. Sin ads, sin spam.</p>
+        <p class="cta-sub">Cancela cuando quieras, sin drama.</p>
+      </div>
+      <a href="/suscribete/" class="btn btn-primary">Suscríbete</a>
+    </div>
+
+    <div class="grid">
+      <div class="brand-col">
+        <a href="/" class="logo">
+          <span class="logo-glitch">glitch</span><span class="logo-mental">Mental</span><span class="logo-mx">MX</span>
+        </a>
+        <p class="tagline">Análisis crítico de IA, tecnología y cultura digital. Sin hype.</p>
+        <div class="social">
+          {social.map((s) => <a href={s.href} target="_blank" rel="noopener">{s.label}</a>)}
+        </div>
+      </div>
+
+      {columns.map((col) => (
+        <div class="col">
+          <h3 class="eyebrow">{col.title}</h3>
+          <ul>
+            {col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="bottom">
+      <p>© {year} glitchmentalMX. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--border);
+    margin-top: 96px;
+    padding: 56px 0 32px;
+  }
+  .cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: var(--bg-inset);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    margin-bottom: 56px;
+  }
+  .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
+  .cta-sub { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    gap: 32px;
+  }
+  .brand-col .logo {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .logo-glitch { color: var(--text); }
+  .logo-mental { color: var(--accent); }
+  .logo-mx { color: var(--text-faint); font-size: 0.75em; font-family: var(--font-mono); }
+  .tagline { color: var(--text-muted); font-size: 0.9rem; max-width: 32ch; margin: 14px 0 18px; }
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .social a { font-size: 0.84rem; color: var(--text-muted); }
+  .social a:hover { color: var(--accent); }
+
+  .col ul { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .col a { font-size: 0.88rem; color: var(--text-muted); }
+  .col a:hover { color: var(--text); }
+
+  .bottom {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-faint);
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .brand-col { grid-column: 1 / -1; margin-bottom: 12px; }
+  }
+  @media (max-width: 520px) {
+    .grid { grid-template-columns: 1fr; }
+    .cta { flex-direction: column; align-items: flex-start; }
+  }
+</style>

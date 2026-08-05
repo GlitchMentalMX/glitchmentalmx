@@ -1,0 +1,100 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const published = [
+  {
+    title: 'Entrenado en Corpus',
+    genre: 'Tecnothriller',
+    desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
+    buy: 'https://mybook.to/EntrenadoEnCorpus',
+  },
+  {
+    title: 'Cero Orgánico',
+    genre: 'Tecnothriller',
+    desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
+    buy: 'https://mybook.to/CeroOrganico',
+  },
+];
+
+const upcoming = [
+  {
+    title: 'UMBRAL 20',
+    desc: '2031. Una clínica en Singapur vende modificaciones genéticas hereditarias que no eliminan enfermedades — producen ventaja cognitiva irreversible. Una investigadora de la ONU recibe la lista de compradores. Varios de esos nombres deberían estar investigándolo.',
+  },
+  {
+    title: 'Deprecado',
+    desc: 'Un escritor descubre que su obra completa entrenó al modelo que lo superó. Las editoriales ya no lo llaman. Su agente representa ahora a tres IAs. Nadie fue plagiado. Todos fueron deprecados.',
+  },
+];
+---
+
+<Layout
+  title="Jorge A. Diaz Elizondo — Autor"
+  description="Tecnothriller de credibilidad periodística. Ficción anclada en hechos reales."
+>
+  <PageHeader
+    eyebrow="Sobre el autor"
+    title="Tecnothriller de credibilidad periodística."
+    dek="Ficción anclada en hechos reales. Cada novela nace de la misma fuente: investigación documentada, datos verificables y la convicción de que hay verdades que el periodismo puede documentar pero no puede hacer sentir."
+  />
+
+  <section class="container prose">
+    <p>
+      Jorge A. Diaz Elizondo es escritor y director editorial de GlitchMentalMX, publicación independiente
+      en español especializada en inteligencia artificial, tecnología y cultura digital. La investigación
+      detrás de sus novelas nace ahí — en el cruce entre el análisis crítico y la pregunta que los datos
+      no responden solos.
+    </p>
+  </section>
+
+  <section class="container catalog">
+    <p class="eyebrow section-label">Catálogo · Disponible</p>
+    <div class="grid">
+      {published.map((b) => (
+        <div class="book-card">
+          <span class="tag">{b.genre}</span>
+          <h3>{b.title}</h3>
+          <p>{b.desc}</p>
+          <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+        </div>
+      ))}
+    </div>
+
+    <p class="eyebrow section-label upcoming-label">Próximamente</p>
+    <div class="grid">
+      {upcoming.map((b) => (
+        <div class="book-card muted">
+          <h3>{b.title}</h3>
+          <p>{b.desc}</p>
+        </div>
+      ))}
+    </div>
+    <p class="footnote">* Los títulos en desarrollo pueden cambiar antes de su publicación.</p>
+  </section>
+
+  <section class="container actions">
+    <a class="btn btn-ghost" href="https://www.amazon.com.mx/stores/author/B0H5BZ5LPM/allbooks" target="_blank" rel="noopener">Amazon Author Page →</a>
+    <a class="btn btn-ghost" href="https://www.goodreads.com/author/show/70678530.Jorge_A_Diaz_Elizondo" target="_blank" rel="noopener">Goodreads →</a>
+    <a class="btn btn-ghost" href="mailto:jorge@glitchmental.com">jorge@glitchmental.com</a>
+  </section>
+</Layout>
+
+<style>
+  .prose { padding: 0 24px 8px; max-width: var(--measure); }
+  .catalog { padding: 16px 24px 8px; }
+  .section-label { padding: 0; margin-bottom: 14px; }
+  .upcoming-label { margin-top: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .book-card { background: var(--bg-inset); border-radius: var(--radius); padding: 26px; }
+  .book-card.muted { opacity: 0.75; }
+  .book-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin: 10px 0 10px; }
+  .book-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0 0 18px; }
+  .footnote { font-size: 0.82rem; color: var(--text-faint); margin-top: 16px; }
+
+  .actions { padding: 24px 24px 96px; display: flex; flex-wrap: wrap; gap: 12px; }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

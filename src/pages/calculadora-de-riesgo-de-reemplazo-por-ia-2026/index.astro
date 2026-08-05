@@ -1,0 +1,501 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+---
+
+<Layout
+  title="Calculadora de Riesgo de Reemplazo por IA 2026"
+  description="Mide qué tan expuesto está tu trabajo a la automatización en 2026. Descúbrelo en segundos."
+>
+  <PageHeader
+    eyebrow="IA Risk Scanner 2026"
+    title="¿La IA puede quitarte tu trabajo?"
+    dek="Mide qué tan expuesto está tu trabajo a la automatización en 2026. Descúbrelo en segundos."
+  />
+
+  <section class="container steps">
+    <div class="step"><span class="n">1</span><span class="l">Elige tu área</span></div>
+    <div class="step"><span class="n">2</span><span class="l">Agrega tu nivel</span></div>
+    <div class="step"><span class="n">3</span><span class="l">Obtén el diagnóstico</span></div>
+  </section>
+
+  <section class="container calc-wrap">
+    <div id="glitch-calculator-container">
+      <h2 class="calc-title">IA Risk Scanner 2026</h2>
+      <p class="calc-sub">Analizando la viabilidad de tu profesión en la era de la automatización avanzada.</p>
+
+      <div class="field">
+        <label for="gmr-country">Región / País</label>
+        <select id="gmr-country">
+          <optgroup label="── América">
+            <option value="mx_latam">México / LATAM</option>
+            <option value="br">Brasil</option>
+            <option value="arg_chile">Argentina / Chile</option>
+            <option value="col_per">Colombia / Perú</option>
+            <option value="usa_can">EE.UU. / Canadá</option>
+          </optgroup>
+          <optgroup label="── Europa">
+            <option value="eu_west">Europa Occidental (DE, FR, UK, ES)</option>
+            <option value="eu_east">Europa del Este (PL, RO, HU...)</option>
+            <option value="nordics">Países Nórdicos</option>
+          </optgroup>
+          <optgroup label="── Asia y Oceanía">
+            <option value="china">China</option>
+            <option value="india">India</option>
+            <option value="japan_kor">Japón / Corea del Sur</option>
+            <option value="sea">Sudeste Asiático (SG, ID, TH...)</option>
+            <option value="aus_nz">Australia / Nueva Zelanda</option>
+          </optgroup>
+          <optgroup label="── Resto del mundo">
+            <option value="middle_east">Medio Oriente (UAE, SA...)</option>
+            <option value="africa">África Sub-Sahariana</option>
+            <option value="remote">Trabajo Remoto / Global</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="gmr-education">Nivel de estudios</label>
+        <select id="gmr-education">
+          <option value="none">Sin estudios formales</option>
+          <option value="basic">Bachillerato / Técnico</option>
+          <option value="cert">Certificación profesional (PMP, AWS, CFA...)</option>
+          <option value="degree">Licenciatura / Grado universitario</option>
+          <option value="master">Maestría / Especialización</option>
+          <option value="phd">Doctorado / Investigación</option>
+          <option value="autodidact">Autodidacta / Portfolio-based</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="gmr-job">Área profesional</label>
+        <select id="gmr-job">
+          <optgroup label="── Tecnología">
+            <option value="dev_sw">Desarrollo de Software / Ingeniería</option>
+            <option value="data_ai">Datos, IA y Machine Learning</option>
+            <option value="cybersec">Ciberseguridad</option>
+            <option value="devops">DevOps / Infraestructura Cloud</option>
+          </optgroup>
+          <optgroup label="── Negocios y Finanzas">
+            <option value="admin">Administración y Gestión</option>
+            <option value="accounting">Contabilidad y Finanzas</option>
+            <option value="legal">Legal / Jurídico</option>
+            <option value="hr">Recursos Humanos</option>
+            <option value="sales">Ventas y Atención al Cliente</option>
+            <option value="logistics">Logística y Cadena de Suministro</option>
+          </optgroup>
+          <optgroup label="── Creatividad y Medios">
+            <option value="design_ux">Diseño UX/UI y Producto</option>
+            <option value="graphic_3d">Diseño Gráfico / Ilustración / 3D</option>
+            <option value="content">Redacción / Copywriting / Periodismo</option>
+            <option value="marketing">Marketing Digital y SEO</option>
+            <option value="audiovisual">Producción Audiovisual / Video</option>
+            <option value="music">Música y Audio</option>
+          </optgroup>
+          <optgroup label="── Salud y Ciencias">
+            <option value="medicine">Medicina y Diagnóstico Clínico</option>
+            <option value="nursing_care">Enfermería y Cuidado Directo</option>
+            <option value="pharma">Farmacéutica / Biotech</option>
+            <option value="research_sci">Investigación Científica</option>
+            <option value="psychology">Psicología y Trabajo Social</option>
+          </optgroup>
+          <optgroup label="── Educación y Consultoría">
+            <option value="teaching">Docencia y Educación</option>
+            <option value="consulting">Consultoría Estratégica</option>
+            <option value="coaching">Coaching / Mentoría</option>
+          </optgroup>
+          <optgroup label="── Oficios y Operaciones">
+            <option value="trades">Oficios Especializados (electricistas, plomeros...)</option>
+            <option value="manufacturing">Manufactura y Operaciones</option>
+            <option value="agriculture">Agricultura y Sector Primario</option>
+            <option value="transport">Transporte y Conducción</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="gmr-exp">Años de experiencia</label>
+        <select id="gmr-exp">
+          <option value="junior">Menos de 2 años (Junior / Becario)</option>
+          <option value="mid">De 2 a 5 años (Mid-Level)</option>
+          <option value="senior">De 5 a 10 años (Senior)</option>
+          <option value="expert">Más de 10 años (Experto / Líder)</option>
+        </select>
+      </div>
+
+      <button id="gmr-btn" class="scan-btn">Iniciar escaneo de riesgo</button>
+
+      <div class="badges-row">
+        <span>🔒 100% Anónimo</span><span>•</span><span>⚡ Sin registros</span>
+      </div>
+      <p class="disclaimer">
+        Este diagnóstico es orientativo. Los niveles de riesgo se basan en tendencias documentadas por
+        investigadores de automatización (Frey &amp; Osborne, McKinsey Global Institute, Foro Económico Mundial),
+        pero no representan porcentajes estadísticos exactos. Cada trayectoria profesional es única.
+      </p>
+
+      <div id="gmr-result">
+        <div class="result-top">
+          <div id="gmr-badge">
+            <div id="gmr-level-word"></div>
+            <div class="fill-track"><div id="gmr-level-fill"></div></div>
+            <div class="fill-label">Nivel de exposición</div>
+          </div>
+          <div class="result-text">
+            <div id="gmr-headline"></div>
+            <p id="gmr-desc"></p>
+          </div>
+        </div>
+
+        <div class="factors">
+          <div class="factors-label">Factores analizados</div>
+          {['area', 'country', 'edu', 'exp'].map((key) => (
+            <div class="factor-row">
+              <span class="factor-name" data-key={key} />
+              <div class="factor-track"><div id={`gmr-bar-${key}`} /></div>
+              <span id={`gmr-qual-${key}`} class="factor-qual" />
+            </div>
+          ))}
+        </div>
+
+        <div class="rec-box">
+          <strong>→ Recomendación Glitch</strong>
+          <span id="gmr-rec"></span>
+        </div>
+
+        <div id="gmr-email-capture">
+          <div class="ec-label">Seguimiento mensual</div>
+          <div class="ec-text">Recibe el índice mensual de automatización en tu sector. Sin spam, solo datos.</div>
+          <a href="/suscribete/" target="_blank" class="ec-btn">Recibir el índice de mi sector →</a>
+        </div>
+
+        <div id="gmr-tags"></div>
+        <span class="share-prompt">Comparte tu resultado con <b>#GlitchMentalMX</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container share-row">
+    <p class="eyebrow">Compartir</p>
+    <div class="buttons">
+      <button id="gm-share-wa" class="chip-btn wa">WhatsApp</button>
+      <button id="gm-copy-link" class="chip-btn"><span>Copiar enlace</span></button>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  var GMR_AREA = {
+    dev_sw: { risk: 52, label: 'Desarrollo de Software' },
+    data_ai: { risk: 35, label: 'Datos & IA' },
+    cybersec: { risk: 28, label: 'Ciberseguridad' },
+    devops: { risk: 38, label: 'DevOps / Cloud' },
+    admin: { risk: 78, label: 'Administración' },
+    accounting: { risk: 82, label: 'Contabilidad / Finanzas' },
+    legal: { risk: 60, label: 'Legal / Jurídico' },
+    hr: { risk: 72, label: 'Recursos Humanos' },
+    sales: { risk: 65, label: 'Ventas / Atención a Cliente' },
+    logistics: { risk: 70, label: 'Logística' },
+    design_ux: { risk: 38, label: 'Diseño UX/UI' },
+    graphic_3d: { risk: 55, label: 'Diseño Gráfico / 3D' },
+    content: { risk: 70, label: 'Redacción / Periodismo' },
+    marketing: { risk: 68, label: 'Marketing Digital' },
+    audiovisual: { risk: 48, label: 'Producción Audiovisual' },
+    music: { risk: 42, label: 'Música / Audio' },
+    medicine: { risk: 22, label: 'Medicina Clínica' },
+    nursing_care: { risk: 12, label: 'Enfermería / Cuidado' },
+    pharma: { risk: 40, label: 'Farmacéutica / Biotech' },
+    research_sci: { risk: 30, label: 'Investigación Científica' },
+    psychology: { risk: 18, label: 'Psicología / Trabajo Social' },
+    teaching: { risk: 35, label: 'Docencia' },
+    consulting: { risk: 45, label: 'Consultoría' },
+    coaching: { risk: 25, label: 'Coaching / Mentoría' },
+    trades: { risk: 15, label: 'Oficios Especializados' },
+    manufacturing: { risk: 75, label: 'Manufactura / Operaciones' },
+    agriculture: { risk: 55, label: 'Agricultura' },
+    transport: { risk: 80, label: 'Transporte / Conducción' },
+  };
+
+  var GMR_COUNTRY = {
+    mx_latam: { mod: 8, label: 'México / LATAM', speed: 'moderada' },
+    br: { mod: 6, label: 'Brasil', speed: 'moderada' },
+    arg_chile: { mod: 7, label: 'Argentina / Chile', speed: 'moderada' },
+    col_per: { mod: 5, label: 'Colombia / Perú', speed: 'gradual' },
+    usa_can: { mod: 14, label: 'EE.UU. / Canadá', speed: 'acelerada' },
+    eu_west: { mod: 12, label: 'Europa Occidental', speed: 'acelerada' },
+    eu_east: { mod: 6, label: 'Europa del Este', speed: 'moderada' },
+    nordics: { mod: 13, label: 'Países Nórdicos', speed: 'acelerada' },
+    china: { mod: 15, label: 'China', speed: 'muy acelerada' },
+    india: { mod: 10, label: 'India', speed: 'acelerada' },
+    japan_kor: { mod: 11, label: 'Japón / Corea del Sur', speed: 'acelerada' },
+    sea: { mod: 8, label: 'Sudeste Asiático', speed: 'moderada' },
+    aus_nz: { mod: 11, label: 'Australia / Nueva Zelanda', speed: 'acelerada' },
+    middle_east: { mod: 9, label: 'Medio Oriente', speed: 'moderada' },
+    africa: { mod: 2, label: 'África Sub-Sahariana', speed: 'gradual' },
+    remote: { mod: 16, label: 'Trabajo Remoto / Global', speed: 'inmediata' },
+  };
+
+  var GMR_EDU = {
+    none: { mod: 16, qual: 'Muy alto' },
+    basic: { mod: 12, qual: 'Alto' },
+    cert: { mod: -4, qual: 'Bajo' },
+    degree: { mod: 0, qual: 'Medio' },
+    master: { mod: -6, qual: 'Bajo' },
+    phd: { mod: -10, qual: 'Muy bajo' },
+    autodidact: { mod: -8, qual: 'Bajo' },
+  };
+
+  var GMR_EXP = {
+    junior: { mod: 10, qual: 'Alto' },
+    mid: { mod: 2, qual: 'Medio' },
+    senior: { mod: -5, qual: 'Bajo' },
+    expert: { mod: -10, qual: 'Muy bajo' },
+  };
+
+  var FACTOR_LABELS = { area: 'Área laboral', country: 'Región', edu: 'Formación', exp: 'Experiencia' };
+  document.querySelectorAll('.factor-name').forEach(function (el) {
+    el.textContent = FACTOR_LABELS[el.dataset.key];
+  });
+
+  function gmrLevel(score) {
+    if (score < 25) return { word: 'Bajo', color: '#4D94FF', fill: 20 };
+    if (score < 50) return { word: 'Moderado', color: '#FFD700', fill: 45 };
+    if (score < 72) return { word: 'Alto', color: '#FF8C00', fill: 70 };
+    return { word: 'Crítico', color: '#FF4B4B', fill: 92 };
+  }
+
+  function gmrQual(val) {
+    if (val < 25) return 'Bajo';
+    if (val < 50) return 'Medio';
+    if (val < 72) return 'Alto';
+    return 'Crítico';
+  }
+
+  function gmrContent(score, areaKey, countryKey) {
+    var area = GMR_AREA[areaKey];
+    var country = GMR_COUNTRY[countryKey];
+    var speed = country.speed;
+
+    if (score < 25) {
+      return {
+        headline: 'Exposición Baja — Perfil resiliente',
+        desc: 'Tu combinación de habilidades ubica tu rol en la zona de mayor resiliencia frente a la automatización. Las funciones que desempeñas exigen juicio situacional, vínculo humano directo o destreza física contextualizada —capacidades que los modelos actuales no replican con fiabilidad—. En mercados con velocidad de adopción ' + speed + ', perfiles como el tuyo suelen ser redirigidos hacia funciones de mayor valor estratégico antes de verse desplazados.',
+        rec: 'Capitaliza tu posición de baja exposición adoptando IA como multiplicador de productividad: úsala para automatizar las tareas administrativas de tu rol y dedica ese tiempo recuperado a desarrollar criterio experto, relaciones profesionales y habilidades de liderazgo.',
+        tags: ['Exposición baja', 'Alta demanda humana', 'Mercado: ' + country.label, area.label],
+      };
+    } else if (score < 50) {
+      return {
+        headline: 'Exposición Moderada — Zona de transición',
+        desc: 'Tu perfil se encuentra en una fase de reestructuración activa. Un segmento de las tareas que ejecutas —especialmente las repetitivas, basadas en patrones o de bajo juicio contextual— ya está siendo absorbido por sistemas de automatización y agentes LLM. En regiones con adopción ' + speed + ' como ' + country.label + ', este proceso es observable en los ciclos actuales de contratación y reorganización empresarial.',
+        rec: 'El movimiento estratégico clave es evolucionar de ejecutor a orquestador: aprende a dirigir, evaluar y corregir los outputs de sistemas de IA en tu dominio. Certifícate en herramientas especializadas de tu área y construye una propuesta de valor centrada en decisiones de alto impacto.',
+        tags: ['Exposición moderada', 'Reposicionamiento recomendado', 'Adopción ' + speed, area.label],
+      };
+    } else if (score < 72) {
+      return {
+        headline: 'Exposición Alta — Presión estructural detectada',
+        desc: 'Tu sector está experimentando una compresión salarial y reducción de plantillas vinculada directamente a la adopción de IA generativa y automatización de procesos. En economías con velocidad de adopción ' + speed + ', las empresas de tu industria ya están reduciendo headcount en funciones similares a la tuya o han iniciado pilotos de sustitución.',
+        rec: 'No esperes a que la presión llegue directamente a tu posición. Identifica las dos o tres funciones de tu rol que la IA no puede replicar —las que involucran negociación, criterio ético, relaciones de confianza o liderazgo— y especialízate en ellas.',
+        tags: ['Exposición alta', 'Mercado en compresión', 'Adopción ' + speed, area.label],
+      };
+    } else {
+      return {
+        headline: 'Exposición Crítica — Transformación sectorial en curso',
+        desc: 'Tu área se encuentra en el epicentro de la disrupción por automatización. Investigadores como Frey & Osborne (Oxford), McKinsey Global Institute y el Foro Económico Mundial ubican roles con tu perfil entre los de mayor probabilidad de transformación profunda en el corto y mediano plazo.',
+        rec: "Tu experiencia sectorial tiene valor, pero el 'cómo' la aplicas debe cambiar. Tres rutas posibles: supervisar y auditar los sistemas de IA que transforman tu área, migrar hacia roles de gestión o estrategia dentro de tu industria, o emprender usando tu conocimiento como ventaja. Empieza en los próximos 6 meses.",
+        tags: ['Exposición crítica', 'Pivot estratégico recomendado', 'Adopción ' + speed, area.label],
+      };
+    }
+  }
+
+  function gmrCalculate() {
+    var areaKey = document.getElementById('gmr-job').value;
+    var eduKey = document.getElementById('gmr-education').value;
+    var countryKey = document.getElementById('gmr-country').value;
+    var expKey = document.getElementById('gmr-exp').value;
+
+    var areaRisk = GMR_AREA[areaKey].risk;
+    var countryMod = GMR_COUNTRY[countryKey].mod;
+    var eduMod = GMR_EDU[eduKey].mod;
+    var expMod = GMR_EXP[expKey].mod;
+
+    var total = Math.min(Math.max(areaRisk + countryMod + eduMod + expMod, 5), 97);
+    var level = gmrLevel(total);
+    var content = gmrContent(total, areaKey, countryKey);
+
+    var lw = document.getElementById('gmr-level-word');
+    var lf = document.getElementById('gmr-level-fill');
+    lw.innerText = level.word;
+    lw.style.color = level.color;
+    lf.style.background = level.color;
+    lf.style.width = '0%';
+    setTimeout(function () { lf.style.width = level.fill + '%'; }, 100);
+
+    document.getElementById('gmr-headline').innerText = content.headline;
+    document.getElementById('gmr-headline').style.color = level.color;
+    document.getElementById('gmr-desc').innerText = content.desc;
+    document.getElementById('gmr-rec').innerText = content.rec;
+
+    var barAreaVal = areaRisk;
+    var barCountryVal = Math.min(Math.max(50 + countryMod * 2.5, 10), 95);
+    var barEduVal = Math.min(Math.max(50 + eduMod * 3, 10), 95);
+    var barExpVal = Math.min(Math.max(50 + expMod * 3, 10), 95);
+
+    var bars = [
+      { fill: 'gmr-bar-area', qual: 'gmr-qual-area', val: barAreaVal, label: gmrQual(barAreaVal) },
+      { fill: 'gmr-bar-country', qual: 'gmr-qual-country', val: barCountryVal, label: gmrQual(barCountryVal) },
+      { fill: 'gmr-bar-edu', qual: 'gmr-qual-edu', val: barEduVal, label: GMR_EDU[eduKey].qual },
+      { fill: 'gmr-bar-exp', qual: 'gmr-qual-exp', val: barExpVal, label: GMR_EXP[expKey].qual },
+    ];
+
+    bars.forEach(function (b) {
+      var el = document.getElementById(b.fill);
+      el.style.width = '0%';
+      el.style.background = level.color;
+      setTimeout(function () { el.style.width = b.val + '%'; }, 120);
+      document.getElementById(b.qual).innerText = b.label;
+    });
+
+    var tagsHtml = content.tags.map(function (t) {
+      return '<span class="gmr-tag">' + t + '</span>';
+    }).join('');
+    document.getElementById('gmr-tags').innerHTML = tagsHtml;
+
+    document.getElementById('gmr-email-capture').style.display = 'block';
+
+    var result = document.getElementById('gmr-result');
+    result.style.display = 'block';
+    setTimeout(function () {
+      var top = result.getBoundingClientRect().top + window.pageYOffset - 120;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }, 150);
+  }
+
+  document.getElementById('gmr-btn').addEventListener('click', gmrCalculate);
+
+  document.getElementById('gm-share-wa').addEventListener('click', function () {
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent(document.title);
+    window.open('https://wa.me/?text=' + title + '%20' + url, '_blank');
+  });
+
+  document.getElementById('gm-copy-link').addEventListener('click', function () {
+    var btn = this;
+    navigator.clipboard.writeText(window.location.href).then(function () {
+      btn.classList.add('copied');
+      btn.querySelector('span').textContent = 'Copiado';
+      setTimeout(function () {
+        btn.classList.remove('copied');
+        btn.querySelector('span').textContent = 'Copiar enlace';
+      }, 2000);
+    });
+  });
+</script>
+
+<style>
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    padding: 0 24px 32px;
+    max-width: 640px;
+  }
+  .step { text-align: center; }
+  .step .n { display: block; font-family: var(--font-mono); color: var(--accent); font-size: 1.2em; font-weight: 700; }
+  .step .l { font-size: 0.8em; color: var(--text-muted); }
+
+  .calc-wrap { padding: 0 24px 24px; display: flex; justify-content: center; }
+
+  #glitch-calculator-container {
+    background: linear-gradient(145deg, #0e1520 0%, #080c10 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    box-shadow: rgba(0, 102, 255, 0.12) 0px 0px 30px;
+    color: #fff;
+    max-width: 600px;
+    width: 100%;
+    padding: 32px;
+    font-family: var(--font-body);
+  }
+  .calc-title { font-size: 1.7em; letter-spacing: 1.5px; text-align: center; text-transform: uppercase; margin: 0 0 8px; color: #fff; }
+  .calc-sub { color: rgba(255, 255, 255, 0.5); font-size: 0.9em; text-align: center; margin: 0 0 26px; }
+
+  .field { margin-bottom: 15px; }
+  .field label {
+    display: block; color: #b4b4b4; font-size: 0.78em; font-weight: 700;
+    letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px;
+  }
+  .field select {
+    background: #0d1117; border-radius: 8px; border: 1px solid rgba(0, 102, 255, 0.25);
+    color: #e8f0ff; outline: none; padding: 12px; width: 100%;
+    font-family: var(--font-mono); font-size: 0.9em;
+  }
+  .field select:focus { border-color: rgba(0, 102, 255, 0.6); box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1); }
+
+  .scan-btn {
+    background: var(--accent); border: none; border-radius: 999px;
+    box-shadow: rgba(0, 102, 255, 0.3) 0px 4px 15px; color: #fff; cursor: pointer;
+    font-family: var(--font-body); font-size: 1em; font-weight: 800; letter-spacing: 1px;
+    padding: 17px; text-transform: uppercase; width: 100%; margin-top: 8px;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+  .scan-btn:hover { background: #0052cc; transform: scale(1.015); }
+
+  .badges-row { display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.85em; gap: 10px; margin: 20px 0; }
+  .disclaimer { color: rgba(255, 255, 255, 0.55); font-size: 0.72em; font-style: italic; line-height: 1.6; margin-top: 8px; }
+
+  #gmr-result { display: none; animation: gmrFadeIn 0.5s ease; background: rgba(0, 102, 255, 0.05); border-radius: 10px; margin-top: 26px; padding: 20px; }
+  @keyframes gmrFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  .result-top { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 16px; align-items: flex-start; }
+  #gmr-badge { flex-shrink: 0; min-width: 100px; text-align: center; }
+  #gmr-level-word { font-size: 1.5em; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; }
+  .fill-track { background: rgba(255, 255, 255, 0.08); border-radius: 999px; height: 5px; margin-top: 10px; overflow: hidden; width: 100%; }
+  .fill-track > div { border-radius: 999px; height: 100%; transition: width 1s; width: 0%; }
+  .fill-label { color: rgba(255, 255, 255, 0.5); font-size: 0.62em; letter-spacing: 1.4px; margin-top: 6px; text-transform: uppercase; }
+
+  .result-text { flex: 1; min-width: 200px; }
+  #gmr-headline { font-size: 1.05em; font-weight: 700; margin-bottom: 8px; }
+  #gmr-desc { color: rgba(255, 255, 255, 0.62); font-size: 0.87em; line-height: 1.75; margin: 0; }
+
+  .factors { background: rgba(0, 0, 0, 0.25); border-radius: 8px; margin-bottom: 16px; padding: 14px; }
+  .factors-label { color: rgba(0, 102, 255, 0.75); font-size: 0.64em; letter-spacing: 2px; margin-bottom: 12px; text-transform: uppercase; }
+  .factor-row { align-items: center; display: flex; gap: 10px; margin-bottom: 9px; }
+  .factor-row:last-child { margin-bottom: 0; }
+  .factor-name { color: rgba(255, 255, 255, 0.4); flex-shrink: 0; font-size: 0.7em; text-transform: uppercase; width: 90px; }
+  .factor-track { background: rgba(255, 255, 255, 0.07); border-radius: 999px; flex: 1; height: 5px; overflow: hidden; }
+  .factor-track > div { border-radius: 999px; height: 100%; transition: width 1s; width: 0%; }
+  .factor-qual { color: var(--accent); font-size: 0.66em; text-align: right; text-transform: uppercase; width: 55px; }
+
+  .rec-box { background: rgba(0, 102, 255, 0.07); border-radius: 8px; padding: 16px; }
+  .rec-box strong { color: rgba(0, 102, 255, 0.8); display: block; font-size: 0.7em; letter-spacing: 1.4px; margin-bottom: 8px; text-transform: uppercase; }
+  .rec-box span { color: rgba(255, 255, 255, 0.85); font-size: 0.87em; line-height: 1.75; }
+
+  #gmr-email-capture { display: none; background: rgba(0, 102, 255, 0.06); border-radius: 8px; border: 1px solid rgba(0, 102, 255, 0.15); margin-top: 20px; padding: 18px; }
+  .ec-label { color: rgba(0, 102, 255, 0.75); font-size: 0.76em; font-weight: 700; letter-spacing: 1.4px; margin-bottom: 6px; text-transform: uppercase; }
+  .ec-text { color: rgba(255, 255, 255, 0.62); font-size: 0.84em; line-height: 1.6; margin-bottom: 14px; }
+  .ec-btn {
+    display: block; text-align: center; background: transparent; border-radius: 999px;
+    border: 1px dashed rgba(0, 102, 255, 0.45); color: var(--accent); font-weight: 700;
+    font-size: 0.84em; padding: 13px; transition: 0.2s;
+  }
+  .ec-btn:hover { background: rgba(0, 102, 255, 0.1); border-style: solid; }
+
+  #gmr-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+  :global(.gmr-tag) {
+    background: rgba(0, 102, 255, 0.1); border: 1px solid rgba(0, 102, 255, 0.25); border-radius: 999px;
+    color: var(--accent); font-size: 0.65em; letter-spacing: 0.7px; padding: 4px 10px; text-transform: uppercase;
+  }
+  .share-prompt { color: rgba(255, 255, 255, 0.45); font-size: 0.75em; text-align: center; display: block; margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+  .share-prompt b { color: rgba(255, 255, 255, 0.65); }
+
+  .share-row { padding: 8px 24px 96px; max-width: 600px; }
+  .buttons { display: flex; gap: 10px; margin-top: 12px; }
+  .chip-btn {
+    display: inline-flex; align-items: center; gap: 6px; background: var(--bg-inset);
+    border: 1.5px solid var(--border-strong); border-radius: 999px; color: var(--text);
+    cursor: pointer; font-size: 13px; font-weight: 600; padding: 8px 16px;
+    transition: 0.15s;
+  }
+  .chip-btn.wa:hover { background: #25d366; border-color: #25d366; color: #fff; }
+  .chip-btn.copied { background: var(--accent); border-color: var(--accent); color: #fff; }
+</style>

@@ -1,0 +1,170 @@
+---
+const nav = [
+  { href: '/archivo/', label: 'Archivo' },
+  { href: '/series/', label: 'Series' },
+  { href: '/colecciones/', label: 'Colecciones' },
+  { href: '/indice-glitchmentalmx/', label: 'Índice' },
+  { href: '/autor/', label: 'Autor' },
+];
+const current = Astro.url.pathname;
+---
+
+<header class="site-header">
+  <div class="container bar">
+    <a href="/" class="logo" aria-label="glitchmentalMX — inicio">
+      <span class="logo-glitch">glitch</span><span class="logo-mental">Mental</span><span class="logo-mx">MX</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Navegación principal">
+      <ul>
+        {nav.map((item) => (
+          <li>
+            <a href={item.href} aria-current={current.startsWith(item.href) ? 'page' : undefined}>{item.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="actions">
+      <a href="/glitchsearch/" class="icon-btn" aria-label="Buscar en GlitchSearch">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema claro/oscuro" type="button">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="/suscribete/" class="btn btn-primary subscribe-btn">Suscríbete</a>
+      <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Abrir menú" aria-expanded="false" type="button">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+    <ul>
+      {nav.map((item) => (
+        <li><a href={item.href}>{item.label}</a></li>
+      ))}
+      <li><a href="/glitchsearch/">GlitchSearch</a></li>
+      <li><a href="/calculadora-de-riesgo-de-reemplazo-por-ia-2026/">Calculadora de Riesgo IA</a></li>
+      <li><a href="/suscribete/">Suscríbete</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    height: 68px;
+  }
+  .logo {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.28rem;
+    letter-spacing: -0.01em;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  .logo-glitch { color: var(--text); }
+  .logo-mental { color: var(--accent); }
+  .logo-mx { color: var(--text-faint); font-size: 0.75em; font-family: var(--font-mono); margin-left: 1px; }
+
+  .primary-nav { flex: 1; min-width: 0; }
+  .primary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+  }
+  .primary-nav a {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding: 6px 0;
+    border-bottom: 2px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .primary-nav a:hover { color: var(--text); }
+  .primary-nav a[aria-current='page'] {
+    color: var(--text);
+    border-color: var(--accent);
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color .15s ease, color .15s ease;
+  }
+  .icon-btn:hover { background: var(--bg-inset); color: var(--text); }
+  .subscribe-btn { padding: 0.6em 1.3em; font-size: 0.85rem; margin-left: 8px; }
+
+  .icon-moon { display: none; }
+  :global([data-theme='dark']) .icon-sun { display: none; }
+  :global([data-theme='dark']) .icon-moon { display: block; }
+
+  .menu-toggle { display: none; }
+
+  .mobile-nav {
+    display: none;
+    border-top: 1px solid var(--border);
+    background: var(--bg);
+  }
+  .mobile-nav ul { list-style: none; margin: 0; padding: 10px 24px 18px; }
+  .mobile-nav a {
+    display: block;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border);
+  }
+
+  @media (max-width: 860px) {
+    .primary-nav { display: none; }
+    .menu-toggle { display: inline-flex; }
+    .subscribe-btn { display: none; }
+    .mobile-nav.open { display: block; }
+  }
+</style>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle?.addEventListener('click', () => {
+    const root = document.documentElement;
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('gm-theme', next);
+  });
+
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  menuToggle?.addEventListener('click', () => {
+    const isOpen = mobileNav?.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(!!isOpen));
+  });
+</script>

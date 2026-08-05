@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection, render } from 'astro:content';
+import { formatDate, readingTime } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } = post.data;
+const minutes = readingTime(post.body || '');
+
+const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const idx = allPosts.findIndex((p) => p.id === post.id);
+const relatedPool = allPosts.filter((p) => p.id !== post.id);
+const related = relatedPool.slice(Math.max(0, idx - 2), Math.max(0, idx - 2) + 3);
+const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
+---
+
+<Layout title={title} description={description} image={heroImage}>
+  <article class="post">
+    <header class="post-header container">
+      <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
+      <h1>{title}</h1>
+      <p class="dek">{description}</p>
+    </header>
+
+    {heroImage && (
+      <div class="hero container">
+        <img src={heroImage} alt={heroImageAlt} width="1600" height="1000" />
+      </div>
+    )}
+
+    <div class="content container">
+      <div class="prose">
+        <Content />
+      </div>
+    </div>
+
+    <div class="share container">
+      <span class="eyebrow">Compartir</span>
+      <a
+        class="btn btn-ghost"
+        target="_blank"
+        rel="noopener"
+        href={`https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent('https://glitchmental.com/articulos/' + post.id + '/')}`}
+      >WhatsApp</a>
+      <a
+        class="btn btn-ghost"
+        target="_blank"
+        rel="noopener"
+        href={`https://x.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent('https://glitchmental.com/articulos/' + post.id + '/')}`}
+      >X</a>
+    </div>
+  </article>
+
+  {relatedFinal.length > 0 && (
+    <section class="related container">
+      <h2>Sigue leyendo</h2>
+      <div class="grid">
+        {relatedFinal.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage}
+            heroImageAlt={p.data.heroImageAlt}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+</Layout>
+
+<style>
+  .post-header {
+    max-width: 760px;
+    padding: 48px 24px 32px;
+  }
+  .post-header h1 {
+    font-size: clamp(1.9rem, 4.6vw, 2.9rem);
+    margin: 14px 0 18px;
+  }
+  .dek {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .hero {
+    padding: 0 24px;
+    margin-bottom: 40px;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+  }
+
+  .content { padding: 0 24px 20px; display: flex; justify-content: center; }
+
+  .share {
+    padding: 32px 24px 0;
+    max-width: var(--measure);
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+  }
+  .share .btn { padding: 0.55em 1.1em; font-size: 0.82rem; }
+
+  .related {
+    padding: 64px 24px 40px;
+    border-top: 1px solid var(--border);
+    margin-top: 64px;
+  }
+  .related h2 { font-size: 1.4rem; margin-bottom: 28px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 28px;
+  }
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

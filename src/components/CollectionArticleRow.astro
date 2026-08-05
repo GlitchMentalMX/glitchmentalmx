@@ -1,0 +1,73 @@
+---
+import { formatDateShort, readingTime } from '../lib/format';
+
+interface Props {
+  index: number;
+  slug: string;
+  title: string;
+  description: string;
+  pubDate: Date;
+  heroImage: string;
+  heroImageAlt: string;
+  body?: string;
+}
+
+const { index, slug, title, description, pubDate, heroImage, heroImageAlt, body = '' } = Astro.props;
+const minutes = readingTime(body || description);
+const num = String(index).padStart(2, '0');
+---
+
+<a class="row" href={`/articulos/${slug}/`}>
+  <span class="num">{num}</span>
+  {heroImage && <img class="thumb" src={heroImage} alt={heroImageAlt} loading="lazy" width="200" height="200" />}
+  <span class="text">
+    <span class="title">{title}</span>
+    <span class="dek">{description}</span>
+    <span class="eyebrow meta">{formatDateShort(pubDate)} · {minutes} min</span>
+  </span>
+</a>
+
+<style>
+  .row {
+    display: grid;
+    grid-template-columns: 44px 96px 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+  .row:first-child { padding-top: 4px; }
+  .num {
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    color: var(--accent-line);
+    font-weight: 500;
+  }
+  .thumb {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+  }
+  .text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .title { font-family: var(--font-display); font-size: 1.2rem; line-height: 1.3; }
+  .row:hover .title { color: var(--accent); }
+  .dek {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .meta { margin-top: 2px; }
+
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 32px 64px 1fr; gap: 12px; }
+    .thumb { width: 64px; height: 64px; }
+    .title { font-size: 1.02rem; }
+  }
+</style>
