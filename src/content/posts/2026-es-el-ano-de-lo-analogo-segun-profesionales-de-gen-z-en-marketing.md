@@ -6,7 +6,7 @@ description: >-
   Profesionales de Gen Z en la industria del marketing están declarando 2026
   como "el año de lo análogo". Es movimiento paradójico: la generación más…
 heroImage: >-
-  /images/posts/2026-es-el-ano-de-lo-analogo-segun-profesionales-de-gen-z-en-marketing/hero.webp
+  /images/posts/2026-es-el-ano-de-lo-analogo-segun-profesionales-de-gen-z-en-marketing/hero.jpg
 heroImageAlt: >-
   2026 es el año de lo análogo: mujer revisando recibo impreso largo en
   escritorio con notas adhesivas

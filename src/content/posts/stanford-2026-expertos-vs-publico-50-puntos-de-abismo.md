@@ -5,7 +5,7 @@ updatedDate: 2026-04-22T12:24:20.261Z
 description: >-
   El reporte anual de inteligencia artificial del Instituto de IA Centrada en el
   Ser Humano de Stanford (HAI) acaba de confirmar algo que muchos intuían pero…
-heroImage: /images/posts/stanford-2026-expertos-vs-publico-50-puntos-de-abismo/hero.webp
+heroImage: /images/posts/stanford-2026-expertos-vs-publico-50-puntos-de-abismo/hero.jpg
 heroImageAlt: >-
   brecha expertos público IA: dos personas separadas por grieta profunda en
   suelo interior

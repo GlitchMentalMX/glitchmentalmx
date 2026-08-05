@@ -7,7 +7,7 @@ description: >-
   alimentarlo. En 2024 prometió 40% de margen eléctrico para cinco años; en
   2025…
 heroImage: >-
-  /images/posts/guadalajara-es-un-hub-digital-que-cfe-no-puede-alimentar/hero.webp
+  /images/posts/guadalajara-es-un-hub-digital-que-cfe-no-puede-alimentar/hero.jpg
 heroImageAlt: >-
   Torres de transmisión eléctrica y subestación en Guadalajara, evidencia de la
   tensión de la red frente al crecimiento de centros de datos
@@ -34,7 +34,7 @@ La brecha entre 9,000 megawatts de demanda pico y 3,000-5,000 megawatts de gener
 
 Ese desequilibrio conecta con un fenómeno que ya habíamos documentado en abril: [la expansión de infraestructura de IA subiendo tarifas eléctricas residenciales](/articulos/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/). Ese caso era sobre quién paga la factura; el caso de Jalisco es distinto y más básico: aquí la pregunta todavía no es quién paga, sino de dónde va a salir físicamente la electricidad para sostener el crecimiento que el propio estado está promoviendo.
 
-![Panel de transformador eléctrico con indicadores de carga cercana al límite en una subestación de Jalisco](/images/posts/guadalajara-es-un-hub-digital-que-cfe-no-puede-alimentar/1.webp)
+![Panel de transformador eléctrico con indicadores de carga cercana al límite en una subestación de Jalisco](/images/posts/guadalajara-es-un-hub-digital-que-cfe-no-puede-alimentar/1.jpg)
 
   
 

@@ -6,7 +6,7 @@ description: >-
   Querétaro tuvo que inventar una ley para que sus data centers no reportaran su
   consumo de agua. Nuevo León no necesitó ninguna: heredó un sistema de…
 heroImage: >-
-  /images/posts/nuevo-leon-no-necesito-una-ley-para-que-la-ia-usara-su-agua/hero.webp
+  /images/posts/nuevo-leon-no-necesito-una-ley-para-que-la-ia-usara-su-agua/hero.jpg
 heroImageAlt: >-
   Presa con nivel de agua visiblemente bajo en Nuevo León, con tubería
   industrial hacia infraestructura de centros de datos
@@ -35,7 +35,7 @@ heroImageAlt: >-
 
 ## 2022 no se fue a ningún lado
 
-![Compuerta de control de concesión de agua con medidor digital de flujo, sin marco regulatorio adicional para su extracción](/images/posts/nuevo-leon-no-necesito-una-ley-para-que-la-ia-usara-su-agua/1.webp)
+![Compuerta de control de concesión de agua con medidor digital de flujo, sin marco regulatorio adicional para su extracción](/images/posts/nuevo-leon-no-necesito-una-ley-para-que-la-ia-usara-su-agua/1.jpg)
 
   
 

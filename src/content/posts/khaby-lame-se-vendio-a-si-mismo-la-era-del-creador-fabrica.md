@@ -7,7 +7,7 @@ description: >-
   por 975 millones de dólares y autorizó que una inteligencia artificial
   replique…
 heroImage: >-
-  /images/posts/khaby-lame-se-vendio-a-si-mismo-la-era-del-creador-fabrica/hero.webp
+  /images/posts/khaby-lame-se-vendio-a-si-mismo-la-era-del-creador-fabrica/hero.jpg
 heroImageAlt: >-
   Khaby Lame vendió su empresa por 975 millones para que una IA produzca
   contenido como él, sin él. La industrialización del creador empezó.
@@ -36,7 +36,7 @@ Esto importa por una razón práctica. El valor comercial de Lame nunca residió
 
 ## La industrialización de la atención no es una metáfora
 
-![creador-fábrica IA: panel de control con interruptores y cable en sistema de producción automatizada de contenido](/images/posts/khaby-lame-se-vendio-a-si-mismo-la-era-del-creador-fabrica/1.webp)
+![creador-fábrica IA: panel de control con interruptores y cable en sistema de producción automatizada de contenido](/images/posts/khaby-lame-se-vendio-a-si-mismo-la-era-del-creador-fabrica/1.jpg)
 
   
 

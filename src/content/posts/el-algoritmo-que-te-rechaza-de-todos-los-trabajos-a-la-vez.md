@@ -6,7 +6,7 @@ description: >-
   Si alguna vez has sentido que tu currículum desaparece en un agujero negro
   digital después de aplicar a un trabajo, no estás alucinando. Detrás de ese…
 heroImage: >-
-  /images/posts/el-algoritmo-que-te-rechaza-de-todos-los-trabajos-a-la-vez/hero.webp
+  /images/posts/el-algoritmo-que-te-rechaza-de-todos-los-trabajos-a-la-vez/hero.jpg
 heroImageAlt: >-
   algoritmo que te rechaza: candidata frente a puertas automatizadas con
   escáneres de acceso en oficinas
@@ -27,7 +27,7 @@ El estudio de Stanford documentó algo todavía más inquietante: cuando muchas 
 
 Esto no es futurista, es ahora. Muchas de las principales plataformas de reclutamiento y grandes corporaciones están usando estas herramientas para manejar el volumen masivo de aplicaciones, y lo hacen con poca transparencia. Las decisiones de la IA se vuelven una caja negra que determina tu futuro laboral.
 
-![algoritmo que te rechaza: candidata en laberinto de pasillos con puertas automatizadas bloqueando rutas](/images/posts/el-algoritmo-que-te-rechaza-de-todos-los-trabajos-a-la-vez/1.webp)
+![algoritmo que te rechaza: candidata en laberinto de pasillos con puertas automatizadas bloqueando rutas](/images/posts/el-algoritmo-que-te-rechaza-de-todos-los-trabajos-a-la-vez/1.jpg)
 
 ## La Paradoja de la Automatización y la Diversidad
 

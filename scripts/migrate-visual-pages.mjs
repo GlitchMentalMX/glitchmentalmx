@@ -52,12 +52,12 @@ async function migrate(slug, outFile, { withLinks }) {
         const ext = extFromUrl(item.imagen);
         const filename = `${i}.${ext}`;
         const sizedUrl = resizeBloggerUrl(item.imagen, 900);
-        const ok = await downloadImage(sizedUrl, path.join(imageDir, filename));
+        const savedPath = await downloadImage(sizedUrl, path.join(imageDir, filename));
         const entry = {
           id: String(i + 1),
           titulo: item.titulo,
           resumen: item.resumen,
-          imagen: ok ? `/images/${slug}/${filename}` : '',
+          imagen: savedPath ? `/images/${slug}/${path.basename(savedPath)}` : '',
         };
         if (withLinks) entry.enlace = resolveEnlace(item.enlace);
         return entry;

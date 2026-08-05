@@ -6,7 +6,7 @@ description: >-
   El 20 de octubre de 2025, Amazon Web Services sufrió una falla de DNS en su
   región US-East-1 y, en cuestión de minutos, MetaMask mostró saldo cero a
   millones…
-heroImage: /images/posts/web3-la-descentralizacion-que-siempre-fue-un-pitch/hero.webp
+heroImage: /images/posts/web3-la-descentralizacion-que-siempre-fue-un-pitch/hero.jpg
 heroImageAlt: >-
   Web3 descentralización: carteles promocionales rasgados revelando
   infraestructura centralizada
@@ -29,7 +29,7 @@ Lo que falló el 20 de octubre no fue la blockchain. El protocolo de Ethereum si
 
 ## Tres fracasos concretos: NFTs, metaverso y DAOs
 
-![Web3 descentralización: panel de comunicaciones oculto tras carteles de red descentralizada](/images/posts/web3-la-descentralizacion-que-siempre-fue-un-pitch/1.webp)
+![Web3 descentralización: panel de comunicaciones oculto tras carteles de red descentralizada](/images/posts/web3-la-descentralizacion-que-siempre-fue-un-pitch/1.jpg)
 
   
 

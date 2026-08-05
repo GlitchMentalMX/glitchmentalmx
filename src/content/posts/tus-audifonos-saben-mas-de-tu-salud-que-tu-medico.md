@@ -5,7 +5,7 @@ updatedDate: 2026-06-11T04:30:45.630Z
 description: >-
   Los hearables — audífonos con sensores biométricos integrados — ya no son un
   concepto de laboratorio. Son el segmento de mayor crecimiento dentro de un…
-heroImage: /images/posts/tus-audifonos-saben-mas-de-tu-salud-que-tu-medico/hero.webp
+heroImage: /images/posts/tus-audifonos-saben-mas-de-tu-salud-que-tu-medico/hero.jpg
 heroImageAlt: >-
   Tus audífonos saben más que tu médico: estuche de audífonos inalámbricos junto
   a racks de servidores
@@ -30,7 +30,7 @@ En México y América Latina la situación es más precaria. La Ley Federal de P
 
 ## Quién tiene tus datos y para qué los usa
 
-![Tus audífonos saben más que tu médico: audífono inalámbrico sobre bandeja metálica de laboratorio](/images/posts/tus-audifonos-saben-mas-de-tu-salud-que-tu-medico/1.webp)
+![Tus audífonos saben más que tu médico: audífono inalámbrico sobre bandeja metálica de laboratorio](/images/posts/tus-audifonos-saben-mas-de-tu-salud-que-tu-medico/1.jpg)
 
   
 

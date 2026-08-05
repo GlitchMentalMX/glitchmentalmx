@@ -6,7 +6,7 @@ description: >-
   Las empresas aceleran sus inversiones en IA. Sus clientes, en cambio, piden
   algo diferente: claridad sobre cómo funciona, control sobre lo que hace y…
 heroImage: >-
-  /images/posts/el-consumidor-2026-mas-confianza-menos-hype-tecnologico/hero.webp
+  /images/posts/el-consumidor-2026-mas-confianza-menos-hype-tecnologico/hero.jpg
 heroImageAlt: >-
   El consumidor 2026: usuario abre dispositivo inteligente mostrando hardware
   interno para inspección directa

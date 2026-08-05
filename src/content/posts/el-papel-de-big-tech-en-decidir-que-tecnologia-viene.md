@@ -5,7 +5,7 @@ updatedDate: 2026-06-26T01:24:55.855Z
 description: >-
   Las tendencias tecnológicas no emergen de forma espontánea del mercado. En la
   era de Big Tech, las tendencias se producen, se amplifican y a veces se…
-heroImage: /images/posts/el-papel-de-big-tech-en-decidir-que-tecnologia-viene/hero.webp
+heroImage: /images/posts/el-papel-de-big-tech-en-decidir-que-tecnologia-viene/hero.jpg
 heroImageAlt: >-
   Big Tech tendencias tecnológicas: hombre colocando mano sobre tarjeta
   seleccionada en mesa con fichas rechazadas al borde
@@ -26,7 +26,7 @@ El control de estándares técnicos es el instrumento menos visible pero con may
 
 En IA, el Model Context Protocol de Anthropic — publicado a finales de 2024 y adoptado rápidamente por Microsoft, Google y docenas de desarrolladores de herramientas — es un ejemplo de cómo una empresa de tamaño relativamente menor puede definir infraestructura estándar si llega primero con una solución técnicamente sólida y la hace open source. **El hecho de que OpenAI y Microsoft adoptaran MCP en lugar de desarrollar un protocolo propio fue una señal de que el estándar ya había ganado masa crítica antes de que el debate estuviera explícito en los medios.**
 
-![Big Tech tendencias tecnológicas: mano sobre ficha seleccionada bajo luz directa, fichas rechazadas en sombra al borde del encuadre](/images/posts/el-papel-de-big-tech-en-decidir-que-tecnologia-viene/1.webp)
+![Big Tech tendencias tecnológicas: mano sobre ficha seleccionada bajo luz directa, fichas rechazadas en sombra al borde del encuadre](/images/posts/el-papel-de-big-tech-en-decidir-que-tecnologia-viene/1.jpg)
 
   
 

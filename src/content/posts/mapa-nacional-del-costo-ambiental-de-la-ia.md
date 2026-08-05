@@ -5,7 +5,7 @@ updatedDate: 2026-07-08T22:53:03.541Z
 description: >-
   Nueve mecanismos, nueve dependencias distintas y ningún cruce oficial entre
   ellos: así se sostiene, sin auditoría real, el costo ambiental de la…
-heroImage: /images/posts/mapa-nacional-del-costo-ambiental-de-la-ia/hero.webp
+heroImage: /images/posts/mapa-nacional-del-costo-ambiental-de-la-ia/hero.jpg
 heroImageAlt: >-
   Vista satelital nocturna de México con nodos de centros de datos conectados
   por una red eléctrica, mapa del costo ambiental nacional de la IA.
@@ -142,7 +142,7 @@ El caso de REPNA y la Ley del Sector Eléctrico ilustra el mismo problema desde 
 
 ## Dónde electricidad y territorio se encuentran
 
-![Mapa de control con los seis estados analizados en la serie Detrás del Prompt, conectados por líneas que representan agua y electricidad.](/images/posts/mapa-nacional-del-costo-ambiental-de-la-ia/1.webp)
+![Mapa de control con los seis estados analizados en la serie Detrás del Prompt, conectados por líneas que representan agua y electricidad.](/images/posts/mapa-nacional-del-costo-ambiental-de-la-ia/1.jpg)
 
   
 

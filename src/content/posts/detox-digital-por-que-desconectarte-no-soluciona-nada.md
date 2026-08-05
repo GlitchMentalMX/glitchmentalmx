@@ -5,7 +5,7 @@ updatedDate: 2026-06-07T01:51:49.693Z
 description: >-
   El detox digital vende la idea de que el problema eres tú — que con suficiente
   fuerza de voluntad podrías cerrar Instagram y no extrañarlo. Esa idea es…
-heroImage: /images/posts/detox-digital-por-que-desconectarte-no-soluciona-nada/hero.webp
+heroImage: /images/posts/detox-digital-por-que-desconectarte-no-soluciona-nada/hero.jpg
 heroImageAlt: 'detox digital: mujer frente al espejo con smartphone apoyado en el lavabo'
 ---
 **El detox digital vende la idea de que el problema eres tú** — que con suficiente fuerza de voluntad podrías cerrar Instagram y no extrañarlo. Esa idea es conveniente para las plataformas y equivocada para todo lo demás. No es un problema de disciplina. Es un problema de diseño.
@@ -28,7 +28,7 @@ heroImageAlt: 'detox digital: mujer frente al espejo con smartphone apoyado en e
 
 ## Abstinencia versus uso intencional
 
-![detox digital: smartphone apagado junto a una mano sobre la cama](/images/posts/detox-digital-por-que-desconectarte-no-soluciona-nada/1.webp)
+![detox digital: smartphone apagado junto a una mano sobre la cama](/images/posts/detox-digital-por-que-desconectarte-no-soluciona-nada/1.jpg)
 
   
 

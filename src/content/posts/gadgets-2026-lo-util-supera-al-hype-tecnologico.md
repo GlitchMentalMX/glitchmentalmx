@@ -5,7 +5,7 @@ updatedDate: 2026-06-22T22:53:29.601Z
 description: >-
   La industria tecnológica vivió muchos años obsesionada con impresionar.
   Pantallas curvas imposibles, conceptos plegables extravagantes, funciones que…
-heroImage: /images/posts/gadgets-2026-lo-util-supera-al-hype-tecnologico/hero.webp
+heroImage: /images/posts/gadgets-2026-lo-util-supera-al-hype-tecnologico/hero.jpg
 heroImageAlt: >-
   Gadgets 2026: portátil abierto sobre mesa en showroom minimalista con
   smartwatch y usuario ajustando equipos

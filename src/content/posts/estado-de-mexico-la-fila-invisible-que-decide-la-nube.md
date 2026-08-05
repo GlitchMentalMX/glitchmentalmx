@@ -6,7 +6,7 @@ description: >-
   En el corredor al norte del Edomex —Tultitlán, Cuautitlán Izcalli,
   Tepotzotlán— la tierra ya existía antes de la nube. Lo que decide qué centro
   de datos se…
-heroImage: /images/posts/estado-de-mexico-la-fila-invisible-que-decide-la-nube/hero.webp
+heroImage: /images/posts/estado-de-mexico-la-fila-invisible-que-decide-la-nube/hero.jpg
 heroImageAlt: >-
   Centro de datos con líneas de energía y tuberías de agua convergiendo hacia la
   instalación, con el perfil de la Ciudad de México al fondo
@@ -33,7 +33,7 @@ El Plan de Fortalecimiento y Expansión del Sistema Eléctrico Nacional 2025-203
 
 ## Quién decide y bajo qué reglas
 
-![Conductos de fibra óptica y energía entrando a un centro de datos del Estado de México, infraestructura que sostiene la nube de CDMX](/images/posts/estado-de-mexico-la-fila-invisible-que-decide-la-nube/1.webp)
+![Conductos de fibra óptica y energía entrando a un centro de datos del Estado de México, infraestructura que sostiene la nube de CDMX](/images/posts/estado-de-mexico-la-fila-invisible-que-decide-la-nube/1.jpg)
 
   
 

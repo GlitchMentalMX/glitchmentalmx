@@ -5,7 +5,7 @@ updatedDate: 2026-06-04T15:03:19.305Z
 description: >-
   Los datos abiertos no son un tecnicismo burocrático: son la condición mínima
   para que una democracia pueda auditarse a sí misma. México tuvo durante dos…
-heroImage: /images/posts/datos-abiertos-el-poder-publico-que-nadie-te-explica/hero.webp
+heroImage: /images/posts/datos-abiertos-el-poder-publico-que-nadie-te-explica/hero.jpg
 heroImageAlt: >-
   Datos abiertos: ciudadana frente a tablero de documentos oficiales con
   expediente faltante
@@ -32,7 +32,7 @@ heroImageAlt: >-
 
 **El mecanismo más poderoso sigue siendo la solicitud de acceso a la información,** presentable vía la Plataforma Nacional de Transparencia. Permite pedir información específica con plazos legales de respuesta —no solo lo que el gobierno decidió publicar voluntariamente. Pero ese mecanismo depende de que exista una autoridad garante con facultades reales para resolver los conflictos cuando el gobierno se niega a entregar.
 
-![Datos abiertos: tablero de documentos oficiales con expediente ausente en registro público](/images/posts/datos-abiertos-el-poder-publico-que-nadie-te-explica/1.webp)
+![Datos abiertos: tablero de documentos oficiales con expediente ausente en registro público](/images/posts/datos-abiertos-el-poder-publico-que-nadie-te-explica/1.jpg)
 
 ## El retroceso de 2025: cuando el árbitro desaparece
 

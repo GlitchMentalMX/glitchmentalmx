@@ -7,7 +7,7 @@ description: >-
   conversación familiar. Pero sí pueden hacer algo más modesto y útil: poner
   fricciones…
 heroImage: >-
-  /images/posts/apps-de-control-parental-para-reducir-el-uso-del-celular/hero.webp
+  /images/posts/apps-de-control-parental-para-reducir-el-uso-del-celular/hero.jpg
 heroImageAlt: >-
   control uso celular apps: adolescente interactuando con red digital proyectada
   desde smartphone en cama

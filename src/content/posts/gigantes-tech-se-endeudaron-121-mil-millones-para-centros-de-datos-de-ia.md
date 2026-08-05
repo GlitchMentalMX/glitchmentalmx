@@ -6,7 +6,7 @@ description: >-
   Las cuatro compañías tecnológicas más grandes están apostando todo a
   infraestructura de IA. Meta, Alphabet (Google), Amazon, y Microsoft emitieron…
 heroImage: >-
-  /images/posts/gigantes-tech-se-endeudaron-121-mil-millones-para-centros-de-datos-de-ia/hero.webp
+  /images/posts/gigantes-tech-se-endeudaron-121-mil-millones-para-centros-de-datos-de-ia/hero.jpg
 heroImageAlt: >-
   Deuda IA $121 mil millones: ejecutivo observa centro de datos a través de
   cristal en sala de juntas

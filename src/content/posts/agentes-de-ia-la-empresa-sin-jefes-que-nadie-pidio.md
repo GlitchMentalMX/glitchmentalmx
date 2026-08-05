@@ -6,7 +6,7 @@ description: >-
   Para 2028, al menos el 15% de las decisiones cotidianas en empresas de todo el
   mundo serán tomadas de forma autónoma por sistemas de inteligencia
   artificial,…
-heroImage: /images/posts/agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio/hero.webp
+heroImage: /images/posts/agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio/hero.jpg
 heroImageAlt: >-
   agentes de IA: niveles superiores tachados de organigrama institucional en
   sala de juntas vacía
@@ -29,7 +29,7 @@ Al mismo tiempo, hay implementaciones reales y documentadas funcionando en produ
 
 ## Qué cambia y cuándo: el horizonte real
 
-![Agentes de IA: sala de juntas vacía con documentos sobre la mesa sin personas](/images/posts/agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio/1.webp)
+![Agentes de IA: sala de juntas vacía con documentos sobre la mesa sin personas](/images/posts/agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio/1.jpg)
 
   
 

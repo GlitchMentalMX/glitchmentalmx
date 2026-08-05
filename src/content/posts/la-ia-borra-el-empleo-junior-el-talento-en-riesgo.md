@@ -6,7 +6,7 @@ description: >-
   Hay una narrativa cómoda sobre la inteligencia artificial y el empleo: la IA
   reemplaza tareas repetitivas, libera tiempo, y los humanos ascienden a
   trabajos…
-heroImage: /images/posts/la-ia-borra-el-empleo-junior-el-talento-en-riesgo/hero.webp
+heroImage: /images/posts/la-ia-borra-el-empleo-junior-el-talento-en-riesgo/hero.jpg
 heroImageAlt: >-
   IA empleo junior: mujer joven con cuaderno en blanco frente a pantalla con
   trabajo ya completado, luz fría sobre figura
@@ -25,7 +25,7 @@ Antes, la competencia se desarrollaba por repetición. Redactar decenas de brief
 
 El empleado junior de 2026 ya no produce; **revisa el output de la IA**. La diferencia parece menor, pero sus consecuencias son enormes. Revisar el trabajo de una máquina no es lo mismo que producir trabajo propio. La IA comprime la experiencia, pero también debilita el desarrollo del juicio profesional. Con el tiempo, las organizaciones pueden terminar con empleados capaces de supervisar herramientas de IA pero sin la comprensión profunda que esas herramientas se suponía que iban a acelerar.
 
-![IA talento junior: checklist de tareas con todas las líneas tachadas en tinta fría, pluma sin usar sobre escritorio](/images/posts/la-ia-borra-el-empleo-junior-el-talento-en-riesgo/1.webp)
+![IA talento junior: checklist de tareas con todas las líneas tachadas en tinta fría, pluma sin usar sobre escritorio](/images/posts/la-ia-borra-el-empleo-junior-el-talento-en-riesgo/1.jpg)
 
   
 

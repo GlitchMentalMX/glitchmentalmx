@@ -6,7 +6,7 @@ description: >-
   El coach de finanzas personales que sigues en TikTok nunca ha tenido un
   cliente real. El creador de contenido que te explica cómo invertir nunca ha
   pasado…
-heroImage: /images/posts/influencers-sin-titulo-la-regulacion-que-ya-llego/hero.webp
+heroImage: /images/posts/influencers-sin-titulo-la-regulacion-que-ya-llego/hero.jpg
 heroImageAlt: >-
   regulación influencers: hombre colocando etiquetas engañosas en productos de
   estantería tipo farmacia
@@ -33,7 +33,7 @@ España llegó después con el Real Decreto 444/2024, vigente desde el 2 de mayo
 
 Lo que Francia y España tienen en común con China no es la ideología regulatoria — es el diagnóstico. Los tres parten del mismo problema: **millones de personas toman decisiones de salud, financieras y legales basadas en contenido producido por personas sin ninguna acreditación en esas materias.**
 
-![Influencers sin título: la regulación que ya llegó](/images/posts/influencers-sin-titulo-la-regulacion-que-ya-llego/1.webp)
+![Influencers sin título: la regulación que ya llegó](/images/posts/influencers-sin-titulo-la-regulacion-que-ya-llego/1.jpg)
 
 ## El nervio LATAM
 

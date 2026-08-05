@@ -6,7 +6,7 @@ description: >-
   La bioseguridad global tiene un problema de diseño, no de intenciones: el
   tratado que prohíbe las armas biológicas desde 1972 nunca tuvo manera de
   comprobar…
-heroImage: /images/posts/bioseguridad-global-el-codigo-que-nadie-audita-todavia/hero.webp
+heroImage: /images/posts/bioseguridad-global-el-codigo-que-nadie-audita-todavia/hero.jpg
 heroImageAlt: >-
   Bioseguridad global: operadora conectando cable en sistema de vigilancia con
   múltiples monitores
@@ -29,7 +29,7 @@ El ejemplo más documentado de cómo puede fallar este sistema no es una conspir
 
 > Sverdlovsk no fue sabotaje ni guerra biológica: fue un error de mantenimiento rutinario, más una década de mentira institucional para no admitirlo.
 
-![Bioseguridad global: primer plano de conexión manual en panel de monitoreo técnico](/images/posts/bioseguridad-global-el-codigo-que-nadie-audita-todavia/1.webp)
+![Bioseguridad global: primer plano de conexión manual en panel de monitoreo técnico](/images/posts/bioseguridad-global-el-codigo-que-nadie-audita-todavia/1.jpg)
 
 ## El tratado sin inspectores
 

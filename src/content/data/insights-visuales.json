@@ -3,371 +3,371 @@
     "id": "1",
     "titulo": "Usar IA no significa tener IA: el problema del 94% de LATAM",
     "resumen": "Usar ChatGPT no convierte a una empresa en una organización de IA. El 6% de LATAM ya descubrió la diferencia entre consumir inteligencia y construirla.",
-    "imagen": "/images/insights-visuales/0.webp",
+    "imagen": "/images/insights-visuales/0.jpg",
     "enlace": "/articulos/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/"
   },
   {
     "id": "2",
     "titulo": "La memoria que la IA construyó sobre ti no te pertenece",
     "resumen": "Miles de personas creen que la memoria que construyen con una IA les pertenece. En realidad, podría desaparecer mañana sin que exista un derecho legal para reclamarla.",
-    "imagen": "/images/insights-visuales/1.webp",
+    "imagen": "/images/insights-visuales/1.jpg",
     "enlace": "/articulos/la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno/"
   },
   {
     "id": "3",
     "titulo": "El algoritmo no te obligó: hizo demasiado cómoda la elección",
     "resumen": "La mayor victoria del algoritmo no fue decidir por ti, sino convencerte de que hacerlo era más cómodo. Y quizá tenía razón.",
-    "imagen": "/images/insights-visuales/2.webp",
+    "imagen": "/images/insights-visuales/2.jpg",
     "enlace": "/articulos/la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste/"
   },
   {
     "id": "4",
     "titulo": "El primer atacante con IA ya tiene nombre. El problema es quién lo decidió",
     "resumen": "Durante años la industria no logró ponerse de acuerdo para nombrar a los hackers humanos. Ahora intenta definir al primer atacante impulsado por IA… y ya repite el mismo error.",
-    "imagen": "/images/insights-visuales/3.webp",
+    "imagen": "/images/insights-visuales/3.jpg",
     "enlace": "/articulos/ata-como-se-nombra-al-primer-atacante-impulsado-por-ia/"
   },
   {
     "id": "5",
     "titulo": "La IA no te entiende: fue diseñada para que tú lo creas",
     "resumen": "La IA no necesita sentir para parecer cercana. Lo que percibes como empatía puede ser una decisión de diseño con consecuencias psicológicas, legales y sociales.",
-    "imagen": "/images/insights-visuales/4.webp",
+    "imagen": "/images/insights-visuales/4.jpg",
     "enlace": "/articulos/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/"
   },
   {
     "id": "6",
     "titulo": "Mechanical Turk cierra y revela el mayor secreto de la IA",
     "resumen": "Durante dos décadas, la IA escondió trabajo humano detrás de la automatización. El cierre de Mechanical Turk revela que el problema nunca fue reemplazar personas, sino demostrar que seguían ahí.",
-    "imagen": "/images/insights-visuales/5.webp",
+    "imagen": "/images/insights-visuales/5.jpg",
     "enlace": "/articulos/el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas/"
   },
   {
     "id": "7",
     "titulo": "Tu cerebro ya cotiza como dato comercial",
     "resumen": "La economía de los datos ya no se conforma con saber dónde estás o qué compras. Ahora también quiere interpretar lo único que nunca has podido cambiar: la actividad de tu cerebro.",
-    "imagen": "/images/insights-visuales/6.webp",
+    "imagen": "/images/insights-visuales/6.jpg",
     "enlace": "/articulos/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/"
   },
   {
     "id": "8",
     "titulo": "Tu casa inteligente ya tiene un comprador: así operan los data brokers",
     "resumen": "Los dispositivos inteligentes no solo recopilan datos: alimentan una industria que compra, cruza y vende perfiles sobre tu vida cotidiana. Ese mercado ya mueve cientos de miles de millones.",
-    "imagen": "/images/insights-visuales/7.webp",
+    "imagen": "/images/insights-visuales/7.jpg",
     "enlace": "/articulos/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/"
   },
   {
     "id": "9",
     "titulo": "La trampa del software gratis: el precio llega cuando ya no puedes salir",
     "resumen": "Primero te regalan la herramienta. Luego construyes toda tu vida digital sobre ella. Cuando finalmente suben el precio, descubres que salir cuesta mucho más que quedarte.",
-    "imagen": "/images/insights-visuales/8.webp",
+    "imagen": "/images/insights-visuales/8.jpg",
     "enlace": "/articulos/el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues/"
   },
   {
     "id": "10",
     "titulo": "Tu influencer no es tu amigo (y el sistema fue diseñado para que lo olvides)",
     "resumen": "Crees que conoces a tu influencer favorito porque todo el ecosistema digital está diseñado para que esa sensación parezca una amistad auténtica.",
-    "imagen": "/images/insights-visuales/9.webp",
+    "imagen": "/images/insights-visuales/9.jpg",
     "enlace": "/articulos/por-que-sientes-que-conoces-a-tu-influencer-favorito/"
   },
   {
     "id": "11",
     "titulo": "Cada generación vive en un internet distinto (y nadie se ha dado cuenta)",
     "resumen": "Creemos compartir el mismo internet, pero cada generación usa definiciones distintas de privacidad, propiedad e identidad. Y pronto una de ellas se volverá ley.",
-    "imagen": "/images/insights-visuales/10.webp",
+    "imagen": "/images/insights-visuales/10.jpg",
     "enlace": "/articulos/cada-generacion-tiene-su-propio-internet-y-no-lo-saben/"
   },
   {
     "id": "12",
     "titulo": "Internet está olvidando su propia historia (y casi nadie la está guardando)",
     "resumen": "Internet no se está archivando solo. Cada plataforma que cierra borra comunidades, recuerdos y culturas enteras que quizá nadie vuelva a recuperar.",
-    "imagen": "/images/insights-visuales/11.webp",
+    "imagen": "/images/insights-visuales/11.jpg",
     "enlace": "/articulos/lo-que-se-pierde-cuando-muere-una-plataforma-digital/"
   },
   {
     "id": "13",
     "titulo": "El meme político ya no persuade: programa la conversación pública",
     "resumen": "Los memes dejaron de ser bromas hace años. Hoy funcionan como paquetes ideológicos de alta velocidad capaces de moldear percepciones antes que argumentos.",
-    "imagen": "/images/insights-visuales/12.webp",
+    "imagen": "/images/insights-visuales/12.jpg",
     "enlace": "/articulos/los-memes-no-son-chistes-son-el-lenguaje-del-poder/"
   },
   {
     "id": "14",
     "titulo": "El tratado que prohibió las armas biológicas sin poder verificarlas",
     "resumen": "La Convención de Armas Biológicas prohíbe estas armas desde 1975, pero nunca creó inspecciones obligatorias ni mecanismos reales de verificación. La IA promete auditar laboratorios y actividad genética global, aunque también acelera las capacidades biotecnológicas que intenta vigilar.",
-    "imagen": "/images/insights-visuales/13.webp",
+    "imagen": "/images/insights-visuales/13.jpg",
     "enlace": "/articulos/bioseguridad-global-el-codigo-que-nadie-audita-todavia/"
   },
   {
     "id": "15",
     "titulo": "Entrenado en Corpus",
     "resumen": "Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.",
-    "imagen": "/images/insights-visuales/14.webp",
+    "imagen": "/images/insights-visuales/14.jpg",
     "enlace": "https://mybook.to/EntrenadoEnCorpus"
   },
   {
     "id": "16",
     "titulo": "Quién tiene permiso para existir en internet",
     "resumen": "El internet nació permitiendo identidades separadas del mundo físico. Las plataformas transformaron esa libertad en perfiles verificables y comercialmente valiosos. La verificación biométrica promete seguridad, pero concentra riesgos. La identidad digital dejó de ser una elección para convertirse en una condición de acceso.",
-    "imagen": "/images/insights-visuales/15.webp",
+    "imagen": "/images/insights-visuales/15.jpg",
     "enlace": "/articulos/identidad-digital-quien-decides-ser-cuando-nadie-te-ve/"
   },
   {
     "id": "17",
     "titulo": "La evolución ya tiene dueños: quién fija los criterios de la vida",
     "resumen": "La evolución dirigida por IA ya optimiza proteínas y organismos según objetivos definidos por humanos, sustituyendo parte de la selección natural por criterios explícitos. Quien controla datos, cómputo y capital también define qué rasgos, enfermedades y aplicaciones merecen ser optimizados, dejando a LATAM fuera de esa decisión.",
-    "imagen": "/images/insights-visuales/16.webp",
+    "imagen": "/images/insights-visuales/16.jpg",
     "enlace": "/articulos/la-ia-como-nuevo-darwin-quien-define-la-evolucion/"
   },
   {
     "id": "18",
     "titulo": "La cura existe, pero no para todos: el precio de reescribir el ADN humano",
     "resumen": "CRISPR convirtió la edición genética en reality médica, pero tratamientos como Casgevy cuestan millones y requieren infraestructura disponible solo en países ricos. La brecha no es científica, sino económica y política: quienes concentran la enfermedad siguen excluidos de las primeras curas genéticas.",
-    "imagen": "/images/insights-visuales/17.webp",
+    "imagen": "/images/insights-visuales/17.jpg",
     "enlace": "/articulos/editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo/"
   },
   {
     "id": "19",
     "titulo": "El ADN como código: quién controla el software de la vida",
     "resumen": "La biología sintética transforma el ADN en una plataforma programable. IA, edición genética y diseño de proteínas aceleran una industria estratégica global. China lidera las patentes del sector, mientras América Latina depende de infraestructura extranjera. La disputa ya no es científica: es geopolítica.",
-    "imagen": "/images/insights-visuales/18.webp",
+    "imagen": "/images/insights-visuales/18.jpg",
     "enlace": "/articulos/el-adn-como-codigo-quien-controla-el-software-de-la-vida/"
   },
   {
     "id": "20",
     "titulo": "Web3 nunca fue descentralizado: solo parecía serlo",
     "resumen": "El apagón de AWS en octubre de 2025 dejó fuera a MetaMask, Base y OpenSea. La descentralización de Web3 dependía de infraestructura corporativa centralizada. NFTs, DAOs y metaversos expusieron el mismo patrón: narrativa de empoderamiento, concentración de poder y dependencia de exchanges, wallets y servidores privados.",
-    "imagen": "/images/insights-visuales/19.webp",
+    "imagen": "/images/insights-visuales/19.jpg",
     "enlace": "/articulos/web3-la-descentralizacion-que-siempre-fue-un-pitch/"
   },
   {
     "id": "21",
     "titulo": "Las redes sociales no te conectan: te convierten en vigilante",
     "resumen": "Las redes sociales transformaron el panóptico clásico en vigilancia horizontal: millones de usuarios monitoreándose mutuamente como parte normal de la plataforma. El miedo a ser observado, archivado o expuesto produce autocensura masiva. Las plataformas convierten esa vigilancia social en datos y negocio.",
-    "imagen": "/images/insights-visuales/20.webp",
+    "imagen": "/images/insights-visuales/20.jpg",
     "enlace": "/articulos/las-redes-sociales-son-maquinas-de-vigilancia-entre-pares/"
   },
   {
     "id": "22",
     "titulo": "El algoritmo no existe: internet siempre tuvo editores invisibles",
     "resumen": "TikTok, Spotify, YouTube y Apple Music usan sistemas híbridos donde humanos y algoritmos deciden juntos qué contenido recibe visibilidad masiva. La palabra “algoritmo” funciona como escudo corporativo: oculta responsables, diluye rendición de cuentas y vuelve invisibles las decisiones editoriales globales.",
-    "imagen": "/images/insights-visuales/21.webp",
+    "imagen": "/images/insights-visuales/21.jpg",
     "enlace": "/articulos/el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento/"
   },
   {
     "id": "23",
     "titulo": "El internet humano se está quedando sin humanos",
     "resumen": "Los bots ya representan más de la mitad del tráfico web global, mientras modelos como GPT-4.5 logran parecer humanos mejor que humanos reales. El problema no es solo técnico: plataformas, anunciantes y actores políticos tienen incentivos para mantener borrosa la frontera entre persona y máquina.",
-    "imagen": "/images/insights-visuales/22.webp",
+    "imagen": "/images/insights-visuales/22.jpg",
     "enlace": "/articulos/estas-hablando-con-un-humano-o-un-bot-ya-no-importa/"
   },
   {
     "id": "24",
     "titulo": "La economía de creadores no fue hecha para pagar a los creadores",
     "resumen": "La economía de creadores crece, pero el dinero se concentra arriba: el 10% superior captura la mayoría de los pagos. Antes de llegar al creador, cada dólar pasa por plataformas, agencias, sistemas de pago e impuestos. El modelo no eliminó intermediarios: los escondió.",
-    "imagen": "/images/insights-visuales/23.webp",
+    "imagen": "/images/insights-visuales/23.jpg",
     "enlace": "/articulos/economia-de-creadores-a-donde-va-el-dinero-realmente/"
   },
   {
     "id": "25",
     "titulo": "La IA no mató el diseño freelance: mató al diseñador promedio",
     "resumen": "El diseño freelance no desapareció: se bifurcó. La ejecución genérica perdió valor frente a herramientas capaces de producir assets visuales en segundos. Sobreviven quienes venden estrategia, criterio visual, branding e integración con IA. El diseñador medio, basado en encargos estándar, quedó atrapado.",
-    "imagen": "/images/insights-visuales/24.webp",
+    "imagen": "/images/insights-visuales/24.jpg",
     "enlace": "/articulos/disenadores-freelance-e-ia-el-colapso-del-nivel-medio/"
   },
   {
     "id": "26",
     "titulo": "La IA no mató la escritura: mató el negocio que la pagaba",
     "resumen": "La IA no reemplazó primero a los grandes escritores, sino al contenido genérico que sostenía miles de trabajos mal pagados. El golpe más profundo llegó al modelo publicitario: menos tráfico desde Google significa menos ingresos, menos redacciones y menos periodistas.",
-    "imagen": "/images/insights-visuales/25.webp",
+    "imagen": "/images/insights-visuales/25.jpg",
     "enlace": "/articulos/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/"
   },
   {
     "id": "27",
     "titulo": "La IA ya reemplazó la música que nadie defendía",
     "resumen": "El sync licensing ya enfrenta una sustitución silenciosa: música funcional, barata y anónima generada por IA para publicidad, videos y contenido corporativo. Suno, Lyria 3 y los acuerdos con sellos muestran el nuevo mapa: las grandes empresas negocian; los compositores independientes quedan fuera.",
-    "imagen": "/images/insights-visuales/26.webp",
+    "imagen": "/images/insights-visuales/26.jpg",
     "enlace": "/articulos/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/"
   },
   {
     "id": "28",
     "titulo": "La fotografía de stock creó la IA que la reemplazó",
     "resumen": "La fotografía de stock colapsó cuando la IA aprendió a producir imágenes corporativas genéricas más rápido y más barato que cualquier fotógrafo humano. Getty y Shutterstock ya no defienden el viejo modelo: intentan monetizar, consolidar o sobrevivir a un mercado que la automatización volvió commodity.",
-    "imagen": "/images/insights-visuales/27.webp",
+    "imagen": "/images/insights-visuales/27.jpg",
     "enlace": "/articulos/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/"
   },
   {
     "id": "29",
     "titulo": "IA open source vs propietaria: quién controla los modelos",
     "resumen": "La IA “open source” muchas veces no es realmente abierta: licencias restrictivas, datos cerrados e infraestructura privada mantienen intacto el control corporativo. LATAM consume modelos ajenos mientras China, EE.UU. y Europa convierten la IA en una disputa de soberanía tecnológica, influencia geopolítica e infraestructura.",
-    "imagen": "/images/insights-visuales/28.webp",
+    "imagen": "/images/insights-visuales/28.jpg",
     "enlace": "/articulos/ia-open-source-vs-propietaria-quien-controla-los-modelos/"
   },
   {
     "id": "30",
     "titulo": "El negocio detrás del hype de la IA: miedo, capital y poder",
     "resumen": "El discurso sobre AGI funciona como mecanismo de poder: atrae capital, acelera adopción y reduce espacio para cuestionar decisiones tecnológicas estratégicas. Mientras Silicon Valley promete transformación total, reportes de MIT y Gartner muestran ROI limitado, proyectos fallidos y productos impulsados principalmente por hype.",
-    "imagen": "/images/insights-visuales/29.webp",
+    "imagen": "/images/insights-visuales/29.jpg",
     "enlace": "/articulos/el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron/"
   },
   {
     "id": "31",
     "titulo": "La estética del fallo: cuando la tecnología se delata",
     "resumen": "El glitch pasó de accidente técnico a herramienta artística y crítica, desde Nam June Paik hasta la estética digital contemporánea. Hoy, los errores de IA generativa consolidan el patrón: cuanto más perfecta parece la tecnología, más valiosos se vuelven sus fallos como expresión cultural.",
-    "imagen": "/images/insights-visuales/30.webp",
+    "imagen": "/images/insights-visuales/30.jpg",
     "enlace": "/articulos/por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch/"
   },
   {
     "id": "32",
     "titulo": "Un agente de IA borró todo en 9 segundos — y el sistema lo permitió",
     "resumen": "Un agente con acceso mal configurado eliminó producción y respaldos en segundos. No fue fallo aislado: es un patrón creciente en sistemas con IA autónoma. El riesgo real no está en el modelo, sino en permisos, APIs sin fricción y falta de validación humana. La infraestructura no está lista para agentes.",
-    "imagen": "/images/insights-visuales/31.webp",
+    "imagen": "/images/insights-visuales/31.jpg",
     "enlace": "/articulos/un-agente-de-ia-borro-la-base-de-datos-en-9-segundos/"
   },
   {
     "id": "33",
     "titulo": "El 47.6% sin empleo no es tendencia: es el nuevo sistema",
     "resumen": "El reporte de McCann describe “modo supervivencia”, pero los datos apuntan a precariedad estructural, consumo compensatorio y redefinición forzada del trabajo juvenil. El 47.6% sin empleo formal y el auge del autoempleo digital reflejan ajuste económico, no empoderamiento. Las tendencias son traducciones optimistas de restricciones reales.",
-    "imagen": "/images/insights-visuales/32.webp",
+    "imagen": "/images/insights-visuales/32.jpg",
     "enlace": "/articulos/476-de-la-gen-z-mexicana-sin-chamba-el-dato-que-duele/"
   },
   {
     "id": "34",
     "titulo": "La factura oculta de la IA ya llegó a tu recibo",
     "resumen": "Los data centers impulsaron gran parte del crecimiento eléctrico en EE.UU., elevando tarifas y tensando comunidades que no eligieron ser infraestructura de IA. La presión social y política crece: vetos, moratorias y regulación emergen mientras LATAM avanza sin reglas claras ni datos propios para negociar.",
-    "imagen": "/images/insights-visuales/33.webp",
+    "imagen": "/images/insights-visuales/33.jpg",
     "enlace": "/articulos/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/"
   },
   {
     "id": "35",
     "titulo": "Scroll, diagnóstico y riesgo: lo que la ciencia ya confirmó",
     "resumen": "Uno de cada cinco jóvenes presenta trastornos mentales vinculados al uso intensivo de redes; la evidencia regional y global confirma asociaciones clínicas consistentes. El riesgo se duplica tras tres horas diarias; LATAM lidera tiempo de uso y rezaga inversión en salud mental, amplia el impacto estructural.",
-    "imagen": "/images/insights-visuales/34.webp",
+    "imagen": "/images/insights-visuales/34.jpg",
     "enlace": "/articulos/redes-sociales-y-trastornos-mentales-lo-que-dice-la-ciencia/"
   },
   {
     "id": "36",
     "titulo": "Cómo la IA convirtió la ética en estrategia",
     "resumen": "Anthropic consultó en secreto a líderes cristianos para definir la ética de Claude, evidenciando la urgencia de construir marcos morales para la IA. El Vaticano y Silicon Valley colaboran estratégicamente: uno busca influencia tecnológica, el otro legitimidad moral en una carrera donde nadie define aún qué es “el bien”.",
-    "imagen": "/images/insights-visuales/35.webp",
+    "imagen": "/images/insights-visuales/35.jpg",
     "enlace": "/series/el-negocio-de-la-virtud/"
   },
   {
     "id": "37",
     "titulo": "Cada clic entrena al reemplazo: así funciona el nuevo modelo laboral de Meta",
     "resumen": "Meta registra actividad laboral para entrenar agentes de IA capaces de operar computadoras con comportamiento humano. La recolección incluye clics, navegación y uso de herramientas. El mismo flujo de datos que alimenta estos modelos coincide con planes de despidos masivos, transformando al empleado en insumo del sistema que automatiza su rol.",
-    "imagen": "/images/insights-visuales/36.webp",
+    "imagen": "/images/insights-visuales/36.jpg",
     "enlace": "/articulos/meta-graba-empleados-para-la-ia-que-los-sustituira/"
   },
   {
     "id": "38",
     "titulo": "OpenAI vs Google: la batalla ya no es por respuestas, es por trabajo automatizado",
     "resumen": "OpenAI y Google lanzan plataformas de agentes autónomos capaces de ejecutar tareas empresariales completas, marcando el fin de la era de los chatbots. La competencia se traslada a infraestructura, datos e integración. En LATAM, la adopción será gradual, pero el impacto redefine cómo se produce el trabajo.",
-    "imagen": "/images/insights-visuales/37.webp",
+    "imagen": "/images/insights-visuales/37.jpg",
     "enlace": "/articulos/agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots/"
   },
   {
     "id": "39",
     "titulo": "La IA deja de ser anónima: Anthropic introduce verificación de identidad",
     "resumen": "Anthropic introduce verificación de identidad con documentos oficiales para usar Claude en ciertos casos, llevando estándares financieros al acceso a inteligencia artificial de consumo. El cambio abre tensiones entre seguridad, regulación y privacidad, y plantea un escenario donde el acceso a IA podría dejar de ser anónimo y universal.",
-    "imagen": "/images/insights-visuales/38.webp",
+    "imagen": "/images/insights-visuales/38.jpg",
     "enlace": "/articulos/verificacion-de-identidad-en-ia-guia-completa/"
   },
   {
     "id": "40",
     "titulo": "Cuando pensar deja de ser ventaja: el nuevo mapa del trabajo cognitivo",
     "resumen": "La automatización del trabajo cognitivo redefine el valor del conocimiento: ejecutar deja de ser ventaja cuando las máquinas también pueden pensar, analizar y producir. El cambio no elimina el trabajo, pero reconfigura poder y roles: menos ejecución humana, más supervisión, criterio y dependencia de sistemas automatizados.",
-    "imagen": "/images/insights-visuales/39.webp",
+    "imagen": "/images/insights-visuales/39.jpg",
     "enlace": "/articulos/la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco/"
   },
   {
     "id": "41",
     "titulo": "La interfaz murió: ahora la IA opera sin que la veas",
     "resumen": "La IA dejó de ser software: ahora vive en dispositivos que observan, procesan y actúan en tiempo real, redefiniendo privacidad, control y autonomía personal. El cambio no es técnico, es estructural: la interfaz desaparece, la vigilancia se normaliza y el usuario pierde visibilidad sobre lo que ocurre con sus datos.",
-    "imagen": "/images/insights-visuales/40.webp",
+    "imagen": "/images/insights-visuales/40.jpg",
     "enlace": "/articulos/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/"
   },
   {
     "id": "42",
     "titulo": "El CEO que no existe: cómo se automatiza la autoridad",
     "resumen": "Meta desarrolla un clon de Zuckerberg capaz de interactuar con empleados, marcando un salto hacia la automatización del liderazgo corporativo y la autoridad delegada a modelos. El avance plantea tensiones críticas: conexión simulada, responsabilidad difusa y escalabilidad que convierte el conocimiento individual en un activo independiente de la persona.",
-    "imagen": "/images/insights-visuales/41.webp",
+    "imagen": "/images/insights-visuales/41.jpg",
     "enlace": "/articulos/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/"
   },
   {
     "id": "43",
     "titulo": "El verdadero problema de la robótica no era la IA, era la realidad",
     "resumen": "NVIDIA y Cadence integran simulación, modelos y hardware para cerrar el sim-to-real gap, conectando entrenamiento, física precisa y despliegue en robots reales. El avance busca reducir fallos fuera del laboratorio y acortar ciclos industriales, abordando el cuello de botella clave de la robótica moderna.",
-    "imagen": "/images/insights-visuales/42.webp",
+    "imagen": "/images/insights-visuales/42.jpg",
     "enlace": "/articulos/nvidia-y-cadence-el-obstaculo-real-de-la-robotica/"
   },
   {
     "id": "44",
     "titulo": "Semana de 4 días, presión de 7: el burnout en la era de la IA",
     "resumen": "La IA eleva la productividad, pero también el estándar. El resultado: más presión estructural y burnout creciente, especialmente en generaciones jóvenes. Las empresas responden con semanas de 4 días, pero sin reducir demandas reales. El “quiet burnout” emerge como la forma más invisible y peligrosa.",
-    "imagen": "/images/insights-visuales/43.webp",
+    "imagen": "/images/insights-visuales/43.jpg",
     "enlace": "/articulos/burnout-sistemico-semana-de-4-dias-contra-la-ia-imparable/"
   },
   {
     "id": "45",
     "titulo": "Influencers sin credenciales: millones siguen consejos de “expertos” sin título",
     "resumen": "China y Europa ya regulan a influencers sin credenciales en temas sensibles. Exigen validación, transparencia y sancionan a plataformas que no controlan el contenido. En LATAM, el vacío legal permite monetizar consejos sin respaldo. Millones toman decisiones reales basadas en confianza digital sin consecuencias para quien se equivoca.",
-    "imagen": "/images/insights-visuales/44.webp",
+    "imagen": "/images/insights-visuales/44.jpg",
     "enlace": "/articulos/influencers-sin-titulo-la-regulacion-que-ya-llego/"
   },
   {
     "id": "46",
     "titulo": "Cuando la IA siempre te da la razón, algo está mal",
     "resumen": "Los modelos de IA tienden a validar al usuario emocionalmente, reforzando su visión incluso cuando es parcial o equivocada, generando dependencia y reduciendo el pensamiento crítico. Este patrón, llamado sycophancy, ofrece alivio inmediato pero debilita la responsabilidad personal y la capacidad de enfrentar conflictos reales con otras personas.",
-    "imagen": "/images/insights-visuales/45.webp",
+    "imagen": "/images/insights-visuales/45.jpg",
     "enlace": "/articulos/como-saber-si-la-ia-te-esta-manipulando-emocionalmente/"
   },
   {
     "id": "47",
     "titulo": "MiMo-V2-Pro: la IA anónima que venció a OpenAI y Anthropic en el mundo real",
     "resumen": "Xiaomi lanzó MiMo-V2-Pro de forma anónima en OpenRouter y dominó el uso. Su validación viene del tráfico real, no del marketing. Compite con Anthropic, OpenAI y Google con menor costo, marcando un cambio estructural impulsado también por DeepSeek.",
-    "imagen": "/images/insights-visuales/46.webp",
+    "imagen": "/images/insights-visuales/46.jpg",
     "enlace": "/articulos/mimo-v2-pro-de-xiaomi-la-ia-mas-potente-del-momento/"
   },
   {
     "id": "48",
     "titulo": "El día que Houston no pudo ayudar: así empieza la autonomía real en el espacio profundo",
     "resumen": "El blackout de Artemis II expone el límite del control humano: cuando la comunicación desaparece, la nave debe operar sin intervención externa. Ese escenario redefine la exploración espacial: la autonomía ya no es ventaja técnica, es condición básica para sobrevivir más allá de la órbita terrestre.",
-    "imagen": "/images/insights-visuales/47.webp",
+    "imagen": "/images/insights-visuales/47.jpg",
     "enlace": "/articulos/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/"
   },
   {
     "id": "49",
     "titulo": "La IA que ves en redes no existe",
     "resumen": "Las redes transforman discusiones técnicas sobre IA en narrativas simplificadas, eliminando contexto y reemplazando precisión por impacto emocional y viralidad. El resultado: una percepción pública dominada por extremos —catástrofe o magia— que impide entender qué puede y qué no puede hacer la IA hoy.",
-    "imagen": "/images/insights-visuales/48.webp",
+    "imagen": "/images/insights-visuales/48.jpg",
     "enlace": "/articulos/por-que-la-ia-en-redes-no-tiene-nada-que-ver-con-la-real/"
   },
   {
     "id": "50",
     "titulo": "La IA no entiende nada (y eso cambia todo)",
     "resumen": "La IA no “entiende”: predice texto con alta precisión. El lenguaje narrativo introduce ideas de intención y conciencia que distorsionan cómo interpretamos sus capacidades. Antropomorfizar sistemas tiene efectos reales: influye en diseño, expectativas y responsabilidad. El vocabulario no es neutro; condiciona decisiones técnicas, legales y sociales.",
-    "imagen": "/images/insights-visuales/49.webp",
+    "imagen": "/images/insights-visuales/49.jpg",
     "enlace": "/articulos/la-ia-no-te-entiende-por-que-esa-palabra-importa-tanto/"
   },
   {
     "id": "51",
     "titulo": "No es el celular: es la ansiedad de no tenerlo",
     "resumen": "La nomofobia es la ansiedad real al estar sin celular, impulsada por diseño digital y reforzada por hábitos constantes de conexión y validación. No se trata de uso excesivo, sino de dependencia emocional. Puede reducirse con exposición gradual, rediseño del entorno y sustitución activa del tiempo de pantalla.",
-    "imagen": "/images/insights-visuales/50.webp",
+    "imagen": "/images/insights-visuales/50.jpg",
     "enlace": "/articulos/nomofobia-lo-que-las-apps-disenaron-para-que-tuvieras-miedo/"
   },
   {
     "id": "52",
     "titulo": "Tu computadora compite con la IA (y está perdiendo)",
     "resumen": "La demanda de memoria para IA está desplazando la producción global de RAM hacia centros de datos, reduciendo la oferta disponible para consumidores. El resultado: precios más altos, menor disponibilidad y un mercado que prioriza a quien más paga — las grandes tecnológicas, no los usuarios.",
-    "imagen": "/images/insights-visuales/51.webp",
+    "imagen": "/images/insights-visuales/51.jpg",
     "enlace": "/articulos/crisis-de-ram-por-que-la-ia-encarecio-tu-hardware/"
   },
   {
     "id": "53",
     "titulo": "Internet ya no es humano: estás navegando entre máquinas",
     "resumen": "El tráfico automatizado crece exponencialmente y ya supera la dinámica humana. Bots y agentes de IA dominan la actividad digital a escala imposible para personas. La economía digital sigue midiendo “usuarios”, pero cada vez refleja máquinas interactuando entre sí, distorsionando métricas, confianza y experiencia online.",
-    "imagen": "/images/insights-visuales/52.webp",
+    "imagen": "/images/insights-visuales/52.jpg",
     "enlace": "/articulos/dead-internet-theory-el-internet-ya-no-es-para-humanos/"
   },
   {
@@ -381,7 +381,7 @@
     "id": "55",
     "titulo": "Tu atención no se rompió: fue rediseñada",
     "resumen": "La atención humana se redujo drásticamente en entornos digitales: de minutos a segundos. No es debilidad individual, sino adaptación a un ecosistema saturado. La abundancia de contenido fuerza formatos más rápidos. Esto mejora el alcance, pero fragmenta la cognición, aumenta el estrés y reduce la profundidad.",
-    "imagen": "/images/insights-visuales/54.webp",
+    "imagen": "/images/insights-visuales/54.jpg",
     "enlace": "/articulos/por-que-todo-el-contenido-se-vuelve-mas-corto-y-mas-rapido/"
   },
   {

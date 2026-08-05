@@ -6,7 +6,7 @@ description: >-
   La promesa era clara: la inteligencia artificial reduciría la carga de
   trabajo, automatizaría lo tedioso y devolvería tiempo a las personas. Un nuevo
   estudio…
-heroImage: /images/posts/la-ia-no-te-da-mas-tiempo-libre-te-da-mas-trabajo/hero.webp
+heroImage: /images/posts/la-ia-no-te-da-mas-tiempo-libre-te-da-mas-trabajo/hero.jpg
 heroImageAlt: >-
   IA y carga laboral: mujer frente a laptop nocturna con tareas acumuladas en
   pantalla

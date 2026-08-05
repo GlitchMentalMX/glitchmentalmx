@@ -7,7 +7,7 @@ description: >-
   revelaron una crisis nueva: la IA generativa está creando desinformación
   visual a…
 heroImage: >-
-  /images/posts/los-incendios-de-la-expusieron-como-la-ia-genera-desinformacion-masiva/hero.webp
+  /images/posts/los-incendios-de-la-expusieron-como-la-ia-genera-desinformacion-masiva/hero.jpg
 heroImageAlt: >-
   Los incendios de Los Ángeles: mujer observa en móvil imágenes del incendio
   junto a ventana
@@ -38,7 +38,7 @@ X, Facebook, Instagram, TikTok, todas fallaron en moderar el contenido falso efe
 
 ## Cómo identificar imágenes generadas por IA
 
-![Los incendios de Los Ángeles: televisor muestra ciudad en llamas con red digital superpuesta](/images/posts/los-incendios-de-la-expusieron-como-la-ia-genera-desinformacion-masiva/1.webp)
+![Los incendios de Los Ángeles: televisor muestra ciudad en llamas con red digital superpuesta](/images/posts/los-incendios-de-la-expusieron-como-la-ia-genera-desinformacion-masiva/1.jpg)
 
   
 

@@ -6,7 +6,7 @@ description: >-
   El 22 de abril de 2026, OpenAI y Google lanzaron el mismo día sus respectivas
   plataformas de agentes autónomos para empresas. No fue coincidencia: ambas…
 heroImage: >-
-  /images/posts/agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots/hero.webp
+  /images/posts/agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots/hero.jpg
 heroImageAlt: >-
   Agentes de IA decisiones laborales: profesional camina entre sistemas
   automatizados con flujos de tareas
@@ -41,7 +41,7 @@ Lo que sí cambia hoy es el marco de la conversación. La pregunta ya no es si l
 
 ## Qué es un agente de IA y por qué es diferente a un chatbot
 
-![Agentes de IA en empresas: estación de trabajo vacía con dashboards activos entre dos escritorios](/images/posts/agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots/1.webp)
+![Agentes de IA en empresas: estación de trabajo vacía con dashboards activos entre dos escritorios](/images/posts/agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots/1.jpg)
 
   
 

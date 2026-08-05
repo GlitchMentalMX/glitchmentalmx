@@ -7,7 +7,7 @@ description: >-
   seguidores? ¿Cuando un TikTok bien hecho podía hacerse viral sin que tuvieras
   que…
 heroImage: >-
-  /images/posts/alcance-organico-en-redes-sociales-por-que-murio-y-quien-se-beneficia/hero.webp
+  /images/posts/alcance-organico-en-redes-sociales-por-que-murio-y-quien-se-beneficia/hero.jpg
 heroImageAlt: >-
   Hombre con megáfono frente a barreras de vidrio que reducen su alcance en una
   plaza pública, metáfora de la caída del alcance orgánico en redes.

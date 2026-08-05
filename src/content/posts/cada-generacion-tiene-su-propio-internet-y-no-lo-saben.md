@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:45:43.796Z
 description: >-
   La brecha digital en 2026 ya no es de acceso ni de habilidades: es semántica.
   Cada generación opera con definiciones incompatibles de tres conceptos…
-heroImage: /images/posts/cada-generacion-tiene-su-propio-internet-y-no-lo-saben/hero.webp
+heroImage: /images/posts/cada-generacion-tiene-su-propio-internet-y-no-lo-saben/hero.jpg
 heroImageAlt: >-
   Generaciones digitales: tres mujeres en el mismo espacio con capas de red
   incompatibles y una línea de flujo interrumpida
@@ -30,7 +30,7 @@ heroImageAlt: >-
 
 **Esto no es nihilismo ni descuido:** es la respuesta racional a un sistema que ya demostró que "comprar digital" no garantiza acceso permanente. La propiedad no desaparece para Gen Z — migra hacia objetos digitales escasos, ediciones limitadas, skins dentro de videojuegos, artículos de colección en plataformas cerradas donde la escasez sí está garantizada por diseño. Lo que cambia no es el deseo de poseer, sino el criterio para decidir qué objeto vale la pena poseer: ya no el formato físico, sino la garantía de que nadie puede revocar el acceso unilateralmente.
 
-![Generaciones digitales: tres dispositivos de distintas eras sobre superficie neutra con líneas de red que convergen sin tocarse](/images/posts/cada-generacion-tiene-su-propio-internet-y-no-lo-saben/1.webp)
+![Generaciones digitales: tres dispositivos de distintas eras sobre superficie neutra con líneas de red que convergen sin tocarse](/images/posts/cada-generacion-tiene-su-propio-internet-y-no-lo-saben/1.jpg)
 
 ## Identidad: de la marca personal al personaje contextual
 

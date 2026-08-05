@@ -5,7 +5,7 @@ updatedDate: 2026-05-06T13:57:26.316Z
 description: >-
   En los últimos años, los investigadores de OpenAI hacían fogatas y cantaban
   "Feel the AGI!" alrededor de ellas. No es una metáfora: es lo que reportó MIT…
-heroImage: /images/posts/el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron/hero.webp
+heroImage: /images/posts/el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron/hero.jpg
 heroImageAlt: >-
   El hype de la IA: mujer operando la impresión masiva de hojas con métricas y
   datos industriales
@@ -38,7 +38,7 @@ La IA generativa, por su parte, lleva desde 2024 en lo que Gartner llama el _Tro
 
   
 
-![El hype de la IA: pila de reportes impresos saliendo de máquina industrial](/images/posts/el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron/1.webp)
+![El hype de la IA: pila de reportes impresos saliendo de máquina industrial](/images/posts/el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron/1.jpg)
 
 ## Los números que no aparecen en los keynotes
 

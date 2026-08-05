@@ -5,7 +5,7 @@ updatedDate: 2026-06-13T01:19:23.723Z
 description: >-
   A ver, seamos honestos. Todos amamos a nuestros bots de IA. Son la herramienta
   más chingona que ha caído en nuestras manos desde el internet móvil. Copilot…
-heroImage: /images/posts/por-que-la-ia-alucina-como-funciona-realmente/hero.webp
+heroImage: /images/posts/por-que-la-ia-alucina-como-funciona-realmente/hero.jpg
 heroImageAlt: >-
   Mujer compara una pieza de rompecabezas incorrecta retirada por una máquina
   que rellenó un hueco con una forma plausible pero errónea.

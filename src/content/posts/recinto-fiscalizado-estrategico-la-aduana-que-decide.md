@@ -6,7 +6,7 @@ description: >-
   Desde enero de 2025, el Decreto Plan México da la misma deducción —41% a 91%—
   a cualquier estado, sector o nacionalidad. La ventaja real para atraer un
   data…
-heroImage: /images/posts/recinto-fiscalizado-estrategico-la-aduana-que-decide/hero.webp
+heroImage: /images/posts/recinto-fiscalizado-estrategico-la-aduana-que-decide/hero.jpg
 heroImageAlt: >-
   Múltiples sitios de construcción de centros de datos en distintos estados
   mexicanos, evidencia de la competencia fiscal interestatal.
@@ -31,7 +31,7 @@ No existe una cifra oficial y pública que diga cuántos RFE operan hoy en el pa
 
 ## El mecanismo real detrás de la ventaja
 
-![Planos arquitectónicos y documentos de incentivos fiscales sobre una mesa, referencia a la competencia entre estados por atraer inversión en IA.](/images/posts/recinto-fiscalizado-estrategico-la-aduana-que-decide/1.webp)
+![Planos arquitectónicos y documentos de incentivos fiscales sobre una mesa, referencia a la competencia entre estados por atraer inversión en IA.](/images/posts/recinto-fiscalizado-estrategico-la-aduana-que-decide/1.jpg)
 
   
 

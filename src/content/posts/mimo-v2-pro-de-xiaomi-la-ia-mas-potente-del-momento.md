@@ -6,7 +6,7 @@ description: >-
   En marzo de 2026, Xiaomi lanzó en silencio un modelo de IA bajo el nombre
   "Hunter Alpha" en OpenRouter. Sin firma, sin anuncio. A los pocos días se
   convirtió…
-heroImage: /images/posts/mimo-v2-pro-de-xiaomi-la-ia-mas-potente-del-momento/hero.webp
+heroImage: /images/posts/mimo-v2-pro-de-xiaomi-la-ia-mas-potente-del-momento/hero.jpg
 heroImageAlt: >-
   MiMo-V2-Pro de Xiaomi: ingeniera alineando módulos de hardware IA en
   laboratorio tecnológico
@@ -41,7 +41,7 @@ El modelo viene acompañado de dos variantes: MiMo-V2-Omni para tareas multimoda
 
 ## Comparativa directa con los modelos que compite
 
-![MiMo-V2-Pro de Xiaomi: unidades de cómputo alineadas en mesa industrial en entorno de pruebas](/images/posts/mimo-v2-pro-de-xiaomi-la-ia-mas-potente-del-momento/1.webp)
+![MiMo-V2-Pro de Xiaomi: unidades de cómputo alineadas en mesa industrial en entorno de pruebas](/images/posts/mimo-v2-pro-de-xiaomi-la-ia-mas-potente-del-momento/1.jpg)
 
   
 

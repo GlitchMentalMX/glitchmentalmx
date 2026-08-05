@@ -6,7 +6,7 @@ description: >-
   La economía de creadores creció 59% en 2025 hasta los 32.6 mil millones de
   dólares globales, según CreatorIQ. Pero la media de ingresos por campaña bajó.
   La…
-heroImage: /images/posts/economia-de-creadores-a-donde-va-el-dinero-realmente/hero.webp
+heroImage: /images/posts/economia-de-creadores-a-donde-va-el-dinero-realmente/hero.jpg
 heroImageAlt: >-
   economía de creadores 2026: creadora recibe pocas monedas desde embudo
   industrial
@@ -31,7 +31,7 @@ Lo interesante es que esta concentración aumenta mientras el mercado crece. Cre
 
 ## Las cuatro capas que se llevan tu dinero antes que tú
 
-![economía de creadores 2026: monedas filtradas por bandejas industriales en fábrica](/images/posts/economia-de-creadores-a-donde-va-el-dinero-realmente/1.webp)
+![economía de creadores 2026: monedas filtradas por bandejas industriales en fábrica](/images/posts/economia-de-creadores-a-donde-va-el-dinero-realmente/1.jpg)
 
   
 

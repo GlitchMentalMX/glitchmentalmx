@@ -7,7 +7,7 @@ description: >-
   en Silicon Valley prefieren no discutir: la brecha entre los modelos de EE.UU.
   y…
 heroImage: >-
-  /images/posts/stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver/hero.webp
+  /images/posts/stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver/hero.jpg
 heroImageAlt: >-
   Stanford AI Index 2026: mujer con pluma en pausa sobre columnas de datos
   impresos en escritorio con luz lateral

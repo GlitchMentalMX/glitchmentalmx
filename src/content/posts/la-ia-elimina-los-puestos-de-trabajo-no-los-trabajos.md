@@ -6,7 +6,7 @@ description: >-
   Hay una diferencia importante entre quedarse sin trabajo y que tu puesto de
   trabajo deje de existir. Y en 2026, lo segundo está pasando a una velocidad
   que…
-heroImage: /images/posts/la-ia-elimina-los-puestos-de-trabajo-no-los-trabajos/hero.webp
+heroImage: /images/posts/la-ia-elimina-los-puestos-de-trabajo-no-los-trabajos/hero.jpg
 heroImageAlt: >-
   IA y puestos de trabajo: mujer frente a organigrama con posiciones eliminadas
   en pared de oficina

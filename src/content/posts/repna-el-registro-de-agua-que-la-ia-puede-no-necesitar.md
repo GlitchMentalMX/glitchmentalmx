@@ -6,7 +6,7 @@ description: >-
   México va a revisar más de 500 mil concesiones de agua. El nuevo registro
   promete transparencia total sobre quién extrae qué. El problema: un centro de
   datos…
-heroImage: /images/posts/repna-el-registro-de-agua-que-la-ia-puede-no-necesitar/hero.webp
+heroImage: /images/posts/repna-el-registro-de-agua-que-la-ia-puede-no-necesitar/hero.jpg
 heroImageAlt: >-
   Vista aérea de embalses y acueductos mexicanos con overlay técnico,
   representando el consumo nacional de agua por centros de datos.
@@ -33,7 +33,7 @@ El director de Conagua, Efraín Morales López, ha repetido en distintas confere
 
 > México va a revisar 500 mil concesiones de agua en los próximos años, pero ese registro nunca preguntó cuánta agua bebe un centro de datos por la llave municipal.
 
-![Documentos de concesiones de agua apilados junto a una terminal de datos, referencia a la falta de auditoría nacional.](/images/posts/repna-el-registro-de-agua-que-la-ia-puede-no-necesitar/1.webp)
+![Documentos de concesiones de agua apilados junto a una terminal de datos, referencia a la falta de auditoría nacional.](/images/posts/repna-el-registro-de-agua-que-la-ia-puede-no-necesitar/1.jpg)
 
 ## El punto ciego que hereda de sus tres antecesores
 

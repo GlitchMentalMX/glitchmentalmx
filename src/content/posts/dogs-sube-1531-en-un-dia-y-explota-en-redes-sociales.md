@@ -6,7 +6,7 @@ description: >-
   El 24 de febrero de 2026 pasará a los registros como uno de esos días en los
   que el mercado cripto mostró sus dos caras al mismo tiempo. Mientras los
   activos…
-heroImage: /images/posts/dogs-sube-1531-en-un-dia-y-explota-en-redes-sociales/hero.webp
+heroImage: /images/posts/dogs-sube-1531-en-un-dia-y-explota-en-redes-sociales/hero.jpg
 heroImageAlt: >-
   $DOGS criptomoneda tendencia: hombre joven con teléfono rodeado de papeles en
   el suelo, luz lateral fría en habitación oscura

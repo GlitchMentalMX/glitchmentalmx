@@ -6,7 +6,7 @@ description: >-
   Casi toda política de IA responsable incluye una variante de la misma frase:
   "con un humano en el loop". La idea es que mientras haya supervisión humana,
   los…
-heroImage: /images/posts/el-problema-del-control-humano-en-ia-autonoma/hero.webp
+heroImage: /images/posts/el-problema-del-control-humano-en-ia-autonoma/hero.jpg
 heroImageAlt: >-
   Control humano IA autónoma: mujer con mano en interruptor desconectado frente
   a pantallas operativas en sala de monitoreo

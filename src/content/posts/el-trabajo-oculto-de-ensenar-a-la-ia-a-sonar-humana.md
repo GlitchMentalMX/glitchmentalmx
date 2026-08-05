@@ -5,7 +5,7 @@ updatedDate: 2026-04-01T12:16:54.495Z
 description: >-
   Alguien grabó sus recuerdos más dolorosos para que un asistente de voz suene
   más humano. Cobró hasta 600 dólares a la semana. Nadie sabe en qué producto…
-heroImage: /images/posts/el-trabajo-oculto-de-ensenar-a-la-ia-a-sonar-humana/hero.webp
+heroImage: /images/posts/el-trabajo-oculto-de-ensenar-a-la-ia-a-sonar-humana/hero.jpg
 heroImageAlt: >-
   enseñar a la IA a sonar humana: mujer grabando voz con micrófono para
   entrenamiento de modelos

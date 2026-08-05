@@ -7,7 +7,7 @@ description: >-
   marketing: en un mundo donde el algoritmo decide qué ves y cuándo lo ves, la
   única…
 heroImage: >-
-  /images/posts/gen-z-convirtio-el-2026-en-un-calendario-de-hype-programado/hero.webp
+  /images/posts/gen-z-convirtio-el-2026-en-un-calendario-de-hype-programado/hero.jpg
 heroImageAlt: >-
   Gen Z calendario hype 2026: mujer señalando pared cubierta de notas conectadas
   con hilo, iluminación lateral cinematográfica

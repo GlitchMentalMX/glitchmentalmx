@@ -7,7 +7,7 @@ description: >-
   sistema de IA puede representarse a sí mismo como un profesional de salud
   mental…
 heroImage: >-
-  /images/posts/tennessee-prohibe-la-ia-terapeuta-una-ley-que-llega-tarde/hero.webp
+  /images/posts/tennessee-prohibe-la-ia-terapeuta-una-ley-que-llega-tarde/hero.jpg
 heroImageAlt: >-
   Tennessee prohíbe la IA terapeuta: mujer frente a silla vacía con red digital
   fragmentada simulando conversación

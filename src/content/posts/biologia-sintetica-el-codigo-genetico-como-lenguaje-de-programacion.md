@@ -7,7 +7,7 @@ description: >-
   (Repeticiones Palindrómicas Cortas Agrupadas y Regularmente Interespaciadas,
   por sus…
 heroImage: >-
-  /images/posts/biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion/hero.webp
+  /images/posts/biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion/hero.jpg
 heroImageAlt: >-
   Biología sintética: investigadora manipulando microarreglo de ADN con pinzas
   en laboratorio
@@ -30,7 +30,7 @@ El mercado global de biología sintética crece a una tasa anual compuesta super
 
 ## Qué cambia y cuándo: medicina, agricultura y materiales
 
-![Biología sintética: microarreglo de ADN con secuencias resaltadas en análisis genético](/images/posts/biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion/1.webp)
+![Biología sintética: microarreglo de ADN con secuencias resaltadas en análisis genético](/images/posts/biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion/1.jpg)
 
   
 

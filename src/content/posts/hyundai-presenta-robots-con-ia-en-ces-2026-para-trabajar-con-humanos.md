@@ -7,7 +7,7 @@ description: >-
   robótica industrial impulsada por IA. La compañía, que adquirió Boston
   Dynamics en…
 heroImage: >-
-  /images/posts/hyundai-presenta-robots-con-ia-en-ces-2026-para-trabajar-con-humanos/hero.webp
+  /images/posts/hyundai-presenta-robots-con-ia-en-ces-2026-para-trabajar-con-humanos/hero.jpg
 heroImageAlt: >-
   Hyundai robots IA CES 2026: robot logístico levanta caja junto a estación de
   trabajo humana vacía

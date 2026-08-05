@@ -6,7 +6,7 @@ description: >-
   Después de cinco años sin actualización, Apple finalmente lanzó el AirTag 2 el
   27 de enero de 2026. La buena noticia es que el precio se mantiene en $29…
 heroImage: >-
-  /images/posts/airtag-2-apple-lanza-el-rastreador-con-chip-uwb-mejorado/hero.webp
+  /images/posts/airtag-2-apple-lanza-el-rastreador-con-chip-uwb-mejorado/hero.jpg
 heroImageAlt: >-
   AirTag 2: calibrador midiendo la bobina interna de un rastreador abierto sobre
   mesa técnica
@@ -31,7 +31,7 @@ Esta integración tiene sentido práctico. Si estás buscando tus llaves con las
 
 ## Altavoz 50% más potente y nuevo tono distintivo
 
-![AirTag 2: rastreador circular sobre superficie metálica, cable tenso saliendo del cuadro](/images/posts/airtag-2-apple-lanza-el-rastreador-con-chip-uwb-mejorado/1.webp)
+![AirTag 2: rastreador circular sobre superficie metálica, cable tenso saliendo del cuadro](/images/posts/airtag-2-apple-lanza-el-rastreador-con-chip-uwb-mejorado/1.jpg)
 
   
 

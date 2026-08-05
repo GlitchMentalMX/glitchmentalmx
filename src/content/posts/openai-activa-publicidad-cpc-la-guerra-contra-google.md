@@ -6,7 +6,7 @@ description: >-
   OpenAI no quiere solo ser el lugar donde la gente busca respuestas. Quiere
   cobrar por cada clic que esas respuestas generan. Desde el 21 de abril de
   2026,…
-heroImage: /images/posts/openai-activa-publicidad-cpc-la-guerra-contra-google/hero.webp
+heroImage: /images/posts/openai-activa-publicidad-cpc-la-guerra-contra-google/hero.jpg
 heroImageAlt: >-
   publicidad CPC ChatGPT: mujer organiza fotos en panel con flecha de selección
   de contenido

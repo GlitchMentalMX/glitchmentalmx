@@ -6,7 +6,7 @@ description: >-
   Snapchat acaba de lanzar una de las campañas más agresivas que hemos visto en
   años para capturar a los estudiantes universitarios de la Generación Z. Y los…
 heroImage: >-
-  /images/posts/snapchat-lanza-campana-explosiva-para-conquistar-gen-z-en-las-universidades/hero.webp
+  /images/posts/snapchat-lanza-campana-explosiva-para-conquistar-gen-z-en-las-universidades/hero.jpg
 heroImageAlt: >-
   Snapchat Gen Z universidades: mujer joven en pasillo universitario, cartel
   institucional desprendido de pared al fondo

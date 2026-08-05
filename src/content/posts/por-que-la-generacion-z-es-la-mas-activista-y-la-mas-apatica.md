@@ -7,7 +7,7 @@ description: >-
   climático en Instagram Stories mientras pide su tercer Uber Eats de la
   semana.…
 heroImage: >-
-  /images/posts/por-que-la-generacion-z-es-la-mas-activista-y-la-mas-apatica/hero.webp
+  /images/posts/por-que-la-generacion-z-es-la-mas-activista-y-la-mas-apatica/hero.jpg
 heroImageAlt: >-
   Joven revisa contenido ambiental en su teléfono mientras acumula bolsas de
   comida para llevar, reflejando consumo y activismo digital.

@@ -7,7 +7,7 @@ description: >-
   problema probablemente no es la IA. El problema es cómo le estás preguntando.
   La…
 heroImage: >-
-  /images/posts/mejores-prompts-para-chatgpt-en-2026-guia-practica-completa/hero.webp
+  /images/posts/mejores-prompts-para-chatgpt-en-2026-guia-practica-completa/hero.jpg
 heroImageAlt: >-
   Mejores prompts para ChatGPT: persona revisando libreta con apuntes frente a
   pared cubierta de notas
@@ -70,7 +70,7 @@ Para aprender idiomas: "Soy estudiante intermedio de inglés. Dame conversación
 
 ## Prompts para creatividad: escritura y generación de ideas
 
-![Mejores prompts para ChatGPT en 2026: guía práctica completa](/images/posts/mejores-prompts-para-chatgpt-en-2026-guia-practica-completa/1.webp)
+![Mejores prompts para ChatGPT en 2026: guía práctica completa](/images/posts/mejores-prompts-para-chatgpt-en-2026-guia-practica-completa/1.jpg)
 
   
 

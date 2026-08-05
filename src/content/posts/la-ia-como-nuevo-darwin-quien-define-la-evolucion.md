@@ -6,7 +6,7 @@ description: >-
   Los algoritmos de diseño proteico ya optimizan rasgos biológicos hacia
   objetivos definidos por sus creadores. La premisa de Darwin —la evolución como
   proceso…
-heroImage: /images/posts/la-ia-como-nuevo-darwin-quien-define-la-evolucion/hero.webp
+heroImage: /images/posts/la-ia-como-nuevo-darwin-quien-define-la-evolucion/hero.jpg
 heroImageAlt: >-
   La IA como nuevo Darwin: mujer en archivo tecnológico con panel de microchips
   evolutivos
@@ -35,7 +35,7 @@ heroImageAlt: >-
 
   
 
-![La IA como nuevo Darwin: mano selecciona microchip entre placas electrónicas sobre mesa](/images/posts/la-ia-como-nuevo-darwin-quien-define-la-evolucion/1.webp)
+![La IA como nuevo Darwin: mano selecciona microchip entre placas electrónicas sobre mesa](/images/posts/la-ia-como-nuevo-darwin-quien-define-la-evolucion/1.jpg)
 
 ## El escenario breeder y el escenario ecosystem
 

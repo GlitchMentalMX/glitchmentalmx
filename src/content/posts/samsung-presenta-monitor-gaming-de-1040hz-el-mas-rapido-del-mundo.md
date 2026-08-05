@@ -7,7 +7,7 @@ description: >-
   mundo con tasa de refresco de 1040Hz. Es el primer monitor comercial en
   romper…
 heroImage: >-
-  /images/posts/samsung-presenta-monitor-gaming-de-1040hz-el-mas-rapido-del-mundo/hero.webp
+  /images/posts/samsung-presenta-monitor-gaming-de-1040hz-el-mas-rapido-del-mundo/hero.jpg
 heroImageAlt: >-
   monitor gaming de 1040Hz: módulo negro conectado a decenas de cables en
   entorno tecnológico industrial

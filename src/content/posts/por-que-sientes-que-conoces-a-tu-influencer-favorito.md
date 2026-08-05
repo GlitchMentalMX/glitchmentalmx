@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:46:20.494Z
 description: >-
   La para-socialidad —el vínculo afectivo hacia alguien que no sabe que existes—
   no es una rareza psicológica ni una señal de ingenuidad digital. Es la…
-heroImage: /images/posts/por-que-sientes-que-conoces-a-tu-influencer-favorito/hero.webp
+heroImage: /images/posts/por-que-sientes-que-conoces-a-tu-influencer-favorito/hero.jpg
 heroImageAlt: >-
   Parasocial: mujer joven frente a diagrama de red en pared, nodos conectados,
   iluminación lateral neón
@@ -34,7 +34,7 @@ heroImageAlt: >-
 
 **El mecanismo del _cancel culture_ se vuelve más legible desde este encuadre.** Lo que parece una reacción colectiva desmedida ante el comportamiento de una figura pública es, en parte, el duelo amplificado de miles de personas que experimentaron una ruptura en algo que percibían como un vínculo real. No es solo desaprobación: es traición afectiva. Y la traición produce respuestas más intensas que la mera decepción de consumidor.
 
-![Relación parasocial: mano con smartphone, notificaciones repetidas en pantalla, luz lateral, fondo oscuro](/images/posts/por-que-sientes-que-conoces-a-tu-influencer-favorito/1.webp)
+![Relación parasocial: mano con smartphone, notificaciones repetidas en pantalla, luz lateral, fondo oscuro](/images/posts/por-que-sientes-que-conoces-a-tu-influencer-favorito/1.jpg)
 
 ## Treinta y dos mil millones de dólares de intimidad fabricada
 

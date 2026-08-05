@@ -6,7 +6,7 @@ description: >-
   NVIDIA presentó en CES 2026 una tecnología nueva llamada G-SYNC Pulsar que
   resuelve un problema que ha existido en monitores gaming durante más de una…
 heroImage: >-
-  /images/posts/nvidia-anuncia-g-sync-pulsar-claridad-de-1000hz-sin-sacrificar-suavidad/hero.webp
+  /images/posts/nvidia-anuncia-g-sync-pulsar-claridad-de-1000hz-sin-sacrificar-suavidad/hero.jpg
 heroImageAlt: >-
   Alt text SEO: G-SYNC Pulsar: rotor metálico giratorio conectado a banco de
   pruebas con equipos electrónicos

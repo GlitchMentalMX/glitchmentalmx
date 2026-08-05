@@ -6,7 +6,7 @@ description: >-
   Escribí una línea en GlitchMentalMX y cinco minutos después supe que tenía una
   novela. La línea era esta: "La neutralidad religiosa en IA no existe. La…
 heroImage: >-
-  /images/posts/por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia/hero.webp
+  /images/posts/por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia/hero.jpg
 heroImageAlt: >-
   Por qué escribí una novela: libro abierto con página desprendida entre
   registros documentales documentos pegados en una pared
@@ -19,7 +19,7 @@ Con este tema específico — **big tech, Vaticano, IA militarizada, fe como ins
 
 > Hay verdades que el periodismo puede demostrar pero no puede hacer sentir. La ficción anclada en hechos reales cierra esa distancia.
 
-![Por qué escribí una novela: hoja manuscrita emergiendo entre documentos y datos pegados a una pared de concreto](/images/posts/por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia/1.webp)
+![Por qué escribí una novela: hoja manuscrita emergiendo entre documentos y datos pegados a una pared de concreto](/images/posts/por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia/1.jpg)
 
   
 

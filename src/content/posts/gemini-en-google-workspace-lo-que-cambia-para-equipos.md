@@ -6,7 +6,7 @@ description: >-
   Si ya pagas Google Workspace Business o Enterprise, Gemini no es un gasto
   adicional — es una capa de IA que ya está incluida y que la mayoría de
   equipos…
-heroImage: /images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/hero.webp
+heroImage: /images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/hero.jpg
 heroImageAlt: >-
   Gemini en Google Workspace: organización de documentos en línea de trabajo
   colaborativa
@@ -21,7 +21,7 @@ Según el blog oficial de Microsoft 365 Copilot, la propuesta de Google tiene un
 
 ## Lo que Gemini puede hacer en cada aplicación de Workspace
 
-![Gemini en Google Workspace: conjuntos de documentos perfectamente bien organizados en un escritorio](/images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/1.webp)
+![Gemini en Google Workspace: conjuntos de documentos perfectamente bien organizados en un escritorio](/images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/1.jpg)
 
   
 
@@ -39,7 +39,7 @@ Una aclaración importante: Gemini en Workspace usa los modelos Gemini de Google
 
 ## Los casos de uso donde el impacto es más visible
 
-![Gemini en Google Workspace: mujer revisa documento impreso frente a pantalla con sugerencias generadas por IA](/images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/2.webp)
+![Gemini en Google Workspace: mujer revisa documento impreso frente a pantalla con sugerencias generadas por IA](/images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/2.jpg)
 
   
 

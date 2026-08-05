@@ -6,7 +6,7 @@ description: >-
   Apple tuvo una semana de anuncios del 2 al 4 de marzo de 2026, y la pregunta
   que todo mundo se hace es la misma de siempre: ¿vale la pena gastar? Esta vez
   la…
-heroImage: /images/posts/apple-2026-que-vale-la-pena-comprar-y-que-no/hero.webp
+heroImage: /images/posts/apple-2026-que-vale-la-pena-comprar-y-que-no/hero.jpg
 heroImageAlt: >-
   Apple 2026 qué comprar: mano desplazando dispositivos genéricos sobre mesa —
   uno centrado, otros apartados al costado
@@ -45,7 +45,7 @@ El iPad Air con chip M4 llega con 12GB de RAM, el chip N1 con Wi-Fi 7 y arranca 
 
 ¿Vale la pena frente al iPad Pro M5? Solo si necesitas ProMotion, pantalla OLED o conectividad Thunderbolt. Para todo lo demás, el Air gana.
 
-![Apple 2026 qué comprar: dispositivo genérico en foco y centrado junto a otro desplazado y difuso en superficie neutra](/images/posts/apple-2026-que-vale-la-pena-comprar-y-que-no/1.webp)
+![Apple 2026 qué comprar: dispositivo genérico en foco y centrado junto a otro desplazado y difuso en superficie neutra](/images/posts/apple-2026-que-vale-la-pena-comprar-y-que-no/1.jpg)
 
   
 

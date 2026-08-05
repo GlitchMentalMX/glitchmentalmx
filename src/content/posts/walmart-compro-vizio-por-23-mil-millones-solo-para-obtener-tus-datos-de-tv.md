@@ -7,7 +7,7 @@ description: >-
   presentación en CES 2026. Walmart compró Vizio por $2.3 mil millones
   principalmente…
 heroImage: >-
-  /images/posts/walmart-compro-vizio-por-23-mil-millones-solo-para-obtener-tus-datos-de-tv/hero.webp
+  /images/posts/walmart-compro-vizio-por-23-mil-millones-solo-para-obtener-tus-datos-de-tv/hero.jpg
 heroImageAlt: >-
   Walmart compró Vizio por datos de TV: usuaria frente a pantalla conectada a
   mapa de datos de visualización
@@ -36,7 +36,7 @@ El ejecutivo de Walmart dijo que esperan generar cientos de millones de dólares
 
 Todos los fabricantes principales de televisores inteligentes recolectan datos similares. **Samsung:** Llama a su sistema de ACR "SyncPlus". Recolecta datos comparables. **LG:** Sistema llamado "LivePlus". También rastrea todo. **Amazon Fire TV:** Integración profunda con ecosistema de publicidad de Amazon. **Roku:** Una de las plataformas más agresivas en recolección de datos. La diferencia es que otros fabricantes no admiten tan abiertamente que los datos son la razón principal del negocio. Walmart lo dijo directamente.
 
-![Walmart compró Vizio por datos de TV: televisor vinculado a perfiles de usuarios mediante flujo de datos](/images/posts/walmart-compro-vizio-por-23-mil-millones-solo-para-obtener-tus-datos-de-tv/1.webp)
+![Walmart compró Vizio por datos de TV: televisor vinculado a perfiles de usuarios mediante flujo de datos](/images/posts/walmart-compro-vizio-por-23-mil-millones-solo-para-obtener-tus-datos-de-tv/1.jpg)
 
 ## Cómo desactivar ACR en tu televisor
 

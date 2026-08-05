@@ -6,7 +6,7 @@ description: >-
   Yann LeCun, el ganador del Premio Turing que pasó años argumentando que los
   modelos de lenguaje grandes son un camino muerto para la inteligencia
   artificial,…
-heroImage: /images/posts/ami-labs-recauda-1030-millones-para-matar-a-los-llms/hero.webp
+heroImage: /images/posts/ami-labs-recauda-1030-millones-para-matar-a-los-llms/hero.jpg
 heroImageAlt: >-
   AMI Labs LLMs: hombre de traje trazando X sobre plano técnico en sala de
   juntas vacía, luz lateral dura

@@ -7,7 +7,7 @@ description: >-
   inteligencia artificial para generación de video que está generando tanto
   asombro como…
 heroImage: >-
-  /images/posts/ia-de-tiktok-genera-deepfakes-que-alarman-a-autoridades/hero.webp
+  /images/posts/ia-de-tiktok-genera-deepfakes-que-alarman-a-autoridades/hero.jpg
 heroImageAlt: >-
   Deepfakes menores: mujer frente a tablet con luz fría en cocina doméstica,
   expresión de reconocimiento interrumpido

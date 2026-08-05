@@ -6,7 +6,7 @@ description: >-
   Mientras todos estaban obsesionados con el drama de TikTok y su ban en Estados
   Unidos, Threads de Meta silenciosamente cruzó 400 millones de usuarios
   activos…
-heroImage: /images/posts/threads-supero-400m-de-usuarios-y-nadie-habla-de-eso/hero.webp
+heroImage: /images/posts/threads-supero-400m-de-usuarios-y-nadie-habla-de-eso/hero.jpg
 heroImageAlt: >-
   Mujer observa una multitud que usa discretamente la misma app en una plaza
   urbana, reflejando el crecimiento silencioso de una red social.

@@ -6,7 +6,7 @@ description: >-
   Un data center en Mérida no compite por más energía: compite por un tubo fijo.
   La península de Yucatán es un subsistema eléctrico casi aislado, y ese dato…
 heroImage: >-
-  /images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/hero.webp
+  /images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/hero.jpg
 heroImageAlt: >-
   Subestación eléctrica y torres de transmisión en el paisaje calizo de Yucatán,
   donde el límite de infraestructura es eléctrico y no hídrico.
@@ -35,7 +35,7 @@ Esto importa porque un generador diseñado exclusivamente para gas natural queda
 
 ## Importar energía del resto del país también tiene un tope
 
-![Transformador eléctrico con indicador de carga cercana al límite en Yucatán, evidencia del cuello de botella energético.](/images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/1.webp)
+![Transformador eléctrico con indicador de carga cercana al límite en Yucatán, evidencia del cuello de botella energético.](/images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/1.jpg)
 
   
 

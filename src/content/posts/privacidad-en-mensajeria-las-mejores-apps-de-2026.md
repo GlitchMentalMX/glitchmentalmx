@@ -6,7 +6,7 @@ description: >-
   Esta semana TikTok confirmó públicamente algo que muchos no sabían: sus
   mensajes directos no tienen cifrado de extremo a extremo y no lo tendrán. La
   noticia…
-heroImage: /images/posts/privacidad-en-mensajeria-las-mejores-apps-de-2026/hero.webp
+heroImage: /images/posts/privacidad-en-mensajeria-las-mejores-apps-de-2026/hero.jpg
 heroImageAlt: >-
   Privacidad mensajería 2026: mujer envía mensaje visible en pantalla sin
   cifrado
@@ -35,7 +35,7 @@ La distinción importa especialmente en tres escenarios: cuando compartes inform
 
 **Facebook Messenger** activó el E2EE por defecto en todos los chats individuales en 2023, y ese cifrado se mantiene sin cambios. Instagram Direct es distinto: Meta anunció que a partir del 8 de mayo de 2026 retirará el E2EE de los DMs de Instagram, citando obligaciones legales (Take It Down Act) y prevención de fraude. Es decir, Instagram Direct va en la dirección contraria a Messenger.
 
-![Mujer sostiene un celular con un mensaje visible al enviarlo, mostrando la falta de cifrado en una app de mensajería](/images/posts/privacidad-en-mensajeria-las-mejores-apps-de-2026/1.webp)
+![Mujer sostiene un celular con un mensaje visible al enviarlo, mostrando la falta de cifrado en una app de mensajería](/images/posts/privacidad-en-mensajeria-las-mejores-apps-de-2026/1.jpg)
 
   
 

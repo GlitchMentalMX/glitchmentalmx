@@ -7,7 +7,7 @@ description: >-
   Estados Unidos, apenas el 12.8%. Ese dato —extraído del reporte del Programa
   de…
 heroImage: >-
-  /images/posts/el-adn-como-codigo-quien-controla-el-software-de-la-vida/hero.webp
+  /images/posts/el-adn-como-codigo-quien-controla-el-software-de-la-vida/hero.jpg
 heroImageAlt: >-
   El ADN como código: hombre inspeccionando un modelo de doble hélice de ADN
   mecánica frente a archivos biométricos
@@ -36,7 +36,7 @@ heroImageAlt: >-
 
   
 
-![El ADN como código: modelo de doble hélice de ADN mecánica ensamblada sobre banco de trabajo industrial](/images/posts/el-adn-como-codigo-quien-controla-el-software-de-la-vida/1.webp)
+![El ADN como código: modelo de doble hélice de ADN mecánica ensamblada sobre banco de trabajo industrial](/images/posts/el-adn-como-codigo-quien-controla-el-software-de-la-vida/1.jpg)
 
 ## Las patentes que mandan en la vida
 

@@ -7,7 +7,7 @@ description: >-
   pregunta real no es si puedes descargar el modelo — es quién decide cómo,
   cuándo y…
 heroImage: >-
-  /images/posts/ia-open-source-vs-propietaria-quien-controla-los-modelos/hero.webp
+  /images/posts/ia-open-source-vs-propietaria-quien-controla-los-modelos/hero.jpg
 heroImageAlt: >-
   IA open source vs propietaria: mujer ante dos monitores con terminal activa y
   panel bloqueado en espacio técnico con luz de pantalla
@@ -28,7 +28,7 @@ GPT-5, Claude, Gemini — estos modelos no pretenden ser abiertos. No hay paper 
 
 Para las empresas que los adoptan, la consecuencia práctica es el _vendor lock-in_: dependencia de un proveedor cuyos precios, condiciones y continuidad quedan fuera de su control. Según una encuesta de Zapier publicada en 2026 con ejecutivos de empresas que ya desplegaron IA, el 81% de los líderes empresariales está al menos algo preocupados por la dependencia de sus organizaciones en proveedores específicos de IA.
 
-![IA open source vs propietaria: mano activa sobre teclado y mano detenida sobre superficie oscura con luz de pantalla](/images/posts/ia-open-source-vs-propietaria-quien-controla-los-modelos/1.webp)
+![IA open source vs propietaria: mano activa sobre teclado y mano detenida sobre superficie oscura con luz de pantalla](/images/posts/ia-open-source-vs-propietaria-quien-controla-los-modelos/1.jpg)
 
   
 

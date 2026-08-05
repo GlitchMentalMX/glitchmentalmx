@@ -6,7 +6,7 @@ description: >-
   China bloqueó hoy la adquisición de Manus por parte de Meta, una operación
   valuada en más de 2,000 millones de dólares. El veto no protege a la startup —
   la…
-heroImage: /images/posts/china-veto-a-manus-soberania-tecnologica-como-trampa/hero.webp
+heroImage: /images/posts/china-veto-a-manus-soberania-tecnologica-como-trampa/hero.jpg
 heroImageAlt: >-
   China vetó a Manus: mujer entre dos puertas industriales enfrentadas en
   pasillo metálico

@@ -6,7 +6,7 @@ description: >-
   El meme político no es entretenimiento con un lado oscuro. Es una tecnología
   de transmisión ideológica que comprime un encuadre cognitivo en un formato
   que…
-heroImage: /images/posts/los-memes-no-son-chistes-son-el-lenguaje-del-poder/hero.webp
+heroImage: /images/posts/los-memes-no-son-chistes-son-el-lenguaje-del-poder/hero.jpg
 heroImageAlt: >-
   Los memes no son chistes: mujer usando smartphone rodeada de marcos digitales
   superpuestos
@@ -29,7 +29,7 @@ heroImageAlt: >-
 
 ## Velocidad de replicación vs. velocidad de verificación
 
-![Los memes no son chistes: marcos rectangulares superpuestos como encuadres cognitivos](/images/posts/los-memes-no-son-chistes-son-el-lenguaje-del-poder/1.webp)
+![Los memes no son chistes: marcos rectangulares superpuestos como encuadres cognitivos](/images/posts/los-memes-no-son-chistes-son-el-lenguaje-del-poder/1.jpg)
 
 **El problema estructural del meme político no es que mienta, sino que viaja más rápido que cualquier corrección.** El tiempo entre que un meme se vuelve viral y que existe una refutación verificable puede medirse en horas o días. Para entonces, el meme ha completado su ciclo de infección: pico de actividad, descenso gradual y depósito cognitivo en todos los que lo vieron. Los memes no convencen en el momento: instalan encuadres que se activan después, cuando el usuario procesa información sobre el mismo tema.
 

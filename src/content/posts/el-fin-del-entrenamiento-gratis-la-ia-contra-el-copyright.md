@@ -7,7 +7,7 @@ description: >-
   en internet y respondieron a cualquier reclamo con la misma palabra: fair
   use.…
 heroImage: >-
-  /images/posts/el-fin-del-entrenamiento-gratis-la-ia-contra-el-copyright/hero.webp
+  /images/posts/el-fin-del-entrenamiento-gratis-la-ia-contra-el-copyright/hero.jpg
 heroImageAlt: >-
   IA contra el copyright: robot escanea y procesa libros físicos en sistema
   automatizado de digitalización

@@ -5,7 +5,7 @@ updatedDate: 2026-06-03T23:38:03.460Z
 description: >-
   Una red neuronal no es magia ni una réplica digital del cerebro humano: es un
   sistema de decisiones encadenadas que aprende por ensayo y error a escala…
-heroImage: /images/posts/redes-neuronales-explicadas-sin-matematicas-ni-hype/hero.webp
+heroImage: /images/posts/redes-neuronales-explicadas-sin-matematicas-ni-hype/hero.jpg
 heroImageAlt: >-
   Redes neuronales explicadas: técnica conecta nodo activo en una red de
   múltiples enlaces
@@ -34,7 +34,7 @@ Una red neuronal no es magia ni una réplica digital del cerebro humano: es un s
 
 ## Qué significa entrenar un modelo
 
-![Redes neuronales explicadas: conexiones de red física con nodo activo entre múltiples enlaces](/images/posts/redes-neuronales-explicadas-sin-matematicas-ni-hype/1.webp)
+![Redes neuronales explicadas: conexiones de red física con nodo activo entre múltiples enlaces](/images/posts/redes-neuronales-explicadas-sin-matematicas-ni-hype/1.jpg)
 
   
 

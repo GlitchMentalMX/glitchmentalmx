@@ -6,7 +6,7 @@ description: >-
   El rumor del teléfono de OpenAI se cubre como si fuera la próxima guerra
   contra Apple. Es el ángulo equivocado. Lo que el reporte del analista Ming-Chi
   Kuo…
-heroImage: /images/posts/openai-necesita-hardware-la-trampa-del-modelo-de-ia/hero.webp
+heroImage: /images/posts/openai-necesita-hardware-la-trampa-del-modelo-de-ia/hero.jpg
 heroImageAlt: >-
   OpenAI necesita hardware: mujer analiza dispositivo en almacén lleno de
   unidades alineadas
@@ -35,7 +35,7 @@ La cadena de suministro que describe Kuo no es especulativa. Luxshare ensambla A
 
   
 
-![OpenAI necesita hardware: estantería industrial con dispositivos idénticos y un espacio vacío](/images/posts/openai-necesita-hardware-la-trampa-del-modelo-de-ia/1.webp)
+![OpenAI necesita hardware: estantería industrial con dispositivos idénticos y un espacio vacío](/images/posts/openai-necesita-hardware-la-trampa-del-modelo-de-ia/1.jpg)
 
 ##   
 

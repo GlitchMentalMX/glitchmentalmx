@@ -7,7 +7,7 @@ description: >-
   navegar internet y completar tareas de forma autónoma. No es chatbot que
   responde…
 heroImage: >-
-  /images/posts/openai-lanzo-operator-el-agente-de-ia-que-navega-internet-por-ti/hero.webp
+  /images/posts/openai-lanzo-operator-el-agente-de-ia-que-navega-internet-por-ti/hero.jpg
 heroImageAlt: >-
   OpenAI Operator agente IA: hombre observa cursor completar formulario solo en
   escritorio de oficina

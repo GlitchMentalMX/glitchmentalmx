@@ -7,7 +7,7 @@ description: >-
   interactúe con sus empleados en su lugar. El avatar, entrenado en sus
   declaraciones…
 heroImage: >-
-  /images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/hero.webp
+  /images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/hero.jpg
 heroImageAlt: >-
   El CEO digital: mujer tomando notas frente a videollamada con ejecutivo en
   pantalla en oficina
@@ -28,7 +28,7 @@ El banco suizo UBS fue más lejos aún. Según reportó _Swissinfo_ en mayo de 2
 
 > El problema no es que la IA imite a un ejecutivo. El problema es que, una vez que la imitación es suficientemente buena, nadie puede confirmar si la autoridad que ejerce es real o estadística.
 
-![El CEO digital: tablet con videollamada ocupando silla principal en sala de juntas vacía](/images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/1.webp)
+![El CEO digital: tablet con videollamada ocupando silla principal en sala de juntas vacía](/images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/1.jpg)
 
 ## Por qué esto no es solo una anécdota tecnológica
 

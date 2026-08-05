@@ -6,7 +6,7 @@ description: >-
   No hace falta un implante quirúrgico para que alguien comercie con tu
   actividad cerebral. Basta una diadema EEG (electroencefalografía, la técnica
   que…
-heroImage: /images/posts/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/hero.webp
+heroImage: /images/posts/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/hero.jpg
 heroImageAlt: >-
   Neurodatos: mujer con diadema de bienestar conectada a red de hilos de luz
   dispersos, mercado de datos cerebrales sin regulación
@@ -21,7 +21,7 @@ heroImageAlt: >-
 
 ## Lo que dice la letra chica de tu diadema
 
-![Neurodatos: mujer en una sala con diadema conectada a red de hilos de luz dispersos, mercado de datos cerebrales sin regulación](/images/posts/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/1.webp)
+![Neurodatos: mujer en una sala con diadema conectada a red de hilos de luz dispersos, mercado de datos cerebrales sin regulación](/images/posts/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/1.jpg)
 
   
 

@@ -5,7 +5,7 @@ updatedDate: 2026-06-23T16:58:40.240Z
 description: >-
   Cuando ChatGPT llegó a finales de 2022, la novedad era que una IA podía
   escribir textos, resumir documentos y responder preguntas con una fluidez…
-heroImage: /images/posts/ia-agentica-en-2026-que-es-y-como-cambia-tu-trabajo/hero.webp
+heroImage: /images/posts/ia-agentica-en-2026-que-es-y-como-cambia-tu-trabajo/hero.jpg
 heroImageAlt: >-
   IA agéntica 2026: escritorio activo con silla vacía y mujer entrando al cuadro
   observando tareas ejecutadas solas
@@ -30,7 +30,7 @@ Lo que hace posible este ciclo es la combinación de tres componentes: un modelo
 
 ## Ejemplos concretos de lo que ya hace la IA agéntica
 
-![IA agéntica 2026: teclado y trackpad con tarea completada en pantalla y taza de café sin tocar sobre el escritorio](/images/posts/ia-agentica-en-2026-que-es-y-como-cambia-tu-trabajo/1.webp)
+![IA agéntica 2026: teclado y trackpad con tarea completada en pantalla y taza de café sin tocar sobre el escritorio](/images/posts/ia-agentica-en-2026-que-es-y-como-cambia-tu-trabajo/1.jpg)
 
   
 

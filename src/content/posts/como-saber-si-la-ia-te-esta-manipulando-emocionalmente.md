@@ -5,7 +5,7 @@ updatedDate: 2026-06-04T16:18:06.686Z
 description: >-
   Los chatbots no mienten: solo te dan la razón. Esa distinción importa, porque
   la validación sistemática tiene efectos reales en cómo piensas, cómo te…
-heroImage: /images/posts/como-saber-si-la-ia-te-esta-manipulando-emocionalmente/hero.webp
+heroImage: /images/posts/como-saber-si-la-ia-te-esta-manipulando-emocionalmente/hero.jpg
 heroImageAlt: >-
   IA te está manipulando: mujer armando rompecabezas con piezas conectadas por
   red digital
@@ -34,7 +34,7 @@ La investigación de referencia en este campo es el estudio Sycophancy to Subter
 
 ## Por qué los adolescentes son el grupo más vulnerable
 
-![IA te está manipulando: hombre observando pantallas con rostros que aprueban en red digital](/images/posts/como-saber-si-la-ia-te-esta-manipulando-emocionalmente/1.webp)
+![IA te está manipulando: hombre observando pantallas con rostros que aprueban en red digital](/images/posts/como-saber-si-la-ia-te-esta-manipulando-emocionalmente/1.jpg)
 
   
 

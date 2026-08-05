@@ -7,7 +7,7 @@ description: >-
   desigualdades de sus datos de entrenamiento— no es una hipótesis académica.
   Es…
 heroImage: >-
-  /images/posts/cuando-el-algoritmo-discrimina-cuatro-casos-documentados/hero.webp
+  /images/posts/cuando-el-algoritmo-discrimina-cuatro-casos-documentados/hero.jpg
 heroImageAlt: >-
   Cuando el algoritmo discrimina: sistema automatizado evalúa expedientes bajo
   supervisión humana
@@ -38,7 +38,7 @@ heroImageAlt: >-
 
   
 
-![Cuando el algoritmo discrimina: clasificador automatizado separa expedientes en proceso de decisión](/images/posts/cuando-el-algoritmo-discrimina-cuatro-casos-documentados/1.webp)
+![Cuando el algoritmo discrimina: clasificador automatizado separa expedientes en proceso de decisión](/images/posts/cuando-el-algoritmo-discrimina-cuatro-casos-documentados/1.jpg)
 
 ## Apple Card y el crédito invisible: el algoritmo que actúa como si supiera tu género
 

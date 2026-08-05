@@ -7,7 +7,7 @@ description: >-
   detalle que casi nadie en español destacó: la empresa clasificó el modelo como
   riesgo…
 heroImage: >-
-  /images/posts/openai-sabe-que-gpt-55-es-un-riesgo-alto-y-lo-lanzo-igual/hero.webp
+  /images/posts/openai-sabe-que-gpt-55-es-un-riesgo-alto-y-lo-lanzo-igual/hero.jpg
 heroImageAlt: >-
   GPT-5.5 alto riesgo ciberseguridad: persona sube hacia compuerta blindada
   sujeta por cable que limita acceso
@@ -32,7 +32,7 @@ El precio de acceso vía API es de **$5 por millón de tokens de entrada y $30 p
 
   
 
-![OpenAI GPT-5.5 alto riesgo: bóveda entreabierta con luz contenida por cable de seguridad](/images/posts/openai-sabe-que-gpt-55-es-un-riesgo-alto-y-lo-lanzo-igual/1.webp)
+![OpenAI GPT-5.5 alto riesgo: bóveda entreabierta con luz contenida por cable de seguridad](/images/posts/openai-sabe-que-gpt-55-es-un-riesgo-alto-y-lo-lanzo-igual/1.jpg)
 
   
 

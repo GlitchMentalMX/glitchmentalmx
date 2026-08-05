@@ -7,7 +7,7 @@ description: >-
   como una inversión de futuro. En 2026, ese futuro llegó y trajo una
   consecuencia…
 heroImage: >-
-  /images/posts/accenture-y-meta-redisenan-el-empleo-con-metricas-de-ia-reales/hero.webp
+  /images/posts/accenture-y-meta-redisenan-el-empleo-con-metricas-de-ia-reales/hero.jpg
 heroImageAlt: >-
   métricas IA empleo: mujer revisando documento de evaluación con línea
   destacada, segunda hoja boca abajo sobre escritorio

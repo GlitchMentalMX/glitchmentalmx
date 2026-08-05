@@ -7,7 +7,7 @@ description: >-
   inflexión en la industria tecnológica. No por los gadgets individuales, que
   fueron…
 heroImage: >-
-  /images/posts/ces-2026-la-ia-conecto-tu-refrigerador-con-tu-auto-sin-pedirlo/hero.webp
+  /images/posts/ces-2026-la-ia-conecto-tu-refrigerador-con-tu-auto-sin-pedirlo/hero.jpg
 heroImageAlt: >-
   CES 2026 ecosistema IA: mujer en umbral de cocina, refrigerador con panel
   activo y llave de auto sobre mostrador

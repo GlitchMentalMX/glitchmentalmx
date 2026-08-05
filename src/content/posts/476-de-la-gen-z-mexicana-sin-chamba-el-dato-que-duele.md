@@ -6,7 +6,7 @@ description: >-
   McCann México publicó su reporte de tendencias para 2026 y llamó "modo
   supervivencia" al consumidor mexicano del año. Para 47.6% de la Gen Z mexicana
   sin…
-heroImage: /images/posts/476-de-la-gen-z-mexicana-sin-chamba-el-dato-que-duele/hero.webp
+heroImage: /images/posts/476-de-la-gen-z-mexicana-sin-chamba-el-dato-que-duele/hero.jpg
 heroImageAlt: >-
   consumidor 2026 modo supervivencia: mujer con bolsa de alimentos revisa app
   frente a panel de perfiles conectados
@@ -37,7 +37,7 @@ El **"Mixternal"**, irónicamente, es el insight más honesto del reporte. Cuand
 
 ## El dato del 47.6%
 
-![consumidor 2026 modo supervivencia: mapa en papel con red de personas y conexiones analíticas](/images/posts/476-de-la-gen-z-mexicana-sin-chamba-el-dato-que-duele/1.webp)
+![consumidor 2026 modo supervivencia: mapa en papel con red de personas y conexiones analíticas](/images/posts/476-de-la-gen-z-mexicana-sin-chamba-el-dato-que-duele/1.jpg)
 
   
 

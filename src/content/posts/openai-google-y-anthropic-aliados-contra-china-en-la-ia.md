@@ -7,7 +7,7 @@ description: >-
   pública acordaron el 6 de abril de 2026 compartir su inteligencia de seguridad
   más…
 heroImage: >-
-  /images/posts/openai-google-y-anthropic-aliados-contra-china-en-la-ia/hero.webp
+  /images/posts/openai-google-y-anthropic-aliados-contra-china-en-la-ia/hero.jpg
 heroImageAlt: >-
   OpenAI Google Anthropic IA: ingeniera ajustando núcleo tecnológico con brazos
   robóticos en laboratorio

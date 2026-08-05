@@ -6,7 +6,7 @@ description: >-
   Boeing prueba fallas estructurales en aviones que no existen todavía. Siemens
   optimiza líneas de manufactura sin detener la producción. Ciudades como…
 heroImage: >-
-  /images/posts/gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse/hero.webp
+  /images/posts/gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse/hero.jpg
 heroImageAlt: >-
   Gemelos digitales: ingeniera ajustando maqueta física con modelo digital
   flotante sincronizado
@@ -29,7 +29,7 @@ El mercado global de gemelos digitales —estimado por Gartner en 183,000 millon
 
 ## Qué cambia y cuándo: tres horizontes de adopción
 
-![Gemelos digitales: plano industrial con réplica virtual superpuesta de planta en diseño](/images/posts/gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse/1.webp)
+![Gemelos digitales: plano industrial con réplica virtual superpuesta de planta en diseño](/images/posts/gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse/1.jpg)
 
   
 

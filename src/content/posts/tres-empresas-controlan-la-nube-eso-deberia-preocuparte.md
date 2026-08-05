@@ -6,7 +6,7 @@ description: >-
   Amazon Web Services, Microsoft Azure y Google Cloud Platform. Tres empresas,
   las tres con sede en Estados Unidos, las tres sujetas a la jurisdicción legal…
 heroImage: >-
-  /images/posts/tres-empresas-controlan-la-nube-eso-deberia-preocuparte/hero.webp
+  /images/posts/tres-empresas-controlan-la-nube-eso-deberia-preocuparte/hero.jpg
 heroImageAlt: >-
   Tres empresas controlan la nube: tres centros de datos sobre mapa
   interconectado supervisado por operadora
@@ -27,7 +27,7 @@ La concentración tiene también una dimensión geopolítica que se volvió visi
 
 ## Qué cambia y cuándo: tres presiones sobre el modelo actual
 
-![Tres empresas controlan la nube: mapa con tres nodos de servidores conectando infraestructura global](/images/posts/tres-empresas-controlan-la-nube-eso-deberia-preocuparte/1.webp)
+![Tres empresas controlan la nube: mapa con tres nodos de servidores conectando infraestructura global](/images/posts/tres-empresas-controlan-la-nube-eso-deberia-preocuparte/1.jpg)
 
   
 

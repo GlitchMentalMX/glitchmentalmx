@@ -5,7 +5,7 @@ updatedDate: 2026-06-15T13:34:05.358Z
 description: >-
   México se ha consolidado como el destino predilecto del trabajo remoto global
   en el 2026, impulsado por una Copa Mundial que está funcionando como el imán…
-heroImage: /images/posts/mundial-2026-nomadas-digitales-inundan-mexico-este-ano/hero.webp
+heroImage: /images/posts/mundial-2026-nomadas-digitales-inundan-mexico-este-ano/hero.jpg
 heroImageAlt: >-
   Mundial 2026 nómadas digitales: mujer en azotea conectándose a red WiFi global
   sobre ciudad urbana

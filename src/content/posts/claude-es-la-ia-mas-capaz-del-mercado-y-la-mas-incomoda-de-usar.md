@@ -6,7 +6,7 @@ description: >-
   Claude es la única herramienta de IA del mercado con una Constitución. No una
   política de uso. No un párrafo de términos y condiciones. Un documento de…
 heroImage: >-
-  /images/posts/claude-es-la-ia-mas-capaz-del-mercado-y-la-mas-incomoda-de-usar/hero.webp
+  /images/posts/claude-es-la-ia-mas-capaz-del-mercado-y-la-mas-incomoda-de-usar/hero.jpg
 heroImageAlt: >-
   Claude AI: mujer abriendo puerta con control de acceso digital en entorno
   tecnológico seguro
@@ -51,7 +51,7 @@ La Constitución de Claude establece restricciones absolutas — lo que el docum
 
   
 
-![Claude AI: libro abierto con marcador luminoso que señala acceso y consulta de información](/images/posts/claude-es-la-ia-mas-capaz-del-mercado-y-la-mas-incomoda-de-usar/1.webp)
+![Claude AI: libro abierto con marcador luminoso que señala acceso y consulta de información](/images/posts/claude-es-la-ia-mas-capaz-del-mercado-y-la-mas-incomoda-de-usar/1.jpg)
 
 ## Claude Code y Claude Cowork: herramientas agénticas
 

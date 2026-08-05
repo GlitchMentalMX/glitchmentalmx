@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:45:05.695Z
 description: >-
   El 26 de octubre de 2009, Yahoo apagó Geocities. No fue obsolescencia: fue una
   fecha en el calendario corporativo. Desaparecieron más de 38 millones de…
-heroImage: /images/posts/lo-que-se-pierde-cuando-muere-una-plataforma-digital/hero.webp
+heroImage: /images/posts/lo-que-se-pierde-cuando-muere-una-plataforma-digital/hero.jpg
 heroImageAlt: >-
   plataforma digital: mujer arrodillada frente a muro con capturas web
   conectadas por hilos
@@ -28,7 +28,7 @@ heroImageAlt: >-
 
 ## El Internet Archive: la única memoria que existe, bajo ataque
 
-![plataforma digital: capturas web deterioradas apiladas con pantallas antiguas y enlaces físicos](/images/posts/lo-que-se-pierde-cuando-muere-una-plataforma-digital/1.webp)
+![plataforma digital: capturas web deterioradas apiladas con pantallas antiguas y enlaces físicos](/images/posts/lo-que-se-pierde-cuando-muere-una-plataforma-digital/1.jpg)
 
   
 

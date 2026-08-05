@@ -6,7 +6,7 @@ description: >-
   La comodidad que sientes cuando el algoritmo decide no es un engaño: es real,
   medible, y ahí está el problema. Durante 50 años, la ciencia de la
   comunicación…
-heroImage: /images/posts/la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste/hero.webp
+heroImage: /images/posts/la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste/hero.jpg
 heroImageAlt: >-
   Algoritmo y elección: mano toca panel iluminado entre opciones atenuadas por
   red de influencia
@@ -31,7 +31,7 @@ La pregunta que resulta de cruzar ambos marcos es incómoda: si el algoritmo dec
 
 ## Lo que la comodidad realmente cuesta
 
-![Algoritmo y elección: mano toca panel iluminado, resto de opciones desenfocadas al fondo](/images/posts/la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste/1.webp)
+![Algoritmo y elección: mano toca panel iluminado, resto de opciones desenfocadas al fondo](/images/posts/la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste/1.jpg)
 
   
 

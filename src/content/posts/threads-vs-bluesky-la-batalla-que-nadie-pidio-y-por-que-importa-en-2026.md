@@ -7,7 +7,7 @@ description: >-
   Instagram y X, enero de 2026 te tiene noticias. Mientras tú discutías sobre
   algoritmos…
 heroImage: >-
-  /images/posts/threads-vs-bluesky-la-batalla-que-nadie-pidio-y-por-que-importa-en-2026/hero.webp
+  /images/posts/threads-vs-bluesky-la-batalla-que-nadie-pidio-y-por-que-importa-en-2026/hero.jpg
 heroImageAlt: >-
   Threads vs Bluesky: hombre entre dos tuberías con válvulas, una moderna y otra
   oxidada, comparando plataformas

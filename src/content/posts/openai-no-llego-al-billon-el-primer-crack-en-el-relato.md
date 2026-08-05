@@ -6,7 +6,7 @@ description: >-
   OpenAI no alcanzó su meta interna de mil millones de usuarios semanales
   activos en ChatGPT para finales de 2025 — y también falló en múltiples metas
   de…
-heroImage: /images/posts/openai-no-llego-al-billon-el-primer-crack-en-el-relato/hero.webp
+heroImage: /images/posts/openai-no-llego-al-billon-el-primer-crack-en-el-relato/hero.jpg
 heroImageAlt: >-
   OpenAI no llegó al billón: mujer toca grieta profunda en muro corporativo
   urbano

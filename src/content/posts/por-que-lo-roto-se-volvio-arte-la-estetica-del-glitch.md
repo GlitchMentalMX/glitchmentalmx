@@ -6,7 +6,7 @@ description: >-
   El glitch no es un accidente que la cultura tolera — es una respuesta
   sistemática que la cultura busca activamente cada vez que la tecnología
   promete…
-heroImage: /images/posts/por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch/hero.webp
+heroImage: /images/posts/por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch/hero.jpg
 heroImageAlt: >-
   estética del glitch: mujer tocando pantalla CRT con distorsión luminosa y
   líneas de señal analógica
@@ -33,7 +33,7 @@ Esa dimensión política es lo que separa el glitch art del simple error estéti
 
   
 
-![estética del glitch: televisor CRT en el suelo con interferencia digital y distorsión de señal analógica](/images/posts/por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch/1.webp)
+![estética del glitch: televisor CRT en el suelo con interferencia digital y distorsión de señal analógica](/images/posts/por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch/1.jpg)
 
 ## Por qué la cultura siempre responde coleccionando lo roto
 

@@ -6,7 +6,7 @@ description: >-
   Durante años se repitió una idea cómoda para quienes detentan el poder: que
   los jóvenes estaban distraídos, encapsulados en las redes sociales, más…
 heroImage: >-
-  /images/posts/gen-z-en-mexico-como-paso-del-activismo-digital-a-las-calles/hero.webp
+  /images/posts/gen-z-en-mexico-como-paso-del-activismo-digital-a-las-calles/hero.jpg
 heroImageAlt: >-
   Gen Z México activismo: mujer joven caminando con smartphone en mano, red de
   activación digital en segundo plano urbano
@@ -39,7 +39,7 @@ En Nepal, tras el bloqueo gubernamental de 26 redes sociales en septiembre de 20
 
 En Bangladesh, el bloqueo gubernamental a internet propició el uso de redes locales para coordinar marchas de justicia. En Corea del Sur, el decreto que prohibía la actividad política fue respondido con transmisiones en vivo de la toma de tropas del Parlamento. **La coordinación y el activismo a través de las redes sociales han sido elementos centrales en la organización de estas protestas**.
 
-![Gen Z activismo México: manos sobre concreto urbano, smartphone encendido junto a palma apoyada en superficie](/images/posts/gen-z-en-mexico-como-paso-del-activismo-digital-a-las-calles/1.webp)
+![Gen Z activismo México: manos sobre concreto urbano, smartphone encendido junto a palma apoyada en superficie](/images/posts/gen-z-en-mexico-como-paso-del-activismo-digital-a-las-calles/1.jpg)
 
   
 

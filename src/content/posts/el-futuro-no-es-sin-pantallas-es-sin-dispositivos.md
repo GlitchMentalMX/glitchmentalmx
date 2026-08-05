@@ -6,7 +6,7 @@ description: >-
   La pregunta correcta sobre el futuro de las pantallas no es si van a
   desaparecer. La pantalla se está multiplicando: en el refrigerador, en el
   lente, en el…
-heroImage: /images/posts/el-futuro-no-es-sin-pantallas-es-sin-dispositivos/hero.webp
+heroImage: /images/posts/el-futuro-no-es-sin-pantallas-es-sin-dispositivos/hero.jpg
 heroImageAlt: >-
   Interfaz rentada 2026: mujer insertando panel personal en rack de pantallas
   idénticas
@@ -31,7 +31,7 @@ Aquí está el mecanismo central. Un dispositivo tiene frontera y sesión: lo to
 
 Esto explica algo que ya se documentó en otro terreno: [las apps tuvieron que volverse adictivas porque necesitaban que las abrieras](/articulos/dopamina-y-diseno-por-que-las-apps-son-adictivas/), competían por tu decisión consciente de entrar. La superficie se salta ese paso completo. **No necesita seducirte para que la abras porque ya estás parado frente a ella**, en la cocina, en la calle, con el casco puesto. El sueño original de la computación ubicua, formulado por el investigador Mark Weiser en Xerox PARC a inicios de los noventa, imaginaba una tecnología que se desvanecería en el fondo de la vida cotidiana. Lo que terminó desvaneciéndose no fue la tecnología: fue el límite entre lo que es tuyo y lo que no.
 
-![Interfaz rentada 2026: primer plano de mano insertando panel personal en rack de pantallas](/images/posts/el-futuro-no-es-sin-pantallas-es-sin-dispositivos/1.webp)
+![Interfaz rentada 2026: primer plano de mano insertando panel personal en rack de pantallas](/images/posts/el-futuro-no-es-sin-pantallas-es-sin-dispositivos/1.jpg)
 
 ## El refrigerador que cambió de dueño sin moverse de la cocina
 

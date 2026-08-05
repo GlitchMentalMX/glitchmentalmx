@@ -6,7 +6,7 @@ description: >-
   La Generación Z ya no es el futuro. Es el presente. Con 69.31 millones de
   personas solo en Estados Unidos (más del 20% de la población) y un poder…
 heroImage: >-
-  /images/posts/gen-z-y-las-marcas-en-2026-como-conectar-sin-que-te-ignoren/hero.webp
+  /images/posts/gen-z-y-las-marcas-en-2026-como-conectar-sin-que-te-ignoren/hero.jpg
 heroImageAlt: >-
   Gen Z y las marcas en 2026: joven rodeada de perfiles digitales y conexiones
   sociales urbanas
@@ -37,7 +37,7 @@ Las redes sociales no son solo entretenimiento para Gen Z. Son el **canal princi
 
 Los videos de unboxing y reseñas de YouTube influyen en el 44% de las decisiones de compra de Gen Z, especialmente en electrónica y tecnología. Los filtros AR de Snapchat contribuyeron a $1.2 mil millones en compras directas impulsadas por Gen Z solo en el último año.
 
-![Gen Z y las marcas en 2026: mural de retratos y anuncios conectados por una red social digital](/images/posts/gen-z-y-las-marcas-en-2026-como-conectar-sin-que-te-ignoren/1.webp)
+![Gen Z y las marcas en 2026: mural de retratos y anuncios conectados por una red social digital](/images/posts/gen-z-y-las-marcas-en-2026-como-conectar-sin-que-te-ignoren/1.jpg)
 
   
 

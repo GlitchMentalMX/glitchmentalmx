@@ -6,7 +6,7 @@ description: >-
   Hay novelas que no nacen de la imaginación. Nacen de una investigación que
   llegó demasiado lejos para caber en un artículo. Entrenado en Corpus, de Jorge
   A.…
-heroImage: /images/posts/entrenado-en-corpus-lo-que-no-cabe-en-un-articulo/hero.webp
+heroImage: /images/posts/entrenado-en-corpus-lo-que-no-cabe-en-un-articulo/hero.jpg
 heroImageAlt: >-
   Entrenado en corpus: periodista analizando documentos conectados a memoria USB
   con red de datos
@@ -23,7 +23,7 @@ _Entrenado en Corpus_ es un tecnothriller de ritmo periodístico. No hay persecu
 
 ## Por qué importa ahora
 
-![Entrenado en corpus: memoria USB conectando documentos digitalizados mediante red de datos](/images/posts/entrenado-en-corpus-lo-que-no-cabe-en-un-articulo/1.webp)
+![Entrenado en corpus: memoria USB conectando documentos digitalizados mediante red de datos](/images/posts/entrenado-en-corpus-lo-que-no-cabe-en-un-articulo/1.jpg)
 
   
 

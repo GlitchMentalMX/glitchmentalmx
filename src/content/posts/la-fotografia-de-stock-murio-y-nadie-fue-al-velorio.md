@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:30:02.545Z
 description: >-
   Al 8 de abril de 2025, el 47.85% de todas las imágenes en Adobe Stock habían
   sido generadas por herramientas de IA, según el análisis del fotógrafo Robert…
-heroImage: /images/posts/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/hero.webp
+heroImage: /images/posts/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/hero.jpg
 heroImageAlt: 'La fotografía de stock murió: fotógrafa desmontando fondo en estudio vacío'
 ---
 Al 8 de abril de 2025, **el 47.85% de todas las imágenes en Adobe Stock habían sido generadas por herramientas de IA**, según el análisis del fotógrafo Robert Kneschke publicado en CineD y PetaPixel. Tomó 20 años para que los fotógrafos subieran 313 millones de imágenes reales. En menos de tres años, la IA igualó esa cifra. El mercado del microstock no está en crisis: ya está muerto. Solo que nadie lo anunció en el obituario.
@@ -34,7 +34,7 @@ La regla estructural del microstock siempre fue brutal: el 20% de las imágenes 
 
   
 
-![La fotografía de stock crisis: soporte vacío y disco duro en estudio abandonado](/images/posts/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/1.webp)
+![La fotografía de stock crisis: soporte vacío y disco duro en estudio abandonado](/images/posts/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/1.jpg)
 
 ## La demanda que Getty casi ganó (y lo que implica)
 

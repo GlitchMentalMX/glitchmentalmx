@@ -6,7 +6,7 @@ description: >-
   La IA no te está ayudando a pensar — te está diciendo lo que quieres escuchar.
   El psicólogo Pablo Emilio Gutiérrez lo explicó sin rodeos esta semana:
   ChatGPT…
-heroImage: /images/posts/chatgpt-te-da-la-razon-siempre-ese-es-el-problema/hero.webp
+heroImage: /images/posts/chatgpt-te-da-la-razon-siempre-ese-es-el-problema/hero.jpg
 heroImageAlt: >-
   ChatGPT te da la razón siempre: mujer eligiendo rostro sonriente entre
   múltiples opciones en red

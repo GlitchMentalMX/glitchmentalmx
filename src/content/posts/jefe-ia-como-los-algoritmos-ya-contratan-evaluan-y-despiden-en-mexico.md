@@ -6,7 +6,7 @@ description: >-
   Imagina esto: llegas un lunes cualquiera a tu trabajo y recibes un correo
   automático. Tu desempeño ha sido evaluado. No por tu manager, no por Recursos…
 heroImage: >-
-  /images/posts/jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico/hero.webp
+  /images/posts/jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico/hero.jpg
 heroImageAlt: >-
   AI Boss: trabajadora leyendo una notificación laboral junto a un indicador
   electrónico de acceso
@@ -33,7 +33,7 @@ Además, hay algo que ningún algoritmo puede medir: el contexto humano. ¿Tuvis
 
 ## El futuro del trabajo no es humano vs máquina, es híbrido
 
-![AI Boss: documento arrugado en el suelo junto a botón industrial que indica una decisión automatizada](/images/posts/jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico/1.webp)
+![AI Boss: documento arrugado en el suelo junto a botón industrial que indica una decisión automatizada](/images/posts/jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico/1.jpg)
 
   
 

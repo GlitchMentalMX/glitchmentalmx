@@ -6,7 +6,7 @@ description: >-
   Los agentes de IA son la próxima evolución después de los chatbots. Mientras
   ChatGPT espera que le des instrucciones paso a paso, un agente de IA toma un…
 heroImage: >-
-  /images/posts/como-usar-agentes-de-ia-en-2026-guia-practica-sin-tecnicismos/hero.webp
+  /images/posts/como-usar-agentes-de-ia-en-2026-guia-practica-sin-tecnicismos/hero.jpg
 heroImageAlt: >-
   Cómo usar agentes de IA en 2026: mujer organizando órdenes en panel industrial
   con flujos digitales
@@ -71,7 +71,7 @@ Cuando le das un objetivo al agente, este divide el objetivo en subtareas, ejecu
 
 ## Cómo escribir objetivos efectivos para agentes
 
-![Cómo usar agentes de IA en 2026: órdenes sujetas en panel industrial conectadas por líneas digitales](/images/posts/como-usar-agentes-de-ia-en-2026-guia-practica-sin-tecnicismos/1.webp)
+![Cómo usar agentes de IA en 2026: órdenes sujetas en panel industrial conectadas por líneas digitales](/images/posts/como-usar-agentes-de-ia-en-2026-guia-practica-sin-tecnicismos/1.jpg)
 
   
 

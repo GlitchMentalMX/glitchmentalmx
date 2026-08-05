@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:26:13.300Z
 description: >-
   Mientras Anthropic consulta teólogos en privado, Beijing publica regulación
   legal que especifica exactamente qué no pueden decir sus modelos. Tiananmen,…
-heroImage: /images/posts/la-ia-china-no-tiene-sesgo-religioso-tiene-algo-peor/hero.webp
+heroImage: /images/posts/la-ia-china-no-tiene-sesgo-religioso-tiene-algo-peor/hero.jpg
 heroImageAlt: >-
   La IA china: figura sola en sala tradicional bajo red digital en techo que
   simboliza control
@@ -18,7 +18,7 @@ En agosto de 2023 entraron en vigor las Medidas Provisionales para la Administra
 
 DeepSeek, Ernie Bot de Baidu y Qwen de Alibaba operan bajo ese marco. No es una política interna voluntaria como la constitución de Anthropic — es una obligación legal con mecanismo de registro ante el regulador, con auditorías de cumplimiento documentadas. Según el Carnegie Endowment for International Peace, el CAC realizó en 2024 rondas de auditoría de cumplimiento con foco específico en la tasa de respuestas apropiadas ante consultas sobre información políticamente sensible. **China tiene, en términos técnicos, un proceso de alineación ideológica más auditado que el proceso de alineación cultural de cualquier empresa occidental.**
 
-![La IA china: persona bajo estructura de red geométrica en templo con control centralizado](/images/posts/la-ia-china-no-tiene-sesgo-religioso-tiene-algo-peor/1.webp)
+![La IA china: persona bajo estructura de red geométrica en templo con control centralizado](/images/posts/la-ia-china-no-tiene-sesgo-religioso-tiene-algo-peor/1.jpg)
 
 ## La pregunta incómoda que esta serie no puede evitar
 

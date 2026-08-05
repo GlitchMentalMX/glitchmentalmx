@@ -7,7 +7,7 @@ description: >-
   probablemente no quieres escuchar. El CEO de Microsoft AI acaba de declarar en
   una…
 heroImage: >-
-  /images/posts/jefe-de-ia-de-microsoft-18-meses-para-automatizar-tu-trabajo/hero.webp
+  /images/posts/jefe-de-ia-de-microsoft-18-meses-para-automatizar-tu-trabajo/hero.jpg
 heroImageAlt: >-
   Automatización IA trabajos oficina: mujer frente a monitor con barra de
   progreso autónoma, manos quietas sobre escritorio
@@ -44,7 +44,7 @@ Pero hay una diferencia crítica entre las advertencias de 2025 y las de ahora. 
 
 ## La brecha entre la predicción y la realidad
 
-![Automatización IA empleos: pluma sobre papel inconcluso en escritorio, luz fría de monitor entrando por el borde derecho](/images/posts/jefe-de-ia-de-microsoft-18-meses-para-automatizar-tu-trabajo/1.webp)
+![Automatización IA empleos: pluma sobre papel inconcluso en escritorio, luz fría de monitor entrando por el borde derecho](/images/posts/jefe-de-ia-de-microsoft-18-meses-para-automatizar-tu-trabajo/1.jpg)
 
   
 

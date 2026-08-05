@@ -6,7 +6,7 @@ description: >-
   El 30 de noviembre marca exactamente dos años desde el lanzamiento de ChatGPT,
   el momento que democratizó el acceso a la inteligencia artificial para el…
 heroImage: >-
-  /images/posts/1-de-cada-3-trabajadores-ya-usa-ia-en-espana-el-futuro-del-trabajo-esta-aqui/hero.webp
+  /images/posts/1-de-cada-3-trabajadores-ya-usa-ia-en-espana-el-futuro-del-trabajo-esta-aqui/hero.jpg
 heroImageAlt: >-
   Trabajador en taller industrial usa discretamente una herramienta auxiliar
   conectada a su estación, logrando mayor productividad que sus colegas.

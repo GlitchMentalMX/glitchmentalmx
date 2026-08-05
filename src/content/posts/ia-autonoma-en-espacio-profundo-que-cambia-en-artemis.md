@@ -6,7 +6,7 @@ description: >-
   El 6 de abril de 2026, la tripulación de Artemis II pasó 40 minutos
   completamente incomunicada detrás de la Luna. Sin señal. Sin Houston. La nave
   tuvo que…
-heroImage: /images/posts/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/hero.webp
+heroImage: /images/posts/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/hero.jpg
 heroImageAlt: >-
   IA autónoma en espacio profundo: centro de control frente a la Luna con
   múltiples pantallas de trayectoria sin operadores
@@ -31,7 +31,7 @@ Para las comunicaciones, la misión incorpora el sistema óptico O2O — Orion A
 
 ## Por qué el blackout importa más allá de Artemis II
 
-![IA autónoma en espacio profundo: cable cortado entre parches Apollo y Artemis simbolizando desconexión con Houston](/images/posts/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/1.webp)
+![IA autónoma en espacio profundo: cable cortado entre parches Apollo y Artemis simbolizando desconexión con Houston](/images/posts/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/1.jpg)
 
   
 

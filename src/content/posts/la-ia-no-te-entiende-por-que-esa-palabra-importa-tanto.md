@@ -5,7 +5,7 @@ updatedDate: 2026-06-04T15:44:21.644Z
 description: >-
   Cada vez que un chatbot responde con precisión, alguien dice que "entendió" lo
   que le pediste. Esa palabra —entender— es la trampa más grande del debate…
-heroImage: /images/posts/la-ia-no-te-entiende-por-que-esa-palabra-importa-tanto/hero.webp
+heroImage: /images/posts/la-ia-no-te-entiende-por-que-esa-palabra-importa-tanto/hero.jpg
 heroImageAlt: >-
   La IA no te entiende: mujer escribiendo ‘entender’ en pizarrón rodeado de
   conexiones y notas confusas
@@ -44,7 +44,7 @@ Investigadores como Chris Olah (ex-Anthropic, ahora en su propio laboratorio de 
 
   
 
-![La IA no te entiende: libro abierto con frase subrayada y tachada indicando interpretación incorrecta](/images/posts/la-ia-no-te-entiende-por-que-esa-palabra-importa-tanto/1.webp)
+![La IA no te entiende: libro abierto con frase subrayada y tachada indicando interpretación incorrecta](/images/posts/la-ia-no-te-entiende-por-que-esa-palabra-importa-tanto/1.jpg)
 
 ## Por qué el relato corporativo tiene intereses en esto
 

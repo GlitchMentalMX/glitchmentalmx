@@ -7,7 +7,7 @@ description: >-
   artículo sobre inteligencia artificial física y cómo los objetos inteligentes
   están…
 heroImage: >-
-  /images/posts/x-censura-tu-contenido-editorial-y-deja-pasar-lo-que-realmente-dana/hero.webp
+  /images/posts/x-censura-tu-contenido-editorial-y-deja-pasar-lo-que-realmente-dana/hero.jpg
 heroImageAlt: >-
   X censura editorial: hombre sostiene artículo rechazado con sello rojo
   mientras pantalla muestra contenido violento sin restricción

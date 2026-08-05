@@ -6,7 +6,7 @@ description: >-
   El deterioro visual ya no es un problema de envejecimiento. Según datos de
   ZEISS publicados en 2026, el 66% de la población mundial experimenta
   molestias…
-heroImage: /images/posts/la-epidemia-visual-que-las-pantallas-estan-acelerando/hero.webp
+heroImage: /images/posts/la-epidemia-visual-que-las-pantallas-estan-acelerando/hero.jpg
 heroImageAlt: >-
   fatiga visual pantallas: mujer con ojos cerrados frente a monitores en entorno
   nocturno

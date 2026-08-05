@@ -5,7 +5,7 @@ updatedDate: 2026-06-23T03:54:18.305Z
 description: >-
   Hace cinco años, "buscar algo" significaba abrir Google, escribir una frase y
   revisar los primeros tres resultados. Hoy, para una parte creciente de los…
-heroImage: /images/posts/tiktok-e-instagram-como-buscadores-guia-completa-2026/hero.webp
+heroImage: /images/posts/tiktok-e-instagram-como-buscadores-guia-completa-2026/hero.jpg
 heroImageAlt: >-
   TikTok Instagram buscadores 2026: hombre joven con smartphone frente a
   señalética institucional obsoleta en pasillo urbano
@@ -38,7 +38,7 @@ Para aparecer en búsquedas de Instagram, las palabras clave deben estar present
 
 Las métricas que el algoritmo de Instagram prioriza en 2026 para la distribución de contenido son los guardados, los compartidos por mensaje directo y el tiempo total de visualización, por encima de los _likes_. Si tu contenido no genera que la gente lo guarde o lo mande a alguien, el algoritmo no lo va a empujar, sin importar cuántos corazones tenga.
 
-![búsqueda social 2026: mano con smartphone activo en primer plano, teclado de escritorio desenfocado e inactivo al fondo](/images/posts/tiktok-e-instagram-como-buscadores-guia-completa-2026/1.webp)
+![búsqueda social 2026: mano con smartphone activo en primer plano, teclado de escritorio desenfocado e inactivo al fondo](/images/posts/tiktok-e-instagram-como-buscadores-guia-completa-2026/1.jpg)
 
   
 

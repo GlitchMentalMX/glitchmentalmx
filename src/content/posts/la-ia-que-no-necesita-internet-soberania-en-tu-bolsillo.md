@@ -6,7 +6,7 @@ description: >-
   Toda la IA que usas hoy envía tus datos a servidores que no controlas, procesa
   tu información en hardware que no es tuyo y puede desaparecer mañana si la…
 heroImage: >-
-  /images/posts/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/hero.webp
+  /images/posts/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/hero.jpg
 heroImageAlt: >-
   IA que no necesita internet: mujer usando smartphone sin conexión en entorno
   urbano
@@ -29,7 +29,7 @@ La limitación real hoy es de acceso: los chips que soportan IA en dispositivo e
 
 ## Qué cambia y cuándo: el horizonte de democratización
 
-![IA que no necesita internet: smartphone sobre mesa con cables desconectados sin conexión](/images/posts/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/1.webp)
+![IA que no necesita internet: smartphone sobre mesa con cables desconectados sin conexión](/images/posts/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/1.jpg)
 
   
 

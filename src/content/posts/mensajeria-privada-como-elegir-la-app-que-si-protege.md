@@ -6,7 +6,7 @@ description: >-
   WhatsApp cifra el contenido de tus mensajes, pero Meta sabe con quién hablas,
   desde dónde, a qué hora y con qué frecuencia. Esa distinción — entre
   contenido…
-heroImage: /images/posts/mensajeria-privada-como-elegir-la-app-que-si-protege/hero.webp
+heroImage: /images/posts/mensajeria-privada-como-elegir-la-app-que-si-protege/hero.jpg
 heroImageAlt: >-
   mensajería privada: mujer usando smartphone en pasillo interior para enviar
   mensajes
@@ -37,7 +37,7 @@ heroImageAlt: >-
 
   
 
-![mensajería privada: dos teléfonos sobre mesa mostrando elección entre apps de mensajería](/images/posts/mensajeria-privada-como-elegir-la-app-que-si-protege/1.webp)
+![mensajería privada: dos teléfonos sobre mesa mostrando elección entre apps de mensajería](/images/posts/mensajeria-privada-como-elegir-la-app-que-si-protege/1.jpg)
 
 ## Signal, Telegram, iMessage y Session: análisis honesto
 

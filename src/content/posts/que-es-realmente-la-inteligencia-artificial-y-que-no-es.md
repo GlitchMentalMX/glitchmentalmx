@@ -7,7 +7,7 @@ description: >-
   No va a esclavizar a la humanidad ni a salvarla. Lo que sí hace — y esto es
   lo…
 heroImage: >-
-  /images/posts/que-es-realmente-la-inteligencia-artificial-y-que-no-es/hero.webp
+  /images/posts/que-es-realmente-la-inteligencia-artificial-y-que-no-es/hero.jpg
 heroImageAlt: >-
   Inteligencia artificial qué es: hombre borrando diagrama en sala de
   presentación vacía, gesto deliberado, iluminación lateral institucional
@@ -38,7 +38,7 @@ El tercero es el mito de la AGI inminente. La _inteligencia artificial general_ 
 
 ## Cómo funciona un modelo de lenguaje, sin rodeos
 
-![Inteligencia artificial qué es: mano borrando diagrama complejo en pizarrón, trazo en progreso, plano macro iluminación lateral](/images/posts/que-es-realmente-la-inteligencia-artificial-y-que-no-es/1.webp)
+![Inteligencia artificial qué es: mano borrando diagrama complejo en pizarrón, trazo en progreso, plano macro iluminación lateral](/images/posts/que-es-realmente-la-inteligencia-artificial-y-que-no-es/1.jpg)
 
   
 

@@ -6,7 +6,7 @@ description: >-
   No es ansiedad difusa ni estrés pasajero. 1 de cada 5 jóvenes iberoamericanos
   presenta un trastorno mental clínicamente vinculado al uso intensivo de redes…
 heroImage: >-
-  /images/posts/redes-sociales-y-trastornos-mentales-lo-que-dice-la-ciencia/hero.webp
+  /images/posts/redes-sociales-y-trastornos-mentales-lo-que-dice-la-ciencia/hero.jpg
 heroImageAlt: >-
   Redes sociales y trastornos mentales: joven rodeada de pantallas flotantes con
   contenido digital
@@ -27,7 +27,7 @@ La heterogeneidad alta del metaanálisis (I² = 99.66%) indica que los efectos v
 
 > La diferencia entre ansiedad y trastorno no es de intensidad — es de diagnóstico. Y la ciencia lleva años documentando esa distinción mientras las plataformas optimizan el scroll.
 
-![Redes sociales y trastornos mentales: pared urbana deteriorada con gráficos de barras superpuestos](/images/posts/redes-sociales-y-trastornos-mentales-lo-que-dice-la-ciencia/1.webp)
+![Redes sociales y trastornos mentales: pared urbana deteriorada con gráficos de barras superpuestos](/images/posts/redes-sociales-y-trastornos-mentales-lo-que-dice-la-ciencia/1.jpg)
 
 ## Por qué el umbral de las 3 horas importa
 

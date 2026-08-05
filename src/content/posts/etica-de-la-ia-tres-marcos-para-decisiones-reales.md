@@ -6,7 +6,7 @@ description: >-
   La ética de la IA no se resuelve con principios genéricos. "Equidad" y
   "transparencia" no obligan a nada sin un marco que los jerarquice. Lo que sí
   obliga es…
-heroImage: /images/posts/etica-de-la-ia-tres-marcos-para-decisiones-reales/hero.webp
+heroImage: /images/posts/etica-de-la-ia-tres-marcos-para-decisiones-reales/hero.jpg
 heroImageAlt: >-
   Ética de la IA: investigador analiza libros abiertos ante un punto de decisión
   iluminado
@@ -35,7 +35,7 @@ La investigación de ProPublica de 2016, con datos de más de 7,000 casos en Bro
 
 **El límite del marco deontológico es la rigidez**: puede volverse paralizante frente a contextos que exigen ponderación. Pero su aportación es irreemplazable: identifica una violación de derechos que el utilitarismo no puede ver, porque opera en una capa diferente de análisis.
 
-![Ética de la IA: libros abiertos alrededor de un punto de decisión iluminado](/images/posts/etica-de-la-ia-tres-marcos-para-decisiones-reales/1.webp)
+![Ética de la IA: libros abiertos alrededor de un punto de decisión iluminado](/images/posts/etica-de-la-ia-tres-marcos-para-decisiones-reales/1.jpg)
 
 ## Ética del cuidado: ¿a quién se le hace daño y quién responde?
 

@@ -7,7 +7,7 @@ description: >-
   diciéndote que no compres ese producto viral. Que la crema de 50 dólares no
   vale…
 heroImage: >-
-  /images/posts/el-deinfluencing-no-es-rebeldia-es-marketing-con-otra-cara/hero.webp
+  /images/posts/el-deinfluencing-no-es-rebeldia-es-marketing-con-otra-cara/hero.jpg
 heroImageAlt: >-
   Joven creador graba video de deinfluencing rodeado de paquetes sin abrir,
   mostrando un producto frente a cámara bajo luz de ring light.

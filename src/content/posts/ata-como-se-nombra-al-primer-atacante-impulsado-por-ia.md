@@ -5,7 +5,7 @@ updatedDate: 2026-07-17T11:00:00.111Z
 description: >-
   Un agente de IA entró a un servidor de producción, robó credenciales, se movió
   lateralmente, cifró 1,342 registros y borró la evidencia — sin que ningún…
-heroImage: /images/posts/ata-como-se-nombra-al-primer-atacante-impulsado-por-ia/hero.webp
+heroImage: /images/posts/ata-como-se-nombra-al-primer-atacante-impulsado-por-ia/hero.jpg
 heroImageAlt: >-
   impresora industrial expulsa tira continua de etiquetas idénticas, mano
   intenta detenerla
@@ -32,7 +32,7 @@ Aquí está el dato que casi nadie repitió en la cobertura en inglés: JADEPUFF
 
 Eso cambia lo que vale la pena preguntarse. Si JADEPUFFER hubiera acuñado el término, la historia sería sobre un malware puntual. Como el término ya existía, la historia real es sobre **quién gana el derecho de nombrar** a una categoría completa de atacante —y esa disputa se está decidiendo con la misma velocidad errática con la que se decidió, hace dos décadas, cómo llamar a un grupo estatal chino o ruso: cada proveedor a su manera, sin coordinación previa entre ellos.
 
-![ATA: primer plano de mano sosteniendo etiqueta con glifo repetido, tira continua desenfocada](/images/posts/ata-como-se-nombra-al-primer-atacante-impulsado-por-ia/1.webp)
+![ATA: primer plano de mano sosteniendo etiqueta con glifo repetido, tira continua desenfocada](/images/posts/ata-como-se-nombra-al-primer-atacante-impulsado-por-ia/1.jpg)
 
 ## La industria ya falló nombrando a los atacantes humanos — y está a punto de repetirlo con las máquinas
 

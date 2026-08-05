@@ -6,7 +6,7 @@ description: >-
   Los modelos de lenguaje se evalúan por precisión matemática, capacidad de
   razonamiento y rendimiento en código. Nadie publica un benchmark estándar de
   sesgo…
-heroImage: /images/posts/la-ia-occidental-tiene-un-problema-de-religion-serio/hero.webp
+heroImage: /images/posts/la-ia-occidental-tiene-un-problema-de-religion-serio/hero.jpg
 heroImageAlt: >-
   La IA occidental: mujer sostiene libro con patrones de red en biblioteca con
   símbolos en el suelo
@@ -23,7 +23,7 @@ Un tercer trabajo, publicado en diciembre de 2025 en arXiv con datos de cuatro r
 
 ## El problema del corpus, antes de cualquier consulta
 
-![La IA occidental: libro abierto con diagramas de red en atril dentro de biblioteca histórica](/images/posts/la-ia-occidental-tiene-un-problema-de-religion-serio/1.webp)
+![La IA occidental: libro abierto con diagramas de red en atril dentro de biblioteca histórica](/images/posts/la-ia-occidental-tiene-un-problema-de-religion-serio/1.jpg)
 
   
 

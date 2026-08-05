@@ -7,7 +7,7 @@ description: >-
   buena onda que como reemplazo directo, tengo una noticia incómoda: esa fase
   ya…
 heroImage: >-
-  /images/posts/la-ia-ya-esta-reemplazando-equipos-completos-de-atencion-al-cliente/hero.webp
+  /images/posts/la-ia-ya-esta-reemplazando-equipos-completos-de-atencion-al-cliente/hero.jpg
 heroImageAlt: >-
   Empleado deja su headset mientras una fila de estaciones de atención se apaga
   secuencialmente en un centro de llamadas vacío.

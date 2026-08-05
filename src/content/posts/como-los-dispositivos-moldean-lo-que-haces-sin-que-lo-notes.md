@@ -7,7 +7,7 @@ description: >-
   modificar lo que haces, cuándo lo haces y con qué frecuencia lo haces. Eso no
   es…
 heroImage: >-
-  /images/posts/como-los-dispositivos-moldean-lo-que-haces-sin-que-lo-notes/hero.webp
+  /images/posts/como-los-dispositivos-moldean-lo-que-haces-sin-que-lo-notes/hero.jpg
 heroImageAlt: >-
   Dispositivos y comportamiento: mujer con postura adaptada al móvil, libro
   abandonado y taza fría en mesa junto a ella
@@ -26,7 +26,7 @@ La pantalla de inicio de tu teléfono no está organizada para tu conveniencia �
 
 Un análisis de ScienceDirect sobre transparencia en tecnología persuasiva identificó 23 mecanismos distintos de nudging tecnológico, agrupados en seis categorías: facilitar, confrontar, engañar, influencia social, miedo y refuerzo. Varios de esos mecanismos operan sin que el usuario pueda reconocer su intención ni su efecto. **Cuando un nudge funciona a través de la manipulación del comportamiento, surgen preguntas éticas legítimas** que el diseño de interfaz rara vez formula de forma visible al usuario.
 
-![Dispositivos y comportamiento: pulgar en gesto de scroll sobre móvil, libro y bolígrafo abandonados desenfocados al borde inferior](/images/posts/como-los-dispositivos-moldean-lo-que-haces-sin-que-lo-notes/1.webp)
+![Dispositivos y comportamiento: pulgar en gesto de scroll sobre móvil, libro y bolígrafo abandonados desenfocados al borde inferior](/images/posts/como-los-dispositivos-moldean-lo-que-haces-sin-que-lo-notes/1.jpg)
 
   
 

@@ -6,7 +6,7 @@ description: >-
   Las tablets 2-en-1 dejaron de ser una categoría confusa atrapada entre la
   portabilidad de una tablet y el poder de una laptop. En 2026, la tecnología…
 heroImage: >-
-  /images/posts/tablets-2-en-1-2026-guia-completa-para-creadores-y-gamers/hero.webp
+  /images/posts/tablets-2-en-1-2026-guia-completa-para-creadores-y-gamers/hero.jpg
 heroImageAlt: >-
   Tablets 2 en 1: una tableta de dibujo y un controlador desplazados hacia los
   bordes de una mesa por un dispositivo 2 en 1 en configuración convertible
@@ -45,7 +45,7 @@ Los procesadores Intel Core Ultra 7 165H ofrecen rendimiento sólido para produc
 
 El precio es $1,999 dólares con teclado físico Bluetooth incluido. El sistema operativo viene con software propietario de Lenovo para gestión de ventanas en pantalla dual, algo que Windows 11 todavía no maneja perfectamente de forma nativa.
 
-![Tabletas 2 en 1 2026: teclado separado, lápiz óptico en la pantalla y controlador desplazado en superficie de trabajo neutra, bisagra en foco](/images/posts/tablets-2-en-1-2026-guia-completa-para-creadores-y-gamers/1.webp)
+![Tabletas 2 en 1 2026: teclado separado, lápiz óptico en la pantalla y controlador desplazado en superficie de trabajo neutra, bisagra en foco](/images/posts/tablets-2-en-1-2026-guia-completa-para-creadores-y-gamers/1.jpg)
 
   
 

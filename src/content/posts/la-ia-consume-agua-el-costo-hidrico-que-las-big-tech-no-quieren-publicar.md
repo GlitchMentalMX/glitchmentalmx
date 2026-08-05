@@ -6,7 +6,7 @@ description: >-
   Mientras todos celebran cómo ChatGPT puede escribir correos y Gemini puede
   analizar documentos, hay costo oculto que nadie quiere discutir abiertamente:…
 heroImage: >-
-  /images/posts/la-ia-consume-agua-el-costo-hidrico-que-las-big-tech-no-quieren-publicar/hero.webp
+  /images/posts/la-ia-consume-agua-el-costo-hidrico-que-las-big-tech-no-quieren-publicar/hero.jpg
 heroImageAlt: >-
   Hombre mide la caída del nivel de agua junto a una planta industrial que
   consume grandes volúmenes mientras una tubería local pierde presión.

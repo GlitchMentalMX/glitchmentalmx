@@ -6,7 +6,7 @@ description: >-
   Una herramienta de IA puede mejorar tus decisiones y al mismo tiempo destruir
   la capacidad colectiva de tu profesión. Eso no es una paradoja filosófica: es…
 heroImage: >-
-  /images/posts/nature-avisa-la-ia-util-puede-vaciar-profesiones-enteras/hero.webp
+  /images/posts/nature-avisa-la-ia-util-puede-vaciar-profesiones-enteras/hero.jpg
 heroImageAlt: >-
   impacto IA profesiones: mujer trabajando en oficina casi vacía con filas de
   escritorios sin personas

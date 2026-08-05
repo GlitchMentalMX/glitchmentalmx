@@ -5,7 +5,7 @@ updatedDate: 2026-06-15T15:24:17.836Z
 description: >-
   El 14 de abril de 2026, Anthropic actualizó una página en su centro de soporte
   sin comunicado, sin correo, sin blog. Días después, los usuarios empezaron a…
-heroImage: /images/posts/verificacion-de-identidad-en-ia-guia-completa/hero.webp
+heroImage: /images/posts/verificacion-de-identidad-en-ia-guia-completa/hero.jpg
 heroImageAlt: >-
   verificación de identidad IA: mujer presenta pasaporte ante cámara de control
   en ventanilla
@@ -28,7 +28,7 @@ Hay un contexto que hace la medida más llamativa: en febrero de 2026, Anthropic
 
 ## Qué pasa con tus datos
 
-![verificación de identidad IA: escáner digital ilumina pasaporte abierto en mostrador](/images/posts/verificacion-de-identidad-en-ia-guia-completa/1.webp)
+![verificación de identidad IA: escáner digital ilumina pasaporte abierto en mostrador](/images/posts/verificacion-de-identidad-en-ia-guia-completa/1.jpg)
 
   
 

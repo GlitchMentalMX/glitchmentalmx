@@ -7,7 +7,7 @@ description: >-
   laptop. En 2026, la IA se puso ropa y ahora la llevas puesta. Lentes
   inteligentes que…
 heroImage: >-
-  /images/posts/ia-fisica-los-gadgets-que-llevan-inteligencia-en-tu-cuerpo/hero.webp
+  /images/posts/ia-fisica-los-gadgets-que-llevan-inteligencia-en-tu-cuerpo/hero.jpg
 heroImageAlt: 'IA física 2026: gafas inteligentes conectadas a anillo y dispositivo portátil'
 ---
 La inteligencia artificial dejó de ser algo que vive en la nube o en tu laptop. En 2026, **la IA se puso ropa y ahora la llevas puesta**. Lentes inteligentes que ven lo que tú ves y te responden preguntas, anillos que monitorean tu salud con precisión médica, relojes que no solo cuentan pasos sino que predicen cuándo vas a enfermarte. Bienvenido a la era de la [IA física](https://www.hpe.com/es/es/what-is/physical-ai.html#:~:text=-%20La%20IA%20física%20ayuda%20a,producción%20y%20controla%20la%20calidad.&text=La%20IA%20física%20define%20la,atención%20médica%20y%20otros%20campos.). 

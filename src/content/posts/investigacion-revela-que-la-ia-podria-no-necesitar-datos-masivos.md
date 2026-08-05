@@ -6,7 +6,7 @@ description: >-
   Una investigación de la Universidad Johns Hopkins publicada en enero de 2026
   desafía una asunción fundamental de la inteligencia artificial moderna. Los…
 heroImage: >-
-  /images/posts/investigacion-revela-que-la-ia-podria-no-necesitar-datos-masivos/hero.webp
+  /images/posts/investigacion-revela-que-la-ia-podria-no-necesitar-datos-masivos/hero.jpg
 heroImageAlt: >-
   IA podría no necesitar datos masivos: mujer sostiene planta con raíces
   conectadas a archivos digitales

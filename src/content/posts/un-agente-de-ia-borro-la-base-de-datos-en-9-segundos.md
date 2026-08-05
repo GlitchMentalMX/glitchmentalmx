@@ -5,7 +5,7 @@ updatedDate: 2026-05-01T11:02:00.116Z
 description: >-
   El viernes 25 de abril de 2026, un agente de Cursor corriendo con Claude Opus
   4.6 —el modelo más capaz que Anthropic vende— borró la base de datos de…
-heroImage: /images/posts/un-agente-de-ia-borro-la-base-de-datos-en-9-segundos/hero.webp
+heroImage: /images/posts/un-agente-de-ia-borro-la-base-de-datos-en-9-segundos/hero.jpg
 heroImageAlt: >-
   IA borró la base de datos 2026: almacén con estanterías vacías y persona
   revisando ausencia de datos
@@ -36,7 +36,7 @@ Cooper explicó la postura técnica de Railway con franqueza incómoda: _"Si tú
 
 ## No es caso aislado: es el tercer incidente público en menos de un año
 
-![IA borró la base de datos 2026: cajón de servidor vacío tras eliminación total de archivos](/images/posts/un-agente-de-ia-borro-la-base-de-datos-en-9-segundos/1.webp)
+![IA borró la base de datos 2026: cajón de servidor vacío tras eliminación total de archivos](/images/posts/un-agente-de-ia-borro-la-base-de-datos-en-9-segundos/1.jpg)
 
   
 

@@ -7,7 +7,7 @@ description: >-
   estratégico medible. En 2026, el 56% de los profesionales de la salud y el 58%
   de…
 heroImage: >-
-  /images/posts/burnout-sistemico-semana-de-4-dias-contra-la-ia-imparable/hero.webp
+  /images/posts/burnout-sistemico-semana-de-4-dias-contra-la-ia-imparable/hero.jpg
 heroImageAlt: >-
   burnout sistémico IA: trabajadora empujando bloques sobre cinta que se apilan
   en estructura creciente
@@ -24,7 +24,7 @@ El patrón no sorprende si se analiza el mecanismo. La IA de asistencia aumenta 
 
 ## La respuesta empresarial: humana en la forma, ambigua en el fondo
 
-![Burnout 2026: mujer empuja bloques de concreto conectados por cables tensos sobre mesa industrial](/images/posts/burnout-sistemico-semana-de-4-dias-contra-la-ia-imparable/1.webp)
+![Burnout 2026: mujer empuja bloques de concreto conectados por cables tensos sobre mesa industrial](/images/posts/burnout-sistemico-semana-de-4-dias-contra-la-ia-imparable/1.jpg)
 
   
 

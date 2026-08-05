@@ -6,7 +6,7 @@ description: >-
   Cuando una plataforma dice "nuestro algoritmo decide qué ves", está cometiendo
   un acto de marketing disfrazado de ingeniería. Ningún feed importante de…
 heroImage: >-
-  /images/posts/el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento/hero.webp
+  /images/posts/el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento/hero.jpg
 heroImageAlt: >-
   El algoritmo no existe: editora seleccionando fotografías en panel de curación
   algorítmica
@@ -41,7 +41,7 @@ YouTube e Instagram funcionan con lógicas equivalentes. Hay sistemas de recomen
 
 ## El verdadero costo del lenguaje "algoritmo"
 
-![El algoritmo no existe: panel de imágenes conectado a red de distribución digital](/images/posts/el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento/1.webp)
+![El algoritmo no existe: panel de imágenes conectado a red de distribución digital](/images/posts/el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento/1.jpg)
 
   
 

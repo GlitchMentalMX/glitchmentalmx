@@ -5,7 +5,7 @@ updatedDate: 2026-06-30T20:14:48.052Z
 description: >-
   Esta semana, en Nueva Delhi, el director de IA de Meta, Alexandr Wang, subió
   al escenario de la India AI Impact Summit 2026 y dijo algo que merece más…
-heroImage: /images/posts/meta-quiere-una-ia-que-te-conozca-mejor-que-tus-amigos/hero.webp
+heroImage: /images/posts/meta-quiere-una-ia-que-te-conozca-mejor-que-tus-amigos/hero.jpg
 heroImageAlt: >-
   IA de Meta que te conoce: hombre mira notificación íntima en celular junto a
   foto de amigos guardada

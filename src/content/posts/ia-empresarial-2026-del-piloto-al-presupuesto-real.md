@@ -5,7 +5,7 @@ updatedDate: 2026-06-26T02:02:07.542Z
 description: >-
   Las empresas ya no preguntan si adoptar IA generativa — preguntan por qué sus
   pilotos no escalan. El reporte The multi-year AI advantage del Capgemini…
-heroImage: /images/posts/ia-empresarial-2026-del-piloto-al-presupuesto-real/hero.webp
+heroImage: /images/posts/ia-empresarial-2026-del-piloto-al-presupuesto-real/hero.jpg
 heroImageAlt: >-
   IA empresarial 2026: mano presiona sello institucional sobre documento de
   presupuesto en sala de directorio vacía

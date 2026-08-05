@@ -6,7 +6,7 @@ description: >-
   La mayoría de la gente usa ChatGPT como si fuera Google con mejor ortografía.
   Le hace preguntas cortas, lee la primera respuesta y la acepta. El resultado
   es…
-heroImage: /images/posts/como-usar-chatgpt-de-verdad-prompts-que-funcionan/hero.webp
+heroImage: /images/posts/como-usar-chatgpt-de-verdad-prompts-que-funcionan/hero.jpg
 heroImageAlt: >-
   Prompts ChatGPT: hombre escribiendo instrucción larga en interfaz de chat,
   monitor activo, postura concentrada al frente
@@ -27,7 +27,7 @@ Los prompts más efectivos tienen cuatro elementos. Primero, el **rol**: dile a 
 
 La combinación de estos cuatro elementos transforma respuestas genéricas en respuestas específicamente útiles para tu situación real.
 
-![Prompts ChatGPT: pantalla con campo de texto largo en interfaz de chat, manos en teclado al borde inferior del encuadre](/images/posts/como-usar-chatgpt-de-verdad-prompts-que-funcionan/1.webp)
+![Prompts ChatGPT: pantalla con campo de texto largo en interfaz de chat, manos en teclado al borde inferior del encuadre](/images/posts/como-usar-chatgpt-de-verdad-prompts-que-funcionan/1.jpg)
 
   
 

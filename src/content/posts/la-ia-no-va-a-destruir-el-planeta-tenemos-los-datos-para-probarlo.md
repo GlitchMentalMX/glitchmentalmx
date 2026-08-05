@@ -7,7 +7,7 @@ description: >-
   inteligencia artificial está devorando el planeta. Que los centros de datos
   son vampiros…
 heroImage: >-
-  /images/posts/la-ia-no-va-a-destruir-el-planeta-tenemos-los-datos-para-probarlo/hero.webp
+  /images/posts/la-ia-no-va-a-destruir-el-planeta-tenemos-los-datos-para-probarlo/hero.jpg
 heroImageAlt: >-
   Mujer observa una balanza industrial donde una pequeña caja pesa casi tanto
   como un contenedor gigante vacío, desafiando percepciones.

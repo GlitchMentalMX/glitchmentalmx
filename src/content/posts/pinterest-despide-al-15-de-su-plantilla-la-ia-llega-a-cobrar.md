@@ -7,7 +7,7 @@ description: >-
   laboral, lo que representa aproximadamente 700 empleos de una plantilla global
   de…
 heroImage: >-
-  /images/posts/pinterest-despide-al-15-de-su-plantilla-la-ia-llega-a-cobrar/hero.webp
+  /images/posts/pinterest-despide-al-15-de-su-plantilla-la-ia-llega-a-cobrar/hero.jpg
 heroImageAlt: >-
   Pinterest despide al 15% de su plantilla: empleada con caja de pertenencias
   frente a oficina con monitores vacíos

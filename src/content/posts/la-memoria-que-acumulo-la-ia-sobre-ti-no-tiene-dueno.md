@@ -6,7 +6,7 @@ description: >-
   La memoria conversacional que acumulas con un agente de IA no tiene dueño
   legal. El 15 de julio de 2026 se apagaron millones de esas memorias en China
   y…
-heroImage: /images/posts/la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno/hero.webp
+heroImage: /images/posts/la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno/hero.jpg
 heroImageAlt: >-
   Memoria de la IA: mujer abre un cajón de archivo vacío junto a un rack de
   servidores desmontado
@@ -43,7 +43,7 @@ Ahí está la incompatibilidad, y no es ideológica sino arquitectónica. Un age
 
 ## Lo que se borró no estaba protegido por nada
 
-![Memoria de la IA: manos sostienen una unidad de almacenamiento sin etiqueta sobre un cajón de archivo vacío](/images/posts/la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno/1.webp)
+![Memoria de la IA: manos sostienen una unidad de almacenamiento sin etiqueta sobre un cajón de archivo vacío](/images/posts/la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno/1.jpg)
 
   
 

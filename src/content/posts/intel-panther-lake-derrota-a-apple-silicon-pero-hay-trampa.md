@@ -7,7 +7,7 @@ description: >-
   Lake, y los benchmarks iniciales están causando furor. El chip insignia Core
   Ultra…
 heroImage: >-
-  /images/posts/intel-panther-lake-derrota-a-apple-silicon-pero-hay-trampa/hero.webp
+  /images/posts/intel-panther-lake-derrota-a-apple-silicon-pero-hay-trampa/hero.jpg
 heroImageAlt: >-
   Intel Panther Lake: dos procesadores sobre mesa blanca comparados por tamaño y
   arquitectura

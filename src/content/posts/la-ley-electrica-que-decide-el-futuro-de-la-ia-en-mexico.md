@@ -7,7 +7,7 @@ description: >-
   planteada. No es un problema de cables: es un problema de ley. Y esa ley
   cambió en…
 heroImage: >-
-  /images/posts/la-ley-electrica-que-decide-el-futuro-de-la-ia-en-mexico/hero.webp
+  /images/posts/la-ley-electrica-que-decide-el-futuro-de-la-ia-en-mexico/hero.jpg
 heroImageAlt: >-
   Subestación eléctrica de gran escala con múltiples líneas de transmisión,
   representando la demanda nacional de electricidad para IA.
@@ -40,7 +40,7 @@ El caso ya apareció en esta serie. [Nuevo León](/articulos/nuevo-leon-no-neces
 
 > En 2014, una ley abrió la puerta para que un privado generara su propia electricidad sin depender de CFE. En 2025, otra ley volvió a entornarla — justo cuando la industria de cómputo empezaba a cruzarla.
 
-![Monitor de sala de control mostrando una curva de demanda eléctrica pico, relevante para el límite energético de la IA en México.](/images/posts/la-ley-electrica-que-decide-el-futuro-de-la-ia-en-mexico/1.webp)
+![Monitor de sala de control mostrando una curva de demanda eléctrica pico, relevante para el límite energético de la IA en México.](/images/posts/la-ley-electrica-que-decide-el-futuro-de-la-ia-en-mexico/1.jpg)
 
 ## Dos discursos que no se hablan entre sí
 

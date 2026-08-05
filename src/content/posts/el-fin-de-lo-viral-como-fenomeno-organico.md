@@ -6,7 +6,7 @@ description: >-
   Hacerse viral solía ser un accidente. Hoy es un producto con precio. El
   alcance orgánico en redes sociales colapsó de forma estructural, y lo que
   llamamos…
-heroImage: /images/posts/el-fin-de-lo-viral-como-fenomeno-organico/hero.webp
+heroImage: /images/posts/el-fin-de-lo-viral-como-fenomeno-organico/hero.jpg
 heroImageAlt: >-
   Fenómeno viral: figura femenina en línea de ensamblaje de contenido idéntico,
   iluminación lateral cian sobre pieza activa
@@ -29,7 +29,7 @@ Addictive Digital, en un análisis publicado en enero de este año con datos de 
 
 ## Por qué desapareció la viralidad orgánica
 
-![Contenido viral: mano sosteniendo pieza de contenido idéntica sobre fila alineada, iluminación lateral cian, plano macro](/images/posts/el-fin-de-lo-viral-como-fenomeno-organico/1.webp)
+![Contenido viral: mano sosteniendo pieza de contenido idéntica sobre fila alineada, iluminación lateral cian, plano macro](/images/posts/el-fin-de-lo-viral-como-fenomeno-organico/1.jpg)
 
   
 

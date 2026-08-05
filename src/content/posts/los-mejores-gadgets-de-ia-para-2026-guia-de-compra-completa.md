@@ -6,7 +6,7 @@ description: >-
   CES 2026 acaba de terminar y dejó algo claro: la inteligencia artificial ya no
   es el futuro, es el presente. Pero aquí viene el problema: no todos los…
 heroImage: >-
-  /images/posts/los-mejores-gadgets-de-ia-para-2026-guia-de-compra-completa/hero.webp
+  /images/posts/los-mejores-gadgets-de-ia-para-2026-guia-de-compra-completa/hero.jpg
 heroImageAlt: >-
   Los mejores gadgets de IA para 2026: gafas inteligentes sobre mesa junto a
   reloj y asistente IA

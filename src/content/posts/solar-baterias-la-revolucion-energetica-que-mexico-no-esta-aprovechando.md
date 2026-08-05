@@ -7,7 +7,7 @@ description: >-
   global promedio de las baterías de almacenamiento estacionario cayó un 45%
   solo…
 heroImage: >-
-  /images/posts/solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando/hero.webp
+  /images/posts/solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando/hero.jpg
 heroImageAlt: >-
   Solar + baterías: ingeniero revisa planta solar con paneles y estructuras
   pendientes de instalación
@@ -32,7 +32,7 @@ El costo también es un obstáculo real. Según datos de IRENA y la Comisión Fe
 
 ## Qué cambia y cuándo: el horizonte concreto
 
-![Solar + baterías: paneles solares instalados y estructuras vacías en planta en construcción bajo sol](/images/posts/solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando/1.webp)
+![Solar + baterías: paneles solares instalados y estructuras vacías en planta en construcción bajo sol](/images/posts/solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando/1.jpg)
 
   
 

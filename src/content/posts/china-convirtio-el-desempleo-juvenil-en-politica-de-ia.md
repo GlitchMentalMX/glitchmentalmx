@@ -5,7 +5,7 @@ updatedDate: 2026-04-25T13:03:19.822Z
 description: >-
   Un domingo en Shanghái, unas veinte personas de entre 20 y 30 años se reúnen
   en una sala de conferencias para intercambiar estrategias de supervivencia…
-heroImage: /images/posts/china-convirtio-el-desempleo-juvenil-en-politica-de-ia/hero.webp
+heroImage: /images/posts/china-convirtio-el-desempleo-juvenil-en-politica-de-ia/hero.jpg
 heroImageAlt: >-
   desempleo juvenil China política IA: joven con laptop en plaza con mesas
   separadas frente a edificio estatal

@@ -6,7 +6,7 @@ description: >-
   Hay una fecha que los gobiernos y los bancos centrales del mundo están
   marcando en sus calendarios con preocupación creciente: el momento en que una…
 heroImage: >-
-  /images/posts/computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno/hero.webp
+  /images/posts/computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno/hero.jpg
 heroImageAlt: >-
   Computación cuántica: persona toca candado roto con grietas luminosas en
   pasillo, acceso a cifrado
@@ -29,7 +29,7 @@ El mercado global de computación cuántica —hardware, software, servicios y c
 
 ## Qué cambia y cuándo: tres horizontes con diferente nivel de certeza
 
-![Computación cuántica: candado metálico fracturado con luz interna, ruptura de cifrado](/images/posts/computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno/1.webp)
+![Computación cuántica: candado metálico fracturado con luz interna, ruptura de cifrado](/images/posts/computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno/1.jpg)
 
   
 

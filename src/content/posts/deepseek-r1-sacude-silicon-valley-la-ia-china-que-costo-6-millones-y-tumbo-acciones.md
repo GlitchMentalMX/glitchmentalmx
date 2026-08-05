@@ -9,7 +9,7 @@ description: >-
   imposible: destronar a ChatGPT del primer lugar en la App Store de Estados
   Unidos.
 heroImage: >-
-  /images/posts/deepseek-r1-sacude-silicon-valley-la-ia-china-que-costo-6-millones-y-tumbo-acciones/hero.webp
+  /images/posts/deepseek-r1-sacude-silicon-valley-la-ia-china-que-costo-6-millones-y-tumbo-acciones/hero.jpg
 heroImageAlt: >-
   DeepSeek R1: servidor de IA de bajo perfil sobre mesa de laboratorio con
   puertos de red visibles
@@ -30,7 +30,7 @@ Según reportó TechCrunch, el modelo utiliza una técnica de _reinforcement lea
 
   
 
-![DeepSeek R1: ejecutivo sosteniendo servidor de IA en sala de juntas corporativa](/images/posts/deepseek-r1-sacude-silicon-valley-la-ia-china-que-costo-6-millones-y-tumbo-acciones/1.webp)
+![DeepSeek R1: ejecutivo sosteniendo servidor de IA en sala de juntas corporativa](/images/posts/deepseek-r1-sacude-silicon-valley-la-ia-china-que-costo-6-millones-y-tumbo-acciones/1.jpg)
 
 ## China domina el mercado con precios imposibles
 

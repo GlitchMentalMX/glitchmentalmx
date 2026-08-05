@@ -22,7 +22,7 @@ const items = await getCollection('visualInsights');
         : {};
       return (
         <Tag class="card" {...linkProps}>
-          <img src={item.imagen} alt={item.titulo} loading="lazy" width="600" height="400" />
+          <img src={item.imagen} alt={item.titulo} loading="lazy" width="900" height="506" />
           <div class="body">
             <h3>{item.titulo}</h3>
             <p>{item.resumen}</p>
@@ -47,7 +47,7 @@ const items = await getCollection('visualInsights');
     background: var(--bg-inset);
     color: var(--text);
   }
-  .card img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+  .card img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
   .card .body { padding: 18px 20px 22px; }
   .card h3 { font-size: 1.05rem; line-height: 1.3; margin-bottom: 8px; }
   .card:hover h3 { color: var(--accent); }

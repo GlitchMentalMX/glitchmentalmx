@@ -7,7 +7,7 @@ description: >-
   enfrentar: para la Generación Z, cada segundo de carga no es solo una espera,
   es un…
 heroImage: >-
-  /images/posts/gen-z-y-la-obsesion-por-el-tiempo-por-que-abandonan-las-apps-lentas/hero.webp
+  /images/posts/gen-z-y-la-obsesion-por-el-tiempo-por-que-abandonan-las-apps-lentas/hero.jpg
 heroImageAlt: >-
   Gen Z y la obsesión por el tiempo: joven caminando entre interfaces digitales
   con iconos de carga

@@ -6,7 +6,7 @@ description: >-
   Esta mañana el Banco Central Europeo publicó un análisis basado en encuestas a
   empresas de la zona euro realizadas durante 2025, y el resultado principal va…
 heroImage: >-
-  /images/posts/la-ia-no-destruye-empleos-en-europa-que-dicen-los-datos/hero.webp
+  /images/posts/la-ia-no-destruye-empleos-en-europa-que-dicen-los-datos/hero.jpg
 heroImageAlt: >-
   IA empleos Europa BCE: mujer con dedo sobre gráfica institucional impresa con
   resultado contrario a lo esperado

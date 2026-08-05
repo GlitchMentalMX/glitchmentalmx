@@ -6,7 +6,7 @@ description: >-
   Hubo un tiempo, hace no mucho, en que sacar el último gadget era el flex
   definitivo. El iPhone nuevo, el PlayStation recién salido, los AirPods Pro.
   Era una…
-heroImage: /images/posts/el-precio-del-iphone-subio-la-innovacion-no/hero.webp
+heroImage: /images/posts/el-precio-del-iphone-subio-la-innovacion-no/hero.jpg
 heroImageAlt: >-
   Placa metálica con forma de smartphone en banco de calibración industrial,
   mientras versiones casi idénticas revelan innovación estancada.

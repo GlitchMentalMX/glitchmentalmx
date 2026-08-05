@@ -5,7 +5,7 @@ updatedDate: 2026-06-24T23:41:25.940Z
 description: >-
   El tráfico orgánico de Google cayó 33% a nivel global entre noviembre de 2024
   y noviembre de 2025, según datos de Chartbeat. Las redes sociales retienen…
-heroImage: /images/posts/sin-google-ni-redes-como-construir-audiencia-en-2026/hero.webp
+heroImage: /images/posts/sin-google-ni-redes-como-construir-audiencia-en-2026/hero.jpg
 heroImageAlt: >-
   Construir audiencia 2026: hombre barriendo hojas SEO de escritorio con laptop
   encendida, iluminación lateral cian, rabia contenida
@@ -30,7 +30,7 @@ Los grandes medios tienen equipos, presupuestos y marcas reconocidas que generan
 
 ## Qué estrategias funcionan sin presupuesto
 
-![Construir audiencia 2026: mano masculina arrugando hoja impresa sobre mesa con papeles, iluminación lateral cian, plano macro](/images/posts/sin-google-ni-redes-como-construir-audiencia-en-2026/1.webp)
+![Construir audiencia 2026: mano masculina arrugando hoja impresa sobre mesa con papeles, iluminación lateral cian, plano macro](/images/posts/sin-google-ni-redes-como-construir-audiencia-en-2026/1.jpg)
 
   
 

@@ -5,7 +5,7 @@ updatedDate: 2026-06-22T19:03:42.994Z
 description: >-
   La inteligencia artificial está en todos lados. En comunicados de prensa, en
   discursos corporativos, en presentaciones de ventas y en promesas que suenan…
-heroImage: /images/posts/el-indice-que-separa-la-ia-real-del-humo-tecnologico/hero.webp
+heroImage: /images/posts/el-indice-que-separa-la-ia-real-del-humo-tecnologico/hero.jpg
 heroImageAlt: El índice que separa la IA real del humo tecnológico
 ---
 La inteligencia artificial está en todos lados. En comunicados de prensa, en discursos corporativos, en presentaciones de ventas y en promesas que suenan bien, pero que rara vez se sostienen cuando bajan a operación. El problema no es la tecnología. El problema es la falta de criterio.

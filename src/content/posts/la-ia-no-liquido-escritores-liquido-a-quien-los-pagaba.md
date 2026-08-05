@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:31:05.682Z
 description: >-
   La pregunta equivocada domina el debate: ¿puede la IA escribir tan bien como
   un humano? La pregunta correcta es otra: ¿quién va a pagar por la escritura…
-heroImage: /images/posts/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/hero.webp
+heroImage: /images/posts/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/hero.jpg
 heroImageAlt: >-
   La IA no liquidó escritores: mujer revisa documentos en oficina vacía tras
   recorte editorial
@@ -26,7 +26,7 @@ El resultado en los medios es directo: _sin tráfico, no hay impresiones; sin im
 
 > La IA no mató al periodismo: destruyó el modelo publicitario que pagaba por él. Sin tráfico orgánico, no hay presupuesto para reporteros. El contenido de bajo valor ya fue automatizado; lo que queda es el periodismo que nadie puede hacer sin consecuencias legales, fuentes reales y un nombre en el _byline_.
 
-![La IA no liquidó escritores: escritorio vacío con documentos en oficina editorial desmantelada](/images/posts/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/1.webp)
+![La IA no liquidó escritores: escritorio vacío con documentos en oficina editorial desmantelada](/images/posts/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/1.jpg)
 
 ## Las agencias de prensa ya están usando la lógica de los estudios de foto
 

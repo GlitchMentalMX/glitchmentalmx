@@ -8,7 +8,7 @@ description: >-
   La Generación Z, esos nativos digitales que crecieron con un smartphone en la
   mano, está liderando la mayor contradicción cultural de 2026: la huida masiva…
 heroImage: >-
-  /images/posts/dopamina-detox-por-que-gen-z-se-desconecta-masivamente-y-que-hace-en-su-lugar/hero.webp
+  /images/posts/dopamina-detox-por-que-gen-z-se-desconecta-masivamente-y-que-hace-en-su-lugar/hero.jpg
 heroImageAlt: 'Dopamina detox: joven meditando frente a un smartphone iluminado en el suelo'
 ---
 La Generación Z, esos nativos digitales que crecieron con un smartphone en la mano, está liderando la mayor contradicción cultural de 2026: la huida masiva de las pantallas. No es un rechazo tímido; es un movimiento organizado, casi ritualístico, que llaman "dopamina detox". Jóvenes que acumulaban 10 horas de pantalla diaria ahora pasan fines de semana enteros sin tocar un dispositivo, documentan su "[abstinencia digital](https://orbiumadicciones.com/nuevas-tecnologias/beneficios-y-desventajas-de-la-desintoxicacion-digital/)" en TikTok y llenan foros con consejos para sobrevivir al síndrome de abstinencia. **Lo que las redes sociales vendieron como conexión, una parte de Gen Z lo vive ahora como adicción tóxica**.

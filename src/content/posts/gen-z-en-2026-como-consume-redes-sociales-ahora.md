@@ -6,7 +6,7 @@ description: >-
   Gen Z ya no usa redes sociales como Millennials las usaron. En 2026, el
   comportamiento dominante de Gen Z en redes sociales es consumo pasivo, no
   creación…
-heroImage: /images/posts/gen-z-en-2026-como-consume-redes-sociales-ahora/hero.webp
+heroImage: /images/posts/gen-z-en-2026-como-consume-redes-sociales-ahora/hero.jpg
 heroImageAlt: >-
   Gen Z en 2026: joven con smartphone frente a torrente de contenidos conectados
   en redes sociales
@@ -57,7 +57,7 @@ Esto crea división entre consumo público (feeds algorítmicos de entretenimien
 
   
 
-![Gen Z en 2026: joven con smartphone ante torre de videos flotantes conectados por una red digital](/images/posts/gen-z-en-2026-como-consume-redes-sociales-ahora/1.webp)
+![Gen Z en 2026: joven con smartphone ante torre de videos flotantes conectados por una red digital](/images/posts/gen-z-en-2026-como-consume-redes-sociales-ahora/1.jpg)
 
 ## Identidades múltiples y cuentas anónimas
 

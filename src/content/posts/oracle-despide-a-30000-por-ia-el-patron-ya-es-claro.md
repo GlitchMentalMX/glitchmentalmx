@@ -5,7 +5,7 @@ updatedDate: 2026-04-02T12:46:43.998Z
 description: >-
   Oracle eliminó entre 20,000 y 30,000 empleos el 31 de marzo de 2026, en lo que
   analistas consideran el mayor recorte en la historia de 48 años de la…
-heroImage: /images/posts/oracle-despide-a-30000-por-ia-el-patron-ya-es-claro/hero.webp
+heroImage: /images/posts/oracle-despide-a-30000-por-ia-el-patron-ya-es-claro/hero.jpg
 heroImageAlt: >-
   Oracle eliminó hasta 30,000 empleos para financiar su expansión en IA. Un
   email a las 6 AM. Sin previo aviso. El patrón ya es claro.

@@ -6,7 +6,7 @@ description: >-
   El mercado de wearables premium en 2026 ya no se pelea con más pantallas ni
   mejores GPUs: se pelea con conectividad autónoma y métricas de salud
   continua.…
-heroImage: /images/posts/garmin-en-2026-satelite-lte-y-la-guerra-de-las-bandas/hero.webp
+heroImage: /images/posts/garmin-en-2026-satelite-lte-y-la-guerra-de-las-bandas/hero.jpg
 heroImageAlt: >-
   Garmin 2026 wearables: hombre comparando varios relojes inteligentes en cruce
   con rutas digitales divergentes
@@ -35,7 +35,7 @@ El precio refleja eso. A 1,549.99, el D2 Mach 2 Pro no compite con un Apple Watc
 
   
 
-![Garmin 2026 wearables: cables conectados a panel con divisor mecánico que fragmenta la señal en múltiples salidas](/images/posts/garmin-en-2026-satelite-lte-y-la-guerra-de-las-bandas/1.webp)
+![Garmin 2026 wearables: cables conectados a panel con divisor mecánico que fragmenta la señal en múltiples salidas](/images/posts/garmin-en-2026-satelite-lte-y-la-guerra-de-las-bandas/1.jpg)
 
   
 

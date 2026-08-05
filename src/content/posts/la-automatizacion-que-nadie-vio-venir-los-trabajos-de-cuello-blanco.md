@@ -7,7 +7,7 @@ description: >-
   almacenes y los camiones de reparto. El trabajador en riesgo era el obrero,
   no…
 heroImage: >-
-  /images/posts/la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco/hero.webp
+  /images/posts/la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco/hero.jpg
 heroImageAlt: >-
   La automatización que nadie vio venir: sistema automatizado clasifica carpetas
   en oficina moderna con empleada
@@ -28,7 +28,7 @@ El impacto invisible es más difícil de medir pero probablemente más relevante
 
 ## Qué cambia y cuándo: tres años críticos
 
-![La automatización que nadie vio venir: oficina vacía con escritorios y carpeta cayendo de cajón](/images/posts/la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco/1.webp)
+![La automatización que nadie vio venir: oficina vacía con escritorios y carpeta cayendo de cajón](/images/posts/la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco/1.jpg)
 
   
 

@@ -7,7 +7,7 @@ description: >-
   ganador del Premio Turing y ex jefe científico de IA en Meta dejó la compañía
   en…
 heroImage: >-
-  /images/posts/modelos-del-mundo-en-ia-la-apuesta-de-5-mil-millones-que-desafia-a-los-llms/hero.webp
+  /images/posts/modelos-del-mundo-en-ia-la-apuesta-de-5-mil-millones-que-desafia-a-los-llms/hero.jpg
 heroImageAlt: >-
   World Models in AI: arquitecta ajustando maqueta urbana con estructura en
   construcción
@@ -34,7 +34,7 @@ Boston Dynamics, líder en robótica, confirmó en noviembre de 2025 que **la IA
 
 ## Las aplicaciones prácticas que cambiarán todo
 
-![World Models in AI: estructura arquitectónica parcial junto a edificios terminados en maqueta](/images/posts/modelos-del-mundo-en-ia-la-apuesta-de-5-mil-millones-que-desafia-a-los-llms/1.webp)
+![World Models in AI: estructura arquitectónica parcial junto a edificios terminados en maqueta](/images/posts/modelos-del-mundo-en-ia-la-apuesta-de-5-mil-millones-que-desafia-a-los-llms/1.jpg)
 
   
 

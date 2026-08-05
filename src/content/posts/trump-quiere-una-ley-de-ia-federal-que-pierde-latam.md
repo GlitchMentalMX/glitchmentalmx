@@ -6,7 +6,7 @@ description: >-
   El 20 de marzo de 2026, la Casa Blanca publicó un marco nacional de política
   de IA cuyo objetivo central es que el Congreso elimine la mayoría de las
   leyes…
-heroImage: /images/posts/trump-quiere-una-ley-de-ia-federal-que-pierde-latam/hero.webp
+heroImage: /images/posts/trump-quiere-una-ley-de-ia-federal-que-pierde-latam/hero.jpg
 heroImageAlt: >-
   Trump quiere una ley de IA: hombre traza línea en mapa de América separando
   EE.UU. y LATAM

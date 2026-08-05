@@ -6,7 +6,7 @@ description: >-
   Geoffrey Hinton, el "padrino de la inteligencia artificial" que ganó el Premio
   Nobel de Física 2024 por su trabajo en redes neuronales, ha repetido en…
 heroImage: >-
-  /images/posts/geoffrey-hinton-dice-que-ia-avanzo-mas-rapido-de-lo-que-pensaba/hero.webp
+  /images/posts/geoffrey-hinton-dice-que-ia-avanzo-mas-rapido-de-lo-que-pensaba/hero.jpg
 heroImageAlt: >-
   Mujer intenta accionar un freno industrial mientras una aguja supera límites
   de diseño en un gran medidor mecánico acelerado.

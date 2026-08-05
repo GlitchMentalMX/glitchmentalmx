@@ -6,7 +6,7 @@ description: >-
   A finales de marzo de 2026, Anthropic reunió en secreto a unos 15 líderes
   religiosos cristianos en su sede de San Francisco. No fue un evento de
   relaciones…
-heroImage: /images/posts/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/hero.webp
+heroImage: /images/posts/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/hero.jpg
 heroImageAlt: >-
   Anthropic y el Vaticano: persona frente a puerta iluminada en catedral con red
   de datos digital en el suelo
@@ -35,7 +35,7 @@ Entre los participantes históricos documentados por _Religion News Service_ se 
 
 ## Qué busca cada actor — y por qué lo ocultan
 
-![Anthropic y el Vaticano: pedestal con tableta digital en catedral conectado a red de datos en el suelo](/images/posts/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/1.webp)
+![Anthropic y el Vaticano: pedestal con tableta digital en catedral conectado a red de datos en el suelo](/images/posts/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/1.jpg)
 
   
 

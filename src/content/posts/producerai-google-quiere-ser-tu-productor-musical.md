@@ -5,7 +5,7 @@ updatedDate: 2026-06-30T19:57:15.476Z
 description: >-
   Si pensabas que la IA generativa ya había llegado lejos en texto e imagen, la
   música acaba de entrar a la misma carrera con el mismo peso. El 24 de febrero…
-heroImage: /images/posts/producerai-google-quiere-ser-tu-productor-musical/hero.webp
+heroImage: /images/posts/producerai-google-quiere-ser-tu-productor-musical/hero.jpg
 heroImageAlt: >-
   ProducerAI Google productor musical: mujer observa onda de audio generándose
   sola junto a mezcladora

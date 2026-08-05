@@ -6,7 +6,7 @@ description: >-
   Febrero de 2026 arrancó con una ola de nostalgia veraniega en TikTok que tiene
   poco que ver con el calendario y mucho que ver con el estado de ánimo…
 heroImage: >-
-  /images/posts/tiktok-febrero-2026-los-trends-llevame-a-la-playa-y-lush-life/hero.webp
+  /images/posts/tiktok-febrero-2026-los-trends-llevame-a-la-playa-y-lush-life/hero.jpg
 heroImageAlt: >-
   TikTok trends febrero 2026: hombre joven frente a espejo de baño grabándose
   con smartphone, expresión de ajuste espontáneo

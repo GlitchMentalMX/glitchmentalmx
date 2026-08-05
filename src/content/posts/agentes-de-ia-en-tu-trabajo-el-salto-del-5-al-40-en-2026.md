@@ -6,7 +6,7 @@ description: >-
   Hay una cifra que Gartner publicó hace unos meses y que apenas está empezando
   a aterrizar en las conversaciones de oficina: a finales de 2025, menos del 5%…
 heroImage: >-
-  /images/posts/agentes-de-ia-en-tu-trabajo-el-salto-del-5-al-40-en-2026/hero.webp
+  /images/posts/agentes-de-ia-en-tu-trabajo-el-salto-del-5-al-40-en-2026/hero.jpg
 heroImageAlt: >-
   Agentes IA empresas 2026: mujer en pasillo de oficina con luz azul filtrándose
   bajo múltiples puertas cerradas

@@ -7,7 +7,7 @@ description: >-
   usuarios activos semanales es la herramienta de IA más adoptada de la
   historia. El…
 heroImage: >-
-  /images/posts/chatgpt-la-ia-mas-usada-del-mundo-y-la-mas-caotica-de-silicon-valley/hero.webp
+  /images/posts/chatgpt-la-ia-mas-usada-del-mundo-y-la-mas-caotica-de-silicon-valley/hero.jpg
 heroImageAlt: >-
   ChatGPT: mujer frente a edificio agrietado con interfaz de chat proyectada en
   un muro
@@ -40,7 +40,7 @@ heroImageAlt: >-
 
   
 
-![ChatGPT: interfaz de chat proyectada sobre muro de concreto agrietado](/images/posts/chatgpt-la-ia-mas-usada-del-mundo-y-la-mas-caotica-de-silicon-valley/1.webp)
+![ChatGPT: interfaz de chat proyectada sobre muro de concreto agrietado](/images/posts/chatgpt-la-ia-mas-usada-del-mundo-y-la-mas-caotica-de-silicon-valley/1.jpg)
 
   
 

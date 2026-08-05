@@ -6,7 +6,7 @@ description: >-
   Meta presentó un modelo llamado Trimodal Brain Encoder, y el nombre no es
   casualidad. No es un cerebro artificial, pero sí es un sistema que intenta
   predecir…
-heroImage: /images/posts/meta-ya-modela-el-cerebro-la-verdad-sobre-tribe-v2/hero.webp
+heroImage: /images/posts/meta-ya-modela-el-cerebro-la-verdad-sobre-tribe-v2/hero.jpg
 heroImageAlt: >-
   TRIBE v2 Meta: mujer sostiene diagrama de actividad cerebral en escritorio con
   laptop y luz cálida lateral
@@ -43,7 +43,7 @@ El resultado no es una interpretación subjetiva, sino una estimación probabil�
 
 ## Por qué no es un cerebro (aunque suene así)
 
-![TRIBE v2 Meta: manos sosteniendo diagrama de contornos de actividad cerebral impreso en papel, fondo desenfocado](/images/posts/meta-ya-modela-el-cerebro-la-verdad-sobre-tribe-v2/1.webp)
+![TRIBE v2 Meta: manos sosteniendo diagrama de contornos de actividad cerebral impreso en papel, fondo desenfocado](/images/posts/meta-ya-modela-el-cerebro-la-verdad-sobre-tribe-v2/1.jpg)
 
   
 

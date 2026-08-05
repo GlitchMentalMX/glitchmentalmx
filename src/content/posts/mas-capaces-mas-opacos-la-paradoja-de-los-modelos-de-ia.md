@@ -6,7 +6,7 @@ description: >-
   Mientras los modelos de inteligencia artificial baten récords en benchmarks y
   las empresas que los desarrollan se preparan para salir a bolsa, un índice…
 heroImage: >-
-  /images/posts/mas-capaces-mas-opacos-la-paradoja-de-los-modelos-de-ia/hero.webp
+  /images/posts/mas-capaces-mas-opacos-la-paradoja-de-los-modelos-de-ia/hero.jpg
 heroImageAlt: >-
   opacidad modelos IA: mujer presiona mano sobre panel de vidrio esmerilado con
   sistema activo ilegible al fondo

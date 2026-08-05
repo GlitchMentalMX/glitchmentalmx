@@ -7,7 +7,7 @@ description: >-
   Para junio de 2025, cinco personas con parálisis severa usaban el dispositivo
   para…
 heroImage: >-
-  /images/posts/interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio/hero.webp
+  /images/posts/interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio/hero.jpg
 heroImageAlt: >-
   Interfaces cerebro-computadora: persona observa esquema de chip en mesa junto
   a documento, interfaz cerebro-chip
@@ -32,7 +32,7 @@ Pero el hype mediático —y en particular el hype de Neuralink— ha proyectado
 
 ## Qué cambia y cuándo: el horizonte médico primero
 
-![Interfaces cerebro-computadora: chip junto a formulario y pluma en mesa, contexto de implantación y consentimiento](/images/posts/interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio/1.webp)
+![Interfaces cerebro-computadora: chip junto a formulario y pluma en mesa, contexto de implantación y consentimiento](/images/posts/interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio/1.jpg)
 
   
 

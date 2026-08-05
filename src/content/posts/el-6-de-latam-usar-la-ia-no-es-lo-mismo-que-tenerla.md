@@ -6,7 +6,7 @@ description: >-
   Solo el 6% de las organizaciones de América Latina genera valor económico
   significativo con inteligencia artificial, según el Foro Económico Mundial
   (FEM) y…
-heroImage: /images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/hero.webp
+heroImage: /images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/hero.jpg
 heroImageAlt: 'IA en LATAM: mujer en workstation con cable hacia rack sellado con candado.'
 ---
 Solo el **6% de las organizaciones de América Latina genera valor económico significativo con inteligencia artificial**, según el Foro Económico Mundial (FEM) y McKinsey. El reporte lo diagnostica como falta de ejecución. La causa real es otra: en la región se renta la capacidad de IA, no se construye.
@@ -33,7 +33,7 @@ Esa desproporción explica, en buena medida, por qué el uso de IA generativa pu
 
   
 
-![IA en LATAM: mano en teclado junto a candado en panel de cable sellado.](/images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/1.webp)
+![IA en LATAM: mano en teclado junto a candado en panel de cable sellado.](/images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/1.jpg)
 
 ## El sesgo de tamaño: seis de cada diez pymes no capturan nada
 

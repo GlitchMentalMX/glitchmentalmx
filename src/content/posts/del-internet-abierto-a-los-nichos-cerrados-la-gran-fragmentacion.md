@@ -6,7 +6,7 @@ description: >-
   El internet ya no es una plaza pública — es un archipiélago de salas privadas.
   La migración masiva de los usuarios desde las grandes redes sociales hacia…
 heroImage: >-
-  /images/posts/del-internet-abierto-a-los-nichos-cerrados-la-gran-fragmentacion/hero.webp
+  /images/posts/del-internet-abierto-a-los-nichos-cerrados-la-gran-fragmentacion/hero.jpg
 heroImageAlt: >-
   Fragmentación digital: figura femenina en bifurcación de corredores cerrados
   con luces diferenciadas, iluminación lateral cian
@@ -29,7 +29,7 @@ La diferencia entre los foros de 1999 y Discord en la actualidad no es estructur
 
 ## El movimiento de los creadores hacia los espacios cerrados
 
-![Fragmentación digital: mano femenina sobre espejo fracturado con reflejos de luz diferenciada, plano macro, acento cian](/images/posts/del-internet-abierto-a-los-nichos-cerrados-la-gran-fragmentacion/1.webp)
+![Fragmentación digital: mano femenina sobre espejo fracturado con reflejos de luz diferenciada, plano macro, acento cian](/images/posts/del-internet-abierto-a-los-nichos-cerrados-la-gran-fragmentacion/1.jpg)
 
   
 

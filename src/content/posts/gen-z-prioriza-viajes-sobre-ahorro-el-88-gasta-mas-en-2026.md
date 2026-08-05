@@ -7,7 +7,7 @@ description: >-
   económica global, la Generación Z y los millennials están haciendo algo que
   desafía…
 heroImage: >-
-  /images/posts/gen-z-prioriza-viajes-sobre-ahorro-el-88-gasta-mas-en-2026/hero.webp
+  /images/posts/gen-z-prioriza-viajes-sobre-ahorro-el-88-gasta-mas-en-2026/hero.jpg
 heroImageAlt: 'Gen Z prioriza viajes sobre ahorro: el 88% gasta más en 2026'
 ---
 A pesar de la inflación, el costo de vida en aumento y la incertidumbre económica global, la Generación Z y los millennials están haciendo algo que desafía toda lógica financiera tradicional: están gastando más en viajes que nunca. Según el reporte Travel Pulse 2026 de Klook publicado el 11 de febrero, **el 88% de los viajeros globales planea mantener o aumentar su presupuesto de viajes este año**.

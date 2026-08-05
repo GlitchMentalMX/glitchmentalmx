@@ -6,7 +6,7 @@ description: >-
   DeepSeek no es "el ChatGPT chino barato". Tiene arquitectura propia, pesos
   abiertos bajo licencia MIT y tres capas de acceso con lógicas distintas de
   uso,…
-heroImage: /images/posts/deepseek-la-guia-practica-para-usarlo-bien/hero.webp
+heroImage: /images/posts/deepseek-la-guia-practica-para-usarlo-bien/hero.jpg
 heroImageAlt: >-
   DeepSeek guía práctica: mujer ante terminal activa con tres capas de acceso al
   modelo en espacio técnico personal con luz de pantalla
@@ -37,7 +37,7 @@ heroImageAlt: >-
 
 ## Capa 2: La API (para quien automatiza flujos)
 
-![DeepSeek capas de acceso: dedo sobre trackpad de laptop con tres pestañas parciales en pantalla sobre superficie oscura](/images/posts/deepseek-la-guia-practica-para-usarlo-bien/1.webp)
+![DeepSeek capas de acceso: dedo sobre trackpad de laptop con tres pestañas parciales en pantalla sobre superficie oscura](/images/posts/deepseek-la-guia-practica-para-usarlo-bien/1.jpg)
 
   
 

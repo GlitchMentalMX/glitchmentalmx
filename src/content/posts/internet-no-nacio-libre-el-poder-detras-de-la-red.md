@@ -5,7 +5,7 @@ updatedDate: 2026-06-27T04:09:10.909Z
 description: >-
   Internet no nació libre ni abierta por diseño. Nació financiada por el
   Pentágono, privatizada sin debate en 1995 y gobernada durante décadas por una…
-heroImage: /images/posts/internet-no-nacio-libre-el-poder-detras-de-la-red/hero.webp
+heroImage: /images/posts/internet-no-nacio-libre-el-poder-detras-de-la-red/hero.jpg
 heroImageAlt: >-
   historia de internet poder: hombre frente a panel de cables de red en cuarto
   técnico con iluminación cenital y acento neón
@@ -30,7 +30,7 @@ heroImageAlt: >-
 
 **Las redes regionales sin fines de lucro que habían conectado universidades y comunidades fueron absorbidas o quebradas.** Según Jacobin, la privatización no provocó oposición ni generó un debate público significativo. El clima político de los noventa —la desregulación como consenso bipartidista en Washington— enmarcó la entrega de una infraestructura pública como liberalización inevitable. El resultado fue un oligopolio. Llamarlo de otra forma sería inexacto.
 
-![historia de internet poder: mano con conector RJ45 frente a puerto vacío en patch panel con cables ordenados](/images/posts/internet-no-nacio-libre-el-poder-detras-de-la-red/1.webp)
+![historia de internet poder: mano con conector RJ45 frente a puerto vacío en patch panel con cables ordenados](/images/posts/internet-no-nacio-libre-el-poder-detras-de-la-red/1.jpg)
 
   
 

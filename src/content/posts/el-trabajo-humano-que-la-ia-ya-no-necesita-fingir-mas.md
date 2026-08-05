@@ -5,7 +5,7 @@ updatedDate: 2026-07-13T11:00:00.114Z
 description: >-
   Mechanical Turk cierra a nuevos clientes el 30 de julio de 2026, veintiún años
   después de que Jeff Bezos la bautizara como "inteligencia artificial…
-heroImage: /images/posts/el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas/hero.webp
+heroImage: /images/posts/el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas/hero.jpg
 heroImageAlt: >-
   Mechanical Turk cierre 2026: mujer se quita gafete de trabajador anónimo junto
   a laptop apagándose
@@ -34,7 +34,7 @@ El hallazgo cerraba un círculo perverso: **humanos usando inteligencia artifici
 
 ## Por qué cierra ahora y no antes
 
-![Mechanical Turk cierre 2026: mano suelta gafete de trabajador anónimo junto a laptop apagándose](/images/posts/el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas/1.webp)
+![Mechanical Turk cierre 2026: mano suelta gafete de trabajador anónimo junto a laptop apagándose](/images/posts/el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas/1.jpg)
 
   
 

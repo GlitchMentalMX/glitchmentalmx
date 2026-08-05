@@ -7,7 +7,7 @@ description: >-
   clip de 60 segundos. Es donde un storytime de una mala cita se convierte en
   la…
 heroImage: >-
-  /images/posts/de-storytime-a-juicio-social-la-cultura-de-la-cancelacion-en-tiktok/hero.webp
+  /images/posts/de-storytime-a-juicio-social-la-cultura-de-la-cancelacion-en-tiktok/hero.jpg
 heroImageAlt: >-
   Mujer grabando un storytime en su habitación mientras siluetas de una
   audiencia juzgadora aparecen reflejadas en ventana, espejo y laptop.

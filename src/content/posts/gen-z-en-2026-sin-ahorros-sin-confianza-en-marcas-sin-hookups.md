@@ -6,7 +6,7 @@ description: >-
   Si piensas que entiendes a la Generación Z porque ves TikToks, tengo noticias
   para ti: estás apenas rascando la superficie. En 2026, los jóvenes nacidos…
 heroImage: >-
-  /images/posts/gen-z-en-2026-sin-ahorros-sin-confianza-en-marcas-sin-hookups/hero.webp
+  /images/posts/gen-z-en-2026-sin-ahorros-sin-confianza-en-marcas-sin-hookups/hero.jpg
 heroImageAlt: >-
   Gen Z sin confianza en marcas: joven manipulando red de marcas y consumidores
   junto a cadena logística
@@ -23,7 +23,7 @@ Según Merca 2.0, la Gen Z ya representa el 35% de los consumidores en México, 
 
 Pero lo más relevante para 2026 no es su tamaño, sino su filosofía de consumo. Statista explica que esta generación prefiere marcas que estén alineadas con sus valores, especialmente en temas como protección animal, ética laboral, diversidad y sustentabilidad. En Estados Unidos, por ejemplo, 39% de Gen Z elige productos con empaques eco-friendly; 34% prioriza el bienestar animal; y 33% busca ingredientes naturales u orgánicos.
 
-![Gen Z sin confianza en marcas: cadena logística conectada a marcas y comunidades fragmentadas](/images/posts/gen-z-en-2026-sin-ahorros-sin-confianza-en-marcas-sin-hookups/1.webp)
+![Gen Z sin confianza en marcas: cadena logística conectada a marcas y comunidades fragmentadas](/images/posts/gen-z-en-2026-sin-ahorros-sin-confianza-en-marcas-sin-hookups/1.jpg)
 
 ## La confianza es la moneda más valiosa (y la más difícil de ganar)
 

@@ -6,7 +6,7 @@ description: >-
   Sam Altman dice que el AGI llegará en años. Demis Hassabis dice que hay un 50%
   de probabilidad para 2030. Yann LeCun dice que el concepto mismo es un error.…
 heroImage: >-
-  /images/posts/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/hero.webp
+  /images/posts/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/hero.jpg
 heroImageAlt: >-
   AGI: hombre frente a pizarrón con definiciones en conflicto y marcador en alto
   en sala institucional vacía
@@ -39,7 +39,7 @@ La revisión de ese informe, lejos de tranquilizar, ilustra el problema de fondo
 
 ## Qué cambia y cuándo: lo que importa más que la fecha
 
-![AGI: mano con marcador sobre pizarrón con capas de definiciones en conflicto en primer plano extremo](/images/posts/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/1.webp)
+![AGI: mano con marcador sobre pizarrón con capas de definiciones en conflicto en primer plano extremo](/images/posts/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/1.jpg)
 
   
 

@@ -6,7 +6,7 @@ description: >-
   El 28 de abril arrancó en la corte federal de Oakland el juicio que Elon Musk
   lanzó contra OpenAI, Sam Altman y Greg Brockman. Lo que está en juego no es
   un…
-heroImage: /images/posts/musk-vs-altman-el-juicio-que-puede-partir-a-openai/hero.webp
+heroImage: /images/posts/musk-vs-altman-el-juicio-que-puede-partir-a-openai/hero.jpg
 heroImageAlt: >-
   Musk vs Altman juicio OpenAI 2026: estructura de concreto fracturada por
   fuerzas opuestas con tensores
@@ -37,7 +37,7 @@ El for-profit de OpenAI fue creado, según la línea oficial, para acceder a cap
 
   
 
-![Musk vs Altman juicio OpenAI 2026: documentos oficiales divididos en dos partes sobre el suelo](/images/posts/musk-vs-altman-el-juicio-que-puede-partir-a-openai/1.webp)
+![Musk vs Altman juicio OpenAI 2026: documentos oficiales divididos en dos partes sobre el suelo](/images/posts/musk-vs-altman-el-juicio-que-puede-partir-a-openai/1.jpg)
 
 ## El acuerdo con Microsoft, ese punto que duele
 

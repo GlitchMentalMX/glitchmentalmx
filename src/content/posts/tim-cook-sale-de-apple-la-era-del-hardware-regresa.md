@@ -6,7 +6,7 @@ description: >-
   Tim Cook deja la dirección ejecutiva de Apple el 1 de septiembre de 2026,
   después de 15 años en el cargo. Lo reemplaza John Ternus, jefe de ingeniería
   de…
-heroImage: /images/posts/tim-cook-sale-de-apple-la-era-del-hardware-regresa/hero.webp
+heroImage: /images/posts/tim-cook-sale-de-apple-la-era-del-hardware-regresa/hero.jpg
 heroImageAlt: >-
   Tim Cook sale de Apple: mujer evalúa smartphone en tienda tecnológica con
   dispositivos y gráfico digital de fondo
@@ -33,7 +33,7 @@ El historial de Apple Intelligence es conocido y documentado. La empresa present
 
 ## Qué cambia con Ternus al frente
 
-![Tim Cook sale de Apple: chasis de smartphone desmontado con herramientas y planos de diseño en mesa de ingeniería](/images/posts/tim-cook-sale-de-apple-la-era-del-hardware-regresa/1.webp)
+![Tim Cook sale de Apple: chasis de smartphone desmontado con herramientas y planos de diseño en mesa de ingeniería](/images/posts/tim-cook-sale-de-apple-la-era-del-hardware-regresa/1.jpg)
 
   
 

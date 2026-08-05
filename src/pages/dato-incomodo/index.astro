@@ -15,7 +15,7 @@ const items = await getCollection('datoIncomodo');
   <section class="container grid">
     {items.map(({ data: item }, i) => (
       <div class="card">
-        <img src={item.imagen} alt={item.resumen} loading="lazy" width="600" height="400" />
+        <img src={item.imagen} alt={item.resumen} loading="lazy" width="900" height="506" />
         <div class="body">
           <p class="eyebrow num">Dato incómodo №{i + 1}</p>
           <p class="text">{item.resumen}</p>
@@ -37,7 +37,7 @@ const items = await getCollection('datoIncomodo');
     overflow: hidden;
     background: var(--bg-inset);
   }
-  .card img { width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+  .card img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
   .card .body { padding: 18px 20px 22px; }
   .num { margin-bottom: 8px; }
   .text { font-family: var(--font-display); font-size: 1.1rem; line-height: 1.4; margin: 0; }

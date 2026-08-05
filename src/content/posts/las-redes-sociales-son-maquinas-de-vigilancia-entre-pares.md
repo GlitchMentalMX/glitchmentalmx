@@ -7,7 +7,7 @@ description: >-
   peor: te observan todos los demás usuarios, y tú a ellos. La vigilancia
   lateral,…
 heroImage: >-
-  /images/posts/las-redes-sociales-son-maquinas-de-vigilancia-entre-pares/hero.webp
+  /images/posts/las-redes-sociales-son-maquinas-de-vigilancia-entre-pares/hero.jpg
 heroImageAlt: >-
   Vigilancia entre pares: mujer observada desde ventanas y puertas en callejón
   residencial.
@@ -32,7 +32,7 @@ Este mecanismo no surge de forma espontánea. **Las plataformas lo construyeron 
 
 ## El doxxing: vigilancia lateral sin filtros
 
-![Vigilancia entre pares: smartphone iluminado en patio rodeado de ventanas observando.](/images/posts/las-redes-sociales-son-maquinas-de-vigilancia-entre-pares/1.webp)
+![Vigilancia entre pares: smartphone iluminado en patio rodeado de ventanas observando.](/images/posts/las-redes-sociales-son-maquinas-de-vigilancia-entre-pares/1.jpg)
 
   
 

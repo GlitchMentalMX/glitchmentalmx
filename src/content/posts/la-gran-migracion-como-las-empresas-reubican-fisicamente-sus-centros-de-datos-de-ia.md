@@ -9,7 +9,7 @@ description: >-
   laboratorio de Silicon Valley. Está sucediendo en lugares como Islandia,
   Noruega,…
 heroImage: >-
-  /images/posts/la-gran-migracion-como-las-empresas-reubican-fisicamente-sus-centros-de-datos-de-ia/hero.webp
+  /images/posts/la-gran-migracion-como-las-empresas-reubican-fisicamente-sus-centros-de-datos-de-ia/hero.jpg
 heroImageAlt: >-
   AI data centers: rack de servidores sobre transpaleta en muelle de carga junto
   a pista aére

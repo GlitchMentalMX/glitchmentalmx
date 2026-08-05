@@ -6,7 +6,7 @@ description: >-
   El lock-in tecnológico opera en dos fases: primero, el producto es gratis o
   barato hasta que construyes sobre él una dependencia real. Después, el precio…
 heroImage: >-
-  /images/posts/el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues/hero.webp
+  /images/posts/el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues/hero.jpg
 heroImageAlt: >-
   Lock-in ecosistemas cerrados: mujer frente a puerta bloqueada en pasillo con
   líneas de contención en paredes
@@ -33,7 +33,7 @@ heroImageAlt: >-
 
 ## Apple y el argumento de la seguridad como coartada
 
-![Lock-in ecosistemas cerrados: mano sobre manija de puerta con líneas de contención en la superficie, primer plano](/images/posts/el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues/1.webp)
+![Lock-in ecosistemas cerrados: mano sobre manija de puerta con líneas de contención en la superficie, primer plano](/images/posts/el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues/1.jpg)
 
   
 

@@ -5,7 +5,7 @@ updatedDate: 2026-06-23T16:25:36.931Z
 description: >-
   La empresa detrás de Claude, el asistente de inteligencia artificial que usas
   para múltiples tareas, se está peleando con el Pentágono. Y no es una pelea…
-heroImage: /images/posts/el-pentagono-quiere-a-claude-sin-limites-o-fuera/hero.webp
+heroImage: /images/posts/el-pentagono-quiere-a-claude-sin-limites-o-fuera/hero.jpg
 heroImageAlt: >-
   Pentágono Claude sin límites: mujer frente a laptop y documento sin firmar en
   oficina federal austera

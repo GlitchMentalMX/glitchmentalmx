@@ -6,7 +6,7 @@ description: >-
   El algoritmo no trata a todas las generaciones igual — y eso tiene
   consecuencias que van mucho más allá de qué videos te recomienda TikTok.
   Dependiendo de…
-heroImage: /images/posts/generaciones-y-algoritmos-de-boomers-a-gen-alpha/hero.webp
+heroImage: /images/posts/generaciones-y-algoritmos-de-boomers-a-gen-alpha/hero.jpg
 heroImageAlt: >-
   Generaciones y algoritmos: figura femenina ante cuatro columnas de flujo
   algorítmico diferenciado, iluminación lateral cian

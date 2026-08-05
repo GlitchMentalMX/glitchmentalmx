@@ -6,7 +6,7 @@ description: >-
   Los términos de uso de Microsoft Copilot contienen una frase que contradice
   cada anuncio de la compañía: "Copilot is for entertainment purposes only." La…
 heroImage: >-
-  /images/posts/copilot-es-entretenimiento-lo-dice-el-contrato-de-microsoft/hero.webp
+  /images/posts/copilot-es-entretenimiento-lo-dice-el-contrato-de-microsoft/hero.jpg
 heroImageAlt: >-
   Copilot es entretenimiento: persona leyendo libro frente a dashboard digital
   con métricas en pantalla

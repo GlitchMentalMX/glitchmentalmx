@@ -6,7 +6,7 @@ description: >-
   Mientras la conversación pública sigue obsesionada con quién tiene el modelo
   de IA más grande, otra carrera de IA ya está corriendo dentro de tu teléfono,…
 heroImage: >-
-  /images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/hero.webp
+  /images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/hero.jpg
 heroImageAlt: >-
   La IA en tu teléfono: una mujer con un dispositivo compacto frente a racks de
   servidores en entorno de centro de datos
@@ -31,7 +31,7 @@ Meta lo dejó explícito cuando lanzó las versiones ligeras de Llama 3.2: **los
 
 El caso de Apple es el más extremo en cuanto a integración silenciosa. **Desde 2024, Apple Intelligence corre con un modelo on-device de aproximadamente 3,000 millones de parámetros**, comprimido mediante cuantización de 2 bits para funcionar en el silicio de un iPhone, según el reporte técnico de Apple Machine Learning Research. Ese modelo —no uno en la nube— es el que procesa tareas como reescribir un texto, resumir notificaciones o priorizar tu bandeja de entrada. La cuenta regresiva del costo también importa: un SLM que corre en tu propio hardware no genera un cargo recurrente por cada consulta a una API externa, algo que las empresas que despliegan IA a escala ya están descubriendo como una ventaja de presupuesto, no solo de privacidad.
 
-![La IA en tu teléfono: módulo de cómputo compacto con indicador luminoso sobre piso técnico](/images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/1.webp)
+![La IA en tu teléfono: módulo de cómputo compacto con indicador luminoso sobre piso técnico](/images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/1.jpg)
 
 ## Qué cambia: el mapa se está reacomodando en tiempo real
 

@@ -7,7 +7,7 @@ description: >-
   propia TikTok lanzó en enero un nuevo aplicativo llamado PineDrama:
   microdramas…
 heroImage: >-
-  /images/posts/microdramas-en-redes-el-formato-que-nadie-esperaba-en-2026/hero.webp
+  /images/posts/microdramas-en-redes-el-formato-que-nadie-esperaba-en-2026/hero.jpg
 heroImageAlt: >-
   Microdramas redes sociales 2026: mujer paralizada en cocina con teléfono
   vertical, grifo abierto y bolsa de compras sin soltar

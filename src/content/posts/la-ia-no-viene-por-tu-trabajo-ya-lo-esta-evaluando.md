@@ -5,7 +5,7 @@ updatedDate: 2026-07-15T14:36:58.631Z
 description: >-
   .gm-wrap-manifiesto, .gm-wrap-manifiesto p, .gm-wrap-manifiesto h2,
   .gm-wrap-manifiesto em, .gm-wrap-manifiesto strong, .gm-wrap-manifiesto div{…
-heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.webp
+heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.jpg
 heroImageAlt: >-
   Mujer mide terreno con instrumento topográfico en medio de niebla densa
   mientras otros permanecen inmóviles al fondo

@@ -5,7 +5,7 @@ updatedDate: 2026-06-26T01:37:38.779Z
 description: >-
   El 31 de marzo de 2026, una librería de JavaScript con más de 100 millones de
   descargas semanales fue convertida en un sistema de distribución de malware…
-heroImage: /images/posts/hackers-de-corea-del-norte-atacaron-axios-que-paso/hero.webp
+heroImage: /images/posts/hackers-de-corea-del-norte-atacaron-axios-que-paso/hero.jpg
 heroImageAlt: >-
   Hackers Corea del Norte Axios: cable desconectado en panel de rack operativo,
   etiqueta de paquete en el suelo junto al servidor

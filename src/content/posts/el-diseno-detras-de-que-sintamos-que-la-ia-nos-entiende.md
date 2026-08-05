@@ -6,7 +6,7 @@ description: >-
   El antropomorfismo hacia la IA no es un error de percepción: es el resultado
   de un diseño de producto calibrado para producirlo. Cuando ese diseño se topa…
 heroImage: >-
-  /images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/hero.webp
+  /images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/hero.jpg
 heroImageAlt: >-
   Antropomorfismo IA: mujer confía secreto a chat cuya luz no le devuelve nada,
   escritorio nocturno
@@ -27,7 +27,7 @@ Esto cambia la pregunta de fondo. No se trata de un fallo del usuario por ingenu
 
 ## El diseño no es un efecto secundario
 
-![Antropomorfismo IA: mano suspendida sobre teclado, luz de pantalla sin devolver calidez](/images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/1.webp)
+![Antropomorfismo IA: mano suspendida sobre teclado, luz de pantalla sin devolver calidez](/images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/1.jpg)
 
   
 

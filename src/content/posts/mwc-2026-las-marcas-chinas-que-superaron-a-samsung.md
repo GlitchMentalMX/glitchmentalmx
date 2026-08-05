@@ -6,7 +6,7 @@ description: >-
   El Mobile World Congress que se celebró del 2 al 5 de marzo en Barcelona tuvo
   una narrativa que nadie en los stands de las grandes marcas quiso pronunciar
   en…
-heroImage: /images/posts/mwc-2026-las-marcas-chinas-que-superaron-a-samsung/hero.webp
+heroImage: /images/posts/mwc-2026-las-marcas-chinas-que-superaron-a-samsung/hero.jpg
 heroImageAlt: >-
   MWC 2026 marcas chinas: soporte de exhibición vacío siendo retirado de estante
   de smartphones en showroom tecnológico

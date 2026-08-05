@@ -5,7 +5,7 @@ updatedDate: 2026-04-09T13:03:22.779Z
 description: >-
   El filósofo francés Éric Sadin lleva más de una década advirtiendo sobre la
   tecnología cuando nadie quería escucharlo. Su nuevo libro, El desierto de…
-heroImage: /images/posts/eric-sadin-la-ia-no-nos-va-a-matar-nos-va-a-idiotizar/hero.webp
+heroImage: /images/posts/eric-sadin-la-ia-no-nos-va-a-matar-nos-va-a-idiotizar/hero.jpg
 heroImageAlt: >-
   IA nos va a idiotizar: mujer alimentando máquina que tritura textos en tiras
   de papel

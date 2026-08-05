@@ -7,7 +7,7 @@ description: >-
   Anthropic en San Francisco, la empresa publicaba avances de sus agentes
   autónomos…
 heroImage: >-
-  /images/posts/consultaron-al-papa-luego-automatizaron-a-sus-feligreses/hero.webp
+  /images/posts/consultaron-al-papa-luego-automatizaron-a-sus-feligreses/hero.jpg
 heroImageAlt: >-
   Consultaron al Papa: fila de personas con dispositivos en la espalda dentro de
   iglesia automatizada
@@ -26,7 +26,7 @@ El Papa eligió su nombre con una referencia explícita al León XIII que escrib
 
 León XIV dice querer hacer lo mismo con la IA. Pero hay una diferencia que el Papa no ha resuelto públicamente. **La Rerum Novarum nombró a los afectados. León XIV habla de dignidad humana sin nombrar a los trabajadores que los modelos que visitan su sede están desplazando.** Dario Amodei, en su ensayo "The Adolescence of Technology", estimó que la Inteligencia Artificial redefinirá el 50% de los trabajos de nivel de entrada en servicios de conocimiento en un horizonte de uno a cinco años. Esos trabajos tienen dueños. Muchos de ellos son feligreses de alguna iglesia.
 
-![Consultaron al Papa: fieles con arneses tecnológicos avanzan en iglesia automatizada](/images/posts/consultaron-al-papa-luego-automatizaron-a-sus-feligreses/1.webp)
+![Consultaron al Papa: fieles con arneses tecnológicos avanzan en iglesia automatizada](/images/posts/consultaron-al-papa-luego-automatizaron-a-sus-feligreses/1.jpg)
 
 ## El argumento que no cierra
 

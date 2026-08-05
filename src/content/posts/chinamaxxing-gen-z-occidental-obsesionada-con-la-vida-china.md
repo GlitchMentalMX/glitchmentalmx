@@ -7,7 +7,7 @@ description: >-
   encontraste con un fenómeno cultural extraño: jóvenes occidentales,
   principalmente…
 heroImage: >-
-  /images/posts/chinamaxxing-gen-z-occidental-obsesionada-con-la-vida-china/hero.webp
+  /images/posts/chinamaxxing-gen-z-occidental-obsesionada-con-la-vida-china/hero.jpg
 heroImageAlt: >-
   Chinamaxxing Gen Z: joven occidental en frontera visual entre infraestructura
   china y entorno occidental, filmando con teléfono
@@ -36,7 +36,7 @@ El país ha sacado a cientos de millones de la pobreza en décadas recientes, ha
 
 ## La idealización ignora realidades incómodas
 
-![Chinamaxxing tendencia: mano sosteniendo teléfono junto a bebida asiática y objeto occidental sobre superficie urbana](/images/posts/chinamaxxing-gen-z-occidental-obsesionada-con-la-vida-china/1.webp)
+![Chinamaxxing tendencia: mano sosteniendo teléfono junto a bebida asiática y objeto occidental sobre superficie urbana](/images/posts/chinamaxxing-gen-z-occidental-obsesionada-con-la-vida-china/1.jpg)
 
   
 

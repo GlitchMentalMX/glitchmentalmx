@@ -5,7 +5,7 @@ updatedDate: 2026-06-26T02:56:03.144Z
 description: >-
   El AI Performance Study 2026 de PwC entrevistó a 1,217 ejecutivos senior de
   grandes empresas en 25 sectores a nivel global, y su hallazgo central es…
-heroImage: /images/posts/el-7420-de-la-ia-por-que-casi-nadie-gana-con-ella/hero.webp
+heroImage: /images/posts/el-7420-de-la-ia-por-que-casi-nadie-gana-con-ella/hero.jpg
 heroImageAlt: >-
   valor IA empresas: ejecutivo solo en auditorio corporativo vacío frente a
   proyección de gráfica de concentración extrema

@@ -6,7 +6,7 @@ description: >-
   Silicon Valley prometió que la inteligencia artificial haría nuestras vidas
   más fáciles. Que trabajaríamos menos, no más. Pero en 2026, la realidad es…
 heroImage: >-
-  /images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/hero.webp
+  /images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/hero.jpg
 heroImageAlt: >-
   Semanas de 72 horas: mujer trabajando frente a portátil con relojes digitales
   luminosos
@@ -47,7 +47,7 @@ Amazon anunció que gastará $200 mil millones este año, mientras que Google pl
 
 ## El costo humano de la carrera por la IA
 
-![Semanas de 72 horas: mano sosteniendo taza sobre mesa con marcas circulares de café](/images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/1.webp)
+![Semanas de 72 horas: mano sosteniendo taza sobre mesa con marcas circulares de café](/images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/1.jpg)
 
   
 

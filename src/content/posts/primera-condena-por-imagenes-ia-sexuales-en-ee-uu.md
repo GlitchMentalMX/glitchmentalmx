@@ -5,7 +5,7 @@ updatedDate: 2026-04-09T12:59:12.176Z
 description: >-
   Un tribunal de Ohio condenó este mes a James Strahler II, de 37 años, bajo la
   Take It Down Act: la primera sentencia federal en Estados Unidos por crear y…
-heroImage: /images/posts/primera-condena-por-imagenes-ia-sexuales-en-ee-uu/hero.webp
+heroImage: /images/posts/primera-condena-por-imagenes-ia-sexuales-en-ee-uu/hero.jpg
 heroImageAlt: >-
   imágenes IA sexuales: impresora destruyendo fotografías fragmentadas en
   entorno de archivo

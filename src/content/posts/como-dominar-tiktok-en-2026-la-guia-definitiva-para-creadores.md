@@ -6,7 +6,7 @@ description: >-
   Si piensas que TikTok en 2026 funciona igual que hace dos años, tengo malas
   noticias para ti: la plataforma cambió las reglas por completo. El algoritmo…
 heroImage: >-
-  /images/posts/como-dominar-tiktok-en-2026-la-guia-definitiva-para-creadores/hero.webp
+  /images/posts/como-dominar-tiktok-en-2026-la-guia-definitiva-para-creadores/hero.jpg
 heroImageAlt: >-
   Cómo dominar TikTok en 2026: creadora analiza smartphone montado en trípode
   para grabar contenido
@@ -41,7 +41,7 @@ El formato de carrusel de fotos de TikTok está regresando con fuerza. Este form
 
 El contenido de elección comunitaria está creciendo porque TikTok está priorizando la interacción profunda. Estos videos piden a los espectadores que decidan algo en los comentarios, como "¿Qué color debería pintar mi habitación?" o "¿Cuál receta debería hacer primero?". Esto convierte a los espectadores pasivos en participantes activos y construye lealtad con el tiempo.
 
-![Cómo dominar TikTok en 2026: dedo pulsa botón de grabación en smartphone para crear videos cortos](/images/posts/como-dominar-tiktok-en-2026-la-guia-definitiva-para-creadores/1.webp)
+![Cómo dominar TikTok en 2026: dedo pulsa botón de grabación en smartphone para crear videos cortos](/images/posts/como-dominar-tiktok-en-2026-la-guia-definitiva-para-creadores/1.jpg)
 
   
 

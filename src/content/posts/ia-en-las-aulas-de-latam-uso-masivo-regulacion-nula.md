@@ -6,7 +6,7 @@ description: >-
   Más del 80% de los universitarios mexicanos ya usa inteligencia artificial
   generativa —tecnología que genera textos, imágenes y código desde
   instrucciones en…
-heroImage: /images/posts/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/hero.webp
+heroImage: /images/posts/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/hero.jpg
 heroImageAlt: >-
   IA en las aulas de LATAM: estudiante usa laptop frente a diagrama de IA
   proyectado en aula
@@ -35,7 +35,7 @@ heroImageAlt: >-
 
 > El problema no es que los estudiantes usen IA para hacer trampa. El problema es que el modelo de evaluación universitaria fue diseñado para un mundo donde copiar era difícil. Ese mundo ya no existe.
 
-![IA en las aulas de LATAM: diagrama de flujo institucional con sistema de IA en proceso educativo](/images/posts/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/1.webp)
+![IA en las aulas de LATAM: diagrama de flujo institucional con sistema de IA en proceso educativo](/images/posts/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/1.jpg)
 
   
 

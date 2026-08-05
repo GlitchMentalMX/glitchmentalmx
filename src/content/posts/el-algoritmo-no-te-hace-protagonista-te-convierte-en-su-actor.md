@@ -7,7 +7,7 @@ description: >-
   resultado predecible de una arquitectura de producto diseñada para que
   confundas…
 heroImage: >-
-  /images/posts/el-algoritmo-no-te-hace-protagonista-te-convierte-en-su-actor/hero.webp
+  /images/posts/el-algoritmo-no-te-hace-protagonista-te-convierte-en-su-actor/hero.jpg
 heroImageAlt: >-
   El algoritmo no te hace protagonista: persona con cuerdas manipulada sobre red
   de conexiones digitales
@@ -36,7 +36,7 @@ Un análisis cualitativo publicado en _La Civiltà Cattolica_ en 2025 añade un 
 
 ## El costo documentado en autoestima y salud mental
 
-![El algoritmo no te hace protagonista: zapatos sobre flechas de dirección en superficie tipo diagrama](/images/posts/el-algoritmo-no-te-hace-protagonista-te-convierte-en-su-actor/1.webp)
+![El algoritmo no te hace protagonista: zapatos sobre flechas de dirección en superficie tipo diagrama](/images/posts/el-algoritmo-no-te-hace-protagonista-te-convierte-en-su-actor/1.jpg)
 
   
 

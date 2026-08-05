@@ -7,7 +7,7 @@ description: >-
   IA en mercado laboral durante 2026. Según encuesta de Accel a 75
   inversionistas…
 heroImage: >-
-  /images/posts/inversionistas-predicen-que-ia-va-a-eliminar-empleos-en-2026-segun-encuesta/hero.webp
+  /images/posts/inversionistas-predicen-que-ia-va-a-eliminar-empleos-en-2026-segun-encuesta/hero.jpg
 heroImageAlt: >-
   IA va a eliminar empleos en 2026: mujer con portafolio frente a red de nodos
   de IA
@@ -44,7 +44,7 @@ Optimistas argumentan que IA creará nuevos tipos de empleos que compensan pérd
 
 ## Qué están haciendo empresas realmente
 
-![IA va a eliminar empleos en 2026: portafolio negro sobre mesa junto a red de nodos de IA](/images/posts/inversionistas-predicen-que-ia-va-a-eliminar-empleos-en-2026-segun-encuesta/1.webp)
+![IA va a eliminar empleos en 2026: portafolio negro sobre mesa junto a red de nodos de IA](/images/posts/inversionistas-predicen-que-ia-va-a-eliminar-empleos-en-2026-segun-encuesta/1.jpg)
 
   
 

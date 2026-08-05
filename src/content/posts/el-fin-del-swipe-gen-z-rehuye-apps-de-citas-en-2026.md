@@ -6,7 +6,7 @@ description: >-
   Hay una paradoja en el centro de la vida amorosa de la Generación Z: son la
   generación más conectada de la historia, y al mismo tiempo la que más
   decepciones…
-heroImage: /images/posts/el-fin-del-swipe-gen-z-rehuye-apps-de-citas-en-2026/hero.webp
+heroImage: /images/posts/el-fin-del-swipe-gen-z-rehuye-apps-de-citas-en-2026/hero.jpg
 heroImageAlt: >-
   Gen Z apps de citas 2026: mujer empujando pila de tarjetas de perfil sobre
   mesa con red de nodos en fondo
@@ -25,7 +25,7 @@ El problema no es solo la cantidad de tiempo invertido. Es lo que aportan esos p
 
 ## Qué está reemplazando al swipe
 
-![Gen Z swipe apps de citas: dedo suspendido en gesto incompleto junto a reloj de muñeca detenido](/images/posts/el-fin-del-swipe-gen-z-rehuye-apps-de-citas-en-2026/1.webp)
+![Gen Z swipe apps de citas: dedo suspendido en gesto incompleto junto a reloj de muñeca detenido](/images/posts/el-fin-del-swipe-gen-z-rehuye-apps-de-citas-en-2026/1.jpg)
 
   
 

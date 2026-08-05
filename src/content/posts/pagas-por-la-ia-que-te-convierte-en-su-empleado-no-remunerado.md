@@ -7,7 +7,7 @@ description: >-
   te concentraras en lo que importa. La realidad documentada por el propio
   estudio…
 heroImage: >-
-  /images/posts/pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado/hero.webp
+  /images/posts/pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado/hero.jpg
 heroImageAlt: Operaria revisando documentos en línea de producción automatizada
 ---
 **La promesa de la IA siempre fue la misma**: automatizar lo mundano para que tú te concentraras en lo que importa. La realidad documentada por el propio estudio de OpenAI y Harvard es diferente: el 73% de las interacciones con ChatGPT en junio de 2025 no tenían relación con el trabajo. Las que sí, en su mayoría, eran tareas de escritura y revisión. Es decir, el trabajo de siempre, con un paso adicional: escribir el prompt correcto.
@@ -32,7 +32,7 @@ Ese desplazamiento tiene un nombre en economía del trabajo: _task substitution 
 
 ## Por qué las empresas ganan más que los individuos con esta ecuación
 
-![Sobres avanzando por cinta transportadora automatizada](/images/posts/pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado/1.webp)
+![Sobres avanzando por cinta transportadora automatizada](/images/posts/pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado/1.jpg)
 
   
 

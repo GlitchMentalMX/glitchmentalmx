@@ -6,7 +6,7 @@ description: >-
   Tu identidad en internet no es una elección personal — es un permiso que
   otorgan las plataformas. El anonimato no desapareció por accidente cultural ni
   por…
-heroImage: /images/posts/identidad-digital-quien-decides-ser-cuando-nadie-te-ve/hero.webp
+heroImage: /images/posts/identidad-digital-quien-decides-ser-cuando-nadie-te-ve/hero.jpg
 heroImageAlt: >-
   Identidad digital: mujer observando reflejo digitalizado en espejo con
   interfaz verde
@@ -31,7 +31,7 @@ heroImageAlt: >-
 
 ## Identidades múltiples como estrategia de supervivencia
 
-![Identidad digital: mujer retirando carteles frente a muro con cuadrícula de seguimiento digital](/images/posts/identidad-digital-quien-decides-ser-cuando-nadie-te-ve/1.webp)
+![Identidad digital: mujer retirando carteles frente a muro con cuadrícula de seguimiento digital](/images/posts/identidad-digital-quien-decides-ser-cuando-nadie-te-ve/1.jpg)
 
   
 

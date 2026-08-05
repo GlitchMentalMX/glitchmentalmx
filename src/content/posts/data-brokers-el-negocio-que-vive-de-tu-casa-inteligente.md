@@ -7,7 +7,7 @@ description: >-
   millones de dólares que vive de comprar y revender los datos de tus
   dispositivos…
 heroImage: >-
-  /images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/hero.webp
+  /images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/hero.jpg
 heroImageAlt: >-
   Data brokers casa inteligente: mujer revisa dispositivo doméstico mientras
   líneas de red escapan hacia el exterior
@@ -30,7 +30,7 @@ Allstate y otras aseguradoras usaban después esos datos para justificar el ajus
 
 > La regulación contra los data brokers no detiene la vigilancia: la empuja un escalón atrás, hacia el modelo que infiere sin necesidad de vender nada.
 
-![Data brokers casa inteligente: dispositivo doméstico conectado por cable a unidad externa de extracción de datos en banco técnico](/images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/1.webp)
+![Data brokers casa inteligente: dispositivo doméstico conectado por cable a unidad externa de extracción de datos en banco técnico](/images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/1.jpg)
 
 ## La FTC persigue la venta, no el perfilado
 

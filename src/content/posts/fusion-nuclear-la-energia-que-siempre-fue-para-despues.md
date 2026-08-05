@@ -6,7 +6,7 @@ description: >-
   Durante setenta años, la fusión nuclear fue la tecnología energética del
   futuro permanente. El chiste del sector se repitió tanto que se volvió dogma:
   la…
-heroImage: /images/posts/fusion-nuclear-la-energia-que-siempre-fue-para-despues/hero.webp
+heroImage: /images/posts/fusion-nuclear-la-energia-que-siempre-fue-para-despues/hero.jpg
 heroImageAlt: >-
   fusión nuclear: ingeniera en pasarela interior de tokamak con panel de IA en
   instalación de escala monumental
@@ -31,7 +31,7 @@ Helion Energy, respaldada entre otros por Sam Altman y SoftBank, apunta a tener 
 
 ## Qué cambia y cuándo: el horizonte realista
 
-![fusión nuclear: interior de cámara toroidal de tokamak con anillos concéntricos de acero y resplandor electromagnético en punto de fuga](/images/posts/fusion-nuclear-la-energia-que-siempre-fue-para-despues/1.webp)
+![fusión nuclear: interior de cámara toroidal de tokamak con anillos concéntricos de acero y resplandor electromagnético en punto de fuga](/images/posts/fusion-nuclear-la-energia-que-siempre-fue-para-despues/1.jpg)
 
   
 

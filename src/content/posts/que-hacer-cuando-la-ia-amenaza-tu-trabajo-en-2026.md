@@ -5,7 +5,7 @@ updatedDate: 2026-06-23T23:21:58.181Z
 description: >-
   El 26 de febrero de 2026, Jack Dorsey envió una carta interna a los empleados
   de Block —la empresa dueña de Square y Cash App— para anunciarles que más de…
-heroImage: /images/posts/que-hacer-cuando-la-ia-amenaza-tu-trabajo-en-2026/hero.webp
+heroImage: /images/posts/que-hacer-cuando-la-ia-amenaza-tu-trabajo-en-2026/hero.jpg
 heroImageAlt: >-
   IA amenaza empleo 2026: mujer de pie frente a pared con notas impresas, dedo
   sobre detalle clave, expresión de análisis bajo presión
@@ -34,7 +34,7 @@ Pero el dato más duro apunta a un grupo específico: **los empleos de entrada, 
 
 Las áreas con mayor exposición en el corto plazo incluyen: atención al cliente de primer nivel, tareas de traducción y transcripción, análisis de datos repetitivos, redacción de contenido genérico, programación de nivel básico y tareas de soporte técnico de primer contacto.
 
-![IA amenaza empleo 2026: mano femenina detenida sobre teclado con notificación corporativa abierta en pantalla al fondo](/images/posts/que-hacer-cuando-la-ia-amenaza-tu-trabajo-en-2026/1.webp)
+![IA amenaza empleo 2026: mano femenina detenida sobre teclado con notificación corporativa abierta en pantalla al fondo](/images/posts/que-hacer-cuando-la-ia-amenaza-tu-trabajo-en-2026/1.jpg)
 
   
 

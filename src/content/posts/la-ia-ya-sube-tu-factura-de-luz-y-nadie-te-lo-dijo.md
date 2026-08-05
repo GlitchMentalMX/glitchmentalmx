@@ -6,7 +6,7 @@ description: >-
   Los data centers representaron alrededor del 50% de todo el crecimiento en
   demanda eléctrica de EE.UU. en 2025, según la Agencia Internacional de
   Energía…
-heroImage: /images/posts/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/hero.webp
+heroImage: /images/posts/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/hero.jpg
 heroImageAlt: >-
   La IA ya sube tu factura de luz: mujer observa medidor eléctrico con planta
   energética al fondo
@@ -33,7 +33,7 @@ No es un fenómeno aislado. Según Fortune, la oposición ciudadana bloqueó o r
 
   
 
-![La IA ya sube tu factura de luz: medidor eléctrico analógico marcando consumo en pared deteriorada](/images/posts/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/1.webp)
+![La IA ya sube tu factura de luz: medidor eléctrico analógico marcando consumo en pared deteriorada](/images/posts/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/1.jpg)
 
   
 

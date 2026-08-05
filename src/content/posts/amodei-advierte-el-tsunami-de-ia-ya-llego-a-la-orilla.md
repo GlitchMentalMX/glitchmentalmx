@@ -6,7 +6,7 @@ description: >-
   Hay algo llamativo en escuchar a Dario Amodei, el CEO de la empresa que
   construye a Claude, advertir que la inteligencia artificial podría destruir
   millones…
-heroImage: /images/posts/amodei-advierte-el-tsunami-de-ia-ya-llego-a-la-orilla/hero.webp
+heroImage: /images/posts/amodei-advierte-el-tsunami-de-ia-ya-llego-a-la-orilla/hero.jpg
 heroImageAlt: >-
   Dario Amodei IA empleo: mujer de pie en malecón urbano con agua avanzando
   silenciosa sobre el pavimento

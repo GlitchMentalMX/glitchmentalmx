@@ -6,7 +6,7 @@ description: >-
   El mercado del diseño gráfico freelance no está desapareciendo: se está
   partiendo en dos. El segmento de tarifa media — logos a precio fijo, paquetes
   para…
-heroImage: /images/posts/disenadores-freelance-e-ia-el-colapso-del-nivel-medio/hero.webp
+heroImage: /images/posts/disenadores-freelance-e-ia-el-colapso-del-nivel-medio/hero.jpg
 heroImageAlt: >-
   diseño gráfico freelance IA: diseñadora ante escalera rota que separa trabajo
   medio y especialización
@@ -31,7 +31,7 @@ La lectura es precisa: lo que la IA puede hacer bien (generar imágenes estátic
 
 Fiverr, además, lanzó en 2025 su programa _Fiverr Personal AI_: una función que permite a los freelancers entrenar modelos con su propio trabajo para que los clientes paguen por usar su "IA personal". La iniciativa revela la postura real de la plataforma: no salvar al freelancer de tarifa media, sino mantener sus propios ingresos mientras reconfigura el modelo de trabajo.
 
-![diseño gráfico freelance IA: cubos pequeños y bloque único separados por plataforma de concreto rota](/images/posts/disenadores-freelance-e-ia-el-colapso-del-nivel-medio/1.webp)
+![diseño gráfico freelance IA: cubos pequeños y bloque único separados por plataforma de concreto rota](/images/posts/disenadores-freelance-e-ia-el-colapso-del-nivel-medio/1.jpg)
 
 ## Adobe Firefly y la paradoja del socio que te come el mercado
 

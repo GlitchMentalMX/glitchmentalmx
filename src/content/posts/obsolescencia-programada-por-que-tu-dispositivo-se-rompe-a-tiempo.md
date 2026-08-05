@@ -6,7 +6,7 @@ description: >-
   Tu teléfono no se vuelve lento porque envejece. Se vuelve lento porque alguien
   decidió que así debía ser. La obsolescencia programada es una estrategia de…
 heroImage: >-
-  /images/posts/obsolescencia-programada-por-que-tu-dispositivo-se-rompe-a-tiempo/hero.webp
+  /images/posts/obsolescencia-programada-por-que-tu-dispositivo-se-rompe-a-tiempo/hero.jpg
 heroImageAlt: >-
   Obsolescencia programada: dispositivo abierto con componentes visibles y
   herramienta de precisión en mesa de laboratorio técnico
@@ -27,7 +27,7 @@ Las consecuencias no son abstractas. El Global E-Waste Monitor reportó que en 2
 
 El estudio de Bocconi documenta un dato relevante sobre la dirección del problema: **el ciclo de reemplazo de smartphones aumentó de un promedio de 2.4 años en 2013 a 3.7 años en 2022**, lo que sugiere que los consumidores están empezando a resistir el ciclo de actualización acelerada. Al mismo tiempo, en Italia, uno de cada tres smartphones se reemplaza en pocos años mientras todavía funciona correctamente.
 
-![Obsolescencia programada: interior de dispositivo abierto con herramienta de precisión apuntando a componente específico en placa](/images/posts/obsolescencia-programada-por-que-tu-dispositivo-se-rompe-a-tiempo/1.webp)
+![Obsolescencia programada: interior de dispositivo abierto con herramienta de precisión apuntando a componente específico en placa](/images/posts/obsolescencia-programada-por-que-tu-dispositivo-se-rompe-a-tiempo/1.jpg)
 
   
 

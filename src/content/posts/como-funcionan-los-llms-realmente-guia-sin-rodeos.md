@@ -5,7 +5,7 @@ updatedDate: 2026-06-25T22:38:31.509Z
 description: >-
   Los modelos de lenguaje como ChatGPT, Claude o Gemini no son inteligencias que
   piensan. Son sistemas estadísticos entrenados para predecir cuál es la…
-heroImage: /images/posts/como-funcionan-los-llms-realmente-guia-sin-rodeos/hero.webp
+heroImage: /images/posts/como-funcionan-los-llms-realmente-guia-sin-rodeos/hero.jpg
 heroImageAlt: >-
   Cómo funcionan los LLMs: investigadora ajustando estructura de pines con forma
   de cerebro
@@ -28,7 +28,7 @@ Lo que hace al transformer especialmente poderoso es que no procesa el texto de 
 
 ## Cómo se genera una respuesta, paso a paso
 
-![Cómo funcionan los LLMs: pinzas retirando pines de una figura cerebral sobre superficie blanca](/images/posts/como-funcionan-los-llms-realmente-guia-sin-rodeos/1.webp)
+![Cómo funcionan los LLMs: pinzas retirando pines de una figura cerebral sobre superficie blanca](/images/posts/como-funcionan-los-llms-realmente-guia-sin-rodeos/1.jpg)
 
   
 

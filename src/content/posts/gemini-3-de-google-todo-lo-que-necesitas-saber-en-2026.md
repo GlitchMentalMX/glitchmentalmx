@@ -6,7 +6,7 @@ description: >-
   Google acaba de lanzar lo que muchos consideran el modelo de IA más
   inteligente del mercado. Gemini 3, presentado en noviembre de 2025, no es solo
   una…
-heroImage: /images/posts/gemini-3-de-google-todo-lo-que-necesitas-saber-en-2026/hero.webp
+heroImage: /images/posts/gemini-3-de-google-todo-lo-que-necesitas-saber-en-2026/hero.jpg
 heroImageAlt: >-
   Gemini 3 Google guía 2026: mujer traza círculo en pizarrón para organizar
   diagrama de IA complejo
@@ -59,7 +59,7 @@ Google estructura su oferta en tres niveles principales, cada uno con límites y
 
 Para educación, Google ofrece **Google AI Pro for Education** (anteriormente Gemini Education y Gemini Education Premium), que continúa disponible para organizaciones educativas con funciones específicas para el sector.
 
-![Gemini 3 Google guía 2026: mano traza línea para aislar concepto clave en diagrama de pizarrón](/images/posts/gemini-3-de-google-todo-lo-que-necesitas-saber-en-2026/1.webp)
+![Gemini 3 Google guía 2026: mano traza línea para aislar concepto clave en diagrama de pizarrón](/images/posts/gemini-3-de-google-todo-lo-que-necesitas-saber-en-2026/1.jpg)
 
   
 

@@ -6,7 +6,7 @@ description: >-
   Adoctrinamiento no significa agenda oculta. Significa transmisión sistemática
   de un marco de valores sin que el receptor sea consciente del mecanismo ni…
 heroImage: >-
-  /images/posts/como-una-ia-te-puede-adoctrinar-sin-que-nadie-lo-planeara/hero.webp
+  /images/posts/como-una-ia-te-puede-adoctrinar-sin-que-nadie-lo-planeara/hero.jpg
 heroImageAlt: >-
   Cómo una IA te puede adoctrinar: persona observa techo con figuras religiosas
   unidas en red
@@ -25,7 +25,7 @@ La tercera condición es invisibilidad del mecanismo. **El usuario de Claude no 
 
 ## Los temas donde el marco importa más
 
-![Cómo una IA te puede adoctrinar: fresco religioso conectado como red de nodos](/images/posts/como-una-ia-te-puede-adoctrinar-sin-que-nadie-lo-planeara/1.webp)
+![Cómo una IA te puede adoctrinar: fresco religioso conectado como red de nodos](/images/posts/como-una-ia-te-puede-adoctrinar-sin-que-nadie-lo-planeara/1.jpg)
 
   
 

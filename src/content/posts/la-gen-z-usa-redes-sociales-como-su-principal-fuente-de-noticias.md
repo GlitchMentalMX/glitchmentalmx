@@ -7,7 +7,7 @@ description: >-
   Generación Z. Se han convertido en su principal fuente de información diaria,
   superando…
 heroImage: >-
-  /images/posts/la-gen-z-usa-redes-sociales-como-su-principal-fuente-de-noticias/hero.webp
+  /images/posts/la-gen-z-usa-redes-sociales-como-su-principal-fuente-de-noticias/hero.jpg
 heroImageAlt: >-
   Gen Z y noticias: mujer joven leyendo smartphone, pila de periódicos en
   segundo plano fuera de foco

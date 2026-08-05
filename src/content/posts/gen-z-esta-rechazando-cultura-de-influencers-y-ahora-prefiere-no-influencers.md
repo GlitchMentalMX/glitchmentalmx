@@ -6,7 +6,7 @@ description: >-
   La era dorada de influencers está terminando. Gen Z desarrolló inmunidad a
   contenido de influencers tradicionales y ahora prefiere creadores que…
 heroImage: >-
-  /images/posts/gen-z-esta-rechazando-cultura-de-influencers-y-ahora-prefiere-no-influencers/hero.webp
+  /images/posts/gen-z-esta-rechazando-cultura-de-influencers-y-ahora-prefiere-no-influencers/hero.jpg
 heroImageAlt: >-
   Gen Z está rechazando cultura de influencers: joven con teléfono frente a
   estudio de grabación
@@ -41,7 +41,7 @@ Marcas ven rechazo a influencers tradicionales y piensan: "necesitamos influence
 
 ## El cambio a microinfluencers y comunidades nicho
 
-![Gen Z está rechazando cultura de influencers: aro de luz y trípode junto a libreta en escritorio](/images/posts/gen-z-esta-rechazando-cultura-de-influencers-y-ahora-prefiere-no-influencers/1.webp)
+![Gen Z está rechazando cultura de influencers: aro de luz y trípode junto a libreta en escritorio](/images/posts/gen-z-esta-rechazando-cultura-de-influencers-y-ahora-prefiere-no-influencers/1.jpg)
 
   
 

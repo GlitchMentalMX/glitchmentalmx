@@ -5,7 +5,7 @@ updatedDate: 2026-06-15T00:26:57.593Z
 description: >-
   La soledad no es un problema que se cure con código. Es una grieta social que,
   en Corea del Sur, el Estado ha empezado a resanar con peluches robóticos…
-heroImage: /images/posts/la-ia-cura-la-soledad-guia-sobre-robots-de-compania/hero.webp
+heroImage: /images/posts/la-ia-cura-la-soledad-guia-sobre-robots-de-compania/hero.jpg
 heroImageAlt: >-
   IA cura la soledad: mujer sosteniendo robot mientras red de conexiones
   digitales invade habitación
@@ -34,7 +34,7 @@ El ahorro no es solo en salarios, sino en logística: un trabajador social apoya
 
   
 
-![IA cura la soledad: mujer abrazando robot de compañía sobre mesa con red digital proyectada](/images/posts/la-ia-cura-la-soledad-guia-sobre-robots-de-compania/1.webp)
+![IA cura la soledad: mujer abrazando robot de compañía sobre mesa con red digital proyectada](/images/posts/la-ia-cura-la-soledad-guia-sobre-robots-de-compania/1.jpg)
 
 ## Qué es —y qué no es— la robótica de acompañamiento
 

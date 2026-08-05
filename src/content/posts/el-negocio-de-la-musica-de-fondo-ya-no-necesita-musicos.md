@@ -6,7 +6,7 @@ description: >-
   El problema no es que la IA vaya a reemplazar a Billie Eilish. El problema es
   que ya reemplazó al compositor anónimo que ponía música en el comercial del…
 heroImage: >-
-  /images/posts/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/hero.webp
+  /images/posts/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/hero.jpg
 heroImageAlt: >-
   sync licensing IA: compositora con auriculares en estudio personal mirando
   sesión con pista generada entre composiciones propias
@@ -35,7 +35,7 @@ En noviembre de 2025, Warner Music Group y Suno anunciaron un acuerdo que liquid
 
 La cobertura estándar lo presentó como una victoria para los artistas. La lectura más precisa es que fue una victoria para los sellos: aprendieron la lección de Spotify. En los años 2000 también "ganaron" con Spotify, y los artistas terminaron cobrando fracciones de centavo por stream. _Misma estructura, diferente tecnología._ Universal Music Group llegó a un acuerdo similar con Udio en octubre de 2025. Sony Music Entertainment mantiene su demanda activa.
 
-![ync licensing IA: mano sobre teclado MIDI pausada con interfaz de producción musical fuera de foco al fondo](/images/posts/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/1.webp)
+![ync licensing IA: mano sobre teclado MIDI pausada con interfaz de producción musical fuera de foco al fondo](/images/posts/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/1.jpg)
 
   
 

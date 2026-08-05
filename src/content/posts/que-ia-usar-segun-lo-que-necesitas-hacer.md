@@ -5,7 +5,7 @@ updatedDate: 2026-06-26T00:39:08.492Z
 description: >-
   Las IAs ya no son intercambiables. ChatGPT, Claude, Gemini, Copilot y DeepSeek
   resuelven cosas distintas con resultados distintos, y elegir mal no solo es…
-heroImage: /images/posts/que-ia-usar-segun-lo-que-necesitas-hacer/hero.webp
+heroImage: /images/posts/que-ia-usar-segun-lo-que-necesitas-hacer/hero.jpg
 heroImageAlt: >-
   Qué IA usar: mujer de pie frente a monitor con múltiples pestañas de chat
   abiertas, postura activa, escritorio compacto
@@ -36,7 +36,7 @@ También gana cuando necesitas generar imágenes directamente desde la misma int
 
 _Úsalo para:_ investigación con fuentes actuales, brainstorming rápido, generación de imágenes, análisis de fotos y diagramas, automatización de tareas cotidianas, contenido estructurado para web.
 
-![Qué IA usar: mano presionando tecla en primer plano, bokeh de múltiples pestañas de colores en monitor al fondo](/images/posts/que-ia-usar-segun-lo-que-necesitas-hacer/1.webp)
+![Qué IA usar: mano presionando tecla en primer plano, bokeh de múltiples pestañas de colores en monitor al fondo](/images/posts/que-ia-usar-segun-lo-que-necesitas-hacer/1.jpg)
 
   
 

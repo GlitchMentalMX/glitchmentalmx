@@ -7,7 +7,7 @@ description: >-
   en implementar un ban total de redes sociales para menores de 16 años.
   TikTok,…
 heroImage: >-
-  /images/posts/australia-baneo-las-redes-sociales-para-menores-de-16-y-es-caos/hero.webp
+  /images/posts/australia-baneo-las-redes-sociales-para-menores-de-16-y-es-caos/hero.jpg
 heroImageAlt: >-
   Hombre recibe un teléfono por una ventana sin seguro mientras una puerta con
   cerrojo reforzado permanece cerrada en primer plano.

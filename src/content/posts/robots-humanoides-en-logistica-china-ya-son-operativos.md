@@ -5,7 +5,7 @@ updatedDate: 2026-06-27T03:27:35.612Z
 description: >-
   China no está debatiendo si los robots humanoides van a entrar a la industria.
   Ya están adentro. En los primeros meses de 2026, el sector de la IA encarnada…
-heroImage: /images/posts/robots-humanoides-en-logistica-china-ya-son-operativos/hero.webp
+heroImage: /images/posts/robots-humanoides-en-logistica-china-ya-son-operativos/hero.jpg
 heroImageAlt: >-
   robots humanoides logística China: supervisor con tablet en primer plano y dos
   robots bipedales operando en almacén activo
@@ -28,7 +28,7 @@ ROBOTERA y Star Dynamics no son excepciones en un mercado tranquilo. Son los eje
 
 El propio informe de 36Kr incluye una advertencia que vale la pena no ignorar: la Comisión Nacional de Desarrollo y Reforma de China advirtió públicamente sobre riesgos estructurales derivados de una entrada masiva de productos al mercado antes de que las rutas técnicas y los modelos de negocio estén maduros. **El entusiasmo del capital no equivale automáticamente a madurez tecnológica.** En el mismo periodo, la startup estadounidense de robots humanoides Cartwheel Robotics declaró quiebra en marzo de 2026.
 
-![robots humanoides logística China: hombre con tablet junto a robot humanoide recuperando caja de estantería industrial](/images/posts/robots-humanoides-en-logistica-china-ya-son-operativos/1.webp)
+![robots humanoides logística China: hombre con tablet junto a robot humanoide recuperando caja de estantería industrial](/images/posts/robots-humanoides-en-logistica-china-ya-son-operativos/1.jpg)
 
   
 

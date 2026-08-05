@@ -7,7 +7,7 @@ description: >-
   después de haberla "retirado". En julio de 2025, Dell anunció que la línea
   XPS…
 heroImage: >-
-  /images/posts/dell-revive-la-marca-xps-en-ces-2026-despues-de-haberla-retirado/hero.webp
+  /images/posts/dell-revive-la-marca-xps-en-ces-2026-despues-de-haberla-retirado/hero.jpg
 heroImageAlt: >-
   Dell revive la marca XPS: estructura cubierta en sala de exhibición durante
   montaje tecnológico.

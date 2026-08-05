@@ -6,7 +6,7 @@ description: >-
   Si has estado en TikTok o Instagram durante las primeras semanas de enero de
   2026, ya sabes de qué estamos hablando. La frase "2026 es el nuevo 2016" se…
 heroImage: >-
-  /images/posts/2016-vs-2026-por-que-la-gen-z-quiere-revivir-la-decada-perdida/hero.webp
+  /images/posts/2016-vs-2026-por-que-la-gen-z-quiere-revivir-la-decada-perdida/hero.jpg
 heroImageAlt: >-
   2016 vs 2026: joven mirando atrás en una calle urbana al atardecer mientras
   sostiene un teléfono móvil

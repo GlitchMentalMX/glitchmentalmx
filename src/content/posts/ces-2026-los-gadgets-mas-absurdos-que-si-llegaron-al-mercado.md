@@ -6,7 +6,7 @@ description: >-
   Cada enero, el Consumer Electronics Show (CES) en Las Vegas se convierte en el
   escaparate mundial de la innovación tecnológica. Entre los televisores…
 heroImage: >-
-  /images/posts/ces-2026-los-gadgets-mas-absurdos-que-si-llegaron-al-mercado/hero.webp
+  /images/posts/ces-2026-los-gadgets-mas-absurdos-que-si-llegaron-al-mercado/hero.jpg
 heroImageAlt: 'CES 2026: objetos de cuidado personal y parche exhibidos en vitrinas acrílicas'
 ---
 Cada enero, el Consumer Electronics Show (CES) en Las Vegas se convierte en el escaparate mundial de la innovación tecnológica. Entre los televisores gigantes, los procesadores de nueva generación y los avances reales en la IA, siempre hay espacio para lo completamente absurdo. El CES 2026 no decepcionó. Este año vimos [gadgets](https://es.wikipedia.org/wiki/Gadget) que te hacen detenerte, mirar y preguntar: ¿qué carajos?

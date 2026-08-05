@@ -6,7 +6,7 @@ description: >-
   Waymo publicó sus métricas de 2025 y los números muestran que los vehículos
   autónomos finalmente están escalando comercialmente. La compañía triplicó el…
 heroImage: >-
-  /images/posts/waymo-triplico-viajes-en-2025-y-ahora-opera-en-autopistas-de-california/hero.webp
+  /images/posts/waymo-triplico-viajes-en-2025-y-ahora-opera-en-autopistas-de-california/hero.jpg
 heroImageAlt: >-
   Waymo triplicó viajes en 2025: panel de control con carriles autónomos frente
   a autopista de California

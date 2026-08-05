@@ -5,7 +5,7 @@ updatedDate: 2026-06-12T04:29:15.260Z
 description: >-
   La Generación Z compra por impulso más que cualquier generación anterior — eso
   lo confirma investigación del Tecnológico de Monterrey sobre el efecto de las…
-heroImage: /images/posts/como-compra-la-gen-z-impulso-pero-con-la-tarea-hecha/hero.webp
+heroImage: /images/posts/como-compra-la-gen-z-impulso-pero-con-la-tarea-hecha/hero.jpg
 heroImageAlt: >-
   Cómo compra la Gen Z: compradora frente a panel de trazabilidad y
   sostenibilidad en tienda
@@ -40,7 +40,7 @@ Aquí viene la paradoja más interesante: **la Gen Z tiene el nivel más bajo de
 
 Esto ha llevado a que el 43% de los consumidores Gen Z prefieran comprar directamente de las marcas en lugar de hacerlo en marketplaces o retailers. Quieren esa conexión directa, sin intermediarios que diluyan el mensaje.
 
-![Cómo compra la Gen Z: consumidora revisando producto junto a indicadores de sostenibilidad](/images/posts/como-compra-la-gen-z-impulso-pero-con-la-tarea-hecha/1.webp)
+![Cómo compra la Gen Z: consumidora revisando producto junto a indicadores de sostenibilidad](/images/posts/como-compra-la-gen-z-impulso-pero-con-la-tarea-hecha/1.jpg)
 
 ## Las redes sociales son el nuevo mall
 

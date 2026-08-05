@@ -5,7 +5,7 @@ updatedDate: 2026-06-07T01:54:59.508Z
 description: >-
   El unbossing no es una tendencia viral de Gen Z. Es una respuesta documentada
   a estructuras laborales que acumulan décadas de disfunción. Las generaciones…
-heroImage: /images/posts/unbossing-rechazar-al-jefe-no-es-rebeldia-es-logica/hero.webp
+heroImage: /images/posts/unbossing-rechazar-al-jefe-no-es-rebeldia-es-logica/hero.jpg
 heroImageAlt: 'unbossing: persona rompiendo un organigrama jerárquico impreso sobre una mesa'
 ---
 **El unbossing no es una tendencia viral de Gen Z.** Es una respuesta documentada a estructuras laborales que acumulan décadas de disfunción. Las generaciones más jóvenes no están rechazando el trabajo — están rechazando la autoridad sin sustancia. Y los datos les dan la razón.
@@ -28,7 +28,7 @@ heroImageAlt: 'unbossing: persona rompiendo un organigrama jerárquico impreso s
 
 > Unbossing no es anti-trabajo. Es la pregunta que las organizaciones llevan décadas evitando responder: ¿para qué sirve exactamente este nivel de management?
 
-![unbossing: dedo señalando la cima de un organigrama jerárquico sobre papel](/images/posts/unbossing-rechazar-al-jefe-no-es-rebeldia-es-logica/1.webp)
+![unbossing: dedo señalando la cima de un organigrama jerárquico sobre papel](/images/posts/unbossing-rechazar-al-jefe-no-es-rebeldia-es-logica/1.jpg)
 
 ## Salario emocional: qué significa y qué no
 

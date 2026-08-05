@@ -7,7 +7,7 @@ description: >-
   Anthropic acaba de lanzar tres armas que podrían cambiar por completo la forma
   en…
 heroImage: >-
-  /images/posts/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/hero.webp
+  /images/posts/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/hero.jpg
 heroImageAlt: >-
   IA que trabaja por ti: mujer frente a estación con pantallas de código y
   flujos conectados
@@ -56,7 +56,7 @@ Y la cereza del pastel: Cowork puede conectarse con Claude in Chrome. Así que p
 
 Inicialmente, Cowork estaba disponible solo para suscriptores del plan Max (que cuesta entre $100 y $200 dólares al mes). Pero hace apenas unos días, el 16 de enero de 2026, Anthropic expandió el acceso a usuarios del plan Pro, que cuesta $20 dólares mensuales. Eso sí, los usuarios Pro podrían llegar más rápido a sus límites de uso.
 
-![IA que trabaja por ti: tres pantallas conectadas con código y documentos en espacio industrial](/images/posts/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/1.webp)
+![IA que trabaja por ti: tres pantallas conectadas con código y documentos en espacio industrial](/images/posts/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/1.jpg)
 
   
 

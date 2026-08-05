@@ -5,7 +5,7 @@ updatedDate: 2026-06-12T11:30:14.640Z
 description: >-
   Mientras el mundo habla de chatbots y generación de imágenes, una startup de
   San Francisco acaba de levantar $21.5 millones para construir algo mucho más…
-heroImage: /images/posts/tu-mac-trabajando-sola-la-startup-que-levanto-21m/hero.webp
+heroImage: /images/posts/tu-mac-trabajando-sola-la-startup-que-levanto-21m/hero.jpg
 heroImageAlt: >-
   Agentes de IA para Mac y PC: sistema automatizado operando estaciones de
   trabajo en oficina vacía
@@ -44,7 +44,7 @@ Lo que NO puede hacer (por ahora) es tomar decisiones estratégicas, manejar sit
 
 ## El problema de confianza que nadie quiere discutir
 
-![Agentes de IA para Mac y PC: monitor de oficina con nota de robot en escritorio automatizado](/images/posts/tu-mac-trabajando-sola-la-startup-que-levanto-21m/1.webp)
+![Agentes de IA para Mac y PC: monitor de oficina con nota de robot en escritorio automatizado](/images/posts/tu-mac-trabajando-sola-la-startup-que-levanto-21m/1.jpg)
 
   
 

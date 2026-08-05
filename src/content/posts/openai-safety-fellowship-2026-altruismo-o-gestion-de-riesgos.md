@@ -7,7 +7,7 @@ description: >-
   arregla después. Sin embargo, cuando lo que construyes son sistemas con
   capacidad…
 heroImage: >-
-  /images/posts/openai-safety-fellowship-2026-altruismo-o-gestion-de-riesgos/hero.webp
+  /images/posts/openai-safety-fellowship-2026-altruismo-o-gestion-de-riesgos/hero.jpg
 heroImageAlt: >-
   OpenAI Safety Fellowship 2026: científico conectando cables a sistema
   automatizado bajo supervisión externa

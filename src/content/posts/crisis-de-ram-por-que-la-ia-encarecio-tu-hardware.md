@@ -6,7 +6,7 @@ description: >-
   La IA no solo está transformando el software. También está devorando el
   hardware que necesitas para trabajar, jugar y crear — y la escasez global de
   memoria…
-heroImage: /images/posts/crisis-de-ram-por-que-la-ia-encarecio-tu-hardware/hero.webp
+heroImage: /images/posts/crisis-de-ram-por-que-la-ia-encarecio-tu-hardware/hero.jpg
 heroImageAlt: >-
   crisis RAM IA hardware: panel de módulos de memoria en rack con técnico
   insertando unidad en servidor
@@ -31,7 +31,7 @@ Los fabricantes no están produciendo menos RAM porque no puedan. Están produci
 
 A esto se suma una limitación física que no tiene solución rápida: construir una nueva fábrica de memoria tarda entre cuatro y cinco años. Ampliar las líneas existentes da alivio inmediato, pero no resuelve la ecuación de fondo. La demanda de los centros de datos de IA crece más rápido de lo que puede crecer cualquier planta de producción.
 
-![crisis RAM IA hardware: estanterías llenas de módulos de memoria RAM apilados en entorno de centro de datos](/images/posts/crisis-de-ram-por-que-la-ia-encarecio-tu-hardware/1.webp)
+![crisis RAM IA hardware: estanterías llenas de módulos de memoria RAM apilados en entorno de centro de datos](/images/posts/crisis-de-ram-por-que-la-ia-encarecio-tu-hardware/1.jpg)
 
 ## El factor China y lo que cambia para el usuario
 

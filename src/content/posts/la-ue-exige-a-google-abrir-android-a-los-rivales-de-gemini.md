@@ -7,7 +7,7 @@ description: >-
   Digital Markets Act (DMA): Google debe abrir Android para que asistentes de
   IA…
 heroImage: >-
-  /images/posts/la-ue-exige-a-google-abrir-android-a-los-rivales-de-gemini/hero.webp
+  /images/posts/la-ue-exige-a-google-abrir-android-a-los-rivales-de-gemini/hero.jpg
 heroImageAlt: >-
   La UE exige a Google: bóveda metálica con logo Android atravesada por
   mecanismo industrial abierto

@@ -6,7 +6,7 @@ description: >-
   El problema más difícil de la robótica no es entrenar un modelo. Es hacer que
   ese modelo funcione fuera del laboratorio. NVIDIA y Cadence anunciaron el 15
   de…
-heroImage: /images/posts/nvidia-y-cadence-el-obstaculo-real-de-la-robotica/hero.webp
+heroImage: /images/posts/nvidia-y-cadence-el-obstaculo-real-de-la-robotica/hero.jpg
 heroImageAlt: >-
   NVIDIA y Cadence: mujer ajusta brazo robótico en entorno real de laboratorio
   con ensamblaje físico
@@ -29,7 +29,7 @@ La solución de Cadence y NVIDIA es embeber física precisa en cada etapa del ci
 
   
 
-![NVIDIA y Cadence: robot pequeño queda limitado por cable físico mientras mujer observa interacción](/images/posts/nvidia-y-cadence-el-obstaculo-real-de-la-robotica/1.webp)
+![NVIDIA y Cadence: robot pequeño queda limitado por cable físico mientras mujer observa interacción](/images/posts/nvidia-y-cadence-el-obstaculo-real-de-la-robotica/1.jpg)
 
   
 

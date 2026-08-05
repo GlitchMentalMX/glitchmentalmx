@@ -5,7 +5,7 @@ updatedDate: 2026-04-06T12:54:45.089Z
 description: >-
   El MIT probó 41 modelos de lenguaje en más de 11,000 tareas reales del mercado
   laboral. La IA aprobó. Pero apenas. Y eso desmonta tanto el relato del…
-heroImage: /images/posts/estudio-del-mit-la-ia-pasa-el-minimo-laboral-no-mas/hero.webp
+heroImage: /images/posts/estudio-del-mit-la-ia-pasa-el-minimo-laboral-no-mas/hero.jpg
 heroImageAlt: >-
   evaluación IA MIT: mujer revisa hoja de resultados frente a línea automatizada
   de producción

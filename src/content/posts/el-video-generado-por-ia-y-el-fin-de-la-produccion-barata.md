@@ -6,7 +6,7 @@ description: >-
   La producción de video barata —el trabajo de relleno, el contenido corporativo
   genérico, la animación de bajo presupuesto, el video explicativo estándar—…
 heroImage: >-
-  /images/posts/el-video-generado-por-ia-y-el-fin-de-la-produccion-barata/hero.webp
+  /images/posts/el-video-generado-por-ia-y-el-fin-de-la-produccion-barata/hero.jpg
 heroImageAlt: >-
   video generado por IA: sala de control con múltiples pantallas editando video
   automatizado
@@ -29,7 +29,7 @@ Y Sora, el modelo que OpenAI presentó al mundo como el futuro del video generat
 
 ## Qué cambia y cuándo: tres horizontes distintos
 
-![video generado por IA: claqueta y carrete de película frente a producción audiovisual digital](/images/posts/el-video-generado-por-ia-y-el-fin-de-la-produccion-barata/1.webp)
+![video generado por IA: claqueta y carrete de película frente a producción audiovisual digital](/images/posts/el-video-generado-por-ia-y-el-fin-de-la-produccion-barata/1.jpg)
 
   
 

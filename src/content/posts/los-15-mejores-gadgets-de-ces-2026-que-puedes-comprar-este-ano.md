@@ -7,7 +7,7 @@ description: >-
   Esta guía selecciona los 15 gadgets más impresionantes que no son solo
   prototipos…
 heroImage: >-
-  /images/posts/los-15-mejores-gadgets-de-ces-2026-que-puedes-comprar-este-ano/hero.webp
+  /images/posts/los-15-mejores-gadgets-de-ces-2026-que-puedes-comprar-este-ano/hero.jpg
 heroImageAlt: >-
   Mejores gadgets CES 2026: laptop con pantalla enrollable a medio extender
   sobre escritorio real

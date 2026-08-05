@@ -6,7 +6,7 @@ description: >-
   Sonora ya tiene lista su oferta para los centros de datos de IA: energía solar
   barata, subsidiada y creciente. Lo que no aparece en ese mismo discurso es
   que…
-heroImage: /images/posts/sonora-vende-energia-a-la-ia-y-esconde-sus-acuiferos/hero.webp
+heroImage: /images/posts/sonora-vende-energia-a-la-ia-y-esconde-sus-acuiferos/hero.jpg
 heroImageAlt: >-
   Granja solar junto a infraestructura de centros de datos en el desierto de
   Sonora, con terreno agrietado por la sequía
@@ -31,7 +31,7 @@ Según el anteproyecto de zonas de disponibilidad de Conagua para el ejercicio f
 
 La **sobreexplotación de acuíferos** no es lo mismo que una sequía: una sequía es un fenómeno de corta duración que se revierte con un buen temporal de lluvias, mientras que un acuífero sobreexplotado tarda años o décadas en recuperar su nivel, incluso después de varias temporadas húmedas seguidas. Es un déficit estructural, no estacional, y ese matiz es justamente el que desaparece cuando el estado presenta su narrativa de inversión.
 
-![Inversor solar con sistema de enfriamiento por agua en una instalación de IA en Sonora](/images/posts/sonora-vende-energia-a-la-ia-y-esconde-sus-acuiferos/1.webp)
+![Inversor solar con sistema de enfriamiento por agua en una instalación de IA en Sonora](/images/posts/sonora-vende-energia-a-la-ia-y-esconde-sus-acuiferos/1.jpg)
 
   
 

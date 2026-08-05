@@ -7,7 +7,7 @@ description: >-
   siempre, piénsalo de nuevo. Miles de jóvenes están eliminando Instagram,
   TikTok y…
 heroImage: >-
-  /images/posts/gen-z-elimina-redes-sociales-en-protesta-silenciosa-masiva/hero.webp
+  /images/posts/gen-z-elimina-redes-sociales-en-protesta-silenciosa-masiva/hero.jpg
 heroImageAlt: >-
   Gen Z elimina redes sociales: joven extendiendo la mano mientras perfiles
   digitales y un móvil se desintegran

@@ -5,7 +5,7 @@ updatedDate: 2026-04-18T19:12:02.488Z
 description: >-
   Hay 597 cables submarinos en operación o en construcción en el mundo a abril
   de 2025. Son cables de fibra óptica, tendidos en el fondo del océano, que…
-heroImage: /images/posts/los-cables-que-sostienen-internet-y-nadie-protege-bien/hero.webp
+heroImage: /images/posts/los-cables-que-sostienen-internet-y-nadie-protege-bien/hero.jpg
 heroImageAlt: >-
   Los cables que sostienen internet: cable de fibra dañado con filamentos
   expuestos en centro de datos
@@ -28,7 +28,7 @@ El Consejo del Atlántico identifica tres tendencias convergentes que elevan el 
 
 ## Qué cambia y cuándo: el dilema de la resiliencia
 
-![Los cables que sostienen internet: corte de cable de fibra óptica mostrando núcleos de transmisión de datos](/images/posts/los-cables-que-sostienen-internet-y-nadie-protege-bien/1.webp)
+![Los cables que sostienen internet: corte de cable de fibra óptica mostrando núcleos de transmisión de datos](/images/posts/los-cables-que-sostienen-internet-y-nadie-protege-bien/1.jpg)
 
   
 

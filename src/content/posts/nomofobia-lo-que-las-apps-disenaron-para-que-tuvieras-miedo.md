@@ -6,7 +6,7 @@ description: >-
   La nomofobia —miedo irracional a estar sin el teléfono— no es exageración ni
   broma de meme: es un patrón conductual reconocido por investigadores en…
 heroImage: >-
-  /images/posts/nomofobia-lo-que-las-apps-disenaron-para-que-tuvieras-miedo/hero.webp
+  /images/posts/nomofobia-lo-que-las-apps-disenaron-para-que-tuvieras-miedo/hero.jpg
 heroImageAlt: >-
   nomofobia ansiedad celular: mujer sosteniendo smartphone que se rompe en
   fragmentos con grietas en pared de fondo
@@ -29,7 +29,7 @@ El diseño de las plataformas digitales amplifica este efecto. Los sistemas de n
 
 ## Cómo distinguir uso intenso de nomofobia
 
-![nomofobia ansiedad celular: mano a punto de tocar smartphone con pantalla apagada sobre escritorio con llaves y libreta](/images/posts/nomofobia-lo-que-las-apps-disenaron-para-que-tuvieras-miedo/1.webp)
+![nomofobia ansiedad celular: mano a punto de tocar smartphone con pantalla apagada sobre escritorio con llaves y libreta](/images/posts/nomofobia-lo-que-las-apps-disenaron-para-que-tuvieras-miedo/1.jpg)
 
   
 

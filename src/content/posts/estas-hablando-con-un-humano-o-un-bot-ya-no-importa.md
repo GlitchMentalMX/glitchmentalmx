@@ -5,7 +5,7 @@ updatedDate: 2026-07-09T02:35:02.302Z
 description: >-
   El Test de Turing dejó de ser un experimento de laboratorio en 2025. Hoy es la
   condición de fondo de cualquier persona que abre una red social, lee…
-heroImage: /images/posts/estas-hablando-con-un-humano-o-un-bot-ya-no-importa/hero.webp
+heroImage: /images/posts/estas-hablando-con-un-humano-o-un-bot-ya-no-importa/hero.jpg
 heroImageAlt: 'bots internet: mujer usa laptop de noche durante conversación digital'
 ---
 El Test de Turing dejó de ser un experimento de laboratorio en 2025. Hoy es la condición de fondo de cualquier persona que abre una red social, lee comentarios en un foro o recibe un mensaje de un desconocido. La pregunta ya no es si los bots pueden pasar por humanos — los datos confirman que sí, con amplio margen. La pregunta que nadie está respondiendo es más incómoda: **¿a quién le conviene que no puedas distinguirlos?**
@@ -38,7 +38,7 @@ No es que los bots fueran invisibles. Es que el cerebro humano, entrenado para a
 
   
 
-![bots internet: cuadrícula de avatares con rostros sintéticos repetidos](/images/posts/estas-hablando-con-un-humano-o-un-bot-ya-no-importa/1.webp)
+![bots internet: cuadrícula de avatares con rostros sintéticos repetidos](/images/posts/estas-hablando-con-un-humano-o-un-bot-ya-no-importa/1.jpg)
 
 ## Quién necesita que no distingas
 

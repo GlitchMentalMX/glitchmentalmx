@@ -6,7 +6,7 @@ description: >-
   La doctora Alice Chiao pasó décadas enseñando medicina de urgencias en
   Stanford. Hoy enseña a un chatbot a diagnosticar, recetar y responder
   preguntas…
-heroImage: /images/posts/expertos-que-entrenan-ia-para-reemplazarse-el-negocio/hero.webp
+heroImage: /images/posts/expertos-que-entrenan-ia-para-reemplazarse-el-negocio/hero.jpg
 heroImageAlt: >-
   Expertos entrenando IA: mujer de cuarenta años anotando interfaz en pantalla
   fría, pantalla cálida con expedientes propios al lado

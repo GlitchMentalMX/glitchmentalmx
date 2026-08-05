@@ -5,7 +5,7 @@ updatedDate: 2026-04-20T19:09:29.250Z
 description: >-
   Palantir publicó su manifiesto el 18 de abril de 2026. Un día después, Mehdi
   lo declaró «el documento MÁS importante que el mundo tecnológico ha producido…
-heroImage: /images/posts/el-hilo-de-mehdi-sobre-palantir-es-publicidad-gratis/hero.webp
+heroImage: /images/posts/el-hilo-de-mehdi-sobre-palantir-es-publicidad-gratis/hero.jpg
 heroImageAlt: >-
   hilo de Mehdi: mujer señalando nodo en red digital mientras sostiene tiras de
   texto interconectadas
@@ -36,7 +36,7 @@ El costo real del sensacionalismo en crítica tech es que aplana el terreno. Cua
 
 > La crítica apocalíptica convierte cada manifiesto corporativo en evento cultural. Ese upgrade de estatus es el regalo que ninguna agencia de PR podría comprar.
 
-![hilo de Mehdi: rollo de papel largo sobre red de nodos digitales conectados simulando difusión de contenido](/images/posts/el-hilo-de-mehdi-sobre-palantir-es-publicidad-gratis/1.webp)
+![hilo de Mehdi: rollo de papel largo sobre red de nodos digitales conectados simulando difusión de contenido](/images/posts/el-hilo-de-mehdi-sobre-palantir-es-publicidad-gratis/1.jpg)
 
   
 

@@ -5,7 +5,7 @@ updatedDate: 2026-06-23T17:12:40.197Z
 description: >-
   El Mobile World Congress regresó esta semana a Barcelona con más de 2,900
   expositores y una narrativa que se repitió en cada pabellón: la inteligencia…
-heroImage: /images/posts/mwc-2026-robots-celulares-que-rotan-y-gafas-con-ia/hero.webp
+heroImage: /images/posts/mwc-2026-robots-celulares-que-rotan-y-gafas-con-ia/hero.jpg
 heroImageAlt: >-
   MWC 2026 tecnología: tres dispositivos en transición simultánea sobre mesa de
   laboratorio — teléfono rotando, gafas y unidad autónoma

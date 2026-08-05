@@ -6,7 +6,7 @@ description: >-
   Algo cambió silenciosamente a mediados de 2025 y ahora está redefiniendo las
   reglas del juego en 2026: los posts públicos de Instagram ya aparecen en las…
 heroImage: >-
-  /images/posts/instagram-seo-en-2026-como-tus-posts-ya-compiten-en-google-no-solo-por-likes/hero.webp
+  /images/posts/instagram-seo-en-2026-como-tus-posts-ya-compiten-en-google-no-solo-por-likes/hero.jpg
 heroImageAlt: >-
   Instagram SEO en 2026: hombre en cruce urbano vacío sobre líneas luminosas que
   bifurcan rutas
@@ -49,7 +49,7 @@ El contenido problema-solución sigue siendo uno de los formatos de más alto re
 
 ## El algoritmo de Instagram en 2026 prioriza tres cosas
 
-![Instagram SEO en 2026: dos llaves paralelas insertadas en una cerradura con aro luminoso digital](/images/posts/instagram-seo-en-2026-como-tus-posts-ya-compiten-en-google-no-solo-por-likes/1.webp)
+![Instagram SEO en 2026: dos llaves paralelas insertadas en una cerradura con aro luminoso digital](/images/posts/instagram-seo-en-2026-como-tus-posts-ya-compiten-en-google-no-solo-por-likes/1.jpg)
 
   
 

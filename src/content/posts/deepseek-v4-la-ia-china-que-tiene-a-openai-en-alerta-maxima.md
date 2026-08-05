@@ -7,7 +7,7 @@ description: >-
   OpenAI, Google y Anthropic, tengo noticias: China acaba de entrar al ring de
   forma…
 heroImage: >-
-  /images/posts/deepseek-v4-la-ia-china-que-tiene-a-openai-en-alerta-maxima/hero.webp
+  /images/posts/deepseek-v4-la-ia-china-que-tiene-a-openai-en-alerta-maxima/hero.jpg
 heroImageAlt: >-
   DeepSeek V4: gabinete de servidores iluminado frente a racks de centro de
   datos

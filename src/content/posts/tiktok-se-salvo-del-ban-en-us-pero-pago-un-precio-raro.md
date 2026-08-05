@@ -5,7 +5,7 @@ updatedDate: 2026-06-13T01:46:59.188Z
 description: >-
   El 19 de diciembre de 2025, el CEO de TikTok Shou Chew envió un memo interno
   confirmando lo que llevaba meses rumoreándose: TikTok firmó un acuerdo para…
-heroImage: /images/posts/tiktok-se-salvo-del-ban-en-us-pero-pago-un-precio-raro/hero.webp
+heroImage: /images/posts/tiktok-se-salvo-del-ban-en-us-pero-pago-un-precio-raro/hero.jpg
 heroImageAlt: >-
   Mujer sostiene una caja con sus pertenencias mientras recibe un nuevo candado,
   pero las llaves quedan en manos ajenas al cruzar un umbral.

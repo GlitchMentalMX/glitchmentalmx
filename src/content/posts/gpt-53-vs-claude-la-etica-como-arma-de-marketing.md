@@ -6,7 +6,7 @@ description: >-
   La semana pasada sucedieron dos cosas que, puestas juntas, describen con
   claridad hacia dónde va la carrera de la inteligencia artificial en 2026. El
   martes…
-heroImage: /images/posts/gpt-53-vs-claude-la-etica-como-arma-de-marketing/hero.webp
+heroImage: /images/posts/gpt-53-vs-claude-la-etica-como-arma-de-marketing/hero.jpg
 heroImageAlt: >-
   GPT-5 vs Claude ética IA: mujer frente a dos cajas idénticas en estante con
   tarjetas descriptivas distintas, expresión escéptica

@@ -6,7 +6,7 @@ description: >-
   Hace un mes contábamos cómo el mundo se enteró de Mythos por un CMS mal
   configurado. Hoy el modelo "demasiado peligroso para liberar" tiene a
   Bruselas…
-heroImage: /images/posts/mythos-un-mes-despues-la-ue-pide-acceso-el-bce-alerta/hero.webp
+heroImage: /images/posts/mythos-un-mes-despues-la-ue-pide-acceso-el-bce-alerta/hero.jpg
 heroImageAlt: >-
   Mythos IA regulación: mujer con documento impreso frente a ventana
   institucional con skyline financiero al fondo
@@ -37,7 +37,7 @@ El Bundesbank pidió formalmente acceso para los bancos europeos. Joachim Theure
 
 ## El detalle que desarma la narrativa de exclusividad
 
-![Mythos regulación IA: manos sosteniendo documento impreso con dedo detenido en línea específica sobre superficie neutral](/images/posts/mythos-un-mes-despues-la-ue-pide-acceso-el-bce-alerta/1.webp)
+![Mythos regulación IA: manos sosteniendo documento impreso con dedo detenido en línea específica sobre superficie neutral](/images/posts/mythos-un-mes-despues-la-ue-pide-acceso-el-bce-alerta/1.jpg)
 
   
 

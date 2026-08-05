@@ -5,7 +5,7 @@ updatedDate: 2026-06-26T00:26:21.150Z
 description: >-
   La intuición dice que en la era de la IA lo más valioso será saber programar o
   manejar modelos. Los datos dicen otra cosa: las habilidades más difíciles de…
-heroImage: /images/posts/las-habilidades-que-mas-importan-en-la-era-de-la-ia/hero.webp
+heroImage: /images/posts/las-habilidades-que-mas-importan-en-la-era-de-la-ia/hero.jpg
 heroImageAlt: >-
   Habilidades en la era de la IA: mujer leyendo página impresa en escritorio con
   laptop desplazada al fondo
@@ -32,7 +32,7 @@ Pensando en términos prácticos, el conjunto de habilidades relevante en este m
 
 > La IA convierte el conocimiento en una materia prima barata. Lo que se vuelve caro es saber qué hacer con ese conocimiento cuando el contexto es ambiguo, el error tiene consecuencias y alguien tiene que asumir la responsabilidad.
 
-![Habilidades en la era de la IA: manos anotando página impresa con bolígrafo, fondo desenfocado con luz de pantalla](/images/posts/las-habilidades-que-mas-importan-en-la-era-de-la-ia/1.webp)
+![Habilidades en la era de la IA: manos anotando página impresa con bolígrafo, fondo desenfocado con luz de pantalla](/images/posts/las-habilidades-que-mas-importan-en-la-era-de-la-ia/1.jpg)
 
   
 

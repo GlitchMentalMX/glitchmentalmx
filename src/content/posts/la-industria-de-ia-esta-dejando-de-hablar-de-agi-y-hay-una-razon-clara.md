@@ -7,7 +7,7 @@ description: >-
   OpenAI, Anthropic, y Microsoft están dejando de usar el término AGI
   (Inteligencia…
 heroImage: >-
-  /images/posts/la-industria-de-ia-esta-dejando-de-hablar-de-agi-y-hay-una-razon-clara/hero.webp
+  /images/posts/la-industria-de-ia-esta-dejando-de-hablar-de-agi-y-hay-una-razon-clara/hero.jpg
 heroImageAlt: >-
   La industria de IA está dejando de hablar de AGI: mujer retirando panel de un
   diagrama mural en oficina

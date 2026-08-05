@@ -7,7 +7,7 @@ description: >-
   cuero y anunció que Vera Rubin, el chip de IA de próxima generación de
   NVIDIA,…
 heroImage: >-
-  /images/posts/nvidia-presenta-chip-vera-rubin-en-ces-2026-y-ya-esta-en-produccion/hero.webp
+  /images/posts/nvidia-presenta-chip-vera-rubin-en-ces-2026-y-ya-esta-en-produccion/hero.jpg
 heroImageAlt: >-
   NVIDIA presenta chip Vera Rubin en CES 2026: ingeniera observa racks de
   servidores con módulos extraíbles

@@ -7,7 +7,7 @@ description: >-
   tu celular y, antes de grabar o tomarte una selfie, has aplicado un filtro?
   No…
 heroImage: >-
-  /images/posts/dismorfia-digital-y-filtros-ar-el-negocio-de-venderte-una-cara-que-no-existe/hero.webp
+  /images/posts/dismorfia-digital-y-filtros-ar-el-negocio-de-venderte-una-cara-que-no-existe/hero.jpg
 heroImageAlt: >-
   Dismorfia digital: mujer frente a espejo con reflejo idealizado y smartphone
   grabando contenido
@@ -34,7 +34,7 @@ Y aquí entra la ironía: aunque la Gen Z predica la inclusión y la aceptación
 
 ## El Negocio Detrás del Rostro Perfecto
 
-![Dismorfia digital: espejo de mano junto a smartphone y cosméticos para captura de imagen](/images/posts/dismorfia-digital-y-filtros-ar-el-negocio-de-venderte-una-cara-que-no-existe/1.webp)
+![Dismorfia digital: espejo de mano junto a smartphone y cosméticos para captura de imagen](/images/posts/dismorfia-digital-y-filtros-ar-el-negocio-de-venderte-una-cara-que-no-existe/1.jpg)
 
   
 

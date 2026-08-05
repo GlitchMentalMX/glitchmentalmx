@@ -5,7 +5,7 @@ updatedDate: 2026-07-07T19:29:04.220Z
 description: >-
   Querétaro es, hoy, uno de los estados con mayor inversión tecnológica de
   América Latina y uno de los más afectados por sequía extrema. Ambas cosas son…
-heroImage: /images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/hero.webp
+heroImage: /images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/hero.jpg
 heroImageAlt: >-
   Torres de enfriamiento de un centro de datos junto a un canal de riego seco en
   Querétaro, evidencia del estrés hídrico de la infraestructura de IA
@@ -30,7 +30,7 @@ Lo que sí hay son referencias parciales. Estimaciones de la industria indican q
 
 La mayor parte de los centros de datos en Querétaro operan dentro de parques industriales, una figura jurídica que los exime de presentar manifestaciones de impacto ambiental. Lorenia Trueba, de la organización Voceras de la Madre Tierra, señaló que el código ambiental del estado obliga a cualquier actividad con posible impacto a presentar esa evaluación, y que la exención no tiene sustento legal. Sus demandas de transparencia ante la Suprema Corte no han recibido respuesta de las empresas ni del gobierno estatal.
 
-![Válvula industrial oxidada con goteo residual, símbolo técnico del consumo de agua en centros de datos mexicanos](/images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/1.webp)
+![Válvula industrial oxidada con goteo residual, símbolo técnico del consumo de agua en centros de datos mexicanos](/images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/1.jpg)
 
   
 

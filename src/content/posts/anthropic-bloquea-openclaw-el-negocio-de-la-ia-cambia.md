@@ -6,7 +6,7 @@ description: >-
   Anthropic cerró el acceso de sus suscripciones a OpenClaw el 4 de abril de
   2026, sin previo aviso de 24 horas y sin negociación posible. El modelo de
   "tarifa…
-heroImage: /images/posts/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/hero.webp
+heroImage: /images/posts/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/hero.jpg
 heroImageAlt: >-
   Anthropic bloquea OpenClaw: puerta metálica cerrada en pasillo técnico con
   cableado de red
