@@ -65,49 +65,11 @@ heroImageAlt: >-
 
 **Las tres capas de acceso tienen perfiles de uso distintos.** La tabla siguiente resume los factores clave para elegir:
 
-.ds-tabla-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; } .ds-tabla { border-collapse: collapse; width: 100%; font-size: 0.9em; word-break: break-word; } .ds-tabla th { background: #111; color: #fff; text-align: left; padding: 10px 12px; font-weight: 600; white-space: nowrap; } .ds-tabla td { padding: 10px 12px; vertical-align: top; border-bottom: 1px solid #e5e5e5; line-height: 1.45; } .ds-tabla tr:last-child td { border-bottom: none; } .ds-tabla tr:nth-child(even) td { background: #f9f9f9; } .ds-tabla td:first-child { white-space: nowrap; font-weight: 600; } @media (max-width: 600px) { .ds-tabla { font-size: 0.82em; min-width: 480px; } .ds-tabla th, .ds-tabla td { padding: 8px 10px; } }
-
-Opción
-
-Costo
-
-Privacidad
-
-Requisitos
-
-Ideal para
-
-Web  
-chat.deepseek.com
-
-Gratuito
-
-Servidores DeepSeek (China)
-
-Navegador y cuenta
-
-Uso cotidiano, redacción, aprendizaje
-
-API
-
-$0.14/M tokens entrada (V4 Flash); 5M tokens gratis al registrarse
-
-Servidores DeepSeek (China) — no usar con datos sensibles
-
-Clave de API; conocimiento básico de código o n8n / Cursor
-
-Automatización, scripts, pipelines de contenido
-
-Local  
-Ollama / LM Studio
-
-Sin costo por token; hardware mín. 8 GB RAM
-
-Total — ningún dato sale de la máquina
-
-8–16 GB RAM; descarga inicial ~5 GB (modelo 8B)
-
-Investigadores, profesionales con datos confidenciales, uso offline
+| Opción | Costo | Privacidad | Requisitos | Ideal para |
+| --- | --- | --- | --- | --- |
+| Web — chat.deepseek.com | Gratuito | Servidores DeepSeek (China) | Navegador y cuenta | Uso cotidiano, redacción, aprendizaje |
+| API | $0.14/M tokens entrada (V4 Flash); 5M tokens gratis al registrarse | Servidores DeepSeek (China) — no usar con datos sensibles | Clave de API; conocimiento básico de código o n8n / Cursor | Automatización, scripts, pipelines de contenido |
+| Local — Ollama / LM Studio | Sin costo por token; hardware mín. 8 GB RAM | Total — ningún dato sale de la máquina | 8–16 GB RAM; descarga inicial ~5 GB (modelo 8B) | Investigadores, profesionales con datos confidenciales, uso offline |
 
 **Para usuarios en América Latina, las tres capas están disponibles sin restricciones regionales** y ninguna requiere suscripción mensual en dólares. En un ecosistema donde los modelos de referencia cobran entre $20 y $30 USD al mes por acceso web, y donde las instituciones académicas con presupuesto limitado quedan excluidas de los modelos de pago, DeepSeek representa una alternativa técnicamente sólida con una barrera de entrada prácticamente inexistente.
 

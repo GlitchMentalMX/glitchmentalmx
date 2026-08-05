@@ -55,19 +55,3 @@ Lo significativo no fue solo la condena, sino que el escándalo no detuvo la inv
 Brasil tiene la mayor población con anemia falciforme fuera de África — entre 25,000 y 50,000 personas afectadas —, en un contexto de herencia afrodescendiente históricamente desatendida. En México, la enfermedad tiene menor prevalencia y no existe tamizaje neonatal universal. **La posibilidad de acceder a una terapia génica de 2.2 millones de dólares en cualquier país de la región es, en términos prácticos, nula.**
 
 El precedente de la MPP con el VIH muestra que los mecanismos de acceso existen y funcionan — cuando hay voluntad política y cuando la tecnología es replicable. Con las terapias génicas, **ninguna de esas dos condiciones se cumple hoy.** La primera generación de tratamientos CRISPR está cerrando su acceso no con un candado explícito, sino con la arquitectura silenciosa de la propiedad intelectual, la infraestructura y el precio.
-
-#pkb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #pkb-wrap \* { box-sizing: border-box !important; } #pkb-wrap a.pkb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #pkb-wrap .pkb-left { flex: 1 !important; min-width: 0 !important; } #pkb-wrap .pkb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #0d7377 !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #pkb-wrap .pkb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #0d7377; } #pkb-wrap .pkb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #pkb-wrap .pkb-title span { color: #0d7377 !important; } #pkb-wrap .pkb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #pkb-wrap .pkb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #pkb-wrap .pkb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #pkb-wrap .pkb-stat:last-child { border-right: none !important; } #pkb-wrap .pkb-stat strong { color: #0d7377 !important; font-weight: 700 !important; } #pkb-wrap .pkb-right { flex-shrink: 0 !important; } #pkb-wrap .pkb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #0d7377 !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #pkb-wrap a.pkb-link:hover .pkb-btn { background: #0a5c5f !important; } @media (max-width: 560px) { #pkb-wrap a.pkb-link { flex-direction: column !important; align-items: flex-start !important; } #pkb-wrap .pkb-right { width: 100% !important; } #pkb-wrap .pkb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — Protocolo Kernel
-
-La biología ya es código. ¿Quién lo reescribe?
-
-Análisis sobre lo que pasa cuando la biología se convierte en código — y alguien decide quién tiene acceso.
-
-**5** artículos Bio-Digital
-
-Ver la serie →
-
-](/series/protocolo-kernel/)

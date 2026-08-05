@@ -52,19 +52,3 @@ En junio de 2025, la Segunda Conferencia Anual de Roma sobre IA reunió en el Pa
 > Anthropic quiere virtud sin definir qué es el bien. El Vaticano quiere relevancia sin ceder autoridad. Los dos se necesitan demasiado como para ser honestos el uno con el otro sobre esas contradicciones.
 
 La alianza entre Silicon Valley y la Iglesia Católica lleva una década operando en privado y es funcional para ambas partes. Las empresas de IA obtienen legitimidad moral que los parlamentos no pueden darles. El Vaticano obtiene un asiento en la mesa donde se decide el futuro tecnológico. Lo que X destruye con cada rumor viral no es la alianza — esa sobrevive muy bien sin cobertura — sino la capacidad de verla con claridad y hacerse las preguntas que realmente importan: ¿quién audita los valores que le enseñan a estos sistemas? ¿Y a quién le rinden cuentas los que auditan?
-
-#nvb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #nvb-wrap \* { box-sizing: border-box !important; } #nvb-wrap a.nvb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #nvb-wrap .nvb-left { flex: 1 !important; min-width: 0 !important; } #nvb-wrap .nvb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #c0392b !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #nvb-wrap .nvb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #c0392b; } #nvb-wrap .nvb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #nvb-wrap .nvb-title span { color: #c0392b !important; } #nvb-wrap .nvb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #nvb-wrap .nvb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #nvb-wrap .nvb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #nvb-wrap .nvb-stat:last-child { border-right: none !important; } #nvb-wrap .nvb-stat strong { color: #c0392b !important; font-weight: 700 !important; } #nvb-wrap .nvb-right { flex-shrink: 0 !important; } #nvb-wrap .nvb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #c0392b !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #nvb-wrap a.nvb-link:hover .nvb-btn { background: #a12e21 !important; } @media (max-width: 560px) { #nvb-wrap a.nvb-link { flex-direction: column !important; align-items: flex-start !important; } #nvb-wrap .nvb-right { width: 100% !important; } #nvb-wrap .nvb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — El Negocio de la Virtud
-
-Cómo la IA convirtió la ética en estrategia
-
-Cinco artículos que desmontan el discurso moral de las grandes empresas de inteligencia artificial.
-
-**5** artículos Inteligencia Artificial
-
-Ver la serie →
-
-](/series/el-negocio-de-la-virtud/)

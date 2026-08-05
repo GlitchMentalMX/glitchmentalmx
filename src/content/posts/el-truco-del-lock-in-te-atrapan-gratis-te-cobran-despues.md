@@ -58,19 +58,3 @@ heroImageAlt: >-
 **El problema no es solo el precio: es la ausencia de alternativa real.** Migrar décadas de documentación académica, expedientes administrativos y correo institucional a LibreOffice o Google Workspace tiene un costo operativo que la mayoría de las instituciones públicas latinoamericanas no pueden absorber. No hay usuarios individuales que puedan votar con los pies, sino organizaciones enteras atrapadas en decisiones de infraestructura tomadas cuando todavía era posible salir.
 
 **Las preguntas que nadie está respondiendo en voz alta:** ¿Quién decide cuánto cuesta el software sobre el que opera una universidad pública financiada con impuestos? ¿Qué mecanismo existe para que una institución pública negocie en condiciones de paridad con un proveedor que controla la infraestructura de la que depende? ¿Y quién absorbe el costo del aumento cuando el presupuesto ya estaba asignado y no hay partida para "ajuste por lock-in tecnológico"?
-
-#ecb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #ecb-wrap \* { box-sizing: border-box !important; } #ecb-wrap a.ecb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #ecb-wrap .ecb-left { flex: 1 !important; min-width: 0 !important; } #ecb-wrap .ecb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #1a6b8a !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #ecb-wrap .ecb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #1a6b8a; } #ecb-wrap .ecb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #ecb-wrap .ecb-title span { color: #1a6b8a !important; } #ecb-wrap .ecb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #ecb-wrap .ecb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #ecb-wrap .ecb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #ecb-wrap .ecb-stat:last-child { border-right: none !important; } #ecb-wrap .ecb-stat strong { color: #1a6b8a !important; font-weight: 700 !important; } #ecb-wrap .ecb-right { flex-shrink: 0 !important; } #ecb-wrap .ecb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #1a6b8a !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #ecb-wrap a.ecb-link:hover .ecb-btn { background: #145570 !important; } @media (max-width: 560px) { #ecb-wrap a.ecb-link { flex-direction: column !important; align-items: flex-start !important; } #ecb-wrap .ecb-right { width: 100% !important; } #ecb-wrap .ecb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — El Espía que Compraste
-
-No te lo regalaron. Lo compraste.
-
-Análisis sobre los dispositivos que viven en tu casa, tu bolsillo y tu cuerpo — y trabajan para alguien más.
-
-**5** artículos Tecnología de Consumo
-
-Ver la serie →
-
-](/series/el-espia-que-compraste/)

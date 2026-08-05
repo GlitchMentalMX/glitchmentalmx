@@ -60,19 +60,3 @@ La proyección de CISAC es global, pero el impacto es desproporcionado para los 
 La Sociedad de Autores y Compositores de México (SACM) —y sus equivalentes en la región— no han presentado estrategias públicas frente a los modelos generativos. Eso no significa que no estén trabajando en el tema; significa que el proceso regulatorio va considerablemente más lento que la penetración del mercado. Para cuando exista un marco claro, una parte importante del mercado de bibliotecas B2B ya habrá migrado.
 
 La IA no va a destruir la música. Pero el segmento específico que sostenía a cientos de miles de compositores anónimos en todo el mundo —el trabajo invisible que nadie aplaude pero todos consumen— ya está siendo vaciado. Y ese proceso no aparece en los titulares porque sus víctimas no tienen nombre artístico.
-
-#mlb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #mlb-wrap \* { box-sizing: border-box !important; } #mlb-wrap a.mlb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #mlb-wrap .mlb-left { flex: 1 !important; min-width: 0 !important; } #mlb-wrap .mlb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #1e8449 !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #mlb-wrap .mlb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #1e8449; } #mlb-wrap .mlb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #mlb-wrap .mlb-title span { color: #1e8449 !important; } #mlb-wrap .mlb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #mlb-wrap .mlb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #mlb-wrap .mlb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #mlb-wrap .mlb-stat:last-child { border-right: none !important; } #mlb-wrap .mlb-stat strong { color: #1e8449 !important; font-weight: 700 !important; } #mlb-wrap .mlb-right { flex-shrink: 0 !important; } #mlb-wrap .mlb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #1e8449 !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #mlb-wrap a.mlb-link:hover .mlb-btn { background: #196b3a !important; } @media (max-width: 560px) { #mlb-wrap a.mlb-link { flex-direction: column !important; align-items: flex-start !important; } #mlb-wrap .mlb-right { width: 100% !important; } #mlb-wrap .mlb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — Manos Libres
-
-¿Queda algo que la IA no pueda hacer más barato?
-
-Fotografía, música, escritura, diseño. Cuatro análisis sobre lo que le está pasando al trabajo creativo.
-
-**4** artículos Creatividad
-
-Ver la serie →
-
-](/series/manos-libres/)

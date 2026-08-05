@@ -47,19 +47,3 @@ América Latina es una de las regiones agrícolas más importantes del planeta. 
 > CRISPR no es una tecnología del futuro. Es una tecnología del presente con consecuencias futuras que aún no hemos decidido cómo gestionar.
 
 El debate regulatorio sobre cultivos editados genéticamente en América Latina está fragmentado: algunos países tienen marcos relativamente ágiles, otros aplican las mismas restricciones que a los organismos genéticamente modificados tradicionales aunque CRISPR opere de forma diferente. Esa fragmentación no es solo un problema burocrático — es una desventaja competitiva real que determinará si la región adopta estas tecnologías como herramienta propia o como producto importado.
-
-#pkb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #pkb-wrap \* { box-sizing: border-box !important; } #pkb-wrap a.pkb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #pkb-wrap .pkb-left { flex: 1 !important; min-width: 0 !important; } #pkb-wrap .pkb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #0d7377 !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #pkb-wrap .pkb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #0d7377; } #pkb-wrap .pkb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #pkb-wrap .pkb-title span { color: #0d7377 !important; } #pkb-wrap .pkb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #pkb-wrap .pkb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #pkb-wrap .pkb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #pkb-wrap .pkb-stat:last-child { border-right: none !important; } #pkb-wrap .pkb-stat strong { color: #0d7377 !important; font-weight: 700 !important; } #pkb-wrap .pkb-right { flex-shrink: 0 !important; } #pkb-wrap .pkb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #0d7377 !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #pkb-wrap a.pkb-link:hover .pkb-btn { background: #0a5c5f !important; } @media (max-width: 560px) { #pkb-wrap a.pkb-link { flex-direction: column !important; align-items: flex-start !important; } #pkb-wrap .pkb-right { width: 100% !important; } #pkb-wrap .pkb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — Protocolo Kernel
-
-La biología ya es código. ¿Quién lo reescribe?
-
-Análisis sobre lo que pasa cuando la biología se convierte en código — y alguien decide quién tiene acceso.
-
-**5** artículos Bio-Digital
-
-Ver la serie →
-
-](/series/protocolo-kernel/)

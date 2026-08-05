@@ -50,19 +50,3 @@ heroImageAlt: >-
 **En contextos donde la alfabetización mediática es menor y la penetración de aplicaciones de mensajería es altísima, el meme desplaza la narrativa antes de que los medios formales puedan procesarla.** En elecciones recientes en México, Brasil y Colombia, los memes han demostrado su capacidad para instalar encuadres en audiencias de 35 años o más que antes no consumían política digital. No lo hacen con argumentos. Lo hacen con reconocimiento, repetición y velocidad. El árbitro que falta no es tecnológico: es estructural.
 
 **Lo que cambia con la IA generativa no es la lógica del meme, sino la escala de producción.** La arquitectura semiótica sigue siendo la misma —imagen, texto, intertextualidad—; lo que se industrializa es la capacidad de generar variantes personalizadas en masa. El meme siempre fue una tecnología de replicación cultural. La IA lo convirtió en una línea de ensamblaje.
-
-#hbb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #hbb-wrap \* { box-sizing: border-box !important; } #hbb-wrap a.hbb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #hbb-wrap .hbb-left { flex: 1 !important; min-width: 0 !important; } #hbb-wrap .hbb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #6d3fa0 !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #hbb-wrap .hbb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #6d3fa0; } #hbb-wrap .hbb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #hbb-wrap .hbb-title span { color: #6d3fa0 !important; } #hbb-wrap .hbb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #hbb-wrap .hbb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #hbb-wrap .hbb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #hbb-wrap .hbb-stat:last-child { border-right: none !important; } #hbb-wrap .hbb-stat strong { color: #6d3fa0 !important; font-weight: 700 !important; } #hbb-wrap .hbb-right { flex-shrink: 0 !important; } #hbb-wrap .hbb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #6d3fa0 !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #hbb-wrap a.hbb-link:hover .hbb-btn { background: #572f82 !important; } @media (max-width: 560px) { #hbb-wrap a.hbb-link { flex-direction: column !important; align-items: flex-start !important; } #hbb-wrap .hbb-right { width: 100% !important; } #hbb-wrap .hbb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — Humanos en Beta
-
-¿Eres tú, o la versión que el algoritmo construyó de ti?
-
-Siete análisis sobre lo que le está pasando a la identidad humana en tiempo real.
-
-**7** artículos Cultura Digital
-
-Ver la serie →
-
-](/series/humanos-en-beta/)

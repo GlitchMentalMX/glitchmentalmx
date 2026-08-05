@@ -66,19 +66,3 @@ El ejercicio útil no es desconfiar más, es _desconfiar mejor_. **Cuando algo a
 Para un usuario mexicano, la respuesta tiene una capa extra. Los empleados con acceso al Heating Button "tienen sede en Estados Unidos", según la propia TikTok. Los curadores de Apple Music están en Nashville, Londres, Lagos y Tokio. Los editores de Spotify operan principalmente desde Estocolmo, Nueva York y Londres. **Los editores invisibles del feed mexicano viven en otro continente** y responden a otras lógicas comerciales y a otras presiones regulatorias.
 
 "Algoritmo" es la palabra que la industria escogió para que esa cadena no sea visible. **Funcionó durante quince años.** La pregunta es si seguirá funcionando otros quince — o si finalmente alguien va a preguntar, en serio, quién es el editor en jefe de lo que vemos.
-
-#pdb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #pdb-wrap \* { box-sizing: border-box !important; } #pdb-wrap a.pdb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #pdb-wrap .pdb-left { flex: 1 !important; min-width: 0 !important; } #pdb-wrap .pdb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #ca6f1e !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #pdb-wrap .pdb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #ca6f1e; } #pdb-wrap .pdb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #pdb-wrap .pdb-title span { color: #ca6f1e !important; } #pdb-wrap .pdb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #pdb-wrap .pdb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #pdb-wrap .pdb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #pdb-wrap .pdb-stat:last-child { border-right: none !important; } #pdb-wrap .pdb-stat strong { color: #ca6f1e !important; font-weight: 700 !important; } #pdb-wrap .pdb-right { flex-shrink: 0 !important; } #pdb-wrap .pdb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #ca6f1e !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #pdb-wrap a.pdb-link:hover .pdb-btn { background: #a85e18 !important; } @media (max-width: 560px) { #pdb-wrap a.pdb-link { flex-direction: column !important; align-items: flex-start !important; } #pdb-wrap .pdb-right { width: 100% !important; } #pdb-wrap .pdb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — Panóptico Digital
-
-¿Quién decide lo que ves, lees y piensas?
-
-Cinco análisis sobre el poder invisible que decide lo que ves, lees y piensas.
-
-**5** artículos Tendencias Digitales
-
-Ver la serie →
-
-](/series/panoptico-digital/)

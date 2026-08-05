@@ -1,0 +1,51 @@
+---
+interface Props {
+  kind: 'series' | 'hub';
+  title: string;
+  description: string;
+  href: string;
+  count: number;
+}
+
+const { kind, title, description, href, count } = Astro.props;
+---
+
+<a href={href} class="series-callout">
+  <p class="eyebrow">{kind === 'series' ? 'Parte de la serie' : 'Parte de la colección'}</p>
+  <h3>{title}</h3>
+  <p class="dek">{description}</p>
+  <span class="cta">{count} artículos · Ver {kind === 'series' ? 'la serie' : 'la colección'} completa →</span>
+</a>
+
+<style>
+  .series-callout {
+    display: block;
+    max-width: var(--measure);
+    margin: 40px auto 0;
+    padding: 24px 26px;
+    background: var(--bg-inset);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    color: var(--text);
+  }
+  .series-callout:hover { background: var(--accent-soft); }
+  .series-callout .eyebrow { color: var(--accent); margin: 0 0 8px; }
+  .series-callout h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    margin: 0 0 8px;
+  }
+  .series-callout .dek {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.55;
+    margin: 0 0 14px;
+  }
+  .series-callout .cta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+</style>

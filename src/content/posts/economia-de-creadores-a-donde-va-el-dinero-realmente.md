@@ -62,19 +62,3 @@ Las grandes MCN consolidadas en español son pocas. Mitu, la sobreviviente más 
 La pregunta no es cómo "ganar más" dentro del sistema. La pregunta es reconocer que **la economía de creadores es una economía de plataforma, no una economía de creadores**. El nombre describe quién produce el contenido. No describe quién captura el valor.
 
 El próximo capítulo de este panóptico no es económico — es ontológico. Cuando los bots producen una parte creciente del contenido y ya no distinguimos quién es humano del otro lado de la pantalla, la pregunta de quién se queda con el dinero se vuelve menos urgente que la pregunta de quién se queda con la audiencia.
-
-#pdb-wrap { background: #ffffff !important; border: 1px solid #e0e0dc !important; border-radius: 6px !important; overflow: hidden !important; position: relative !important; margin: 32px 0 !important; } #pdb-wrap \* { box-sizing: border-box !important; } #pdb-wrap a.pdb-link { display: flex !important; align-items: center !important; justify-content: space-between !important; gap: 24px !important; padding: 20px 24px !important; text-decoration: none !important; } #pdb-wrap .pdb-left { flex: 1 !important; min-width: 0 !important; } #pdb-wrap .pdb-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #ca6f1e !important; margin-bottom: 8px !important; display: flex !important; align-items: center !important; gap: 8px !important; } #pdb-wrap .pdb-label::before { content: ''; display: inline-block; width: 18px; height: 1px; background: #ca6f1e; } #pdb-wrap .pdb-title { font-family: 'Inter', sans-serif !important; font-size: 18px !important; font-weight: 300 !important; color: #1a1a1a !important; line-height: 1.3 !important; margin-bottom: 4px !important; } #pdb-wrap .pdb-title span { color: #ca6f1e !important; } #pdb-wrap .pdb-tagline { font-family: 'Inter', sans-serif !important; font-size: 12.5px !important; color: #666 !important; font-weight: 300 !important; } #pdb-wrap .pdb-stats { display: flex !important; margin-top: 10px !important; border: 1px solid #e0e0dc !important; width: fit-content !important; } #pdb-wrap .pdb-stat { padding: 5px 12px !important; border-right: 1px solid #e0e0dc !important; font-family: 'JetBrains Mono', monospace !important; font-size: 10.5px !important; color: #666 !important; } #pdb-wrap .pdb-stat:last-child { border-right: none !important; } #pdb-wrap .pdb-stat strong { color: #ca6f1e !important; font-weight: 700 !important; } #pdb-wrap .pdb-right { flex-shrink: 0 !important; } #pdb-wrap .pdb-btn { font-family: 'JetBrains Mono', monospace !important; font-size: 11px !important; letter-spacing: 0.08em !important; text-transform: uppercase !important; color: #ffffff !important; background: #ca6f1e !important; padding: 11px 18px !important; font-weight: 700 !important; white-space: nowrap !important; display: inline-block !important; border-radius: 3px !important; transition: background 0.2s !important; } #pdb-wrap a.pdb-link:hover .pdb-btn { background: #a85e18 !important; } @media (max-width: 560px) { #pdb-wrap a.pdb-link { flex-direction: column !important; align-items: flex-start !important; } #pdb-wrap .pdb-right { width: 100% !important; } #pdb-wrap .pdb-btn { display: block !important; text-align: center !important; } }
-
-[
-
-Serie — Panóptico Digital
-
-¿Quién decide lo que ves, lees y piensas?
-
-Cinco análisis sobre el poder invisible que decide lo que ves, lees y piensas.
-
-**5** artículos Tendencias Digitales
-
-Ver la serie →
-
-](/series/panoptico-digital/)
