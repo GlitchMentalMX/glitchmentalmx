@@ -1,43 +1,48 @@
-# Astro Starter Kit: Minimal
+# glitchmentalMX
+
+Publicación editorial en español sobre IA, tecnología y cultura digital.
+Construido con [Astro](https://astro.build) y publicado en GitHub Pages.
+
+Migrado desde Blogger — ver `../content-export/` para el material fuente
+original (379 artículos, 28 páginas, `feed.atom`).
+
+## Empezar
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Abre http://localhost:4321
 
-## 🚀 Project Structure
+## Estructura
 
-Inside of your Astro project, you'll see the following folders and files:
+- `src/content/posts/` — los 379 artículos (Markdown + frontmatter)
+- `src/content/collections/` — series editoriales y colecciones temáticas
+- `src/content/data/` — datos de Insights Visuales y Dato Incómodo
+- `src/pages/` — rutas del sitio
+- `src/components/`, `src/layouts/` — sistema de diseño
+- `public/images/` — imágenes auto-hospedadas (descargadas de Blogger)
+- `public/2025/`, `public/2026/`, `public/p/` — redirecciones desde las URLs
+  antiguas de Blogger hacia las nuevas rutas
+- `scripts/` — scripts de migración usados una sola vez (no se vuelven a
+  correr salvo que necesites reprocesar `content-export/` de nuevo)
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Publicar
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Ver [`GUIA-DE-PUBLICACION.md`](./GUIA-DE-PUBLICACION.md) para instrucciones
+paso a paso, sin conocimientos técnicos previos, de cómo:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- correr el sitio en local
+- subirlo a GitHub
+- activar GitHub Pages
+- conectar el dominio `glitchmental.com`
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Comandos
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando           | Acción                                        |
+| :----------------- | :--------------------------------------------- |
+| `npm install`       | Instala dependencias                           |
+| `npm run dev`       | Corre el sitio en `localhost:4321`             |
+| `npm run build`     | Genera el sitio final en `./dist/`             |
+| `npm run preview`   | Previsualiza el build antes de publicar        |
