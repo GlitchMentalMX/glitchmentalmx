@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: GlitchMentalMX/glitchmentalmx
+  branch: main
+  base_url: https://glitchmentalmx.contacto-fbf.workers.dev
+  auth_endpoint: auth
+
+site_url: https://glitchmental.com
+display_url: https://glitchmental.com
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+slug:
+  encoding: "unicode"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+locale: "es"
+
+collections:
+  - name: "posts"
+    label: "Artículos"
+    label_singular: "Artículo"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{title}}"
+    identifier_field: title
+    sortable_fields: ["pubDate", "title"]
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
+      - { label: "Fecha de actualización", name: "updatedDate", widget: "datetime", required: false }
+      - { label: "Descripción (para tarjetas y buscadores)", name: "description", widget: "text" }
+      - { label: "Imagen principal", name: "heroImage", widget: "image" }
+      - { label: "Texto alternativo de la imagen principal", name: "heroImageAlt", widget: "string" }
+      - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Cuerpo del artículo", name: "body", widget: "markdown" }
