@@ -1,8 +1,33 @@
 ---
+import { getCollection } from 'astro:content';
+
+const series = (await getCollection('editorialCollections', ({ data }) => data.kind === 'series')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const hubs = (await getCollection('editorialCollections', ({ data }) => data.kind === 'hub'))
+  .sort((a, b) => a.data.order - b.data.order);
+const standaloneHubs = hubs.filter((h) => !h.data.group);
+const groupedHubs = hubs.filter((h) => h.data.group);
+const groupName = groupedHubs[0]?.data.group ?? 'Recursos educativos';
+
 const nav = [
   { href: '/archivo/', label: 'Archivo' },
-  { href: '/series/', label: 'Series' },
-  { href: '/colecciones/', label: 'Colecciones' },
+  {
+    href: '/series/',
+    label: 'Series',
+    children: series.map((s) => ({
+      href: `/series/${s.id}/`,
+      label: s.data.title,
+      muted: s.data.status === 'coming-soon',
+    })),
+  },
+  {
+    href: '/colecciones/',
+    label: 'Colecciones',
+    children: standaloneHubs.map((h) => ({ href: `/colecciones/${h.id}/`, label: h.data.title })),
+    groupLabel: groupName,
+    groupChildren: groupedHubs.map((h) => ({ href: `/colecciones/${h.id}/`, label: h.data.title })),
+  },
   { href: '/indice-glitchmentalmx/', label: 'Índice' },
   { href: '/novelas/', label: 'Novelas' },
 ];
@@ -18,8 +43,32 @@ const current = Astro.url.pathname;
     <nav class="primary-nav" aria-label="Navegación principal">
       <ul>
         {nav.map((item) => (
-          <li>
-            <a href={item.href} aria-current={current.startsWith(item.href) ? 'page' : undefined}>{item.label}</a>
+          <li class:list={{ 'has-dropdown': !!item.children }}>
+            <a href={item.href} aria-current={current.startsWith(item.href) ? 'page' : undefined}>
+              {item.label}
+              {item.children && (
+                <svg class="chevron" viewBox="0 0 24 24" width="11" height="11" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              )}
+            </a>
+            {item.children && (
+              <div class="dropdown-panel">
+                <ul>
+                  {item.children.map((c) => (
+                    <li><a href={c.href} class:list={{ muted: c.muted }}>{c.label}{c.muted && <span class="soon-tag">Pronto</span>}</a></li>
+                  ))}
+                </ul>
+                {item.groupChildren && item.groupChildren.length > 0 && (
+                  <>
+                    <p class="dropdown-group-label">{item.groupLabel}</p>
+                    <ul>
+                      {item.groupChildren.map((c) => (
+                        <li><a href={c.href}>{c.label}</a></li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+            )}
           </li>
         ))}
       </ul>
@@ -43,7 +92,36 @@ const current = Astro.url.pathname;
   <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
     <ul>
       {nav.map((item) => (
-        <li><a href={item.href}>{item.label}</a></li>
+        <li>
+          {item.children ? (
+            <details class="mobile-accordion">
+              <summary>
+                <span>{item.label}</span>
+                <svg class="chevron" viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </summary>
+              <div class="accordion-body">
+                <a href={item.href} class="see-all-link">Ver todo {item.label} →</a>
+                <ul>
+                  {item.children.map((c) => (
+                    <li><a href={c.href} class:list={{ muted: c.muted }}>{c.label}{c.muted && <span class="soon-tag">Pronto</span>}</a></li>
+                  ))}
+                </ul>
+                {item.groupChildren && item.groupChildren.length > 0 && (
+                  <>
+                    <p class="dropdown-group-label">{item.groupLabel}</p>
+                    <ul>
+                      {item.groupChildren.map((c) => (
+                        <li><a href={c.href}>{c.label}</a></li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+            </details>
+          ) : (
+            <a href={item.href}>{item.label}</a>
+          )}
+        </li>
       ))}
       <li><a href="/glitchsearch/">GlitchSearch</a></li>
       <li><a href="/calculadora-de-riesgo-de-reemplazo-por-ia-2026/">Calculadora de Riesgo IA</a></li>
@@ -80,26 +158,82 @@ const current = Astro.url.pathname;
   .logo-mx { color: var(--text-faint); font-size: 0.75em; font-family: var(--font-mono); margin-left: 1px; }
 
   .primary-nav { flex: 1; min-width: 0; }
-  .primary-nav ul {
+  .primary-nav > ul {
     list-style: none;
     display: flex;
     gap: 26px;
     margin: 0;
     padding: 0;
   }
+  .primary-nav > ul > li { position: relative; }
   .primary-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     font-size: 0.92rem;
     font-weight: 500;
     color: var(--text-muted);
     white-space: nowrap;
-    padding: 6px 0;
+    padding: 22px 0;
     border-bottom: 2px solid transparent;
     transition: color .15s ease, border-color .15s ease;
   }
-  .primary-nav a:hover { color: var(--text); }
-  .primary-nav a[aria-current='page'] {
+  .primary-nav > ul > li > a:hover { color: var(--text); }
+  .primary-nav > ul > li > a[aria-current='page'] {
     color: var(--text);
     border-color: var(--accent);
+  }
+  .chevron { flex-shrink: 0; transition: transform .15s ease; opacity: 0.6; }
+  .has-dropdown:hover .chevron { transform: rotate(180deg); }
+
+  /* Desktop hover dropdown */
+  .dropdown-panel {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -14px;
+    min-width: 240px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+    padding: 10px;
+    z-index: 60;
+  }
+  .has-dropdown:hover .dropdown-panel,
+  .has-dropdown:focus-within .dropdown-panel {
+    display: block;
+  }
+  .dropdown-panel ul { list-style: none; margin: 0; padding: 0; }
+  .dropdown-panel li a {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--text);
+    white-space: normal;
+    line-height: 1.35;
+  }
+  .dropdown-panel li a:hover { background: var(--bg-inset); color: var(--accent); }
+  .dropdown-panel li a.muted { color: var(--text-faint); }
+  .soon-tag {
+    display: inline-block;
+    margin-left: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .dropdown-group-label {
+    margin: 8px 10px 4px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
   }
 
   .actions {
@@ -134,15 +268,38 @@ const current = Astro.url.pathname;
     display: none;
     border-top: 1px solid var(--border);
     background: var(--bg);
+    max-height: calc(100vh - 68px);
+    overflow-y: auto;
   }
-  .mobile-nav ul { list-style: none; margin: 0; padding: 10px 24px 18px; }
-  .mobile-nav a {
+  .mobile-nav > ul { list-style: none; margin: 0; padding: 10px 24px 18px; }
+  .mobile-nav > ul > li > a {
     display: block;
-    padding: 12px 0;
+    padding: 14px 0;
     font-size: 1rem;
     font-weight: 500;
     border-bottom: 1px solid var(--border);
   }
+
+  .mobile-accordion { border-bottom: 1px solid var(--border); }
+  .mobile-accordion summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+  }
+  .mobile-accordion summary::-webkit-details-marker { display: none; }
+  .mobile-accordion[open] summary .chevron { transform: rotate(180deg); }
+  .accordion-body { padding: 0 0 16px 4px; }
+  .see-all-link { display: block; padding: 8px 0; font-size: 0.85rem; font-weight: 600; color: var(--accent); }
+  .accordion-body ul { list-style: none; margin: 0; padding: 0; }
+  .accordion-body li a { display: block; padding: 9px 0 9px 10px; font-size: 0.92rem; color: var(--text-muted); }
+  .accordion-body li a.muted { color: var(--text-faint); }
+  .accordion-body .dropdown-group-label { margin: 6px 0 4px 10px; padding-top: 8px; border-top: 1px solid var(--border); }
 
   @media (max-width: 860px) {
     .primary-nav { display: none; }
