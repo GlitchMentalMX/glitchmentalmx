@@ -2,28 +2,36 @@
 import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
-import { indiceRanking } from '../data/indice-ranking';
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const [featured, ...rest] = allPosts;
-const gridPosts = rest.slice(0, 3);
+const [featured] = allPosts;
 
 const series = (await getCollection('editorialCollections', ({ data }) => data.kind === 'series')).sort(
   (a, b) => a.data.order - b.data.order
 );
-const hubs = await getCollection('editorialCollections', ({ data }) => data.kind === 'hub');
+const hubs = (await getCollection('editorialCollections', ({ data }) => data.kind === 'hub'))
+  .sort((a, b) => a.data.order - b.data.order);
+const standaloneHubs = hubs.filter((h) => !h.data.group);
+const groupedHubs = hubs.filter((h) => h.data.group);
+const groupName = groupedHubs[0]?.data.group ?? 'Recursos educativos';
 
-const insights = (await getCollection('visualInsights')).slice(0, 6);
-
-const indiceTop3 = indiceRanking.slice(0, 3);
+const insights = await getCollection('visualInsights');
+const latestInsight = insights[0];
 
 const novelasPublicadas = [
   { title: 'Entrenado en Corpus', cover: '/images/novelas/entrenado-en-corpus.jpg' },
   { title: 'Cero Orgánico', cover: '/images/novelas/cero-organico.png' },
 ];
+
+// Background images for the Explora cards — drop files at these paths to light them up.
+const explora = {
+  series: '/images/explora/series.jpg',
+  colecciones: '/images/explora/colecciones.jpg',
+  recursos: '/images/explora/recursos-educativos.jpg',
+};
 ---
 
 <Layout
@@ -54,67 +62,55 @@ const novelasPublicadas = [
     </section>
   )}
 
-  <section class="latest container">
-    <div class="section-head">
-      <h2>Últimos artículos</h2>
-      <a href="/archivo/" class="link-accent">Ver todo el archivo →</a>
-    </div>
-    <div class="grid grid-3">
-      {gridPosts.map((post) => (
-        <ArticleCard
-          slug={post.id}
-          title={post.data.title}
-          description={post.data.description}
-          pubDate={post.data.pubDate}
-          heroImage={post.data.heroImage}
-          heroImageAlt={post.data.heroImageAlt}
-          body={post.body}
-        />
-      ))}
-    </div>
-  </section>
-
-  <section class="insights container">
-    <div class="section-head">
-      <h2>Insights Visuales</h2>
-      <a href="/insights-visuales/" class="link-accent">Ver todas →</a>
-    </div>
-    <div class="insights-scroller">
-      {insights.map((item) => (
-        <a href={item.data.enlace ?? '/insights-visuales/'} class="insight-card">
-          <img src={item.data.imagen} alt={item.data.titulo} loading="lazy" width="280" height="158" />
-          <p>{item.data.titulo}</p>
-        </a>
-      ))}
-    </div>
-  </section>
-
   <section class="explora container">
     <div class="section-head">
       <h2>Explora</h2>
     </div>
     <div class="explora-grid">
-      <a href="/series/" class="explora-tile">
+      <a href="/series/" class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.series})`}>
         <p class="eyebrow">{series.length} series</p>
         <h3>Series editoriales</h3>
         <p class="dek">Investigaciones en varias entregas, para leer en orden.</p>
       </a>
-      <a href="/colecciones/" class="explora-tile">
-        <p class="eyebrow">{hubs.length} colecciones</p>
-        <h3>Colecciones</h3>
-        <p class="dek">Bibliotecas y guías curadas por tema.</p>
-      </a>
-      <a href="/indice-glitchmentalmx/" class="explora-tile indice-tile">
-        <p class="eyebrow">Índice GlitchMentalMX</p>
-        <h3>Top 3 del mes</h3>
-        <ol class="mini-ranking">
-          {indiceTop3.map((r) => (
-            <li><span class="mini-pos">{r.pos}</span>{r.name}</li>
+
+      <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.colecciones})`}>
+        <a href="/colecciones/" class="card-heading-link">
+          <p class="eyebrow">Colecciones</p>
+          <h3>Guías por tema</h3>
+        </a>
+        <ul class="mini-list">
+          {standaloneHubs.map((h) => (
+            <li><a href={`/colecciones/${h.id}/`}>{h.data.title}</a></li>
           ))}
-        </ol>
-      </a>
+        </ul>
+      </div>
+
+      <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.recursos})`}>
+        <a href="/colecciones/" class="card-heading-link">
+          <p class="eyebrow">{groupName}</p>
+          <h3>Para profundizar</h3>
+        </a>
+        <ul class="mini-list">
+          {groupedHubs.map((h) => (
+            <li><a href={`/colecciones/${h.id}/`}>{h.data.title}</a></li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
+
+  {latestInsight && (
+    <section class="insights container">
+      <div class="section-head insights-head">
+        <h2>Insights Visuales</h2>
+        <p class="tagline">Ideas complejas sobre IA, Cultura Digital, algoritmos y redes.<br />Imagen + análisis. Sin relleno.</p>
+      </div>
+      <a href="/insights-visuales/" class="insight-hero">
+        <img src={latestInsight.data.imagen} alt="" loading="lazy" width="1000" height="563" />
+      </a>
+      <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Ver todas →</a></p>
+    </section>
+  )}
 
   <section class="novelas container">
     <div class="section-head">
@@ -128,14 +124,15 @@ const novelasPublicadas = [
           <span>{n.title}</span>
         </a>
       ))}
-      <a href="/novelas/" class="novela-upcoming">
-        <span class="plus">+2</span>
-        <span>en desarrollo</span>
-      </a>
     </div>
   </section>
 
   <section class="tools container">
+    <a href="/indice-glitchmentalmx/" class="tool-card">
+      <span class="tag">Índice mensual</span>
+      <h3>Índice GlitchMentalMX</h3>
+      <p>20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.</p>
+    </a>
     <a href="/glitchsearch/" class="tool-card">
       <span class="tag">Herramienta</span>
       <h3>GlitchSearch</h3>
@@ -145,6 +142,16 @@ const novelasPublicadas = [
       <span class="tag">Herramienta</span>
       <h3>Calculadora de Riesgo IA</h3>
       <p>Mide qué tan expuesto está tu trabajo a la automatización en 2026.</p>
+    </a>
+  </section>
+
+  <section class="archivo-cta container">
+    <a href="/archivo/" class="archivo-card">
+      <div>
+        <p class="archivo-count">{allPosts.length} artículos.</p>
+        <p class="archivo-sub">El home es una selección; esto es el catálogo.</p>
+      </div>
+      <span class="btn btn-primary">Ver el archivo completo →</span>
     </a>
   </section>
 </Layout>
@@ -167,7 +174,7 @@ const novelasPublicadas = [
 
   .featured { padding: 16px 24px 56px; }
 
-  section.latest, section.insights, section.explora, section.novelas, section.tools {
+  section.explora, section.insights, section.novelas, section.tools, section.archivo-cta {
     padding: 44px 24px;
     border-top: 1px solid var(--border);
   }
@@ -180,58 +187,29 @@ const novelasPublicadas = [
   .section-head h2 { font-size: 1.4rem; }
   .section-head a { font-size: 0.9rem; font-weight: 600; white-space: nowrap; }
 
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 36px 28px;
-  }
-
-  /* Insights Visuales — horizontal scroller */
-  .insights-scroller {
-    display: flex;
-    gap: 16px;
-    overflow-x: auto;
-    padding-bottom: 6px;
-    scroll-snap-type: x proximity;
-  }
-  .insight-card {
-    flex: 0 0 240px;
-    scroll-snap-align: start;
-    color: var(--text);
-  }
-  .insight-card img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: var(--radius-sm);
-    margin-bottom: 10px;
-  }
-  .insight-card p {
-    font-size: 0.88rem;
-    line-height: 1.4;
-    font-weight: 600;
-    margin: 0;
-  }
-  .insight-card:hover p { color: var(--accent); }
-
-  /* Explora tiles */
+  /* Explora cards */
   .explora-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
   }
-  .explora-tile {
-    background: var(--bg-inset);
+  .explora-card {
     border-radius: var(--radius);
     padding: 24px;
-    color: var(--text);
+    color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    min-height: 220px;
+    background-color: var(--bg-inset);
+    background-size: cover;
+    background-position: center;
   }
-  .explora-tile:hover { outline: 1.5px solid var(--accent); }
-  .explora-tile h3 { font-size: 1.1rem; margin: 8px 0 8px; }
-  .explora-tile .dek { color: var(--text-muted); font-size: 0.86rem; line-height: 1.5; margin: 0; }
-  .mini-ranking {
+  .explora-card:hover { outline: 1.5px solid var(--accent); }
+  .explora-card .eyebrow { color: rgba(255, 255, 255, 0.75); }
+  .explora-card h3 { font-size: 1.15rem; margin: 8px 0 8px; color: #fff; }
+  .explora-card .dek { color: rgba(255, 255, 255, 0.85); font-size: 0.86rem; line-height: 1.5; margin: 0; }
+  .mini-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -239,18 +217,30 @@ const novelasPublicadas = [
     flex-direction: column;
     gap: 6px;
   }
-  .mini-ranking li {
-    font-size: 0.84rem;
-    color: var(--text-muted);
-    display: flex;
-    gap: 8px;
-    line-height: 1.35;
+  .mini-list li a {
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
   }
-  .mini-pos {
-    font-family: var(--font-mono);
-    color: var(--accent);
-    flex-shrink: 0;
+  .mini-list li a:hover { color: #fff; text-decoration: underline; }
+  .card-heading-link { display: block; }
+  .card-heading-link:hover h3 { text-decoration: underline; }
+
+  /* Insights Visuales — single hero image */
+  .insights-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .tagline { color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin: 0; }
+  .insight-hero {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
   }
+  .insight-hero img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+  .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 
   /* Novelas */
   .novelas-row { display: flex; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
@@ -265,28 +255,11 @@ const novelasPublicadas = [
   }
   .novela-cover-link span { display: block; font-size: 0.82rem; font-weight: 600; max-width: 108px; }
   .novela-cover-link:hover span { color: var(--accent); }
-  .novela-upcoming {
-    width: 108px;
-    height: 168px;
-    border-radius: 6px;
-    border: 1px dashed var(--border-strong);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    color: var(--text-faint);
-    text-align: center;
-  }
-  .novela-upcoming .plus { font-family: var(--font-mono); font-size: 1.3rem; color: var(--accent); }
-  .novela-upcoming span:last-child { font-size: 0.76rem; padding: 0 8px; }
-  .novela-upcoming:hover { border-color: var(--accent); color: var(--accent); }
 
   .tools {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-bottom: 8px;
   }
   .tool-card {
     background: var(--bg-inset);
@@ -295,15 +268,29 @@ const novelasPublicadas = [
     color: var(--text);
   }
   .tool-card:hover { outline: 1.5px solid var(--accent); }
-  .tool-card h3 { font-size: 1.3rem; margin: 12px 0 8px; }
-  .tool-card p { color: var(--text-muted); font-size: 0.94rem; margin: 0; }
+  .tool-card h3 { font-size: 1.2rem; margin: 12px 0 8px; }
+  .tool-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+
+  /* Archivo CTA */
+  .archivo-cta { padding-bottom: 8px; }
+  .archivo-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: var(--bg-inset);
+    border-radius: var(--radius);
+    padding: 36px 40px;
+    color: var(--text);
+  }
+  .archivo-card:hover { outline: 1.5px solid var(--accent); }
+  .archivo-count { font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; margin: 0 0 6px; }
+  .archivo-sub { color: var(--text-muted); font-size: 0.98rem; margin: 0; }
+  .archivo-card .btn { pointer-events: none; }
 
   @media (max-width: 900px) {
-    .grid-3 { grid-template-columns: 1fr 1fr; }
     .explora-grid { grid-template-columns: 1fr; }
     .tools { grid-template-columns: 1fr; }
-  }
-  @media (max-width: 600px) {
-    .grid-3 { grid-template-columns: 1fr; }
   }
 </style>
