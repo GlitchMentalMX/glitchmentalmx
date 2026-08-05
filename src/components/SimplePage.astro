@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeader from './PageHeader.astro';
+import { render } from 'astro:content';
+
+const { entry } = Astro.props;
+const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
+const { Content } = await render(entry);
+---
+
+<Layout title={title} description={description} noIndex={noIndex}>
+  <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
+  <section class="container prose">
+    <Content />
+  </section>
+</Layout>
+
+<style>
+  .prose { padding: 0 24px 96px; }
+</style>

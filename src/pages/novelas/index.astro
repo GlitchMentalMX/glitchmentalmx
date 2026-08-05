@@ -6,12 +6,14 @@ const published = [
   {
     title: 'Entrenado en Corpus',
     genre: 'Tecnothriller',
+    cover: '/images/novelas/entrenado-en-corpus.jpg',
     desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
     buy: 'https://mybook.to/EntrenadoEnCorpus',
   },
   {
     title: 'Cero Orgánico',
     genre: 'Tecnothriller',
+    cover: '/images/novelas/cero-organico.png',
     desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
     buy: 'https://mybook.to/CeroOrganico',
   },
@@ -30,11 +32,11 @@ const upcoming = [
 ---
 
 <Layout
-  title="Jorge A. Diaz Elizondo — Autor"
+  title="Novelas — Jorge A. Diaz Elizondo"
   description="Tecnothriller de credibilidad periodística. Ficción anclada en hechos reales."
 >
   <PageHeader
-    eyebrow="Sobre el autor"
+    eyebrow="Novelas · Jorge A. Diaz Elizondo"
     title="Tecnothriller de credibilidad periodística."
     dek="Ficción anclada en hechos reales. Cada novela nace de la misma fuente: investigación documentada, datos verificables y la convicción de que hay verdades que el periodismo puede documentar pero no puede hacer sentir."
   />
@@ -53,15 +55,18 @@ const upcoming = [
     <div class="grid">
       {published.map((b) => (
         <div class="book-card">
-          <span class="tag">{b.genre}</span>
-          <h3>{b.title}</h3>
-          <p>{b.desc}</p>
-          <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+          <img class="cover" src={b.cover} alt={`Portada de ${b.title}`} loading="lazy" width="400" height="620" />
+          <div class="body">
+            <span class="tag">{b.genre}</span>
+            <h3>{b.title}</h3>
+            <p>{b.desc}</p>
+            <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+          </div>
         </div>
       ))}
     </div>
 
-    <p class="eyebrow section-label upcoming-label">Próximamente</p>
+    <p class="eyebrow section-label upcoming-label">En desarrollo · Vienen más</p>
     <div class="grid">
       {upcoming.map((b) => (
         <div class="book-card muted">
@@ -70,7 +75,7 @@ const upcoming = [
         </div>
       ))}
     </div>
-    <p class="footnote">* Los títulos en desarrollo pueden cambiar antes de su publicación.</p>
+    <p class="footnote">* Estas son las próximas en desarrollo — los títulos y sinopsis pueden cambiar antes de su publicación.</p>
   </section>
 
   <section class="container actions">
@@ -86,8 +91,23 @@ const upcoming = [
   .section-label { padding: 0; margin-bottom: 14px; }
   .upcoming-label { margin-top: 40px; }
   .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .book-card { background: var(--bg-inset); border-radius: var(--radius); padding: 26px; }
-  .book-card.muted { opacity: 0.75; }
+  .book-card {
+    background: var(--bg-inset);
+    border-radius: var(--radius);
+    padding: 22px;
+    display: flex;
+    gap: 20px;
+  }
+  .book-card.muted { opacity: 0.75; padding: 26px; }
+  .cover {
+    width: 108px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(20, 22, 28, 0.18);
+  }
+  .book-card .body { min-width: 0; }
   .book-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin: 10px 0 10px; }
   .book-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0 0 18px; }
   .footnote { font-size: 0.82rem; color: var(--text-faint); margin-top: 16px; }
@@ -96,5 +116,7 @@ const upcoming = [
 
   @media (max-width: 700px) {
     .grid { grid-template-columns: 1fr; }
+    .book-card { flex-direction: column; }
+    .cover { width: 96px; height: 148px; }
   }
 </style>

@@ -5,6 +5,10 @@ import { getCollection } from 'astro:content';
 const hubs = (await getCollection('editorialCollections', ({ data }) => data.kind === 'hub')).sort(
   (a, b) => a.data.order - b.data.order
 );
+
+const grouped = hubs.filter((h) => h.data.group);
+const standalone = hubs.filter((h) => !h.data.group);
+const groupName = grouped[0]?.data.group;
 ---
 
 <Layout title="Colecciones" description="Selecciones temáticas curadas de artículos de glitchmentalMX.">
@@ -15,7 +19,7 @@ const hubs = (await getCollection('editorialCollections', ({ data }) => data.kin
   </section>
 
   <section class="container grid">
-    {hubs.map((h) => (
+    {standalone.map((h) => (
       <a href={`/colecciones/${h.id}/`} class="card">
         <p class="eyebrow">{h.data.postSlugs.length} artículos</p>
         <h2>{h.data.title}</h2>
@@ -23,6 +27,21 @@ const hubs = (await getCollection('editorialCollections', ({ data }) => data.kin
       </a>
     ))}
   </section>
+
+  {grouped.length > 0 && (
+    <section class="container group-section">
+      <p class="eyebrow group-label">{groupName}</p>
+      <div class="grid">
+        {grouped.map((h) => (
+          <a href={`/colecciones/${h.id}/`} class="card">
+            <p class="eyebrow">{h.data.postSlugs.length} artículos</p>
+            <h2>{h.data.title}</h2>
+            <p class="dek">{h.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </Layout>
 
 <style>
@@ -30,12 +49,20 @@ const hubs = (await getCollection('editorialCollections', ({ data }) => data.kin
   .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
   .sub { color: var(--text-muted); font-size: 1.05rem; }
 
+  .group-section { padding: 8px 24px 8px; }
+  .group-label {
+    margin: 40px 0 22px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+
   .grid {
     padding: 0 24px 72px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
   }
+  .group-section .grid { padding: 0 0 72px; }
   .card {
     padding: 30px;
     border-radius: var(--radius);

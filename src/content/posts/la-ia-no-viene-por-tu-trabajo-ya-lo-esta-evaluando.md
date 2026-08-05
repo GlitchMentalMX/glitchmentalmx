@@ -3,16 +3,14 @@ title: La IA no viene por tu trabajo. Ya lo está evaluando
 pubDate: 2026-03-17T00:05:00.052Z
 updatedDate: 2026-07-15T14:36:58.631Z
 description: >-
-  .gm-wrap-manifiesto, .gm-wrap-manifiesto p, .gm-wrap-manifiesto h2,
-  .gm-wrap-manifiesto em, .gm-wrap-manifiesto strong, .gm-wrap-manifiesto div{…
+  Si llegaste hasta aquí buscando optimismo, este no es tu lugar. Por qué
+  existe glitchmentalMX y qué esperar de este espacio.
 heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.jpg
 heroImageAlt: >-
   Mujer mide terreno con instrumento topográfico en medio de niebla densa
   mientras otros permanecen inmóviles al fondo
 ---
-.gm-wrap-manifiesto, .gm-wrap-manifiesto p, .gm-wrap-manifiesto h2, .gm-wrap-manifiesto em, .gm-wrap-manifiesto strong, .gm-wrap-manifiesto div{ box-sizing:border-box; } .gm-wrap-manifiesto p{ font-size:16px!important; line-height:1.75!important; } .gm-wrap-manifiesto a{ text-decoration:none!important; } .gm-m-highlight{ background:#f0f5ff!important; border-left:3px solid #0066ff!important; color:#1a1a1a!important; font-size:17px!important; font-weight:700!important; line-height:1.6!important; margin:0px 0px 32px!important; padding:20px 24px!important; } .gm-m-final-ctas a{ display:inline-block!important; border-radius:8px!important; font-size:14px!important; font-weight:800!important; letter-spacing:.02em!important; padding:14px 28px!important; text-decoration:none!important; white-space:nowrap!important; border:none!important; } .gm-m-final-ctas a:first-child{ background:#7cffb2!important; color:#0a0a0a!important; } .gm-m-final-ctas a:last-child{ background:#e8c547!important; color:#0a0a0a!important; } @media(max-width:640px){ .gm-wrap-manifiesto{padding:0 20px 60px!important;} .gm-m-hero{padding:32px 0 32px!important;} .gm-m-img-wrap{margin:0 -20px!important;} .gm-m-final-ctas{flex-direction:column!important;align-items:stretch!important;} .gm-m-final-ctas a{text-align:center!important;display:block!important;white-space:normal!important;} }
-
-Manifiesto · GlitchMentalMX
+*Manifiesto · GlitchMentalMX*
 
 Si llegaste hasta aquí buscando optimismo, este no es tu lugar.
 
@@ -92,14 +90,11 @@ Si quieres seguir en la negación, puedes cerrar esto. Si prefieres enfrentar la
 
 No prometen tranquilidad. Prometen claridad.
 
-Sobre el autor
+---
 
-#### [Jorge Diaz](https://www.linkedin.com/in/pumi/)
+#### Sobre el autor
 
-Escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchmentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos.
+[Jorge Diaz](https://www.linkedin.com/in/pumi/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchmentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
 
-Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
-
-¿Listo para llevar esta conversación al siguiente nivel?
-
-[👉 Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) [👉 Índice GlitchMentalMX](/indice-glitchmentalmx/)
+**¿Listo para llevar esta conversación al siguiente nivel?**
+[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) · [Índice GlitchMentalMX →](/indice-glitchmentalmx/)

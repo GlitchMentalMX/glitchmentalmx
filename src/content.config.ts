@@ -23,6 +23,19 @@ const editorialCollections = defineCollection({
     description: z.string(),
     postSlugs: z.array(z.string()).default([]),
     order: z.number().default(0),
+    group: z.string().optional(),
+  }),
+});
+
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    eyebrow: z.string(),
+    headline: z.string(),
+    dek: z.string().optional(),
+    noIndex: z.boolean().default(false),
   }),
 });
 
@@ -50,6 +63,7 @@ const datoIncomodo = defineCollection({
 export const collections = {
   posts,
   editorialCollections,
+  pages,
   visualInsights,
   datoIncomodo,
 };

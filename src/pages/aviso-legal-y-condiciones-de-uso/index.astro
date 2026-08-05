@@ -1,37 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PageHeader from '../../components/PageHeader.astro';
+import SimplePage from '../../components/SimplePage.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('pages', 'aviso-legal-y-condiciones-de-uso');
 ---
 
-<Layout title="Aviso Legal y Condiciones de Uso" description="Aviso legal y condiciones de uso de glitchmentalMX.">
-  <PageHeader eyebrow="Legal" title="Aviso Legal y Condiciones de Uso" />
-
-  <section class="container prose">
-    <h3>1. Titular del Sitio Web</h3>
-    <ul>
-      <li>Titular: Jorge A. Diaz Elizondo</li>
-      <li>Sitio web: <a href="https://glitchmental.com">glitchmental.com</a></li>
-      <li>Contacto: <a href="mailto:contacto@glitchmental.com">contacto@glitchmental.com</a></li>
-    </ul>
-
-    <h3>2. Propiedad Intelectual</h3>
-    <p>Todo el contenido publicado en GlitchMentalMX, incluyendo textos, imágenes, gráficos, logos, videos y diseño, son propiedad de GlitchMentalMX o de sus respectivos autores y están protegidos por las leyes de propiedad intelectual y derechos de autor.</p>
-    <p>Queda estrictamente prohibida la reproducción, distribución, comunicación pública y transformación, total o parcial, de los contenidos del Sitio sin la autorización expresa y por escrito del titular.</p>
-
-    <h3>3. Responsabilidad del Contenido</h3>
-    <p>Todo el contenido de GlitchMentalMX es de carácter informativo, de opinión y de análisis. No constituye asesoramiento financiero, legal, tecnológico o profesional de ningún tipo. El usuario es responsable de contrastar la información antes de tomar cualquier decisión basada en ella.</p>
-    <p>El titular del Sitio no asume responsabilidad alguna por el uso o interpretación que el usuario le dé a la información aquí contenida, ni por los daños o perjuicios que se pudieran derivar del uso de este Sitio o de la toma de decisiones basada en su contenido.</p>
-
-    <h3>4. Enlaces Externos</h3>
-    <p>El Sitio puede contener enlaces a otros sitios web de terceros. GlitchMentalMX no es responsable del contenido, las políticas de privacidad, o las prácticas de esos sitios. La inclusión de dichos enlaces no implica ninguna asociación, fusión o participación con las entidades enlazadas.</p>
-
-    <h3>5. Condiciones de Uso</h3>
-    <p>El acceso al Sitio es gratuito y atribuye la condición de usuario, implicando la aceptación plena y sin reservas de las presentes Condiciones de Uso. El usuario se compromete a no utilizar el Sitio de manera que infrinja la ley o los derechos de terceros.</p>
-    <p>GlitchMentalMX se reserva el derecho de modificar unilateralmente y en cualquier momento el contenido, la presentación, el diseño y los servicios del Sitio, así como las presentes condiciones de uso.</p>
-    <p><em>Última actualización: agosto de 2026.</em></p>
-  </section>
-</Layout>
-
-<style>
-  .prose { padding: 0 24px 96px; }
-</style>
+<SimplePage entry={entry} />

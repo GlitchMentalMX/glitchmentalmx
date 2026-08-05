@@ -67,5 +67,6 @@ postSlugs:
   - bioseguridad-global-el-codigo-que-nadie-audita-todavia
   - neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
 order: 2
+group: Recursos educativos
 ---
 

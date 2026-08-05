@@ -82,5 +82,6 @@ postSlugs:
   - deepseek-la-guia-practica-para-usarlo-bien
   - la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas
 order: 3
+group: Recursos educativos
 ---
 

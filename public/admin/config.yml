@@ -36,3 +36,54 @@ collections:
       - { label: "Texto alternativo de la imagen principal", name: "heroImageAlt", widget: "string" }
       - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Cuerpo del artículo", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Páginas fijas"
+    label_singular: "Página"
+    files:
+      - name: "acerca-de"
+        label: "Acerca de"
+        file: "src/content/pages/acerca-de.md"
+        fields: &pageFields
+          - { label: "Título (pestaña del navegador)", name: "title", widget: "string" }
+          - { label: "Descripción (buscadores)", name: "description", widget: "text" }
+          - { label: "Etiqueta pequeña arriba del título", name: "eyebrow", widget: "string" }
+          - { label: "Título grande", name: "headline", widget: "string" }
+          - { label: "Bajada / subtítulo", name: "dek", widget: "text", required: false }
+          - { label: "Cuerpo de la página", name: "body", widget: "markdown" }
+      - name: "contacto"
+        label: "Contacto"
+        file: "src/content/pages/contacto.md"
+        fields: *pageFields
+      - name: "suscribete"
+        label: "Suscríbete"
+        file: "src/content/pages/suscribete.md"
+        fields: *pageFields
+      - name: "colabora"
+        label: "Colabora"
+        file: "src/content/pages/colabora.md"
+        fields: *pageFields
+      - name: "publicidad"
+        label: "Publicidad"
+        file: "src/content/pages/publicidad-en-glitchmentalmx.md"
+        fields: *pageFields
+      - name: "servicios-editoriales"
+        label: "Servicios Editoriales (ES)"
+        file: "src/content/pages/servicios-editoriales-glitchmentalmx.md"
+        fields: *pageFields
+      - name: "editorial-services"
+        label: "Editorial Services (EN)"
+        file: "src/content/pages/editorial-services-glitchmentalmx.md"
+        fields: *pageFields
+      - name: "politica-de-privacidad"
+        label: "Política de Privacidad"
+        file: "src/content/pages/politica-de-privacidad.md"
+        fields: *pageFields
+      - name: "aviso-legal"
+        label: "Aviso Legal"
+        file: "src/content/pages/aviso-legal-y-condiciones-de-uso.md"
+        fields: *pageFields
+      - name: "gracias"
+        label: "Gracias (bienvenida a suscriptores)"
+        file: "src/content/pages/gracias.md"
+        fields: *pageFields

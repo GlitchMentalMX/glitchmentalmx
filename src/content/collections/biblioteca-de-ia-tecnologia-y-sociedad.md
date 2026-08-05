@@ -106,5 +106,6 @@ postSlugs:
   - lo-que-se-pierde-cuando-muere-una-plataforma-digital
   - por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
 order: 1
+group: Recursos educativos
 ---
 

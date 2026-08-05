@@ -1,26 +1,8 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import PageHeader from '../../components/PageHeader.astro';
+import SimplePage from '../../components/SimplePage.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('pages', 'contacto');
 ---
 
-<Layout title="Contacto" description="Escríbenos: ideas, preguntas o caos bien intencionado.">
-  <PageHeader
-    eyebrow="Conexión digital"
-    title="Si llegaste hasta aquí, probablemente algo hizo ruido."
-    dek="Escríbenos sin filtro: ideas, preguntas o caos bien intencionado."
-  />
-
-  <section class="container actions">
-    <a class="btn btn-primary" href="mailto:contacto@glitchmental.com">contacto@glitchmental.com</a>
-    <a class="btn btn-ghost" href="/suscribete/">Suscríbete al boletín</a>
-  </section>
-</Layout>
-
-<style>
-  .actions {
-    padding: 0 24px 96px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-  }
-</style>
+<SimplePage entry={entry} />
