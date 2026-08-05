@@ -26,11 +26,7 @@ collections:
     create: true
     slug: "{{title}}"
     identifier_field: title
-    sortable_fields:
-      fields: ["pubDate", "title"]
-      default:
-        field: "pubDate"
-        direction: "descending"
+    sortable_fields: ["pubDate", "title"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
@@ -99,11 +95,7 @@ collections:
     create: true
     slug: "{{titulo}}"
     identifier_field: titulo
-    sortable_fields:
-      fields: ["date", "titulo"]
-      default:
-        field: "date"
-        direction: "descending"
+    sortable_fields: ["date", "titulo"]
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Resumen", name: "resumen", widget: "text" }
@@ -118,11 +110,7 @@ collections:
     create: true
     slug: "dato-{{uuid_short}}"
     identifier_field: resumen
-    sortable_fields:
-      fields: ["date", "titulo"]
-      default:
-        field: "date"
-        direction: "descending"
+    sortable_fields: ["date", "titulo"]
     fields:
       - { label: "Título (interno, siempre dice 'Dato Incómodo')", name: "titulo", widget: "string", default: "Dato Incómodo" }
       - { label: "El dato (texto que se muestra)", name: "resumen", widget: "text" }
