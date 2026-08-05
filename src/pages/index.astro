@@ -18,7 +18,9 @@ const standaloneHubs = hubs.filter((h) => !h.data.group);
 const groupedHubs = hubs.filter((h) => h.data.group);
 const groupName = groupedHubs[0]?.data.group ?? 'Recursos educativos';
 
-const insights = await getCollection('visualInsights');
+const insights = (await getCollection('visualInsights')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
 const latestInsight = insights[0];
 
 const novelasPublicadas = [
@@ -147,9 +149,8 @@ const explora = {
 
   <section class="archivo-cta container">
     <a href="/archivo/" class="archivo-card">
-      <p class="archivo-count">{allPosts.length} artículos.</p>
-      <p class="archivo-sub">El home es una selección; esto es el catálogo.</p>
-      <span class="btn btn-primary">Ver el archivo completo →</span>
+      <h3 class="archivo-title">Archivo Total</h3>
+      <p class="archivo-sub">El home es una selección; esto es el catálogo. →</p>
     </a>
   </section>
 </Layout>
@@ -242,7 +243,7 @@ const explora = {
   .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 
   /* Novelas */
-  .novelas-row { display: flex; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
+  .novelas-row { display: flex; align-items: flex-start; justify-content: center; gap: 18px; flex-wrap: wrap; }
   .novela-cover-link { color: var(--text); text-align: center; }
   .novela-cover-link img {
     width: 108px;
@@ -254,6 +255,11 @@ const explora = {
   }
   .novela-cover-link span { display: block; font-size: 0.82rem; font-weight: 600; max-width: 108px; }
   .novela-cover-link:hover span { color: var(--accent); }
+
+  @media (min-width: 901px) {
+    .novela-cover-link img { width: 128px; height: 199px; }
+    .novela-cover-link span { max-width: 128px; }
+  }
 
   .tools {
     display: grid;
@@ -286,9 +292,8 @@ const explora = {
     color: var(--text);
   }
   .archivo-card:hover { outline: 1.5px solid var(--accent); }
-  .archivo-count { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; margin: 0; }
-  .archivo-sub { color: var(--text-muted); font-size: 0.86rem; margin: 0 0 6px; }
-  .archivo-card .btn { pointer-events: none; padding: 0.6em 1.3em; font-size: 0.85rem; }
+  .archivo-title { font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; margin: 0; }
+  .archivo-sub { color: var(--text-muted); font-size: 0.92rem; margin: 8px 0 0; }
 
   @media (max-width: 900px) {
     .explora-grid { grid-template-columns: 1fr; }

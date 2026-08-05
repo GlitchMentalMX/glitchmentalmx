@@ -40,13 +40,13 @@ const pages = defineCollection({
 });
 
 const visualInsights = defineCollection({
-  loader: file('./src/content/data/insights-visuales.json'),
+  loader: glob({ pattern: '**/*.md', base: './src/content/insights' }),
   schema: z.object({
-    id: z.string(),
     titulo: z.string(),
     resumen: z.string(),
     imagen: z.string(),
     enlace: z.string().nullable(),
+    date: z.coerce.date(),
   }),
 });
 
