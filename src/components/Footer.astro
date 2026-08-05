@@ -72,7 +72,7 @@ const columns = [
       </div>
 
       {columns.map((col) => (
-        <details class="col">
+        <details class="col" open>
           <summary>
             <h3 class="eyebrow">{col.title}</h3>
             <svg class="chevron" viewBox="0 0 24 24" width="14" height="14" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -174,14 +174,33 @@ const columns = [
 </style>
 
 <script>
-  // On mobile, opening one footer accordion section closes the others.
+  // Every <details> starts "open" in the HTML (so content is never hidden if
+  // this script fails to run). On mobile it becomes a real accordion — closed
+  // by default, one section open at a time; on desktop it always stays open.
   const cols = document.querySelectorAll('footer .col');
+  const isMobile = () => window.innerWidth <= 520;
+
+  function syncFooterAccordion() {
+    cols.forEach((col) => {
+      col.open = !isMobile();
+    });
+  }
+  syncFooterAccordion();
+
+  let wasMobile = isMobile();
+  window.addEventListener('resize', () => {
+    if (isMobile() !== wasMobile) {
+      wasMobile = isMobile();
+      syncFooterAccordion();
+    }
+  });
+
   cols.forEach((col) => {
     col.addEventListener('toggle', () => {
-      if (window.innerWidth > 520) return;
-      if ((col as HTMLDetailsElement).open) {
+      if (!isMobile()) return;
+      if (col.open) {
         cols.forEach((other) => {
-          if (other !== col) (other as HTMLDetailsElement).open = false;
+          if (other !== col) other.open = false;
         });
       }
     });
