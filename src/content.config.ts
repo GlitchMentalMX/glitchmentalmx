@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
@@ -51,12 +51,12 @@ const visualInsights = defineCollection({
 });
 
 const datoIncomodo = defineCollection({
-  loader: file('./src/content/data/dato-incomodo.json'),
+  loader: glob({ pattern: '**/*.md', base: './src/content/dato-incomodo' }),
   schema: z.object({
-    id: z.string(),
     titulo: z.string(),
     resumen: z.string(),
     imagen: z.string(),
+    date: z.coerce.date(),
   }),
 });
 

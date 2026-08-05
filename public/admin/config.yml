@@ -110,3 +110,21 @@ collections:
       - { label: "Imagen", name: "imagen", widget: "image" }
       - { label: "Enlace al artículo relacionado (ej. /articulos/mi-articulo/)", name: "enlace", widget: "string", required: false }
       - { label: "Fecha (el más reciente es el que aparece en el home)", name: "date", widget: "datetime", default: "" }
+
+  - name: "dato_incomodo"
+    label: "Dato Incómodo"
+    label_singular: "Dato incómodo"
+    folder: "src/content/dato-incomodo"
+    create: true
+    slug: "dato-{{uuid_short}}"
+    identifier_field: resumen
+    sortable_fields:
+      fields: ["date", "titulo"]
+      default:
+        field: "date"
+        direction: "descending"
+    fields:
+      - { label: "Título (interno, siempre dice 'Dato Incómodo')", name: "titulo", widget: "string", default: "Dato Incómodo" }
+      - { label: "El dato (texto que se muestra)", name: "resumen", widget: "text" }
+      - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Fecha (el más reciente es el que aparece primero)", name: "date", widget: "datetime", default: "" }
