@@ -26,7 +26,11 @@ collections:
     create: true
     slug: "{{title}}"
     identifier_field: title
-    sortable_fields: ["pubDate", "title"]
+    sortable_fields:
+      fields: ["pubDate", "title"]
+      default:
+        field: "pubDate"
+        direction: "descending"
     fields:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
@@ -95,7 +99,11 @@ collections:
     create: true
     slug: "{{titulo}}"
     identifier_field: titulo
-    sortable_fields: ["date", "titulo"]
+    sortable_fields:
+      fields: ["date", "titulo"]
+      default:
+        field: "date"
+        direction: "descending"
     fields:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Resumen", name: "resumen", widget: "text" }
