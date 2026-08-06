@@ -272,8 +272,7 @@ const GCSE_CX = 'a28d59cfd89f948f4';
         var html =
           '<div class="own-site-separator">También en GlitchMentalMX</div>' +
           '<a class="card-link" href="' + match.url + '">' +
-          '<article class="card">' +
-          '<div class="domain">glitchmental.com</div>' +
+          '<article class="card own-site-card">' +
           '<h3>' + match.title + '</h3>' +
           '<p>' + match.excerpt + '</p>' +
           '</article></a>';
@@ -476,9 +475,11 @@ const GCSE_CX = 'a28d59cfd89f948f4';
   .card h3 strong, .card p strong { color: var(--accent); font-weight: 600; }
   .domain { font: 400 11px var(--font-mono); color: var(--text-faint); margin-bottom: 8px; }
   .own-site-separator {
-    font: 400 10px var(--font-mono); color: var(--accent); letter-spacing: 0.04em;
-    text-align: center; margin: 30px 0 16px; text-transform: uppercase;
+    font: 700 12px var(--font-mono); color: var(--accent); letter-spacing: 0.08em;
+    text-align: center; margin: 44px 0 20px; text-transform: uppercase;
   }
+  .own-site-card { padding-top: 6px; }
+  .own-site-card h3 { font-size: 19px; }
 
   .search-loading { position: relative; width: 100%; height: 18px; margin: 22px 0 10px; overflow: hidden; }
   .search-loading::after {

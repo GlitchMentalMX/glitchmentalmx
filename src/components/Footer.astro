@@ -21,6 +21,7 @@ const columns = [
     links: [
       { href: '/glitchsearch/', label: 'GlitchSearch' },
       { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', label: 'Calculadora de Riesgo IA' },
+      { href: '/buscar/', label: 'Buscar en el sitio' },
     ],
   },
   {
@@ -90,6 +91,7 @@ const columns = [
     </div>
 
     <div class="bottom">
+      <p class="stance">Este sitio no es neutral, los datos tampoco.</p>
       <p>© {year} glitchmentalMX. Todos los derechos reservados.</p>
     </div>
   </div>
@@ -157,6 +159,14 @@ const columns = [
     border-top: 1px solid var(--border);
     color: var(--text-faint);
     font-size: 0.8rem;
+    text-align: center;
+  }
+  .stance {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    margin: 0 0 12px;
   }
 
   @media (max-width: 900px) {
