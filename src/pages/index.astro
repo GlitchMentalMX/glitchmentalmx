@@ -25,16 +25,66 @@ const insights = (await getCollection('visualInsights')).sort(
 const latestInsight = insights[0];
 
 const novelasPublicadas = [
-  { title: 'Entrenado en Corpus', cover: '/images/novelas/entrenado-en-corpus.jpg' },
-  { title: 'Cero Orgánico', cover: '/images/novelas/cero-organico.png' },
+  {
+    title: 'Entrenado en Corpus',
+    genre: 'Tecnothriller',
+    cover: '/images/novelas/entrenado-en-corpus.jpg',
+    desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares.',
+    buy: 'https://mybook.to/EntrenadoEnCorpus',
+  },
+  {
+    title: 'Cero Orgánico',
+    genre: 'Tecnothriller',
+    cover: '/images/novelas/cero-organico.png',
+    desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
+    buy: 'https://mybook.to/CeroOrganico',
+  },
 ];
 
-// Background images for the Explora cards — drop files at these paths to light them up.
-const explora = {
-  series: '/images/explora/series.jpg',
-  colecciones: '/images/explora/explora.jpg',
-  recursos: '/images/explora/recursos-educativos.jpg',
-};
+// Explora — cada columna es una lista real de contenido, con una barra
+// proporcional al número de artículos de cada serie/colección (dato real,
+// no decoración) escalada contra el máximo de su propia columna.
+const exploraColumns = [
+  {
+    eyebrow: 'Series editoriales',
+    href: '/series/',
+    items: series.map((s) => ({
+      href: `/series/${s.id}/`,
+      label: s.data.title,
+      count: s.data.postSlugs.length,
+      soon: s.data.status === 'coming-soon',
+    })),
+  },
+  {
+    eyebrow: 'Colecciones',
+    subtitle: 'Guías por tema',
+    href: '/colecciones/',
+    items: standaloneHubs.map((h) => ({
+      href: `/colecciones/${h.id}/`,
+      label: h.data.title,
+      count: h.data.postSlugs.length,
+    })),
+  },
+  {
+    eyebrow: groupName,
+    subtitle: 'Para profundizar',
+    href: '/colecciones/',
+    items: groupedHubs.map((h) => ({
+      href: `/colecciones/${h.id}/`,
+      label: h.data.title,
+      count: h.data.postSlugs.length,
+    })),
+  },
+].map((col) => ({
+  ...col,
+  maxCount: Math.max(...col.items.map((i) => i.count), 1),
+}));
+
+const toolsList = [
+  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual' },
+  { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada' },
+  { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos' },
+];
 ---
 
 <Layout
@@ -83,44 +133,36 @@ const explora = {
   )}
 
   <section class="explora container">
-    <div class="section-head">
+    <div class="section-head explora-head">
       <h2>Explora</h2>
+      <p class="section-sub">No son cards bonitas, son datos: cuántos artículos tiene cada serie y colección.</p>
     </div>
     <div class="explora-grid">
-      <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.series})`}>
-        <a href="/series/" class="card-heading-link">
-          <p class="eyebrow">Series Editoriales</p>
-        </a>
-        <ul class="mini-list">
-          {series.map((s) => (
-            <li><a href={`/series/${s.id}/`} class:list={{ muted: s.data.status === 'coming-soon' }}>{s.data.title}{s.data.status === 'coming-soon' && <span class="soon-tag"> · Pronto</span>}</a></li>
-          ))}
-        </ul>
-      </div>
-
-      <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.colecciones})`}>
-        <a href="/colecciones/" class="card-heading-link">
-          <p class="eyebrow">Colecciones</p>
-          <h3>Guías por tema</h3>
-        </a>
-        <ul class="mini-list">
-          {standaloneHubs.map((h) => (
-            <li><a href={`/colecciones/${h.id}/`}>{h.data.title}</a></li>
-          ))}
-        </ul>
-      </div>
-
-      <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.recursos})`}>
-        <a href="/colecciones/" class="card-heading-link">
-          <p class="eyebrow">{groupName}</p>
-          <h3>Para profundizar</h3>
-        </a>
-        <ul class="mini-list">
-          {groupedHubs.map((h) => (
-            <li><a href={`/colecciones/${h.id}/`}>{h.data.title}</a></li>
-          ))}
-        </ul>
-      </div>
+      {exploraColumns.map((col) => (
+        <div class="explora-panel">
+          <a href={col.href} class="panel-head">
+            <p class="eyebrow">{col.eyebrow}</p>
+            {col.subtitle && <h3>{col.subtitle}</h3>}
+          </a>
+          <ul class="signal-list">
+            {col.items.map((item) => (
+              <li>
+                <a href={item.href} class:list={{ muted: item.soon }}>
+                  <span class="label">{item.label}</span>
+                  {item.soon ? (
+                    <span class="soon-tag">Pronto</span>
+                  ) : (
+                    <>
+                      <span class="bar-track"><span class="bar-fill" style={`width:${(item.count / col.maxCount) * 100}%`}></span></span>
+                      <span class="count">{item.count}</span>
+                    </>
+                  )}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   </section>
 
@@ -138,36 +180,44 @@ const explora = {
   )}
 
   <section class="novelas container">
-    <div class="section-head">
-      <h2>Novelas</h2>
-      <a href="/novelas/" class="link-accent">Conoce todas →</a>
+    <div class="section-head novelas-head">
+      <div>
+        <h2>Además de análisis, ficción</h2>
+        <p class="section-sub">Tecnothriller de credibilidad periodística — investigación real, convertida en novela.</p>
+      </div>
+      <a href="/novelas/" class="link-accent">Ver catálogo completo →</a>
     </div>
-    <div class="novelas-row">
+    <div class="novelas-grid">
       {novelasPublicadas.map((n) => (
-        <a href="/novelas/" class="novela-cover-link">
-          <img src={n.cover} alt={`Portada de ${n.title}`} loading="lazy" width="140" height="217" />
-          <span>{n.title}</span>
-        </a>
+        <div class="novela-card">
+          <a href="/novelas/" class="novela-cover-link">
+            <img src={n.cover} alt={`Portada de ${n.title}`} loading="lazy" width="200" height="310" />
+          </a>
+          <div class="novela-body">
+            <span class="tag">{n.genre}</span>
+            <h3><a href="/novelas/">{n.title}</a></h3>
+            <p>{n.desc}</p>
+            <a class="link-accent" href={n.buy} target="_blank" rel="noopener">Adquirir →</a>
+          </div>
+        </div>
       ))}
     </div>
   </section>
 
   <section class="tools container">
-    <a href="/indice-glitchmentalmx/" class="tool-card">
-      <span class="tag">Índice mensual</span>
-      <h3>Índice GlitchMentalMX</h3>
-      <p>20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.</p>
-    </a>
-    <a href="/glitchsearch/" class="tool-card">
-      <span class="tag">Herramienta</span>
-      <h3>GlitchSearch</h3>
-      <p>Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.</p>
-    </a>
-    <a href="/calculadora-de-riesgo-de-reemplazo-por-ia-2026/" class="tool-card">
-      <span class="tag">Herramienta</span>
-      <h3>Calculadora de Riesgo IA</h3>
-      <p>Mide qué tan expuesto está tu trabajo a la automatización en 2026.</p>
-    </a>
+    <div class="section-head">
+      <h2>Herramientas</h2>
+    </div>
+    <div class="tools-grid">
+      {toolsList.map((t) => (
+        <a href={t.href} class="tool-card">
+          <span class="tag">{t.tag}</span>
+          <h3 class="scramble" data-text={t.title}>{t.title}</h3>
+          <p>{t.desc}</p>
+          <span class="stat">{t.stat}</span>
+        </a>
+      ))}
+    </div>
   </section>
 
   <section class="archivo-cta container">
@@ -277,47 +327,62 @@ const explora = {
   }
   .section-head h2 { font-size: 1.4rem; }
   .section-head a { font-size: 0.9rem; font-weight: 600; white-space: nowrap; }
+  .section-sub { color: var(--text-muted); font-size: 0.92rem; margin: 6px 0 0; }
+  .explora-head, .novelas-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .novelas-head { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+  .novelas-head .section-sub { max-width: 46ch; }
 
-  /* Explora cards */
+  /* Explora — data panels, not photo cards */
   .explora-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
   }
-  .explora-card {
+  .explora-panel {
     border-radius: var(--radius);
-    padding: 24px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 220px;
-    background-color: var(--bg-inset);
-    background-size: cover;
-    background-position: center;
+    border-top: 2px solid var(--accent);
+    padding: 22px 24px 24px;
+    background: var(--bg-inset);
   }
-  .explora-card:hover { outline: 1.5px solid var(--accent); }
-  .explora-card .eyebrow { color: rgba(255, 255, 255, 0.75); }
-  .explora-card h3 { font-size: 1.15rem; margin: 8px 0 8px; color: #fff; }
-  .explora-card .dek { color: rgba(255, 255, 255, 0.85); font-size: 0.86rem; line-height: 1.5; margin: 0; }
-  .mini-list {
+  .panel-head { display: block; }
+  .panel-head:hover h3 { text-decoration: underline; }
+  .panel-head .eyebrow { color: var(--text-muted); margin: 0; }
+  .panel-head h3 { font-size: 1.05rem; margin: 6px 0 0; }
+  .signal-list {
     list-style: none;
-    margin: 0;
+    margin: 16px 0 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 11px;
   }
-  .mini-list li a {
+  .signal-list li a {
+    display: grid;
+    grid-template-columns: 1fr 56px 22px;
+    align-items: center;
+    gap: 10px;
     font-size: 0.86rem;
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.4;
+    color: var(--text);
   }
-  .mini-list li a:hover { color: #fff; text-decoration: underline; }
-  .mini-list li a.muted { color: rgba(255, 255, 255, 0.55); }
-  .soon-tag { font-family: var(--font-mono); font-size: 0.72em; text-transform: uppercase; }
-  .card-heading-link { display: block; }
-  .card-heading-link:hover h3 { text-decoration: underline; }
+  .signal-list li a:hover .label { color: var(--accent); }
+  .signal-list li a.muted { color: var(--text-muted); }
+  .signal-list .label { line-height: 1.3; }
+  .signal-list .bar-track {
+    height: 3px;
+    border-radius: 2px;
+    background: var(--border);
+    overflow: hidden;
+  }
+  .signal-list .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+  .signal-list .count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); text-align: right; }
+  .signal-list .soon-tag {
+    grid-column: 2 / 4;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    text-align: right;
+  }
 
   /* Insights Visuales — single hero image */
   .insights-head { flex-direction: column; align-items: flex-start; gap: 6px; }
@@ -336,26 +401,43 @@ const explora = {
   }
   .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 
-  /* Novelas */
-  .novelas-row { display: flex; align-items: flex-start; justify-content: center; gap: 18px; flex-wrap: wrap; }
-  .novela-cover-link { color: var(--text); text-align: center; }
+  /* Novelas — protagonista: portada real + sinopsis + CTA de compra */
+  .novelas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .novela-card {
+    display: flex;
+    gap: 22px;
+    background: var(--bg-inset);
+    border-radius: var(--radius);
+    padding: 24px;
+  }
+  .novela-cover-link { flex-shrink: 0; display: block; }
   .novela-cover-link img {
     width: 108px;
     height: 168px;
     object-fit: cover;
     border-radius: 6px;
-    box-shadow: 0 6px 18px rgba(20, 22, 28, 0.18);
-    margin-bottom: 8px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
   }
-  .novela-cover-link span { display: block; font-size: 0.82rem; font-weight: 600; max-width: 108px; }
-  .novela-cover-link:hover span { color: var(--accent); }
+  .novela-body { min-width: 0; }
+  .novela-body h3 { font-family: var(--font-display); font-size: 1.25rem; margin: 10px 0 10px; }
+  .novela-body h3 a { color: var(--text); }
+  .novela-body h3 a:hover { color: var(--accent); }
+  .novela-body p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0 0 14px; }
 
   @media (min-width: 901px) {
     .novela-cover-link img { width: 128px; height: 199px; }
-    .novela-cover-link span { max-width: 128px; }
+  }
+  @media (max-width: 700px) {
+    .novelas-grid { grid-template-columns: 1fr; }
+    .novela-card { flex-direction: column; }
+    .novelas-head { flex-direction: column; align-items: flex-start; gap: 12px; }
   }
 
-  .tools {
+  .tools-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -363,12 +445,20 @@ const explora = {
   .tool-card {
     background: var(--bg-inset);
     border-radius: var(--radius);
-    padding: 28px;
+    border-top: 2px solid var(--accent);
+    padding: 26px 28px 22px;
     color: var(--text);
   }
   .tool-card:hover { outline: 1.5px solid var(--accent); }
-  .tool-card h3 { font-size: 1.2rem; margin: 12px 0 8px; }
-  .tool-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+  .tool-card h3 { font-size: 1.2rem; margin: 12px 0 8px; font-variant-ligatures: none; }
+  .tool-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0 0 16px; }
+  .tool-card .stat {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+  }
 
   /* Archivo CTA */
   .archivo-cta { padding-bottom: 8px; display: flex; justify-content: center; }
@@ -391,6 +481,88 @@ const explora = {
 
   @media (max-width: 900px) {
     .explora-grid { grid-template-columns: 1fr; }
-    .tools { grid-template-columns: 1fr; }
+    .tools-grid { grid-template-columns: 1fr; }
   }
 </style>
+
+<script>
+  // Efecto "decode" en los títulos de Herramientas — se dispara al entrar en
+  // el viewport (no en hover), así funciona igual en móvil que en desktop.
+  const CHARS = '!<>-_\\/[]{}—=+*^?#01';
+
+  class TextScramble {
+    el: HTMLElement;
+    frame = 0;
+    frameRequest = 0;
+    queue: { from: string; to: string; start: number; end: number; char?: string }[] = [];
+    resolve: () => void = () => {};
+
+    constructor(el: HTMLElement) {
+      this.el = el;
+      this.update = this.update.bind(this);
+    }
+
+    setText(newText: string) {
+      const oldText = this.el.textContent || '';
+      const length = Math.max(oldText.length, newText.length);
+      const promise = new Promise<void>((resolve) => (this.resolve = resolve));
+      this.queue = [];
+      for (let i = 0; i < length; i++) {
+        const from = oldText[i] || '';
+        const to = newText[i] || '';
+        const start = Math.floor(Math.random() * 20);
+        const end = start + Math.floor(Math.random() * 20) + 10;
+        this.queue.push({ from, to, start, end });
+      }
+      cancelAnimationFrame(this.frameRequest);
+      this.frame = 0;
+      this.update();
+      return promise;
+    }
+
+    update() {
+      let output = '';
+      let complete = 0;
+      for (let i = 0; i < this.queue.length; i++) {
+        const q = this.queue[i];
+        if (this.frame >= q.end) {
+          complete++;
+          output += q.to;
+        } else if (this.frame >= q.start) {
+          if (!q.char || Math.random() < 0.28) {
+            q.char = CHARS[Math.floor(Math.random() * CHARS.length)];
+          }
+          output += q.char;
+        } else {
+          output += q.from;
+        }
+      }
+      this.el.textContent = output;
+      if (complete === this.queue.length) {
+        this.resolve();
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update);
+        this.frame++;
+      }
+    }
+  }
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const targets = document.querySelectorAll<HTMLElement>('.scramble');
+
+  if (!reduceMotion && targets.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target as HTMLElement;
+          const text = el.dataset.text || el.textContent || '';
+          new TextScramble(el).setText(text);
+          observer.unobserve(el);
+        });
+      },
+      { threshold: 0.6 }
+    );
+    targets.forEach((el) => observer.observe(el));
+  }
+</script>
