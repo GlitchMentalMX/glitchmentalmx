@@ -156,7 +156,7 @@ const GCSE_CX = 'a28d59cfd89f948f4';
     tryModel(0);
   }
 
-  function fetchViaGroqWorker(requestId) {
+  function fetchViaGroqWorker(requestId, isRetry) {
     var verdictBox = document.getElementById('aiVerdict');
     var verdictText = document.getElementById('aiVerdictText');
     fetch(GROQ_WORKER_URL, {
@@ -174,7 +174,12 @@ const GCSE_CX = 'a28d59cfd89f948f4';
           verdictBox.style.display = 'block';
         }
       })
-      .catch(function () {});
+      .catch(function () {
+        // Las dos llamadas de IA (veredicto + sitio oficial) salen casi
+        // simultáneas y a veces una pierde la conexión por la ráfaga —
+        // un solo reintento corto resuelve casi todos esos casos.
+        if (!isRetry) setTimeout(function () { fetchViaGroqWorker(requestId, true); }, 500);
+      });
   }
 
   function fetchOfficialSite(query, requestId) {
@@ -199,7 +204,7 @@ const GCSE_CX = 'a28d59cfd89f948f4';
       box.style.display = 'flex';
     }
 
-    function fetchOfficialSiteViaGroq() {
+    function fetchOfficialSiteViaGroq(isRetry) {
       fetch(GROQ_WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -210,7 +215,9 @@ const GCSE_CX = 'a28d59cfd89f948f4';
           var text = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
           if (text) applyOfficialSiteResult(text);
         })
-        .catch(function () {});
+        .catch(function () {
+          if (!isRetry) setTimeout(function () { fetchOfficialSiteViaGroq(true); }, 500);
+        });
     }
 
     function tryModel(modelIndex) {
