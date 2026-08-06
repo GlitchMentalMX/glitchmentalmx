@@ -551,14 +551,19 @@ const toolsList = [
   const targets = document.querySelectorAll<HTMLElement>('.scramble');
 
   if (!reduceMotion && targets.length) {
+    const scramblers = new WeakMap<HTMLElement, TextScramble>();
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           const el = entry.target as HTMLElement;
           const text = el.dataset.text || el.textContent || '';
-          new TextScramble(el).setText(text);
-          observer.unobserve(el);
+          let scrambler = scramblers.get(el);
+          if (!scrambler) {
+            scrambler = new TextScramble(el);
+            scramblers.set(el, scrambler);
+          }
+          scrambler.setText(text);
         });
       },
       { threshold: 0.6 }
