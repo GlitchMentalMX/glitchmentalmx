@@ -1,5 +1,6 @@
 ---
 title: Gen Z abandona el scroll infinito y aquí están los datos
+category: Cultura Digital
 pubDate: 2026-03-03T12:14:00.000Z
 updatedDate: 2026-06-14T17:28:08.568Z
 description: >-

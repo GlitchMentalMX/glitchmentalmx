@@ -1,5 +1,6 @@
 ---
 title: 'HSBC y la IA: 20,000 empleos en la balanza'
+category: Inteligencia Artificial
 pubDate: 2026-03-20T12:52:00.002Z
 updatedDate: 2026-03-20T12:52:23.895Z
 description: >-

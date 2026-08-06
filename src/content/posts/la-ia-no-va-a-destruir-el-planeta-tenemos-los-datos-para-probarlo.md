@@ -1,5 +1,6 @@
 ---
 title: La IA no va a destruir el planeta (tenemos los datos para probarlo)
+category: Inteligencia Artificial
 pubDate: 2025-11-23T19:44:00.000Z
 updatedDate: 2026-06-13T01:31:09.763Z
 description: >-

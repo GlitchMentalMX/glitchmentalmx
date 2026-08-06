@@ -1,5 +1,6 @@
 ---
 title: 'Detox digital: por qué desconectarte no soluciona nada'
+category: Cultura Digital
 pubDate: 2026-06-07T01:51:49.692Z
 updatedDate: 2026-06-07T01:51:49.693Z
 description: >-

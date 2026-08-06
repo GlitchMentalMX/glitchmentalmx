@@ -1,5 +1,6 @@
 ---
 title: 'Cómo usar ChatGPT de verdad: prompts que funcionan'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T02:46:00.002Z
 updatedDate: 2026-06-26T00:46:07.060Z
 description: >-

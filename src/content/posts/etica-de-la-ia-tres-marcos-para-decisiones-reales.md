@@ -1,5 +1,6 @@
 ---
 title: 'Ética de la IA: tres marcos para decisiones reales'
+category: Inteligencia Artificial
 pubDate: 2026-06-03T23:48:04.357Z
 updatedDate: 2026-06-03T23:48:30.658Z
 description: >-

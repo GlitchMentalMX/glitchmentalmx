@@ -1,5 +1,6 @@
 ---
 title: 'Los memes no son chistes: son el lenguaje del poder'
+category: Cultura Digital
 pubDate: 2026-06-19T11:00:00.000Z
 updatedDate: 2026-07-09T02:43:46.155Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Cómo compra la Gen Z: impulso, pero con la tarea hecha'
+category: Cultura Digital
 pubDate: 2025-12-02T14:24:00.000Z
 updatedDate: 2026-06-12T04:29:15.260Z
 description: >-

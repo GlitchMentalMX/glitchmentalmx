@@ -1,5 +1,6 @@
 ---
 title: 'Microdramas en redes: el formato que nadie esperaba en 2026'
+category: Tendencias Digitales
 pubDate: 2026-03-04T13:51:00.000Z
 updatedDate: 2026-06-23T23:01:41.342Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Claude es la IA más capaz del mercado. Y la más incómoda de usar
+category: Inteligencia Artificial
 pubDate: 2026-01-15T13:48:00.000Z
 updatedDate: 2026-06-07T02:45:58.771Z
 description: >-

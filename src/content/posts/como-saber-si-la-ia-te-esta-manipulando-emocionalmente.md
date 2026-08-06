@@ -1,5 +1,6 @@
 ---
 title: Cómo saber si la IA te está manipulando emocionalmente
+category: Cultura Digital
 pubDate: 2026-04-09T12:57:00.000Z
 updatedDate: 2026-06-04T16:18:06.686Z
 description: >-

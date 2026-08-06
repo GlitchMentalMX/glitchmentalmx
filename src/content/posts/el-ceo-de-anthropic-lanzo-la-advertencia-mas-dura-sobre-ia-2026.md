@@ -1,5 +1,6 @@
 ---
 title: El CEO de Anthropic lanzó la advertencia más dura sobre IA 2026
+category: Inteligencia Artificial
 pubDate: 2026-02-02T01:27:00.000Z
 updatedDate: 2026-06-06T19:48:00.242Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Pinterest despide al 15% de su plantilla: la IA llega a cobrar'
+category: Cultura Digital
 pubDate: 2026-02-04T12:33:00.000Z
 updatedDate: 2026-06-22T22:58:49.984Z
 description: >-

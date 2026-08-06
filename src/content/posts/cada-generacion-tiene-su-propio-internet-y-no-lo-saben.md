@@ -1,5 +1,6 @@
 ---
 title: Cada generación tiene su propio internet y no lo saben
+category: Cultura Digital
 pubDate: 2026-06-24T11:00:00.000Z
 updatedDate: 2026-07-09T02:45:43.796Z
 description: >-

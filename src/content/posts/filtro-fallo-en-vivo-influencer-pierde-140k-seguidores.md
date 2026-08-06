@@ -1,5 +1,6 @@
 ---
 title: 'Filtro falló en vivo: influencer pierde 140K seguidores'
+category: Tendencias Digitales
 pubDate: 2026-02-25T12:52:00.000Z
 updatedDate: 2026-03-17T17:57:13.615Z
 description: >-

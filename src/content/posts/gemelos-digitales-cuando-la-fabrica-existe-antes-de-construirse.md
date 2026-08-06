@@ -1,5 +1,6 @@
 ---
 title: 'Gemelos digitales: cuando la fábrica existe antes de construirse'
+category: Inteligencia Artificial
 pubDate: 2026-04-18T19:04:00.003Z
 updatedDate: 2026-04-18T19:04:31.271Z
 description: >-

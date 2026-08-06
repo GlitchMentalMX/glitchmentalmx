@@ -1,5 +1,6 @@
 ---
 title: 'Trump quiere una ley de IA federal: qué pierde LATAM'
+category: Tendencias Digitales
 pubDate: 2026-04-24T13:03:00.001Z
 updatedDate: 2026-04-24T13:03:02.537Z
 description: >-

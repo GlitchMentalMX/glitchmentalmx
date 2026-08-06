@@ -1,5 +1,6 @@
 ---
 title: 'Burnout sistémico: semana de 4 días contra la IA imparable'
+category: Cultura Digital
 pubDate: 2026-04-15T12:38:00.009Z
 updatedDate: 2026-04-16T12:56:12.416Z
 description: >-

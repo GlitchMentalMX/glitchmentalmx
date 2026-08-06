@@ -1,5 +1,6 @@
 ---
 title: Qué IA usar según lo que necesitas hacer
+category: Inteligencia Artificial
 pubDate: 2026-03-29T02:42:00.004Z
 updatedDate: 2026-06-26T00:39:08.492Z
 description: >-

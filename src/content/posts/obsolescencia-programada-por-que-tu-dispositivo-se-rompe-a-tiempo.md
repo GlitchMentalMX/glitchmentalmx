@@ -1,5 +1,6 @@
 ---
 title: 'Obsolescencia programada: por qué tu dispositivo "se rompe" a tiempo'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T14:54:00.007Z
 updatedDate: 2026-06-26T01:08:23.233Z
 description: >-

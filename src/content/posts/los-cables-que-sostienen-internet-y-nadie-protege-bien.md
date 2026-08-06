@@ -1,5 +1,6 @@
 ---
 title: Los cables que sostienen internet y nadie protege bien
+category: Tendencias Digitales
 pubDate: 2026-04-18T19:12:00.001Z
 updatedDate: 2026-04-18T19:12:02.488Z
 description: >-

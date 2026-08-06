@@ -1,5 +1,6 @@
 ---
 title: 'Nvidia GTC 2026: $1 billón y la era de la IA agéntica'
+category: Tecnología de Consumo
 pubDate: 2026-03-19T12:37:00.003Z
 updatedDate: 2026-03-19T12:37:29.875Z
 description: >-

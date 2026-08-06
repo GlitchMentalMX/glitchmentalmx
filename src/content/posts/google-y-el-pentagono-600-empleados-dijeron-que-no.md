@@ -1,5 +1,6 @@
 ---
 title: 'Google y el Pentágono: 600 empleados dijeron que no'
+category: Inteligencia Artificial
 pubDate: 2026-04-29T11:02:00.014Z
 updatedDate: 2026-06-27T03:18:59.889Z
 description: >-

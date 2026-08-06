@@ -1,5 +1,6 @@
 ---
 title: 'El fin del swipe: Gen Z rehúye apps de citas en 2026'
+category: Cultura Digital
 pubDate: 2026-02-20T12:40:00.000Z
 updatedDate: 2026-06-23T12:55:10.639Z
 description: >-

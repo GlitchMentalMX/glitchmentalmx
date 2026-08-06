@@ -1,5 +1,6 @@
 ---
 title: 'Diseñadores freelance e IA: el colapso del nivel medio'
+category: Inteligencia Artificial
 pubDate: 2026-05-18T11:00:00.000Z
 updatedDate: 2026-07-09T02:31:44.762Z
 description: >-

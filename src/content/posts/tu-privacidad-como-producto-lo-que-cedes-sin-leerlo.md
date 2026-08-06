@@ -1,5 +1,6 @@
 ---
 title: 'Tu privacidad como producto: lo que cedes sin leerlo'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T14:57:00.003Z
 updatedDate: 2026-03-29T14:57:26.199Z
 description: >-

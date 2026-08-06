@@ -1,5 +1,6 @@
 ---
 title: 'Dead Internet Theory: el internet ya no es para humanos'
+category: Cultura Digital
 pubDate: 2026-03-31T12:53:00.005Z
 updatedDate: 2026-07-09T02:44:23.805Z
 description: >-

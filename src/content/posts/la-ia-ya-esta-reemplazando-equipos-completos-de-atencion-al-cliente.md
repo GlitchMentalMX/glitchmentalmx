@@ -1,5 +1,6 @@
 ---
 title: La IA ya está reemplazando equipos completos de atención al cliente
+category: Inteligencia Artificial
 pubDate: 2025-11-20T16:54:00.000Z
 updatedDate: 2026-06-13T01:11:16.813Z
 description: >-

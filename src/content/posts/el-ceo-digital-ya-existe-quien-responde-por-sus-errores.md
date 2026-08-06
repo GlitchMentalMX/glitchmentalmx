@@ -1,13 +1,13 @@
 ---
 title: El CEO digital ya existe. ¿Quién responde por sus errores?
+category: Inteligencia Artificial
 pubDate: 2026-04-17T12:42:00.002Z
 updatedDate: 2026-04-17T12:42:30.287Z
 description: >-
   Meta está construyendo un clon fotorrealista de Mark Zuckerberg para que
   interactúe con sus empleados en su lugar. El avatar, entrenado en sus
   declaraciones…
-heroImage: >-
-  /images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/hero.jpg
+heroImage: /images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/hero.jpg
 heroImageAlt: >-
   El CEO digital: mujer tomando notas frente a videollamada con ejecutivo en
   pantalla en oficina

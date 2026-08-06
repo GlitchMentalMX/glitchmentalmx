@@ -1,5 +1,6 @@
 ---
 title: 'Agentes de IA: OpenAI y Google ya no compiten con chatbots'
+category: Tendencias Digitales
 pubDate: 2026-04-23T12:28:00.000Z
 updatedDate: 2026-04-23T12:28:03.528Z
 description: >-

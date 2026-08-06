@@ -1,5 +1,6 @@
 ---
 title: La ley eléctrica que decide el futuro de la IA en México
+category: Inteligencia Artificial
 pubDate: 2026-07-08T22:21:22.193Z
 updatedDate: 2026-07-08T22:21:22.361Z
 description: >-

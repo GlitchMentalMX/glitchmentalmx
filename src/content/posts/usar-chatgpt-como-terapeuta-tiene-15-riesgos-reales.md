@@ -1,5 +1,6 @@
 ---
 title: Usar ChatGPT como terapeuta tiene 15 riesgos reales
+category: Cultura Digital
 pubDate: 2026-03-12T12:20:00.000Z
 updatedDate: 2026-03-17T20:39:32.981Z
 description: >-

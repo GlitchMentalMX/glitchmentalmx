@@ -1,5 +1,6 @@
 ---
 title: La IA occidental tiene un problema de religión serio
+category: Inteligencia Artificial
 pubDate: 2026-04-27T04:31:00.002Z
 updatedDate: 2026-07-09T02:21:12.626Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'La vigilancia en tus objetos cotidianos: el inventario real'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T15:02:00.004Z
 updatedDate: 2026-03-29T19:32:37.732Z
 description: >-

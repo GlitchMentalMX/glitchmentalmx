@@ -1,5 +1,6 @@
 ---
 title: 'Gemini en Docs y Sheets: Google reescribe tu trabajo'
+category: Inteligencia Artificial
 pubDate: 2026-03-11T13:03:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-

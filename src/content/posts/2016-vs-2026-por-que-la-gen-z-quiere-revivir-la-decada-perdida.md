@@ -1,5 +1,6 @@
 ---
 title: '2016 vs 2026: por qué la Gen Z quiere revivir la década perdida'
+category: Tendencias Digitales
 pubDate: 2026-01-27T13:02:00.000Z
 updatedDate: 2026-06-22T20:08:01.073Z
 description: >-

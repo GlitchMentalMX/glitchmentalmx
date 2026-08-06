@@ -1,5 +1,6 @@
 ---
 title: 'Alcance orgánico en redes sociales: por qué murió y quién se beneficia'
+category: Tendencias Digitales
 pubDate: 2025-11-22T17:38:00.004Z
 updatedDate: 2026-06-13T01:25:17.304Z
 description: >-

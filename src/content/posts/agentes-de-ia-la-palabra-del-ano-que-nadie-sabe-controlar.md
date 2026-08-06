@@ -1,5 +1,6 @@
 ---
 title: 'Agentes de IA: la palabra del año que nadie sabe controlar'
+category: Inteligencia Artificial
 pubDate: 2026-03-30T12:52:00.003Z
 updatedDate: 2026-03-30T12:52:36.598Z
 description: >-

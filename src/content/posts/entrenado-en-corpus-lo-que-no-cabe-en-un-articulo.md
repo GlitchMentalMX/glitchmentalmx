@@ -1,5 +1,6 @@
 ---
 title: 'Entrenado en Corpus: lo que no cabe en un artículo'
+category: Cultura Digital
 pubDate: 2026-06-16T14:50:23.153Z
 updatedDate: 2026-06-18T15:57:32.479Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI necesita hardware: la trampa del modelo de IA'
+category: Inteligencia Artificial
 pubDate: 2026-04-28T11:03:00.002Z
 updatedDate: 2026-04-28T12:49:37.216Z
 description: >-

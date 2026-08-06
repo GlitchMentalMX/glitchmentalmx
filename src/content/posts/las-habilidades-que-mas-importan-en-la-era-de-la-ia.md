@@ -1,5 +1,6 @@
 ---
 title: Las habilidades que más importan en la era de la IA
+category: Inteligencia Artificial
 pubDate: 2026-03-28T14:28:00.001Z
 updatedDate: 2026-06-26T00:26:21.150Z
 description: >-

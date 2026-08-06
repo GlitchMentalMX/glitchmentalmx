@@ -1,5 +1,6 @@
 ---
 title: 'Jefe IA: cómo los algoritmos ya contratan, evalúan y despiden en México'
+category: Inteligencia Artificial
 pubDate: 2025-11-22T17:30:00.000Z
 updatedDate: 2026-06-11T03:32:47.187Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Unbossing: rechazar al jefe no es rebeldía, es lógica'
+category: Cultura Digital
 pubDate: 2026-06-07T01:54:59.508Z
 updatedDate: 2026-06-07T01:54:59.508Z
 description: >-

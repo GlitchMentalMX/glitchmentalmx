@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI lanzó Operator: el agente de IA que navega internet por ti'
+category: Inteligencia Artificial
 pubDate: 2026-01-12T14:34:00.000Z
 updatedDate: 2026-06-30T19:22:09.599Z
 description: >-

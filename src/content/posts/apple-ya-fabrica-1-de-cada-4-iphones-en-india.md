@@ -1,5 +1,6 @@
 ---
 title: Apple ya fabrica 1 de cada 4 iPhones en India
+category: Tecnología de Consumo
 pubDate: 2026-03-10T12:17:00.000Z
 updatedDate: 2026-03-17T20:13:25.623Z
 description: >-

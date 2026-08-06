@@ -1,5 +1,6 @@
 ---
 title: Larry Ellison y la verdad sobre los datos de la IA
+category: Inteligencia Artificial
 pubDate: 2026-03-03T12:04:00.000Z
 updatedDate: 2026-06-23T17:03:23.810Z
 description: >-

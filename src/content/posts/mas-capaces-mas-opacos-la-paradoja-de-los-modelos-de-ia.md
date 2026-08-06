@@ -1,12 +1,12 @@
 ---
 title: 'Más capaces, más opacos: la paradoja de los modelos de IA'
+category: Inteligencia Artificial
 pubDate: 2026-04-17T12:44:00.007Z
 updatedDate: 2026-06-26T02:06:39.829Z
 description: >-
   Mientras los modelos de inteligencia artificial baten récords en benchmarks y
   las empresas que los desarrollan se preparan para salir a bolsa, un índice…
-heroImage: >-
-  /images/posts/mas-capaces-mas-opacos-la-paradoja-de-los-modelos-de-ia/hero.jpg
+heroImage: /images/posts/mas-capaces-mas-opacos-la-paradoja-de-los-modelos-de-ia/hero.jpg
 heroImageAlt: >-
   opacidad modelos IA: mujer presiona mano sobre panel de vidrio esmerilado con
   sistema activo ilegible al fondo

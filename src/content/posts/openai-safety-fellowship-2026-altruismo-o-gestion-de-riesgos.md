@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI Safety Fellowship 2026: ¿Altruismo o gestión de riesgos?'
+category: Inteligencia Artificial
 pubDate: 2026-04-07T12:41:00.001Z
 updatedDate: 2026-06-15T00:08:43.363Z
 description: >-

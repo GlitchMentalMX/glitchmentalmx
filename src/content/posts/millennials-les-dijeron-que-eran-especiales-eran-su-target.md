@@ -1,5 +1,6 @@
 ---
 title: 'Millennials: Les dijeron que eran especiales. Eran su target'
+category: Cultura Digital
 pubDate: 2026-03-24T11:00:00.011Z
 updatedDate: 2026-03-24T11:00:00.135Z
 description: >-

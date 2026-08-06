@@ -1,5 +1,6 @@
 ---
 title: La industria de IA está dejando de hablar de AGI (y hay una razón clara)
+category: Inteligencia Artificial
 pubDate: 2026-01-08T12:17:00.000Z
 updatedDate: 2026-06-22T01:51:23.959Z
 description: >-

@@ -69,11 +69,16 @@ const explora = {
       <h2>Explora</h2>
     </div>
     <div class="explora-grid">
-      <a href="/series/" class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.series})`}>
-        <p class="eyebrow">{series.length} series</p>
-        <h3>Series editoriales</h3>
-        <p class="dek">Investigaciones en varias entregas, para leer en orden.</p>
-      </a>
+      <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.series})`}>
+        <a href="/series/" class="card-heading-link">
+          <p class="eyebrow">Series Editoriales</p>
+        </a>
+        <ul class="mini-list">
+          {series.map((s) => (
+            <li><a href={`/series/${s.id}/`} class:list={{ muted: s.data.status === 'coming-soon' }}>{s.data.title}{s.data.status === 'coming-soon' && <span class="soon-tag"> · Pronto</span>}</a></li>
+          ))}
+        </ul>
+      </div>
 
       <div class="explora-card" style={`background-image: linear-gradient(180deg, rgba(10,12,16,.15), rgba(10,12,16,.75)), url(${explora.colecciones})`}>
         <a href="/colecciones/" class="card-heading-link">
@@ -222,6 +227,8 @@ const explora = {
     line-height: 1.4;
   }
   .mini-list li a:hover { color: #fff; text-decoration: underline; }
+  .mini-list li a.muted { color: rgba(255, 255, 255, 0.55); }
+  .soon-tag { font-family: var(--font-mono); font-size: 0.72em; text-transform: uppercase; }
   .card-heading-link { display: block; }
   .card-heading-link:hover h3 { text-decoration: underline; }
 

@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z y las marcas en 2026: cómo conectar sin que te ignoren'
+category: Cultura Digital
 pubDate: 2026-01-16T14:09:00.000Z
 updatedDate: 2026-06-22T13:01:17.841Z
 description: >-

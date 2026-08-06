@@ -1,5 +1,6 @@
 ---
 title: 'IA en las aulas de LATAM: uso masivo, regulación nula'
+category: Cultura Digital
 pubDate: 2026-06-03T23:44:51.268Z
 updatedDate: 2026-06-04T14:34:02.238Z
 description: >-

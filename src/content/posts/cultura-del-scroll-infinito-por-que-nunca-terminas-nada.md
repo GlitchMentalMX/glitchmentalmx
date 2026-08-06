@@ -1,5 +1,6 @@
 ---
 title: 'Cultura del scroll infinito: por qué nunca terminas nada'
+category: Cultura Digital
 pubDate: 2026-03-25T11:00:00.018Z
 updatedDate: 2026-06-14T23:42:43.225Z
 description: >-

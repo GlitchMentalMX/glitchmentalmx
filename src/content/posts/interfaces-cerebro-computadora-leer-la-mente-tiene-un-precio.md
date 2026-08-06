@@ -1,5 +1,6 @@
 ---
 title: 'Interfaces cerebro-computadora: leer la mente tiene un precio'
+category: Inteligencia Artificial
 pubDate: 2026-04-18T19:00:00.008Z
 updatedDate: 2026-04-21T01:48:03.690Z
 description: >-

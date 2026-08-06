@@ -1,5 +1,6 @@
 ---
 title: El sindicato de actores quiere cobrarle un impuesto a la IA
+category: Tendencias Digitales
 pubDate: 2026-03-31T13:02:00.003Z
 updatedDate: 2026-03-31T13:02:41.021Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Vivo X300 Pro llega a México con la mejor cámara Android 2026
+category: Tecnología de Consumo
 pubDate: 2026-02-04T12:46:00.000Z
 updatedDate: 2026-03-17T20:13:25.622Z
 description: >-

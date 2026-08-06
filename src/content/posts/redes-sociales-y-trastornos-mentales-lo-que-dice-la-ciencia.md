@@ -1,5 +1,6 @@
 ---
 title: 'Redes sociales y trastornos mentales: lo que dice la ciencia'
+category: Cultura Digital
 pubDate: 2026-04-28T11:00:00.001Z
 updatedDate: 2026-04-28T11:00:00.116Z
 description: >-

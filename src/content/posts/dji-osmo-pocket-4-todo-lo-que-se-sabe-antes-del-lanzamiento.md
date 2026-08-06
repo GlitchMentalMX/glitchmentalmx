@@ -1,5 +1,6 @@
 ---
 title: 'DJI Osmo Pocket 4: todo lo que se sabe antes del lanzamiento'
+category: Tecnología de Consumo
 pubDate: 2026-02-25T12:40:00.000Z
 updatedDate: 2026-06-06T19:42:24.469Z
 description: >-

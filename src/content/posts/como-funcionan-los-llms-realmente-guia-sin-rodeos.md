@@ -1,5 +1,6 @@
 ---
 title: 'Cómo funcionan los LLMs realmente: guía sin rodeos'
+category: Inteligencia Artificial
 pubDate: 2026-03-28T14:17:00.004Z
 updatedDate: 2026-06-25T22:38:31.509Z
 description: >-

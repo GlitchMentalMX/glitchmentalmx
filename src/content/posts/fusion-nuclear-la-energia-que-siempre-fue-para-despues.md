@@ -1,5 +1,6 @@
 ---
 title: 'Fusión nuclear: la energía que siempre fue para después'
+category: Tendencias Digitales
 pubDate: 2026-04-18T18:59:00.001Z
 updatedDate: 2026-06-26T02:23:50.454Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'TikTok y tus DMs: sin cifrado ahora ni en el futuro'
+category: Tendencias Digitales
 pubDate: 2026-03-05T12:16:00.000Z
 updatedDate: 2026-07-03T03:50:36.163Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'IA agéntica en 2026: qué es y cómo cambia tu trabajo'
+category: Inteligencia Artificial
 pubDate: 2026-03-02T12:34:00.000Z
 updatedDate: 2026-06-23T16:58:40.240Z
 description: >-

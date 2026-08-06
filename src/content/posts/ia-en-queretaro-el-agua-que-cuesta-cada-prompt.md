@@ -1,5 +1,6 @@
 ---
 title: 'IA en Querétaro: el agua que cuesta cada prompt'
+category: Inteligencia Artificial
 pubDate: 2026-03-20T12:49:00.004Z
 updatedDate: 2026-07-07T19:29:04.220Z
 description: >-

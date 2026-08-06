@@ -1,5 +1,6 @@
 ---
 title: El trabajo oculto de enseñar a la IA a sonar humana
+category: Inteligencia Artificial
 pubDate: 2026-04-01T12:16:00.004Z
 updatedDate: 2026-04-01T12:16:54.495Z
 description: >-

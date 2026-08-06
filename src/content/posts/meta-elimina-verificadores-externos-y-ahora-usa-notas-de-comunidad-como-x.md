@@ -1,5 +1,6 @@
 ---
 title: Meta elimina verificadores externos y ahora usa "notas de comunidad" como X
+category: Tendencias Digitales
 pubDate: 2026-01-12T14:42:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-

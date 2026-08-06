@@ -1,5 +1,6 @@
 ---
 title: Australia baneó las redes sociales para menores de 16 y es caos
+category: Cultura Digital
 pubDate: 2025-12-20T13:34:00.000Z
 updatedDate: 2026-06-13T01:55:29.890Z
 description: >-

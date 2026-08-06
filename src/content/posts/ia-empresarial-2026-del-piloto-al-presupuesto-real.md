@@ -1,5 +1,6 @@
 ---
 title: 'IA empresarial 2026: del piloto al presupuesto real'
+category: Inteligencia Artificial
 pubDate: 2026-04-16T12:38:00.003Z
 updatedDate: 2026-06-26T02:02:07.542Z
 description: >-

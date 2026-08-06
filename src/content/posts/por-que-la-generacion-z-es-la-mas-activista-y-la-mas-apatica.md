@@ -1,5 +1,6 @@
 ---
 title: Por qué la Generación Z es la más activista y la más apática
+category: Cultura Digital
 pubDate: 2025-11-11T18:39:00.000Z
 updatedDate: 2026-06-13T00:28:20.535Z
 description: >-

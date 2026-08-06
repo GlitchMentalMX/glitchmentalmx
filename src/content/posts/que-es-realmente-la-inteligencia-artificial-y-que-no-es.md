@@ -1,13 +1,13 @@
 ---
 title: Qué es realmente la inteligencia artificial (y qué no es)
+category: Inteligencia Artificial
 pubDate: 2026-03-28T01:38:00.003Z
 updatedDate: 2026-06-25T00:17:38.234Z
 description: >-
   La inteligencia artificial no piensa. No siente. No tiene objetivos propios.
   No va a esclavizar a la humanidad ni a salvarla. Lo que sí hace — y esto es
   lo…
-heroImage: >-
-  /images/posts/que-es-realmente-la-inteligencia-artificial-y-que-no-es/hero.jpg
+heroImage: /images/posts/que-es-realmente-la-inteligencia-artificial-y-que-no-es/hero.jpg
 heroImageAlt: >-
   Inteligencia artificial qué es: hombre borrando diagrama en sala de
   presentación vacía, gesto deliberado, iluminación lateral institucional

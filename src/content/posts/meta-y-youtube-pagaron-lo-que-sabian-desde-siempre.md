@@ -1,5 +1,6 @@
 ---
 title: Meta y YouTube pagaron lo que sabían desde siempre
+category: Cultura Digital
 pubDate: 2026-03-26T11:12:00.001Z
 updatedDate: 2026-03-26T11:12:00.108Z
 description: >-

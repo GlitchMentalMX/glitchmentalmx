@@ -2,6 +2,7 @@
 title: >-
   DeepSeek R1 sacude Silicon Valley: la IA china que costó $6 millones y tumbó
   acciones
+category: Inteligencia Artificial
 pubDate: 2026-01-16T14:08:00.000Z
 updatedDate: 2026-06-13T02:48:52.750Z
 description: >-

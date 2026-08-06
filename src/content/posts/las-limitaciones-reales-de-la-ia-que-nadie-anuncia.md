@@ -1,5 +1,6 @@
 ---
 title: Las limitaciones reales de la IA que nadie anuncia
+category: Inteligencia Artificial
 pubDate: 2026-03-28T14:32:00.004Z
 updatedDate: 2026-03-28T14:32:42.235Z
 description: >-

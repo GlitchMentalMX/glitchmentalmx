@@ -1,5 +1,6 @@
 ---
 title: 'iOS 26.4 llega hoy: Siri con Gemini, otra vez pospuesta'
+category: Tecnología de Consumo
 pubDate: 2026-03-24T12:01:00.002Z
 updatedDate: 2026-03-24T12:01:17.647Z
 description: >-

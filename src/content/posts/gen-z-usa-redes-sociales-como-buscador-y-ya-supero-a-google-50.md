@@ -1,5 +1,6 @@
 ---
 title: Gen Z usa redes sociales como buscador y ya superó a Google (50%+)
+category: Tendencias Digitales
 pubDate: 2026-01-05T13:08:00.000Z
 updatedDate: 2026-06-21T02:50:42.364Z
 description: >-

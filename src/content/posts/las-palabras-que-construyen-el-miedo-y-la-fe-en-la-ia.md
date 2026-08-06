@@ -1,5 +1,6 @@
 ---
 title: Las palabras que construyen el miedo (y la fe) en la IA
+category: Inteligencia Artificial
 pubDate: 2026-03-29T03:57:00.002Z
 updatedDate: 2026-03-29T03:57:15.177Z
 description: >-

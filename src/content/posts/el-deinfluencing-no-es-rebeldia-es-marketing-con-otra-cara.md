@@ -1,5 +1,6 @@
 ---
 title: 'El "deinfluencing" no es rebeldía, es marketing con otra cara'
+category: Cultura Digital
 pubDate: 2025-11-15T16:37:00.000Z
 updatedDate: 2026-06-13T00:47:53.149Z
 description: >-

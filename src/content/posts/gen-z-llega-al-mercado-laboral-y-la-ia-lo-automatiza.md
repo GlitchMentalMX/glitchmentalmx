@@ -1,5 +1,6 @@
 ---
 title: Gen Z llega al mercado laboral y la IA lo automatiza
+category: Cultura Digital
 pubDate: 2026-03-06T12:46:00.000Z
 updatedDate: 2026-06-14T13:06:13.759Z
 description: >-

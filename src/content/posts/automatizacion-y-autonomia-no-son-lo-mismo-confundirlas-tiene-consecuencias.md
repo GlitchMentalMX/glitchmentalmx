@@ -1,5 +1,6 @@
 ---
 title: Automatización y autonomía no son lo mismo. Confundirlas tiene consecuencias
+category: Inteligencia Artificial
 pubDate: 2026-03-29T13:58:00.004Z
 updatedDate: 2026-06-07T03:07:47.472Z
 description: >-

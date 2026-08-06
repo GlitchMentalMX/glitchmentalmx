@@ -1,5 +1,6 @@
 ---
 title: La memoria que acumuló la IA sobre ti no tiene dueño
+category: Inteligencia Artificial
 pubDate: 2026-07-29T11:00:00.000Z
 updatedDate: 2026-07-29T11:00:00.121Z
 description: >-

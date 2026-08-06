@@ -1,5 +1,6 @@
 ---
 title: 'Cuando el algoritmo discrimina: cuatro casos documentados'
+category: Inteligencia Artificial
 pubDate: 2026-06-03T23:41:05.820Z
 updatedDate: 2026-06-04T01:50:41.562Z
 description: >-

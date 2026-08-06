@@ -1,5 +1,6 @@
 ---
 title: 'IA y empleos en México: el golpe ya empezó'
+category: Inteligencia Artificial
 pubDate: 2026-03-09T13:16:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'La IA como nuevo Darwin: quién define la evolución'
+category: Inteligencia Artificial
 pubDate: 2026-06-05T11:00:00.000Z
 updatedDate: 2026-07-09T02:41:02.955Z
 description: >-

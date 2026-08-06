@@ -1,5 +1,6 @@
 ---
 title: 'CES 2026: la IA conectó tu refrigerador con tu auto (sin pedirlo)'
+category: Tecnología de Consumo
 pubDate: 2026-02-13T12:45:00.000Z
 updatedDate: 2026-06-23T03:11:50.540Z
 description: >-

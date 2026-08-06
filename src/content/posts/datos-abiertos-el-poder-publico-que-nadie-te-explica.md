@@ -1,5 +1,6 @@
 ---
 title: 'Datos abiertos: el poder público que nadie te explica'
+category: Tendencias Digitales
 pubDate: 2026-06-03T23:53:54.737Z
 updatedDate: 2026-06-04T15:03:19.305Z
 description: >-

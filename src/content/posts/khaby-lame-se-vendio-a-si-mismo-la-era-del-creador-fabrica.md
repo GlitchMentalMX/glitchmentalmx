@@ -1,5 +1,6 @@
 ---
 title: 'Khaby Lame se vendió a sí mismo: la era del creador-fábrica'
+category: Cultura Digital
 pubDate: 2026-04-30T11:03:00.001Z
 updatedDate: 2026-06-15T13:10:24.397Z
 description: >-

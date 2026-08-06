@@ -1,5 +1,6 @@
 ---
 title: 'Ansiedad digital: qué le hacen las notificaciones al cerebro'
+category: Cultura Digital
 pubDate: 2026-03-26T11:06:00.012Z
 updatedDate: 2026-03-26T11:06:00.112Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Clonación de voz por IA se incrementa en México
+category: Cultura Digital
 pubDate: 2026-03-17T12:07:00.008Z
 updatedDate: 2026-06-04T16:58:43.382Z
 description: >-

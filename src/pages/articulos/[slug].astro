@@ -4,6 +4,7 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import SeriesCallout from '../../components/SeriesCallout.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime } from '../../lib/format';
+import { categorySlug } from '../../data/categories';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
@@ -15,7 +16,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } = post.data;
+const { title, description, category, pubDate, updatedDate, heroImage, heroImageAlt } = post.data;
 const minutes = readingTime(post.body || '');
 
 // Only the 6 narrative series and "Detrás del Prompt" originally carried a
@@ -39,6 +40,7 @@ const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
 <Layout title={title} description={description} image={heroImage}>
   <article class="post">
     <header class="post-header container">
+      <a href={`/categoria/${categorySlug(category)}/`} class="tag category-tag">{category}</a>
       <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
@@ -127,7 +129,7 @@ const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
     border-radius: var(--radius);
   }
 
-  .content { padding: 0 24px 20px; display: flex; justify-content: center; }
+  .content { padding: 0 24px 20px; display: flex; flex-direction: column; align-items: center; }
 
   .share {
     padding: 32px 24px 0;

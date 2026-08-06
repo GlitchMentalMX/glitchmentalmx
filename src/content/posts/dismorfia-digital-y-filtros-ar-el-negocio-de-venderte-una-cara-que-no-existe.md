@@ -1,5 +1,6 @@
 ---
 title: 'Dismorfia digital y filtros AR: el negocio de venderte una cara que no existe'
+category: Tendencias Digitales
 pubDate: 2025-11-25T14:48:00.001Z
 updatedDate: 2026-06-11T03:56:31.001Z
 description: >-

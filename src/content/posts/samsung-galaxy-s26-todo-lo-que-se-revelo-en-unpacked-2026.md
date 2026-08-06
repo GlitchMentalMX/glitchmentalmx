@@ -1,5 +1,6 @@
 ---
 title: 'Samsung Galaxy S26: todo lo que se reveló en Unpacked 2026'
+category: Tecnología de Consumo
 pubDate: 2026-02-26T12:59:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-

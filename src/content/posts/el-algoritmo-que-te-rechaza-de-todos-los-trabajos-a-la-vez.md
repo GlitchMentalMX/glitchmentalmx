@@ -1,5 +1,6 @@
 ---
 title: El algoritmo que te rechaza de todos los trabajos a la vez
+category: Inteligencia Artificial
 pubDate: 2025-12-03T15:16:00.000Z
 updatedDate: 2026-06-12T04:40:47.562Z
 description: >-

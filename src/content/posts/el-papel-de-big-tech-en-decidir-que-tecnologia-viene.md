@@ -1,5 +1,6 @@
 ---
 title: El papel de Big Tech en decidir qué tecnología "viene"
+category: Tecnología de Consumo
 pubDate: 2026-03-29T19:00:00.003Z
 updatedDate: 2026-06-26T01:24:55.855Z
 description: >-

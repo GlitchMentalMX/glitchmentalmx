@@ -1,5 +1,6 @@
 ---
 title: Tus audífonos saben más de tu salud que tu médico
+category: Tecnología de Consumo
 pubDate: 2026-06-11T04:30:45.630Z
 updatedDate: 2026-06-11T04:30:45.630Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Chinamaxxing: Gen Z occidental obsesionada con la vida china'
+category: Tendencias Digitales
 pubDate: 2026-02-11T14:16:00.000Z
 updatedDate: 2026-06-23T02:28:35.524Z
 description: >-

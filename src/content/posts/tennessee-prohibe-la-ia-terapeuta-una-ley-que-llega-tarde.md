@@ -1,5 +1,6 @@
 ---
 title: 'Tennessee prohíbe la IA terapeuta: una ley que llega tarde'
+category: Cultura Digital
 pubDate: 2026-04-03T12:40:00.002Z
 updatedDate: 2026-04-03T12:40:24.185Z
 description: >-

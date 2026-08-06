@@ -1,5 +1,6 @@
 ---
 title: OpenAI sabe que GPT-5.5 es un riesgo alto. Y lo lanzó igual
+category: Inteligencia Artificial
 pubDate: 2026-04-25T12:42:00.009Z
 updatedDate: 2026-04-25T13:58:27.669Z
 description: >-

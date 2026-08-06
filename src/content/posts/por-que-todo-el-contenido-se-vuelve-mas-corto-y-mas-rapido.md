@@ -1,5 +1,6 @@
 ---
 title: Por qué todo el contenido se vuelve más corto y más rápido
+category: Tendencias Digitales
 pubDate: 2026-03-27T11:00:00.015Z
 updatedDate: 2026-03-27T11:00:00.112Z
 description: >-

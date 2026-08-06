@@ -1,5 +1,6 @@
 ---
 title: 'Oracle despide a 30,000 por IA: el patrón ya es claro'
+category: Inteligencia Artificial
 pubDate: 2026-04-02T12:46:00.006Z
 updatedDate: 2026-04-02T12:46:43.998Z
 description: >-

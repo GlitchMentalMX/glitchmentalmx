@@ -1,10 +1,13 @@
 ---
+import { categories } from '../data/categories';
+
 const year = new Date().getFullYear();
 
 const columns = [
   {
     title: 'Explorar',
     links: [
+      ...categories.map((c) => ({ href: `/categoria/${c.slug}/`, label: c.name })),
       { href: '/archivo/', label: 'Archivo' },
       { href: '/series/', label: 'Series editoriales' },
       { href: '/colecciones/', label: 'Colecciones' },

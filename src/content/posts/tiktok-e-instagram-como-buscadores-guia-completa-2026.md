@@ -1,5 +1,6 @@
 ---
 title: 'TikTok e Instagram como buscadores: guía completa 2026'
+category: Tendencias Digitales
 pubDate: 2026-02-19T12:01:00.000Z
 updatedDate: 2026-06-23T03:54:18.305Z
 description: >-

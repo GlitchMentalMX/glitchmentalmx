@@ -1,5 +1,6 @@
 ---
 title: Cómo los dispositivos moldean lo que haces (sin que lo notes)
+category: Tecnología de Consumo
 pubDate: 2026-03-29T14:51:00.010Z
 updatedDate: 2026-07-09T02:50:59.939Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Microsoft Copilot: para qué sirve y qué planes existen'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T02:59:00.000Z
 updatedDate: 2026-03-29T02:59:08.480Z
 description: >-

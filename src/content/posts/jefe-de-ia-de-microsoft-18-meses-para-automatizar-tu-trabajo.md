@@ -1,5 +1,6 @@
 ---
 title: 'Jefe de IA de Microsoft: 18 meses para automatizar tu trabajo'
+category: Inteligencia Artificial
 pubDate: 2026-02-16T13:42:00.000Z
 updatedDate: 2026-06-23T03:40:00.983Z
 description: >-

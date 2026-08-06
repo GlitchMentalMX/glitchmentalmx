@@ -1,5 +1,6 @@
 ---
 title: Pokémon Go entrenó robots de reparto sin decirte nada
+category: Inteligencia Artificial
 pubDate: 2026-03-16T12:49:00.005Z
 updatedDate: 2026-06-06T19:32:45.705Z
 description: >-

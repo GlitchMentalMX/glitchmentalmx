@@ -1,5 +1,6 @@
 ---
 title: 'Musk vs Altman: el juicio que puede partir a OpenAI'
+category: Inteligencia Artificial
 pubDate: 2026-05-01T11:00:00.012Z
 updatedDate: 2026-06-16T00:47:34.648Z
 description: >-

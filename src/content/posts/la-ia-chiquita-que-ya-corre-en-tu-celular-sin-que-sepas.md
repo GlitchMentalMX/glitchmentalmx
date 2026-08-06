@@ -1,12 +1,12 @@
 ---
 title: La IA chiquita que ya corre en tu celular sin que sepas
+category: Inteligencia Artificial
 pubDate: 2026-06-12T21:54:41.333Z
 updatedDate: 2026-06-12T21:54:41.333Z
 description: >-
   Mientras la conversación pública sigue obsesionada con quién tiene el modelo
   de IA más grande, otra carrera de IA ya está corriendo dentro de tu teléfono,…
-heroImage: >-
-  /images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/hero.jpg
+heroImage: /images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/hero.jpg
 heroImageAlt: >-
   La IA en tu teléfono: una mujer con un dispositivo compacto frente a racks de
   servidores en entorno de centro de datos

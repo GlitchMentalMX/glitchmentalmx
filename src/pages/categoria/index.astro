@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { categories } from '../../data/categories';
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const counts = Object.fromEntries(
+  categories.map((c) => [c.name, allPosts.filter((p) => p.data.category === c.name).length])
+);
+---
+
+<Layout title="Leer por categoría" description="Explora los artículos de glitchmentalMX organizados por tema.">
+  <section class="container header">
+    <p class="eyebrow">Leer</p>
+    <h1>Explora por categoría</h1>
+    <p class="sub">Los mismos artículos, organizados por el tema que te interesa.</p>
+  </section>
+
+  <section class="container grid">
+    {categories.map((c) => (
+      <a href={`/categoria/${c.slug}/`} class="card">
+        <p class="eyebrow">{counts[c.name]} artículos</p>
+        <h2>{c.name}</h2>
+      </a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 40px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
+  .sub { color: var(--text-muted); font-size: 1.05rem; }
+
+  .grid {
+    padding: 0 24px 96px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  .card {
+    padding: 30px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    color: var(--text);
+  }
+  .card:hover { outline: 1.5px solid var(--accent); }
+  .card h2 { font-size: 1.5rem; margin: 10px 0 0; }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>

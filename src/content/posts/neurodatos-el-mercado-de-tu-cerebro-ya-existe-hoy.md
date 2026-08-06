@@ -1,5 +1,6 @@
 ---
 title: 'Neurodatos: el mercado de tu cerebro ya existe hoy'
+category: Tecnología de Consumo
 pubDate: 2026-07-03T11:00:00.000Z
 updatedDate: 2026-07-09T02:50:08.570Z
 description: >-

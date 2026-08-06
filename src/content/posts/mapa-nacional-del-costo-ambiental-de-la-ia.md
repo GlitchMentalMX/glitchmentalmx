@@ -1,5 +1,6 @@
 ---
 title: Mapa nacional del costo ambiental de la IA
+category: Inteligencia Artificial
 pubDate: 2026-07-08T22:46:44.127Z
 updatedDate: 2026-07-08T22:53:03.541Z
 description: >-

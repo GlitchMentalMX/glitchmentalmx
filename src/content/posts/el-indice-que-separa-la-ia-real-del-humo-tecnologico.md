@@ -1,5 +1,6 @@
 ---
 title: El índice que separa la IA real del humo tecnológico
+category: Inteligencia Artificial
 pubDate: 2026-01-22T13:00:00.000Z
 updatedDate: 2026-06-22T19:03:42.994Z
 description: >-

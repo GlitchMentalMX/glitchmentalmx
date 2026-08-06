@@ -1,5 +1,6 @@
 ---
 title: 'Redes neuronales explicadas: sin matemáticas ni hype'
+category: Inteligencia Artificial
 pubDate: 2026-06-03T23:38:03.459Z
 updatedDate: 2026-06-03T23:38:03.460Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Los "100 prompts de productividad" no sirven para nada
+category: Cultura Digital
 pubDate: 2026-04-06T11:02:00.001Z
 updatedDate: 2026-04-06T11:02:00.118Z
 description: >-

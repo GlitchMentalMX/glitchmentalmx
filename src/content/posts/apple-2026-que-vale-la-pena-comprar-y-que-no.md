@@ -1,5 +1,6 @@
 ---
 title: 'Apple 2026: qué vale la pena comprar y qué no'
+category: Tecnología de Consumo
 pubDate: 2026-03-04T13:45:00.000Z
 updatedDate: 2026-06-23T22:38:51.898Z
 description: >-

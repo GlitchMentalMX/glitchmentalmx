@@ -1,5 +1,6 @@
 ---
 title: 'Mythos un mes después: la UE pide acceso, el BCE alerta'
+category: Inteligencia Artificial
 pubDate: 2026-05-01T11:01:00.011Z
 updatedDate: 2026-06-27T03:40:51.952Z
 description: >-

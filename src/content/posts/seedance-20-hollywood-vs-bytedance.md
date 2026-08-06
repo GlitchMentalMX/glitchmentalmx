@@ -1,5 +1,6 @@
 ---
 title: 'Seedance 2.0: Hollywood vs. ByteDance'
+category: Tendencias Digitales
 pubDate: 2026-03-09T13:13:00.000Z
 updatedDate: 2026-03-17T17:57:13.615Z
 description: >-

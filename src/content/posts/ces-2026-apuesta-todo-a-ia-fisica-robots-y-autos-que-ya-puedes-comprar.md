@@ -1,5 +1,6 @@
 ---
 title: 'CES 2026 apuesta todo a IA física: robots y autos que ya puedes comprar'
+category: Tecnología de Consumo
 pubDate: 2026-01-05T13:05:00.000Z
 updatedDate: 2026-06-13T02:33:51.857Z
 description: >-

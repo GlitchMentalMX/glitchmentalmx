@@ -1,5 +1,6 @@
 ---
 title: 'Redes sociales y autoestima: la trampa de la comparación'
+category: Cultura Digital
 pubDate: 2026-03-26T11:09:00.001Z
 updatedDate: 2026-03-26T11:09:00.106Z
 description: >-

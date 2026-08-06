@@ -1,5 +1,6 @@
 ---
 title: Primera condena por imágenes IA sexuales en EE. UU.
+category: Tendencias Digitales
 pubDate: 2026-04-09T12:59:00.002Z
 updatedDate: 2026-04-09T12:59:12.176Z
 description: >-

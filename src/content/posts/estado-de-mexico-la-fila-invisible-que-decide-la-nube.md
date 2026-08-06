@@ -1,5 +1,6 @@
 ---
 title: 'Estado de México: la fila invisible que decide la nube'
+category: Inteligencia Artificial
 pubDate: 2026-07-07T11:00:00.000Z
 updatedDate: 2026-07-07T19:27:16.975Z
 description: >-

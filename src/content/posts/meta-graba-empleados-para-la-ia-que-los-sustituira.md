@@ -1,5 +1,6 @@
 ---
 title: Meta graba empleados para la IA que los sustituirá
+category: Inteligencia Artificial
 pubDate: 2026-04-24T13:01:00.003Z
 updatedDate: 2026-04-24T13:01:19.455Z
 description: >-

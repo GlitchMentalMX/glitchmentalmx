@@ -1,5 +1,6 @@
 ---
 title: 'Expertos que entrenan IA para reemplazarse: el negocio'
+category: Inteligencia Artificial
 pubDate: 2026-02-17T12:51:00.000Z
 updatedDate: 2026-06-23T03:45:29.415Z
 description: >-

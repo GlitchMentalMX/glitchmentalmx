@@ -2,6 +2,7 @@
 title: >-
   Guía definitiva de LinkedIn 2026: cómo destacar y conseguir trabajo siendo Gen
   Z
+category: Tendencias Digitales
 pubDate: 2026-01-29T12:52:00.000Z
 updatedDate: 2026-06-06T19:48:45.018Z
 description: >-

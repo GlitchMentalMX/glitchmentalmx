@@ -1,5 +1,6 @@
 ---
 title: 'ATA: cómo se nombra al primer atacante impulsado por IA'
+category: Inteligencia Artificial
 pubDate: 2026-07-17T11:00:00.000Z
 updatedDate: 2026-07-17T11:00:00.111Z
 description: >-

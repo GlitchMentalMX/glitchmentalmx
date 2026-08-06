@@ -1,5 +1,6 @@
 ---
 title: 'Amodei advierte: el tsunami de IA ya llegó a la orilla'
+category: Inteligencia Artificial
 pubDate: 2026-02-26T13:01:00.000Z
 updatedDate: 2026-06-23T15:32:37.601Z
 description: >-

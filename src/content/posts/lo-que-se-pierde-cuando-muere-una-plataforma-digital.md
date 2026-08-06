@@ -1,5 +1,6 @@
 ---
 title: Lo que se pierde cuando muere una plataforma digital
+category: Cultura Digital
 pubDate: 2026-06-22T11:00:00.000Z
 updatedDate: 2026-07-09T02:45:05.695Z
 description: >-

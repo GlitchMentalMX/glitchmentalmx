@@ -1,12 +1,12 @@
 ---
 title: El negocio de la música de fondo ya no necesita músicos
+category: Inteligencia Artificial
 pubDate: 2026-05-13T11:00:00.017Z
 updatedDate: 2026-07-09T02:30:32.331Z
 description: >-
   El problema no es que la IA vaya a reemplazar a Billie Eilish. El problema es
   que ya reemplazó al compositor anónimo que ponía música en el comercial del…
-heroImage: >-
-  /images/posts/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/hero.jpg
+heroImage: /images/posts/el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos/hero.jpg
 heroImageAlt: >-
   sync licensing IA: compositora con auriculares en estudio personal mirando
   sesión con pista generada entre composiciones propias

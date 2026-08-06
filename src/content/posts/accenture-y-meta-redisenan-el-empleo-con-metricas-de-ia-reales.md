@@ -1,5 +1,6 @@
 ---
 title: Accenture y Meta rediseñan el empleo con métricas de IA reales
+category: Inteligencia Artificial
 pubDate: 2026-02-24T12:32:00.000Z
 updatedDate: 2026-06-23T13:26:30.518Z
 description: >-

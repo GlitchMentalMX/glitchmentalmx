@@ -1,5 +1,6 @@
 ---
 title: 'Biología sintética: el código genético como lenguaje de programación'
+category: Tendencias Digitales
 pubDate: 2026-04-18T19:07:00.004Z
 updatedDate: 2026-07-09T02:39:13.525Z
 description: >-

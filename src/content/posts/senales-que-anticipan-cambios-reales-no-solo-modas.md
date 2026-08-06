@@ -1,5 +1,6 @@
 ---
 title: 'Señales que anticipan cambios reales, no solo modas'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T18:57:00.005Z
 updatedDate: 2026-03-29T19:29:14.126Z
 description: >-

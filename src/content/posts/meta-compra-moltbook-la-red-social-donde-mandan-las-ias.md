@@ -1,5 +1,6 @@
 ---
 title: 'Meta compra Moltbook: la red social donde mandan las IAs'
+category: Tendencias Digitales
 pubDate: 2026-03-11T13:02:00.000Z
 updatedDate: 2026-03-17T17:57:13.614Z
 description: >-

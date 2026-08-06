@@ -1,5 +1,6 @@
 ---
 title: 'Threads vs Bluesky: la batalla que nadie pidió (y por qué importa en 2026)'
+category: Tendencias Digitales
 pubDate: 2026-01-28T13:00:00.000Z
 updatedDate: 2026-06-22T22:22:56.179Z
 description: >-

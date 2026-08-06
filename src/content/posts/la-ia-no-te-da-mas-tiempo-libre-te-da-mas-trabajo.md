@@ -1,5 +1,6 @@
 ---
 title: 'La IA no te da más tiempo libre: te da más trabajo'
+category: Inteligencia Artificial
 pubDate: 2026-02-25T12:50:00.000Z
 updatedDate: 2026-06-23T15:27:39.236Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Por qué lo roto se volvió arte: la estética del glitch'
+category: Cultura Digital
 pubDate: 2026-05-04T13:08:00.002Z
 updatedDate: 2026-07-09T02:47:09.369Z
 description: >-

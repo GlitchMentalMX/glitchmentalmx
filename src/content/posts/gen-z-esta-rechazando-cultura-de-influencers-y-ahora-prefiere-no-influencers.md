@@ -1,5 +1,6 @@
 ---
 title: Gen Z está rechazando cultura de influencers y ahora prefiere "no-influencers"
+category: Tendencias Digitales
 pubDate: 2026-01-02T13:03:00.000Z
 updatedDate: 2026-06-21T02:42:30.055Z
 description: >-

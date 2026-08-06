@@ -1,5 +1,6 @@
 ---
 title: 'Sin Google ni redes: cómo construir audiencia en 2026'
+category: Tendencias Digitales
 pubDate: 2026-03-26T11:10:00.000Z
 updatedDate: 2026-06-24T23:41:25.940Z
 description: >-

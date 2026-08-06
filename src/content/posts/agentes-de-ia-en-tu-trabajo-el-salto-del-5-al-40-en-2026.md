@@ -1,5 +1,6 @@
 ---
 title: 'Agentes de IA en tu trabajo: el salto del 5% al 40% en 2026'
+category: Inteligencia Artificial
 pubDate: 2026-03-03T12:09:00.000Z
 updatedDate: 2026-06-23T17:08:07.666Z
 description: >-

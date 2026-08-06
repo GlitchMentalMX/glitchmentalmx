@@ -1,5 +1,6 @@
 ---
 title: Cómo una IA te puede adoctrinar sin que nadie lo planeara
+category: Inteligencia Artificial
 pubDate: 2026-04-27T04:33:00.005Z
 updatedDate: 2026-07-09T02:25:22.739Z
 description: >-

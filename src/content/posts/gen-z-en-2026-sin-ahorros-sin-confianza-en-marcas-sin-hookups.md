@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z en 2026: sin ahorros, sin confianza en marcas, sin hookups'
+category: Cultura Digital
 pubDate: 2026-01-23T13:06:00.000Z
 updatedDate: 2026-06-13T13:51:18.099Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Claude Code, Chrome y Cowork: La Revolución de la IA que Trabaja por Ti'
+category: Inteligencia Artificial
 pubDate: 2026-01-19T18:20:00.000Z
 updatedDate: 2026-06-22T13:09:39.101Z
 description: >-

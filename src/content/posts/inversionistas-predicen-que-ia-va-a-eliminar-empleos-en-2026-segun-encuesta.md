@@ -1,5 +1,6 @@
 ---
 title: Inversionistas predicen que IA va a eliminar empleos en 2026 (según encuesta)
+category: Inteligencia Artificial
 pubDate: 2026-01-02T12:53:00.000Z
 updatedDate: 2026-06-21T02:28:38.024Z
 description: >-

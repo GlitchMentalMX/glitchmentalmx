@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI cancela Sora: el video costaba demasiado y la IPO no espera'
+category: Inteligencia Artificial
 pubDate: 2026-03-25T12:06:00.000Z
 updatedDate: 2026-03-25T12:06:07.366Z
 description: >-

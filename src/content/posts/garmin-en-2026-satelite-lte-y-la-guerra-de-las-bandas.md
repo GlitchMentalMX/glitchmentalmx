@@ -1,5 +1,6 @@
 ---
 title: 'Garmin en 2026: satélite, LTE y la guerra de las bandas'
+category: Tecnología de Consumo
 pubDate: 2026-04-15T12:34:00.003Z
 updatedDate: 2026-06-15T13:06:22.975Z
 description: >-

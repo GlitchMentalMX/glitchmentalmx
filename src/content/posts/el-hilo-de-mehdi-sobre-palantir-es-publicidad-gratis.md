@@ -1,5 +1,6 @@
 ---
 title: El hilo de Mehdi sobre Palantir es publicidad gratis
+category: Inteligencia Artificial
 pubDate: 2026-04-20T12:33:00.006Z
 updatedDate: 2026-04-20T19:09:29.250Z
 description: >-

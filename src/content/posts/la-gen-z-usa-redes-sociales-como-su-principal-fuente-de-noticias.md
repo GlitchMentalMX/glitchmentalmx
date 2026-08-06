@@ -1,5 +1,6 @@
 ---
 title: La Gen Z usa redes sociales como su principal fuente de noticias
+category: Tendencias Digitales
 pubDate: 2026-02-12T11:58:00.000Z
 updatedDate: 2026-06-23T02:54:54.442Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Guía definitiva: cómo elegir tus próximos audífonos inalámbricos en 2026'
+category: Tecnología de Consumo
 pubDate: 2026-01-28T13:10:00.000Z
 updatedDate: 2026-06-06T19:49:06.264Z
 description: >-

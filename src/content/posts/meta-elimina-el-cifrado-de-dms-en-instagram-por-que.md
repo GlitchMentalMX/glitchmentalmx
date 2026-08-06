@@ -1,5 +1,6 @@
 ---
 title: 'Meta elimina el cifrado de DMs en Instagram: por qué'
+category: Tendencias Digitales
 pubDate: 2026-03-19T12:40:00.000Z
 updatedDate: 2026-03-19T12:40:01.333Z
 description: >-

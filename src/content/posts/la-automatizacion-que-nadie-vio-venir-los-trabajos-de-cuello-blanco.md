@@ -1,5 +1,6 @@
 ---
 title: 'La automatización que nadie vio venir: los trabajos de cuello blanco'
+category: Inteligencia Artificial
 pubDate: 2026-04-18T19:00:00.004Z
 updatedDate: 2026-04-18T23:20:03.212Z
 description: >-

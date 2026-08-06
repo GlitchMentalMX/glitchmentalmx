@@ -1,5 +1,6 @@
 ---
 title: Perplexity quiere vivir en tu Mac mini las 24 horas
+category: Tecnología de Consumo
 pubDate: 2026-03-13T12:55:00.001Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-

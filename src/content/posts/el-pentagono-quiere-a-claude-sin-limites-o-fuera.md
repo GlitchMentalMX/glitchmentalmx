@@ -1,5 +1,6 @@
 ---
 title: El Pentágono quiere a Claude sin límites… o fuera
+category: Inteligencia Artificial
 pubDate: 2026-02-28T13:33:00.000Z
 updatedDate: 2026-06-23T16:25:36.931Z
 description: >-

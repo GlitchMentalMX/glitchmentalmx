@@ -1,5 +1,6 @@
 ---
 title: 'Meta pagará $375M por dañar niños: la bolsa festejó igual'
+category: Cultura Digital
 pubDate: 2026-03-25T11:00:00.020Z
 updatedDate: 2026-03-25T12:04:00.309Z
 description: >-

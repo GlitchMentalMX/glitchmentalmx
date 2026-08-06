@@ -1,5 +1,6 @@
 ---
 title: 'Identidad digital: quién eres online vs. offline'
+category: Cultura Digital
 pubDate: 2026-03-24T11:59:36.290Z
 updatedDate: 2026-03-24T16:22:01.692Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'De Storytime a Juicio Social: La cultura de la cancelación en TikTok'
+category: Tendencias Digitales
 pubDate: 2025-11-17T19:13:00.000Z
 updatedDate: 2026-06-13T00:54:38.986Z
 description: >-

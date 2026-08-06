@@ -1,5 +1,6 @@
 ---
 title: 'El ciclo hype → desilusión → integración: una guía práctica'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T18:53:00.005Z
 updatedDate: 2026-03-29T18:53:47.958Z
 description: >-

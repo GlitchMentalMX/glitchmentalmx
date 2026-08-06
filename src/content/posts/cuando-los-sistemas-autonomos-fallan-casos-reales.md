@@ -1,5 +1,6 @@
 ---
 title: 'Cuando los sistemas autónomos fallan: casos reales'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T14:01:00.005Z
 updatedDate: 2026-03-29T14:01:42.865Z
 description: >-

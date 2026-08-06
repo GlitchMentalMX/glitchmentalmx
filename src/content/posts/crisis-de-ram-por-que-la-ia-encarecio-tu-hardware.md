@@ -1,5 +1,6 @@
 ---
 title: 'Crisis de RAM: por qué la IA encareció tu hardware'
+category: Tecnología de Consumo
 pubDate: 2026-04-01T12:14:00.002Z
 updatedDate: 2026-04-01T12:14:23.536Z
 description: >-

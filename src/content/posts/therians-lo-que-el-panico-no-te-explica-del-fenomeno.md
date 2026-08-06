@@ -1,5 +1,6 @@
 ---
 title: 'Therians: lo que el pánico no te explica del fenómeno'
+category: Cultura Digital
 pubDate: 2026-03-20T12:59:00.001Z
 updatedDate: 2026-03-20T12:59:32.512Z
 description: >-

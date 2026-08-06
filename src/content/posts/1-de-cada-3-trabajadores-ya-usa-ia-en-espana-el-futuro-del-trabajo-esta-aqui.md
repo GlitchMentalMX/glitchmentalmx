@@ -1,5 +1,6 @@
 ---
 title: '1 de cada 3 trabajadores ya usa IA en españa: el futuro del trabajo está aquí'
+category: Inteligencia Artificial
 pubDate: 2025-11-25T14:33:00.000Z
 updatedDate: 2026-06-13T01:39:20.858Z
 description: >-

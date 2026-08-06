@@ -1,5 +1,6 @@
 ---
 title: 'La UE prohíbe las apps que desnudan con IA: llegó tarde'
+category: Inteligencia Artificial
 pubDate: 2026-03-23T13:31:00.003Z
 updatedDate: 2026-03-23T13:31:30.678Z
 description: >-

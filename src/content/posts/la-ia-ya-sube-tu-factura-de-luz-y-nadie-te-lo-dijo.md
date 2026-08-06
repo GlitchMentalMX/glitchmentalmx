@@ -1,5 +1,6 @@
 ---
 title: La IA ya sube tu factura de luz — y nadie te lo dijo
+category: Cultura Digital
 pubDate: 2026-04-29T11:00:00.010Z
 updatedDate: 2026-04-29T11:17:46.833Z
 description: >-

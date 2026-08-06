@@ -1,5 +1,6 @@
 ---
 title: 'Mejores prompts para ChatGPT en 2026: guía práctica completa'
+category: Inteligencia Artificial
 pubDate: 2025-12-29T15:18:00.000Z
 updatedDate: 2026-06-21T02:07:20.610Z
 description: >-

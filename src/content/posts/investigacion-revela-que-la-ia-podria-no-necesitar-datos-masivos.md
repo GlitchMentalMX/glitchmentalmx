@@ -1,5 +1,6 @@
 ---
 title: Investigación revela que la IA podría no necesitar datos masivos
+category: Cultura Digital
 pubDate: 2026-01-06T12:11:00.000Z
 updatedDate: 2026-06-22T01:19:59.288Z
 description: >-

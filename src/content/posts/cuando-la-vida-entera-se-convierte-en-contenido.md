@@ -1,5 +1,6 @@
 ---
 title: Cuando la vida entera se convierte en contenido
+category: Cultura Digital
 pubDate: 2026-03-28T01:32:00.002Z
 updatedDate: 2026-03-28T01:32:40.363Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'iPhone Fold: Apple llega tarde al plegable y aun así gana'
+category: Tecnología de Consumo
 pubDate: 2026-04-30T11:04:00.000Z
 updatedDate: 2026-04-30T11:10:35.748Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'NVIDIA y Cadence: el obstáculo real de la robótica'
+category: Inteligencia Artificial
 pubDate: 2026-04-16T12:33:00.003Z
 updatedDate: 2026-04-16T12:33:58.196Z
 description: >-

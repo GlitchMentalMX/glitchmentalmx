@@ -1,5 +1,6 @@
 ---
 title: 'IA y salud mental: lo que nadie te dice en 2026'
+category: Cultura Digital
 pubDate: 2026-03-08T23:53:00.000Z
 updatedDate: 2026-06-06T19:37:09.185Z
 description: >-

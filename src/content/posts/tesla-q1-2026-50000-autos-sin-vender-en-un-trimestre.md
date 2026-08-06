@@ -1,5 +1,6 @@
 ---
 title: 'Tesla Q1 2026: 50,000 autos sin vender en un trimestre'
+category: Tecnología de Consumo
 pubDate: 2026-04-03T12:38:00.003Z
 updatedDate: 2026-04-03T12:38:23.806Z
 description: >-

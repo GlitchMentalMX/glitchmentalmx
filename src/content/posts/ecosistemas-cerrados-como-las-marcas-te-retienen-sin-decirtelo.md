@@ -1,5 +1,6 @@
 ---
 title: 'Ecosistemas cerrados: cómo las marcas te retienen sin decírtelo'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T14:59:00.004Z
 updatedDate: 2026-07-09T02:51:52.957Z
 description: >-

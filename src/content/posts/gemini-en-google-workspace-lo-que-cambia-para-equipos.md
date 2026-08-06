@@ -1,5 +1,6 @@
 ---
 title: 'Gemini en Google Workspace: lo que cambia para equipos'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T02:49:00.003Z
 updatedDate: 2026-04-01T12:44:50.885Z
 description: >-

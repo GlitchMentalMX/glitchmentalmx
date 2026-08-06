@@ -1,5 +1,6 @@
 ---
 title: La epidemia visual que las pantallas están acelerando
+category: Cultura Digital
 pubDate: 2026-04-08T12:52:00.004Z
 updatedDate: 2026-04-08T12:52:55.721Z
 description: >-

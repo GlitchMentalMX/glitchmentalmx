@@ -1,5 +1,6 @@
 ---
 title: 'Stanford 2026: IA generativa llegó al 53% del planeta'
+category: Inteligencia Artificial
 pubDate: 2026-04-15T12:36:00.005Z
 updatedDate: 2026-06-26T01:52:55.401Z
 description: >-

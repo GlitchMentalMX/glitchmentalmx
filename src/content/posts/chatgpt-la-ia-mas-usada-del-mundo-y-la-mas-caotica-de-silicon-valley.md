@@ -1,5 +1,6 @@
 ---
 title: 'ChatGPT: la IA más usada del mundo y la más caótica de Silicon Valley'
+category: Inteligencia Artificial
 pubDate: 2026-01-15T13:58:00.002Z
 updatedDate: 2026-06-07T03:34:22.392Z
 description: >-

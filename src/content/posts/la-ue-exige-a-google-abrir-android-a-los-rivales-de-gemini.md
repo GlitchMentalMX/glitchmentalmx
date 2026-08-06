@@ -1,5 +1,6 @@
 ---
 title: La UE exige a Google abrir Android a los rivales de Gemini
+category: Inteligencia Artificial
 pubDate: 2026-04-29T11:03:00.001Z
 updatedDate: 2026-04-29T11:03:00.112Z
 description: >-

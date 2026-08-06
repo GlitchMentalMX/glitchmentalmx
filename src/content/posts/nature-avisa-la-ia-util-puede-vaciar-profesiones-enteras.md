@@ -1,5 +1,6 @@
 ---
 title: 'Nature avisa: la IA útil puede vaciar profesiones enteras'
+category: Inteligencia Artificial
 pubDate: 2026-04-06T12:56:00.003Z
 updatedDate: 2026-04-06T12:56:36.049Z
 description: >-

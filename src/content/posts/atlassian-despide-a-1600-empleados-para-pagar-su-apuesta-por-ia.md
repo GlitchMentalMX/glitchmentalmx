@@ -1,5 +1,6 @@
 ---
 title: 'Atlassian despide a 1,600 empleados para pagar su apuesta por IA'
+category: Inteligencia Artificial
 pubDate: 2026-03-23T13:25:00.007Z
 updatedDate: 2026-03-23T13:28:16.966Z
 description: >-

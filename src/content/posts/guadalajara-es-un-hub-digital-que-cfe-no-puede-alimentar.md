@@ -1,5 +1,6 @@
 ---
 title: Guadalajara es un hub digital que CFE no puede alimentar
+category: Inteligencia Artificial
 pubDate: 2026-07-06T11:05:00.000Z
 updatedDate: 2026-07-08T13:22:12.952Z
 description: >-

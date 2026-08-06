@@ -1,5 +1,6 @@
 ---
 title: Tu smartwatch no sabe qué tan estresado estás
+category: Tecnología de Consumo
 pubDate: 2025-11-15T17:28:00.000Z
 updatedDate: 2026-06-13T00:48:47.349Z
 description: >-

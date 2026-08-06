@@ -1,5 +1,6 @@
 ---
 title: 'Solar + baterías: la revolución energética que México no está aprovechando'
+category: Tendencias Digitales
 pubDate: 2026-04-18T19:00:00.003Z
 updatedDate: 2026-04-18T19:00:54.044Z
 description: >-

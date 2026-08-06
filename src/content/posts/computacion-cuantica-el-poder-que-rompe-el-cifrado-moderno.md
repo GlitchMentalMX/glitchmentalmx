@@ -1,5 +1,6 @@
 ---
 title: 'Computación cuántica: el poder que rompe el cifrado moderno'
+category: Inteligencia Artificial
 pubDate: 2026-04-18T18:59:00.000Z
 updatedDate: 2026-04-18T18:59:11.099Z
 description: >-

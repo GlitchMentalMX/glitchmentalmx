@@ -1,5 +1,6 @@
 ---
 title: 'Generaciones y algoritmos: de boomers a Gen Alpha'
+category: Cultura Digital
 pubDate: 2026-03-24T12:06:00.004Z
 updatedDate: 2026-06-24T16:06:37.569Z
 description: >-

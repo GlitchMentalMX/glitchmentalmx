@@ -1,5 +1,6 @@
 ---
 title: 'El 6% de LATAM: usar la IA no es lo mismo que tenerla'
+category: Inteligencia Artificial
 pubDate: 2026-07-31T11:00:00.000Z
 updatedDate: 2026-07-31T11:00:00.213Z
 description: >-

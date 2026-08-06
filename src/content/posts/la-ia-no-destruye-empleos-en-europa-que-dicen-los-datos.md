@@ -1,12 +1,12 @@
 ---
 title: 'La IA no destruye empleos en Europa: qué dicen los datos'
+category: Inteligencia Artificial
 pubDate: 2026-03-04T13:49:00.000Z
 updatedDate: 2026-06-23T22:54:40.991Z
 description: >-
   Esta mañana el Banco Central Europeo publicó un análisis basado en encuestas a
   empresas de la zona euro realizadas durante 2025, y el resultado principal va…
-heroImage: >-
-  /images/posts/la-ia-no-destruye-empleos-en-europa-que-dicen-los-datos/hero.jpg
+heroImage: /images/posts/la-ia-no-destruye-empleos-en-europa-que-dicen-los-datos/hero.jpg
 heroImageAlt: >-
   IA empleos Europa BCE: mujer con dedo sobre gráfica institucional impresa con
   resultado contrario a lo esperado

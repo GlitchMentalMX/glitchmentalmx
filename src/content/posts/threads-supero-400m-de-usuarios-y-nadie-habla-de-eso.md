@@ -1,5 +1,6 @@
 ---
 title: Threads superó 400M de usuarios y nadie habla de eso
+category: Tendencias Digitales
 pubDate: 2025-12-23T12:40:00.000Z
 updatedDate: 2026-06-13T02:00:07.896Z
 description: >-

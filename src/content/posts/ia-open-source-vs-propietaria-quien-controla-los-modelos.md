@@ -1,5 +1,6 @@
 ---
 title: 'IA open source vs propietaria: quién controla los modelos'
+category: Inteligencia Artificial
 pubDate: 2026-05-08T11:00:00.013Z
 updatedDate: 2026-06-27T03:51:28.292Z
 description: >-

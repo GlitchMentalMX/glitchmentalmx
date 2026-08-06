@@ -1,5 +1,6 @@
 ---
 title: 'Influencers sin título: la regulación que ya llegó'
+category: Tendencias Digitales
 pubDate: 2026-04-10T11:00:00.001Z
 updatedDate: 2026-04-10T11:00:00.116Z
 description: >-

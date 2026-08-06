@@ -1,5 +1,6 @@
 ---
 title: 'CES 2026: los gadgets más absurdos que sí llegaron al mercado'
+category: Tecnología de Consumo
 pubDate: 2026-01-27T12:59:00.000Z
 updatedDate: 2026-06-22T19:59:47.641Z
 description: >-

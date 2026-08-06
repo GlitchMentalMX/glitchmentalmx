@@ -1,5 +1,6 @@
 ---
 title: 'Despidos por IA en 2026: el ranking que incluye a MercadoLibre'
+category: Inteligencia Artificial
 pubDate: 2026-03-12T12:18:00.000Z
 updatedDate: 2026-03-17T17:53:33.586Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Anthropic demanda al Pentágono: el caso que sacude la IA'
+category: Inteligencia Artificial
 pubDate: 2026-03-16T12:54:00.008Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-

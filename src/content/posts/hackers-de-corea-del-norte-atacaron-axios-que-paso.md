@@ -1,5 +1,6 @@
 ---
 title: 'Hackers de Corea del Norte atacaron Axios: qué pasó'
+category: Tecnología de Consumo
 pubDate: 2026-04-02T12:48:00.004Z
 updatedDate: 2026-06-26T01:37:38.779Z
 description: >-

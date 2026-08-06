@@ -2,6 +2,7 @@
 title: >-
   'Dopamina detox': por qué Gen Z se desconecta masivamente (y qué hace en su
   lugar)
+category: Cultura Digital
 pubDate: 2026-01-28T13:06:00.000Z
 updatedDate: 2026-06-22T22:34:02.251Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'AirTag 2: Apple lanza el rastreador con chip UWB mejorado'
+category: Tecnología de Consumo
 pubDate: 2026-02-10T13:38:00.000Z
 updatedDate: 2026-06-23T02:21:39.914Z
 description: >-

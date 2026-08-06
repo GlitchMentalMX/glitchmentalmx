@@ -1,13 +1,13 @@
 ---
 title: 'Data brokers: el negocio que vive de tu casa inteligente'
+category: Tecnología de Consumo
 pubDate: 2026-07-01T11:00:00.000Z
 updatedDate: 2026-07-09T02:49:38.165Z
 description: >-
   Tu aspiradora no te espía gratis. Existe un mercado de cientos de miles de
   millones de dólares que vive de comprar y revender los datos de tus
   dispositivos…
-heroImage: >-
-  /images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/hero.jpg
+heroImage: /images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/hero.jpg
 heroImageAlt: >-
   Data brokers casa inteligente: mujer revisa dispositivo doméstico mientras
   líneas de red escapan hacia el exterior

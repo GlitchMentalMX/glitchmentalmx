@@ -1,5 +1,6 @@
 ---
 title: NVIDIA presenta chip Vera Rubin en CES 2026 y ya está en producción
+category: Inteligencia Artificial
 pubDate: 2026-01-06T12:09:00.000Z
 updatedDate: 2026-06-22T01:14:40.600Z
 description: >-

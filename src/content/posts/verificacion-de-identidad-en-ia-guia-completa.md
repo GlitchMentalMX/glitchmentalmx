@@ -1,5 +1,6 @@
 ---
 title: 'Verificación de identidad en IA: guía completa'
+category: Tecnología de Consumo
 pubDate: 2026-04-22T12:21:00.005Z
 updatedDate: 2026-06-15T15:24:17.836Z
 description: >-

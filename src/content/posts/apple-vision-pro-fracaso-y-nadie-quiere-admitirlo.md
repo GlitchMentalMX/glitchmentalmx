@@ -1,5 +1,6 @@
 ---
 title: Apple Vision Pro fracasó y nadie quiere admitirlo
+category: Tecnología de Consumo
 pubDate: 2025-11-13T18:38:00.000Z
 updatedDate: 2026-06-13T00:34:18.989Z
 description: >-

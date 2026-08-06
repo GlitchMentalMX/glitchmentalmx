@@ -1,12 +1,12 @@
 ---
 title: 'Yucatán y la IA: la nube que cuelga de un solo gasoducto'
+category: Inteligencia Artificial
 pubDate: 2026-07-08T11:00:00.000Z
 updatedDate: 2026-07-08T13:49:00.738Z
 description: >-
   Un data center en Mérida no compite por más energía: compite por un tubo fijo.
   La península de Yucatán es un subsistema eléctrico casi aislado, y ese dato…
-heroImage: >-
-  /images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/hero.jpg
+heroImage: /images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/hero.jpg
 heroImageAlt: >-
   Subestación eléctrica y torres de transmisión en el paisaje calizo de Yucatán,
   donde el límite de infraestructura es eléctrico y no hídrico.

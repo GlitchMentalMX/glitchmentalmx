@@ -1,5 +1,6 @@
 ---
 title: Intel Panther Lake derrota a Apple Silicon (pero hay trampa)
+category: Tecnología de Consumo
 pubDate: 2026-02-04T12:38:00.000Z
 updatedDate: 2026-06-22T23:03:40.594Z
 description: >-

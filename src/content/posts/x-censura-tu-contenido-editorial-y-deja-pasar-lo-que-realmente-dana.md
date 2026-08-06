@@ -1,5 +1,6 @@
 ---
 title: X censura tu contenido editorial y deja pasar lo que realmente daña
+category: Tendencias Digitales
 pubDate: 2026-03-23T11:00:00.013Z
 updatedDate: 2026-06-24T14:57:40.195Z
 description: >-

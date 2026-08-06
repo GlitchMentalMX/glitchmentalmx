@@ -1,5 +1,6 @@
 ---
 title: 'MWC 2026: las marcas chinas que superaron a Samsung'
+category: Tecnología de Consumo
 pubDate: 2026-03-06T12:41:00.000Z
 updatedDate: 2026-06-24T03:34:18.009Z
 description: >-

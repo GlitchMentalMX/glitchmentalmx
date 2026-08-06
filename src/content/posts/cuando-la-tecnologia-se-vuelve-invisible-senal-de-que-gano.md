@@ -1,5 +1,6 @@
 ---
 title: 'Cuando la tecnología se vuelve invisible: señal de que ganó'
+category: Tecnología de Consumo
 pubDate: 2026-03-29T19:03:00.003Z
 updatedDate: 2026-03-29T19:03:23.656Z
 description: >-

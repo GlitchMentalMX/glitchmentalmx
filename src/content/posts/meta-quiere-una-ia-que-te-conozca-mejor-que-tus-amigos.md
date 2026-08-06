@@ -1,5 +1,6 @@
 ---
 title: Meta quiere una IA que te conozca mejor que tus amigos
+category: Inteligencia Artificial
 pubDate: 2026-02-20T12:46:00.000Z
 updatedDate: 2026-06-30T20:14:48.052Z
 description: >-

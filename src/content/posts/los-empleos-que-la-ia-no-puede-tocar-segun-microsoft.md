@@ -1,5 +1,6 @@
 ---
 title: 'Los empleos que la IA no puede tocar, según Microsoft'
+category: Inteligencia Artificial
 pubDate: 2026-03-07T12:53:00.000Z
 updatedDate: 2026-06-06T19:37:33.603Z
 description: >-

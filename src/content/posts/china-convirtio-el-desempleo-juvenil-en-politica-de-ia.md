@@ -1,5 +1,6 @@
 ---
 title: China convirtió el desempleo juvenil en política de IA
+category: Inteligencia Artificial
 pubDate: 2026-04-25T12:40:00.008Z
 updatedDate: 2026-04-25T13:03:19.822Z
 description: >-

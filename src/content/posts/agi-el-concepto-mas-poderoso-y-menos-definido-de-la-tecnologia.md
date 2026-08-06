@@ -1,5 +1,6 @@
 ---
 title: 'AGI: el concepto más poderoso y menos definido de la tecnología'
+category: Inteligencia Artificial
 pubDate: 2026-04-18T19:00:00.005Z
 updatedDate: 2026-06-26T02:46:44.054Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Cómo distinguir una tendencia real de puro hype
+category: Tecnología de Consumo
 pubDate: 2026-03-29T18:50:00.006Z
 updatedDate: 2026-03-30T02:11:13.655Z
 description: >-

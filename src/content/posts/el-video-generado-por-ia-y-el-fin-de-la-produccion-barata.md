@@ -1,5 +1,6 @@
 ---
 title: El video generado por IA y el fin de la producción barata
+category: Inteligencia Artificial
 pubDate: 2026-04-18T18:58:00.000Z
 updatedDate: 2026-04-18T18:58:43.017Z
 description: >-

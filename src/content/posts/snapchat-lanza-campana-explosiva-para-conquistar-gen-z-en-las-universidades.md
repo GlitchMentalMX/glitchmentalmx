@@ -1,5 +1,6 @@
 ---
 title: Snapchat lanza campaña explosiva para conquistar Gen Z en las universidades
+category: Tendencias Digitales
 pubDate: 2026-02-16T13:26:00.000Z
 updatedDate: 2026-06-23T03:27:14.515Z
 description: >-

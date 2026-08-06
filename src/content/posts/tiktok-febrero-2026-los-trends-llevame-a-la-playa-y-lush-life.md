@@ -1,5 +1,6 @@
 ---
 title: 'TikTok febrero 2026: los trends "Llévame a la playa" y "Lush Life"'
+category: Tendencias Digitales
 pubDate: 2026-02-13T12:41:00.000Z
 updatedDate: 2026-06-23T03:04:46.887Z
 description: >-

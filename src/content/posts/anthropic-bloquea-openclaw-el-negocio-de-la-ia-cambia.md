@@ -1,5 +1,6 @@
 ---
 title: 'Anthropic bloquea OpenClaw: el negocio de la IA cambia'
+category: Inteligencia Artificial
 pubDate: 2026-04-08T12:50:00.003Z
 updatedDate: 2026-06-15T00:01:44.512Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Internet no nació libre: el poder detrás de la red'
+category: Tendencias Digitales
 pubDate: 2026-06-03T23:31:47.268Z
 updatedDate: 2026-06-27T04:09:10.909Z
 description: >-

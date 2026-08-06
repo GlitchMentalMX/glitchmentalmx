@@ -1,5 +1,6 @@
 ---
 title: Pagas por la IA que te convierte en su empleado no remunerado
+category: Inteligencia Artificial
 pubDate: 2026-06-11T04:12:12.889Z
 updatedDate: 2026-06-11T04:12:12.890Z
 description: >-

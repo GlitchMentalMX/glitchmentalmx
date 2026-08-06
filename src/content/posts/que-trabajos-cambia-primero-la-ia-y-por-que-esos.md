@@ -1,5 +1,6 @@
 ---
 title: Qué trabajos cambia primero la IA (y por qué esos)
+category: Inteligencia Artificial
 pubDate: 2026-03-28T14:24:00.001Z
 updatedDate: 2026-03-28T14:24:05.880Z
 description: >-

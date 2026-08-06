@@ -1,5 +1,6 @@
 ---
 title: La IA no liquidó escritores. Liquidó a quién los pagaba
+category: Inteligencia Artificial
 pubDate: 2026-05-15T11:00:00.000Z
 updatedDate: 2026-07-09T02:31:05.682Z
 description: >-

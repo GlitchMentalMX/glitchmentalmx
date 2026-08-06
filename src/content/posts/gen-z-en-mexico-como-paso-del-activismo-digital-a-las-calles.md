@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z en México: cómo pasó del activismo digital a las calles'
+category: Cultura Digital
 pubDate: 2026-02-13T12:50:00.000Z
 updatedDate: 2026-06-23T03:21:42.764Z
 description: >-

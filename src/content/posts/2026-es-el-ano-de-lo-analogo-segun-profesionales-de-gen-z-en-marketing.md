@@ -1,5 +1,6 @@
 ---
 title: 2026 es el "año de lo análogo" según profesionales de Gen Z en marketing
+category: Tendencias Digitales
 pubDate: 2026-01-09T12:56:00.000Z
 updatedDate: 2026-06-22T02:02:19.933Z
 description: >-

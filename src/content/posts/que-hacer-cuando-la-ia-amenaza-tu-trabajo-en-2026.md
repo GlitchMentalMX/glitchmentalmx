@@ -1,5 +1,6 @@
 ---
 title: Qué hacer cuando la IA amenaza tu trabajo en 2026
+category: Inteligencia Artificial
 pubDate: 2026-03-06T12:39:00.000Z
 updatedDate: 2026-06-23T23:21:58.181Z
 description: >-

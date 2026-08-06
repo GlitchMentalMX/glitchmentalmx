@@ -1,5 +1,6 @@
 ---
 title: 'Gemini 3 de Google: Todo lo que necesitas saber en 2026'
+category: Inteligencia Artificial
 pubDate: 2026-01-15T13:55:00.000Z
 updatedDate: 2026-06-30T19:29:17.116Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Robots humanoides en logística china: ya son operativos'
+category: Inteligencia Artificial
 pubDate: 2026-04-30T11:02:00.001Z
 updatedDate: 2026-06-27T03:27:35.612Z
 description: >-

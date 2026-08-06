@@ -1,5 +1,6 @@
 ---
 title: 'IA física: los gadgets que llevan inteligencia en tu cuerpo'
+category: Tecnología de Consumo
 pubDate: 2026-01-20T15:11:00.000Z
 updatedDate: 2026-06-22T13:36:12.237Z
 description: >-

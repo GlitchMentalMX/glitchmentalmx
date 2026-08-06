@@ -1,5 +1,6 @@
 ---
 title: 'GTC 2026: qué es, qué esperar y cómo verlo en vivo'
+category: Tecnología de Consumo
 pubDate: 2026-03-11T12:58:00.000Z
 updatedDate: 2026-06-06T19:36:15.998Z
 description: >-

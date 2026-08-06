@@ -1,5 +1,6 @@
 ---
 title: 'Tinder quiere escanear tu galería: "análisis de vibra"'
+category: Cultura Digital
 pubDate: 2026-03-23T13:34:00.001Z
 updatedDate: 2026-06-04T16:22:46.534Z
 description: >-

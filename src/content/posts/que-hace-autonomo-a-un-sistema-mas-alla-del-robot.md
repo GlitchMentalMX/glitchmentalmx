@@ -1,5 +1,6 @@
 ---
 title: 'Qué hace autónomo a un sistema: más allá del robot'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T13:55:00.003Z
 updatedDate: 2026-03-30T02:10:17.715Z
 description: >-

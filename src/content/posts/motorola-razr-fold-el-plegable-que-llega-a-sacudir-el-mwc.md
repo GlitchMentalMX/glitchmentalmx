@@ -1,5 +1,6 @@
 ---
 title: 'Motorola razr fold: el plegable que llega a sacudir el MWC'
+category: Tecnología de Consumo
 pubDate: 2026-03-02T12:28:00.000Z
 updatedDate: 2026-03-17T20:13:25.623Z
 description: >-

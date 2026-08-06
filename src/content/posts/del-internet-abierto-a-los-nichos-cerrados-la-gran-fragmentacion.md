@@ -1,5 +1,6 @@
 ---
 title: 'Del internet abierto a los nichos cerrados: la gran fragmentación'
+category: Cultura Digital
 pubDate: 2026-03-28T01:35:00.002Z
 updatedDate: 2026-06-24T23:58:28.425Z
 description: >-

@@ -1,12 +1,12 @@
 ---
 title: 'La IA que no necesita internet: soberanía en tu bolsillo'
+category: Tecnología de Consumo
 pubDate: 2026-04-18T18:57:00.000Z
 updatedDate: 2026-04-18T18:57:59.455Z
 description: >-
   Toda la IA que usas hoy envía tus datos a servidores que no controlas, procesa
   tu información en hardware que no es tuyo y puede desaparecer mañana si la…
-heroImage: >-
-  /images/posts/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/hero.jpg
+heroImage: /images/posts/la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo/hero.jpg
 heroImageAlt: >-
   IA que no necesita internet: mujer usando smartphone sin conexión en entorno
   urbano

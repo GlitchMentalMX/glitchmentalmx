@@ -1,5 +1,6 @@
 ---
 title: 'La comodidad que el algoritmo no te impuso, la elegiste'
+category: Cultura Digital
 pubDate: 2026-07-27T11:00:00.000Z
 updatedDate: 2026-07-27T11:00:00.114Z
 description: >-

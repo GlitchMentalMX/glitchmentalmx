@@ -1,5 +1,6 @@
 ---
 title: Samsung presenta monitor gaming de 1040Hz (el más rápido del mundo)
+category: Tendencias Digitales
 pubDate: 2026-01-07T12:14:00.000Z
 updatedDate: 2026-06-22T01:41:31.845Z
 description: >-

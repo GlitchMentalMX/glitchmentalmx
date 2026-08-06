@@ -1,5 +1,6 @@
 ---
 title: 'Copilot es entretenimiento: lo dice el contrato de Microsoft'
+category: Inteligencia Artificial
 pubDate: 2026-04-17T12:47:00.000Z
 updatedDate: 2026-06-15T16:32:06.546Z
 description: >-

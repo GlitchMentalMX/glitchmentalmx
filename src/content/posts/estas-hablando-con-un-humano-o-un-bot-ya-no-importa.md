@@ -1,5 +1,6 @@
 ---
 title: ¿Estás hablando con un humano o un bot? Ya no importa
+category: Tendencias Digitales
 pubDate: 2026-05-22T11:00:00.000Z
 updatedDate: 2026-07-09T02:35:02.302Z
 description: >-

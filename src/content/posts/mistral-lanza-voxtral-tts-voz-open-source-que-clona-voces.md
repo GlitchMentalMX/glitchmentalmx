@@ -1,5 +1,6 @@
 ---
 title: 'Mistral lanza Voxtral TTS: voz open source que clona voces'
+category: Inteligencia Artificial
 pubDate: 2026-03-30T12:50:00.006Z
 updatedDate: 2026-03-30T12:50:56.008Z
 description: >-

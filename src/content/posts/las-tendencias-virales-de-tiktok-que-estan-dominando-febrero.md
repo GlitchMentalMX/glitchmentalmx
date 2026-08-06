@@ -1,5 +1,6 @@
 ---
 title: Las tendencias virales de TikTok que están dominando febrero
+category: Tendencias Digitales
 pubDate: 2026-02-04T12:51:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-

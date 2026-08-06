@@ -1,5 +1,6 @@
 ---
 title: 'Pixel 10a oficial: $499, diseño plano y 7 años de soporte'
+category: Tecnología de Consumo
 pubDate: 2026-02-19T12:05:00.000Z
 updatedDate: 2026-06-23T04:00:53.649Z
 description: >-

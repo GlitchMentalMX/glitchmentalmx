@@ -1,5 +1,6 @@
 ---
 title: Consultaron al Papa. Luego automatizaron a sus feligreses
+category: Inteligencia Artificial
 pubDate: 2026-04-27T04:39:00.002Z
 updatedDate: 2026-07-09T02:28:03.757Z
 description: >-

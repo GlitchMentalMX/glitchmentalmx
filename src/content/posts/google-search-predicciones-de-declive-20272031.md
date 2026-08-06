@@ -1,5 +1,6 @@
 ---
 title: 'Google Search: predicciones de declive 2027–2031'
+category: Inteligencia Artificial
 pubDate: 2026-03-17T11:58:00.004Z
 updatedDate: 2026-06-06T19:32:19.103Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Amazon mete IA en tu salud — y tus datos van con ella
+category: Inteligencia Artificial
 pubDate: 2026-03-24T12:02:00.006Z
 updatedDate: 2026-03-24T12:02:49.362Z
 description: >-

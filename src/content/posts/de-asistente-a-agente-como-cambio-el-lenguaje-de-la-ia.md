@@ -1,5 +1,6 @@
 ---
 title: 'De "asistente" a "agente": cómo cambió el lenguaje de la IA'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T03:44:00.004Z
 updatedDate: 2026-03-30T02:09:11.891Z
 description: >-

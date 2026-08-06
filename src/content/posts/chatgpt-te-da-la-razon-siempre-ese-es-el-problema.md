@@ -1,5 +1,6 @@
 ---
 title: 'ChatGPT te da la razón siempre: ese es el problema'
+category: Cultura Digital
 pubDate: 2026-04-09T13:01:00.001Z
 updatedDate: 2026-06-04T16:16:14.013Z
 description: >-

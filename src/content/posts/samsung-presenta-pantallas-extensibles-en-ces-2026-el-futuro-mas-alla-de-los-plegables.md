@@ -2,6 +2,7 @@
 title: >-
   Samsung presenta pantallas extensibles en CES 2026: el futuro más allá de los
   plegables
+category: Tecnología de Consumo
 pubDate: 2026-01-29T12:40:00.000Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Los 15 mejores gadgets de CES 2026 que puedes comprar este año
+category: Tecnología de Consumo
 pubDate: 2026-01-07T12:20:00.000Z
 updatedDate: 2026-06-30T19:14:32.790Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'IA que sustituye vs IA que amplifica: dos relatos, un negocio'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T03:54:00.003Z
 updatedDate: 2026-03-29T03:54:21.307Z
 description: >-

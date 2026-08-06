@@ -1,5 +1,6 @@
 ---
 title: 'Ya no eliges qué ver: así funciona la recomendación algorítmica'
+category: Tendencias Digitales
 pubDate: 2026-03-28T00:18:00.001Z
 updatedDate: 2026-03-28T00:18:09.337Z
 description: >-

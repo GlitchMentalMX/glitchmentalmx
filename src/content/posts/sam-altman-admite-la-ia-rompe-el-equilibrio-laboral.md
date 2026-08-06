@@ -1,5 +1,6 @@
 ---
 title: 'Sam Altman admite: la IA rompe el equilibrio laboral'
+category: Inteligencia Artificial
 pubDate: 2026-03-13T12:56:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-

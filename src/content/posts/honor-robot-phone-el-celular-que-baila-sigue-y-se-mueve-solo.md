@@ -1,5 +1,6 @@
 ---
 title: 'HONOR Robot Phone: el celular que baila, sigue y se mueve solo'
+category: Tecnología de Consumo
 pubDate: 2026-03-02T12:30:00.000Z
 updatedDate: 2026-03-17T20:13:25.886Z
 description: >-

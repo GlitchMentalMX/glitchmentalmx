@@ -1,5 +1,6 @@
 ---
 title: 'Editar el ADN cuesta 2.2 mdd: quién puede pagarlo'
+category: Tendencias Digitales
 pubDate: 2026-06-03T11:00:00.000Z
 updatedDate: 2026-07-09T02:40:21.878Z
 description: >-

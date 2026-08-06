@@ -1,5 +1,6 @@
 ---
 title: 'Apple desarrolla tres wearables con IA: lo que sabemos'
+category: Tecnología de Consumo
 pubDate: 2026-02-23T14:38:00.000Z
 updatedDate: 2026-03-17T20:13:25.621Z
 description: >-

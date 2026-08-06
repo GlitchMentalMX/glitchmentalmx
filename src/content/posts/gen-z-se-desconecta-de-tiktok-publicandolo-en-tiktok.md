@@ -1,5 +1,6 @@
 ---
 title: Gen Z se desconecta de TikTok… publicándolo en TikTok
+category: Tendencias Digitales
 pubDate: 2026-02-19T12:07:00.000Z
 updatedDate: 2026-06-23T04:04:29.261Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Por qué la IA en redes no tiene nada que ver con la real
+category: Inteligencia Artificial
 pubDate: 2026-04-06T11:00:00.001Z
 updatedDate: 2026-04-06T11:00:00.122Z
 description: >-

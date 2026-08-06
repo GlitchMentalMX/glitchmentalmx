@@ -1,5 +1,6 @@
 ---
 title: 'NVIDIA anuncia G-SYNC Pulsar: claridad de 1000Hz sin sacrificar suavidad'
+category: Cultura Digital
 pubDate: 2026-01-07T12:17:00.000Z
 updatedDate: 2026-06-22T01:46:30.655Z
 description: >-

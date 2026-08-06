@@ -1,5 +1,6 @@
 ---
 title: Reddit obliga a los bots a identificarse hoy mismo
+category: Cultura Digital
 pubDate: 2026-03-31T12:58:00.007Z
 updatedDate: 2026-03-31T12:59:51.348Z
 description: >-

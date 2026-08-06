@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z y la obsesión por el tiempo: por qué abandonan las apps lentas'
+category: Cultura Digital
 pubDate: 2026-01-29T12:45:00.000Z
 updatedDate: 2026-06-22T22:39:02.711Z
 description: >-

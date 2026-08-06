@@ -1,5 +1,6 @@
 ---
 title: Para qué sirve Claude si no eres programador
+category: Inteligencia Artificial
 pubDate: 2026-03-29T02:52:00.002Z
 updatedDate: 2026-03-29T02:52:30.522Z
 description: >-

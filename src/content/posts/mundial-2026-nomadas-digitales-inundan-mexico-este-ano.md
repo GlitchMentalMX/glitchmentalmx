@@ -1,5 +1,6 @@
 ---
 title: 'Mundial 2026: nómadas digitales inundan México este año'
+category: Tendencias Digitales
 pubDate: 2026-04-07T12:43:00.006Z
 updatedDate: 2026-06-15T13:34:05.358Z
 description: >-

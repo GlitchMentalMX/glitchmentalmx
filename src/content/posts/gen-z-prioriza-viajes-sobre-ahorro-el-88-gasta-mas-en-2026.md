@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z prioriza viajes sobre ahorro: el 88% gasta más en 2026'
+category: Tendencias Digitales
 pubDate: 2026-02-11T14:20:00.000Z
 updatedDate: 2026-06-23T02:34:12.549Z
 description: >-

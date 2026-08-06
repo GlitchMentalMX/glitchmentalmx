@@ -1,5 +1,6 @@
 ---
 title: ¿Tu Mac trabajando sola? La startup que levantó $21M
+category: Tecnología de Consumo
 pubDate: 2025-12-19T14:21:00.000Z
 updatedDate: 2026-06-12T11:30:14.640Z
 description: >-

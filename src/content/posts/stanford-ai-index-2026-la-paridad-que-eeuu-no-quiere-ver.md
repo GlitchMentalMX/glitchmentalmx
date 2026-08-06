@@ -1,5 +1,6 @@
 ---
 title: 'Stanford AI Index 2026: la paridad que EE.UU. no quiere ver'
+category: Inteligencia Artificial
 pubDate: 2026-04-28T11:02:00.001Z
 updatedDate: 2026-06-27T03:08:57.706Z
 description: >-

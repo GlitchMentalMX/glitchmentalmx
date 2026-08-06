@@ -1,5 +1,6 @@
 ---
 title: 'Qualcomm quiere poner IA en tu muñeca, pin y pendiente'
+category: Tecnología de Consumo
 pubDate: 2026-03-12T12:17:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'BMG demanda a Anthropic: cuando la IA canta sin permiso'
+category: Inteligencia Artificial
 pubDate: 2026-03-20T12:54:00.003Z
 updatedDate: 2026-03-20T12:54:53.468Z
 description: >-

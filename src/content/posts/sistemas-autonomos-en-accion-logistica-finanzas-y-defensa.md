@@ -1,5 +1,6 @@
 ---
 title: 'Sistemas autónomos en acción: logística, finanzas y defensa'
+category: Inteligencia Artificial
 pubDate: 2026-03-29T14:05:00.001Z
 updatedDate: 2026-03-29T19:31:30.572Z
 description: >-

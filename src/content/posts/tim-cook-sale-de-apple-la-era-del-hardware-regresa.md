@@ -1,5 +1,6 @@
 ---
 title: 'Tim Cook sale de Apple: la era del hardware regresa'
+category: Tecnología de Consumo
 pubDate: 2026-04-21T11:00:00.020Z
 updatedDate: 2026-04-21T11:00:00.113Z
 description: >-

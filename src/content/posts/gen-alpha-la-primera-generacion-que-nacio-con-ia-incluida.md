@@ -1,5 +1,6 @@
 ---
 title: 'Gen Alpha: la primera generación que nació con IA incluida'
+category: Cultura Digital
 pubDate: 2026-03-04T13:53:00.000Z
 updatedDate: 2026-03-17T20:39:32.987Z
 description: >-

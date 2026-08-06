@@ -1,12 +1,12 @@
 ---
 title: 'Project Prometheus: la IA física de Bezos vale $38,000 MDD'
+category: Inteligencia Artificial
 pubDate: 2026-04-22T12:26:00.005Z
 updatedDate: 2026-04-22T12:26:45.888Z
 description: >-
   Project Prometheus**, el laboratorio de inteligencia artificial de Jeff Bezos,
   está a punto de cerrar una ronda de financiamiento por $10,000 millones de…
-heroImage: >-
-  /images/posts/project-prometheus-la-ia-fisica-de-bezos-vale-38000-mdd/hero.jpg
+heroImage: /images/posts/project-prometheus-la-ia-fisica-de-bezos-vale-38000-mdd/hero.jpg
 heroImageAlt: >-
   Project Prometheus: mujer instalando cámaras en almacén automatizado con
   robots y sensores

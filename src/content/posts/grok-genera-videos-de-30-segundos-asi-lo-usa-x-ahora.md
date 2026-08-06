@@ -1,5 +1,6 @@
 ---
 title: 'Grok genera videos de 30 segundos: así lo usa X ahora'
+category: Tendencias Digitales
 pubDate: 2026-03-16T12:58:00.002Z
 updatedDate: 2026-03-17T17:57:13.617Z
 description: >-

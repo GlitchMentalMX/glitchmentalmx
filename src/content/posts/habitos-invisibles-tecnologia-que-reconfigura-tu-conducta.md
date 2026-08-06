@@ -1,5 +1,6 @@
 ---
 title: 'Hábitos invisibles: tecnología que reconfigura tu conducta'
+category: Cultura Digital
 pubDate: 2026-03-27T11:02:00.016Z
 updatedDate: 2026-03-27T11:02:00.110Z
 description: >-

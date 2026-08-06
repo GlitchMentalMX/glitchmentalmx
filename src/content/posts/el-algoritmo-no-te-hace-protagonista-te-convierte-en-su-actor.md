@@ -1,5 +1,6 @@
 ---
 title: 'El algoritmo no te hace protagonista: te convierte en su actor'
+category: Cultura Digital
 pubDate: 2026-06-11T03:54:56.903Z
 updatedDate: 2026-06-11T03:54:56.904Z
 description: >-

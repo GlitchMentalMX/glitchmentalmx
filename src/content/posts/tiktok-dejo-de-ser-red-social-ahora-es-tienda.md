@@ -1,5 +1,6 @@
 ---
 title: 'TikTok dejó de ser red social: ahora es tienda'
+category: Tendencias Digitales
 pubDate: 2025-11-18T18:04:00.000Z
 updatedDate: 2026-06-30T18:37:08.838Z
 description: >-

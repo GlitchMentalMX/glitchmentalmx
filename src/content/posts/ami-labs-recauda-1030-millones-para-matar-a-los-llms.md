@@ -1,5 +1,6 @@
 ---
 title: 'AMI Labs recauda $1,030 millones para matar a los LLMs'
+category: Inteligencia Artificial
 pubDate: 2026-03-10T12:15:00.000Z
 updatedDate: 2026-06-24T04:08:20.704Z
 description: >-

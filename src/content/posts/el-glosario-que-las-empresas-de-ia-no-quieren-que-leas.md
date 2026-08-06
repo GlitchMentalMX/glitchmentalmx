@@ -1,5 +1,6 @@
 ---
 title: El glosario que las empresas de IA no quieren que leas
+category: Inteligencia Artificial
 pubDate: 2026-03-29T03:51:00.002Z
 updatedDate: 2026-03-29T03:51:26.580Z
 description: >-

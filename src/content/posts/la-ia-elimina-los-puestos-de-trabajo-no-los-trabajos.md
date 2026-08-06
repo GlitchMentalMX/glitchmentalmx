@@ -1,5 +1,6 @@
 ---
 title: 'La IA elimina los puestos de trabajo, no los trabajos'
+category: Inteligencia Artificial
 pubDate: 2026-02-27T13:20:00.000Z
 updatedDate: 2026-06-23T16:21:40.180Z
 description: >-

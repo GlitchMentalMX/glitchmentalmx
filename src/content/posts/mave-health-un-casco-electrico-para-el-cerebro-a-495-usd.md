@@ -1,5 +1,6 @@
 ---
 title: 'Mave Health: un casco eléctrico para el cerebro a $495 USD'
+category: Tecnología de Consumo
 pubDate: 2026-03-20T12:56:00.007Z
 updatedDate: 2026-03-20T13:35:28.493Z
 description: >-

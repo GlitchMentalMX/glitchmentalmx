@@ -1,5 +1,6 @@
 ---
 title: 'Cómo usar agentes de IA en 2026: guía práctica sin tecnicismos'
+category: Inteligencia Artificial
 pubDate: 2026-01-05T13:15:00.000Z
 updatedDate: 2026-06-21T03:02:21.593Z
 description: >-

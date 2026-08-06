@@ -1,5 +1,6 @@
 ---
 title: 'Web3: la descentralización que siempre fue un pitch'
+category: Tendencias Digitales
 pubDate: 2026-05-29T11:00:00.000Z
 updatedDate: 2026-07-09T02:37:05.453Z
 description: >-

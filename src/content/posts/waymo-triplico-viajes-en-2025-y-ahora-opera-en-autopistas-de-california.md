@@ -1,5 +1,6 @@
 ---
 title: Waymo triplicó viajes en 2025 y ahora opera en autopistas de California
+category: Tecnología de Consumo
 pubDate: 2026-01-09T12:45:00.000Z
 updatedDate: 2026-06-22T01:56:55.697Z
 description: >-

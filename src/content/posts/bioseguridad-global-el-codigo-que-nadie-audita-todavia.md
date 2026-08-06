@@ -1,5 +1,6 @@
 ---
 title: 'Bioseguridad global: el código que nadie audita todavía'
+category: Tendencias Digitales
 pubDate: 2026-06-17T11:00:00.000Z
 updatedDate: 2026-07-09T02:41:53.165Z
 description: >-

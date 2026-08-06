@@ -1,5 +1,6 @@
 ---
 title: 'Bluesky en 2026: creció por enojo, no por convicción'
+category: Tendencias Digitales
 pubDate: 2026-03-06T12:43:00.000Z
 updatedDate: 2026-03-17T17:57:13.924Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Tablets 2-en-1 2026: guía completa para creadores y gamers'
+category: Tecnología de Consumo
 pubDate: 2026-02-11T14:24:00.000Z
 updatedDate: 2026-06-23T02:42:40.517Z
 description: >-

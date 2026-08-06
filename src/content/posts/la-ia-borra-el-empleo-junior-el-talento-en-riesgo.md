@@ -1,5 +1,6 @@
 ---
 title: 'La IA borra el empleo junior: el talento en riesgo'
+category: Inteligencia Artificial
 pubDate: 2026-02-23T14:36:00.000Z
 updatedDate: 2026-06-23T13:09:48.687Z
 description: >-

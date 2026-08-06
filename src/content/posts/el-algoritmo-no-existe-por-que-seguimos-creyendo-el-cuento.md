@@ -1,5 +1,6 @@
 ---
 title: 'El algoritmo no existe: por qué seguimos creyendo el cuento'
+category: Tendencias Digitales
 pubDate: 2026-05-25T11:00:00.000Z
 updatedDate: 2026-07-09T02:35:37.363Z
 description: >-

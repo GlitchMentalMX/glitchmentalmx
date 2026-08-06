@@ -1,5 +1,6 @@
 ---
 title: El fin de lo "viral" como fenómeno orgánico
+category: Cultura Digital
 pubDate: 2026-03-25T11:10:00.016Z
 updatedDate: 2026-06-24T16:14:10.891Z
 description: >-

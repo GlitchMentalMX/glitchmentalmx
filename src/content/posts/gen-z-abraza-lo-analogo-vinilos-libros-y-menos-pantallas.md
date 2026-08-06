@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z abraza lo análogo: vinilos, libros y menos pantallas'
+category: Cultura Digital
 pubDate: 2026-02-25T12:53:00.000Z
 updatedDate: 2026-03-17T20:39:32.984Z
 description: >-

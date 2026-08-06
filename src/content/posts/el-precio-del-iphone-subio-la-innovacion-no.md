@@ -1,5 +1,6 @@
 ---
 title: 'El precio del iPhone subió, la innovación no'
+category: Tecnología de Consumo
 pubDate: 2025-11-14T22:18:00.000Z
 updatedDate: 2026-06-13T00:40:32.727Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Cómo preparar tu carrera para la IA en 2026: guía real'
+category: Inteligencia Artificial
 pubDate: 2026-03-13T12:54:00.000Z
 updatedDate: 2026-06-06T19:33:02.556Z
 description: >-

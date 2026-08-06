@@ -1,5 +1,6 @@
 ---
 title: 'GPT-5.3 vs. Claude: la ética como arma de marketing'
+category: Inteligencia Artificial
 pubDate: 2026-03-05T12:14:00.000Z
 updatedDate: 2026-06-23T23:06:53.089Z
 description: >-

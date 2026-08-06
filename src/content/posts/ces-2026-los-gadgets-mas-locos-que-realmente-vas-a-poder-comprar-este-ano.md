@@ -1,5 +1,6 @@
 ---
 title: 'CES 2026: los gadgets más locos que realmente vas a poder comprar este año'
+category: Tecnología de Consumo
 pubDate: 2026-01-16T14:00:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-

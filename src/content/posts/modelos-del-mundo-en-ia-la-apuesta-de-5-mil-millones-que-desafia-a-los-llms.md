@@ -1,5 +1,6 @@
 ---
 title: 'Modelos del mundo en IA: la apuesta de $5 mil millones que desafía a los LLMs'
+category: Inteligencia Artificial
 pubDate: 2026-01-26T13:10:00.000Z
 updatedDate: 2026-06-22T19:52:38.358Z
 description: >-

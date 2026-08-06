@@ -1,5 +1,6 @@
 ---
 title: ¿La IA cura la soledad? Guía sobre robots de compañía
+category: Cultura Digital
 pubDate: 2026-04-07T12:50:00.001Z
 updatedDate: 2026-06-15T00:26:57.593Z
 description: >-

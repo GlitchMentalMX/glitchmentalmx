@@ -1,5 +1,6 @@
 ---
 title: Hyundai presenta robots con IA en CES 2026 para trabajar con humanos
+category: Tecnología de Consumo
 pubDate: 2026-01-06T12:05:00.000Z
 updatedDate: 2026-06-30T19:09:47.642Z
 description: >-

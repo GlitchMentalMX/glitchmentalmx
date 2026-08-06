@@ -2,6 +2,7 @@
 title: >-
   La red social del futuro no es para ti: cómo los agentes de IA están tomando
   las plataformas
+category: Inteligencia Artificial
 pubDate: 2026-03-12T11:18:00.000Z
 updatedDate: 2026-06-06T19:35:32.826Z
 description: >-

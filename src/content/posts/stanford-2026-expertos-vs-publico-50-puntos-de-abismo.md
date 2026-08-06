@@ -1,5 +1,6 @@
 ---
 title: 'Stanford 2026: expertos vs. público, 50 puntos de abismo'
+category: Inteligencia Artificial
 pubDate: 2026-04-22T12:24:00.002Z
 updatedDate: 2026-04-22T12:24:20.261Z
 description: >-

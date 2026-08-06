@@ -1,5 +1,6 @@
 ---
 title: 'ProducerAI: Google quiere ser tu productor musical'
+category: Inteligencia Artificial
 pubDate: 2026-02-26T13:02:00.000Z
 updatedDate: 2026-06-30T19:57:15.476Z
 description: >-

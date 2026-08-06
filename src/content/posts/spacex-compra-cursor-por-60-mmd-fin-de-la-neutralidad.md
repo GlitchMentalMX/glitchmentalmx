@@ -1,5 +1,6 @@
 ---
 title: 'SpaceX compra Cursor por 60 mmd: fin de la neutralidad'
+category: Tendencias Digitales
 pubDate: 2026-04-24T13:06:00.003Z
 updatedDate: 2026-06-26T03:00:48.430Z
 description: >-

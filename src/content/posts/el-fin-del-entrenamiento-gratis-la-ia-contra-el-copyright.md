@@ -1,5 +1,6 @@
 ---
 title: 'El fin del entrenamiento gratis: la IA contra el copyright'
+category: Inteligencia Artificial
 pubDate: 2026-04-16T12:36:00.001Z
 updatedDate: 2026-06-15T15:13:26.320Z
 description: >-

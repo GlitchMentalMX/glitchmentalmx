@@ -1,5 +1,6 @@
 ---
 title: 'Recinto Fiscalizado Estratégico: la aduana que decide'
+category: Inteligencia Artificial
 pubDate: 2026-07-08T22:22:29.555Z
 updatedDate: 2026-07-08T22:22:29.660Z
 description: >-

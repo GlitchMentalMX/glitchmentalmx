@@ -1,5 +1,6 @@
 ---
 title: 'Mensajería privada: cómo elegir la app que sí protege'
+category: Tecnología de Consumo
 pubDate: 2026-06-07T01:58:29.842Z
 updatedDate: 2026-06-07T01:58:29.843Z
 description: >-

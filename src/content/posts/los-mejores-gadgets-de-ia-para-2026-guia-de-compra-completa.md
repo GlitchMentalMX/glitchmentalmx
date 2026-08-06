@@ -1,5 +1,6 @@
 ---
 title: 'Los mejores gadgets de IA para 2026: guía de compra completa'
+category: Tecnología de Consumo
 pubDate: 2026-01-21T13:59:00.000Z
 updatedDate: 2026-06-22T15:38:19.369Z
 description: >-

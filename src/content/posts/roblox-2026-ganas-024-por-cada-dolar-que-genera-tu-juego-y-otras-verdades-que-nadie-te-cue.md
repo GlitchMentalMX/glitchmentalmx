@@ -2,6 +2,7 @@
 title: >-
   Roblox 2026: ganas $0.24 por cada dólar que genera tu juego (y otras verdades
   que nadie te cuenta)
+category: Cultura Digital
 pubDate: 2026-02-04T13:06:00.000Z
 updatedDate: 2026-06-06T19:47:22.290Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: El problema del control humano en IA autónoma
+category: Inteligencia Artificial
 pubDate: 2026-03-29T14:08:00.000Z
 updatedDate: 2026-06-26T00:55:12.671Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Google admite: los anuncios en Gemini son inevitables'
+category: Tendencias Digitales
 pubDate: 2026-03-23T13:27:00.007Z
 updatedDate: 2026-03-23T13:29:06.237Z
 description: >-

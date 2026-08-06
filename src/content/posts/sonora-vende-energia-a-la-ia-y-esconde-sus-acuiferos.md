@@ -1,5 +1,6 @@
 ---
 title: Sonora vende energía a la IA y esconde sus acuíferos
+category: Inteligencia Artificial
 pubDate: 2026-07-07T11:05:00.000Z
 updatedDate: 2026-07-08T13:21:40.767Z
 description: >-

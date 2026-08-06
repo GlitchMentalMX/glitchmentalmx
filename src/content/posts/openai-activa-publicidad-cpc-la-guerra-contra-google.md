@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI activa publicidad CPC: la guerra contra Google'
+category: Inteligencia Artificial
 pubDate: 2026-04-22T12:28:00.006Z
 updatedDate: 2026-04-22T12:28:53.185Z
 description: >-

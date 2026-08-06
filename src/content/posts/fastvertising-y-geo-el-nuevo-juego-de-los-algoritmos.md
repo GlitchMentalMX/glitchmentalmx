@@ -1,5 +1,6 @@
 ---
 title: 'Fastvertising y GEO: el nuevo juego de los algoritmos'
+category: Tendencias Digitales
 pubDate: 2026-03-10T12:19:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-

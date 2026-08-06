@@ -1,5 +1,6 @@
 ---
 title: 'Gen Z en 2026: cómo consume redes sociales ahora'
+category: Cultura Digital
 pubDate: 2026-01-02T13:08:00.000Z
 updatedDate: 2026-06-22T01:27:18.229Z
 description: >-

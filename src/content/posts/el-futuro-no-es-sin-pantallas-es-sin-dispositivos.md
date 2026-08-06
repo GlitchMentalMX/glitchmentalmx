@@ -1,5 +1,6 @@
 ---
 title: 'El futuro no es sin pantallas: es sin dispositivos'
+category: Tendencias Digitales
 pubDate: 2026-08-04T11:00:00.000Z
 updatedDate: 2026-08-04T11:00:00.114Z
 description: >-

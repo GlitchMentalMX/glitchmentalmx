@@ -1,5 +1,6 @@
 ---
 title: 'Anthropic y el Vaticano: la alianza de IA que sí existe'
+category: Inteligencia Artificial
 pubDate: 2026-04-27T04:27:00.000Z
 updatedDate: 2026-07-09T02:19:51.261Z
 description: >-

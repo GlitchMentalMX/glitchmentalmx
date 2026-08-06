@@ -1,5 +1,6 @@
 ---
 title: Gen Z convirtió el 2026 en un calendario de hype programado
+category: Tendencias Digitales
 pubDate: 2026-02-24T12:36:00.000Z
 updatedDate: 2026-06-23T14:29:26.837Z
 description: >-

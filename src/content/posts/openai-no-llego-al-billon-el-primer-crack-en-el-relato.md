@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI no llegó al billón: el primer crack en el relato'
+category: Inteligencia Artificial
 pubDate: 2026-04-29T11:01:00.011Z
 updatedDate: 2026-04-29T11:01:00.115Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Agentes de IA: la empresa sin jefes que nadie pidió'
+category: Inteligencia Artificial
 pubDate: 2026-04-18T11:44:00.004Z
 updatedDate: 2026-06-26T02:12:21.402Z
 description: >-

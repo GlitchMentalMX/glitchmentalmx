@@ -1,5 +1,6 @@
 ---
 title: Walmart compró Vizio por $2.3 mil millones solo para obtener tus datos de TV
+category: Cultura Digital
 pubDate: 2026-01-08T12:25:00.000Z
 updatedDate: 2026-06-13T19:09:33.011Z
 description: >-

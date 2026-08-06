@@ -1,5 +1,6 @@
 ---
 title: 'NVIDIA GTC 2026: Jensen Huang presenta Vera Rubin hoy'
+category: Tecnología de Consumo
 pubDate: 2026-03-16T12:52:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-

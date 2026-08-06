@@ -1,5 +1,6 @@
 ---
 title: 'Por qué la IA alucina: cómo funciona realmente'
+category: Inteligencia Artificial
 pubDate: 2025-11-20T17:27:00.000Z
 updatedDate: 2026-06-13T01:19:23.723Z
 description: >-

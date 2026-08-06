@@ -1,5 +1,6 @@
 ---
 title: 'Estudio del MIT: la IA pasa el mínimo laboral, no más'
+category: Inteligencia Artificial
 pubDate: 2026-04-06T12:54:00.005Z
 updatedDate: 2026-04-06T12:54:45.089Z
 description: >-

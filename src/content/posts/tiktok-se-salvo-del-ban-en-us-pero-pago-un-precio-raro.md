@@ -1,5 +1,6 @@
 ---
 title: TikTok se salvó del ban en US pero pagó un precio raro
+category: Tendencias Digitales
 pubDate: 2025-12-20T13:22:00.000Z
 updatedDate: 2026-06-13T01:46:59.188Z
 description: >-

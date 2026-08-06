@@ -1,5 +1,6 @@
 ---
 title: 'Éric Sadin: la IA no nos va a matar, nos va a idiotizar'
+category: Inteligencia Artificial
 pubDate: 2026-04-09T13:03:00.002Z
 updatedDate: 2026-04-09T13:03:22.779Z
 description: >-

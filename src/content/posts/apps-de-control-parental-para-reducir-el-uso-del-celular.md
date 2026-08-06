@@ -1,5 +1,6 @@
 ---
 title: Apps de control parental para reducir el uso del celular
+category: Cultura Digital
 pubDate: 2026-04-02T12:50:00.003Z
 updatedDate: 2026-04-02T12:50:24.653Z
 description: >-

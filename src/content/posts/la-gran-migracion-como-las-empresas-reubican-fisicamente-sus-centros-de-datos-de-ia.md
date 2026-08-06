@@ -2,6 +2,7 @@
 title: >-
   La gran migración: cómo las empresas reubican físicamente sus centros de datos
   de IA
+category: Inteligencia Artificial
 pubDate: 2026-01-28T13:03:00.000Z
 updatedDate: 2026-06-22T22:27:45.899Z
 description: >-

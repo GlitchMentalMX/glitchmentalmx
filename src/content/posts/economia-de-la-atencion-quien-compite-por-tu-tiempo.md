@@ -1,5 +1,6 @@
 ---
 title: 'Economía de la atención: quién compite por tu tiempo'
+category: Cultura Digital
 pubDate: 2026-03-24T12:09:00.003Z
 updatedDate: 2026-03-24T12:09:48.129Z
 description: >-

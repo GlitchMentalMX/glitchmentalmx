@@ -1,5 +1,6 @@
 ---
 title: Las redes sociales son máquinas de vigilancia entre pares
+category: Tendencias Digitales
 pubDate: 2026-05-27T11:00:00.000Z
 updatedDate: 2026-07-09T02:36:36.588Z
 description: >-

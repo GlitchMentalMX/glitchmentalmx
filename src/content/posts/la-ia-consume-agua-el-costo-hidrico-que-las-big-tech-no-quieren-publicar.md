@@ -1,5 +1,6 @@
 ---
 title: 'La IA consume agua: el costo hídrico que las big tech no quieren publicar'
+category: Tecnología de Consumo
 pubDate: 2025-12-26T14:56:00.000Z
 updatedDate: 2026-06-13T02:06:12.532Z
 description: >-

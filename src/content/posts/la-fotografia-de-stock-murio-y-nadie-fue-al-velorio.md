@@ -1,5 +1,6 @@
 ---
 title: La fotografía de stock murió y nadie fue al velorio
+category: Inteligencia Artificial
 pubDate: 2026-05-11T11:00:00.019Z
 updatedDate: 2026-07-09T02:30:02.545Z
 description: >-

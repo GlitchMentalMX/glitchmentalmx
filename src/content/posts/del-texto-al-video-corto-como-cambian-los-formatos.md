@@ -1,5 +1,6 @@
 ---
 title: 'Del texto al video corto: cómo cambian los formatos'
+category: Tendencias Digitales
 pubDate: 2026-03-27T11:04:00.013Z
 updatedDate: 2026-06-14T18:35:04.228Z
 description: >-

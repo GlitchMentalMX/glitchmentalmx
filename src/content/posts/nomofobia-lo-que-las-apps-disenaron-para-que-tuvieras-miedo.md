@@ -1,5 +1,6 @@
 ---
 title: 'Nomofobia: lo que las apps diseñaron para que tuvieras miedo'
+category: Tendencias Digitales
 pubDate: 2026-04-02T12:45:00.001Z
 updatedDate: 2026-06-07T03:10:46.162Z
 description: >-

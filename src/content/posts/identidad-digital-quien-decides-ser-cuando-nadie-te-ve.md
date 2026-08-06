@@ -1,5 +1,6 @@
 ---
 title: 'Identidad digital: quién decides ser cuando nadie te ve'
+category: Cultura Digital
 pubDate: 2026-06-08T11:00:00.000Z
 updatedDate: 2026-07-09T02:43:01.118Z
 description: >-

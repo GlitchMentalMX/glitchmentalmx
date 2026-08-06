@@ -1,5 +1,6 @@
 ---
 title: 'Meta recortará 16,000 empleos: la IA como argumento'
+category: Inteligencia Artificial
 pubDate: 2026-03-16T12:56:00.003Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-

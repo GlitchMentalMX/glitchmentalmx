@@ -1,5 +1,6 @@
 ---
 title: 'DeepSeek: la guía práctica para usarlo bien'
+category: Inteligencia Artificial
 pubDate: 2026-06-11T12:33:16.528Z
 updatedDate: 2026-06-27T04:25:11.966Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'La IA no te entiende: por qué esa palabra importa tanto'
+category: Inteligencia Artificial
 pubDate: 2026-04-03T12:34:00.004Z
 updatedDate: 2026-06-04T15:44:21.644Z
 description: >-

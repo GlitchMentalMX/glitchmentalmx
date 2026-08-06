@@ -1,5 +1,6 @@
 ---
 title: 'Claude Mythos: Anthropic filtró su modelo más peligroso'
+category: Inteligencia Artificial
 pubDate: 2026-03-31T12:55:00.005Z
 updatedDate: 2026-03-31T12:55:57.427Z
 description: >-

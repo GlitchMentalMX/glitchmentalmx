@@ -1,5 +1,6 @@
 ---
 title: 'DeepSeek V4: la IA china que tiene a OpenAI en alerta máxima'
+category: Inteligencia Artificial
 pubDate: 2026-01-21T13:54:00.000Z
 updatedDate: 2026-06-22T15:22:42.585Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Geoffrey Hinton dice que IA avanzó más rápido de lo que pensaba
+category: Inteligencia Artificial
 pubDate: 2025-12-29T15:09:00.000Z
 updatedDate: 2026-06-13T02:11:26.627Z
 description: >-

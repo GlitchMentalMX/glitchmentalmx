@@ -1,5 +1,6 @@
 ---
 title: 'El 74/20 de la IA: por qué casi nadie gana con ella'
+category: Inteligencia Artificial
 pubDate: 2026-04-23T12:30:00.002Z
 updatedDate: 2026-06-26T02:56:03.144Z
 description: >-

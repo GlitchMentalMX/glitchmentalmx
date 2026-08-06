@@ -1,5 +1,6 @@
 ---
 title: 'Huawei vuelve con todo: Watch GT Runner 2 y más gadgets'
+category: Tecnología de Consumo
 pubDate: 2026-02-27T13:19:00.000Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-

@@ -1,0 +1,74 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { categories } from '../../../data/categories';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  return categories.flatMap((cat) => {
+    const filtered = allPosts.filter((p) => p.data.category === cat.name);
+    return paginate(filtered, { params: { category: cat.slug }, pageSize: 24 });
+  });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const { category: categorySlugParam } = Astro.params;
+const category = categories.find((c) => c.slug === categorySlugParam)!;
+---
+
+<Layout
+  title={category.name}
+  description={`Todos los artículos de glitchmentalMX en la categoría ${category.name}.`}
+>
+  <section class="container header">
+    <p class="eyebrow">Categoría</p>
+    <h1>{category.name}</h1>
+    <p class="sub">{page.total} artículos.</p>
+  </section>
+
+  <section class="container list">
+    {page.data.map((post) => (
+      <ArticleCard
+        slug={post.id}
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        heroImage={post.data.heroImage}
+        heroImageAlt={post.data.heroImageAlt}
+        body={post.body}
+        variant="compact"
+      />
+    ))}
+  </section>
+
+  <nav class="container pager" aria-label="Paginación">
+    {page.url.prev ? <a href={page.url.prev} class="btn btn-ghost">← Más recientes</a> : <span />}
+    <span class="eyebrow">Página {page.currentPage} de {page.lastPage}</span>
+    {page.url.next ? <a href={page.url.next} class="btn btn-ghost">Más antiguos →</a> : <span />}
+  </nav>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 32px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
+  .sub { color: var(--text-muted); }
+
+  .list {
+    padding: 20px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .pager {
+    padding: 32px 24px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+</style>

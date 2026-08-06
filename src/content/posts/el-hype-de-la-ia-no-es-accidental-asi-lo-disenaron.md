@@ -1,5 +1,6 @@
 ---
 title: 'El hype de la IA no es accidental: así lo diseñaron'
+category: Inteligencia Artificial
 pubDate: 2026-05-06T12:51:00.001Z
 updatedDate: 2026-05-06T13:57:26.316Z
 description: >-

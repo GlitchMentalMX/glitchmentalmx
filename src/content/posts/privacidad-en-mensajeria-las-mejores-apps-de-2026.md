@@ -1,5 +1,6 @@
 ---
 title: 'Privacidad en mensajería: las mejores apps de 2026'
+category: Tendencias Digitales
 pubDate: 2026-03-05T12:19:00.000Z
 updatedDate: 2026-07-03T04:06:51.200Z
 description: >-

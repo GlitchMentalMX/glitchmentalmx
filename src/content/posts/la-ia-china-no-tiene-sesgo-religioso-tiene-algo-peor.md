@@ -1,5 +1,6 @@
 ---
 title: La IA china no tiene sesgo religioso — tiene algo peor
+category: Inteligencia Artificial
 pubDate: 2026-04-27T04:36:00.004Z
 updatedDate: 2026-07-09T02:26:13.300Z
 description: >-

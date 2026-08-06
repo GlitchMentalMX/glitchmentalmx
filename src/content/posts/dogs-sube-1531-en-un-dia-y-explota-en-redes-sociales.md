@@ -1,5 +1,6 @@
 ---
 title: '$DOGS sube 1,531% en un día y explota en redes sociales'
+category: Tendencias Digitales
 pubDate: 2026-02-24T12:34:00.000Z
 updatedDate: 2026-06-23T13:30:04.692Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Gadgets 2026: lo útil supera al hype tecnológico'
+category: Tecnología de Consumo
 pubDate: 2026-02-02T17:23:00.000Z
 updatedDate: 2026-06-22T22:53:29.601Z
 description: >-

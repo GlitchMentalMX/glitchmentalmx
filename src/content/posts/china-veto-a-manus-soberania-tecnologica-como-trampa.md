@@ -1,5 +1,6 @@
 ---
 title: 'China vetó a Manus: soberanía tecnológica como trampa'
+category: Inteligencia Artificial
 pubDate: 2026-04-28T11:01:00.001Z
 updatedDate: 2026-04-28T11:01:00.116Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Dell revive la marca XPS en CES 2026 después de haberla "retirado"
+category: Tecnología de Consumo
 pubDate: 2026-01-07T12:06:00.000Z
 updatedDate: 2026-06-22T01:32:46.032Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: China necesita 12 millones de empleos y la IA los complica
+category: Inteligencia Artificial
 pubDate: 2026-03-09T13:06:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Dopamina y diseño: por qué las apps son adictivas'
+category: Cultura Digital
 pubDate: 2026-03-25T11:20:00.002Z
 updatedDate: 2026-03-30T02:04:26.498Z
 description: >-

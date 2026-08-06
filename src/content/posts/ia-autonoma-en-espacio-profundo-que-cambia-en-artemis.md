@@ -1,5 +1,6 @@
 ---
 title: 'IA autónoma en espacio profundo: qué cambia en Artemis'
+category: Inteligencia Artificial
 pubDate: 2026-04-07T11:00:00.001Z
 updatedDate: 2026-04-07T11:00:00.114Z
 description: >-

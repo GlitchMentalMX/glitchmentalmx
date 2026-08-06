@@ -1,5 +1,6 @@
 ---
 title: Por qué sientes que conoces a tu influencer favorito
+category: Cultura Digital
 pubDate: 2026-06-26T11:00:00.000Z
 updatedDate: 2026-07-09T02:46:20.494Z
 description: >-

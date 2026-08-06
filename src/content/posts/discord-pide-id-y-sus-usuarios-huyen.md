@@ -1,5 +1,6 @@
 ---
 title: Discord pide ID y sus usuarios huyen
+category: Cultura Digital
 pubDate: 2026-03-09T13:14:00.000Z
 updatedDate: 2026-03-17T20:39:32.985Z
 description: >-

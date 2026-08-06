@@ -1,5 +1,6 @@
 ---
 title: 'El Prompt Engineer murió: qué reemplazó al rol'
+category: Inteligencia Artificial
 pubDate: 2026-04-24T13:04:00.005Z
 updatedDate: 2026-06-06T20:10:32.814Z
 description: >-

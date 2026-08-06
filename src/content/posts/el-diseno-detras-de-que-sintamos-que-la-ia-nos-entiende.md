@@ -1,12 +1,12 @@
 ---
 title: El diseño detrás de que sintamos que la IA nos entiende
+category: Inteligencia Artificial
 pubDate: 2026-07-15T11:00:00.000Z
 updatedDate: 2026-07-15T11:00:00.114Z
 description: >-
   El antropomorfismo hacia la IA no es un error de percepción: es el resultado
   de un diseño de producto calibrado para producirlo. Cuando ese diseño se topa…
-heroImage: >-
-  /images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/hero.jpg
+heroImage: /images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/hero.jpg
 heroImageAlt: >-
   Antropomorfismo IA: mujer confía secreto a chat cuya luz no le devuelve nada,
   escritorio nocturno

@@ -1,5 +1,6 @@
 ---
 title: 'Instagram SEO en 2026: cómo tus posts ya compiten en Google, no solo por likes'
+category: Tendencias Digitales
 pubDate: 2026-01-26T12:56:00.000Z
 updatedDate: 2026-06-22T19:38:18.479Z
 description: >-

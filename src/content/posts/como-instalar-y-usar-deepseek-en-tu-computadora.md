@@ -1,5 +1,6 @@
 ---
 title: Cómo instalar y usar DeepSeek en tu computadora
+category: Inteligencia Artificial
 pubDate: 2026-03-29T02:55:00.002Z
 updatedDate: 2026-06-14T18:27:40.321Z
 description: >-

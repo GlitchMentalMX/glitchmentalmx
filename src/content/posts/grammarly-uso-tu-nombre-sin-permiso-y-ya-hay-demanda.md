@@ -1,5 +1,6 @@
 ---
 title: Grammarly usó tu nombre sin permiso y ya hay demanda
+category: Cultura Digital
 pubDate: 2026-03-13T12:57:00.000Z
 updatedDate: 2026-03-17T20:39:32.983Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'El metaverso de Meta murió: qué pasó con los $90 mil M'
+category: Cultura Digital
 pubDate: 2026-03-19T12:42:00.003Z
 updatedDate: 2026-03-19T12:42:49.097Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Los incendios de LA expusieron cómo la IA genera desinformación masiva
+category: Cultura Digital
 pubDate: 2026-01-12T14:47:00.000Z
 updatedDate: 2026-06-22T12:48:28.117Z
 description: >-

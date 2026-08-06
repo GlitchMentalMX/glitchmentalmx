@@ -1,5 +1,6 @@
 ---
 title: Un agente de IA borró la base de datos en 9 segundos
+category: Inteligencia Artificial
 pubDate: 2026-05-01T11:02:00.010Z
 updatedDate: 2026-05-01T11:02:00.116Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'El ADN como código: quién controla el software de la vida'
+category: Tendencias Digitales
 pubDate: 2026-06-01T11:00:00.000Z
 updatedDate: 2026-07-09T02:39:49.574Z
 description: >-

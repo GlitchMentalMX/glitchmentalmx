@@ -1,5 +1,6 @@
 ---
 title: 'Tu atención ya no te pertenece: la fragmentación digital'
+category: Cultura Digital
 pubDate: 2026-03-26T11:03:00.001Z
 updatedDate: 2026-03-26T11:03:00.114Z
 description: >-

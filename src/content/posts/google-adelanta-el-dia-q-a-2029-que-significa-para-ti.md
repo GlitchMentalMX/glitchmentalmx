@@ -1,5 +1,6 @@
 ---
 title: 'Google adelanta el "Día Q" a 2029: qué significa para ti'
+category: Tecnología de Consumo
 pubDate: 2026-03-30T12:49:00.002Z
 updatedDate: 2026-03-30T12:49:19.251Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Gen Z elimina redes sociales en protesta silenciosa masiva
+category: Cultura Digital
 pubDate: 2026-02-09T14:17:00.000Z
 updatedDate: 2026-06-22T23:10:07.426Z
 description: >-

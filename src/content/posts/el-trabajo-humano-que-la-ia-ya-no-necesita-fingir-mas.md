@@ -1,5 +1,6 @@
 ---
 title: El trabajo humano que la IA ya no necesita fingir más
+category: Inteligencia Artificial
 pubDate: 2026-07-13T11:00:00.000Z
 updatedDate: 2026-07-13T11:00:00.114Z
 description: >-

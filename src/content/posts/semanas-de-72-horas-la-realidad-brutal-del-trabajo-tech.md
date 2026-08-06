@@ -1,12 +1,12 @@
 ---
 title: 'Semanas de 72 horas: la realidad brutal del trabajo tech'
+category: Cultura Digital
 pubDate: 2026-02-09T14:22:00.000Z
 updatedDate: 2026-06-23T01:47:24.505Z
 description: >-
   Silicon Valley prometió que la inteligencia artificial haría nuestras vidas
   más fáciles. Que trabajaríamos menos, no más. Pero en 2026, la realidad es…
-heroImage: >-
-  /images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/hero.jpg
+heroImage: /images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/hero.jpg
 heroImageAlt: >-
   Semanas de 72 horas: mujer trabajando frente a portátil con relojes digitales
   luminosos

@@ -1,5 +1,6 @@
 ---
 title: 'Cómo dominar TikTok en 2026: la guía definitiva para creadores'
+category: Tendencias Digitales
 pubDate: 2026-01-22T13:04:00.000Z
 updatedDate: 2026-06-22T19:19:11.692Z
 description: >-

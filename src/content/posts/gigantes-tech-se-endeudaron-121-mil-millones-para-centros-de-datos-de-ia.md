@@ -1,5 +1,6 @@
 ---
 title: Gigantes tech se endeudaron $121 mil millones para centros de datos de IA
+category: Inteligencia Artificial
 pubDate: 2026-01-02T12:57:00.000Z
 updatedDate: 2026-06-30T18:46:03.914Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Economía de creadores: a dónde va el dinero realmente'
+category: Tendencias Digitales
 pubDate: 2026-05-20T11:00:00.000Z
 updatedDate: 2026-07-09T02:33:59.827Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: Nuevo León no necesitó una ley para que la IA usara su agua
+category: Inteligencia Artificial
 pubDate: 2026-07-06T11:00:00.000Z
 updatedDate: 2026-07-07T19:26:44.354Z
 description: >-

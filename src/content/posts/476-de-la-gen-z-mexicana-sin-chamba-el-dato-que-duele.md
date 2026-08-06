@@ -1,5 +1,6 @@
 ---
 title: '47.6% de la Gen Z mexicana sin chamba: el dato que duele'
+category: Cultura Digital
 pubDate: 2026-04-30T11:01:00.014Z
 updatedDate: 2026-05-07T13:55:26.068Z
 description: >-

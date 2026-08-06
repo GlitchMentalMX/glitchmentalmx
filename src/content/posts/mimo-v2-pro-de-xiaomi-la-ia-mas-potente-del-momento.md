@@ -1,5 +1,6 @@
 ---
 title: 'MiMo-V2-Pro de Xiaomi: la IA más potente del momento'
+category: Inteligencia Artificial
 pubDate: 2026-04-08T12:48:00.003Z
 updatedDate: 2026-04-08T12:48:39.855Z
 description: >-

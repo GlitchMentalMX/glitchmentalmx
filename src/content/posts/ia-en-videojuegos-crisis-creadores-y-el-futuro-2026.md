@@ -1,5 +1,6 @@
 ---
 title: 'IA en videojuegos: crisis, creadores y el futuro 2026'
+category: Inteligencia Artificial
 pubDate: 2026-03-19T12:34:00.004Z
 updatedDate: 2026-06-06T19:31:07.199Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'Deepfakes en Telegram: la violencia sexual tiene algoritmo'
+category: Cultura Digital
 pubDate: 2026-04-08T12:54:00.005Z
 updatedDate: 2026-04-08T16:08:56.462Z
 description: >-

@@ -1,5 +1,6 @@
 ---
 title: 'REPNA: el registro de agua que la IA puede no necesitar'
+category: Inteligencia Artificial
 pubDate: 2026-07-08T11:05:00.000Z
 updatedDate: 2026-07-08T13:21:11.475Z
 description: >-

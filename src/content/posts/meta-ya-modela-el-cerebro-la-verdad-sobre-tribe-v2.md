@@ -1,5 +1,6 @@
 ---
 title: 'Meta ya modela el cerebro: la verdad sobre TRIBE v2'
+category: Inteligencia Artificial
 pubDate: 2026-03-28T01:43:00.001Z
 updatedDate: 2026-06-25T18:26:37.711Z
 description: >-

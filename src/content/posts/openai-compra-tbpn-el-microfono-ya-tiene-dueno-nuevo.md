@@ -1,5 +1,6 @@
 ---
 title: 'OpenAI compra TBPN: el micrófono ya tiene dueño nuevo'
+category: Inteligencia Artificial
 pubDate: 2026-04-03T12:36:00.004Z
 updatedDate: 2026-04-03T12:36:37.222Z
 description: >-

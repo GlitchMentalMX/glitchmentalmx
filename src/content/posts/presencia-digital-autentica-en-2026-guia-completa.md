@@ -1,5 +1,6 @@
 ---
 title: 'Presencia digital auténtica en 2026: guía completa'
+category: Cultura Digital
 pubDate: 2026-03-10T12:13:00.000Z
 updatedDate: 2026-06-06T19:36:40.775Z
 description: >-

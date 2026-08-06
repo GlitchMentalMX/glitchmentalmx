@@ -1,5 +1,6 @@
 ---
 title: 'El truco del lock-in: te atrapan gratis, te cobran después'
+category: Tecnología de Consumo
 pubDate: 2026-06-29T11:00:00.000Z
 updatedDate: 2026-07-09T02:48:58.860Z
 description: >-
