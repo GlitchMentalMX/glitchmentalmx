@@ -8,6 +8,7 @@ const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
 );
 
 const [featured] = allPosts;
+const recentThree = allPosts.slice(1, 4);
 
 const series = (await getCollection('editorialCollections', ({ data }) => data.kind === 'series')).sort(
   (a, b) => a.data.order - b.data.order
@@ -61,6 +62,23 @@ const explora = {
         body={featured.body}
         variant="featured"
       />
+    </section>
+  )}
+
+  {recentThree.length > 0 && (
+    <section class="recent container">
+      <div class="section-head">
+        <h2>Recién publicado</h2>
+      </div>
+      <div class="recent-rail">
+        {recentThree.map((post) => (
+          <a class="recent-card" href={`/articulos/${post.id}/`} style={`background-image: url(${post.data.heroImage})`}>
+            <span class="glitch-r" style={`background-image: url(${post.data.heroImage})`}></span>
+            <span class="glitch-b" style={`background-image: url(${post.data.heroImage})`}></span>
+            <span class="title">{post.data.title}</span>
+          </a>
+        ))}
+      </div>
     </section>
   )}
 
@@ -178,9 +196,78 @@ const explora = {
 
   .featured { padding: 16px 24px 56px; }
 
-  section.explora, section.insights, section.novelas, section.tools, section.archivo-cta {
+  section.recent, section.explora, section.insights, section.novelas, section.tools, section.archivo-cta {
     padding: 44px 24px;
     border-top: 1px solid var(--border);
+  }
+
+  /* Recién publicado — horizontal rail, hero image as background, glitch on hover */
+  .recent-rail {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .recent-rail::-webkit-scrollbar { display: none; }
+  .recent-card {
+    position: relative;
+    flex: 0 0 78%;
+    height: 150px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+    isolation: isolate;
+    color: #fff;
+  }
+  .recent-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 11, 15, 0) 35%, rgba(10, 11, 15, 0.92) 100%);
+    z-index: 1;
+  }
+  .recent-card .title {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    z-index: 2;
+    font-family: var(--font-display);
+    font-size: 1.02rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #fff;
+  }
+  .recent-card .glitch-r,
+  .recent-card .glitch-b {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    z-index: 0;
+    mix-blend-mode: screen;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .recent-card:hover .glitch-r {
+    opacity: 0.55;
+    transform: translate(3px, 0);
+    filter: saturate(3) hue-rotate(180deg);
+  }
+  .recent-card:hover .glitch-b {
+    opacity: 0.4;
+    transform: translate(-3px, 1px);
+    filter: saturate(3) hue-rotate(-60deg);
+  }
+  .recent-card:hover .title { text-decoration: underline; }
+
+  @media (min-width: 700px) {
+    .recent-rail { overflow-x: visible; }
+    .recent-card { flex: 1 1 0; }
   }
   .section-head {
     display: flex;
