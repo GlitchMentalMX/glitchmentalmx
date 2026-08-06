@@ -29,6 +29,10 @@ collections:
     sortable_fields: ["pubDate", "title"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - label: "Categoría"
+        name: "category"
+        widget: "select"
+        options: ["Inteligencia Artificial", "Cultura Digital", "Tendencias Digitales", "Tecnología de Consumo"]
       - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
       - { label: "Fecha de actualización", name: "updatedDate", widget: "datetime", required: false }
       - { label: "Descripción (para tarjetas y buscadores)", name: "description", widget: "text" }
