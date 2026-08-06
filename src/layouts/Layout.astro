@@ -8,9 +8,12 @@ interface Props {
   description?: string;
   image?: string;
   noIndex?: boolean;
+  type?: 'website' | 'article';
+  publishedTime?: Date;
+  modifiedTime?: Date;
 }
 
-const { title, description, image, noIndex = false } = Astro.props;
+const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime } = Astro.props;
 
 const siteName = 'glitchmentalMX';
 const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
@@ -18,6 +21,60 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image
   ? new URL(image, Astro.site).toString()
   : new URL('/og-default.png', Astro.site).toString();
+
+const authorURL = new URL('/acerca-de/', Astro.site).toString();
+const logoURL = new URL('/og-default.png', Astro.site).toString();
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteName,
+  url: Astro.site?.toString(),
+  description:
+    'Tecnología, IA y cultura digital sin hype. Donde el algoritmo viene a confesar el glitch. Cortito, ácido, sin hype.',
+  editorialStyle: 'Análisis crítico, directo y sin hype sobre tecnología e inteligencia artificial',
+  publisher: {
+    '@type': 'Organization',
+    name: siteName,
+    logo: { '@type': 'ImageObject', url: logoURL },
+  },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: new URL('/buscar/?q={search_term_string}', Astro.site).toString(),
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Jorge A. Diaz Elizondo',
+  url: authorURL,
+  sameAs: [
+    'https://x.com/GlitchMentalMX',
+    'https://www.linkedin.com/in/jorgediazelizondo',
+    'https://www.facebook.com/GlitchMentalMX/',
+    'https://mastodon.social/@GlitchMentalMX',
+    'https://bsky.app/profile/glitchmentalmx.bsky.social',
+  ],
+  jobTitle: 'Fundador y Editor',
+  worksFor: { '@type': 'Organization', name: siteName, url: Astro.site?.toString() },
+  knowsAbout: [
+    'Inteligencia Artificial',
+    'Agentic AI',
+    'IA Agéntica',
+    'Edge AI',
+    'Model Context Protocol',
+    'Sistemas autónomos',
+    'Modelos de lenguaje',
+    'Narrativa de la IA',
+    'Algoritmos',
+    'Cultura Digital',
+    'Psicología Digital',
+    'Tecnología de Consumo',
+    'Tendencias Digitales',
+  ],
+};
 ---
 
 <!doctype html>
@@ -35,16 +92,28 @@ const ogImage = image
     {description && <meta name="description" content={description} />}
     {noIndex && <meta name="robots" content="noindex, nofollow" />}
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={fullTitle} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={ogImage} />
+    {type === 'article' && <meta property="article:author" content="Jorge A. Diaz Elizondo" />}
+    {type === 'article' && <meta property="article:publisher" content={Astro.site?.toString()} />}
+    {type === 'article' && publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    {type === 'article' && modifiedTime && <meta property="article:modified_time" content={modifiedTime.toISOString()} />}
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GlitchMentalMX" />
     <meta name="twitter:title" content={fullTitle} />
     {description && <meta name="twitter:description" content={description} />}
     <meta name="twitter:image" content={ogImage} />
+
+    <meta name="msvalidate.01" content="5994D37EDB0CEB295F053D11D4477FED" />
+    <meta name="yandex-verification" content="a8ee8d519d7112b1" />
+    <meta name="publisuites-verify-code" content="aHR0cHM6Ly93d3cuZ2xpdGNobWVudGFsLmNvbQ==" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
     <script is:inline>
       (function () {

@@ -35,9 +35,41 @@ const idx = allPosts.findIndex((p) => p.id === post.id);
 const relatedPool = allPosts.filter((p) => p.id !== post.id);
 const related = relatedPool.slice(Math.max(0, idx - 2), Math.max(0, idx - 2) + 3);
 const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
+
+const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
+const articleImage = new URL(heroImage, Astro.site).toString();
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  url: articleURL,
+  image: articleImage,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  author: {
+    '@type': 'Person',
+    name: 'Jorge A. Diaz Elizondo',
+    url: new URL('/acerca-de/', Astro.site).toString(),
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchmentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'meta[name="description"]'],
+  },
+  about: [{ '@type': 'Thing', name: category }],
+  isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
+  articleSection: category,
+};
 ---
 
-<Layout title={title} description={description} image={heroImage}>
+<Layout title={title} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate}>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   <article class="post">
     <header class="post-header container">
       <a href={`/categoria/${categorySlug(category)}/`} class="tag category-tag">{category}</a>
