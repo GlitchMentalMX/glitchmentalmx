@@ -61,9 +61,9 @@ const GCSE_CX = 'a28d59cfd89f948f4';
         currentRequestId++;
         var requestId = currentRequestId;
         glitchSearchOnResults(gname, query, results);
-        fetchAiVerdict(lastQuery, lastResults, requestId);
         fetchOfficialSite(lastQuery, requestId);
         fetchOwnSiteResult(lastQuery, requestId);
+        fetchAiVerdict(lastQuery, lastResults, requestId);
       },
       starting: function () {},
     },
