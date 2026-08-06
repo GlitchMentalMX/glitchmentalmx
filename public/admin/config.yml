@@ -107,6 +107,36 @@ collections:
       - { label: "Enlace al artículo relacionado (ej. /articulos/mi-articulo/)", name: "enlace", widget: "string", required: false }
       - { label: "Fecha (el más reciente es el que aparece en el home)", name: "date", widget: "datetime", default: "" }
 
+  - name: "indice_glitchmentalmx"
+    label: "Índice GlitchMentalMX"
+    label_singular: "Edición mensual"
+    files:
+      - name: "indice-actual"
+        label: "Edición del mes actual"
+        file: "src/content/indice/actual.yaml"
+        format: "yaml"
+        fields:
+          - { label: "Mes (ej. Agosto 2026)", name: "mes", widget: "string" }
+          - label: "Ranking general (20 tecnologías, de mayor a menor puntaje)"
+            name: "ranking"
+            widget: "list"
+            summary: "{{fields.pos}}. {{fields.nombre}} — {{fields.pts}} pts"
+            fields:
+              - { label: "Posición", name: "pos", widget: "number", value_type: "int" }
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Puntos", name: "pts", widget: "number", value_type: "int" }
+          - label: "Destacados del Top 5"
+            name: "destacados"
+            widget: "list"
+            summary: "{{fields.pos}}. {{fields.nombre}}"
+            fields:
+              - { label: "Posición", name: "pos", widget: "number", value_type: "int" }
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Análisis", name: "texto", widget: "text" }
+          - { label: "Qué sube (vs. mes anterior)", name: "sube", widget: "text" }
+          - { label: "Qué baja (vs. mes anterior)", name: "baja", widget: "text" }
+          - { label: "Insight editorial del mes", name: "insight", widget: "text" }
+
   - name: "dato_incomodo"
     label: "Dato Incómodo"
     label_singular: "Dato incómodo"
