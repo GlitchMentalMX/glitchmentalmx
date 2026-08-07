@@ -1,8 +1,68 @@
 ---
-import SimplePage from '../../components/SimplePage.astro';
-import { getEntry } from 'astro:content';
-
-const entry = await getEntry('pages', 'servicios-editoriales-glitchmentalmx');
+import ServicesLanding from '../../components/ServicesLanding.astro';
 ---
 
-<SimplePage entry={entry} />
+<ServicesLanding
+  title="Servicios Editoriales"
+  description="La operación completa de una sala de redacción digital. Sin el equipo."
+  altLangHref="/editorial-services-glitchmentalmx/"
+  altLangLabel="Read this in English →"
+  eyebrow="Servicios editoriales"
+  headlineLine1="La operación completa de una sala de redacción digital."
+  headlineAccent="Sin el equipo."
+  leadBold="No compras contenido. Compras continuidad editorial."
+  leadText="Redacción, corrección, dirección de arte, SEO y distribución social — orquestados con múltiples modelos de IA y revisión humana en cada pieza. Para organizaciones que necesitan todo eso sin contratar a nadie."
+  roles={['Redactor senior', 'Corrector de estilo', 'Director de arte', 'Especialista SEO', 'Community manager', 'Editor jefe']}
+  proof={[
+    { value: '25', label: 'artículos por semana — capacidad sostenida' },
+    { value: '300+', label: 'piezas publicadas — verificables en el sitio' },
+    { value: '900–1,200', label: 'palabras por pieza — extensión promedio' },
+    { value: '100%', label: 'revisión editorial humana en cada pieza' },
+  ]}
+  includesTitle="Qué incluye cada entrega"
+  includes={[
+    'Artículo en HTML listo para publicar (texto + metadatos)',
+    'Imagen editorial única — sin stock, sin plantillas',
+    'Investigación con fuentes verificadas, fetch obligatorio',
+    'Alt text SEO estructurado por archivo',
+    'Corrección ortográfica y gramatical meticulosa',
+    '5 posts adaptados por plataforma de redes sociales',
+    'Revisión editorial humana final en cada pieza',
+    'Publicación gestionada por el cliente',
+  ]}
+  qualityTitle="Proceso de calidad — cada artículo"
+  quality={[
+    'Inteligencia de tendencias en tiempo real con verificación de fuente',
+    'Fetch obligatorio de cada URL antes de redactar — dato no confirmado, dato eliminado',
+    'Redacción con reglas estrictas de veracidad, estilo y gramática',
+    'Imagen editorial con dirección de arte propia — prompt único por artículo, estética de marca',
+    'Corrección gramatical meticulosa con reglas fonéticas del español',
+    'Revisión editorial humana final — ninguna pieza sale sin ese filtro',
+  ]}
+  artTitle="Dirección de arte visual — no es stock"
+  artText="Cada artículo recibe una imagen editorial generada con un prompt visual único — construido específicamente para ese concepto, con metáfora propia y estética de marca. No se reutilizan composiciones. No hay stock. No hay plantillas. El resultado es una imagen con personalidad editorial coherente en cada publicación."
+  nicheTitle="Adaptable a cualquier nicho de contenido"
+  nicheText="El sistema editorial se configura según tu área temática. Categorías, tono, criterios de fuentes y estética visual se ajustan a tu publicación — no al revés."
+  niches={['Tech e IA', 'Salud y Bienestar', 'Entretenimiento y Cultura', 'Fintech y Negocios', 'Educación', 'Lifestyle Digital']}
+  caseEyebrow="Este sistema no es una promesa"
+  caseTitle="Es lo que estás viendo ahora mismo."
+  caseText="GlitchMentalMX opera con este pipeline en producción: 300+ piezas publicadas, imagen editorial única en cada artículo, cero stock, revisión humana en cada entrega. El sitio es la demo."
+  caseCta="Ver el sistema en producción →"
+  caseHref="/categoria/inteligencia-artificial/"
+  pricingTitle="Capacidad editorial mensual (USD)"
+  plans={[
+    { name: 'Editorial Unit 1', price: '$3,500', period: '/mes', capacity: 'Hasta 40 piezas mensuales', desc: 'Entregas semanales consistentes. Flujo completo incluido. Ideal para publicaciones en crecimiento.' },
+    { name: 'Editorial Unit 3', price: '$7,000', period: '/mes', capacity: 'Hasta 70 piezas mensuales', desc: 'Alto volumen con consistencia editorial completa. Equivalente a 2–3 redactores de tiempo completo.', featured: true, badge: 'Más popular' },
+    { name: 'Editorial Unit 5', price: '$12,000', period: '/mes', capacity: '100+ piezas mensuales', desc: 'Capacidad máxima. Para operaciones de medios que compiten por volumen y velocidad.' },
+  ]}
+  footnote="Incluye la ejecución completa de la función editorial: investigación, redacción, dirección de arte, SEO y preparación para distribución. Publicación, analítica y CMS a cargo del cliente. **Organizaciones en Latinoamérica:** escríbeme para condiciones de precio regionales."
+  selfServeTitle="¿Prefieres operar el sistema tú mismo?"
+  selfServeText="El sistema completo — orquestación de 4 modelos de IA, 6 módulos documentados, prompts, workflows, protocolos de calidad y configuración por nicho — está disponible para adquisición directa."
+  selfServeCta="Escríbeme — propuesta en 48 horas, sin costo →"
+  selfServeHref="mailto:jorge@glitchmental.com"
+  authorName="Jorge A. Diaz Elizondo"
+  authorBio="Jorge A. Diaz Elizondo es editor con más de una década en medios digitales. Fundó GlitchMentalMX — medio independiente de IA y cultura digital — y opera en producción el mismo sistema editorial que ofrece como servicio: automatización inteligente con criterio humano en cada pieza. No vende teoría. Vende lo que ya funciona."
+  authorLinkLabel="glitchmental.com"
+  authorLinkHref="/"
+  ctaEmail="jorge@glitchmental.com"
+/>

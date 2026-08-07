@@ -1,0 +1,349 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { mdBold } from '../lib/format';
+
+interface Plan {
+  name: string;
+  price: string;
+  period: string;
+  capacity: string;
+  desc: string;
+  featured?: boolean;
+  badge?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  altLangHref: string;
+  altLangLabel: string;
+  eyebrow: string;
+  headlineLine1: string;
+  headlineAccent: string;
+  leadBold: string;
+  leadText: string;
+  roles: string[];
+  proof: { value: string; label: string }[];
+  includesTitle: string;
+  includes: string[];
+  qualityTitle: string;
+  quality: string[];
+  artTitle: string;
+  artText: string;
+  nicheTitle: string;
+  nicheText: string;
+  niches: string[];
+  caseEyebrow: string;
+  caseTitle: string;
+  caseText: string;
+  caseCta: string;
+  caseHref: string;
+  pricingTitle: string;
+  plans: Plan[];
+  footnote: string;
+  selfServeTitle: string;
+  selfServeText: string;
+  selfServeCta: string;
+  selfServeHref: string;
+  authorName: string;
+  authorBio: string;
+  authorLinkLabel: string;
+  authorLinkHref: string;
+  ctaEmail: string;
+}
+
+const {
+  title, description, altLangHref, altLangLabel,
+  eyebrow, headlineLine1, headlineAccent, leadBold, leadText, roles, proof,
+  includesTitle, includes, qualityTitle, quality, artTitle, artText,
+  nicheTitle, nicheText, niches, caseEyebrow, caseTitle, caseText, caseCta, caseHref,
+  pricingTitle, plans, footnote, selfServeTitle, selfServeText, selfServeCta, selfServeHref,
+  authorName, authorBio, authorLinkLabel, authorLinkHref, ctaEmail,
+} = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <section class="container hero">
+    <p class="eyebrow">{eyebrow}</p>
+    <h1>{headlineLine1}<br /><span>{headlineAccent}</span></h1>
+    <p class="lead"><strong>{leadBold}</strong></p>
+    <p class="lead-text">{leadText}</p>
+    <div class="pills">
+      {roles.map((r) => <span class="pill">{r}</span>)}
+    </div>
+    <a class="alt-lang" href={altLangHref}>{altLangLabel}</a>
+  </section>
+
+  <section class="container proof-bar">
+    {proof.map((p) => (
+      <div class="proof-item">
+        <span class="proof-value">{p.value}</span>
+        <span class="proof-label">{p.label}</span>
+      </div>
+    ))}
+  </section>
+
+  <section class="container block">
+    <p class="section-label">{includesTitle}</p>
+    <div class="grid-2">
+      {includes.map((item) => (
+        <p class="check-item arrow">{item}</p>
+      ))}
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">{qualityTitle}</p>
+    <div class="quality-list">
+      {quality.map((item) => (
+        <p class="check-item check">{item}</p>
+      ))}
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">{artTitle}</p>
+    <div class="callout-box">
+      <p>{artText}</p>
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">{nicheTitle}</p>
+    <p class="niche-text">{nicheText}</p>
+    <div class="pills">
+      {niches.map((n) => <span class="pill pill-muted">{n}</span>)}
+    </div>
+  </section>
+
+  <section class="container block">
+    <div class="case-box">
+      <p class="case-eyebrow">{caseEyebrow}</p>
+      <p class="case-title">{caseTitle}</p>
+      <p class="case-text">{caseText}</p>
+      <a class="btn btn-dark" href={caseHref}>{caseCta}</a>
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">{pricingTitle}</p>
+    <div class="plans">
+      {plans.map((plan) => (
+        <div class:list={['plan', { featured: plan.featured }]}>
+          {plan.badge && <span class="plan-badge">{plan.badge}</span>}
+          <p class="plan-name">{plan.name}</p>
+          <p class="plan-price">{plan.price}<span>{plan.period}</span></p>
+          <p class="plan-capacity">{plan.capacity}</p>
+          <p class="plan-desc">{plan.desc}</p>
+        </div>
+      ))}
+    </div>
+    <p class="footnote" set:html={mdBold(footnote)} />
+  </section>
+
+  <section class="container block">
+    <div class="self-serve">
+      <span class="self-serve-icon">⚙️</span>
+      <div>
+        <h3>{selfServeTitle}</h3>
+        <p>{selfServeText}</p>
+        <a class="text-link" href={selfServeHref}>{selfServeCta}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container cta">
+    <div class="cta-inner">
+      <div class="cta-bio">
+        <strong>{authorName}</strong>
+        <p>{authorBio}</p>
+        <a href={authorLinkHref}>{authorLinkLabel}</a>
+      </div>
+      <a class="btn btn-primary" href={`mailto:${ctaEmail}`}>{ctaEmail}</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero { padding: 56px 24px 28px; max-width: 760px; }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+    line-height: 1.15;
+    margin: 14px 0 18px;
+  }
+  .hero h1 span { color: var(--accent); }
+  .lead { font-size: 1.05rem; color: var(--text); margin-bottom: 6px; }
+  .lead-text { color: var(--text-muted); font-size: 1rem; line-height: 1.65; max-width: 60ch; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .pill {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    color: var(--text-muted);
+    background: var(--bg-inset);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 14px;
+  }
+  .pill-muted { font-size: 0.78rem; }
+  .alt-lang { display: inline-block; margin-top: 22px; font-size: 0.88rem; color: var(--accent); }
+
+  .proof-bar {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .proof-item {
+    flex: 1 1 0;
+    min-width: 140px;
+    padding: 20px 22px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .proof-item:last-child { border-right: none; }
+  .proof-value {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .proof-label { display: block; font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+
+  .block { max-width: 800px; padding: 40px 24px 8px; }
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 18px;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
+  .check-item { font-size: 0.95rem; color: var(--text); line-height: 1.55; padding-left: 24px; position: relative; margin: 0; }
+  .check-item::before { position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .check-item.arrow::before { content: '→'; }
+  .check-item.check::before { content: '✓'; }
+  .quality-list .check-item { padding: 12px 0 12px 24px; border-bottom: 1px solid var(--border); }
+  .quality-list .check-item:last-child { border-bottom: none; }
+
+  .callout-box {
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background: var(--accent-soft);
+    padding: 18px 22px;
+  }
+  .callout-box p { font-size: 0.95rem; line-height: 1.7; color: var(--text); margin: 0; }
+
+  .niche-text { color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 16px; max-width: 65ch; }
+
+  .case-box {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius);
+    padding: 28px 30px;
+  }
+  .case-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .case-title { font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 10px; }
+  .case-text { color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 20px; max-width: 62ch; }
+  .btn-dark { background: var(--text); color: var(--bg); }
+  .btn-dark:hover { opacity: 0.85; }
+
+  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 18px; }
+  .plan {
+    position: relative;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+  }
+  .plan.featured {
+    border: 2px solid var(--accent);
+    background: var(--accent-soft);
+  }
+  .plan-badge {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .plan-name {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+  }
+  .plan-price { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; }
+  .plan-price span { font-family: var(--font-body); font-size: 0.82rem; font-weight: 400; color: var(--text-faint); }
+  .plan-capacity {
+    color: var(--accent);
+    font-size: 0.86rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .plan.featured .plan-capacity { border-bottom-color: var(--accent-line); }
+  .plan-desc { color: var(--text-muted); font-size: 0.84rem; line-height: 1.6; }
+
+  .footnote { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 14px; }
+  .footnote :global(strong) { color: var(--text); font-weight: 700; }
+
+  .self-serve { display: flex; gap: 20px; align-items: flex-start; background: var(--bg-inset); border-radius: var(--radius); padding: 26px 28px; }
+  .self-serve-icon { font-size: 1.6rem; flex-shrink: 0; }
+  .self-serve h3 { font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px; }
+  .self-serve p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px; max-width: 60ch; }
+  .text-link { color: var(--accent); font-size: 0.86rem; font-weight: 600; border-bottom: 1px solid var(--accent-line); padding-bottom: 1px; }
+
+  .cta { max-width: 800px; padding: 44px 24px 96px; }
+  .cta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 2px solid var(--text);
+    padding-top: 28px;
+  }
+  .cta-bio { flex: 1 1 320px; }
+  .cta-bio strong { display: block; font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 8px; }
+  .cta-bio p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 8px; }
+  .cta-bio a { color: var(--text-faint); font-size: 0.88rem; }
+
+  @media (max-width: 700px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .plans { grid-template-columns: 1fr; }
+    .proof-bar { flex-direction: column; }
+    .proof-item { border-right: none; border-bottom: 1px solid var(--border); }
+    .proof-item:last-child { border-bottom: none; }
+  }
+</style>

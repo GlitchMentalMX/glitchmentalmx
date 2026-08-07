@@ -71,14 +71,6 @@ collections:
         label: "Publicidad"
         file: "src/content/pages/publicidad-en-glitchmentalmx.md"
         fields: *pageFields
-      - name: "servicios-editoriales"
-        label: "Servicios Editoriales (ES)"
-        file: "src/content/pages/servicios-editoriales-glitchmentalmx.md"
-        fields: *pageFields
-      - name: "editorial-services"
-        label: "Editorial Services (EN)"
-        file: "src/content/pages/editorial-services-glitchmentalmx.md"
-        fields: *pageFields
       - name: "politica-de-privacidad"
         label: "Política de Privacidad"
         file: "src/content/pages/politica-de-privacidad.md"
