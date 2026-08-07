@@ -14,28 +14,34 @@ const items = (await getCollection('visualInsights')).sort(
 >
   <PageHeader eyebrow="Insights Visuales" title="Ideas complejas. Una imagen. Un análisis." />
 
+  <p class="container hint">Haz clic en la imagen para agrandarla.</p>
+
   <section class="container grid">
-    {items.map(({ data: item }) => {
-      const Tag = item.enlace ? 'a' : 'div';
-      const linkProps = item.enlace
-        ? item.enlace.startsWith('http')
-          ? { href: item.enlace, target: '_blank', rel: 'noopener' }
-          : { href: item.enlace }
-        : {};
-      return (
-        <Tag class="card" {...linkProps}>
-          <img src={item.imagen} alt={item.titulo} loading="lazy" width="900" height="506" />
-          <div class="body">
-            <h3>{item.titulo}</h3>
-            <p>{item.resumen}</p>
-          </div>
-        </Tag>
-      );
-    })}
+    {items.map(({ data: item }) => (
+      <div class="card">
+        <img src={item.imagen} alt={item.titulo} data-lightbox loading="lazy" width="900" height="506" />
+        <div class="body">
+          <h3>{item.titulo}</h3>
+          <p>{item.resumen}</p>
+          {item.enlace && (
+            <a
+              class="link-accent"
+              href={item.enlace}
+              target={item.enlace.startsWith('http') ? '_blank' : undefined}
+              rel={item.enlace.startsWith('http') ? 'noopener' : undefined}
+            >
+              Ir al artículo →
+            </a>
+          )}
+        </div>
+      </div>
+    ))}
   </section>
 </Layout>
 
 <style>
+  .hint { padding: 0 24px; color: var(--text-faint); font-size: 0.86rem; margin: -8px 0 24px; }
+
   .grid {
     padding: 0 24px 96px;
     display: grid;
@@ -43,17 +49,16 @@ const items = (await getCollection('visualInsights')).sort(
     gap: 24px;
   }
   .card {
-    display: block;
     border-radius: var(--radius);
     overflow: hidden;
     background: var(--bg-inset);
     color: var(--text);
   }
-  .card img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+  .card img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
   .card .body { padding: 18px 20px 22px; }
   .card h3 { font-size: 1.05rem; line-height: 1.3; margin-bottom: 8px; }
-  .card:hover h3 { color: var(--accent); }
-  .card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.55; margin: 0; }
+  .card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.55; margin: 0 0 12px; }
+  .card .link-accent { font-size: 0.86rem; font-weight: 600; }
 
   @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr 1fr; }

@@ -1,0 +1,102 @@
+---
+---
+
+<style is:global>
+  [data-lightbox],
+  .prose img {
+    cursor: zoom-in;
+  }
+  .lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 9, 12, 0.92);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+    padding: 48px 24px;
+    cursor: zoom-out;
+  }
+  .lightbox-overlay.open {
+    display: flex;
+  }
+  .lightbox-overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    cursor: default;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+  .lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    function getOverlay() {
+      var overlay = document.getElementById('lightbox-overlay');
+      if (overlay) return overlay;
+      overlay = document.createElement('div');
+      overlay.id = 'lightbox-overlay';
+      overlay.className = 'lightbox-overlay';
+      overlay.setAttribute('role', 'dialog');
+      overlay.setAttribute('aria-modal', 'true');
+      var closeBtn = document.createElement('button');
+      closeBtn.className = 'lightbox-close';
+      closeBtn.setAttribute('aria-label', 'Cerrar imagen ampliada');
+      closeBtn.textContent = '×';
+      var img = document.createElement('img');
+      overlay.appendChild(closeBtn);
+      overlay.appendChild(img);
+      document.body.appendChild(overlay);
+      overlay.addEventListener('click', function (e) {
+        if (e.target === overlay || e.target === closeBtn) close();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') close();
+      });
+      return overlay;
+    }
+
+    function open(src, alt) {
+      var overlay = getOverlay();
+      var img = overlay.querySelector('img');
+      img.src = src;
+      img.alt = alt || '';
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      var overlay = document.getElementById('lightbox-overlay');
+      if (!overlay) return;
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!(t instanceof HTMLImageElement)) return;
+      if (!t.matches('[data-lightbox], .prose img')) return;
+      e.preventDefault();
+      open(t.currentSrc || t.src, t.alt);
+    });
+  })();
+</script>
