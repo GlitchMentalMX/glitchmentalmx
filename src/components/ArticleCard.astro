@@ -67,7 +67,13 @@ const minutes = readingTime(body || description);
   .card.featured .title { font-family: var(--font-display); font-size: 2rem; }
   .card.featured .dek { font-size: 1.05rem; max-width: 60ch; }
 
-  .card.compact { flex-direction: row; align-items: center; gap: 14px; }
-  .card.compact .thumb { width: 84px; flex-shrink: 0; aspect-ratio: 1/1; margin-bottom: 0; }
-  .card.compact .title { font-size: 0.96rem; line-height: 1.35; }
+  .card.compact { flex-direction: row; align-items: center; gap: 20px; }
+  .card.compact .thumb { width: 240px; flex-shrink: 0; aspect-ratio: 16/9; margin-bottom: 0; }
+  .card.compact .title { font-size: 1.02rem; line-height: 1.35; }
+
+  @media (max-width: 640px) {
+    .card.compact { gap: 14px; }
+    .card.compact .thumb { width: 120px; }
+    .card.compact .title { font-size: 0.94rem; }
+  }
 </style>
