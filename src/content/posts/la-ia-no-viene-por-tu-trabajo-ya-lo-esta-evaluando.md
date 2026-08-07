@@ -3,13 +3,11 @@ title: La IA no viene por tu trabajo. Ya lo está evaluando
 category: Inteligencia Artificial
 pubDate: 2026-03-17T00:05:00.052Z
 updatedDate: 2026-07-15T14:36:58.631Z
-description: >-
-  Si llegaste hasta aquí buscando optimismo, este no es tu lugar. Por qué existe
-  glitchmentalMX y qué esperar de este espacio.
+description: Si llegaste hasta aquí buscando optimismo, este no es tu lugar. Por
+  qué existe glitchmentalMX y qué esperar de este espacio.
 heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.jpg
-heroImageAlt: >-
-  Mujer mide terreno con instrumento topográfico en medio de niebla densa
-  mientras otros permanecen inmóviles al fondo
+heroImageAlt: Mujer mide terreno con instrumento topográfico en medio de niebla
+  densa mientras otros permanecen inmóviles al fondo
 ---
 *Manifiesto · GlitchMentalMX*
 
@@ -95,7 +93,7 @@ No prometen tranquilidad. Prometen claridad.
 
 #### Sobre el autor
 
-[Jorge Diaz](https://www.linkedin.com/in/pumi/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchmentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
+[Jorge Diaz](https://www.linkedin.com/in/jorgediazelizondo/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchmentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
 
 **¿Listo para llevar esta conversación al siguiente nivel?**
 [Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) · [Índice GlitchMentalMX →](/indice-glitchmentalmx/)
