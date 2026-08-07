@@ -1,34 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
-
-const published = [
-  {
-    title: 'Entrenado en Corpus',
-    genre: 'Tecnothriller',
-    cover: '/images/novelas/entrenado-en-corpus.jpg',
-    desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
-    buy: 'https://mybook.to/EntrenadoEnCorpus',
-  },
-  {
-    title: 'Cero Orgánico',
-    genre: 'Tecnothriller',
-    cover: '/images/novelas/cero-organico.png',
-    desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
-    buy: 'https://mybook.to/CeroOrganico',
-  },
-];
-
-const upcoming = [
-  {
-    title: 'UMBRAL 20',
-    desc: '2031. Una clínica en Singapur vende modificaciones genéticas hereditarias que no eliminan enfermedades — producen ventaja cognitiva irreversible. Una investigadora de la ONU recibe la lista de compradores. Varios de esos nombres deberían estar investigándolo.',
-  },
-  {
-    title: 'Deprecado',
-    desc: 'Un escritor descubre que su obra completa entrenó al modelo que lo superó. Las editoriales ya no lo llaman. Su agente representa ahora a tres IAs. Nadie fue plagiado. Todos fueron deprecados.',
-  },
-];
+import { books as published, upcomingBooks as upcoming } from '../../data/books';
 ---
 
 <Layout

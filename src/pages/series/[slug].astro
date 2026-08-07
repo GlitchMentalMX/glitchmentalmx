@@ -1,7 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
+import BookPromo from '../../components/BookPromo.astro';
 import { getCollection, getEntry } from 'astro:content';
+import { getBook } from '../../data/books';
+import { mdBold } from '../../lib/format';
 
 export async function getStaticPaths() {
   const series = await getCollection('editorialCollections', ({ data }) => data.kind === 'series');
@@ -12,14 +15,29 @@ const { series } = Astro.props;
 const posts = (
   await Promise.all(series.data.postSlugs.map((slug: string) => getEntry('posts', slug)))
 ).filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const categories = [...new Set(posts.map((p) => p.data.category))];
+const book = series.data.relatedBook ? getBook(series.data.relatedBook) : undefined;
 ---
 
 <Layout title={series.data.title} description={series.data.description}>
   <section class="container header">
     <p class="eyebrow">{series.data.status === 'coming-soon' ? 'Serie editorial · Próximamente' : `Serie editorial · ${posts.length} artículos`}</p>
     <h1>{series.data.title}</h1>
+    {series.data.subtitle && <p class="subtitle">{series.data.subtitle}</p>}
     <p class="dek">{series.data.description}</p>
+    {series.data.status !== 'coming-soon' && categories.length > 0 && (
+      <div class="badges">
+        {categories.map((c) => <span class="badge">{c}</span>)}
+      </div>
+    )}
   </section>
+
+  {series.data.intro && (
+    <section class="container intro-box">
+      <p set:html={mdBold(series.data.intro)} />
+    </section>
+  )}
 
   {series.data.status === 'coming-soon' ? (
     <section class="container empty">
@@ -36,19 +54,72 @@ const posts = (
           description={post.data.description}
           pubDate={post.data.pubDate}
           body={post.body}
+          label={series.data.chapterLabels?.[post.id]}
         />
       ))}
+    </section>
+  )}
+
+  {series.data.closing && (
+    <section class="container closing-box">
+      <p set:html={mdBold(series.data.closing)} />
+    </section>
+  )}
+
+  {book && (
+    <section class="container book-section">
+      <BookPromo book={book} />
     </section>
   )}
 </Layout>
 
 <style>
   .header { padding: 56px 24px 24px; max-width: 720px; }
-  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
-  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 0; }
+  .subtitle {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    margin-top: 10px;
+  }
+  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; margin-top: 16px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  .badge {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid var(--border-strong);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  .intro-box {
+    max-width: 720px;
+    margin: 8px auto 0;
+    padding: 18px 22px;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background: var(--accent-soft);
+  }
+  .intro-box p { font-size: 0.98rem; line-height: 1.65; color: var(--text); }
+  .intro-box p :global(strong) { color: var(--text); font-weight: 700; }
 
   .empty { padding: 40px 24px 96px; color: var(--text-muted); }
 
-  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list { padding: 24px 24px 32px; max-width: 780px; }
   .list-label { margin-bottom: 6px; }
+
+  .closing-box {
+    max-width: 720px;
+    margin: 8px auto 0;
+    padding: 20px 22px;
+    border-left: 4px solid var(--border-strong);
+  }
+  .closing-box p { font-size: 1rem; font-style: italic; line-height: 1.7; color: var(--text-muted); }
+  .closing-box p :global(strong) { color: var(--text); font-style: normal; font-weight: 700; }
+
+  .book-section { max-width: 720px; padding: 32px 24px 96px; }
 </style>

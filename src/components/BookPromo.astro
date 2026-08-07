@@ -1,0 +1,49 @@
+---
+import type { Book } from '../data/books';
+
+interface Props {
+  book: Book;
+}
+
+const { book } = Astro.props;
+---
+
+<div class="book-promo">
+  <p class="eyebrow promo-label">Esta investigación inspiró una novela</p>
+  <div class="promo-body">
+    <a href={book.buy} target="_blank" rel="noopener" class="cover-link">
+      <img class="cover" src={book.cover} alt={`Portada de ${book.title}`} loading="lazy" width="120" height="186" />
+    </a>
+    <div class="promo-text">
+      <span class="tag">{book.genre}</span>
+      <h3 class="promo-title">{book.title}</h3>
+      <p class="promo-desc">{book.desc}</p>
+      <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .book-promo {
+    padding: 24px 26px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+  }
+  .promo-label { color: var(--text-faint); margin-bottom: 16px; }
+  .promo-body { display: flex; gap: 20px; align-items: flex-start; }
+  .cover-link { flex-shrink: 0; }
+  .cover {
+    width: 88px;
+    height: 136px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(20, 22, 28, 0.18);
+  }
+  .promo-text { min-width: 0; }
+  .promo-title { font-family: var(--font-display); font-size: 1.2rem; margin: 8px 0 8px; }
+  .promo-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 16px; }
+
+  @media (max-width: 560px) {
+    .promo-body { flex-direction: column; }
+  }
+</style>
