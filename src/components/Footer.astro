@@ -84,7 +84,9 @@ const columns = [
     </div>
 
     <a href="/" class="brand-band" aria-label="glitchmentalMX — inicio">
-      <span class="brand-word" data-text="glitchMentalMX">glitchMentalMX</span>
+      <span class="brand-word">
+        <span class="w-glitch">glitch</span><span class="w-mental">Mental</span><span class="w-mx">MX</span>
+      </span>
       <p class="stance">Este sitio no es neutral, los datos tampoco.</p>
     </a>
 
@@ -139,22 +141,25 @@ const columns = [
     font-size: clamp(2.4rem, 9vw, 5.5rem);
     line-height: 1;
     letter-spacing: -0.02em;
-    color: var(--text);
   }
+  .w-glitch { color: var(--text); }
+  .w-mental { color: var(--accent); }
+  .w-mx { color: var(--text-faint); font-family: var(--font-mono); font-size: 0.72em; }
+
   .brand-band:hover .brand-word,
   .brand-band:focus-visible .brand-word,
   .brand-band:active .brand-word {
-    animation: brandGlitch 0.6s steps(1) 1;
+    animation: brandGlitch 0.7s steps(1) 1;
   }
   @keyframes brandGlitch {
     0%   { text-shadow: none; transform: translateX(0); }
-    8%   { text-shadow: -2px 0 var(--down-line), 2px 0 var(--accent); transform: translateX(-1px); }
-    16%  { text-shadow: 2px 0 var(--down-line), -2px 0 var(--accent); transform: translateX(1px); }
-    24%  { text-shadow: -1px 0 var(--down-line), 1px 0 var(--accent); transform: translateX(0); }
-    32%  { text-shadow: none; }
-    40%  { text-shadow: 2px 0 var(--down-line), -2px 0 var(--accent); transform: translateX(-1px); }
-    48%  { text-shadow: -2px 0 var(--down-line), 2px 0 var(--accent); transform: translateX(1px); }
-    60%  { text-shadow: none; transform: translateX(0); }
+    8%   { text-shadow: -6px 0 var(--down-line), 6px 0 var(--accent); transform: translateX(-3px); }
+    18%  { text-shadow: 6px 0 var(--down-line), -6px 0 var(--accent); transform: translateX(3px); }
+    28%  { text-shadow: -5px 0 var(--down-line), 5px 0 var(--accent); transform: translateX(-2px); }
+    38%  { text-shadow: none; transform: translateX(0); }
+    48%  { text-shadow: 6px 0 var(--down-line), -6px 0 var(--accent); transform: translateX(2px); }
+    58%  { text-shadow: -6px 0 var(--down-line), 6px 0 var(--accent); transform: translateX(-3px); }
+    72%  { text-shadow: none; transform: translateX(0); }
     100% { text-shadow: none; }
   }
   @media (prefers-reduced-motion: reduce) {
