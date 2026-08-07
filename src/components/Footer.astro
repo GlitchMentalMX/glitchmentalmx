@@ -134,15 +134,19 @@ const columns = [
     border-top: 1px solid var(--border);
     text-decoration: none;
   }
-  /* soft ambient glow behind the wordmark — dark mode only, the one place
-     on the site that departs from the flat background, kept to this single
-     signature moment rather than becoming a page-wide treatment */
+  /* ambient light source behind the wordmark — the one place on the site
+     that departs from the flat background, kept to this single signature
+     moment. Dark mode gets a visible glow (brightening reads well against
+     near-black); light mode can't get "brighter than white", so it gets a
+     much fainter tint instead — same idea, calibrated per theme rather than
+     skipped in light mode. */
   .brand-band::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: -1;
     pointer-events: none;
+    background: radial-gradient(ellipse 700px 340px at 30% 55%, rgba(0, 102, 255, 0.07) 0%, rgba(0, 102, 255, 0.025) 40%, transparent 72%);
   }
   :global([data-theme='dark']) .brand-band::before {
     background: radial-gradient(ellipse 700px 340px at 30% 55%, rgba(0, 102, 255, 0.45) 0%, rgba(0, 102, 255, 0.16) 40%, transparent 72%);

@@ -81,9 +81,9 @@ const exploraColumns = [
 }));
 
 const toolsList = [
-  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual' },
-  { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada' },
-  { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos' },
+  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
+  { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
+  { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
 ];
 ---
 
@@ -93,7 +93,7 @@ const toolsList = [
 >
   <section class="hero container">
     <p class="eyebrow">Publicación independiente · IA, tecnología y cultura digital</p>
-    <h1>Entender la tecnología <span class="accent">que nos está reescribiendo.</span></h1>
+    <h1>Entender la tecnología <span class="accent hero-decode" data-text="que nos está reescribiendo.">que nos está reescribiendo.</span></h1>
     <p class="hero-dek">
       Análisis crítico, sin hype ni relaciones públicas disfrazadas de periodismo.
       Escrito para gente que quiere entender qué está pasando de verdad.
@@ -102,6 +102,7 @@ const toolsList = [
 
   {featured && (
     <section class="featured container">
+      <p class="eyebrow featured-label">Destacado</p>
       <ArticleCard
         slug={featured.id}
         title={featured.data.title}
@@ -211,6 +212,17 @@ const toolsList = [
     <div class="tools-grid">
       {toolsList.map((t) => (
         <a href={t.href} class="tool-card">
+          <span class="tool-icon">
+            {t.icon === 'search' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            )}
+            {t.icon === 'gauge' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 15a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15L16 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor"/></svg>
+            )}
+            {t.icon === 'chart' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M5 19V13M12 19V9M19 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            )}
+          </span>
           <span class="tag">{t.tag}</span>
           <h3 class="scramble" data-text={t.title}>{t.title}</h3>
           <p>{t.desc}</p>
@@ -221,9 +233,12 @@ const toolsList = [
   </section>
 
   <section class="archivo-cta container">
-    <a href="/archivo/" class="archivo-card">
-      <h3 class="archivo-title">Archivo Total</h3>
-      <p class="archivo-sub">El home es una selección; esto es el catálogo. →</p>
+    <a href="/archivo/" class="archivo-band">
+      <span class="archivo-num">{allPosts.length}</span>
+      <span class="archivo-text">
+        <span class="archivo-title">Archivo Total →</span>
+        <span class="archivo-sub">artículos publicados. El home es una selección; esto es el catálogo completo.</span>
+      </span>
     </a>
   </section>
 </Layout>
@@ -245,6 +260,7 @@ const toolsList = [
   }
 
   .featured { padding: 16px 24px 56px; }
+  .featured-label { margin: 0 0 14px; }
 
   section.recent, section.explora, section.insights, section.novelas, section.tools, section.archivo-cta {
     padding: 44px 24px;
@@ -450,6 +466,17 @@ const toolsList = [
     color: var(--text);
   }
   .tool-card:hover { outline: 1.5px solid var(--accent); }
+  .tool-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
   .tool-card h3 { font-size: 1.2rem; margin: 12px 0 8px; font-variant-ligatures: none; }
   .tool-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0 0 16px; }
   .tool-card .stat {
@@ -460,24 +487,34 @@ const toolsList = [
     letter-spacing: 0.02em;
   }
 
-  /* Archivo CTA */
-  .archivo-cta { padding-bottom: 8px; display: flex; justify-content: center; }
-  .archivo-card {
+  /* Archivo Total — momento tipográfico, no un banner con caja/botón, para
+     que no compita visualmente con el CTA de suscripción del footer justo
+     debajo: el dato real (conteo de artículos, calculado en build) hace de
+     protagonista en vez de una tarjeta decorativa. */
+  .archivo-cta { padding-bottom: 8px; }
+  .archivo-band {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 480px;
-    background: var(--bg-inset);
-    border-radius: var(--radius);
-    padding: 22px 24px;
+    align-items: baseline;
+    gap: 28px;
     color: var(--text);
   }
-  .archivo-card:hover { outline: 1.5px solid var(--accent); }
-  .archivo-title { font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; margin: 0; }
-  .archivo-sub { color: var(--text-muted); font-size: 0.92rem; margin: 8px 0 0; }
+  .archivo-num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(3.2rem, 9vw, 5.4rem);
+    line-height: 1;
+    color: var(--text);
+    flex-shrink: 0;
+    transition: color 0.15s ease;
+  }
+  .archivo-band:hover .archivo-num { color: var(--accent); }
+  .archivo-text { display: flex; flex-direction: column; gap: 6px; max-width: 46ch; }
+  .archivo-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; }
+  .archivo-sub { color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; }
+
+  @media (max-width: 560px) {
+    .archivo-band { flex-direction: column; gap: 8px; }
+  }
 
   @media (max-width: 900px) {
     .explora-grid { grid-template-columns: 1fr; }
@@ -569,5 +606,15 @@ const toolsList = [
       { threshold: 0.6 }
     );
     targets.forEach((el) => observer.observe(el));
+  }
+
+  // Hero — mismo efecto de decodificación, pero disparado una sola vez al
+  // cargar la página, no por IntersectionObserver: al estar pegado arriba,
+  // re-disparar cada vez que el usuario sube el scroll se sentiría repetitivo.
+  const heroTarget = document.querySelector<HTMLElement>('.hero-decode');
+  if (!reduceMotion && heroTarget) {
+    const heroScrambler = new TextScramble(heroTarget);
+    const heroText = heroTarget.dataset.text || heroTarget.textContent || '';
+    setTimeout(() => heroScrambler.setText(heroText), 200);
   }
 </script>
