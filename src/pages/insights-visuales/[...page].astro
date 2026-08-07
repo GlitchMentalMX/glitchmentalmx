@@ -2,10 +2,16 @@
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
 
-const items = (await getCollection('visualInsights')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-);
+export const getStaticPaths = (async ({ paginate }) => {
+  const items = (await getCollection('visualInsights')).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+  return paginate(items, { pageSize: 18 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
 ---
 
 <Layout
@@ -17,7 +23,7 @@ const items = (await getCollection('visualInsights')).sort(
   <p class="container hint">Haz clic en la imagen para agrandarla.</p>
 
   <section class="container grid">
-    {items.map(({ data: item }) => (
+    {page.data.map(({ data: item }) => (
       <div class="card">
         <img src={item.imagen} alt={item.titulo} data-lightbox loading="lazy" width="900" height="506" />
         <div class="body">
@@ -37,13 +43,19 @@ const items = (await getCollection('visualInsights')).sort(
       </div>
     ))}
   </section>
+
+  <nav class="container pager" aria-label="Paginación">
+    {page.url.prev ? <a href={page.url.prev} class="btn btn-ghost">← Más recientes</a> : <span />}
+    <span class="eyebrow">Página {page.currentPage} de {page.lastPage}</span>
+    {page.url.next ? <a href={page.url.next} class="btn btn-ghost">Más antiguos →</a> : <span />}
+  </nav>
 </Layout>
 
 <style>
   .hint { padding: 0 24px; color: var(--text-muted); font-size: 0.92rem; font-weight: 500; margin: -8px auto 24px; }
 
   .grid {
-    padding: 0 24px 96px;
+    padding: 0 24px 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
@@ -65,5 +77,12 @@ const items = (await getCollection('visualInsights')).sort(
   }
   @media (max-width: 600px) {
     .grid { grid-template-columns: 1fr; }
+  }
+
+  .pager {
+    padding: 32px 24px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 </style>
