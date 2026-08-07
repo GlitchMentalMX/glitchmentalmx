@@ -8,13 +8,13 @@ interface Props {
   description: string;
   pubDate: Date;
   body?: string;
-  tag?: 'ancla' | 'serie' | 'caso';
+  tag?: 'ancla' | 'serie' | 'caso' | 'debate';
 }
 
 const { index, slug, title, description, pubDate, body = '', tag } = Astro.props;
 const minutes = readingTime(body || description);
 const num = String(index).padStart(2, '0');
-const tagLabel = { ancla: 'Ancla', serie: 'Serie', caso: 'Caso' };
+const tagLabel = { ancla: 'Ancla', serie: 'Serie', caso: 'Caso', debate: 'Debate' };
 ---
 
 <a class="row" href={`/articulos/${slug}/`}>
@@ -54,6 +54,7 @@ const tagLabel = { ancla: 'Ancla', serie: 'Serie', caso: 'Caso' };
   .tag-ancla { background: var(--accent-soft); color: var(--accent); }
   .tag-serie { background: var(--bg-inset); color: var(--text-muted); }
   .tag-caso { background: var(--up-bg); color: var(--up-line); }
+  .tag-debate { background: var(--debate-bg); color: var(--debate-line); }
   .dek {
     color: var(--text-muted);
     font-size: 0.9rem;

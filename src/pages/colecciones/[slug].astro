@@ -26,11 +26,27 @@ const related = hub.data.related.length
     ).filter((r): r is NonNullable<typeof r> => Boolean(r))
   : [];
 
-// Ruta de inicio recomendada: los artículos marcados "ancla", en el orden en que aparecen.
+// Ruta de inicio recomendada: los artículos marcados "ancla", en el orden en que aparecen
+// y sin repetir uno que ya haya salido en una sección anterior.
+const seenAnchorSlugs = new Set<string>();
 const anchorPosts = sections
   ? sections
-      .flatMap((s) => s.posts.filter((p) => p.tag === 'ancla').map((p) => postMap.get(p.slug)))
+      .flatMap((s) => s.posts.filter((p) => p.tag === 'ancla'))
+      .filter((p) => (seenAnchorSlugs.has(p.slug) ? false : (seenAnchorSlugs.add(p.slug), true)))
+      .map((p) => postMap.get(p.slug))
       .filter((p): p is NonNullable<typeof p> => Boolean(p))
+  : [];
+
+const tagCopy = {
+  ancla: ['Ancla', 'punto de partida recomendado'],
+  serie: ['Serie', 'parte de una investigación de varias entregas'],
+  caso: ['Caso', 'ejemplo real documentado'],
+  debate: ['Debate', 'posiciones enfrentadas, sin respuesta única'],
+} as const;
+const usedTags = sections
+  ? (Object.keys(tagCopy) as (keyof typeof tagCopy)[]).filter((t) =>
+      sections.some((s) => s.posts.some((p) => p.tag === t))
+    )
   : [];
 ---
 
@@ -75,13 +91,16 @@ const anchorPosts = sections
             </a>
           ))}
         </div>
-        <p class="tag-legend">
-          <span class="tag tag-ancla">Ancla</span> punto de partida recomendado
-          <span class="dot">·</span>
-          <span class="tag tag-serie">Serie</span> parte de una investigación de varias entregas
-          <span class="dot">·</span>
-          <span class="tag tag-caso">Caso</span> ejemplo real documentado
-        </p>
+        {usedTags.length > 0 && (
+          <p class="tag-legend">
+            {usedTags.map((t, i) => (
+              <>
+                {i > 0 && <span class="dot">·</span>}
+                <span class={`tag tag-${t}`}>{tagCopy[t][0]}</span> {tagCopy[t][1]}
+              </>
+            ))}
+          </p>
+        )}
       </nav>
 
       {sections.map((section, si) => {

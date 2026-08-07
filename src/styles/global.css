@@ -30,6 +30,8 @@
   --up-line: #189a5a;
   --down-bg: rgba(224, 82, 82, 0.08);
   --down-line: #d64545;
+  --debate-bg: rgba(147, 51, 234, 0.08);
+  --debate-line: #9333ea;
 
   --measure: 66ch;
   --container: 1180px;
@@ -56,6 +58,8 @@
   --up-line: #34c782;
   --down-bg: rgba(240, 100, 100, 0.12);
   --down-line: #f06464;
+  --debate-bg: rgba(192, 132, 252, 0.16);
+  --debate-line: #c084fc;
   color-scheme: dark;
 }
 
@@ -75,6 +79,8 @@
     --up-line: #34c782;
     --down-bg: rgba(240, 100, 100, 0.12);
     --down-line: #f06464;
+    --debate-bg: rgba(192, 132, 252, 0.16);
+    --debate-line: #c084fc;
     color-scheme: dark;
   }
 }

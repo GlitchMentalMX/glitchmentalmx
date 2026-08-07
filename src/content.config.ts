@@ -50,7 +50,7 @@ const editorialCollections = defineCollection({
           posts: z.array(
             z.object({
               slug: z.string(),
-              tag: z.enum(['ancla', 'serie', 'caso']).optional(),
+              tag: z.enum(['ancla', 'serie', 'caso', 'debate']).optional(),
             })
           ),
         })
