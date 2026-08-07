@@ -234,10 +234,13 @@ const toolsList = [
 
   <section class="archivo-cta container">
     <a href="/archivo/" class="archivo-band">
-      <span class="archivo-num">{allPosts.length}</span>
+      <span class="archivo-num-group">
+        <span class="archivo-num">{allPosts.length}</span>
+        <span class="archivo-num-label">artículos publicados</span>
+      </span>
       <span class="archivo-text">
         <span class="archivo-title">Archivo Total →</span>
-        <span class="archivo-sub">artículos publicados. El home es una selección; esto es el catálogo completo.</span>
+        <span class="archivo-sub">El home es una selección; esto es el catálogo completo.</span>
       </span>
     </a>
   </section>
@@ -475,7 +478,8 @@ const toolsList = [
     border-radius: 999px;
     background: var(--accent-soft);
     color: var(--accent);
-    margin-bottom: 14px;
+    margin: 0 10px 14px 0;
+    vertical-align: middle;
   }
   .tool-card h3 { font-size: 1.2rem; margin: 12px 0 8px; font-variant-ligatures: none; }
   .tool-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0 0 16px; }
@@ -494,9 +498,18 @@ const toolsList = [
   .archivo-cta { padding-bottom: 8px; }
   .archivo-band {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 28px;
     color: var(--text);
+  }
+  /* el número y su etiqueta van agrupados siempre — así "379 artículos
+     publicados" se lee junto sin importar si el layout es fila (desktop)
+     o columna (móvil), en vez de que el título se meta entre los dos */
+  .archivo-num-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
   }
   .archivo-num {
     font-family: var(--font-display);
@@ -504,16 +517,23 @@ const toolsList = [
     font-size: clamp(3.2rem, 9vw, 5.4rem);
     line-height: 1;
     color: var(--text);
-    flex-shrink: 0;
     transition: color 0.15s ease;
   }
   .archivo-band:hover .archivo-num { color: var(--accent); }
+  .archivo-num-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-top: 6px;
+  }
   .archivo-text { display: flex; flex-direction: column; gap: 6px; max-width: 46ch; }
   .archivo-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; }
   .archivo-sub { color: var(--text-muted); font-size: 0.92rem; line-height: 1.5; }
 
   @media (max-width: 560px) {
-    .archivo-band { flex-direction: column; gap: 8px; }
+    .archivo-band { flex-direction: column; align-items: flex-start; gap: 14px; }
   }
 
   @media (max-width: 900px) {
