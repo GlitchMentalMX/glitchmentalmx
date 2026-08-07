@@ -4,16 +4,16 @@ category: Inteligencia Artificial
 pubDate: 2026-03-17T00:05:00.052Z
 updatedDate: 2026-07-15T14:36:58.631Z
 description: Si llegaste hasta aquí buscando optimismo, este no es tu lugar. Por
-  qué existe glitchmentalMX y qué esperar de este espacio.
+  qué existe glitchMentalMX y qué esperar de este espacio.
 heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.jpg
 heroImageAlt: Mujer mide terreno con instrumento topográfico en medio de niebla
   densa mientras otros permanecen inmóviles al fondo
 ---
-*Manifiesto · GlitchMentalMX*
+*Manifiesto · glitchMentalMX*
 
 Si llegaste hasta aquí buscando optimismo, este no es tu lugar.
 
-Por [Jorge Diaz](/acerca-de/) · Fundador, glitchmentalMX
+Por [Jorge Diaz](/acerca-de/) · Fundador, glitchMentalMX
 
 ## Qué es este manifiesto y por qué existe
 
@@ -47,7 +47,7 @@ La mayoría de las personas no tiene idea de dónde se encuentra parada. No sabe
 
 La realidad es más incómoda: habrá ganadores, habrá desplazados y habrá zonas grises. Y fingir que todos estamos a salvo es la forma más efectiva de llegar tarde.
 
-## Por qué glitchmentalMX existe
+## Por qué glitchMentalMX existe
 
 Este proyecto no nació para vender esperanza ni para sembrar pánico. Nació por una razón mucho más simple y más rara en internet:
 
@@ -63,7 +63,7 @@ Una calculadora que no te dice lo que quieres escuchar, sino lo que necesitas co
 
 Un índice que no busca tranquilizarte, sino mostrarte el mapa real del terreno.
 
-[→ Consulta el Índice GlitchMentalMX](/indice-glitchmentalmx/)
+[→ Consulta el Índice glitchMentalMX](/indice-glitchmentalmx/)
 
 ## Esto no es para todos. Y está bien.
 
@@ -93,7 +93,8 @@ No prometen tranquilidad. Prometen claridad.
 
 #### Sobre el autor
 
-[Jorge Diaz](https://www.linkedin.com/in/jorgediazelizondo/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchmentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
+[Jorge Diaz](https://www.linkedin.com/in/jorgediazelizondo/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchMentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
 
 **¿Listo para llevar esta conversación al siguiente nivel?**
-[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) · [Índice GlitchMentalMX →](/indice-glitchmentalmx/)
+
+[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) · [Índice glitchMentalMX →](/indice-glitchmentalmx/)
