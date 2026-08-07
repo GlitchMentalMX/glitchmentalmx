@@ -254,6 +254,7 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn.copied { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 .tag {
   display: inline-block;

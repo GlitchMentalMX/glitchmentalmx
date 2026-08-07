@@ -107,12 +107,7 @@ const articleSchema = {
         rel="noopener"
         href={`https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent('https://glitchmental.com/articulos/' + post.id + '/')}`}
       >WhatsApp</a>
-      <a
-        class="btn btn-ghost"
-        target="_blank"
-        rel="noopener"
-        href={`https://x.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent('https://glitchmental.com/articulos/' + post.id + '/')}`}
-      >X</a>
+      <button id="share-copy" class="btn btn-ghost" type="button"><span>Copiar enlace</span></button>
     </div>
   </article>
 
@@ -195,3 +190,21 @@ const articleSchema = {
     .grid { grid-template-columns: 1fr; }
   }
 </style>
+
+<script>
+  const copyBtn = document.getElementById('share-copy') as HTMLButtonElement | null;
+  const copyLabel = copyBtn?.querySelector('span');
+
+  copyBtn?.addEventListener('click', () => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      if (!copyLabel) return;
+      const original = copyLabel.textContent;
+      copyBtn.classList.add('copied');
+      copyLabel.textContent = 'Copiado';
+      setTimeout(() => {
+        copyBtn.classList.remove('copied');
+        copyLabel.textContent = original;
+      }, 2000);
+    });
+  });
+</script>
