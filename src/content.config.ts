@@ -40,7 +40,23 @@ const editorialCollections = defineCollection({
     kind: z.enum(['series', 'hub']),
     status: z.enum(['published', 'coming-soon']).default('published'),
     description: z.string(),
+    intro: z.string().optional(),
     postSlugs: z.array(z.string()).default([]),
+    sections: z
+      .array(
+        z.object({
+          title: z.string(),
+          description: z.string(),
+          posts: z.array(
+            z.object({
+              slug: z.string(),
+              tag: z.enum(['ancla', 'serie', 'caso']).optional(),
+            })
+          ),
+        })
+      )
+      .optional(),
+    related: z.array(z.string()).default([]),
     order: z.number().default(0),
     group: z.string().optional(),
   }),

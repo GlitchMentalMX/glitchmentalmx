@@ -9,38 +9,253 @@ export async function getStaticPaths() {
 }
 
 const { hub } = Astro.props;
-const posts = (
-  await Promise.all(hub.data.postSlugs.map((slug: string) => getEntry('posts', slug)))
-).filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const postEntries = await Promise.all(
+  hub.data.postSlugs.map(async (slug: string) => [slug, await getEntry('posts', slug)] as const)
+);
+const postMap = new Map(postEntries.filter(([, p]) => Boolean(p)));
+const posts = hub.data.postSlugs
+  .map((slug) => postMap.get(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const { sections } = hub.data;
+
+const related = hub.data.related.length
+  ? (
+      await Promise.all(hub.data.related.map((slug: string) => getEntry('editorialCollections', slug)))
+    ).filter((r): r is NonNullable<typeof r> => Boolean(r))
+  : [];
+
+// Ruta de inicio recomendada: los artículos marcados "ancla", en el orden en que aparecen.
+const anchorPosts = sections
+  ? sections
+      .flatMap((s) => s.posts.filter((p) => p.tag === 'ancla').map((p) => postMap.get(p.slug)))
+      .filter((p): p is NonNullable<typeof p> => Boolean(p))
+  : [];
 ---
 
 <Layout title={hub.data.title} description={hub.data.description}>
   <section class="container header">
-    <p class="eyebrow">Colección · {posts.length} artículos</p>
+    <p class="eyebrow">
+      Colección · {posts.length} artículos{sections ? ` · ${sections.length} secciones` : ''}
+    </p>
     <h1>{hub.data.title}</h1>
     <p class="dek">{hub.data.description}</p>
   </section>
 
-  <section class="container list">
-    <p class="eyebrow list-label">El índice</p>
-    {posts.map((post, i) => (
-      <CollectionArticleRow
-        index={i + 1}
-        slug={post.id}
-        title={post.data.title}
-        description={post.data.description}
-        pubDate={post.data.pubDate}
-        body={post.body}
-      />
-    ))}
-  </section>
+  {hub.data.intro && (
+    <section class="container intro-box">
+      <p>{hub.data.intro}</p>
+    </section>
+  )}
+
+  {sections ? (
+    <>
+      {anchorPosts.length > 0 && (
+        <section class="container start-box">
+          <p class="eyebrow start-label">¿Por dónde empiezo?</p>
+          <p class="start-copy">
+            Si es tu primera vez aquí, esta es la ruta más corta: {anchorPosts.length} textos que dan
+            el contexto que el resto de la colección da por hecho.
+          </p>
+          <ol class="start-list">
+            {anchorPosts.map((post) => (
+              <li><a href={`/articulos/${post.id}/`}>{post.data.title}</a></li>
+            ))}
+          </ol>
+        </section>
+      )}
+
+      <nav class="container toc" aria-label="Índice de secciones">
+        <p class="eyebrow toc-label">Índice de secciones</p>
+        <div class="toc-grid">
+          {sections.map((s, i) => (
+            <a href={`#s${String(i + 1).padStart(2, '0')}`}>
+              {String(i + 1).padStart(2, '0')} · {s.title}
+            </a>
+          ))}
+        </div>
+        <p class="tag-legend">
+          <span class="tag tag-ancla">Ancla</span> punto de partida recomendado
+          <span class="dot">·</span>
+          <span class="tag tag-serie">Serie</span> parte de una investigación de varias entregas
+          <span class="dot">·</span>
+          <span class="tag tag-caso">Caso</span> ejemplo real documentado
+        </p>
+      </nav>
+
+      {sections.map((section, si) => {
+        const num = String(si + 1).padStart(2, '0');
+        return (
+          <section class="container coll-section" id={`s${num}`}>
+            <div class="sec-head">
+              <span class="sec-num">{num}</span>
+              <div class="sec-info">
+                <h2 class="sec-title">{section.title}</h2>
+                <p class="sec-desc">{section.description}</p>
+              </div>
+              <span class="sec-count eyebrow">{section.posts.length} artículos</span>
+            </div>
+            <div class="sec-list">
+              {section.posts.map((entry, i) => {
+                const post = postMap.get(entry.slug);
+                if (!post) return null;
+                return (
+                  <CollectionArticleRow
+                    index={i + 1}
+                    slug={post.id}
+                    title={post.data.title}
+                    description={post.data.description}
+                    pubDate={post.data.pubDate}
+                    body={post.body}
+                    tag={entry.tag}
+                  />
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
+    </>
+  ) : (
+    <section class="container list">
+      <p class="eyebrow list-label">El índice</p>
+      {posts.map((post, i) => (
+        <CollectionArticleRow
+          index={i + 1}
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          body={post.body}
+        />
+      ))}
+    </section>
+  )}
+
+  {related.length > 0 && (
+    <nav class="container related-nav" aria-label="Colecciones relacionadas">
+      {related.map((r) => (
+        <a class="related-card" href={`/colecciones/${r.id}/`}>
+          <span class="eyebrow">Colección relacionada</span>
+          <span class="related-title">{r.data.title} →</span>
+        </a>
+      ))}
+    </nav>
+  )}
 </Layout>
 
 <style>
-  .header { padding: 56px 24px 24px; max-width: 720px; }
+  .header { padding: 56px 24px 24px; max-width: 760px; }
   .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
   .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
 
+  .intro-box {
+    max-width: 760px;
+    margin: 8px auto 0;
+    padding: 18px 22px;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background: var(--accent-soft);
+  }
+  .intro-box p { font-size: 0.98rem; line-height: 1.65; color: var(--text); }
+
+  .start-box {
+    max-width: 760px;
+    margin: 24px auto 0;
+    padding: 20px 22px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg-elevated);
+  }
+  .start-label { color: var(--accent); margin-bottom: 6px; }
+  .start-copy { color: var(--text-muted); font-size: 0.92rem; line-height: 1.55; margin-bottom: 14px; }
+  .start-list { list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 8px; }
+  .start-list li { counter-increment: step; display: flex; gap: 10px; align-items: baseline; }
+  .start-list li::before {
+    content: counter(step);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(1px);
+  }
+  .start-list a { font-size: 0.95rem; color: var(--text); }
+  .start-list a:hover { color: var(--accent); }
+
+  .toc {
+    max-width: 760px;
+    margin: 24px auto 0;
+    padding: 18px 22px 20px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+  }
+  .toc-label { color: var(--text-faint); margin-bottom: 10px; }
+  .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; }
+  .toc-grid a { font-size: 0.88rem; color: var(--accent); padding: 3px 0; }
+  .toc-grid a:hover { text-decoration: underline; }
+  .tag-legend {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+  .tag-legend .dot { margin: 0 2px; }
+
+  .coll-section { max-width: 800px; padding: 40px 24px 8px; scroll-margin-top: 88px; }
+  .coll-section:last-of-type { padding-bottom: 40px; }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid var(--border-strong);
+  }
+  .sec-num { font-family: var(--font-mono); font-size: 1rem; color: var(--accent); font-weight: 600; }
+  .sec-info { flex: 1; min-width: 0; }
+  .sec-title { font-family: var(--font-display); font-size: 1.35rem; line-height: 1.25; }
+  .sec-desc { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin-top: 4px; }
+  .sec-count { white-space: nowrap; color: var(--text-faint); }
+  .sec-list { padding: 0; }
+
+  .related-nav {
+    max-width: 800px;
+    padding: 32px 24px 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .related-card {
+    padding: 20px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    background: var(--bg-elevated);
+  }
+  .related-card:hover { border-color: var(--accent); }
+  .related-card .eyebrow { color: var(--text-faint); margin-bottom: 6px; }
+  .related-title { font-family: var(--font-display); font-size: 1.05rem; }
+
   .list { padding: 24px 24px 96px; max-width: 780px; }
   .list-label { margin-bottom: 6px; }
+
+  @media (max-width: 640px) {
+    .toc-grid { grid-template-columns: 1fr; }
+    .sec-head { flex-wrap: wrap; }
+    .sec-count { display: none; }
+    .related-nav { grid-template-columns: 1fr; }
+  }
 </style>
