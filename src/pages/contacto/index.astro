@@ -1,8 +1,145 @@
 ---
-import SimplePage from '../../components/SimplePage.astro';
+import Layout from '../../layouts/Layout.astro';
+import PageHeader from '../../components/PageHeader.astro';
 import { getEntry } from 'astro:content';
 
 const entry = await getEntry('pages', 'contacto');
+const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
 ---
 
-<SimplePage entry={entry} />
+<Layout title={title} description={description} noIndex={noIndex}>
+  <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
+
+  <section class="container form-wrap">
+    <form id="contact-form" novalidate>
+      <div class="form-field">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" autocomplete="name" required maxlength="200" />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" autocomplete="email" required maxlength="320" />
+      </div>
+
+      <div class="form-field">
+        <label for="subject">Asunto</label>
+        <input id="subject" name="subject" type="text" required maxlength="200" />
+      </div>
+
+      <div class="form-field">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" required maxlength="5000"></textarea>
+      </div>
+
+      <!-- Honeypot — invisible to real visitors, off-screen rather than
+           display:none so simple bots that skip hidden fields still fill it. -->
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="website">Website</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <p class="fallback">
+      ¿Prefieres tu propio correo? Escribe a <a href="mailto:contacto@glitchmental.com">contacto@glitchmental.com</a>.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  const WORKER_URL = 'https://glitchmental-contact.glitchmental-web.workers.dev/';
+  const formLoadedAt = Date.now();
+
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const statusEl = form.querySelector('.form-status') as HTMLParagraphElement;
+  const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+  const nameInput = document.getElementById('name') as HTMLInputElement;
+  const emailInput = document.getElementById('email') as HTMLInputElement;
+  const subjectInput = document.getElementById('subject') as HTMLInputElement;
+  const messageInput = document.getElementById('message') as HTMLTextAreaElement;
+  const websiteInput = document.getElementById('website') as HTMLInputElement;
+
+  function setStatus(message: string, kind: 'ok' | 'error' | '') {
+    statusEl.textContent = message;
+    statusEl.className = 'form-status' + (kind ? ` ${kind}` : '');
+  }
+
+  function isValidEmail(value: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    setStatus('', '');
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const subject = subjectInput.value.trim();
+    const message = messageInput.value.trim();
+
+    if (name.length < 2) {
+      setStatus('Escribe tu nombre.', 'error');
+      nameInput.focus();
+      return;
+    }
+    if (!isValidEmail(email)) {
+      setStatus('Escribe un correo válido.', 'error');
+      emailInput.focus();
+      return;
+    }
+    if (subject.length < 2) {
+      setStatus('Escribe un asunto.', 'error');
+      subjectInput.focus();
+      return;
+    }
+    if (message.length < 5) {
+      setStatus('Escribe un mensaje un poco más largo.', 'error');
+      messageInput.focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando…';
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message,
+          website: websiteInput.value,
+          formLoadedAt,
+        }),
+      });
+      const data = await res.json();
+
+      if (res.ok && data.ok) {
+        setStatus('Mensaje enviado — te responderé pronto.', 'ok');
+        form.reset();
+      } else {
+        setStatus(data.error || 'Algo salió mal, intenta de nuevo.', 'error');
+      }
+    } catch {
+      setStatus('No se pudo conectar. Intenta de nuevo en unos minutos.', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar mensaje';
+    }
+  });
+</script>
+
+<style>
+  .form-wrap { padding: 8px 24px 96px; max-width: 560px; }
+
+  #contact-form { display: flex; flex-direction: column; gap: 20px; }
+
+  .fallback { color: var(--text-muted); font-size: 0.9rem; margin-top: 28px; }
+  .fallback a { color: var(--accent); }
+</style>

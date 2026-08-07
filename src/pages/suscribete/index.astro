@@ -5,54 +5,144 @@ import { getEntry } from 'astro:content';
 
 const entry = await getEntry('pages', 'suscribete');
 const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
+
+const CONSENT_TEXT = 'Sí quiero recibir el newsletter mensual y la versión ejecutiva del Índice glitchMentalMX.';
 ---
 
 <Layout title={title} description={description} noIndex={noIndex}>
   <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
-  <section class="container tally-wrap">
-    <iframe
-      data-tally-src="https://tally.so/embed/ODazJM?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-      loading="lazy"
-      width="100%"
-      height="500"
-      title="Suscríbete a glitchmentalMX"
-    ></iframe>
+
+  <section class="container form-wrap">
+    <form id="subscribe-form" novalidate>
+      <div class="form-field">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" autocomplete="name" required maxlength="200" />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" autocomplete="email" required maxlength="320" />
+      </div>
+
+      <!-- Honeypot — invisible to real visitors, off-screen rather than
+           display:none so simple bots that skip hidden fields still fill it. -->
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="website">Website</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <label class="consent">
+        <input id="consent" name="consent" type="checkbox" required />
+        <span>{CONSENT_TEXT}</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary">Suscribirme</button>
+
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
     <p class="benefit">Al suscribirte recibes acceso al Índice GlitchMentalMX mensual y al Manual del Caos Digital.</p>
   </section>
 </Layout>
 
-<script is:inline>
-  var d = document,
-    w = 'https://tally.so/widgets/embed.js',
-    v = function () {
-      typeof Tally !== 'undefined'
-        ? Tally.loadEmbeds()
-        : d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) {
-            e.src = e.dataset.tallySrc;
-          });
-    };
-  if (typeof Tally !== 'undefined') v();
-  else if (d.querySelector('script[src="' + w + '"]') == null) {
-    var s = d.createElement('script');
-    s.src = w;
-    s.onload = v;
-    s.onerror = v;
-    d.body.appendChild(s);
+<script>
+  const WORKER_URL = 'https://glitchmental-subscribe.glitchmental-web.workers.dev/';
+  const formLoadedAt = Date.now();
+
+  const form = document.getElementById('subscribe-form') as HTMLFormElement;
+  const statusEl = form.querySelector('.form-status') as HTMLParagraphElement;
+  const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+  const nameInput = document.getElementById('name') as HTMLInputElement;
+  const emailInput = document.getElementById('email') as HTMLInputElement;
+  const consentInput = document.getElementById('consent') as HTMLInputElement;
+  const websiteInput = document.getElementById('website') as HTMLInputElement;
+
+  function setStatus(message: string, kind: 'ok' | 'error' | '') {
+    statusEl.textContent = message;
+    statusEl.className = 'form-status' + (kind ? ` ${kind}` : '');
   }
+
+  function isValidEmail(value: string) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    setStatus('', '');
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+
+    if (name.length < 2) {
+      setStatus('Escribe tu nombre.', 'error');
+      nameInput.focus();
+      return;
+    }
+    if (!isValidEmail(email)) {
+      setStatus('Escribe un correo válido.', 'error');
+      emailInput.focus();
+      return;
+    }
+    if (!consentInput.checked) {
+      setStatus('Debes aceptar la casilla para suscribirte.', 'error');
+      consentInput.focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando…';
+
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          consent: consentInput.checked,
+          website: websiteInput.value,
+          formLoadedAt,
+        }),
+      });
+      const data = await res.json();
+
+      if (res.ok && data.ok) {
+        setStatus('Listo — ya estás suscrito.', 'ok');
+        form.reset();
+      } else {
+        setStatus(data.error || 'Algo salió mal, intenta de nuevo.', 'error');
+      }
+    } catch {
+      setStatus('No se pudo conectar. Intenta de nuevo en unos minutos.', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Suscribirme';
+    }
+  });
 </script>
 
 <style>
-  .tally-wrap {
-    padding: 0 24px 96px;
-    max-width: 640px;
-  }
-  .tally-wrap iframe {
-    border: none;
-    display: block;
-  }
-  .benefit {
+  .form-wrap { padding: 8px 24px 96px; max-width: 480px; }
+
+  #subscribe-form { display: flex; flex-direction: column; gap: 20px; }
+
+  .consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.86rem;
+    line-height: 1.5;
     color: var(--text-muted);
-    font-size: 0.9rem;
-    margin-top: 20px;
+    cursor: pointer;
   }
+  .consent input {
+    margin-top: 3px;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent);
+    cursor: pointer;
+  }
+
+  .benefit { color: var(--text-muted); font-size: 0.9rem; margin-top: 28px; }
 </style>
