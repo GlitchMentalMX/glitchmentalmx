@@ -27,105 +27,17 @@ Ahí está lo que suele malinterpretarse cuando se habla del costo ambiental de 
 
 La tabla siguiente concentra el hallazgo central de cada pieza de la serie, el recurso natural o fiscal que involucra y el vacío específico de auditoría que documentó cada investigación. **Ningún renglón de esta tabla es nuevo — la novedad está en verlos juntos.**
 
-#
-
-Pieza
-
-Mecanismo específico
-
-Recurso
-
-Vacío de auditoría
-
-1
-
-Querétaro
-
-Ley estatal de exención de impacto ambiental
-
-Agua
-
-Sin evaluación ambiental obligatoria
-
-2
-
-Nuevo León
-
-Concesión federal discrecional (LAN 1992 + decreto 2022)
-
-Agua
-
-Cesión a la ciudad es voluntaria
-
-3
-
-Jalisco
-
-Déficit de transmisión regional / planta cancelada
-
-Electricidad
-
-Nadie responde quién se queda los megawatts
-
-4
-
-Estado de México
-
-Fila de interconexión CENACE
-
-Electricidad
-
-Proceso sin cifra pública de espera
-
-5
-
-Sonora
-
-Energía visible / agua oculta
-
-Agua + energía
-
-El dato hídrico se pide tarde
-
-6
-
-Yucatán
-
-Un solo gasoducto
-
-Gas/electricidad
-
-Sin redundancia ni auditoría sistémica
-
-7
-
-Nacional — REPNA
-
-Registro de agua no cubre contratos municipales
-
-Agua
-
-Diseñado sin ese caso de uso
-
-8
-
-Nacional — LSE 2025
-
-Prevalencia 54% CFE + autoconsumo acotado
-
-Electricidad
-
-Reglas cambiaron a medio camino
-
-9
-
-Nacional — RFE
-
-Aduana federal decide, no el ISR estatal
-
-Fiscal
-
-No depende de ningún gobierno estatal
+| # | Pieza | Mecanismo específico | Recurso | Vacío de auditoría |
+| --- | --- | --- | --- | --- |
+| 1 | Querétaro | Ley estatal de exención de impacto ambiental | Agua | Sin evaluación ambiental obligatoria |
+| 2 | Nuevo León | Concesión federal discrecional (LAN 1992 + decreto 2022) | Agua | Cesión a la ciudad es voluntaria |
+| 3 | Jalisco | Déficit de transmisión regional / planta cancelada | Electricidad | Nadie responde quién se queda los megawatts |
+| 4 | Estado de México | Fila de interconexión CENACE | Electricidad | Proceso sin cifra pública de espera |
+| 5 | Sonora | Energía visible / agua oculta | Agua + energía | El dato hídrico se pide tarde |
+| 6 | Yucatán | Un solo gasoducto | Gas/electricidad | Sin redundancia ni auditoría sistémica |
+| 7 | Nacional — REPNA | Registro de agua no cubre contratos municipales | Agua | Diseñado sin ese caso de uso |
+| 8 | Nacional — LSE 2025 | Prevalencia 54% CFE + autoconsumo acotado | Electricidad | Reglas cambiaron a medio camino |
+| 9 | Nacional — RFE | Aduana federal decide, no el ISR estatal | Fiscal | No depende de ningún gobierno estatal |
 
 Léase la tabla en dos direcciones. En columnas: **agua y electricidad se repiten como recurso disputado en seis de los nueve casos**, lo que confirma que el cuello de botella real no es uno solo, sino que agua y energía se presionan mutuamente según qué tecnología de enfriamiento use cada instalación. En filas: cada mecanismo pertenece a una jurisdicción distinta — un congreso estatal, una comisión federal, un registro nacional, una aduana — y ninguna de esas jurisdicciones tiene autoridad sobre las otras ocho.
 
