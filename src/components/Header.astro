@@ -50,6 +50,17 @@ const nav = [
   },
   { href: '/indice-glitchmentalmx/', label: 'Índice' },
   { href: '/novelas/', label: 'Novelas' },
+  {
+    href: '/servicios-editoriales-glitchmentalmx/',
+    label: '¿Trabajamos?',
+    children: [
+      { href: '/servicios-editoriales-glitchmentalmx/', label: 'Servicios Editoriales' },
+      { href: '/editorial-services-glitchmentalmx/', label: 'Editorial Services (EN)' },
+      { href: '/publicidad-en-glitchmentalmx/', label: 'Publicidad' },
+      { href: '/colabora/', label: 'Colabora' },
+      { href: '/contacto/', label: 'Contacto' },
+    ],
+  },
 ];
 const current = Astro.url.pathname;
 ---
