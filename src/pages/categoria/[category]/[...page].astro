@@ -31,7 +31,7 @@ const category = categories.find((c) => c.slug === categorySlugParam)!;
     <p class="sub">{page.total} artículos.</p>
   </section>
 
-  <section class="container list">
+  <section class="container grid">
     {page.data.map((post) => (
       <ArticleCard
         slug={post.id}
@@ -41,7 +41,7 @@ const category = categories.find((c) => c.slug === categorySlugParam)!;
         heroImage={post.data.heroImage}
         heroImageAlt={post.data.heroImageAlt}
         body={post.body}
-        variant="compact"
+        variant="grid"
       />
     ))}
   </section>
@@ -58,11 +58,18 @@ const category = categories.find((c) => c.slug === categorySlugParam)!;
   .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
   .sub { color: var(--text-muted); }
 
-  .list {
+  .grid {
     padding: 20px 24px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
   }
 
   .pager {
