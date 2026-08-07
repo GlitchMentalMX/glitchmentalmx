@@ -5,7 +5,7 @@ description: >-
   línea y aportan valor real a una audiencia que ya sabe detectar el
   bullshit.
 eyebrow: Colaboraciones editoriales
-headline: Contenido que aporta. No publicidad disfrazada.
+headline: Contenido que aporta. **No publicidad disfrazada.**
 dek: >-
   Publicamos colaboraciones editoriales seleccionadas que encajan con
   nuestra línea y aportan valor real a una audiencia que ya sabe detectar

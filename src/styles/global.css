@@ -85,6 +85,10 @@
   }
 }
 
+/* blue accent span for headline copy on landing pages — one impactful word
+   or phrase per title, not a full-sentence highlight */
+.accent { color: var(--accent); }
+
 /* accessible link/accent tint that stays readable as text color on dark backgrounds */
 .link-accent {
   color: var(--accent);

@@ -26,3 +26,14 @@ export function mdBold(text: string): string {
     .replace(/>/g, '&gt;');
   return escaped.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
 }
+
+// Igual que mdBold, pero para titulares: convierte **frase** en un <span>
+// acentuado en azul en vez de negritas — usado por PageHeader para resaltar
+// la palabra o frase de mayor impacto en el título de cada landing.
+export function mdAccent(text: string): string {
+  const escaped = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  return escaped.replace(/\*\*(.+?)\*\*/g, '<span class="accent">$1</span>');
+}

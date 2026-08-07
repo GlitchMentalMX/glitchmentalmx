@@ -5,7 +5,7 @@ description: >-
   tecnología está reescribiendo las reglas de la mente humana y la cultura
   digital.
 eyebrow: glitchmentalMX
-headline: Análisis profundo en la era del algoritmo. Sin hype, solo contexto.
+headline: Análisis profundo en la era del algoritmo. **Sin hype, solo contexto.**
 dek: >-
   No somos un blog de noticias. Somos un espacio de análisis sobre cómo la
   tecnología está reescribiendo las reglas de la mente humana y la cultura

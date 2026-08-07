@@ -2,7 +2,7 @@
 title: Ya eres parte de glitchmentalMX
 description: Sin hype, sin spam. Análisis crítico de tech e IA directo a tu inbox.
 eyebrow: Acceso confirmado
-headline: Ya eres parte de glitchmentalMX.
+headline: Ya eres parte de **glitchmentalMX**.
 dek: Sin hype, sin spam. Análisis crítico de tech e IA directo a tu inbox.
   Mientras tanto, descarga los archivos del mes.
 noIndex: true
