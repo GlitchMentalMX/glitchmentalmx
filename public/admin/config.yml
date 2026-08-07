@@ -113,8 +113,8 @@ collections:
     files:
       - name: "indice-actual"
         label: "Edición del mes actual"
-        file: "src/content/indice/actual.yaml"
-        format: "yaml"
+        file: "src/content/indice/actual.json"
+        format: "json"
         fields:
           - { label: "Mes (ej. Agosto 2026)", name: "mes", widget: "string" }
           - label: "Ranking general (20 tecnologías, de mayor a menor puntaje)"

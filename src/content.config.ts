@@ -1,5 +1,23 @@
 import { defineCollection, z } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
+import { readFile } from 'node:fs/promises';
+
+// Lee un único archivo JSON plano (sin envolver en lista, sin campo id) y lo
+// expone como una sola entrada de la colección — necesario porque Decap CMS
+// escribe/lee este archivo como objeto plano, mientras que el loader
+// genérico file() de Astro espera una lista.
+function singleJsonEntryLoader(relativePath, entryId) {
+  return {
+    name: 'single-json-entry-loader',
+    load: async ({ store, config }) => {
+      const url = new URL(relativePath, config.root);
+      const raw = await readFile(url, 'utf-8');
+      const data = JSON.parse(raw);
+      store.clear();
+      store.set({ id: entryId, data });
+    },
+  };
+}
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
@@ -62,9 +80,8 @@ const datoIncomodo = defineCollection({
 });
 
 const indiceGlitchmentalmx = defineCollection({
-  loader: file('src/content/indice/actual.yaml'),
+  loader: singleJsonEntryLoader('./src/content/indice/actual.json', 'actual'),
   schema: z.object({
-    id: z.string(),
     mes: z.string(),
     ranking: z.array(
       z.object({

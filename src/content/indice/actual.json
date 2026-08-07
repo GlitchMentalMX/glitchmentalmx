@@ -1,0 +1,55 @@
+{
+  "mes": "Agosto 2026",
+  "ranking": [
+    { "pos": 1, "nombre": "Agentes de IA autónomos orientados a procesos", "pts": 95 },
+    { "pos": 2, "nombre": "Plataformas de gobernanza de IA", "pts": 93 },
+    { "pos": 3, "nombre": "Ciberseguridad con detección basada en comportamiento", "pts": 89 },
+    { "pos": 4, "nombre": "Sistemas multiagente y orquestación de agentes", "pts": 88 },
+    { "pos": 5, "nombre": "Automatización operativa inteligente (RPA + AI)", "pts": 86 },
+    { "pos": 6, "nombre": "Infraestructura de datos y gobernanza para IA generativa", "pts": 84 },
+    { "pos": 7, "nombre": "Observabilidad y AIOps cloud", "pts": 82 },
+    { "pos": 8, "nombre": "Modelos de lenguaje especializados por industria", "pts": 80 },
+    { "pos": 9, "nombre": "Copilots empresariales integrados", "pts": 78 },
+    { "pos": 10, "nombre": "FinOps y optimización de costos cloud", "pts": 77 },
+    { "pos": 11, "nombre": "Vector databases y retrieval systems", "pts": 76 },
+    { "pos": 12, "nombre": "Infraestructura GPU cloud especializada", "pts": 75 },
+    { "pos": 13, "nombre": "Plataformas de fine-tuning y evaluación de modelos", "pts": 74 },
+    { "pos": 14, "nombre": "Analítica predictiva aplicada a supply chain", "pts": 73 },
+    { "pos": 15, "nombre": "Edge AI empresarial", "pts": 71 },
+    { "pos": 16, "nombre": "Digital twins industriales", "pts": 70 },
+    { "pos": 17, "nombre": "Plataformas low-code con IA", "pts": 69 },
+    { "pos": 18, "nombre": "Voice AI empresarial", "pts": 67 },
+    { "pos": 19, "nombre": "Herramientas de generación de contenido automatizado", "pts": 61 },
+    { "pos": 20, "nombre": "Startups de AI wrappers sin diferenciación técnica", "pts": 53 }
+  ],
+  "destacados": [
+    {
+      "pos": 1,
+      "nombre": "Agentes de IA autónomos orientados a procesos",
+      "texto": "La categoría alcanza un nuevo máximo en el Índice. Datos de S&P Global Market Intelligence y McKinsey confirman que el 31% de las empresas ya opera al menos un agente en producción, aunque el 88% de los pilotos nunca llega a esa fase, según Forrester. La brecha entre quienes escalaron y quienes permanecen en experimentación se profundiza mes con mes. El plazo medio de retorno de estos despliegues, según BCG, ronda los 5.1 meses. El riesgo mayor no es técnico sino de gobernanza: la mayoría de las organizaciones con agentes activos aún no cuenta con controles de seguridad proporcionales al nivel de autonomía que les otorgó."
+    },
+    {
+      "pos": 2,
+      "nombre": "Plataformas de gobernanza de IA",
+      "texto": "Agosto marca el primer mes en que las obligaciones de transparencia del Artículo 50 del EU AI Act son exigibles: divulgación de chatbots y etiquetado de contenido sintético dejan de ser recomendación y se convierten en ley aplicable, con multas de hasta 15 millones de euros o 3% de la facturación global. El mercado de plataformas de gobernanza de IA, valuado por Gartner en 65 millones de dólares en 2024, proyecta una tasa de crecimiento anual compuesta de 67.5% hasta 2030. La categoría deja de ser una apuesta de futuro y se convierte en requisito de cumplimiento inmediato para cualquier empresa que interactúe con usuarios en la Unión Europea."
+    },
+    {
+      "pos": 3,
+      "nombre": "Ciberseguridad con detección basada en comportamiento",
+      "texto": "El ascenso más pronunciado del mes: sube cinco posiciones frente a julio. El reporte 2026 de OWASP sobre seguridad de LLM confirma que los ataques de inyección de prompts crecieron 340% interanual, consolidándose como la vulnerabilidad habilitante detrás de la mayoría de los incidentes en agentes autónomos. Darktrace reporta que 92% de los profesionales de ciberseguridad está preocupado por el impacto de los agentes de IA en sus organizaciones, con un costo promedio por brecha de 4.7 millones de dólares. El 88% de las empresas con agentes desplegados ya reportó al menos un incidente de seguridad vinculado a ellos. La detección basada en comportamiento se vuelve indispensable ante superficies de ataque que las defensas tradicionales no cubren."
+    },
+    {
+      "pos": 4,
+      "nombre": "Sistemas multiagente y orquestación de agentes",
+      "texto": "El Model Context Protocol publicó el 28 de julio su revisión 2026-07-28, el cambio más profundo desde la incorporación de autorización al estándar: arquitectura sin estado, autorización empresarial centralizada y soporte para transacciones de múltiples rondas. El protocolo supera ya mil millones de descargas acumuladas entre sus SDKs de Python y TypeScript, con cerca de 500 millones de descargas mensuales. La Agentic AI Foundation, respaldada por AWS, Google, Microsoft, OpenAI y Cloudflare, confirma su tránsito de proyecto de un solo proveedor a infraestructura abierta de facto para la interoperabilidad entre agentes."
+    },
+    {
+      "pos": 5,
+      "nombre": "Automatización operativa inteligente (RPA + AI)",
+      "texto": "Cede dos posiciones frente a julio, no por pérdida de valor sino por el avance de categorías con mayor urgencia regulatoria y de seguridad. Su tracción sigue siendo la más uniforme del Índice: sectores regulados mantienen despliegues estables con retorno medible, y las organizaciones con infraestructura RPA previa continúan capitalizando la capa de IA sin reemplazar sistemas existentes. Es, junto con los agentes autónomos, la categoría con menor riesgo de adopción entre las evaluadas este mes, aunque también la que menos señales nuevas aporta respecto al mes anterior."
+    }
+  ],
+  "sube": "Ciberseguridad con detección basada en comportamiento asciende de la posición 8 a la 3, impulsada por el salto de 340% interanual en ataques de inyección de prompts reportado por OWASP. Sistemas multiagente y orquestación de agentes avanza tras la publicación de la revisión 2026-07-28 del Model Context Protocol. Plataformas de gobernanza de IA refuerza su puntuación al entrar en vigor las obligaciones de transparencia del Artículo 50 del EU AI Act el 2 de agosto.",
+  "baja": "Automatización operativa inteligente cede dos posiciones ante el ascenso de categorías más urgentes. Herramientas de generación de contenido automatizado continúa su descenso, presionada por las nuevas obligaciones de etiquetado de contenido sintético. AI wrappers sin diferenciación técnica alcanza un nuevo mínimo histórico: 53 puntos.",
+  "insight": "Agosto convierte la regulación en hecho consumado: las obligaciones de transparencia del Artículo 50 del EU AI Act entran en vigor el día 2, y con ellas la gobernanza de IA deja de discutirse en condicional. En paralelo, el salto de 340% en ataques de inyección de prompts documentado por OWASP expone que la velocidad de despliegue de agentes superó, una vez más, la capacidad de las organizaciones para asegurarlos. La consolidación del Model Context Protocol como estándar abierto de facto añade una tercera variable: la interoperabilidad entre agentes ya no es un experimento de ingeniería, es infraestructura de producción. El patrón que domina el mes no es de expansión sino de exigencia: cumplir, asegurar y operar con evidencia verificable, no con promesas."
+}
