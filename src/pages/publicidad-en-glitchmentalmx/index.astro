@@ -1,8 +1,248 @@
 ---
-import SimplePage from '../../components/SimplePage.astro';
-import { getEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
 
-const entry = await getEntry('pages', 'publicidad-en-glitchmentalmx');
+const proof = [
+  { value: '500+', label: 'artículos publicados — audiencia activa' },
+  { value: 'Nicho', label: 'IA, Tech, Cultura Digital y tendencias' },
+  { value: 'LATAM', label: 'enfoque hispanohablante — México, LATAM + España' },
+  { value: '100%', label: 'contenido editorial — sin relleno' },
+];
+
+const formats = [
+  {
+    icon: '📝',
+    name: 'Post patrocinado',
+    price: '$200',
+    period: 'USD',
+    term: 'Permanente',
+    features: [
+      'Redacción + SEO + Publicación',
+      'Hasta 2 enlaces DoFollow o NoFollow',
+      'Entrega en 3–5 días hábiles',
+    ],
+  },
+  {
+    icon: '🔗',
+    name: 'Enlace contextual',
+    price: '$100',
+    period: 'USD',
+    term: 'Permanente',
+    featured: true,
+    badge: 'Más solicitado',
+    features: [
+      'Inserción en artículo existente relevante',
+      'Contexto editorial temático',
+    ],
+  },
+  {
+    icon: '🖼️',
+    name: 'Banner publicitario',
+    price: '$150',
+    period: 'USD/mes',
+    term: 'Renovable mensualmente',
+    features: [
+      'Lateral / Header / Footer',
+      '728×90, 300×250 u otras medidas',
+    ],
+  },
+];
+
+const reasons = [
+  'Audiencia nicho con interés real en tecnología, IA y cultura digital',
+  'Contenidos editorialmente integrados — mejor impacto que publicidad intrusiva',
+  'Formatos flexibles según tu objetivo: SEO, branding o campañas',
+  'Bienvenidas: startups, SaaS, fintech, herramientas digitales y marcas tech',
+];
 ---
 
-<SimplePage entry={entry} />
+<Layout
+  title="Publicidad"
+  description="Tu marca frente a una audiencia que sí le importa la tecnología."
+>
+  <section class="container hero">
+    <h1>Tu marca frente a una audiencia<br /><span>que sí le importa la tecnología.</span></h1>
+    <p class="lead-text">Lectores interesados en Inteligencia Artificial, Cultura Digital, Tendencias Tecnológicas y Gadgets. Formatos editorialmente integrados para mejor impacto — sin publicidad genérica ni intrusiva.</p>
+  </section>
+
+  <section class="container proof-bar">
+    {proof.map((p) => (
+      <div class="proof-item">
+        <span class="proof-value">{p.value}</span>
+        <span class="proof-label">{p.label}</span>
+      </div>
+    ))}
+  </section>
+
+  <section class="container block">
+    <p class="section-label">Formatos disponibles</p>
+    <div class="formats">
+      {formats.map((f) => (
+        <div class:list={['format', { featured: f.featured }]}>
+          {f.badge && <span class="format-badge">{f.badge}</span>}
+          <p class="format-icon">{f.icon}</p>
+          <p class="format-name">{f.name}</p>
+          <p class="format-price">{f.price}<span>{f.period}</span></p>
+          <p class="format-term">{f.term}</p>
+          <div class="format-features">
+            {f.features.map((feat) => <p class="check-item arrow">{feat}</p>)}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">Por qué anunciar aquí</p>
+    <div class="quality-list">
+      {reasons.map((r) => <p class="check-item check">{r}</p>)}
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">Cómo contratar</p>
+    <div class="callout-box">
+      <p>Escribe con tus objetivos y presupuesto estimado. Te responderemos con una propuesta detallada y términos específicos para tu campaña.</p>
+    </div>
+  </section>
+
+  <section class="container cta">
+    <div class="cta-inner">
+      <a class="cta-site" href="/">glitchmental.com</a>
+      <a class="btn btn-primary" href="mailto:contacto@glitchmental.com">contacto@glitchmental.com</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero { padding: 56px 24px 32px; max-width: 760px; border-bottom: 2px solid var(--text); }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+    line-height: 1.15;
+    margin: 0 0 18px;
+  }
+  .hero h1 span { color: var(--accent); }
+  .lead-text { color: var(--text-muted); font-size: 1rem; line-height: 1.65; max-width: 60ch; }
+
+  .proof-bar {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+  .proof-item {
+    flex: 1 1 0;
+    min-width: 140px;
+    padding: 20px 22px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .proof-item:last-child { border-right: none; }
+  .proof-value {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .proof-label { display: block; font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+
+  .block { max-width: 800px; padding: 40px 24px 8px; }
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 18px;
+  }
+
+  .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .format {
+    position: relative;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+  }
+  .format.featured { border: 2px solid var(--accent); background: var(--accent-soft); }
+  .format-badge {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .format-icon { font-size: 1.25rem; margin-bottom: 8px; }
+  .format-name {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+  }
+  .format-price { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; }
+  .format-price span { font-family: var(--font-body); font-size: 0.82rem; font-weight: 400; color: var(--text-faint); margin-left: 2px; }
+  .format-term {
+    color: var(--accent);
+    font-size: 0.86rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .format.featured .format-term { border-bottom-color: var(--accent-line); }
+  .format-features { display: flex; flex-direction: column; gap: 8px; }
+  .format-features .check-item { font-size: 0.82rem; padding-left: 20px; }
+
+  .check-item { font-size: 0.95rem; color: var(--text); line-height: 1.55; padding-left: 24px; position: relative; margin: 0; }
+  .check-item::before { position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .check-item.arrow::before { content: '→'; }
+  .check-item.check::before { content: '✓'; }
+  .quality-list .check-item { padding: 12px 0 12px 24px; border-bottom: 1px solid var(--border); }
+  .quality-list .check-item:last-child { border-bottom: none; }
+
+  .callout-box {
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background: var(--accent-soft);
+    padding: 18px 22px;
+  }
+  .callout-box p { font-size: 0.95rem; line-height: 1.7; color: var(--text); margin: 0; }
+
+  .cta { max-width: 800px; padding: 44px 24px 96px; }
+  .cta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--text);
+    padding-top: 28px;
+  }
+  .cta-site { color: var(--text-faint); font-size: 0.95rem; }
+
+  @media (max-width: 700px) {
+    .formats { grid-template-columns: 1fr; }
+    .proof-bar { flex-direction: column; }
+    .proof-item { border-right: none; border-bottom: 1px solid var(--border); }
+    .proof-item:last-child { border-bottom: none; }
+    .cta-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>

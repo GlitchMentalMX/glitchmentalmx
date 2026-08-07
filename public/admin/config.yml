@@ -67,10 +67,6 @@ collections:
         label: "Colabora"
         file: "src/content/pages/colabora.md"
         fields: *pageFields
-      - name: "publicidad"
-        label: "Publicidad"
-        file: "src/content/pages/publicidad-en-glitchmentalmx.md"
-        fields: *pageFields
       - name: "politica-de-privacidad"
         label: "Política de Privacidad"
         file: "src/content/pages/politica-de-privacidad.md"
