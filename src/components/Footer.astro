@@ -127,11 +127,30 @@ const columns = [
      "glitch" flicker on hover/focus, tying the visual to the site's own name
      instead of generic footer decoration */
   .brand-band {
+    position: relative;
     display: block;
     margin-top: 56px;
     padding-top: 40px;
     border-top: 1px solid var(--border);
     text-decoration: none;
+  }
+  /* soft ambient glow behind the wordmark — dark mode only, the one place
+     on the site that departs from the flat background, kept to this single
+     signature moment rather than becoming a page-wide treatment */
+  .brand-band::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  :global([data-theme='dark']) .brand-band::before {
+    background: radial-gradient(ellipse 900px 380px at 30% 55%, rgba(0, 102, 255, 0.18), transparent 70%);
+  }
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme='light'])) .brand-band::before {
+      background: radial-gradient(ellipse 900px 380px at 30% 55%, rgba(0, 102, 255, 0.18), transparent 70%);
+    }
   }
   .brand-word {
     position: relative;
