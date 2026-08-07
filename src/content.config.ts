@@ -51,11 +51,16 @@ const editorialCollections = defineCollection({
             z.object({
               slug: z.string(),
               tag: z.enum(['ancla', 'serie', 'caso', 'debate']).optional(),
+              label: z.string().optional(),
             })
           ),
         })
       )
       .optional(),
+    findings: z.array(z.string()).optional(),
+    conclusion: z.string().optional(),
+    capstone: z.string().optional(),
+    capstoneLabel: z.string().optional(),
     related: z.array(z.string()).default([]),
     order: z.number().default(0),
     group: z.string().optional(),
