@@ -205,19 +205,6 @@ h1, h2, h3, h4 {
   line-height: 1.55;
   color: var(--text);
 }
-/* comilla decorativa flotada — se comporta como un carácter grande al inicio
-   del primer renglón (el texto la rodea de forma natural), no como un
-   elemento suspendido encima del párrafo */
-.prose blockquote::before {
-  content: '\201C';
-  float: left;
-  font-family: var(--font-display);
-  font-style: normal;
-  font-size: 1.9em;
-  line-height: 0.7;
-  color: var(--border-strong);
-  margin: 0 -0.06em 0 0;
-}
 .prose hr {
   border: none;
   border-top: 1px solid var(--border);
