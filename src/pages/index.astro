@@ -782,19 +782,28 @@ const signalPools = {
   // Hero — mismo efecto de decodificación, pero disparado una sola vez al
   // cargar la página, no por IntersectionObserver: al estar pegado arriba,
   // re-disparar cada vez que el usuario sube el scroll se sentiría repetitivo.
-  // El h1 se congela a su altura actual mientras corre: los caracteres
-  // aleatorios del scramble pueden ser más anchos que el texto final y
-  // cambiar el punto de salto de línea a mitad de la animación — eso
-  // empujaba todo el contenido de abajo. Se libera al terminar.
+  // El h1 se congela a una altura FIJA (no mínima) con overflow oculto
+  // mientras corre: en pantallas angostas, un carácter individual sustituido
+  // puede seguir siendo un poco más ancho que la letra real y correr el
+  // punto de salto de línea a una tercera línea a mitad de animación — con
+  // min-height eso todavía empujaba el contenido de abajo. Con altura fija,
+  // esa tercera línea (si aparece) queda invisible un instante en vez de
+  // mover algo; se libera al terminar.
   const heroTarget = document.querySelector<HTMLElement>('.hero-decode');
   if (!reduceMotion && heroTarget) {
     const heroHeading = heroTarget.closest('h1');
     const heroScrambler = new TextScramble(heroTarget);
     const heroText = heroTarget.dataset.text || heroTarget.textContent || '';
     setTimeout(() => {
-      if (heroHeading) heroHeading.style.minHeight = heroHeading.getBoundingClientRect().height + 'px';
+      if (heroHeading) {
+        heroHeading.style.height = heroHeading.getBoundingClientRect().height + 'px';
+        heroHeading.style.overflow = 'hidden';
+      }
       heroScrambler.setText(heroText).then(() => {
-        if (heroHeading) heroHeading.style.minHeight = '';
+        if (heroHeading) {
+          heroHeading.style.height = '';
+          heroHeading.style.overflow = '';
+        }
       });
     }, 200);
   }
