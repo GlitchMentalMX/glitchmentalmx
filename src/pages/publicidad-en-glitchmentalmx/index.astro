@@ -1,8 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
 
 const proof = [
-  { value: '500+', label: 'artículos publicados — audiencia activa' },
+  { value: `${postCount}`, label: 'artículos publicados — audiencia activa' },
   { value: 'Nicho', label: 'IA, Tech, Cultura Digital y tendencias' },
   { value: 'LATAM', label: 'enfoque hispanohablante — México, LATAM + España' },
   { value: '100%', label: 'contenido editorial — sin relleno' },
@@ -10,7 +13,6 @@ const proof = [
 
 const formats = [
   {
-    icon: '📝',
     name: 'Post patrocinado',
     price: '$200',
     period: 'USD',
@@ -22,7 +24,6 @@ const formats = [
     ],
   },
   {
-    icon: '🔗',
     name: 'Enlace contextual',
     price: '$100',
     period: 'USD',
@@ -35,7 +36,6 @@ const formats = [
     ],
   },
   {
-    icon: '🖼️',
     name: 'Banner publicitario',
     price: '$150',
     period: 'USD/mes',
@@ -79,7 +79,6 @@ const reasons = [
       {formats.map((f) => (
         <div class:list={['format', { featured: f.featured }]}>
           {f.badge && <span class="format-badge">{f.badge}</span>}
-          <p class="format-icon">{f.icon}</p>
           <p class="format-name">{f.name}</p>
           <p class="format-price">{f.price}<span>{f.period}</span></p>
           <p class="format-term">{f.term}</p>
@@ -187,7 +186,6 @@ const reasons = [
     border-radius: 999px;
     white-space: nowrap;
   }
-  .format-icon { font-size: 1.25rem; margin-bottom: 8px; }
   .format-name {
     font-family: var(--font-mono);
     font-size: 0.72rem;

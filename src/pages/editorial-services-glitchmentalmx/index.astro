@@ -1,5 +1,8 @@
 ---
 import ServicesLanding from '../../components/ServicesLanding.astro';
+import { getCollection } from 'astro:content';
+
+const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
 ---
 
 <ServicesLanding
@@ -15,7 +18,7 @@ import ServicesLanding from '../../components/ServicesLanding.astro';
   roles={['Senior writer', 'Copy editor', 'Art director', 'SEO specialist', 'Community manager', 'Editor-in-chief']}
   proof={[
     { value: '25', label: 'articles per week — sustained capacity' },
-    { value: '300+', label: 'published pieces — verifiable on the site' },
+    { value: `${postCount}`, label: 'published pieces — verifiable on the site' },
     { value: '900–1,200', label: 'words per piece — average length' },
     { value: '100%', label: 'human editorial review on every piece' },
   ]}
@@ -46,7 +49,7 @@ import ServicesLanding from '../../components/ServicesLanding.astro';
   niches={['Tech & AI', 'Health & Wellness', 'Entertainment & Culture', 'Fintech & Business', 'Education', 'Digital Lifestyle']}
   caseEyebrow="This system isn't a pitch"
   caseTitle="It's what you're looking at right now."
-  caseText="GlitchMentalMX runs on this pipeline in production: 300+ published pieces, a unique editorial image on every article, zero stock, human review on every delivery. The site is the demo."
+  caseText={`GlitchMentalMX runs on this pipeline in production: ${postCount} published pieces, a unique editorial image on every article, zero stock, human review on every delivery. The site is the demo.`}
   caseCta="See the system in production →"
   caseHref="/categoria/inteligencia-artificial/"
   pricingTitle="Monthly editorial capacity (USD)"

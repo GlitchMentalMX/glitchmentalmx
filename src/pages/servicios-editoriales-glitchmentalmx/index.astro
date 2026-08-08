@@ -1,5 +1,8 @@
 ---
 import ServicesLanding from '../../components/ServicesLanding.astro';
+import { getCollection } from 'astro:content';
+
+const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
 ---
 
 <ServicesLanding
@@ -15,7 +18,7 @@ import ServicesLanding from '../../components/ServicesLanding.astro';
   roles={['Redactor senior', 'Corrector de estilo', 'Director de arte', 'Especialista SEO', 'Community manager', 'Editor jefe']}
   proof={[
     { value: '25', label: 'artículos por semana — capacidad sostenida' },
-    { value: '300+', label: 'piezas publicadas — verificables en el sitio' },
+    { value: `${postCount}`, label: 'piezas publicadas — verificables en el sitio' },
     { value: '900–1,200', label: 'palabras por pieza — extensión promedio' },
     { value: '100%', label: 'revisión editorial humana en cada pieza' },
   ]}
@@ -46,7 +49,7 @@ import ServicesLanding from '../../components/ServicesLanding.astro';
   niches={['Tech e IA', 'Salud y Bienestar', 'Entretenimiento y Cultura', 'Fintech y Negocios', 'Educación', 'Lifestyle Digital']}
   caseEyebrow="Este sistema no es una promesa"
   caseTitle="Es lo que estás viendo ahora mismo."
-  caseText="GlitchMentalMX opera con este pipeline en producción: 300+ piezas publicadas, imagen editorial única en cada artículo, cero stock, revisión humana en cada entrega. El sitio es la demo."
+  caseText={`GlitchMentalMX opera con este pipeline en producción: ${postCount} piezas publicadas, imagen editorial única en cada artículo, cero stock, revisión humana en cada entrega. El sitio es la demo.`}
   caseCta="Ver el sistema en producción →"
   caseHref="/categoria/inteligencia-artificial/"
   pricingTitle="Capacidad editorial mensual (USD)"
