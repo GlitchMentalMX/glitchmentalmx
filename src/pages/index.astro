@@ -92,13 +92,14 @@ const toolsList = [
 // ciclo visible entre categorías corre aparte, más rápido, solo mientras el
 // visitante está en la página.
 const indiceEntry = await getEntry('indiceGlitchmentalmx', 'actual');
+const datoIncomodoPool = await getCollection('datoIncomodo');
 const discoverPool = allPosts.slice(4, 20); // evita duplicar Destacado y Recién publicado
 // Solo series/colecciones ya terminadas se anuncian en la Señal en vivo —
 // una "coming-soon" (como Ingeniería de la Confianza mientras se publica)
-// no debe promocionarse todavía.
-const collectionsPool = [...series, ...standaloneHubs, ...groupedHubs].filter(
-  (c) => c.data.status !== 'coming-soon'
-);
+// no debe promocionarse todavía. Separadas (no combinadas) para que el
+// ciclo muestre una serie Y una colección, no una u otra.
+const seriesPool = series.filter((s) => s.data.status !== 'coming-soon');
+const hubPool = [...standaloneHubs, ...groupedHubs].filter((h) => h.data.status !== 'coming-soon');
 
 // El texto de "sube/baja" del Índice lo escribe Jorge como párrafo completo,
 // no como frase corta — se trunca en un punto de palabra para que el widget
@@ -116,21 +117,36 @@ const signalPools = {
     text: p.data.title,
     href: `/articulos/${p.id}/`,
   })),
-  indice: indiceEntry
-    ? [
-        { tag: 'Índice · Sube', text: truncate(indiceEntry.data.sube), href: '/indice-glitchmentalmx/' },
-        { tag: 'Índice · Baja', text: truncate(indiceEntry.data.baja), href: '/indice-glitchmentalmx/' },
-      ]
+  indiceSube: indiceEntry
+    ? [{ tag: 'Índice · Sube', text: truncate(indiceEntry.data.sube), href: '/indice-glitchmentalmx/' }]
     : [],
-  serie: collectionsPool.map((c) => ({
-    tag: c.data.kind === 'series' ? 'Serie' : 'Colección',
-    text: c.data.title,
-    href: c.data.kind === 'series' ? `/series/${c.id}/` : `/colecciones/${c.id}/`,
+  indiceBaja: indiceEntry
+    ? [{ tag: 'Índice · Baja', text: truncate(indiceEntry.data.baja), href: '/indice-glitchmentalmx/' }]
+    : [],
+  serie: seriesPool.map((s) => ({
+    tag: 'Serie',
+    text: s.data.title,
+    href: `/series/${s.id}/`,
+  })),
+  coleccion: hubPool.map((h) => ({
+    tag: 'Colección',
+    text: h.data.title,
+    href: `/colecciones/${h.id}/`,
   })),
   herramienta: toolsList.map((t) => ({
     tag: 'Herramienta',
     text: t.title,
     href: t.href,
+  })),
+  insights: insights.map((i) => ({
+    tag: 'Insights Visuales',
+    text: truncate(i.data.titulo),
+    href: '/insights-visuales/',
+  })),
+  datoIncomodo: datoIncomodoPool.map((d) => ({
+    tag: 'Dato Incómodo',
+    text: truncate(d.data.resumen),
+    href: '/dato-incomodo/',
   })),
   novela: novelasPublicadas.map((n) => ({
     tag: 'Novela',
@@ -833,7 +849,17 @@ const signalPools = {
     const epoch12h = Math.floor(Date.now() / (12 * 60 * 60 * 1000));
     const pick = (pool?: SignalItem[]) => (pool && pool.length ? pool[epoch12h % pool.length] : null);
 
-    const order = ['destacado', 'indice', 'serie', 'herramienta', 'novela'];
+    const order = [
+      'destacado',
+      'indiceSube',
+      'serie',
+      'herramienta',
+      'insights',
+      'indiceBaja',
+      'coleccion',
+      'datoIncomodo',
+      'novela',
+    ];
     const lineup = order
       .map((key) => pick(pools[key]))
       .filter((item): item is SignalItem => !!item);
@@ -863,7 +889,7 @@ const signalPools = {
           timer = setInterval(() => {
             i = (i + 1) % lineup.length;
             render(lineup[i], true);
-          }, 6500);
+          }, 5500);
         };
         const stopCycle = () => {
           if (timer) clearInterval(timer);
