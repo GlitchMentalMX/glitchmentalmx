@@ -194,47 +194,29 @@ h1, h2, h3, h4 {
   margin: 0.4em 0;
 }
 .prose blockquote {
-  position: relative;
   margin: 1.8em 0;
   padding: 0.15em 0 0.15em 1.8em;
   max-width: 85%;
+  border-left: 4px solid var(--accent);
+  border-image: linear-gradient(180deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 30%, transparent) 100%) 1;
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.3rem;
   line-height: 1.55;
   color: var(--text);
 }
-/* barra con degradado en vez de color plano — se siente diseñada, no una
-   regla de procesador de texto; su altura sigue exactamente la del propio
-   blockquote (padding vertical mínimo), nunca "flota" con espacio extra */
+/* comilla decorativa flotada — se comporta como un carácter grande al inicio
+   del primer renglón (el texto la rodea de forma natural), no como un
+   elemento suspendido encima del párrafo */
 .prose blockquote::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  border-radius: 2px;
-  background: linear-gradient(180deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 30%, transparent) 100%);
-}
-/* comilla decorativa colgante — firma tipográfica clásica de editoriales de
-   alto nivel; muda de color para no competir con el texto, puramente
-   ornamental (aria-hidden vía contenido generado, no es contenido real) */
-.prose blockquote::after {
   content: '\201C';
-  position: absolute;
-  left: 1.58em;
-  top: 0.08em;
+  float: left;
   font-family: var(--font-display);
-  font-size: 2.1em;
   font-style: normal;
-  line-height: 1;
+  font-size: 1.9em;
+  line-height: 0.7;
   color: var(--border-strong);
-  z-index: 0;
-}
-.prose blockquote > * {
-  position: relative;
-  z-index: 1;
+  margin: 0 -0.06em 0 0;
 }
 .prose hr {
   border: none;
