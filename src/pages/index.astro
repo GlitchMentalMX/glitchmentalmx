@@ -93,7 +93,12 @@ const toolsList = [
 // visitante está en la página.
 const indiceEntry = await getEntry('indiceGlitchmentalmx', 'actual');
 const discoverPool = allPosts.slice(4, 20); // evita duplicar Destacado y Recién publicado
-const collectionsPool = [...series, ...standaloneHubs, ...groupedHubs];
+// Solo series/colecciones ya terminadas se anuncian en la Señal en vivo —
+// una "coming-soon" (como Ingeniería de la Confianza mientras se publica)
+// no debe promocionarse todavía.
+const collectionsPool = [...series, ...standaloneHubs, ...groupedHubs].filter(
+  (c) => c.data.status !== 'coming-soon'
+);
 
 // El texto de "sube/baja" del Índice lo escribe Jorge como párrafo completo,
 // no como frase corta — se trunca en un punto de palabra para que el widget
