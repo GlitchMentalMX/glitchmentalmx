@@ -1,4 +1,4 @@
-// worker.js — Proxy seguro entre GlitchSearch y Gemini
+// worker.js — Proxy seguro entre GlitchSearch y Groq
 
 const ALLOWED_ORIGINS = ['https://glitchmental.com', 'https://www.glitchmental.com'];
 const RATE_LIMIT_PER_MINUTE = 10; // por IP
@@ -29,7 +29,7 @@ export default {
     // límite de velocidad es mejor que un error 1101 sin CORS (que el
     // navegador reporta como "Failed to fetch").
     const ip = request.headers.get('CF-Connecting-IP') || 'unknown';
-    const rateLimitKey = `rl-gemini:${ip}:${Math.floor(Date.now() / 60000)}`; // ventana de 1 minuto
+    const rateLimitKey = `rl:${ip}:${Math.floor(Date.now() / 60000)}`; // ventana de 1 minuto
     try {
       const currentCount = parseInt((await env.RATE_LIMIT_KV.get(rateLimitKey)) || '0', 10);
       if (currentCount >= RATE_LIMIT_PER_MINUTE) {
@@ -43,27 +43,16 @@ export default {
       console.log(`[rate-limit-error] ${e.message}`);
     }
 
-    // 3. El sitio manda { model, contents, generationConfig } — separamos el
-    // modelo (va en la URL) del resto del cuerpo (va tal cual a Gemini)
-    const payload = await request.json();
-    const { model, ...geminiBody } = payload;
-    if (!model) {
-      return new Response(JSON.stringify({ error: 'Falta el modelo' }), {
-        status: 400,
-        headers: corsHeaders(matchedOrigin)
-      });
-    }
-
-    // 4. Caché — si ya respondimos esta misma consulta hace poco, no gastamos
+    // 3. Caché — si ya respondimos esta misma consulta hace poco, no gastamos
     // cuota de nuevo. Las llaves de KV tienen un límite de 512 bytes — el
     // cuerpo completo (prompt + snippets de resultados) lo supera fácilmente
     // en búsquedas con fragmentos largos, y KV truena con una excepción no
     // controlada si la llave es muy larga (eso rompía la petición entera de
-    // forma intermitente, dependiendo de qué tan largos salieran los
-    // resultados de cada búsqueda). Usamos un hash corto en vez del cuerpo
-    // crudo, y protegemos ambas operaciones de KV con try/catch — un fallo
-    // de caché nunca debe tronar la respuesta real.
-    const cacheKey = `cache-gemini:${model}:${hashString(JSON.stringify(geminiBody))}`;
+    // forma intermitente — el mismo bug que tenía el proxy de Gemini). Usamos
+    // un hash corto en vez del cuerpo crudo, y protegemos ambas operaciones
+    // de KV con try/catch — un fallo de caché nunca debe tronar la respuesta real.
+    const body = await request.json();
+    const cacheKey = `cache:${hashString(JSON.stringify(body))}`;
     try {
       const cached = await env.RATE_LIMIT_KV.get(cacheKey);
       if (cached) {
@@ -73,22 +62,22 @@ export default {
       console.log(`[cache-read-error] ${e.message}`);
     }
 
-    // 5. Llamada real a Gemini — la key vive solo aquí, nunca llega al navegador
-    const geminiResponse = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'X-goog-api-key': env.GEMINI_API_KEY },
-        body: JSON.stringify(geminiBody)
-      }
-    );
+    // 4. Llamada real a Groq — la key vive solo aquí, nunca llega al navegador
+    const groqResponse = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${env.GROQ_API_KEY}` // secreto, configurado en Cloudflare
+      },
+      body: JSON.stringify(body)
+    });
 
-    const responseText = await geminiResponse.text();
+    const responseText = await groqResponse.text();
 
-    // 6. Registro de uso — visible en el dashboard de Cloudflare (logs gratis)
-    console.log(`[${new Date().toISOString()}] IP:${ip} model:${model} status:${geminiResponse.status}`);
+    // 5. Registro de uso — visible en el dashboard de Cloudflare (logs gratis)
+    console.log(`[${new Date().toISOString()}] IP:${ip} status:${groqResponse.status}`);
 
-    if (geminiResponse.ok) {
+    if (groqResponse.ok) {
       try {
         ctx.waitUntil(env.RATE_LIMIT_KV.put(cacheKey, responseText, { expirationTtl: CACHE_TTL_SECONDS }));
       } catch (e) {
@@ -97,7 +86,7 @@ export default {
     }
 
     return new Response(responseText, {
-      status: geminiResponse.status,
+      status: groqResponse.status,
       headers: { ...corsHeaders(matchedOrigin), 'Content-Type': 'application/json' }
     });
   }

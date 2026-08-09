@@ -61,9 +61,8 @@ const GCSE_CX = 'a28d59cfd89f948f4';
         currentRequestId++;
         var requestId = currentRequestId;
         glitchSearchOnResults(gname, query, results);
-        fetchOfficialSite(lastQuery, requestId);
         fetchOwnSiteResult(lastQuery, requestId);
-        fetchAiVerdict(lastQuery, lastResults, requestId);
+        fetchAiSignals(lastQuery, lastResults, requestId);
       },
       starting: function () {},
     },
@@ -83,12 +82,21 @@ const GCSE_CX = 'a28d59cfd89f948f4';
   var GEMINI_MODELS = ['gemini-flash-latest', 'gemini-2.5-flash', 'gemini-2.5-flash-lite'];
   var GROQ_WORKER_URL = 'https://glitchsearch-groq-proxy.glitchmental-web.workers.dev/';
 
-  function fetchAiVerdict(query, results, requestId) {
+  // Veredicto + sitio oficial fusionados en UNA sola llamada de IA (antes
+  // eran 2 peticiones concurrentes al mismo Worker, lo que causaba una
+  // carrera intermitente — "Failed to fetch" — cuando ambas salían en el
+  // mismo instante justo al terminar de renderizar Google. Al pedir ambos
+  // datos en un solo JSON, solo queda 1 llamada al Worker por búsqueda.
+  function fetchAiSignals(query, results, requestId) {
     var verdictBox = document.getElementById('aiVerdict');
     var verdictText = document.getElementById('aiVerdictText');
+    var officialBox = document.getElementById('officialSite');
+    var officialLink = document.getElementById('officialSiteLink');
+
     verdictBox.style.display = 'none';
     verdictBox.className = 'ai-verdict';
     verdictText.textContent = '';
+    officialBox.style.display = 'none';
     if (!results || results.length === 0) return;
 
     var snippets = results
@@ -102,30 +110,58 @@ const GCSE_CX = 'a28d59cfd89f948f4';
       'Eres GlitchMentalMX: tono ácido, directo, sin hype, pero SIEMPRE constructivo y ' +
       'nunca oscuro, violento u ofensivo. Evita por completo cualquier referencia a violencia, ' +
       'tragedias, terrorismo, religión o política sensible, incluso si aparece de forma tangencial ' +
-      'en los resultados — enfócate solo en el ángulo tecnológico o de producto. El objetivo es una ' +
-      'observación aguda y crítica sobre tecnología, no un comentario provocador sobre eventos del ' +
-      'mundo real. No uses Markdown, asteriscos, ni ningún tipo de formato — responde en texto ' +
-      'plano únicamente.\n\n' +
+      'en los resultados — enfócate solo en el ángulo tecnológico o de producto.\n\n' +
       'Alguien buscó "' + query + '" y estos son los resultados encontrados:\n\n' + snippets +
-      '\n\nEscribe UNA sola frase (máximo 150 caracteres) sintetizando lo que realmente ' +
-      'importa de estos resultados, en español, con tu tono ácido pero responsable. ' +
-      'Sin saludos, sin preámbulo, solo la frase.';
+      '\n\nResponde ÚNICAMENTE con un objeto JSON, sin texto fuera de él ni bloques de código, ' +
+      'con exactamente estas dos claves:\n' +
+      '{"veredicto": "una sola frase (máximo 150 caracteres) sintetizando lo que realmente importa ' +
+      'de estos resultados, en español, tono ácido pero responsable, sin saludos ni preámbulo, sin ' +
+      'markdown ni asteriscos", "dominio": "si la búsqueda es el nombre de una marca, empresa, ' +
+      'producto o herramienta específica y conocida, su dominio oficial exacto (ejemplo: nike.com); ' +
+      'si es un tema general o no corresponde a una marca específica, la palabra NONE"}';
 
-    window.__lastAiPrompt = prompt;
+    function applyResult(rawText) {
+      if (requestId !== currentRequestId) return;
+      var parsed;
+      try {
+        var cleaned = rawText.trim().replace(/^```json/i, '').replace(/^```/, '').replace(/```$/, '').trim();
+        parsed = JSON.parse(cleaned);
+      } catch (e) {
+        return false;
+      }
+
+      var applied = false;
+      if (parsed.veredicto) {
+        verdictText.textContent = String(parsed.veredicto).trim();
+        verdictBox.className = 'ai-verdict ready';
+        verdictBox.style.display = 'block';
+        applied = true;
+      }
+      if (parsed.dominio) {
+        var text = String(parsed.dominio).trim().replace(/^https?:\/\//, '').replace(/\/$/, '').replace(/["'.]+$/, '');
+        var domainPattern = /^[a-z0-9-]+(\.[a-z0-9-]+)+$/i;
+        if (text.toUpperCase() !== 'NONE' && domainPattern.test(text)) {
+          officialLink.href = 'https://' + text;
+          officialLink.textContent = text + ' ↗';
+          officialBox.style.display = 'flex';
+        }
+        applied = true;
+      }
+      return applied;
+    }
 
     function tryModel(modelIndex) {
       if (modelIndex >= GEMINI_MODELS.length) {
-        fetchViaGroqWorker(requestId);
+        fetchViaGroq();
         return;
       }
-      var modelName = GEMINI_MODELS[modelIndex];
       fetch(GEMINI_WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          model: modelName,
+          model: GEMINI_MODELS[modelIndex],
           contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { maxOutputTokens: 100, thinkingConfig: { thinkingBudget: 0 } },
+          generationConfig: { maxOutputTokens: 1200, responseMimeType: 'application/json' },
         }),
       })
         .then(function (res) {
@@ -137,117 +173,36 @@ const GCSE_CX = 'a28d59cfd89f948f4';
         })
         .then(function (data) {
           if (!data) return;
-          if (requestId !== currentRequestId) return;
           var text =
             data.candidates && data.candidates[0] && data.candidates[0].content &&
             data.candidates[0].content.parts && data.candidates[0].content.parts[0].text;
-          if (text) {
-            verdictText.textContent = text.trim();
-            verdictBox.className = 'ai-verdict ready';
-            verdictBox.style.display = 'block';
-          } else {
-            tryModel(modelIndex + 1);
-          }
+          if (!text || !applyResult(text)) tryModel(modelIndex + 1);
         })
         .catch(function () {
           tryModel(modelIndex + 1);
         });
     }
-    tryModel(0);
-  }
 
-  function fetchViaGroqWorker(requestId, isRetry) {
-    var verdictBox = document.getElementById('aiVerdict');
-    var verdictText = document.getElementById('aiVerdictText');
-    fetch(GROQ_WORKER_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'llama-3.1-8b-instant', messages: [{ role: 'user', content: window.__lastAiPrompt }] }),
-    })
-      .then(function (res) { return res.json(); })
-      .then(function (data) {
-        if (requestId !== currentRequestId) return;
-        var text = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
-        if (text) {
-          verdictText.textContent = text.trim();
-          verdictBox.className = 'ai-verdict ready';
-          verdictBox.style.display = 'block';
-        }
-      })
-      .catch(function () {
-        // Las dos llamadas de IA (veredicto + sitio oficial) salen casi
-        // simultáneas y a veces una pierde la conexión por la ráfaga —
-        // un solo reintento corto resuelve casi todos esos casos.
-        if (!isRetry) setTimeout(function () { fetchViaGroqWorker(requestId, true); }, 500);
-      });
-  }
-
-  function fetchOfficialSite(query, requestId) {
-    var box = document.getElementById('officialSite');
-    var link = document.getElementById('officialSiteLink');
-    box.style.display = 'none';
-
-    var prompt =
-      'La consulta es: "' + query + '". Si esto es el nombre de una marca, ' +
-      'empresa, producto o herramienta específica y conocida, responde ÚNICAMENTE con su ' +
-      'dominio oficial exacto (ejemplo: nike.com). Si es un tema general, una pregunta, o no ' +
-      'corresponde a una marca/producto específico, responde ÚNICAMENTE con la palabra: NONE. ' +
-      'No agregues explicación, comillas, ni texto adicional.';
-
-    function applyOfficialSiteResult(rawText) {
-      if (requestId !== currentRequestId) return;
-      var text = rawText.trim().replace(/^https?:\/\//, '').replace(/\/$/, '').replace(/["'.]+$/, '');
-      var domainPattern = /^[a-z0-9-]+(\.[a-z0-9-]+)+$/i;
-      if (text.toUpperCase() === 'NONE' || !domainPattern.test(text)) return;
-      link.href = 'https://' + text;
-      link.textContent = text + ' ↗';
-      box.style.display = 'flex';
-    }
-
-    function fetchOfficialSiteViaGroq(isRetry) {
+    function fetchViaGroq(isRetry) {
       fetch(GROQ_WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: 'llama-3.1-8b-instant', messages: [{ role: 'user', content: prompt }] }),
+        body: JSON.stringify({
+          model: 'llama-3.1-8b-instant',
+          messages: [{ role: 'user', content: prompt }],
+          response_format: { type: 'json_object' },
+        }),
       })
         .then(function (res) { return res.json(); })
         .then(function (data) {
           var text = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
-          if (text) applyOfficialSiteResult(text);
+          if (text) applyResult(text);
         })
         .catch(function () {
-          if (!isRetry) setTimeout(function () { fetchOfficialSiteViaGroq(true); }, 500);
+          if (!isRetry) setTimeout(function () { fetchViaGroq(true); }, 500);
         });
     }
 
-    function tryModel(modelIndex) {
-      if (modelIndex >= GEMINI_MODELS.length) {
-        fetchOfficialSiteViaGroq();
-        return;
-      }
-      fetch(GEMINI_WORKER_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: GEMINI_MODELS[modelIndex],
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { maxOutputTokens: 30, thinkingConfig: { thinkingBudget: 0 } },
-        }),
-      })
-        .then(function (res) {
-          if (res.status === 429) { tryModel(modelIndex + 1); return null; }
-          return res.json();
-        })
-        .then(function (data) {
-          if (!data) return;
-          var text =
-            data.candidates && data.candidates[0] && data.candidates[0].content &&
-            data.candidates[0].content.parts && data.candidates[0].content.parts[0].text;
-          if (!text) { tryModel(modelIndex + 1); return; }
-          applyOfficialSiteResult(text);
-        })
-        .catch(function () { tryModel(modelIndex + 1); });
-    }
     tryModel(0);
   }
 
