@@ -150,11 +150,13 @@ const GCSE_CX = 'a28d59cfd89f948f4';
       return applied;
     }
 
+    // Groq va primero — responde en un instante. Gemini queda como respaldo
+    // (solo si Groq falla dos veces seguidas): funciona, pero este modelo
+    // "piensa" varios cientos de tokens antes de escribir la respuesta, lo
+    // que le toma varios segundos — bien como red de seguridad, mal como
+    // camino principal para un dato decorativo que debe sentirse instantáneo.
     function tryModel(modelIndex) {
-      if (modelIndex >= GEMINI_MODELS.length) {
-        fetchViaGroq();
-        return;
-      }
+      if (modelIndex >= GEMINI_MODELS.length) return; // sin más opciones, se rinde en silencio
       fetch(GEMINI_WORKER_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -196,14 +198,17 @@ const GCSE_CX = 'a28d59cfd89f948f4';
         .then(function (res) { return res.json(); })
         .then(function (data) {
           var text = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
-          if (text) applyResult(text);
+          if (text && applyResult(text)) return;
+          if (!isRetry) setTimeout(function () { fetchViaGroq(true); }, 500);
+          else tryModel(0);
         })
         .catch(function () {
           if (!isRetry) setTimeout(function () { fetchViaGroq(true); }, 500);
+          else tryModel(0);
         });
     }
 
-    tryModel(0);
+    fetchViaGroq();
   }
 
   // Local replacement for the old Blogger-feed "also on our site" lookup —
