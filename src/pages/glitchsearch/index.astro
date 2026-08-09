@@ -234,7 +234,7 @@ const GCSE_CX = 'a28d59cfd89f948f4';
         }
 
         var html =
-          '<div class="own-site-separator">También en GlitchMentalMX</div>' +
+          '<div class="own-site-separator">También en glitchMentalMX</div>' +
           '<a class="card-link" href="' + match.url + '">' +
           '<article class="card own-site-card">' +
           '<h3>' + match.title + '</h3>' +
@@ -431,32 +431,38 @@ const GCSE_CX = 'a28d59cfd89f948f4';
   .official-site a:hover { text-decoration: underline; }
 
   #results { margin-top: 20px; }
-  .card { padding: 18px 0; border-bottom: 1px solid var(--border); }
-  .card:last-child { border-bottom: none; }
-  .card-link { display: block; color: inherit; }
-  .card h3 { margin: 0 0 4px; font: 400 17px var(--font-body); line-height: 1.3; color: var(--text); }
-  .card p { font-size: 14px; font-weight: 300; margin: 4px 0; color: var(--text-muted); line-height: 1.5; }
-  .card h3 strong, .card p strong { color: var(--accent); font-weight: 600; }
-  .domain { font: 400 11px var(--font-mono); color: var(--text-faint); margin-bottom: 8px; }
-  .own-site-separator {
+  /* Todo lo de aquí abajo se inyecta con innerHTML/insertAdjacentHTML desde
+     el script — Astro solo aplica su CSS "con alcance" al HTML que compila
+     de entrada, nunca al que se agrega después con JS, así que estas reglas
+     tienen que quedarse globales para hacer algo (mismo patrón que ya usa
+     /buscar/). Sin esto, nada de este bloque se pintaba — se disimulaba
+     porque la tipografía global de encabezados/párrafos rellenaba el hueco. */
+  :global(.card) { padding: 18px 0; border-bottom: 1px solid var(--border); }
+  :global(.card:last-child) { border-bottom: none; }
+  :global(.card-link) { display: block; color: inherit; }
+  :global(.card h3) { margin: 0 0 4px; font: 400 17px var(--font-body); line-height: 1.3; color: var(--text); }
+  :global(.card p) { font-size: 14px; font-weight: 300; margin: 4px 0; color: var(--text-muted); line-height: 1.5; }
+  :global(.card h3 strong), :global(.card p strong) { color: var(--accent); font-weight: 600; }
+  :global(.domain) { font: 400 11px var(--font-mono); color: var(--text-faint); margin-bottom: 8px; }
+  :global(.own-site-separator) {
     font: 700 12px var(--font-mono); color: var(--accent); letter-spacing: 0.08em;
-    text-align: center; margin: 44px 0 20px; text-transform: uppercase;
+    text-align: center; margin: 44px 0 44px;
   }
-  .own-site-card { padding-top: 6px; }
-  .own-site-card h3 { font-size: 19px; }
+  :global(.own-site-card) { padding-top: 6px; }
+  :global(.own-site-card h3) { font-size: 19px; }
 
-  .search-loading { position: relative; width: 100%; height: 18px; margin: 22px 0 10px; overflow: hidden; }
-  .search-loading::after {
+  :global(.search-loading) { position: relative; width: 100%; height: 18px; margin: 22px 0 10px; overflow: hidden; }
+  :global(.search-loading::after) {
     content: ''; position: absolute; left: 50%; top: 8px; width: 0; height: 2px; border-radius: 999px;
     background: var(--accent); transform: translateX(-50%);
     animation: glitchLoading 1.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
   }
   @keyframes glitchLoading { 0% { width: 0; opacity: 0.35; } 50% { width: 70%; opacity: 1; } 100% { width: 0; opacity: 0.35; } }
 
-  .no-results, .connection-error { padding: 34px 0; text-align: center; }
-  .no-results svg, .connection-error svg { width: 26px; height: 26px; color: var(--text-faint); margin-bottom: 14px; }
-  .no-results h3, .connection-error h3 { margin: 0 0 8px; font-size: 18px; font-weight: 600; color: var(--text); }
-  .no-results p, .connection-error p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-muted); }
+  :global(.no-results), :global(.connection-error) { padding: 34px 0; text-align: center; }
+  :global(.no-results svg), :global(.connection-error svg) { width: 26px; height: 26px; color: var(--text-faint); margin-bottom: 14px; }
+  :global(.no-results h3), :global(.connection-error h3) { margin: 0 0 8px; font-size: 18px; font-weight: 600; color: var(--text); }
+  :global(.no-results p), :global(.connection-error p) { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-muted); }
 
   .badges {
     display: flex; justify-content: center; align-items: center; gap: 6px;
