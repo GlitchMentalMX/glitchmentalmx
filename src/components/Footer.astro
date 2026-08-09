@@ -161,7 +161,7 @@ const columns = [
     display: inline-block;
     font-family: var(--font-display);
     font-weight: 600;
-    font-size: clamp(2.15rem, 9vw, 5.25rem);
+    font-size: clamp(1.9rem, 9vw, 5rem);
     line-height: 1;
     letter-spacing: -0.02em;
   }
@@ -176,12 +176,12 @@ const columns = [
   }
   @keyframes brandGlitch {
     0%   { text-shadow: none; transform: translateX(0); }
-    8%   { text-shadow: -3px 0 var(--down-line), 3px 0 var(--accent); transform: translateX(-2px); }
-    18%  { text-shadow: 3px 0 var(--down-line), -3px 0 var(--accent); transform: translateX(2px); }
-    28%  { text-shadow: -3px 0 var(--down-line), 3px 0 var(--accent); transform: translateX(-1px); }
+    8%   { text-shadow: -1px 0 var(--down-line), 1px 0 var(--accent); transform: translateX(-1px); }
+    18%  { text-shadow: 1px 0 var(--down-line), -1px 0 var(--accent); transform: translateX(1px); }
+    28%  { text-shadow: -1px 0 var(--down-line), 1px 0 var(--accent); transform: translateX(0); }
     38%  { text-shadow: none; transform: translateX(0); }
-    48%  { text-shadow: 3px 0 var(--down-line), -3px 0 var(--accent); transform: translateX(1px); }
-    58%  { text-shadow: -3px 0 var(--down-line), 3px 0 var(--accent); transform: translateX(-2px); }
+    48%  { text-shadow: 1px 0 var(--down-line), -1px 0 var(--accent); transform: translateX(0); }
+    58%  { text-shadow: -1px 0 var(--down-line), 1px 0 var(--accent); transform: translateX(-1px); }
     72%  { text-shadow: none; transform: translateX(0); }
     100% { text-shadow: none; }
   }
