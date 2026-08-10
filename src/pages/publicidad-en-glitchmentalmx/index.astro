@@ -1,8 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { isDue } from '../../lib/publishing';
 
-const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
+const postCount = (await getCollection('posts', ({ data }) => !data.draft && isDue(data.pubDate))).length;
 
 const proof = [
   { value: `${postCount}`, label: 'artículos publicados — audiencia activa' },

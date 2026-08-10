@@ -2,8 +2,9 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../../data/categories';
+import { isDue } from '../../lib/publishing';
 
-const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const allPosts = await getCollection('posts', ({ data }) => !data.draft && isDue(data.pubDate));
 const counts = Object.fromEntries(
   categories.map((c) => [c.name, allPosts.filter((p) => p.data.category === c.name).length])
 );

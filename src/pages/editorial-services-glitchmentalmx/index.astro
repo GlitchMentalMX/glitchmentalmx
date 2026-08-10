@@ -1,8 +1,9 @@
 ---
 import ServicesLanding from '../../components/ServicesLanding.astro';
 import { getCollection } from 'astro:content';
+import { isDue } from '../../lib/publishing';
 
-const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
+const postCount = (await getCollection('posts', ({ data }) => !data.draft && isDue(data.pubDate))).length;
 ---
 
 <ServicesLanding

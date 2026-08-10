@@ -4,10 +4,11 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import SeriesCallout from '../../components/SeriesCallout.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime } from '../../lib/format';
+import { isDue } from '../../lib/publishing';
 import { categorySlug } from '../../data/categories';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  const posts = await getCollection('posts', ({ data }) => !data.draft && isDue(data.pubDate));
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -28,7 +29,7 @@ const editorialCollections = await getCollection(
 );
 const parentCollection = editorialCollections.find((c) => c.data.postSlugs.includes(post.id));
 
-const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+const allPosts = (await getCollection('posts', ({ data }) => !data.draft && isDue(data.pubDate))).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 const idx = allPosts.findIndex((p) => p.id === post.id);

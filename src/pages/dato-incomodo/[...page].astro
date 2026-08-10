@@ -2,10 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { getCollection } from 'astro:content';
+import { isDue } from '../../lib/publishing';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async ({ paginate }) => {
-  const items = (await getCollection('datoIncomodo')).sort(
+  const items = (await getCollection('datoIncomodo', ({ data }) => isDue(data.date))).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
   return paginate(items, { pageSize: 18 });
