@@ -3,11 +3,10 @@ import Layout from '../../../layouts/Layout.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../../../data/categories';
-import { isDue } from '../../../lib/publishing';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async ({ paginate }) => {
-  const allPosts = (await getCollection('posts', ({ data }) => !data.draft && isDue(data.pubDate))).sort(
+  const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
   );
 

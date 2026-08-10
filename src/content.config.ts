@@ -91,6 +91,7 @@ const visualInsights = defineCollection({
     imagen: z.string(),
     enlace: z.string().nullable(),
     date: z.coerce.date(),
+    draft: z.boolean().default(false),
   }),
 });
 
@@ -101,6 +102,7 @@ const datoIncomodo = defineCollection({
     resumen: z.string(),
     imagen: z.string(),
     date: z.coerce.date(),
+    draft: z.boolean().default(false),
   }),
 });
 

@@ -4,13 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  # Reconstruye cada hora en punto (hora UTC) — así, un artículo/insight/dato
-  # programado con fecha futura se publica solo cuando esa fecha llega, sin
-  # que nadie tenga que entrar a publicarlo manualmente. Si una corrida
-  # llegara a fallar, la siguiente (una hora después) lo publica de todos
-  # modos — nunca se pierde un día completo por una sola falla.
-  schedule:
-    - cron: '0 * * * *'
 
 permissions:
   contents: read

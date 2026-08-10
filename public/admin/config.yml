@@ -33,7 +33,7 @@ collections:
         name: "category"
         widget: "select"
         options: ["Inteligencia Artificial", "Cultura Digital", "Tendencias Digitales", "Tecnología de Consumo"]
-      - { label: "Fecha de publicación", name: "pubDate", widget: "datetime" }
+      - { label: "Fecha de publicación", name: "pubDate", widget: "datetime", default: "{{now}}" }
       - { label: "Fecha de actualización", name: "updatedDate", widget: "datetime", required: false }
       - { label: "Descripción (para tarjetas y buscadores)", name: "description", widget: "text" }
       - { label: "Imagen principal", name: "heroImage", widget: "image" }
@@ -93,7 +93,8 @@ collections:
       - { label: "Resumen", name: "resumen", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image" }
       - { label: "Enlace al artículo relacionado (ej. /articulos/mi-articulo/)", name: "enlace", widget: "string", required: false }
-      - { label: "Fecha (el más reciente es el que aparece en el home)", name: "date", widget: "datetime", default: "" }
+      - { label: "Fecha (el más reciente es el que aparece en el home)", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }
 
   - name: "indice_glitchmentalmx"
     label: "Índice GlitchMentalMX"
@@ -137,4 +138,5 @@ collections:
       - { label: "Título (interno, siempre dice 'Dato Incómodo')", name: "titulo", widget: "string", default: "Dato Incómodo" }
       - { label: "El dato (texto que se muestra)", name: "resumen", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image" }
-      - { label: "Fecha (el más reciente es el que aparece primero)", name: "date", widget: "datetime", default: "" }
+      - { label: "Fecha (el más reciente es el que aparece primero)", name: "date", widget: "datetime", default: "{{now}}" }
+      - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }
