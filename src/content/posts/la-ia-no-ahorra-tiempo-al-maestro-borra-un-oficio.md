@@ -7,7 +7,7 @@ description: "La IA no le ahorra tiempo al maestro: le quita el último oficio
 heroImage: /images/uploads/la-ia-no-ahorra-tiempo.webp
 heroImageAlt: "IA en educación: mano con pluma roja corrige a mano junto a
   laptop con calificación automática"
-draft: false
+draft: true
 ---
 # La IA no ahorra tiempo al maestro: borra un oficio
 
