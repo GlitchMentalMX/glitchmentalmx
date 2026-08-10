@@ -628,6 +628,16 @@ const signalPools = {
   .novela-body h3 a { color: var(--text); }
   .novela-body h3 a:hover { color: var(--accent); }
   .novela-body p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0 0 14px; }
+  .novela-body .link-accent {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5em 1.1em;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: transparent;
+    transition: color .15s ease;
+  }
+  .novela-body .link-accent:hover { color: #0052cc; }
 
   @media (min-width: 901px) {
     .novela-cover-link img { width: 128px; height: 199px; }
