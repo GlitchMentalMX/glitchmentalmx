@@ -1,7 +1,7 @@
 ---
 title: "La IA no ahorra tiempo al maestro: borra un oficio"
 category: Inteligencia Artificial
-pubDate: 2026-08-11T05:00:00.000-06:00
+pubDate: 2026-08-10T06:18:00.000-06:00
 description: "La IA no le ahorra tiempo al maestro: le quita el último oficio
   manual que lo distinguía en el aula frente al grupo."
 heroImage: /images/uploads/la-ia-no-ahorra-tiempo.webp
@@ -27,7 +27,7 @@ El error de lectura más común sobre la IA generativa en el aula es asumir que 
 
 Herramientas como Canva Magic Studio, DALL·E integrado en ChatGPT o Ideogram permiten a cualquier docente generar en segundos una lámina, un diagrama o una ilustración que antes solo el maestro con destreza manual podía producir en el pizarrón o en una cartulina. **El resultado no es solo eficiencia: es la desaparición de una distinción que operaba dentro del salón de clases** desde hace más de cien años, aunque nadie la haya nombrado nunca como tal.
 
-## El mismo estilo en cada salón: la homogenización visual vía IA
+## El mismo estilo en cada salón: la homogeneización visual vía IA
 
 Aquí aparece la segunda capa del fenómeno, la que casi nadie discute. Cuando decenas de miles de maestros en distintos países recurren a las mismas dos o tres herramientas, el resultado no es solo que cada uno deja de dibujar a mano: es que **todos empiezan a producir el mismo estilo visual**. El trazo particular de un maestro con talento para el dibujo — su forma de simplificar un mapa, de caricaturizar un proceso biológico, de ilustrar una fórmula — se sustituye por la estética genérica y reconocible de los modelos generativos.
 
@@ -41,7 +41,7 @@ Esto ya tiene un precedente documentado en otro sector: en GlitchMentalMX report
 
 Aquí está la tensión que el sitio no va a resolver por el lector. Por un lado, la nivelación tiene una lectura positiva innegable: **una maestra rural sin formación artística puede producir hoy materiales tan pulidos como los de una escuela privada en la capital**, algo impensable hace cinco años. La brecha de habilidad manual, que durante décadas coincidió casi siempre con la brecha de recursos y formación, se está cerrando de golpe.
 
-Por otro lado, esa misma nivelación borra variación. Si todas las escuelas de la región — con recursos o sin ellos — terminan usando las mismas dos o tres herramientas, **desaparece también la identidad visual regional** que antes emergía, sin proponérselo nadie, del estilo particular de cada maestro y cada comunidad escolar. Equidad y homogenización llegan empujadas por el mismo mecanismo, y no hay forma de tener una sin la otra.
+Por otro lado, esa misma nivelación borra variación. Si todas las escuelas de la región — con recursos o sin ellos — terminan usando las mismas dos o tres herramientas, **desaparece también la identidad visual regional** que antes emergía, sin proponérselo nadie, del estilo particular de cada maestro y cada comunidad escolar. Equidad y homogeneización llegan empujadas por el mismo mecanismo, y no hay forma de tener una sin la otra.
 
 ## México y LATAM: adopción docente disparada, sin marco pedagógico que la sostenga
 
