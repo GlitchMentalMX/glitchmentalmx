@@ -203,6 +203,31 @@ const signalPools = {
     </section>
   )}
 
+  <section class="novelas container">
+    <div class="section-head novelas-head">
+      <div>
+        <h2>Además de análisis, ficción</h2>
+        <p class="section-sub">Tecnothriller de credibilidad periodística — investigación real, convertida en novela.</p>
+      </div>
+      <a href="/novelas/" class="link-accent">Ver catálogo completo →</a>
+    </div>
+    <div class="novelas-grid">
+      {novelasPublicadas.map((n) => (
+        <div class="novela-card">
+          <a href="/novelas/" class="novela-cover-link">
+            <img src={n.cover} alt={`Portada de ${n.title}`} loading="lazy" width="200" height="310" />
+          </a>
+          <div class="novela-body">
+            <span class="tag">{n.genre}</span>
+            <h3><a href="/novelas/">{n.title}</a></h3>
+            <p>{n.desc}</p>
+            <a class="link-accent" href={n.buy} target="_blank" rel="noopener">Adquirir →</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
   {recentThree.length > 0 && (
     <section class="recent container">
       <div class="section-head">
@@ -266,31 +291,6 @@ const signalPools = {
       <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Ver todas →</a></p>
     </section>
   )}
-
-  <section class="novelas container">
-    <div class="section-head novelas-head">
-      <div>
-        <h2>Además de análisis, ficción</h2>
-        <p class="section-sub">Tecnothriller de credibilidad periodística — investigación real, convertida en novela.</p>
-      </div>
-      <a href="/novelas/" class="link-accent">Ver catálogo completo →</a>
-    </div>
-    <div class="novelas-grid">
-      {novelasPublicadas.map((n) => (
-        <div class="novela-card">
-          <a href="/novelas/" class="novela-cover-link">
-            <img src={n.cover} alt={`Portada de ${n.title}`} loading="lazy" width="200" height="310" />
-          </a>
-          <div class="novela-body">
-            <span class="tag">{n.genre}</span>
-            <h3><a href="/novelas/">{n.title}</a></h3>
-            <p>{n.desc}</p>
-            <a class="link-accent" href={n.buy} target="_blank" rel="noopener">Adquirir →</a>
-          </div>
-        </div>
-      ))}
-    </div>
-  </section>
 
   <section class="tools container">
     <div class="section-head">
