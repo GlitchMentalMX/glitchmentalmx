@@ -92,6 +92,7 @@ collections:
       - { label: "Título", name: "titulo", widget: "string" }
       - { label: "Resumen", name: "resumen", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Texto alternativo de la imagen", name: "imagenAlt", widget: "string", required: false }
       - { label: "Enlace al artículo relacionado (ej. /articulos/mi-articulo/)", name: "enlace", widget: "string", required: false }
       - { label: "Fecha (el más reciente es el que aparece en el home)", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }
@@ -147,5 +148,6 @@ collections:
       - { label: "Título (interno, siempre dice 'Dato Incómodo')", name: "titulo", widget: "string", default: "Dato Incómodo" }
       - { label: "El dato (texto que se muestra)", name: "resumen", widget: "text" }
       - { label: "Imagen", name: "imagen", widget: "image" }
+      - { label: "Texto alternativo de la imagen", name: "imagenAlt", widget: "string", required: false }
       - { label: "Fecha (el más reciente es el que aparece primero)", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }

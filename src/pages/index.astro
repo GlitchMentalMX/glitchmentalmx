@@ -286,7 +286,7 @@ const signalPools = {
         <p class="tagline">Una imagen. Una idea. Un momento para pensar.</p>
       </div>
       <a href="/insights-visuales/" class="insight-hero">
-        <img src={latestInsight.data.imagen} alt="" loading="lazy" width="1000" height="563" />
+        <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
         {latestInsight.data.punchline && (
           <span class="insight-punchline">{latestInsight.data.punchline}</span>
         )}
