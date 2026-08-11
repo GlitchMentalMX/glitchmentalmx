@@ -7,4 +7,6 @@ imagen: /images/uploads/is-vs-ia-borra-oficio-del-maestro.webp
 enlace: https://glitchmental.com/articulos/la-ia-no-ahorra-tiempo-al-maestro-borra-un-oficio/
 date: 2026-08-11T05:16:00.000-06:00
 draft: false
+categoria: Inteligencia Artificial
+punchline: El último oficio manual del maestro ya lo hace la IA
 ---
