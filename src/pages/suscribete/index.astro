@@ -6,11 +6,34 @@ import { getEntry } from 'astro:content';
 const entry = await getEntry('pages', 'suscribete');
 const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
 
-const CONSENT_TEXT = 'Sí quiero recibir el newsletter mensual y la versión ejecutiva del Índice glitchMentalMX.';
+const CONSENT_TEXT = 'Sí quiero recibir el Manual del Caos Digital y la versión ejecutiva del Índice glitchMentalMX.';
+
+const deliverables = [
+  {
+    name: 'Manual del Caos Digital',
+    cadence: 'Un tema, cada mes',
+    desc: 'Un análisis a profundidad de un solo tema — IA, Cultura Digital o el futuro del trabajo — que no publicamos en el sitio. Solo lo lee quien está suscrito.',
+  },
+  {
+    name: 'Índice glitchMentalMX — versión ejecutiva',
+    cadence: 'PDF descargable',
+    desc: 'El ranking de 20 tecnologías B2B en un PDF listo para imprimir o compartir con tu equipo, tus jefes o tus colegas. Incluye acceso al historial completo, mes a mes, también en PDF.',
+  },
+];
 ---
 
 <Layout title={title} description={description} noIndex={noIndex}>
   <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
+
+  <section class="container deliverables">
+    {deliverables.map((d) => (
+      <div class="deliverable-card">
+        <p class="eyebrow">{d.cadence}</p>
+        <h2>{d.name}</h2>
+        <p>{d.desc}</p>
+      </div>
+    ))}
+  </section>
 
   <section class="container form-wrap">
     <form id="subscribe-form" novalidate>
@@ -41,7 +64,7 @@ const CONSENT_TEXT = 'Sí quiero recibir el newsletter mensual y la versión eje
       <p class="form-status" role="status" aria-live="polite"></p>
     </form>
 
-    <p class="benefit">Al suscribirte recibes acceso al Índice GlitchMentalMX mensual y al Manual del Caos Digital.</p>
+    <p class="benefit">Cancela cuando quieras, sin drama.</p>
   </section>
 </Layout>
 
@@ -122,6 +145,27 @@ const CONSENT_TEXT = 'Sí quiero recibir el newsletter mensual y la versión eje
 </script>
 
 <style>
+  .deliverables {
+    padding: 0 24px 40px;
+    max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .deliverable-card {
+    border-radius: var(--radius);
+    border-top: 2px solid var(--accent);
+    padding: 22px 24px 24px;
+    background: var(--bg-inset);
+  }
+  .deliverable-card .eyebrow { color: var(--text-muted); margin: 0; }
+  .deliverable-card h2 { font-size: 1.1rem; margin: 8px 0 10px; }
+  .deliverable-card p:last-child { color: var(--text-muted); font-size: 0.9rem; line-height: 1.55; margin: 0; }
+
+  @media (max-width: 700px) {
+    .deliverables { grid-template-columns: 1fr; }
+  }
+
   .form-wrap { padding: 8px 24px 96px; max-width: 480px; }
 
   #subscribe-form { display: flex; flex-direction: column; gap: 20px; }
