@@ -95,6 +95,15 @@ collections:
       - { label: "Enlace al artículo relacionado (ej. /articulos/mi-articulo/)", name: "enlace", widget: "string", required: false }
       - { label: "Fecha (el más reciente es el que aparece en el home)", name: "date", widget: "datetime", default: "{{now}}" }
       - { label: "Borrador (no publicar todavía)", name: "draft", widget: "boolean", default: false, required: false }
+      - label: "Categoría (para el enlace de la tarjeta en /insights-visuales/)"
+        name: "categoria"
+        widget: "select"
+        required: false
+        options: ["Inteligencia Artificial", "Narrativa de la IA", "Sistemas Autónomos", "IA Agéntica", "Futuro del Trabajo", "Cultura Digital", "Psicología Digital", "Tecnología de Consumo", "Tendencias Digitales"]
+      - label: "Punchline (solo para el home y material de RS — no aparece en /insights-visuales/)"
+        name: "punchline"
+        widget: "string"
+        required: false
 
   - name: "indice_glitchmentalmx"
     label: "Índice GlitchMentalMX"

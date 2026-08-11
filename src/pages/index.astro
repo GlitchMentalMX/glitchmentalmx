@@ -283,10 +283,13 @@ const signalPools = {
     <section class="insights container">
       <div class="section-head insights-head">
         <h2>Insights Visuales</h2>
-        <p class="tagline">Ideas complejas sobre IA, Cultura Digital, algoritmos y redes.<br />Imagen + análisis. Sin relleno.</p>
+        <p class="tagline">Una imagen. Una idea. Un momento para pensar.</p>
       </div>
       <a href="/insights-visuales/" class="insight-hero">
         <img src={latestInsight.data.imagen} alt="" loading="lazy" width="1000" height="563" />
+        {latestInsight.data.punchline && (
+          <span class="insight-punchline">{latestInsight.data.punchline}</span>
+        )}
       </a>
       <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Ver todas →</a></p>
     </section>
@@ -589,9 +592,11 @@ const signalPools = {
   .insights-head { flex-direction: column; align-items: flex-start; gap: 6px; }
   .tagline { color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin: 0; }
   .insight-hero {
+    position: relative;
     display: block;
     max-width: 900px;
     margin: 0 auto;
+    isolation: isolate;
   }
   .insight-hero img {
     width: 100%;
@@ -599,6 +604,37 @@ const signalPools = {
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: var(--radius);
+  }
+  /* Punchline superpuesto — mismo patrón de gradiente + texto absoluto que
+     .recent-card, reutilizado aquí porque la imagen del home ya tiene el
+     tamaño para sostenerlo. Se degrada solo: si el insight no trae punchline,
+     el ::before no se pinta (scoped al :has) y queda la imagen sola de siempre. */
+  .insight-hero:has(.insight-punchline)::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(10, 11, 15, 0) 40%, rgba(10, 11, 15, 0.85) 100%);
+    z-index: 1;
+  }
+  .insight-punchline {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 20px;
+    z-index: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.15rem, 2.6vw, 1.7rem);
+    line-height: 1.3;
+    color: #fff;
+  }
+  @media (max-width: 640px) {
+    .insight-punchline { left: 16px; right: 16px; bottom: 14px; font-size: 1.05rem; -webkit-line-clamp: 2; }
   }
   .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 

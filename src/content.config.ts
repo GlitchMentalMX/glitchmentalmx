@@ -92,6 +92,21 @@ const visualInsights = defineCollection({
     enlace: z.string().nullable().optional(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
+    categoria: z
+      .enum([
+        'Inteligencia Artificial',
+        'Narrativa de la IA',
+        'Sistemas Autónomos',
+        'IA Agéntica',
+        'Futuro del Trabajo',
+        'Cultura Digital',
+        'Psicología Digital',
+        'Tecnología de Consumo',
+        'Tendencias Digitales',
+      ])
+      .optional(),
+    // Solo para el home y material de RS — nunca se muestra en los cards de /insights-visuales/.
+    punchline: z.string().optional(),
   }),
 });
 
