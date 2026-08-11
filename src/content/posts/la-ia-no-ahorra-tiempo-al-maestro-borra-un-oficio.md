@@ -1,13 +1,13 @@
 ---
 title: "La IA no ahorra tiempo al maestro: borra un oficio"
 category: Inteligencia Artificial
-pubDate: 2026-08-10T06:18:00.000-06:00
+pubDate: 2026-08-11T05:10:00.000-06:00
 description: "La IA no le ahorra tiempo al maestro: le quita el último oficio
   manual que lo distinguía en el aula frente al grupo."
 heroImage: /images/uploads/la-ia-no-ahorra-tiempo.webp
 heroImageAlt: "IA en educación: mano con pluma roja corrige a mano junto a
   laptop con calificación automática"
-draft: true
+draft: false
 ---
 # La IA no ahorra tiempo al maestro: borra un oficio
 
