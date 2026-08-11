@@ -89,7 +89,7 @@ const visualInsights = defineCollection({
     titulo: z.string(),
     resumen: z.string(),
     imagen: z.string(),
-    enlace: z.string().nullable(),
+    enlace: z.string().nullable().optional(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
   }),
