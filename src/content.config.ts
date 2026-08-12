@@ -25,7 +25,7 @@ const posts = defineCollection({
     title: z.string(),
     category: z.enum(['Inteligencia Artificial', 'Cultura Digital', 'Tendencias Digitales', 'Tecnología de Consumo']),
     pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
     description: z.string(),
     heroImage: z.string(),
     heroImageAlt: z.string(),
@@ -93,19 +93,22 @@ const visualInsights = defineCollection({
     enlace: z.string().nullable().optional(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
-    categoria: z
-      .enum([
-        'Inteligencia Artificial',
-        'Narrativa de la IA',
-        'Sistemas Autónomos',
-        'IA Agéntica',
-        'Futuro del Trabajo',
-        'Cultura Digital',
-        'Psicología Digital',
-        'Tecnología de Consumo',
-        'Tendencias Digitales',
-      ])
-      .optional(),
+    categoria: z.preprocess(
+      (val) => (val === '' ? undefined : val),
+      z
+        .enum([
+          'Inteligencia Artificial',
+          'Narrativa de la IA',
+          'Sistemas Autónomos',
+          'IA Agéntica',
+          'Futuro del Trabajo',
+          'Cultura Digital',
+          'Psicología Digital',
+          'Tecnología de Consumo',
+          'Tendencias Digitales',
+        ])
+        .optional()
+    ),
     // Solo para el home y material de RS — nunca se muestra en los cards de /insights-visuales/.
     punchline: z.string().optional(),
   }),
