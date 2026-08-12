@@ -28,28 +28,56 @@
     cursor: default;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   }
-  .lightbox-close {
+  .lightbox-close,
+  .lightbox-nav {
     position: absolute;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox-close:hover,
+  .lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .lightbox-close {
     top: 20px;
     right: 24px;
     width: 42px;
     height: 42px;
     border-radius: 999px;
-    border: none;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
     font-size: 22px;
     line-height: 1;
-    cursor: pointer;
-    transition: background-color 0.15s ease;
   }
-  .lightbox-close:hover {
-    background: rgba(255, 255, 255, 0.2);
+  .lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+  }
+  .lightbox-nav svg { width: 22px; height: 22px; }
+  .lightbox-prev { left: 12px; }
+  .lightbox-next { right: 12px; }
+  .lightbox-overlay.single .lightbox-nav {
+    display: none;
+  }
+  @media (max-width: 640px) {
+    .lightbox-nav { width: 40px; height: 40px; }
+    .lightbox-prev { left: 6px; }
+    .lightbox-next { right: 6px; }
   }
 </style>
 
 <script is:inline>
   (function () {
+    var gallery = [];
+    var currentIndex = -1;
+
     function getOverlay() {
       var overlay = document.getElementById('lightbox-overlay');
       if (overlay) return overlay;
@@ -58,28 +86,74 @@
       overlay.className = 'lightbox-overlay';
       overlay.setAttribute('role', 'dialog');
       overlay.setAttribute('aria-modal', 'true');
+
+      var prevBtn = document.createElement('button');
+      prevBtn.className = 'lightbox-nav lightbox-prev';
+      prevBtn.setAttribute('aria-label', 'Imagen anterior');
+      prevBtn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      prevBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        step(-1);
+      });
+
+      var nextBtn = document.createElement('button');
+      nextBtn.className = 'lightbox-nav lightbox-next';
+      nextBtn.setAttribute('aria-label', 'Imagen siguiente');
+      nextBtn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      nextBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        step(1);
+      });
+
       var closeBtn = document.createElement('button');
       closeBtn.className = 'lightbox-close';
       closeBtn.setAttribute('aria-label', 'Cerrar imagen ampliada');
       closeBtn.textContent = '×';
+
       var img = document.createElement('img');
+
+      overlay.appendChild(prevBtn);
+      overlay.appendChild(nextBtn);
       overlay.appendChild(closeBtn);
       overlay.appendChild(img);
       document.body.appendChild(overlay);
+
       overlay.addEventListener('click', function (e) {
         if (e.target === overlay || e.target === closeBtn) close();
       });
       document.addEventListener('keydown', function (e) {
+        if (!overlay.classList.contains('open')) return;
         if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') step(-1);
+        if (e.key === 'ArrowRight') step(1);
       });
+
       return overlay;
     }
 
-    function open(src, alt) {
+    function showAt(index) {
+      if (!gallery.length) return;
+      currentIndex = (index + gallery.length) % gallery.length;
+      var el = gallery[currentIndex];
       var overlay = getOverlay();
       var img = overlay.querySelector('img');
-      img.src = src;
-      img.alt = alt || '';
+      img.src = el.currentSrc || el.src;
+      img.alt = el.alt || '';
+      overlay.classList.toggle('single', gallery.length < 2);
+    }
+
+    function step(delta) {
+      showAt(currentIndex + delta);
+    }
+
+    function open(clickedEl) {
+      gallery = Array.prototype.slice.call(
+        document.querySelectorAll('[data-lightbox], .prose img')
+      );
+      var overlay = getOverlay();
+      showAt(gallery.indexOf(clickedEl));
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
@@ -96,7 +170,7 @@
       if (!(t instanceof HTMLImageElement)) return;
       if (!t.matches('[data-lightbox], .prose img')) return;
       e.preventDefault();
-      open(t.currentSrc || t.src, t.alt);
+      open(t);
     });
   })();
 </script>
