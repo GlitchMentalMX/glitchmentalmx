@@ -33,6 +33,8 @@ Lo relevante no es solo la cifra, sino el mecanismo. **El BEC no usa malware ni 
 
 El total de pérdidas por cibercrimen reportadas al IC3 en 2025 alcanzó 20,877 millones de dólares, un incremento del 26% respecto al año anterior, según el mismo reporte. Dentro de ese total, **la inteligencia artificial ya deja huella medible**: el FBI registró 22,364 quejas con un componente de IA identificado, con pérdidas ajustadas de 893 millones de dólares, aunque el propio organismo advierte que la cifra real es casi con certeza mayor, porque muchas víctimas no llegan a saber que la IA estuvo involucrada en el fraude que sufrieron. Del total de pérdidas por BEC, el IC3 atribuye directamente 30 millones de dólares a casos con un componente de IA confirmado: generadores de texto que redactan correos corporativos sin errores gramaticales ni de tono, y clonación de voz para reforzar la instrucción de pago por teléfono.
 
+![](/images/uploads/Phishing%20Sec.webp)
+
 ## La ventana dorada dura treinta días
 
 **La capacitación corporativa contra el phishing funciona, pero se degrada con velocidad preocupante.** De acuerdo con los benchmarks de ciberseguridad 2026 de Kymatio —que retoma el dato del Cost of a Data Breach Report 2025 de IBM—, el tiempo promedio de detección de una brecha originada por phishing es de 254 días, casi nueve meses en los que un atacante puede moverse lateralmente dentro de una red sin ser detectado.
