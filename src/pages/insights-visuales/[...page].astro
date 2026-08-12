@@ -21,6 +21,12 @@ const { page } = Astro.props;
 >
   <PageHeader eyebrow="Insights Visuales" title="Una imagen. Una idea. **Un momento para pensar.**" />
 
+  <p class="container intro">
+    Una microcolumna visual sobre tecnología y cultura digital. Cada pieza propone una idea, una
+    provocación o una pregunta. Los enlaces llevan a lecturas relacionadas para seguir explorando
+    el tema — no al artículo que inspiró esta reflexión.
+  </p>
+
   <p class="container hint">Haz clic en la imagen para agrandarla.</p>
 
   <section class="container grid">
@@ -57,7 +63,16 @@ const { page } = Astro.props;
 </Layout>
 
 <style>
-  .hint { padding: 0 24px; color: var(--text-muted); font-size: 0.92rem; font-weight: 500; margin: -8px auto 24px; }
+  .intro {
+    padding: 0 24px;
+    max-width: 760px;
+    margin: -8px auto 20px;
+    color: var(--text);
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .hint { padding: 0 24px; color: var(--text); font-size: 0.92rem; font-weight: 500; margin: 0 auto 24px; }
 
   .grid {
     padding: 0 24px 40px;
