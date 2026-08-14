@@ -4,8 +4,8 @@ resumen: Anthropic creó el Model Context Protocol para conectar modelos con dat
 imagen: /images/uploads/Model Context Protocol.webp
 imagenAlt: 'Model Context Protocol: mano conectando un cable entre varios plugs incompatibles en un hub de puertos'
 enlace: ''
-date: 2026-08-13T10:38
-draft: true
+date: 2026-08-14T06:00
+draft: false
 categoria: IA Agéntica
 punchline: ''
 ---
