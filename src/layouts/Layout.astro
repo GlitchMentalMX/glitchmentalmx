@@ -124,11 +124,14 @@ const personSchema = {
       })();
     </script>
 
-    <!-- Cloudflare Web Analytics — sin cookies, no rastrea usuarios individuales -->
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "165facfac5b5411894f239f6de848e8a"}'></script>
-
-    <!-- Umami Analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="73cfe1a5-44ed-4af4-a25b-9aef15ac6d61"></script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "y2cwomgs1q");
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Saltar al contenido</a>
