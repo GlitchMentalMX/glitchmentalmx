@@ -1,12 +1,12 @@
 ---
 title: 'El correo que nunca murió: por qué el phishing sigue ganando'
 category: Cultura Digital
-pubDate: 2026-08-12T06:18
+pubDate: 2026-08-13T05:10
 updatedDate: ''
 description: El phishing lleva 43 años ganando porque el correo nunca verificó identidad. Datos del FBI, CONDUSEF y The CIU, sin dramatismo.
 heroImage: /images/uploads/Phishing.webp
 heroImageAlt: 'Phishing: hombre joven compara sobre nuevo con sobre viejo idéntico junto a pila de décadas'
-draft: true
+draft: false
 ---
 
 El phishing lleva más de cuatro décadas vivo y en 2026 sigue siendo el fraude digital más rentable del planeta. **No es un problema de detección: el correo electrónico nunca aprendió a verificar quién lo manda**, y cada parche añadido en 43 años solo tapó el síntoma.
