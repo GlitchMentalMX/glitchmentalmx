@@ -28,10 +28,12 @@ import { books as published, upcomingBooks as upcoming } from '../../data/books'
     <div class="grid">
       {published.map((b) => (
         <div class="book-card">
-          <img class="cover" src={b.cover} alt={`Portada de ${b.title}`} loading="lazy" width="400" height="620" />
+          <a href={`/novelas/${b.id}/`} class="cover-link">
+            <img class="cover" src={b.cover} alt={`Portada de ${b.title}`} loading="lazy" width="400" height="620" />
+          </a>
           <div class="body">
             <span class="tag">{b.genre}</span>
-            <h3>{b.title}</h3>
+            <h3><a href={`/novelas/${b.id}/`}>{b.title}</a></h3>
             <p>{b.desc}</p>
             <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
           </div>
@@ -81,7 +83,10 @@ import { books as published, upcomingBooks as upcoming } from '../../data/books'
     box-shadow: 0 6px 18px rgba(20, 22, 28, 0.18);
   }
   .book-card .body { min-width: 0; }
+  .cover-link { display: block; flex-shrink: 0; }
   .book-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin: 10px 0 10px; }
+  .book-card h3 a { color: var(--text); }
+  .book-card h3 a:hover { color: var(--accent); }
   .book-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0 0 18px; }
   .footnote { font-size: 0.82rem; color: var(--text-faint); margin-top: 16px; }
 
