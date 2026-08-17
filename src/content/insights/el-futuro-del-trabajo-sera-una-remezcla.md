@@ -4,8 +4,8 @@ resumen: El Foro Económico Mundial proyecta 170 millones de nuevos empleos y 92
 imagen: /images/uploads/IS VS Futuro del Trabajo.webp
 imagenAlt: 'Futuro del trabajo remezcla: manos intercambian objetos laborales sobre escritorio en transición simultánea'
 enlace: ''
-date: 2026-08-15T07:03
-draft: true
+date: 2026-08-17T06:18
+draft: false
 categoria: Futuro del Trabajo
 punchline: El futuro del trabajo será una remezcla
 ---
