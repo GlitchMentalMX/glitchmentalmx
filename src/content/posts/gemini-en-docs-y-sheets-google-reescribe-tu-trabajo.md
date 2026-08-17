@@ -7,7 +7,7 @@ description: >-
   Google anunció el 10 de marzo el despliegue de un conjunto de nuevas
   capacidades de Gemini integradas directamente en Docs, Sheets, Slides y Drive.
   No son…
-heroImage: /images/posts/gemini-en-docs-y-sheets-google-reescribe-tu-trabajo/hero.png
+heroImage: /images/posts/gemini-en-docs-y-sheets-google-reescribe-tu-trabajo/hero.webp
 heroImageAlt: >-
   Gemini en Docs y Sheets: profesional revisa grandes documentos analíticos en
   mesa de trabajo digital

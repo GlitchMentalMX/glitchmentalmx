@@ -7,7 +7,7 @@ description: >-
   El 26 de febrero, apenas un día después de que Samsung celebrara su Galaxy
   Unpacked en San Francisco, Huawei realizó su propio evento global en Madrid
   bajo…
-heroImage: /images/posts/huawei-vuelve-con-todo-watch-gt-runner-2-y-mas-gadgets/hero.png
+heroImage: /images/posts/huawei-vuelve-con-todo-watch-gt-runner-2-y-mas-gadgets/hero.webp
 heroImageAlt: >-
   Huawei vuelve con todo: Watch GT Runner 2 y gadgets conectados sobre mesa con
   mapa global digital

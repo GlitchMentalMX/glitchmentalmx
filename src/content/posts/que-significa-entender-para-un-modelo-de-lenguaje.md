@@ -7,7 +7,7 @@ description: >-
   Cuando ChatGPT explica la relatividad general o Claude analiza un contrato
   legal, es razonable preguntarse: ¿esto entiende lo que dice, o solo produce
   texto…
-heroImage: /images/posts/que-significa-entender-para-un-modelo-de-lenguaje/hero.png
+heroImage: /images/posts/que-significa-entender-para-un-modelo-de-lenguaje/hero.webp
 heroImageAlt: >-
   Qué significa “entender”: operaria ajusta cajas en línea de producción
   automatizada industrial

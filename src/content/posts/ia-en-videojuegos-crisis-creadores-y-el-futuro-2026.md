@@ -6,7 +6,7 @@ updatedDate: 2026-06-06T19:31:07.199Z
 description: >-
   La industria del videojuego vive su peor crisis laboral en décadas, y la IA
   generativa está en el centro de la discusión. No como solución, sino como…
-heroImage: /images/posts/ia-en-videojuegos-crisis-creadores-y-el-futuro-2026/hero.png
+heroImage: /images/posts/ia-en-videojuegos-crisis-creadores-y-el-futuro-2026/hero.webp
 heroImageAlt: >-
   IA en videojuegos 2026: diseñadora observa impresora 3D creando mapas de juego
   en laboratorio digital

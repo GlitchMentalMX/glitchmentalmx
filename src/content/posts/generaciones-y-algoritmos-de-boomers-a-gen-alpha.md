@@ -46,7 +46,7 @@ Lo que define a los millennials en relación con los algoritmos es la _concienci
 
   
 
-![Generaciones y algoritmos: mujer interactúa con flujos de datos y líneas algorítmicas en movimiento](/images/posts/generaciones-y-algoritmos-de-boomers-a-gen-alpha/1.png)
+![Generaciones y algoritmos: mujer interactúa con flujos de datos y líneas algorítmicas en movimiento](/images/posts/generaciones-y-algoritmos-de-boomers-a-gen-alpha/1.webp)
 
   
 

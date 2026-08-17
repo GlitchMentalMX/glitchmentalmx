@@ -7,7 +7,7 @@ description: >-
   Una empresa que construye IA de frontera dejó expuestos accidentalmente sus
   propios secretos por un error de configuración en su gestor de contenidos. Así
   es…
-heroImage: /images/posts/claude-mythos-anthropic-filtro-su-modelo-mas-peligroso/hero.png
+heroImage: /images/posts/claude-mythos-anthropic-filtro-su-modelo-mas-peligroso/hero.webp
 heroImageAlt: >-
   Claude Mythos: cajón abierto con documentos clasificados filtrándose en
   oficina

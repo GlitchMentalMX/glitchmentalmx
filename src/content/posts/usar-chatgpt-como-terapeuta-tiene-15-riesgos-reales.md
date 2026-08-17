@@ -7,7 +7,7 @@ description: >-
   Millones de personas ya lo hacen. Abren ChatGPT, escriben algo como "actúa
   como mi terapeuta cognitivo-conductual" y empiezan a hablar de lo que les
   pesa. Es…
-heroImage: /images/posts/usar-chatgpt-como-terapeuta-tiene-15-riesgos-reales/hero.png
+heroImage: /images/posts/usar-chatgpt-como-terapeuta-tiene-15-riesgos-reales/hero.webp
 heroImageAlt: >-
   Cultura digital: mujer en penumbra con smartphone emitiendo red de datos
   luminosos

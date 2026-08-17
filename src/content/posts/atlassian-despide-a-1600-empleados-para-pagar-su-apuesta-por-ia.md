@@ -7,7 +7,7 @@ description: >-
   Atlassian —la empresa detrás de Jira, Confluence y Trello— anunció el 11 de
   marzo el recorte de aproximadamente 1,600 empleados, cerca del 10% de su…
 heroImage: >-
-  /images/posts/atlassian-despide-a-1600-empleados-para-pagar-su-apuesta-por-ia/hero.png
+  /images/posts/atlassian-despide-a-1600-empleados-para-pagar-su-apuesta-por-ia/hero.webp
 heroImageAlt: >-
   Atlassian despidos IA: oficina automatizada con escritorios suspendidos y
   sistemas mecánicos sin empleados visibles

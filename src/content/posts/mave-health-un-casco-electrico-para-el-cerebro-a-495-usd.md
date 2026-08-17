@@ -7,7 +7,7 @@ description: >-
   Mave Health acaba de lanzar un casco de $495 dólares estadounidenses que manda
   corriente eléctrica a tu cerebro para mejorar el foco y el ánimo. La…
 heroImage: >-
-  /images/posts/mave-health-un-casco-electrico-para-el-cerebro-a-495-usd/hero.png
+  /images/posts/mave-health-un-casco-electrico-para-el-cerebro-a-495-usd/hero.webp
 heroImageAlt: >-
   Mave Health tDCS: casco neurostimulación sobre escritorio con onda EEG sin
   resolver y usuaria autoevaluando

@@ -6,7 +6,7 @@ updatedDate: 2026-03-19T12:42:49.097Z
 description: >-
   Horizon Worlds dejará de ser accesible vía headset de realidad virtual después
   del 15 de junio de 2026. Meta acaba de cerrar la apuesta más cara de la…
-heroImage: /images/posts/el-metaverso-de-meta-murio-que-paso-con-los-90-mil-m/hero.png
+heroImage: /images/posts/el-metaverso-de-meta-murio-que-paso-con-los-90-mil-m/hero.webp
 heroImageAlt: >-
   El colapso del Metaverso en 2026: hombre observa centro abandonado con
   estructuras circulares y cables expuestos

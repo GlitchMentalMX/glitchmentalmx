@@ -7,7 +7,7 @@ description: >-
   En el World Economic Forum de Davos en enero de 2026, Dario Amodei, CEO de
   Anthropic, soltó una bomba. No fue una predicción optimista ni un discurso…
 heroImage: >-
-  /images/posts/el-ceo-de-anthropic-lanzo-la-advertencia-mas-dura-sobre-ia-2026/hero.png
+  /images/posts/el-ceo-de-anthropic-lanzo-la-advertencia-mas-dura-sobre-ia-2026/hero.webp
 heroImageAlt: >-
   Davos 2026 IA empleos: ejecutivo reflexionando sobre automatización laboral en
   oficina futurista con hologramas digitales

@@ -6,7 +6,7 @@ updatedDate: 2026-03-23T13:31:30.678Z
 description: >-
   La Unión Europea acordó el 11 de marzo prohibir los sistemas de IA capaces de
   generar imágenes sexuales de personas reales sin su consentimiento. El…
-heroImage: /images/posts/la-ue-prohibe-las-apps-que-desnudan-con-ia-llego-tarde/hero.png
+heroImage: /images/posts/la-ue-prohibe-las-apps-que-desnudan-con-ia-llego-tarde/hero.webp
 heroImageAlt: >-
   deepfakes sexuales IA UE: mujer rodeada de versiones digitales fragmentadas de
   su cuerpo conectadas en red

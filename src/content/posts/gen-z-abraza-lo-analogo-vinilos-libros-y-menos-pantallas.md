@@ -7,7 +7,7 @@ description: >-
   Hay algo paradójico en que la generación más nativa del mundo digital sea, al
   mismo tiempo, la que más está impulsando el regreso de los vinilos, los CDs,…
 heroImage: >-
-  /images/posts/gen-z-abraza-lo-analogo-vinilos-libros-y-menos-pantallas/hero.png
+  /images/posts/gen-z-abraza-lo-analogo-vinilos-libros-y-menos-pantallas/hero.webp
 heroImageAlt: >-
   Cultura Digital Gen Z: Mujer rodeada de interfaces holográficas y libros en
   ambiente retro-tecnológico.

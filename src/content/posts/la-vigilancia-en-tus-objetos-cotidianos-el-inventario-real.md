@@ -7,7 +7,7 @@ description: >-
   La conversación sobre privacidad digital suele centrarse en el teléfono y las
   redes sociales. Pero la vigilancia tecnológica se extendió hace años a los…
 heroImage: >-
-  /images/posts/la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real/hero.png
+  /images/posts/la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real/hero.webp
 heroImageAlt: >-
   La vigilancia en tus objetos cotidianos: dispositivos domésticos abiertos
   revelan cámaras ocultas en pared

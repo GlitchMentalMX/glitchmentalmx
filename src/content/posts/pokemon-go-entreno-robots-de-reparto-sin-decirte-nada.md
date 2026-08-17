@@ -6,7 +6,7 @@ updatedDate: 2026-06-06T19:32:45.705Z
 description: >-
   Niantic recolectó 30 mil millones de imágenes urbanas con Pokémon Go durante
   ocho años. Ahora las usa para entrenar robots de reparto que navegan ciudades…
-heroImage: /images/posts/pokemon-go-entreno-robots-de-reparto-sin-decirte-nada/hero.png
+heroImage: /images/posts/pokemon-go-entreno-robots-de-reparto-sin-decirte-nada/hero.webp
 heroImageAlt: >-
   Pokémon Go entrenó robots de reparto: usuario mirando smartphone mientras
   robot autónomo circula en calle con mapa digital
@@ -23,7 +23,7 @@ La primera aplicación comercial: una alianza con Coco Robotics, una _startup_ q
 
 ## El problema del consentimiento fantasma
 
-![Pokémon Go entrenó robots de reparto: sombra de usuario con smartphone proyectada sobre mapa urbano digital](/images/posts/pokemon-go-entreno-robots-de-reparto-sin-decirte-nada/1.png)
+![Pokémon Go entrenó robots de reparto: sombra de usuario con smartphone proyectada sobre mapa urbano digital](/images/posts/pokemon-go-entreno-robots-de-reparto-sin-decirte-nada/1.webp)
 
   
 

@@ -7,7 +7,7 @@ description: >-
   X actualizó Grok ayer. Los videos ahora duran hasta 30 segundos y admiten
   hasta 7 imágenes de referencia para construir personajes y escenas. En enero,
   Grok…
-heroImage: /images/posts/grok-genera-videos-de-30-segundos-asi-lo-usa-x-ahora/hero.png
+heroImage: /images/posts/grok-genera-videos-de-30-segundos-asi-lo-usa-x-ahora/hero.webp
 heroImageAlt: >-
   Grok genera videos de 30 segundos: secuencia de clips visuales emergiendo de
   smartphone durante uso de la app

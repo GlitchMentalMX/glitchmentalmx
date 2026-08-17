@@ -7,7 +7,7 @@ description: >-
   Cada vez que cambia el formato dominante de consumo de información, cambia
   también la forma en que la gente piensa. No es metáfora: es el patrón que se
   ha…
-heroImage: /images/posts/del-texto-al-video-corto-como-cambian-los-formatos/hero.png
+heroImage: /images/posts/del-texto-al-video-corto-como-cambian-los-formatos/hero.webp
 heroImageAlt: >-
   Del texto al video corto: muro de periódicos transformándose en pantallas
   móviles frente a usuario

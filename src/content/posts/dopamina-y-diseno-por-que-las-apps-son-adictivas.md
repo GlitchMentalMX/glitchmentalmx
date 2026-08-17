@@ -7,7 +7,7 @@ description: >-
   No es falta de disciplina. Las aplicaciones de redes sociales están
   construidas sobre principios de neurociencia conductual para maximizar el
   tiempo que…
-heroImage: /images/posts/dopamina-y-diseno-por-que-las-apps-son-adictivas/hero.png
+heroImage: /images/posts/dopamina-y-diseno-por-que-las-apps-son-adictivas/hero.webp
 heroImageAlt: >-
   Dopamina y diseño: mujer tensando conexiones digitales como red de datos
   interactiva

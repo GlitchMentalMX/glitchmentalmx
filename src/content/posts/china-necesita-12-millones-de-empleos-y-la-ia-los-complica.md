@@ -8,7 +8,7 @@ description: >-
   de Recursos Humanos y Seguridad Social de China, anunció que el gobierno
   usará…
 heroImage: >-
-  /images/posts/china-necesita-12-millones-de-empleos-y-la-ia-los-complica/hero.png
+  /images/posts/china-necesita-12-millones-de-empleos-y-la-ia-los-complica/hero.webp
 heroImageAlt: >-
   Automatización en China: trabajadores uniformados pasando por torniquetes de
   control biométrico

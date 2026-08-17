@@ -7,7 +7,7 @@ description: >-
   No es que TikTok haya arruinado todo. Es que el problema es más profundo que
   TikTok. La compresión del contenido —textos más cortos, videos más breves,…
 heroImage: >-
-  /images/posts/por-que-todo-el-contenido-se-vuelve-mas-corto-y-mas-rapido/hero.png
+  /images/posts/por-que-todo-el-contenido-se-vuelve-mas-corto-y-mas-rapido/hero.webp
 heroImageAlt: >-
   Contenido más corto y más rápido: hombre leyendo un periódico desintegrándose
   en fragmentos digitales mientras es leído

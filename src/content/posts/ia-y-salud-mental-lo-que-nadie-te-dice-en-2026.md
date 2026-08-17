@@ -6,7 +6,7 @@ updatedDate: 2026-06-06T19:37:09.185Z
 description: >-
   Hay una conversación que la industria tecnológica preferiría no tener. No es
   sobre benchmarks, ni sobre qué modelo razona mejor, ni sobre quién lleva la…
-heroImage: /images/posts/ia-y-salud-mental-lo-que-nadie-te-dice-en-2026/hero.png
+heroImage: /images/posts/ia-y-salud-mental-lo-que-nadie-te-dice-en-2026/hero.webp
 heroImageAlt: >-
   chatbots IA salud mental adolescentes 2026: adolescente mirando por ventana de
   autobús con burbujas de chat reflejadas en el vidrio
@@ -65,7 +65,7 @@ OpenAI comenzó a animar a los usuarios a tomar descansos después de conversaci
 
 ## El problema de fondo: el diseño es el problema
 
-![chatbots IA salud mental adolescentes 2026: adolescente sentada en el suelo rodeada de burbujas de chat simulando conversación con IA](/images/posts/ia-y-salud-mental-lo-que-nadie-te-dice-en-2026/2.png)
+![chatbots IA salud mental adolescentes 2026: adolescente sentada en el suelo rodeada de burbujas de chat simulando conversación con IA](/images/posts/ia-y-salud-mental-lo-que-nadie-te-dice-en-2026/2.webp)
 
   
 

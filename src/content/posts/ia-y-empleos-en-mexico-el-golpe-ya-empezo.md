@@ -7,7 +7,7 @@ description: >-
   El 3 de marzo de 2026, el Área de Estudios Económicos de Banamex publicó un
   reporte con un diagnóstico que no deja mucho espacio para la duda: cerca del
   30%…
-heroImage: /images/posts/ia-y-empleos-en-mexico-el-golpe-ya-empezo/hero.png
+heroImage: /images/posts/ia-y-empleos-en-mexico-el-golpe-ya-empezo/hero.webp
 heroImageAlt: 'IA en México: mujer de pie en oficina vacía sosteniendo documentos'
 ---
 El 3 de marzo de 2026, el Área de Estudios Económicos de Banamex publicó un reporte con un diagnóstico que no deja mucho espacio para la duda: **cerca del 30% de los empleos formales en México enfrentan un alto riesgo de automatización en las próximas dos décadas**. No es una proyección alarmista de think tank extranjero. Es un banco mexicano hablando de la economía mexicana, con datos del INEGI y de la Organización Internacional del Trabajo.

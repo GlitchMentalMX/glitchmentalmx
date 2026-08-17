@@ -8,7 +8,7 @@ description: >-
   problema: ya no describe bien lo que está pasando. El retrato estándar es el
   de…
 heroImage: >-
-  /images/posts/gen-z-abandona-el-scroll-infinito-y-aqui-estan-los-datos/hero.png
+  /images/posts/gen-z-abandona-el-scroll-infinito-y-aqui-estan-los-datos/hero.webp
 heroImageAlt: >-
   Gen Z abandona el scroll infinito: joven deteniendo feed holográfico desde
   smartphone

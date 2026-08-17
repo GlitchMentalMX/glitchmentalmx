@@ -7,7 +7,7 @@ description: >-
   Cada notificación que recibes activa una descarga de dopamina en tu cerebro.**
   No es una metáfora ni una exageración: es el mismo mecanismo que está detrás…
 heroImage: >-
-  /images/posts/ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro/hero.png
+  /images/posts/ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro/hero.webp
 heroImageAlt: >-
   ansiedad digital: mujer revisando smartphone con estímulos de notificaciones
   en red neuronal

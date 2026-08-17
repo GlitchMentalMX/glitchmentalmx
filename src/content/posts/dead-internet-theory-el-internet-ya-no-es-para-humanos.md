@@ -6,7 +6,7 @@ updatedDate: 2026-07-09T02:44:23.805Z
 description: >-
   La Dead Internet Theory —la idea de que la mayor parte del contenido y el
   tráfico online ya lo generan máquinas, no personas— pasó de ser una teoría…
-heroImage: /images/posts/dead-internet-theory-el-internet-ya-no-es-para-humanos/hero.png
+heroImage: /images/posts/dead-internet-theory-el-internet-ya-no-es-para-humanos/hero.webp
 heroImageAlt: >-
   Dead Internet Theory: mujer caminando en ciudad rodeada de flujos de datos
   digitales

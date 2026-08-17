@@ -7,7 +7,7 @@ description: >-
   Los riesgos de los sistemas autónomos no son ejercicios de filosofía futura.
   Tienen historial documentado, víctimas identificadas y litigios activos. En
   2024…
-heroImage: /images/posts/cuando-los-sistemas-autonomos-fallan-casos-reales/hero.png
+heroImage: /images/posts/cuando-los-sistemas-autonomos-fallan-casos-reales/hero.webp
 heroImageAlt: >-
   Cuando los sistemas autónomos fallan: paquete atascado en cruce de cintas con
   señal roja de error

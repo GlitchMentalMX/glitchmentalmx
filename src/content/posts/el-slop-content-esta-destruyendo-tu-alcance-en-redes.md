@@ -7,7 +7,7 @@ description: >-
   Hay un término que los especialistas en redes sociales llevan semanas
   repitiendo en 2026: slop content. Es el contenido generado masivamente con IA
   sin…
-heroImage: /images/posts/el-slop-content-esta-destruyendo-tu-alcance-en-redes/hero.png
+heroImage: /images/posts/el-slop-content-esta-destruyendo-tu-alcance-en-redes/hero.webp
 heroImageAlt: >-
   El slop content está destruyendo tu alcance en redes: hombre cubriéndose ante
   explosión de perfiles digitales

@@ -7,7 +7,7 @@ description: >-
   Hace tres años, las IAs se llamaban asistentes. Hoy se llaman agentes. El
   cambio de una palabra no es cosmético: define quién tiene el control, quién
   lleva…
-heroImage: /images/posts/de-asistente-a-agente-como-cambio-el-lenguaje-de-la-ia/hero.png
+heroImage: /images/posts/de-asistente-a-agente-como-cambio-el-lenguaje-de-la-ia/hero.webp
 heroImageAlt: >-
   De “asistente” a “agente”: mujer interactúa con sistema automatizado de
   clasificación de documentos

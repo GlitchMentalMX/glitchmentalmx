@@ -6,7 +6,7 @@ updatedDate: 2026-03-20T12:59:32.512Z
 description: >-
   En febrero, decenas de medios mexicanos cubrieron a los therians como si fuera
   una crisis. El fenómeno es real, tiene años de historia y no es ninguna…
-heroImage: /images/posts/therians-lo-que-el-panico-no-te-explica-del-fenomeno/hero.png
+heroImage: /images/posts/therians-lo-que-el-panico-no-te-explica-del-fenomeno/hero.webp
 heroImageAlt: >-
   Therians fenómeno digital: joven con headphones en cuarto oscuro rodeada de
   red algorítmica en el suelo

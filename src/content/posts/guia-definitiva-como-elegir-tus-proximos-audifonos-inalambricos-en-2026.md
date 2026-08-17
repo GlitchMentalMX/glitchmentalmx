@@ -8,7 +8,7 @@ description: >-
   brutal: estás usando tecnología prehistórica. El mercado de los true wireless
   dio…
 heroImage: >-
-  /images/posts/guia-definitiva-como-elegir-tus-proximos-audifonos-inalambricos-en-2026/hero.png
+  /images/posts/guia-definitiva-como-elegir-tus-proximos-audifonos-inalambricos-en-2026/hero.webp
 heroImageAlt: >-
   Audífonos inalámbricos 2026: vista explotada con chips inteligentes, sonido
   adaptativo y ecosistema conectado

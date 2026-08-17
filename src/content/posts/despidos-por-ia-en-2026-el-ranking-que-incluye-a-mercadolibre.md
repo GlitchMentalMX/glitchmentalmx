@@ -7,7 +7,7 @@ description: >-
   Ya no es una advertencia de economistas ni una predicción de foros tech. Es un
   dato concreto: desde enero de 2026, aproximadamente el 20% de todos los…
 heroImage: >-
-  /images/posts/despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre/hero.png
+  /images/posts/despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre/hero.webp
 heroImageAlt: >-
   Automatización laboral IA: empleada frente a oficina vacía con escritorios
   desocupados

@@ -7,7 +7,7 @@ description: >-
   Nadie te obliga a quedarte dentro del ecosistema de Apple, Google o Microsoft.
   Pero salir cuesta más de lo que costó entrar — y eso no es un accidente del…
 heroImage: >-
-  /images/posts/ecosistemas-cerrados-como-las-marcas-te-retienen-sin-decirtelo/hero.png
+  /images/posts/ecosistemas-cerrados-como-las-marcas-te-retienen-sin-decirtelo/hero.webp
 heroImageAlt: >-
   Ecosistemas cerrados: hombre atado con cables intenta avanzar hacia salida
   luminosa en entorno tecnológico

@@ -10,7 +10,7 @@ description: >-
   publica contenido, interactúa con otros perfiles y genera datos que las
   plataformas…
 heroImage: >-
-  /images/posts/la-red-social-del-futuro-no-es-para-ti-como-los-agentes-de-ia-estan-tomando-las-plataforma/hero.png
+  /images/posts/la-red-social-del-futuro-no-es-para-ti-como-los-agentes-de-ia-estan-tomando-las-plataforma/hero.webp
 heroImageAlt: >-
   Futuro del trabajo con IA: trabajadores humanos rodeados de esferas de datos
   holográficos

@@ -7,7 +7,7 @@ description: >-
   Un jurado de Los Ángeles declaró este 25 de marzo de 2026 a Meta y YouTube
   responsables del daño psicológico de Kaley, una joven que empezó a usar
   YouTube a…
-heroImage: /images/posts/meta-y-youtube-pagaron-lo-que-sabian-desde-siempre/hero.png
+heroImage: /images/posts/meta-y-youtube-pagaron-lo-que-sabian-desde-siempre/hero.webp
 heroImageAlt: >-
   Meta y YouTube pagaron lo que sabían desde siempre: mujer conectada por cables
   a sistema de datos con cubos apilados

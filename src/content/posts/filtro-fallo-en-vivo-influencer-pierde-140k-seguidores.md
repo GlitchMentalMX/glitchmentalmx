@@ -7,7 +7,7 @@ description: >-
   En algún momento de mediados de febrero de 2026, una creadora de contenido en
   Douyin —la versión china de TikTok— estaba bailando frente a la cámara
   durante…
-heroImage: /images/posts/filtro-fallo-en-vivo-influencer-pierde-140k-seguidores/hero.png
+heroImage: /images/posts/filtro-fallo-en-vivo-influencer-pierde-140k-seguidores/hero.webp
 heroImageAlt: >-
   Tendencias Redes Sociales: Mujer sorprendida por explosión de luz digital
   saliendo de smartphone moderno.

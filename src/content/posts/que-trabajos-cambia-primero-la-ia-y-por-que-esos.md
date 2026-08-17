@@ -6,7 +6,7 @@ updatedDate: 2026-03-28T14:24:05.880Z
 description: >-
   La narrativa popular dice que la IA primero reemplaza las tareas repetitivas y
   los trabajos de baja cualificación. Los datos muestran lo contrario: los…
-heroImage: /images/posts/que-trabajos-cambia-primero-la-ia-y-por-que-esos/hero.png
+heroImage: /images/posts/que-trabajos-cambia-primero-la-ia-y-por-que-esos/hero.webp
 heroImageAlt: >-
   qué trabajos cambia la IA: brazos robóticos organizando pilas de documentos
   junto a trabajadora

@@ -7,7 +7,7 @@ description: >-
   Hace dos décadas, el cerebro humano promedio sostenía el foco durante dos
   minutos y medio antes de distraerse.** Hoy ese número bajó a 40 segundos,
   según…
-heroImage: /images/posts/tu-atencion-ya-no-te-pertenece-la-fragmentacion-digital/hero.png
+heroImage: /images/posts/tu-atencion-ya-no-te-pertenece-la-fragmentacion-digital/hero.webp
 heroImageAlt: >-
   fragmentación digital: mujer interactuando con fragmento de red de datos
   quebrada

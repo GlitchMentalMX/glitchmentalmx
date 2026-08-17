@@ -7,7 +7,7 @@ description: >-
   Cada vez que un CEO de tecnología publica un ensayo técnico sobre IA, las
   redes sociales producen una versión paralela del mismo texto: más simple, más…
 heroImage: >-
-  /images/posts/por-que-la-ia-en-redes-no-tiene-nada-que-ver-con-la-real/hero.png
+  /images/posts/por-que-la-ia-en-redes-no-tiene-nada-que-ver-con-la-real/hero.webp
 heroImageAlt: >-
   IA en redes vs real: mujer interactuando con muro de feeds sociales frente a
   equipo técnico y esquemas
@@ -44,7 +44,7 @@ El mecanismo funcionó así: se tomó una frase técnica real —"no tenemos ide
 
   
 
-![IA en redes vs real: collage de rostros con métricas sociales frente a documento técnico con diagrama de sistema](/images/posts/por-que-la-ia-en-redes-no-tiene-nada-que-ver-con-la-real/1.png)
+![IA en redes vs real: collage de rostros con métricas sociales frente a documento técnico con diagrama de sistema](/images/posts/por-que-la-ia-en-redes-no-tiene-nada-que-ver-con-la-real/1.webp)
 
   
 

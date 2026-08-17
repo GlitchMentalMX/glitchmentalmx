@@ -6,7 +6,7 @@ updatedDate: 2026-03-30T02:11:13.655Z
 description: >-
   Cada mes aparece una nueva tecnología que "lo va a cambiar todo". La mayoría
   no cambia nada. Saber distinguir una tendencia estructural de un ciclo de…
-heroImage: /images/posts/como-distinguir-una-tendencia-real-de-puro-hype/hero.png
+heroImage: /images/posts/como-distinguir-una-tendencia-real-de-puro-hype/hero.webp
 heroImageAlt: >-
   Cómo distinguir una tendencia: persona corta cuerdas de globos flotantes
   separando señales relevantes

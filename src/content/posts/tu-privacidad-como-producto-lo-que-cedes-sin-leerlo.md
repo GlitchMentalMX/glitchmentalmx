@@ -7,7 +7,7 @@ description: >-
   Los términos y condiciones que nunca lees no son un tecnicismo legal sin
   consecuencias. Son el contrato por el que intercambias información sobre ti
   mismo…
-heroImage: /images/posts/tu-privacidad-como-producto-lo-que-cedes-sin-leerlo/hero.png
+heroImage: /images/posts/tu-privacidad-como-producto-lo-que-cedes-sin-leerlo/hero.webp
 heroImageAlt: >-
   Tu privacidad como producto: mujer conectada por cables a red de datos
   interactuando con interfaz

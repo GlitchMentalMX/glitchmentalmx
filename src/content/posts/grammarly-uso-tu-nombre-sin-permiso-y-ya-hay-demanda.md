@@ -7,7 +7,7 @@ description: >-
   En agosto de 2025, Grammarly lanzó una función llamada Expert Review: por 12
   dólares al mes, los usuarios podían subir su texto y recibir
   retroalimentación…
-heroImage: /images/posts/grammarly-uso-tu-nombre-sin-permiso-y-ya-hay-demanda/hero.png
+heroImage: /images/posts/grammarly-uso-tu-nombre-sin-permiso-y-ya-hay-demanda/hero.webp
 heroImageAlt: >-
   Cultura digital datos: mujer analiza pantalla con matriz de datos luminosos en
   verde

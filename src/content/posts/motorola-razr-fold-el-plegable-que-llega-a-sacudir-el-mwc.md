@@ -8,7 +8,7 @@ description: >-
   duopolio: Samsung por un lado, Google por el otro. Motorola siempre estuvo en
   el…
 heroImage: >-
-  /images/posts/motorola-razr-fold-el-plegable-que-llega-a-sacudir-el-mwc/hero.png
+  /images/posts/motorola-razr-fold-el-plegable-que-llega-a-sacudir-el-mwc/hero.webp
 heroImageAlt: >-
   Motorola razr fold: smartphone plegable abierto con gráficos financieros y
   mapa global en entorno digital

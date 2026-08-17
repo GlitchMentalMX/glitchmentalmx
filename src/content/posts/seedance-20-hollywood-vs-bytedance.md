@@ -7,7 +7,7 @@ description: >-
   El 12 de febrero de 2026, ByteDance — la empresa china detrás de TikTok —
   lanzó Seedance 2.0, un generador de video con inteligencia artificial similar
   a…
-heroImage: /images/posts/seedance-20-hollywood-vs-bytedance/hero.png
+heroImage: /images/posts/seedance-20-hollywood-vs-bytedance/hero.webp
 heroImageAlt: >-
   Redes sociales y datos: hombre frente a espejo con cartas y notificaciones
   flotando

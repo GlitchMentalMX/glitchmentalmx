@@ -6,7 +6,7 @@ updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
   Meta planea eliminar aproximadamente 16,000 empleos — el 20% de su plantilla
   global — mientras escala su inversión en infraestructura de IA. Es la…
-heroImage: /images/posts/meta-recortara-16000-empleos-la-ia-como-argumento/hero.png
+heroImage: /images/posts/meta-recortara-16000-empleos-la-ia-como-argumento/hero.webp
 heroImageAlt: >-
   recortes de Meta por IA: oficina vacía con escritorios delimitados por marcos
   digitales luminosos

@@ -6,7 +6,7 @@ updatedDate: 2026-03-19T12:37:29.875Z
 description: >-
   Jensen Huang subió al escenario del SAP Center de San José el 16 de marzo con
   una cifra que redefinió el tamaño de la conversación sobre IA: al menos un…
-heroImage: /images/posts/nvidia-gtc-2026-1-billon-y-la-era-de-la-ia-agentica/hero.png
+heroImage: /images/posts/nvidia-gtc-2026-1-billon-y-la-era-de-la-ia-agentica/hero.webp
 heroImageAlt: >-
   centros de datos IA 2026: ingeniera revisa documento frente a racks de
   servidores en operación

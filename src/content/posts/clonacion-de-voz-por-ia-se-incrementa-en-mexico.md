@@ -6,7 +6,7 @@ updatedDate: 2026-06-04T16:58:43.382Z
 description: >-
   La seguridad digital en las principales metrópolis de México ha entrado en una
   fase de vulnerabilidad sin precedentes este lunes 16 de marzo de 2026. Según…
-heroImage: /images/posts/clonacion-de-voz-por-ia-se-incrementa-en-mexico/hero.png
+heroImage: /images/posts/clonacion-de-voz-por-ia-se-incrementa-en-mexico/hero.webp
 heroImageAlt: >-
   La clonación de voz para extorsión financiera crece un 300% en CDMX y
   Monterrey. Aprende a protegerte de los fraudes de IA en 2026.

@@ -7,7 +7,7 @@ description: >-
   CES 2026 acaba de cerrar en Las Vegas, y como siempre, fue un carnaval de
   promesas tecnológicas. Pero este año algo fue diferente: menos conceptos…
 heroImage: >-
-  /images/posts/ces-2026-los-gadgets-mas-locos-que-realmente-vas-a-poder-comprar-este-ano/hero.png
+  /images/posts/ces-2026-los-gadgets-mas-locos-que-realmente-vas-a-poder-comprar-este-ano/hero.webp
 heroImageAlt: >-
   CES 2026: gadgets innovadores con pantalla adaptable, gafas de AR inmersiva y
   núcleo inteligente.

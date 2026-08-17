@@ -7,7 +7,7 @@ description: >-
   El mundo del gaming en 2026 no se trata solo de tener la consola más potente o
   la tarjeta gráfica más cara. Hoy en día, la experiencia de juego se define
   por…
-heroImage: /images/posts/guia-definitiva-de-los-mejores-gadgets-para-gaming-2026/hero.png
+heroImage: /images/posts/guia-definitiva-de-los-mejores-gadgets-para-gaming-2026/hero.webp
 heroImageAlt: >-
   Gadgets para gaming 2026: set de realidad aumentada, consola portátil y
   periféricos con iluminación neón.

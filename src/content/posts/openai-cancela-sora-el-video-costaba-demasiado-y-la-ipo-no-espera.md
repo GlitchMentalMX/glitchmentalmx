@@ -8,7 +8,7 @@ description: >-
   después de lanzarla. No es una historia sobre deepfakes: es una historia
   sobre…
 heroImage: >-
-  /images/posts/openai-cancela-sora-el-video-costaba-demasiado-y-la-ipo-no-espera/hero.png
+  /images/posts/openai-cancela-sora-el-video-costaba-demasiado-y-la-ipo-no-espera/hero.webp
 heroImageAlt: >-
   OpenAI mata Sora: máquina industrial imprime tiras de video continuo mostrando
   alto costo de generación audiovisual

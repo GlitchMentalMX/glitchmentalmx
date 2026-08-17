@@ -7,7 +7,7 @@ description: >-
   El 8 de mayo, Meta recuperará la capacidad técnica de leer tus mensajes
   directos en Instagram. La empresa está eliminando el cifrado de extremo a
   extremo que…
-heroImage: /images/posts/meta-elimina-el-cifrado-de-dms-en-instagram-por-que/hero.png
+heroImage: /images/posts/meta-elimina-el-cifrado-de-dms-en-instagram-por-que/hero.webp
 heroImageAlt: >-
   uso de redes sociales 2026: mujer revisa smartphone frente a cafetería con
   personas al fondo

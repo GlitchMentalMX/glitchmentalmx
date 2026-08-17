@@ -6,7 +6,7 @@ updatedDate: 2026-03-23T13:29:06.237Z
 description: >-
   Google pasó de "no tenemos planes" a "no los descartamos" en menos de dos
   meses. Nick Fox, vicepresidente senior de Google responsable de Búsqueda,…
-heroImage: /images/posts/google-admite-los-anuncios-en-gemini-son-inevitables/hero.png
+heroImage: /images/posts/google-admite-los-anuncios-en-gemini-son-inevitables/hero.webp
 heroImageAlt: >-
   Google anuncios Gemini: interfaz con paneles flotantes de productos
   patrocinados rodeando a usuaria interactuando con IA

@@ -8,7 +8,7 @@ description: >-
   vez, la IA física domina la feria sobre la IA de software. Samsung, NVIDIA,
   LG,…
 heroImage: >-
-  /images/posts/ces-2026-apuesta-todo-a-ia-fisica-robots-y-autos-que-ya-puedes-comprar/hero.png
+  /images/posts/ces-2026-apuesta-todo-a-ia-fisica-robots-y-autos-que-ya-puedes-comprar/hero.webp
 heroImageAlt: >-
   Robot Nexus-1 y auto eléctrico ION-Z en CES 2026: el futuro de la IA física y
   movilidad

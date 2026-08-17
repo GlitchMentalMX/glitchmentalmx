@@ -6,7 +6,7 @@ updatedDate: 2026-03-20T12:54:53.468Z
 description: >-
   BMG Rights Management demandó a Anthropic el 17 de marzo en un tribunal
   federal de California por usar letras de canciones para entrenar a Claude sin…
-heroImage: /images/posts/bmg-demanda-a-anthropic-cuando-la-ia-canta-sin-permiso/hero.png
+heroImage: /images/posts/bmg-demanda-a-anthropic-cuando-la-ia-canta-sin-permiso/hero.webp
 heroImageAlt: >-
   BMG demanda Anthropic: archivista frente a expedientes abiertos con trail de
   datos cyan saliendo del archivo

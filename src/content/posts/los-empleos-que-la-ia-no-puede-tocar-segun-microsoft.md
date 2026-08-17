@@ -7,7 +7,7 @@ description: >-
   Mientras todos hablan de qué trabajos va a destruir la inteligencia
   artificial, Microsoft Research hizo una pregunta más útil: ¿cuáles resisten
   mejor? La…
-heroImage: /images/posts/los-empleos-que-la-ia-no-puede-tocar-segun-microsoft/hero.png
+heroImage: /images/posts/los-empleos-que-la-ia-no-puede-tocar-segun-microsoft/hero.webp
 heroImageAlt: >-
   empleos resistentes IA 2026: hombre selecciona figura humana protegida por
   escudo digital en sistema automatizado de trabajadores

@@ -6,7 +6,7 @@ updatedDate: 2026-03-29T03:51:26.580Z
 description: >-
   "Inteligente." "Razona." "Comprende." "Autónomo." Las empresas de IA usan
   estas palabras con precisión quirúrgica — no para describir sus productos con…
-heroImage: /images/posts/el-glosario-que-las-empresas-de-ia-no-quieren-que-leas/hero.png
+heroImage: /images/posts/el-glosario-que-las-empresas-de-ia-no-quieren-que-leas/hero.webp
 heroImageAlt: >-
   El glosario: etiquetas ‘intelligent’ y ‘autonomous’ en línea robótica de
   clasificación industrial

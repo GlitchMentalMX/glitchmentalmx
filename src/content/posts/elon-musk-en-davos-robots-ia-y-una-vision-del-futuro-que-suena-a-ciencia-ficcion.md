@@ -10,7 +10,7 @@ description: >-
   y aburrido", Elon Musk finalmente apareció en Davos este jueves 22 de enero.
   Y…
 heroImage: >-
-  /images/posts/elon-musk-en-davos-robots-ia-y-una-vision-del-futuro-que-suena-a-ciencia-ficcion/hero.png
+  /images/posts/elon-musk-en-davos-robots-ia-y-una-vision-del-futuro-que-suena-a-ciencia-ficcion/hero.webp
 heroImageAlt: >-
   IA workforce 2026: sala de juntas futurista con robots humanoides, Elon Musk
   al centro y ejecutivos analizando datos de inteligencia artificial

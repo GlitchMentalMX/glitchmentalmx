@@ -10,7 +10,7 @@ description: >-
   Las Vegas la primera semana de enero, Samsung Display desveló lo que podría
   ser…
 heroImage: >-
-  /images/posts/samsung-presenta-pantallas-extensibles-en-ces-2026-el-futuro-mas-alla-de-los-plegables/hero.png
+  /images/posts/samsung-presenta-pantallas-extensibles-en-ces-2026-el-futuro-mas-alla-de-los-plegables/hero.webp
 heroImageAlt: >-
   Samsung pantallas extensibles CES 2026: tecnología Slidable Flex OLED,
   smartphones plegables innovación

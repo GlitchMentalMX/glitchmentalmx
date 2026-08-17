@@ -6,7 +6,7 @@ updatedDate: 2026-06-14T23:42:43.225Z
 description: >-
   El scroll infinito no es una consecuencia accidental del internet moderno: es
   una decisión de diseño deliberada con consecuencias documentadas sobre la…
-heroImage: /images/posts/cultura-del-scroll-infinito-por-que-nunca-terminas-nada/hero.png
+heroImage: /images/posts/cultura-del-scroll-infinito-por-que-nunca-terminas-nada/hero.webp
 heroImageAlt: >-
   scroll infinito: usuaria interactuando con feed continuo en cinta automatizada
   de contenido digital
@@ -39,7 +39,7 @@ Investigación publicada en las actas de la conferencia CHI 2025 —el evento de
 
   
 
-![scroll infinito: mujer caminando sobre flujo interminable de pantallas digitales conectadas](/images/posts/cultura-del-scroll-infinito-por-que-nunca-terminas-nada/1.png)
+![scroll infinito: mujer caminando sobre flujo interminable de pantallas digitales conectadas](/images/posts/cultura-del-scroll-infinito-por-que-nunca-terminas-nada/1.webp)
 
 ## El diseño que elimina los momentos de pausa
 

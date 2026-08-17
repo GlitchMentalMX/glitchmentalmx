@@ -8,7 +8,7 @@ description: >-
   hechos externos en Facebook e Instagram. En su lugar, implementará un sistema
   de…
 heroImage: >-
-  /images/posts/meta-elimina-verificadores-externos-y-ahora-usa-notas-de-comunidad-como-x/hero.png
+  /images/posts/meta-elimina-verificadores-externos-y-ahora-usa-notas-de-comunidad-como-x/hero.webp
 heroImageAlt: >-
   Notas de comunidad: usuarios en entorno urbano validando información con
   burbujas de verificación.

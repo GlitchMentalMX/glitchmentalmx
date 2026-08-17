@@ -8,7 +8,7 @@ description: >-
   buscar algo en Google" con la conciencia de estar usando una tecnología. El
   GPS…
 heroImage: >-
-  /images/posts/cuando-la-tecnologia-se-vuelve-invisible-senal-de-que-gano/hero.png
+  /images/posts/cuando-la-tecnologia-se-vuelve-invisible-senal-de-que-gano/hero.webp
 heroImageAlt: >-
   la tecnología se vuelve invisible: mujer interactúa con interfaces urbanas
   integradas sin contacto

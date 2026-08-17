@@ -7,7 +7,7 @@ description: >-
   Compararte con otros no es un defecto de tu carácter — es una función
   cognitiva básica. El problema es que las redes sociales la convirtieron en
   una…
-heroImage: /images/posts/redes-sociales-y-autoestima-la-trampa-de-la-comparacion/hero.png
+heroImage: /images/posts/redes-sociales-y-autoestima-la-trampa-de-la-comparacion/hero.webp
 heroImageAlt: >-
   redes sociales y autoestima: mujer frente a espejo fragmentado con reflejos
   idealizados y métricas sociales

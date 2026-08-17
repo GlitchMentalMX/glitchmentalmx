@@ -7,7 +7,7 @@ description: >-
   "Agéntico" es la palabra del momento en inteligencia artificial. Pero mientras
   la industria la repite como promesa, un grupo de investigadores de la…
 heroImage: >-
-  /images/posts/agentes-de-ia-la-palabra-del-ano-que-nadie-sabe-controlar/hero.png
+  /images/posts/agentes-de-ia-la-palabra-del-ano-que-nadie-sabe-controlar/hero.webp
 heroImageAlt: >-
   Agentes de IA: sobres desordenados en cintas automatizadas mientras mujer
   intenta controlarlos en sistema logístico

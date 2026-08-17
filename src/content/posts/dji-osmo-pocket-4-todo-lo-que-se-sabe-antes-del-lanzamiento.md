@@ -7,7 +7,7 @@ description: >-
   El DJI Osmo Pocket 3 sigue siendo, para muchos creadores de contenido, la
   cámara gimbal más equilibrada que existe: compacta, estabilizada y capaz de…
 heroImage: >-
-  /images/posts/dji-osmo-pocket-4-todo-lo-que-se-sabe-antes-del-lanzamiento/hero.png
+  /images/posts/dji-osmo-pocket-4-todo-lo-que-se-sabe-antes-del-lanzamiento/hero.webp
 heroImageAlt: >-
   Gadgets 2026: Componentes internos de DJI Pocket con sensor CMOS de 1 pulgada
   y estabilización de 3 ejes.

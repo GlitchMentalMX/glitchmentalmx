@@ -7,7 +7,7 @@ description: >-
   Casi toda tecnología significativa pasa por el mismo arco: atención masiva,
   decepción igualmente masiva y, para las que sobreviven, integración silenciosa
   en…
-heroImage: /images/posts/el-ciclo-hype-desilusion-integracion-una-guia-practica/hero.png
+heroImage: /images/posts/el-ciclo-hype-desilusion-integracion-una-guia-practica/hero.webp
 heroImageAlt: >-
   El ciclo hype: hombre cruza suelo roto apoyado en cojines inflables que evitan
   caída

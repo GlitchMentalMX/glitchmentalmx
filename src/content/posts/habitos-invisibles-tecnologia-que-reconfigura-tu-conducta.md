@@ -7,7 +7,7 @@ description: >-
   La tecnología no solo ocupa tu tiempo: lo hace sin que lo notes. Los hábitos
   digitales se forman en silencio, se instalan en el fondo del comportamiento y…
 heroImage: >-
-  /images/posts/habitos-invisibles-tecnologia-que-reconfigura-tu-conducta/hero.png
+  /images/posts/habitos-invisibles-tecnologia-que-reconfigura-tu-conducta/hero.webp
 heroImageAlt: >-
   Hábitos invisibles: mujer caminando sobre red de nodos digitales que guían su
   recorrido

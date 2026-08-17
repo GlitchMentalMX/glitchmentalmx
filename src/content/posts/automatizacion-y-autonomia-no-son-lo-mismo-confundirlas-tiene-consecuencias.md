@@ -8,7 +8,7 @@ description: >-
   ejecuta lo que un humano hubiera hecho siguiendo instrucciones fijas. Dotar
   de…
 heroImage: >-
-  /images/posts/automatizacion-y-autonomia-no-son-lo-mismo-confundirlas-tiene-consecuencias/hero.png
+  /images/posts/automatizacion-y-autonomia-no-son-lo-mismo-confundirlas-tiene-consecuencias/hero.webp
 heroImageAlt: >-
   Automatización vs autonomía: cintas transportadoras paralelas con cajas en
   flujo lineal y sistema divergente automatizado

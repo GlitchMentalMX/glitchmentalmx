@@ -8,7 +8,7 @@ description: >-
   sectores con mayor impacto económico y mayor riesgo de consecuencias
   irreversibles. En…
 heroImage: >-
-  /images/posts/sistemas-autonomos-en-accion-logistica-finanzas-y-defensa/hero.png
+  /images/posts/sistemas-autonomos-en-accion-logistica-finanzas-y-defensa/hero.webp
 heroImageAlt: >-
   Sistemas autónomos en acción: centro logístico con múltiples cintas
   coordinadas distribuyendo paquetes en tiempo real

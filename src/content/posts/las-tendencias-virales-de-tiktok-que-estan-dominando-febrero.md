@@ -8,7 +8,7 @@ description: >-
   definiendo el inicio del año en las redes sociales. Desde debates caóticos con
   el…
 heroImage: >-
-  /images/posts/las-tendencias-virales-de-tiktok-que-estan-dominando-febrero/hero.png
+  /images/posts/las-tendencias-virales-de-tiktok-que-estan-dominando-febrero/hero.webp
 heroImageAlt: >-
   TikTok tendencias febrero 2026: collage de notificaciones móviles con texto
   sobre verdades digitales, consenso grupal y audios virales.

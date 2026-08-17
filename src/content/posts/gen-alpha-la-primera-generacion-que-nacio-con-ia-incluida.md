@@ -8,7 +8,7 @@ description: >-
   los nacidos aproximadamente desde 2013 en adelante, está creciendo con algo
   más:…
 heroImage: >-
-  /images/posts/gen-alpha-la-primera-generacion-que-nacio-con-ia-incluida/hero.png
+  /images/posts/gen-alpha-la-primera-generacion-que-nacio-con-ia-incluida/hero.webp
 heroImageAlt: >-
   Gen Z y tecnología: adolescente usando tablet con interfaces de apps
   educativas y asistentes digitales flotantes

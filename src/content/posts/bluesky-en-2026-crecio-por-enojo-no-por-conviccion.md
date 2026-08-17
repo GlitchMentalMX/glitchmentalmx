@@ -7,7 +7,7 @@ description: >-
   Pocos fenómenos en la historia reciente de las redes sociales fueron tan
   rápidos como el ascenso de Bluesky entre 2024 y principios de 2025. La
   plataforma…
-heroImage: /images/posts/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/hero.png
+heroImage: /images/posts/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/hero.webp
 heroImageAlt: >-
   redes sociales crecimiento: gráfica descendente holográfica mientras mujer
   revisa smartphone en oficina

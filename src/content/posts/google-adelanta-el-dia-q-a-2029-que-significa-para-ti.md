@@ -7,7 +7,7 @@ description: >-
   Google acaba de fijar una fecha que la industria llevaba años evitando
   nombrar: 2029 como plazo máximo para migrar toda su infraestructura a
   criptografía…
-heroImage: /images/posts/google-adelanta-el-dia-q-a-2029-que-significa-para-ti/hero.png
+heroImage: /images/posts/google-adelanta-el-dia-q-a-2029-que-significa-para-ti/hero.webp
 heroImageAlt: >-
   Google adelanta el Día Q: técnica ajustando núcleo de sistema cifrado dentro
   de estructura tecnológica

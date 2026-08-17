@@ -7,7 +7,7 @@ description: >-
   En 2015, el smartwatch era el sueño de un agente secreto: responder llamadas
   con la muñeca. Hoy, en 2025, es nuestro terapeuta personal, nuestro
   nutriólogo,…
-heroImage: /images/posts/tu-smartwatch-no-sabe-que-tan-estresado-estas/hero.png
+heroImage: /images/posts/tu-smartwatch-no-sabe-que-tan-estresado-estas/hero.webp
 heroImageAlt: Dispositivo en muñeca con gráfica de estrés disparada
 ---
 En 2015, el **smartwatch** era el sueño de un agente secreto: responder llamadas con la muñeca. Hoy, en 2025, es nuestro terapeuta personal, nuestro nutriólogo, nuestro entrenador de respiración y, francamente, nuestro **micro-tirano de la salud**. Los nuevos wearables van más allá de los pasos y el sueño. Ahora miden nuestro **nivel de estrés, la variabilidad de la frecuencia cardíaca (HRV) y hasta picos de cortisol**.

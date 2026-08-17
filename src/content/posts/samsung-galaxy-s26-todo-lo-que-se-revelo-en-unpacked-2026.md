@@ -8,7 +8,7 @@ description: >-
   of Fine Arts de San Francisco. El tema del evento fue "Tu Compañero en la
   Vida…
 heroImage: >-
-  /images/posts/samsung-galaxy-s26-todo-lo-que-se-revelo-en-unpacked-2026/hero.png
+  /images/posts/samsung-galaxy-s26-todo-lo-que-se-revelo-en-unpacked-2026/hero.webp
 heroImageAlt: >-
   Smartphone IA 2026: teléfono con módulo de cámaras flotando sobre red
   tecnológica conectada

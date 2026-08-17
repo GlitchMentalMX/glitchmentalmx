@@ -6,7 +6,7 @@ updatedDate: 2026-03-24T16:22:01.692Z
 description: >-
   Tienes al menos dos versiones de ti mismo: la que existe en el mundo físico y
   la que construyes en pantalla.** La distancia entre ambas no es siempre…
-heroImage: /images/posts/identidad-digital-quien-eres-online-vs-offline/hero.png
+heroImage: /images/posts/identidad-digital-quien-eres-online-vs-offline/hero.webp
 heroImageAlt: >-
   Identidad digital: mujer frente a reflejo digital dividido en interfaz
   holográfica con nodos de datos
@@ -41,7 +41,7 @@ El costo psicológico de mantener esa imagen es real. Según el estudio publicad
 
 ## La identidad como performance algorítmica
 
-![Identidad digital: mujer compara retratos múltiples en capas holográficas conectadas por red de datos](/images/posts/identidad-digital-quien-eres-online-vs-offline/1.png)
+![Identidad digital: mujer compara retratos múltiples en capas holográficas conectadas por red de datos](/images/posts/identidad-digital-quien-eres-online-vs-offline/1.webp)
 
   
 

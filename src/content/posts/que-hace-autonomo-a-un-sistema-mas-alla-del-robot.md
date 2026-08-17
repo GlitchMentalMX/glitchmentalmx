@@ -7,7 +7,7 @@ description: >-
   Cuando la gente escucha "sistema autónomo" imagina un robot o un coche sin
   conductor. Pero la autonomía es una propiedad técnica precisa — y la mayoría
   de…
-heroImage: /images/posts/que-hace-autonomo-a-un-sistema-mas-alla-del-robot/hero.png
+heroImage: /images/posts/que-hace-autonomo-a-un-sistema-mas-alla-del-robot/hero.webp
 heroImageAlt: >-
   Qué hace autónomo a un sistema: red de cintas con sensores que redirigen
   paquetes según decisiones internas

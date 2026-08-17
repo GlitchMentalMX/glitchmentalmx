@@ -7,7 +7,7 @@ description: >-
   Google tiene un problema. Más del 50% de Gen Z usa TikTok o Instagram como su
   motor de búsqueda principal en lugar de Google, según datos de comportamiento…
 heroImage: >-
-  /images/posts/gen-z-usa-redes-sociales-como-buscador-y-ya-supero-a-google-50/hero.png
+  /images/posts/gen-z-usa-redes-sociales-como-buscador-y-ya-supero-a-google-50/hero.webp
 heroImageAlt: >-
   Gen Z usa TikTok e Instagram como buscadores principales, superando a Google
   en consumo digital

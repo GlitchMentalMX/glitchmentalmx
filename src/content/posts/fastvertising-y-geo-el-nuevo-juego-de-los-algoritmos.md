@@ -7,7 +7,7 @@ description: >-
   El SEO tradicional lleva meses en terapia intensiva, y los dos conceptos que
   están tomando su lugar tienen nombres que vale la pena entender antes de que
   se…
-heroImage: /images/posts/fastvertising-y-geo-el-nuevo-juego-de-los-algoritmos/hero.png
+heroImage: /images/posts/fastvertising-y-geo-el-nuevo-juego-de-los-algoritmos/hero.webp
 heroImageAlt: >-
   fastvertising y GEO: archivos físicos frente a flujo de páginas digitales
   aceleradas saliendo de un servidor de documentos

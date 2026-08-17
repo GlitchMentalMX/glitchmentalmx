@@ -7,7 +7,7 @@ description: >-
   Claude tiene fama de ser la IA favorita de los desarrolladores — y es
   merecida. Pero reducirlo a una herramienta de código es ignorar la mitad de lo
   que hace…
-heroImage: /images/posts/para-que-sirve-claude-si-no-eres-programador/hero.png
+heroImage: /images/posts/para-que-sirve-claude-si-no-eres-programador/hero.webp
 heroImageAlt: >-
   Para qué sirve Claude: revisión de documentos en mesa automatizada con flujo
   de papeles

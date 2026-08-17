@@ -7,7 +7,7 @@ description: >-
   Durante años, el consejo estándar para construir presencia digital fue el
   mismo: publica más, usa los hashtags correctos, optimiza para el algoritmo.
   El…
-heroImage: /images/posts/presencia-digital-autentica-en-2026-guia-completa/hero.png
+heroImage: /images/posts/presencia-digital-autentica-en-2026-guia-completa/hero.webp
 heroImageAlt: >-
   alucinaciones de IA: mujer con tablet analizando paneles de datos y perfiles
   proyectados en interfaz digital

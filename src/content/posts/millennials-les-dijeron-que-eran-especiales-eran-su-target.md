@@ -8,7 +8,7 @@ description: >-
   codiciado del mundo. No porque fueran especiales — sino porque eran
   rentables.…
 heroImage: >-
-  /images/posts/millennials-les-dijeron-que-eran-especiales-eran-su-target/hero.png
+  /images/posts/millennials-les-dijeron-que-eran-especiales-eran-su-target/hero.webp
 heroImageAlt: >-
   Millennials agotamiento: mujer sostiene losa de concreto con gráficos y
   flechas de datos en entorno digital

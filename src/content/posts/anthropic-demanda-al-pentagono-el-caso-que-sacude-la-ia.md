@@ -7,7 +7,7 @@ description: >-
   El Pentágono puso a Anthropic en una lista de riesgo nacional. Anthropic
   respondió con dos demandas federales. En el centro del conflicto: si Claude
   puede…
-heroImage: /images/posts/anthropic-demanda-al-pentagono-el-caso-que-sacude-la-ia/hero.png
+heroImage: /images/posts/anthropic-demanda-al-pentagono-el-caso-que-sacude-la-ia/hero.webp
 heroImageAlt: >-
   demanda de Anthropic al Pentágono: mujer colocando documento en puerta
   metálica institucional

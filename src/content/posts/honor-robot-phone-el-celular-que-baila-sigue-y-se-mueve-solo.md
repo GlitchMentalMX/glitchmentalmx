@@ -7,7 +7,7 @@ description: >-
   En el MWC 2026 de Barcelona, HONOR presentó oficialmente el Robot Phone, y la
   descripción no es exagerada: es un smartphone cuya cámara sale del cuerpo del…
 heroImage: >-
-  /images/posts/honor-robot-phone-el-celular-que-baila-sigue-y-se-mueve-solo/hero.png
+  /images/posts/honor-robot-phone-el-celular-que-baila-sigue-y-se-mueve-solo/hero.webp
 heroImageAlt: >-
   HONOR Robot Phone: smartphone con cámara robótica y patas mecánicas en entorno
   de seguimiento de personas

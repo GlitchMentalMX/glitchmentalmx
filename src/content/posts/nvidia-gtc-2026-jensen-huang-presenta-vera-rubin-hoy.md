@@ -6,7 +6,7 @@ updatedDate: 2026-03-17T20:13:25.887Z
 description: >-
   Jensen Huang subió al escenario del SAP Center en San José esta mañana con más
   de 30,000 asistentes de 190 países en la sala. El plato principal del GTC…
-heroImage: /images/posts/nvidia-gtc-2026-jensen-huang-presenta-vera-rubin-hoy/hero.png
+heroImage: /images/posts/nvidia-gtc-2026-jensen-huang-presenta-vera-rubin-hoy/hero.webp
 heroImageAlt: >-
   futuro de la computación: ejecutiva observando escenario tecnológico con
   flujos de datos luminosos

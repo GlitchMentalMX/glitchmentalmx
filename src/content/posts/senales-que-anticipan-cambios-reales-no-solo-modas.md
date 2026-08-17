@@ -6,7 +6,7 @@ updatedDate: 2026-03-29T19:29:14.126Z
 description: >-
   Los cambios tecnológicos estructurales rara vez llegan anunciados con
   fanfarria en el momento en que ocurren. Llegan como cambios graduales en el…
-heroImage: /images/posts/senales-que-anticipan-cambios-reales-no-solo-modas/hero.png
+heroImage: /images/posts/senales-que-anticipan-cambios-reales-no-solo-modas/hero.webp
 heroImageAlt: >-
   Señales que anticipan cambios: sistema industrial con flujo verde activo en
   tuberías y brazo robótico

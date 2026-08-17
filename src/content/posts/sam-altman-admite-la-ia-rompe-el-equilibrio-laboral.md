@@ -6,7 +6,7 @@ updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
   El 11 de marzo de 2026, Sam Altman habló en el BlackRock Infrastructure Summit
   en Washington D.C. y dijo algo que pocas personas en su posición dicen en voz…
-heroImage: /images/posts/sam-altman-admite-la-ia-rompe-el-equilibrio-laboral/hero.png
+heroImage: /images/posts/sam-altman-admite-la-ia-rompe-el-equilibrio-laboral/hero.webp
 heroImageAlt: >-
   Automatización laboral IA: balanza industrial con documentos pesa más que
   trabajadora en oficina

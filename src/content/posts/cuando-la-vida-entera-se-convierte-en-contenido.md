@@ -6,7 +6,7 @@ updatedDate: 2026-03-28T01:32:40.363Z
 description: >-
   Fotografiar el desayuno antes de comerlo ya no es una rareza — es un reflejo
   condicionado. La estetización de la vida cotidiana, el proceso por el cual la…
-heroImage: /images/posts/cuando-la-vida-entera-se-convierte-en-contenido/hero.png
+heroImage: /images/posts/cuando-la-vida-entera-se-convierte-en-contenido/hero.webp
 heroImageAlt: >-
   vida como contenido: mujer come mientras interfaz digital segmenta y registra
   la acción en tiempo real

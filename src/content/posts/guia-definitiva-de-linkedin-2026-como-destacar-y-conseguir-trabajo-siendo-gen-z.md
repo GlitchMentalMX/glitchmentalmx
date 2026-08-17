@@ -10,7 +10,7 @@ description: >-
   territorio extraño: un lugar donde los adultos publican logros corporativos en
   un…
 heroImage: >-
-  /images/posts/guia-definitiva-de-linkedin-2026-como-destacar-y-conseguir-trabajo-siendo-gen-z/hero.png
+  /images/posts/guia-definitiva-de-linkedin-2026-como-destacar-y-conseguir-trabajo-siendo-gen-z/hero.webp
 heroImageAlt: >-
   Guía definitiva de LinkedIn 2026: joven ascendiendo red profesional con nodos
   y explosión radial direccional algorítmica

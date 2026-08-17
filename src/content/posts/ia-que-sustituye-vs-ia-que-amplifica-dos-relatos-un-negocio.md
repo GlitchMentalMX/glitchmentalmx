@@ -8,7 +8,7 @@ description: >-
   tiempo. Una dice que la IA te reemplazará. La otra dice que te hará más
   poderoso.…
 heroImage: >-
-  /images/posts/ia-que-sustituye-vs-ia-que-amplifica-dos-relatos-un-negocio/hero.png
+  /images/posts/ia-que-sustituye-vs-ia-que-amplifica-dos-relatos-un-negocio/hero.webp
 heroImageAlt: >-
   IA que sustituye vs IA que amplifica: sistema automatizado gestiona documentos
   y dispositivos en flujo híbrido

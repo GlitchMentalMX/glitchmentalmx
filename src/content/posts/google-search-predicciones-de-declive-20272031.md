@@ -7,7 +7,7 @@ description: >-
   Durante 25 años, Google asumió que siempre sería el único camino hacia el
   internet. Ese supuesto se está quebrando. No de forma dramática ni de repente
   —…
-heroImage: /images/posts/google-search-predicciones-de-declive-20272031/hero.png
+heroImage: /images/posts/google-search-predicciones-de-declive-20272031/hero.webp
 heroImageAlt: >-
   Google declive 2027: analista observa curva descendente en dashboard con
   líneas competidoras en ascenso
@@ -46,7 +46,7 @@ Hay otro factor que en 2028 empezará a pesar más: la presión regulatoria. El 
 
 ## A 5 años (2031): Google sigue vivo, pero ya no es el árbitro
 
-![Google Search predicciones: rack de servidores con zona superior en ámbar y módulos inferiores activos en verde](/images/posts/google-search-predicciones-de-declive-20272031/1.png)
+![Google Search predicciones: rack de servidores con zona superior en ámbar y módulos inferiores activos en verde](/images/posts/google-search-predicciones-de-declive-20272031/1.webp)
 
   
 

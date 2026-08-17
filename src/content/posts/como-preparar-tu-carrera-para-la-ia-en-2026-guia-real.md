@@ -7,7 +7,7 @@ description: >-
   Si estás esperando a que el impacto de la inteligencia artificial en el
   mercado laboral "se estabilice" para tomar acción, ya vas tarde. No es
   alarmismo: es…
-heroImage: /images/posts/como-preparar-tu-carrera-para-la-ia-en-2026-guia-real/hero.png
+heroImage: /images/posts/como-preparar-tu-carrera-para-la-ia-en-2026-guia-real/hero.webp
 heroImageAlt: >-
   Transición digital IA: mujer camina de pavimento roto a camino tecnológico con
   luz azul

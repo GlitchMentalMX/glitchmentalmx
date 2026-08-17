@@ -7,7 +7,7 @@ description: >-
   Tu tiempo de pantalla no es gratis ni inocente: es el campo de batalla de la
   industria más rentable del siglo XXI.** La economía de la atención —el
   sistema…
-heroImage: /images/posts/economia-de-la-atencion-quien-compite-por-tu-tiempo/hero.png
+heroImage: /images/posts/economia-de-la-atencion-quien-compite-por-tu-tiempo/hero.webp
 heroImageAlt: >-
   Economía de la atención: hombre tirado por múltiples cables de datos en
   entorno urbano nocturno

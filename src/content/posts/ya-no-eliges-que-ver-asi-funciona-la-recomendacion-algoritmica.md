@@ -8,7 +8,7 @@ description: >-
   sirve el siguiente video, la siguiente canción o el siguiente artículo, no
   está…
 heroImage: >-
-  /images/posts/ya-no-eliges-que-ver-asi-funciona-la-recomendacion-algoritmica/hero.png
+  /images/posts/ya-no-eliges-que-ver-asi-funciona-la-recomendacion-algoritmica/hero.webp
 heroImageAlt: >-
   recomendación algorítmica: platos con imágenes y botones de interacción
   avanzan en cinta automatizada

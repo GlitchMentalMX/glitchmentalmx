@@ -7,7 +7,7 @@ description: >-
   Si usas Windows, Word, Excel o Teams, ya convives con Copilot aunque no lo
   hayas activado conscientemente. Microsoft lleva más de un año integrando su IA
   en…
-heroImage: /images/posts/microsoft-copilot-para-que-sirve-y-que-planes-existen/hero.png
+heroImage: /images/posts/microsoft-copilot-para-que-sirve-y-que-planes-existen/hero.webp
 heroImageAlt: >-
   Microsoft Copilot: sistema automatizado conecta pantallas y documentos en
   flujo de trabajo centralizado

@@ -7,7 +7,7 @@ description: >-
   Mientras el mundo tech estaba distraído con las peleas entre modelos de
   lenguaje, Nvidia construyó en silencio algo diferente: una plataforma para que
   las…
-heroImage: /images/posts/nemoclaw-nvidia-apuesta-por-agentes-ia-en-empresas/hero.png
+heroImage: /images/posts/nemoclaw-nvidia-apuesta-por-agentes-ia-en-empresas/hero.webp
 heroImageAlt: >-
   agentes de IA empresariales: robots logísticos autónomos y servidores
   coordinados en almacén automatizado

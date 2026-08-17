@@ -7,7 +7,7 @@ description: >-
   Cada semana aparece la misma publicación con distinto autor: "Los 50 prompts
   que usan los expertos", "10 prompts para triplicar tu productividad", "El
   prompt…
-heroImage: /images/posts/los-100-prompts-de-productividad-no-sirven-para-nada/hero.png
+heroImage: /images/posts/los-100-prompts-de-productividad-no-sirven-para-nada/hero.webp
 heroImageAlt: >-
   IA en redes vs real: hombre revisando lista de prompts rodeado de notas y
   pantalla con interfaz digital

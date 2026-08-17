@@ -7,7 +7,7 @@ description: >-
   El sindicato de actores de Hollywood está negociando una propuesta que, si
   prospera, cambiaría la lógica económica de producir cine y televisión con…
 heroImage: >-
-  /images/posts/el-sindicato-de-actores-quiere-cobrarle-un-impuesto-a-la-ia/hero.png
+  /images/posts/el-sindicato-de-actores-quiere-cobrarle-un-impuesto-a-la-ia/hero.webp
 heroImageAlt: >-
   El sindicato de actores: actriz colocando etiqueta de precio en silla de
   rodaje
