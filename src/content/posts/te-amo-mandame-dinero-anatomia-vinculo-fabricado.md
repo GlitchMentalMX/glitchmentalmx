@@ -1,7 +1,7 @@
 ---
 title: 'Te amo, mándame dinero: anatomía del vínculo fabricado'
 category: Cultura Digital
-pubDate: 2026-08-17T07:39
+pubDate: 2026-08-17T12:09
 updatedDate: ''
 description: 'El fraude romántico no vende amor: vende semanas de guion perfeccionado. Datos del FBI, CONDUSEF y la nueva propuesta legislativa de la CDMX.'
 heroImage: /images/uploads/Te amo, mándame dinero.webp
@@ -39,7 +39,7 @@ Ahí empieza el love bombing: mensajes constantes, declaraciones intensas de afe
 
 La primera cifra solicitada casi nunca es alta. **Es pequeña, específica y presentada como recuperable** — un préstamo, no un regalo, con la promesa implícita de devolución en cuanto se resuelva la crisis. Esa cifra pequeña cumple una función precisa: normaliza el acto de transferir dinero dentro de la relación y convierte cada petición futura en una repetición de algo que "ya funcionó antes", no en un salto nuevo de confianza.
 
-Es el mismo mecanismo, con guion distinto, que explota el phishing por correo electrónico — el fraude de identidad impersonal que [ya analizamos en esta serie](/articulos/correo-electronico-phishing-nunca-murio/). La diferencia es de escala y de tiempo: el phishing apuesta por el volumen y la velocidad, mientras que la estafa romántica apuesta por la paciencia y la relación uno a uno. Ambos mecanismos, sin embargo, dependen del mismo hueco estructural: la ausencia de un sistema que verifique identidad e intención antes de que el dinero se mueva.
+Es el mismo mecanismo, con guion distinto, que explota el phishing por correo electrónico — el fraude de identidad impersonal que [ya analizamos en este artículo](/articulos/correo-electronico-phishing-nunca-murio/). La diferencia es de escala y de tiempo: el phishing apuesta por el volumen y la velocidad, mientras que la estafa romántica apuesta por la paciencia y la relación uno a uno. Ambos mecanismos, sin embargo, dependen del mismo hueco estructural: la ausencia de un sistema que verifique identidad e intención antes de que el dinero se mueva.
 
 ## Quién factura detrás del guion
 
