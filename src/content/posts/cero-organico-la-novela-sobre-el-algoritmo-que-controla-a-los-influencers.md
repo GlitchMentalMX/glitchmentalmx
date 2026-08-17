@@ -1,7 +1,7 @@
 ---
 title: 'Cero Orgánico: la novela sobre el algoritmo que controla a los influencers'
-category: Tendencias Digitales
-pubDate: 2026-08-16T22:54
+category: Cultura Digital
+pubDate: 2026-08-16T23:34
 updatedDate: ''
 description: Naia Soler tiene millones de seguidores y una carrera que parece suya. Thriller psicológico sobre el algoritmo que decide quién triunfa en redes.
 heroImage: /images/uploads/Cero Orgánico - la novela.webp
