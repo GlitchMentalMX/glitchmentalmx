@@ -2,9 +2,24 @@
 import Layout from '../../layouts/Layout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import SeriesCallout from '../../components/SeriesCallout.astro';
+import BookPromo from '../../components/BookPromo.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
+import { getBook } from '../../data/books';
+
+// Enlazado inverso Panóptico Digital → Cero Orgánico: estos 5 artículos son
+// justo los que integran esa serie (ver postSlugs en
+// src/content/collections/panoptico-digital.md), y hoy la serie enlaza hacia
+// la novela pero no al revés. No es un campo de esquema porque es una
+// promoción puntual de 5 artículos, no un comportamiento general de posts.
+const PANOPTICO_DIGITAL_SLUGS = new Set([
+  'economia-de-creadores-a-donde-va-el-dinero-realmente',
+  'estas-hablando-con-un-humano-o-un-bot-ya-no-importa',
+  'el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento',
+  'las-redes-sociales-son-maquinas-de-vigilancia-entre-pares',
+  'web3-la-descentralizacion-que-siempre-fue-un-pitch',
+]);
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
@@ -35,6 +50,8 @@ const idx = allPosts.findIndex((p) => p.id === post.id);
 const relatedPool = allPosts.filter((p) => p.id !== post.id);
 const related = relatedPool.slice(Math.max(0, idx - 2), Math.max(0, idx - 2) + 3);
 const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
+
+const ceroOrganico = PANOPTICO_DIGITAL_SLUGS.has(post.id) ? getBook('cero-organico') : undefined;
 
 const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
 const articleImage = new URL(heroImage, Astro.site).toString();
@@ -111,6 +128,12 @@ const articleSchema = {
     </div>
   </article>
 
+  {ceroOrganico && (
+    <section class="container book-section">
+      <BookPromo book={ceroOrganico} />
+    </section>
+  )}
+
   {relatedFinal.length > 0 && (
     <section class="related container">
       <h2>Sigue leyendo</h2>
@@ -159,6 +182,8 @@ const articleSchema = {
   }
 
   .content { padding: 0 24px 20px; display: flex; flex-direction: column; align-items: center; }
+
+  .book-section { max-width: 720px; padding: 32px 24px 96px; }
 
   .share {
     padding: 32px 24px 0;

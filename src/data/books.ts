@@ -5,6 +5,9 @@ export interface Book {
   cover: string;
   desc: string;
   buy: string;
+  // Slug en src/content/posts del artículo "por qué escribí esta novela" —
+  // opcional porque no todas las novelas tienen uno todavía.
+  whyIWroteThisSlug?: string;
 }
 
 export interface UpcomingBook {
@@ -20,6 +23,7 @@ export const books: Book[] = [
     cover: '/images/novelas/entrenado-en-corpus.jpg',
     desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
     buy: 'https://mybook.to/EntrenadoEnCorpus',
+    whyIWroteThisSlug: 'por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia',
   },
   {
     id: 'cero-organico',

@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { books, type Book } from '../../data/books';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (() => {
+  return books.map((book) => ({ params: { slug: book.id }, props: { book } }));
+}) satisfies GetStaticPaths;
+
+const { book } = Astro.props as { book: Book };
+
+const pageURL = new URL(`/novelas/${book.id}/`, Astro.site).toString();
+const pageTitle = `${book.title} — ${book.genre} de Jorge A. Diaz Elizondo`;
+
+const bookSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: book.title,
+  author: {
+    '@type': 'Person',
+    name: 'Jorge A. Diaz Elizondo',
+    url: new URL('/acerca-de/', Astro.site).toString(),
+  },
+  bookFormat: 'https://schema.org/EBook',
+  genre: book.genre,
+  description: book.desc,
+  image: new URL(book.cover, Astro.site).toString(),
+  url: pageURL,
+  inLanguage: 'es',
+  offers: {
+    '@type': 'Offer',
+    url: book.buy,
+    availability: 'https://schema.org/InStock',
+  },
+};
+---
+
+<Layout title={pageTitle} description={book.desc} image={book.cover}>
+  <script type="application/ld+json" set:html={JSON.stringify(bookSchema)} />
+
+  <section class="container hero">
+    <img class="cover" src={book.cover} alt={`Portada de ${book.title}`} width="400" height="620" />
+    <div class="info">
+      <span class="tag">{book.genre}</span>
+      <h1>{book.title}</h1>
+      <p class="desc">{book.desc}</p>
+      <a class="btn btn-primary buy" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+      <nav class="links" aria-label="Más sobre esta novela">
+        <a href="/novelas/">← Ver catálogo completo</a>
+        {book.whyIWroteThisSlug && (
+          <a href={`/articulos/${book.whyIWroteThisSlug}/`}>Por qué escribí esta novela →</a>
+        )}
+      </nav>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    padding: 40px 24px 64px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    max-width: 860px;
+    min-height: calc(100dvh - 200px);
+  }
+  .cover {
+    width: 260px;
+    height: 403px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 12px 32px rgba(20, 22, 28, 0.25);
+  }
+  .info { min-width: 0; }
+  .tag {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: clamp(1.9rem, 4.4vw, 2.7rem); margin: 0 0 16px; }
+  .desc { color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; margin: 0 0 26px; max-width: 52ch; }
+  .buy { font-size: 1rem; padding: 0.8em 1.6em; }
+  .links {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  .links a { color: var(--text-muted); }
+  .links a:hover { color: var(--accent); }
+
+  @media (max-width: 700px) {
+    .hero { flex-direction: column; align-items: flex-start; padding-top: 24px; min-height: 0; }
+    .cover { width: 180px; height: 279px; align-self: center; }
+  }
+</style>
