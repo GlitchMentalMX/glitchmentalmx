@@ -32,6 +32,7 @@ export const books: Book[] = [
     cover: '/images/novelas/cero-organico.png',
     desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
     buy: 'https://mybook.to/CeroOrganico',
+    whyIWroteThisSlug: 'cero-organico-la-novela-sobre-el-algoritmo-que-controla-a-los-influencers',
   },
 ];
 
