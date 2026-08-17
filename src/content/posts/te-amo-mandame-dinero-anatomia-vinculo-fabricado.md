@@ -1,7 +1,7 @@
 ---
 title: 'Te amo, mándame dinero: anatomía del vínculo fabricado'
 category: Cultura Digital
-pubDate: 2026-08-17T07:20
+pubDate: 2026-08-17T07:39
 updatedDate: ''
 description: 'El fraude romántico no vende amor: vende semanas de guion perfeccionado. Datos del FBI, CONDUSEF y la nueva propuesta legislativa de la CDMX.'
 heroImage: /images/uploads/Te amo, mándame dinero.webp
