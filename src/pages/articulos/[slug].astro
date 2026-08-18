@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import SeriesCallout from '../../components/SeriesCallout.astro';
 import BookPromo from '../../components/BookPromo.astro';
+import ToolPromo from '../../components/ToolPromo.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
@@ -19,6 +20,43 @@ const PANOPTICO_DIGITAL_SLUGS = new Set([
   'el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento',
   'las-redes-sociales-son-maquinas-de-vigilancia-entre-pares',
   'web3-la-descentralizacion-que-siempre-fue-un-pitch',
+]);
+
+// Promoción puntual de la Calculadora de Riesgo IA — deliberadamente
+// hardcodeada (no un campo de esquema editable desde el CMS) para que esto
+// no se vuelva un enlace que crece solo con cada artículo nuevo. Lote exacto:
+// los 16 artículos de la sección "Trabajo y Automatización" en
+// src/content/collections/biblioteca-de-ia-tecnologia-y-sociedad.md.
+const RISK_CALCULATOR_SLUGS = new Set([
+  'los-empleos-que-la-ia-no-puede-tocar-segun-microsoft',
+  'que-trabajos-cambia-primero-la-ia-y-por-que-esos',
+  'automatizacion-y-autonomia-no-son-lo-mismo-confundirlas-tiene-consecuencias',
+  'amodei-advierte-el-tsunami-de-ia-ya-llego-a-la-orilla',
+  'sam-altman-admite-la-ia-rompe-el-equilibrio-laboral',
+  'ia-y-empleos-en-mexico-el-golpe-ya-empezo',
+  'las-habilidades-que-mas-importan-en-la-era-de-la-ia',
+  'como-preparar-tu-carrera-para-la-ia-en-2026-guia-real',
+  'la-fotografia-de-stock-murio-y-nadie-fue-al-velorio',
+  'el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos',
+  'la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba',
+  'disenadores-freelance-e-ia-el-colapso-del-nivel-medio',
+  'la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco',
+  'agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio',
+  'pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado',
+  'el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas',
+]);
+
+// Promoción puntual del Índice glitchMentalMX — mismo criterio: lote fijo,
+// curado a mano por relevancia real (adopción de tecnología B2B), no un
+// campo de esquema. "agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio" se
+// dejó fuera de aquí porque ya está en el lote de la calculadora — ningún
+// artículo debe cargar dos tarjetas de herramienta.
+const INDICE_SLUGS = new Set([
+  'tres-empresas-controlan-la-nube-eso-deberia-preocuparte',
+  'la-gran-migracion-como-las-empresas-reubican-fisicamente-sus-centros-de-datos-de-ia',
+  'ia-empresarial-2026-del-piloto-al-presupuesto-real',
+  'el-glosario-que-las-empresas-de-ia-no-quieren-que-leas',
+  'agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots',
 ]);
 
 export async function getStaticPaths() {
@@ -52,6 +90,21 @@ const related = relatedPool.slice(Math.max(0, idx - 2), Math.max(0, idx - 2) + 3
 const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
 
 const ceroOrganico = PANOPTICO_DIGITAL_SLUGS.has(post.id) ? getBook('cero-organico') : undefined;
+
+const toolPromo = RISK_CALCULATOR_SLUGS.has(post.id)
+  ? {
+      title: '¿La IA puede quitarte tu trabajo?',
+      description: 'Mide qué tan expuesto está tu trabajo a la automatización. Descúbrelo gratis, en segundos.',
+      href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/',
+    }
+  : INDICE_SLUGS.has(post.id)
+    ? {
+        title: 'El índice que separa el hype del impacto real.',
+        description:
+          '20 tecnologías B2B rankeadas por adopción real, integración operativa y señales públicas verificables. Sin patrocinadores, sin agenda.',
+        href: '/indice-glitchmentalmx/',
+      }
+    : undefined;
 
 const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
 const articleImage = new URL(heroImage, Astro.site).toString();
@@ -131,6 +184,12 @@ const articleSchema = {
   {ceroOrganico && (
     <section class="container book-section">
       <BookPromo book={ceroOrganico} />
+    </section>
+  )}
+
+  {toolPromo && (
+    <section class="container book-section">
+      <ToolPromo title={toolPromo.title} description={toolPromo.description} href={toolPromo.href} />
     </section>
   )}
 

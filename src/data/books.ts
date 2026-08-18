@@ -1,3 +1,8 @@
+export interface BookFormat {
+  label: string;
+  asin: string;
+}
+
 export interface Book {
   id: string;
   title: string;
@@ -8,6 +13,13 @@ export interface Book {
   // Slug en src/content/posts del artículo "por qué escribí esta novela" —
   // opcional porque no todas las novelas tienen uno todavía.
   whyIWroteThisSlug?: string;
+  // Formatos individuales con su propio ASIN — opcional, solo para las
+  // páginas dedicadas de cada novela (no se muestra en el catálogo).
+  formats?: BookFormat[];
+}
+
+export function amazonMxUrl(asin: string): string {
+  return `https://www.amazon.com.mx/dp/${asin}`;
 }
 
 export interface UpcomingBook {
@@ -24,6 +36,11 @@ export const books: Book[] = [
     desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
     buy: 'https://mybook.to/EntrenadoEnCorpus',
     whyIWroteThisSlug: 'por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia',
+    formats: [
+      { label: 'eBook', asin: 'B0H4J5WTCR' },
+      { label: 'Tapa blanda', asin: 'B0H4LVMQ3J' },
+      { label: 'Tapa dura', asin: 'B0H4QKTLJQ' },
+    ],
   },
   {
     id: 'cero-organico',
@@ -33,6 +50,11 @@ export const books: Book[] = [
     desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
     buy: 'https://mybook.to/CeroOrganico',
     whyIWroteThisSlug: 'cero-organico-la-novela-sobre-el-algoritmo-que-controla-a-los-influencers',
+    formats: [
+      { label: 'eBook', asin: 'B0H8M9SSV6' },
+      { label: 'Tapa blanda', asin: 'B0H8MKPB1H' },
+      { label: 'Tapa dura', asin: 'B0H8MQKQ5Z' },
+    ],
   },
 ];
 
