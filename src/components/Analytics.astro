@@ -1,0 +1,32 @@
+---
+// Beacon propio, ~1KB. No usa cookies, no guarda IP, no tiene identificador
+// que sobreviva entre días — ver cloudflare/analytics-worker.js para el
+// hash que sí se genera del lado del servidor. Falla en silencio siempre:
+// si el Worker está caído o algo truena aquí, el sitio no debe enterarse.
+const WORKER_URL = 'https://glitchmental-analytics.glitchmental-web.workers.dev/collect';
+---
+<script is:inline define:vars={{ WORKER_URL }}>
+  (function () {
+    try {
+      var qs = new URLSearchParams(location.search);
+      if (qs.get('gm-optout') === '1') {
+        localStorage.setItem('gm-no-analytics', '1');
+      }
+      if (localStorage.getItem('gm-no-analytics')) return;
+
+      var host = location.hostname;
+      if (host === 'localhost' || host === '127.0.0.1' || host.indexOf('preview') !== -1) return;
+
+      var payload = JSON.stringify({
+        path: location.pathname,
+        referrer: document.referrer || '',
+        query: location.search || '',
+        width: (window.screen && window.screen.width) || 0,
+      });
+      var blob = new Blob([payload], { type: 'text/plain' });
+      navigator.sendBeacon(WORKER_URL, blob);
+    } catch (e) {
+      // silencio a propósito — un error aquí nunca debe verse en el sitio
+    }
+  })();
+</script>

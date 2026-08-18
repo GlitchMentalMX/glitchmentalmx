@@ -1,0 +1,346 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const WORKER_URL = 'https://glitchmental-analytics.glitchmental-web.workers.dev';
+---
+
+<Layout title="Estadísticas" description="Panel privado de analytics." noIndex={true}>
+  <section class="container wrap">
+    <div id="gate" class="gate">
+      <p class="eyebrow">Panel privado</p>
+      <h1>Estadísticas</h1>
+      <p class="hint">Pega tu token de acceso.</p>
+      <form id="gate-form">
+        <input id="token-input" type="password" autocomplete="off" placeholder="Token" />
+        <button type="submit" class="btn btn-primary">Entrar</button>
+      </form>
+      <p id="gate-error" class="error" hidden>Token incorrecto o el Worker no respondió.</p>
+    </div>
+
+    <div id="dashboard" class="dashboard" hidden>
+      <div class="head">
+        <div>
+          <p class="eyebrow">Panel privado</p>
+          <h1>Estadísticas</h1>
+        </div>
+        <div class="range-picker" role="group" aria-label="Rango de fechas">
+          <button type="button" class="range-btn" data-range="7d">7 días</button>
+          <button type="button" class="range-btn active" data-range="30d">30 días</button>
+          <button type="button" class="range-btn" data-range="90d">90 días</button>
+        </div>
+      </div>
+
+      <p id="loading" class="hint">Cargando…</p>
+      <div id="content" hidden>
+        <section class="cards">
+          <div class="card">
+            <p class="card-label">Vistas (rango)</p>
+            <p class="card-value" id="stat-views">—</p>
+          </div>
+          <div class="card">
+            <p class="card-label">Visitantes únicos (rango)</p>
+            <p class="card-value" id="stat-uniques">—</p>
+          </div>
+          <div class="card">
+            <p class="card-label">Acumulado histórico</p>
+            <p class="card-value" id="stat-cumulative">—</p>
+          </div>
+          <div class="card card-bots">
+            <p class="card-label">Bots detectados (rango)</p>
+            <p class="card-value" id="stat-bots">—</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2>Vistas por hora — hoy</h2>
+          <div class="bars bars-hour" id="chart-hour"></div>
+        </section>
+
+        <section class="block">
+          <h2>Vistas por día</h2>
+          <div class="bars bars-day" id="chart-day"></div>
+        </section>
+
+        <div class="grid-2">
+          <section class="block">
+            <h2>Páginas más vistas</h2>
+            <ol class="ranked" id="list-pages"></ol>
+          </section>
+
+          <section class="block">
+            <h2>Origen del tráfico</h2>
+            <ol class="ranked" id="list-sources"></ol>
+            <p class="sub-label">Referrers específicos</p>
+            <ol class="ranked small" id="list-referrers"></ol>
+          </section>
+
+          <section class="block">
+            <h2>País</h2>
+            <ol class="ranked" id="list-countries"></ol>
+          </section>
+
+          <section class="block">
+            <h2>Dispositivo</h2>
+            <ol class="ranked" id="list-devices"></ol>
+          </section>
+
+          <section class="block">
+            <h2>Sistema operativo</h2>
+            <ol class="ranked" id="list-os"></ol>
+          </section>
+
+          <section class="block">
+            <h2>Navegador</h2>
+            <ol class="ranked" id="list-browsers"></ol>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script define:vars={{ WORKER_URL }}>
+  const gate = document.getElementById('gate');
+  const gateForm = document.getElementById('gate-form');
+  const tokenInput = document.getElementById('token-input');
+  const gateError = document.getElementById('gate-error');
+  const dashboard = document.getElementById('dashboard');
+  const loading = document.getElementById('loading');
+  const content = document.getElementById('content');
+
+  const STORAGE_KEY = 'gm-stats-token';
+  let currentRange = '30d';
+
+  function fmt(n) {
+    return new Intl.NumberFormat('es-MX').format(n || 0);
+  }
+
+  function clearChildren(el) {
+    while (el.firstChild) el.removeChild(el.firstChild);
+  }
+
+  function renderBars(container, rows, keyField, valueField, labelFn) {
+    clearChildren(container);
+    const max = Math.max(1, ...rows.map((r) => r[valueField] || 0));
+    rows.forEach((r) => {
+      const wrap = document.createElement('div');
+      wrap.className = 'bar-row';
+
+      const label = document.createElement('span');
+      label.className = 'bar-label';
+      label.textContent = labelFn ? labelFn(r[keyField]) : r[keyField];
+
+      const track = document.createElement('span');
+      track.className = 'bar-track';
+      const fill = document.createElement('span');
+      fill.className = 'bar-fill';
+      fill.style.width = Math.max(2, ((r[valueField] || 0) / max) * 100) + '%';
+      track.appendChild(fill);
+
+      const value = document.createElement('span');
+      value.className = 'bar-value';
+      value.textContent = fmt(r[valueField]);
+
+      wrap.appendChild(label);
+      wrap.appendChild(track);
+      wrap.appendChild(value);
+      container.appendChild(wrap);
+    });
+    if (rows.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'hint';
+      empty.textContent = 'Sin datos todavía.';
+      container.appendChild(empty);
+    }
+  }
+
+  function renderRankedList(el, rows, keyField, valueField, labelFn) {
+    clearChildren(el);
+    const max = Math.max(1, ...rows.map((r) => r[valueField] || 0));
+    rows.forEach((r) => {
+      const li = document.createElement('li');
+      const label = document.createElement('span');
+      label.className = 'ranked-label';
+      label.textContent = labelFn ? labelFn(r[keyField]) : r[keyField] || '(desconocido)';
+      const track = document.createElement('span');
+      track.className = 'bar-track small';
+      const fill = document.createElement('span');
+      fill.className = 'bar-fill';
+      fill.style.width = Math.max(2, ((r[valueField] || 0) / max) * 100) + '%';
+      track.appendChild(fill);
+      const value = document.createElement('span');
+      value.className = 'ranked-value';
+      value.textContent = fmt(r[valueField]);
+      li.appendChild(label);
+      li.appendChild(track);
+      li.appendChild(value);
+      el.appendChild(li);
+    });
+    if (rows.length === 0) {
+      const li = document.createElement('li');
+      li.className = 'hint';
+      li.textContent = 'Sin datos todavía.';
+      el.appendChild(li);
+    }
+  }
+
+  const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo' };
+  const DEVICE_LABELS = { desktop: 'Escritorio', mobile: 'Móvil', tablet: 'Tablet' };
+
+  function renderDashboard(data) {
+    document.getElementById('stat-views').textContent = fmt(data.totals.views);
+    document.getElementById('stat-uniques').textContent = fmt(data.totals.uniques);
+    document.getElementById('stat-cumulative').textContent = fmt(data.cumulative_views);
+    document.getElementById('stat-bots').textContent = fmt(data.bot_views);
+
+    const hourRows = Array.from({ length: 24 }, (_, h) => {
+      const found = data.by_hour_today.find((r) => r.hour === h);
+      return { hour: h, views: found ? found.views : 0 };
+    });
+    renderBars(document.getElementById('chart-hour'), hourRows, 'hour', 'views', (h) => String(h).padStart(2, '0') + 'h');
+    renderBars(document.getElementById('chart-day'), data.by_day, 'day', 'views');
+
+    renderRankedList(document.getElementById('list-pages'), data.top_pages, 'path', 'views');
+    renderRankedList(document.getElementById('list-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
+    renderRankedList(document.getElementById('list-referrers'), data.referrers, 'referrer_host', 'views');
+    renderRankedList(document.getElementById('list-countries'), data.countries, 'country', 'views');
+    renderRankedList(document.getElementById('list-devices'), data.devices, 'device', 'views', (d) => DEVICE_LABELS[d] || d);
+    renderRankedList(document.getElementById('list-os'), data.os, 'os', 'views');
+    renderRankedList(document.getElementById('list-browsers'), data.browsers, 'browser', 'views');
+  }
+
+  async function loadStats(token) {
+    loading.hidden = false;
+    content.hidden = true;
+    try {
+      const res = await fetch(`${WORKER_URL}/stats?range=${currentRange}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (res.status === 401) {
+        sessionStorage.removeItem(STORAGE_KEY);
+        showGate('El token ya no es válido.');
+        return;
+      }
+      if (!res.ok) throw new Error('bad response');
+      const data = await res.json();
+      renderDashboard(data);
+      loading.hidden = true;
+      content.hidden = false;
+    } catch (e) {
+      loading.textContent = 'No se pudo conectar con el Worker. Revisa que esté desplegado y que el token sea correcto.';
+    }
+  }
+
+  function showGate(message) {
+    dashboard.hidden = true;
+    gate.hidden = false;
+    if (message) {
+      gateError.textContent = message;
+      gateError.hidden = false;
+    }
+  }
+
+  function showDashboard(token) {
+    gate.hidden = true;
+    dashboard.hidden = false;
+    loadStats(token);
+  }
+
+  gateForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const token = tokenInput.value.trim();
+    if (!token) return;
+    sessionStorage.setItem(STORAGE_KEY, token);
+    showDashboard(token);
+  });
+
+  document.querySelectorAll('.range-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.range-btn').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentRange = btn.dataset.range;
+      const token = sessionStorage.getItem(STORAGE_KEY);
+      if (token) loadStats(token);
+    });
+  });
+
+  const savedToken = sessionStorage.getItem(STORAGE_KEY);
+  if (savedToken) {
+    showDashboard(savedToken);
+  }
+</script>
+
+<style>
+  .wrap { padding: 40px 24px 96px; max-width: 960px; }
+  .eyebrow { margin-bottom: 8px; }
+  h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  .hint { color: var(--text-muted); font-size: 0.92rem; }
+  .error { color: var(--down-line); font-size: 0.88rem; margin-top: 10px; }
+
+  .gate { max-width: 360px; padding-top: 40px; }
+  .gate form { display: flex; gap: 10px; margin-top: 18px; }
+  .gate input {
+    flex: 1;
+    padding: 0.7em 1em;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+
+  .head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 28px; }
+  .range-picker { display: flex; gap: 6px; }
+  .range-btn {
+    padding: 0.5em 1em;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .range-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 36px; }
+  .card { background: var(--bg-inset); border-radius: var(--radius); padding: 18px 20px; border-top: 2px solid var(--accent); }
+  .card-bots { border-top-color: var(--down-line); }
+  .card-label { font-size: 0.78rem; color: var(--text-faint); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-mono); }
+  .card-value { font-size: 1.7rem; font-weight: 700; font-family: var(--font-display); margin: 0; }
+
+  .block { margin-bottom: 36px; }
+  .block h2 { font-size: 1.05rem; margin: 0 0 16px; }
+  .sub-label { font-size: 0.78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-mono); margin: 20px 0 10px; }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px; }
+
+  .bars { display: flex; flex-direction: column; gap: 6px; }
+  .bars-hour { display: grid; grid-template-columns: repeat(24, 1fr); gap: 4px; align-items: end; }
+  .bars-hour .bar-row { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .bars-hour .bar-label { font-size: 0.62rem; color: var(--text-faint); font-family: var(--font-mono); }
+  .bars-hour .bar-track { width: 100%; height: 60px; display: flex; align-items: flex-end; background: var(--bg-inset); border-radius: 3px; overflow: hidden; }
+  .bars-hour .bar-fill { width: 100%; background: var(--accent); }
+  .bars-hour .bar-value { display: none; }
+
+  .bars-day .bar-row { display: grid; grid-template-columns: 90px 1fr 50px; align-items: center; gap: 10px; }
+  .bars-day .bar-label { font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); }
+  .bars-day .bar-value { font-size: 0.8rem; color: var(--text-muted); text-align: right; }
+
+  .bar-track { height: 10px; border-radius: 999px; background: var(--bg-inset); overflow: hidden; display: block; }
+  .bar-track.small { height: 8px; }
+  .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+
+  .ranked { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .ranked.small { gap: 8px; }
+  .ranked li { display: grid; grid-template-columns: 1fr 90px 44px; align-items: center; gap: 10px; }
+  .ranked-label { font-size: 0.85rem; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ranked-value { font-size: 0.8rem; color: var(--text-muted); text-align: right; font-family: var(--font-mono); }
+
+  @media (max-width: 800px) {
+    .cards { grid-template-columns: 1fr 1fr; }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 500px) {
+    .cards { grid-template-columns: 1fr; }
+  }
+</style>
