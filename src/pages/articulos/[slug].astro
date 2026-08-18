@@ -84,10 +84,23 @@ const parentCollection = editorialCollections.find((c) => c.data.postSlugs.inclu
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-const idx = allPosts.findIndex((p) => p.id === post.id);
 const relatedPool = allPosts.filter((p) => p.id !== post.id);
-const related = relatedPool.slice(Math.max(0, idx - 2), Math.max(0, idx - 2) + 3);
-const relatedFinal = related.length === 3 ? related : relatedPool.slice(0, 3);
+
+// "Sigue leyendo" prioriza la MISMA categoría — antes solo miraba cercanía de
+// fecha de publicación, así que podía recomendar una novela o un smartwatch
+// debajo de un artículo de IA solo porque salieron la misma semana. Dentro de
+// la categoría, se mantiene el mismo criterio de cercanía en el tiempo al
+// artículo actual; si no hay 3 en la misma categoría (no debería pasar dado
+// el tamaño del archivo, pero por seguridad), se completa con lo más cercano
+// en fecha del resto del sitio.
+const sameCategoryPool = relatedPool.filter((p) => p.data.category === category);
+const sameCategoryIdx = sameCategoryPool.findIndex((p) => p.data.pubDate.valueOf() <= pubDate.valueOf());
+const anchorIdx = sameCategoryIdx === -1 ? sameCategoryPool.length : sameCategoryIdx;
+const relatedSameCategory = sameCategoryPool.slice(Math.max(0, anchorIdx - 2), Math.max(0, anchorIdx - 2) + 3);
+const relatedFinal =
+  relatedSameCategory.length === 3
+    ? relatedSameCategory
+    : [...relatedSameCategory, ...relatedPool.filter((p) => p.data.category !== category)].slice(0, 3);
 
 const ceroOrganico = PANOPTICO_DIGITAL_SLUGS.has(post.id) ? getBook('cero-organico') : undefined;
 
