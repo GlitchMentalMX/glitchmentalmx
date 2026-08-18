@@ -25,12 +25,17 @@ ninguna terminal ni instalar nada.
 
 ## 3. Crear el Worker
 
-1. **Workers & Pages** → **Create** → **Workers** → **Create Worker**.
-2. Nombre del Worker: `glitchmental-analytics` — **este nombre sí importa**,
-   porque el sitio y el panel ya están configurados para buscarlo en
-   `https://glitchmental-analytics.<tu-subdominio>.workers.dev`. Si tu
-   subdominio de workers.dev no es `glitchmental-web`, avísame para
-   ajustar la URL en el código.
+1. **Workers & Pages** → **Create** (puede aparecer como **Create Application**)
+   → elige **Workers** (no Pages) → una plantilla en blanco tipo "Hello World".
+2. **Antes de darle Deploy**, cámbiale el nombre a exactamente
+   `glitchmental-analytics` — **este nombre sí importa**, porque el sitio y
+   el panel ya están configurados para buscarlo en
+   `https://glitchmental-analytics.contacto-fbf.workers.dev` (ese es tu
+   subdominio real de workers.dev, confirmado con el que ya usa el Worker
+   de Decap). Si Cloudflare ya te asignó un nombre aleatorio (algo como
+   "polished-violet-3d4d") porque no alcanzaste a cambiarlo, no pasa nada:
+   bórralo desde Settings → Delete y créalo de nuevo con el nombre correcto
+   — como todavía no tiene código ni datos, no se pierde nada.
 3. **Deploy** (te va a crear un Worker de ejemplo, "Hello World" — normal).
 4. Botón **Edit code** para abrir el editor en línea.
 5. Borra todo el contenido de ahí y pega **completo** el archivo
