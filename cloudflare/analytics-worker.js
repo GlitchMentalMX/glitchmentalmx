@@ -23,6 +23,20 @@ const SEARCH_HOST_RE = /google\.|bing\.|yahoo\.|duckduckgo\.|baidu\.|yandex\./i;
 const SOCIAL_HOST_RE =
   /facebook\.|instagram\.|twitter\.|x\.com|t\.co|linkedin\.|tiktok\.|reddit\.|pinterest\.|threads\.net|bsky\.app|mastodon\.|whatsapp\.|wa\.me|telegram\.|discord\./i;
 
+// Ciudad de México es UTC-6 todo el año (sin horario de verano desde 2022).
+// day/hour se guardan en esta hora local, no en UTC, para que "Vistas por
+// día" coincida con el calendario real de Jorge en vez de desfasarse hasta
+// 6 horas cerca de la medianoche.
+const MX_OFFSET_MS = 6 * 60 * 60 * 1000;
+
+function mxDay(date) {
+  return new Date(date.getTime() - MX_OFFSET_MS).toISOString().slice(0, 10);
+}
+
+function mxHour(date) {
+  return new Date(date.getTime() - MX_OFFSET_MS).getUTCHours();
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -64,8 +78,8 @@ async function handleCollect(request, env, origin, matchedOrigin) {
     const country = (request.cf && request.cf.country) || 'XX';
 
     const now = new Date();
-    const day = now.toISOString().slice(0, 10);
-    const hour = now.getUTCHours();
+    const day = mxDay(now);
+    const hour = mxHour(now);
     const ts = Math.floor(now.getTime() / 1000);
 
     const visitorHash = await hashVisitor(env.ANALYTICS_SALT || '', day, ip, ua);
@@ -136,8 +150,7 @@ async function handleStats(request, env, url, matchedOrigin) {
 
   const rangeParam = url.searchParams.get('range') || '30d';
   const days = rangeParam === '7d' ? 7 : rangeParam === '90d' ? 90 : 30;
-  const sinceDay = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
-  const today = new Date().toISOString().slice(0, 10);
+  const sinceDay = mxDay(new Date(Date.now() - days * 86400000));
 
   try {
     const [
@@ -145,7 +158,6 @@ async function handleStats(request, env, url, matchedOrigin) {
       botTotals,
       cumulative,
       byDay,
-      byHourToday,
       topPages,
       sources,
       referrers,
@@ -163,9 +175,6 @@ async function handleStats(request, env, url, matchedOrigin) {
         'SELECT day, COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY day ORDER BY day'
       )
         .bind(sinceDay)
-        .all(),
-      env.DB.prepare('SELECT hour, COUNT(*) AS views FROM hits WHERE day = ? AND is_bot = 0 GROUP BY hour ORDER BY hour')
-        .bind(today)
         .all(),
       env.DB.prepare(
         'SELECT path, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20'
@@ -210,7 +219,6 @@ async function handleStats(request, env, url, matchedOrigin) {
         bot_views: botTotals?.views || 0,
         cumulative_views: cumulative?.views || 0,
         by_day: byDay.results || [],
-        by_hour_today: byHourToday.results || [],
         top_pages: topPages.results || [],
         sources: sources.results || [],
         referrers: referrers.results || [],

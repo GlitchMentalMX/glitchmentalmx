@@ -56,11 +56,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
         </section>
 
         <section class="block">
-          <h2>Vistas por hora — hoy</h2>
-          <div id="table-hour"></div>
-        </section>
-
-        <section class="block">
           <h2>Vistas por día</h2>
           <div id="table-day"></div>
         </section>
@@ -167,11 +162,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     document.getElementById('stat-cumulative').textContent = fmt(data.cumulative_views);
     document.getElementById('stat-bots').textContent = fmt(data.bot_views);
 
-    const hourRows = Array.from({ length: 24 }, (_, h) => {
-      const found = data.by_hour_today.find((r) => r.hour === h);
-      return { hour: h, views: found ? found.views : 0 };
-    });
-    renderTable(document.getElementById('table-hour'), hourRows, 'hour', 'views', (h) => String(h).padStart(2, '0') + ':00');
     renderTable(document.getElementById('table-day'), [...data.by_day].reverse(), 'day', 'views');
     renderTable(document.getElementById('table-pages'), data.top_pages, 'path', 'views');
     renderTable(document.getElementById('table-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
