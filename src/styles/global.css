@@ -194,17 +194,36 @@ h1, h2, h3, h4 {
   margin: 0.4em 0;
 }
 .prose blockquote {
-  margin: 1.8em 0;
-  padding: 0.15em 0 0.15em 1.8em;
-  max-width: 85%;
-  border-left: 4px solid var(--accent);
-  border-image: linear-gradient(180deg, var(--accent) 0%, color-mix(in srgb, var(--accent) 30%, transparent) 100%) 1;
+  margin: 2.4em auto;
+  padding: 0;
+  max-width: 620px;
+  text-align: center;
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 1.55;
   color: var(--text);
 }
+.prose blockquote::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  margin: 0 auto 1.3em;
+  background: var(--accent);
+  border-radius: 3px;
+}
+.prose blockquote::after {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 3px;
+  margin: 1.3em auto 0;
+  background: var(--accent);
+  border-radius: 3px;
+}
+.prose blockquote p { margin: 0; }
+.prose blockquote p + p { margin-top: 1em; }
 .prose hr {
   border: none;
   border-top: 1px solid var(--border);
