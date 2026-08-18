@@ -126,7 +126,11 @@ async function handleStats(request, env, url, matchedOrigin) {
   const auth = request.headers.get('Authorization') || '';
   const token = auth.replace(/^Bearer\s+/i, '').trim();
 
-  if (!env.STATS_TOKEN || token !== env.STATS_TOKEN) {
+  // .trim() también del lado del secreto guardado — un salto de línea o
+  // espacio invisible que se cuele al pegar el valor en el dashboard de
+  // Cloudflare no debe tumbar la comparación.
+  const expectedToken = (env.STATS_TOKEN || '').trim();
+  if (!expectedToken || token !== expectedToken) {
     return json({ error: 'No autorizado' }, 401, matchedOrigin);
   }
 
