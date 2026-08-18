@@ -23,12 +23,16 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
           <p class="eyebrow">Panel privado</p>
           <h1>Estadísticas</h1>
         </div>
-        <div class="range-picker" role="group" aria-label="Rango de fechas">
-          <button type="button" class="range-btn" data-range="7d">7 días</button>
-          <button type="button" class="range-btn active" data-range="30d">30 días</button>
-          <button type="button" class="range-btn" data-range="90d">90 días</button>
+        <div class="head-controls">
+          <div class="range-picker" role="group" aria-label="Rango de fechas">
+            <button type="button" class="range-btn" data-range="7d">7 días</button>
+            <button type="button" class="range-btn active" data-range="30d">30 días</button>
+            <button type="button" class="range-btn" data-range="90d">90 días</button>
+          </div>
+          <button type="button" id="refresh-btn" class="btn btn-ghost refresh-btn">↻ Actualizar</button>
         </div>
       </div>
+      <p id="updated-at" class="hint updated-at"></p>
 
       <p id="loading" class="hint">Cargando…</p>
       <div id="content" hidden>
@@ -53,47 +57,48 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 
         <section class="block">
           <h2>Vistas por hora — hoy</h2>
-          <div class="bars bars-hour" id="chart-hour"></div>
+          <div id="table-hour"></div>
         </section>
 
         <section class="block">
           <h2>Vistas por día</h2>
-          <div class="bars bars-day" id="chart-day"></div>
+          <div id="table-day"></div>
         </section>
 
-        <div class="grid-2">
-          <section class="block">
-            <h2>Páginas más vistas</h2>
-            <ol class="ranked" id="list-pages"></ol>
-          </section>
+        <section class="block">
+          <h2>Páginas más vistas</h2>
+          <div id="table-pages"></div>
+        </section>
 
-          <section class="block">
-            <h2>Origen del tráfico</h2>
-            <ol class="ranked" id="list-sources"></ol>
-            <p class="sub-label">Referrers específicos</p>
-            <ol class="ranked small" id="list-referrers"></ol>
-          </section>
+        <section class="block">
+          <h2>Origen del tráfico</h2>
+          <div id="table-sources"></div>
+        </section>
 
-          <section class="block">
-            <h2>País</h2>
-            <ol class="ranked" id="list-countries"></ol>
-          </section>
+        <section class="block">
+          <h2>Referrers específicos</h2>
+          <div id="table-referrers"></div>
+        </section>
 
-          <section class="block">
-            <h2>Dispositivo</h2>
-            <ol class="ranked" id="list-devices"></ol>
-          </section>
+        <section class="block">
+          <h2>País</h2>
+          <div id="table-countries"></div>
+        </section>
 
-          <section class="block">
-            <h2>Sistema operativo</h2>
-            <ol class="ranked" id="list-os"></ol>
-          </section>
+        <section class="block">
+          <h2>Dispositivo</h2>
+          <div id="table-devices"></div>
+        </section>
 
-          <section class="block">
-            <h2>Navegador</h2>
-            <ol class="ranked" id="list-browsers"></ol>
-          </section>
-        </div>
+        <section class="block">
+          <h2>Sistema operativo</h2>
+          <div id="table-os"></div>
+        </section>
+
+        <section class="block">
+          <h2>Navegador</h2>
+          <div id="table-browsers"></div>
+        </section>
       </div>
     </div>
   </section>
@@ -107,6 +112,8 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   const dashboard = document.getElementById('dashboard');
   const loading = document.getElementById('loading');
   const content = document.getElementById('content');
+  const updatedAt = document.getElementById('updated-at');
+  const refreshBtn = document.getElementById('refresh-btn');
 
   const STORAGE_KEY = 'gm-stats-token';
   let currentRange = '30d';
@@ -119,69 +126,36 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     while (el.firstChild) el.removeChild(el.firstChild);
   }
 
-  function renderBars(container, rows, keyField, valueField, labelFn) {
+  // Tabla simple de 2 columnas (etiqueta / vistas). Reemplaza el diseño de
+  // barras anterior — las barras se armaban con JS y el <style> de Astro
+  // solo alcanza al HTML escrito en la plantilla, así que nunca les llegó
+  // el estilo (se veían pegadas). Una tabla no depende de eso.
+  function renderTable(container, rows, keyField, valueField, labelFn) {
     clearChildren(container);
-    const max = Math.max(1, ...rows.map((r) => r[valueField] || 0));
-    rows.forEach((r) => {
-      const wrap = document.createElement('div');
-      wrap.className = 'bar-row';
-
-      const label = document.createElement('span');
-      label.className = 'bar-label';
-      label.textContent = labelFn ? labelFn(r[keyField]) : r[keyField];
-
-      const track = document.createElement('span');
-      track.className = 'bar-track';
-      const fill = document.createElement('span');
-      fill.className = 'bar-fill';
-      fill.style.width = Math.max(2, ((r[valueField] || 0) / max) * 100) + '%';
-      track.appendChild(fill);
-
-      const value = document.createElement('span');
-      value.className = 'bar-value';
-      value.textContent = fmt(r[valueField]);
-
-      wrap.appendChild(label);
-      wrap.appendChild(track);
-      wrap.appendChild(value);
-      container.appendChild(wrap);
-    });
-    if (rows.length === 0) {
+    if (!rows || rows.length === 0) {
       const empty = document.createElement('p');
       empty.className = 'hint';
       empty.textContent = 'Sin datos todavía.';
       container.appendChild(empty);
+      return;
     }
-  }
-
-  function renderRankedList(el, rows, keyField, valueField, labelFn) {
-    clearChildren(el);
-    const max = Math.max(1, ...rows.map((r) => r[valueField] || 0));
+    const table = document.createElement('table');
+    table.className = 'stats-table';
+    const tbody = document.createElement('tbody');
     rows.forEach((r) => {
-      const li = document.createElement('li');
-      const label = document.createElement('span');
-      label.className = 'ranked-label';
-      label.textContent = labelFn ? labelFn(r[keyField]) : r[keyField] || '(desconocido)';
-      const track = document.createElement('span');
-      track.className = 'bar-track small';
-      const fill = document.createElement('span');
-      fill.className = 'bar-fill';
-      fill.style.width = Math.max(2, ((r[valueField] || 0) / max) * 100) + '%';
-      track.appendChild(fill);
-      const value = document.createElement('span');
-      value.className = 'ranked-value';
-      value.textContent = fmt(r[valueField]);
-      li.appendChild(label);
-      li.appendChild(track);
-      li.appendChild(value);
-      el.appendChild(li);
+      const tr = document.createElement('tr');
+      const tdLabel = document.createElement('td');
+      tdLabel.className = 'col-label';
+      tdLabel.textContent = labelFn ? labelFn(r[keyField]) : r[keyField] || '(desconocido)';
+      const tdValue = document.createElement('td');
+      tdValue.className = 'col-value';
+      tdValue.textContent = fmt(r[valueField]);
+      tr.appendChild(tdLabel);
+      tr.appendChild(tdValue);
+      tbody.appendChild(tr);
     });
-    if (rows.length === 0) {
-      const li = document.createElement('li');
-      li.className = 'hint';
-      li.textContent = 'Sin datos todavía.';
-      el.appendChild(li);
-    }
+    table.appendChild(tbody);
+    container.appendChild(table);
   }
 
   const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo' };
@@ -197,21 +171,24 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       const found = data.by_hour_today.find((r) => r.hour === h);
       return { hour: h, views: found ? found.views : 0 };
     });
-    renderBars(document.getElementById('chart-hour'), hourRows, 'hour', 'views', (h) => String(h).padStart(2, '0') + 'h');
-    renderBars(document.getElementById('chart-day'), data.by_day, 'day', 'views');
+    renderTable(document.getElementById('table-hour'), hourRows, 'hour', 'views', (h) => String(h).padStart(2, '0') + ':00');
+    renderTable(document.getElementById('table-day'), [...data.by_day].reverse(), 'day', 'views');
+    renderTable(document.getElementById('table-pages'), data.top_pages, 'path', 'views');
+    renderTable(document.getElementById('table-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
+    renderTable(document.getElementById('table-referrers'), data.referrers, 'referrer_host', 'views');
+    renderTable(document.getElementById('table-countries'), data.countries, 'country', 'views');
+    renderTable(document.getElementById('table-devices'), data.devices, 'device', 'views', (d) => DEVICE_LABELS[d] || d);
+    renderTable(document.getElementById('table-os'), data.os, 'os', 'views');
+    renderTable(document.getElementById('table-browsers'), data.browsers, 'browser', 'views');
 
-    renderRankedList(document.getElementById('list-pages'), data.top_pages, 'path', 'views');
-    renderRankedList(document.getElementById('list-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
-    renderRankedList(document.getElementById('list-referrers'), data.referrers, 'referrer_host', 'views');
-    renderRankedList(document.getElementById('list-countries'), data.countries, 'country', 'views');
-    renderRankedList(document.getElementById('list-devices'), data.devices, 'device', 'views', (d) => DEVICE_LABELS[d] || d);
-    renderRankedList(document.getElementById('list-os'), data.os, 'os', 'views');
-    renderRankedList(document.getElementById('list-browsers'), data.browsers, 'browser', 'views');
+    updatedAt.textContent = 'Actualizado a las ' + new Date().toLocaleTimeString('es-MX');
   }
 
   async function loadStats(token) {
     loading.hidden = false;
+    loading.textContent = 'Cargando…';
     content.hidden = true;
+    refreshBtn.disabled = true;
     try {
       const res = await fetch(`${WORKER_URL}/stats?range=${currentRange}`, {
         headers: { Authorization: `Bearer ${token}` },
@@ -228,6 +205,8 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       content.hidden = false;
     } catch (e) {
       loading.textContent = 'No se pudo conectar con el Worker. Revisa que esté desplegado y que el token sea correcto.';
+    } finally {
+      refreshBtn.disabled = false;
     }
   }
 
@@ -264,22 +243,27 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     });
   });
 
+  refreshBtn.addEventListener('click', () => {
+    const token = sessionStorage.getItem(STORAGE_KEY);
+    if (token) loadStats(token);
+  });
+
   const savedToken = sessionStorage.getItem(STORAGE_KEY);
   if (savedToken) {
     showDashboard(savedToken);
   }
 </script>
 
-<style>
-  .wrap { padding: 40px 24px 96px; max-width: 960px; }
-  .eyebrow { margin-bottom: 8px; }
-  h1 { font-size: 1.8rem; margin: 0 0 8px; }
-  .hint { color: var(--text-muted); font-size: 0.92rem; }
-  .error { color: var(--down-line); font-size: 0.88rem; margin-top: 10px; }
+<style is:global>
+  .wrap { padding: 40px 24px 96px; max-width: 720px; }
+  .wrap .eyebrow { margin-bottom: 8px; }
+  .wrap h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  .wrap .hint { color: var(--text-muted); font-size: 0.92rem; }
+  .wrap .error { color: var(--down-line); font-size: 0.88rem; margin-top: 10px; }
 
-  .gate { max-width: 360px; padding-top: 40px; }
-  .gate form { display: flex; gap: 10px; margin-top: 18px; }
-  .gate input {
+  .wrap .gate { max-width: 360px; padding-top: 40px; }
+  .wrap .gate form { display: flex; gap: 10px; margin-top: 18px; }
+  .wrap .gate input {
     flex: 1;
     padding: 0.7em 1em;
     border-radius: var(--radius-sm);
@@ -289,9 +273,10 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     font-size: 0.95rem;
   }
 
-  .head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 28px; }
-  .range-picker { display: flex; gap: 6px; }
-  .range-btn {
+  .wrap .head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  .wrap .head-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .wrap .range-picker { display: flex; gap: 6px; }
+  .wrap .range-btn {
     padding: 0.5em 1em;
     border-radius: 999px;
     border: 1px solid var(--border);
@@ -300,47 +285,27 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     font-size: 0.85rem;
     cursor: pointer;
   }
-  .range-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .wrap .range-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .wrap .refresh-btn { font-size: 0.85rem; padding: 0.5em 1.1em; }
+  .wrap .updated-at { margin: 0 0 28px; font-size: 0.8rem; }
 
-  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 36px; }
-  .card { background: var(--bg-inset); border-radius: var(--radius); padding: 18px 20px; border-top: 2px solid var(--accent); }
-  .card-bots { border-top-color: var(--down-line); }
-  .card-label { font-size: 0.78rem; color: var(--text-faint); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-mono); }
-  .card-value { font-size: 1.7rem; font-weight: 700; font-family: var(--font-display); margin: 0; }
+  .wrap .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+  .wrap .card { background: var(--bg-inset); border-radius: var(--radius); padding: 18px 20px; border-top: 2px solid var(--accent); }
+  .wrap .card-bots { border-top-color: var(--down-line); }
+  .wrap .card-label { font-size: 0.78rem; color: var(--text-faint); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-mono); }
+  .wrap .card-value { font-size: 1.7rem; font-weight: 700; font-family: var(--font-display); margin: 0; }
 
-  .block { margin-bottom: 36px; }
-  .block h2 { font-size: 1.05rem; margin: 0 0 16px; }
-  .sub-label { font-size: 0.78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-mono); margin: 20px 0 10px; }
+  .wrap .block { margin-bottom: 40px; }
+  .wrap .block h2 { font-size: 1.05rem; margin: 0 0 14px; }
 
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 40px; }
+  .wrap .stats-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .wrap .stats-table tr { border-bottom: 1px solid var(--border); }
+  .wrap .stats-table tr:last-child { border-bottom: none; }
+  .wrap .stats-table td { padding: 9px 4px; }
+  .wrap .stats-table .col-label { color: var(--text); }
+  .wrap .stats-table .col-value { color: var(--text-muted); text-align: right; font-family: var(--font-mono); white-space: nowrap; width: 1%; padding-left: 20px; }
 
-  .bars { display: flex; flex-direction: column; gap: 6px; }
-  .bars-hour { display: grid; grid-template-columns: repeat(24, 1fr); gap: 4px; align-items: end; }
-  .bars-hour .bar-row { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-  .bars-hour .bar-label { font-size: 0.62rem; color: var(--text-faint); font-family: var(--font-mono); }
-  .bars-hour .bar-track { width: 100%; height: 60px; display: flex; align-items: flex-end; background: var(--bg-inset); border-radius: 3px; overflow: hidden; }
-  .bars-hour .bar-fill { width: 100%; background: var(--accent); }
-  .bars-hour .bar-value { display: none; }
-
-  .bars-day .bar-row { display: grid; grid-template-columns: 90px 1fr 50px; align-items: center; gap: 10px; }
-  .bars-day .bar-label { font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono); }
-  .bars-day .bar-value { font-size: 0.8rem; color: var(--text-muted); text-align: right; }
-
-  .bar-track { height: 10px; border-radius: 999px; background: var(--bg-inset); overflow: hidden; display: block; }
-  .bar-track.small { height: 8px; }
-  .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
-
-  .ranked { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-  .ranked.small { gap: 8px; }
-  .ranked li { display: grid; grid-template-columns: 1fr 90px 44px; align-items: center; gap: 10px; }
-  .ranked-label { font-size: 0.85rem; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .ranked-value { font-size: 0.8rem; color: var(--text-muted); text-align: right; font-family: var(--font-mono); }
-
-  @media (max-width: 800px) {
-    .cards { grid-template-columns: 1fr 1fr; }
-    .grid-2 { grid-template-columns: 1fr; }
-  }
   @media (max-width: 500px) {
-    .cards { grid-template-columns: 1fr; }
+    .wrap .cards { grid-template-columns: 1fr 1fr; }
   }
 </style>
