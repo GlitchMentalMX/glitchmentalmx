@@ -219,6 +219,7 @@ const productSchema =
         '@type': 'Product',
         name: herramienta,
         description,
+        image: articleImage ?? new URL('/og-default.png', Astro.site).toString(),
         url: articleURL,
         offers: {
           '@type': 'Offer',
