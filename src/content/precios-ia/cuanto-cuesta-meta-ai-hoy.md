@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Meta AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Meta AI hoy en México: es gratis para casi todos los usuarios. Explicamos la excepción piloto de pago y por qué no aplica aquí."
+description: "Cuánto cuesta Meta AI hoy en México: es gratis para casi todos los usuarios. Te explicamos la excepción piloto de pago y por qué no aplica aquí."
 herramienta: "Meta AI"
 herramientaId: "meta-ai"
 sitioOficial: "https://www.meta.ai/"

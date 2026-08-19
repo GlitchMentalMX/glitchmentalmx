@@ -20,10 +20,10 @@ const nav = [
     groupChildren: [
       { href: '/dato-incomodo/', label: 'Dato Incómodo' },
       { href: '/insights-visuales/', label: 'Insights Visuales' },
+      { href: '/precios-ia/', label: 'Precios de IA' },
     ],
   },
   { href: '/archivo/', label: 'Archivo' },
-  { href: '/precios-ia/', label: 'Precios de IA' },
   {
     href: '/series/',
     label: 'Series',
@@ -331,7 +331,13 @@ const current = Astro.url.pathname;
   .accordion-body li a.muted { color: var(--text-faint); }
   .accordion-body .dropdown-group-label { margin: 6px 0 4px 10px; padding-top: 8px; border-top: 1px solid var(--border); }
 
-  @media (max-width: 860px) {
+  /* 1220px, no 860px: el nav de escritorio con 8 ítems ya no cabe a partir
+     de ~1180px (el ancho máximo real de .container) hacia abajo — a 860px
+     se ve un desbordamiento severo sobre los íconos de la derecha. Se sube
+     el punto de quiebre para que el menú móvil (que sí funciona a cualquier
+     ancho) cubra toda esa franja rota en vez de mostrar el nav de escritorio
+     desbordado. */
+  @media (max-width: 1220px) {
     .primary-nav { display: none; }
     .menu-toggle { display: inline-flex; }
     .subscribe-btn { display: none; }

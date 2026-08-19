@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta DeepSeek hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta DeepSeek hoy en México: es gratis. Verificamos a diario si esto cambia, con el mismo criterio de precisión que el resto de la serie."
+description: "Cuánto cuesta DeepSeek hoy en México: es gratis, sin plan de pago para el público general. Verificado con el mismo criterio que el resto de la serie."
 herramienta: "DeepSeek"
 herramientaId: "deepseek"
 sitioOficial: "https://chat.deepseek.com/"
