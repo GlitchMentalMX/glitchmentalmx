@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 
 const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
@@ -59,6 +60,7 @@ const reasons = [
   title="Publicidad"
   description="Tu marca frente a una audiencia que sí le importa la tecnología."
 >
+  <Breadcrumbs items={[{ name: 'Publicidad' }]} />
   <section class="container hero">
     <h1>Tu marca frente a una audiencia<br /><span>que sí le importa la tecnología.</span></h1>
     <p class="lead-text">Lectores interesados en Inteligencia Artificial, Cultura Digital, Tendencias Tecnológicas y Gadgets. Formatos editorialmente integrados para mejor impacto — sin publicidad genérica ni intrusiva.</p>
