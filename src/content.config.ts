@@ -126,6 +126,29 @@ const datoIncomodo = defineCollection({
   }),
 });
 
+// Colección separada de "posts" a propósito: estos 14 artículos son contenido
+// utilitario/referencial (precio del día, no análisis editorial) y no deben
+// mezclarse con el campo `category` de posts (que clasifica tema editorial,
+// no tipo de contenido) ni aparecer en RSS/archivo/home, que solo leen
+// `posts`. Comparten la ruta /articulos/[slug].astro con `posts` (unión en
+// getStaticPaths) para mantener la URL que pide el brief y reutilizar la
+// plantilla de artículo ya construida.
+const preciosIA = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/precios-ia' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    herramienta: z.string(),
+    herramientaId: z.string(),
+    sitioOficial: z.string().url(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
 const indiceGlitchmentalmx = defineCollection({
   loader: singleJsonEntryLoader('./src/content/indice/actual.json', 'actual'),
   schema: z.object({
@@ -157,4 +180,5 @@ export const collections = {
   visualInsights,
   datoIncomodo,
   indiceGlitchmentalmx,
+  preciosIA,
 };

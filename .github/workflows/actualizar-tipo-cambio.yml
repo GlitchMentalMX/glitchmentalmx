@@ -1,0 +1,43 @@
+name: Actualizar tipo de cambio Banxico
+
+# Corre todos los días a las 14:00 hora CDMX (20:00 UTC) — después de que
+# Banxico publica el dato FIX del día (~12:30 PM CDMX), para que el dato
+# quede etiquetado con la fecha de HOY la mayor parte del día en vez de
+# arrastrar el del día hábil anterior. Fin de semana/festivo: Banxico no
+# publica dato nuevo, el script deja el archivo igual y no genera commit.
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Consultar Banxico y actualizar el archivo
+        env:
+          BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
+        run: node scripts/actualizar-tipo-cambio.mjs
+
+      - name: Publicar el cambio (si hubo uno)
+        run: |
+          if git diff --quiet -- src/data/tipo-cambio.json; then
+            echo "Sin cambios en tipo-cambio.json — no hay nada que subir."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/tipo-cambio.json
+          git commit -m "Actualizar tipo de cambio Banxico"
+          git push

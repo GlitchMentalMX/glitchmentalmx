@@ -1,0 +1,84 @@
+---
+// Clon del bloque "Herramientas" del home (src/pages/index.astro) para usarlo
+// al pie de artículos fuera del home — mismo copy, mismos 3 cards, mismo
+// estilo. Se extrajo a un componente aparte porque en el home vive inline
+// (con el efecto "scramble" de los títulos, que es exclusivo del home); no
+// se tocó el home para no modificar su layout fuera del alcance de esta tarea.
+const toolsList = [
+  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
+  { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
+  { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
+];
+---
+
+<section class="tools container">
+  <div class="section-head">
+    <h2>Herramientas</h2>
+  </div>
+  <div class="tools-grid">
+    {toolsList.map((t) => (
+      <a href={t.href} class="tool-card">
+        <span class="tool-icon">
+          {t.icon === 'search' && (
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          )}
+          {t.icon === 'gauge' && (
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 15a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15L16 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor"/></svg>
+          )}
+          {t.icon === 'chart' && (
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M5 19V13M12 19V9M19 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          )}
+        </span>
+        <span class="tag">{t.tag}</span>
+        <h3>{t.title}</h3>
+        <p>{t.desc}</p>
+        <span class="stat">{t.stat}</span>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .tools { padding: 24px 24px 8px; max-width: 1040px; margin: 0 auto; }
+  .section-head { margin-bottom: 24px; }
+  .section-head h2 { font-family: var(--font-display); font-size: 1.6rem; }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .tool-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px 24px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-elevated);
+    color: var(--text);
+  }
+  .tool-card:hover { border-color: var(--accent); }
+  .tool-icon { color: var(--accent); }
+  .tool-card .tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .tool-card h3 { font-family: var(--font-display); font-size: 1.1rem; margin: 2px 0 0; }
+  .tool-card:hover h3 { color: var(--accent); }
+  .tool-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; flex: 1; }
+  .tool-card .stat {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-faint);
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 900px) {
+    .tools-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,52 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
+import { getCollection } from 'astro:content';
+import tipoCambio from '../../data/tipo-cambio.json';
+import { formatDate } from '../../lib/format';
+
+const posts = (await getCollection('preciosIA', ({ data }) => !data.draft)).sort((a, b) =>
+  a.data.herramienta.localeCompare(b.data.herramienta, 'es')
+);
+
+const title = 'Precios de IA: cuánto cuesta cada herramienta hoy en México';
+const description =
+  'Cuánto cuesta ChatGPT, Claude, Gemini y el resto de las herramientas de IA hoy en México, en pesos mexicanos, con el tipo de cambio oficial de Banxico actualizado a diario.';
+const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+---
+
+<Layout title={title} description={description}>
+  <Breadcrumbs items={[{ name: 'Precios de IA' }]} />
+  <section class="container header">
+    <p class="eyebrow">Precios de IA · {posts.length} herramientas · dato del {formatDate(fechaDato)}</p>
+    <h1>Cuánto cuesta cada herramienta de IA hoy en México</h1>
+    <p class="dek">
+      El precio oficial en dólares de cada herramienta, convertido a pesos mexicanos con el tipo de
+      cambio FIX de Banxico, actualizado a diario. Sin cálculos de cabeza antes de dar clic en comprar.
+    </p>
+  </section>
+
+  <section class="container list">
+    <p class="eyebrow list-label">Las herramientas</p>
+    {posts.map((post, i) => (
+      <CollectionArticleRow
+        index={i + 1}
+        slug={post.id}
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        body={post.body}
+      />
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 24px; max-width: 760px; }
+  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
+  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+
+  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list-label { margin-bottom: 6px; }
+</style>

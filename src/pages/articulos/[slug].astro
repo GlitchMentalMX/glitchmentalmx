@@ -5,10 +5,14 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SeriesCallout from '../../components/SeriesCallout.astro';
 import BookPromo from '../../components/BookPromo.astro';
 import ToolPromo from '../../components/ToolPromo.astro';
+import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro';
+import ToolsWidget from '../../components/ToolsWidget.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
 import { getBook } from '../../data/books';
+import tipoCambio from '../../data/tipo-cambio.json';
+import preciosUSD from '../../data/precios-ia-usd.json';
 
 // Enlazado inverso Panóptico Digital → Cero Orgánico: estos 5 artículos son
 // justo los que integran esa serie (ver postSlugs en
@@ -49,8 +53,8 @@ const RISK_CALCULATOR_SLUGS = new Set([
 
 // Promoción puntual del Índice glitchMentalMX — mismo criterio: lote fijo,
 // curado a mano por relevancia real (adopción de tecnología B2B), no un
-// campo de esquema. "agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio" se
-// dejó fuera de aquí porque ya está en el lote de la calculadora — ningún
+// campo de esquema. "agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots"
+// se dejó fuera de aquí porque ya está en el lote de la calculadora — ningún
 // artículo debe cargar dos tarjetas de herramienta.
 const INDICE_SLUGS = new Set([
   'tres-empresas-controlan-la-nube-eso-deberia-preocuparte',
@@ -62,29 +66,44 @@ const INDICE_SLUGS = new Set([
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+  const preciosIA = await getCollection('preciosIA', ({ data }) => !data.draft);
+  return [
+    ...posts.map((post) => ({ params: { slug: post.id }, props: { kind: 'posts' as const, post } })),
+    ...preciosIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'preciosIA' as const, post } })),
+  ];
 }
 
-const { post } = Astro.props;
+const { kind, post } = Astro.props;
 const { Content } = await render(post);
-const { title, description, category, pubDate, updatedDate, heroImage, heroImageAlt } = post.data;
 const minutes = readingTime(post.body || '');
+const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
 
-// Only the 6 narrative series and "Detrás del Prompt" originally carried a
-// "part of this series" callout at the end of the article — the broad
-// reference hubs (Biblioteca, Mapa de Poder Tech, etc.) never had one.
-const editorialCollections = await getCollection(
-  'editorialCollections',
-  ({ id, data }) => data.kind === 'series' || id === 'detras-del-prompt'
-);
-const parentCollection = editorialCollections.find((c) => c.data.postSlugs.includes(post.id));
+// ---------------------------------------------------------------------------
+// Datos comunes a Layout (título, descripción, imagen, fechas) — se calculan
+// distinto según la colección de origen, pero alimentan el mismo <Layout>.
+// ---------------------------------------------------------------------------
+const title = post.data.title;
+const description = post.data.description;
+const pubDate = post.data.pubDate;
+const updatedDate = post.data.updatedDate;
+const heroImage = post.data.heroImage;
+const heroImageAlt = (post.data as any).heroImageAlt;
 
-const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+// ---------------------------------------------------------------------------
+// Rama "posts" (contenido editorial) — comportamiento sin cambios.
+// ---------------------------------------------------------------------------
+const category = kind === 'posts' ? (post.data as any).category : undefined;
+
+const editorialCollections =
+  kind === 'posts'
+    ? await getCollection('editorialCollections', ({ id, data }) => data.kind === 'series' || id === 'detras-del-prompt')
+    : [];
+const parentCollection = kind === 'posts' ? editorialCollections.find((c) => c.data.postSlugs.includes(post.id)) : undefined;
+
+const allPosts =
+  kind === 'posts'
+    ? (await getCollection('posts', ({ data }) => !data.draft)).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    : [];
 const relatedPool = allPosts.filter((p) => p.id !== post.id);
 
 // "Sigue leyendo" prioriza la MISMA categoría — antes solo miraba cercanía de
@@ -103,64 +122,147 @@ const relatedFinal =
     ? relatedSameCategory
     : [...relatedSameCategory, ...relatedPool.filter((p) => p.data.category !== category)].slice(0, 3);
 
-const ceroOrganico = PANOPTICO_DIGITAL_SLUGS.has(post.id) ? getBook('cero-organico') : undefined;
+const ceroOrganico = kind === 'posts' && PANOPTICO_DIGITAL_SLUGS.has(post.id) ? getBook('cero-organico') : undefined;
 
-const toolPromo = RISK_CALCULATOR_SLUGS.has(post.id)
-  ? {
-      title: '¿La IA puede quitarte tu trabajo?',
-      description: 'Mide qué tan expuesto está tu trabajo a la automatización. Descúbrelo gratis, en segundos.',
-      href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/',
-    }
-  : INDICE_SLUGS.has(post.id)
+const toolPromo =
+  kind === 'posts' && RISK_CALCULATOR_SLUGS.has(post.id)
     ? {
-        title: 'El índice que separa el hype del impacto real.',
-        description:
-          '20 tecnologías B2B rankeadas por adopción real, integración operativa y señales públicas verificables. Sin patrocinadores, sin agenda.',
-        href: '/indice-glitchmentalmx/',
+        title: '¿La IA puede quitarte tu trabajo?',
+        description: 'Mide qué tan expuesto está tu trabajo a la automatización. Descúbrelo gratis, en segundos.',
+        href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/',
+      }
+    : kind === 'posts' && INDICE_SLUGS.has(post.id)
+      ? {
+          title: 'El índice que separa el hype del impacto real.',
+          description:
+            '20 tecnologías B2B rankeadas por adopción real, integración operativa y señales públicas verificables. Sin patrocinadores, sin agenda.',
+          href: '/indice-glitchmentalmx/',
+        }
+      : undefined;
+
+const articleImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
+const articleSchema =
+  kind === 'posts'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description,
+        url: articleURL,
+        image: articleImage,
+        datePublished: pubDate.toISOString(),
+        dateModified: (updatedDate ?? pubDate).toISOString(),
+        author: {
+          '@type': 'Person',
+          name: 'Jorge A. Diaz Elizondo',
+          url: new URL('/acerca-de/', Astro.site).toString(),
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'glitchmentalMX',
+          logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', 'meta[name="description"]'],
+        },
+        about: [{ '@type': 'Thing', name: category }],
+        isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
+        articleSection: category,
+      }
+    : {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: title,
+        description,
+        url: articleURL,
+        ...(articleImage ? { image: articleImage } : {}),
+        datePublished: pubDate.toISOString(),
+        dateModified: (updatedDate ?? pubDate).toISOString(),
+        author: {
+          '@type': 'Person',
+          name: 'Jorge A. Diaz Elizondo',
+          url: new URL('/acerca-de/', Astro.site).toString(),
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'glitchmentalMX',
+          logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+        },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
+        isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
+        articleSection: 'Precios de IA',
+      };
+
+// ---------------------------------------------------------------------------
+// Rama "preciosIA" (Banxico + Offer JSON-LD + módulos propios) — colección
+// aparte de `posts` (ver content.config.ts): comparte esta misma ruta
+// /articulos/[slug] para no duplicar plantilla y mantener la URL
+// /articulos/cuanto-cuesta-[herramienta]-hoy/ que pide el brief.
+// ---------------------------------------------------------------------------
+const herramienta = kind === 'preciosIA' ? (post.data as any).herramienta : undefined;
+const herramientaId = kind === 'preciosIA' ? (post.data as any).herramientaId : undefined;
+const sitioOficial = kind === 'preciosIA' ? (post.data as any).sitioOficial : undefined;
+
+const precio =
+  kind === 'preciosIA'
+    ? (preciosUSD as Record<string, { nombre: string; precioUSD: number; periodo: string }>)[herramientaId]
+    : undefined;
+const precioMXN = precio ? precio.precioUSD * tipoCambio.valor : undefined;
+const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+
+const productSchema =
+  kind === 'preciosIA' && precio && precioMXN !== undefined
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: herramienta,
+        description,
+        url: articleURL,
+        offers: {
+          '@type': 'Offer',
+          price: precioMXN.toFixed(2),
+          priceCurrency: 'MXN',
+          url: sitioOficial,
+          availability: 'https://schema.org/InStock',
+          priceValidUntil: tipoCambio.fecha,
+        },
       }
     : undefined;
 
-const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
-const articleImage = new URL(heroImage, Astro.site).toString();
-const articleSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: title,
-  description,
-  url: articleURL,
-  image: articleImage,
-  datePublished: pubDate.toISOString(),
-  dateModified: (updatedDate ?? pubDate).toISOString(),
-  author: {
-    '@type': 'Person',
-    name: 'Jorge A. Diaz Elizondo',
-    url: new URL('/acerca-de/', Astro.site).toString(),
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'glitchmentalMX',
-    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
-  },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
-  speakable: {
-    '@type': 'SpeakableSpecification',
-    cssSelector: ['h1', 'meta[name="description"]'],
-  },
-  about: [{ '@type': 'Thing', name: category }],
-  isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
-  articleSection: category,
-};
+const otrosPreciosIA =
+  kind === 'preciosIA'
+    ? (await getCollection('preciosIA', ({ data }) => !data.draft))
+        .filter((p) => p.id !== post.id)
+        .sort((a, b) => a.data.herramienta.localeCompare(b.data.herramienta, 'es'))
+        .slice(0, 3)
+    : [];
 ---
 
 <Layout title={title} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-  <Breadcrumbs items={[
-    { name: category, url: `/categoria/${categorySlug(category)}/` },
-    { name: title },
-  ]} />
+  {productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
+
+  {kind === 'posts' ? (
+    <Breadcrumbs items={[
+      { name: category, url: `/categoria/${categorySlug(category)}/` },
+      { name: title },
+    ]} />
+  ) : (
+    <Breadcrumbs items={[
+      { name: 'Precios de IA', url: '/precios-ia/' },
+      { name: title },
+    ]} />
+  )}
+
   <article class="post">
     <header class="post-header container">
-      <a href={`/categoria/${categorySlug(category)}/`} class="tag category-tag">{category}</a>
+      {kind === 'posts' ? (
+        <a href={`/categoria/${categorySlug(category)}/`} class="tag category-tag">{category}</a>
+      ) : (
+        <a href="/precios-ia/" class="tag category-tag">Precios de IA</a>
+      )}
       <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
@@ -174,9 +276,21 @@ const articleSchema = {
 
     <div class="content container">
       <div class="prose">
+        {kind === 'preciosIA' && precio && precioMXN !== undefined && (
+          <>
+            <p>
+              {precio.precioUSD === 0 ? (
+                <>Esto es cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
+              ) : (
+                <>Esto es cuánto cuesta {herramienta} hoy: el plan {precio.nombre} cuesta {precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al {precio.periodo === 'anual' ? 'año' : 'mes'}. Hoy, {formatDate(fechaDato)}, con el tipo de cambio FIX de Banxico ({tipoCambio.valor.toFixed(4)} MXN), eso equivale a {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN — antes de comisiones de tu banco o impuestos según tu método de pago.</>
+              )}
+            </p>
+            <TipoCambioCalculadora herramientaId={herramientaId} />
+          </>
+        )}
         <Content />
       </div>
-      {parentCollection && (
+      {kind === 'posts' && parentCollection && (
         <SeriesCallout
           kind={parentCollection.data.kind}
           title={parentCollection.data.title}
@@ -199,19 +313,21 @@ const articleSchema = {
     </div>
   </article>
 
-  {ceroOrganico && (
+  {kind === 'posts' && ceroOrganico && (
     <section class="container book-section">
       <BookPromo book={ceroOrganico} />
     </section>
   )}
 
-  {toolPromo && (
+  {kind === 'posts' && toolPromo && (
     <section class="container book-section">
       <ToolPromo title={toolPromo.title} description={toolPromo.description} href={toolPromo.href} />
     </section>
   )}
 
-  {relatedFinal.length > 0 && (
+  {kind === 'preciosIA' && <ToolsWidget />}
+
+  {kind === 'posts' && relatedFinal.length > 0 && (
     <section class="related container">
       <h2>Sigue leyendo</h2>
       <div class="grid">
@@ -223,6 +339,25 @@ const articleSchema = {
             pubDate={p.data.pubDate}
             heroImage={p.data.heroImage}
             heroImageAlt={p.data.heroImageAlt}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {kind === 'preciosIA' && otrosPreciosIA.length > 0 && (
+    <section class="related container">
+      <h2>Más precios de IA</h2>
+      <div class="grid">
+        {otrosPreciosIA.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage ?? ''}
+            heroImageAlt={p.data.heroImageAlt ?? ''}
             body={p.body}
           />
         ))}
