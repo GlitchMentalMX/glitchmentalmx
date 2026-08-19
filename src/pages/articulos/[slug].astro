@@ -207,7 +207,7 @@ const sitioOficial = kind === 'preciosIA' ? (post.data as any).sitioOficial : un
 
 const precio =
   kind === 'preciosIA'
-    ? (preciosUSD as Record<string, { nombre: string; precioUSD: number; periodo: string }>)[herramientaId]
+    ? (preciosUSD as Record<string, { nombre: string; precioUSD: number; periodo: string; empresa: string }>)[herramientaId]
     : undefined;
 const precioMXN = precio ? precio.precioUSD * tipoCambio.valor : undefined;
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
@@ -220,6 +220,7 @@ const productSchema =
         name: herramienta,
         description,
         image: articleImage ?? new URL('/og-default.png', Astro.site).toString(),
+        brand: { '@type': 'Brand', name: precio.empresa },
         url: articleURL,
         offers: {
           '@type': 'Offer',
@@ -227,6 +228,7 @@ const productSchema =
           priceCurrency: 'MXN',
           url: sitioOficial,
           availability: 'https://schema.org/InStock',
+          validFrom: tipoCambio.fecha,
           priceValidUntil: tipoCambio.fecha,
         },
       }
