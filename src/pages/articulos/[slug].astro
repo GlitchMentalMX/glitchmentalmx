@@ -282,7 +282,7 @@ const otrosPreciosIA =
               {precio.precioUSD === 0 ? (
                 <>Cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
               ) : (
-                <>{precio.nombre} cuesta {precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al {precio.periodo === 'anual' ? 'año' : 'mes'}. Hoy, {formatDate(fechaDato)}, con el tipo de cambio FIX de Banxico de ${tipoCambio.valor.toFixed(4)} MXN, equivale a {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN, antes de comisiones bancarias o impuestos según tu método de pago.</>
+                <>Cuánto cuesta {herramienta} hoy: {precio.nombre} cuesta {precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al {precio.periodo === 'anual' ? 'año' : 'mes'}. Hoy, {formatDate(fechaDato)}, con el tipo de cambio FIX de Banxico de ${tipoCambio.valor.toFixed(4)} MXN, equivale a {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN, antes de comisiones bancarias o impuestos según tu método de pago.</>
               )}
             </p>
             <TipoCambioCalculadora herramientaId={herramientaId} />
