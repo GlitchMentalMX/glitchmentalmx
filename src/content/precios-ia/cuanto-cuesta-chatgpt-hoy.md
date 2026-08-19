@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta ChatGPT hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta ChatGPT hoy en México: precio de ChatGPT Plus actualizado con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta ChatGPT hoy en México: precio de ChatGPT Plus actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
 herramienta: "ChatGPT"
 herramientaId: "chatgpt"
 sitioOficial: "https://chatgpt.com/"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Canva hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Canva hoy en México: precio de Canva Pro con IA (Magic Studio) actualizado con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Canva hoy en México: precio de Canva Pro con IA (Magic Studio) actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
 herramienta: "Canva"
 herramientaId: "canva"
 sitioOficial: "https://www.canva.com/pricing/"

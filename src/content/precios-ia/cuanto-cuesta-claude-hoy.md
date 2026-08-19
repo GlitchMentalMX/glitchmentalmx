@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Claude hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Claude hoy en México: precio de Claude Pro actualizado con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Claude hoy en México: precio de Claude Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
 herramienta: "Claude"
 herramientaId: "claude"
 sitioOficial: "https://claude.com/pricing"

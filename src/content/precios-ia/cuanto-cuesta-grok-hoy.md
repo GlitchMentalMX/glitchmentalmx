@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Grok hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Grok hoy en México: precio de SuperGrok actualizado con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Grok hoy en México: precio de SuperGrok actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
 herramienta: "Grok"
 herramientaId: "grok"
 sitioOficial: "https://grok.com/plans"
