@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+import PreciosTicker from '../components/PreciosTicker.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -186,6 +187,8 @@ const signalPools = {
       <span class="signal-arrow" aria-hidden="true">→</span>
     </a>
   </section>
+
+  <PreciosTicker />
 
   {featured && (
     <section class="featured container">
