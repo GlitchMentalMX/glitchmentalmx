@@ -39,7 +39,7 @@ const items = ORDEN.map((id) => {
 {items.length > 0 && (
   <section class="precios-ticker container" aria-label="Cuánto cuesta la IA hoy">
     <div class="ticker-wrap">
-      <span class="ticker-title">Cuánto cuesta la IA hoy:</span>
+      <a href="/precios-ia/" class="ticker-title">Cuánto cuesta la IA hoy:</a>
       <div class="ticker-viewport">
         <div class="ticker-track">
           {[0, 1].map((copy) => (
@@ -79,6 +79,7 @@ const items = ORDEN.map((id) => {
     color: var(--text-faint);
     white-space: nowrap;
   }
+  .ticker-title:hover { color: var(--accent); }
   .ticker-viewport {
     flex: 1;
     min-width: 0;
