@@ -23,16 +23,16 @@ const items = ORDEN.map((id) => {
   const post = postByHerramientaId.get(id);
   const precio = (preciosUSD as Record<string, { precioUSD: number }>)[id];
   if (!post || !precio) return null;
-  const label =
-    precio.precioUSD === 0
-      ? 'Gratis'
-      : (precio.precioUSD * tipoCambio.valor).toLocaleString('es-MX', {
-          style: 'currency',
-          currency: 'MXN',
-          minimumFractionDigits: 0,
-          maximumFractionDigits: 0,
-        });
-  return { herramienta: post.data.herramienta, label, href: `/articulos/${post.id}/` };
+  const esGratis = precio.precioUSD === 0;
+  const label = esGratis
+    ? 'Gratis'
+    : (precio.precioUSD * tipoCambio.valor).toLocaleString('es-MX', {
+        style: 'currency',
+        currency: 'MXN',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      });
+  return { herramienta: post.data.herramienta, label, esGratis, href: `/articulos/${post.id}/` };
 }).filter((i): i is NonNullable<typeof i> => i !== null);
 ---
 
@@ -47,7 +47,7 @@ const items = ORDEN.map((id) => {
               {items.map((item) => (
                 <a href={item.href} class="ticker-item">
                   <span class="ticker-name">{item.herramienta}</span>
-                  <span class="ticker-price">{item.label}</span>
+                  <span class="ticker-price">{item.label}{!item.esGratis && <sub class="ticker-currency">MXN</sub>}</span>
                 </a>
               ))}
             </span>
@@ -111,6 +111,13 @@ const items = ORDEN.map((id) => {
   .ticker-item:hover .ticker-name { color: var(--accent); }
   .ticker-name { font-size: 0.86rem; font-weight: 600; }
   .ticker-price { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted); }
+  .ticker-currency {
+    margin-left: 3px;
+    font-size: 0.65em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--text-faint);
+  }
 
   @keyframes ticker-scroll {
     from { transform: translateX(0); }
