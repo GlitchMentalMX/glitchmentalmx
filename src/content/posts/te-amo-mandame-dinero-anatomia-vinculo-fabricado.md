@@ -1,12 +1,12 @@
 ---
 title: 'Te amo, mándame dinero: anatomía del vínculo fabricado'
 category: Cultura Digital
-pubDate: 2026-08-17T12:09
+pubDate: 2026-08-18T06:40
 updatedDate: ''
 description: 'El fraude romántico no vende amor: vende semanas de guion perfeccionado. Datos del FBI, CONDUSEF y la nueva propuesta legislativa de la CDMX.'
 heroImage: /images/uploads/Te amo, mándame dinero.webp
 heroImageAlt: 'Fraude romántico: mujer con teléfono rodeada de capas de mensajes reescritos en la noche'
-draft: true
+draft: false
 ---
 
 El fraude romántico movió **929 millones de dólares en pérdidas reportadas solo en Estados Unidos durante 2025**, según el reporte anual del FBI. La cifra no mide ingenuidad: mide semanas de guion perfeccionado, calendario y ritmo. Eso es lo que este artículo diseca.
