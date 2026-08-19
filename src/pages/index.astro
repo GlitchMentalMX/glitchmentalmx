@@ -234,13 +234,20 @@ const signalPools = {
         <h2>Coordenadas</h2>
       </div>
       <div class="recent-rail">
-        {recentThree.map((post) => (
-          <a class="recent-card" href={`/articulos/${post.id}/`} style={`background-image: url(${post.data.heroImage})`}>
-            <span class="glitch-r" style={`background-image: url(${post.data.heroImage})`}></span>
-            <span class="glitch-b" style={`background-image: url(${post.data.heroImage})`}></span>
-            <span class="title">{post.data.title}</span>
-          </a>
-        ))}
+        {recentThree.map((post) => {
+          // Encode + comillas: nombres de archivo subidos con espacios o
+          // acentos (p. ej. "Cero Orgánico - la novela.webp") rompen un
+          // url(...) sin comillas — el navegador corta la URL en el primer
+          // espacio y no carga la imagen.
+          const bg = `background-image: url('${encodeURI(post.data.heroImage)}')`;
+          return (
+            <a class="recent-card" href={`/articulos/${post.id}/`} style={bg}>
+              <span class="glitch-r" style={bg}></span>
+              <span class="glitch-b" style={bg}></span>
+              <span class="title">{post.data.title}</span>
+            </a>
+          );
+        })}
       </div>
     </section>
   )}
