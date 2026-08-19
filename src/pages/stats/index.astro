@@ -25,6 +25,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
         </div>
         <div class="head-controls">
           <div class="range-picker" role="group" aria-label="Rango de fechas">
+            <button type="button" class="range-btn" data-range="24h">24 horas</button>
             <button type="button" class="range-btn" data-range="7d">7 días</button>
             <button type="button" class="range-btn active" data-range="30d">30 días</button>
             <button type="button" class="range-btn" data-range="90d">90 días</button>
@@ -156,6 +157,17 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo' };
   const DEVICE_LABELS = { desktop: 'Escritorio', mobile: 'Móvil', tablet: 'Tablet' };
 
+  const countryDisplayNames = window.Intl && Intl.DisplayNames ? new Intl.DisplayNames(['es'], { type: 'region' }) : null;
+  function countryLabel(code) {
+    if (!code || code === 'XX') return 'Desconocido';
+    if (!countryDisplayNames) return code;
+    try {
+      return countryDisplayNames.of(code) || code;
+    } catch (e) {
+      return code;
+    }
+  }
+
   function renderDashboard(data) {
     document.getElementById('stat-views').textContent = fmt(data.totals.views);
     document.getElementById('stat-uniques').textContent = fmt(data.totals.uniques);
@@ -166,7 +178,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     renderTable(document.getElementById('table-pages'), data.top_pages, 'path', 'views');
     renderTable(document.getElementById('table-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
     renderTable(document.getElementById('table-referrers'), data.referrers, 'referrer_host', 'views');
-    renderTable(document.getElementById('table-countries'), data.countries, 'country', 'views');
+    renderTable(document.getElementById('table-countries'), data.countries, 'country', 'views', countryLabel);
     renderTable(document.getElementById('table-devices'), data.devices, 'device', 'views', (d) => DEVICE_LABELS[d] || d);
     renderTable(document.getElementById('table-os'), data.os, 'os', 'views');
     renderTable(document.getElementById('table-browsers'), data.browsers, 'browser', 'views');

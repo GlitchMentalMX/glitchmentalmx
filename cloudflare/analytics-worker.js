@@ -149,8 +149,12 @@ async function handleStats(request, env, url, matchedOrigin) {
   }
 
   const rangeParam = url.searchParams.get('range') || '30d';
-  const days = rangeParam === '7d' ? 7 : rangeParam === '90d' ? 90 : 30;
-  const sinceDay = mxDay(new Date(Date.now() - days * 86400000));
+  // "24h" es una ventana móvil real (últimas 24 horas exactas desde ahora),
+  // no un corte por día calendario — por eso todo se filtra por ts (segundos
+  // unix) en vez de por la columna day.
+  const RANGE_SECONDS = { '24h': 24 * 3600, '7d': 7 * 86400, '30d': 30 * 86400, '90d': 90 * 86400 };
+  const rangeSeconds = RANGE_SECONDS[rangeParam] || RANGE_SECONDS['30d'];
+  const sinceTs = Math.floor(Date.now() / 1000) - rangeSeconds;
 
   try {
     const [
@@ -166,55 +170,55 @@ async function handleStats(request, env, url, matchedOrigin) {
       osRows,
       browserRows,
     ] = await Promise.all([
-      env.DB.prepare('SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE day >= ? AND is_bot = 0')
-        .bind(sinceDay)
+      env.DB.prepare('SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND is_bot = 0')
+        .bind(sinceTs)
         .first(),
-      env.DB.prepare('SELECT COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 1').bind(sinceDay).first(),
+      env.DB.prepare('SELECT COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 1').bind(sinceTs).first(),
       env.DB.prepare('SELECT COUNT(*) AS views FROM hits WHERE is_bot = 0').first(),
       env.DB.prepare(
-        'SELECT day, COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY day ORDER BY day'
+        'SELECT day, COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY day ORDER BY day'
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
       env.DB.prepare(
-        'SELECT path, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20'
+        'SELECT path, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20'
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
       env.DB.prepare(
-        'SELECT traffic_source, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY traffic_source ORDER BY views DESC'
+        'SELECT traffic_source, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY traffic_source ORDER BY views DESC'
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
       env.DB.prepare(
         `SELECT referrer_host, COUNT(*) AS views FROM hits
-         WHERE day >= ? AND is_bot = 0 AND referrer_host != '' GROUP BY referrer_host ORDER BY views DESC LIMIT 15`
+         WHERE ts >= ? AND is_bot = 0 AND referrer_host != '' GROUP BY referrer_host ORDER BY views DESC LIMIT 15`
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
       env.DB.prepare(
-        'SELECT country, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY country ORDER BY views DESC LIMIT 20'
+        'SELECT country, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY country ORDER BY views DESC LIMIT 20'
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
       env.DB.prepare(
-        'SELECT device, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY device ORDER BY views DESC'
+        'SELECT device, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY device ORDER BY views DESC'
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
-      env.DB.prepare('SELECT os, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY os ORDER BY views DESC')
-        .bind(sinceDay)
+      env.DB.prepare('SELECT os, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY os ORDER BY views DESC')
+        .bind(sinceTs)
         .all(),
       env.DB.prepare(
-        'SELECT browser, COUNT(*) AS views FROM hits WHERE day >= ? AND is_bot = 0 GROUP BY browser ORDER BY views DESC'
+        'SELECT browser, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY browser ORDER BY views DESC'
       )
-        .bind(sinceDay)
+        .bind(sinceTs)
         .all(),
     ]);
 
     return json(
       {
-        range_days: days,
+        range: rangeParam,
         totals: { views: totals?.views || 0, uniques: totals?.uniques || 0 },
         bot_views: botTotals?.views || 0,
         cumulative_views: cumulative?.views || 0,
