@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Breadcrumbs from './Breadcrumbs.astro';
 import PageHeader from './PageHeader.astro';
 import { render } from 'astro:content';
+import { mdStrip } from '../lib/format';
 
 const { entry } = Astro.props;
 const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
@@ -9,6 +11,7 @@ const { Content } = await render(entry);
 ---
 
 <Layout title={title} description={description} noIndex={noIndex}>
+  <Breadcrumbs items={[{ name: mdStrip(headline) }]} />
   <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
   <section class="container prose">
     <Content />

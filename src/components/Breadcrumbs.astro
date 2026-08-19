@@ -1,0 +1,88 @@
+---
+// src/components/Breadcrumbs.astro
+//
+// Uso:
+// <Breadcrumbs items={[
+//   { name: 'Inteligencia Artificial', url: '/categoria/inteligencia-artificial/' },
+//   { name: title }, // el último item no lleva url (es la página actual)
+// ]} />
+//
+// "Inicio" se agrega automáticamente como primer nivel — no hace falta pasarlo.
+
+interface Item {
+  name: string;
+  url?: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+
+const allItems: Item[] = [{ name: 'Inicio', url: '/' }, ...items];
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: allItems.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    ...(item.url ? { item: new URL(item.url, Astro.site).toString() } : {}),
+  })),
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+<nav class="breadcrumbs container" aria-label="Ruta de navegación">
+  <ol>
+    {allItems.map((item, index) => (
+      <li>
+        {item.url && index < allItems.length - 1 ? (
+          <a href={item.url}>{item.name}</a>
+        ) : (
+          <span aria-current="page">{item.name}</span>
+        )}
+        {index < allItems.length - 1 && <span class="sep" aria-hidden="true">/</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<style>
+  .breadcrumbs {
+    padding-top: 20px;
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-faint);
+  }
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .breadcrumbs a {
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+  .breadcrumbs a:hover {
+    color: var(--accent);
+  }
+  .breadcrumbs span[aria-current] {
+    color: var(--text-faint);
+  }
+  .breadcrumbs .sep {
+    color: var(--border-strong);
+  }
+</style>

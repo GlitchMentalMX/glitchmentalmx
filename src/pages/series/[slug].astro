@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
 import BookPromo from '../../components/BookPromo.astro';
 import { getCollection, getEntry } from 'astro:content';
@@ -21,6 +22,10 @@ const book = series.data.relatedBook ? getBook(series.data.relatedBook) : undefi
 ---
 
 <Layout title={series.data.title} description={series.data.description}>
+  <Breadcrumbs items={[
+    { name: 'Series editoriales', url: '/series/' },
+    { name: series.data.title },
+  ]} />
   <section class="container header">
     <p class="eyebrow">{series.data.status === 'coming-soon' ? 'Serie editorial · Próximamente' : `Serie editorial · ${posts.length} artículos`}</p>
     <h1>{series.data.title}</h1>

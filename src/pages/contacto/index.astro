@@ -1,13 +1,16 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { getEntry } from 'astro:content';
+import { mdStrip } from '../../lib/format';
 
 const entry = await getEntry('pages', 'contacto');
 const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
 ---
 
 <Layout title={title} description={description} noIndex={noIndex}>
+  <Breadcrumbs items={[{ name: mdStrip(headline) }]} />
   <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
 
   <section class="container form-wrap">

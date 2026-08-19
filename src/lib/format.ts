@@ -37,3 +37,10 @@ export function mdAccent(text: string): string {
     .replace(/>/g, '&gt;');
   return escaped.replace(/\*\*(.+?)\*\*/g, '<span class="accent">$1</span>');
 }
+
+// Quita los marcadores **frase** sin envolver nada en HTML — para usar un
+// headline (pensado para mdAccent) como texto plano, p. ej. en breadcrumbs o
+// JSON-LD, donde los asteriscos literales no deben aparecer.
+export function mdStrip(text: string): string {
+  return text.replace(/\*\*(.+?)\*\*/g, '$1');
+}

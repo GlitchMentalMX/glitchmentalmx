@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { mdBold } from '../../lib/format';
@@ -57,6 +58,10 @@ const capstonePost = hub.data.capstone ? postMap.get(hub.data.capstone) : undefi
 ---
 
 <Layout title={hub.data.title} description={hub.data.description}>
+  <Breadcrumbs items={[
+    { name: 'Colecciones', url: '/colecciones/' },
+    { name: hub.data.title },
+  ]} />
   <section class="container header">
     <p class="eyebrow">
       Colección · {posts.length} artículos{sections ? ` · ${sections.length} secciones` : ''}

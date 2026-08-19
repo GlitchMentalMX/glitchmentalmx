@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import SeriesCallout from '../../components/SeriesCallout.astro';
 import BookPromo from '../../components/BookPromo.astro';
 import ToolPromo from '../../components/ToolPromo.astro';
@@ -153,6 +154,10 @@ const articleSchema = {
 
 <Layout title={title} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <Breadcrumbs items={[
+    { name: category, url: `/categoria/${categorySlug(category)}/` },
+    { name: title },
+  ]} />
   <article class="post">
     <header class="post-header container">
       <a href={`/categoria/${categorySlug(category)}/`} class="tag category-tag">{category}</a>
