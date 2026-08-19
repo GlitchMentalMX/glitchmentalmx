@@ -4,8 +4,8 @@ resumen: 'En 2024, 85% de los adultos estadounidenses dijo usar YouTube. El vide
 imagen: /images/uploads/Redes Infraestructura.webp
 imagenAlt: 'YouTube infraestructura digital: mujer joven en un panel pared con pantalla y medidor eléctrico, control remoto y tablet juntos'
 enlace: ''
-date: 2026-08-18T19:49
-draft: true
+date: 2026-08-19T05:09
+draft: false
 categoria: Cultura Digital
 punchline: Algunas redes dejan de ser redes y se vuelven infraestructura
 ---
