@@ -1,0 +1,22 @@
+---
+title: "¿Cuánto cuesta Amazon Q Developer hoy? Precio en pesos mexicanos actualizado"
+description: "Cuánto cuesta Amazon Q Developer hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+herramienta: "Amazon Q Developer"
+herramientaId: "amazon-q-developer"
+sitioOficial: "https://aws.amazon.com/q/developer/pricing/"
+pubDate: 2026-08-23
+---
+
+## Qué cambia el precio final
+
+Amazon Q Developer Pro cuesta $19 USD al mes por usuario — y a diferencia de casi toda esta lista, AWS no ofrece ningún descuento por pago anual. Es el asistente de código oficial de Amazon Web Services, pensado especialmente para quien ya trabaja dentro del ecosistema de AWS (bases de datos, servidores, servicios en la nube) más que como un competidor genérico de GitHub Copilot o Cursor, ambos ya cubiertos en esta serie — aunque también funciona como asistente de código independiente de si usas AWS o no.
+
+## Qué incluye el plan pagado
+
+Pro eleva los límites de solicitudes agénticas del plan gratuito (que da 50 al mes), amplía la transformación automática de código Java hasta 4,000 líneas por usuario al mes, y suma un panel de administración para equipos, indemnización de propiedad intelectual, y exclusión automática de que tu código se use para entrenar modelos. El plan gratuito ya permite usar el asistente de forma limitada — suficiente para probarlo, no para trabajo diario intensivo.
+
+## La indemnización de propiedad intelectual es un diferenciador poco común en esta lista
+
+Amazon Q Developer Pro incluye una garantía legal de que la empresa te protege si el código que genera infringe derechos de autor de terceros — una protección que la mayoría de asistentes de código de esta serie no destacan de forma tan explícita. Si trabajas en un entorno corporativo donde ese riesgo legal importa, es un punto a favor que va más allá de las funciones técnicas.
+
+<a href="https://aws.amazon.com/q/developer/pricing/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Amazon Q Developer →</a>

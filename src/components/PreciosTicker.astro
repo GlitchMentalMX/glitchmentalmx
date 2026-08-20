@@ -20,7 +20,8 @@ const ORDEN = [
   'capcut', 'descript', 'photoroom', 'remove-bg', 'krea-ai', 'recraft-ai',
   'playground-ai', 'freepik', 'udio', 'murf-ai', 'otter-ai', 'fireflies-ai',
   'replit', 'tabnine', 'windsurf', 'poe', 'le-chat', 'speechify', 'invideo-ai',
-  'pictory', 'elicit',
+  'pictory', 'elicit', 'amazon-q-developer', 'lovable', 'bolt-new', 'v0',
+  'framer', 'manychat', 'zapier', 'beautiful-ai',
 ];
 
 const posts = await getCollection('preciosIA', ({ data }) => !data.draft);
@@ -41,6 +42,12 @@ const items = ORDEN.map((id) => {
       });
   return { herramienta: post.data.herramienta, label, esGratis, href: `/articulos/${post.id}/` };
 }).filter((i): i is NonNullable<typeof i> => i !== null);
+
+// La duración escala con la cantidad de herramientas para que la velocidad
+// visual (px/segundo) se mantenga constante sin importar cuántas se agreguen
+// en rondas futuras — antes era un valor fijo (55s) que se sentía cada vez
+// más rápido conforme crecía la lista, de 14 a 52 herramientas.
+const duracionSegundos = items.length * 4.5;
 ---
 
 {items.length > 0 && (
@@ -48,7 +55,7 @@ const items = ORDEN.map((id) => {
     <div class="ticker-wrap">
       <a href="/precios-ia/" class="ticker-title">Cuánto cuesta la IA hoy:</a>
       <div class="ticker-viewport">
-        <div class="ticker-track">
+        <div class="ticker-track" style={`--ticker-duration: ${duracionSegundos}s`}>
           {[0, 1].map((copy) => (
             <span class="ticker-copy" aria-hidden={copy === 1 ? 'true' : undefined}>
               {items.map((item) => (
@@ -96,7 +103,7 @@ const items = ORDEN.map((id) => {
   .ticker-track {
     display: flex;
     width: max-content;
-    animation: ticker-scroll 55s linear infinite;
+    animation: ticker-scroll var(--ticker-duration, 180s) linear infinite;
   }
   .ticker-wrap:hover .ticker-track,
   .ticker-wrap:focus-within .ticker-track {

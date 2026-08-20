@@ -50,5 +50,13 @@
   "speechify": { "nombre": "Speechify Premium", "precioUSD": 29, "periodo": "mensual", "empresa": "Speechify Inc." },
   "invideo-ai": { "nombre": "InVideo Plus", "precioUSD": 17, "periodo": "mensual", "empresa": "InVideo Inc." },
   "pictory": { "nombre": "Pictory Starter", "precioUSD": 29, "periodo": "mensual", "empresa": "Pictory AI, Inc." },
-  "elicit": { "nombre": "Elicit Pro", "precioUSD": 49, "periodo": "mensual", "empresa": "Elicit (Ought Inc.)" }
+  "elicit": { "nombre": "Elicit Pro", "precioUSD": 49, "periodo": "mensual", "empresa": "Elicit (Ought Inc.)" },
+  "amazon-q-developer": { "nombre": "Amazon Q Developer Pro", "precioUSD": 19, "periodo": "mensual", "empresa": "Amazon Web Services" },
+  "lovable": { "nombre": "Lovable Pro", "precioUSD": 25, "periodo": "mensual", "empresa": "Lovable Labs AB" },
+  "bolt-new": { "nombre": "Bolt.new Pro", "precioUSD": 25, "periodo": "mensual", "empresa": "StackBlitz, Inc." },
+  "v0": { "nombre": "v0 Plus", "precioUSD": 30, "periodo": "mensual", "empresa": "Vercel Inc." },
+  "framer": { "nombre": "Framer Pro", "precioUSD": 30, "periodo": "mensual", "empresa": "Framer B.V." },
+  "manychat": { "nombre": "ManyChat Pro", "precioUSD": 29, "periodo": "mensual", "empresa": "Manychat, Inc." },
+  "zapier": { "nombre": "Zapier Professional", "precioUSD": 29.99, "periodo": "mensual", "empresa": "Zapier Inc." },
+  "beautiful-ai": { "nombre": "Beautiful.ai Pro", "precioUSD": 45, "periodo": "mensual", "empresa": "Beautiful.ai, Inc." }
 }
