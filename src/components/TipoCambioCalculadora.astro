@@ -10,9 +10,10 @@ import { formatDate } from '../lib/format';
 
 interface Props {
   herramientaId: string;
+  herramienta: string;
 }
 
-const { herramientaId } = Astro.props;
+const { herramientaId, herramienta } = Astro.props;
 const precio = (preciosUSD as Record<string, { nombre: string; precioUSD: number; periodo: string }>)[
   herramientaId
 ];
@@ -32,7 +33,7 @@ const esGratis = precio.precioUSD === 0;
 ---
 
 <div class="calc-box" aria-label={`Calculadora de precio de ${precio.nombre} en pesos mexicanos`}>
-  <p class="calc-label">Precio de hoy</p>
+  <p class="calc-label">Precio de hoy · {herramienta}</p>
   {esGratis ? (
     <div class="calc-row">
       <span class="calc-mxn">$0 MXN — es gratis</span>

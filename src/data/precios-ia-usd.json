@@ -12,5 +12,10 @@
   "adobe-firefly": { "nombre": "Adobe Firefly Standard", "precioUSD": 9.99, "periodo": "mensual", "empresa": "Adobe" },
   "elevenlabs": { "nombre": "ElevenLabs Creator", "precioUSD": 22, "periodo": "mensual", "empresa": "ElevenLabs" },
   "midjourney": { "nombre": "Midjourney Basic", "precioUSD": 10, "periodo": "mensual", "empresa": "Midjourney, Inc." },
-  "runway": { "nombre": "Runway Standard", "precioUSD": 15, "periodo": "mensual", "empresa": "Runway AI, Inc." }
+  "runway": { "nombre": "Runway Standard", "precioUSD": 15, "periodo": "mensual", "empresa": "Runway AI, Inc." },
+  "suno": { "nombre": "Suno Pro", "precioUSD": 8, "periodo": "mensual", "empresa": "Suno" },
+  "deepl": { "nombre": "DeepL Pro Individual", "precioUSD": 10.49, "periodo": "mensual", "empresa": "DeepL SE" },
+  "leonardo-ai": { "nombre": "Leonardo AI Essential", "precioUSD": 12, "periodo": "mensual", "empresa": "Leonardo AI" },
+  "character-ai": { "nombre": "Character.AI Plus (c.ai+)", "precioUSD": 9.99, "periodo": "mensual", "empresa": "Character Technologies, Inc." },
+  "github-copilot": { "nombre": "GitHub Copilot Pro", "precioUSD": 10, "periodo": "mensual", "empresa": "GitHub (Microsoft)" }
 }
