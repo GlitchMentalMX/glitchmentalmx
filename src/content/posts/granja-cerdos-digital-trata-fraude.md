@@ -1,12 +1,12 @@
 ---
 title: 'La granja de cerdos digital: la trata detrás del fraude'
 category: Cultura Digital
-pubDate: 2026-08-19T19:33
+pubDate: 2026-08-20T05:33
 updatedDate: ''
 description: El operador que te enamora en un fraude también fue reclutado con una oferta de empleo falsa. La misma trampa, aplicada dos veces.
 heroImage: /images/uploads/granja-de-cerdos-digital.webp
 heroImageAlt: 'Trata de personas en fraude digital: mujer escribe en teléfono rodeada de perfiles falsos en pantallas y ventana enrejada'
-draft: true
+draft: false
 ---
 
 Camboya. Los operadores de las estafas conocidas como "pig butchering" —el fraude que **engorda a la víctima con semanas de vínculo emocional o financiero antes de vaciarle la cuenta**— no siempre son delincuentes libres. Muchos llegaron reclutados con la misma oferta de empleo falsa que después usan para atrapar a un desconocido. Es fraude recursivo, no una historia de rescate.
