@@ -1,7 +1,7 @@
 ---
 title: 'La granja de cerdos digital: la trata detrás del fraude'
 category: Cultura Digital
-pubDate: 2026-08-19T19:24
+pubDate: 2026-08-19T19:33
 updatedDate: ''
 description: El operador que te enamora en un fraude también fue reclutado con una oferta de empleo falsa. La misma trampa, aplicada dos veces.
 heroImage: /images/uploads/granja-de-cerdos-digital.webp
@@ -21,7 +21,7 @@ El error no es semántico. **Tratar al operador exclusivamente como criminal bor
 
 La segunda entrega de esta serie, [Te amo, mándame dinero](/articulos/te-amo-mandame-dinero-anatomia-vinculo-fabricado/), describió cómo se fabrica un vínculo emocional falso para vaciar la cuenta de una víctima. Lo que casi nadie cuenta es que ese mismo guion —la oferta que suena demasiado buena, la urgencia, la confianza construida en capas— **ya se usó una vez antes, contra la persona que ahora lo está aplicando**.
 
-El caso de 17 colombianos que escaparon en febrero de 2026 de un complejo camboyano, documentado por _El Tiempo_, lo ilustra con precisión quirúrgica: **los reclutó una oferta de empleo en atención al cliente**, con tiquetes aéreos, hospedaje, salario cercano a mil dólares y visa de trabajo incluidos. Al llegar a Camboya, el trabajo real era operar estafas digitales dirigidas a víctimas en México, Perú y Ecuador.
+El caso de 17 colombianos que escaparon en febrero de 2026 de un complejo camboyano, documentado por _El Tiempo_, lo ilustra con precisión quirúrgica: **los reclutó una oferta de empleo en atención al cliente**, con boletos de avión, hospedaje, salario cercano a mil dólares y visa de trabajo incluidos. Al llegar a Camboya, el trabajo real era operar estafas digitales dirigidas a víctimas en México, Perú y Ecuador.
 
 > El mensaje que te enamora en la madrugada lo escribe alguien a quien también le prometieron un empleo que nunca existió.
 
@@ -45,7 +45,7 @@ La Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC) calculó p
 
 El tamaño relativo también importa: según un análisis del United States Institute of Peace, solo Myanmar, Camboya y Laos generan unos 43,800 millones de dólares anuales en ganancias ilícitas por esta industria, una cifra equivalente a cerca del 40% del producto interno bruto combinado de los tres países. **No es crimen organizado incrustado en la economía; en algunas zonas, es la economía.**
 
-## Cierre: México y LATAM
+## México y LATAM
 
 Ningún reporte confiable documenta hasta ahora trata de mexicanos hacia estos complejos como mano de obra —a diferencia de los casos ya verificados con nombre, fecha y fiscalía en Colombia y Ecuador—. Pero **México sí aparece del otro lado de la cadena: como uno de los mercados donde la red que operaba a los 17 colombianos rescatados dirigía sus estafas**. En marzo de 2026, la Fiscalía de Ecuador desarticuló además una red que enviaba ciudadanos ecuatorianos a Camboya bajo el mismo esquema de empleo falso, rescatando a tres personas e identificando a otras nueve que seguían retenidas.
 
