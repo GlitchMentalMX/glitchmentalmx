@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Suno hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Suno hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Suno hoy en México: su plan gratis no da derechos de uso comercial sobre lo que generas. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "Suno"
 herramientaId: "suno"
 sitioOficial: "https://suno.com/pricing"

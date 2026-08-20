@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Poe hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Poe hoy en México: precio del plan Premium actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Poe hoy en México: no da acceso ilimitado, reparte puntos entre distintos modelos de IA. Precio del plan Premium actualizado con Banxico."
 herramienta: "Poe"
 herramientaId: "poe"
 sitioOficial: "https://poe.com/subscription_plans"

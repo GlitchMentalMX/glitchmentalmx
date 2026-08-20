@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Lovable hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Lovable hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Lovable hoy en México: genera la aplicación completa a partir de una descripción en texto. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "Lovable"
 herramientaId: "lovable"
 sitioOficial: "https://lovable.dev/pricing"

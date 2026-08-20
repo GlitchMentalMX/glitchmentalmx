@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta PixVerse hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta PixVerse hoy en México: precio del plan Standard actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta PixVerse hoy en México: da 60 créditos diarios gratis incluso si ya pagas el plan Standard. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "PixVerse"
 herramientaId: "pixverse"
 sitioOficial: "https://app.pixverse.ai/subscribe"

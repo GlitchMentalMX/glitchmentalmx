@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Otter.ai hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Otter.ai hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Otter.ai hoy en México: 1,200 minutos al mes equivalen a solo 20 reuniones de una hora. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "Otter.ai"
 herramientaId: "otter-ai"
 sitioOficial: "https://otter.ai/pricing"

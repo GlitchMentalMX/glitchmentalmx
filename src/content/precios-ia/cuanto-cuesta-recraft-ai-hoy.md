@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Recraft hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Recraft hoy en México: precio del plan Basic actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Recraft hoy en México: el plan gratis no da derechos de uso comercial sobre lo que generas. Precio actualizado con Banxico."
 herramienta: "Recraft"
 herramientaId: "recraft-ai"
 sitioOficial: "https://www.recraft.ai/pricing"

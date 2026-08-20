@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Replit hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Replit hoy en México: precio del plan Core actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Replit hoy en México: la mensualidad incluye créditos del Agent que se pueden agotar antes de fin de mes. Actualizado con Banxico."
 herramienta: "Replit"
 herramientaId: "replit"
 sitioOficial: "https://replit.com/pricing"

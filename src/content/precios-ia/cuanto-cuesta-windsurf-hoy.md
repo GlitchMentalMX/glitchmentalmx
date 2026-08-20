@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Windsurf hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Windsurf hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Windsurf hoy en México: fue adquirida por Cognition y su sitio redirige a Devin AI. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "Windsurf"
 herramientaId: "windsurf"
 sitioOficial: "https://windsurf.com/pricing"

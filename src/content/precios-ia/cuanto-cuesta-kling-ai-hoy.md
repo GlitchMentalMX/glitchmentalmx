@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Kling AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Kling AI hoy en México: en el plan gratis, lo que generas no se puede usar comercialmente. Precio del plan Standard actualizado con el tipo de cambio de Banxico."
+description: "Cuánto cuesta Kling AI hoy en México: en el plan gratis, lo que generas no se puede usar comercialmente. Precio actualizado con Banxico."
 herramienta: "Kling AI"
 herramientaId: "kling-ai"
 sitioOficial: "https://app.klingai.com/global/membership/membership-plan"

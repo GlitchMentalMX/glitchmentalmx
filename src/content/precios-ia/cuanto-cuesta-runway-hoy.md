@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Runway hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Runway hoy en México: precio del plan Standard actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Runway hoy en México: el video consume créditos mucho más rápido que la imagen. Precio del plan Standard actualizado con el tipo de cambio de Banxico."
 herramienta: "Runway"
 herramientaId: "runway"
 sitioOficial: "https://runway.com/pricing"

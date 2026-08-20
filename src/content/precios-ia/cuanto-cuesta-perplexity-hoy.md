@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Perplexity hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Perplexity hoy en México: precio de Perplexity Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Perplexity hoy en México: el $17 que ves en pantalla es una promo, el precio de lista es $20. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "Perplexity"
 herramientaId: "perplexity"
 sitioOficial: "https://www.perplexity.ai/pro"

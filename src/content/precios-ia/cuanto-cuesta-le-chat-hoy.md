@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Le Chat hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Le Chat hoy en México: precio del plan Pro de Mistral AI actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Le Chat hoy en México: es de Mistral AI, con sede en Europa, y el más barato de los chats generales. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "Le Chat"
 herramientaId: "le-chat"
 sitioOficial: "https://mistral.ai/pricing"

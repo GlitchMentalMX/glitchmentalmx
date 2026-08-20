@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta remove.bg hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta remove.bg hoy en México: precio del plan Lite actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta remove.bg hoy en México: cobra por créditos, cada imagen procesada consume uno. Precio del plan Lite actualizado con el tipo de cambio oficial de Banxico."
 herramienta: "remove.bg"
 herramientaId: "remove-bg"
 sitioOficial: "https://www.remove.bg/pricing"

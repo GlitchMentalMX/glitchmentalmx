@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Photoroom hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Photoroom hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Photoroom hoy en México: es de Canva, pero no viene incluido si ya pagas Canva Pro. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "Photoroom"
 herramientaId: "photoroom"
 sitioOficial: "https://www.photoroom.com/pricing"

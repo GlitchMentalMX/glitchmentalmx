@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Playground AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Playground AI hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Playground AI hoy en México: el plan gratis da solo 3 generaciones al mes. Precio del plan Pro actualizado con el tipo de cambio oficial de Banxico."
 herramienta: "Playground AI"
 herramientaId: "playground-ai"
 sitioOficial: "https://playgroundai.com/pricing"

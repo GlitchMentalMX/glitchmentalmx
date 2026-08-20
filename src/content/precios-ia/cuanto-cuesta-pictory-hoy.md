@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Pictory hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Pictory hoy en México: precio del plan Starter actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Pictory hoy en México: convierte texto y artículos ya escritos en video, no genera desde cero. Precio actualizado con Banxico."
 herramienta: "Pictory"
 herramientaId: "pictory"
 sitioOficial: "https://pictory.ai/pricing"
