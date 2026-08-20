@@ -1,7 +1,7 @@
 ---
 title: 'La granja de cerdos digital: la trata detrás del fraude'
 category: Cultura Digital
-pubDate: 2026-08-19T19:20
+pubDate: 2026-08-19T19:24
 updatedDate: ''
 description: El operador que te enamora en un fraude también fue reclutado con una oferta de empleo falsa. La misma trampa, aplicada dos veces.
 heroImage: /images/uploads/granja-de-cerdos-digital.webp
@@ -19,7 +19,7 @@ El error no es semántico. **Tratar al operador exclusivamente como criminal bor
 
 ## El mismo guion, dos veces
 
-La primera entrega de esta serie, [Te amo, mándame dinero](/articulos/te-amo-mandame-dinero-anatomia-vinculo-fabricado/), describió cómo se fabrica un vínculo emocional falso para vaciar la cuenta de una víctima. Lo que casi nadie cuenta es que ese mismo guion —la oferta que suena demasiado buena, la urgencia, la confianza construida en capas— **ya se usó una vez antes, contra la persona que ahora lo está aplicando**.
+La segunda entrega de esta serie, [Te amo, mándame dinero](/articulos/te-amo-mandame-dinero-anatomia-vinculo-fabricado/), describió cómo se fabrica un vínculo emocional falso para vaciar la cuenta de una víctima. Lo que casi nadie cuenta es que ese mismo guion —la oferta que suena demasiado buena, la urgencia, la confianza construida en capas— **ya se usó una vez antes, contra la persona que ahora lo está aplicando**.
 
 El caso de 17 colombianos que escaparon en febrero de 2026 de un complejo camboyano, documentado por _El Tiempo_, lo ilustra con precisión quirúrgica: **los reclutó una oferta de empleo en atención al cliente**, con tiquetes aéreos, hospedaje, salario cercano a mil dólares y visa de trabajo incluidos. Al llegar a Camboya, el trabajo real era operar estafas digitales dirigidas a víctimas en México, Perú y Ecuador.
 
