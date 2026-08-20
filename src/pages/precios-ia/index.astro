@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
+import BuscadorPreciosIA from '../../components/BuscadorPreciosIA.astro';
 import { getCollection } from 'astro:content';
 import tipoCambio from '../../data/tipo-cambio.json';
 import { formatDate } from '../../lib/format';
@@ -9,6 +10,23 @@ import { formatDate } from '../../lib/format';
 const posts = (await getCollection('preciosIA', ({ data }) => !data.draft)).sort((a, b) =>
   a.data.herramienta.localeCompare(b.data.herramienta, 'es')
 );
+
+// Alias cortos para el buscador — solo para los casos donde el nombre real
+// cambió o difiere de lo que la gente probablemente teclea. Opcional a
+// propósito: la mayoría de las herramientas no necesita ninguno.
+const ALIAS: Record<string, string[]> = {
+  'cuanto-cuesta-gemini-hoy': ['google gemini'],
+  'cuanto-cuesta-notebooklm-hoy': ['gemini notebook'],
+  'cuanto-cuesta-copilot-hoy': ['microsoft 365 copilot', 'office copilot'],
+};
+
+// {nombre, slug} generado en build-time desde la colección — nunca una
+// lista escrita a mano que haya que mantener aparte.
+const buscadorItems = posts.map((post) => ({
+  nombre: post.data.herramienta,
+  slug: post.id,
+  alias: ALIAS[post.id],
+}));
 
 const title = 'Precios de IA: cuánto cuesta cada herramienta hoy en México';
 const description =
@@ -29,6 +47,7 @@ const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 
   <section class="container list">
     <p class="eyebrow list-label">Las herramientas</p>
+    <BuscadorPreciosIA items={buscadorItems} />
     {posts.map((post, i) => (
       <CollectionArticleRow
         index={i + 1}
