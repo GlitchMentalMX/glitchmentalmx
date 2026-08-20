@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Freepik hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Freepik hoy en México: precio del plan Premium actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Freepik hoy en México: se rebautizó como Magnific en 2026, mismo sitio, nuevo nombre. Precio actualizado con el tipo de cambio oficial de Banxico."
 herramienta: "Freepik"
 herramientaId: "freepik"
 sitioOficial: "https://www.freepik.com/pricing"

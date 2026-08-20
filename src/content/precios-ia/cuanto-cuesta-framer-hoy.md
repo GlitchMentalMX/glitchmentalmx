@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Framer hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Framer hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Framer hoy en México: su precio en dólares solo se confirma con facturación anual, $30 al mes. Editor de sitios con IA, actualizado con Banxico."
 herramienta: "Framer"
 herramientaId: "framer"
 sitioOficial: "https://www.framer.com/pricing/"

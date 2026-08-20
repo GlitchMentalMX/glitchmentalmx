@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Gemini hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Gemini hoy en México: precio de Google AI Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Gemini hoy en México: el plan se llama Google AI Pro (ya no Gemini Advanced) e incluye 5TB de espacio. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "Gemini"
 herramientaId: "gemini"
 sitioOficial: "https://one.google.com/about/google-ai-plans/"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Elicit hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Elicit hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Elicit hoy en México: su precio solo se confirma con facturación anual, $49 USD al mes. Investigación académica, actualizado con Banxico."
 herramienta: "Elicit"
 herramientaId: "elicit"
 sitioOficial: "https://elicit.com/pricing"

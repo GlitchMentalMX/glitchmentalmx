@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Adobe Firefly hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Adobe Firefly hoy en México: precio del plan Standard actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Adobe Firefly hoy en México: el plan gratis da solo 25 créditos al mes contra 2,000 del plan Standard. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "Adobe Firefly"
 herramientaId: "adobe-firefly"
 sitioOficial: "https://firefly.adobe.com/"

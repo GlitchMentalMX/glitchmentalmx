@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Grammarly hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Grammarly hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Grammarly hoy en México: el plan anual cuesta menos de la mitad que pagar mes a mes. Precio de Grammarly Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "Grammarly"
 herramientaId: "grammarly"
 sitioOficial: "https://www.grammarly.com/pro"

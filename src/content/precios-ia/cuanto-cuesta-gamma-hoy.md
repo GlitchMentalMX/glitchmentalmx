@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Gamma hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Gamma hoy en México: precio del plan Plus actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta Gamma hoy en México: el plan gratis ya genera presentaciones completas, solo con marca de agua. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "Gamma"
 herramientaId: "gamma"
 sitioOficial: "https://gamma.app/pricing"

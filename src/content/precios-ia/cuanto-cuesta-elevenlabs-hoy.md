@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta ElevenLabs hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta ElevenLabs hoy en México: precio del plan Creator actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta ElevenLabs hoy en México: el precio de lista es $22, aunque el primer mes suele venir a mitad de precio. Precio actualizado con el tipo de cambio de Banxico."
 herramienta: "ElevenLabs"
 herramientaId: "elevenlabs"
 sitioOficial: "https://elevenlabs.io/pricing"

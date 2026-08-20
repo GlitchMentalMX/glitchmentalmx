@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta CapCut hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta CapCut hoy en México: precio del plan Pro actualizado diariamente con el tipo de cambio oficial de Banxico. Consulta el precio antes de contratar."
+description: "Cuánto cuesta CapCut hoy en México: la propia empresa avisa que el precio varía por región y plataforma. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
 herramienta: "CapCut"
 herramientaId: "capcut"
 sitioOficial: "https://www.capcut.com/pricing"
