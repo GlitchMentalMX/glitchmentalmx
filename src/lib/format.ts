@@ -11,6 +11,16 @@ export function formatDateShort(date: Date): string {
   return `${date.getDate()} ${MONTHS_ES[date.getMonth()].slice(0, 3)} ${date.getFullYear()}`;
 }
 
+// Title tag corto para la serie "Precios de IA" — deliberadamente distinto
+// del H1 (que se queda largo y descriptivo). Nombres de herramienta cortos
+// (<=12) usan la plantilla larga con pregunta; nombres largos usan la
+// plantilla compacta para no rebasar el ancho de píxel que trunca Google.
+export function buildPrecioIATitleTag(herramienta: string): string {
+  return herramienta.length <= 12
+    ? `¿Cuánto cuesta ${herramienta} hoy? Precio en México (MXN)`
+    : `${herramienta}: precio en MXN hoy, no en USD`;
+}
+
 export function readingTime(text: string): number {
   const words = text.trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 200));

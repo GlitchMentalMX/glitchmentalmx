@@ -8,7 +8,7 @@ import ToolPromo from '../../components/ToolPromo.astro';
 import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import { getCollection, render } from 'astro:content';
-import { formatDate, readingTime } from '../../lib/format';
+import { formatDate, readingTime, buildPrecioIATitleTag } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
 import { getBook } from '../../data/books';
 import tipoCambio from '../../data/tipo-cambio.json';
@@ -212,6 +212,10 @@ const precio =
 const precioMXN = precio ? precio.precioUSD * tipoCambio.valor : undefined;
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 
+// Title tag corto y sin sufijo de sitio, distinto del H1 (que se queda
+// largo). El H1 no cambia — solo lo que ve Google en el <title>.
+const metaTitle = kind === 'preciosIA' ? buildPrecioIATitleTag(herramienta) : title;
+
 const productSchema =
   kind === 'preciosIA' && precio && precioMXN !== undefined
     ? {
@@ -243,7 +247,7 @@ const otrosPreciosIA =
     : [];
 ---
 
-<Layout title={title} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate}>
+<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind !== 'preciosIA'}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
 
@@ -285,7 +289,7 @@ const otrosPreciosIA =
               {precio.precioUSD === 0 ? (
                 <>Cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
               ) : (
-                <>Cuánto cuesta {herramienta} hoy: {precio.nombre} cuesta {precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al {precio.periodo === 'anual' ? 'año' : 'mes'}. Con el tipo de cambio FIX de Banxico de su actualización más reciente ({formatDate(fechaDato)}: ${tipoCambio.valor.toFixed(4)} MXN), eso equivale a {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN, antes de comisiones bancarias o impuestos según tu método de pago.</>
+                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México ({precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al tipo de cambio FIX de Banxico del {formatDate(fechaDato)}), antes de comisiones bancarias o impuestos según tu método de pago.</>
               )}
             </p>
             <TipoCambioCalculadora herramientaId={herramientaId} herramienta={herramienta} />

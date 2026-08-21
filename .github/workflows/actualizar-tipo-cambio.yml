@@ -1,13 +1,13 @@
 name: Actualizar tipo de cambio Banxico
 
-# Corre todos los días a las 14:00 hora CDMX (20:00 UTC) — después de que
-# Banxico publica el dato FIX del día (~12:30 PM CDMX), para que el dato
-# quede etiquetado con la fecha de HOY la mayor parte del día en vez de
-# arrastrar el del día hábil anterior. Fin de semana/festivo: Banxico no
+# Corre todos los días a las 15:00 hora CDMX (21:00 UTC) — después de que
+# Banxico publica el dato FIX del día (a partir de mediodía CDMX), para que
+# el dato quede etiquetado con la fecha de HOY la mayor parte del día en vez
+# de arrastrar el del día hábil anterior. Fin de semana/festivo: Banxico no
 # publica dato nuevo, el script deja el archivo igual y no genera commit.
 on:
   schedule:
-    - cron: '0 20 * * *'
+    - cron: '0 21 * * *'
   workflow_dispatch:
 
 permissions:

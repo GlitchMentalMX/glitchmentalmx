@@ -13,12 +13,13 @@ interface Props {
   type?: 'website' | 'article';
   publishedTime?: Date;
   modifiedTime?: Date;
+  titleSuffix?: boolean;
 }
 
-const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime } = Astro.props;
+const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime, titleSuffix = true } = Astro.props;
 
 const siteName = 'glitchmentalMX';
-const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
+const fullTitle = title === siteName || !titleSuffix ? title : `${title} · ${siteName}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image
   ? new URL(image, Astro.site).toString()
