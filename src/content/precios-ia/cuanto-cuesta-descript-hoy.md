@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Descript hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Descript hoy en México: edita el video borrando y moviendo texto, como si fuera un documento de Word. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Descript en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Descript"
 herramientaId: "descript"
 sitioOficial: "https://www.descript.com/pricing"

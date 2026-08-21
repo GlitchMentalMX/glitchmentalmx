@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Amazon Q Developer hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Amazon Q Developer hoy en México: incluye indemnización legal de propiedad intelectual, poco común en esta serie. Precio actualizado con Banxico."
+description: "Precio de Amazon Q Developer en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Amazon Q Developer"
 herramientaId: "amazon-q-developer"
 sitioOficial: "https://aws.amazon.com/q/developer/pricing/"

@@ -121,7 +121,7 @@ const personSchema = {
     <script is:inline>
       (function () {
         var stored = localStorage.getItem('gm-theme');
-        var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        var theme = stored === 'light' ? 'light' : 'dark';
         document.documentElement.dataset.theme = theme;
       })();
     </script>

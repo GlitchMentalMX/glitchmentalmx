@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Tabnine hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Tabnine hoy en México: ya no tiene plan gratuito, ahora exige compromiso anual desde $39 al mes. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Tabnine en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Tabnine"
 herramientaId: "tabnine"
 sitioOficial: "https://www.tabnine.com/pricing"

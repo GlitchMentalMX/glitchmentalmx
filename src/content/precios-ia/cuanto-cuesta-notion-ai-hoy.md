@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Notion AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Notion AI hoy en México: no tiene precio propio, la IA completa solo viene en el plan Business. Verificado con el tipo de cambio de Banxico."
+description: "Precio de Notion AI en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Notion AI"
 herramientaId: "notion-ai"
 sitioOficial: "https://www.notion.com/pricing"

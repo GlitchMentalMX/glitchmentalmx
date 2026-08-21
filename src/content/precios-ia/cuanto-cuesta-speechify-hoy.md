@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Speechify hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Speechify hoy en México: no confundir el Premium de texto a voz con sus productos Audiobooks o Studio. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Speechify en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Speechify"
 herramientaId: "speechify"
 sitioOficial: "https://speechify.com/pricing"

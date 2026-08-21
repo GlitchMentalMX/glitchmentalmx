@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta GitHub Copilot hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta GitHub Copilot hoy en México: no confundir con Microsoft Copilot, son productos y precios distintos. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de GitHub Copilot en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "GitHub Copilot"
 herramientaId: "github-copilot"
 sitioOficial: "https://github.com/features/copilot/plans"

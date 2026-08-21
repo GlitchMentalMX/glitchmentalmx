@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Cursor hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Cursor hoy en México: el modo privacidad del código es gratis en cualquier plan, no exclusivo de Pro. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Cursor en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Cursor"
 herramientaId: "cursor"
 sitioOficial: "https://cursor.com/pricing"

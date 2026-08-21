@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Synthesia hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Synthesia hoy en México: el plan gratis no te deja descargar el video que generas. Precio del plan Starter actualizado con el tipo de cambio de Banxico."
+description: "Precio de Synthesia en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Synthesia"
 herramientaId: "synthesia"
 sitioOficial: "https://www.synthesia.io/pricing"

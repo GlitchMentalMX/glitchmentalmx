@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Character.AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Character.AI hoy en México: el plan gratis ya chatea sin límite, c.ai+ compra velocidad y prioridad. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Character.AI en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Character.AI"
 herramientaId: "character-ai"
 sitioOficial: "https://character.ai/plus"

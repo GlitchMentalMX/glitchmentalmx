@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Copilot hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Copilot hoy en México: Copilot Pro ya no existe, Microsoft lo reemplazó con 365 Premium. Precio actualizado con el tipo de cambio oficial de Banxico."
+description: "Precio de Copilot en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Copilot"
 herramientaId: "copilot"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-365/premium"

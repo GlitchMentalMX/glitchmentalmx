@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Zapier hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Zapier hoy en México: su IA viene incluida en el plan normal, Zapier Agents es aparte. Precio de Professional actualizado con Banxico."
+description: "Precio de Zapier en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Zapier"
 herramientaId: "zapier"
 sitioOficial: "https://zapier.com/pricing"

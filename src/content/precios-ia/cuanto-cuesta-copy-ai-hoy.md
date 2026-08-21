@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Copy.ai hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Copy.ai hoy en México: su plan Chat exige un mínimo de 5 asientos aunque lo uses tú solo. Precio actualizado con el tipo de cambio oficial de Banxico."
+description: "Precio de Copy.ai en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Copy.ai"
 herramientaId: "copy-ai"
 sitioOficial: "https://www.copy.ai/pricing"

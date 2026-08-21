@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Krea hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Krea hoy en México: no depende de un solo modelo, da acceso a varios modelos de imagen. Precio del plan Basic actualizado con Banxico."
+description: "Precio de Krea en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Krea"
 herramientaId: "krea-ai"
 sitioOficial: "https://www.krea.ai/pricing"

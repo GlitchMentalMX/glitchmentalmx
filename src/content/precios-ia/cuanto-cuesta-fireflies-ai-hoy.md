@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Fireflies.ai hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Fireflies.ai hoy en México: su límite gratuito es de equipo, no por persona, y se agota rápido. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Fireflies.ai en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Fireflies.ai"
 herramientaId: "fireflies-ai"
 sitioOficial: "https://fireflies.ai/pricing"

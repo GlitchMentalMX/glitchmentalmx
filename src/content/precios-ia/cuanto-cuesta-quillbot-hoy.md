@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta QuillBot hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta QuillBot hoy en México: el plan gratis parafrasea bien, pero tope en solo 125 palabras. Precio actualizado con Banxico."
+description: "Precio de QuillBot en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "QuillBot"
 herramientaId: "quillbot"
 sitioOficial: "https://quillbot.com/premium"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta ManyChat hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta ManyChat hoy en México: muy usado en México para automatizar WhatsApp e Instagram. Precio del plan Pro actualizado con el tipo de cambio de Banxico."
+description: "Precio de ManyChat en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "ManyChat"
 herramientaId: "manychat"
 sitioOficial: "https://manychat.com/pricing"

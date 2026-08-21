@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta InVideo AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta InVideo AI hoy en México: su descuento anual es de apenas 2%, el más pequeño de toda la serie. Precio del plan Plus actualizado con Banxico."
+description: "Precio de InVideo AI en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "InVideo AI"
 herramientaId: "invideo-ai"
 sitioOficial: "https://invideo.io/pricing"

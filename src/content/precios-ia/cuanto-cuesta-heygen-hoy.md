@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta HeyGen hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta HeyGen hoy en México: el plan gratis limita los videos a apenas 1 minuto de duración. Precio del plan Creator actualizado con el tipo de cambio de Banxico."
+description: "Precio de HeyGen en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "HeyGen"
 herramientaId: "heygen"
 sitioOficial: "https://www.heygen.com/pricing"

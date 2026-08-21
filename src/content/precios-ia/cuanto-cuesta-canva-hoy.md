@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Canva hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Canva hoy en México: su plan anual equivale a pagar 10 meses de 12. Precio de Canva Pro con IA (Magic Studio) actualizado con el tipo de cambio de Banxico."
+description: "Precio de Canva en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Canva"
 herramientaId: "canva"
 sitioOficial: "https://www.canva.com/pricing/"

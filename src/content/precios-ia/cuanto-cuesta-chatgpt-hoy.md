@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta ChatGPT hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta ChatGPT hoy en México: a diferencia de Claude o Perplexity, Plus no tiene descuento por pago anual. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de ChatGPT en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "ChatGPT"
 herramientaId: "chatgpt"
 sitioOficial: "https://chatgpt.com/"

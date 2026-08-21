@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Elicit hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Elicit hoy en México: su precio solo se confirma con facturación anual, $49 USD al mes. Investigación académica, actualizado con Banxico."
+description: "Precio de Elicit en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Elicit"
 herramientaId: "elicit"
 sitioOficial: "https://elicit.com/pricing"

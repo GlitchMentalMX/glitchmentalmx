@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Replit hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Replit hoy en México: la mensualidad incluye créditos del Agent que se pueden agotar antes de fin de mes. Actualizado con Banxico."
+description: "Precio de Replit en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Replit"
 herramientaId: "replit"
 sitioOficial: "https://replit.com/pricing"

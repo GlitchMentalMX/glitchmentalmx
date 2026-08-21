@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta NotebookLM hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta NotebookLM hoy en México: no tiene precio propio, ahora se llama Gemini Notebook e incluye Google AI Pro. Actualizado con el tipo de cambio de Banxico."
+description: "Precio de NotebookLM en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "NotebookLM"
 herramientaId: "notebooklm"
 sitioOficial: "https://notebook.google/"

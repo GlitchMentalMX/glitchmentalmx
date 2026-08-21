@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Framer hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Framer hoy en México: su precio en dólares solo se confirma con facturación anual, $30 al mes. Editor de sitios con IA, actualizado con Banxico."
+description: "Precio de Framer en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Framer"
 herramientaId: "framer"
 sitioOficial: "https://www.framer.com/pricing/"

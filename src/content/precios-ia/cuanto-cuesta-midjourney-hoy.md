@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Midjourney hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Midjourney hoy en México: es la única de esta lista sin plan gratuito, se paga desde la primera imagen. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Midjourney en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Midjourney"
 herramientaId: "midjourney"
 sitioOficial: "https://www.midjourney.com/"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta v0 hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta v0 hoy en México: es de Vercel, la empresa detrás de Next.js, y el más caro de los generadores de apps. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de v0 en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "v0"
 herramientaId: "v0"
 sitioOficial: "https://v0.app/pricing"

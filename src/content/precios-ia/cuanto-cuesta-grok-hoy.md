@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Grok hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Grok hoy en México: xAI vende varios niveles (Lite, SuperGrok, Plus, Heavy) — este cubre el estándar. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Grok en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Grok"
 herramientaId: "grok"
 sitioOficial: "https://grok.com/plans"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Bolt.new hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Bolt.new hoy en México: mismo precio de entrada que Lovable, pero con mejor descuento por pago anual. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Bolt.new en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Bolt.new"
 herramientaId: "bolt-new"
 sitioOficial: "https://bolt.new/pricing"

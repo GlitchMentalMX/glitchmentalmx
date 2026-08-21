@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Leonardo AI hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Leonardo AI hoy en México: sus planes se renombraron, ya no existen Apprentice ni Artisan. Precio actualizado con Banxico."
+description: "Precio de Leonardo AI en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Leonardo AI"
 herramientaId: "leonardo-ai"
 sitioOficial: "https://leonardo.ai/pricing/"

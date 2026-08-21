@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Jasper hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Jasper hoy en México: no tiene plan gratuito real, solo una prueba de 7 días con tarjeta. Precio de Jasper Pro actualizado con el tipo de cambio de Banxico."
+description: "Precio de Jasper en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Jasper"
 herramientaId: "jasper-ai"
 sitioOficial: "https://www.jasper.ai/pricing"

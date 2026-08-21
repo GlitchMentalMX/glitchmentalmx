@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Ideogram hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Ideogram hoy en México: en el plan gratis, tus creaciones son públicas en la galería por defecto. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Ideogram en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Ideogram"
 herramientaId: "ideogram"
 sitioOficial: "https://ideogram.ai/pricing"

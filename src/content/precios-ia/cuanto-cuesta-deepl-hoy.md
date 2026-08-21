@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta DeepL hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta DeepL hoy en México: pagar Individual también significa que tu texto deja de entrenar sus modelos. Actualizado con Banxico."
+description: "Precio de DeepL en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "DeepL"
 herramientaId: "deepl"
 sitioOficial: "https://www.deepl.com/pro"

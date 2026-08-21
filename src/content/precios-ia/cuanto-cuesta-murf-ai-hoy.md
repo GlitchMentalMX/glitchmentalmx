@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Murf hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Murf hoy en México: el plan gratis da solo 10 minutos de generación, de por vida. Precio del plan Creator actualizado con el tipo de cambio de Banxico."
+description: "Precio de Murf en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Murf"
 herramientaId: "murf-ai"
 sitioOficial: "https://murf.ai/pricing"

@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Pictory hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Pictory hoy en México: convierte texto y artículos ya escritos en video, no genera desde cero. Precio actualizado con Banxico."
+description: "Precio de Pictory en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Pictory"
 herramientaId: "pictory"
 sitioOficial: "https://pictory.ai/pricing"

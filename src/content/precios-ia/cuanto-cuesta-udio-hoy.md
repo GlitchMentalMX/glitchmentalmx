@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Udio hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Udio hoy en México: el plan gratis limita a 3 canciones por día, sin importar los créditos. Precio actualizado con Banxico."
+description: "Precio de Udio en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Udio"
 herramientaId: "udio"
 sitioOficial: "https://www.udio.com/pricing"

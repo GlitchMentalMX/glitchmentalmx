@@ -1,6 +1,6 @@
 ---
 title: "¿Cuánto cuesta Beautiful.ai hoy? Precio en pesos mexicanos actualizado"
-description: "Cuánto cuesta Beautiful.ai hoy en México: a diferencia de Gamma, no tiene plan gratuito, solo una prueba de 14 días. Precio actualizado con el tipo de cambio de Banxico."
+description: "Precio de Beautiful.ai en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
 herramienta: "Beautiful.ai"
 herramientaId: "beautiful-ai"
 sitioOficial: "https://www.beautiful.ai/pricing"
