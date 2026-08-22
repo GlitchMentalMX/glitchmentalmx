@@ -54,9 +54,9 @@ const postCount = (await getCollection('posts', ({ data }) => !data.draft)).leng
   caseHref="/categoria/inteligencia-artificial/"
   pricingTitle="Capacidad editorial mensual (USD)"
   plans={[
-    { name: 'Editorial Unit 1', price: '$3,500', period: '/mes', capacity: 'Hasta 40 piezas mensuales', desc: 'Entregas semanales consistentes. Flujo completo incluido. Ideal para publicaciones en crecimiento.' },
-    { name: 'Editorial Unit 3', price: '$7,000', period: '/mes', capacity: 'Hasta 70 piezas mensuales', desc: 'Alto volumen con consistencia editorial completa. Equivalente a 2–3 redactores de tiempo completo.', featured: true, badge: 'Más popular' },
-    { name: 'Editorial Unit 5', price: '$12,000', period: '/mes', capacity: '100+ piezas mensuales', desc: 'Capacidad máxima. Para operaciones de medios que compiten por volumen y velocidad.' },
+    { name: 'Editorial Unit 1', price: '$3,500', period: 'USD/mes', capacity: 'Hasta 40 piezas mensuales', desc: 'Entregas semanales consistentes. Flujo completo incluido. Ideal para publicaciones en crecimiento.' },
+    { name: 'Editorial Unit 3', price: '$7,000', period: 'USD/mes', capacity: 'Hasta 70 piezas mensuales', desc: 'Alto volumen con consistencia editorial completa. Equivalente a 2–3 redactores de tiempo completo.', featured: true, badge: 'Más popular' },
+    { name: 'Editorial Unit 5', price: '$12,000', period: 'USD/mes', capacity: '100+ piezas mensuales', desc: 'Capacidad máxima. Para operaciones de medios que compiten por volumen y velocidad.' },
   ]}
   footnote="Incluye la ejecución completa de la función editorial: investigación, redacción, dirección de arte, SEO y preparación para distribución. Publicación, analítica y CMS a cargo del cliente. **Organizaciones en Latinoamérica:** escríbeme para condiciones de precio regionales."
   selfServeTitle="¿Prefieres operar el sistema tú mismo?"
