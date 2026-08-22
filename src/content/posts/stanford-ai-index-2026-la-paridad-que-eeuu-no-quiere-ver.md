@@ -17,7 +17,7 @@ El reporte anual de Stanford sobre el estado de la IA confirmó lo que muchos en
 
 ## La paridad en rendimiento de modelos
 
-En el ranking Arena Elo —la medición de rendimiento de modelos de lenguaje de mayor referencia en la industria— a marzo de 2026, Anthropic lidera con 1,503 puntos, seguido de xAI con 1,495, Google con 1,494, OpenAI con 1,481, Alibaba con 1,449 y DeepSeek con 1,424. **La diferencia entre el primer y el último lugar en ese grupo de élite es de 79 puntos sobre más de 1,400** — una separación técnicamente insignificante en términos de capacidad práctica.
+En el ranking Arena Elo —la medición de rendimiento de modelos de lenguaje de mayor referencia en la industria— a marzo de 2026, Anthropic lidera con 1,503 puntos, seguido de xAI con 1,495, Google con 1,494, OpenAI con 1,481, Alibaba con 1,449 y [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/) con 1,424. **La diferencia entre el primer y el último lugar en ese grupo de élite es de 79 puntos sobre más de 1,400** — una separación técnicamente insignificante en términos de capacidad práctica.
 
 En febrero de 2025, DeepSeek-R1 igualó brevemente al modelo más avanzado de EE.UU. Desde entonces, los dos países han intercambiado el liderazgo múltiples veces. EE.UU. sigue produciendo más modelos de primer nivel y más patentes de alto impacto, pero China lidera en volumen de publicaciones, citas académicas, patentes totales e instalaciones de robots industriales. **EE.UU. domina en profundidad; China domina en escala.**
 

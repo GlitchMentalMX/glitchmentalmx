@@ -35,7 +35,7 @@ Lo que hace posible este ciclo es la combinación de tres componentes: un modelo
 
   
 
-El ejemplo más conocido en desarrollo de software es Claude Code o GitHub Copilot Workspace: agentes que no solo sugieren código, sino que interactúan con repositorios, ejecutan pruebas, detectan errores y proponen correcciones de forma autónoma. Un desarrollador que antes tardaba horas en un ciclo de revisión puede reducirlo a minutos supervisando el trabajo del agente.
+El ejemplo más conocido en desarrollo de software es [Claude Code](/articulos/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/) o GitHub Copilot Workspace: agentes que no solo sugieren código, sino que interactúan con repositorios, ejecutan pruebas, detectan errores y proponen correcciones de forma autónoma. Un desarrollador que antes tardaba horas en un ciclo de revisión puede reducirlo a minutos supervisando el trabajo del agente.
 
 En atención al cliente, un agente puede recibir una queja por correo, consultar el historial del cliente en el CRM, verificar el estado del pedido en el sistema logístico, generar una respuesta personalizada y, si la política de la empresa lo permite, emitir un reembolso directamente, sin que un agente humano intervenga en ningún paso. Genesys y Salesforce ya tienen productos desplegados con este nivel de autonomía en grandes empresas.
 

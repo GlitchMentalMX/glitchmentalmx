@@ -24,7 +24,7 @@ Si hay un cambio claro, es la obsesión por la autonomía. Laptops que duran tod
 **Rango Premium ($1,200-$2,000 USD):**
 
 *   **MacBook Air M3 (15"):** 18 horas de uso real con chip Apple Silicon. Excelente para trabajo de oficina, edición ligera. Peso: 1.51 kg.
-*   **Dell XPS 13 Plus:** 12-14 horas con Intel Core Ultra. Pantalla OLED opcional. Peso: 1.24 kg.
+*   **Dell [XPS](/articulos/dell-revive-la-marca-xps-en-ces-2026-despues-de-haberla-retirado/) 13 Plus:** 12-14 horas con Intel Core Ultra. Pantalla OLED opcional. Peso: 1.24 kg.
 *   **Lenovo ThinkPad X1 Carbon Gen 12:** 15+ horas, teclado legendario, certificación militar MIL-STD-810H. Peso: 1.12 kg.
 
 **Rango Medio ($700-$1,200 USD):**

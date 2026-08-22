@@ -24,7 +24,7 @@ Desde el 2 de marzo, Grok ya permitía encadenar clips usando el último frame d
 
 El dato más revelador no es la nueva duración: es el volumen. Solo en enero de 2026, los usuarios de X generaron 1,245 millones de videos con Grok Imagine. Eso equivale a aproximadamente 40 millones de videos por día, generados por usuarios reales en una plataforma pública con distribución masiva.
 
-Ninguna otra herramienta de generación de video por IA — ni Runway, ni Sora, ni Kling — tiene acceso directo a una red social de esa escala. La integración de Grok en X no es solo una característica técnica: es una decisión de distribución que multiplica exponencialmente el alcance del contenido generado.
+Ninguna otra herramienta de generación de video por IA — ni Runway, ni [Sora](/articulos/openai-cancela-sora-el-video-costaba-demasiado-y-la-ipo-no-espera/), ni Kling — tiene acceso directo a una red social de esa escala. La integración de Grok en X no es solo una característica técnica: es una decisión de distribución que multiplica exponencialmente el alcance del contenido generado.
 
 ## El problema que nadie en X quiere nombrar
 

@@ -14,7 +14,7 @@ heroImageAlt: >-
 ---
 El 24 de febrero de 2026 pasará a los registros como uno de esos días en los que el mercado cripto mostró sus dos caras al mismo tiempo. Mientras los activos de mayor capitalización registraban caídas notables —Ethereum alrededor de los 1,968 dólares, Solana en los 84 dólares— un token llamado **$DOGS disparó un 1,531% en menos de 24 horas**, pasando de prácticamente nada a cotizar en 0.02496 dólares.
 
-El número es tan extremo que inevitablemente se vuelve contenido. Y eso es exactamente lo que pasó: en cuestión de horas, capturas de pantalla con el porcentaje de ganancia inundaron TikTok, X y Telegram. El token no se volvió viral porque alguien lo analizara con profundidad; se volvió viral porque el número era demasiado llamativo para ignorar.
+El número es tan extremo que inevitablemente se vuelve contenido. Y eso es exactamente lo que pasó: en cuestión de horas, capturas de pantalla con el porcentaje de ganancia inundaron TikTok, X y [Telegram](/articulos/deepfakes-en-telegram-la-violencia-sexual-tiene-algoritmo/). El token no se volvió viral porque alguien lo analizara con profundidad; se volvió viral porque el número era demasiado llamativo para ignorar.
 
 Este patrón no es nuevo, pero en 2026 se ejecuta con una velocidad y una escala que hace apenas tres años habría parecido imposible. **Las redes sociales son ahora el motor principal de los movimientos especulativos en activos de baja capitalización**. No los fundamentales del proyecto, no el equipo detrás, no la utilidad de la tecnología. El meme. La narrativa. El número en pantalla.
 

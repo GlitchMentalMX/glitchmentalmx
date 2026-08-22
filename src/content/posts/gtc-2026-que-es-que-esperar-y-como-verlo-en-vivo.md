@@ -12,7 +12,7 @@ heroImageAlt: >-
   GTC 2026: ejecutiva observa rayos de datos converger en edificio tecnológico
   simbolizando infraestructura de IA
 ---
-Si solo vas a seguir un evento tecnológico este año, que sea el **GTC 2026 de Nvidia**. El lunes 16 de marzo, Jensen Huang sube al escenario del SAP Center en San José, California, con la chamarra de cuero y una lista de anuncios que, de acuerdo con los reportes previos al evento, incluyen nuevos chips, plataformas de agentes de IA y el lanzamiento oficial de NemoClaw. No es exagerado decir que lo que se diga en esas tres horas definirá buena parte de la dirección que tomará la industria tecnológica durante el resto del año.
+Si solo vas a seguir un evento tecnológico este año, que sea el **GTC 2026 de Nvidia**. El lunes 16 de marzo, Jensen Huang sube al escenario del SAP Center en San José, California, con la chamarra de cuero y una lista de anuncios que, de acuerdo con los reportes previos al evento, incluyen nuevos chips, plataformas de agentes de IA y el lanzamiento oficial de [NemoClaw](/articulos/nemoclaw-nvidia-apuesta-por-agentes-ia-en-empresas/). No es exagerado decir que lo que se diga en esas tres horas definirá buena parte de la dirección que tomará la industria tecnológica durante el resto del año.
 
 Esta guía te explica qué es el GTC, qué se espera este año y cómo puedes seguirlo sin gastar un centavo.
 

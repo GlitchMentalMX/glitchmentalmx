@@ -48,7 +48,7 @@ Bajo interrogatorio, Musk apuntó al acuerdo de 2020 con Microsoft —que llegó
 
 ## Lo que realmente está en disputa, más allá de los egos
 
-La estructura "nonprofit que opera el for-profit" siempre fue una ficción legal incómoda. Funcionaba mientras nadie la presionaba. Hoy, un jurado popular —12 personas seleccionadas por declarar opinión neutral sobre Musk y sobre IA— va a decidir si esa ficción protege un fraude o si simplemente molesta a un cofundador resentido. Cualquiera sea el fallo, abre precedente para Anthropic, Mistral, DeepSeek y cualquier otro laboratorio que haya intentado vestir capital de riesgo con ropa de misión social.
+La estructura "nonprofit que opera el for-profit" siempre fue una ficción legal incómoda. Funcionaba mientras nadie la presionaba. Hoy, un jurado popular —12 personas seleccionadas por declarar opinión neutral sobre Musk y sobre IA— va a decidir si esa ficción protege un fraude o si simplemente molesta a un cofundador resentido. Cualquiera sea el fallo, abre precedente para Anthropic, Mistral, [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/) y cualquier otro laboratorio que haya intentado vestir capital de riesgo con ropa de misión social.
 
 El experimento original de "IA para la humanidad" termina, irónicamente, en una corte de California discutiendo quién se queda con el dinero. **No es un detalle anecdótico: es el cierre lógico del modelo. Cuando los incentivos económicos cruzan el umbral de las cientos de miles de millones, los compromisos morales se vuelven negociables —o demandables.**
 

@@ -11,7 +11,7 @@ heroImageAlt: >-
   El hype de la IA: mujer operando la impresión masiva de hojas con métricas y
   datos industriales
 ---
-En los últimos años, los investigadores de OpenAI hacían fogatas y cantaban _"Feel the AGI!"_ alrededor de ellas. No es una metáfora: es lo que reportó MIT Technology Review en octubre de 2025, citando reuniones internas donde el exjefe científico Ilya Sutskever dirigía esos cánticos como si la inteligencia artificial general fuera una deidad que necesitaba ser invocada. **El hype1 de la IA no describe el futuro: lo administra.** Y tiene una función económica y política muy concreta.
+En los últimos años, los investigadores de OpenAI hacían fogatas y cantaban _"Feel the [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/)!"_ alrededor de ellas. No es una metáfora: es lo que reportó MIT Technology Review en octubre de 2025, citando reuniones internas donde el exjefe científico Ilya Sutskever dirigía esos cánticos como si la inteligencia artificial general fuera una deidad que necesitaba ser invocada. **El hype1 de la IA no describe el futuro: lo administra.** Y tiene una función económica y política muy concreta.
 
 ## La inevitabilidad no se descubre: se fabrica
 

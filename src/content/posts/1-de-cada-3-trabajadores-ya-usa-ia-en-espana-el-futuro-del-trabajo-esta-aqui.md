@@ -30,7 +30,7 @@ Por sectores, los trabajos en los sectores cuaternario y quinario (servicios ava
 
 La herramienta de IA más utilizada en el ámbito laboral español es la traducción automática, con un 62 por ciento de usuarios reportando su uso. Esto incluye tanto usuarios activos (que conscientemente saben que están usando IA) como usuarios pasivos (que usan herramientas potenciadas por IA sin necesariamente reconocerlo como tal).
 
-Le siguen los chatbots y asistentes virtuales, las herramientas de síntesis de texto, los generadores de imágenes, y las plataformas de análisis de datos. Lo fascinante es que muchas de estas herramientas están integradas en software que la gente ya usa: Microsoft 365 con Copilot, Google Workspace con Gemini, herramientas de CRM con capacidades predictivas, plataformas de diseño con generación automática.
+Le siguen los chatbots y asistentes virtuales, las herramientas de síntesis de texto, los generadores de imágenes, y las plataformas de análisis de datos. Lo fascinante es que muchas de estas herramientas están integradas en software que la gente ya usa: Microsoft 365 con Copilot, [Google Workspace](/articulos/gemini-en-google-workspace-lo-que-cambia-para-equipos/) con Gemini, herramientas de CRM con capacidades predictivas, plataformas de diseño con generación automática.
 
 La IA ya no es una tecnología separada que tienes que buscar activamente. Está embebida en el ecosistema de herramientas que usamos todos los días. Y eso está acelerando su adopción de formas que muchas organizaciones no anticiparon.
 

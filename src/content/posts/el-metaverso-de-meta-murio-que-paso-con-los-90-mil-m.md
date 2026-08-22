@@ -19,7 +19,7 @@ Engadget confirmó los detalles del cierre esta semana: a partir del 31 de marzo
 
 En 2025, la división Reality Labs de Meta registró pérdidas operativas de $19,200 millones de dólares, de acuerdo con datos de Statista. Ese número se suma a los miles de millones perdidos en cada año anterior desde que Zuckerberg rebautizó Facebook como Meta en 2021 y declaró que el metaverso era el futuro de la empresa. El total acumulado ronda los $90,000 millones.
 
-Para dimensionarlo: eso equivale, aproximadamente, a lo que gastó la NASA en el programa Artemis durante varios años, o al valor de mercado de empresas como Twitter cuando fue adquirida. Es el fracaso corporativo más caro de la última década en la industria tecnológica.
+Para dimensionarlo: eso equivale, aproximadamente, a lo que gastó la NASA en el programa [Artemis](/articulos/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/) durante varios años, o al valor de mercado de empresas como Twitter cuando fue adquirida. Es el fracaso corporativo más caro de la última década en la industria tecnológica.
 
 ## Por qué falló lo que nadie quiso admitir
 

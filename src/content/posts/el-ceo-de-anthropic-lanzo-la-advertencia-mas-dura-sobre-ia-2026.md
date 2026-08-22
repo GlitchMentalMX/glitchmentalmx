@@ -52,7 +52,7 @@ Gizmodo notó una coincidencia inquietante: en un informe técnico de Anthropic 
 
 El ensayo también introduce un miedo político explícito: el autoritarismo reforzado por inteligencia artificial. No hace falta imaginar robots patrullando las calles para entender la idea. Basta con pensar en un estado que pueda vigilar, perfilar, predecir y presionar a gran escala con herramientas baratas, rápidas y persistentes.
 
-Amodei comparó la proliferación actual de hardware de IA a la altura de la Guerra Fría. Argumentó que la exportación de chips de IA de alta gama a adversarios geopolíticos es efectivamente lo mismo que compartir los planos para armas nucleares. Ve la AGI (Inteligencia Artificial General) no como una herramienta simple como una hoja de cálculo, sino como un país de genios en un datacenter.
+Amodei comparó la proliferación actual de hardware de IA a la altura de la Guerra Fría. Argumentó que la exportación de chips de IA de alta gama a adversarios geopolíticos es efectivamente lo mismo que compartir los planos para armas nucleares. Ve la [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/) (Inteligencia Artificial General) no como una herramienta simple como una hoja de cálculo, sino como un país de genios en un datacenter.
 
 Si millones de entidades más inteligentes que los expertos humanos más capaces del mundo son controladas por un solo estado, o peor, por un algoritmo autónomo y desalineado, el riesgo ya no es solo digital. Es una desestabilización total del orden físico y político global.
 

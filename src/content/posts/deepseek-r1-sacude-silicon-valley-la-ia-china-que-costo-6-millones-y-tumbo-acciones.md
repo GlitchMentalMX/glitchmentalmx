@@ -17,7 +17,7 @@ heroImageAlt: >-
 ---
 En enero de 2025, una startup china de Hangzhou logró algo que parecía imposible: destronar a ChatGPT del primer lugar en la App Store de Estados Unidos.  
 
-El impacto fue inmediato y brutal. Nvidia, la reina de los chips para IA, perdió $600 mil millones en capitalización de mercado en cuestión de días. Las acciones de las principales empresas tecnológicas estadounidenses se desplomaron. ¿La razón? DeepSeek demostró que la carrera por construir modelos cada vez más grandes y costosos quizás no era el único camino hacia la inteligencia artificial de élite.
+El impacto fue inmediato y brutal. Nvidia, la reina de los chips para IA, perdió $600 mil millones en capitalización de mercado en cuestión de días. Las acciones de las principales empresas tecnológicas estadounidenses se desplomaron. ¿La razón? [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/) demostró que la carrera por construir modelos cada vez más grandes y costosos quizás no era el único camino hacia la inteligencia artificial de élite.
 
 La escala del impacto bursátil quedó documentada con precisión: Nvidia perdió cerca de $600 mil millones en valor de mercado el 27 de enero de 2025, la mayor pérdida de capitalización de una sola empresa en un solo día en la historia de los mercados financieros de Estados Unidos, según datos de Bloomberg.
 

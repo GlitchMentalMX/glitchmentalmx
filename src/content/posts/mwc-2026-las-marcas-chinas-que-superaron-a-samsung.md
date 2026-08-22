@@ -16,7 +16,7 @@ El Mobile World Congress que se celebró del 2 al 5 de marzo en Barcelona tuvo u
 
 ## Xiaomi 17 Ultra: cuando la cámara deja de ser diferenciador de Samsung
 
-Xiaomi presentó el 17 Ultra con un sistema de cámara que hace difícil justificar el precio del Galaxy S26 Ultra solo por las lentes. El equipo trae un sensor principal de 1 pulgada con 50 megapíxeles, un teleobjetivo de 200 megapíxeles con focal equivalente de 75 a 100mm, y una ultra gran angular de 50 megapíxeles. La batería de 6,000 mAh incluye carga rápida de 90W alámbrica —Samsung ofrece 65W en el S26 Ultra—, y la pantalla HyperRGB OLED de 6.9 pulgadas alcanza 3,500 nits de brillo frente a los 3,000 del equipo coreano.
+Xiaomi presentó el 17 Ultra con un sistema de cámara que hace difícil justificar el precio del [Galaxy S26](/articulos/samsung-galaxy-s26-todo-lo-que-se-revelo-en-unpacked-2026/) Ultra solo por las lentes. El equipo trae un sensor principal de 1 pulgada con 50 megapíxeles, un teleobjetivo de 200 megapíxeles con focal equivalente de 75 a 100mm, y una ultra gran angular de 50 megapíxeles. La batería de 6,000 mAh incluye carga rápida de 90W alámbrica —Samsung ofrece 65W en el S26 Ultra—, y la pantalla HyperRGB OLED de 6.9 pulgadas alcanza 3,500 nits de brillo frente a los 3,000 del equipo coreano.
 
 La edición especial del evento fue la _Leica Leitzphone by Xiaomi_, que consolida la colaboración con la marca alemana de cámaras y apunta directamente al segmento de fotografía profesional portátil donde Samsung y Apple han cobrado una prima de precio sin competencia real durante años. **Esa prima está siendo cuestionada en Barcelona.**
 

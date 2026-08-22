@@ -22,7 +22,7 @@ El show tiene 11 empleados y promediaba alrededor de 70,000 espectadores por epi
 
 ## El detalle que lo cambia todo
 
-OpenAI anunció que TBPN mantendrá "independencia editorial" y que sus conductores seguirán eligiendo invitados y temas. Fidji Simo, directora de despliegue de AGI en OpenAI, declaró que el show "traerá la IA al mundo de una forma que ayude a la gente a entender su impacto". Todo muy razonable en el papel.
+OpenAI anunció que TBPN mantendrá "independencia editorial" y que sus conductores seguirán eligiendo invitados y temas. Fidji Simo, directora de despliegue de [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/) en OpenAI, declaró que el show "traerá la IA al mundo de una forma que ayude a la gente a entender su impacto". Todo muy razonable en el papel.
 
 El problema está en a quién reportará el programa dentro de la estructura de OpenAI: **a Chris Lehane, el jefe de asuntos globales de la compañía**. Lehane no es un ejecutivo de medios ni un periodista. Es el estratega político que acuñó la frase "vasta conspiración de derecha" como herramienta de manejo de prensa durante la administración Clinton, y que más tarde dirigió el super PAC cripto Fairshake —que gastó cientos de millones para eliminar candidatos anticripto en las elecciones de 2024. TechCrunch lo describe como maestro de las "artes oscuras políticas".
 

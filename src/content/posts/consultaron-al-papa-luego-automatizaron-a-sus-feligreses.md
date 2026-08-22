@@ -39,7 +39,7 @@ El argumento de Amodei es conocido: la IA producirá tanta riqueza que el despla
 
 ## La pregunta que cierra la serie
 
-Esta serie comenzó desmintiendo el contexto de un rumor: la confusión entre la alianza real Anthropic-Vaticano y las versiones amplificadas que X fabrica de ella. Terminó aquí, en la pregunta que el ruido en redes impedía formular.
+Esta serie comenzó desmintiendo el contexto de un rumor: la confusión entre la alianza real Anthropic-[Vaticano](/articulos/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/) y las versiones amplificadas que X fabrica de ella. Terminó aquí, en la pregunta que el ruido en redes impedía formular.
 
 ¿De qué sirve construir una IA virtuosa si el modelo de negocio que la sostiene destruye las condiciones materiales que hacen posible la vida digna? La virtud sin estructura económica es decoración. **Y la pregunta sobre qué valores le enseñamos a la IA es secundaria frente a la pregunta sobre qué le estamos haciendo a las personas mientras decidimos quién tiene autoridad para responder la primera.**
 

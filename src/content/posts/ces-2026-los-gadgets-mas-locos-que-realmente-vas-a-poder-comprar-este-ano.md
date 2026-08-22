@@ -48,7 +48,7 @@ NVIDIA anunció la última versión de su tecnología de upscaling DLSS (Deep Le
 
 Según Engadget, esto ofrece mejor estabilidad temporal, reducción de ghosting y anti-aliasing mejorado. En las GPUs GeForce RTX 50 Series, DLSS 4.5 podrá generar hasta **cinco fotogramas adicionales por cada uno renderizado tradicionalmente** y entregar rendimiento path traced de hasta 4K a 240Hz. La función Dynamic 6x Frame Generation estará disponible esta primavera.
 
-## Dell resucita la línea XPS
+## Dell resucita la línea [XPS](/articulos/dell-revive-la-marca-xps-en-ces-2026-despues-de-haberla-retirado/)
 
 En cierta forma, este premio es para los nuevos laptops insignia de Dell pero también para la empresa misma. El año pasado, Dell apareció con un nuevo esquema de nomenclatura que incluía reemplazar la icónica línea XPS con la palabra "Premium". Y a pesar de las objeciones, la empresa siguió adelante con el rebrand.
 

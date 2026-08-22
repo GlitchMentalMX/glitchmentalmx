@@ -40,7 +40,7 @@ Gemini 3 viene en dos sabores principales, cada uno diseñado para diferentes ne
 
 Una de las ventajas más grandes de Gemini es que no existe en el vacío. Está profundamente integrado con todos los servicios de Google que probablemente ya usas.
 
-En **Google Workspace**, las suscripciones Business y Enterprise ahora incluyen funciones de IA basadas en Gemini que antes requerían complementos adicionales. Gemini aparece como un panel lateral en Gmail, Docs, Sheets, Presentaciones, Drive y Chat. Puedes pedirle que redacte correos, resuma documentos largos, analice datos en hojas de cálculo o cree presentaciones completas. La nueva herramienta **Imagen 4** genera gráficos de alta calidad y mejora la tipografía en pósters, y se integra directamente en Slides, Docs y Vids.
+En **[Google Workspace](/articulos/gemini-en-google-workspace-lo-que-cambia-para-equipos/)**, las suscripciones Business y Enterprise ahora incluyen funciones de IA basadas en Gemini que antes requerían complementos adicionales. Gemini aparece como un panel lateral en Gmail, Docs, Sheets, Presentaciones, Drive y Chat. Puedes pedirle que redacte correos, resuma documentos largos, analice datos en hojas de cálculo o cree presentaciones completas. La nueva herramienta **Imagen 4** genera gráficos de alta calidad y mejora la tipografía en pósters, y se integra directamente en Slides, Docs y Vids.
 
 El **Modo IA en la Búsqueda de Google** usa Gemini 3 para ofrecer experiencias de interfaz generativa. En lugar de recibir solo enlaces, puedes obtener diseños visuales inmersivos, herramientas interactivas y simulaciones generadas en tiempo real. Es como si la búsqueda de Google hubiera aprendido a crear mini-aplicaciones personalizadas para cada consulta.
 

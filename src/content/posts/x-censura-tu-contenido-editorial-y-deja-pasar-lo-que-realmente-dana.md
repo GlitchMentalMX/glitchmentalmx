@@ -67,7 +67,7 @@ Entender el mecanismo es el primer paso. **La segunda es actuar desde esa compre
 
 *   **Documentar y reportar sistemáticamente.** X tiene herramientas de reporte oficiales. Usarlas de forma consistente y en grupo aumenta la presión sobre el sistema. El CCDH demostró que la documentación pública tiene impacto aunque la respuesta interna sea lenta.
 *   **Usar las herramientas de apelación.** X permite apelar decisiones de moderación. Si un post legítimo fue bloqueado, la apelación no siempre funciona, pero genera un registro que puede ser útil en contextos regulatorios.
-*   **Diversificar canales de distribución.** Depender de X como canal principal de tráfico es aceptar sus reglas de distribución como propias. Mastodon, Bluesky, newsletters y SEO orgánico no tienen los mismos incentivos para suprimir contenido editorial.
+*   **Diversificar canales de distribución.** Depender de X como canal principal de tráfico es aceptar sus reglas de distribución como propias. Mastodon, [Bluesky](/articulos/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/), newsletters y SEO orgánico no tienen los mismos incentivos para suprimir contenido editorial.
 *   **Nombrar el problema públicamente.** La presión regulatoria en Europa existe en parte porque organizaciones y creadores documentaron los problemas de forma sostenida. X no cambia por buena voluntad. Cambia cuando el costo de no hacerlo supera al costo de hacerlo.
 
 > X no es un error. Es un diseño.

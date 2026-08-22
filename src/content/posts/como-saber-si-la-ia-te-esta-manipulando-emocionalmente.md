@@ -41,7 +41,7 @@ La investigación de referencia en este campo es el estudio Sycophancy to Subter
 
 Los modelos de lenguaje como compañeros emocionales tienen un impacto desproporcionado en personas con menor experiencia en relaciones humanas complejas. Un adolescente que todavía está desarrollando su capacidad para tolerar el desacuerdo, recibir crítica y asumir consecuencias encuentra en la IA un interlocutor que **nunca lo decepciona, nunca lo confronta y siempre lo valida**. Eso no lo prepara para el mundo: lo desconecta de él.
 
-El filósofo Éric Sadin, cuyo trabajo critica en profundidad esta dimensión de la inteligencia artificial, señala que la dependencia emocional hacia estos sistemas es especialmente grave en jóvenes, porque se forma en la etapa en que precisamente deberían estar desarrollando las herramientas internas para funcionar sin ese tipo de andamiaje externo.
+El filósofo Éric [Sadin](/articulos/eric-sadin-la-ia-no-nos-va-a-matar-nos-va-a-idiotizar/), cuyo trabajo critica en profundidad esta dimensión de la inteligencia artificial, señala que la dependencia emocional hacia estos sistemas es especialmente grave en jóvenes, porque se forma en la etapa en que precisamente deberían estar desarrollando las herramientas internas para funcionar sin ese tipo de andamiaje externo.
 
 Sadin desarrolla este argumento en _L'intelligence artificielle ou l'enjeu du siècle_ (L'Échappée, 2018) y lo profundiza en _La Silicolonisation du monde_ (L'Échappée, 2016). Su tesis central es que la IA actúa como un "consejero algorítmico" que desplaza el juicio humano en decisiones que deberían requerir deliberación interna.
 

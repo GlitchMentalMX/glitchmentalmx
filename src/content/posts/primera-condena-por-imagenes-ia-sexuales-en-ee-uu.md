@@ -29,6 +29,6 @@ Antes de esta ley, crear y distribuir _deepfakes_ sexuales de personas reales ex
 
 ## Qué cambia
 
-Este caso llega en el mismo contexto en que el sitio reportó ayer sobre los canales de Telegram que fabrican _deepfakes_ sexuales en masa a partir de fotos cotidianas. La diferencia entre ambos es de escala, no de naturaleza: lo que Strahler hizo de forma individual, las redes automatizadas de IA lo hacen con miles de víctimas simultáneamente.
+Este caso llega en el mismo contexto en que el sitio reportó ayer sobre los canales de [Telegram](/articulos/deepfakes-en-telegram-la-violencia-sexual-tiene-algoritmo/) que fabrican _deepfakes_ sexuales en masa a partir de fotos cotidianas. La diferencia entre ambos es de escala, no de naturaleza: lo que Strahler hizo de forma individual, las redes automatizadas de IA lo hacen con miles de víctimas simultáneamente.
 
 La condena resuelve un caso concreto, pero no resuelve el problema estructural: **las herramientas que permiten fabricar este material son cada vez más accesibles, más rápidas y más difíciles de rastrear**. La ley llega tarde, como casi siempre. La pregunta es si llega suficientemente rápido para que el precedente disuada.

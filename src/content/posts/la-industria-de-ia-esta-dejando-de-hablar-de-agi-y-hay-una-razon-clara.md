@@ -13,7 +13,7 @@ heroImageAlt: >-
   La industria de IA está dejando de hablar de AGI: mujer retirando panel de un
   diagrama mural en oficina
 ---
-Algo cambió en cómo la industria de IA habla sobre su futuro. **Los [CEOs](https://www.michaelpage.com.ar/advice/consejos-para-clientes/consejos-para-la-atracción-y-selección-de-talento/¿qué-es-y-qué-hace) de OpenAI, Anthropic, y Microsoft están dejando de usar el término AGI (Inteligencia Artificial General) en presentaciones, entrevistas, y anuncios de producto**. Sam Altman de OpenAI dijo en CES 2026 que el término "ya no es útil". Dario Amodei de Anthropic lo llamó "distractivo". Satya Nadella de Microsoft simplemente dejó de mencionarlo.
+Algo cambió en cómo la industria de IA habla sobre su futuro. **Los [CEOs](https://www.michaelpage.com.ar/advice/consejos-para-clientes/consejos-para-la-atracción-y-selección-de-talento/¿qué-es-y-qué-hace) de OpenAI, Anthropic, y Microsoft están dejando de usar el término [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/) (Inteligencia Artificial General) en presentaciones, entrevistas, y anuncios de producto**. Sam Altman de OpenAI dijo en CES 2026 que el término "ya no es útil". Dario Amodei de Anthropic lo llamó "distractivo". Satya Nadella de Microsoft simplemente dejó de mencionarlo.
 
 ¿Es admisión implícita de que la AGI es inalcanzable? ¿O es cambio estratégico de comunicación? La respuesta es más complicada y reveladora de lo que parece.
 

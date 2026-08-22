@@ -13,7 +13,7 @@ heroImageAlt: >-
   World Models in AI: arquitecta ajustando maqueta urbana con estructura en
   construcción
 ---
-Yann LeCun acaba de hacer una de las movidas más audaces de su carrera. El ganador del Premio Turing y ex jefe científico de IA en Meta dejó la compañía en diciembre de 2025 para fundar Advanced Machine Intelligence Labs (AMI Labs) en París, con una valuación objetivo de $5 mil millones antes de lanzar un solo producto. La tesis detrás de esta apuesta masiva: **los modelos de lenguaje grandes (LLMs) han llegado a su límite y el futuro de la inteligencia artificial está en los modelos del mundo**.
+Yann LeCun acaba de hacer una de las movidas más audaces de su carrera. El ganador del Premio Turing y ex jefe científico de IA en Meta dejó la compañía en diciembre de 2025 para fundar Advanced Machine Intelligence Labs ([AMI Labs](/articulos/ami-labs-recauda-1030-millones-para-matar-a-los-llms/)) en París, con una valuación objetivo de $5 mil millones antes de lanzar un solo producto. La tesis detrás de esta apuesta masiva: **los modelos de lenguaje grandes (LLMs) han llegado a su límite y el futuro de la inteligencia artificial está en los modelos del mundo**.
 
 Según reportó TechCrunch a finales de enero de 2026, [Yann LeCun](https://es.wikipedia.org/wiki/Yann_LeCun) está buscando levantar €500 millones a una valuación de €3 mil millones, con algunos reportes sugiriendo que la valuación podría alcanzar los $5 mil millones. Esto convertiría a AMI Labs en una de las rondas de financiamiento prelanzamiento más grandes de la historia de la IA, rivalizando con las valuaciones iniciales de compañías como Anthropic y OpenAI.
 

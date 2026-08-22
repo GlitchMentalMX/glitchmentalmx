@@ -20,7 +20,7 @@ Esta guía no es una lista de deseos corporativos. Es una selección honesta de 
 
 ## Wearables con IA que no son puro humo
 
-Los lentes inteligentes finalmente dejaron de ser prototipos raros de Google Glass. En CES 2026, Rokid presentó los Style, unos lentes de IA que pesan solo 38.5 gramos y funcionan con ChatGPT, DeepSeek, Google Maps y Microsoft Translate. No parecen lentes de ciencia ficción; parecen lentes normales.
+Los lentes inteligentes finalmente dejaron de ser prototipos raros de Google Glass. En CES 2026, Rokid presentó los Style, unos lentes de IA que pesan solo 38.5 gramos y funcionan con ChatGPT, [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/), Google Maps y Microsoft Translate. No parecen lentes de ciencia ficción; parecen lentes normales.
 
 La arquitectura de doble chip balancea tareas siempre activas con cargas de trabajo pesadas de IA, logrando hasta 12 horas de batería. Tienen una cámara Sony de 12MP que graba en 4K con múltiples relaciones de aspecto para creadores. El precio: $300 dólares. Por primera vez, los lentes con IA están en un rango accesible, no en los $1,500 que costaban modelos anteriores.
 

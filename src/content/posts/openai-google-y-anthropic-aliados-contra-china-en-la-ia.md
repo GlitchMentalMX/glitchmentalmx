@@ -12,7 +12,7 @@ heroImageAlt: >-
   OpenAI Google Anthropic IA: ingeniera ajustando núcleo tecnológico con brazos
   robóticos en laboratorio
 ---
-Tres empresas que compiten ferozmente por talento, contratos y narrativa pública **acordaron el 6 de abril de 2026 compartir su inteligencia de seguridad más sensible**. El objetivo: bloquear a DeepSeek, Moonshot AI y MiniMax, tres laboratorios chinos acusados de extraer las capacidades de los modelos estadounidenses a escala industrial. El vehículo es el **Frontier Model Forum**, un organismo sin fines de lucro que ellas cofundaron con Microsoft en 2023 y que hasta ahora había servido principalmente para emitir compromisos de seguridad ante el Congreso.
+Tres empresas que compiten ferozmente por talento, contratos y narrativa pública **acordaron el 6 de abril de 2026 compartir su inteligencia de seguridad más sensible**. El objetivo: bloquear a [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/), Moonshot AI y MiniMax, tres laboratorios chinos acusados de extraer las capacidades de los modelos estadounidenses a escala industrial. El vehículo es el **Frontier Model Forum**, un organismo sin fines de lucro que ellas cofundaron con Microsoft en 2023 y que hasta ahora había servido principalmente para emitir compromisos de seguridad ante el Congreso.
 
 ## Qué es la destilación adversarial y por qué importa
 

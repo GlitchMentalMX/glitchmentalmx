@@ -17,7 +17,7 @@ Hay dos formas de vender inteligencia artificial y las dos existen al mismo tiem
 
 ## El relato de la sustitución: para quién funciona
 
-El relato de la sustitución — la IA reemplazará trabajos, industrias, funciones humanas — es más útil para atraer inversión y capturar atención mediática que para vender productos a usuarios finales. Cuando Sam Altman o Dario Amodei hablan de AGI, de sistemas que superarán las capacidades humanas, no le están hablando a alguien que quiere escribir correos más rápido. Le están hablando a inversores institucionales, a fondos de capital de riesgo, a gobiernos que evalúan regulación.
+El relato de la sustitución — la IA reemplazará trabajos, industrias, funciones humanas — es más útil para atraer inversión y capturar atención mediática que para vender productos a usuarios finales. Cuando Sam Altman o Dario Amodei hablan de [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/), de sistemas que superarán las capacidades humanas, no le están hablando a alguien que quiere escribir correos más rápido. Le están hablando a inversores institucionales, a fondos de capital de riesgo, a gobiernos que evalúan regulación.
 
 El relato de la sustitución genera urgencia: si no adoptas esta tecnología ahora, quedarás obsoleto. Esa urgencia es útil para acelerar ciclos de venta, especialmente en empresas. Según reportó la Electronic Frontier Foundation en febrero de 2026, **el mercado tiene un incentivo creciente en meter "IA" en cada modelo de negocio**, y el relato de la sustitución — el miedo a quedarse atrás — es el combustible de ese incentivo.
 

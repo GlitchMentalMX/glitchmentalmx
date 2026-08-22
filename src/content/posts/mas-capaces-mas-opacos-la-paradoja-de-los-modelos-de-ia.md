@@ -11,7 +11,7 @@ heroImageAlt: >-
   opacidad modelos IA: mujer presiona mano sobre panel de vidrio esmerilado con
   sistema activo ilegible al fondo
 ---
-Mientras los modelos de inteligencia artificial baten récords en benchmarks y las empresas que los desarrollan se preparan para salir a bolsa, un índice independiente registra la dirección opuesta: **la transparencia sobre cómo funcionan esos modelos cayó de 58 a 40 puntos en un solo año.** El dato viene del Stanford AI Index 2026, publicado el 13 de abril, y describe una tendencia que el sector prefiere no discutir.
+Mientras los modelos de inteligencia artificial baten récords en benchmarks y las empresas que los desarrollan se preparan para salir a bolsa, un índice independiente registra la dirección opuesta: **la transparencia sobre cómo funcionan esos modelos cayó de 58 a 40 puntos en un solo año.** El dato viene del [Stanford AI Index](/articulos/stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver/) 2026, publicado el 13 de abril, y describe una tendencia que el sector prefiere no discutir.
 
 ## Qué mide el índice y qué encontró
 

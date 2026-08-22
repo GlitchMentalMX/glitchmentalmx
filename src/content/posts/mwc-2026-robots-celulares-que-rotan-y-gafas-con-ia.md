@@ -13,7 +13,7 @@ heroImageAlt: >-
 ---
 El Mobile World Congress regresó esta semana a Barcelona con más de 2,900 expositores y una narrativa que se repitió en cada pabellón: la inteligencia artificial ya no es la promesa de fondo, es la capa que conecta todo lo demás. Robots que leen el lenguaje corporal, teléfonos que giran físicamente para grabar mejor y gafas que proyectan información frente a tus ojos. Esto fue lo que dejó el MWC 2026.
 
-## El Robot Phone de HONOR: cuando el celular se mueve
+## El [Robot Phone](/articulos/honor-robot-phone-el-celular-que-baila-sigue-y-se-mueve-solo/) de HONOR: cuando el celular se mueve
 
 HONOR presentó lo que llamó _Inteligencia Humana Aumentada_, una propuesta encarnada en un dispositivo que hace exactamente lo que su nombre sugiere: el teléfono se mueve. El Robot Phone de HONOR incorpora un mecanismo que gira la cámara y ajusta el ángulo del dispositivo de forma autónoma, sin que el usuario mueva el brazo.
 

@@ -60,7 +60,7 @@ Wi-Fi 7 todavía no está disponible en la mayoría de los routers domésticos, 
 
 Esta semana no fue el cuadro completo de Apple en 2026. Según MacRumors, todavía están pendientes el Apple TV y el HomePod mini, que según reportes se están retrasando hasta que la versión renovada de Siri esté lista. También se espera una actualización al Mac Studio con chips M5 Max y M5 Ultra en algún momento de los próximos meses.
 
-El anuncio más comentado que no llegó esta semana es el iPhone Fold. Bloomberg reportó en febrero que Apple sigue desarrollando su primer teléfono plegable, con una tecnología de pantalla sin pliegue visible como elemento central. El cronograma apunta a la segunda mitad de 2026, pero no hay fecha confirmada.
+El anuncio más comentado que no llegó esta semana es el [iPhone Fold](/articulos/iphone-fold-apple-llega-tarde-al-plegable-y-aun-asi-gana/). Bloomberg reportó en febrero que Apple sigue desarrollando su primer teléfono plegable, con una tecnología de pantalla sin pliegue visible como elemento central. El cronograma apunta a la segunda mitad de 2026, pero no hay fecha confirmada.
 
 MacRumors también señala que el próximo MacBook Pro con rediseño significativo —pantalla OLED, posible pantalla táctil y Dynamic Island— está planeado para el ciclo M6, probablemente en 2027. Si puedes esperar eso, los MacBook Pro de esta semana son un punto intermedio, no el salto generacional que algunos esperaban.
 

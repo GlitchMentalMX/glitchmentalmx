@@ -32,7 +32,7 @@ En benchmarks específicos para agentes, los datos de terceros ubican a MiMo-V2-
 
 La ventaja competitiva más directa de MiMo-V2-Pro frente a los modelos occidentales no es el rendimiento — es el costo. Xiaomi afirma que el modelo iguala o supera a Claude Opus 4.6 en benchmarks de agentes mientras cuesta entre un 60 y un 80% menos. Claude Sonnet 4.6 tiene un precio de 3 dólares por millón de tokens de entrada y 15 por millón de salida; Claude Opus 4.6 sube a 5 y 25 dólares respectivamente. **MiMo-V2-Pro opera en una fracción de esos costos, sin la carga de eficiencia que tienen los productos de Anthropic.**
 
-Este diferencial de precio cobró relevancia inmediata cuando Anthropic bloqueó el acceso de sus suscripciones a OpenClaw el 4 de abril. Xiaomi promocionó MiMo-V2-Pro como alternativa compatible con el framework el mismo día. El timing no es casualidad.
+Este diferencial de precio cobró relevancia inmediata cuando Anthropic bloqueó el acceso de sus suscripciones a [OpenClaw](/articulos/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/) el 4 de abril. Xiaomi promocionó MiMo-V2-Pro como alternativa compatible con el framework el mismo día. El timing no es casualidad.
 
 ## Cómo acceder y qué esperar
 

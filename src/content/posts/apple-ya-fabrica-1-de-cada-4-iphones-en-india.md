@@ -19,7 +19,7 @@ JPMorgan había predicho este umbral en 2022. Que se haya cumplido antes de lo e
 
 Sería tentador presentar este giro como una decisión de principios sobre diversificación de riesgos. La realidad es más directa: la guerra arancelaria entre Estados Unidos y China hizo que exportar iPhones desde China al mercado estadounidense se volviera progresivamente más caro e incierto. India, con los incentivos del programa _Production Linked Incentive_ del primer ministro Narendra Modi, ofreció una alternativa con costos subsidiados.
 
-El CEO Tim Cook lo confirmó públicamente: la mayoría de la demanda estadounidense de iPhones ahora se surte con unidades fabricadas en India. Foxconn, Tata Electronics y Pegatron son los tres ensambladores principales en el país, y ya producen la línea completa del iPhone 17, incluyendo los modelos Pro y Pro Max.
+El CEO [Tim Cook](/articulos/tim-cook-sale-de-apple-la-era-del-hardware-regresa/) lo confirmó públicamente: la mayoría de la demanda estadounidense de iPhones ahora se surte con unidades fabricadas en India. Foxconn, Tata Electronics y Pegatron son los tres ensambladores principales en el país, y ya producen la línea completa del iPhone 17, incluyendo los modelos Pro y Pro Max.
 
 ## La parte incómoda del plan
 

@@ -74,7 +74,7 @@ Introducir ads siempre degrada experiencia de usuario. Instagram lo hizo gradual
 
 Hay también pregunta de si advertisers realmente querrán estar en Threads. Twitter/X era valioso para advertisers porque trending topics y conversaciones en tiempo real daban contexto para ads relevantes. Si Threads deliberadamente evita ese tipo de contenido, ¿cómo monetizas efectivamente?
 
-## La competencia que viene: BlueSky y otros
+## La competencia que viene: [BlueSky](/articulos/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/) y otros
 
 Threads no es única alternativa a Twitter/X. BlueSky, plataforma descentralizada iniciada por Jack Dorsey (fundador de Twitter), está ganando tracción entre usuarios tech-savvy. Tiene alrededor de 20 millones de usuarios ahora, número pequeño comparado con Threads, pero con crecimiento fuerte.
 

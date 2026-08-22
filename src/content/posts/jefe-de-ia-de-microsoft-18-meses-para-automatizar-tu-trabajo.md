@@ -41,7 +41,7 @@ Si la advertencia de Suleyman te suena familiar, es porque no es el único líde
 
 Elon Musk fue aún más lejos en Davos el mes pasado, diciendo que cree que la inteligencia general artificial, es decir, IA que iguala o supera la inteligencia humana en todos los aspectos, podría llegar tan pronto como este año. Stuart Russell, científico informático prominente que coescribió uno de los libros de texto más autorizados sobre IA, afirmó que los líderes políticos están enfrentando la posibilidad de un 80% de desempleo impulsado por la IA.
 
-Pero hay una diferencia crítica entre las advertencias de 2025 y las de ahora. **En 2025, estas declaraciones sonaron a ciencia ficción. En febrero de 2026, ya estamos viendo la tecnología funcionando**. El lanzamiento de Claude Cowork de Anthropic la semana pasada ayudó a desencadenar una venta masiva en el mercado de valores, ya que los inversores temían que pudiera automatizar trabajos como el legal, algo que también puso en riesgo el resultado final de grandes empresas de software.
+Pero hay una diferencia crítica entre las advertencias de 2025 y las de ahora. **En 2025, estas declaraciones sonaron a ciencia ficción. En febrero de 2026, ya estamos viendo la tecnología funcionando**. El lanzamiento de Claude [Cowork](/articulos/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/) de Anthropic la semana pasada ayudó a desencadenar una venta masiva en el mercado de valores, ya que los inversores temían que pudiera automatizar trabajos como el legal, algo que también puso en riesgo el resultado final de grandes empresas de software.
 
 ## La brecha entre la predicción y la realidad
 

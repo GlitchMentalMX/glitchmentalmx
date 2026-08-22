@@ -50,7 +50,7 @@ heroImageAlt: >-
 
 **Cuando una universidad latinoamericana adopta ChatGPT Edu** —el plan universitario de OpenAI— firma términos de servicio cuya infraestructura de datos opera bajo legislación estadounidense. OpenAI declara en su política de privacidad empresarial que los datos guardados de clientes de ChatGPT Edu se almacenan en servidores ubicados en Estados Unidos, y que el procesamiento se rige por marcos como RGPD y CCPA. No existe un equivalente regional en México, Colombia, Argentina o Brasil que imponga obligaciones equivalentes a las plataformas de IA. Las universidades públicas latinoamericanas están firmando acuerdos de uso masivo de datos pedagógicos —conversaciones académicas, patrones de consulta, textos de tesis— bajo una legislación que no es la suya y sin ningún mecanismo de auditoría regional.
 
-**El problema no es nuevo:** ocurrió antes con Google Workspace for Education, con Microsoft Teams y con los sistemas de gestión de aprendizaje basados en servidores estadounidenses. Lo nuevo es la escala y la especificidad de los datos que se procesan: ya no son correos o documentos, sino el proceso cognitivo en tiempo real de millones de estudiantes.
+**El problema no es nuevo:** ocurrió antes con [Google Workspace](/articulos/gemini-en-google-workspace-lo-que-cambia-para-equipos/) for Education, con Microsoft Teams y con los sistemas de gestión de aprendizaje basados en servidores estadounidenses. Lo nuevo es la escala y la especificidad de los datos que se procesan: ya no son correos o documentos, sino el proceso cognitivo en tiempo real de millones de estudiantes.
 
 ## El modelo educativo heredado hace que todo llegue tarde
 

@@ -51,7 +51,7 @@ heroImageAlt: >-
 
 **ChatGPT Plus — $20 USD/mes:** la opción para uso diario serio. Límites más altos en todos los modelos, Deep Research (25/mes), automatización web (40/mes), Tasks programadas (40/mes), integración con servicios externos y acceso prioritario en horas pico. El 95% de lo que la gente quiere hacer con ChatGPT está aquí.
 
-**ChatGPT Pro — $200 USD/mes:** acceso ilimitado a todo, incluyendo generación de video con Sora y voz con compartir pantalla. Para empresas o profesionales con uso intensivo.
+**ChatGPT Pro — $200 USD/mes:** acceso ilimitado a todo, incluyendo generación de video con [Sora](/articulos/openai-cancela-sora-el-video-costaba-demasiado-y-la-ipo-no-espera/) y voz con compartir pantalla. Para empresas o profesionales con uso intensivo.
 
 **Team y Enterprise:** control administrativo, seguridad mejorada, modelos personalizables y soporte dedicado.
 

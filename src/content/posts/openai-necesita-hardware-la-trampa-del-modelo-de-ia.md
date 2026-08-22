@@ -32,7 +32,7 @@ El concepto que describe Kuo no es un smartphone con un asistente. Es un disposi
 
 Este smartphone es la segunda pista de hardware de OpenAI, no la primera. La primera es el dispositivo desarrollado con Jony Ive —el ex director de diseño de Apple cuya startup fue adquirida por 6,400 millones de dólares en mayo de 2025. Ese proyecto apunta a un formato sin pantalla: un dispositivo de voz, con cámara, cuya producción inicial vía Foxconn se estima en 40 a 50 millones de unidades con lanzamiento esperado en la primera mitad de 2027. Son productos distintos para apuestas distintas: uno reimagina qué es un dispositivo personal, el otro conserva el factor de forma del teléfono pero reemplaza todo lo que corre sobre él.
 
-La cadena de suministro que describe Kuo no es especulativa. Luxshare ensambla AirPods y componentes del Apple Watch. El Snapdragon 8 Elite Gen 5 de Qualcomm impulsa el 75% de la serie Galaxy S26 de Samsung. MediaTek iguala a Qualcomm en rendimiento de CPU a menor costo. El silicio para el teléfono que describe Kuo no necesita inventarse. La pregunta es si el paradigma de software funciona.
+La cadena de suministro que describe Kuo no es especulativa. Luxshare ensambla AirPods y componentes del Apple Watch. El Snapdragon 8 Elite Gen 5 de Qualcomm impulsa el 75% de la serie [Galaxy S26](/articulos/samsung-galaxy-s26-todo-lo-que-se-revelo-en-unpacked-2026/) de Samsung. MediaTek iguala a Qualcomm en rendimiento de CPU a menor costo. El silicio para el teléfono que describe Kuo no necesita inventarse. La pregunta es si el paradigma de software funciona.
 
   
 

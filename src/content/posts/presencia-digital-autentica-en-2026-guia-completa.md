@@ -34,7 +34,7 @@ Un punto de vista no es una declaración de misión corporativa. Es la perspecti
 
 ## Cómo elegir las plataformas correctas en 2026
 
-La tentación de estar en todas las plataformas al mismo tiempo es comprensible, pero es una de las formas más eficientes de diluir una presencia digital. En 2026, la fragmentación del ecosistema digital ya es total: TikTok, Instagram, YouTube, LinkedIn, Bluesky, Threads y X coexisten con audiencias y lógicas distintas.
+La tentación de estar en todas las plataformas al mismo tiempo es comprensible, pero es una de las formas más eficientes de diluir una presencia digital. En 2026, la fragmentación del ecosistema digital ya es total: TikTok, Instagram, YouTube, LinkedIn, [Bluesky](/articulos/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/), Threads y X coexisten con audiencias y lógicas distintas.
 
 La guía para elegir no es complicada. **Primero**, identifica dónde está tu audiencia real. No la audiencia teórica ni la aspiracional: la que ya existe y que buscaría lo que tú ofreces. **Segundo**, evalúa en qué formato produces mejor. Si eres bueno con el texto y el análisis, LinkedIn o Substack tienen más sentido que TikTok. Si tienes energía frente a la cámara y hablas bien de forma espontánea, el video de formato corto es tu terreno natural.
 

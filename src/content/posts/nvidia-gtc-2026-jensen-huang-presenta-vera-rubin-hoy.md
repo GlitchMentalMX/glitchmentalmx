@@ -25,7 +25,7 @@ La plataforma Vera Rubin — nombrada en honor a la astrónoma que descubrió ev
 
 El timing no es casual. La presión sobre los márgenes de operación de centros de datos de IA creció significativamente en 2025, cuando quedó claro que el costo de inferencia de los modelos más grandes era un obstáculo para la adopción masiva. Vera Rubin apunta directamente a ese problema.
 
-## NemoClaw y la apuesta por agentes empresariales
+## [NemoClaw](/articulos/nemoclaw-nvidia-apuesta-por-agentes-ia-en-empresas/) y la apuesta por agentes empresariales
 
 Además de Vera Rubin, NVIDIA presentó **NemoClaw**, una plataforma de código abierto orientada a agentes de IA para uso empresarial. El objetivo es que las empresas puedan desplegar agentes que operan dentro de sus propios sistemas internos — bases de datos, ERP, herramientas de gestión — sin depender de APIs externas para cada acción.
 

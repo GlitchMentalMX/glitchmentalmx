@@ -48,7 +48,7 @@ Del lado del Vaticano, el cálculo es igualmente estratégico. **León XIV eligi
 
 ## La ironía que ninguno menciona
 
-En junio de 2025, la Segunda Conferencia Anual de Roma sobre IA reunió en el Palacio Apostólico del Vaticano a representantes de Google, OpenAI, Anthropic, IBM, Meta, Palantir, junto con académicos de Harvard y Stanford. León XIV no estuvo en persona: envió un mensaje escrito. El Papa que critica la concentración de poder tecnológico abrió las puertas de su sede al evento donde esa concentración quedó más evidente que nunca.
+En junio de 2025, la Segunda Conferencia Anual de Roma sobre IA reunió en el Palacio Apostólico del Vaticano a representantes de Google, OpenAI, Anthropic, IBM, Meta, [Palantir](/articulos/el-hilo-de-mehdi-sobre-palantir-es-publicidad-gratis/), junto con académicos de Harvard y Stanford. León XIV no estuvo en persona: envió un mensaje escrito. El Papa que critica la concentración de poder tecnológico abrió las puertas de su sede al evento donde esa concentración quedó más evidente que nunca.
 
 > Anthropic quiere virtud sin definir qué es el bien. El Vaticano quiere relevancia sin ceder autoridad. Los dos se necesitan demasiado como para ser honestos el uno con el otro sobre esas contradicciones.
 

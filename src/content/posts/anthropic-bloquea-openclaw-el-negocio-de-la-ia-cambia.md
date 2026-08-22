@@ -18,7 +18,7 @@ Anthropic cerró el acceso de sus suscripciones a OpenClaw el 4 de abril de 2026
 
 OpenClaw es un agente de IA de código abierto que conecta modelos de lenguaje con servicios del mundo real: correo electrónico, navegación web, domótica, automatización de archivos. Hasta el 4 de abril, los usuarios podían autenticarse con sus credenciales de Claude Pro o Claude Max para usar OpenClaw sin costo adicional. Eso terminó.
 
-Boris Cherny, responsable de Claude Code en Anthropic, lo anunció en X con una frase corta: _"Las suscripciones no fueron diseñadas para los patrones de uso de estas herramientas de terceros."_ La explicación técnica es real: **una sola cuenta de Claude Max a 200 dólares mensuales, gestionada por un agente automatizado en OpenClaw, podía generar un consumo de infraestructura valorado entre 1,000 y 5,000 dólares al mes para Anthropic.** La ecuación no funcionaba para la empresa.
+Boris Cherny, responsable de [Claude Code](/articulos/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/) en Anthropic, lo anunció en X con una frase corta: _"Las suscripciones no fueron diseñadas para los patrones de uso de estas herramientas de terceros."_ La explicación técnica es real: **una sola cuenta de Claude Max a 200 dólares mensuales, gestionada por un agente automatizado en OpenClaw, podía generar un consumo de infraestructura valorado entre 1,000 y 5,000 dólares al mes para Anthropic.** La ecuación no funcionaba para la empresa.
 
 La medida no es un ajuste puntual. Cherny dejó claro que la política aplica a todas las herramientas de terceros y que se irá extendiendo en las semanas siguientes. OpenClaw fue el primero; no será el último.
 

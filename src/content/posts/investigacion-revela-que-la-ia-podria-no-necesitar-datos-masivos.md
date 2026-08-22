@@ -50,7 +50,7 @@ Para que la arquitectura biológica reemplace o complemente modelos actuales: **
 
 Esto probablemente toma años, no meses. Pero si sucede, es cambio de paradigma.
 
-## El debate sobre inteligencia artificial general (AGI)
+## El debate sobre inteligencia artificial general ([AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/))
 
 Algunos investigadores argumentan que la AGI (IA que puede hacer cualquier tarea intelectual que un humano puede hacer) requiere arquitecturas más similares al cerebro, no solo modelos más grandes con más datos. **La investigación de Johns Hopkins da soporte a esta visión**. Si la eficiencia de datos es característica emergente de arquitectura biológica, entonces imitar el cerebro más fielmente podría ser camino hacia IA más capaz, no solo entrenar modelos más grandes con más datos. Este debate es fundamental para la dirección futura de la investigación de IA.
 

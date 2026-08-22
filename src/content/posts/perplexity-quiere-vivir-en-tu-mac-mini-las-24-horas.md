@@ -27,7 +27,7 @@ El CEO Aravind Srinivas describió el producto en la conferencia como "un proxy 
 
 Perplexity no es el único en apuntar a la Mac mini como nodo de IA local. La máquina se ha convertido en el punto de entrada barato para quien quiere correr modelos localmente sin invertir en hardware especializado. Según reportó The Next Web, en enero de 2025 el 90% de las consultas empresariales en Perplexity se procesaban con apenas dos modelos de IA; para diciembre de 2025, ningún modelo individual superaba el 25% del uso. La apuesta de Perplexity es que las empresas querrán acceder al mejor modelo disponible para cada tarea, sin depender de un solo proveedor.
 
-**Personal Computer compite directamente con Claude Cowork de Anthropic y con las iniciativas de agentes locales de OpenAI.** Los tres apuntan al mismo territorio: el escritorio del usuario como punto de control de un agente autónomo que integra aplicaciones reales.
+**Personal Computer compite directamente con Claude [Cowork](/articulos/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/) de Anthropic y con las iniciativas de agentes locales de OpenAI.** Los tres apuntan al mismo territorio: el escritorio del usuario como punto de control de un agente autónomo que integra aplicaciones reales.
 
 ## Lo que vale la pena mirar antes de emocionarse
 

@@ -13,7 +13,7 @@ heroImageAlt: >-
   DeepSeek V4: gabinete de servidores iluminado frente a racks de centro de
   datos
 ---
-Si pensabas que la carrera de la inteligencia artificial era solo entre OpenAI, Google y Anthropic, tengo noticias: China acaba de entrar al ring de forma brutal. Esta semana, OpenAI publicó un artículo en su blog advirtiendo sobre un potencial "shock sísmico" proveniente de China, justo cuando se cumplen 12 meses desde que DeepSeek lanzó su modelo R1 en enero de 2025.
+Si pensabas que la carrera de la inteligencia artificial era solo entre OpenAI, Google y Anthropic, tengo noticias: China acaba de entrar al ring de forma brutal. Esta semana, OpenAI publicó un artículo en su blog advirtiendo sobre un potencial "shock sísmico" proveniente de China, justo cuando se cumplen 12 meses desde que [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/) lanzó su modelo R1 en enero de 2025.
 
 El contexto es simple: **[DeepSeek está por lanzar su modelo V4 en febrero de 2026](https://forbes.com.mx/deepseek-lanzara-en-febrero-un-nuevo-modelo-de-ia-centrado-en-la-codificacion/), y las pruebas internas sugieren que será devastadoramente bueno en tareas de programación**, superando a los modelos de OpenAI y Anthropic en manejo de prompts largos y complejos, según reportó MarketingProfs.
 

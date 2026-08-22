@@ -15,7 +15,7 @@ El cifrado de extremo a extremo, conocido como E2EE por sus siglas en inglés, e
 
   
 
-Instagram es un caso aparte: Meta anunció que a partir del 8 de mayo de 2026 retirará el E2EE de los DMs de Instagram, citando la Take It Down Act y prevención de fraude — va en sentido contrario al resto de la lista. Discord acaba de anunciar que la adoptará para llamadas de voz y video. Telegram la ofrece como opción, no como default. **TikTok es, hoy, el único gran ausente entre las plataformas de mensajería.**
+Instagram es un caso aparte: Meta anunció que a partir del 8 de mayo de 2026 retirará el E2EE de los DMs de Instagram, citando la Take It Down Act y prevención de fraude — va en sentido contrario al resto de la lista. Discord acaba de anunciar que la adoptará para llamadas de voz y video. [Telegram](/articulos/deepfakes-en-telegram-la-violencia-sexual-tiene-algoritmo/) la ofrece como opción, no como default. **TikTok es, hoy, el único gran ausente entre las plataformas de mensajería.**
 
 ## El argumento oficial y sus problemas
 

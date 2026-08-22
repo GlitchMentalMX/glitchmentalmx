@@ -12,7 +12,7 @@ heroImageAlt: >-
   Deepfakes menores: mujer frente a tablet con luz fría en cocina doméstica,
   expresión de reconocimiento interrumpido
 ---
-ByteDance, la compañía matriz de TikTok, acaba de lanzar un modelo de inteligencia artificial para generación de video que está generando tanto asombro como alarma en partes iguales. Esta nueva IA, llamada **Seedance 2.0**, fue lanzada este fin de semana y sus prestaciones se han traducido en importantes subidas en bolsa para empresas del sector de entretenimiento, con algunas de ellas que alcanzaron el máximo diario de ganancias.
+ByteDance, la compañía matriz de TikTok, acaba de lanzar un modelo de inteligencia artificial para generación de video que está generando tanto asombro como alarma en partes iguales. Esta nueva IA, llamada **[Seedance 2.0](/articulos/seedance-20-hollywood-vs-bytedance/)**, fue lanzada este fin de semana y sus prestaciones se han traducido en importantes subidas en bolsa para empresas del sector de entretenimiento, con algunas de ellas que alcanzaron el máximo diario de ganancias.
 
 Según el portal de noticias económicas Caixin, este modelo puede generar metraje realista con movimientos fluidos, añadiendo además sonidos que cuadran con las imágenes. Esto sitúa por primera vez a ByteDance en capacidad de competir con KlingAI, desarrollada por la plataforma de videos cortos Kuaishou. Pero el lanzamiento llega en un momento crítico: justo cuando UNICEF acaba de reportar cifras alarmantes sobre el uso malicioso de la [tecnología _deepfake_](https://www.fortinet.com/lat/resources/cyberglossary/deepfake).
 

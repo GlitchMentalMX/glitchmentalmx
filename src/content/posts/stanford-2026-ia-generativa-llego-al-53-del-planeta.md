@@ -12,7 +12,7 @@ heroImageAlt: >-
   Stanford AI Index 2026: mujer frente a mapa mundial con más de la mitad del
   territorio marcado, sala institucional con luz cenital
 ---
-La **IA generativa alcanzó al 53% de la población mundial en aproximadamente tres años** desde su disponibilidad masiva — más rápido que la PC, el internet y el smartphone en etapas comparables. Eso no lo dice una consultora con intereses en el tema: lo documenta el Stanford AI Index 2026, publicado el 13 de abril. El dato que nadie esperaba es dónde quedó el país que construyó la mayoría de esas herramientas.
+La **IA generativa alcanzó al 53% de la población mundial en aproximadamente tres años** desde su disponibilidad masiva — más rápido que la PC, el internet y el smartphone en etapas comparables. Eso no lo dice una consultora con intereses en el tema: lo documenta el [Stanford AI Index](/articulos/stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver/) 2026, publicado el 13 de abril. El dato que nadie esperaba es dónde quedó el país que construyó la mayoría de esas herramientas.
 
 ## La adopción que rompió todos los registros
 

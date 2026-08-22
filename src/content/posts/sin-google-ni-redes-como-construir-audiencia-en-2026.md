@@ -51,7 +51,7 @@ X tiene valor para visibilidad y conversación dentro del ecosistema tech. **No 
 
 TikTok y YouTube solo tienen sentido editorial si puedes producir video de forma sostenida y con calidad suficiente para competir. **YouTube requiere 1,000 suscriptores y 4,000 horas de visualización en 12 meses** para acceder a AdSense. TikTok exige **10,000 seguidores y 100,000 visualizaciones en los últimos 30 días** para su programa de monetización básico. Y cuando llegas a esos umbrales, los ingresos para una cuenta mediana son insuficientes para sostener una operación editorial seria.
 
-**Bluesky y Mastodon son alternativas con menor volumen pero sin los mecanismos de supresión de enlaces** que tienen las plataformas grandes. Para un sitio editorial, la honestidad de esas plataformas como canal de distribución vale más que el volumen de X con penalización incorporada.
+**[Bluesky](/articulos/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/) y Mastodon son alternativas con menor volumen pero sin los mecanismos de supresión de enlaces** que tienen las plataformas grandes. Para un sitio editorial, la honestidad de esas plataformas como canal de distribución vale más que el volumen de X con penalización incorporada.
 
 ## Lo que cambia si adoptas este enfoque
 

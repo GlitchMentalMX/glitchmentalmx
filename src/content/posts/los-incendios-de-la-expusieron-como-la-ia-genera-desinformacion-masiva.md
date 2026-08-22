@@ -35,7 +35,7 @@ Las herramientas de IA generativa mejoraron masivamente en 2025. **Razones por l
 
 ## Las plataformas no están preparadas para esto
 
-X, Facebook, Instagram, TikTok, todas fallaron en moderar el contenido falso efectivamente. **Problemas sistémicos:** Los algoritmos priorizan interacción sobre veracidad. El contenido emotivo (falso o real) recibe más distribución. La moderación humana es demasiado lenta. Para cuando identifican contenido falso, ya se viralizó. Las herramientas de detección de IA son insuficientes. Pueden identificar algunas imágenes generadas pero no todas. Las políticas son inconsistentes. Algunas plataformas eliminan contenido falso, otras solo agregan advertencias. El sistema de notas de comunidad es inútil durante crisis. Las notas toman horas en aparecer. El daño ya está hecho.
+X, Facebook, Instagram, TikTok, todas fallaron en moderar el contenido falso efectivamente. **Problemas sistémicos:** Los algoritmos priorizan interacción sobre veracidad. El contenido emotivo (falso o real) recibe más distribución. La moderación humana es demasiado lenta. Para cuando identifican contenido falso, ya se viralizó. Las herramientas de detección de IA son insuficientes. Pueden identificar algunas imágenes generadas pero no todas. Las políticas son inconsistentes. Algunas plataformas eliminan contenido falso, otras solo agregan advertencias. El sistema de [notas de comunidad](/articulos/meta-elimina-verificadores-externos-y-ahora-usa-notas-de-comunidad-como-x/) es inútil durante crisis. Las notas toman horas en aparecer. El daño ya está hecho.
 
 ## Cómo identificar imágenes generadas por IA
 

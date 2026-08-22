@@ -27,7 +27,7 @@ DeepSeek, Ernie Bot de Baidu y Qwen de Alibaba operan bajo ese marco. No es una 
 
 El sesgo chino es conocido, documentado y el usuario puede compensarlo conscientemente. Cualquiera que interactúe con DeepSeek sobre Tiananmen sabe de antemano que no va a recibir una respuesta completa. **El sesgo occidental es invisible, negado institucionalmente y por tanto más difícil de resistir.** Cuando Claude responde una pregunta sobre el sentido del sufrimiento desde un marco culturalmente cristiano, el usuario en Yakarta no recibe una advertencia. No hay etiqueta de origen. No hay forma de calibrar la respuesta.
 
-Reid Hoffman, cofundador de LinkedIn y participante de los Diálogos Minerva del Vaticano, describió entrar al recinto con sus retratos de inquisidores históricos como "un poco extraño." Los usuarios de los modelos occidentales no tienen ni esa incomodidad como señal de alerta.
+Reid Hoffman, cofundador de LinkedIn y participante de los Diálogos Minerva del [Vaticano](/articulos/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/), describió entrar al recinto con sus retratos de inquisidores históricos como "un poco extraño." Los usuarios de los modelos occidentales no tienen ni esa incomodidad como señal de alerta.
 
 > China al menos es honesta sobre lo que sus modelos no pueden decir. Occidente vende neutralidad y entrega sesgo. Cuál de los dos es más peligroso depende de si prefieres que te engañen con transparencia o con buenas intenciones.
 

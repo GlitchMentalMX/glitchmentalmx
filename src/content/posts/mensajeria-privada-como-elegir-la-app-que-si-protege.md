@@ -40,7 +40,7 @@ heroImageAlt: >-
 
 ![mensajería privada: dos teléfonos sobre mesa mostrando elección entre apps de mensajería](/images/posts/mensajeria-privada-como-elegir-la-app-que-si-protege/1.jpg)
 
-## Signal, Telegram, iMessage y Session: análisis honesto
+## Signal, [Telegram](/articulos/deepfakes-en-telegram-la-violencia-sexual-tiene-algoritmo/), iMessage y Session: análisis honesto
 
 **Signal** es la referencia en privacidad real. Cifrado E2EE activado por defecto en todas las conversaciones, metadatos mínimos, código abierto, sin publicidad, sin integración con plataformas de datos de terceros. Su limitación principal es práctica: requiere número de teléfono para el registro y su base de usuarios es significativamente menor que la de WhatsApp o Telegram, lo que complica la adopción.
 

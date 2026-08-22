@@ -65,7 +65,7 @@ La verdad incómoda es que no hay una solución mágica. Pero sí hay estrategia
 
 La realidad es que las redes sociales están cada vez más cerca de convertirse en televisión 2.0: un medio donde solo los que pagan tienen visibilidad, donde el contenido está curado por intereses comerciales, y donde la autenticidad es sacrificada en el altar del engagement.
 
-Pero también hay señales de resistencia. Plataformas descentralizadas como Mastodon, Bluesky y otras están tratando de ofrecer alternativas sin algoritmos manipuladores. La Gen Z está volviendo a blogs, newsletters, y formas de comunicación más directas y menos dependientes de plataformas corporativas.
+Pero también hay señales de resistencia. Plataformas descentralizadas como Mastodon, [Bluesky](/articulos/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/) y otras están tratando de ofrecer alternativas sin algoritmos manipuladores. La Gen Z está volviendo a blogs, newsletters, y formas de comunicación más directas y menos dependientes de plataformas corporativas.
 
 Porque al final del día, **el algoritmo no es tu amigo**. Es un sistema diseñado para maximizar ganancias de una corporación, no para ayudarte a conectar con tu audiencia. Y mientras más pronto lo aceptemos, más pronto podremos dejar de jugar según sus reglas y empezar a construir espacios digitales que realmente nos sirvan. 
 

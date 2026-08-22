@@ -33,7 +33,7 @@ Para las empresas que los adoptan, la consecuencia práctica es el _vendor lock-
 
   
 
-## DeepSeek: el "open source" con la bandera china
+## [DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/): el "open source" con la bandera china
 
 DeepSeek complica el mapa de otra manera. Sus modelos más conocidos tienen licencia MIT en algunas versiones — lo que técnicamente los acerca más a la apertura real que Llama. El problema no está en la licencia: **está en lo que el modelo hace cuando le preguntas sobre Tiananmen, sobre Taiwán, sobre la represión en Xinjiang.** Los modelos de DeepSeek operan con los mismos filtros de información que rigen el acceso a internet en China. Juan Lavista Ferres, científico jefe de datos del laboratorio AI for Good de Microsoft, lo señaló directamente al presentar el reporte de la compañía: "para cierto tipo de preguntas, siguen el mismo tipo de acceso a internet que tiene China".
 

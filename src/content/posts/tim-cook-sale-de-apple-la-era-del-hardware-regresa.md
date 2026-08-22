@@ -18,7 +18,7 @@ heroImageAlt: >-
 
 Apple lo confirmó el lunes, 20 de abril en un comunicado oficial: Cook asumirá el rol de _executive chairman_ — presidente ejecutivo — mientras Ternus toma las riendas como el octavo CEO en la historia de la compañía. La transición fue aprobada por unanimidad por el consejo directivo y, según Apple, es el resultado de un proceso de sucesión planificado a largo plazo.
 
-Ternus tiene 50 años, se incorporó a Apple en 2001 directamente del equipo de diseño de producto, y desde 2021 ocupa el cargo de vicepresidente sénior de ingeniería de hardware. **Su huella está en casi cada dispositivo relevante de la última década**: iPhone, Mac con Apple Silicon, AirPods como herramienta de salud auditiva, y el controvertido Vision Pro. Arthur Levinson, que fue presidente no ejecutivo del consejo durante 15 años, cederá ese rol para convertirse en director independiente principal.
+Ternus tiene 50 años, se incorporó a Apple en 2001 directamente del equipo de diseño de producto, y desde 2021 ocupa el cargo de vicepresidente sénior de ingeniería de hardware. **Su huella está en casi cada dispositivo relevante de la última década**: iPhone, Mac con Apple Silicon, AirPods como herramienta de salud auditiva, y el controvertido [Vision Pro](/articulos/apple-vision-pro-fracaso-y-nadie-quiere-admitirlo/). Arthur Levinson, que fue presidente no ejecutivo del consejo durante 15 años, cederá ese rol para convertirse en director independiente principal.
 
 Cook, por su parte, no desaparece. Desde su nueva posición de chairman se concentrará, según el comunicado oficial, en la relación con gobiernos y actores globales — terreno donde ha sido particularmente activo, especialmente en China e India.
 

@@ -59,7 +59,7 @@ Jonathan Haidt, psicólogo social y autor de _The Anxious Generation_, libro bes
 
 "Seguramente habrá dificultades en los primeros meses, pero el mundo está apoyando su éxito, y muchas otras naciones seguirán," añadió Haidt. Malasia ya indicó que planea introducir ban similar el próximo año.
 
-Pero otros expertos son escépticos. David Inserra, fellow de free expression and technology en Cato Institute, advirtió en blog post que **niños evadirán la política moviéndose a nuevas plataformas, apps privadas como Telegram, o lugares más oscuros de internet** donde hay menos moderación y más peligros.
+Pero otros expertos son escépticos. David Inserra, fellow de free expression and technology en Cato Institute, advirtió en blog post que **niños evadirán la política moviéndose a nuevas plataformas, apps privadas como [Telegram](/articulos/deepfakes-en-telegram-la-violencia-sexual-tiene-algoritmo/), o lugares más oscuros de internet** donde hay menos moderación y más peligros.
 
 UNICEF también expresó cautela. Aunque welcomes el compromiso creciente con seguridad infantil online, advirtió que "bans de redes sociales vienen con sus propios riesgos, y pueden incluso backfire." La agencia argumenta que empujar niños underground hace más difícil protegerlos.
 

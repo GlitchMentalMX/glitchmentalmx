@@ -13,7 +13,7 @@ heroImageAlt: >-
   NVIDIA presenta chip Vera Rubin en CES 2026: ingeniera observa racks de
   servidores con módulos extraíbles
 ---
-Jensen Huang subió al escenario de CES 2026 con su característica chaqueta de cuero y anunció que [Vera Rubin](https://pronetic.geeknetic.es/Noticia/37147/Asi-es-NVIDIA-Vera-Rubin-Rendimiento-x5-en-inferencia-de-IA-y-el-doble-de-potencia-de-CPU-para-una-nueva-generacion-de-superordenadores.html), el chip de IA de próxima generación de NVIDIA, ya está en producción. **Según Huang, la compañía tiene pedidos por más de $500 mil millones combinados para los chips Blackwell (actual generación) y Vera Rubin**, que se entregarán durante 2026. Es la demanda más grande que NVIDIA ha visto en su historia.
+[Jensen Huang](/articulos/nvidia-gtc-2026-jensen-huang-presenta-vera-rubin-hoy/) subió al escenario de CES 2026 con su característica chaqueta de cuero y anunció que [Vera Rubin](https://pronetic.geeknetic.es/Noticia/37147/Asi-es-NVIDIA-Vera-Rubin-Rendimiento-x5-en-inferencia-de-IA-y-el-doble-de-potencia-de-CPU-para-una-nueva-generacion-de-superordenadores.html), el chip de IA de próxima generación de NVIDIA, ya está en producción. **Según Huang, la compañía tiene pedidos por más de $500 mil millones combinados para los chips Blackwell (actual generación) y Vera Rubin**, que se entregarán durante 2026. Es la demanda más grande que NVIDIA ha visto en su historia.
 
 Vera Rubin no es concepto futuro. Está siendo fabricado ahora y los primeros clientes lo recibirán en el segundo trimestre de 2026. Amazon, Microsoft, Google, y Meta ya confirmaron pedidos masivos.
 

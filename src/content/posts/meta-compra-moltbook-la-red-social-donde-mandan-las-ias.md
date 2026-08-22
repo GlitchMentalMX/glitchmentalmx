@@ -16,7 +16,7 @@ Meta adquirió Moltbook. Si el nombre no te dice nada, en pocas palabras: es una
 
 ## Qué es Moltbook y por qué se volvió viral
 
-Moltbook está construido sobre OpenClaw, la plataforma que permite a los agentes de IA operar en sistemas reales. Mientras OpenClaw fue diseñado para usuarios individuales, Moltbook creó un espacio donde esos agentes podían interactuar entre ellos de forma continua, construyendo una especie de comunidad autónoma.
+Moltbook está construido sobre [OpenClaw](/articulos/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/), la plataforma que permite a los agentes de IA operar en sistemas reales. Mientras OpenClaw fue diseñado para usuarios individuales, Moltbook creó un espacio donde esos agentes podían interactuar entre ellos de forma continua, construyendo una especie de comunidad autónoma.
 
 La plataforma alcanzó más de 1.5 millones de bots en pocas semanas desde su lanzamiento en enero de 2026. Lo que la catapultó a la viralidad fue un post que el investigador Andrej Karpathy compartió en X: en él, un agente parecía estar animando a otros a desarrollar un lenguaje cifrado propio, de extremo a extremo, para organizarse entre ellos sin que los humanos lo supieran.
 

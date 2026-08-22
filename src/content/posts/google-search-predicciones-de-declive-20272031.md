@@ -56,7 +56,7 @@ La pregunta de 2031 no será "¿murió Google?". Google no va a morir. Seguirá 
 
 La pregunta real es: ¿quién decide qué información llega a la gente?
 
-Los editores que sobrevivan a la transición habrán construido audiencias directas — correos, comunidades, suscriptores — que no dependen del permiso de ningún algoritmo para existir. Los que apostaron todo a Google habrán cerrado o se habrán reconvertido. El SEO clásico, en el sentido de "optimizar contenido para que Google te encuentre", habrá dado paso al GEO (Generative Engine Optimization): la práctica de crear contenido que los sistemas de IA citen como fuente autorizada.
+Los editores que sobrevivan a la transición habrán construido audiencias directas — correos, comunidades, suscriptores — que no dependen del permiso de ningún algoritmo para existir. Los que apostaron todo a Google habrán cerrado o se habrán reconvertido. El SEO clásico, en el sentido de "optimizar contenido para que Google te encuentre", habrá dado paso al [GEO](/articulos/fastvertising-y-geo-el-nuevo-juego-de-los-algoritmos/) (Generative Engine Optimization): la práctica de crear contenido que los sistemas de IA citen como fuente autorizada.
 
 ChatGPT ya representaba el 17% de las consultas digitales globales al cierre de 2025, según el reporte de First Page Sage — la amenaza más seria a la dominancia de Google en más de dos décadas. Perplexity, con 780 millones de consultas mensuales en mayo de 2025, opera en un segmento de usuario que ya dejó de usar Google para investigación profunda. Para 2031, estos no serán nichos: serán la norma para los segmentos de mayor poder adquisitivo y mayor educación digital.
 

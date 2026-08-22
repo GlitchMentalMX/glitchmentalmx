@@ -12,7 +12,7 @@ heroImageAlt: >-
   DeepSeek guía práctica: mujer ante terminal activa con tres capas de acceso al
   modelo en espacio técnico personal con luz de pantalla
 ---
-**DeepSeek no es "el ChatGPT chino barato".** Tiene arquitectura propia, pesos abiertos bajo licencia MIT y tres capas de acceso con lógicas distintas de uso, costo y privacidad. Las guías en español solo cubren el chat web. Esta guía cubre las tres.
+**[DeepSeek](/articulos/como-instalar-y-usar-deepseek-en-tu-computadora/) no es "el ChatGPT chino barato".** Tiene arquitectura propia, pesos abiertos bajo licencia MIT y tres capas de acceso con lógicas distintas de uso, costo y privacidad. Las guías en español solo cubren el chat web. Esta guía cubre las tres.
 
 ## Qué es DeepSeek (y por qué importa técnicamente)
 

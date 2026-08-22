@@ -11,7 +11,7 @@ heroImageAlt: >-
   centros de datos IA 2026: ingeniera revisa documento frente a racks de
   servidores en operación
 ---
-Jensen Huang subió al escenario del SAP Center de San José el 16 de marzo con una cifra que redefinió el tamaño de la conversación sobre IA: al menos un billón de dólares en ingresos para Nvidia entre 2025 y 2027. GTC 2026 no fue solo una conferencia de tecnología. Fue el anuncio de que la demanda de cómputo para IA ya está "fuera de los gráficos".
+[Jensen Huang](/articulos/nvidia-gtc-2026-jensen-huang-presenta-vera-rubin-hoy/) subió al escenario del SAP Center de San José el 16 de marzo con una cifra que redefinió el tamaño de la conversación sobre IA: al menos un billón de dólares en ingresos para Nvidia entre 2025 y 2027. GTC 2026 no fue solo una conferencia de tecnología. Fue el anuncio de que la demanda de cómputo para IA ya está "fuera de los gráficos".
 
 ## Qué anunció Jensen Huang en el keynote
 

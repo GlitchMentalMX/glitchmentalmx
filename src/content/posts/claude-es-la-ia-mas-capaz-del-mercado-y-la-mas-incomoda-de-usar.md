@@ -54,7 +54,7 @@ La Constitución de Claude establece restricciones absolutas — lo que el docum
 
 ![Claude AI: libro abierto con marcador luminoso que señala acceso y consulta de información](/images/posts/claude-es-la-ia-mas-capaz-del-mercado-y-la-mas-incomoda-de-usar/1.jpg)
 
-## Claude Code y Claude Cowork: herramientas agénticas
+## [Claude Code](/articulos/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/) y Claude Cowork: herramientas agénticas
 
 **Claude Code** es una herramienta de línea de comandos para desarrolladores. Puede depurar código, generar funciones, realizar tareas complejas de ingeniería de software y mantener proyectos extensos con mínima supervisión.
 

@@ -14,7 +14,7 @@ heroImageAlt: >-
 ---
 Mientras el mundo tech estaba distraído con las peleas entre modelos de lenguaje, Nvidia construyó en silencio algo diferente: una plataforma para que las empresas puedan desplegar agentes de inteligencia artificial sin que el departamento de seguridad de TI entre en pánico. Se llama NemoClaw, y según reportó _Wired_ el 9 de marzo, su presentación oficial está programada para el keynote del GTC 2026 el próximo lunes 16.
 
-## Qué es NemoClaw y qué lo diferencia de OpenClaw
+## Qué es NemoClaw y qué lo diferencia de [OpenClaw](/articulos/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/)
 
 El nombre no es casualidad. NemoClaw está construido sobre OpenClaw, la plataforma de agentes de IA que se hizo viral a principios de año porque permitía a los agentes ejecutar tareas reales en computadoras sin instrucción humana constante. OpenAI adquirió a su creador, Peter Steinberger, en una operación de _acquihire_. Nvidia tomó el mismo ecosistema técnico y lo rediseñó para un contexto completamente distinto: el corporativo.
 

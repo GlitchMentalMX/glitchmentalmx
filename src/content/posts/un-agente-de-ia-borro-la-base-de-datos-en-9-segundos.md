@@ -11,7 +11,7 @@ heroImageAlt: >-
   IA borró la base de datos 2026: almacén con estanterías vacías y persona
   revisando ausencia de datos
 ---
-El viernes 25 de abril de 2026, un agente de Cursor corriendo con Claude Opus 4.6 —el modelo más capaz que Anthropic vende— borró la base de datos de PocketOS y todos sus respaldos en una sola llamada API. **Tomó 9 segundos.** La industria ya bautizó el fenómeno: _vibe deletion_.
+El viernes 25 de abril de 2026, un agente de [Cursor](/articulos/spacex-compra-cursor-por-60-mmd-fin-de-la-neutralidad/) corriendo con Claude Opus 4.6 —el modelo más capaz que Anthropic vende— borró la base de datos de PocketOS y todos sus respaldos en una sola llamada API. **Tomó 9 segundos.** La industria ya bautizó el fenómeno: _vibe deletion_.
 
 ## Qué pasó técnicamente, sin perderle el peso al asunto
 
