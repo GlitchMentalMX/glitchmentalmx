@@ -8,7 +8,7 @@ description: >-
   temporal: lo que ya está cambiando, lo que cambiará antes de 2030 y lo que
   reescribirá las reglas después.
 intro: >-
-  Dieciocho tecnologías que están redefiniendo el mundo, analizadas por
+  Veintidós tecnologías que están redefiniendo el mundo, analizadas por
   horizonte temporal: lo que ya está cambiando, lo que cambiará antes de
   2030 y lo que reescribirá las reglas después. Sin fechas inventadas, sin
   promesas vacías, sin ruido.
@@ -18,6 +18,9 @@ postSlugs:
   - el-video-generado-por-ia-y-el-fin-de-la-produccion-barata
   - dead-internet-theory-el-internet-ya-no-es-para-humanos
   - ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
+  - robots-humanoides-en-logistica-china-ya-son-operativos
+  - ia-autonoma-en-espacio-profundo-que-cambia-en-artemis
+  - japon-y-la-ia-fisica-robots-para-empleos-sin-candidatos
   - computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno
   - fusion-nuclear-la-energia-que-siempre-fue-para-despues
   - interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio
@@ -25,9 +28,10 @@ postSlugs:
   - solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando
   - biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion
   - neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
+  - editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo
+  - google-adelanta-el-dia-q-a-2029-que-significa-para-ti
   - agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia
   - gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse
-  - por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
   - tres-empresas-controlan-la-nube-eso-deberia-preocuparte
   - los-cables-que-sostienen-internet-y-nadie-protege-bien
   - lo-que-se-pierde-cuando-muere-una-plataforma-digital
@@ -44,6 +48,9 @@ sections:
       - slug: dead-internet-theory-el-internet-ya-no-es-para-humanos
         tag: ancla
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
+      - slug: robots-humanoides-en-logistica-china-ya-son-operativos
+      - slug: ia-autonoma-en-espacio-profundo-que-cambia-en-artemis
+      - slug: japon-y-la-ia-fisica-robots-para-empleos-sin-candidatos
   - title: Mediano plazo
     description: '2027–2030 — la dirección ya es visible.'
     posts:
@@ -54,12 +61,13 @@ sections:
       - slug: solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando
       - slug: biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion
       - slug: neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
+      - slug: editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo
+      - slug: google-adelanta-el-dia-q-a-2029-que-significa-para-ti
   - title: Largo plazo
     description: '2030–2035+ — las apuestas grandes.'
     posts:
       - slug: agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia
       - slug: gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse
-      - slug: por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
   - title: Infraestructura invisible
     description: Lo que sostiene todo y nadie está cubriendo bien.
     posts:
