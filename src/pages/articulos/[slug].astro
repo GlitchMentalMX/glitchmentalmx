@@ -238,12 +238,29 @@ const productSchema =
       }
     : undefined;
 
+// Selección pseudoaleatoria (seedeada por el slug del artículo actual) en vez
+// de slice(0, 3) tras ordenar alfabéticamente: con 60 herramientas en la
+// colección, un slice fijo mostraba casi siempre las mismas 2-3 primeras del
+// alfabeto en todos los artículos. El seed hace que cada artículo muestre un
+// trío distinto pero estable entre builds (no cambia en cada visita).
+function seededShuffle<T>(items: T[], seed: string): T[] {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  const result = [...items];
+  for (let i = result.length - 1; i > 0; i--) {
+    hash = (hash * 1103515245 + 12345) >>> 0;
+    const j = hash % (i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
 const otrosPreciosIA =
   kind === 'preciosIA'
-    ? (await getCollection('preciosIA', ({ data }) => !data.draft))
-        .filter((p) => p.id !== post.id)
-        .sort((a, b) => a.data.herramienta.localeCompare(b.data.herramienta, 'es'))
-        .slice(0, 3)
+    ? seededShuffle(
+        (await getCollection('preciosIA', ({ data }) => !data.draft)).filter((p) => p.id !== post.id),
+        post.id,
+      ).slice(0, 3)
     : [];
 ---
 
