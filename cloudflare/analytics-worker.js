@@ -149,10 +149,10 @@ async function handleStats(request, env, url, matchedOrigin) {
   }
 
   const rangeParam = url.searchParams.get('range') || '30d';
-  // "24h" es una ventana móvil real (últimas 24 horas exactas desde ahora),
-  // no un corte por día calendario — por eso todo se filtra por ts (segundos
-  // unix) en vez de por la columna day.
-  const RANGE_SECONDS = { '24h': 24 * 3600, '7d': 7 * 86400, '30d': 30 * 86400, '90d': 90 * 86400 };
+  // "1h"/"24h" son ventanas móviles reales (última hora / últimas 24 horas
+  // exactas desde ahora), no un corte por día calendario — por eso todo se
+  // filtra por ts (segundos unix) en vez de por la columna day.
+  const RANGE_SECONDS = { '1h': 3600, '24h': 24 * 3600, '7d': 7 * 86400, '30d': 30 * 86400, '90d': 90 * 86400 };
   const rangeSeconds = RANGE_SECONDS[rangeParam] || RANGE_SECONDS['30d'];
   const sinceTs = Math.floor(Date.now() / 1000) - rangeSeconds;
 
