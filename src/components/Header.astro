@@ -22,8 +22,14 @@ const nav = [
       { href: '/insights-visuales/', label: 'Insights Visuales' },
     ],
   },
-  { href: '/precios-ia/', label: 'Precios de IA' },
-  { href: '/quien-entrena-con-tus-datos/', label: 'Quién entrena con tus datos' },
+  {
+    href: '/precios-ia/',
+    label: 'IA sin letra chiquita',
+    children: [
+      { href: '/precios-ia/', label: 'Precios de IA' },
+      { href: '/quien-entrena-con-tus-datos/', label: 'Quién entrena con tus datos' },
+    ],
+  },
   {
     href: '/series/',
     label: 'Series',
