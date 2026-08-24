@@ -21,7 +21,7 @@ No existe un interruptor dedicado para dejar de compartir datos con Meta AI en W
 
 ## La diferencia que nadie te dice: UE vs. México/LATAM
 
-Aquí el patrón UE-vs-resto-del-mundo se aplica distinto que en Facebook o Instagram: WhatsApp no tiene un formulario de "derecho a objetar" propio porque su mensajería privada no entra al mismo cajón que el contenido público de otras apps de Meta. Donde sí aplica la diferencia regional es en el resto del ecosistema Meta — si tus datos de otras plataformas de Meta se combinan con tu actividad, los usuarios de la UE conservan mecanismos de objeción que los de México no tienen.
+Aquí el patrón UE-vs-resto-del-mundo se aplica distinto que en Facebook o Instagram: WhatsApp no tiene un formulario de "derecho a objetar" propio porque su mensajería privada no entra al mismo cajón que el contenido público de otras apps de Meta. Donde sí aplica la diferencia regional es en el resto del ecosistema Meta: si tus datos de otras plataformas de Meta se combinan con tu actividad, los usuarios de la UE tienen un formulario dedicado de objeción que Meta no ofrece en México. Eso no significa que un usuario mexicano no tenga ningún derecho — la Ley Federal de Protección de Datos Personales en Posesión de los Particulares sí contempla un derecho de oposición general (Artículo 26, parte de los derechos ARCO) — pero es un derecho que exige demostrar causa legítima y daño concreto, sin un canal formal de Meta para tramitarlo, y sin ningún criterio conocido de la Secretaría Anticorrupción y Buen Gobierno (que sustituyó al INAI en marzo de 2025) sobre cómo aplicaría a interacciones con IA.
 
 ## Cómo borrar lo que ya hablaste con Meta AI
 

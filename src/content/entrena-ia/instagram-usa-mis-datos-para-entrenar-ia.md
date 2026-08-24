@@ -21,7 +21,7 @@ Igual que en Facebook, el formulario de objeción de Meta solo está disponible 
 
 ## La diferencia que nadie te dice: UE vs. México/LATAM
 
-Instagram hereda exactamente el mismo patrón regulatorio que Facebook porque ambas corren bajo la misma política de IA generativa de Meta. El GDPR y las leyes de privacidad de UK, Brasil, Japón y Corea del Sur obligan a dar una salida; México, sin una ley equivalente, no. Es la misma cuenta de Meta, la misma infraestructura de entrenamiento, pero un derecho que existe o no según el país que aparece en tu domicilio fiscal — no según qué tan pública sea tu foto.
+Instagram hereda exactamente el mismo patrón regulatorio que Facebook porque ambas corren bajo la misma política de IA generativa de Meta. El GDPR y las leyes de privacidad de UK, Brasil, Japón y Corea del Sur obligan a Meta a dar una salida con un formulario dedicado. México no tiene esa obligación específica, pero sí tiene un derecho de oposición general en su ley de datos personales (Artículo 26 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares) — solo que exige demostrar "causa legítima" y daño concreto, no es un trámite de un clic, y ni Meta ni la autoridad mexicana (la Secretaría Anticorrupción y Buen Gobierno, que reemplazó al INAI en marzo de 2025) han aclarado públicamente cómo se aplicaría a este caso. Es la misma cuenta de Meta, la misma infraestructura de entrenamiento, pero un camino real distinto según el país que aparece en tu domicilio fiscal — no porque a uno le falte por completo y al otro no.
 
 ¿Buscas cuánto cuesta usar Meta AI, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-meta-ai-hoy/)
 

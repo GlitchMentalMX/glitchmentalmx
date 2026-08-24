@@ -21,7 +21,7 @@ No hay un ajuste específico para excluir tus conversaciones con Meta AI del ent
 
 ## La diferencia que nadie te dice: UE vs. México/LATAM
 
-El patrón se repite: los mecanismos de objeción formal que Meta ofrece para su ecosistema de IA generativa están atados a las leyes de protección de datos de la UE, Reino Unido y un puñado de países más — no a Messenger como producto individual. Un usuario en México que quiera un control equivalente sobre cómo se usan sus datos de Messenger para IA simplemente no tiene a quién pedírselo dentro de la plataforma.
+El patrón se repite: los mecanismos de objeción formal que Meta ofrece para su ecosistema de IA generativa están atados a las leyes de protección de datos de la UE, Reino Unido y un puñado de países más — no a Messenger como producto individual. Un usuario en México que quiera objetar no tiene un formulario de Meta al cual acudir, pero eso no es lo mismo que no tener ningún derecho: la Ley Federal de Protección de Datos Personales en Posesión de los Particulares contempla un derecho de oposición general (Artículo 26, parte de los derechos ARCO) que en teoría podría invocarse directamente ante Meta, aunque exige demostrar causa legítima y daño concreto —un trámite bastante más pesado que el formulario europeo— y no hay ningún criterio público, ni de la extinta INAI ni de la Secretaría Anticorrupción y Buen Gobierno que la sustituyó en marzo de 2025, sobre si aplicaría a este uso específico.
 
 ¿Buscas cuánto cuesta usar Meta AI, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-meta-ai-hoy/)
 
