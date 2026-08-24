@@ -476,7 +476,7 @@ const otrosEntrenaIA =
      letra chiquita"), Astro no aplica el scoping de este componente a lo que
      renderiza <Content />, así que un selector normal aquí no le llega y cae
      al estilo blanco de .prose a en global.css. */
-  :global(.prose .otros-precios a) { font-size: 0.85rem; font-weight: 500; color: var(--accent); text-decoration: none; }
+  :global(.prose .otros-precios a) { font-weight: 500; color: var(--accent); text-decoration: none; }
   :global(.prose .otros-precios a:hover) { text-decoration: underline; }
 
   .share {
