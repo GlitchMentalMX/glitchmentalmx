@@ -35,7 +35,10 @@ const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 ---
 
 <Layout title={title} description={description}>
-  <Breadcrumbs items={[{ name: 'Precios de IA' }]} />
+  <Breadcrumbs items={[
+    { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
+    { name: 'Precios de IA' },
+  ]} />
   <section class="container header">
     <p class="eyebrow">Precios de IA · {posts.length} herramientas · dato del {formatDate(fechaDato)}</p>
     <h1>Cuánto cuesta cada herramienta de IA hoy en México</h1>

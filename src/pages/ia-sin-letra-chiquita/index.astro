@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft)).length;
+const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
+
+const cards = [
+  {
+    href: '/precios-ia/',
+    eyebrow: `${preciosCount} herramientas`,
+    title: 'Precios de IA',
+    dek: 'Cuánto cuesta cada herramienta de IA hoy en México, en pesos, con el tipo de cambio oficial de Banxico actualizado a diario.',
+  },
+  {
+    href: '/quien-entrena-con-tus-datos/',
+    eyebrow: `${entrenaCount} herramientas`,
+    title: 'Quién entrena con tus datos',
+    dek: 'Si tus fotos, mensajes o archivos entrenan un modelo de IA sin que lo decidas — verificado en la política de privacidad oficial de cada una.',
+  },
+];
+---
+
+<Layout
+  title="IA sin letra chiquita"
+  description="Lo que las herramientas de IA no ponen en el primer párrafo: cuánto cuestan de verdad en México y si entrenan su IA con tus datos."
+>
+  <Breadcrumbs items={[{ name: 'IA sin letra chiquita' }]} />
+  <section class="container header">
+    <p class="eyebrow">IA sin letra chiquita</p>
+    <h1>Lo que la letra chiquita <span class="accent">no te dice</span></h1>
+    <p class="sub">Dos series de referencia, verificadas una por una: cuánto cuesta cada herramienta y qué hace con tus datos.</p>
+  </section>
+
+  <section class="container grid">
+    {cards.map((c) => (
+      <a href={c.href} class="card">
+        <p class="eyebrow">{c.eyebrow}</p>
+        <h2>{c.title}</h2>
+        <p class="dek">{c.dek}</p>
+      </a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 40px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
+  .sub { color: var(--text-muted); font-size: 1.05rem; }
+
+  .grid {
+    padding: 0 24px 72px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  .card {
+    padding: 30px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    color: var(--text);
+  }
+  .card:hover { outline: 1.5px solid var(--accent); }
+  .card h2 { font-size: 1.5rem; margin: 10px 0 12px; }
+  .card .dek { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
