@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
 import BuscadorPreciosIA from '../../components/BuscadorPreciosIA.astro';
+import NotaActualizacionBanxico from '../../components/NotaActualizacionBanxico.astro';
 import { getCollection } from 'astro:content';
 import tipoCambio from '../../data/tipo-cambio.json';
 import { formatDate } from '../../lib/format';
@@ -46,6 +47,7 @@ const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
       El precio oficial en dólares de cada herramienta, convertido a pesos mexicanos con el tipo de
       cambio FIX de Banxico, actualizado a diario. Sin hacer cuentas antes de contratar.
     </p>
+    <NotaActualizacionBanxico />
   </section>
 
   <section class="container list">

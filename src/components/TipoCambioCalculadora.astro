@@ -7,6 +7,7 @@
 import tipoCambio from '../data/tipo-cambio.json';
 import preciosUSD from '../data/precios-ia-usd.json';
 import { formatDate } from '../lib/format';
+import NotaActualizacionBanxico from './NotaActualizacionBanxico.astro';
 
 interface Props {
   herramientaId: string;
@@ -52,6 +53,7 @@ const esGratis = precio.precioUSD === 0;
       ? 'No tiene plan de pago para el público general en México — el tipo de cambio no aplica.'
       : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Antes de comisiones bancarias por transacción en dólares o impuestos según tu método de pago.`}
   </p>
+  <NotaActualizacionBanxico />
 </div>
 
 <style>

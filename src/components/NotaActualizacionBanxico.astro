@@ -1,0 +1,25 @@
+---
+// Nota de transparencia sobre CUÁNDO se actualiza el tipo de cambio —
+// distinta del pie de la calculadora (que dice CUÁL es el dato del día).
+// Siempre visible a propósito, no en un <details> como "Metodología" del
+// Índice: la duda de "¿este precio está desactualizado?" ocurre justo al
+// ver el número, así que esconderla detrás de un clic le quita el efecto.
+// Se usa en /precios-ia/ y en los 60 artículos vía TipoCambioCalculadora.
+---
+
+<p class="nota-banxico">
+  El tipo de cambio se actualiza con el dato FIX que Banxico publica cada día hábil desde el
+  mediodía. Fines de semana y días festivos no hay dato nuevo — se mantiene el último conocido,
+  con su fecha real.
+</p>
+
+<style>
+  .nota-banxico {
+    margin: 10px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 0.74rem;
+    line-height: 1.5;
+    color: var(--text-faint);
+  }
+</style>
