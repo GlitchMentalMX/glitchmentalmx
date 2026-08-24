@@ -19,4 +19,8 @@ El plan Standard de Firefly da 2,000 créditos mensuales para generación premiu
 
 Firefly se promociona como "seguro para uso comercial" porque Adobe entrena sus modelos con contenido con licencia — a diferencia de otras herramientas de generación de imagen de esta lista, cuyo estatus legal para uso comercial es menos claro. Si el destino de lo que generas es un cliente o un proyecto pagado, esa garantía puede pesar más en la decisión de pagar que la cantidad de créditos en sí.
 
+## ¿Adobe entrena Firefly con tus archivos de Creative Cloud?
+
+No, por default — salvo que subas tu contenido a Adobe Stock. [Lee el detalle verificado →](/articulos/adobe-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Adobe Firefly →</a>

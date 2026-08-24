@@ -1,0 +1,49 @@
+---
+// Badge de color para la serie "¿[App] usa mis datos para entrenar su IA?".
+// Mismo sistema de color en landing y artículo: rojo (entrena sin opción de
+// salir), verde (no entrena o no por default), amarillo (depende del plan o
+// requiere opt-out). El badge nunca lleva la respuesta completa — solo
+// color + etiqueta corta; los matices reales viven en el cuerpo del artículo.
+interface Props {
+  veredicto: 'rojo' | 'verde' | 'amarillo';
+  size?: 'sm' | 'lg';
+}
+
+const { veredicto, size = 'sm' } = Astro.props;
+
+const CONFIG = {
+  rojo: { emoji: '🔴', label: 'Entrena con tus datos' },
+  verde: { emoji: '🟢', label: 'No entrena por default' },
+  amarillo: { emoji: '🟡', label: 'Depende' },
+};
+
+const c = CONFIG[veredicto];
+---
+
+<span class={`veredicto veredicto-${veredicto} veredicto-${size}`}>
+  <span aria-hidden="true">{c.emoji}</span> {c.label}
+</span>
+
+<style>
+  .veredicto {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .veredicto-sm {
+    padding: 3px 10px;
+    font-size: 0.72rem;
+  }
+  .veredicto-lg {
+    padding: 7px 16px;
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
+  }
+  .veredicto-rojo { background: var(--down-bg); color: var(--down-line); }
+  .veredicto-verde { background: var(--up-bg); color: var(--up-line); }
+  .veredicto-amarillo { background: var(--warn-bg); color: var(--warn-line); }
+</style>

@@ -149,6 +149,31 @@ const preciosIA = defineCollection({
   }),
 });
 
+// Colección hermana de `preciosIA`, mismo criterio de separación: contenido
+// utilitario/referencial (veredicto de privacidad, no análisis editorial),
+// no debe mezclarse con `category` de posts ni aparecer en RSS/archivo/home.
+// Comparte la ruta /articulos/[slug].astro con `posts` y `preciosIA` (unión
+// en getStaticPaths) para reutilizar la plantilla de artículo ya construida.
+const entrenaIA = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/entrena-ia' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    herramienta: z.string(),
+    herramientaId: z.string(),
+    empresa: z.string(),
+    sitioOficial: z.string().url(),
+    veredicto: z.enum(['rojo', 'verde', 'amarillo']),
+    fraseCorta: z.string(),
+    fuentePolitica: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
 const indiceGlitchmentalmx = defineCollection({
   loader: singleJsonEntryLoader('./src/content/indice/actual.json', 'actual'),
   schema: z.object({
@@ -181,4 +206,5 @@ export const collections = {
   datoIncomodo,
   indiceGlitchmentalmx,
   preciosIA,
+  entrenaIA,
 };

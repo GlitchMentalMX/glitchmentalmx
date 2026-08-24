@@ -6,6 +6,7 @@ import SeriesCallout from '../../components/SeriesCallout.astro';
 import BookPromo from '../../components/BookPromo.astro';
 import ToolPromo from '../../components/ToolPromo.astro';
 import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro';
+import VeredictoBadge from '../../components/VeredictoBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime, buildPrecioIATitleTag } from '../../lib/format';
@@ -67,9 +68,11 @@ const INDICE_SLUGS = new Set([
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
   const preciosIA = await getCollection('preciosIA', ({ data }) => !data.draft);
+  const entrenaIA = await getCollection('entrenaIA', ({ data }) => !data.draft);
   return [
     ...posts.map((post) => ({ params: { slug: post.id }, props: { kind: 'posts' as const, post } })),
     ...preciosIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'preciosIA' as const, post } })),
+    ...entrenaIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'entrenaIA' as const, post } })),
   ];
 }
 
@@ -192,7 +195,7 @@ const articleSchema =
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
         isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
-        articleSection: 'Precios de IA',
+        articleSection: kind === 'preciosIA' ? 'Precios de IA' : 'Privacidad de IA',
       };
 
 // ---------------------------------------------------------------------------
@@ -201,9 +204,9 @@ const articleSchema =
 // /articulos/[slug] para no duplicar plantilla y mantener la URL
 // /articulos/cuanto-cuesta-[herramienta]-hoy/ que pide el brief.
 // ---------------------------------------------------------------------------
-const herramienta = kind === 'preciosIA' ? (post.data as any).herramienta : undefined;
-const herramientaId = kind === 'preciosIA' ? (post.data as any).herramientaId : undefined;
-const sitioOficial = kind === 'preciosIA' ? (post.data as any).sitioOficial : undefined;
+const herramienta = kind === 'preciosIA' || kind === 'entrenaIA' ? (post.data as any).herramienta : undefined;
+const herramientaId = kind === 'preciosIA' || kind === 'entrenaIA' ? (post.data as any).herramientaId : undefined;
+const sitioOficial = kind === 'preciosIA' || kind === 'entrenaIA' ? (post.data as any).sitioOficial : undefined;
 
 const precio =
   kind === 'preciosIA'
@@ -215,6 +218,14 @@ const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 // Title tag corto y sin sufijo de sitio, distinto del H1 (que se queda
 // largo). El H1 no cambia — solo lo que ve Google en el <title>.
 const metaTitle = kind === 'preciosIA' ? buildPrecioIATitleTag(herramienta) : title;
+
+// ---------------------------------------------------------------------------
+// Rama "entrenaIA" (serie "¿[App] usa mis datos para entrenar su IA?") —
+// misma lógica de colección aparte + ruta compartida que preciosIA. El
+// veredicto (badge de color) viene directo del frontmatter, no de un JSON
+// externo: a diferencia del precio, no cambia a diario, así que no hace
+// falta la capa de indirección que sí necesita Banxico.
+const veredicto = kind === 'entrenaIA' ? (post.data as any).veredicto : undefined;
 
 const productSchema =
   kind === 'preciosIA' && precio && precioMXN !== undefined
@@ -262,9 +273,17 @@ const otrosPreciosIA =
         post.id,
       ).slice(0, 3)
     : [];
+
+const otrosEntrenaIA =
+  kind === 'entrenaIA'
+    ? seededShuffle(
+        (await getCollection('entrenaIA', ({ data }) => !data.draft)).filter((p) => p.id !== post.id),
+        post.id,
+      ).slice(0, 3)
+    : [];
 ---
 
-<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind !== 'preciosIA'}>
+<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
 
@@ -273,9 +292,14 @@ const otrosPreciosIA =
       { name: category, url: `/categoria/${categorySlug(category)}/` },
       { name: title },
     ]} />
-  ) : (
+  ) : kind === 'preciosIA' ? (
     <Breadcrumbs items={[
       { name: 'Precios de IA', url: '/precios-ia/' },
+      { name: title },
+    ]} />
+  ) : (
+    <Breadcrumbs items={[
+      { name: 'Quién entrena con tus datos', url: '/quien-entrena-con-tus-datos/' },
       { name: title },
     ]} />
   )}
@@ -284,12 +308,17 @@ const otrosPreciosIA =
     <header class="post-header container">
       {kind === 'posts' ? (
         <span class="tag category-tag">{category}</span>
-      ) : (
+      ) : kind === 'preciosIA' ? (
         <a href="/precios-ia/" class="tag category-tag">Precios de IA</a>
+      ) : (
+        <a href="/quien-entrena-con-tus-datos/" class="tag category-tag">Privacidad de IA</a>
       )}
       <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
+      {kind === 'entrenaIA' && veredicto && (
+        <div class="veredicto-top"><VeredictoBadge veredicto={veredicto} size="lg" /></div>
+      )}
     </header>
 
     {heroImage && (
@@ -350,7 +379,7 @@ const otrosPreciosIA =
     </section>
   )}
 
-  {kind === 'preciosIA' && <ToolsWidget />}
+  {(kind === 'preciosIA' || kind === 'entrenaIA') && <ToolsWidget />}
 
   {kind === 'posts' && relatedFinal.length > 0 && (
     <section class="related container">
@@ -389,9 +418,29 @@ const otrosPreciosIA =
       </div>
     </section>
   )}
+
+  {kind === 'entrenaIA' && otrosEntrenaIA.length > 0 && (
+    <section class="related container">
+      <h2>Más sobre privacidad de IA</h2>
+      <div class="grid">
+        {otrosEntrenaIA.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage ?? ''}
+            heroImageAlt={p.data.heroImageAlt ?? ''}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
 </Layout>
 
 <style>
+  .veredicto-top { margin-top: 18px; }
   .post-header {
     max-width: 760px;
     padding: 48px 24px 32px;

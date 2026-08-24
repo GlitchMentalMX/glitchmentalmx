@@ -32,6 +32,8 @@
   --down-line: #d64545;
   --debate-bg: rgba(147, 51, 234, 0.08);
   --debate-line: #9333ea;
+  --warn-bg: rgba(217, 119, 6, 0.1);
+  --warn-line: #b45309;
 
   --measure: 66ch;
   --container: 1180px;
@@ -60,6 +62,8 @@
   --down-line: #f06464;
   --debate-bg: rgba(192, 132, 252, 0.16);
   --debate-line: #c084fc;
+  --warn-bg: rgba(251, 191, 36, 0.14);
+  --warn-line: #fbbf24;
   color-scheme: dark;
 }
 
@@ -81,6 +85,8 @@
     --down-line: #f06464;
     --debate-bg: rgba(192, 132, 252, 0.16);
     --debate-line: #c084fc;
+    --warn-bg: rgba(251, 191, 36, 0.14);
+    --warn-line: #fbbf24;
     color-scheme: dark;
   }
 }

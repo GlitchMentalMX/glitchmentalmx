@@ -19,4 +19,8 @@ La versión gratuita de Meta AI, que es la que usa prácticamente todo mundo hoy
 
 El piloto de pago de Meta AI es la señal más clara de hacia dónde va el producto — Meta está probando si la gente paga por más capacidad antes de decidir si lo expande a más países, y México es un mercado obvio para una eventual expansión dado su tamaño. Esta página se revisa junto con el resto de la serie: en cuanto exista un plan de pago confirmado para México, el precio se actualiza aquí, con la misma calculadora que ya usan las otras 13 herramientas.
 
+## ¿Meta AI entrena su IA con lo que subes o escribes?
+
+Depende de en qué app la uses. Revisa el detalle verificado directamente en la política de privacidad de Meta para [Facebook](/articulos/facebook-usa-mis-datos-para-entrenar-ia/), [Instagram](/articulos/instagram-usa-mis-datos-para-entrenar-ia/), [WhatsApp](/articulos/whatsapp-usa-mis-datos-para-entrenar-ia/) y [Messenger](/articulos/messenger-usa-mis-datos-para-entrenar-ia/).
+
 <a href="https://www.meta.ai/" target="_blank" rel="noopener noreferrer">Usa Meta AI en el sitio oficial →</a>

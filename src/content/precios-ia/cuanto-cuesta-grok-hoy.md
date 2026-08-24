@@ -19,4 +19,8 @@ SuperGrok da acceso al modelo Grok más reciente con límites de uso mucho más 
 
 Solo el plan más caro, SuperGrok Heavy, incluye la suscripción a X Premium+ sin costo adicional — en los demás niveles, incluido el que cubre este artículo, Grok y X Premium+ son gastos separados. Si tu plan es usar Grok dentro de X y no directamente en grok.com, el precio que te interesa comparar no es este, sino el de la suscripción de X.
 
+## ¿X entrena a Grok con tus publicaciones?
+
+Sí, por default fuera de la Unión Europea — puedes desactivarlo, pero no de forma retroactiva. [Lee el detalle verificado →](/articulos/x-grok-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://grok.com/plans" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Grok →</a>
