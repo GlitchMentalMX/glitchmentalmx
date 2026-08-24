@@ -19,4 +19,8 @@ Pro suma reescritura de oraciones completas (no solo corrección), ajuste de ton
 
 El plan gratuito te dice qué está mal; Pro te ofrece cómo decirlo mejor. Si tu uso es solo evitar errores ortográficos, es válido preguntarte si necesitas pagar — pero si quieres que la herramienta te ayude activamente a mejorar el tono o la claridad de lo que escribes, ese salto de calidad vive exclusivamente en el plan pagado.
 
+## ¿Grammarly entrena su IA con lo que escribes?
+
+Sí, por default en cuentas personales — en cuentas de trabajo o escuela, ya vienes excluido. [Lee el detalle verificado →](/articulos/grammarly-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://www.grammarly.com/pro" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Grammarly →</a>

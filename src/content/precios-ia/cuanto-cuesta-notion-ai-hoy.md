@@ -19,4 +19,8 @@ Business suma, sobre todo lo de Plus (formularios y sitios personalizados, gráf
 
 Esta es la misma confusión que ya vimos con NotebookLM en esta serie: la gente busca el precio de la función de IA sola, pero la respuesta correcta es que no existe ese precio aislado. Si tu único interés es la IA y no el resto de Notion (bases de datos, sitios, formularios), vale la pena decidir si el paquete completo te compensa el gasto, porque no hay forma de pagar solo por esa parte.
 
+## ¿Notion entrena su IA con el contenido de tu workspace?
+
+No — y obliga por contrato a Anthropic y OpenAI a no hacerlo tampoco. [Lee el detalle verificado →](/articulos/notion-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://www.notion.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete a Notion Business en el sitio oficial →</a>

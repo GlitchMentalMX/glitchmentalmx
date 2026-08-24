@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 No, con un compromiso explícito por escrito. Zoom no usa audio, video, chat, contenido compartido en pantalla, adjuntos ni otro contenido de cliente (como resultados de encuestas, pizarras o reacciones) para entrenar sus modelos de inteligencia artificial ni los de terceros, sin tu consentimiento. Este compromiso llegó después de que, en marzo de 2023, Zoom modificara sus Términos de Servicio con un lenguaje que sugería lo contrario y generara una polémica pública considerable. Fuente: blog oficial de Zoom sobre sus Términos de Servicio, actualizado en febrero de 2024, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

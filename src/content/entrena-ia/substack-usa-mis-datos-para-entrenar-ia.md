@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 Depende de qué le pidas a Substack y de qué IA estemos hablando. Substack ofrece un ajuste por publicación para indicarle a herramientas como ChatGPT, Claude o Gemini que no entrenen sus modelos con tu contenido — pero ese ajuste viene apagado por default en cada publicación nueva, así que si nunca lo tocaste, tu contenido está abierto. Además, esta señal solo funciona con rastreadores que deciden respetarla voluntariamente: algunos bots ignoran robots.txt y siguen recolectando contenido de todos modos. Fuente: Centro de Ayuda de Substack, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

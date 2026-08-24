@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 No, por default. Adobe no analiza el contenido que procesas o guardas en Creative Cloud y Document Cloud para entrenar sus modelos de IA generativa, y Firefly fue entrenado con contenido licenciado de Adobe Stock y material de dominio público — no con archivos de suscriptores individuales. La única puerta que tú mismo puedes abrir es enviar contenido al marketplace de Adobe Stock: eso sí entra a un circuito distinto donde el material puede usarse para entrenamiento. Fuente: FAQ de Análisis de Contenido de Adobe, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

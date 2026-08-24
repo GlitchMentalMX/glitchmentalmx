@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 Sí, por default. Desde noviembre de 2025, LinkedIn usa datos como los detalles de tu perfil y el contenido público que publicas para entrenar modelos de IA generativa — no incluye tus mensajes privados. El ajuste que controla esto, "Datos para la mejora de IA generativa", viene activado automáticamente en cuentas creadas en Estados Unidos y en buena parte del resto del mundo. Fuente: Centro de Ayuda de LinkedIn, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

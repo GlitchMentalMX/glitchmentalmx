@@ -19,4 +19,8 @@ Microsoft 365 Premium suma Copilot integrado directamente en cada aplicación de
 
 Si llegaste aquí buscando el precio de "Copilot Pro" es normal — así se anunció y se vendió durante casi tres años, y buena parte de la web todavía tiene ese nombre en artículos viejos. Microsoft ya no vende ese plan bajo ese nombre a nadie nuevo, así que cualquier página que te cotice "Copilot Pro" como opción activa de compra está desactualizada.
 
+## ¿Windows entrena su IA con lo que escribes en Copilot?
+
+Ojo, esto es un producto distinto al de este artículo: la app gratuita de Copilot que viene integrada en Windows, no Microsoft 365 Premium. Sí entrena por default, con opción de apagarlo. [Lee el detalle verificado →](/articulos/windows-copilot-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://www.microsoft.com/en-us/microsoft-365/premium" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Microsoft 365 Premium →</a>

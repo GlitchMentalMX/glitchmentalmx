@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 Sí, y no solo para entrenar su propia IA. Reddit licencia tus publicaciones, comentarios y nombre de usuario públicos a terceros — incluidas empresas de inteligencia artificial que los usan para entrenar modelos de lenguaje. La política actualizada en mayo de 2026, vigente desde julio de ese año, agregó una cláusula que permite explícitamente compartir datos con "proveedores de LLM que ayudan a compilar y resumir contenido público para resultados de búsqueda relevantes en Reddit" — además de los acuerdos comerciales de licenciamiento de datos que Reddit ya tenía con empresas de IA. Fuente: Política de Privacidad de Reddit, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

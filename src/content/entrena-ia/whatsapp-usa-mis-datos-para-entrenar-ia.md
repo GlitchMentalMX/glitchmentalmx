@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 Depende de con quién estés hablando. Tus chats cifrados de extremo a extremo con otras personas siguen fuera del entrenamiento de IA de Meta — la promesa de cifrado no cambió. Pero en cuanto le escribes a Meta AI dentro de WhatsApp, esa conversación deja de ser un chat privado entre personas: se convierte en una interacción con un producto de IA, y Meta la puede usar para mejorar sus modelos. Fuente: Política de Privacidad de WhatsApp y Centro de Privacidad de Meta, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

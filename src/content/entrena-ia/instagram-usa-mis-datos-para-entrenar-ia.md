@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 Sí. Meta trata a Instagram igual que a Facebook para este propósito: usa tus fotos públicas, captions, comentarios y conversaciones con Meta AI dentro de la app para entrenar sus modelos generativos, sumado a contenido público de internet y datos licenciados de terceros. Los mensajes directos privados quedan fuera de este entrenamiento. Fuente: Centro de Privacidad de Meta, sección "Cómo usa Meta la información para IA generativa", verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 

@@ -13,7 +13,7 @@ pubDate: 2026-08-23
 
 Sí, por default. xAI usa tus publicaciones públicas en X, los datos de tu perfil y tus conversaciones con Grok para entrenar sus modelos, salvo que tu cuenta sea privada — el contenido de cuentas privadas queda excluido tanto del entrenamiento como de las herramientas de "remix" de imágenes de Grok. Esto aplica a usuarios fuera de la Unión Europea; dentro de la UE, Grok está bajo investigación regulatoria por posibles violaciones al GDPR, lo que ha forzado ajustes distintos en esa región. Fuente: Política de Privacidad de X, verificado el 23 de agosto de 2026.
 
-<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra app? →</a></p>
+<p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
 ## Cómo optar por no participar
 
