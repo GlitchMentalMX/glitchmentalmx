@@ -65,8 +65,8 @@ const description =
   .leyenda {
     max-width: 760px;
     padding: 0 24px 28px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px 20px;
   }
   .leyenda-item {
@@ -75,6 +75,10 @@ const description =
     display: inline-flex;
     align-items: center;
     gap: 6px;
+  }
+
+  @media (max-width: 700px) {
+    .leyenda { grid-template-columns: 1fr; }
   }
 
   .list { padding: 24px 24px 96px; max-width: 780px; }
