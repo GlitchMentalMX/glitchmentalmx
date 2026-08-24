@@ -85,6 +85,7 @@ const toolsList = [
   { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
   { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
+  { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales y quién entrena su IA con tus datos — dos series verificadas, herramienta por herramienta.', stat: '96 herramientas verificadas', icon: 'shield' as const },
 ];
 
 // Señal en vivo — widget bajo el hero. Nada de imágenes ni carrusel: un solo
@@ -307,7 +308,7 @@ const signalPools = {
 
   <section class="tools container">
     <div class="section-head">
-      <h2>Herramientas</h2>
+      <h2>Recursos</h2>
     </div>
     <div class="tools-grid">
       {toolsList.map((t) => (
@@ -321,6 +322,9 @@ const signalPools = {
             )}
             {t.icon === 'chart' && (
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M5 19V13M12 19V9M19 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            )}
+            {t.icon === 'shield' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             )}
           </span>
           <span class="tag">{t.tag}</span>
@@ -696,7 +700,7 @@ const signalPools = {
 
   .tools-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .tool-card {
