@@ -23,7 +23,7 @@ Según el reporte 2025 del Internet Crime Complaint Center (IC3, la unidad del F
 
 Aquí está el malentendido que sostiene buena parte de la conversación pública sobre este fraude: **asumir que caer en una estafa romántica es un problema de falta de inteligencia**. Los datos no respaldan esa lectura. El mecanismo no explota un déficit cognitivo, explota una búsqueda legítima de compañía — algo que no distingue nivel educativo, edad ni clase social, aunque sí distingue vulnerabilidad emocional en un momento específico.
 
-De acuerdo con el análisis de la firma legal Bressler, Amery & Ross sobre el reporte 2025 del IC3, las **estafas románticas dirigidas a adultos mayores de 60 años crecieron 30% durante 2025**, un aumento que coincide con el uso creciente de clonación de voz y video generado por IA para reforzar la ilusión de una relación real. El estafador no necesita engañar a alguien "tonto": necesita encontrar a alguien que, en ese momento de su vida, valora una conexión emocional más de lo que desconfía de un extraño.
+De acuerdo con el análisis de la firma legal Bressler, Amery & Ross sobre el reporte 2025 del IC3, las **estafas románticas dirigidas a adultos mayores de 60 años crecieron 30% durante 2025**, un aumento que coincide con el uso creciente de clonación de voz y video generado por IA —<a href="https://glitchmental.com/articulos/tu-voz-ya-no-es-tuya-biometria-banca-rota/">la misma arquitectura de confianza fabricada, aplicada a la voz como credencial</a>— para reforzar la ilusión de una relación real. El estafador no necesita engañar a alguien "tonto": necesita encontrar a alguien que, en ese momento de su vida, valora una conexión emocional más de lo que desconfía de un extraño.
 
 ## La arquitectura emocional paso a paso
 

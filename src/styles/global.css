@@ -25,6 +25,7 @@
   --border-strong: #cfd3db;
   --accent-soft: rgba(0, 102, 255, 0.08);
   --accent-line: rgba(0, 102, 255, 0.35);
+  --prose-link-line: rgba(0, 102, 255, 0.35);
   --shadow: 0 1px 2px rgba(20, 22, 28, 0.04), 0 8px 24px rgba(20, 22, 28, 0.05);
   --up-bg: rgba(24, 160, 90, 0.08);
   --up-line: #189a5a;
@@ -55,6 +56,7 @@
   --accent: #0066ff;
   --accent-soft: rgba(51, 128, 255, 0.14);
   --accent-line: rgba(51, 128, 255, 0.4);
+  --prose-link-line: rgba(107, 163, 255, 0.75);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
   --up-bg: rgba(52, 199, 130, 0.12);
   --up-line: #34c782;
@@ -78,6 +80,7 @@
     --border: #23262f;
     --accent-soft: rgba(51, 128, 255, 0.14);
     --accent-line: rgba(51, 128, 255, 0.4);
+    --prose-link-line: rgba(107, 163, 255, 0.75);
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px rgba(0, 0, 0, 0.35);
     --up-bg: rgba(52, 199, 130, 0.12);
     --up-line: #34c782;
@@ -188,7 +191,7 @@ h1, h2, h3, h4 {
 .prose a {
   color: var(--text);
   text-decoration: underline;
-  text-decoration-color: var(--accent-line);
+  text-decoration-color: var(--prose-link-line);
   text-underline-offset: 3px;
   text-decoration-thickness: 1.5px;
   transition: text-decoration-color .15s ease;
