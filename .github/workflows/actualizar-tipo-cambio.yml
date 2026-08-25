@@ -1,13 +1,18 @@
 name: Actualizar tipo de cambio Banxico
 
-# Corre todos los días a las 15:00 hora CDMX (21:00 UTC) — después de que
-# Banxico publica el dato FIX del día (a partir de mediodía CDMX), para que
-# el dato quede etiquetado con la fecha de HOY la mayor parte del día en vez
-# de arrastrar el del día hábil anterior. Fin de semana/festivo: Banxico no
-# publica dato nuevo, el script deja el archivo igual y no genera commit.
+# Corre dos veces al día — 15:00 y 19:00 hora CDMX (21:00 y 01:00 UTC) — no
+# porque Banxico publique dos veces, sino porque se confirmó (24 ago 2026)
+# que el endpoint REST /datos/oportuno de la API SIE a veces sigue
+# devolviendo el dato del día hábil anterior varias horas después de que el
+# sitio público de Banxico ya muestra el FIX del día — un rezago propio de
+# esa API, no un patrón confiable. La corrida de las 19:00 es el respaldo:
+# si la de las 15:00 encontró el dato viejo, la de la tarde casi siempre ya
+# alcanza el nuevo. Fin de semana/festivo: Banxico no publica dato nuevo, el
+# script deja el archivo igual y ninguna de las dos corridas genera commit.
 on:
   schedule:
     - cron: '0 21 * * *'
+    - cron: '0 1 * * *'
   workflow_dispatch:
 
 permissions:
