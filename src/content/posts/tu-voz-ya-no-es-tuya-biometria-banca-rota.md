@@ -2,7 +2,7 @@
 title: 'Tu voz ya no es tuya: la biometría que la banca rompió'
 category: Cultura Digital
 pubDate: 2026-08-24T20:01
-updatedDate: ''
+updatedDate: 2026-08-24T20:02
 description: La banca vendió tu voz como credencial inclonable por una década. Estaba rota desde 2019. Nadie lo admitió, solo la fueron retirando.
 heroImage: /images/uploads/biometria-de-voz.webp
 heroImageAlt: 'Biometría de voz: onda de audio bifurcada tras mujer hablando por celular, huella vocal clonada en autenticación bancaria'
