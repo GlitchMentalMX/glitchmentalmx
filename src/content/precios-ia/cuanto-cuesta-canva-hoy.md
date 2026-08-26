@@ -19,4 +19,8 @@ Canva Pro para una persona suma las herramientas premium de Magic Studio — red
 
 Buena parte de quien usa Canva lo hace en equipo — un negocio, un despacho, un salón de clases — y ahí el precio cambia según cuántas personas comparten la cuenta, no es el mismo número que el plan individual que cubre este artículo. Si buscas el precio para tu equipo, revisa directamente la calculadora de Canva para Equipos en su sitio, porque el costo por persona baja entre más gente se suma al plan.
 
+## ¿Canva entrena su IA con tus diseños?
+
+Sí, por default en Free y Pro — en Teams, Business y Enterprise no puede activarse. [Lee el detalle verificado →](/articulos/canva-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Canva Pro →</a>

@@ -19,4 +19,8 @@ ChatGPT Plus da acceso al modelo de razonamiento más avanzado de OpenAI, con l�
 
 La suscripción sigue costando $20 USD mes tras mes, pero el peso sube y baja frente al dólar, así que el cargo que ves en tu tarjeta cambia aunque OpenAI no haya tocado un solo número de su lado. Es fácil asumir que un cargo recurrente es un monto fijo en pesos porque así se siente en el estado de cuenta — pero lo único fijo es el precio en dólares. Lo que tú pagas en México se mueve todos los días hábiles con el mercado cambiario.
 
+## ¿ChatGPT entrena su IA con lo que le escribes?
+
+Sí, por default en Free, Plus y Pro — puedes apagarlo, pero no borra lo ya usado. [Lee el detalle verificado →](/articulos/chatgpt-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de ChatGPT →</a>

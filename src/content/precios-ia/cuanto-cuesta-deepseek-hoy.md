@@ -19,4 +19,8 @@ Todo. La versión gratuita de DeepSeek no es una versión recortada de un produc
 
 La pregunta que vale más la pena que "cuánto cuesta" es cómo se sostiene una herramienta que no cobra. En el caso de DeepSeek, el modelo de negocio de la empresa no depende de las suscripciones individuales sino de otros frentes (infraestructura, negocio empresarial, API), así que el hecho de que hoy sea gratis no es una garantía permanente — es una decisión de negocio que puede cambiar. Por eso esta página se revisa junto con el resto de la serie: si algún día DeepSeek anuncia un plan de pago para el público general, el precio se actualiza aquí.
 
+## ¿DeepSeek entrena su IA con lo que le escribes?
+
+Sí, y tus datos se procesan en China bajo su ley — el opt-out no tiene un botón claro. [Lee el detalle verificado →](/articulos/deepseek-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">Usa DeepSeek en el sitio oficial →</a>

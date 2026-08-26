@@ -19,4 +19,8 @@ Perplexity Pro amplía el acceso a "Computer", la función de automatización de
 
 La gente compara el precio de Perplexity contra ChatGPT o Claude como si fueran lo mismo, pero Perplexity vende principalmente una experiencia de búsqueda con IA y citación de fuentes, no un chat de propósito general. Pagar por Perplexity tiene sentido si lo que buscas es reemplazar cómo investigas en la web, no necesariamente si lo que quieres es un asistente conversacional — ahí otras herramientas de esta lista pueden convenirte más por el mismo precio.
 
+## ¿Perplexity entrena su IA con lo que le buscas?
+
+Sí — y desde julio de 2026 ya ni promete por escrito dejarte optar por no participar. [Lee el detalle verificado →](/articulos/perplexity-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Perplexity Pro →</a>

@@ -19,4 +19,8 @@ c.ai+ da acceso a los modelos más recientes y capaces de la plataforma, memoria
 
 A diferencia de otras herramientas donde pagar desbloquea algo que antes no podías hacer, en Character.AI la versión gratuita ya permite chatear sin límite — lo que compras con c.ai+ es velocidad y prioridad, no acceso. Si nunca te ha tocado esperar por el modo lento en tus horarios de uso, vale la pena preguntarte si de verdad necesitas pagar o si el plan gratuito ya te resuelve.
 
+## ¿Character.AI entrena su IA con tus conversaciones?
+
+Sí — el opt-out solo existe si vives en la Unión Europea o el Reino Unido. [Lee el detalle verificado →](/articulos/character-ai-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://character.ai/plus" target="_blank" rel="noopener noreferrer">Suscríbete a c.ai+ en el sitio oficial de Character.AI →</a>

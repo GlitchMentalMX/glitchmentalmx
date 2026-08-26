@@ -19,4 +19,8 @@ Google AI Pro da 4 veces más acceso a Gemini que la versión gratuita, además 
 
 Cuando alguien pregunta cuánto cuesta Gemini, casi siempre piensa solo en el chatbot — pero Google AI Pro es, en realidad, un plan de almacenamiento y productividad con IA integrada, no una suscripción aislada a un chat. Los 5 TB de espacio por sí solos ya tienen valor de mercado equivalente a una suscripción de Google One independiente, así que comparar el precio de Gemini contra el de un chatbot de un solo uso sin más beneficios no es una comparación justa.
 
+## ¿Gemini entrena su IA con lo que le escribes?
+
+Sí, por default — el mismo interruptor que cubre todo el ecosistema de Google. [Lee el detalle verificado →](/articulos/gemini-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://one.google.com/about/google-ai-plans/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Google AI Pro →</a>

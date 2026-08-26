@@ -21,6 +21,6 @@ El piloto de pago de Meta AI es la señal más clara de hacia dónde va el produ
 
 ## ¿Meta AI entrena su IA con lo que subes o escribes?
 
-Depende de en qué app la uses. Revisa el detalle verificado directamente en la política de privacidad de Meta para [Facebook](/articulos/facebook-usa-mis-datos-para-entrenar-ia/), [Instagram](/articulos/instagram-usa-mis-datos-para-entrenar-ia/), [WhatsApp](/articulos/whatsapp-usa-mis-datos-para-entrenar-ia/) y [Messenger](/articulos/messenger-usa-mis-datos-para-entrenar-ia/).
+Sí, directamente — cada conversación aquí es con la IA. [Lee el detalle verificado →](/articulos/meta-ai-usa-mis-datos-para-entrenar-ia/). Si la usas dentro de otra app de Meta, revisa el detalle verificado para [Facebook](/articulos/facebook-usa-mis-datos-para-entrenar-ia/), [Instagram](/articulos/instagram-usa-mis-datos-para-entrenar-ia/), [WhatsApp](/articulos/whatsapp-usa-mis-datos-para-entrenar-ia/) y [Messenger](/articulos/messenger-usa-mis-datos-para-entrenar-ia/).
 
 <a href="https://www.meta.ai/" target="_blank" rel="noopener noreferrer">Usa Meta AI en el sitio oficial →</a>

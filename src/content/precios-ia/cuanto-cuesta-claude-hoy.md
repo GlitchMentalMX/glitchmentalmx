@@ -19,4 +19,8 @@ Claude Pro multiplica el uso disponible frente a la versión gratuita, que tiene
 
 Mucha gente busca cuánto cuesta Claude pensando en un solo producto, pero Anthropic vende el acceso al chat (Claude Pro, lo que cubre este artículo) por separado de los planes pensados específicamente para uso intensivo de programación vía terminal o editor, que tienen su propia estructura de precio. Si lo que necesitas es el asistente conversacional del día a día, Claude Pro es el plan correcto; si tu uso principal es generar código a gran volumen, vale la pena revisar directamente la página de precios antes de suscribirte, porque ahí es donde cambia el cálculo.
 
+## ¿Claude entrena su IA con lo que le escribes?
+
+Sí, desde agosto de 2025 y por default — Anthropic cambió su postura. [Lee el detalle verificado →](/articulos/claude-usa-mis-datos-para-entrenar-ia/)
+
 <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Claude →</a>
