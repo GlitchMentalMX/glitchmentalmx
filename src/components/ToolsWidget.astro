@@ -4,11 +4,19 @@
 // estilo. Se extrajo a un componente aparte porque en el home vive inline
 // (con el efecto "scramble" de los títulos, que es exclusivo del home); no
 // se tocó el home para no modificar su layout fuera del alcance de esta tarea.
+import { getCollection } from 'astro:content';
+
+// Igual que en el home: los dos totales se muestran por separado (no
+// sumados) porque varias herramientas viven en ambas colecciones y no hay
+// forma barata de deduplicar sin una tabla de equivalencias manual.
+const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft)).length;
+const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
+
 const toolsList = [
   { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
   { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
-  { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales y quién entrena su IA con tus datos — dos series verificadas, herramienta por herramienta.', stat: '96 herramientas verificadas', icon: 'shield' as const },
+  { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales y quién entrena su IA con tus datos — dos series verificadas, herramienta por herramienta.', stat: `${preciosCount} precios · ${entrenaCount} privacidad`, icon: 'shield' as const },
 ];
 ---
 
