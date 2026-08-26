@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 
 const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft)).length;
 const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
+const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
 
 const cards = [
   {
@@ -19,18 +20,24 @@ const cards = [
     title: 'Quién entrena con tus datos',
     dek: 'Si tus fotos, mensajes o archivos entrenan un modelo de IA sin que lo decidas — verificado en la política de privacidad oficial de cada una.',
   },
+  {
+    href: '/prueba-gratis-sin-tarjeta/',
+    eyebrow: `${pruebaGratisCount} herramientas`,
+    title: 'Prueba gratis sin tarjeta',
+    dek: 'Cuáles herramientas dejan probar su plan de pago sin pedir tarjeta de crédito y cuáles la piden desde el primer clic — verificado en cada página de registro.',
+  },
 ];
 ---
 
 <Layout
   title="IA sin letra chiquita"
-  description="Lo que las herramientas de IA no ponen en el primer párrafo: cuánto cuestan de verdad en México y si entrenan su IA con tus datos."
+  description="Lo que las herramientas de IA no ponen en el primer párrafo: cuánto cuestan de verdad en México, si entrenan su IA con tus datos y si piden tarjeta para probarlas."
 >
   <Breadcrumbs items={[{ name: 'IA sin letra chiquita' }]} />
   <section class="container header">
     <p class="eyebrow">IA sin letra chiquita</p>
     <h1>Lo que la letra chiquita <span class="accent">no te dice</span></h1>
-    <p class="sub">Dos series de referencia, verificadas una por una: cuánto cuesta cada herramienta y qué hace con tus datos.</p>
+    <p class="sub">Tres series de referencia, verificadas una por una: cuánto cuesta cada herramienta, qué hace con tus datos y si te pide tarjeta para probarla.</p>
   </section>
 
   <section class="container grid">
@@ -52,7 +59,7 @@ const cards = [
   .grid {
     padding: 0 24px 72px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
   }
   .card {
@@ -65,7 +72,7 @@ const cards = [
   .card h2 { font-size: 1.5rem; margin: 10px 0 12px; }
   .card .dek { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
 
-  @media (max-width: 700px) {
+  @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr; }
   }
 </style>

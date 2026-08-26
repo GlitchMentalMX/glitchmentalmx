@@ -1,0 +1,69 @@
+---
+// Fila del grid en /prueba-gratis-sin-tarjeta/ — clon estructural de
+// EntrenaIARow, cambiando el badge por PruebaGratisBadge. A propósito NO
+// muestra la respuesta completa: eso vive solo en el artículo.
+import PruebaGratisBadge from './PruebaGratisBadge.astro';
+
+interface Props {
+  index: number;
+  slug: string;
+  herramienta: string;
+  veredicto: 'rojo' | 'verde' | 'amarillo';
+  fraseCorta: string;
+}
+
+const { index, slug, herramienta, veredicto, fraseCorta } = Astro.props;
+const num = String(index).padStart(2, '0');
+---
+
+<a class="row" href={`/articulos/${slug}/`}>
+  <span class="num">{num}</span>
+  <span class="text">
+    <span class="title-line">
+      <span class="title">{herramienta}</span>
+      <PruebaGratisBadge veredicto={veredicto} size="sm" />
+    </span>
+    <span class="dek">{fraseCorta}</span>
+    <span class="cta">Conoce los detalles →</span>
+  </span>
+</a>
+
+<style>
+  .row {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 20px;
+    align-items: baseline;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+  .row:first-child { padding-top: 4px; }
+  .num {
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    color: var(--accent-line);
+    font-weight: 500;
+  }
+  .text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .title-line { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .title { font-family: var(--font-display); font-size: 1.15rem; line-height: 1.3; }
+  .row:hover .title { color: var(--accent); }
+  .dek {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .cta {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    margin-top: 2px;
+  }
+  .row:hover .cta { color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 30px 1fr; gap: 12px; }
+    .title { font-size: 1.02rem; }
+  }
+</style>

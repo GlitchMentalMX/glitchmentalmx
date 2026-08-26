@@ -174,6 +174,31 @@ const entrenaIA = defineCollection({
   }),
 });
 
+// Tercera colección de la familia "IA sin letra chiquita", mismo criterio de
+// separación que preciosIA/entrenaIA: contenido utilitario/referencial (si
+// una herramienta pide tarjeta para su prueba gratis), no debe mezclarse con
+// `category` de posts ni aparecer en RSS/archivo/home. Comparte la ruta
+// /articulos/[slug].astro con las otras dos (unión en getStaticPaths).
+const pruebaGratis = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/prueba-gratis' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    herramienta: z.string(),
+    herramientaId: z.string(),
+    empresa: z.string(),
+    sitioOficial: z.string().url(),
+    veredicto: z.enum(['rojo', 'verde', 'amarillo']),
+    fraseCorta: z.string(),
+    fuenteVerificacion: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
 const indiceGlitchmentalmx = defineCollection({
   loader: singleJsonEntryLoader('./src/content/indice/actual.json', 'actual'),
   schema: z.object({
@@ -207,4 +232,5 @@ export const collections = {
   indiceGlitchmentalmx,
   preciosIA,
   entrenaIA,
+  pruebaGratis,
 };

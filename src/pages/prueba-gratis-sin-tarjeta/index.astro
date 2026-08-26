@@ -1,0 +1,92 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PruebaGratisRow from '../../components/PruebaGratisRow.astro';
+import BuscadorPreciosIA from '../../components/BuscadorPreciosIA.astro';
+import { getCollection } from 'astro:content';
+
+const VEREDICTO_ORDEN = { rojo: 0, amarillo: 1, verde: 2 };
+
+const posts = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).sort((a, b) => {
+  const porVeredicto = VEREDICTO_ORDEN[a.data.veredicto] - VEREDICTO_ORDEN[b.data.veredicto];
+  return porVeredicto !== 0 ? porVeredicto : a.data.herramienta.localeCompare(b.data.herramienta, 'es');
+});
+
+// {nombre, slug} generado en build-time desde la colección — mismo buscador
+// que /precios-ia/ y /quien-entrena-con-tus-datos/, sin lista escrita a mano.
+const buscadorItems = posts.map((post) => ({
+  nombre: post.data.herramienta,
+  slug: post.id,
+}));
+
+const title = 'Prueba antes de pagar: qué IA sí te pide tarjeta y cuáles no';
+const description =
+  'Cuáles herramientas de IA dejan probar el plan de pago sin pedir tarjeta de crédito y cuáles la piden desde el primer clic — verificado directo en la página de registro de cada una.';
+---
+
+<Layout title={title} description={description}>
+  <Breadcrumbs items={[
+    { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
+    { name: 'Prueba gratis sin tarjeta' },
+  ]} />
+  <section class="container header">
+    <p class="eyebrow">Prueba gratis · {posts.length} herramientas verificadas</p>
+    <h1>{title}</h1>
+    <p class="dek">
+      "Prueba gratis" no siempre significa lo mismo: algunas herramientas te dejan probar el plan de
+      pago sin pedir un método de pago, otras piden tarjeta desde el primer clic y solo te cobran si
+      no cancelas a tiempo. Esto no es lo mismo que una herramienta gratuita para siempre — eso ya lo
+      cubrimos en <a href="/precios-ia/">Precios de IA</a>. Aquí verificamos, directo en la página de
+      registro oficial de cada una, si de verdad puedes probarla sin dar tu tarjeta.
+    </p>
+  </section>
+
+  <section class="container leyenda">
+    <span class="leyenda-item"><span aria-hidden="true">🔴</span> Requiere tarjeta desde el inicio</span>
+    <span class="leyenda-item"><span aria-hidden="true">🟡</span> Depende del plan o la región</span>
+    <span class="leyenda-item"><span aria-hidden="true">🟢</span> No requiere tarjeta</span>
+  </section>
+
+  <section class="container list">
+    <p class="eyebrow list-label">Las herramientas</p>
+    <BuscadorPreciosIA items={buscadorItems} />
+    {posts.map((post, i) => (
+      <PruebaGratisRow
+        index={i + 1}
+        slug={post.id}
+        herramienta={post.data.herramienta}
+        veredicto={post.data.veredicto}
+        fraseCorta={post.data.fraseCorta}
+      />
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 24px; max-width: 760px; }
+  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
+  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+  .dek a { color: var(--accent); font-weight: 500; }
+
+  .leyenda {
+    max-width: 760px;
+    padding: 0 24px 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+  }
+  .leyenda-item {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  @media (max-width: 700px) {
+    .leyenda { grid-template-columns: 1fr; }
+  }
+
+  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list-label { margin-bottom: 6px; }
+</style>
