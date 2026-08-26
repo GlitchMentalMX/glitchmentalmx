@@ -1,7 +1,7 @@
 ---
 title: 'El empleado que nunca existió: cuando RR.HH. falla'
 category: Cultura Digital
-pubDate: 2026-08-26T13:46
+pubDate: 2026-08-26T13:47
 updatedDate: ''
 description: 'Corea del Norte no hackeó la empresa: pasó la entrevista. Cómo el proceso de contratación se volvió la puerta de entrada, y qué expone a México.'
 heroImage: /images/uploads/empleado-que-nunca-existio.webp
