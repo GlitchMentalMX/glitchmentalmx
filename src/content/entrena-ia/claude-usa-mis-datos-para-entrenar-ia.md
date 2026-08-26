@@ -23,6 +23,8 @@ Ve a Configuración → Privacidad → Configuración de Privacidad, y apaga "Ay
 
 Esta política es específica de los productos de consumo — Claude Free, Pro y Max. Claude for Work, el uso empresarial y el acceso directo por API de Anthropic se rigen por términos comerciales separados, documentados aparte, que generalmente excluyen el contenido del cliente del entrenamiento por default. Si usas Claude a través de tu trabajo con una licencia empresarial, es probable que ya estés fuera de esto — vale la pena confirmarlo con quien administra la cuenta.
 
+¿Buscas cuánto cuesta Claude, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-claude-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://privacy.claude.com/en/articles/10023548-how-do-you-use-personal-data-in-model-training" target="_blank" rel="noopener noreferrer">Lee la política oficial de Anthropic sobre entrenamiento de modelos →</a>

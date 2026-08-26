@@ -23,6 +23,8 @@ Si estás en la UE o el Reino Unido: entra a Configuración → Datos y Privacid
 
 Este es de los casos más directos de esta lista sobre la brecha regulatoria: Character.AI no intenta disimularlo con matices — su propia documentación oficial delimita el opt-out exclusivamente a un grupo de países, sin ambigüedad. No hay un "puedes intentarlo de todas formas" como en otras plataformas de esta serie: si no calificas por región, el control simplemente no existe para ti.
 
+¿Buscas cuánto cuesta Character.AI, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-character-ai-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://character.ai/model-training" target="_blank" rel="noopener noreferrer">Lee la página oficial de Entrenamiento de Modelos de Character.AI →</a>

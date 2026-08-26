@@ -23,6 +23,8 @@ En Configuración de tu cuenta, busca la opción de retención de datos para ent
 
 Las cuentas Enterprise Pro y Max sí tienen protecciones más claras: tus datos no se usan para entrenar modelos, los archivos que subes se retienen por una ventana más corta (unos 7 días, contra los cerca de 30 días de las cuentas de consumo), y las organizaciones grandes pueden negociar controles de retención personalizados. Un detalle curioso sobre el motor detrás de Perplexity: sus acuerdos con OpenAI y Anthropic, cuyos modelos usa para generar respuestas, le prohíben usar los datos de los usuarios de Perplexity para entrenar los modelos de esas otras empresas — el riesgo aquí es específico de Perplexity, no se hereda a terceros.
 
+¿Buscas cuánto cuesta Perplexity, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-perplexity-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://www.perplexity.ai/hub/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Perplexity →</a>

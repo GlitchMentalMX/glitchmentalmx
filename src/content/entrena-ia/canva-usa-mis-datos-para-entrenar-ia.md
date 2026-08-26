@@ -27,6 +27,8 @@ Esta es la distinción más limpia de toda la lista: en cuentas Canva Teams, Bus
 
 Si formas parte del programa Canva Creators y subes plantillas o elementos para vender, aplica una regla distinta: Canva no usa el contenido de creadores sin su permiso explícito, y quienes se unen al Programa de Compensación de Creadores pueden decidir, de forma separada, si permiten que sus plantillas específicas se usen para entrenar los modelos propios de Canva a cambio de una compensación — una decisión que puedes cambiar en cualquier momento, incluso después de haberte unido al programa.
 
+¿Buscas cuánto cuesta Canva, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-canva-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://www.canva.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Canva →</a>

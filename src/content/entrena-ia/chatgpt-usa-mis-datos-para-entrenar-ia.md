@@ -23,6 +23,8 @@ Entra a Configuración → Controles de Datos, y apaga "Mejorar el modelo para t
 
 Si usas ChatGPT Enterprise o Team a través de tu trabajo, tus datos quedan excluidos del entrenamiento por default — es la cuenta, no una decisión personal, la que determina la protección. Si en cambio usas una cuenta Plus o Pro pagada de tu bolsillo para trabajar, sigues bajo las reglas del plan individual: pagar no te saca automáticamente del entrenamiento, solo cambiar de tipo de cuenta lo hace.
 
+¿Buscas cuánto cuesta ChatGPT, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-chatgpt-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://help.openai.com/en/articles/7730893-data-controls-faq" target="_blank" rel="noopener noreferrer">Lee la documentación oficial de Controles de Datos de OpenAI →</a>

@@ -23,6 +23,8 @@ Abre la app de Gemini, toca tu foto de perfil, entra a Actividad de Gemini y ap�
 
 Si ya revisaste este mismo interruptor en el artículo de Google Assistant, es porque es exactamente el mismo — Google no separa el control por producto, lo separa por cuenta. Lo que cambia entre ambos artículos es la superficie donde interactúas con la IA (voz en un altavoz o teléfono vs. texto en la app o el navegador), no la política de fondo.
 
+¿Buscas cuánto cuesta Gemini, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-gemini-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://support.google.com/gemini/answer/13594961" target="_blank" rel="noopener noreferrer">Lee la política oficial de Actividad de Gemini →</a>

@@ -23,6 +23,8 @@ No hay un botón. La forma documentada de ejercer el derecho de opt-out es conta
 
 Esto es lo que distingue a DeepSeek del resto de la lista: la propia política declara que tus datos personales se recolectan, procesan y almacenan directamente en la República Popular China, sujetos a su marco legal — lo que significa que, más allá de cualquier configuración de privacidad que actives, las autoridades chinas pueden tener acceso a esa información bajo sus propias leyes. Por esta razón, varios gobiernos han restringido o prohibido el uso de DeepSeek en dispositivos oficiales. Ningún ajuste de privacidad dentro de la app cambia este hecho estructural.
 
+¿Buscas cuánto cuesta DeepSeek, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-deepseek-hoy/)
+
 [Última actualización: 24/08/2026]
 
 <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de DeepSeek →</a>
