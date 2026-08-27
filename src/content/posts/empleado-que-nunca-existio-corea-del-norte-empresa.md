@@ -1,12 +1,12 @@
 ---
 title: 'El empleado que nunca existió: cuando RR.HH. falla'
 category: Cultura Digital
-pubDate: 2026-08-26T13:47
+pubDate: 2026-08-27T06:10
 updatedDate: ''
 description: 'Corea del Norte no hackeó la empresa: pasó la entrevista. Cómo el proceso de contratación se volvió la puerta de entrada, y qué expone a México.'
 heroImage: /images/uploads/empleado-que-nunca-existio.webp
 heroImageAlt: 'El empleado que nunca existió: figura cruza umbral de control, lado sólido y lado poroso sin fricción'
-draft: true
+draft: false
 ---
 
 El 28 de julio de 2026, el FBI reveló que un trabajador falso de Corea del Norte operó dentro de una agencia federal de Estados Unidos. No violó ningún firewall: **pasó la entrevista**. La verificación de identidad en Recursos Humanos, no la ciberseguridad perimetral, es la superficie de ataque real.
