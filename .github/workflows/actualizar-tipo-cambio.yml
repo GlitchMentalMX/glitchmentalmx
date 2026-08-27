@@ -1,20 +1,24 @@
 name: Actualizar tipo de cambio Banxico
 
-# Corre todos los días a las 15:00 hora CDMX (21:00 UTC) — después de que
-# Banxico publica el dato FIX del día (a partir de mediodía CDMX). Fin de
-# semana/festivo: Banxico no publica dato nuevo, el script deja el archivo
-# igual y no genera commit.
+# Corre a las 15:12 y, de respaldo, a las 17:43 hora CDMX (21:12 y 23:43
+# UTC) — a propósito NO en punto de hora. GitHub documenta que los triggers
+# "schedule" se pueden retrasar o saltar por completo en horas de más carga,
+# y la hora en punto es la más congestionada de todas (todo mundo programa
+# ahí). Confirmado el 26 ago 2026: la corrida de ese día simplemente no
+# disparó — no fue error nuestro ni de Banxico, fue GitHub saltándose el
+# cron. La segunda corrida de la tarde es la red de seguridad: si la de
+# las 15:12 no dispara, casi seguro la de las 17:43 sí. Ninguna genera
+# commit si no hay dato nuevo (fin de semana/festivo incluido).
 #
 # 24 ago 2026: se descubrió y corrigió un bug real — el commit de este
 # workflow, al usar el token automático, no disparaba la publicación del
 # sitio (GitHub bloquea a propósito que un push de github-actions[bot]
-# encadene otro workflow, para evitar loops). El dato quedaba correcto en
-# el repositorio pero el sitio en vivo no se reconstruía hasta el próximo
-# push de alguien más. Ver el paso "Disparar la publicación del sitio" más
-# abajo — ya no depende de que pase otra cosa después.
+# encadene otro workflow, para evitar loops). Ver el paso "Disparar la
+# publicación del sitio" más abajo — ya no depende de que pase otra cosa.
 on:
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '12 21 * * *'
+    - cron: '43 23 * * *'
   workflow_dispatch:
 
 permissions:
