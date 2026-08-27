@@ -54,8 +54,22 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/data/tipo-cambio.json
           git commit -m "Actualizar tipo de cambio Banxico"
-          git push
-          echo "cambio=true" >> "$GITHUB_OUTPUT"
+
+          # Este repo recibe commits seguido (tú, el CMS). Si alguien sube
+          # algo a main justo entre que este workflow descargó el código y
+          # este paso hace push, git rechaza el push por estar desactualizado
+          # — pasó el 27 ago 2026. En vez de morir ahí, se sincroniza y
+          # reintenta un par de veces antes de darse por vencido.
+          for intento in 1 2 3; do
+            if git push; then
+              echo "cambio=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push rechazado (intento $intento) — sincronizando con origin y reintentando…"
+            git pull --rebase origin main
+          done
+          echo "No se pudo subir el cambio tras varios intentos."
+          exit 1
 
       # GitHub, a propósito, no deja que un push hecho con el token automático
       # de este mismo workflow dispare el workflow de "push" que publica el
