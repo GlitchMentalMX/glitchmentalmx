@@ -149,11 +149,6 @@ const signalPools = {
     text: t.title,
     href: t.href,
   })),
-  insights: insights.map((i) => ({
-    tag: 'Insights Visuales',
-    text: truncate(i.data.titulo),
-    href: '/insights-visuales/',
-  })),
   datoIncomodo: datoIncomodoPool.map((d) => ({
     tag: 'Dato Incómodo',
     text: truncate(d.data.resumen),
@@ -940,7 +935,6 @@ const signalPools = {
       'indiceSube',
       'serie',
       'herramienta',
-      'insights',
       'indiceBaja',
       'coleccion',
       'datoIncomodo',
