@@ -4,8 +4,8 @@ resumen: El hardware de aprendizaje automático mejoró su eficiencia energétic
 imagen: /images/uploads/hardware-de-aprendizaje .webp
 imagenAlt: 'Eficiencia energética IA: técnica sostiene un módulo de cómputo frente a un muro de racks lleno y cableado sobrecargado'
 enlace: ''
-date: 2026-08-27T16:40
-draft: true
+date: 2026-08-28T06:03
+draft: false
 categoria: Sistemas Autónomos
 punchline: Más eficiencia no significa menos consumo total
 ---
