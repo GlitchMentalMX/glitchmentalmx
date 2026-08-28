@@ -103,7 +103,6 @@ const toolsList = [
 // ciclo visible entre categorías corre aparte, más rápido, solo mientras el
 // visitante está en la página.
 const indiceEntry = await getEntry('indiceGlitchmentalmx', 'actual');
-const datoIncomodoPool = await getCollection('datoIncomodo', ({ data }) => !data.draft);
 const discoverPool = allPosts.slice(4, 20); // evita duplicar Destacado y Coordenadas
 // Solo series/colecciones ya terminadas se anuncian en la Señal en vivo —
 // una "coming-soon" (como Ingeniería de la Confianza mientras se publica)
@@ -149,11 +148,17 @@ const signalPools = {
     text: t.title,
     href: t.href,
   })),
-  datoIncomodo: datoIncomodoPool.map((d) => ({
-    tag: 'Dato Incómodo',
-    text: truncate(d.data.resumen),
-    href: '/dato-incomodo/',
-  })),
+  // Sin página propia en el home (a diferencia de Insights Visuales), así que
+  // se queda en el ticker. Slogan fijo en vez de un dato puntual porque no
+  // hay dónde enlazar a un dato específico — pendiente reemplazar por un
+  // card propio con GlitchMan más adelante.
+  datoIncomodo: [
+    {
+      tag: 'Dato Incómodo',
+      text: 'Lo que no te conviene saber... publicado de todas formas.',
+      href: '/dato-incomodo/',
+    },
+  ],
   novela: novelasPublicadas.map((n) => ({
     tag: 'Novela',
     text: `${n.title} — adquiérela en Amazon`,
