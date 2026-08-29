@@ -345,6 +345,17 @@ const signalPools = {
     </div>
   </section>
 
+  <section class="dato-incomodo container">
+    <a href="/dato-incomodo/" class="dato-card">
+      <img src="/images/dato-incomodo/home.webp" alt="Dato Incómodo — lo que no te conviene saber, publicado de todas formas." loading="lazy" width="220" height="124" />
+      <div class="dato-body">
+        <span class="dato-tag">Dato Incómodo</span>
+        <p class="dato-line">Lo que no te conviene saber... publicado de todas formas.</p>
+        <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
+      </div>
+    </a>
+  </section>
+
   <section class="archivo-cta container">
     <a href="/archivo/" class="archivo-band">
       <span class="archivo-num-group">
@@ -476,6 +487,57 @@ const signalPools = {
   section.recent, section.explora, section.insights, section.novelas, section.tools, section.archivo-cta {
     padding: 44px 24px;
     border-top: 1px solid var(--border);
+  }
+
+  /* Dato Incómodo — deliberadamente pequeño y "pegado" (leve rotación, como
+     un volante), a diferencia de todo lo demás en el home: es la sección
+     con menos formalidad del sitio y así se lee de inmediato, sin competir
+     con el hero de Insights Visuales ni con el CTA de Archivo Total. */
+  .dato-incomodo { padding: 28px 24px; border-top: 1px dashed var(--border); }
+  .dato-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 14px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    transform: rotate(-1.2deg);
+    transition: transform 0.15s ease, outline-color 0.15s ease;
+    outline: 1px solid transparent;
+  }
+  .dato-card:hover { transform: rotate(0deg); outline-color: var(--accent); }
+  .dato-card img {
+    flex-shrink: 0;
+    width: 110px;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .dato-body { min-width: 0; }
+  .dato-tag {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .dato-line {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+    margin: 0 0 6px;
+  }
+  .dato-cta { font-size: 0.82rem; }
+  @media (max-width: 480px) {
+    .dato-card { gap: 14px; padding: 12px; }
+    .dato-card img { width: 84px; }
+    .dato-line { display: none; }
   }
 
   /* Recién publicado — horizontal rail, hero image as background, glitch on hover */
