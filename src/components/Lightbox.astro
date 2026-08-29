@@ -145,7 +145,24 @@
     }
 
     function step(delta) {
-      showAt(currentIndex + delta);
+      var nextIndex = currentIndex + delta;
+      if (nextIndex < 0 || nextIndex >= gallery.length) {
+        // Fin de la galería de ESTA página — si la página paginada define
+        // una siguiente/anterior (window.__lightboxPaging), navegamos de
+        // verdad en vez de dar la vuelta dentro del mismo set: se guarda
+        // en sessionStorage si hay que reabrir en la primera o última
+        // imagen, y se retoma justo después de la recarga.
+        var paging = window.__lightboxPaging;
+        var targetUrl = paging && (delta > 0 ? paging.next : paging.prev);
+        if (targetUrl) {
+          try {
+            sessionStorage.setItem('lightboxContinue', delta > 0 ? 'first' : 'last');
+          } catch (err) {}
+          window.location.href = targetUrl;
+          return;
+        }
+      }
+      showAt(nextIndex);
     }
 
     function open(clickedEl) {
@@ -172,5 +189,26 @@
       e.preventDefault();
       open(t);
     });
+
+    // Retoma el lightbox justo después de cruzar a la página siguiente o
+    // anterior (ver step() arriba), en la punta correcta de la nueva galería.
+    (function resumeAcrossPage() {
+      var mode;
+      try {
+        mode = sessionStorage.getItem('lightboxContinue');
+        if (mode) sessionStorage.removeItem('lightboxContinue');
+      } catch (err) {
+        mode = null;
+      }
+      if (!mode) return;
+      gallery = Array.prototype.slice.call(
+        document.querySelectorAll('[data-lightbox], .prose img')
+      );
+      if (!gallery.length) return;
+      var overlay = getOverlay();
+      showAt(mode === 'last' ? gallery.length - 1 : 0);
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    })();
   })();
 </script>

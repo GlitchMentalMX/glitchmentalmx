@@ -21,6 +21,10 @@ const { page } = Astro.props;
 >
   <PageHeader eyebrow="Insights Visuales" title="Una imagen. Una idea. **Un momento para pensar.**" />
 
+  <script define:vars={{ prevUrl: page.url.prev ?? null, nextUrl: page.url.next ?? null }}>
+    window.__lightboxPaging = { prev: prevUrl, next: nextUrl };
+  </script>
+
   <p class="container intro">
     Una microcolumna visual sobre tecnología y cultura digital. Cada pieza propone una idea, una
     provocación o una pregunta. Los enlaces llevan a lecturas relacionadas para seguir explorando
