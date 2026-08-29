@@ -13,7 +13,7 @@ heroImageAlt: Mujer mide terreno con instrumento topográfico en medio de niebla
 
 Si llegaste hasta aquí buscando optimismo, este no es tu lugar.
 
-Por [Jorge Diaz](/acerca-de/) · Fundador, glitchMentalMX
+Por [Jorge A. Diaz Elizondo](/acerca-de/) · Fundador, glitchMentalMX
 
 ## Qué es este manifiesto y por qué existe
 
@@ -93,7 +93,7 @@ No prometen tranquilidad. Prometen claridad.
 
 #### Sobre el autor
 
-[Jorge Diaz](https://www.linkedin.com/in/jorgediazelizondo/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchMentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
+[Jorge A. Diaz Elizondo](https://www.linkedin.com/in/jorgediazelizondo/) escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchMentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos. Escríbeme directo: [contacto@glitchmental.com](mailto:contacto@glitchmental.com)
 
 **¿Listo para llevar esta conversación al siguiente nivel?**
 

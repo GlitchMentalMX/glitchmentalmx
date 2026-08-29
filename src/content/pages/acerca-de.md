@@ -32,6 +32,7 @@ glitchMentalMX es para quienes buscan algo más que titulares: buscan el porqué
 
 ## Explora por categoría
 
-* **IA** — Inteligencia Artificial y Futuro del Trabajo
-* **Cultura** — Cultura Digital y Comportamiento Humano
-* **Viral** — Redes Sociales y Tendencias Digitales
+* [**Inteligencia Artificial**](/categoria/inteligencia-artificial/) — IA y futuro del trabajo
+* [**Cultura Digital**](/categoria/cultura-digital/) — Cultura digital y comportamiento humano
+* [**Tendencias Digitales**](/categoria/tendencias-digitales/) — Redes sociales y tendencias virales
+* [**Tecnología de Consumo**](/categoria/tecnologia-de-consumo/) — Gadgets, apps y herramientas cotidianas

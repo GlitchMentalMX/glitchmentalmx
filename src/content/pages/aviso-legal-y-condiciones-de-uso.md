@@ -12,7 +12,7 @@ headline: Aviso Legal y Condiciones de Uso
 
 ### 2. Propiedad Intelectual
 
-Todo el contenido publicado en glitchMentalMX, incluyendo textos, imágenes, gráficos, logos, videos y diseño, son propiedad de glitchMentalMX o de sus respectivos autores y están protegidos por las leyes de propiedad intelectual y derechos de autor.
+Todo el contenido publicado en glitchMentalMX, incluyendo textos, imágenes, gráficos, logos, videos y diseño, es propiedad de glitchMentalMX y está protegido por las leyes de propiedad intelectual y derechos de autor.
 
 Queda estrictamente prohibida la reproducción, distribución, comunicación pública y transformación, total o parcial, de los contenidos del Sitio sin la autorización expresa y por escrito del titular.
 
