@@ -348,11 +348,7 @@ const signalPools = {
   <section class="dato-incomodo container">
     <a href="/dato-incomodo/" class="dato-card">
       <img src="/images/dato-incomodo/home.webp" alt="Dato Incómodo — lo que no te conviene saber, publicado de todas formas." loading="lazy" width="380" height="214" />
-      <div class="dato-body">
-        <span class="dato-tag">Dato Incómodo</span>
-        <p class="dato-line">Lo que no te conviene saber... publicado de todas formas.</p>
-        <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
-      </div>
+      <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
     </a>
   </section>
 
@@ -518,29 +514,14 @@ const signalPools = {
   }
   .dato-card:hover { transform: rotate(0deg); outline-color: var(--accent); }
   @container (min-width: 700px) {
-    .dato-card { max-width: calc(((100cqi - 28px) / 3) + 32px); }
+    /* un poco más grande que una card de Coordenadas (factor 1.25) — en
+       desktop el detalle de la imagen lo pide; en móvil se deja igual. */
+    .dato-card { max-width: calc(((100cqi - 28px) / 3) * 1.25 + 32px); }
   }
   .dato-card img {
     width: 100%;
     height: auto;
     border-radius: 4px;
-  }
-  .dato-body { min-width: 0; }
-  .dato-tag {
-    display: block;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 6px;
-  }
-  .dato-line {
-    font-size: 0.92rem;
-    color: var(--text-muted);
-    line-height: 1.45;
-    margin: 0 0 8px;
   }
   .dato-cta { font-size: 0.88rem; }
 
