@@ -27,6 +27,8 @@ Existen decenas de sitios de cupones (agregadores genéricos de "promo codes") q
 
 ¿Claude entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/claude-usa-mis-datos-para-entrenar-ia/)
 
+¿Claude tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/claude-prueba-gratis-sin-tarjeta/)
+
 <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Claude →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

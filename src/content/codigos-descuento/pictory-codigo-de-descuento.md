@@ -25,6 +25,8 @@ Docenas de sitios agregadores anuncian códigos como "SAVE20" o "GOPIC90" promet
 
 ¿Buscas cuánto cuesta Pictory exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-pictory-hoy/)
 
+¿Pictory tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/pictory-prueba-gratis-sin-tarjeta/)
+
 <a href="https://pictory.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Pictory →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

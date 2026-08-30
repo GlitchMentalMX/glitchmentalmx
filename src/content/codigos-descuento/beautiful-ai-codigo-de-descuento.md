@@ -25,6 +25,8 @@ Abundan los sitios de cupones que anuncian descuentos de 40%, 60% o hasta 73% pa
 
 ¿Buscas cuánto cuesta Beautiful.ai exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-beautiful-ai-hoy/)
 
+¿Beautiful.ai tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/beautiful-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.beautiful.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Beautiful.ai →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

@@ -25,6 +25,8 @@ Hay sitios agregadores que prometen 25%, 50% o hasta 75% de descuento en Slack c
 
 ¿Slack usa tus mensajes para entrenar su IA? [Lee el veredicto verificado →](/articulos/slack-usa-mis-datos-para-entrenar-ia/)
 
+¿Slack tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/slack-prueba-gratis-sin-tarjeta/)
+
 <a href="https://slack.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Slack →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

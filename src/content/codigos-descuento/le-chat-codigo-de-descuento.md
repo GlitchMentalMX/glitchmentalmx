@@ -25,6 +25,8 @@ Varios agregadores de cupones anuncian códigos de descuento genéricos para Mis
 
 ¿Buscas cuánto cuesta Le Chat exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-le-chat-hoy/)
 
+¿Le Chat tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/le-chat-prueba-gratis-sin-tarjeta/)
+
 <a href="https://mistral.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Le Chat →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

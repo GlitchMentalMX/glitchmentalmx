@@ -25,6 +25,8 @@ Hay decenas de sitios agregadores de cupones que listan códigos para Midjourney
 
 ¿Buscas cuánto cuesta Midjourney exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-midjourney-hoy/)
 
+¿Midjourney tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/midjourney-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Midjourney →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

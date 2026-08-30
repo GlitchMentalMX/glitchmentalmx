@@ -21,6 +21,8 @@ Sitios de cupones ofrecen códigos como "BUDDIES" o "HELLOSUMMER" con hasta 50-7
 
 ¿Buscas cuánto cuesta Playground AI hoy en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-playground-ai-hoy/)
 
+¿Playground AI tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/playground-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://playgroundai.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Playground AI →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

@@ -21,6 +21,8 @@ Varios sitios agregadores listan supuestos códigos como "AVA" con 10% de descue
 
 ¿Buscas cuánto cuesta Elicit exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-elicit-hoy/)
 
+¿Elicit tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/elicit-prueba-gratis-sin-tarjeta/)
+
 <a href="https://elicit.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Elicit →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

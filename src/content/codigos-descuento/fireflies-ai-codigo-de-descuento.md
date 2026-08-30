@@ -25,6 +25,8 @@ Existen sitios agregadores, e incluso repositorios falsos en GitHub, que promete
 
 ¿Buscas cuánto cuesta Fireflies.ai exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-fireflies-ai-hoy/)
 
+¿Fireflies.ai tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/fireflies-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://fireflies.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Fireflies.ai →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

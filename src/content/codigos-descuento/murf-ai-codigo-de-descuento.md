@@ -25,6 +25,8 @@ Hay docenas de sitios agregadores que listan códigos de "33% off" o "75% off" p
 
 ¿Buscas cuánto cuesta Murf exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-murf-ai-hoy/)
 
+¿Murf tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/murf-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://murf.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Murf →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

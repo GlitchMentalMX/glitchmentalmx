@@ -25,6 +25,8 @@ Existen sitios de cupones y hasta revendedores que anuncian códigos de 15%, 30%
 
 ¿Buscas cuánto cuesta Copilot exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-copilot-hoy/)
 
+¿Copilot tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/copilot-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.microsoft.com/en-us/microsoft-365/premium" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Copilot →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

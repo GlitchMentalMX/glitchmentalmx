@@ -25,6 +25,8 @@ Abundan los sitios agregadores que listan códigos de CapCut con descuentos de 3
 
 ¿Buscas cuánto cuesta CapCut exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-capcut-hoy/)
 
+¿CapCut tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/capcut-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.capcut.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de CapCut →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

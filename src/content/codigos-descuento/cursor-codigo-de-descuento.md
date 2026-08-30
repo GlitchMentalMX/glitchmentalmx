@@ -25,6 +25,8 @@ Hay sitios y hasta repositorios de GitHub que promocionan "códigos de referido"
 
 ¿Buscas cuánto cuesta Cursor exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-cursor-hoy/)
 
+¿Cursor tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/cursor-prueba-gratis-sin-tarjeta/)
+
 <a href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Cursor →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

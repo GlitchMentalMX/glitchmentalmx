@@ -25,6 +25,8 @@ Existen varios sitios agregadores de cupones que listan códigos como "20% de de
 
 ¿Buscas cuánto cuesta Krea exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-krea-ai-hoy/)
 
+¿Krea tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/krea-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.krea.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Krea →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

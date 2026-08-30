@@ -25,6 +25,8 @@ Hay sitios que anuncian códigos como "PHOTOROOM15" o "JESS20" prometiendo hasta
 
 ¿Buscas cuánto cuesta Photoroom exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-photoroom-hoy/)
 
+¿Photoroom tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/photoroom-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.photoroom.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Photoroom →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

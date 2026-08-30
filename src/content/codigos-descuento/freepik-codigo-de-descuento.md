@@ -25,6 +25,8 @@ Hay decenas de sitios agregadores que listan supuestos códigos de Freepik con d
 
 ¿Buscas cuánto cuesta Freepik exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-freepik-hoy/)
 
+¿Freepik tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/freepik-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.freepik.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Freepik →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

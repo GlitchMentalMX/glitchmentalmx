@@ -25,6 +25,8 @@ Los planes Standard, Pro y Premier de Kling AI bajan su tarifa mensual efectiva 
 
 ¿Buscas cuánto cuesta Kling AI exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-kling-ai-hoy/)
 
+¿Kling AI tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/kling-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://app.klingai.com/global/membership/membership-plan" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Kling AI →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

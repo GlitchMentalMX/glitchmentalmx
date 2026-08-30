@@ -25,6 +25,8 @@ Existen numerosos sitios agregadores de cupones que anuncian códigos como "LEON
 
 ¿Buscas cuánto cuesta Leonardo AI exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-leonardo-ai-hoy/)
 
+¿Leonardo AI tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/leonardo-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://leonardo.ai/pricing/" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Leonardo AI →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

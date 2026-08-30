@@ -27,6 +27,8 @@ Abundan los sitios agregadores que anuncian cupones de "20%", "40%" o hasta "50%
 
 ¿Canva entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/canva-usa-mis-datos-para-entrenar-ia/)
 
+¿Canva tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/canva-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Canva →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

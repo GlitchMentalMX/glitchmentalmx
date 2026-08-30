@@ -27,6 +27,8 @@ Existen decenas de sitios agregadores que listan cupones de "25%" o "60% off" pa
 
 ¿Notion entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/notion-usa-mis-datos-para-entrenar-ia/)
 
+¿Notion AI tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/notion-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.notion.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Notion AI →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

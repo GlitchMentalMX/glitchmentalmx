@@ -25,6 +25,8 @@ Existen sitios que anuncian "20% de descuento" o "hasta 64% off" para NotebookLM
 
 ¿Buscas cuánto cuesta NotebookLM exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-notebooklm-hoy/)
 
+¿NotebookLM tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/notebooklm-prueba-gratis-sin-tarjeta/)
+
 <a href="https://notebook.google/" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de NotebookLM →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

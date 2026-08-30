@@ -25,6 +25,8 @@ Hay agregadores que anuncian códigos de 20%, 30% o hasta 58% de descuento para 
 
 ¿Buscas cuánto cuesta Udio exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-udio-hoy/)
 
+¿Udio tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/udio-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.udio.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Udio →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

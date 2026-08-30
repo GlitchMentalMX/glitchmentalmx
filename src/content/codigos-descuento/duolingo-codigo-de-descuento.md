@@ -25,6 +25,8 @@ Sitios de cupones listan supuestos códigos que prometen meses gratis o un 20% d
 
 ¿Duolingo entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/duolingo-usa-mis-datos-para-entrenar-ia/)
 
+¿Duolingo tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/duolingo-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.duolingo.com/super" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Duolingo →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

@@ -25,6 +25,8 @@ Sitios agregadores anuncian "51% off" o "55% off" como si fueran cupones exclusi
 
 ¿Buscas cuánto cuesta Otter.ai exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-otter-ai-hoy/)
 
+¿Otter.ai tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/otter-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://otter.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Otter.ai →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

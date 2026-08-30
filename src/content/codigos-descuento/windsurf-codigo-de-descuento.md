@@ -25,6 +25,8 @@ Sitios agregadores siguen anunciando "cupones Windsurf" con descuentos de hasta 
 
 ¿Buscas cuánto cuesta Windsurf exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-windsurf-hoy/)
 
+¿Windsurf tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/windsurf-prueba-gratis-sin-tarjeta/)
+
 <a href="https://windsurf.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Windsurf →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

@@ -25,6 +25,8 @@ Hay múltiples sitios agregadores que listan códigos de "30%", "50%" o incluso 
 
 ¿Buscas cuánto cuesta DeepL exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-deepl-hoy/)
 
+¿DeepL tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/deepl-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.deepl.com/pro" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de DeepL →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

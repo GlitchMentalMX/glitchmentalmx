@@ -25,6 +25,8 @@ Hay decenas de sitios agregadores que anuncian códigos de "50% off" o "65% off"
 
 ¿Buscas cuánto cuesta Ideogram exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-ideogram-hoy/)
 
+¿Ideogram tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/ideogram-prueba-gratis-sin-tarjeta/)
+
 <a href="https://ideogram.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Ideogram →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

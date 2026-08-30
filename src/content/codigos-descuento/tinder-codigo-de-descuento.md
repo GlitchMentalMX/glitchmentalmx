@@ -25,6 +25,8 @@ Decenas de sitios listan códigos como "30% off" o "35% off Platinum" sin verifi
 
 ¿Tinder usa tus datos y conversaciones para entrenar su IA? [Lee el veredicto verificado →](/articulos/tinder-usa-mis-datos-para-entrenar-ia/)
 
+¿Tinder tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/tinder-prueba-gratis-sin-tarjeta/)
+
 <a href="https://tinder.com/subscription" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Tinder →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

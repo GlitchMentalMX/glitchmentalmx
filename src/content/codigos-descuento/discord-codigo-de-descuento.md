@@ -25,6 +25,8 @@ Es habitual encontrar publicaciones y sitios que prometen "Nitro gratis" con un 
 
 ¿Discord entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/discord-usa-mis-datos-para-entrenar-ia/)
 
+¿Discord tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/discord-prueba-gratis-sin-tarjeta/)
+
 <a href="https://discord.com/nitro" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Discord Nitro →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

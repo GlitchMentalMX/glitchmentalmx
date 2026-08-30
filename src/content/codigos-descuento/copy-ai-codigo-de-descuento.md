@@ -21,6 +21,8 @@ Existen decenas de sitios agregadores que ofrecen códigos de "30% off todo un a
 
 ¿Buscas cuánto cuesta Copy.ai exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-copy-ai-hoy/)
 
+¿Copy.ai tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/copy-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.copy.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Copy.ai →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

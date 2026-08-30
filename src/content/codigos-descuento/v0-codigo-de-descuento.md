@@ -25,6 +25,8 @@ Hay sitios agregadores que anuncian cupones de v0 con porcentajes altos ("hasta 
 
 ¿Buscas cuánto cuesta v0 exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-v0-hoy/)
 
+¿v0 tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/v0-prueba-gratis-sin-tarjeta/)
+
 <a href="https://v0.app/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de v0 →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

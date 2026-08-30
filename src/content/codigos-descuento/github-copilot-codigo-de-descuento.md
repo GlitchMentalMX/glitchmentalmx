@@ -25,6 +25,8 @@ Hay sitios de cupones que listan códigos genéricos de descuento para Copilot, 
 
 ¿Buscas cuánto cuesta GitHub Copilot exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-github-copilot-hoy/)
 
+¿GitHub Copilot tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/github-copilot-prueba-gratis-sin-tarjeta/)
+
 <a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de GitHub Copilot →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

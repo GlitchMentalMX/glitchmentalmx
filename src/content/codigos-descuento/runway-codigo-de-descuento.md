@@ -25,6 +25,8 @@ Sitios agregadores listan códigos como "30% off" o "40% off para estudiantes" p
 
 ¿Buscas cuánto cuesta Runway exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-runway-hoy/)
 
+¿Runway tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/runway-prueba-gratis-sin-tarjeta/)
+
 <a href="https://runway.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Runway →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

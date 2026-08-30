@@ -25,6 +25,8 @@ Hay decenas de sitios de cupones que listan códigos genéricos para Lovable con
 
 ¿Buscas cuánto cuesta Lovable exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-lovable-hoy/)
 
+¿Lovable tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/lovable-prueba-gratis-sin-tarjeta/)
+
 <a href="https://lovable.dev/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Lovable →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

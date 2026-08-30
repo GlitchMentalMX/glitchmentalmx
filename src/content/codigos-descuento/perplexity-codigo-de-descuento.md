@@ -27,6 +27,8 @@ Sitios agregadores de cupones listan códigos de "hasta 70% off" para Perplexity
 
 ¿Perplexity entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/perplexity-usa-mis-datos-para-entrenar-ia/)
 
+¿Perplexity tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/perplexity-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Perplexity →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

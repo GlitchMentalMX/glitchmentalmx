@@ -25,6 +25,8 @@ Hay múltiples sitios agregadores de cupones que listan códigos de Replit con d
 
 ¿Buscas cuánto cuesta Replit exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-replit-hoy/)
 
+¿Replit tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/replit-prueba-gratis-sin-tarjeta/)
+
 <a href="https://replit.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Replit →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

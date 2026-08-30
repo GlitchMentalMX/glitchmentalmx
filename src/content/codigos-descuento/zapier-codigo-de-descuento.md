@@ -25,6 +25,8 @@ Existen numerosos sitios agregadores que listan códigos de Zapier con descuento
 
 ¿Buscas cuánto cuesta Zapier exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-zapier-hoy/)
 
+¿Zapier tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/zapier-prueba-gratis-sin-tarjeta/)
+
 <a href="https://zapier.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Zapier →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

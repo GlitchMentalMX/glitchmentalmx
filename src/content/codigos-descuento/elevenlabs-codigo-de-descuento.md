@@ -25,6 +25,8 @@ A pesar de que sí hay una promoción real y activa hoy, sitios agregadores de c
 
 ¿Buscas cuánto cuesta ElevenLabs exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-elevenlabs-hoy/)
 
+¿ElevenLabs tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/elevenlabs-prueba-gratis-sin-tarjeta/)
+
 <a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de ElevenLabs →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

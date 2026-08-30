@@ -25,6 +25,8 @@ Existen decenas de agregadores que anuncian códigos con descuentos de 25%, 30% 
 
 ¿Buscas cuánto cuesta Gamma exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-gamma-hoy/)
 
+¿Gamma tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/gamma-prueba-gratis-sin-tarjeta/)
+
 <a href="https://gamma.app/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Gamma →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

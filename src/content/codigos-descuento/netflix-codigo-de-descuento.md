@@ -25,6 +25,8 @@ Es fácil encontrar sitios que prometen "cupones Netflix" con hasta 90% de descu
 
 ¿Netflix entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/netflix-usa-mis-datos-para-entrenar-ia/)
 
+¿Netflix tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/netflix-prueba-gratis-sin-tarjeta/)
+
 <a href="https://help.netflix.com/en/node/24926" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Netflix →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

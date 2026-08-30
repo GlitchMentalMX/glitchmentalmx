@@ -21,6 +21,8 @@ Sitios de cupones listan docenas de códigos como "SHARK11", "PIXEL12" o "MODEL2
 
 ¿Buscas cuánto cuesta Recraft hoy en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-recraft-ai-hoy/)
 
+¿Recraft tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/recraft-ai-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.recraft.ai/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Recraft →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

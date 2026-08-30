@@ -25,6 +25,8 @@ Sitios agregadores listan códigos como "BRANDNAT20", "RED" o "HEYGENPROMOCODE20
 
 ¿Buscas cuánto cuesta HeyGen exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-heygen-hoy/)
 
+¿HeyGen tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/heygen-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.heygen.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de HeyGen →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

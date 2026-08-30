@@ -25,6 +25,8 @@ Docenas de sitios agregadores prometen "35% off", "40% off" o cupones exclusivos
 
 ¿Buscas cuánto cuesta Descript exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-descript-hoy/)
 
+¿Descript tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/descript-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.descript.com/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Descript →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>

@@ -25,6 +25,8 @@ Sitios de cupones listan códigos con hasta 50% o 75% de descuento para Synthesi
 
 ¿Buscas cuánto cuesta Synthesia exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-synthesia-hoy/)
 
+¿Synthesia tiene prueba gratis sin pedir tarjeta? [Verifícalo aquí →](/articulos/synthesia-prueba-gratis-sin-tarjeta/)
+
 <a href="https://www.synthesia.io/pricing" target="_blank" rel="noopener noreferrer">Revisa el precio oficial de Synthesia →</a>
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
