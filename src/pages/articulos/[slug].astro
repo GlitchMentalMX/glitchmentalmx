@@ -9,6 +9,7 @@ import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro'
 import VeredictoBadge from '../../components/VeredictoBadge.astro';
 import PruebaGratisBadge from '../../components/PruebaGratisBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
+import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection, render } from 'astro:content';
 import { formatDate, readingTime, buildPrecioIATitleTag } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
@@ -386,6 +387,11 @@ const otrosPruebaGratis =
       >WhatsApp</a>
       <button id="share-copy" class="btn btn-ghost" type="button"><span>Copiar enlace</span></button>
     </div>
+
+    <div class="preferred-source container" data-placement="article-end">
+      <p>¿Te sirvió esto? Márcanos como fuente preferida en Google y no te lo pierdas la próxima vez.</p>
+      <PreferredSourceButton variant="compact" />
+    </div>
   </article>
 
   {kind === 'posts' && ceroOrganico && (
@@ -530,6 +536,19 @@ const otrosPruebaGratis =
     padding-top: 24px;
   }
   .share .btn { padding: 0.55em 1.1em; font-size: 0.82rem; }
+
+  .preferred-source {
+    max-width: var(--measure);
+    margin: 20px auto 0;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+  .preferred-source p { margin: 0; }
 
   .related {
     padding: 64px 24px 40px;

@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 
@@ -37,6 +38,11 @@ const { page } = Astro.props;
     ))}
   </section>
 
+  <div class="preferred-source container" data-placement="dato-incomodo">
+    <p>¿Vuelves todos los días? Márcanos como fuente preferida en Google.</p>
+    <PreferredSourceButton variant="compact" />
+  </div>
+
   <nav class="container pager" aria-label="Paginación">
     {page.url.prev ? <a href={page.url.prev} class="btn btn-ghost">← Más recientes</a> : <span />}
     <span class="eyebrow">Página {page.currentPage} de {page.lastPage}</span>
@@ -68,6 +74,18 @@ const { page } = Astro.props;
   @media (max-width: 600px) {
     .grid { grid-template-columns: 1fr; }
   }
+
+  .preferred-source {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .preferred-source p { margin: 0; }
 
   .pager {
     padding: 32px 24px 72px;

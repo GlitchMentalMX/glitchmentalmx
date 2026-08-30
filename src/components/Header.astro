@@ -359,6 +359,7 @@ const current = Astro.url.pathname;
     const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
     localStorage.setItem('gm-theme', next);
+    document.dispatchEvent(new Event('glitchmental:theme-change'));
   });
 
   const menuToggle = document.getElementById('menu-toggle');

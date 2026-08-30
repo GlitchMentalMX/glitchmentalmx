@@ -1,0 +1,107 @@
+---
+// Botón de Google "Fuentes Preferidas" — implementación avanzada (JS programático)
+// para poder sincronizar el tema del botón con el toggle claro/oscuro del sitio.
+// Doc oficial: https://developers.google.com/search/docs/appearance/preferred-sources
+interface Props {
+  variant?: 'button' | 'compact';
+  className?: string;
+}
+
+const { variant = 'button', className = '' } = Astro.props;
+const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 9)}`;
+---
+
+<div id={containerId} class:list={['preferred-source-widget', variant, className]} data-preferred-source-container></div>
+
+<script>
+  // Astro bundlea este bloque una sola vez por página aunque el componente se
+  // use varias veces (footer + placement contextual), así que el guard es
+  // solo un cinturón extra — no es lo único que evita listeners duplicados.
+  if (!window.__preferredSourceWired) {
+    window.__preferredSourceWired = true;
+
+    const loadScriptOnce = () => {
+      if (window.__preferredSourceScriptLoaded) return;
+      window.__preferredSourceScriptLoaded = true;
+      const script = document.createElement('script');
+      script.async = true;
+      script.setAttribute('preferred-sources-control', 'manual');
+      script.src = 'https://news.google.com/swg/js/v1/publisher.js';
+      document.head.appendChild(script);
+    };
+
+    const getCurrentTheme = (): 'light' | 'dark' =>
+      document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+
+    const renderButtons = () => {
+      loadScriptOnce();
+      const theme = getCurrentTheme();
+      const containers = document.querySelectorAll<HTMLElement>('[data-preferred-source-container]');
+      if (containers.length === 0) return;
+
+      window.PREFERRED_SOURCE = window.PREFERRED_SOURCE || [];
+      window.PREFERRED_SOURCE.push((preferredSource: any) => {
+        preferredSource.init({ theme, lang: 'es' });
+
+        containers.forEach((container) => {
+          container.innerHTML = '';
+          const btnDiv = document.createElement('div');
+          btnDiv.setAttribute('google-add-preferred-source-btn', '');
+          btnDiv.setAttribute('data-theme', theme);
+          btnDiv.setAttribute('data-lang', 'es');
+          container.appendChild(btnDiv);
+        });
+
+        if (typeof preferredSource.renderAll === 'function') {
+          preferredSource.renderAll();
+        }
+      });
+    };
+
+    // Mismo Worker/beacon que Analytics.astro (no Umami: este sitio no lo
+    // usa). Endpoint de eventos custom: mismo /collect, distinto payload
+    // (trae `event`) — ver cloudflare/analytics-worker.js.
+    const ANALYTICS_WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev/collect';
+
+    // Delegado en document (no por contenedor) para no duplicar el tracking
+    // si en algún momento se re-ejecuta la inicialización.
+    document.addEventListener('click', (e) => {
+      const container = (e.target as HTMLElement)?.closest?.('[data-preferred-source-container]');
+      if (!container) return;
+      try {
+        if (localStorage.getItem('gm-no-analytics')) return;
+        const host = location.hostname;
+        if (host === 'localhost' || host === '127.0.0.1' || host.indexOf('preview') !== -1) return;
+
+        const placement = container.closest('[data-placement]')?.getAttribute('data-placement') || 'unknown';
+        const payload = JSON.stringify({
+          event: 'preferred-source-click',
+          path: location.pathname,
+          data: { placement },
+        });
+        const blob = new Blob([payload], { type: 'text/plain' });
+        navigator.sendBeacon(ANALYTICS_WORKER_URL, blob);
+      } catch (e) {
+        // silencio a propósito — igual que Analytics.astro
+      }
+    });
+
+    // Sin esperar DOMContentLoaded: los scripts de componentes Astro corren
+    // como module/defer, así que el DOM ya está parseado en este punto.
+    renderButtons();
+
+    // AJUSTAR si el nombre del evento cambia en Header.astro (theme-toggle).
+    document.addEventListener('glitchmental:theme-change', renderButtons);
+  }
+</script>
+
+<style>
+  .preferred-source-widget {
+    display: flex;
+    justify-content: center;
+    min-height: 40px; /* evita salto de layout mientras carga el script externo */
+  }
+  .preferred-source-widget.compact {
+    justify-content: flex-start;
+  }
+</style>

@@ -35,3 +35,7 @@ noIndex: true
 * [Diciembre 2025 — Navegando la Realidad Digital sin Hype ↗](https://drive.google.com/file/d/1LzInYzijfB85jSjqdLPufKSz4TFeQxYK/view?usp=sharing)
 
 ¿Algo no funciona? [Escríbenos](/contacto/).
+
+---
+
+[Márcanos como fuente preferida en Google](https://www.google.com/preferences/source?q=glitchmental.com)

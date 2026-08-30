@@ -84,6 +84,25 @@ async function handleCollect(request, env, origin, matchedOrigin) {
 
     const visitorHash = await hashVisitor(env.ANALYTICS_SALT || '', day, ip, ua);
     const bot = BOT_UA_RE.test(ua) ? 1 : 0;
+
+    // Evento custom (ej. clic en el botón "Fuente preferida") en vez de
+    // vista de página: mismo endpoint, payload distinto (trae `event`),
+    // va a la tabla `events` en vez de `hits`.
+    if (typeof data.event === 'string' && data.event) {
+      const path = (typeof data.path === 'string' ? data.path : '/').slice(0, 500);
+      const eventName = data.event.slice(0, 100);
+      const eventData =
+        data.data && typeof data.data === 'object' ? JSON.stringify(data.data).slice(0, 1000) : null;
+
+      await env.DB.prepare(
+        `INSERT INTO events (ts, day, name, path, data, visitor_hash, is_bot) VALUES (?,?,?,?,?,?,?)`
+      )
+        .bind(ts, day, eventName, path, eventData, visitorHash, bot)
+        .run();
+
+      return new Response(null, { status: 204, headers: corsHeaders(matchedOrigin) });
+    }
+
     const { device, os, browser } = parseUserAgent(ua);
 
     const query = typeof data.query === 'string' ? data.query : '';
@@ -169,6 +188,8 @@ async function handleStats(request, env, url, matchedOrigin) {
       devices,
       osRows,
       browserRows,
+      eventTotals,
+      preferredSourceByPlacement,
     ] = await Promise.all([
       env.DB.prepare('SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND is_bot = 0')
         .bind(sinceTs)
@@ -214,6 +235,17 @@ async function handleStats(request, env, url, matchedOrigin) {
       )
         .bind(sinceTs)
         .all(),
+      env.DB.prepare(
+        'SELECT name, COUNT(*) AS count FROM events WHERE ts >= ? AND is_bot = 0 GROUP BY name ORDER BY count DESC'
+      )
+        .bind(sinceTs)
+        .all(),
+      env.DB.prepare(
+        `SELECT json_extract(data, '$.placement') AS placement, COUNT(*) AS count FROM events
+         WHERE ts >= ? AND is_bot = 0 AND name = 'preferred-source-click' GROUP BY placement ORDER BY count DESC`
+      )
+        .bind(sinceTs)
+        .all(),
     ]);
 
     return json(
@@ -230,6 +262,8 @@ async function handleStats(request, env, url, matchedOrigin) {
         devices: devices.results || [],
         os: osRows.results || [],
         browsers: browserRows.results || [],
+        events: eventTotals.results || [],
+        preferred_source_by_placement: preferredSourceByPlacement.results || [],
       },
       200,
       matchedOrigin

@@ -96,6 +96,11 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
           <h2>Navegador</h2>
           <div id="table-browsers"></div>
         </section>
+
+        <section class="block">
+          <h2>Fuente preferida — clics por ubicación</h2>
+          <div id="table-preferred-source"></div>
+        </section>
       </div>
     </div>
   </section>
@@ -157,6 +162,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 
   const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo' };
   const DEVICE_LABELS = { desktop: 'Escritorio', mobile: 'Móvil', tablet: 'Tablet' };
+  const PLACEMENT_LABELS = { footer: 'Footer', 'article-end': 'Fin de artículo', 'dato-incomodo': 'Dato Incómodo' };
 
   const countryDisplayNames = window.Intl && Intl.DisplayNames ? new Intl.DisplayNames(['es'], { type: 'region' }) : null;
   function countryLabel(code) {
@@ -183,6 +189,13 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     renderTable(document.getElementById('table-devices'), data.devices, 'device', 'views', (d) => DEVICE_LABELS[d] || d);
     renderTable(document.getElementById('table-os'), data.os, 'os', 'views');
     renderTable(document.getElementById('table-browsers'), data.browsers, 'browser', 'views');
+    renderTable(
+      document.getElementById('table-preferred-source'),
+      data.preferred_source_by_placement,
+      'placement',
+      'count',
+      (p) => PLACEMENT_LABELS[p] || p
+    );
 
     updatedAt.textContent = 'Actualizado a las ' + new Date().toLocaleTimeString('es-MX');
   }

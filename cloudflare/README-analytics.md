@@ -101,6 +101,27 @@ Con eso, ese navegador queda marcado para no mandar más datos —
 funciona por navegador/dispositivo, así que si navegas desde el celular
 y la computadora, hazlo en ambos una vez.
 
+## Actualización: tracking del botón "Fuente preferida" (agosto 2026)
+
+Se agregó una tabla nueva (`events`) para medir clics en el botón de
+"Fuentes Preferidas" de Google (footer, fin de artículo, Dato Incómodo).
+Para que quede activo en producción:
+
+1. **Base de datos**: entra a la Console de tu D1 (mismo lugar del paso 2
+   de arriba) y pega **solo la parte nueva** de `analytics-schema.sql` —
+   el bloque de `CREATE TABLE IF NOT EXISTS events` y sus dos índices al
+   final del archivo. `IF NOT EXISTS` hace que sea seguro volver a pegar
+   el archivo completo si prefieres no buscar el fragmento.
+2. **Worker**: vuelve a `Edit code` en el Worker `glitchmental-analytics`,
+   borra todo y pega de nuevo el `analytics-worker.js` actualizado de
+   este repositorio (el `/collect` sigue siendo el mismo endpoint —
+   ahora simplemente distingue vistas de página de este evento nuevo).
+   **Save and Deploy**.
+3. No hace falta tocar bindings ni secretos — usa los mismos `DB`,
+   `ANALYTICS_SALT` y `STATS_TOKEN` que ya tienes configurados.
+4. En `/stats/` vas a ver una tabla nueva, "Fuente preferida — clics por
+   ubicación", una vez que haya al menos un clic registrado.
+
 ## Qué NO incluye esto (a propósito, por ahora)
 
 - No hay una tarea automática que borre datos viejos — la tabla crece

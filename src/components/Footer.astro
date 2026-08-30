@@ -1,5 +1,6 @@
 ---
 import { categories } from '../data/categories';
+import PreferredSourceButton from './PreferredSourceButton.astro';
 
 const year = new Date().getFullYear();
 
@@ -68,6 +69,11 @@ const columns = [
       <a href="/suscribete/" class="btn btn-primary">Suscríbete</a>
     </div>
 
+    <div class="footer-preferred-source" data-placement="footer">
+      <p>Si nos lees seguido, puedes marcarnos como fuente preferida en Google.</p>
+      <PreferredSourceButton variant="compact" />
+    </div>
+
     <div class="grid">
       {columns.map((col) => (
         <details class="col" open>
@@ -116,6 +122,17 @@ const columns = [
   }
   .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
   .cta-sub { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+
+  .footer-preferred-source {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: -24px 0 40px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  .footer-preferred-source p { margin: 0; }
 
   .grid {
     display: grid;
@@ -233,6 +250,7 @@ const columns = [
   @media (max-width: 520px) {
     .grid { grid-template-columns: 1fr; }
     .cta { flex-direction: column; align-items: center; text-align: center; }
+    .footer-preferred-source { flex-direction: column; margin-top: -12px; text-align: center; }
 
     /* real accordion behavior only on mobile */
     .col { border-bottom: 1px solid var(--border); padding-bottom: 4px; }

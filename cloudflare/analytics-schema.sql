@@ -27,3 +27,20 @@ CREATE INDEX IF NOT EXISTS idx_hits_day ON hits(day);
 CREATE INDEX IF NOT EXISTS idx_hits_ts ON hits(ts);
 CREATE INDEX IF NOT EXISTS idx_hits_bot ON hits(is_bot);
 CREATE INDEX IF NOT EXISTS idx_hits_path ON hits(path);
+
+-- Eventos custom (clics, no vistas de página) — tabla aparte de `hits` para
+-- no forzar columnas de pageview (referrer, utm, país, etc.) en algo que no
+-- las tiene. Primer uso: el botón "Fuentes preferidas" de Google.
+CREATE TABLE IF NOT EXISTS events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  ts INTEGER NOT NULL,
+  day TEXT NOT NULL,
+  name TEXT NOT NULL,               -- ej. 'preferred-source-click'
+  path TEXT NOT NULL,
+  data TEXT,                        -- JSON string con detalle extra (ej. {"placement":"footer"})
+  visitor_hash TEXT NOT NULL,
+  is_bot INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE INDEX IF NOT EXISTS idx_events_day ON events(day);
+CREATE INDEX IF NOT EXISTS idx_events_name ON events(name);
