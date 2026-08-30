@@ -23,7 +23,7 @@ Para desarrolladores, DeepSeek sí cobra por su API, con tarifas por millón de 
 
 Hay sitios de cupones que anuncian códigos de "40%" o "90% off" para DeepSeek, pero no existe ningún checkout de consumidor donde canjear un código: el chat es gratis y la API se paga directo con tarjeta o saldo prepagado, sin campo de cupón en ninguno de los dos casos. Ningún código de ese tipo está confirmado por DeepSeek.
 
-¿Buscas cuánto cuesta DeepSeek exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-deepseek-hoy/)
+¿Quieres confirmar por qué DeepSeek no cobra nada por el chat? [Revisa el detalle en Precios de IA →](/articulos/cuanto-cuesta-deepseek-hoy/)
 
 ¿DeepSeek entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/deepseek-usa-mis-datos-para-entrenar-ia/)
 
