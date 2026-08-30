@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-12T12:01:00.000Z
 updatedDate: 2026-06-23T03:00:04.852Z
 description: >-
-  ByteDance, la compañía matriz de TikTok, acaba de lanzar un modelo de
-  inteligencia artificial para generación de video que está generando tanto
-  asombro como…
+  ByteDance lanza Seedance 2.0, IA que crea videos hiperrealistas. UNICEF
+  reporta 1.2 millones de menores afectados por deepfakes sexuales.
 heroImage: /images/posts/ia-de-tiktok-genera-deepfakes-que-alarman-a-autoridades/hero.jpg
 heroImageAlt: >-
   Deepfakes menores: mujer frente a tablet con luz fría en cocina doméstica,

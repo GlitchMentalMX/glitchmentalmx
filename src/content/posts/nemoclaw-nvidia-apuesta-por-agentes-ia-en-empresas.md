@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-11T13:00:00.000Z
 updatedDate: 2026-03-17T17:53:33.586Z
 description: >-
-  Mientras el mundo tech estaba distraído con las peleas entre modelos de
-  lenguaje, Nvidia construyó en silencio algo diferente: una plataforma para que
-  las…
+  Nvidia presentará NemoClaw en el GTC 2026: una plataforma open source de
+  agentes de IA diseñada para empresas con seguridad integrada.
 heroImage: /images/posts/nemoclaw-nvidia-apuesta-por-agentes-ia-en-empresas/hero.webp
 heroImageAlt: >-
   agentes de IA empresariales: robots logísticos autónomos y servidores

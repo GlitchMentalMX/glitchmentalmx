@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-17T11:58:00.004Z
 updatedDate: 2026-06-06T19:32:19.103Z
 description: >-
-  Durante 25 años, Google asumió que siempre sería el único camino hacia el
-  internet. Ese supuesto se está quebrando. No de forma dramática ni de repente
-  —…
+  Google no va a morir, pero ya dejó de ser el árbitro. Datos reales,
+  proyecciones a 1, 2 y 5 años. Sin hype.
 heroImage: /images/posts/google-search-predicciones-de-declive-20272031/hero.webp
 heroImageAlt: >-
   Google declive 2027: analista observa curva descendente en dashboard con

@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-28T13:33:00.000Z
 updatedDate: 2026-06-23T16:25:36.931Z
 description: >-
-  La empresa detrás de Claude, el asistente de inteligencia artificial que usas
-  para múltiples tareas, se está peleando con el Pentágono. Y no es una pelea…
+  El ejército de EE UU le dio un ultimátum a Anthropic: libera todos los límites
+  de Claude o te baneamos de los contratos del gobierno.
 heroImage: /images/posts/el-pentagono-quiere-a-claude-sin-limites-o-fuera/hero.jpg
 heroImageAlt: >-
   Pentágono Claude sin límites: mujer frente a laptop y documento sin firmar en

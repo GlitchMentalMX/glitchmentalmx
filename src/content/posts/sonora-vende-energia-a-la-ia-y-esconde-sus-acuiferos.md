@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-07T11:05:00.000Z
 updatedDate: 2026-07-08T13:21:40.767Z
 description: >-
-  Sonora ya tiene lista su oferta para los centros de datos de IA: energía solar
-  barata, subsidiada y creciente. Lo que no aparece en ese mismo discurso es
-  que…
+  Sonora atrae data centers de IA con energía solar, pero es el segundo estado
+  con más acuíferos sobreexplotados de México.
 heroImage: /images/posts/sonora-vende-energia-a-la-ia-y-esconde-sus-acuiferos/hero.jpg
 heroImageAlt: >-
   Granja solar junto a infraestructura de centros de datos en el desierto de

@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-29T11:00:00.000Z
 updatedDate: 2026-07-29T11:00:00.121Z
 description: >-
-  La memoria conversacional que acumulas con un agente de IA no tiene dueño
-  legal. El 15 de julio de 2026 se apagaron millones de esas memorias en China
-  y…
+  China apagó sus agentes de IA en julio de 2026 y millones de conversaciones se
+  borraron. Nadie tenía derecho legal a conservarlas.
 heroImage: /images/posts/la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno/hero.jpg
 heroImageAlt: >-
   Memoria de la IA: mujer abre un cajón de archivo vacío junto a un rack de

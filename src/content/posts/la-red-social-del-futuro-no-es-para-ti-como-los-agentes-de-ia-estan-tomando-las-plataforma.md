@@ -6,9 +6,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-12T11:18:00.000Z
 updatedDate: 2026-06-06T19:35:32.826Z
 description: >-
-  Durante veinte años, el modelo fue el mismo: una persona crea un perfil,
-  publica contenido, interactúa con otros perfiles y genera datos que las
-  plataformas…
+  Las redes sociales se están rediseñando para agentes autónomos. Moltbook lo
+  demostró. Esto cambia todo.
 heroImage: >-
   /images/posts/la-red-social-del-futuro-no-es-para-ti-como-los-agentes-de-ia-estan-tomando-las-plataforma/hero.webp
 heroImageAlt: >-

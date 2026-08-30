@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-03T12:34:00.004Z
 updatedDate: 2026-06-04T15:44:21.644Z
 description: >-
-  Cada vez que un chatbot responde con precisión, alguien dice que "entendió" lo
-  que le pediste. Esa palabra —entender— es la trampa más grande del debate…
+  Los modelos de IA no entienden nada. O sí. El debate que define cómo hablamos
+  —y pensamos— sobre IA.
 heroImage: /images/posts/la-ia-no-te-entiende-por-que-esa-palabra-importa-tanto/hero.jpg
 heroImageAlt: >-
   La IA no te entiende: mujer escribiendo ‘entender’ en pizarrón rodeado de

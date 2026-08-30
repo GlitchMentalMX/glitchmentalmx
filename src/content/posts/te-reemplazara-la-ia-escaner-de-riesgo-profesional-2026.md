@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-22T12:56:00.000Z
 updatedDate: 2026-06-22T18:45:41.525Z
 description: >-
-  Seguro ya escuchaste la frase de que "la IA no te va a quitar el trabajo, sino
-  alguien que sepa usar la herramienta de IA". Suena muy bien en un post de…
+  Descubre si tu empleo está a salvo en 2026. Usa nuestro escáner de riesgo por
+  IA y conoce las habilidades para sobrevivir.
 heroImage: /images/posts/te-reemplazara-la-ia-escaner-de-riesgo-profesional-2026/hero.jpg
 heroImageAlt: >-
   Escáner de riesgo profesional 2026: mujer frente a torniquete con escáner

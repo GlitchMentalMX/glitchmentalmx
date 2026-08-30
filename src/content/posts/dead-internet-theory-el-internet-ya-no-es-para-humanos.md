@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-31T12:53:00.005Z
 updatedDate: 2026-07-09T02:44:23.805Z
 description: >-
-  La Dead Internet Theory —la idea de que la mayor parte del contenido y el
-  tráfico online ya lo generan máquinas, no personas— pasó de ser una teoría…
+  Los bots ya superan al tráfico humano en internet. La Dead Internet Theory
+  dejó de ser conspiración. Qué significa esto para todos.
 heroImage: /images/posts/dead-internet-theory-el-internet-ya-no-es-para-humanos/hero.webp
 heroImageAlt: >-
   Dead Internet Theory: mujer caminando en ciudad rodeada de flujos de datos

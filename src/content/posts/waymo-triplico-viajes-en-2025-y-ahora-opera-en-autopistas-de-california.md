@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-09T12:45:00.000Z
 updatedDate: 2026-06-22T01:56:55.697Z
 description: >-
-  Waymo publicó sus métricas de 2025 y los números muestran que los vehículos
-  autónomos finalmente están escalando comercialmente. La compañía triplicó el…
+  Waymo triplicó viajes semanales en 2025 y lanzó servicio en autopistas de
+  California. Los robotaxis sin conductor son realidad comercial.
 heroImage: >-
   /images/posts/waymo-triplico-viajes-en-2025-y-ahora-opera-en-autopistas-de-california/hero.jpg
 heroImageAlt: >-

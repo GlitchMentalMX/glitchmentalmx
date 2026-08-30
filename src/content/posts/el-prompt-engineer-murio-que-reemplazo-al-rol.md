@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-24T13:04:00.005Z
 updatedDate: 2026-06-06T20:10:32.814Z
 description: >-
-  El título de Prompt Engineer fue el trabajo más hypeado de 2023. Para 2026,
-  las grandes empresas tech ya no lo publican como posición autónoma. Los…
+  El perfil de prompt engineer ya no existe como tal. Qué habilidades lo
+  reemplazaron, qué roles emergieron y cómo adaptarte si trabajas con IA.
 heroImage: /images/posts/el-prompt-engineer-murio-que-reemplazo-al-rol/hero.jpg
 heroImageAlt: >-
   El Prompt Engineer murió: mujer dibuja flujo de procesos en pared con nodos

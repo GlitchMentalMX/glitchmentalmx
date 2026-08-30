@@ -6,9 +6,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-23T12:49:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
-  Después de años criticando al Foro Económico Mundial como un evento "elitista
-  y aburrido", Elon Musk finalmente apareció en Davos este jueves 22 de enero.
-  Y…
+  Elon Musk debutó en el Foro Económico Mundial con predicciones sobre robots
+  humanoides, IA superior a humanos y el futuro energético global.
 heroImage: >-
   /images/posts/elon-musk-en-davos-robots-ia-y-una-vision-del-futuro-que-suena-a-ciencia-ficcion/hero.webp
 heroImageAlt: >-

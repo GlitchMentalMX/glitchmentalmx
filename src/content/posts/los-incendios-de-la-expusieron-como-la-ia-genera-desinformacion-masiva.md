@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-12T14:47:00.000Z
 updatedDate: 2026-06-22T12:48:28.117Z
 description: >-
-  Los incendios forestales devastadores de Los Ángeles en enero de 2026
-  revelaron una crisis nueva: la IA generativa está creando desinformación
-  visual a…
+  Los incendios de Los Ángeles mostraron cómo la IA genera desinformación
+  masiva. Imágenes falsas, videos manipulados y caos informativo.
 heroImage: >-
   /images/posts/los-incendios-de-la-expusieron-como-la-ia-genera-desinformacion-masiva/hero.jpg
 heroImageAlt: >-

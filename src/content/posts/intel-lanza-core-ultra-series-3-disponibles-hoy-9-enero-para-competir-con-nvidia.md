@@ -6,8 +6,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-08T12:19:00.000Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-
-  Intel sorprendió en CES 2026 anunciando que los procesadores Core Ultra Series
-  3 están disponibles inmediatamente, no en meses. A partir del 9 de enero…
+  Intel lanzó Core Ultra Series 3 en CES 2026, disponibles desde el 9 de enero.
+  Compiten directamente con Jetson de NVIDIA en IA física y robótica.
 heroImage: >-
   /images/posts/intel-lanza-core-ultra-series-3-disponibles-hoy-9-enero-para-competir-con-nvidia/hero.webp
 heroImageAlt: >-

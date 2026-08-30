@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T02:52:00.002Z
 updatedDate: 2026-03-29T02:52:30.522Z
 description: >-
-  Claude tiene fama de ser la IA favorita de los desarrolladores — y es
-  merecida. Pero reducirlo a una herramienta de código es ignorar la mitad de lo
-  que hace…
+  Claude no es solo para desarrolladores. Es la IA más sólida para escritura,
+  análisis de documentos y razonamiento sostenido.
 heroImage: /images/posts/para-que-sirve-claude-si-no-eres-programador/hero.webp
 heroImageAlt: >-
   Para qué sirve Claude: revisión de documentos en mesa automatizada con flujo

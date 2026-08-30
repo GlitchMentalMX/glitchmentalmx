@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-05-27T11:00:00.000Z
 updatedDate: 2026-07-09T02:36:36.588Z
 description: >-
-  Las redes sociales no tienen un guardia central que te observe. Tienen algo
-  peor: te observan todos los demás usuarios, y tú a ellos. La vigilancia
-  lateral,…
+  Las redes no solo te vigilan desde arriba. Te vigilan tus contactos, tu ex y
+  tu jefe. El diseño lo permite adrede.
 heroImage: >-
   /images/posts/las-redes-sociales-son-maquinas-de-vigilancia-entre-pares/hero.jpg
 heroImageAlt: >-

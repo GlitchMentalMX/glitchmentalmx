@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-07T12:17:00.000Z
 updatedDate: 2026-06-22T01:46:30.655Z
 description: >-
-  NVIDIA presentó en CES 2026 una tecnología nueva llamada G-SYNC Pulsar que
-  resuelve un problema que ha existido en monitores gaming durante más de una…
+  NVIDIA anuncia G-SYNC Pulsar para enero 7, 2026. Claridad efectiva de 1000Hz
+  con suavidad VRR. Resuelve problema de 10+ años en gaming.
 heroImage: >-
   /images/posts/nvidia-anuncia-g-sync-pulsar-claridad-de-1000hz-sin-sacrificar-suavidad/hero.jpg
 heroImageAlt: >-

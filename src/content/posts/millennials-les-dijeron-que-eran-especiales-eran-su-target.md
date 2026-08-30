@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-24T11:00:00.011Z
 updatedDate: 2026-03-24T11:00:00.135Z
 description: >-
-  Durante más de una década, los millennials fueron el grupo demográfico más
-  codiciado del mundo. No porque fueran especiales — sino porque eran
-  rentables.…
+  Los millennials no eran el centro del mundo, sino del negocio. Hoy queda
+  burnout, deuda y presión de generación sándwich.
 heroImage: >-
   /images/posts/millennials-les-dijeron-que-eran-especiales-eran-su-target/hero.webp
 heroImageAlt: >-

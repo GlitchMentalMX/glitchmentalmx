@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-31T12:55:00.005Z
 updatedDate: 2026-03-31T12:55:57.427Z
 description: >-
-  Una empresa que construye IA de frontera dejó expuestos accidentalmente sus
-  propios secretos por un error de configuración en su gestor de contenidos. Así
-  es…
+  Un error en el CMS de Anthropic reveló Claude Mythos: su modelo más capaz
+  hasta ahora, con riesgos de ciberseguridad sin precedente.
 heroImage: /images/posts/claude-mythos-anthropic-filtro-su-modelo-mas-peligroso/hero.webp
 heroImageAlt: >-
   Claude Mythos: cajón abierto con documentos clasificados filtrándose en

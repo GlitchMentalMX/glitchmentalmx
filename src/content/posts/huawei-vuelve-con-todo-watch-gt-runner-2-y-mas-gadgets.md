@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-27T13:19:00.000Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-
-  El 26 de febrero, apenas un día después de que Samsung celebrara su Galaxy
-  Unpacked en San Francisco, Huawei realizó su propio evento global en Madrid
-  bajo…
+  Huawei lanzó el Watch GT Runner 2, el Mate 80 Pro y el MatePad Mini. Así
+  regresa la marca al mercado global con fuerza.
 heroImage: /images/posts/huawei-vuelve-con-todo-watch-gt-runner-2-y-mas-gadgets/hero.webp
 heroImageAlt: >-
   Huawei vuelve con todo: Watch GT Runner 2 y gadgets conectados sobre mesa con

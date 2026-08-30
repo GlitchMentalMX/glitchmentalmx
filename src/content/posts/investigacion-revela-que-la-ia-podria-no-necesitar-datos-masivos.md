@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-06T12:11:00.000Z
 updatedDate: 2026-06-22T01:19:59.288Z
 description: >-
-  Una investigación de la Universidad Johns Hopkins publicada en enero de 2026
-  desafía una asunción fundamental de la inteligencia artificial moderna. Los…
+  Johns Hopkins descubre que la IA con arquitectura biológica puede funcionar
+  sin entrenar con datos masivos. Desafía modelo actual de IA.
 heroImage: >-
   /images/posts/investigacion-revela-que-la-ia-podria-no-necesitar-datos-masivos/hero.jpg
 heroImageAlt: >-

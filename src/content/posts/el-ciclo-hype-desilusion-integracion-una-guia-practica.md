@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T18:53:00.005Z
 updatedDate: 2026-03-29T18:53:47.958Z
 description: >-
-  Casi toda tecnología significativa pasa por el mismo arco: atención masiva,
-  decepción igualmente masiva y, para las que sobreviven, integración silenciosa
-  en…
+  Toda tecnología pasa por el mismo ciclo: expectativa, decepción, integración
+  silenciosa. Entender las fases cambia cómo tomas decisiones.
 heroImage: /images/posts/el-ciclo-hype-desilusion-integracion-una-guia-practica/hero.webp
 heroImageAlt: >-
   El ciclo hype: hombre cruza suelo roto apoyado en cojines inflables que evitan

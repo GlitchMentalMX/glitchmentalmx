@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2025-12-26T14:56:00.000Z
 updatedDate: 2026-06-13T02:06:12.532Z
 description: >-
-  Mientras todos celebran cómo ChatGPT puede escribir correos y Gemini puede
-  analizar documentos, hay costo oculto que nadie quiere discutir abiertamente:…
+  Cada consulta a ChatGPT consume agua real. Los centros de datos de IA generan
+  crisis hídricas en EE.UU. y México. Lo que nadie reporta.
 heroImage: >-
   /images/posts/la-ia-consume-agua-el-costo-hidrico-que-las-big-tech-no-quieren-publicar/hero.jpg
 heroImageAlt: >-

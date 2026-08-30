@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-16T14:09:00.000Z
 updatedDate: 2026-06-22T13:01:17.841Z
 description: >-
-  La Generación Z ya no es el futuro. Es el presente. Con 69.31 millones de
-  personas solo en Estados Unidos (más del 20% de la población) y un poder…
+  TikTok, privacidad, autenticidad y resistencia al contenido IA. Lo que las
+  marcas necesitan entender sobre la Gen Z en 2026.
 heroImage: >-
   /images/posts/gen-z-y-las-marcas-en-2026-como-conectar-sin-que-te-ignoren/hero.jpg
 heroImageAlt: >-

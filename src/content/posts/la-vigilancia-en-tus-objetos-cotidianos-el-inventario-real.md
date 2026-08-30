@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T15:02:00.004Z
 updatedDate: 2026-03-29T19:32:37.732Z
 description: >-
-  La conversación sobre privacidad digital suele centrarse en el teléfono y las
-  redes sociales. Pero la vigilancia tecnológica se extendió hace años a los…
+  Televisiones, aspiradoras, timbres y autos. La vigilancia tecnológica no está
+  solo en el teléfono — está en los objetos que ya tienes en casa.
 heroImage: >-
   /images/posts/la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real/hero.webp
 heroImageAlt: >-

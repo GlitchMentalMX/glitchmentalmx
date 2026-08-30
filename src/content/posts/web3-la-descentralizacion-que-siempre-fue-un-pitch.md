@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-05-29T11:00:00.000Z
 updatedDate: 2026-07-09T02:37:05.453Z
 description: >-
-  El 20 de octubre de 2025, Amazon Web Services sufrió una falla de DNS en su
-  región US-East-1 y, en cuestión de minutos, MetaMask mostró saldo cero a
-  millones…
+  Web3 prometió romper el monopolio de internet. El apagón de AWS en octubre
+  2025 lo demostró: la descentralización fue marketing, no arquitectura.
 heroImage: /images/posts/web3-la-descentralizacion-que-siempre-fue-un-pitch/hero.jpg
 heroImageAlt: >-
   Web3 descentralización: carteles promocionales rasgados revelando

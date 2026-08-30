@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T13:55:00.003Z
 updatedDate: 2026-03-30T02:10:17.715Z
 description: >-
-  Cuando la gente escucha "sistema autónomo" imagina un robot o un coche sin
-  conductor. Pero la autonomía es una propiedad técnica precisa — y la mayoría
-  de…
+  No todos los sistemas automáticos son autónomos. La diferencia técnica importa
+  — sobre todo cuando el sistema falla.
 heroImage: /images/posts/que-hace-autonomo-a-un-sistema-mas-alla-del-robot/hero.webp
 heroImageAlt: >-
   Qué hace autónomo a un sistema: red de cintas con sensores que redirigen

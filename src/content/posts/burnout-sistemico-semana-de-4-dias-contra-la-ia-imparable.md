@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-15T12:38:00.009Z
 updatedDate: 2026-04-16T12:56:12.416Z
 description: >-
-  El burnout dejó de ser una queja individual para convertirse en un riesgo
-  estratégico medible. En 2026, el 56% de los profesionales de la salud y el 58%
-  de…
+  El 56% de trabajadores de la salud y 58% de educadores tienen síntomas de
+  burnout. Las empresas responden con semanas de 4 días. ¿Alcanza?
 heroImage: >-
   /images/posts/burnout-sistemico-semana-de-4-dias-contra-la-ia-imparable/hero.jpg
 heroImageAlt: >-

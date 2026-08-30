@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-07T12:50:00.001Z
 updatedDate: 2026-06-15T00:26:57.593Z
 description: >-
-  La soledad no es un problema que se cure con código. Es una grieta social que,
-  en Corea del Sur, el Estado ha empezado a resanar con peluches robóticos…
+  Corea del Sur despliega 12,000 robots Hyodol. Descubre si la IA cura la
+  soledad o es solo vigilancia con cara de peluche en esta guía.
 heroImage: /images/posts/la-ia-cura-la-soledad-guia-sobre-robots-de-compania/hero.jpg
 heroImageAlt: >-
   IA cura la soledad: mujer sosteniendo robot mientras red de conexiones

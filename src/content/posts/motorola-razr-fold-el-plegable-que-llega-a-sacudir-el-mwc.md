@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-02T12:28:00.000Z
 updatedDate: 2026-03-17T20:13:25.623Z
 description: >-
-  Durante años, el mercado de los plegables estilo libro fue básicamente un
-  duopolio: Samsung por un lado, Google por el otro. Motorola siempre estuvo en
-  el…
+  Motorola presentó su primer plegable tipo libro en el MWC 2026. Snapdragon 8
+  Gen 5, triple cámara 50MP y 6000mAh. ¿Vale sus 2000€?
 heroImage: >-
   /images/posts/motorola-razr-fold-el-plegable-que-llega-a-sacudir-el-mwc/hero.webp
 heroImageAlt: >-

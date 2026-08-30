@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-08T12:50:00.003Z
 updatedDate: 2026-06-15T00:01:44.512Z
 description: >-
-  Anthropic cerró el acceso de sus suscripciones a OpenClaw el 4 de abril de
-  2026, sin previo aviso de 24 horas y sin negociación posible. El modelo de
-  "tarifa…
+  Anthropic cortó el acceso gratuito a OpenClaw sin aviso. La 'tarifa plana'
+  para agentes de IA murió, y el bloqueo revela a quién le conviene.
 heroImage: /images/posts/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/hero.jpg
 heroImageAlt: >-
   Anthropic bloquea OpenClaw: puerta metálica cerrada en pasillo técnico con

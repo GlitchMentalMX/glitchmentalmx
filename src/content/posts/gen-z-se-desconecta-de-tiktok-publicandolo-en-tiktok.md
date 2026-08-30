@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-19T12:07:00.000Z
 updatedDate: 2026-06-23T04:04:29.261Z
 description: >-
-  Hay pocas cosas más honestamente humanas que esto: la tendencia más viral de
-  TikTok en este inicio de 2026 es la de los videos donde la gente anuncia que
-  va…
+  Gen Z abandona TikTok, pero lo anuncia en TikTok. La ironía que define la
+  tendencia analógica más viral del año.
 heroImage: /images/posts/gen-z-se-desconecta-de-tiktok-publicandolo-en-tiktok/hero.jpg
 heroImageAlt: >-
   Gen Z desconexión TikTok: mujer joven grabándose con smartphone frente a

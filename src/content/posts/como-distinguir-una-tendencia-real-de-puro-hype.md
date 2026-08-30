@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T18:50:00.006Z
 updatedDate: 2026-03-30T02:11:13.655Z
 description: >-
-  Cada mes aparece una nueva tecnología que "lo va a cambiar todo". La mayoría
-  no cambia nada. Saber distinguir una tendencia estructural de un ciclo de…
+  No todo lo que suena a tendencia lo es. Señales concretas para distinguir lo
+  que va a cambiar algo de lo que solo ocupa titulares.
 heroImage: /images/posts/como-distinguir-una-tendencia-real-de-puro-hype/hero.webp
 heroImageAlt: >-
   Cómo distinguir una tendencia: persona corta cuerdas de globos flotantes

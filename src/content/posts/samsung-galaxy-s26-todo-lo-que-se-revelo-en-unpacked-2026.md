@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-26T12:59:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-
-  Ayer, 25 de febrero de 2026, Samsung celebró su Galaxy Unpacked en el Palace
-  of Fine Arts de San Francisco. El tema del evento fue "Tu Compañero en la
-  Vida…
+  Samsung presentó el Galaxy S26 Ultra con pantalla de privacidad integrada, IA
+  agéntica y $100 más caro que antes. Lo que importa saber.
 heroImage: >-
   /images/posts/samsung-galaxy-s26-todo-lo-que-se-revelo-en-unpacked-2026/hero.webp
 heroImageAlt: >-

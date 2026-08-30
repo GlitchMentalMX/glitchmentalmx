@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-22T11:00:00.000Z
 updatedDate: 2026-07-09T02:45:05.695Z
 description: >-
-  El 26 de octubre de 2009, Yahoo apagó Geocities. No fue obsolescencia: fue una
-  fecha en el calendario corporativo. Desaparecieron más de 38 millones de…
+  Geocities, Flash, los foros: lo que se borra cuando una plataforma cierra no
+  son datos, es historia. Y casi nadie la guarda.
 heroImage: /images/posts/lo-que-se-pierde-cuando-muere-una-plataforma-digital/hero.jpg
 heroImageAlt: >-
   plataforma digital: mujer arrodillada frente a muro con capturas web

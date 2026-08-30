@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-29T11:00:00.010Z
 updatedDate: 2026-04-29T11:17:46.833Z
 description: >-
-  Los data centers representaron alrededor del 50% de todo el crecimiento en
-  demanda eléctrica de EE.UU. en 2025, según la Agencia Internacional de
-  Energía…
+  Los data centers representaron el 50% del nuevo consumo eléctrico en EE.UU. en
+  2025. Quién paga la cuenta — y por qué Maine intentó frenarlo.
 heroImage: /images/posts/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/hero.jpg
 heroImageAlt: >-
   La IA ya sube tu factura de luz: mujer observa medidor eléctrico con planta

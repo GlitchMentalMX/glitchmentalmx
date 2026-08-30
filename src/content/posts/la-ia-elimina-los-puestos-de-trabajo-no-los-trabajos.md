@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-27T13:20:00.000Z
 updatedDate: 2026-06-23T16:21:40.180Z
 description: >-
-  Hay una diferencia importante entre quedarse sin trabajo y que tu puesto de
-  trabajo deje de existir. Y en 2026, lo segundo está pasando a una velocidad
-  que…
+  La IA no te quita el empleo, rediseña el organigrama. Cómo las empresas están
+  migrando de puestos fijos a competencias críticas.
 heroImage: /images/posts/la-ia-elimina-los-puestos-de-trabajo-no-los-trabajos/hero.jpg
 heroImageAlt: >-
   IA y puestos de trabajo: mujer frente a organigrama con posiciones eliminadas

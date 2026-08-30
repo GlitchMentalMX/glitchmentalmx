@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-02T12:50:00.003Z
 updatedDate: 2026-04-02T12:50:24.653Z
 description: >-
-  Las apps de control parental no curan la nomofobia ni reemplazan la
-  conversación familiar. Pero sí pueden hacer algo más modesto y útil: poner
-  fricciones…
+  Cinco apps que ayudan a padres a poner límites reales al uso del celular en
+  adolescentes. Qué hacen, qué cuestan y qué no pueden hacer.
 heroImage: >-
   /images/posts/apps-de-control-parental-para-reducir-el-uso-del-celular/hero.jpg
 heroImageAlt: >-

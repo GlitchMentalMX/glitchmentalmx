@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-11T13:03:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
-  Google anunció el 10 de marzo el despliegue de un conjunto de nuevas
-  capacidades de Gemini integradas directamente en Docs, Sheets, Slides y Drive.
-  No son…
+  Google lanzó Gemini integrado en Docs, Sheets, Slides y Drive. Te explicamos
+  qué hace, quién puede usarlo y qué cambia en tu día a día.
 heroImage: /images/posts/gemini-en-docs-y-sheets-google-reescribe-tu-trabajo/hero.webp
 heroImageAlt: >-
   Gemini en Docs y Sheets: profesional revisa grandes documentos analíticos en

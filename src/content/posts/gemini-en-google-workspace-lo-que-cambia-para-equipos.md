@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T02:49:00.003Z
 updatedDate: 2026-04-01T12:44:50.885Z
 description: >-
-  Si ya pagas Google Workspace Business o Enterprise, Gemini no es un gasto
-  adicional — es una capa de IA que ya está incluida y que la mayoría de
-  equipos…
+  Gemini está dentro de Docs, Gmail, Sheets y Slides. Esto es lo que realmente
+  cambia si ya pagas Google Workspace.
 heroImage: /images/posts/gemini-en-google-workspace-lo-que-cambia-para-equipos/hero.jpg
 heroImageAlt: >-
   Gemini en Google Workspace: organización de documentos en línea de trabajo

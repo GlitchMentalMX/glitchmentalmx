@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-03T12:13:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-
-  Hay un término que los especialistas en redes sociales llevan semanas
-  repitiendo en 2026: slop content. Es el contenido generado masivamente con IA
-  sin…
+  El contenido generado masivamente con IA sin criterio está sepultando el
+  alcance en TikTok e Instagram. Así es como lo detectan los algoritmos.
 heroImage: /images/posts/el-slop-content-esta-destruyendo-tu-alcance-en-redes/hero.webp
 heroImageAlt: >-
   El slop content está destruyendo tu alcance en redes: hombre cubriéndose ante

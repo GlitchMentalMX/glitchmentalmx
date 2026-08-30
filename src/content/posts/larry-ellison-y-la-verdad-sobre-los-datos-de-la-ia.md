@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-03T12:04:00.000Z
 updatedDate: 2026-06-23T17:03:23.810Z
 description: >-
-  En febrero de 2026, Larry Ellison volvió a colocarse en el centro del debate
-  sobre la inteligencia artificial con una afirmación contundente: según él,
-  todos…
+  Analizamos si es cierta la afirmación de Larry Ellison sobre los datos con los
+  que se entrenan los modelos de IA en 2026.
 heroImage: /images/posts/larry-ellison-y-la-verdad-sobre-los-datos-de-la-ia/hero.jpg
 heroImageAlt: >-
   Larry Ellison datos IA: mujer anotando en rojo documento con tablas de datos

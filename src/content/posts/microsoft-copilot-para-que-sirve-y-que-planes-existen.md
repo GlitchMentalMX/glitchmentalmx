@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T02:59:00.000Z
 updatedDate: 2026-03-29T02:59:08.480Z
 description: >-
-  Si usas Windows, Word, Excel o Teams, ya convives con Copilot aunque no lo
-  hayas activado conscientemente. Microsoft lleva más de un año integrando su IA
-  en…
+  Copilot está en Word, Excel, Teams y Outlook. Qué puede hacer, quién lo
+  necesita y cuánto cuesta realmente.
 heroImage: /images/posts/microsoft-copilot-para-que-sirve-y-que-planes-existen/hero.webp
 heroImageAlt: >-
   Microsoft Copilot: sistema automatizado conecta pantallas y documentos en

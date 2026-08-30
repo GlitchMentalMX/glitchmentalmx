@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T02:55:00.002Z
 updatedDate: 2026-06-14T18:27:40.321Z
 description: >-
-  DeepSeek es de código abierto y se puede correr localmente. Eso significa que
-  tus conversaciones, tus documentos y tus datos no salen de tu máquina, no
-  pasan…
+  DeepSeek se puede instalar localmente: tus datos no salen de tu computadora.
+  Esta guía explica cómo y para quién tiene sentido.
 heroImage: /images/posts/como-instalar-y-usar-deepseek-en-tu-computadora/hero.webp
 heroImageAlt: >-
   Cómo instalar y usar DeepSeek: conexión directa de equipo local a red mediante

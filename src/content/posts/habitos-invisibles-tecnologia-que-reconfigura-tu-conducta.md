@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-27T11:02:00.016Z
 updatedDate: 2026-03-27T11:02:00.110Z
 description: >-
-  La tecnología no solo ocupa tu tiempo: lo hace sin que lo notes. Los hábitos
-  digitales se forman en silencio, se instalan en el fondo del comportamiento y…
+  La tecnología no solo ocupa tu tiempo: reescribe tu conducta sin que lo notes.
+  Así funcionan los hábitos digitales invisibles.
 heroImage: >-
   /images/posts/habitos-invisibles-tecnologia-que-reconfigura-tu-conducta/hero.webp
 heroImageAlt: >-

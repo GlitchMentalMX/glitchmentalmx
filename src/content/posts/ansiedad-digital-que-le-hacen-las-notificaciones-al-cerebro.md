@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-26T11:06:00.012Z
 updatedDate: 2026-03-26T11:06:00.112Z
 description: >-
-  Cada notificación que recibes activa una descarga de dopamina en tu cerebro.**
-  No es una metáfora ni una exageración: es el mismo mecanismo que está detrás…
+  Cada notificación activa tu cerebro como una droga. Lo que las alertas y el
+  FOMO le hacen a tu salud mental, con ciencia real.
 heroImage: >-
   /images/posts/ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro/hero.webp
 heroImageAlt: >-

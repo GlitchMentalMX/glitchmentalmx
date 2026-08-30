@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-05-18T11:00:00.000Z
 updatedDate: 2026-07-09T02:31:44.762Z
 description: >-
-  El mercado del diseño gráfico freelance no está desapareciendo: se está
-  partiendo en dos. El segmento de tarifa media — logos a precio fijo, paquetes
-  para…
+  El mercado del diseño freelance no murió: se partió en dos. Quiénes sobreviven
+  y por qué, con datos reales de 2025-2026.
 heroImage: /images/posts/disenadores-freelance-e-ia-el-colapso-del-nivel-medio/hero.jpg
 heroImageAlt: >-
   diseño gráfico freelance IA: diseñadora ante escalera rota que separa trabajo

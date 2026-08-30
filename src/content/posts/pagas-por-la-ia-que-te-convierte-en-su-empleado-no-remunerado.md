@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-11T04:12:12.889Z
 updatedDate: 2026-06-11T04:12:12.890Z
 description: >-
-  La promesa de la IA siempre fue la misma: automatizar lo mundano para que tú
-  te concentraras en lo que importa. La realidad documentada por el propio
-  estudio…
+  La IA no te liberó del trabajo aburrido. Te convirtió en el eslabón final de
+  su cadena productiva. Y encima le pagas la suscripción.
 heroImage: >-
   /images/posts/pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado/hero.jpg
 heroImageAlt: Operaria revisando documentos en línea de producción automatizada

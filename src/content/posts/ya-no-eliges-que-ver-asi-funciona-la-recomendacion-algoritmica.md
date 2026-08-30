@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-28T00:18:00.001Z
 updatedDate: 2026-03-28T00:18:09.337Z
 description: >-
-  El algoritmo no te recomienda — te adiestra. Cada vez que una plataforma te
-  sirve el siguiente video, la siguiente canción o el siguiente artículo, no
-  está…
+  Los algoritmos no sugieren: sirven. Qué es una burbuja de filtros y por qué
+  elegir de forma consciente se volvió un acto de resistencia.
 heroImage: >-
   /images/posts/ya-no-eliges-que-ver-asi-funciona-la-recomendacion-algoritmica/hero.webp
 heroImageAlt: >-

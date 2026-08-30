@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-08T12:52:00.004Z
 updatedDate: 2026-04-08T12:52:55.721Z
 description: >-
-  El deterioro visual ya no es un problema de envejecimiento. Según datos de
-  ZEISS publicados en 2026, el 66% de la población mundial experimenta
-  molestias…
+  El 66% de la población tiene fatiga ocular por pantallas. Qué le está pasando
+  realmente a tu vista.
 heroImage: /images/posts/la-epidemia-visual-que-las-pantallas-estan-acelerando/hero.jpg
 heroImageAlt: >-
   fatiga visual pantallas: mujer con ojos cerrados frente a monitores en entorno

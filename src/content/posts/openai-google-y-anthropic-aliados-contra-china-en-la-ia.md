@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-15T12:40:00.010Z
 updatedDate: 2026-04-15T13:02:56.421Z
 description: >-
-  Tres empresas que compiten ferozmente por talento, contratos y narrativa
-  pública acordaron el 6 de abril de 2026 compartir su inteligencia de seguridad
-  más…
+  Tres rivales que no comparten nada se unieron para frenar el robo de modelos
+  de IA por empresas chinas. Qué implica ese giro.
 heroImage: /images/posts/openai-google-y-anthropic-aliados-contra-china-en-la-ia/hero.jpg
 heroImageAlt: >-
   OpenAI Google Anthropic IA: ingeniera ajustando núcleo tecnológico con brazos

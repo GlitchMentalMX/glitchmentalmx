@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-04T13:51:00.000Z
 updatedDate: 2026-06-23T23:01:41.342Z
 description: >-
-  Mientras el debate sobre si TikTok sobrevive en Estados Unidos sigue vivo, la
-  propia TikTok lanzó en enero un nuevo aplicativo llamado PineDrama:
-  microdramas…
+  ReelShort genera más minutos diarios por usuario que Netflix en móvil. Los
+  microdramas verticales llegaron a Occidente para quedarse.
 heroImage: >-
   /images/posts/microdramas-en-redes-el-formato-que-nadie-esperaba-en-2026/hero.jpg
 heroImageAlt: >-

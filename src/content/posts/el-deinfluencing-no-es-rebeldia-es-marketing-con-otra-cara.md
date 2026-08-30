@@ -5,8 +5,7 @@ pubDate: 2025-11-15T16:37:00.000Z
 updatedDate: 2026-06-13T00:47:53.149Z
 description: >-
   Scrolleas TikTok y te topas con el mismo patrón: alguien frente a la cámara
-  diciéndote que no compres ese producto viral. Que la crema de 50 dólares no
-  vale…
+  diciéndote que no compres ese producto viral. Te explicamos.
 heroImage: >-
   /images/posts/el-deinfluencing-no-es-rebeldia-es-marketing-con-otra-cara/hero.jpg
 heroImageAlt: >-

@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-12T14:34:00.000Z
 updatedDate: 2026-06-30T19:22:09.599Z
 description: >-
-  OpenAI lanzó Operator el 10 de enero de 2026, un agente de IA que puede
-  navegar internet y completar tareas de forma autónoma. No es chatbot que
-  responde…
+  OpenAI lanzó Operator el 10 enero: agente de IA que navega internet, completa
+  formularios y hace tareas automáticamente. ChatGPT Pro por $200/mes.
 heroImage: >-
   /images/posts/openai-lanzo-operator-el-agente-de-ia-que-navega-internet-por-ti/hero.jpg
 heroImageAlt: >-

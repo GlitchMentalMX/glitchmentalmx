@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-12T12:20:00.000Z
 updatedDate: 2026-03-17T20:39:32.981Z
 description: >-
-  Millones de personas ya lo hacen. Abren ChatGPT, escriben algo como "actúa
-  como mi terapeuta cognitivo-conductual" y empiezan a hablar de lo que les
-  pesa. Es…
+  Investigadores de Brown University identificaron 15 riesgos éticos concretos
+  al usar LLMs como terapeutas. Los datos son incómodos.
 heroImage: /images/posts/usar-chatgpt-como-terapeuta-tiene-15-riesgos-reales/hero.webp
 heroImageAlt: >-
   Cultura digital: mujer en penumbra con smartphone emitiendo red de datos

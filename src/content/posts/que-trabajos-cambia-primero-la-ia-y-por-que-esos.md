@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-28T14:24:00.001Z
 updatedDate: 2026-03-28T14:24:05.880Z
 description: >-
-  La narrativa popular dice que la IA primero reemplaza las tareas repetitivas y
-  los trabajos de baja cualificación. Los datos muestran lo contrario: los…
+  La IA no ataca primero los trabajos más simples. Ataca los más textuales,
+  predecibles y digitalizados. Aquí están los datos.
 heroImage: /images/posts/que-trabajos-cambia-primero-la-ia-y-por-que-esos/hero.webp
 heroImageAlt: >-
   qué trabajos cambia la IA: brazos robóticos organizando pilas de documentos

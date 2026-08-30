@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T19:03:00.003Z
 updatedDate: 2026-03-29T19:03:23.656Z
 description: >-
-  Nadie habla de "la nube" como si fuera una novedad. Nadie anuncia que "va a
-  buscar algo en Google" con la conciencia de estar usando una tecnología. El
-  GPS…
+  Cuando dejas de hablar de una tecnología es porque ya ganó. Cómo la madurez
+  tecnológica se parece al silencio y por qué eso importa.
 heroImage: >-
   /images/posts/cuando-la-tecnologia-se-vuelve-invisible-senal-de-que-gano/hero.webp
 heroImageAlt: >-

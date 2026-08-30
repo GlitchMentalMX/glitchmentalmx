@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-02T12:34:00.000Z
 updatedDate: 2026-06-23T16:58:40.240Z
 description: >-
-  Cuando ChatGPT llegó a finales de 2022, la novedad era que una IA podía
-  escribir textos, resumir documentos y responder preguntas con una fluidez…
+  La IA agéntica ya no responde preguntas, ejecuta tareas completas por su
+  cuenta. Qué es, cómo funciona y qué significa para tu trabajo.
 heroImage: /images/posts/ia-agentica-en-2026-que-es-y-como-cambia-tu-trabajo/hero.jpg
 heroImageAlt: >-
   IA agéntica 2026: escritorio activo con silla vacía y mujer entrando al cuadro

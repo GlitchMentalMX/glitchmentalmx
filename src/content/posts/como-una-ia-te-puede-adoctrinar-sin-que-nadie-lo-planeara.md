@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-27T04:33:00.005Z
 updatedDate: 2026-07-09T02:25:22.739Z
 description: >-
-  Adoctrinamiento no significa agenda oculta. Significa transmisión sistemática
-  de un marco de valores sin que el receptor sea consciente del mecanismo ni…
+  No hace falta intención para que una IA imponga una visión del mundo. Las
+  condiciones estructurales ya están cumplidas.
 heroImage: >-
   /images/posts/como-una-ia-te-puede-adoctrinar-sin-que-nadie-lo-planeara/hero.jpg
 heroImageAlt: >-

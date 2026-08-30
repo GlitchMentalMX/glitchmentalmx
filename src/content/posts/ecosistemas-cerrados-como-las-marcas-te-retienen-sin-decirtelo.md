@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T14:59:00.004Z
 updatedDate: 2026-07-09T02:51:52.957Z
 description: >-
-  Nadie te obliga a quedarte dentro del ecosistema de Apple, Google o Microsoft.
-  Pero salir cuesta más de lo que costó entrar — y eso no es un accidente del…
+  Apple, Google, Microsoft. Sus ecosistemas están diseñados para que salir
+  cueste más de lo que entró. Así funciona el lock-in tecnológico.
 heroImage: >-
   /images/posts/ecosistemas-cerrados-como-las-marcas-te-retienen-sin-decirtelo/hero.webp
 heroImageAlt: >-

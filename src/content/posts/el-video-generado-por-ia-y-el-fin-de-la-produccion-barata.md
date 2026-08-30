@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T18:58:00.000Z
 updatedDate: 2026-04-18T18:58:43.017Z
 description: >-
-  La producción de video barata —el trabajo de relleno, el contenido corporativo
-  genérico, la animación de bajo presupuesto, el video explicativo estándar—…
+  Cómo el video generado por IA va a redefinir quién puede producir qué, y qué
+  tipo de creatividad sobrevive la automatización.
 heroImage: >-
   /images/posts/el-video-generado-por-ia-y-el-fin-de-la-produccion-barata/hero.jpg
 heroImageAlt: >-

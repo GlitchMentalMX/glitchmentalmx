@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-09T13:14:00.000Z
 updatedDate: 2026-03-17T20:39:32.985Z
 description: >-
-  Discord anunció que en marzo de 2026 implementará verificación de edad
-  obligatoria a nivel global. El sistema incluye estimación facial por IA,
-  revisión de…
+  Discord exige verificación de identidad global en marzo 2026. El resultado:
+  éxodo masivo, borrado de mensajes y plataformas alternativas colapsadas.
 heroImage: /images/posts/discord-pide-id-y-sus-usuarios-huyen/hero.webp
 heroImageAlt: >-
   Discord pide ID: mujer desactiva red de comunidades mientras nodos y chats se

@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-26T11:00:00.000Z
 updatedDate: 2026-07-09T02:46:20.494Z
 description: >-
-  La para-socialidad —el vínculo afectivo hacia alguien que no sabe que existes—
-  no es una rareza psicológica ni una señal de ingenuidad digital. Es la…
+  Sientes que conoces a tu creador favorito. No es ingenuidad: es el resultado
+  de un sistema diseñado para producir exactamente eso.
 heroImage: /images/posts/por-que-sientes-que-conoces-a-tu-influencer-favorito/hero.jpg
 heroImageAlt: >-
   Parasocial: mujer joven frente a diagrama de red en pared, nodos conectados,

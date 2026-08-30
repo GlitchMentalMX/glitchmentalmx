@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-06T11:00:00.001Z
 updatedDate: 2026-04-06T11:00:00.122Z
 description: >-
-  Cada vez que un CEO de tecnología publica un ensayo técnico sobre IA, las
-  redes sociales producen una versión paralela del mismo texto: más simple, más…
+  Las redes no mienten sobre la IA por accidente. Lo hacen por diseño. Aquí está
+  el mecanismo y cómo no caer en él.
 heroImage: >-
   /images/posts/por-que-la-ia-en-redes-no-tiene-nada-que-ver-con-la-real/hero.webp
 heroImageAlt: >-

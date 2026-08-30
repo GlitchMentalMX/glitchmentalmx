@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T19:00:00.008Z
 updatedDate: 2026-04-21T01:48:03.690Z
 description: >-
-  En enero de 2024, Neuralink implantó su primer chip en un ser humano vivo.
-  Para junio de 2025, cinco personas con parálisis severa usaban el dispositivo
-  para…
+  Qué son los BCI, dónde están hoy los implantes cerebrales, cuándo llegarán al
+  mercado y qué preguntas éticas nadie está respondiendo.
 heroImage: >-
   /images/posts/interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio/hero.jpg
 heroImageAlt: >-

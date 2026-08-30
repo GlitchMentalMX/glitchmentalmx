@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-11T14:24:00.000Z
 updatedDate: 2026-06-23T02:42:40.517Z
 description: >-
-  Las tablets 2-en-1 dejaron de ser una categoría confusa atrapada entre la
-  portabilidad de una tablet y el poder de una laptop. En 2026, la tecnología…
+  Las tablets 2-en-1 evolucionaron. Descubre cuáles valen la pena en 2026 para
+  gaming, diseño y productividad con esta guía completa.
 heroImage: >-
   /images/posts/tablets-2-en-1-2026-guia-completa-para-creadores-y-gamers/hero.jpg
 heroImageAlt: >-

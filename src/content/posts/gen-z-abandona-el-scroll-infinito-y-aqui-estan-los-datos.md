@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-03T12:14:00.000Z
 updatedDate: 2026-06-14T17:28:08.568Z
 description: >-
-  La narrativa convencional sobre la Generación Z en redes sociales tiene un
-  problema: ya no describe bien lo que está pasando. El retrato estándar es el
-  de…
+  La generación que creció con el smartphone está eligiendo consumir menos
+  contenido y con más intención. Los datos confirman el giro.
 heroImage: >-
   /images/posts/gen-z-abandona-el-scroll-infinito-y-aqui-estan-los-datos/hero.webp
 heroImageAlt: >-

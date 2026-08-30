@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-28T01:35:00.002Z
 updatedDate: 2026-06-24T23:58:28.425Z
 description: >-
-  El internet ya no es una plaza pública — es un archipiélago de salas privadas.
-  La migración masiva de los usuarios desde las grandes redes sociales hacia…
+  El internet dejó de ser una plaza pública. Qué es la fragmentación digital y
+  qué perdemos — y ganamos — cuando migramos a los nichos.
 heroImage: >-
   /images/posts/del-internet-abierto-a-los-nichos-cerrados-la-gran-fragmentacion/hero.jpg
 heroImageAlt: >-

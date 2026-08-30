@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-12T12:17:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-
-  Durante el MWC 2026 en Barcelona, Qualcomm presentó el Snapdragon Wear Elite,
-  el procesador para dispositivos portátiles más avanzado que ha lanzado la…
+  El nuevo chip de Qualcomm corre modelos de IA directamente en wearables, sin
+  nube. Samsung ya lo adoptó para el Galaxy Watch.
 heroImage: /images/posts/qualcomm-quiere-poner-ia-en-tu-muneca-pin-y-pendiente/hero.webp
 heroImageAlt: >-
   Wearables 2025: mujer con smartwatch y auriculares conectados por señales

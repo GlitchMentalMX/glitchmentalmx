@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T11:44:00.004Z
 updatedDate: 2026-06-26T02:12:21.402Z
 description: >-
-  Para 2028, al menos el 15% de las decisiones cotidianas en empresas de todo el
-  mundo serán tomadas de forma autónoma por sistemas de inteligencia
-  artificial,…
+  Qué son los agentes de IA, cómo van a reorganizar el trabajo para 2028 y por
+  qué el mayor obstáculo no es técnico sino institucional.
 heroImage: /images/posts/agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio/hero.jpg
 heroImageAlt: >-
   agentes de IA: niveles superiores tachados de organigrama institucional en

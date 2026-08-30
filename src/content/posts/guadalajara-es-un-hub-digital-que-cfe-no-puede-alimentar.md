@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-06T11:05:00.000Z
 updatedDate: 2026-07-08T13:22:12.952Z
 description: >-
-  Jalisco se vende como el hub digital de México, pero la CFE no tiene cómo
-  alimentarlo. En 2024 prometió 40% de margen eléctrico para cinco años; en
-  2025…
+  Jalisco se vende como hub digital, pero CFE canceló la planta que iba a
+  sostenerlo. La contradicción entre el discurso y la red eléctrica.
 heroImage: >-
   /images/posts/guadalajara-es-un-hub-digital-que-cfe-no-puede-alimentar/hero.jpg
 heroImageAlt: >-

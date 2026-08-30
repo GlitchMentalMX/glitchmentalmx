@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-12T12:18:00.000Z
 updatedDate: 2026-03-17T17:53:33.586Z
 description: >-
-  Ya no es una advertencia de economistas ni una predicción de foros tech. Es un
-  dato concreto: desde enero de 2026, aproximadamente el 20% de todos los…
+  El 20% de los despidos tech globales de 2026 ya se atribuyen a la IA.
+  MercadoLibre es el único representante latinoamericano en el ranking.
 heroImage: >-
   /images/posts/despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre/hero.webp
 heroImageAlt: >-

@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-12T11:58:00.000Z
 updatedDate: 2026-06-23T02:54:54.442Z
 description: >-
-  Las redes sociales ya no son solo espacios de entretenimiento para la
-  Generación Z. Se han convertido en su principal fuente de información diaria,
-  superando…
+  Gen Z pasa 48 horas al mes en TikTok e Instagram consumiendo noticias, reseñas
+  y tutoriales. Las redes superan a los medios tradicionales.
 heroImage: >-
   /images/posts/la-gen-z-usa-redes-sociales-como-su-principal-fuente-de-noticias/hero.jpg
 heroImageAlt: >-

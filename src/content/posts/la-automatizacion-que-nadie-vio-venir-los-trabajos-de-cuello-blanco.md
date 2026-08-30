@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T19:00:00.004Z
 updatedDate: 2026-04-18T23:20:03.212Z
 description: >-
-  Durante décadas, el miedo a la automatización apuntó hacia las fábricas, los
-  almacenes y los camiones de reparto. El trabajador en riesgo era el obrero,
-  no…
+  Cómo la IA está redefiniendo el trabajo profesional calificado y qué empleos
+  de clase media están en el centro de la disrupción.
 heroImage: >-
   /images/posts/la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco/hero.jpg
 heroImageAlt: >-

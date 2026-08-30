@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-20T12:52:00.002Z
 updatedDate: 2026-03-20T12:52:23.895Z
 description: >-
-  HSBC está evaluando recortar hasta 20,000 puestos de trabajo en los próximos
-  tres a cinco años usando la IA para automatizar sus operaciones internas. Es
-  el…
+  HSBC evalúa eliminar 20,000 puestos en 3-5 años apostando por la IA. El primer
+  banco global que pone una cifra real al reemplazo.
 heroImage: /images/posts/hsbc-y-la-ia-20000-empleos-en-la-balanza/hero.webp
 heroImageAlt: >-
   HSBC IA empleos: oficina corporativa vacía con flujos de datos en el piso y

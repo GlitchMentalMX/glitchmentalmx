@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-24T13:06:00.003Z
 updatedDate: 2026-06-26T03:00:48.430Z
 description: >-
-  SpaceX anunció el 21 de abril un acuerdo con Cursor, el editor de código más
-  popular entre desarrolladores que usan IA, que incluye una opción para
-  adquirir…
+  SpaceX anunció una opción para comprar Cursor por 60 mil millones. El editor
+  de código más popular de IA está cambiando de trinchera.
 heroImage: /images/posts/spacex-compra-cursor-por-60-mmd-fin-de-la-neutralidad/hero.jpg
 heroImageAlt: >-
   SpaceX compra Cursor: desarrollador sostiene credencial de acceso suspendida

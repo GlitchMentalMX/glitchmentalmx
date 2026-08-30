@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-02-09T14:17:00.000Z
 updatedDate: 2026-06-22T23:10:07.426Z
 description: >-
-  Si pensabas que la generación Z viviría pegada a las redes sociales para
-  siempre, piénsalo de nuevo. Miles de jóvenes están eliminando Instagram,
-  TikTok y…
+  Miles de jóvenes están eliminando sus cuentas de redes sociales por salud
+  mental. La revolución silenciosa de Gen Z apenas comienza.
 heroImage: >-
   /images/posts/gen-z-elimina-redes-sociales-en-protesta-silenciosa-masiva/hero.jpg
 heroImageAlt: >-

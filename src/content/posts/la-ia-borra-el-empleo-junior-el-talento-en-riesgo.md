@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-23T14:36:00.000Z
 updatedDate: 2026-06-23T13:09:48.687Z
 description: >-
-  Hay una narrativa cómoda sobre la inteligencia artificial y el empleo: la IA
-  reemplaza tareas repetitivas, libera tiempo, y los humanos ascienden a
-  trabajos…
+  La IA automatiza las tareas que forman a los jóvenes profesionales. Así se
+  destruye el talento antes de que nazca.
 heroImage: /images/posts/la-ia-borra-el-empleo-junior-el-talento-en-riesgo/hero.jpg
 heroImageAlt: >-
   IA empleo junior: mujer joven con cuaderno en blanco frente a pantalla con

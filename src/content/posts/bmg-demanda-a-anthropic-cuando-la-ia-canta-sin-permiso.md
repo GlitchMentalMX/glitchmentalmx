@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-20T12:54:00.003Z
 updatedDate: 2026-03-20T12:54:53.468Z
 description: >-
-  BMG Rights Management demandó a Anthropic el 17 de marzo en un tribunal
-  federal de California por usar letras de canciones para entrenar a Claude sin…
+  BMG demanda a Anthropic por usar letras de Rolling Stones y Bruno Mars en
+  Claude. 493 infracciones, cero respuesta. El caso más directo.
 heroImage: /images/posts/bmg-demanda-a-anthropic-cuando-la-ia-canta-sin-permiso/hero.webp
 heroImageAlt: >-
   BMG demanda Anthropic: archivista frente a expedientes abiertos con trail de

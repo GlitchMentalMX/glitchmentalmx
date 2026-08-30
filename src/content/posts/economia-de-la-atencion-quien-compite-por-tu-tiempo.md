@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-24T12:09:00.003Z
 updatedDate: 2026-03-24T12:09:48.129Z
 description: >-
-  Tu tiempo de pantalla no es gratis ni inocente: es el campo de batalla de la
-  industria más rentable del siglo XXI.** La economía de la atención —el
-  sistema…
+  Tu atención es el producto más valioso del siglo XXI. Quién la compra, cómo la
+  captura y qué puedes hacer al respecto.
 heroImage: /images/posts/economia-de-la-atencion-quien-compite-por-tu-tiempo/hero.webp
 heroImageAlt: >-
   Economía de la atención: hombre tirado por múltiples cables de datos en

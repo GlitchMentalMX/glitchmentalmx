@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-25T11:20:00.002Z
 updatedDate: 2026-03-30T02:04:26.498Z
 description: >-
-  No es falta de disciplina. Las aplicaciones de redes sociales están
-  construidas sobre principios de neurociencia conductual para maximizar el
-  tiempo que…
+  No es falta de voluntad: las apps están diseñadas para engancharte. La
+  neurociencia detrás de los patrones que no puedes ignorar.
 heroImage: /images/posts/dopamina-y-diseno-por-que-las-apps-son-adictivas/hero.webp
 heroImageAlt: >-
   Dopamina y diseño: mujer tensando conexiones digitales como red de datos

@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-05-15T11:00:00.000Z
 updatedDate: 2026-07-09T02:31:05.682Z
 description: >-
-  La pregunta equivocada domina el debate: ¿puede la IA escribir tan bien como
-  un humano? La pregunta correcta es otra: ¿quién va a pagar por la escritura…
+  La IA no reemplazó redactores ni periodistas. Destruyó la infraestructura
+  económica que los pagaba. Datos duros, sin consuelo fácil.
 heroImage: /images/posts/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/hero.jpg
 heroImageAlt: >-
   La IA no liquidó escritores: mujer revisa documentos en oficina vacía tras

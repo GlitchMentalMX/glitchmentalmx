@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-08T22:46:44.127Z
 updatedDate: 2026-07-08T22:53:03.541Z
 description: >-
-  Nueve mecanismos, nueve dependencias distintas y ningún cruce oficial entre
-  ellos: así se sostiene, sin auditoría real, el costo ambiental de la…
+  Nueve mecanismos documentan el costo hídrico y eléctrico de la IA en México.
+  Ninguna dependencia tiene el mandato de cruzarlos entre sí.
 heroImage: /images/posts/mapa-nacional-del-costo-ambiental-de-la-ia/hero.jpg
 heroImageAlt: >-
   Vista satelital nocturna de México con nodos de centros de datos conectados

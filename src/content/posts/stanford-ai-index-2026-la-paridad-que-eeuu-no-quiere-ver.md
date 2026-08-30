@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-28T11:02:00.001Z
 updatedDate: 2026-06-27T03:08:57.706Z
 description: >-
-  El reporte anual de Stanford sobre el estado de la IA confirmó lo que muchos
-  en Silicon Valley prefieren no discutir: la brecha entre los modelos de EE.UU.
-  y…
+  El reporte anual de Stanford confirma: China casi igualó a EE.UU. en modelos
+  de IA y los mejores modelos son cada vez menos transparentes.
 heroImage: >-
   /images/posts/stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver/hero.jpg
 heroImageAlt: >-

@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-30T11:02:00.001Z
 updatedDate: 2026-06-27T03:27:35.612Z
 description: >-
-  China no está debatiendo si los robots humanoides van a entrar a la industria.
-  Ya están adentro. En los primeros meses de 2026, el sector de la IA encarnada…
+  China no debate si los robots humanoides llegarán a la industria. Ya están
+  adentro, con contratos reales y capital verificable.
 heroImage: /images/posts/robots-humanoides-en-logistica-china-ya-son-operativos/hero.jpg
 heroImageAlt: >-
   robots humanoides logística China: supervisor con tablet en primer plano y dos

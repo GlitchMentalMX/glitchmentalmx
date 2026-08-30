@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T19:04:00.003Z
 updatedDate: 2026-04-18T19:04:31.271Z
 description: >-
-  Boeing prueba fallas estructurales en aviones que no existen todavía. Siemens
-  optimiza líneas de manufactura sin detener la producción. Ciudades como…
+  Cómo las réplicas virtuales de fábricas, ciudades e infraestructura van a
+  redefinir el diseño, la manufactura y la gestión urbana.
 heroImage: >-
   /images/posts/gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse/hero.jpg
 heroImageAlt: >-

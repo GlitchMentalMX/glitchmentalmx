@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T03:57:00.002Z
 updatedDate: 2026-03-29T03:57:15.177Z
 description: >-
-  "Superinteligencia." "Riesgo existencial." "Revolución industrial."
-  "Colaborador digital." Las palabras que rodean a la inteligencia artificial no
-  describen…
+  "Superinteligencia", "riesgo existencial", "revolución". El lenguaje sobre IA
+  no informa — moldea. Así funciona el mecanismo.
 heroImage: /images/posts/las-palabras-que-construyen-el-miedo-y-la-fe-en-la-ia/hero.webp
 heroImageAlt: >-
   Las palabras que construyen el miedo: persona manipula maniquíes en líneas

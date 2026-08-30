@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-02-20T12:40:00.000Z
 updatedDate: 2026-06-23T12:55:10.639Z
 description: >-
-  Hay una paradoja en el centro de la vida amorosa de la Generación Z: son la
-  generación más conectada de la historia, y al mismo tiempo la que más
-  decepciones…
+  Gen Z invierte 156 horas al año en apps de citas y obtiene solo 6 conexiones
+  reales. Descubre por qué esta generación dice adiós al swipe.
 heroImage: /images/posts/el-fin-del-swipe-gen-z-rehuye-apps-de-citas-en-2026/hero.jpg
 heroImageAlt: >-
   Gen Z apps de citas 2026: mujer empujando pila de tarjetas de perfil sobre

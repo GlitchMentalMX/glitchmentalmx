@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-04-15T12:34:00.003Z
 updatedDate: 2026-06-15T13:06:22.975Z
 description: >-
-  El mercado de wearables premium en 2026 ya no se pelea con más pantallas ni
-  mejores GPUs: se pelea con conectividad autónoma y métricas de salud
-  continua.…
+  Garmin lanzó el D2 Mach 2 Pro con satélite y LTE. Y la Cirqa llega pronto. El
+  mercado de wearables se fragmentó.
 heroImage: /images/posts/garmin-en-2026-satelite-lte-y-la-guerra-de-las-bandas/hero.jpg
 heroImageAlt: >-
   Garmin 2026 wearables: hombre comparando varios relojes inteligentes en cruce

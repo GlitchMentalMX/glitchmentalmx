@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-24T12:06:00.004Z
 updatedDate: 2026-06-24T16:06:37.569Z
 description: >-
-  El algoritmo no trata a todas las generaciones igual — y eso tiene
-  consecuencias que van mucho más allá de qué videos te recomienda TikTok.
-  Dependiendo de…
+  Boomers, millennials, Gen Z, Gen Alpha: cómo el entorno algorítmico remodela a
+  cada generación de forma diferente. Guía 2026.
 heroImage: /images/posts/generaciones-y-algoritmos-de-boomers-a-gen-alpha/hero.jpg
 heroImageAlt: >-
   Generaciones y algoritmos: figura femenina ante cuatro columnas de flujo

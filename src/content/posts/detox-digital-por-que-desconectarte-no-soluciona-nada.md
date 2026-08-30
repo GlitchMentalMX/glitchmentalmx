@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-07T01:51:49.692Z
 updatedDate: 2026-06-07T01:51:49.693Z
 description: >-
-  El detox digital vende la idea de que el problema eres tú — que con suficiente
-  fuerza de voluntad podrías cerrar Instagram y no extrañarlo. Esa idea es…
+  El detox digital no cura nada. La neurociencia explica por qué la abstinencia
+  falla y qué funciona de verdad para recuperar tu atención.
 heroImage: /images/posts/detox-digital-por-que-desconectarte-no-soluciona-nada/hero.jpg
 heroImageAlt: 'detox digital: mujer frente al espejo con smartphone apoyado en el lavabo'
 ---

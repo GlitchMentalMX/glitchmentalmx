@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-05-01T11:01:00.011Z
 updatedDate: 2026-06-27T03:40:51.952Z
 description: >-
-  Hace un mes contábamos cómo el mundo se enteró de Mythos por un CMS mal
-  configurado. Hoy el modelo "demasiado peligroso para liberar" tiene a
-  Bruselas…
+  Hace un mes Mythos era un secreto filtrado. Hoy la UE pide acceso, el BCE
+  alerta a la banca y un modelo open de 11 centavos hace lo mismo.
 heroImage: /images/posts/mythos-un-mes-despues-la-ue-pide-acceso-el-bce-alerta/hero.jpg
 heroImageAlt: >-
   Mythos IA regulación: mujer con documento impreso frente a ventana

@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-12T12:17:11.036Z
 updatedDate: 2026-06-18T15:58:12.049Z
 description: >-
-  Escribí una línea en GlitchMentalMX y cinco minutos después supe que tenía una
-  novela. La línea era esta: "La neutralidad religiosa en IA no existe. La…
+  Una frase sobre sesgo religioso en la IA detonó una novela. Por qué la ficción
+  llega donde el periodismo no puede.
 heroImage: /images/posts/por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia/hero.jpg
 heroImageAlt: >-
   Por qué escribí una novela: libro abierto con página desprendida entre

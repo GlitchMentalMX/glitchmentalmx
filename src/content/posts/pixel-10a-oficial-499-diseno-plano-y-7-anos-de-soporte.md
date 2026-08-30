@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-19T12:05:00.000Z
 updatedDate: 2026-06-23T04:00:53.649Z
 description: >-
-  Google anunció hoy, 19 de febrero de 2026, el Pixel 10a. El precio se mantiene
-  en $499 dólares y la venta general inicia el 5 de marzo. Si esperabas un
-  salto…
+  Google lanzó el Pixel 10a hoy a $499. Diseño completamente plano, Tensor G4 y
+  7 años de actualizaciones. Todo lo que debes saber.
 heroImage: /images/posts/pixel-10a-oficial-499-diseno-plano-y-7-anos-de-soporte/hero.jpg
 heroImageAlt: >-
   Pixel 10a soporte 7 años: smartphone plano sin marca sobre superficie técnica

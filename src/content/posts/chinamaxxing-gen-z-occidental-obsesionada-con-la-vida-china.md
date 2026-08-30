@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-11T14:16:00.000Z
 updatedDate: 2026-06-23T02:28:35.524Z
 description: >-
-  Si has estado en TikTok o X durante las últimas semanas, probablemente te
-  encontraste con un fenómeno cultural extraño: jóvenes occidentales,
-  principalmente…
+  Gen Z en Occidente idealiza la infraestructura china y el estilo de vida
+  asiático. La tendencia Chinamaxxing domina TikTok en 2026.
 heroImage: >-
   /images/posts/chinamaxxing-gen-z-occidental-obsesionada-con-la-vida-china/hero.jpg
 heroImageAlt: >-

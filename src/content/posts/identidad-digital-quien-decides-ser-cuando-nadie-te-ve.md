@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-08T11:00:00.000Z
 updatedDate: 2026-07-09T02:43:01.118Z
 description: >-
-  Tu identidad en internet no es una elección personal — es un permiso que
-  otorgan las plataformas. El anonimato no desapareció por accidente cultural ni
-  por…
+  Tu identidad en internet no es tuya: es un permiso que otorgan las
+  plataformas. Del anonimato en foros a selfie + DNI en X.
 heroImage: /images/posts/identidad-digital-quien-decides-ser-cuando-nadie-te-ve/hero.jpg
 heroImageAlt: >-
   Identidad digital: mujer observando reflejo digitalizado en espejo con

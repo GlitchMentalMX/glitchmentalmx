@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-08T23:53:00.000Z
 updatedDate: 2026-06-06T19:37:09.185Z
 description: >-
-  Hay una conversación que la industria tecnológica preferiría no tener. No es
-  sobre benchmarks, ni sobre qué modelo razona mejor, ni sobre quién lleva la…
+  Casos reales, datos verificados y el verdadero riesgo que representan los
+  chatbots de IA para la salud mental de los jóvenes en 2026.
 heroImage: /images/posts/ia-y-salud-mental-lo-que-nadie-te-dice-en-2026/hero.webp
 heroImageAlt: >-
   chatbots IA salud mental adolescentes 2026: adolescente mirando por ventana de

@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-23T13:31:00.003Z
 updatedDate: 2026-03-23T13:31:30.678Z
 description: >-
-  La Unión Europea acordó el 11 de marzo prohibir los sistemas de IA capaces de
-  generar imágenes sexuales de personas reales sin su consentimiento. El…
+  La UE acordó prohibir los deepfakes sexuales sin consentimiento. El detonador
+  fue Grok. México no tiene nada equivalente.
 heroImage: /images/posts/la-ue-prohibe-las-apps-que-desnudan-con-ia-llego-tarde/hero.webp
 heroImageAlt: >-
   deepfakes sexuales IA UE: mujer rodeada de versiones digitales fragmentadas de

@@ -6,9 +6,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-28T13:03:00.000Z
 updatedDate: 2026-06-22T22:27:45.899Z
 description: >-
-  La próxima gran revolución de la inteligencia artificial no sucederá en un
-  laboratorio de Silicon Valley. Está sucediendo en lugares como Islandia,
-  Noruega,…
+  La falta de energía eléctrica en EE.UU. está forzando a las tecnológicas a
+  mover sus servidores de IA a países con excedentes. Una crisis silenciosa.
 heroImage: >-
   /images/posts/la-gran-migracion-como-las-empresas-reubican-fisicamente-sus-centros-de-datos-de-ia/hero.jpg
 heroImageAlt: >-

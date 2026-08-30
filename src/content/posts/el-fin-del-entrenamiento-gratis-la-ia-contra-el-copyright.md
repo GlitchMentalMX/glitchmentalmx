@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-16T12:36:00.001Z
 updatedDate: 2026-06-15T15:13:26.320Z
 description: >-
-  Durante años, las empresas de IA entrenaron sus modelos con lo que encontraron
-  en internet y respondieron a cualquier reclamo con la misma palabra: fair
-  use.…
+  La era de los datos gratis terminó. Descubre cómo la nueva regulación de IA en
+  2026 obliga a las empresas a pagar por el entrenamiento con licencias.
 heroImage: >-
   /images/posts/el-fin-del-entrenamiento-gratis-la-ia-contra-el-copyright/hero.jpg
 heroImageAlt: >-

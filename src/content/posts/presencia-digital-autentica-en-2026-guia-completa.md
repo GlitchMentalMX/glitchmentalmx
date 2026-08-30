@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-10T12:13:00.000Z
 updatedDate: 2026-06-06T19:36:40.775Z
 description: >-
-  Durante años, el consejo estándar para construir presencia digital fue el
-  mismo: publica más, usa los hashtags correctos, optimiza para el algoritmo.
-  El…
+  Construir presencia digital en 2026 ya no es sobre publicar más. Es sobre
+  publicar con intención. Guía completa para hacerlo bien.
 heroImage: /images/posts/presencia-digital-autentica-en-2026-guia-completa/hero.webp
 heroImageAlt: >-
   alucinaciones de IA: mujer con tablet analizando paneles de datos y perfiles

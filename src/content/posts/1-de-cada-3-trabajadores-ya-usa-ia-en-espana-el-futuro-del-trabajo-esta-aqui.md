@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-11-25T14:33:00.000Z
 updatedDate: 2026-06-13T01:39:20.858Z
 description: >-
-  El 30 de noviembre marca exactamente dos años desde el lanzamiento de ChatGPT,
-  el momento que democratizó el acceso a la inteligencia artificial para el…
+  Estudio de InfoJobs revela que el 32% de trabajadores en España usa IA
+  diariamente y el 29% lo hace sin que su empresa lo sepa.
 heroImage: >-
   /images/posts/1-de-cada-3-trabajadores-ya-usa-ia-en-espana-el-futuro-del-trabajo-esta-aqui/hero.jpg
 heroImageAlt: >-

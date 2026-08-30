@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-21T13:54:00.000Z
 updatedDate: 2026-06-22T15:22:42.585Z
 description: >-
-  Si pensabas que la carrera de la inteligencia artificial era solo entre
-  OpenAI, Google y Anthropic, tengo noticias: China acaba de entrar al ring de
-  forma…
+  China lanza DeepSeek V4 y OpenAI advierte sobre un "shock sísmico". Te
+  explicamos por qué esta IA cambia todo el juego.
 heroImage: >-
   /images/posts/deepseek-v4-la-ia-china-que-tiene-a-openai-en-alerta-maxima/hero.jpg
 heroImageAlt: >-

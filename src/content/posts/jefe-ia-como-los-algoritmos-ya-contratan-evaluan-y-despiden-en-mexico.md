@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-11-22T17:30:00.000Z
 updatedDate: 2026-06-11T03:32:47.187Z
 description: >-
-  Imagina esto: llegas un lunes cualquiera a tu trabajo y recibes un correo
-  automático. Tu desempeño ha sido evaluado. No por tu manager, no por Recursos…
+  El 55% de grandes empresas usa IA en decisiones laborales. En LATAM no hay
+  regulación. Lo que pasa cuando el algoritmo decide tu carrera.
 heroImage: >-
   /images/posts/jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico/hero.jpg
 heroImageAlt: >-

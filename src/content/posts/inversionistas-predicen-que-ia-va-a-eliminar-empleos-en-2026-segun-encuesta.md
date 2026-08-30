@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-02T12:53:00.000Z
 updatedDate: 2026-06-21T02:28:38.024Z
 description: >-
-  Capitalistas de riesgo de Silicon Valley están prediciendo impacto masivo de
-  IA en mercado laboral durante 2026. Según encuesta de Accel a 75
-  inversionistas…
+  VCs de Silicon Valley predicen impacto masivo de IA en empleos 2026. MIT:
+  11.7% de trabajos ya podrían automatizarse. Empresas cambiarán presupuestos.
 heroImage: >-
   /images/posts/inversionistas-predicen-que-ia-va-a-eliminar-empleos-en-2026-segun-encuesta/hero.jpg
 heroImageAlt: >-

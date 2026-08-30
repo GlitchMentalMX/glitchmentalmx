@@ -6,8 +6,8 @@ category: Cultura Digital
 pubDate: 2026-01-28T13:06:00.000Z
 updatedDate: 2026-06-22T22:34:02.251Z
 description: >-
-  La Generación Z, esos nativos digitales que crecieron con un smartphone en la
-  mano, está liderando la mayor contradicción cultural de 2026: la huida masiva…
+  Hastiados de la hiperconexión, los jóvenes están adoptando rituales digitales
+  radicales. Descubre el movimiento que desafía a las redes sociales.
 heroImage: >-
   /images/posts/dopamina-detox-por-que-gen-z-se-desconecta-masivamente-y-que-hace-en-su-lugar/hero.jpg
 heroImageAlt: 'Dopamina detox: joven meditando frente a un smartphone iluminado en el suelo'

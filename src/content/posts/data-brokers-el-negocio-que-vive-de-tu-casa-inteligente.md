@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-07-01T11:00:00.000Z
 updatedDate: 2026-07-09T02:49:38.165Z
 description: >-
-  Tu aspiradora no te espía gratis. Existe un mercado de cientos de miles de
-  millones de dólares que vive de comprar y revender los datos de tus
-  dispositivos…
+  Tu aspiradora no te espía gratis: hay un mercado de 300 a 460 mil millones de
+  dólares que vive de revender esos datos. Así opera.
 heroImage: /images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente/hero.jpg
 heroImageAlt: >-
   Data brokers casa inteligente: mujer revisa dispositivo doméstico mientras

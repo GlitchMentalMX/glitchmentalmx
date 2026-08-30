@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-15T13:48:00.000Z
 updatedDate: 2026-06-07T02:45:58.771Z
 description: >-
-  Claude es la única herramienta de IA del mercado con una Constitución. No una
-  política de uso. No un párrafo de términos y condiciones. Un documento de…
+  Claude tiene una Constitución que le permite negarse a obedecer. Incluso a
+  Anthropic. Modelos, precios y lo que ningún manual te cuenta.
 heroImage: >-
   /images/posts/claude-es-la-ia-mas-capaz-del-mercado-y-la-mas-incomoda-de-usar/hero.jpg
 heroImageAlt: >-

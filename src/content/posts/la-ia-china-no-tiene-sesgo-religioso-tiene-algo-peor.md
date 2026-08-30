@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-27T04:36:00.004Z
 updatedDate: 2026-07-09T02:26:13.300Z
 description: >-
-  Mientras Anthropic consulta teólogos en privado, Beijing publica regulación
-  legal que especifica exactamente qué no pueden decir sus modelos. Tiananmen,…
+  DeepSeek no reza. Obedece al Partido. Y eso abre la pregunta más incómoda:
+  ¿cuál sesgo es más peligroso, el invisible o el declarado?
 heroImage: /images/posts/la-ia-china-no-tiene-sesgo-religioso-tiene-algo-peor/hero.jpg
 heroImageAlt: >-
   La IA china: figura sola en sala tradicional bajo red digital en techo que

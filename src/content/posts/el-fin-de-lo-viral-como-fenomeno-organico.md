@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-25T11:10:00.016Z
 updatedDate: 2026-06-24T16:14:10.891Z
 description: >-
-  Hacerse viral solía ser un accidente. Hoy es un producto con precio. El
-  alcance orgánico en redes sociales colapsó de forma estructural, y lo que
-  llamamos…
+  Hacerse viral ya no es un accidente de internet: es un producto. Qué pasó con
+  el fenómeno orgánico y quién decide qué explota.
 heroImage: /images/posts/el-fin-de-lo-viral-como-fenomeno-organico/hero.jpg
 heroImageAlt: >-
   Fenómeno viral: figura femenina en línea de ensamblaje de contenido idéntico,

@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-06T12:43:00.000Z
 updatedDate: 2026-03-17T17:57:13.924Z
 description: >-
-  Pocos fenómenos en la historia reciente de las redes sociales fueron tan
-  rápidos como el ascenso de Bluesky entre 2024 y principios de 2025. La
-  plataforma…
+  Bluesky pasó de 13 a 40 millones de usuarios en 14 meses. Ahora el crecimiento
+  se frenó y la actividad cae. Así termina el crecimiento reactivo.
 heroImage: /images/posts/bluesky-en-2026-crecio-por-enojo-no-por-conviccion/hero.webp
 heroImageAlt: >-
   redes sociales crecimiento: gráfica descendente holográfica mientras mujer

@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-24T12:01:00.002Z
 updatedDate: 2026-03-24T12:01:17.647Z
 description: >-
-  iOS 26.4 sale hoy martes 24 o mañana miércoles 25 de marzo. La Siri
-  transformada por Gemini no viene incluida — es el segundo update consecutivo
-  en que Apple…
+  iOS 26.4 sale hoy o mañana. La Siri con Gemini, otra vez ausente. ¿Cuánto daño
+  acumula Apple prometiendo sin entregar?
 heroImage: /images/posts/ios-264-llega-hoy-siri-con-gemini-otra-vez-pospuesta/hero.webp
 heroImageAlt: >-
   iOS 26.4 Siri Gemini: usuario interactúa con paneles de asistente

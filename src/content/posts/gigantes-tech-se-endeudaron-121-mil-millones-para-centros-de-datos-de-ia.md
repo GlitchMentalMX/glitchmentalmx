@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-02T12:57:00.000Z
 updatedDate: 2026-06-30T18:46:03.914Z
 description: >-
-  Las cuatro compañías tecnológicas más grandes están apostando todo a
-  infraestructura de IA. Meta, Alphabet (Google), Amazon, y Microsoft emitieron…
+  Meta, Google, Amazon y Microsoft pidieron $121 mil millones para centros de
+  IA. Bank of America reporta cuatro veces más que promedio histórico.
 heroImage: >-
   /images/posts/gigantes-tech-se-endeudaron-121-mil-millones-para-centros-de-datos-de-ia/hero.jpg
 heroImageAlt: >-

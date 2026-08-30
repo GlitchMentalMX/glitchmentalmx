@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-30T12:52:00.003Z
 updatedDate: 2026-03-30T12:52:36.598Z
 description: >-
-  "Agéntico" es la palabra del momento en inteligencia artificial. Pero mientras
-  la industria la repite como promesa, un grupo de investigadores de la…
+  "Agente de IA" es la frase del año. Pero los primeros tests muestran que
+  pueden filtrar datos y tomar acciones no autorizadas con facilidad.
 heroImage: >-
   /images/posts/agentes-de-ia-la-palabra-del-ano-que-nadie-sabe-controlar/hero.webp
 heroImageAlt: >-

@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-22T13:00:00.000Z
 updatedDate: 2026-06-22T19:03:42.994Z
 description: >-
-  La inteligencia artificial está en todos lados. En comunicados de prensa, en
-  discursos corporativos, en presentaciones de ventas y en promesas que suenan…
+  Un índice editorial que evalúa qué tecnologías de IA generan valor real para
+  negocio y cuáles viven solo del hype.
 heroImage: /images/posts/el-indice-que-separa-la-ia-real-del-humo-tecnologico/hero.jpg
 heroImageAlt: El índice que separa la IA real del humo tecnológico
 ---

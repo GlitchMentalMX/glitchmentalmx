@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-04T12:46:00.000Z
 updatedDate: 2026-03-17T20:13:25.622Z
 description: >-
-  Vivo acaba de lanzar globalmente el X300 Pro, y después de semanas de pruebas
-  exhaustivas por parte de medios especializados, la conclusión es clara: este…
+  El Vivo X300 Pro tiene una de las mejores cámaras Android del mercado,
+  especialmente en teleobjetivo. Vale la pena el precio premium.
 heroImage: >-
   /images/posts/vivo-x300-pro-llega-a-mexico-con-la-mejor-camara-android-2026/hero.png
 heroImageAlt: >-

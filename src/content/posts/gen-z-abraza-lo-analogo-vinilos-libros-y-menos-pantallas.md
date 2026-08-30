@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-02-25T12:53:00.000Z
 updatedDate: 2026-03-17T20:39:32.984Z
 description: >-
-  Hay algo paradójico en que la generación más nativa del mundo digital sea, al
-  mismo tiempo, la que más está impulsando el regreso de los vinilos, los CDs,…
+  Gen Z está reviviendo vinilos, CDs y libros impresos. No es nostalgia: es una
+  declaración de identidad frente al mundo digital.
 heroImage: >-
   /images/posts/gen-z-abraza-lo-analogo-vinilos-libros-y-menos-pantallas/hero.webp
 heroImageAlt: >-

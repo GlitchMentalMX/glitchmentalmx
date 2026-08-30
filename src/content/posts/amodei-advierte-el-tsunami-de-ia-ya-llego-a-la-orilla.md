@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-26T13:01:00.000Z
 updatedDate: 2026-06-23T15:32:37.601Z
 description: >-
-  Hay algo llamativo en escuchar a Dario Amodei, el CEO de la empresa que
-  construye a Claude, advertir que la inteligencia artificial podría destruir
-  millones…
+  El CEO de Anthropic compara la IA con un tsunami que ya está aquí. Sus
+  advertencias sobre el empleo son las más directas que ha dado.
 heroImage: /images/posts/amodei-advierte-el-tsunami-de-ia-ya-llego-a-la-orilla/hero.jpg
 heroImageAlt: >-
   Dario Amodei IA empleo: mujer de pie en malecón urbano con agua avanzando

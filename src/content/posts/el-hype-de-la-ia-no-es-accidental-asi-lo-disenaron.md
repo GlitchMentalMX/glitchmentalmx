@@ -4,8 +4,9 @@ category: Inteligencia Artificial
 pubDate: 2026-05-06T12:51:00.001Z
 updatedDate: 2026-05-06T13:57:26.316Z
 description: >-
-  En los últimos años, los investigadores de OpenAI hacían fogatas y cantaban
-  "Feel the AGI!" alrededor de ellas. No es una metáfora: es lo que reportó MIT…
+  El hype de la IA no es entusiasmo accidental. Es una estrategia de
+  fundraising, captura regulatoria y narrativa fabricada. Los datos lo
+  confirman.
 heroImage: /images/posts/el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron/hero.jpg
 heroImageAlt: >-
   El hype de la IA: mujer operando la impresión masiva de hojas con métricas y

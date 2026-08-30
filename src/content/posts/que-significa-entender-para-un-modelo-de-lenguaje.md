@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T03:47:00.008Z
 updatedDate: 2026-03-29T04:04:07.222Z
 description: >-
-  Cuando ChatGPT explica la relatividad general o Claude analiza un contrato
-  legal, es razonable preguntarse: ¿esto entiende lo que dice, o solo produce
-  texto…
+  ¿ChatGPT "entiende" lo que dice o solo predice la siguiente palabra? La
+  respuesta técnica cambia todo lo que crees saber sobre la IA.
 heroImage: /images/posts/que-significa-entender-para-un-modelo-de-lenguaje/hero.webp
 heroImageAlt: >-
   Qué significa “entender”: operaria ajusta cajas en línea de producción

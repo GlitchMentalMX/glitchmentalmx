@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2025-12-19T14:21:00.000Z
 updatedDate: 2026-06-12T11:30:14.640Z
 description: >-
-  Mientras el mundo habla de chatbots y generación de imágenes, una startup de
-  San Francisco acaba de levantar $21.5 millones para construir algo mucho más…
+  Simular construye agentes de IA que controlan tu Mac o PC como si fueran
+  humanos. El futuro automatizado ya llegó y es más raro de lo que pensabas.
 heroImage: /images/posts/tu-mac-trabajando-sola-la-startup-que-levanto-21m/hero.jpg
 heroImageAlt: >-
   Agentes de IA para Mac y PC: sistema automatizado operando estaciones de

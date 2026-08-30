@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-05-04T13:08:00.002Z
 updatedDate: 2026-07-09T02:47:09.369Z
 description: >-
-  El glitch no es un accidente que la cultura tolera — es una respuesta
-  sistemática que la cultura busca activamente cada vez que la tecnología
-  promete…
+  El glitch no es un fallo: es una respuesta cultural al ideal de perfección
+  tecnológica. De los VHS a los errores de IA generativa.
 heroImage: /images/posts/por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch/hero.jpg
 heroImageAlt: >-
   estética del glitch: mujer tocando pantalla CRT con distorsión luminosa y

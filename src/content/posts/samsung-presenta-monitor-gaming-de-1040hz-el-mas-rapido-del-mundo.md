@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-07T12:14:00.000Z
 updatedDate: 2026-06-22T01:41:31.845Z
 description: >-
-  Samsung anunció en CES 2026 el Odyssey G60H, el monitor gaming más rápido del
-  mundo con tasa de refresco de 1040Hz. Es el primer monitor comercial en
-  romper…
+  Samsung presenta Odyssey G60H de 1040Hz en CES 2026, el monitor gaming más
+  rápido del mundo. Modo dual: 1040Hz competitivo o 5K visual.
 heroImage: >-
   /images/posts/samsung-presenta-monitor-gaming-de-1040hz-el-mas-rapido-del-mundo/hero.jpg
 heroImageAlt: >-

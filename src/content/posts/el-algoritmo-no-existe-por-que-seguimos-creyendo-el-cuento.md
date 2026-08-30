@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-05-25T11:00:00.000Z
 updatedDate: 2026-07-09T02:35:37.363Z
 description: >-
-  Cuando una plataforma dice "nuestro algoritmo decide qué ves", está cometiendo
-  un acto de marketing disfrazado de ingeniería. Ningún feed importante de…
+  TikTok, Spotify y Apple Music tienen editores humanos decidiendo lo que ves.
+  Llamarle algoritmo es PR, no ingeniería.
 heroImage: >-
   /images/posts/el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento/hero.jpg
 heroImageAlt: >-

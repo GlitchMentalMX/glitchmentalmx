@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-08T22:21:22.193Z
 updatedDate: 2026-07-08T22:21:22.361Z
 description: >-
-  La pregunta "¿alcanza la electricidad para la IA en México?" está mal
-  planteada. No es un problema de cables: es un problema de ley. Y esa ley
-  cambió en…
+  Jalisco, Edomex y Yucatán pelean cuellos de botella técnicos. La raíz es
+  legal: la Ley del Sector Eléctrico de 2025 cambió quién puede generar luz.
 heroImage: >-
   /images/posts/la-ley-electrica-que-decide-el-futuro-de-la-ia-en-mexico/hero.jpg
 heroImageAlt: >-

@@ -4,9 +4,9 @@ category: Tendencias Digitales
 pubDate: 2026-03-10T12:19:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-
-  El SEO tradicional lleva meses en terapia intensiva, y los dos conceptos que
-  están tomando su lugar tienen nombres que vale la pena entender antes de que
-  se…
+  Los algoritmos de 2026 recompensan la velocidad y penalizan el SEO
+  tradicional. Así funciona el fastvertising y la optimización para IA
+  generativa.
 heroImage: /images/posts/fastvertising-y-geo-el-nuevo-juego-de-los-algoritmos/hero.webp
 heroImageAlt: >-
   fastvertising y GEO: archivos físicos frente a flujo de páginas digitales

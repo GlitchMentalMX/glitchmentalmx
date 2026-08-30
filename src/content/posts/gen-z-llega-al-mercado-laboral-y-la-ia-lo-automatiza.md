@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-06T12:46:00.000Z
 updatedDate: 2026-06-14T13:06:13.759Z
 description: >-
-  Según la consultora Forrester, la Generación Z es la que tiene mayor capacidad
-  para trabajar con inteligencia artificial entre todas las franjas…
+  Gen Z es la generación más hábil con IA según Forrester. Pero también la que
+  encuentra menos empleos de entrada. Ahí está el problema.
 heroImage: /images/posts/gen-z-llega-al-mercado-laboral-y-la-ia-lo-automatiza/hero.webp
 heroImageAlt: >-
   Gen Z IA trabajo: joven usando laptop rodeada de conexiones digitales y nodos

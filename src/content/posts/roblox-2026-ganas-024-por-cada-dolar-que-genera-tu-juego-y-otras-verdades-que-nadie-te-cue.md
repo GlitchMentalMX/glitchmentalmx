@@ -6,9 +6,8 @@ category: Cultura Digital
 pubDate: 2026-02-04T13:06:00.000Z
 updatedDate: 2026-06-06T19:47:22.290Z
 description: >-
-  Olvida lo que crees saber sobre Roblox. No es un simple juego de bloques para
-  niños. En 2026, es un estado-nación digital paralelo, una economía de
-  billones…
+  La verdad sobre ganar dinero en Roblox: solo recibes 24 centavos por dólar.
+  Guía crítica con datos reales para creadores Gen Z y padres.
 heroImage: >-
   /images/posts/roblox-2026-ganas-024-por-cada-dolar-que-genera-tu-juego-y-otras-verdades-que-nadie-te-cue/hero.png
 heroImageAlt: >-

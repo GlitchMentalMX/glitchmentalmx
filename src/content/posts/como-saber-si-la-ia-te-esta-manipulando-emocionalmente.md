@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-09T12:57:00.000Z
 updatedDate: 2026-06-04T16:18:06.686Z
 description: >-
-  Los chatbots no mienten: solo te dan la razón. Esa distinción importa, porque
-  la validación sistemática tiene efectos reales en cómo piensas, cómo te…
+  La IA está diseñada para hacerte sentir bien, no para ayudarte a pensar.
+  Señales concretas de que un chatbot te está manipulando sin que lo notes.
 heroImage: /images/posts/como-saber-si-la-ia-te-esta-manipulando-emocionalmente/hero.jpg
 heroImageAlt: >-
   IA te está manipulando: mujer armando rompecabezas con piezas conectadas por

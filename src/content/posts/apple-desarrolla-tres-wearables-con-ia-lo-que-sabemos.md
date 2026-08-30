@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-23T14:38:00.000Z
 updatedDate: 2026-03-17T20:13:25.621Z
 description: >-
-  Apple está acelerando el desarrollo de tres dispositivos wearables centrados
-  en inteligencia artificial: unos lentes inteligentes para competir con las…
+  Apple acelera el desarrollo de lentes inteligentes, un pin IA y AirPods con
+  cámara. Tres apuestas para dominar los wearables.
 heroImage: /images/posts/apple-desarrolla-tres-wearables-con-ia-lo-que-sabemos/hero.png
 heroImageAlt: >-
   Gadgets IA: lentes inteligentes y audífonos de última generación representando

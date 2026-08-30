@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-28T11:00:00.001Z
 updatedDate: 2026-04-28T11:00:00.116Z
 description: >-
-  No es ansiedad difusa ni estrés pasajero. 1 de cada 5 jóvenes iberoamericanos
-  presenta un trastorno mental clínicamente vinculado al uso intensivo de redes…
+  1 de cada 5 jóvenes iberoamericanos ya tiene un trastorno mental vinculado al
+  uso intensivo de redes sociales. Los datos van más allá de la ansiedad.
 heroImage: >-
   /images/posts/redes-sociales-y-trastornos-mentales-lo-que-dice-la-ciencia/hero.jpg
 heroImageAlt: >-

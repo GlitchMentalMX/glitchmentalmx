@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-29T12:45:00.000Z
 updatedDate: 2026-06-22T22:39:02.711Z
 description: >-
-  Hay una verdad incómoda que los desarrolladores de aplicaciones deben
-  enfrentar: para la Generación Z, cada segundo de carga no es solo una espera,
-  es un…
+  La Generación Z exige inmediatez. Analizamos por qué abandonan apps que les
+  roban segundos y qué buscan en la experiencia digital.
 heroImage: >-
   /images/posts/gen-z-y-la-obsesion-por-el-tiempo-por-que-abandonan-las-apps-lentas/hero.jpg
 heroImageAlt: >-

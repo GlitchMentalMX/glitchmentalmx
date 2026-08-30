@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-24T11:00:00.000Z
 updatedDate: 2026-07-09T02:45:43.796Z
 description: >-
-  La brecha digital en 2026 ya no es de acceso ni de habilidades: es semántica.
-  Cada generación opera con definiciones incompatibles de tres conceptos…
+  Privacidad, propiedad e identidad: cada generación opera con definiciones
+  incompatibles. Y la regulación tendrá que elegir una.
 heroImage: /images/posts/cada-generacion-tiene-su-propio-internet-y-no-lo-saben/hero.jpg
 heroImageAlt: >-
   Generaciones digitales: tres mujeres en el mismo espacio con capas de red

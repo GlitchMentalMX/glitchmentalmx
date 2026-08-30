@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-02T01:27:00.000Z
 updatedDate: 2026-06-06T19:48:00.242Z
 description: >-
-  En el World Economic Forum de Davos en enero de 2026, Dario Amodei, CEO de
-  Anthropic, soltó una bomba. No fue una predicción optimista ni un discurso…
+  Dario Amodei advirtió en Davos que la IA podría desplazar el 50% de los
+  empleos en 1-5 años. Descubre por qué 2026 es el año más peligroso.
 heroImage: >-
   /images/posts/el-ceo-de-anthropic-lanzo-la-advertencia-mas-dura-sobre-ia-2026/hero.webp
 heroImageAlt: >-

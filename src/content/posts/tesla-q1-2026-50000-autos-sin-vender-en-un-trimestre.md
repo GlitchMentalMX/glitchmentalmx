@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-04-03T12:38:00.003Z
 updatedDate: 2026-04-03T12:38:23.806Z
 description: >-
-  Tesla entregó 358,023 vehículos en el primer trimestre de 2026, cerca de 7,600
-  unidades por debajo del consenso de Wall Street de 365,645. El número que…
+  Tesla entregó 358,000 autos pero fabricó 50,000 más de los que vendió. El
+  problema no es logístico — es de demanda.
 heroImage: /images/posts/tesla-q1-2026-50000-autos-sin-vender-en-un-trimestre/hero.jpg
 heroImageAlt: >-
   Tesla Q1 2026: fila de cargadores eléctricos alineados sin uso en interior

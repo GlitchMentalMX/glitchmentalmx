@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-07T11:00:00.000Z
 updatedDate: 2026-07-07T19:27:16.975Z
 description: >-
-  En el corredor al norte del Edomex —Tultitlán, Cuautitlán Izcalli,
-  Tepotzotlán— la tierra ya existía antes de la nube. Lo que decide qué centro
-  de datos se…
+  En el norte del Edomex, ni una ley ni una concesión de agua deciden qué nube
+  se construye: lo hace un estudio de interconexión de CFE.
 heroImage: /images/posts/estado-de-mexico-la-fila-invisible-que-decide-la-nube/hero.jpg
 heroImageAlt: >-
   Centro de datos con líneas de energía y tuberías de agua convergiendo hacia la

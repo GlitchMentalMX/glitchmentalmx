@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-18T19:00:00.003Z
 updatedDate: 2026-04-18T19:00:54.044Z
 description: >-
-  El costo de la energía solar cayó más del 90% en la última década. El costo
-  global promedio de las baterías de almacenamiento estacionario cayó un 45%
-  solo…
+  El costo de la energía solar cayó 90% en una década. México tiene el recurso y
+  el mandato. Lo que falta es velocidad.
 heroImage: >-
   /images/posts/solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando/hero.jpg
 heroImageAlt: >-

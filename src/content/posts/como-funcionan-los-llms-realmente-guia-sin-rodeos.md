@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-28T14:17:00.004Z
 updatedDate: 2026-06-25T22:38:31.509Z
 description: >-
-  Los modelos de lenguaje como ChatGPT, Claude o Gemini no son inteligencias que
-  piensan. Son sistemas estadísticos entrenados para predecir cuál es la…
+  Los LLMs no piensan ni entienden. Predicen la siguiente palabra. Aquí está la
+  mecánica real, explicada sin rodeos.
 heroImage: /images/posts/como-funcionan-los-llms-realmente-guia-sin-rodeos/hero.jpg
 heroImageAlt: >-
   Cómo funcionan los LLMs: investigadora ajustando estructura de pines con forma

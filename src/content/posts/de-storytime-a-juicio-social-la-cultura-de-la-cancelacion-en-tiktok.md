@@ -5,8 +5,7 @@ pubDate: 2025-11-17T19:13:00.000Z
 updatedDate: 2026-06-13T00:54:38.986Z
 description: >-
   TikTok es la plaza pública, el confesionario y el tribunal popular, todo en un
-  clip de 60 segundos. Es donde un storytime de una mala cita se convierte en
-  la…
+  clip de 60 segundos. Del storytime de una mala cita a la funa global.
 heroImage: >-
   /images/posts/de-storytime-a-juicio-social-la-cultura-de-la-cancelacion-en-tiktok/hero.jpg
 heroImageAlt: >-

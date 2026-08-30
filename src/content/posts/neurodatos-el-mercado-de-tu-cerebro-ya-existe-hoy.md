@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-07-03T11:00:00.000Z
 updatedDate: 2026-07-09T02:50:08.570Z
 description: >-
-  No hace falta un implante quirúrgico para que alguien comercie con tu
-  actividad cerebral. Basta una diadema EEG (electroencefalografía, la técnica
-  que…
+  No hace falta un implante: una diadema de "bienestar" ya vende tu actividad
+  cerebral. FDA y HIPAA no cubren ese mercado.
 heroImage: /images/posts/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/hero.jpg
 heroImageAlt: >-
   Neurodatos: mujer con diadema de bienestar conectada a red de hilos de luz

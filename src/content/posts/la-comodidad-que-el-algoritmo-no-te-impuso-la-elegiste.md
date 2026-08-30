@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-07-27T11:00:00.000Z
 updatedDate: 2026-07-27T11:00:00.114Z
 description: >-
-  La comodidad que sientes cuando el algoritmo decide no es un engaño: es real,
-  medible, y ahí está el problema. Durante 50 años, la ciencia de la
-  comunicación…
+  ¿Eliges lo que consumes o el algoritmo decide por ti? La teoría de usos y
+  gratificaciones y Zuboff, frente a frente.
 heroImage: /images/posts/la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste/hero.jpg
 heroImageAlt: >-
   Algoritmo y elección: mano toca panel iluminado entre opciones atenuadas por

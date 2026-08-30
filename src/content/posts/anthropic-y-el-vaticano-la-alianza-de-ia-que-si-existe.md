@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-27T04:27:00.000Z
 updatedDate: 2026-07-09T02:19:51.261Z
 description: >-
-  A finales de marzo de 2026, Anthropic reunió en secreto a unos 15 líderes
-  religiosos cristianos en su sede de San Francisco. No fue un evento de
-  relaciones…
+  Anthropic sí pidió ayuda al Vaticano para controlar la IA. No es rumor: es una
+  alianza de una década con intereses muy concretos.
 heroImage: /images/posts/anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe/hero.jpg
 heroImageAlt: >-
   Anthropic y el Vaticano: persona frente a puerta iluminada en catedral con red

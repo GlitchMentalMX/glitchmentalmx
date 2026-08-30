@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-10T12:17:00.000Z
 updatedDate: 2026-03-17T20:13:25.623Z
 description: >-
-  Bloomberg publicó esta mañana una cifra que hace unos años hubiera parecido
-  improbable: Apple ensambló aproximadamente 55 millones de iPhones en India…
+  Apple ensambló 55 millones de iPhones en India en 2025, un salto del 53%. La
+  estrategia para escapar de China está funcionando.
 heroImage: /images/posts/apple-ya-fabrica-1-de-cada-4-iphones-en-india/hero.webp
 heroImageAlt: >-
   Apple fabrica 1 de cada 4 iPhone en India: línea de ensamblaje de smartphones

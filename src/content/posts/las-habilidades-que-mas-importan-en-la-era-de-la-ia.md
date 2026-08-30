@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-28T14:28:00.001Z
 updatedDate: 2026-06-26T00:26:21.150Z
 description: >-
-  La intuición dice que en la era de la IA lo más valioso será saber programar o
-  manejar modelos. Los datos dicen otra cosa: las habilidades más difíciles de…
+  Las habilidades más valiosas en la era de la IA no son las más técnicas. Son
+  las que los modelos todavía no pueden replicar.
 heroImage: /images/posts/las-habilidades-que-mas-importan-en-la-era-de-la-ia/hero.jpg
 heroImageAlt: >-
   Habilidades en la era de la IA: mujer leyendo página impresa en escritorio con

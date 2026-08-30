@@ -6,9 +6,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-29T12:40:00.000Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-
-  Olvida lo que sabías sobre los teléfonos plegables. En CES 2026 celebrado en
-  Las Vegas la primera semana de enero, Samsung Display desveló lo que podría
-  ser…
+  Samsung Display mostró en CES 2026 su tecnología Slidable Flex. Te contamos
+  cómo funciona, sus posibles usos y cuándo podría llegar al mercado.
 heroImage: >-
   /images/posts/samsung-presenta-pantallas-extensibles-en-ces-2026-el-futuro-mas-alla-de-los-plegables/hero.webp
 heroImageAlt: >-

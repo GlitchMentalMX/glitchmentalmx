@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-30T11:03:00.001Z
 updatedDate: 2026-06-15T13:10:24.397Z
 description: >-
-  Khaby Lame ya no necesita aparecer en sus propios videos. Vendió su empresa
-  por 975 millones de dólares y autorizó que una inteligencia artificial
-  replique…
+  Khaby Lame vendió su empresa por 975 millones para que una IA produzca
+  contenido como él, sin él. La industrialización del creador empezó.
 heroImage: >-
   /images/posts/khaby-lame-se-vendio-a-si-mismo-la-era-del-creador-fabrica/hero.jpg
 heroImageAlt: >-

@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-23T13:27:00.007Z
 updatedDate: 2026-03-23T13:29:06.237Z
 description: >-
-  Google pasó de "no tenemos planes" a "no los descartamos" en menos de dos
-  meses. Nick Fox, vicepresidente senior de Google responsable de Búsqueda,…
+  Nick Fox de Google confirmó a WIRED que los anuncios en Gemini no están
+  descartados. La era de la IA gratis se acaba.
 heroImage: /images/posts/google-admite-los-anuncios-en-gemini-son-inevitables/hero.webp
 heroImageAlt: >-
   Google anuncios Gemini: interfaz con paneles flotantes de productos

@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-04-01T12:14:00.002Z
 updatedDate: 2026-04-01T12:14:23.536Z
 description: >-
-  La IA no solo está transformando el software. También está devorando el
-  hardware que necesitas para trabajar, jugar y crear — y la escasez global de
-  memoria…
+  La IA absorbió la producción mundial de RAM y tú pagas la factura. Qué está
+  pasando y qué esperar.
 heroImage: /images/posts/crisis-de-ram-por-que-la-ia-encarecio-tu-hardware/hero.jpg
 heroImageAlt: >-
   crisis RAM IA hardware: panel de módulos de memoria en rack con técnico

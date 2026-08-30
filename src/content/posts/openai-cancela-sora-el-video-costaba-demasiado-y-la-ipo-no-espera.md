@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-25T12:06:00.000Z
 updatedDate: 2026-03-25T12:06:07.366Z
 description: >-
-  OpenAI acaba de cerrar Sora, su app de generación de video, apenas seis meses
-  después de lanzarla. No es una historia sobre deepfakes: es una historia
-  sobre…
+  OpenAI canceló Sora seis meses después de su lanzamiento. No fue por los
+  deepfakes: fue por los costos y la IPO.
 heroImage: >-
   /images/posts/openai-cancela-sora-el-video-costaba-demasiado-y-la-ipo-no-espera/hero.webp
 heroImageAlt: >-

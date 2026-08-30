@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T02:42:00.004Z
 updatedDate: 2026-06-26T00:39:08.492Z
 description: >-
-  Las IAs ya no son intercambiables. ChatGPT, Claude, Gemini, Copilot y DeepSeek
-  resuelven cosas distintas con resultados distintos, y elegir mal no solo es…
+  No todas las IAs sirven para lo mismo. Esta guía práctica te dice cuál usar
+  según tu tarea real.
 heroImage: /images/posts/que-ia-usar-segun-lo-que-necesitas-hacer/hero.jpg
 heroImageAlt: >-
   Qué IA usar: mujer de pie frente a monitor con múltiples pestañas de chat

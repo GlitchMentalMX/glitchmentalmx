@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-05-22T11:00:00.000Z
 updatedDate: 2026-07-09T02:35:02.302Z
 description: >-
-  El Test de Turing dejó de ser un experimento de laboratorio en 2025. Hoy es la
-  condición de fondo de cualquier persona que abre una red social, lee…
+  El 53% del tráfico web son bots. GPT-4.5 pasa por humano el 73% del tiempo.
+  Qué significa convivir en un internet donde la distinción ya no importa.
 heroImage: /images/posts/estas-hablando-con-un-humano-o-un-bot-ya-no-importa/hero.jpg
 heroImageAlt: 'bots internet: mujer usa laptop de noche durante conversación digital'
 ---

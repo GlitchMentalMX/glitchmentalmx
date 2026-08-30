@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-18T19:12:00.001Z
 updatedDate: 2026-04-18T19:12:02.488Z
 description: >-
-  Hay 597 cables submarinos en operación o en construcción en el mundo a abril
-  de 2025. Son cables de fibra óptica, tendidos en el fondo del océano, que…
+  El 99% del tráfico internacional de internet viaja por cables submarinos. Son
+  frágiles, son pocos y están en el centro de la geopolítica digital.
 heroImage: /images/posts/los-cables-que-sostienen-internet-y-nadie-protege-bien/hero.jpg
 heroImageAlt: >-
   Los cables que sostienen internet: cable de fibra dañado con filamentos

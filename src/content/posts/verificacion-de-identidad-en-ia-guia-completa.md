@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-04-22T12:21:00.005Z
 updatedDate: 2026-06-15T15:24:17.836Z
 description: >-
-  El 14 de abril de 2026, Anthropic actualizó una página en su centro de soporte
-  sin comunicado, sin correo, sin blog. Días después, los usuarios empezaron a…
+  Anthropic exige pasaporte y selfie para usar Claude. Qué es el KYC en IA, por
+  qué importa y qué implica para ti.
 heroImage: /images/posts/verificacion-de-identidad-en-ia-guia-completa/hero.jpg
 heroImageAlt: >-
   verificación de identidad IA: mujer presenta pasaporte ante cámara de control

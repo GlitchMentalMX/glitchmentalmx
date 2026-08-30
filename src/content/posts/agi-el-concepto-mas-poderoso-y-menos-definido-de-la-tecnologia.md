@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T19:00:00.005Z
 updatedDate: 2026-06-26T02:46:44.054Z
 description: >-
-  Sam Altman dice que el AGI llegará en años. Demis Hassabis dice que hay un 50%
-  de probabilidad para 2030. Yann LeCun dice que el concepto mismo es un error.…
+  Qué es realmente el AGI, por qué los expertos no se ponen de acuerdo y por qué
+  esa indefinición importa más que cualquier fecha.
 heroImage: >-
   /images/posts/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/hero.jpg
 heroImageAlt: >-

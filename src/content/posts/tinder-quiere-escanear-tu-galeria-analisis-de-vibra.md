@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-23T13:34:00.001Z
 updatedDate: 2026-06-04T16:22:46.534Z
 description: >-
-  Tinder lanzó una función que analiza toda tu galería de fotos con IA para
-  inferir tu personalidad, intereses y estilo de vida. Le llaman "Photo
-  Insights". Lo…
+  Tinder usa IA para analizar toda tu galería y llamarlo personalización. Lo que
+  cedes sin leer la letra chica.
 heroImage: /images/posts/tinder-quiere-escanear-tu-galeria-analisis-de-vibra/hero.webp
 heroImageAlt: >-
   Tinder análisis de vibra: máquina escaneando fotos físicas mientras usuaria

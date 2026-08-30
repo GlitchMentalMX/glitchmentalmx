@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T13:58:00.004Z
 updatedDate: 2026-06-07T03:07:47.472Z
 description: >-
-  Se usan como sinónimos pero no lo son. Automatizar significa que una máquina
-  ejecuta lo que un humano hubiera hecho siguiendo instrucciones fijas. Dotar
-  de…
+  Automatizar es reemplazar un movimiento. Dar autonomía es delegar una
+  decisión. Cuando algo falla, la diferencia lo cambia todo.
 heroImage: >-
   /images/posts/automatizacion-y-autonomia-no-son-lo-mismo-confundirlas-tiene-consecuencias/hero.webp
 heroImageAlt: >-

@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-08T12:25:00.000Z
 updatedDate: 2026-06-13T19:09:33.011Z
 description: >-
-  Un ejecutivo de Walmart dijo la parte silenciosa en voz alta durante una
-  presentación en CES 2026. Walmart compró Vizio por $2.3 mil millones
-  principalmente…
+  Ejecutivo de Walmart admite en CES 2026: compraron Vizio por $2.3 mil millones
+  "para obtener datos ACR" que rastrean todo lo que ves en TV.
 heroImage: >-
   /images/posts/walmart-compro-vizio-por-23-mil-millones-solo-para-obtener-tus-datos-de-tv/hero.jpg
 heroImageAlt: >-

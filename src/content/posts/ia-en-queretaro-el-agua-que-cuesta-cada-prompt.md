@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-20T12:49:00.004Z
 updatedDate: 2026-07-07T19:29:04.220Z
 description: >-
-  Querétaro es, hoy, uno de los estados con mayor inversión tecnológica de
-  América Latina y uno de los más afectados por sequía extrema. Ambas cosas son…
+  Los data centers de IA en Querétaro consumen agua en un estado en sequía. El
+  costo hídrico real de la infraestructura digital en México.
 heroImage: /images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/hero.jpg
 heroImageAlt: >-
   Torres de enfriamiento de un centro de datos junto a un canal de riego seco en

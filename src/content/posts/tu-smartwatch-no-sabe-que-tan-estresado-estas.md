@@ -5,8 +5,7 @@ pubDate: 2025-11-15T17:28:00.000Z
 updatedDate: 2026-06-13T00:48:47.349Z
 description: >-
   En 2015, el smartwatch era el sueño de un agente secreto: responder llamadas
-  con la muñeca. Hoy, en 2025, es nuestro terapeuta personal, nuestro
-  nutriólogo,…
+  con la muñeca. Hoy, en 2025, es nuestro terapeuta personal.
 heroImage: /images/posts/tu-smartwatch-no-sabe-que-tan-estresado-estas/hero.webp
 heroImageAlt: Dispositivo en muñeca con gráfica de estrés disparada
 ---

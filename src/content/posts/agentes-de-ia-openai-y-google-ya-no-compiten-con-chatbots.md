@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-23T12:28:00.000Z
 updatedDate: 2026-04-23T12:28:03.528Z
 description: >-
-  El 22 de abril de 2026, OpenAI y Google lanzaron el mismo día sus respectivas
-  plataformas de agentes autónomos para empresas. No fue coincidencia: ambas…
+  OpenAI y Google lanzaron el mismo día plataformas de agentes autónomos. La
+  guerra por el trabajo real ya empezó.
 heroImage: >-
   /images/posts/agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots/hero.jpg
 heroImageAlt: >-

@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-24T11:59:36.290Z
 updatedDate: 2026-03-24T16:22:01.692Z
 description: >-
-  Tienes al menos dos versiones de ti mismo: la que existe en el mundo físico y
-  la que construyes en pantalla.** La distancia entre ambas no es siempre…
+  ¿Tu perfil de Instagram eres tú? La brecha entre la identidad real y la
+  digital tiene consecuencias psicológicas reales. Guía 2026.
 heroImage: /images/posts/identidad-digital-quien-eres-online-vs-offline/hero.webp
 heroImageAlt: >-
   Identidad digital: mujer frente a reflejo digital dividido en interfaz

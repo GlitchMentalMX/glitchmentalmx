@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2025-11-18T18:04:00.000Z
 updatedDate: 2026-06-30T18:37:08.838Z
 description: >-
-  ¿Te acuerdas cuando TikTok era una app para ver videos randoms de gente
-  bailando? Bueno, eso ya no existe.
+  TikTok Shop convirtió la red social en un mall gigante. Ahora todos venden,
+  todos compran y nadie sabe si vale la pena.
 heroImage: /images/posts/tiktok-dejo-de-ser-red-social-ahora-es-tienda/hero.jpg
 heroImageAlt: >-
   TikTok Shop: mujer joven ante feed social que se transforma en cinta

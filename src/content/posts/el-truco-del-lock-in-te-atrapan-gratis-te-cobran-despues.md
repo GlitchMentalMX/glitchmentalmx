@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-06-29T11:00:00.000Z
 updatedDate: 2026-07-09T02:48:58.860Z
 description: >-
-  El lock-in tecnológico opera en dos fases: primero, el producto es gratis o
-  barato hasta que construyes sobre él una dependencia real. Después, el precio…
+  Así funciona la trampa de los ecosistemas cerrados: precio cero para crear
+  dependencia, aumento cuando salir cuesta más que quedarse.
 heroImage: >-
   /images/posts/el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues/hero.jpg
 heroImageAlt: >-

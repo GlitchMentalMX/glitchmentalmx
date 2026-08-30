@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-16T12:58:00.002Z
 updatedDate: 2026-03-17T17:57:13.617Z
 description: >-
-  X actualizó Grok ayer. Los videos ahora duran hasta 30 segundos y admiten
-  hasta 7 imágenes de referencia para construir personajes y escenas. En enero,
-  Grok…
+  X actualizó Grok: ahora genera videos de hasta 30 segundos con 7 imágenes de
+  referencia. Ya van 1,245 millones de videos en enero.
 heroImage: /images/posts/grok-genera-videos-de-30-segundos-asi-lo-usa-x-ahora/hero.webp
 heroImageAlt: >-
   Grok genera videos de 30 segundos: secuencia de clips visuales emergiendo de

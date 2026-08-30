@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-05T11:00:00.000Z
 updatedDate: 2026-07-09T02:41:02.955Z
 description: >-
-  Los algoritmos de diseño proteico ya optimizan rasgos biológicos hacia
-  objetivos definidos por sus creadores. La premisa de Darwin —la evolución como
-  proceso…
+  Ya no es la naturaleza quien decide qué rasgos biológicos sobreviven. Ahora
+  hay algoritmos — y tienen accionistas.
 heroImage: /images/posts/la-ia-como-nuevo-darwin-quien-define-la-evolucion/hero.jpg
 heroImageAlt: >-
   La IA como nuevo Darwin: mujer en archivo tecnológico con panel de microchips

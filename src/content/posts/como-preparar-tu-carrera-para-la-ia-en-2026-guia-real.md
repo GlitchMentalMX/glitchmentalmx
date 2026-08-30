@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-13T12:54:00.000Z
 updatedDate: 2026-06-06T19:33:02.556Z
 description: >-
-  Si estás esperando a que el impacto de la inteligencia artificial en el
-  mercado laboral "se estabilice" para tomar acción, ya vas tarde. No es
-  alarmismo: es…
+  La IA ya está cambiando los trabajos. Esta guía práctica te dice qué
+  habilidades desarrollar y cómo posicionarte en 2026.
 heroImage: /images/posts/como-preparar-tu-carrera-para-la-ia-en-2026-guia-real/hero.webp
 heroImageAlt: >-
   Transición digital IA: mujer camina de pavimento roto a camino tecnológico con

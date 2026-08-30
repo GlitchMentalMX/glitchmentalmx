@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-05T13:08:00.000Z
 updatedDate: 2026-06-21T02:50:42.364Z
 description: >-
-  Google tiene un problema. Más del 50% de Gen Z usa TikTok o Instagram como su
-  motor de búsqueda principal en lugar de Google, según datos de comportamiento…
+  50%+ de Gen Z usa TikTok e Instagram como motores de búsqueda, no Google.
+  Búsqueda social cambia estrategias de contenido y SEO en 2026.
 heroImage: >-
   /images/posts/gen-z-usa-redes-sociales-como-buscador-y-ya-supero-a-google-50/hero.webp
 heroImageAlt: >-

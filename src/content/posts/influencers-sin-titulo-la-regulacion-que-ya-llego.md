@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-10T11:00:00.001Z
 updatedDate: 2026-04-10T11:00:00.116Z
 description: >-
-  El coach de finanzas personales que sigues en TikTok nunca ha tenido un
-  cliente real. El creador de contenido que te explica cómo invertir nunca ha
-  pasado…
+  China, Francia y España ya regulan a influencers que dan consejos sin
+  credenciales. En LATAM, el vacío legal sigue siendo negocio.
 heroImage: /images/posts/influencers-sin-titulo-la-regulacion-que-ya-llego/hero.jpg
 heroImageAlt: >-
   regulación influencers: hombre colocando etiquetas engañosas en productos de

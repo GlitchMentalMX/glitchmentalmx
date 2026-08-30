@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-15T12:36:00.005Z
 updatedDate: 2026-06-26T01:52:55.401Z
 description: >-
-  La IA generativa alcanzó al 53% de la población mundial en aproximadamente
-  tres años desde su disponibilidad masiva — más rápido que la PC, el internet y
-  el…
+  El Stanford AI Index 2026 confirma que la IA generativa alcanzó al 53% de la
+  población global. EE. UU. quedó en el lugar 24.
 heroImage: /images/posts/stanford-2026-ia-generativa-llego-al-53-del-planeta/hero.jpg
 heroImageAlt: >-
   Stanford AI Index 2026: mujer frente a mapa mundial con más de la mitad del

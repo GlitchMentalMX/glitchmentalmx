@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-04T13:49:00.000Z
 updatedDate: 2026-06-23T22:54:40.991Z
 description: >-
-  Esta mañana el Banco Central Europeo publicó un análisis basado en encuestas a
-  empresas de la zona euro realizadas durante 2025, y el resultado principal va…
+  El BCE publicó hoy que las empresas que más usan IA están contratando más, no
+  menos. Los datos no dicen lo que esperabas.
 heroImage: /images/posts/la-ia-no-destruye-empleos-en-europa-que-dicen-los-datos/hero.jpg
 heroImageAlt: >-
   IA empleos Europa BCE: mujer con dedo sobre gráfica institucional impresa con

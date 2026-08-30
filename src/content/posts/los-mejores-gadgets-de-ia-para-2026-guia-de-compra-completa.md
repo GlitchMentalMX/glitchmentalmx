@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-21T13:59:00.000Z
 updatedDate: 2026-06-22T15:38:19.369Z
 description: >-
-  CES 2026 acaba de terminar y dejó algo claro: la inteligencia artificial ya no
-  es el futuro, es el presente. Pero aquí viene el problema: no todos los…
+  CES 2026 mostró el futuro de los gadgets con IA. Descubre cuáles valen la pena
+  comprar y cuáles son puro marketing vacío.
 heroImage: >-
   /images/posts/los-mejores-gadgets-de-ia-para-2026-guia-de-compra-completa/hero.jpg
 heroImageAlt: >-

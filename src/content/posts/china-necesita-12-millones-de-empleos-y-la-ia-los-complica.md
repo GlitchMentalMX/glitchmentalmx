@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-09T13:06:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
-  Durante el Congreso Nacional del Pueblo de este año, Wang Xiaoping, ministro
-  de Recursos Humanos y Seguridad Social de China, anunció que el gobierno
-  usará…
+  China necesita crear 12M de empleos en 2026 con 12.7M de graduados en fila. Y
+  apuesta por la IA para lograrlo — que es también parte del problema.
 heroImage: >-
   /images/posts/china-necesita-12-millones-de-empleos-y-la-ia-los-complica/hero.webp
 heroImageAlt: >-

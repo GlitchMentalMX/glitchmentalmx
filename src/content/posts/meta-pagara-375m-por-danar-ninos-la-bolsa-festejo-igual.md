@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-25T11:00:00.020Z
 updatedDate: 2026-03-25T12:04:00.309Z
 description: >-
-  Un jurado en Nuevo México condenó a Meta a pagar 375 millones de dólares por
-  dañar la salud mental de menores y exponerlos a explotación sexual. Es la…
+  Un jurado en EE. UU. condenó a Meta a pagar $375 millones por dañar a menores.
+  Sus acciones subieron de todos modos.
 heroImage: /images/posts/meta-pagara-375m-por-danar-ninos-la-bolsa-festejo-igual/hero.webp
 heroImageAlt: >-
   Meta pagará $375M por dañar niños: balanza con sistema neuronal dañado frente

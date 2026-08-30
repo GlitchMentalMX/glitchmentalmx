@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2025-12-20T13:22:00.000Z
 updatedDate: 2026-06-13T01:46:59.188Z
 description: >-
-  El 19 de diciembre de 2025, el CEO de TikTok Shou Chew envió un memo interno
-  confirmando lo que llevaba meses rumoreándose: TikTok firmó un acuerdo para…
+  TikTok firmó un acuerdo para ser controlado por inversionistas de US. Suena
+  bien hasta que lees la letra chica del algoritmo y los datos.
 heroImage: /images/posts/tiktok-se-salvo-del-ban-en-us-pero-pago-un-precio-raro/hero.jpg
 heroImageAlt: >-
   Mujer sostiene una caja con sus pertenencias mientras recibe un nuevo candado,

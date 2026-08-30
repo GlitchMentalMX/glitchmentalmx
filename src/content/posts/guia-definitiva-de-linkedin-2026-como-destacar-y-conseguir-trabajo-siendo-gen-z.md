@@ -6,9 +6,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-29T12:52:00.000Z
 updatedDate: 2026-06-06T19:48:45.018Z
 description: >-
-  Para muchas personas de la Generación Z, LinkedIn puede sentirse como un
-  territorio extraño: un lugar donde los adultos publican logros corporativos en
-  un…
+  Domina LinkedIn desde cero. Perfil ganador, contenido que atrae reclutadores,
+  networking efectivo y errores que debes evitar en 2026.
 heroImage: >-
   /images/posts/guia-definitiva-de-linkedin-2026-como-destacar-y-conseguir-trabajo-siendo-gen-z/hero.webp
 heroImageAlt: >-

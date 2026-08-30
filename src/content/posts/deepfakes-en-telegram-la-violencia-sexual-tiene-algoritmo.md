@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-08T12:54:00.005Z
 updatedDate: 2026-04-08T16:08:56.462Z
 description: >-
-  Crear un deepfake sexual en 2023 requería GPU, conocimientos de programación y
-  tiempo. En 2026, requiere una cuenta de Telegram. La IA generativa eliminó la…
+  IA y Telegram han convertido los deepfakes sexuales en violencia masiva y
+  organizada. Los datos que lo confirman.
 heroImage: >-
   /images/posts/deepfakes-en-telegram-la-violencia-sexual-tiene-algoritmo/hero.jpg
 heroImageAlt: >-

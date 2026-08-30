@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-11T12:33:16.528Z
 updatedDate: 2026-06-27T04:25:11.966Z
 description: >-
-  DeepSeek no es "el ChatGPT chino barato". Tiene arquitectura propia, pesos
-  abiertos bajo licencia MIT y tres capas de acceso con lógicas distintas de
-  uso,…
+  DeepSeek tiene tres capas de acceso: web gratis, API barata y uso local sin
+  conexión. Cuál usar según tu perfil.
 heroImage: /images/posts/deepseek-la-guia-practica-para-usarlo-bien/hero.jpg
 heroImageAlt: >-
   DeepSeek guía práctica: mujer ante terminal activa con tres capas de acceso al

@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-24T12:34:00.000Z
 updatedDate: 2026-06-23T13:30:04.692Z
 description: >-
-  El 24 de febrero de 2026 pasará a los registros como uno de esos días en los
-  que el mercado cripto mostró sus dos caras al mismo tiempo. Mientras los
-  activos…
+  Mientras el mercado cripto cae, $DOGS dispara 1,531% en 24 horas y se vuelve
+  tendencia en redes. Qué está pasando y qué dice esto del mercado.
 heroImage: /images/posts/dogs-sube-1531-en-un-dia-y-explota-en-redes-sociales/hero.jpg
 heroImageAlt: >-
   $DOGS criptomoneda tendencia: hombre joven con teléfono rodeado de papeles en

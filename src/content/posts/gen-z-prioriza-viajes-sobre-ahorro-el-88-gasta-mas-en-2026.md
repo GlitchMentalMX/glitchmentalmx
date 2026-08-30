@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-11T14:20:00.000Z
 updatedDate: 2026-06-23T02:34:12.549Z
 description: >-
-  A pesar de la inflación, el costo de vida en aumento y la incertidumbre
-  económica global, la Generación Z y los millennials están haciendo algo que
-  desafía…
+  El 88% de la Gen Z mantiene o aumenta su gasto en viajes este año. Descubre
+  por qué las experiencias superan a los objetos en 2026.
 heroImage: >-
   /images/posts/gen-z-prioriza-viajes-sobre-ahorro-el-88-gasta-mas-en-2026/hero.jpg
 heroImageAlt: 'Gen Z prioriza viajes sobre ahorro: el 88% gasta más en 2026'

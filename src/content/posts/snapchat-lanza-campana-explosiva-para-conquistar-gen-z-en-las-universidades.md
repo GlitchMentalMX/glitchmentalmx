@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-16T13:26:00.000Z
 updatedDate: 2026-06-23T03:27:14.515Z
 description: >-
-  Snapchat acaba de lanzar una de las campañas más agresivas que hemos visto en
-  años para capturar a los estudiantes universitarios de la Generación Z. Y los…
+  Snapchat va con todo tras estudiantes universitarios Gen Z. El 75% los
+  considera esenciales para conectar. Te contamos la estrategia.
 heroImage: >-
   /images/posts/snapchat-lanza-campana-explosiva-para-conquistar-gen-z-en-las-universidades/hero.jpg
 heroImageAlt: >-

@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-09T13:16:00.000Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
-  El 3 de marzo de 2026, el Área de Estudios Económicos de Banamex publicó un
-  reporte con un diagnóstico que no deja mucho espacio para la duda: cerca del
-  30%…
+  El 30% del empleo formal en México está en riesgo por la IA, según Banamex. Te
+  explicamos qué sectores pagan el precio más alto.
 heroImage: /images/posts/ia-y-empleos-en-mexico-el-golpe-ya-empezo/hero.webp
 heroImageAlt: 'IA en México: mujer de pie en oficina vacía sosteniendo documentos'
 ---

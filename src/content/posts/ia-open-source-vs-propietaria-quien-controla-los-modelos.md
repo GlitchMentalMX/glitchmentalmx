@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-05-08T11:00:00.013Z
 updatedDate: 2026-06-27T03:51:28.292Z
 description: >-
-  El debate entre IA open source y propietaria parece técnico. No lo es. La
-  pregunta real no es si puedes descargar el modelo — es quién decide cómo,
-  cuándo y…
+  El debate IA open source vs propietaria no es técnico: es sobre poder. Quién
+  controla licencias, datos e infraestructura.
 heroImage: >-
   /images/posts/ia-open-source-vs-propietaria-quien-controla-los-modelos/hero.jpg
 heroImageAlt: >-

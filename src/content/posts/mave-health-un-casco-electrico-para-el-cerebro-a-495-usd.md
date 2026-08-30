@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-20T12:56:00.007Z
 updatedDate: 2026-03-20T13:35:28.493Z
 description: >-
-  Mave Health acaba de lanzar un casco de $495 dólares estadounidenses que manda
-  corriente eléctrica a tu cerebro para mejorar el foco y el ánimo. La…
+  Una startup vende un casco tDCS de $495 para mejorar el foco y el ánimo. Sin
+  aprobación FDA, datos autorreportados. ¿Vale o no vale?
 heroImage: >-
   /images/posts/mave-health-un-casco-electrico-para-el-cerebro-a-495-usd/hero.webp
 heroImageAlt: >-

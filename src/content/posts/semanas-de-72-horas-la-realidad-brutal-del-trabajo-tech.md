@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-02-09T14:22:00.000Z
 updatedDate: 2026-06-23T01:47:24.505Z
 description: >-
-  Silicon Valley prometió que la inteligencia artificial haría nuestras vidas
-  más fáciles. Que trabajaríamos menos, no más. Pero en 2026, la realidad es…
+  La cultura 996 regresa a Silicon Valley: startups de IA exigen 72 horas
+  semanales. Descubre qué está pasando en el mundo tech.
 heroImage: /images/posts/semanas-de-72-horas-la-realidad-brutal-del-trabajo-tech/hero.jpg
 heroImageAlt: >-
   Semanas de 72 horas: mujer trabajando frente a portátil con relojes digitales

@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-26T11:03:00.001Z
 updatedDate: 2026-03-26T11:03:00.114Z
 description: >-
-  Hace dos décadas, el cerebro humano promedio sostenía el foco durante dos
-  minutos y medio antes de distraerse.** Hoy ese número bajó a 40 segundos,
-  según…
+  La capacidad de atención humana bajó de 2.5 minutos a 40 segundos. Qué es la
+  fragmentación cognitiva y qué consecuencias tiene.
 heroImage: /images/posts/tu-atencion-ya-no-te-pertenece-la-fragmentacion-digital/hero.webp
 heroImageAlt: >-
   fragmentación digital: mujer interactuando con fragmento de red de datos

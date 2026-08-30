@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-20T12:33:00.006Z
 updatedDate: 2026-04-20T19:09:29.250Z
 description: >-
-  Palantir publicó su manifiesto el 18 de abril de 2026. Un día después, Mehdi
-  lo declaró «el documento MÁS importante que el mundo tecnológico ha producido…
+  Un hilo viral desmonta el manifiesto de Palantir. El problema es que lo
+  amplifica al público exacto que Karp quería alcanzar.
 heroImage: /images/posts/el-hilo-de-mehdi-sobre-palantir-es-publicidad-gratis/hero.jpg
 heroImageAlt: >-
   hilo de Mehdi: mujer señalando nodo en red digital mientras sostiene tiras de

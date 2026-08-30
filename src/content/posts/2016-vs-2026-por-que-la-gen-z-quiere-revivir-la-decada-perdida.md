@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-27T13:02:00.000Z
 updatedDate: 2026-06-22T20:08:01.073Z
 description: >-
-  Si has estado en TikTok o Instagram durante las primeras semanas de enero de
-  2026, ya sabes de qué estamos hablando. La frase "2026 es el nuevo 2016" se…
+  2026 es el nuevo 2016: la nostalgia viral de la Gen Z no es solo estética. Es
+  una reacción económica y cultural a un internet que ya no existe.
 heroImage: >-
   /images/posts/2016-vs-2026-por-que-la-gen-z-quiere-revivir-la-decada-perdida/hero.jpg
 heroImageAlt: >-

@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-09T12:56:00.000Z
 updatedDate: 2026-06-22T02:02:19.933Z
 description: >-
-  Profesionales de Gen Z en la industria del marketing están declarando 2026
-  como "el año de lo análogo". Es movimiento paradójico: la generación más…
+  Gen Z en marketing declara 2026 como "año de lo análogo". Rechazo a lo
+  digital, abrazo de experiencias táctiles, impresos y nostalgia física.
 heroImage: >-
   /images/posts/2026-es-el-ano-de-lo-analogo-segun-profesionales-de-gen-z-en-marketing/hero.jpg
 heroImageAlt: >-

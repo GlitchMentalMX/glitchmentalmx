@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-17T12:42:00.002Z
 updatedDate: 2026-04-17T12:42:30.287Z
 description: >-
-  Meta está construyendo un clon fotorrealista de Mark Zuckerberg para que
-  interactúe con sus empleados en su lugar. El avatar, entrenado en sus
-  declaraciones…
+  Meta construye un clon de Zuckerberg para sus empleados. No es el primero. Qué
+  significa cuando la autoridad corporativa se automatiza.
 heroImage: /images/posts/el-ceo-digital-ya-existe-quien-responde-por-sus-errores/hero.jpg
 heroImageAlt: >-
   El CEO digital: mujer tomando notas frente a videollamada con ejecutivo en

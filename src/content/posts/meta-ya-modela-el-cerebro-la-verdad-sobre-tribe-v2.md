@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-28T01:43:00.001Z
 updatedDate: 2026-06-25T18:26:37.711Z
 description: >-
-  Meta presentó un modelo llamado Trimodal Brain Encoder, y el nombre no es
-  casualidad. No es un cerebro artificial, pero sí es un sistema que intenta
-  predecir…
+  TRIBE v2 de Meta no es un cerebro artificial, pero sí modela actividad
+  cerebral. Qué es realmente y por qué importa en 2026.
 heroImage: /images/posts/meta-ya-modela-el-cerebro-la-verdad-sobre-tribe-v2/hero.jpg
 heroImageAlt: >-
   TRIBE v2 Meta: mujer sostiene diagrama de actividad cerebral en escritorio con

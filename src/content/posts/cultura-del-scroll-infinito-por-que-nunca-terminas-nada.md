@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-25T11:00:00.018Z
 updatedDate: 2026-06-14T23:42:43.225Z
 description: >-
-  El scroll infinito no es una consecuencia accidental del internet moderno: es
-  una decisión de diseño deliberada con consecuencias documentadas sobre la…
+  El scroll infinito no es neutral: está diseñado para que nunca pares. La
+  ciencia detrás del bucle que devora tu tiempo y atención.
 heroImage: /images/posts/cultura-del-scroll-infinito-por-que-nunca-terminas-nada/hero.webp
 heroImageAlt: >-
   scroll infinito: usuaria interactuando con feed continuo en cinta automatizada

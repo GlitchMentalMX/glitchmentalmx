@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-11-20T16:54:00.000Z
 updatedDate: 2026-06-13T01:11:16.813Z
 description: >-
-  Si creías que la IA solo venía a “ayudarte” en la chamba, más como copiloto
-  buena onda que como reemplazo directo, tengo una noticia incómoda: esa fase
-  ya…
+  Empresas sustituyen equipos completos por IA conversacional; el empleo está
+  cambiando rápido.
 heroImage: >-
   /images/posts/la-ia-ya-esta-reemplazando-equipos-completos-de-atencion-al-cliente/hero.jpg
 heroImageAlt: >-

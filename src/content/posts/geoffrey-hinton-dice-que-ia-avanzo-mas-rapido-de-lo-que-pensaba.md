@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-12-29T15:09:00.000Z
 updatedDate: 2026-06-13T02:11:26.627Z
 description: >-
-  Geoffrey Hinton, el "padrino de la inteligencia artificial" que ganó el Premio
-  Nobel de Física 2024 por su trabajo en redes neuronales, ha repetido en…
+  El "padrino de la IA" ganador del Nobel advierte en CNN que está "más
+  preocupado que nunca". La IA avanzó más rápido de lo esperado.
 heroImage: >-
   /images/posts/geoffrey-hinton-dice-que-ia-avanzo-mas-rapido-de-lo-que-pensaba/hero.jpg
 heroImageAlt: >-

@@ -5,8 +5,7 @@ pubDate: 2026-06-19T11:00:00.000Z
 updatedDate: 2026-07-09T02:43:46.155Z
 description: >-
   El meme político no es entretenimiento con un lado oscuro. Es una tecnología
-  de transmisión ideológica que comprime un encuadre cognitivo en un formato
-  que…
+  de instalación de encuadres que opera antes del razonamiento.
 heroImage: /images/posts/los-memes-no-son-chistes-son-el-lenguaje-del-poder/hero.jpg
 heroImageAlt: >-
   Los memes no son chistes: mujer usando smartphone rodeada de marcos digitales

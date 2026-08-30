@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-28T11:01:00.001Z
 updatedDate: 2026-04-28T11:01:00.116Z
 description: >-
-  China bloqueó hoy la adquisición de Manus por parte de Meta, una operación
-  valuada en más de 2,000 millones de dólares. El veto no protege a la startup —
-  la…
+  China bloqueó la venta de Manus a Meta por $2,000 millones. No protegió a la
+  startup — la dejó en el limbo entre dos bloques.
 heroImage: /images/posts/china-veto-a-manus-soberania-tecnologica-como-trampa/hero.jpg
 heroImageAlt: >-
   China vetó a Manus: mujer entre dos puertas industriales enfrentadas en

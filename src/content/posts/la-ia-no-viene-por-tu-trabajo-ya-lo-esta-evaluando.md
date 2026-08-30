@@ -3,8 +3,9 @@ title: La IA no viene por tu trabajo. Ya lo está evaluando
 category: Inteligencia Artificial
 pubDate: 2026-03-17T00:05:00.052Z
 updatedDate: 2026-07-15T14:36:58.631Z
-description: Si llegaste hasta aquí buscando optimismo, este no es tu lugar. Por
-  qué existe glitchMentalMX y qué esperar de este espacio.
+description: >-
+  El discurso sobre IA está roto. Sin optimismo artificial ni apocalipsis
+  laboral — solo claridad. El manifiesto de glitchmentalMX sobre IA y el futuro.
 heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.jpg
 heroImageAlt: Mujer mide terreno con instrumento topográfico en medio de niebla
   densa mientras otros permanecen inmóviles al fondo

@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-02-13T12:50:00.000Z
 updatedDate: 2026-06-23T03:21:42.764Z
 description: >-
-  Durante años se repitió una idea cómoda para quienes detentan el poder: que
-  los jóvenes estaban distraídos, encapsulados en las redes sociales, más…
+  Gen Z mexicana lidera cambios sociales desde las redes, con 31 millones de
+  jóvenes exigiendo transparencia y justicia. Descubre cómo lo hacen.
 heroImage: >-
   /images/posts/gen-z-en-mexico-como-paso-del-activismo-digital-a-las-calles/hero.jpg
 heroImageAlt: >-

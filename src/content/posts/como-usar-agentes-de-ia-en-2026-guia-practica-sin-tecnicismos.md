@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-05T13:15:00.000Z
 updatedDate: 2026-06-21T03:02:21.593Z
 description: >-
-  Los agentes de IA son la próxima evolución después de los chatbots. Mientras
-  ChatGPT espera que le des instrucciones paso a paso, un agente de IA toma un…
+  Qué son los agentes de IA, cómo funcionan y cuáles usar ahora mismo. Ejemplos
+  reales, sin manual de 200 páginas.
 heroImage: >-
   /images/posts/como-usar-agentes-de-ia-en-2026-guia-practica-sin-tecnicismos/hero.jpg
 heroImageAlt: >-

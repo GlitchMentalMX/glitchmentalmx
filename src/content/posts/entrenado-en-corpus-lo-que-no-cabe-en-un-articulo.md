@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-16T14:50:23.153Z
 updatedDate: 2026-06-18T15:57:32.479Z
 description: >-
-  Hay novelas que no nacen de la imaginación. Nacen de una investigación que
-  llegó demasiado lejos para caber en un artículo. Entrenado en Corpus, de Jorge
-  A.…
+  Una periodista, un archivo en Roma, una USB y un modelo de IA entrenado sin
+  consentimiento. La historia que no cabía en un artículo.
 heroImage: /images/posts/entrenado-en-corpus-lo-que-no-cabe-en-un-articulo/hero.jpg
 heroImageAlt: >-
   Entrenado en corpus: periodista analizando documentos conectados a memoria USB

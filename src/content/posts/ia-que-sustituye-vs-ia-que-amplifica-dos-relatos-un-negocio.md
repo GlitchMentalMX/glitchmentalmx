@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T03:54:00.003Z
 updatedDate: 2026-03-29T03:54:21.307Z
 description: >-
-  Hay dos formas de vender inteligencia artificial y las dos existen al mismo
-  tiempo. Una dice que la IA te reemplazará. La otra dice que te hará más
-  poderoso.…
+  Las empresas de IA no usan el mismo relato. Unas dicen que te sustituirá,
+  otras que te amplificará. Ninguna lo dice por accidente.
 heroImage: >-
   /images/posts/ia-que-sustituye-vs-ia-que-amplifica-dos-relatos-un-negocio/hero.webp
 heroImageAlt: >-

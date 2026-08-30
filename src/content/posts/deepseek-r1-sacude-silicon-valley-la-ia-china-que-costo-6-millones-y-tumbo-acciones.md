@@ -6,9 +6,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-16T14:08:00.000Z
 updatedDate: 2026-06-13T02:48:52.750Z
 description: >-
-  En enero de 2025, una startup china de Hangzhou logró algo que parecía
-  imposible: destronar a ChatGPT del primer lugar en la App Store de Estados
-  Unidos.
+  DeepSeek R1 demostró que la IA de élite no necesita miles de millones. China
+  cambió las reglas del juego con este modelo revolucionario.
 heroImage: >-
   /images/posts/deepseek-r1-sacude-silicon-valley-la-ia-china-que-costo-6-millones-y-tumbo-acciones/hero.jpg
 heroImageAlt: >-

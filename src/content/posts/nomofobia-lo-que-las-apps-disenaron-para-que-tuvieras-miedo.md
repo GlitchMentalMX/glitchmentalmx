@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-02T12:45:00.001Z
 updatedDate: 2026-06-07T03:10:46.162Z
 description: >-
-  La nomofobia —miedo irracional a estar sin el teléfono— no es exageración ni
-  broma de meme: es un patrón conductual reconocido por investigadores en…
+  No es exageración ni meme: la nomofobia es el resultado de un diseño
+  deliberado. Qué es, cómo funciona en el cerebro y qué tiene evidencia real.
 heroImage: >-
   /images/posts/nomofobia-lo-que-las-apps-disenaron-para-que-tuvieras-miedo/hero.jpg
 heroImageAlt: >-

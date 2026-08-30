@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-19T18:20:00.000Z
 updatedDate: 2026-06-22T13:09:39.101Z
 description: >-
-  La batalla por el futuro del trabajo se está librando en este momento, y
-  Anthropic acaba de lanzar tres armas que podrían cambiar por completo la forma
-  en…
+  Descubre los tres productos de Anthropic que están cambiando cómo trabajamos:
+  Claude Code, Claude in Chrome y Cowork. Guía completa 2025.
 heroImage: >-
   /images/posts/claude-code-chrome-y-cowork-la-revolucion-de-la-ia-que-trabaja-por-ti/hero.jpg
 heroImageAlt: >-

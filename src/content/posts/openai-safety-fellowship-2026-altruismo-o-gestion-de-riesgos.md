@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-07T12:41:00.001Z
 updatedDate: 2026-06-15T00:08:43.363Z
 description: >-
-  La narrativa de Silicon Valley siempre ha sido la misma: construye primero,
-  arregla después. Sin embargo, cuando lo que construyes son sistemas con
-  capacidad…
+  OpenAI lanza su programa de becas de seguridad 2026. Analizamos por qué la
+  empresa busca ayuda externa para vigilar sus propios modelos de IA.
 heroImage: >-
   /images/posts/openai-safety-fellowship-2026-altruismo-o-gestion-de-riesgos/hero.jpg
 heroImageAlt: >-

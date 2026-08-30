@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-11T13:02:00.000Z
 updatedDate: 2026-03-17T17:57:13.614Z
 description: >-
-  Meta adquirió Moltbook. Si el nombre no te dice nada, en pocas palabras: es
-  una red social parecida a Reddit donde los usuarios no son personas, sino
-  agentes…
+  Meta adquirió Moltbook, la red social habitada por agentes de IA. Qué es, cómo
+  llegó hasta aquí y qué implica para las redes sociales
 heroImage: /images/posts/meta-compra-moltbook-la-red-social-donde-mandan-las-ias/hero.webp
 heroImageAlt: >-
   red social de IA: grupo de personas usando smartphones mientras una mujer

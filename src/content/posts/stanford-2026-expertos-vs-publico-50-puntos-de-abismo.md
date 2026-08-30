@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-22T12:24:00.002Z
 updatedDate: 2026-04-22T12:24:20.261Z
 description: >-
-  El reporte anual de inteligencia artificial del Instituto de IA Centrada en el
-  Ser Humano de Stanford (HAI) acaba de confirmar algo que muchos intuían pero…
+  El AI Index 2026 de Stanford revela 50 puntos de diferencia entre expertos y
+  público sobre el impacto de la IA.
 heroImage: /images/posts/stanford-2026-expertos-vs-publico-50-puntos-de-abismo/hero.jpg
 heroImageAlt: >-
   brecha expertos público IA: dos personas separadas por grieta profunda en

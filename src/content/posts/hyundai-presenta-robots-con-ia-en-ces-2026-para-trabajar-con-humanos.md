@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-06T12:05:00.000Z
 updatedDate: 2026-06-30T19:09:47.642Z
 description: >-
-  Hyundai Motor Group usó su espacio en CES 2026 para revelar su visión de
-  robótica industrial impulsada por IA. La compañía, que adquirió Boston
-  Dynamics en…
+  Hyundai revela estrategia de robótica con IA en CES 2026. Boston Dynamics
+  Atlas, Spot y Stretch trabajan colaborando con humanos en industria.
 heroImage: >-
   /images/posts/hyundai-presenta-robots-con-ia-en-ces-2026-para-trabajar-con-humanos/hero.jpg
 heroImageAlt: >-

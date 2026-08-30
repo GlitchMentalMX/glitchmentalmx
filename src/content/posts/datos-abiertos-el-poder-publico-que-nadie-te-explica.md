@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-06-03T23:53:54.737Z
 updatedDate: 2026-06-04T15:03:19.305Z
 description: >-
-  Los datos abiertos no son un tecnicismo burocrático: son la condición mínima
-  para que una democracia pueda auditarse a sí misma. México tuvo durante dos…
+  México tenía uno de los marcos legales más sólidos en datos abiertos. Luego
+  desapareció el árbitro. Lo que perdiste sin saberlo.
 heroImage: /images/posts/datos-abiertos-el-poder-publico-que-nadie-te-explica/hero.jpg
 heroImageAlt: >-
   Datos abiertos: ciudadana frente a tablero de documentos oficiales con

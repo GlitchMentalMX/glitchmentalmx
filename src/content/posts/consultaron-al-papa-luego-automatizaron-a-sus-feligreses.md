@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-27T04:39:00.002Z
 updatedDate: 2026-07-09T02:28:03.757Z
 description: >-
-  En la misma semana que se filtraron los detalles del summit cristiano de
-  Anthropic en San Francisco, la empresa publicaba avances de sus agentes
-  autónomos…
+  Anthropic habla de virtud con teólogos y destruye empleos. Esa contradicción
+  es el humo más denso de toda la serie.
 heroImage: >-
   /images/posts/consultaron-al-papa-luego-automatizaron-a-sus-feligreses/hero.jpg
 heroImageAlt: >-

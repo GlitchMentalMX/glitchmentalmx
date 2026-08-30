@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-22T12:28:00.006Z
 updatedDate: 2026-04-22T12:28:53.185Z
 description: >-
-  OpenAI no quiere solo ser el lugar donde la gente busca respuestas. Quiere
-  cobrar por cada clic que esas respuestas generan. Desde el 21 de abril de
-  2026,…
+  OpenAI lanzó anuncios por clic en ChatGPT. Datos, cifras y lo que significa
+  para Google y los anunciantes.
 heroImage: /images/posts/openai-activa-publicidad-cpc-la-guerra-contra-google/hero.jpg
 heroImageAlt: >-
   publicidad CPC ChatGPT: mujer organiza fotos en panel con flecha de selección

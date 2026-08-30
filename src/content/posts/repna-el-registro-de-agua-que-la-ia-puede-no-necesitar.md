@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-08T11:05:00.000Z
 updatedDate: 2026-07-08T13:21:11.475Z
 description: >-
-  México va a revisar más de 500 mil concesiones de agua. El nuevo registro
-  promete transparencia total sobre quién extrae qué. El problema: un centro de
-  datos…
+  El REPNA revisará 500 mil concesiones de agua, pero audita pozos y ríos, no el
+  contrato municipal del que depende un centro de datos.
 heroImage: /images/posts/repna-el-registro-de-agua-que-la-ia-puede-no-necesitar/hero.jpg
 heroImageAlt: >-
   Vista aérea de embalses y acueductos mexicanos con overlay técnico,

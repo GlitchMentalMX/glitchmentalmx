@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-11T12:58:00.000Z
 updatedDate: 2026-06-06T19:36:15.998Z
 description: >-
-  Si solo vas a seguir un evento tecnológico este año, que sea el GTC 2026 de
-  Nvidia. El lunes 16 de marzo, Jensen Huang sube al escenario del SAP Center
-  en…
+  El evento de IA más importante del año arranca el 16 de marzo. Te explicamos
+  qué es el GTC 2026 y qué anunciará Nvidia.
 heroImage: /images/posts/gtc-2026-que-es-que-esperar-y-como-verlo-en-vivo/hero.webp
 heroImageAlt: >-
   GTC 2026: ejecutiva observa rayos de datos converger en edificio tecnológico

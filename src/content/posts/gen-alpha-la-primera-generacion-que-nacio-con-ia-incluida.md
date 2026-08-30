@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-04T13:53:00.000Z
 updatedDate: 2026-03-17T20:39:32.987Z
 description: >-
-  La Generación Z creció con internet y los smartphones. La Generación Alpha,
-  los nacidos aproximadamente desde 2013 en adelante, está creciendo con algo
-  más:…
+  Gen Alpha no usa la IA: creció con ella. El estudio "Next Growth Generation"
+  de Mastercard documenta cómo esta generación ya reescribe las reglas
 heroImage: >-
   /images/posts/gen-alpha-la-primera-generacion-que-nacio-con-ia-incluida/hero.webp
 heroImageAlt: >-

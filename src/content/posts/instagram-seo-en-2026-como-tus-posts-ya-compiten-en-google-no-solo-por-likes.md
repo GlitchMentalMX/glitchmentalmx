@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-26T12:56:00.000Z
 updatedDate: 2026-06-22T19:38:18.479Z
 description: >-
-  Algo cambió silenciosamente a mediados de 2025 y ahora está redefiniendo las
-  reglas del juego en 2026: los posts públicos de Instagram ya aparecen en las…
+  Desde julio 2025, los posts de Instagram aparecen en Google. El SEO ya no es
+  solo para webs: aprende a optimizar para dos algoritmos a la vez.
 heroImage: >-
   /images/posts/instagram-seo-en-2026-como-tus-posts-ya-compiten-en-google-no-solo-por-likes/hero.jpg
 heroImageAlt: >-

@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-02T13:03:00.000Z
 updatedDate: 2026-06-21T02:42:30.055Z
 description: >-
-  La era dorada de influencers está terminando. Gen Z desarrolló inmunidad a
-  contenido de influencers tradicionales y ahora prefiere creadores que…
+  94% de Gen Z detecta contenido falso al instante. Tasas de interacción cayeron
+  16% Instagram, 34% TikTok. Prefieren creadores auténticos.
 heroImage: >-
   /images/posts/gen-z-esta-rechazando-cultura-de-influencers-y-ahora-prefiere-no-influencers/hero.jpg
 heroImageAlt: >-

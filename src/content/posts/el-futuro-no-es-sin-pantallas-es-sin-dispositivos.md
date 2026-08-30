@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-08-04T11:00:00.000Z
 updatedDate: 2026-08-04T11:00:00.114Z
 description: >-
-  La pregunta correcta sobre el futuro de las pantallas no es si van a
-  desaparecer. La pantalla se está multiplicando: en el refrigerador, en el
-  lente, en el…
+  La pantalla no desaparece: cambia de dueño. Del refrigerador al lente, cómo la
+  interfaz migró de objeto propio a superficie rentada.
 heroImage: /images/posts/el-futuro-no-es-sin-pantallas-es-sin-dispositivos/hero.jpg
 heroImageAlt: >-
   Interfaz rentada 2026: mujer insertando panel personal en rack de pantallas

@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-10T13:38:00.000Z
 updatedDate: 2026-06-23T02:21:39.914Z
 description: >-
-  Después de cinco años sin actualización, Apple finalmente lanzó el AirTag 2 el
-  27 de enero de 2026. La buena noticia es que el precio se mantiene en $29…
+  Apple lanzó el AirTag 2 con chip UWB de segunda generación, 50% más alcance y
+  altavoz más potente. Te explicamos qué cambió.
 heroImage: >-
   /images/posts/airtag-2-apple-lanza-el-rastreador-con-chip-uwb-mejorado/hero.jpg
 heroImageAlt: >-

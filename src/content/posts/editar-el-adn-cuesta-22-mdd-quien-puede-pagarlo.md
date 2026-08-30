@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-06-03T11:00:00.000Z
 updatedDate: 2026-07-09T02:40:21.878Z
 description: >-
-  En diciembre de 2023, la FDA aprobó Casgevy, el primer tratamiento basado en
-  CRISPR de la historia. Trata una enfermedad con el 80% de sus casos en África…
+  Casgevy es el primer tratamiento CRISPR aprobado. Cuesta 2.2 mdd por paciente.
+  El 80% de quienes lo necesitan viven donde ese precio es inalcanzable.
 heroImage: /images/posts/editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo/hero.jpg
 heroImageAlt: >-
   laboratorio de edición genética observado detrás de un cristal por una figura

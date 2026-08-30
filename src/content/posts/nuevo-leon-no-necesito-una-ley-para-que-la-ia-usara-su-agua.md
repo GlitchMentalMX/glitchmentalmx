@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-06T11:00:00.000Z
 updatedDate: 2026-07-07T19:26:44.354Z
 description: >-
-  Querétaro tuvo que inventar una ley para que sus data centers no reportaran su
-  consumo de agua. Nuevo León no necesitó ninguna: heredó un sistema de…
+  Querétaro creó una ley para eximir a los data centers de reportar su consumo
+  de agua. Nuevo León no tuvo que crear ninguna.
 heroImage: >-
   /images/posts/nuevo-leon-no-necesito-una-ley-para-que-la-ia-usara-su-agua/hero.jpg
 heroImageAlt: >-

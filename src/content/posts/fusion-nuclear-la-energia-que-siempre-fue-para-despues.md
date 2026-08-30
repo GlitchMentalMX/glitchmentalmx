@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-18T18:59:00.001Z
 updatedDate: 2026-06-26T02:23:50.454Z
 description: >-
-  Durante setenta años, la fusión nuclear fue la tecnología energética del
-  futuro permanente. El chiste del sector se repitió tanto que se volvió dogma:
-  la…
+  La fusión nuclear ya tiene plantas piloto en construcción y acuerdos de compra
+  firmados. Qué es real, qué falta y cuándo cambia la energía global.
 heroImage: /images/posts/fusion-nuclear-la-energia-que-siempre-fue-para-despues/hero.jpg
 heroImageAlt: >-
   fusión nuclear: ingeniera en pasarela interior de tokamak con panel de IA en

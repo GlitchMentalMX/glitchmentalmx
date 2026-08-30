@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-24T12:32:00.000Z
 updatedDate: 2026-06-23T13:26:30.518Z
 description: >-
-  Durante años, las empresas tecnológicas hablaron de inteligencia artificial
-  como una inversión de futuro. En 2026, ese futuro llegó y trajo una
-  consecuencia…
+  Accenture capacitó 550,000 empleados en IA y ahora las promociones dependen
+  del impacto real. Meta sigue el mismo camino. Así cambia el trabajo.
 heroImage: >-
   /images/posts/accenture-y-meta-redisenan-el-empleo-con-metricas-de-ia-reales/hero.jpg
 heroImageAlt: >-

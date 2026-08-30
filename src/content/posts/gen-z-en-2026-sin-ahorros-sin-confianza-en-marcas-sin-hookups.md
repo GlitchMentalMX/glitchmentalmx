@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-23T13:06:00.000Z
 updatedDate: 2026-06-13T13:51:18.099Z
 description: >-
-  Si piensas que entiendes a la Generación Z porque ves TikToks, tengo noticias
-  para ti: estás apenas rascando la superficie. En 2026, los jóvenes nacidos…
+  Gen Z gasta sin ahorrar, desconfía de las marcas más que ninguna generación, y
+  está reescribiendo las reglas de las relaciones. Los datos.
 heroImage: >-
   /images/posts/gen-z-en-2026-sin-ahorros-sin-confianza-en-marcas-sin-hookups/hero.jpg
 heroImageAlt: >-

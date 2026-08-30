@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-29T11:02:00.014Z
 updatedDate: 2026-06-27T03:18:59.889Z
 description: >-
-  Google firmó un acuerdo con el Departamento de Defensa de EE.UU. para que el
-  Pentágono use sus modelos de IA en redes clasificadas para "cualquier
-  propósito…
+  Google firmó un acuerdo con el Pentágono para uso de IA en redes clasificadas.
+  Más de 600 empleados se opusieron. La línea roja se movió.
 heroImage: /images/posts/google-y-el-pentagono-600-empleados-dijeron-que-no/hero.jpg
 heroImageAlt: >-
   Google Pentágono empleados: hombre caminando por pasillo institucional con

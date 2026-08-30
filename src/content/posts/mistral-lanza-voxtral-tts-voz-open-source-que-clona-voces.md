@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-30T12:50:00.006Z
 updatedDate: 2026-03-30T12:50:56.008Z
 description: >-
-  Mistral acaba de lanzar Voxtral TTS, su primer modelo de voz generativa de
-  código abierto, y la apuesta es directa: competir con ElevenLabs y OpenAI en…
+  Mistral lanzó Voxtral TTS, modelo open source de voz que corre en un
+  smartwatch y clona voces en menos de 5 segundos.
 heroImage: >-
   /images/posts/mistral-lanza-voxtral-tts-voz-open-source-que-clona-voces/hero.webp
 heroImageAlt: >-

@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-19T12:40:00.000Z
 updatedDate: 2026-03-19T12:40:01.333Z
 description: >-
-  El 8 de mayo, Meta recuperará la capacidad técnica de leer tus mensajes
-  directos en Instagram. La empresa está eliminando el cifrado de extremo a
-  extremo que…
+  El 8 de mayo, Meta elimina el cifrado de extremo a extremo de los DMs de
+  Instagram. TikTok nunca lo tuvo. La era de la privacidad prometida terminó.
 heroImage: /images/posts/meta-elimina-el-cifrado-de-dms-en-instagram-por-que/hero.webp
 heroImageAlt: >-
   uso de redes sociales 2026: mujer revisa smartphone frente a cafetería con

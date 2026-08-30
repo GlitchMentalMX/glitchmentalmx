@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-11T03:54:56.903Z
 updatedDate: 2026-06-11T03:54:56.904Z
 description: >-
-  El síndrome del personaje principal no es narcisismo generacional. Es el
-  resultado predecible de una arquitectura de producto diseñada para que
-  confundas…
+  No eres el protagonista de tu vida en TikTok. Eres el actor de la obra del
+  algoritmo. La diferencia importa más de lo que crees.
 heroImage: >-
   /images/posts/el-algoritmo-no-te-hace-protagonista-te-convierte-en-su-actor/hero.jpg
 heroImageAlt: >-

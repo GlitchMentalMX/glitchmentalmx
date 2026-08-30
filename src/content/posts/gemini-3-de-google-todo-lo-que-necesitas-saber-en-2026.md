@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-15T13:55:00.000Z
 updatedDate: 2026-06-30T19:29:17.116Z
 description: >-
-  Google acaba de lanzar lo que muchos consideran el modelo de IA más
-  inteligente del mercado. Gemini 3, presentado en noviembre de 2025, no es solo
-  una…
+  Descubre Gemini 3, la IA de Google que lidera en razonamiento. Guía completa
+  de funciones, planes, precios y cómo usarla en 2026.
 heroImage: /images/posts/gemini-3-de-google-todo-lo-que-necesitas-saber-en-2026/hero.jpg
 heroImageAlt: >-
   Gemini 3 Google guía 2026: mujer traza círculo en pizarrón para organizar

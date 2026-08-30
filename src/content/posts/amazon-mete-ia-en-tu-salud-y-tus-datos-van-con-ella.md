@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-24T12:02:00.006Z
 updatedDate: 2026-03-24T12:02:49.362Z
 description: >-
-  Amazon expandió su asistente de salud con IA a todos los usuarios de EE.UU. el
-  10 de marzo. El sistema puede interpretar tus resultados de laboratorio,…
+  Amazon expandió su asistente de salud con IA a todos los usuarios de EE.UU.
+  Qué puede hacer, qué sabe de ti y por qué importa en LATAM.
 heroImage: /images/posts/amazon-mete-ia-en-tu-salud-y-tus-datos-van-con-ella/hero.webp
 heroImageAlt: >-
   Amazon IA salud: mujer interactúa con frasco de medicamento conectado a

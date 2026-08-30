@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-06-03T23:31:47.268Z
 updatedDate: 2026-06-27T04:09:10.909Z
 description: >-
-  Internet no nació libre ni abierta por diseño. Nació financiada por el
-  Pentágono, privatizada sin debate en 1995 y gobernada durante décadas por una…
+  Internet no nació libre ni abierta por diseño. Cada decisión técnica fue
+  también política. La historia que nadie te contó.
 heroImage: /images/posts/internet-no-nacio-libre-el-poder-detras-de-la-red/hero.jpg
 heroImageAlt: >-
   historia de internet poder: hombre frente a panel de cables de red en cuarto

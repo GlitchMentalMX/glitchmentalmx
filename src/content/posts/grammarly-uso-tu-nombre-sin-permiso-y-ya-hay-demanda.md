@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-13T12:57:00.000Z
 updatedDate: 2026-03-17T20:39:32.983Z
 description: >-
-  En agosto de 2025, Grammarly lanzó una función llamada Expert Review: por 12
-  dólares al mes, los usuarios podían subir su texto y recibir
-  retroalimentación…
+  Grammarly puso tu nombre en un producto de IA sin pedirte permiso. Una
+  periodista ya los demandó. Esto cambia las reglas del juego.
 heroImage: /images/posts/grammarly-uso-tu-nombre-sin-permiso-y-ya-hay-demanda/hero.webp
 heroImageAlt: >-
   Cultura digital datos: mujer analiza pantalla con matriz de datos luminosos en

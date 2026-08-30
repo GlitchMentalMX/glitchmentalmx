@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-24T13:03:00.001Z
 updatedDate: 2026-04-24T13:03:02.537Z
 description: >-
-  El 20 de marzo de 2026, la Casa Blanca publicó un marco nacional de política
-  de IA cuyo objetivo central es que el Congreso elimine la mayoría de las
-  leyes…
+  La Casa Blanca publicó su marco de política de IA: una ley federal que preempt
+  a los estados. Qué significa para empresas y usuarios en LATAM.
 heroImage: /images/posts/trump-quiere-una-ley-de-ia-federal-que-pierde-latam/hero.jpg
 heroImageAlt: >-
   Trump quiere una ley de IA: hombre traza línea en mapa de América separando

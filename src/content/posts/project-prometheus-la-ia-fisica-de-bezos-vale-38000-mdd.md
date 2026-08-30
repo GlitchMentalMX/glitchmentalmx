@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-22T12:26:00.005Z
 updatedDate: 2026-04-22T12:26:45.888Z
 description: >-
-  Project Prometheus**, el laboratorio de inteligencia artificial de Jeff Bezos,
-  está a punto de cerrar una ronda de financiamiento por $10,000 millones de…
+  Bezos levanta $10,000 mdd para una IA que aprende del mundo físico, no del
+  internet. Por qué BlackRock y JPMorgan apuestan por datos escasos.
 heroImage: /images/posts/project-prometheus-la-ia-fisica-de-bezos-vale-38000-mdd/hero.jpg
 heroImageAlt: >-
   Project Prometheus: mujer instalando cámaras en almacén automatizado con

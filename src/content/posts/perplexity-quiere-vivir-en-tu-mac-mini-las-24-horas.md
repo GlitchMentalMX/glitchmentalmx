@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-13T12:55:00.001Z
 updatedDate: 2026-03-17T20:13:25.620Z
 description: >-
-  El 11 de marzo, durante su primera conferencia de desarrolladores —Ask 2026,
-  celebrada en una iglesia reconvertida en el barrio North Beach de San…
+  Perplexity lanzó un agente de IA que corre sin parar en una Mac mini y accede
+  a todos tus archivos. Así funciona y qué implica.
 heroImage: /images/posts/perplexity-quiere-vivir-en-tu-mac-mini-las-24-horas/hero.webp
 heroImageAlt: >-
   Tecnología hogar inteligente: dispositivo blanco con rayos de luz conectado en

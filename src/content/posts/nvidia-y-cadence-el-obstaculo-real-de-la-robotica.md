@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-16T12:33:00.003Z
 updatedDate: 2026-04-16T12:33:58.196Z
 description: >-
-  El problema más difícil de la robótica no es entrenar un modelo. Es hacer que
-  ese modelo funcione fuera del laboratorio. NVIDIA y Cadence anunciaron el 15
-  de…
+  NVIDIA y Cadence unen física y simulación para cerrar el sim-to-real gap. El
+  problema de la robótica no es la IA, es la realidad.
 heroImage: /images/posts/nvidia-y-cadence-el-obstaculo-real-de-la-robotica/hero.jpg
 heroImageAlt: >-
   NVIDIA y Cadence: mujer ajusta brazo robótico en entorno real de laboratorio

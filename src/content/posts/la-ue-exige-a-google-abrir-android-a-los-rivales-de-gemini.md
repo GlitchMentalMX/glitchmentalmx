@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-29T11:03:00.001Z
 updatedDate: 2026-04-29T11:03:00.112Z
 description: >-
-  La Comisión Europea notificó el 27 de abril sus hallazgos preliminares bajo la
-  Digital Markets Act (DMA): Google debe abrir Android para que asistentes de
-  IA…
+  La UE exige a Google abrir Android a asistentes rivales. La batalla ya no es
+  por el mejor modelo, sino por quién controla el sistema operativo.
 heroImage: >-
   /images/posts/la-ue-exige-a-google-abrir-android-a-los-rivales-de-gemini/hero.jpg
 heroImageAlt: >-

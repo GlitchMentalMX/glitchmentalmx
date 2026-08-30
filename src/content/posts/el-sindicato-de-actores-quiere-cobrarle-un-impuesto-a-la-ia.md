@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-31T13:02:00.003Z
 updatedDate: 2026-03-31T13:02:41.021Z
 description: >-
-  El sindicato de actores de Hollywood está negociando una propuesta que, si
-  prospera, cambiaría la lógica económica de producir cine y televisión con…
+  SAG-AFTRA negocia el Tilly tax: una tarifa que igualaría el costo de actores
+  de IA al de actores humanos reales. Contrato vence en junio.
 heroImage: >-
   /images/posts/el-sindicato-de-actores-quiere-cobrarle-un-impuesto-a-la-ia/hero.webp
 heroImageAlt: >-

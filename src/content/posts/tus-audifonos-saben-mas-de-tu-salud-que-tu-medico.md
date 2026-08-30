@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-06-11T04:30:45.630Z
 updatedDate: 2026-06-11T04:30:45.630Z
 description: >-
-  Los hearables — audífonos con sensores biométricos integrados — ya no son un
-  concepto de laboratorio. Son el segmento de mayor crecimiento dentro de un…
+  Los hearables ya miden tu ritmo cardíaco, temperatura y estrés. El mercado
+  vale 100 mil millones. Nadie te explica quién tiene esos datos.
 heroImage: /images/posts/tus-audifonos-saben-mas-de-tu-salud-que-tu-medico/hero.jpg
 heroImageAlt: >-
   Tus audífonos saben más que tu médico: estuche de audífonos inalámbricos junto

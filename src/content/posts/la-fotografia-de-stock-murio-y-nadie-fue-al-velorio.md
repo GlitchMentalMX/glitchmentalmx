@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-05-11T11:00:00.019Z
 updatedDate: 2026-07-09T02:30:02.545Z
 description: >-
-  Al 8 de abril de 2025, el 47.85% de todas las imágenes en Adobe Stock habían
-  sido generadas por herramientas de IA, según el análisis del fotógrafo Robert…
+  Casi la mitad de Adobe Stock ya es IA. Getty y Shutterstock se fusionan para
+  sobrevivir. El mercado del microstock está en caída libre.
 heroImage: /images/posts/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/hero.jpg
 heroImageAlt: 'La fotografía de stock murió: fotógrafa desmontando fondo en estudio vacío'
 ---

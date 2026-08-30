@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-03T12:36:00.004Z
 updatedDate: 2026-04-03T12:36:37.222Z
 description: >-
-  OpenAI acaba de hacer su primera adquisición de un medio de comunicación.
-  Compró TBPN — Technology Business Programming Network — el podcast diario que
-  cubre…
+  OpenAI adquirió su primer medio de comunicación. TBPN seguirá siendo
+  "independiente". Chris Lehane firma los cheques.
 heroImage: /images/posts/openai-compra-tbpn-el-microfono-ya-tiene-dueno-nuevo/hero.jpg
 heroImageAlt: >-
   OpenAI compra TBPN: mujer hablando a micrófono mientras otra mano controla

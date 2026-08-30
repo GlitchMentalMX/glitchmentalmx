@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-26T13:02:00.000Z
 updatedDate: 2026-06-30T19:57:15.476Z
 description: >-
-  Si pensabas que la IA generativa ya había llegado lejos en texto e imagen, la
-  música acaba de entrar a la misma carrera con el mismo peso. El 24 de febrero…
+  Google adquirió ProducerAI y lo integra a Google Labs con Lyria 3. ¿El fin de
+  las herramientas de música como las conocíamos?
 heroImage: /images/posts/producerai-google-quiere-ser-tu-productor-musical/hero.jpg
 heroImageAlt: >-
   ProducerAI Google productor musical: mujer observa onda de audio generándose

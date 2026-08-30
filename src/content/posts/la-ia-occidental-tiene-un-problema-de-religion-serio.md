@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-27T04:31:00.002Z
 updatedDate: 2026-07-09T02:21:12.626Z
 description: >-
-  Los modelos de lenguaje se evalúan por precisión matemática, capacidad de
-  razonamiento y rendimiento en código. Nadie publica un benchmark estándar de
-  sesgo…
+  Los modelos de IA entrenados en Occidente no son neutros en términos
+  religiosos. Hay datos que lo demuestran.
 heroImage: /images/posts/la-ia-occidental-tiene-un-problema-de-religion-serio/hero.jpg
 heroImageAlt: >-
   La IA occidental: mujer sostiene libro con patrones de red en biblioteca con

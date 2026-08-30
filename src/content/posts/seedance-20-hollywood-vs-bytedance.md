@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-09T13:13:00.000Z
 updatedDate: 2026-03-17T17:57:13.615Z
 description: >-
-  El 12 de febrero de 2026, ByteDance — la empresa china detrás de TikTok —
-  lanzó Seedance 2.0, un generador de video con inteligencia artificial similar
-  a…
+  Seedance 2.0 de ByteDance generó deepfakes de Tom Cruise y Brad Pitt en un
+  día. Disney, Paramount y SAG-AFTRA respondieron con cartas legales.
 heroImage: /images/posts/seedance-20-hollywood-vs-bytedance/hero.webp
 heroImageAlt: >-
   Redes sociales y datos: hombre frente a espejo con cartas y notificaciones

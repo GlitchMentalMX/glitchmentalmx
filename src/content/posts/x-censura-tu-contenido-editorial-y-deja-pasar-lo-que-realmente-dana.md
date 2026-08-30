@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-23T11:00:00.013Z
 updatedDate: 2026-06-24T14:57:40.195Z
 description: >-
-  Esta mañana intenté programar un post en X. El contenido: un enlace a un
-  artículo sobre inteligencia artificial física y cómo los objetos inteligentes
-  están…
+  X bloquea posts editoriales con enlaces externos mientras contenido violento
+  circula sin restricción. Análisis del doble estándar y qué se puede hacer
 heroImage: >-
   /images/posts/x-censura-tu-contenido-editorial-y-deja-pasar-lo-que-realmente-dana/hero.jpg
 heroImageAlt: >-

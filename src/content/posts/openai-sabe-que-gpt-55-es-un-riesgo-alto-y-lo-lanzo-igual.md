@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-25T12:42:00.009Z
 updatedDate: 2026-04-25T13:58:27.669Z
 description: >-
-  El 23 de abril, OpenAI lanzó GPT-5.5 con benchmarks impresionantes y un
-  detalle que casi nadie en español destacó: la empresa clasificó el modelo como
-  riesgo…
+  GPT-5.5 llega clasificado como riesgo alto en ciberseguridad. OpenAI lo lanzó
+  con clasificadores como único freno. La pregunta queda abierta.
 heroImage: >-
   /images/posts/openai-sabe-que-gpt-55-es-un-riesgo-alto-y-lo-lanzo-igual/hero.jpg
 heroImageAlt: >-

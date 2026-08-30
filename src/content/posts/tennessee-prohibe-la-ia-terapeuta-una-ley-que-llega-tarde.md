@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-03T12:40:00.002Z
 updatedDate: 2026-04-03T12:40:24.185Z
 description: >-
-  El gobernador de Tennessee, Bill Lee, firmó esta semana la SB 1580: ningún
-  sistema de IA puede representarse a sí mismo como un profesional de salud
-  mental…
+  Tennessee firmó la ley que prohíbe a la IA hacerse pasar por terapeuta. Fue
+  aprobada 94-0. La pregunta es si llega a tiempo.
 heroImage: >-
   /images/posts/tennessee-prohibe-la-ia-terapeuta-una-ley-que-llega-tarde/hero.jpg
 heroImageAlt: >-

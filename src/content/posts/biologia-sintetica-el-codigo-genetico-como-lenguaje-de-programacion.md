@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-18T19:07:00.004Z
 updatedDate: 2026-07-09T02:39:13.525Z
 description: >-
-  En diciembre de 2023, la FDA aprobó la primera terapia basada en CRISPR
-  (Repeticiones Palindrómicas Cortas Agrupadas y Regularmente Interespaciadas,
-  por sus…
+  Qué es la biología sintética, qué logró ya CRISPR y cómo la edición genómica
+  va a transformar la medicina y la agricultura antes de 2030.
 heroImage: >-
   /images/posts/biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion/hero.jpg
 heroImageAlt: >-

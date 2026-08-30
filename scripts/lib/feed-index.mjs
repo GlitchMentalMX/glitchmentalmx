@@ -12,7 +12,8 @@ function decodeXml(str) {
 /**
  * Parses the exported Blogger Atom feed into a flat list of entries.
  * Only extracts the handful of fields the migration scripts need:
- * title, the original /YYYY/MM/slug.html filename, type (POST|PAGE) and published date.
+ * title, the original /YYYY/MM/slug.html filename, type (POST|PAGE), published date,
+ * and the hand-written Blogger "Search Description" (blogger:metaDescription).
  */
 export function loadFeedEntries(feedPath) {
   const xml = readFileSync(feedPath, 'utf-8');
@@ -25,6 +26,7 @@ export function loadFeedEntries(feedPath) {
     const filename = block.match(/<blogger:filename>([\s\S]*?)<\/blogger:filename>/);
     const type = block.match(/<blogger:type>([\s\S]*?)<\/blogger:type>/);
     const published = block.match(/<published>([\s\S]*?)<\/published>/);
+    const metaDescription = block.match(/<blogger:metaDescription>([\s\S]*?)<\/blogger:metaDescription>/);
     if (!title || !filename) continue;
     const rawFilename = decodeXml(filename[1].trim());
     const basename = rawFilename
@@ -38,6 +40,7 @@ export function loadFeedEntries(feedPath) {
       basename,
       type: type ? type[1].trim() : 'POST',
       published: published ? published[1].trim() : null,
+      metaDescription: metaDescription ? decodeXml(metaDescription[1].trim()) : '',
     });
   }
   return entries;

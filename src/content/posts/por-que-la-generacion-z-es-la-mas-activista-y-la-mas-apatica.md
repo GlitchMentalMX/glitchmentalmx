@@ -5,8 +5,7 @@ pubDate: 2025-11-11T18:39:00.000Z
 updatedDate: 2026-06-13T00:28:20.535Z
 description: >-
   Hay algo fascinante en ver a alguien compartir una infografía sobre el cambio
-  climático en Instagram Stories mientras pide su tercer Uber Eats de la
-  semana.…
+  climático en Instagram mientras pide su tercer Uber Eats.
 heroImage: >-
   /images/posts/por-que-la-generacion-z-es-la-mas-activista-y-la-mas-apatica/hero.jpg
 heroImageAlt: >-

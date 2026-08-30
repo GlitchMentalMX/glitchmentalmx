@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-06T12:41:00.000Z
 updatedDate: 2026-06-24T03:34:18.009Z
 description: >-
-  El Mobile World Congress que se celebró del 2 al 5 de marzo en Barcelona tuvo
-  una narrativa que nadie en los stands de las grandes marcas quiso pronunciar
-  en…
+  En el MWC 2026, Xiaomi, HONOR y Tecno presentaron hardware que supera al
+  Galaxy S26 en varios puntos y cuesta menos. Eso tiene implicaciones.
 heroImage: /images/posts/mwc-2026-las-marcas-chinas-que-superaron-a-samsung/hero.jpg
 heroImageAlt: >-
   MWC 2026 marcas chinas: soporte de exhibición vacío siendo retirado de estante

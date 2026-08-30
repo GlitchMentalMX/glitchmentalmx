@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-07T11:00:00.001Z
 updatedDate: 2026-04-07T11:00:00.114Z
 description: >-
-  El 6 de abril de 2026, la tripulación de Artemis II pasó 40 minutos
-  completamente incomunicada detrás de la Luna. Sin señal. Sin Houston. La nave
-  tuvo que…
+  Artemis II muestra por qué la IA tiene que operar sola en espacio profundo. Lo
+  que cambia de Apollo a Marte.
 heroImage: /images/posts/ia-autonoma-en-espacio-profundo-que-cambia-en-artemis/hero.jpg
 heroImageAlt: >-
   IA autónoma en espacio profundo: centro de control frente a la Luna con

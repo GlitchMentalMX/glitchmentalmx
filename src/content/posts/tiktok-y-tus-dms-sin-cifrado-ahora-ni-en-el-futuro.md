@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-05T12:16:00.000Z
 updatedDate: 2026-07-03T03:50:36.163Z
 description: >-
-  Esta semana TikTok convocó a la prensa en su oficina de Londres para hablar de
-  seguridad. Lo que confirmó ahí no fue un anuncio de mejoras: fue la…
+  TikTok confirmó que nunca cifrará tus mensajes directos. La razón oficial es
+  la seguridad. La razón real es más incómoda.
 heroImage: /images/posts/tiktok-y-tus-dms-sin-cifrado-ahora-ni-en-el-futuro/hero.jpg
 heroImageAlt: 'TikTok: mujer sella un sobre de vidrio con el mensaje legible, DMs sin cifrado'
 ---

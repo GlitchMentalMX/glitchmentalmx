@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-17T11:00:00.000Z
 updatedDate: 2026-07-17T11:00:00.111Z
 description: >-
-  Un agente de IA entró a un servidor de producción, robó credenciales, se movió
-  lateralmente, cifró 1,342 registros y borró la evidencia — sin que ningún…
+  JADEPUFFER no inventó al ATA. La industria ya venía repitiendo, con hackers
+  humanos, el mismo error que ahora corre a repetir con las máquinas.
 heroImage: /images/posts/ata-como-se-nombra-al-primer-atacante-impulsado-por-ia/hero.jpg
 heroImageAlt: >-
   impresora industrial expulsa tira continua de etiquetas idénticas, mano

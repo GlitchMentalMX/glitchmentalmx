@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-28T14:32:00.004Z
 updatedDate: 2026-03-28T14:32:42.235Z
 description: >-
-  El ciclo de noticias sobre IA oscila entre dos extremos: la herramienta que lo
-  cambia todo o la amenaza que destruirá todo. Ambas narrativas comparten el…
+  La IA alucina, tiene sesgos y depende de datos imperfectos. Estas son sus
+  limitaciones reales, sin dramatizar ni minimizar.
 heroImage: /images/posts/las-limitaciones-reales-de-la-ia-que-nadie-anuncia/hero.webp
 heroImageAlt: >-
   limitaciones de la IA: persona revisando documentos impresos en flujo

@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-16T12:38:00.003Z
 updatedDate: 2026-06-26T02:02:07.542Z
 description: >-
-  Las empresas ya no preguntan si adoptar IA generativa — preguntan por qué sus
-  pilotos no escalan. El reporte The multi-year AI advantage del Capgemini…
+  El 38% de las empresas ya operacionalizó IA generativa. Capgemini revela qué
+  separa a los que escalan de los que siguen en piloto.
 heroImage: /images/posts/ia-empresarial-2026-del-piloto-al-presupuesto-real/hero.jpg
 heroImageAlt: >-
   IA empresarial 2026: mano presiona sello institucional sobre documento de

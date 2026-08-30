@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T14:05:00.001Z
 updatedDate: 2026-03-29T19:31:30.572Z
 description: >-
-  Los sistemas autónomos no son tecnología del futuro: operan hoy en los
-  sectores con mayor impacto económico y mayor riesgo de consecuencias
-  irreversibles. En…
+  Dónde operan hoy los sistemas autónomos reales, qué deciden y qué pasa cuando
+  se equivocan en logística, finanzas y defensa.
 heroImage: >-
   /images/posts/sistemas-autonomos-en-accion-logistica-finanzas-y-defensa/hero.webp
 heroImageAlt: >-

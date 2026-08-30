@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-04T12:51:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-
-  Febrero de 2026 llegó con una nueva ola de tendencias en TikTok que están
-  definiendo el inicio del año en las redes sociales. Desde debates caóticos con
-  el…
+  Group Consensus, Jon Hamm viral, y el audio "sorry I don't know" dominan
+  TikTok en febrero 2026. Descubre qué está funcionando ahora.
 heroImage: >-
   /images/posts/las-tendencias-virales-de-tiktok-que-estan-dominando-febrero/hero.webp
 heroImageAlt: >-

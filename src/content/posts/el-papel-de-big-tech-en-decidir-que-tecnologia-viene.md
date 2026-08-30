@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T19:00:00.003Z
 updatedDate: 2026-06-26T01:24:55.855Z
 description: >-
-  Las tendencias tecnológicas no emergen de forma espontánea del mercado. En la
-  era de Big Tech, las tendencias se producen, se amplifican y a veces se…
+  Las tendencias tecnológicas no emergen solas. Big Tech decide cuáles se
+  amplifican, cuáles se entierran y cuándo se declara que algo es "el futuro".
 heroImage: /images/posts/el-papel-de-big-tech-en-decidir-que-tecnologia-viene/hero.jpg
 heroImageAlt: >-
   Big Tech tendencias tecnológicas: hombre colocando mano sobre tarjeta

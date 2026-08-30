@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T14:08:00.000Z
 updatedDate: 2026-06-26T00:55:12.671Z
 description: >-
-  Casi toda política de IA responsable incluye una variante de la misma frase:
-  "con un humano en el loop". La idea es que mientras haya supervisión humana,
-  los…
+  Tener un humano "en el loop" no garantiza control real. Cuándo la supervisión
+  humana en sistemas autónomos es una ficción útil.
 heroImage: /images/posts/el-problema-del-control-humano-en-ia-autonoma/hero.jpg
 heroImageAlt: >-
   Control humano IA autónoma: mujer con mano en interruptor desconectado frente

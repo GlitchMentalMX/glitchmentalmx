@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-19T12:37:00.003Z
 updatedDate: 2026-03-19T12:37:29.875Z
 description: >-
-  Jensen Huang subió al escenario del SAP Center de San José el 16 de marzo con
-  una cifra que redefinió el tamaño de la conversación sobre IA: al menos un…
+  Jensen Huang proyecta $1 billón en ingresos 2025-2027. Vera Rubin, OpenClaw y
+  el anuncio que redefinió la IA agéntica en GTC 2026.
 heroImage: /images/posts/nvidia-gtc-2026-1-billon-y-la-era-de-la-ia-agentica/hero.webp
 heroImageAlt: >-
   centros de datos IA 2026: ingeniera revisa documento frente a racks de

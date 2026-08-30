@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T03:44:00.004Z
 updatedDate: 2026-03-30T02:09:11.891Z
 description: >-
-  Hace tres años, las IAs se llamaban asistentes. Hoy se llaman agentes. El
-  cambio de una palabra no es cosmético: define quién tiene el control, quién
-  lleva…
+  La industria dejó de llamarle "asistente" y empezó a decir "agente". El cambio
+  de palabra no es menor: cambia el poder.
 heroImage: /images/posts/de-asistente-a-agente-como-cambio-el-lenguaje-de-la-ia/hero.webp
 heroImageAlt: >-
   De “asistente” a “agente”: mujer interactúa con sistema automatizado de

@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-04-30T11:04:00.000Z
 updatedDate: 2026-04-30T11:10:35.748Z
 description: >-
-  Apple presentará en septiembre de 2026 su primer iPhone plegable. Llega siete
-  años después del primer Galaxy Fold de Samsung, costará alrededor de 2,000…
+  Apple presenta su primer plegable en septiembre 2026 a casi 2,000 dólares.
+  Llega siete años tarde. Esa es exactamente su estrategia.
 heroImage: >-
   /images/posts/iphone-fold-apple-llega-tarde-al-plegable-y-aun-asi-gana/hero.jpg
 heroImageAlt: >-

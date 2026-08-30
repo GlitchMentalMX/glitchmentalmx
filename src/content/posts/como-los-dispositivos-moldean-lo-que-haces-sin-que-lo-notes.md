@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T14:51:00.010Z
 updatedDate: 2026-07-09T02:50:59.939Z
 description: >-
-  Tu smartphone no es una herramienta pasiva. Está diseñado activamente para
-  modificar lo que haces, cuándo lo haces y con qué frecuencia lo haces. Eso no
-  es…
+  Los dispositivos no son neutros. Están diseñados para modificar
+  comportamientos de formas que pocas veces son visibles para el usuario.
 heroImage: >-
   /images/posts/como-los-dispositivos-moldean-lo-que-haces-sin-que-lo-notes/hero.jpg
 heroImageAlt: >-

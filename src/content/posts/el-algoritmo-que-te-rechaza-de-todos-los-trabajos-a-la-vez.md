@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-12-03T15:16:00.000Z
 updatedDate: 2026-06-12T04:40:47.562Z
 description: >-
-  Si alguna vez has sentido que tu currículum desaparece en un agujero negro
-  digital después de aplicar a un trabajo, no estás alucinando. Detrás de ese…
+  Una nueva ola de IA rechaza candidatos por "baja calidad" algorítmica. ¿El
+  futuro del trabajo es ser validado por una máquina que no te conoce?
 heroImage: >-
   /images/posts/el-algoritmo-que-te-rechaza-de-todos-los-trabajos-a-la-vez/hero.jpg
 heroImageAlt: >-

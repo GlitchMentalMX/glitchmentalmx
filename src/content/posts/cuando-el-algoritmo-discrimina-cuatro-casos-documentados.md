@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-03T23:41:05.820Z
 updatedDate: 2026-06-04T01:50:41.562Z
 description: >-
-  El sesgo algorítmico —cuando un sistema automatizado reproduce y amplifica las
-  desigualdades de sus datos de entrenamiento— no es una hipótesis académica.
-  Es…
+  COMPAS, Amazon, reconocimiento facial, Apple Card: cuatro algoritmos que
+  discriminaron con datos verificados. El inventario que nadie quiere ver.
 heroImage: >-
   /images/posts/cuando-el-algoritmo-discrimina-cuatro-casos-documentados/hero.jpg
 heroImageAlt: >-

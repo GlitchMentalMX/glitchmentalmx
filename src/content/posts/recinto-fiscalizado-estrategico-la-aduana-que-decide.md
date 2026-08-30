@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-08T22:22:29.555Z
 updatedDate: 2026-07-08T22:22:29.660Z
 description: >-
-  Desde enero de 2025, el Decreto Plan México da la misma deducción —41% a 91%—
-  a cualquier estado, sector o nacionalidad. La ventaja real para atraer un
-  data…
+  Plan México igualó el ISR en los 32 estados. La ventaja real la decide una
+  aduana federal: el Recinto Fiscalizado Estratégico.
 heroImage: /images/posts/recinto-fiscalizado-estrategico-la-aduana-que-decide/hero.jpg
 heroImageAlt: >-
   Múltiples sitios de construcción de centros de datos en distintos estados

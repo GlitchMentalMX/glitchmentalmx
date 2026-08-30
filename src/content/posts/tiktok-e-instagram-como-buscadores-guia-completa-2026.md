@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-19T12:01:00.000Z
 updatedDate: 2026-06-23T03:54:18.305Z
 description: >-
-  Hace cinco años, "buscar algo" significaba abrir Google, escribir una frase y
-  revisar los primeros tres resultados. Hoy, para una parte creciente de los…
+  Un tercio de los usuarios ya busca en TikTok e Instagram en lugar de Google.
+  Guía completa para dominar la búsqueda social en 2026.
 heroImage: /images/posts/tiktok-e-instagram-como-buscadores-guia-completa-2026/hero.jpg
 heroImageAlt: >-
   TikTok Instagram buscadores 2026: hombre joven con smartphone frente a

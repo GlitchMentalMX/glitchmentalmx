@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-18T18:59:00.000Z
 updatedDate: 2026-04-18T18:59:11.099Z
 description: >-
-  Hay una fecha que los gobiernos y los bancos centrales del mundo están
-  marcando en sus calendarios con preocupación creciente: el momento en que una…
+  Qué puede hacer realmente la computación cuántica, cuándo llegará su ventaja
+  práctica y por qué amenaza la seguridad digital global.
 heroImage: >-
   /images/posts/computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno/hero.jpg
 heroImageAlt: >-

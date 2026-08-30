@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-05-20T11:00:00.000Z
 updatedDate: 2026-07-09T02:33:59.827Z
 description: >-
-  La economía de creadores creció 59% en 2025 hasta los 32.6 mil millones de
-  dólares globales, según CreatorIQ. Pero la media de ingresos por campaña bajó.
-  La…
+  El 10% se queda con el 62%. Te explicamos las cuatro capas que filtran el
+  dinero antes de llegar al creador.
 heroImage: /images/posts/economia-de-creadores-a-donde-va-el-dinero-realmente/hero.jpg
 heroImageAlt: >-
   economía de creadores 2026: creadora recibe pocas monedas desde embudo

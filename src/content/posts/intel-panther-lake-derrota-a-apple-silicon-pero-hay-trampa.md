@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-04T12:38:00.000Z
 updatedDate: 2026-06-22T23:03:40.594Z
 description: >-
-  Intel acaba de lanzar su Core Ultra Series 3, con nombre en código Panther
-  Lake, y los benchmarks iniciales están causando furor. El chip insignia Core
-  Ultra…
+  El nuevo chip de Intel supera al M5 en benchmarks, pero pierde con el M4 Pro.
+  Descubre por qué este es el mayor logro de Intel en años.
 heroImage: >-
   /images/posts/intel-panther-lake-derrota-a-apple-silicon-pero-hay-trampa/hero.jpg
 heroImageAlt: >-

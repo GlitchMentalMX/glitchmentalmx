@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-06T11:02:00.001Z
 updatedDate: 2026-04-06T11:02:00.118Z
 description: >-
-  Cada semana aparece la misma publicación con distinto autor: "Los 50 prompts
-  que usan los expertos", "10 prompts para triplicar tu productividad", "El
-  prompt…
+  Los posts virales de prompts no son herramientas. Son contenido diseñado para
+  ser compartido, no para funcionar. La diferencia importa.
 heroImage: /images/posts/los-100-prompts-de-productividad-no-sirven-para-nada/hero.webp
 heroImageAlt: >-
   IA en redes vs real: hombre revisando lista de prompts rodeado de notas y

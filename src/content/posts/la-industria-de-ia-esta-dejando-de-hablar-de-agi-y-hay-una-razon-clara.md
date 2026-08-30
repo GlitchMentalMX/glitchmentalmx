@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-08T12:17:00.000Z
 updatedDate: 2026-06-22T01:51:23.959Z
 description: >-
-  Algo cambió en cómo la industria de IA habla sobre su futuro. Los CEOs de
-  OpenAI, Anthropic, y Microsoft están dejando de usar el término AGI
-  (Inteligencia…
+  CEOs de OpenAI, Anthropic y Microsoft están dejando de hablar de AGI. El
+  término "ya no es útil". ¿Admisión de que es inalcanzable?
 heroImage: >-
   /images/posts/la-industria-de-ia-esta-dejando-de-hablar-de-agi-y-hay-una-razon-clara/hero.jpg
 heroImageAlt: >-

@@ -5,8 +5,7 @@ pubDate: 2025-11-13T18:38:00.000Z
 updatedDate: 2026-06-13T00:34:18.989Z
 description: >-
   USD 3,500. Ese es el precio de entrada al futuro según Apple. O al menos eso
-  nos vendieron cuando lanzaron el Vision Pro con ese video épico donde la
-  gente…
+  nos vendieron cuando lanzaron el Vision Pro con ese video épico.
 heroImage: /images/posts/apple-vision-pro-fracaso-y-nadie-quiere-admitirlo/hero.jpg
 heroImageAlt: >-
   Unidad de demostración cubierta en una oficina tecnológica; infraestructura

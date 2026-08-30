@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-17T12:51:00.000Z
 updatedDate: 2026-06-23T03:45:29.415Z
 description: >-
-  La doctora Alice Chiao pasó décadas enseñando medicina de urgencias en
-  Stanford. Hoy enseña a un chatbot a diagnosticar, recetar y responder
-  preguntas…
+  Una doctora de Stanford entrena IA para hacer su trabajo. El sector vale $17
+  mil millones y crece sin freno.
 heroImage: /images/posts/expertos-que-entrenan-ia-para-reemplazarse-el-negocio/hero.jpg
 heroImageAlt: >-
   Expertos entrenando IA: mujer de cuarenta años anotando interfaz en pantalla

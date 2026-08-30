@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-25T12:50:00.000Z
 updatedDate: 2026-06-23T15:27:39.236Z
 description: >-
-  La promesa era clara: la inteligencia artificial reduciría la carga de
-  trabajo, automatizaría lo tedioso y devolvería tiempo a las personas. Un nuevo
-  estudio…
+  Un estudio de UC Berkeley revela que la IA no reduce la carga laboral: la
+  intensifica. El descanso desapareció del trabajo.
 heroImage: /images/posts/la-ia-no-te-da-mas-tiempo-libre-te-da-mas-trabajo/hero.jpg
 heroImageAlt: >-
   IA y carga laboral: mujer frente a laptop nocturna con tareas acumuladas en

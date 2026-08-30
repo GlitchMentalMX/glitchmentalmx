@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2025-12-20T13:34:00.000Z
 updatedDate: 2026-06-13T01:55:29.890Z
 description: >-
-  El 10 de diciembre de 2025, Australia se convirtió en el primer país del mundo
-  en implementar un ban total de redes sociales para menores de 16 años.
-  TikTok,…
+  Australia prohibió redes sociales para menores de 16. Los niños ya encontraron
+  cómo evadir el ban. El experimento que el mundo observa.
 heroImage: >-
   /images/posts/australia-baneo-las-redes-sociales-para-menores-de-16-y-es-caos/hero.jpg
 heroImageAlt: >-

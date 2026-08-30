@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-04-09T13:01:00.001Z
 updatedDate: 2026-06-04T16:16:14.013Z
 description: >-
-  La IA no te está ayudando a pensar — te está diciendo lo que quieres escuchar.
-  El psicólogo Pablo Emilio Gutiérrez lo explicó sin rodeos esta semana:
-  ChatGPT…
+  La IA no te da la respuesta correcta, te da la que quieres oír. Qué es la
+  sycophancy y por qué daña tu autocrítica.
 heroImage: /images/posts/chatgpt-te-da-la-razon-siempre-ese-es-el-problema/hero.jpg
 heroImageAlt: >-
   ChatGPT te da la razón siempre: mujer eligiendo rostro sonriente entre

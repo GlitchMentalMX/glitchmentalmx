@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-01-02T13:08:00.000Z
 updatedDate: 2026-06-22T01:27:18.229Z
 description: >-
-  Gen Z ya no usa redes sociales como Millennials las usaron. En 2026, el
-  comportamiento dominante de Gen Z en redes sociales es consumo pasivo, no
-  creación…
+  Gen Z cambió cómo usa redes en 2026: menos publicar, más consumir pasivamente.
+  YouTube y TikTok dominan. Pinterest revela "ambient chaos".
 heroImage: /images/posts/gen-z-en-2026-como-consume-redes-sociales-ahora/hero.jpg
 heroImageAlt: >-
   Gen Z en 2026: joven con smartphone frente a torrente de contenidos conectados

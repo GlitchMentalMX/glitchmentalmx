@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-13T12:41:00.000Z
 updatedDate: 2026-06-23T03:04:46.887Z
 description: >-
-  Febrero de 2026 arrancó con una ola de nostalgia veraniega en TikTok que tiene
-  poco que ver con el calendario y mucho que ver con el estado de ánimo…
+  Febrero 2026 llega con trends playeros y GRWM minimalista. TikTok apuesta por
+  autenticidad sobre perfección. Descubre qué está viralizando.
 heroImage: >-
   /images/posts/tiktok-febrero-2026-los-trends-llevame-a-la-playa-y-lush-life/hero.jpg
 heroImageAlt: >-

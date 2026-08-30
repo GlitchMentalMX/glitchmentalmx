@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T14:54:00.007Z
 updatedDate: 2026-06-26T01:08:23.233Z
 description: >-
-  Tu teléfono no se vuelve lento porque envejece. Se vuelve lento porque alguien
-  decidió que así debía ser. La obsolescencia programada es una estrategia de…
+  Los dispositivos no duran poco por accidente. La obsolescencia tiene cuatro
+  formas y todas benefician al fabricante antes que a ti.
 heroImage: >-
   /images/posts/obsolescencia-programada-por-que-tu-dispositivo-se-rompe-a-tiempo/hero.jpg
 heroImageAlt: >-

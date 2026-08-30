@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2025-12-02T14:24:00.000Z
 updatedDate: 2026-06-12T04:29:15.260Z
 description: >-
-  La Generación Z compra por impulso más que cualquier generación anterior — eso
-  lo confirma investigación del Tecnológico de Monterrey sobre el efecto de las…
+  La Gen Z está redefiniendo el mercado con un enfoque en sostenibilidad y
+  valores. Descubre cómo su consumo consciente revoluciona 2025.
 heroImage: /images/posts/como-compra-la-gen-z-impulso-pero-con-la-tarea-hecha/hero.jpg
 heroImageAlt: >-
   Cómo compra la Gen Z: compradora frente a panel de trazabilidad y

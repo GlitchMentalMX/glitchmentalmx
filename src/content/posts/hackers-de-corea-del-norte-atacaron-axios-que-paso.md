@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-04-02T12:48:00.004Z
 updatedDate: 2026-06-26T01:37:38.779Z
 description: >-
-  El 31 de marzo de 2026, una librería de JavaScript con más de 100 millones de
-  descargas semanales fue convertida en un sistema de distribución de malware…
+  Hackers norcoreanos comprometieron Axios, la librería JS con 100M de descargas
+  semanales. Tres horas bastaron. Qué pasó y qué debes hacer.
 heroImage: /images/posts/hackers-de-corea-del-norte-atacaron-axios-que-paso/hero.jpg
 heroImageAlt: >-
   Hackers Corea del Norte Axios: cable desconectado en panel de rack operativo,

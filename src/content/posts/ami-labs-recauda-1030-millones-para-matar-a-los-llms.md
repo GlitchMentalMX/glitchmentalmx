@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-10T12:15:00.000Z
 updatedDate: 2026-06-24T04:08:20.704Z
 description: >-
-  Yann LeCun, el ganador del Premio Turing que pasó años argumentando que los
-  modelos de lenguaje grandes son un camino muerto para la inteligencia
-  artificial,…
+  Yann LeCun levantó $1,030 millones para construir IA que aprenda del mundo
+  real, no del lenguaje. Su apuesta: los LLMs son un callejón sin salida.
 heroImage: /images/posts/ami-labs-recauda-1030-millones-para-matar-a-los-llms/hero.jpg
 heroImageAlt: >-
   AMI Labs LLMs: hombre de traje trazando X sobre plano técnico en sala de

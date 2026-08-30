@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-28T11:03:00.002Z
 updatedDate: 2026-04-28T12:49:37.216Z
 description: >-
-  El rumor del teléfono de OpenAI se cubre como si fuera la próxima guerra
-  contra Apple. Es el ángulo equivocado. Lo que el reporte del analista Ming-Chi
-  Kuo…
+  OpenAI no hace hardware por ambición. Lo hace porque sin él, ChatGPT es solo
+  una app más en la tienda de Apple.
 heroImage: /images/posts/openai-necesita-hardware-la-trampa-del-modelo-de-ia/hero.jpg
 heroImageAlt: >-
   OpenAI necesita hardware: mujer analiza dispositivo en almacén lleno de

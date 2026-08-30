@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-11-23T19:44:00.000Z
 updatedDate: 2026-06-13T01:31:09.763Z
 description: >-
-  Durante meses, tal vez años, hemos escuchado la misma narrativa: la
-  inteligencia artificial está devorando el planeta. Que los centros de datos
-  son vampiros…
+  Nueva investigación revela que el impacto ambiental de la IA es menor de lo
+  que pensabas. Aquí está la verdad detrás del mito.
 heroImage: >-
   /images/posts/la-ia-no-va-a-destruir-el-planeta-tenemos-los-datos-para-probarlo/hero.jpg
 heroImageAlt: >-

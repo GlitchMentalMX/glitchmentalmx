@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-16T12:54:00.008Z
 updatedDate: 2026-03-17T17:53:33.587Z
 description: >-
-  El Pentágono puso a Anthropic en una lista de riesgo nacional. Anthropic
-  respondió con dos demandas federales. En el centro del conflicto: si Claude
-  puede…
+  El Pentágono puso a Anthropic en una lista de riesgo. Anthropic respondió con
+  dos demandas federales. Aquí está la historia completa.
 heroImage: /images/posts/anthropic-demanda-al-pentagono-el-caso-que-sacude-la-ia/hero.webp
 heroImageAlt: >-
   demanda de Anthropic al Pentágono: mujer colocando documento en puerta

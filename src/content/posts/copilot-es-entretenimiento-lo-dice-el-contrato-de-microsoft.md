@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-17T12:47:00.000Z
 updatedDate: 2026-06-15T16:32:06.546Z
 description: >-
-  Los términos de uso de Microsoft Copilot contienen una frase que contradice
-  cada anuncio de la compañía: "Copilot is for entertainment purposes only." La…
+  Los términos de uso de Copilot lo llaman herramienta "solo para
+  entretenimiento". Microsoft vende lo contrario a empresas.
 heroImage: >-
   /images/posts/copilot-es-entretenimiento-lo-dice-el-contrato-de-microsoft/hero.jpg
 heroImageAlt: >-

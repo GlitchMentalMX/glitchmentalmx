@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-04-16T12:41:00.001Z
 updatedDate: 2026-04-16T12:41:15.717Z
 description: >-
-  Las empresas aceleran sus inversiones en IA. Sus clientes, en cambio, piden
-  algo diferente: claridad sobre cómo funciona, control sobre lo que hace y…
+  El consumidor global exige transparencia y control sobre la IA. Capgemini
+  encuestó a 12,000 personas en 12 países. Esto encontró.
 heroImage: /images/posts/el-consumidor-2026-mas-confianza-menos-hype-tecnologico/hero.jpg
 heroImageAlt: >-
   El consumidor 2026: usuario abre dispositivo inteligente mostrando hardware

@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-25T12:52:00.000Z
 updatedDate: 2026-03-17T17:57:13.615Z
 description: >-
-  En algún momento de mediados de febrero de 2026, una creadora de contenido en
-  Douyin —la versión china de TikTok— estaba bailando frente a la cámara
-  durante…
+  Un glitch expuso el rostro real de una influencer china en pleno live. Perdió
+  140K seguidores en minutos. El debate apenas empieza.
 heroImage: /images/posts/filtro-fallo-en-vivo-influencer-pierde-140k-seguidores/hero.webp
 heroImageAlt: >-
   Tendencias Redes Sociales: Mujer sorprendida por explosión de luz digital

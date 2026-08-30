@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-07T01:54:59.508Z
 updatedDate: 2026-06-07T01:54:59.508Z
 description: >-
-  El unbossing no es una tendencia viral de Gen Z. Es una respuesta documentada
-  a estructuras laborales que acumulan décadas de disfunción. Las generaciones…
+  El unbossing no es capricho generacional. Es una respuesta racional a
+  jerarquías que dejaron de funcionar. Datos, casos reales y límites honestos.
 heroImage: /images/posts/unbossing-rechazar-al-jefe-no-es-rebeldia-es-logica/hero.jpg
 heroImageAlt: 'unbossing: persona rompiendo un organigrama jerárquico impreso sobre una mesa'
 ---

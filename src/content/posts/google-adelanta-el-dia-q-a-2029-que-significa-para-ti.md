@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-30T12:49:00.002Z
 updatedDate: 2026-03-30T12:49:19.251Z
 description: >-
-  Google acaba de fijar una fecha que la industria llevaba años evitando
-  nombrar: 2029 como plazo máximo para migrar toda su infraestructura a
-  criptografía…
+  Google fijó 2029 para migrar a criptografía poscuántica. Qué es el Día Q y por
+  qué te afecta hoy.
 heroImage: /images/posts/google-adelanta-el-dia-q-a-2029-que-significa-para-ti/hero.webp
 heroImageAlt: >-
   Google adelanta el Día Q: técnica ajustando núcleo de sistema cifrado dentro

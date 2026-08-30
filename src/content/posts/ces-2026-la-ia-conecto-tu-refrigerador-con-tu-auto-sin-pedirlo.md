@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-13T12:45:00.000Z
 updatedDate: 2026-06-23T03:11:50.540Z
 description: >-
-  El Consumer Electronics Show (CES) de 2026 en Las Vegas marcó un punto de
-  inflexión en la industria tecnológica. No por los gadgets individuales, que
-  fueron…
+  CES 2026 redefinió gadgets con ecosistemas de IA colaborativa. Samsung
+  SmartThings AI conecta todo. Pero, ¿realmente lo necesitábamos?
 heroImage: >-
   /images/posts/ces-2026-la-ia-conecto-tu-refrigerador-con-tu-auto-sin-pedirlo/hero.jpg
 heroImageAlt: >-

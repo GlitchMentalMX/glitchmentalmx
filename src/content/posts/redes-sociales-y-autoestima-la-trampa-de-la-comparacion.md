@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-26T11:09:00.001Z
 updatedDate: 2026-03-26T11:09:00.106Z
 description: >-
-  Compararte con otros no es un defecto de tu carácter — es una función
-  cognitiva básica. El problema es que las redes sociales la convirtieron en
-  una…
+  Los likes no son inocentes. Cómo la comparación constante en redes sociales
+  afecta tu autoestima y qué dice la ciencia al respecto.
 heroImage: /images/posts/redes-sociales-y-autoestima-la-trampa-de-la-comparacion/hero.webp
 heroImageAlt: >-
   redes sociales y autoestima: mujer frente a espejo fragmentado con reflejos

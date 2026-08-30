@@ -4,9 +4,9 @@ category: Tendencias Digitales
 pubDate: 2026-01-28T13:00:00.000Z
 updatedDate: 2026-06-22T22:22:56.179Z
 description: >-
-  Si creías que la guerra de las redes sociales se definía entre TikTok,
-  Instagram y X, enero de 2026 te tiene noticias. Mientras tú discutías sobre
-  algoritmos…
+  Meta y Bluesky se enfrentan por el futuro de las redes sociales
+  descentralizadas. Te explicamos la guerra tecnológica y por qué afecta tu
+  experiencia
 heroImage: >-
   /images/posts/threads-vs-bluesky-la-batalla-que-nadie-pidio-y-por-que-importa-en-2026/hero.jpg
 heroImageAlt: >-

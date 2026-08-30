@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-16T14:00:00.000Z
 updatedDate: 2026-03-17T20:13:25.887Z
 description: >-
-  CES 2026 acaba de cerrar en Las Vegas, y como siempre, fue un carnaval de
-  promesas tecnológicas. Pero este año algo fue diferente: menos conceptos…
+  Desde TVs del grosor de un lápiz hasta robots que suben escaleras: los gadgets
+  más impresionantes de CES 2026 que llegarán a tu casa.
 heroImage: >-
   /images/posts/ces-2026-los-gadgets-mas-locos-que-realmente-vas-a-poder-comprar-este-ano/hero.webp
 heroImageAlt: >-

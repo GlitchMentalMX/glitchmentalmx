@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-17T12:49:00.003Z
 updatedDate: 2026-04-17T12:49:33.201Z
 description: >-
-  En el debate global sobre robots que "roban empleos", Japón representa el caso
-  opuesto: los robots llegan a puestos que ya no hay humanos para ocupar. No es…
+  En Japón, los robots no compiten por empleos — los llenan. La crisis
+  demográfica convirtió la IA física en asunto de supervivencia industrial.
 heroImage: /images/posts/japon-y-la-ia-fisica-robots-para-empleos-sin-candidatos/hero.jpg
 heroImageAlt: >-
   Japón y la IA física 2026: robots móviles autónomos operando en almacén

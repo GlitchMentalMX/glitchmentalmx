@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2025-11-22T17:38:00.004Z
 updatedDate: 2026-06-13T01:25:17.304Z
 description: >-
-  ¿Te acuerdas cuando subías una foto a Instagram y llegaba a todos tus
-  seguidores? ¿Cuando un TikTok bien hecho podía hacerse viral sin que tuvieras
-  que…
+  Instagram, TikTok y X redujeron tu alcance a propósito. No es el algoritmo: es
+  el modelo de negocio. Datos y la lógica que nadie explica.
 heroImage: >-
   /images/posts/alcance-organico-en-redes-sociales-por-que-murio-y-quien-se-beneficia/hero.jpg
 heroImageAlt: >-

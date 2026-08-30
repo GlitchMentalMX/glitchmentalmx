@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-05-01T11:00:00.012Z
 updatedDate: 2026-06-16T00:47:34.648Z
 description: >-
-  El 28 de abril arrancó en la corte federal de Oakland el juicio que Elon Musk
-  lanzó contra OpenAI, Sam Altman y Greg Brockman. Lo que está en juego no es
-  un…
+  El juicio Musk vs Altman arrancó en Oakland. En juego: revertir OpenAI a
+  nonprofit, sacar a Altman, y miles de millones en daños.
 heroImage: /images/posts/musk-vs-altman-el-juicio-que-puede-partir-a-openai/hero.jpg
 heroImageAlt: >-
   Musk vs Altman juicio OpenAI 2026: estructura de concreto fracturada por

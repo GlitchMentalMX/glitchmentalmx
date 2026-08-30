@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-03T23:38:03.459Z
 updatedDate: 2026-06-03T23:38:03.460Z
 description: >-
-  Una red neuronal no es magia ni una réplica digital del cerebro humano: es un
-  sistema de decisiones encadenadas que aprende por ensayo y error a escala…
+  Una red neuronal no imita al cerebro: es un sistema de decisiones encadenadas
+  que aprende por error. Aquí el mecanismo real.
 heroImage: /images/posts/redes-neuronales-explicadas-sin-matematicas-ni-hype/hero.jpg
 heroImageAlt: >-
   Redes neuronales explicadas: técnica conecta nodo activo en una red de

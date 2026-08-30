@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-08T12:48:00.003Z
 updatedDate: 2026-04-08T12:48:39.855Z
 description: >-
-  En marzo de 2026, Xiaomi lanzó en silencio un modelo de IA bajo el nombre
-  "Hunter Alpha" en OpenRouter. Sin firma, sin anuncio. A los pocos días se
-  convirtió…
+  MiMo-V2-Pro es el modelo de IA de Xiaomi que compite con Claude y ChatGPT.
+  Precios bajos, rendimiento de frontera.
 heroImage: /images/posts/mimo-v2-pro-de-xiaomi-la-ia-mas-potente-del-momento/hero.jpg
 heroImageAlt: >-
   MiMo-V2-Pro de Xiaomi: ingeniera alineando módulos de hardware IA en

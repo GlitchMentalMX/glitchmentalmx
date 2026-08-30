@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-06T12:39:00.000Z
 updatedDate: 2026-06-23T23:21:58.181Z
 description: >-
-  El 26 de febrero de 2026, Jack Dorsey envió una carta interna a los empleados
-  de Block —la empresa dueña de Square y Cash App— para anunciarles que más de…
+  Block despidió a 4,000 personas citando la IA. Aquí está la guía práctica para
+  no quedar fuera cuando tu empresa haga lo mismo.
 heroImage: /images/posts/que-hacer-cuando-la-ia-amenaza-tu-trabajo-en-2026/hero.jpg
 heroImageAlt: >-
   IA amenaza empleo 2026: mujer de pie frente a pared con notas impresas, dedo

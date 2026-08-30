@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-06T12:56:00.003Z
 updatedDate: 2026-04-06T12:56:36.049Z
 description: >-
-  Una herramienta de IA puede mejorar tus decisiones y al mismo tiempo destruir
-  la capacidad colectiva de tu profesión. Eso no es una paradoja filosófica: es…
+  Nature publica la advertencia más incómoda sobre IA: ayuda a los individuos y
+  deteriora profesiones completas. Los datos lo confirman.
 heroImage: >-
   /images/posts/nature-avisa-la-ia-util-puede-vaciar-profesiones-enteras/hero.jpg
 heroImageAlt: >-

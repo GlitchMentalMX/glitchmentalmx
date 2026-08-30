@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-06-03T23:44:51.268Z
 updatedDate: 2026-06-04T14:34:02.238Z
 description: >-
-  Más del 80% de los universitarios mexicanos ya usa inteligencia artificial
-  generativa —tecnología que genera textos, imágenes y código desde
-  instrucciones en…
+  Más del 80% de universitarios mexicanos ya usa IA generativa. Las
+  instituciones llegaron tarde y sin reglas. Datos SEP, abril 2026.
 heroImage: /images/posts/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/hero.jpg
 heroImageAlt: >-
   IA en las aulas de LATAM: estudiante usa laptop frente a diagrama de IA

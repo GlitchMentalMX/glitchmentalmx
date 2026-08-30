@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-07T12:53:00.000Z
 updatedDate: 2026-06-06T19:37:33.603Z
 description: >-
-  Mientras todos hablan de qué trabajos va a destruir la inteligencia
-  artificial, Microsoft Research hizo una pregunta más útil: ¿cuáles resisten
-  mejor? La…
+  Microsoft analizó 200,000 interacciones reales con Copilot y encontró qué
+  profesiones tienen menor riesgo de automatización. Los datos sorprenden.
 heroImage: /images/posts/los-empleos-que-la-ia-no-puede-tocar-segun-microsoft/hero.webp
 heroImageAlt: >-
   empleos resistentes IA 2026: hombre selecciona figura humana protegida por

@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-02-16T13:42:00.000Z
 updatedDate: 2026-06-23T03:40:00.983Z
 description: >-
-  Si trabajas frente a una computadora, Mustafa Suleyman tiene noticias que
-  probablemente no quieres escuchar. El CEO de Microsoft AI acaba de declarar en
-  una…
+  El CEO de Microsoft AI dice que la IA automatizará la mayoría de trabajos de
+  oficina en 18 meses. Te explicamos qué significa.
 heroImage: >-
   /images/posts/jefe-de-ia-de-microsoft-18-meses-para-automatizar-tu-trabajo/hero.jpg
 heroImageAlt: >-

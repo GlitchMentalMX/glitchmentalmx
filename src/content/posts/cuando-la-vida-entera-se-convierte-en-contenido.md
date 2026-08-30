@@ -4,8 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-28T01:32:00.002Z
 updatedDate: 2026-03-28T01:32:40.363Z
 description: >-
-  Fotografiar el desayuno antes de comerlo ya no es una rareza — es un reflejo
-  condicionado. La estetización de la vida cotidiana, el proceso por el cual la…
+  Vivir en modo publicación tiene un costo. Qué dice la investigación sobre
+  identidad, estética digital y estetización de la vida cotidiana.
 heroImage: /images/posts/cuando-la-vida-entera-se-convierte-en-contenido/hero.webp
 heroImageAlt: >-
   vida como contenido: mujer come mientras interfaz digital segmenta y registra

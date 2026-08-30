@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-02-25T12:40:00.000Z
 updatedDate: 2026-06-06T19:42:24.469Z
 description: >-
-  El DJI Osmo Pocket 3 sigue siendo, para muchos creadores de contenido, la
-  cámara gimbal más equilibrada que existe: compacta, estabilizada y capaz de…
+  El DJI Osmo Pocket 4 ya apareció en tiendas de Malasia. LED integrado, 4K a
+  240fps y modo SuperPhoto: esto es lo que viene.
 heroImage: >-
   /images/posts/dji-osmo-pocket-4-todo-lo-que-se-sabe-antes-del-lanzamiento/hero.webp
 heroImageAlt: >-

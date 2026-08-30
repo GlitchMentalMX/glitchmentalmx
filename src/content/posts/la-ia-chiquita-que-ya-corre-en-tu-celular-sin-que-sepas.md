@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-12T21:54:41.333Z
 updatedDate: 2026-06-12T21:54:41.333Z
 description: >-
-  Mientras la conversación pública sigue obsesionada con quién tiene el modelo
-  de IA más grande, otra carrera de IA ya está corriendo dentro de tu teléfono,…
+  Mientras todos hablan de la IA gigante en la nube, otra IA ya vive en tu
+  teléfono. Así funcionan los modelos pequeños y por qué importan.
 heroImage: /images/posts/la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas/hero.jpg
 heroImageAlt: >-
   La IA en tu teléfono: una mujer con un dispositivo compacto frente a racks de

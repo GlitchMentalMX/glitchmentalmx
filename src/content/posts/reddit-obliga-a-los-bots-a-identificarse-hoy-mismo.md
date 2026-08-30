@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-03-31T12:58:00.007Z
 updatedDate: 2026-03-31T12:59:51.348Z
 description: >-
-  Hoy, 31 de marzo de 2026, Reddit activa un sistema de etiquetas obligatorias
-  para cuentas automatizadas y verificación humana para cuentas sospechosas. No
-  es…
+  Reddit activa hoy etiquetas obligatorias para bots y verificación humana. Qué
+  cambia para los usuarios reales desde el 31 de marzo.
 heroImage: /images/posts/reddit-obliga-a-los-bots-a-identificarse-hoy-mismo/hero.webp
 heroImageAlt: >-
   Reddit obliga a los bots: figura marcada como bot pasando control de acceso

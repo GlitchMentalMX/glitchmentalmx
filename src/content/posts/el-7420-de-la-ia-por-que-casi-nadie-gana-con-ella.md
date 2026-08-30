@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-23T12:30:00.002Z
 updatedDate: 2026-06-26T02:56:03.144Z
 description: >-
-  El AI Performance Study 2026 de PwC entrevistó a 1,217 ejecutivos senior de
-  grandes empresas en 25 sectores a nivel global, y su hallazgo central es…
+  Solo el 20% de las empresas captura el 74% del valor de la IA. El estudio de
+  PwC con 1,217 ejecutivos explica por qué.
 heroImage: /images/posts/el-7420-de-la-ia-por-que-casi-nadie-gana-con-ella/hero.jpg
 heroImageAlt: >-
   valor IA empresas: ejecutivo solo en auditorio corporativo vacío frente a

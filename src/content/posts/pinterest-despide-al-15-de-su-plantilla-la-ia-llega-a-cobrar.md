@@ -4,9 +4,8 @@ category: Cultura Digital
 pubDate: 2026-02-04T12:33:00.000Z
 updatedDate: 2026-06-22T22:58:49.984Z
 description: >-
-  Pinterest anunció el 27 de enero que recortará menos del 15% de su fuerza
-  laboral, lo que representa aproximadamente 700 empleos de una plantilla global
-  de…
+  Pinterest recorta 700 empleos para invertir en IA. El impacto real de la
+  inteligencia artificial en el mercado laboral ya está aquí.
 heroImage: >-
   /images/posts/pinterest-despide-al-15-de-su-plantilla-la-ia-llega-a-cobrar/hero.jpg
 heroImageAlt: >-

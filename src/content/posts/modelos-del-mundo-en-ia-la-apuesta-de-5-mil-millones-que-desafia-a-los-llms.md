@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-26T13:10:00.000Z
 updatedDate: 2026-06-22T19:52:38.358Z
 description: >-
-  Yann LeCun acaba de hacer una de las movidas más audaces de su carrera. El
-  ganador del Premio Turing y ex jefe científico de IA en Meta dejó la compañía
-  en…
+  Yann LeCun dejó Meta para fundar AMI Labs con una valuación de $5 mil
+  millones. Los modelos del mundo prometen superar las limitaciones de los LLMs.
 heroImage: >-
   /images/posts/modelos-del-mundo-en-ia-la-apuesta-de-5-mil-millones-que-desafia-a-los-llms/hero.jpg
 heroImageAlt: >-

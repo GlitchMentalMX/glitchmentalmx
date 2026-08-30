@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T14:01:00.005Z
 updatedDate: 2026-03-29T14:01:42.865Z
 description: >-
-  Los riesgos de los sistemas autónomos no son ejercicios de filosofía futura.
-  Tienen historial documentado, víctimas identificadas y litigios activos. En
-  2024…
+  Vehículos, algoritmos de salud, trading. Los fallos de sistemas autónomos en
+  producción no son hipotéticos — ya tienen historial.
 heroImage: /images/posts/cuando-los-sistemas-autonomos-fallan-casos-reales/hero.webp
 heroImageAlt: >-
   Cuando los sistemas autónomos fallan: paquete atascado en cruce de cintas con

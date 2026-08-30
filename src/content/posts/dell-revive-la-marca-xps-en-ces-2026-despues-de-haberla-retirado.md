@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-07T12:06:00.000Z
 updatedDate: 2026-06-22T01:32:46.032Z
 description: >-
-  Dell hizo algo extraño en CES 2026. Revivió la marca XPS apenas seis meses
-  después de haberla "retirado". En julio de 2025, Dell anunció que la línea
-  XPS…
+  Dell revive XPS en CES 2026 tras retirarlo en 2025. La marca regresa "por
+  demanda popular" con modelos de 13, 14 y 16 pulgadas con Intel Core Ultra.
 heroImage: >-
   /images/posts/dell-revive-la-marca-xps-en-ces-2026-despues-de-haberla-retirado/hero.jpg
 heroImageAlt: >-

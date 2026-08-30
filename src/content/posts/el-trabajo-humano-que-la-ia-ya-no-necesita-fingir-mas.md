@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-13T11:00:00.000Z
 updatedDate: 2026-07-13T11:00:00.114Z
 description: >-
-  Mechanical Turk cierra a nuevos clientes el 30 de julio de 2026, veintiún años
-  después de que Jeff Bezos la bautizara como "inteligencia artificial…
+  Mechanical Turk cierra a nuevos clientes el 30 de julio de 2026. Un estudio de
+  EPFL revela por qué: el problema nunca fue la IA, fue la verificación.
 heroImage: /images/posts/el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas/hero.jpg
 heroImageAlt: >-
   Mechanical Turk cierre 2026: mujer se quita gafete de trabajador anónimo junto

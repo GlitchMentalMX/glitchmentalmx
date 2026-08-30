@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2025-12-29T15:18:00.000Z
 updatedDate: 2026-06-21T02:07:20.610Z
 description: >-
-  Si usas ChatGPT y sientes que las respuestas son mediocres o genéricas, el
-  problema probablemente no es la IA. El problema es cómo le estás preguntando.
-  La…
+  Guía completa 2026: aprende a escribir prompts efectivos para ChatGPT.
+  Ejemplos reales, técnicas avanzadas y errores comunes. Todo explicado.
 heroImage: >-
   /images/posts/mejores-prompts-para-chatgpt-en-2026-guia-practica-completa/hero.jpg
 heroImageAlt: >-

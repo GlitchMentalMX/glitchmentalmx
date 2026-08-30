@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-12T14:42:00.000Z
 updatedDate: 2026-03-17T17:57:13.616Z
 description: >-
-  Meta anunció el 7 de enero que eliminará el programa de verificadores de
-  hechos externos en Facebook e Instagram. En su lugar, implementará un sistema
-  de…
+  Meta elimina verificadores de hechos externos y adoptará "notas de comunidad"
+  como X. Zuckerberg dice que es por "libertad de expresión".
 heroImage: >-
   /images/posts/meta-elimina-verificadores-externos-y-ahora-usa-notas-de-comunidad-como-x/hero.webp
 heroImageAlt: >-

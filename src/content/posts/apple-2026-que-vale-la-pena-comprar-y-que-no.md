@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-04T13:45:00.000Z
 updatedDate: 2026-06-23T22:38:51.898Z
 description: >-
-  Apple tuvo una semana de anuncios del 2 al 4 de marzo de 2026, y la pregunta
-  que todo mundo se hace es la misma de siempre: ¿vale la pena gastar? Esta vez
-  la…
+  iPhone 17e, MacBook Air M5, iPad Air M4 y MacBook Neo. Te decimos qué
+  productos Apple 2026 vale la pena comprar y cuáles no.
 heroImage: /images/posts/apple-2026-que-vale-la-pena-comprar-y-que-no/hero.jpg
 heroImageAlt: >-
   Apple 2026 qué comprar: mano desplazando dispositivos genéricos sobre mesa —

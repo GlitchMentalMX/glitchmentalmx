@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-03T12:11:00.000Z
 updatedDate: 2026-06-23T17:12:40.197Z
 description: >-
-  El Mobile World Congress regresó esta semana a Barcelona con más de 2,900
-  expositores y una narrativa que se repitió en cada pabellón: la inteligencia…
+  El MWC Barcelona 2026 mostró robots con conciencia espacial, el Robot Phone de
+  HONOR y gafas Ray-Ban Meta con pantalla. Esto fue lo más destacado.
 heroImage: /images/posts/mwc-2026-robots-celulares-que-rotan-y-gafas-con-ia/hero.jpg
 heroImageAlt: >-
   MWC 2026 tecnología: tres dispositivos en transición simultánea sobre mesa de

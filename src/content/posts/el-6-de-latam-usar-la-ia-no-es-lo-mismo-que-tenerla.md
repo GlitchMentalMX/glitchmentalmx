@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-31T11:00:00.000Z
 updatedDate: 2026-07-31T11:00:00.213Z
 description: >-
-  Solo el 6% de las organizaciones de América Latina genera valor económico
-  significativo con inteligencia artificial, según el Foro Económico Mundial
-  (FEM) y…
+  Solo 6% de LATAM capta valor real de la IA y la región recibe apenas 1% de la
+  inversión global. La causa no es de gestión, es de propiedad.
 heroImage: /images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/hero.jpg
 heroImageAlt: 'IA en LATAM: mujer en workstation con cable hacia rack sellado con candado.'
 ---

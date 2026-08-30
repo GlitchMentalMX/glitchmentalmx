@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-06-01T11:00:00.000Z
 updatedDate: 2026-07-09T02:39:49.574Z
 description: >-
-  China concentra el 49.1% de las patentes globales de biología sintética;
-  Estados Unidos, apenas el 12.8%. Ese dato —extraído del reporte del Programa
-  de…
+  China tiene casi la mitad de las patentes de biología sintética del mundo.
+  Aquí no se habla de ciencia: se habla de poder.
 heroImage: >-
   /images/posts/el-adn-como-codigo-quien-controla-el-software-de-la-vida/hero.jpg
 heroImageAlt: >-

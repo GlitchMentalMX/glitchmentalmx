@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-02-24T12:36:00.000Z
 updatedDate: 2026-06-23T14:29:26.837Z
 description: >-
-  Hay algo que la Generación Z entendió antes que cualquier estratega de
-  marketing: en un mundo donde el algoritmo decide qué ves y cuándo lo ves, la
-  única…
+  La Gen Z combate el caos algorítmico con eventos predecibles. TikTok es ya
+  plataforma oficial del Mundial 2026. Así funciona el nuevo hype.
 heroImage: >-
   /images/posts/gen-z-convirtio-el-2026-en-un-calendario-de-hype-programado/hero.jpg
 heroImageAlt: >-

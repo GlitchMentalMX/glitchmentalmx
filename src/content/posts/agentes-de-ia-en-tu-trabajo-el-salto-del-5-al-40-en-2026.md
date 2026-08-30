@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-03T12:09:00.000Z
 updatedDate: 2026-06-23T17:08:07.666Z
 description: >-
-  Hay una cifra que Gartner publicó hace unos meses y que apenas está empezando
-  a aterrizar en las conversaciones de oficina: a finales de 2025, menos del 5%…
+  Gartner confirma: el 40% de las apps empresariales tendrán agentes de IA este
+  año. Qué significa para quienes trabajan hoy.
 heroImage: >-
   /images/posts/agentes-de-ia-en-tu-trabajo-el-salto-del-5-al-40-en-2026/hero.jpg
 heroImageAlt: >-

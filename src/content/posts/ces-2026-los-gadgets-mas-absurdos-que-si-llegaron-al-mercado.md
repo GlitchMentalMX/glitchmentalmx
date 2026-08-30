@@ -4,8 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-27T12:59:00.000Z
 updatedDate: 2026-06-22T19:59:47.641Z
 description: >-
-  Cada enero, el Consumer Electronics Show (CES) en Las Vegas se convierte en el
-  escaparate mundial de la innovación tecnológica. Entre los televisores…
+  Cortapelos con IA, toallas femeninas con sensores y parches para la
+  eyaculación precoz: CES 2026 trajo los gadgets más ridículos del año.
 heroImage: >-
   /images/posts/ces-2026-los-gadgets-mas-absurdos-que-si-llegaron-al-mercado/hero.jpg
 heroImageAlt: 'CES 2026: objetos de cuidado personal y parche exhibidos en vitrinas acrílicas'

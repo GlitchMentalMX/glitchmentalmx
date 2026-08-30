@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-04-24T13:01:00.003Z
 updatedDate: 2026-04-24T13:01:19.455Z
 description: >-
-  Meta está capturando los movimientos del mouse, los clics y las pulsaciones de
-  teclado de sus empleados para entrenar sus modelos de IA. No es rumor: la…
+  Meta captura pulsaciones de teclado de sus empleados para entrenar IA. Y en
+  mayo empieza a despedirlos.
 heroImage: /images/posts/meta-graba-empleados-para-la-ia-que-los-sustituira/hero.jpg
 heroImageAlt: >-
   Meta graba empleados: mujer escribe bajo cámaras de vigilancia en oficina

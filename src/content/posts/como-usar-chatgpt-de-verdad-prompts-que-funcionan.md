@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-03-29T02:46:00.002Z
 updatedDate: 2026-06-26T00:46:07.060Z
 description: >-
-  La mayoría de la gente usa ChatGPT como si fuera Google con mejor ortografía.
-  Le hace preguntas cortas, lee la primera respuesta y la acepta. El resultado
-  es…
+  No basta con escribirle a ChatGPT como si fuera un buscador. Aprende a darle
+  instrucciones que sí funcionan.
 heroImage: /images/posts/como-usar-chatgpt-de-verdad-prompts-que-funcionan/hero.jpg
 heroImageAlt: >-
   Prompts ChatGPT: hombre escribiendo instrucción larga en interfaz de chat,

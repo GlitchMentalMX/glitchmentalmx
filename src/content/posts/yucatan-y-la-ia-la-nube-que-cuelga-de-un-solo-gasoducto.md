@@ -4,8 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-07-08T11:00:00.000Z
 updatedDate: 2026-07-08T13:49:00.738Z
 description: >-
-  Un data center en Mérida no compite por más energía: compite por un tubo fijo.
-  La península de Yucatán es un subsistema eléctrico casi aislado, y ese dato…
+  La IA en Yucatán no choca con el agua ni con la generación: choca con un
+  gasoducto único y una transmisión ya saturada.
 heroImage: /images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto/hero.jpg
 heroImageAlt: >-
   Subestación eléctrica y torres de transmisión en el paisaje calizo de Yucatán,

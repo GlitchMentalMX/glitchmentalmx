@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-03-29T14:57:00.003Z
 updatedDate: 2026-03-29T14:57:26.199Z
 description: >-
-  Los términos y condiciones que nunca lees no son un tecnicismo legal sin
-  consecuencias. Son el contrato por el que intercambias información sobre ti
-  mismo…
+  Cada vez que aceptas "términos y condiciones", cedes algo. Qué datos recogen
+  los dispositivos cotidianos y qué hacen con ellos realmente.
 heroImage: /images/posts/tu-privacidad-como-producto-lo-que-cedes-sin-leerlo/hero.webp
 heroImageAlt: >-
   Tu privacidad como producto: mujer conectada por cables a red de datos

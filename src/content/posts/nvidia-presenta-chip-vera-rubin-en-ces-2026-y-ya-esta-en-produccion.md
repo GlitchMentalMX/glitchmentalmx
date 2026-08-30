@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-01-06T12:09:00.000Z
 updatedDate: 2026-06-22T01:14:40.600Z
 description: >-
-  Jensen Huang subió al escenario de CES 2026 con su característica chaqueta de
-  cuero y anunció que Vera Rubin, el chip de IA de próxima generación de
-  NVIDIA,…
+  NVIDIA anunció en CES 2026 que Vera Rubin ya está en producción. Jensen Huang
+  revela $500 mil millones en pedidos de Blackwell y Rubin hasta 2026.
 heroImage: >-
   /images/posts/nvidia-presenta-chip-vera-rubin-en-ces-2026-y-ya-esta-en-produccion/hero.jpg
 heroImageAlt: >-

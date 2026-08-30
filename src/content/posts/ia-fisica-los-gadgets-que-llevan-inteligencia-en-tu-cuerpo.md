@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-20T15:11:00.000Z
 updatedDate: 2026-06-22T13:36:12.237Z
 description: >-
-  La inteligencia artificial dejó de ser algo que vive en la nube o en tu
-  laptop. En 2026, la IA se puso ropa y ahora la llevas puesta. Lentes
-  inteligentes que…
+  La IA dejó de vivir en la nube. Ahora está en tus lentes, anillos y relojes.
+  Descubre la revolución de la IA física en 2026.
 heroImage: >-
   /images/posts/ia-fisica-los-gadgets-que-llevan-inteligencia-en-tu-cuerpo/hero.jpg
 heroImageAlt: 'IA física 2026: gafas inteligentes conectadas a anillo y dispositivo portátil'

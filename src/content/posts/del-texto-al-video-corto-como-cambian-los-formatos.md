@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-03-27T11:04:00.013Z
 updatedDate: 2026-06-14T18:35:04.228Z
 description: >-
-  Cada vez que cambia el formato dominante de consumo de información, cambia
-  también la forma en que la gente piensa. No es metáfora: es el patrón que se
-  ha…
+  Del periódico al TikTok en un siglo. Cómo la evolución de los formatos
+  redefine el consumo de información y qué viene después.
 heroImage: /images/posts/del-texto-al-video-corto-como-cambian-los-formatos/hero.webp
 heroImageAlt: >-
   Del texto al video corto: muro de periódicos transformándose en pantallas

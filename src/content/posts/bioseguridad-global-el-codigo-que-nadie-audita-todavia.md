@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-06-17T11:00:00.000Z
 updatedDate: 2026-07-09T02:41:53.165Z
 description: >-
-  La bioseguridad global tiene un problema de diseño, no de intenciones: el
-  tratado que prohíbe las armas biológicas desde 1972 nunca tuvo manera de
-  comprobar…
+  El sistema que vigila los laboratorios más peligrosos del mundo nunca tuvo
+  inspectores. Cómo funciona, y no funciona, la bioseguridad global.
 heroImage: /images/posts/bioseguridad-global-el-codigo-que-nadie-audita-todavia/hero.jpg
 heroImageAlt: >-
   Bioseguridad global: operadora conectando cable en sistema de vigilancia con

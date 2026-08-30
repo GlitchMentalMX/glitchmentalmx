@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2025-11-25T14:48:00.001Z
 updatedDate: 2026-06-11T03:56:31.001Z
 description: >-
-  Seamos brutalmente honestos: ¿cuántas veces has abierto la cámara frontal de
-  tu celular y, antes de grabar o tomarte una selfie, has aplicado un filtro?
-  No…
+  Los filtros AR no son entretenimiento: son infraestructura de un mercado de 7
+  mil millones. Cómo TikTok monetiza tu insatisfacción con tu cara.
 heroImage: >-
   /images/posts/dismorfia-digital-y-filtros-ar-el-negocio-de-venderte-una-cara-que-no-existe/hero.jpg
 heroImageAlt: >-

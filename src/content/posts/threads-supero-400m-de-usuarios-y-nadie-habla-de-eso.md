@@ -4,9 +4,8 @@ category: Tendencias Digitales
 pubDate: 2025-12-23T12:40:00.000Z
 updatedDate: 2026-06-13T02:00:07.896Z
 description: >-
-  Mientras todos estaban obsesionados con el drama de TikTok y su ban en Estados
-  Unidos, Threads de Meta silenciosamente cruzó 400 millones de usuarios
-  activos…
+  Threads alcanzó 400M de usuarios y 115M diarios. Es el éxito silencioso que
+  está cambiando las redes sociales sin que te des cuenta.
 heroImage: /images/posts/threads-supero-400m-de-usuarios-y-nadie-habla-de-eso/hero.jpg
 heroImageAlt: >-
   Mujer observa una multitud que usa discretamente la misma app en una plaza

@@ -4,9 +4,8 @@ category: Tecnología de Consumo
 pubDate: 2026-01-05T13:05:00.000Z
 updatedDate: 2026-06-13T02:33:51.857Z
 description: >-
-  CES 2026 (6-9 de enero en Las Vegas) marca un cambio fundamental. Por primera
-  vez, la IA física domina la feria sobre la IA de software. Samsung, NVIDIA,
-  LG,…
+  CES 2026 presenta IA física como gran tendencia. Samsung, NVIDIA y LG lanzan
+  robots y dispositivos autónomos listos para el mercado comercial.
 heroImage: >-
   /images/posts/ces-2026-apuesta-todo-a-ia-fisica-robots-y-autos-que-ya-puedes-comprar/hero.webp
 heroImageAlt: >-

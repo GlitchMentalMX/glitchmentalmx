@@ -4,8 +4,8 @@ category: Tendencias Digitales
 pubDate: 2026-01-22T13:04:00.000Z
 updatedDate: 2026-06-22T19:19:11.692Z
 description: >-
-  Si piensas que TikTok en 2026 funciona igual que hace dos años, tengo malas
-  noticias para ti: la plataforma cambió las reglas por completo. El algoritmo…
+  TikTok cambió las reglas en 2026. Descubre cómo crear contenido que funciona,
+  las tendencias que importan y cómo crecer en la plataforma.
 heroImage: >-
   /images/posts/como-dominar-tiktok-en-2026-la-guia-definitiva-para-creadores/hero.jpg
 heroImageAlt: >-

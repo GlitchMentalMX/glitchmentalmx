@@ -4,9 +4,8 @@ category: Inteligencia Artificial
 pubDate: 2026-06-03T23:48:04.357Z
 updatedDate: 2026-06-03T23:48:30.658Z
 description: >-
-  La ética de la IA no se resuelve con principios genéricos. "Equidad" y
-  "transparencia" no obligan a nada sin un marco que los jerarquice. Lo que sí
-  obliga es…
+  Utilitarismo, Kant y ética del cuidado aplicados a tres decisiones reales que
+  la IA ya toma hoy. Sin filosofía de salón.
 heroImage: /images/posts/etica-de-la-ia-tres-marcos-para-decisiones-reales/hero.jpg
 heroImageAlt: >-
   Ética de la IA: investigador analiza libros abiertos ante un punto de decisión
