@@ -19,6 +19,8 @@ Lo que sí puedes usar sin pagar es el nivel gratuito de descargas limitadas del
 
 ¿Buscas cuánto cuesta Freepik? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-freepik-hoy/)
 
+¿Freepik tiene un código de descuento real? [Verifícalo aquí →](/articulos/freepik-codigo-de-descuento/)
+
 <a href="https://www.freepik.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Freepik →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

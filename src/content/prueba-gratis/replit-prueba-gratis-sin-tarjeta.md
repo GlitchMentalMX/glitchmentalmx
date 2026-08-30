@@ -19,6 +19,8 @@ Vale aclarar que Core no es solo una mensualidad fija: incluye un presupuesto de
 
 ¿Buscas cuánto cuesta Replit? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-replit-hoy/)
 
+¿Replit tiene un código de descuento real? [Verifícalo aquí →](/articulos/replit-codigo-de-descuento/)
+
 <a href="https://replit.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Replit →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -1,0 +1,93 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CodigoDescuentoRow from '../../components/CodigoDescuentoRow.astro';
+import BuscadorPreciosIA from '../../components/BuscadorPreciosIA.astro';
+import { getCollection } from 'astro:content';
+
+const VEREDICTO_ORDEN = { rojo: 0, amarillo: 1, verde: 2 };
+
+const posts = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).sort((a, b) => {
+  const porVeredicto = VEREDICTO_ORDEN[a.data.veredicto] - VEREDICTO_ORDEN[b.data.veredicto];
+  return porVeredicto !== 0 ? porVeredicto : a.data.herramienta.localeCompare(b.data.herramienta, 'es');
+});
+
+// {nombre, slug} generado en build-time desde la colección — mismo buscador
+// que /precios-ia/, /quien-entrena-con-tus-datos/ y /prueba-gratis-sin-tarjeta/.
+const buscadorItems = posts.map((post) => ({
+  nombre: post.data.herramienta,
+  slug: post.id,
+}));
+
+const title = 'Códigos de descuento de IA: los reales y los cuentos chinos';
+const description =
+  'La mayoría de los "códigos de descuento" que circulan para herramientas de IA son falsos, caducados o no oficiales. Verificamos herramienta por herramienta cuáles canales de descuento son reales.';
+---
+
+<Layout title={title} description={description}>
+  <Breadcrumbs items={[
+    { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
+    { name: 'Códigos de descuento' },
+  ]} />
+  <section class="container header">
+    <p class="eyebrow">Códigos de descuento · {posts.length} herramientas verificadas</p>
+    <h1>{title}</h1>
+    <p class="dek">
+      Busca "código de descuento" de casi cualquier herramienta de IA y vas a encontrar decenas de
+      sitios de cupones con códigos que nunca funcionan. Aquí verificamos, directo en la fuente
+      oficial de cada herramienta, si existe algún código o promoción real — y cuáles son los
+      canales legítimos de descuento cuando sí los hay (planes anuales, programas Edu, promociones
+      por tiempo limitado). Esto no es lo mismo que el precio base de cada herramienta — eso ya lo
+      cubrimos en <a href="/precios-ia/">Precios de IA</a>.
+    </p>
+  </section>
+
+  <section class="container leyenda">
+    <span class="leyenda-item"><span aria-hidden="true">🔴</span> No existe ningún código real</span>
+    <span class="leyenda-item"><span aria-hidden="true">🟡</span> Solo promos oficiales limitadas</span>
+    <span class="leyenda-item"><span aria-hidden="true">🟢</span> Código o promoción activa hoy</span>
+  </section>
+
+  <section class="container list">
+    <p class="eyebrow list-label">Las herramientas</p>
+    <BuscadorPreciosIA items={buscadorItems} />
+    {posts.map((post, i) => (
+      <CodigoDescuentoRow
+        index={i + 1}
+        slug={post.id}
+        herramienta={post.data.herramienta}
+        veredicto={post.data.veredicto}
+        fraseCorta={post.data.fraseCorta}
+      />
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 24px; max-width: 760px; }
+  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
+  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+  .dek a { color: var(--accent); font-weight: 500; }
+
+  .leyenda {
+    max-width: 760px;
+    padding: 0 24px 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+  }
+  .leyenda-item {
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  @media (max-width: 700px) {
+    .leyenda { grid-template-columns: 1fr; }
+  }
+
+  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list-label { margin-bottom: 6px; }
+</style>

@@ -19,6 +19,8 @@ La única excepción que reconoce la propia documentación de Midjourney es un "
 
 ¿Buscas cuánto cuesta Midjourney? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-midjourney-hoy/)
 
+¿Midjourney tiene un código de descuento real? [Verifícalo aquí →](/articulos/midjourney-codigo-de-descuento/)
+
 <a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Midjourney →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

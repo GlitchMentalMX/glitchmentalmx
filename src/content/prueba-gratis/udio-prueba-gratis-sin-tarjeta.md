@@ -19,6 +19,8 @@ Vale la pena aclarar la diferencia entre las dos rutas: quedarte en el plan grat
 
 ¿Buscas cuánto cuesta Udio? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-udio-hoy/)
 
+¿Udio tiene un código de descuento real? [Verifícalo aquí →](/articulos/udio-codigo-de-descuento/)
+
 <a href="https://www.udio.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Udio →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

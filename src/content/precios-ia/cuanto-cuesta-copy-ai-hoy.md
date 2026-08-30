@@ -19,4 +19,6 @@ Chat da palabras ilimitadas en el chat de generación, y acceso a los modelos de
 
 La mayoría de las herramientas de esta lista cobran por persona sin importar cuántas uses; Copy.ai te cobra como si fueras cinco personas aunque seas una sola. Antes de asumir que vas a pagar $29 USD al mes, confirma si tu caso de uso individual tiene alguna alternativa — de lo contrario, el gasto real es cinco veces mayor al que muestra esta calculadora.
 
+¿Copy.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/copy-ai-codigo-de-descuento/)
+
 <a href="https://www.copy.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Copy.ai →</a>

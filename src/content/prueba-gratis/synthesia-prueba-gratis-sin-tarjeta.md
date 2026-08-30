@@ -19,6 +19,8 @@ Si tu objetivo es probar específicamente lo que ofrece el plan de pago —desca
 
 ¿Buscas cuánto cuesta Synthesia? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-synthesia-hoy/)
 
+¿Synthesia tiene un código de descuento real? [Verifícalo aquí →](/articulos/synthesia-codigo-de-descuento/)
+
 <a href="https://www.synthesia.io/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Synthesia →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -19,6 +19,8 @@ Si tu necesidad es más ligera (revisar unos cuantos artículos), el plan Basic 
 
 ¿Buscas cuánto cuesta Elicit? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-elicit-hoy/)
 
+¿Elicit tiene un código de descuento real? [Verifícalo aquí →](/articulos/elicit-codigo-de-descuento/)
+
 <a href="https://elicit.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Elicit →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

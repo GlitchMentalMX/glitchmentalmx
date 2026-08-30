@@ -19,6 +19,8 @@ Si no cancelas antes de que termine el periodo, Jasper te mueve automáticamente
 
 ¿Buscas cuánto cuesta Jasper? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-jasper-ai-hoy/)
 
+¿Jasper tiene un código de descuento real? [Verifícalo aquí →](/articulos/jasper-ai-codigo-de-descuento/)
+
 <a href="https://www.jasper.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Jasper →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

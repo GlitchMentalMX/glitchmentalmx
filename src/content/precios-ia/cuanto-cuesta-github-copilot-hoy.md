@@ -19,4 +19,6 @@ Pro da autocompletado de código y sugerencias de edición ilimitadas (el plan g
 
 Microsoft usa "Copilot" como marca paraguas para varios productos distintos: el de Office (que ya cubrimos aparte en esta serie), el de GitHub, y hasta el que viene integrado en Windows. Si programas y buscas cuánto cuesta Copilot, este es el artículo correcto; si usas Word, Excel u Outlook, el precio que te interesa es el de Microsoft 365 Premium, no este.
 
+¿GitHub Copilot tiene un código de descuento real? [Verifícalo aquí →](/articulos/github-copilot-codigo-de-descuento/)
+
 <a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Suscríbete a GitHub Copilot Pro en el sitio oficial →</a>

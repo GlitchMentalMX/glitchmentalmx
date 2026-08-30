@@ -19,4 +19,6 @@ Premium da 660,000 puntos al mes para repartir entre los distintos modelos dispo
 
 La promesa de "todos los modelos en un solo lugar" tiene una letra chica importante: cada mensaje consume puntos según qué tan costoso sea el modelo que uses, así que usar los modelos más avanzados con frecuencia agota tu cuota más rápido que usar los básicos. Si tu plan es usar exclusivamente el modelo más caro disponible todos los días, es probable que el total de puntos no te alcance para todo el mes.
 
+¿Poe tiene un código de descuento real? [Verifícalo aquí →](/articulos/poe-codigo-de-descuento/)
+
 <a href="https://poe.com/subscription_plans" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Poe →</a>

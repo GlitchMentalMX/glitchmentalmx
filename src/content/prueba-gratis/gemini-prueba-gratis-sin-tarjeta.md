@@ -21,6 +21,8 @@ Existe una diferencia importante frente al chatbot básico: la versión gratuita
 
 ¿Gemini entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/gemini-usa-mis-datos-para-entrenar-ia/)
 
+¿Gemini tiene un código de descuento real? [Verifícalo aquí →](/articulos/gemini-codigo-de-descuento/)
+
 <a href="https://one.google.com/about/google-ai-plans/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Gemini →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

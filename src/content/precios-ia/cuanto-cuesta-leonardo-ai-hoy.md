@@ -19,4 +19,6 @@ Essential da 8,500 tokens rápidos al mes (con un banco acumulado de hasta 25,50
 
 En el plan gratuito, todo lo que generas es visible públicamente en la plataforma por defecto — algo que muchos no esperan hasta que ya publicaron algo que querían mantener privado. Pagar Essential no es solo comprar más tokens: es comprar la opción de que tus generaciones sean privadas, que para buena parte de quien usa esto profesionalmente es la razón real para pagar.
 
+¿Leonardo AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/leonardo-ai-codigo-de-descuento/)
+
 <a href="https://leonardo.ai/pricing/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Leonardo AI →</a>

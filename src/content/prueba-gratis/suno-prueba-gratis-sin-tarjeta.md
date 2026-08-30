@@ -19,6 +19,8 @@ Si tu plan es solo experimentar con la generación de música sin publicarla ni 
 
 ¿Buscas cuánto cuesta Suno? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-suno-hoy/)
 
+¿Suno tiene un código de descuento real? [Verifícalo aquí →](/articulos/suno-codigo-de-descuento/)
+
 <a href="https://suno.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Suno →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

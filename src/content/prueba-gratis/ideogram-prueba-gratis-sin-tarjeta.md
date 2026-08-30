@@ -19,6 +19,8 @@ Lo que sí existe sin tarjeta es el plan gratuito, que da créditos "lentos" lim
 
 ¿Buscas cuánto cuesta Ideogram? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-ideogram-hoy/)
 
+¿Ideogram tiene un código de descuento real? [Verifícalo aquí →](/articulos/ideogram-codigo-de-descuento/)
+
 <a href="https://ideogram.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Ideogram →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

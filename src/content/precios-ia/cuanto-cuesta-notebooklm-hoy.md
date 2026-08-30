@@ -19,4 +19,6 @@ Con Google AI Pro, NotebookLM permite hasta 300 fuentes por cuaderno (contra un 
 
 Esta es la confusión más común en esta herramienta específica: la gente pregunta cuánto cuesta NotebookLM esperando un precio propio, pero la respuesta correcta es que no existe ese precio aislado. Si tu único interés es esta herramienta y no el resto del paquete de Google AI Pro (Gemini, el almacenamiento, la generación de imagen), vale la pena decidir si el resto del plan te compensa el gasto, porque no hay forma de pagar solo por esta parte.
 
+¿NotebookLM tiene un código de descuento real? [Verifícalo aquí →](/articulos/notebooklm-codigo-de-descuento/)
+
 <a href="https://notebook.google/" target="_blank" rel="noopener noreferrer">Usa Gemini Notebook (NotebookLM) en el sitio oficial →</a>

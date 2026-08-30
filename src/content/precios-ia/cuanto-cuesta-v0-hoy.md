@@ -19,4 +19,6 @@ Plus quita el límite de 7 mensajes al día que tiene el plan gratuito, da $30 U
 
 A diferencia de una suscripción con uso libre, los $30 USD mensuales de Plus vienen empaquetados como crédito de consumo — si generas mucho en un mes, es posible agotar ese crédito antes de que termine el ciclo de facturación, similar a cómo funcionan Lovable y Replit (ambos ya cubiertos en esta serie). Vale la pena tratar el precio de esta calculadora como el costo de entrada, no como un techo garantizado de uso ilimitado.
 
+¿v0 tiene un código de descuento real? [Verifícalo aquí →](/articulos/v0-codigo-de-descuento/)
+
 <a href="https://v0.app/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de v0 →</a>

@@ -19,4 +19,6 @@ Basic da 5,000 unidades de generación al mes (frente a apenas 100 al día en el
 
 A diferencia de herramientas de imagen que dependen de un modelo propio, Krea funciona como una capa sobre varios modelos de generación distintos disponibles en el mercado, y los actualiza conforme salen nuevos. Pagar Krea no es apostar por una sola tecnología de imagen — es tener acceso centralizado a las que van apareciendo.
 
+¿Krea tiene un código de descuento real? [Verifícalo aquí →](/articulos/krea-ai-codigo-de-descuento/)
+
 <a href="https://www.krea.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Krea →</a>

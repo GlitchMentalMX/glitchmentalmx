@@ -19,4 +19,6 @@ Pro da uso estándar del Research Agent, de reportes y de revisiones sistemátic
 
 A diferencia del resto de esta lista, Elicit está construida específicamente para investigadores que necesitan revisar literatura científica a volumen — cribar miles de artículos, extraer datos estructurados, organizar hallazgos en tablas. Si tu necesidad es más general (resumir un artículo ocasional, por ejemplo), herramientas de propósito general como ChatGPT o Claude, ya cubiertas en esta serie, probablemente te resuelvan sin este costo.
 
+¿Elicit tiene un código de descuento real? [Verifícalo aquí →](/articulos/elicit-codigo-de-descuento/)
+
 <a href="https://elicit.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Elicit →</a>

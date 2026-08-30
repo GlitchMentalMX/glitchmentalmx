@@ -23,6 +23,8 @@ Vale aclarar algo de nombres: el artículo hermano de esta serie sobre entrenami
 
 ¿Notion entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/notion-usa-mis-datos-para-entrenar-ia/)
 
+¿Notion AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/notion-ai-codigo-de-descuento/)
+
 <a href="https://www.notion.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Notion AI →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

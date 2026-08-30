@@ -19,4 +19,6 @@ Creator da videos de hasta 30 minutos, exportación en 1080p, elimina la marca d
 
 El límite de 1 minuto del plan gratuito es suficiente para evaluar si la calidad del avatar y la voz te convencen, pero no para producir contenido real — un video corporativo, un curso, un anuncio. Si tu prueba con el plan gratuito ya te convenció de la calidad, el salto a Creator es principalmente por duración y sin marca de agua, no por una mejora en la tecnología misma.
 
+¿HeyGen tiene un código de descuento real? [Verifícalo aquí →](/articulos/heygen-codigo-de-descuento/)
+
 <a href="https://www.heygen.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de HeyGen →</a>

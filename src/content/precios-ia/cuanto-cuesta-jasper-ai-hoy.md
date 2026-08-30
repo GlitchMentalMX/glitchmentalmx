@@ -19,4 +19,6 @@ Pro da acceso a Canvas (su editor de documentos con IA), agentes de marketing es
 
 El precio de Jasper solo tiene sentido si vas a generar contenido de marketing con regularidad — para alguien que escribe ocasionalmente, herramientas como ChatGPT o Claude (ya cubiertas en esta serie) hacen un trabajo comparable a una fracción del costo. Vale la pena tener esto claro antes de suscribirte: Jasper compite con presupuestos de marketing, no con el gasto personal típico de esta lista.
 
+¿Jasper tiene un código de descuento real? [Verifícalo aquí →](/articulos/jasper-ai-codigo-de-descuento/)
+
 <a href="https://www.jasper.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Jasper →</a>

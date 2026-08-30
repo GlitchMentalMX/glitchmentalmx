@@ -19,6 +19,8 @@ Lo que sí existen son promociones puntuales de Discord con terceros —NVIDIA G
 
 ¿Discord entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/discord-usa-mis-datos-para-entrenar-ia/)
 
+¿Discord tiene un código de descuento real? [Verifícalo aquí →](/articulos/discord-codigo-de-descuento/)
+
 <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Discord →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

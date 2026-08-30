@@ -23,6 +23,8 @@ Aquí está el matiz que separa a Canva de un caso claramente "rojo": la misma p
 
 ¿Canva entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/canva-usa-mis-datos-para-entrenar-ia/)
 
+¿Canva tiene un código de descuento real? [Verifícalo aquí →](/articulos/canva-codigo-de-descuento/)
+
 <a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Canva →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -23,4 +23,6 @@ El plan gratuito te dice qué está mal; Pro te ofrece cómo decirlo mejor. Si t
 
 Sí, por default en cuentas personales — en cuentas de trabajo o escuela, ya vienes excluido. [Lee el detalle verificado →](/articulos/grammarly-usa-mis-datos-para-entrenar-ia/)
 
+¿Grammarly tiene un código de descuento real? [Verifícalo aquí →](/articulos/grammarly-codigo-de-descuento/)
+
 <a href="https://www.grammarly.com/pro" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Grammarly →</a>

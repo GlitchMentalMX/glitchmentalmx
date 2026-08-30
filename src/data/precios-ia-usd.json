@@ -58,5 +58,9 @@
   "framer": { "nombre": "Framer Pro", "precioUSD": 30, "periodo": "mensual", "empresa": "Framer B.V." },
   "manychat": { "nombre": "ManyChat Pro", "precioUSD": 29, "periodo": "mensual", "empresa": "Manychat, Inc." },
   "zapier": { "nombre": "Zapier Professional", "precioUSD": 29.99, "periodo": "mensual", "empresa": "Zapier Inc." },
-  "beautiful-ai": { "nombre": "Beautiful.ai Pro", "precioUSD": 45, "periodo": "mensual", "empresa": "Beautiful.ai, Inc." }
+  "beautiful-ai": { "nombre": "Beautiful.ai Pro", "precioUSD": 45, "periodo": "mensual", "empresa": "Beautiful.ai, Inc." },
+  "nest-aware": { "nombre": "Google Home Premium Standard (antes Nest Aware)", "precioUSD": 10, "periodo": "mensual", "empresa": "Google" },
+  "23andme-plus": { "nombre": "23andMe+ Premium (Premium Ancestry + Health)", "precioUSD": 99, "periodo": "anual", "empresa": "23andMe / TTAM Research Institute" },
+  "amazon-prime": { "nombre": "Amazon Prime", "precioUSD": 14.99, "periodo": "mensual", "empresa": "Amazon" },
+  "ring-protect": { "nombre": "Ring Protect Solo", "precioUSD": 4.99, "periodo": "mensual", "empresa": "Amazon (Ring)" }
 }

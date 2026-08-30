@@ -19,4 +19,6 @@ Plus quita la marca de agua de Gamma de tus presentaciones, permite hasta 75 dia
 
 El plan gratuito de Gamma genera presentaciones genuinamente utilizables — el motivo más común para pagar no es que el contenido gratuito sea peor, sino que no puedes presentarlo profesionalmente con el logo de Gamma en cada diapositiva. Si el uso es interno o informal, el plan gratuito puede bastarte perfectamente.
 
+¿Gamma tiene un código de descuento real? [Verifícalo aquí →](/articulos/gamma-codigo-de-descuento/)
+
 <a href="https://gamma.app/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Gamma →</a>

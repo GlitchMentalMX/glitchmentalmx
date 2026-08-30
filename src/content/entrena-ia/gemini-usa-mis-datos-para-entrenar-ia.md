@@ -27,4 +27,6 @@ Si ya revisaste este mismo interruptor en el artículo de Google Assistant, es p
 
 [Última actualización: 24/08/2026]
 
+¿Gemini tiene un código de descuento real? [Verifícalo aquí →](/articulos/gemini-codigo-de-descuento/)
+
 <a href="https://support.google.com/gemini/answer/13594961" target="_blank" rel="noopener noreferrer">Lee la política oficial de Actividad de Gemini →</a>

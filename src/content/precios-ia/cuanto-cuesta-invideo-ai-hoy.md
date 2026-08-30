@@ -19,4 +19,6 @@ Plus da 75 créditos mensuales, acceso a modelos de IA de video recientes (inclu
 
 Similar a Krea con imagen, InVideo AI no depende de un solo modelo de video propio — te da acceso a varios modelos de distintas empresas (Google, ByteDance y otros) bajo la misma suscripción. Si lo que buscas es comparar resultados entre modelos sin pagar cada uno por separado, esa es la ventaja específica de esta herramienta frente a generadores de video de un solo modelo.
 
+¿InVideo AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/invideo-ai-codigo-de-descuento/)
+
 <a href="https://invideo.io/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de InVideo AI →</a>

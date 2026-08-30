@@ -19,4 +19,6 @@ Premium da acceso a más de 1,000 voces naturales (frente a solo 10 voces más r
 
 Si buscas "Speechify" puedes toparte con tres ofertas distintas (texto a voz, audiolibros, o Studio) con precios que no se combinan automáticamente. Antes de suscribirte, confirma cuál de los tres es el que realmente necesitas — pagar Premium no te da acceso a Studio, ni viceversa.
 
+¿Speechify tiene un código de descuento real? [Verifícalo aquí →](/articulos/speechify-codigo-de-descuento/)
+
 <a href="https://speechify.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Speechify →</a>

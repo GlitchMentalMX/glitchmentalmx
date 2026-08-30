@@ -19,4 +19,6 @@ Pro da herramientas core sin límite, fondos generados con IA, modelos de moda c
 
 Vale la pena aclarar esto porque genera confusión real: aunque la misma empresa es dueña de ambos productos, Photoroom se factura y contrata por separado de Canva. Si ya pagas Canva Pro esperando que Photoroom viniera incluido, no es el caso — necesitas una suscripción aparte.
 
+¿Photoroom tiene un código de descuento real? [Verifícalo aquí →](/articulos/photoroom-codigo-de-descuento/)
+
 <a href="https://www.photoroom.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Photoroom →</a>

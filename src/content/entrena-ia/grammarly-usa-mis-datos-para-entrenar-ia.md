@@ -27,4 +27,6 @@ Aquí la distinción es total, no parcial: si usas Grammarly a través de una li
 
 [Última actualización: 23/08/2026]
 
+¿Grammarly tiene un código de descuento real? [Verifícalo aquí →](/articulos/grammarly-codigo-de-descuento/)
+
 <a href="https://www.grammarly.com/privacy" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Grammarly →</a>

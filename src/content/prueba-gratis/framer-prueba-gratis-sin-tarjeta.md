@@ -19,6 +19,8 @@ En otras palabras: no existe una forma de probar específicamente Basic o Pro si
 
 ¿Buscas cuánto cuesta Framer? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-framer-hoy/)
 
+¿Framer tiene un código de descuento real? [Verifícalo aquí →](/articulos/framer-codigo-de-descuento/)
+
 <a href="https://www.framer.com/pricing/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Framer →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

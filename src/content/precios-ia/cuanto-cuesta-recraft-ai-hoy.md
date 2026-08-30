@@ -19,4 +19,6 @@ Basic da 1,000 créditos al mes, derechos de uso comercial sobre lo que generas,
 
 Igual que en Kling AI (ya cubierto en esta serie), la línea entre gratis y pagado en Recraft no es solo cuántas imágenes generas, sino si las puedes usar fuera de un contexto personal. Si tu plan es usar lo que generes en redes de un negocio, un cliente o cualquier proyecto público, el plan gratuito no te lo permite sin importar cuántas generaciones te queden.
 
+¿Recraft tiene un código de descuento real? [Verifícalo aquí →](/articulos/recraft-ai-codigo-de-descuento/)
+
 <a href="https://www.recraft.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Recraft →</a>

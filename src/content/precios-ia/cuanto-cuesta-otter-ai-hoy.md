@@ -19,4 +19,6 @@ Pro da 1,200 minutos de transcripción al mes (frente a 300 en el plan gratuito 
 
 Con reuniones de una hora, 1,200 minutos equivalen a 20 reuniones al mes — suficiente para uso moderado, pero ajustado si tu trabajo implica varias reuniones diarias. Vale la pena calcular cuántas horas de reunión tienes en un mes normal antes de asumir que el plan Pro te alcanza sin problema.
 
+¿Otter.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/otter-ai-codigo-de-descuento/)
+
 <a href="https://otter.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Otter.ai →</a>

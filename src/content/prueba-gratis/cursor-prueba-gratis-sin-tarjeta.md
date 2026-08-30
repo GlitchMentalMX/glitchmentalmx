@@ -19,6 +19,8 @@ En otras palabras, hoy no existe una forma de probar específicamente el plan Pr
 
 ¿Buscas cuánto cuesta Cursor? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-cursor-hoy/)
 
+¿Cursor tiene un código de descuento real? [Verifícalo aquí →](/articulos/cursor-codigo-de-descuento/)
+
 <a href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Cursor →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

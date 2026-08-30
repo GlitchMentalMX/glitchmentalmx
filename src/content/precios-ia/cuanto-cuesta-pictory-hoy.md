@@ -19,4 +19,6 @@ Starter da 2,400 minutos de video al año, 5 GB de almacenamiento, un kit de mar
 
 A diferencia de generadores de video que crean escenas desde un prompt libre, la propuesta central de Pictory es tomar contenido ya escrito (un artículo, un guion, un documento) y convertirlo automáticamente en video con voz e imágenes relacionadas. Si tu flujo de trabajo empieza con texto que ya tienes y quieres convertirlo en video, esa es la diferencia funcional frente a otras herramientas de video con IA de esta lista.
 
+¿Pictory tiene un código de descuento real? [Verifícalo aquí →](/articulos/pictory-codigo-de-descuento/)
+
 <a href="https://pictory.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Pictory →</a>

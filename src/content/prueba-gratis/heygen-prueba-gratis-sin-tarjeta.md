@@ -19,6 +19,8 @@ Pero eso no es lo mismo que una prueba del plan Creator completo: para desbloque
 
 ¿Buscas cuánto cuesta HeyGen? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-heygen-hoy/)
 
+¿HeyGen tiene un código de descuento real? [Verifícalo aquí →](/articulos/heygen-codigo-de-descuento/)
+
 <a href="https://www.heygen.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de HeyGen →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

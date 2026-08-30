@@ -5,7 +5,12 @@ herramienta: "Amazon Q Developer"
 herramientaId: "amazon-q-developer"
 sitioOficial: "https://aws.amazon.com/q/developer/pricing/"
 pubDate: 2026-08-23
+updatedDate: 2026-08-30
 ---
+
+## Aviso: AWS está descontinuando esta herramienta
+
+Antes de ver el precio, algo más importante: según el blog oficial de AWS DevOps & Developer Productivity, Amazon Q Developer dejó de aceptar cuentas nuevas desde el 15 de mayo de 2026, y el soporte completo (planes de pago e IDE plugins) termina el 30 de abril de 2027. AWS está migrando a los usuarios hacia Kiro, su nuevo entorno de desarrollo agéntico. Si ya eres suscriptor puedes seguir usándolo y agregar usuarios nuevos a tu cuenta existente, pero si no tienes cuenta todavía, no vas a poder crear una.
 
 ## Qué cambia el precio final
 
@@ -18,5 +23,7 @@ Pro eleva los límites de solicitudes agénticas del plan gratuito (que da 50 al
 ## La indemnización de propiedad intelectual es un diferenciador poco común en esta lista
 
 Amazon Q Developer Pro incluye una garantía legal de que la empresa te protege si el código que genera infringe derechos de autor de terceros — una protección que la mayoría de asistentes de código de esta serie no destacan de forma tan explícita. Si trabajas en un entorno corporativo donde ese riesgo legal importa, es un punto a favor que va más allá de las funciones técnicas.
+
+¿Amazon Q Developer tiene un código de descuento real? [Verifícalo aquí →](/articulos/amazon-q-developer-codigo-de-descuento/)
 
 <a href="https://aws.amazon.com/q/developer/pricing/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Amazon Q Developer →</a>

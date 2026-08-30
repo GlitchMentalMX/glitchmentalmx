@@ -21,6 +21,8 @@ Como ya se explica en el artículo de precios de esta serie, la diferencia más 
 
 ¿Buscas cuánto cuesta Leonardo AI? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-leonardo-ai-hoy/)
 
+¿Leonardo AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/leonardo-ai-codigo-de-descuento/)
+
 <a href="https://leonardo.ai/pricing/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Leonardo AI →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

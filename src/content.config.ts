@@ -199,6 +199,35 @@ const pruebaGratis = defineCollection({
   }),
 });
 
+// Cuarta colección de la familia "IA sin letra chiquita", mismo criterio de
+// separación que preciosIA/entrenaIA/pruebaGratis: contenido utilitario/
+// referencial (si el código de descuento que circula para una herramienta es
+// real o falso), no debe mezclarse con `category` de posts ni aparecer en
+// RSS/archivo/home. Comparte la ruta /articulos/[slug].astro con las otras
+// tres (unión en getStaticPaths). `veredicto` reusa los mismos 3 valores por
+// consistencia con el resto de la familia, pero la semántica es propia de
+// esta serie: rojo = no existe código real, amarillo = solo promos oficiales
+// limitadas, verde = sí existe un código/promo activa y verificable hoy.
+const codigosDescuento = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/codigos-descuento' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    herramienta: z.string(),
+    herramientaId: z.string(),
+    empresa: z.string(),
+    sitioOficial: z.string().url(),
+    veredicto: z.enum(['rojo', 'verde', 'amarillo']),
+    fraseCorta: z.string(),
+    fuenteVerificacion: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
 const indiceGlitchmentalmx = defineCollection({
   loader: singleJsonEntryLoader('./src/content/indice/actual.json', 'actual'),
   schema: z.object({
@@ -233,4 +262,5 @@ export const collections = {
   preciosIA,
   entrenaIA,
   pruebaGratis,
+  codigosDescuento,
 };

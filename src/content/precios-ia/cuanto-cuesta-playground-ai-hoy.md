@@ -19,4 +19,6 @@ Pro da 150 créditos al mes, plantillas premium sin límite, herramientas de amp
 
 A diferencia de otras herramientas de esta lista donde el plan gratuito te deja explorar bastante antes de toparte con el límite, en Playground AI el techo gratuito llega casi de inmediato. Si te interesa evaluar la calidad de generación con calma, probablemente necesites el plan de pago desde el principio, no como un paso posterior.
 
+¿Playground AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/playground-ai-codigo-de-descuento/)
+
 <a href="https://playgroundai.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Playground AI →</a>

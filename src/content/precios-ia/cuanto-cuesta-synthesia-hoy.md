@@ -19,4 +19,6 @@ Starter permite descargar los videos que generas (el plan gratuito de 10 minutos
 
 Más que un límite de minutos, lo que hace que el plan gratuito de Synthesia sea solo para probar es que el video que generas se queda atrapado en la plataforma — no lo puedes bajar ni usar en ningún lado. Si tu objetivo es usar el video fuera de Synthesia, necesitas un plan de pago desde el primer proyecto real, no solo cuando se te acabe el límite de minutos.
 
+¿Synthesia tiene un código de descuento real? [Verifícalo aquí →](/articulos/synthesia-codigo-de-descuento/)
+
 <a href="https://www.synthesia.io/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Synthesia →</a>

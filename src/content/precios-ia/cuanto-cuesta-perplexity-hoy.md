@@ -23,4 +23,6 @@ La gente compara el precio de Perplexity contra ChatGPT o Claude como si fueran 
 
 Sí — y desde julio de 2026 ya ni promete por escrito dejarte optar por no participar. [Lee el detalle verificado →](/articulos/perplexity-usa-mis-datos-para-entrenar-ia/)
 
+¿Perplexity tiene un código de descuento real? [Verifícalo aquí →](/articulos/perplexity-codigo-de-descuento/)
+
 <a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Perplexity Pro →</a>

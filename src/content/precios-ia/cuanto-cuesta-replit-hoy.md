@@ -19,4 +19,6 @@ Core da créditos mensuales para Replit Agent, hasta 5 colaboradores en tus proy
 
 A diferencia de la mayoría de esta lista, donde el precio mensual es el gasto total, en Replit Core la mensualidad incluye un presupuesto de créditos que se puede agotar antes de fin de mes si usas mucho el Agent para generar o modificar código. Vale la pena tratar el precio de esta calculadora como un piso, no como el techo garantizado de lo que vas a pagar.
 
+¿Replit tiene un código de descuento real? [Verifícalo aquí →](/articulos/replit-codigo-de-descuento/)
+
 <a href="https://replit.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Replit →</a>

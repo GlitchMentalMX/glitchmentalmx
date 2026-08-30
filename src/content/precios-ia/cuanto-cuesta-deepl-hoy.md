@@ -19,4 +19,6 @@ Individual da 300,000 caracteres de traducción al mes, tres traducciones de arc
 
 Mucha gente asume que pagar DeepL Pro es solo por traducir más texto, pero el cambio más relevante es que tus traducciones dejan de usarse para entrenar los modelos de la empresa — algo importante si traduces documentos de trabajo o información sensible. Ese beneficio empieza desde el plan Individual, no hace falta pagar los niveles más caros para tenerlo.
 
+¿DeepL tiene un código de descuento real? [Verifícalo aquí →](/articulos/deepl-codigo-de-descuento/)
+
 <a href="https://www.deepl.com/pro" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de DeepL Pro →</a>

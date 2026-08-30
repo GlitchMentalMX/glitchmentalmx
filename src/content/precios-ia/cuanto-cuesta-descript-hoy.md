@@ -19,4 +19,6 @@ Creator da 30 horas de medios al mes, exportación en 4K sin marca de agua, acce
 
 Descript no compite solo por funciones de IA — su diferenciador real es que editas el video borrando y moviendo texto, no arrastrando clips en una línea de tiempo tradicional. Si ya usaste el plan gratuito y ese flujo te convenció, el salto a Creator es principalmente por horas de uso y calidad de exportación, no por una función nueva que no habías visto.
 
+¿Descript tiene un código de descuento real? [Verifícalo aquí →](/articulos/descript-codigo-de-descuento/)
+
 <a href="https://www.descript.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Descript →</a>

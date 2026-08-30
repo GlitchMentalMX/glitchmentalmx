@@ -25,4 +25,6 @@ Es tentador pensar que lo que le pasó a los usuarios de OkCupid no tiene nada q
 
 [Última actualización: 23/08/2026]
 
+¿Tinder tiene un código de descuento real? [Verifícalo aquí →](/articulos/tinder-codigo-de-descuento/)
+
 <a href="https://www.tinder.com/privacy" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Tinder →</a>

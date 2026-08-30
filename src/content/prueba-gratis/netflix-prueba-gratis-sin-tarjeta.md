@@ -19,6 +19,8 @@ El propio Centro de Ayuda de Netflix sí deja una puerta entreabierta: dice text
 
 ¿Netflix entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/netflix-usa-mis-datos-para-entrenar-ia/)
 
+¿Netflix tiene un código de descuento real? [Verifícalo aquí →](/articulos/netflix-codigo-de-descuento/)
+
 <a href="https://help.netflix.com/legal/privacy" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Netflix →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -23,4 +23,6 @@ La suscripción sigue costando $20 USD mes tras mes, pero el peso sube y baja fr
 
 Sí, por default en Free, Plus y Pro — puedes apagarlo, pero no borra lo ya usado. [Lee el detalle verificado →](/articulos/chatgpt-usa-mis-datos-para-entrenar-ia/)
 
+¿ChatGPT tiene un código de descuento real? [Verifícalo aquí →](/articulos/chatgpt-codigo-de-descuento/)
+
 <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de ChatGPT →</a>

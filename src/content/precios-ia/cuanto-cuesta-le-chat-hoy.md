@@ -19,4 +19,6 @@ Pro da uso ampliado de mensajes y búsqueda web, codificación asistida por IA d
 
 Mistral AI es una de las pocas empresas de esta serie con sede en Europa (Francia), lo que para algunos usuarios importa por temas de privacidad de datos y regulación distinta a la de las empresas estadounidenses que dominan el resto de la lista. Si ese es un factor relevante para ti, Le Chat es la alternativa más directa dentro de esta serie, y además la más barata de las asistentes de chat de propósito general.
 
+¿Le Chat tiene un código de descuento real? [Verifícalo aquí →](/articulos/le-chat-codigo-de-descuento/)
+
 <a href="https://mistral.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Le Chat →</a>

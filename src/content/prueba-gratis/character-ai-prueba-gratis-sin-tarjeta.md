@@ -23,6 +23,8 @@ Al no existir un periodo de prueba, la única manera de experimentar las funcion
 
 ¿Character.AI entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/character-ai-usa-mis-datos-para-entrenar-ia/)
 
+¿Character.AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/character-ai-codigo-de-descuento/)
+
 <a href="https://character.ai/plus" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Character.AI →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

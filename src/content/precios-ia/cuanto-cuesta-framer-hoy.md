@@ -19,4 +19,6 @@ Pro da 3,000 créditos mensuales para "Agents" (las funciones de IA que generan 
 
 A diferencia de Lovable o Bolt.new (ambos ya cubiertos en esta serie), que generan aplicaciones completas desde cero, Framer parte de un editor visual de sitios web tradicional al que le sumaron funciones de IA ("Agents") para acelerar el diseño y la edición. Si tu necesidad es específicamente un sitio web con buen diseño visual, más que una aplicación funcional compleja, esa es la diferencia real frente a los otros generadores de esta lista.
 
+¿Framer tiene un código de descuento real? [Verifícalo aquí →](/articulos/framer-codigo-de-descuento/)
+
 <a href="https://www.framer.com/pricing/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Framer →</a>

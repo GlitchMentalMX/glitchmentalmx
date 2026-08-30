@@ -27,4 +27,6 @@ Si usas ChatGPT Enterprise o Team a través de tu trabajo, tus datos quedan excl
 
 [Última actualización: 24/08/2026]
 
+¿ChatGPT tiene un código de descuento real? [Verifícalo aquí →](/articulos/chatgpt-codigo-de-descuento/)
+
 <a href="https://help.openai.com/en/articles/7730893-data-controls-faq" target="_blank" rel="noopener noreferrer">Lee la documentación oficial de Controles de Datos de OpenAI →</a>

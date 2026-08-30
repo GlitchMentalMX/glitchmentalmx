@@ -19,4 +19,6 @@ Pro conecta hasta tres canales de mensajería (WhatsApp, Instagram y Messenger, 
 
 A diferencia de la mayoría de esta lista, ManyChat no es una herramienta de uso personal — es infraestructura de atención al cliente automatizada, particularmente popular entre negocios pequeños y medianos en México que atienden ventas por WhatsApp e Instagram. Si administras las redes de un negocio y necesitas automatizar respuestas y flujos de venta, este es el tipo de gasto operativo que vale la pena comparar contra el tiempo que ahorra, no solo contra otras herramientas de esta lista.
 
+¿ManyChat tiene un código de descuento real? [Verifícalo aquí →](/articulos/manychat-codigo-de-descuento/)
+
 <a href="https://manychat.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de ManyChat →</a>

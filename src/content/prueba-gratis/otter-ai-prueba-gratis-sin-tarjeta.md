@@ -19,6 +19,8 @@ La única prueba gratuita que ofrece Otter.ai es la del plan Business, un nivel 
 
 ¿Buscas cuánto cuesta Otter.ai? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-otter-ai-hoy/)
 
+¿Otter.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/otter-ai-codigo-de-descuento/)
+
 <a href="https://otter.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Otter.ai →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

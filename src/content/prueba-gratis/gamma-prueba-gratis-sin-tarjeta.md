@@ -19,6 +19,8 @@ Es decir: el plan gratuito de Gamma es genuinamente utilizable sin tarjeta —in
 
 ¿Buscas cuánto cuesta Gamma? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-gamma-hoy/)
 
+¿Gamma tiene un código de descuento real? [Verifícalo aquí →](/articulos/gamma-codigo-de-descuento/)
+
 <a href="https://gamma.app/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Gamma →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

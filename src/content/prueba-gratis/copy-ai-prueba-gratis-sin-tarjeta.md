@@ -19,6 +19,8 @@ Si tu intención era usar el plan gratuito como una forma de "probar" el plan Ch
 
 ¿Buscas cuánto cuesta Copy.ai? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-copy-ai-hoy/)
 
+¿Copy.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/copy-ai-codigo-de-descuento/)
+
 <a href="https://www.copy.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Copy.ai →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -19,6 +19,8 @@ No existe una forma de activar la prueba sin antes registrar una tarjeta u otro 
 
 ¿Spotify entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/spotify-usa-mis-datos-para-entrenar-ia/)
 
+¿Spotify tiene un código de descuento real? [Verifícalo aquí →](/articulos/spotify-codigo-de-descuento/)
+
 <a href="https://www.spotify.com/us/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Spotify →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

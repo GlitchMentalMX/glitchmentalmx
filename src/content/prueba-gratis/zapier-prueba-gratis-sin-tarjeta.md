@@ -19,6 +19,8 @@ Hay una excepción que vale la pena conocer: esta garantía aplica a la prueba i
 
 ¿Buscas cuánto cuesta Zapier? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-zapier-hoy/)
 
+¿Zapier tiene un código de descuento real? [Verifícalo aquí →](/articulos/zapier-codigo-de-descuento/)
+
 <a href="https://zapier.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Zapier →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

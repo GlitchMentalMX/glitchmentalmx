@@ -23,4 +23,6 @@ Firefly se promociona como "seguro para uso comercial" porque Adobe entrena sus 
 
 No, por default — salvo que subas tu contenido a Adobe Stock. [Lee el detalle verificado →](/articulos/adobe-usa-mis-datos-para-entrenar-ia/)
 
+¿Adobe Firefly tiene un código de descuento real? [Verifícalo aquí →](/articulos/adobe-firefly-codigo-de-descuento/)
+
 <a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Adobe Firefly →</a>

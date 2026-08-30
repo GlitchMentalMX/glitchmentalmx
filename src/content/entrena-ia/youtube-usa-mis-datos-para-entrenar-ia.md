@@ -25,4 +25,6 @@ Organizaciones de música independiente han señalado que una licencia redactada
 
 [Última actualización: 24/08/2026]
 
+¿YouTube tiene un código de descuento real? [Verifícalo aquí →](/articulos/youtube-codigo-de-descuento/)
+
 <a href="https://www.youtube.com/static?template=terms" target="_blank" rel="noopener noreferrer">Lee los Términos de Servicio oficiales de YouTube →</a>

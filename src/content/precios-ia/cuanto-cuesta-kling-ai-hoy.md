@@ -19,4 +19,6 @@ Standard da 660 créditos al mes (equivalentes a unas 660 imágenes o 33 videos 
 
 A diferencia de herramientas donde el plan gratuito ya permite usar lo generado libremente, en Kling AI el contenido del plan gratuito está explícitamente restringido a uso no comercial. Si piensas usar lo que generes en un proyecto de cliente, un anuncio o cualquier cosa que no sea uso personal, necesitas un plan de pago desde el primer video, no solo cuando quieras quitar la marca de agua.
 
+¿Kling AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/kling-ai-codigo-de-descuento/)
+
 <a href="https://app.klingai.com/global/membership/membership-plan" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Kling AI →</a>

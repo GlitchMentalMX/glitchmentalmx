@@ -23,6 +23,8 @@ OpenAI no mantiene una prueba gratuita pública y permanente de Plus. En ocasion
 
 ¿ChatGPT entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/chatgpt-usa-mis-datos-para-entrenar-ia/)
 
+¿ChatGPT tiene un código de descuento real? [Verifícalo aquí →](/articulos/chatgpt-codigo-de-descuento/)
+
 <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de ChatGPT →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

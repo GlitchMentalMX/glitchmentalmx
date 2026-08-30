@@ -19,4 +19,6 @@ Creator da 100 proyectos, 24 horas al año de generación de voz, más de 200 vo
 
 Vale la pena leer bien la letra chica aquí: el límite gratuito de Murf no se renueva cada mes como en la mayoría de esta lista — son 10 minutos de por vida en la cuenta gratuita. Una vez que los usas, la única forma de seguir generando voz es pasar a un plan de pago.
 
+¿Murf tiene un código de descuento real? [Verifícalo aquí →](/articulos/murf-ai-codigo-de-descuento/)
+
 <a href="https://murf.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Murf →</a>

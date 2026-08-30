@@ -19,6 +19,8 @@ Vale aclarar que en el pasado GitHub sí ofreció una prueba de 30 días de Copi
 
 ¿Buscas cuánto cuesta GitHub Copilot? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-github-copilot-hoy/)
 
+¿GitHub Copilot tiene un código de descuento real? [Verifícalo aquí →](/articulos/github-copilot-codigo-de-descuento/)
+
 <a href="https://github.com/features/copilot/plans" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de GitHub Copilot →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

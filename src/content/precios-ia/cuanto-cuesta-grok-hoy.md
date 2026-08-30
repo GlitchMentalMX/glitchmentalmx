@@ -23,4 +23,6 @@ Solo el plan más caro, SuperGrok Heavy, incluye la suscripción a X Premium+ si
 
 Sí, por default fuera de la Unión Europea — puedes desactivarlo, pero no de forma retroactiva. [Lee el detalle verificado →](/articulos/x-grok-usa-mis-datos-para-entrenar-ia/)
 
+¿Grok tiene un código de descuento real? [Verifícalo aquí →](/articulos/grok-codigo-de-descuento/)
+
 <a href="https://grok.com/plans" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Grok →</a>

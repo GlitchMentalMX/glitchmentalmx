@@ -19,6 +19,8 @@ El plan Pro Education, a $5.99 USD al mes para estudiantes verificados, tampoco 
 
 ¿Buscas cuánto cuesta Le Chat? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-le-chat-hoy/)
 
+¿Le Chat tiene un código de descuento real? [Verifícalo aquí →](/articulos/le-chat-codigo-de-descuento/)
+
 <a href="https://mistral.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Le Chat →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

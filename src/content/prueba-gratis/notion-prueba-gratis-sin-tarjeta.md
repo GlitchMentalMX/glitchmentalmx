@@ -21,6 +21,8 @@ Hay una condición de elegibilidad que vale la pena conocer: esta prueba de Busi
 
 ¿Notion entrena su IA con el contenido de tu workspace? [Lee el veredicto verificado →](/articulos/notion-usa-mis-datos-para-entrenar-ia/)
 
+¿Notion tiene un código de descuento real? [Verifícalo aquí →](/articulos/notion-codigo-de-descuento/)
+
 <a href="https://www.notion.com/help/notion-ai-security-practices" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Notion →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

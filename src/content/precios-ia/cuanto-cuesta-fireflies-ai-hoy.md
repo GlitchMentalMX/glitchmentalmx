@@ -19,4 +19,6 @@ Pro da 8,000 minutos de almacenamiento por asiento, grabación de video además 
 
 A diferencia de Otter, donde el límite gratuito es por usuario, en Fireflies los 400 minutos gratuitos se comparten entre todas las personas de la cuenta. Si más de una persona en tu organización usa la misma cuenta gratuita, ese límite se agota mucho más rápido que si fueras la única persona transcribiendo reuniones.
 
+¿Fireflies.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/fireflies-ai-codigo-de-descuento/)
+
 <a href="https://fireflies.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Fireflies.ai →</a>

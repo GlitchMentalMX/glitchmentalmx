@@ -23,4 +23,6 @@ Buena parte de quien usa Canva lo hace en equipo — un negocio, un despacho, un
 
 Sí, por default en Free y Pro — en Teams, Business y Enterprise no puede activarse. [Lee el detalle verificado →](/articulos/canva-usa-mis-datos-para-entrenar-ia/)
 
+¿Canva tiene un código de descuento real? [Verifícalo aquí →](/articulos/canva-codigo-de-descuento/)
+
 <a href="https://www.canva.com/pricing/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Canva Pro →</a>

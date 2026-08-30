@@ -21,6 +21,8 @@ El mismo artículo de soporte de Beautiful.ai es explícito: "después de que ex
 
 ¿Buscas cuánto cuesta Beautiful.ai? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-beautiful-ai-hoy/)
 
+¿Beautiful.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/beautiful-ai-codigo-de-descuento/)
+
 <a href="https://www.beautiful.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Beautiful.ai →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

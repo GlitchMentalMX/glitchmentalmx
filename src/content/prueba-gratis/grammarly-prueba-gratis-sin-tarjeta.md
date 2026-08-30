@@ -21,6 +21,8 @@ El plan gratuito de Grammarly, en cambio, no pide tarjeta en ningún momento y n
 
 ¿Buscas cuánto cuesta Grammarly? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-grammarly-hoy/)
 
+¿Grammarly tiene un código de descuento real? [Verifícalo aquí →](/articulos/grammarly-codigo-de-descuento/)
+
 <a href="https://www.grammarly.com/pro" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Grammarly →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -21,6 +21,8 @@ El propio centro de ayuda es claro en que la prueba gratuita solo está disponib
 
 ¿Buscas cuánto cuesta CapCut? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-capcut-hoy/)
 
+¿CapCut tiene un código de descuento real? [Verifícalo aquí →](/articulos/capcut-codigo-de-descuento/)
+
 <a href="https://www.capcut.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de CapCut →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

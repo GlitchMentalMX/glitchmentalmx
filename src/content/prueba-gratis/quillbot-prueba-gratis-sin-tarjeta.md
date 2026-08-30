@@ -19,6 +19,8 @@ Esa diferencia importa: una garantía de reembolso no es una prueba gratuita. Co
 
 ¿Buscas cuánto cuesta QuillBot? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-quillbot-hoy/)
 
+¿QuillBot tiene un código de descuento real? [Verifícalo aquí →](/articulos/quillbot-codigo-de-descuento/)
+
 <a href="https://quillbot.com/premium" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de QuillBot →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

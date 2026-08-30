@@ -19,4 +19,6 @@ Standard da 60 créditos diarios renovables más 1,200 créditos que se restable
 
 A diferencia de otras herramientas donde pagar reemplaza por completo la cuota gratuita, en PixVerse los 60 créditos diarios de cortesía se mantienen activos sin importar tu plan — se suman a lo que ya te da Standard. Vale la pena saberlo antes de calcular cuánto te va a rendir el plan de pago, porque el total real de créditos disponibles cada mes es más alto que solo el número que aparece en el plan.
 
+¿PixVerse tiene un código de descuento real? [Verifícalo aquí →](/articulos/pixverse-codigo-de-descuento/)
+
 <a href="https://app.pixverse.ai/subscribe" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de PixVerse →</a>

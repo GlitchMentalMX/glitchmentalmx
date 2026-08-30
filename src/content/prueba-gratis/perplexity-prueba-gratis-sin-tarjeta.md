@@ -21,6 +21,8 @@ La única forma de obtener Pro gratis, aunque sea temporalmente, es a través de
 
 ¿Perplexity entrena su IA con lo que le buscas? [Lee el veredicto verificado →](/articulos/perplexity-usa-mis-datos-para-entrenar-ia/)
 
+¿Perplexity tiene un código de descuento real? [Verifícalo aquí →](/articulos/perplexity-codigo-de-descuento/)
+
 <a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Perplexity →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

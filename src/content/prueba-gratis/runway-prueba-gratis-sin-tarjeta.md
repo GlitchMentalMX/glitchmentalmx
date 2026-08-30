@@ -19,6 +19,8 @@ Es decir, la ruta sin tarjeta en Runway es quedarte en el plan gratuito con tus 
 
 ¿Buscas cuánto cuesta Runway? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-runway-hoy/)
 
+¿Runway tiene un código de descuento real? [Verifícalo aquí →](/articulos/runway-codigo-de-descuento/)
+
 <a href="https://runway.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Runway →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -25,4 +25,6 @@ Las funciones de IA en Discord evolucionan rápido, y las plataformas a veces in
 
 [Última actualización: 23/08/2026]
 
+¿Discord tiene un código de descuento real? [Verifícalo aquí →](/articulos/discord-codigo-de-descuento/)
+
 <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Discord →</a>

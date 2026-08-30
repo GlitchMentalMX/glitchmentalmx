@@ -19,6 +19,8 @@ En otras palabras, la única forma de probar Premium —los 660,000 puntos mensu
 
 ¿Buscas cuánto cuesta Poe? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-poe-hoy/)
 
+¿Poe tiene un código de descuento real? [Verifícalo aquí →](/articulos/poe-codigo-de-descuento/)
+
 <a href="https://poe.com/subscription_plans" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Poe →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

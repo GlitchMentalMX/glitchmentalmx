@@ -19,6 +19,8 @@ Esto significa que la respuesta depende de quién eres: si el sistema te ofrece 
 
 ¿Buscas cuánto cuesta Windsurf? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-windsurf-hoy/)
 
+¿Windsurf tiene un código de descuento real? [Verifícalo aquí →](/articulos/windsurf-codigo-de-descuento/)
+
 <a href="https://windsurf.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Windsurf →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

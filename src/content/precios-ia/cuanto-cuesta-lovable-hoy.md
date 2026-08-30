@@ -19,4 +19,6 @@ Pro da 100 créditos mensuales (con acumulación de los que no uses), dominios p
 
 A diferencia de un límite de horas o de proyectos, en Lovable cada cambio o generación que le pides a la IA consume créditos — así que el ritmo al que trabajas, no solo el mes calendario, determina cuánto te dura el plan. Si construyes iterando mucho (probar, ajustar, volver a probar), vale la pena vigilar el consumo de créditos más de cerca que en herramientas con límites de tiempo fijo.
 
+¿Lovable tiene un código de descuento real? [Verifícalo aquí →](/articulos/lovable-codigo-de-descuento/)
+
 <a href="https://lovable.dev/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Lovable →</a>

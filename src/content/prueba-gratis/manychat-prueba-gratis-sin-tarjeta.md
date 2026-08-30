@@ -21,6 +21,8 @@ Al terminar los 14 días, Manychat renueva la suscripción de forma automática 
 
 ¿Buscas cuánto cuesta ManyChat? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-manychat-hoy/)
 
+¿ManyChat tiene un código de descuento real? [Verifícalo aquí →](/articulos/manychat-codigo-de-descuento/)
+
 <a href="https://manychat.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de ManyChat →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

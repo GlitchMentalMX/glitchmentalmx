@@ -19,6 +19,8 @@ Sí existe una alternativa fuera del sitio directo de Microsoft: contratar la mi
 
 ¿Microsoft Teams entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/microsoft-teams-usa-mis-datos-para-entrenar-ia/)
 
+¿Microsoft Teams tiene un código de descuento real? [Verifícalo aquí →](/articulos/microsoft-teams-codigo-de-descuento/)
+
 <a href="https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Microsoft Teams →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

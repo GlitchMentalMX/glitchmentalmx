@@ -19,6 +19,8 @@ Si tu meta es probar el flujo completo de construir y publicar una app con IA, e
 
 ¿Buscas cuánto cuesta Lovable? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-lovable-hoy/)
 
+¿Lovable tiene un código de descuento real? [Verifícalo aquí →](/articulos/lovable-codigo-de-descuento/)
+
 <a href="https://lovable.dev/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Lovable →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -19,4 +19,6 @@ Lite da 40 créditos mensuales para eliminar fondos con IA, generar fondos nuevo
 
 A diferencia de un plan con "usos ilimitados", aquí 40 créditos son 40 imágenes procesadas al mes en el nivel de entrada — si trabajas con catálogos grandes de producto, ese número se agota rápido. Vale la pena calcular cuántas imágenes procesas al mes antes de asumir que el plan Lite te alcanza.
 
+¿remove.bg tiene un código de descuento real? [Verifícalo aquí →](/articulos/remove-bg-codigo-de-descuento/)
+
 <a href="https://www.remove.bg/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de remove.bg →</a>

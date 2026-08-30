@@ -19,6 +19,8 @@ Recraft sí ofrece reembolsos discrecionales si cancelas dentro de los primeros 
 
 ¿Buscas cuánto cuesta Recraft? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-recraft-ai-hoy/)
 
+¿Recraft tiene un código de descuento real? [Verifícalo aquí →](/articulos/recraft-ai-codigo-de-descuento/)
+
 <a href="https://www.recraft.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Recraft →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

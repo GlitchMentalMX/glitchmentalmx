@@ -19,4 +19,6 @@ Professional da 750 tareas automatizadas al mes de entrada, flujos de trabajo de
 
 Esta es una confusión real: Zapier Professional (el que cubre esta calculadora) es su producto clásico de automatización con algunas funciones de IA integradas; Zapier Agents es un producto más nuevo, específicamente de agentes autónomos de IA, con su propia estructura de precio por "actividades" en vez de "tareas". Si tu interés es específicamente construir agentes de IA autónomos, confirma en el sitio de Zapier si necesitas Agents en vez de (o además de) Professional.
 
+¿Zapier tiene un código de descuento real? [Verifícalo aquí →](/articulos/zapier-codigo-de-descuento/)
+
 <a href="https://zapier.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Zapier →</a>

@@ -31,4 +31,6 @@ Si formas parte del programa Canva Creators y subes plantillas o elementos para 
 
 [Última actualización: 24/08/2026]
 
+¿Canva tiene un código de descuento real? [Verifícalo aquí →](/articulos/canva-codigo-de-descuento/)
+
 <a href="https://www.canva.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Canva →</a>

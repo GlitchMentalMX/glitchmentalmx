@@ -21,6 +21,8 @@ El centro de soporte oficial de Bolt confirma que "Bolt acepta tarjetas de créd
 
 ¿Buscas cuánto cuesta Bolt.new? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-bolt-new-hoy/)
 
+¿Bolt.new tiene un código de descuento real? [Verifícalo aquí →](/articulos/bolt-new-codigo-de-descuento/)
+
 <a href="https://bolt.new/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Bolt.new →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

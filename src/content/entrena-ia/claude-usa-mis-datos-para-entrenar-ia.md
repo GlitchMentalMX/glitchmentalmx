@@ -27,4 +27,6 @@ Esta política es específica de los productos de consumo — Claude Free, Pro y
 
 [Última actualización: 24/08/2026]
 
+¿Claude tiene un código de descuento real? [Verifícalo aquí →](/articulos/claude-codigo-de-descuento/)
+
 <a href="https://privacy.claude.com/en/articles/10023548-how-do-you-use-personal-data-in-model-training" target="_blank" rel="noopener noreferrer">Lee la política oficial de Anthropic sobre entrenamiento de modelos →</a>

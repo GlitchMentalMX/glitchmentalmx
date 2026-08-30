@@ -19,6 +19,8 @@ En otras palabras, la tarjeta no es necesaria para tocar la herramienta en su ve
 
 ¿Buscas cuánto cuesta InVideo AI? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-invideo-ai-hoy/)
 
+¿InVideo AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/invideo-ai-codigo-de-descuento/)
+
 <a href="https://invideo.io/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de InVideo AI →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -25,4 +25,6 @@ Si usas Duolingo a través de un programa escolar, las reglas pueden ser distint
 
 [Última actualización: 23/08/2026]
 
+¿Duolingo tiene un código de descuento real? [Verifícalo aquí →](/articulos/duolingo-codigo-de-descuento/)
+
 <a href="https://www.duolingo.com/privacy" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Duolingo →</a>

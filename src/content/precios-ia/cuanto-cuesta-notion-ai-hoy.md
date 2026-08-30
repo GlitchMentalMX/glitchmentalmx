@@ -23,4 +23,6 @@ Esta es la misma confusión que ya vimos con NotebookLM en esta serie: la gente 
 
 No — y obliga por contrato a Anthropic y OpenAI a no hacerlo tampoco. [Lee el detalle verificado →](/articulos/notion-usa-mis-datos-para-entrenar-ia/)
 
+¿Notion AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/notion-ai-codigo-de-descuento/)
+
 <a href="https://www.notion.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete a Notion Business en el sitio oficial →</a>

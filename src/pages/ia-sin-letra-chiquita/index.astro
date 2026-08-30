@@ -6,6 +6,7 @@ import { getCollection } from 'astro:content';
 const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft)).length;
 const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
 const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
+const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).length;
 
 const cards = [
   {
@@ -26,6 +27,12 @@ const cards = [
     title: 'Prueba gratis sin tarjeta',
     dek: 'Cuáles herramientas dejan probar su plan de pago sin pedir tarjeta de crédito y cuáles la piden desde el primer clic — verificado en cada página de registro.',
   },
+  {
+    href: '/codigos-descuento-ia/',
+    eyebrow: `${codigosDescuentoCount} herramientas`,
+    title: 'Códigos de descuento',
+    dek: 'Si el código de descuento que circula para cada herramienta es real o falso — y cuáles son los canales legítimos de descuento cuando sí existen.',
+  },
 ];
 ---
 
@@ -37,7 +44,7 @@ const cards = [
   <section class="container header">
     <p class="eyebrow">IA sin letra chiquita</p>
     <h1>Lo que la letra chiquita <span class="accent">no te dice</span></h1>
-    <p class="sub">Tres series de referencia, verificadas una por una: cuánto cuesta cada herramienta, qué hace con tus datos y si te pide tarjeta para probarla.</p>
+    <p class="sub">Cuatro series de referencia, verificadas una por una: cuánto cuesta cada herramienta, qué hace con tus datos, si te pide tarjeta para probarla y si su código de descuento es real.</p>
   </section>
 
   <section class="container grid">
@@ -59,7 +66,7 @@ const cards = [
   .grid {
     padding: 0 24px 72px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 22px;
   }
   .card {
@@ -72,7 +79,10 @@ const cards = [
   .card h2 { font-size: 1.5rem; margin: 10px 0 12px; }
   .card .dek { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
     .grid { grid-template-columns: 1fr; }
   }
 </style>

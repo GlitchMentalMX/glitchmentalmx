@@ -25,4 +25,6 @@ Desde mayo de 2025, la Política de Desarrolladores de Spotify le prohíbe expl�
 
 [Última actualización: 23/08/2026]
 
+¿Spotify tiene un código de descuento real? [Verifícalo aquí →](/articulos/spotify-codigo-de-descuento/)
+
 <a href="https://www.spotify.com/us/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Spotify →</a>

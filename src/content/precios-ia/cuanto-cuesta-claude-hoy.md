@@ -23,4 +23,6 @@ Mucha gente busca cuánto cuesta Claude pensando en un solo producto, pero Anthr
 
 Sí, desde agosto de 2025 y por default — Anthropic cambió su postura. [Lee el detalle verificado →](/articulos/claude-usa-mis-datos-para-entrenar-ia/)
 
+¿Claude tiene un código de descuento real? [Verifícalo aquí →](/articulos/claude-codigo-de-descuento/)
+
 <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Claude →</a>

@@ -27,4 +27,6 @@ Este es de los casos más directos de esta lista sobre la brecha regulatoria: Ch
 
 [Última actualización: 24/08/2026]
 
+¿Character.AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/character-ai-codigo-de-descuento/)
+
 <a href="https://character.ai/model-training" target="_blank" rel="noopener noreferrer">Lee la página oficial de Entrenamiento de Modelos de Character.AI →</a>

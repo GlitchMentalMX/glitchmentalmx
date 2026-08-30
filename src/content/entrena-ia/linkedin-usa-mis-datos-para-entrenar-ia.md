@@ -29,4 +29,6 @@ En algunas regiones, LinkedIn también incluye los datos de actividad de tu feed
 
 [Última actualización: 23/08/2026]
 
+¿LinkedIn tiene un código de descuento real? [Verifícalo aquí →](/articulos/linkedin-codigo-de-descuento/)
+
 <a href="https://www.linkedin.com/help/linkedin/answer/a8059228" target="_blank" rel="noopener noreferrer">Lee la política oficial de LinkedIn sobre uso de datos para IA →</a>

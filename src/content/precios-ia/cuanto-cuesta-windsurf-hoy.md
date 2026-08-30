@@ -19,4 +19,6 @@ Pro da acceso a Cascade, el agente de IA de Windsurf, junto con chat usando mode
 
 A diferencia de otras herramientas de código de esta lista, donde pagar desbloquea el autocompletado mismo, en Windsurf esa función ya viene sin límite en el plan gratuito. Si tu único uso es autocompletado tradicional sin depender del agente conversacional, es válido quedarte en el plan gratuito indefinidamente.
 
+¿Windsurf tiene un código de descuento real? [Verifícalo aquí →](/articulos/windsurf-codigo-de-descuento/)
+
 <a href="https://windsurf.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Windsurf →</a>

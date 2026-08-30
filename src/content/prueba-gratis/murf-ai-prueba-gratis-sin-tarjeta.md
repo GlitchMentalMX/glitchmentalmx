@@ -19,6 +19,8 @@ Vale la pena leer la letra chica: esos 10 minutos no se renuevan cada mes como e
 
 ¿Buscas cuánto cuesta Murf? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-murf-ai-hoy/)
 
+¿Murf tiene un código de descuento real? [Verifícalo aquí →](/articulos/murf-ai-codigo-de-descuento/)
+
 <a href="https://murf.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Murf →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

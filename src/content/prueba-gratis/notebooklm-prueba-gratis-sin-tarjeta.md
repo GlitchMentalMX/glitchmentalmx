@@ -21,6 +21,8 @@ Por eso el veredicto de este artículo es sobre esa parte de pago: si tu único 
 
 ¿Buscas cuánto cuesta NotebookLM? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-notebooklm-hoy/)
 
+¿NotebookLM tiene un código de descuento real? [Verifícalo aquí →](/articulos/notebooklm-codigo-de-descuento/)
+
 <a href="https://notebook.google/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de NotebookLM →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

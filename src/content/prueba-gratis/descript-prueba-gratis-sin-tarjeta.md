@@ -21,6 +21,8 @@ Si tu objetivo es probar el diferenciador real de Descript —editar video borra
 
 ¿Buscas cuánto cuesta Descript? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-descript-hoy/)
 
+¿Descript tiene un código de descuento real? [Verifícalo aquí →](/articulos/descript-codigo-de-descuento/)
+
 <a href="https://www.descript.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Descript →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

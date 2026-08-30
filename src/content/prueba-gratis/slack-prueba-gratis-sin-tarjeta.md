@@ -19,6 +19,8 @@ La particularidad de Slack es que esta prueba no es autoservicio como en la mayo
 
 ¿Slack entrena su IA con tus mensajes? [Lee el veredicto verificado →](/articulos/slack-usa-mis-datos-para-entrenar-ia/)
 
+¿Slack tiene un código de descuento real? [Verifícalo aquí →](/articulos/slack-codigo-de-descuento/)
+
 <a href="https://slack.com/trust/data-management/privacy-principles" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Slack →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

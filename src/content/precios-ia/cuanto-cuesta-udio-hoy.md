@@ -19,4 +19,6 @@ Standard da 2,400 créditos al mes, canciones de hasta 2 minutos sin el límite 
 
 El plan gratuito de Udio no solo da menos créditos — específicamente limita a 3 canciones por día, sin importar cuántos créditos tengas disponibles. Si tu flujo de trabajo implica generar varias versiones seguidas de una misma idea en una sola sesión, ese límite diario te va a frenar antes que el total de créditos del mes.
 
+¿Udio tiene un código de descuento real? [Verifícalo aquí →](/articulos/udio-codigo-de-descuento/)
+
 <a href="https://www.udio.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Udio →</a>

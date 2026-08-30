@@ -19,4 +19,6 @@ Pro da 2,500 créditos al mes, que se traducen en hasta 500 canciones (los créd
 
 Cuánto te dura Pro no depende solo de "500 canciones" como número fijo — genera menos si pides duraciones más largas o mayor calidad, así que dos personas con el mismo plan pueden quedarse sin créditos en momentos muy distintos del mes. Antes de asumir que el plan de entrada te alcanza, vale la pena calcular qué tan seguido piensas generar, no solo ver el precio de lista.
 
+¿Suno tiene un código de descuento real? [Verifícalo aquí →](/articulos/suno-codigo-de-descuento/)
+
 <a href="https://suno.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Suno →</a>

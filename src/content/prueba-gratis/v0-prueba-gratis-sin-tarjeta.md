@@ -19,6 +19,8 @@ Es decir, puedes explorar v0 gratis indefinidamente con el límite de mensajes d
 
 ¿Buscas cuánto cuesta v0? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-v0-hoy/)
 
+¿v0 tiene un código de descuento real? [Verifícalo aquí →](/articulos/v0-codigo-de-descuento/)
+
 <a href="https://v0.app/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de v0 →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

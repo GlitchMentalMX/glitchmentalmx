@@ -19,4 +19,6 @@ Plus da 1,000 créditos al mes, generación privada (en el plan gratuito, tus cr
 
 Igual que en otras herramientas de generación de imagen de esta lista, el plan gratuito de Ideogram publica tus creaciones en la galería de la comunidad por defecto — no es un modo "oculto" hasta que pagas. Si tu razón para pagar es la privacidad y no la cantidad de generaciones, Plus ya resuelve eso; no hace falta subir a Pro solo por ese motivo.
 
+¿Ideogram tiene un código de descuento real? [Verifícalo aquí →](/articulos/ideogram-codigo-de-descuento/)
+
 <a href="https://ideogram.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Ideogram →</a>

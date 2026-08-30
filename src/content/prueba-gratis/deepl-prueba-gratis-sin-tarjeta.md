@@ -21,6 +21,8 @@ Este es un matiz que confirma que la tarjeta no es un detalle menor aquí: el pr
 
 ¿Buscas cuánto cuesta DeepL? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-deepl-hoy/)
 
+¿DeepL tiene un código de descuento real? [Verifícalo aquí →](/articulos/deepl-codigo-de-descuento/)
+
 <a href="https://www.deepl.com/pro" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de DeepL →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

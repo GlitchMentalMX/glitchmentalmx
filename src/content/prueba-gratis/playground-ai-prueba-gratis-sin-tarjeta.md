@@ -19,6 +19,8 @@ La sección de preguntas frecuentes de la página de precios tampoco menciona ni
 
 ¿Buscas cuánto cuesta Playground AI? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-playground-ai-hoy/)
 
+¿Playground AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/playground-ai-codigo-de-descuento/)
+
 <a href="https://playgroundai.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Playground AI →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

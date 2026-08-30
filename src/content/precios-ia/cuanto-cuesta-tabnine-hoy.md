@@ -19,4 +19,6 @@ La plataforma actual está posicionada para equipos y empresas más que para uso
 
 Ninguna otra herramienta de esta serie cambió tan radicalmente su modelo de negocio como Tabnine — pasó de tener un nivel gratuito accesible a cualquier programador, a exigir compromiso anual y un precio pensado para organizaciones. Si buscas una alternativa gratuita o barata de autocompletado con IA hoy, GitHub Copilot (ya cubierto en esta serie) es probablemente una mejor opción de entrada que Tabnine en su forma actual.
 
+¿Tabnine tiene un código de descuento real? [Verifícalo aquí →](/articulos/tabnine-codigo-de-descuento/)
+
 <a href="https://www.tabnine.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Tabnine →</a>

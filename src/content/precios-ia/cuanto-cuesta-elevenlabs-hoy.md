@@ -19,4 +19,6 @@ El plan Creator da clonación de voz de nivel profesional y 121,000 créditos me
 
 A diferencia de un chatbot, donde el límite suele ser de mensajes al día, ElevenLabs cobra por volumen de audio generado — así que dos personas con el mismo plan pueden agotar sus créditos en tiempos muy distintos según cuánto texto conviertan a voz. Antes de pagar, vale la pena calcular cuántos minutos de audio necesitas al mes en vez de decidir solo por el precio de entrada, porque quien produce contenido largo con frecuencia puede necesitar un plan superior al Creator casi de inmediato.
 
+¿ElevenLabs tiene un código de descuento real? [Verifícalo aquí →](/articulos/elevenlabs-codigo-de-descuento/)
+
 <a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de ElevenLabs →</a>

@@ -25,4 +25,6 @@ Como con Slack o Zoom, la decisión sobre qué funciones de IA están activas en
 
 [Última actualización: 24/08/2026]
 
+¿Microsoft Teams tiene un código de descuento real? [Verifícalo aquí →](/articulos/microsoft-teams-codigo-de-descuento/)
+
 <a href="https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-privacy" target="_blank" rel="noopener noreferrer">Lee la documentación oficial de privacidad de Microsoft Copilot →</a>

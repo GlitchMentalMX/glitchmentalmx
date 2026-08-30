@@ -23,6 +23,8 @@ Si lo que quieres es usar Copilot sin dar tarjeta, la alternativa real no es una
 
 ¿Copilot entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/microsoft-copilot-usa-mis-datos-para-entrenar-ia/)
 
+¿Copilot tiene un código de descuento real? [Verifícalo aquí →](/articulos/copilot-codigo-de-descuento/)
+
 <a href="https://www.microsoft.com/en-us/microsoft-365/premium" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Copilot →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

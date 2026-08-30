@@ -19,4 +19,6 @@ Premium da parafraseo sin límite de palabras (el plan gratuito tope en 125 pala
 
 A diferencia de otras herramientas donde el plan gratuito es una versión "reducida" en calidad, en QuillBot el parafraseo gratuito funciona igual de bien — el problema es que 125 palabras no alcanza ni para un párrafo mediano. Si trabajas con textos cortos ocasionales, el plan gratuito puede bastarte; si trabajas con documentos completos, vas a chocar con el límite rápido.
 
+¿QuillBot tiene un código de descuento real? [Verifícalo aquí →](/articulos/quillbot-codigo-de-descuento/)
+
 <a href="https://quillbot.com/premium" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de QuillBot →</a>

@@ -19,6 +19,8 @@ Vale aclarar un matiz: Tinder sí envía, de forma dinámica y no garantizada, o
 
 ¿Tinder entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/tinder-usa-mis-datos-para-entrenar-ia/)
 
+¿Tinder tiene un código de descuento real? [Verifícalo aquí →](/articulos/tinder-codigo-de-descuento/)
+
 <a href="https://www.tinder.com/privacy" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Tinder →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

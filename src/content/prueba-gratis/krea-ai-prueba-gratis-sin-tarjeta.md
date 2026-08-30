@@ -19,6 +19,8 @@ Esto importa especialmente si lo que buscas es la licencia de uso comercial, que
 
 ¿Buscas cuánto cuesta Krea? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-krea-ai-hoy/)
 
+¿Krea tiene un código de descuento real? [Verifícalo aquí →](/articulos/krea-ai-codigo-de-descuento/)
+
 <a href="https://www.krea.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Krea →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

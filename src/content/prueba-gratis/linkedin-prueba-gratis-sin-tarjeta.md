@@ -19,6 +19,8 @@ Si no cancelas al menos 24 horas antes de que termine la prueba, tu cuenta se co
 
 ¿LinkedIn entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/linkedin-usa-mis-datos-para-entrenar-ia/)
 
+¿LinkedIn tiene un código de descuento real? [Verifícalo aquí →](/articulos/linkedin-codigo-de-descuento/)
+
 <a href="https://www.linkedin.com/help/linkedin/answer/a8059228" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de LinkedIn →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

@@ -19,4 +19,6 @@ Pro da generación de contenido con IA sin límite, acceso a más de 300 diseño
 
 Si comparaste esta herramienta con Gamma esperando la misma opción de quedarte gratis indefinidamente con marca de agua, aquí no existe esa alternativa — a los 14 días decides pagar o dejar de usarla. Vale la pena tenerlo claro antes de invertir tiempo armando una presentación completa durante la prueba, por si decides no continuar.
 
+¿Beautiful.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/beautiful-ai-codigo-de-descuento/)
+
 <a href="https://www.beautiful.ai/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Beautiful.ai →</a>

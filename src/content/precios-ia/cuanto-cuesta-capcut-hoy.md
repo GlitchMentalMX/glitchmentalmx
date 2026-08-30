@@ -19,4 +19,6 @@ Pro suma herramientas de IA avanzadas — generador automático de subtítulos, 
 
 CapCut es de las pocas herramientas de esta lista donde la propia empresa reconoce abiertamente que el precio varía según dónde y cómo te suscribas. Si vas a contratarlo desde la app móvil en vez de la web, vale la pena comparar el precio dentro de la app antes de asumir que es exactamente el que muestra esta calculadora.
 
+¿CapCut tiene un código de descuento real? [Verifícalo aquí →](/articulos/capcut-codigo-de-descuento/)
+
 <a href="https://www.capcut.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de CapCut →</a>

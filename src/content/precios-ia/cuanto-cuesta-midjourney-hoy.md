@@ -19,4 +19,6 @@ El plan Basic da alrededor de 3.3 horas al mes (200 minutos) de generación con 
 
 A diferencia de herramientas que cobran por créditos fijos, Midjourney mide el uso en minutos de procesamiento, y ese tiempo varía según qué tan compleja sea la generación (una imagen simple consume menos que un video). Por eso dos personas con el mismo plan Basic pueden generar cantidades muy distintas de contenido en un mes — el precio es el mismo, pero el rendimiento real depende de qué tanto detalle le pidas a cada generación.
 
+¿Midjourney tiene un código de descuento real? [Verifícalo aquí →](/articulos/midjourney-codigo-de-descuento/)
+
 <a href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Midjourney →</a>

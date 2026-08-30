@@ -19,6 +19,8 @@ Un detalle adicional: para acceder a la prueba gratuita generalmente tienes que 
 
 ¿Duolingo entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/duolingo-usa-mis-datos-para-entrenar-ia/)
 
+¿Duolingo tiene un código de descuento real? [Verifícalo aquí →](/articulos/duolingo-codigo-de-descuento/)
+
 <a href="https://www.duolingo.com/privacy" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Duolingo →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

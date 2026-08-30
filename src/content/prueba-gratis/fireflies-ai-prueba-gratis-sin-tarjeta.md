@@ -21,6 +21,8 @@ Un matiz que vale la pena aclarar: el centro de ayuda de Fireflies.ai especifica
 
 ¿Buscas cuánto cuesta Fireflies.ai? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-fireflies-ai-hoy/)
 
+¿Fireflies.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/fireflies-ai-codigo-de-descuento/)
+
 <a href="https://fireflies.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Fireflies.ai →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

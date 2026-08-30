@@ -8,6 +8,7 @@ import ToolPromo from '../../components/ToolPromo.astro';
 import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro';
 import VeredictoBadge from '../../components/VeredictoBadge.astro';
 import PruebaGratisBadge from '../../components/PruebaGratisBadge.astro';
+import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection, render } from 'astro:content';
@@ -72,11 +73,13 @@ export async function getStaticPaths() {
   const preciosIA = await getCollection('preciosIA', ({ data }) => !data.draft);
   const entrenaIA = await getCollection('entrenaIA', ({ data }) => !data.draft);
   const pruebaGratis = await getCollection('pruebaGratis', ({ data }) => !data.draft);
+  const codigosDescuento = await getCollection('codigosDescuento', ({ data }) => !data.draft);
   return [
     ...posts.map((post) => ({ params: { slug: post.id }, props: { kind: 'posts' as const, post } })),
     ...preciosIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'preciosIA' as const, post } })),
     ...entrenaIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'entrenaIA' as const, post } })),
     ...pruebaGratis.map((post) => ({ params: { slug: post.id }, props: { kind: 'pruebaGratis' as const, post } })),
+    ...codigosDescuento.map((post) => ({ params: { slug: post.id }, props: { kind: 'codigosDescuento' as const, post } })),
   ];
 }
 
@@ -199,7 +202,14 @@ const articleSchema =
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
         isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
-        articleSection: kind === 'preciosIA' ? 'Precios de IA' : kind === 'entrenaIA' ? 'Privacidad de IA' : 'Prueba gratis sin tarjeta',
+        articleSection:
+          kind === 'preciosIA'
+            ? 'Precios de IA'
+            : kind === 'entrenaIA'
+              ? 'Privacidad de IA'
+              : kind === 'pruebaGratis'
+                ? 'Prueba gratis sin tarjeta'
+                : 'Códigos de descuento',
       };
 
 // ---------------------------------------------------------------------------
@@ -208,9 +218,12 @@ const articleSchema =
 // /articulos/[slug] para no duplicar plantilla y mantener la URL
 // /articulos/cuanto-cuesta-[herramienta]-hoy/ que pide el brief.
 // ---------------------------------------------------------------------------
-const herramienta = kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' ? (post.data as any).herramienta : undefined;
-const herramientaId = kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' ? (post.data as any).herramientaId : undefined;
-const sitioOficial = kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' ? (post.data as any).sitioOficial : undefined;
+const herramienta =
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).herramienta : undefined;
+const herramientaId =
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).herramientaId : undefined;
+const sitioOficial =
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).sitioOficial : undefined;
 
 const precio =
   kind === 'preciosIA'
@@ -229,7 +242,7 @@ const metaTitle = kind === 'preciosIA' ? buildPrecioIATitleTag(herramienta) : ti
 // veredicto (badge de color) viene directo del frontmatter, no de un JSON
 // externo: a diferencia del precio, no cambia a diario, así que no hace
 // falta la capa de indirección que sí necesita Banxico.
-const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' ? (post.data as any).veredicto : undefined;
+const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).veredicto : undefined;
 
 const productSchema =
   kind === 'preciosIA' && precio && precioMXN !== undefined
@@ -293,6 +306,14 @@ const otrosPruebaGratis =
         post.id,
       ).slice(0, 3)
     : [];
+
+const otrosCodigosDescuento =
+  kind === 'codigosDescuento'
+    ? seededShuffle(
+        (await getCollection('codigosDescuento', ({ data }) => !data.draft)).filter((p) => p.id !== post.id),
+        post.id,
+      ).slice(0, 3)
+    : [];
 ---
 
 <Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'}>
@@ -314,9 +335,14 @@ const otrosPruebaGratis =
       { name: 'Quién entrena con tus datos', url: '/quien-entrena-con-tus-datos/' },
       { name: title },
     ]} />
-  ) : (
+  ) : kind === 'pruebaGratis' ? (
     <Breadcrumbs items={[
       { name: 'Prueba gratis sin tarjeta', url: '/prueba-gratis-sin-tarjeta/' },
+      { name: title },
+    ]} />
+  ) : (
+    <Breadcrumbs items={[
+      { name: 'Códigos de descuento', url: '/codigos-descuento-ia/' },
       { name: title },
     ]} />
   )}
@@ -329,8 +355,10 @@ const otrosPruebaGratis =
         <a href="/precios-ia/" class="tag category-tag">Precios de IA</a>
       ) : kind === 'entrenaIA' ? (
         <span class="tag category-tag">Privacidad de IA</span>
-      ) : (
+      ) : kind === 'pruebaGratis' ? (
         <span class="tag category-tag">Prueba gratis sin tarjeta</span>
+      ) : (
+        <span class="tag category-tag">Códigos de descuento</span>
       )}
       <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
       <h1>{title}</h1>
@@ -340,6 +368,9 @@ const otrosPruebaGratis =
       )}
       {kind === 'pruebaGratis' && veredicto && (
         <div class="veredicto-top"><PruebaGratisBadge veredicto={veredicto} size="lg" /></div>
+      )}
+      {kind === 'codigosDescuento' && veredicto && (
+        <div class="veredicto-top"><CodigoDescuentoBadge veredicto={veredicto} size="lg" /></div>
       )}
     </header>
 
@@ -406,7 +437,7 @@ const otrosPruebaGratis =
     </section>
   )}
 
-  {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis') && <ToolsWidget />}
+  {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento') && <ToolsWidget />}
 
   {kind === 'posts' && relatedFinal.length > 0 && (
     <section class="related container">
@@ -470,6 +501,25 @@ const otrosPruebaGratis =
       <h2>Más sobre prueba gratis sin tarjeta</h2>
       <div class="grid">
         {otrosPruebaGratis.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage ?? ''}
+            heroImageAlt={p.data.heroImageAlt ?? ''}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {kind === 'codigosDescuento' && otrosCodigosDescuento.length > 0 && (
+    <section class="related container">
+      <h2>Más códigos de descuento</h2>
+      <div class="grid">
+        {otrosCodigosDescuento.map((p) => (
           <ArticleCard
             slug={p.id}
             title={p.data.title}

@@ -19,6 +19,8 @@ Vale aclarar la diferencia: un descuento en el primer cargo no es lo mismo que u
 
 ¿Buscas cuánto cuesta ElevenLabs? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-elevenlabs-hoy/)
 
+¿ElevenLabs tiene un código de descuento real? [Verifícalo aquí →](/articulos/elevenlabs-codigo-de-descuento/)
+
 <a href="https://elevenlabs.io/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de ElevenLabs →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

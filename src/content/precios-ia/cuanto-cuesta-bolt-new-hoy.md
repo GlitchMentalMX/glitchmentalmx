@@ -19,4 +19,6 @@ Pro elimina el límite diario de tokens del plan gratuito (300 mil tokens al dí
 
 Aunque el plan gratuito de Bolt.new suena generoso (hasta 1 millón de tokens al mes), en realidad se reparte en un tope diario de 300 mil — si tienes un día de trabajo intenso construyendo algo, puedes agotar el límite diario mucho antes de acercarte al total mensual. Pro no solo da más tokens en total, elimina esa restricción diaria por completo.
 
+¿Bolt.new tiene un código de descuento real? [Verifícalo aquí →](/articulos/bolt-new-codigo-de-descuento/)
+
 <a href="https://bolt.new/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Bolt.new →</a>

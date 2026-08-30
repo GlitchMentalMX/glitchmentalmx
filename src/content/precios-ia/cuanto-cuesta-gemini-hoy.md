@@ -23,4 +23,6 @@ Cuando alguien pregunta cuánto cuesta Gemini, casi siempre piensa solo en el ch
 
 Sí, por default — el mismo interruptor que cubre todo el ecosistema de Google. [Lee el detalle verificado →](/articulos/gemini-usa-mis-datos-para-entrenar-ia/)
 
+¿Gemini tiene un código de descuento real? [Verifícalo aquí →](/articulos/gemini-codigo-de-descuento/)
+
 <a href="https://one.google.com/about/google-ai-plans/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Google AI Pro →</a>

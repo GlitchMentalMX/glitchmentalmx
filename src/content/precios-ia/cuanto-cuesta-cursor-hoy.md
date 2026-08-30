@@ -19,4 +19,6 @@ Pro da todo lo del plan gratuito Hobby (acceso a Composer, sin necesidad de tarj
 
 Un dato que vale la pena aclarar: activar el modo de privacidad (que garantiza que tu código no se use para entrenar modelos) está disponible desde configuración en cualquier plan, no es un beneficio exclusivo de Pro. Si tu principal duda para pagar es la privacidad de tu código, esa parte ya la puedes resolver gratis — lo que compras con Pro es más uso, no más privacidad.
 
+¿Cursor tiene un código de descuento real? [Verifícalo aquí →](/articulos/cursor-codigo-de-descuento/)
+
 <a href="https://cursor.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Cursor →</a>

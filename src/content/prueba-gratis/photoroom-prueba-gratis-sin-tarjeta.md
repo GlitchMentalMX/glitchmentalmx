@@ -19,6 +19,8 @@ Otro detalle de la letra chica: la documentación oficial aclara que solo se per
 
 ¿Buscas cuánto cuesta Photoroom? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-photoroom-hoy/)
 
+¿Photoroom tiene un código de descuento real? [Verifícalo aquí →](/articulos/photoroom-codigo-de-descuento/)
+
 <a href="https://www.photoroom.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Photoroom →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

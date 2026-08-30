@@ -23,4 +23,6 @@ Si llegaste aquí buscando el precio de "Copilot Pro" es normal — así se anun
 
 Ojo, esto son productos distintos al de este artículo: la app gratuita de Copilot integrada en Windows, y el chatbot independiente en copilot.microsoft.com. Ambos entrenan por default, con opción de apagarlo. [Lee el detalle de Windows (Copilot) →](/articulos/windows-copilot-usa-mis-datos-para-entrenar-ia/) · [Lee el detalle de Microsoft Copilot →](/articulos/microsoft-copilot-usa-mis-datos-para-entrenar-ia/)
 
+¿Copilot tiene un código de descuento real? [Verifícalo aquí →](/articulos/copilot-codigo-de-descuento/)
+
 <a href="https://www.microsoft.com/en-us/microsoft-365/premium" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Microsoft 365 Premium →</a>

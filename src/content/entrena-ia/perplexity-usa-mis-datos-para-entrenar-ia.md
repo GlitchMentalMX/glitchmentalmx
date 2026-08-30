@@ -27,4 +27,6 @@ Las cuentas Enterprise Pro y Max sí tienen protecciones más claras: tus datos 
 
 [Última actualización: 24/08/2026]
 
+¿Perplexity tiene un código de descuento real? [Verifícalo aquí →](/articulos/perplexity-codigo-de-descuento/)
+
 <a href="https://www.perplexity.ai/hub/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Lee la Política de Privacidad oficial de Perplexity →</a>

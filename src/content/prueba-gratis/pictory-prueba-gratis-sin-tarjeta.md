@@ -19,6 +19,8 @@ La limitación real de la prueba no es el pago, sino la marca de agua: todo lo q
 
 ¿Buscas cuánto cuesta Pictory? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-pictory-hoy/)
 
+¿Pictory tiene un código de descuento real? [Verifícalo aquí →](/articulos/pictory-codigo-de-descuento/)
+
 <a href="https://pictory.ai/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Pictory →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

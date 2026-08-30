@@ -25,4 +25,6 @@ Esta es la distinción más importante de todas en Slack: la decisión no la tom
 
 [Última actualización: 23/08/2026]
 
+¿Slack tiene un código de descuento real? [Verifícalo aquí →](/articulos/slack-codigo-de-descuento/)
+
 <a href="https://slack.com/trust/data-management/privacy-principles" target="_blank" rel="noopener noreferrer">Lee los Principios de Privacidad oficiales de Slack →</a>

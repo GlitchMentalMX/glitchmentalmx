@@ -19,6 +19,8 @@ Zoom sí tiene una página separada de "prueba gratis" (zoom.com/en/products/fre
 
 ¿Zoom entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/zoom-usa-mis-datos-para-entrenar-ia/)
 
+¿Zoom tiene un código de descuento real? [Verifícalo aquí →](/articulos/zoom-codigo-de-descuento/)
+
 <a href="https://www.zoom.com/en/blog/zooms-term-service-ai/" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Zoom →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

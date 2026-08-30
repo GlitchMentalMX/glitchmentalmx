@@ -23,4 +23,6 @@ La pregunta que vale más la pena que "cuánto cuesta" es cómo se sostiene una 
 
 Sí, y tus datos se procesan en China bajo su ley — el opt-out no tiene un botón claro. [Lee el detalle verificado →](/articulos/deepseek-usa-mis-datos-para-entrenar-ia/)
 
+¿DeepSeek tiene un código de descuento real? [Verifícalo aquí →](/articulos/deepseek-codigo-de-descuento/)
+
 <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer">Usa DeepSeek en el sitio oficial →</a>

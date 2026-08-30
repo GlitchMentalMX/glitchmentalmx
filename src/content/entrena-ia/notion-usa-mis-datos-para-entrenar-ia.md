@@ -27,4 +27,6 @@ Notion ofrece un programa llamado AI LEAP, completamente opcional, donde puedes 
 
 [Última actualización: 23/08/2026]
 
+¿Notion tiene un código de descuento real? [Verifícalo aquí →](/articulos/notion-codigo-de-descuento/)
+
 <a href="https://www.notion.com/help/notion-ai-security-practices" target="_blank" rel="noopener noreferrer">Lee las Prácticas de Seguridad oficiales de Notion AI →</a>

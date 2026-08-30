@@ -23,6 +23,8 @@ Anthropic no ofrece un periodo de prueba de Claude Pro abierto a cualquiera: sus
 
 ¿Claude entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/claude-usa-mis-datos-para-entrenar-ia/)
 
+¿Claude tiene un código de descuento real? [Verifícalo aquí →](/articulos/claude-codigo-de-descuento/)
+
 <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de Claude →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>

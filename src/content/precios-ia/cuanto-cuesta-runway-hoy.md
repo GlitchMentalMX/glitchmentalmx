@@ -19,4 +19,6 @@ El plan Standard da 625 créditos mensuales recurrentes — que se renuevan cada
 
 Generar unos segundos de video de calidad consume una cantidad de créditos considerablemente mayor que generar una imagen fija, así que 625 créditos pueden traducirse en pocos minutos reales de video terminado al mes si trabajas en resoluciones altas o generaciones largas. Antes de decidir si el plan Standard te alcanza, vale la pena calcular cuántos segundos de video necesitas producir al mes, no solo ver el número de créditos como si fuera una cantidad fija de "contenido".
 
+¿Runway tiene un código de descuento real? [Verifícalo aquí →](/articulos/runway-codigo-de-descuento/)
+
 <a href="https://runway.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Runway →</a>
