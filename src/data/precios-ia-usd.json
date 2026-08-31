@@ -73,7 +73,6 @@
   "slack": { "nombre": "Slack Pro", "precioUSD": 8.75, "periodo": "mensual", "empresa": "Slack (Salesforce)" },
   "snapchat-plus": { "nombre": "Snapchat+", "precioUSD": 3.99, "periodo": "mensual", "empresa": "Snap Inc." },
   "telegram-premium": { "nombre": "Telegram Premium", "precioUSD": 4.99, "periodo": "mensual", "empresa": "Telegram" },
-  "tinder": { "nombre": "Tinder Plus", "precioUSD": 24.99, "periodo": "mensual", "empresa": "Match Group" },
   "youtube": { "nombre": "YouTube Premium", "precioUSD": 15.99, "periodo": "mensual", "empresa": "Google" },
   "zoom": { "nombre": "Zoom Pro", "precioUSD": 16.99, "periodo": "mensual", "empresa": "Zoom" },
   "spotify": { "nombre": "Spotify Premium Individual", "precioUSD": 12.99, "periodo": "mensual", "empresa": "Spotify" }
