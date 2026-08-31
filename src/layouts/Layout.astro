@@ -93,7 +93,7 @@ const personSchema = {
 
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
-    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+    {noIndex ? <meta name="robots" content="noindex, nofollow" /> : <meta name="robots" content="max-image-preview:large" />}
 
     <meta property="og:type" content={type} />
     <meta property="og:site_name" content={siteName} />
