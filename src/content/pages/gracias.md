@@ -11,7 +11,8 @@ noIndex: true
 
 _Versión ejecutiva — ranking mensual de tecnologías._
 
-* [Agosto 2026 ↗ · **Nuevo**](https://drive.google.com/file/d/1qJlPltrp1rgbl7FWZpV7zJeVbSVLbT6K/view?usp=sharing)
+* [Septiembre 2026 ↗ · **Nuevo**](https://drive.google.com/file/d/1IC-j9K-J28KSVTfbOrGOfmTMxYcvaqbc/view?usp=sharing)
+* [Agosto 2026 ↗](https://drive.google.com/file/d/1qJlPltrp1rgbl7FWZpV7zJeVbSVLbT6K/view?usp=sharing)
 * [Julio 2026 ↗](https://drive.google.com/file/d/1ErtgNPHWrne1lOWVuOTiYQoYdhbD5_Tn/view?usp=sharing)
 * [Junio 2026 ↗](https://drive.google.com/file/d/1Mz0wSSvVgbTmQ446iIdOHbB1jtsmdQ1e/view?usp=sharing)
 * [Mayo 2026 ↗](https://drive.google.com/file/d/1u77SnHO5NypzpN4qON4PfHxUbk_IMSqp/view?usp=sharing)
