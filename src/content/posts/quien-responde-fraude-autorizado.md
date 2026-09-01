@@ -1,12 +1,12 @@
 ---
 title: ¿Quién responde cuando el fraude sí lo autorizaste?
 category: Cultura Digital
-pubDate: 2026-08-31T18:18
+pubDate: 2026-09-01T05:53
 updatedDate: ''
 description: 'El fraude no rompió la protección bancaria: cumplió su definición de exclusión. Qué países movieron el default de la pérdida.'
 heroImage: /images/uploads/fraude-bancario-autorizado.webp
 heroImageAlt: 'Fraude bancario autorizado: mujer confirma con su mano el pago mientras la cláusula de exclusión se repliega frente a ella'
-draft: true
+draft: false
 ---
 
 ## La operación fue tuya
