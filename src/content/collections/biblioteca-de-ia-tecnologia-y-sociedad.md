@@ -111,6 +111,9 @@ postSlugs:
   - el-video-generado-por-ia-y-el-fin-de-la-produccion-barata
   - lo-que-se-pierde-cuando-muere-una-plataforma-digital
   - por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
+  - correo-electronico-phishing-nunca-murio
+  - tu-voz-ya-no-es-tuya-biometria-banca-rota
+  - quien-responde-fraude-autorizado
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -149,6 +152,8 @@ sections:
       - slug: cuando-el-algoritmo-discrimina-cuatro-casos-documentados
         tag: ancla
       - slug: el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende
+      - slug: tu-voz-ya-no-es-tuya-biometria-banca-rota
+        tag: serie
   - title: Privacidad y Vigilancia
     description: Lo que cedes cuando usas tecnología, quién lo recibe y para qué.
     posts:
@@ -253,6 +258,8 @@ sections:
       - slug: el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues
         tag: serie
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
+      - slug: quien-responde-fraude-autorizado
+        tag: serie
   - title: Tecnología y Cuerpo
     description: >-
       Cuando la biología deja de ser un límite fijo y se convierte en
@@ -304,6 +311,8 @@ sections:
         tag: serie
       - slug: lo-que-se-pierde-cuando-muere-una-plataforma-digital
       - slug: por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
+      - slug: correo-electronico-phishing-nunca-murio
+        tag: serie
 related:
   - recursos-para-ensenar-ia-y-tecnologia
   - mapa-de-poder-tech

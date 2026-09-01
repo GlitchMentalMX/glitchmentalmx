@@ -86,6 +86,10 @@ postSlugs:
   - senales-que-anticipan-cambios-reales-no-solo-modas
   - deepseek-la-guia-practica-para-usarlo-bien
   - la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas
+  - te-amo-mandame-dinero-anatomia-vinculo-fabricado
+  - granja-cerdos-digital-trata-fraude
+  - empleado-que-nunca-existio-corea-del-norte-empresa
+  - quien-responde-fraude-autorizado
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -201,6 +205,10 @@ sections:
         tag: debate
       - slug: la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste
         tag: debate
+      - slug: granja-cerdos-digital-trata-fraude
+        tag: debate
+      - slug: quien-responde-fraude-autorizado
+        tag: debate
   - title: Casos de Estudio
     description: >-
       Situaciones reales documentadas para análisis estructurado, trabajos
@@ -233,6 +241,12 @@ sections:
       - slug: el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende
         tag: caso
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
+        tag: caso
+      - slug: te-amo-mandame-dinero-anatomia-vinculo-fabricado
+        tag: caso
+      - slug: granja-cerdos-digital-trata-fraude
+        tag: caso
+      - slug: empleado-que-nunca-existio-corea-del-norte-empresa
         tag: caso
   - title: Perspectiva LATAM
     description: >-
