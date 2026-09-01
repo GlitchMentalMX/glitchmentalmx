@@ -17,6 +17,7 @@ import { categorySlug } from '../../data/categories';
 import { getBook } from '../../data/books';
 import tipoCambio from '../../data/tipo-cambio.json';
 import preciosUSD from '../../data/precios-ia-usd.json';
+import preciosDigitalesUSD from '../../data/precios-digitales-usd.json';
 
 // Enlazado inverso Panóptico Digital → Cero Orgánico: estos 5 artículos son
 // justo los que integran esa serie (ver postSlugs en
@@ -74,12 +75,14 @@ export async function getStaticPaths() {
   const entrenaIA = await getCollection('entrenaIA', ({ data }) => !data.draft);
   const pruebaGratis = await getCollection('pruebaGratis', ({ data }) => !data.draft);
   const codigosDescuento = await getCollection('codigosDescuento', ({ data }) => !data.draft);
+  const preciosDigitales = await getCollection('preciosDigitales', ({ data }) => !data.draft);
   return [
     ...posts.map((post) => ({ params: { slug: post.id }, props: { kind: 'posts' as const, post } })),
     ...preciosIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'preciosIA' as const, post } })),
     ...entrenaIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'entrenaIA' as const, post } })),
     ...pruebaGratis.map((post) => ({ params: { slug: post.id }, props: { kind: 'pruebaGratis' as const, post } })),
     ...codigosDescuento.map((post) => ({ params: { slug: post.id }, props: { kind: 'codigosDescuento' as const, post } })),
+    ...preciosDigitales.map((post) => ({ params: { slug: post.id }, props: { kind: 'preciosDigitales' as const, post } })),
   ];
 }
 
@@ -209,7 +212,9 @@ const articleSchema =
               ? 'Privacidad de IA'
               : kind === 'pruebaGratis'
                 ? 'Prueba gratis sin tarjeta'
-                : 'Códigos de descuento',
+                : kind === 'codigosDescuento'
+                  ? 'Códigos de descuento'
+                  : 'Precios Digitales',
       };
 
 // ---------------------------------------------------------------------------
@@ -219,22 +224,38 @@ const articleSchema =
 // /articulos/cuanto-cuesta-[herramienta]-hoy/ que pide el brief.
 // ---------------------------------------------------------------------------
 const herramienta =
-  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).herramienta : undefined;
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
+    ? (post.data as any).herramienta
+    : undefined;
 const herramientaId =
-  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).herramientaId : undefined;
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
+    ? (post.data as any).herramientaId
+    : undefined;
 const sitioOficial =
-  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).sitioOficial : undefined;
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
+    ? (post.data as any).sitioOficial
+    : undefined;
 
 const precio =
   kind === 'preciosIA'
-    ? (preciosUSD as Record<string, { nombre: string; precioUSD: number; periodo: string; empresa: string }>)[herramientaId]
-    : undefined;
-const precioMXN = precio ? precio.precioUSD * tipoCambio.valor : undefined;
+    ? (preciosUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; periodo: string; empresa: string }>)[herramientaId]
+    : kind === 'preciosDigitales'
+      ? (preciosDigitalesUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; periodo: string; empresa: string }>)[herramientaId]
+      : undefined;
+// Meli+, Rappi Pro y similares venden directo en pesos, sin versión en
+// dólares — su entrada trae `precioMXN` en vez de `precioUSD` (ver nota en
+// TipoCambioCalculadora.astro), así que aquí no hay tipo de cambio que aplicar.
+const precioEsMXNDirecto = precio?.precioMXN !== undefined;
+const precioMXN = precio
+  ? precioEsMXNDirecto
+    ? precio.precioMXN!
+    : (precio.precioUSD ?? 0) * tipoCambio.valor
+  : undefined;
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 
 // Title tag corto y sin sufijo de sitio, distinto del H1 (que se queda
 // largo). El H1 no cambia — solo lo que ve Google en el <title>.
-const metaTitle = kind === 'preciosIA' ? buildPrecioIATitleTag(herramienta) : title;
+const metaTitle = kind === 'preciosIA' || kind === 'preciosDigitales' ? buildPrecioIATitleTag(herramienta) : title;
 
 // ---------------------------------------------------------------------------
 // Rama "entrenaIA" (serie "¿[App] usa mis datos para entrenar su IA?") —
@@ -245,7 +266,7 @@ const metaTitle = kind === 'preciosIA' ? buildPrecioIATitleTag(herramienta) : ti
 const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).veredicto : undefined;
 
 const productSchema =
-  kind === 'preciosIA' && precio && precioMXN !== undefined
+  (kind === 'preciosIA' || kind === 'preciosDigitales') && precio && precioMXN !== undefined
     ? {
         '@context': 'https://schema.org',
         '@type': 'Product',
@@ -314,6 +335,14 @@ const otrosCodigosDescuento =
         post.id,
       ).slice(0, 3)
     : [];
+
+const otrosPreciosDigitales =
+  kind === 'preciosDigitales'
+    ? seededShuffle(
+        (await getCollection('preciosDigitales', ({ data }) => !data.draft)).filter((p) => p.id !== post.id),
+        post.id,
+      ).slice(0, 3)
+    : [];
 ---
 
 <Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'}>
@@ -340,9 +369,14 @@ const otrosCodigosDescuento =
       { name: 'Prueba gratis sin tarjeta', url: '/prueba-gratis-sin-tarjeta/' },
       { name: title },
     ]} />
-  ) : (
+  ) : kind === 'codigosDescuento' ? (
     <Breadcrumbs items={[
       { name: 'Códigos de descuento', url: '/codigos-descuento-ia/' },
+      { name: title },
+    ]} />
+  ) : (
+    <Breadcrumbs items={[
+      { name: 'Precios Digitales', url: '/precios-digitales/' },
       { name: title },
     ]} />
   )}
@@ -357,8 +391,10 @@ const otrosCodigosDescuento =
         <span class="tag category-tag">Privacidad de IA</span>
       ) : kind === 'pruebaGratis' ? (
         <span class="tag category-tag">Prueba gratis sin tarjeta</span>
-      ) : (
+      ) : kind === 'codigosDescuento' ? (
         <span class="tag category-tag">Códigos de descuento</span>
+      ) : (
+        <a href="/precios-digitales/" class="tag category-tag">Precios Digitales</a>
       )}
       <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
       <h1>{title}</h1>
@@ -393,6 +429,21 @@ const otrosCodigosDescuento =
             </p>
             <TipoCambioCalculadora herramientaId={herramientaId} herramienta={herramienta} />
             <p class="otros-precios"><a href="/precios-ia/">¿Quieres consultar otros precios? →</a></p>
+          </>
+        )}
+        {kind === 'preciosDigitales' && precio && precioMXN !== undefined && (
+          <>
+            <p>
+              {precioEsMXNDirecto ? (
+                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México, precio oficial directo — este servicio no vende en dólares, así que no hay tipo de cambio de Banxico que aplicar aquí.</>
+              ) : precio.precioUSD === 0 ? (
+                <>Cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
+              ) : (
+                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México ({precio.precioUSD!.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al tipo de cambio FIX de Banxico del {formatDate(fechaDato)}), antes de comisiones bancarias o impuestos según tu método de pago.</>
+              )}
+            </p>
+            <TipoCambioCalculadora herramientaId={herramientaId} herramienta={herramienta} fuente="digitales" />
+            <p class="otros-precios"><a href="/precios-digitales/">¿Quieres consultar otros precios? →</a></p>
           </>
         )}
         <Content />
@@ -437,7 +488,7 @@ const otrosCodigosDescuento =
     </section>
   )}
 
-  {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento') && <ToolsWidget />}
+  {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales') && <ToolsWidget />}
 
   {kind === 'posts' && relatedFinal.length > 0 && (
     <section class="related container">
@@ -520,6 +571,25 @@ const otrosCodigosDescuento =
       <h2>Más códigos de descuento</h2>
       <div class="grid">
         {otrosCodigosDescuento.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage ?? ''}
+            heroImageAlt={p.data.heroImageAlt ?? ''}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {kind === 'preciosDigitales' && otrosPreciosDigitales.length > 0 && (
+    <section class="related container">
+      <h2>Más precios digitales</h2>
+      <div class="grid">
+        {otrosPreciosDigitales.map((p) => (
           <ArticleCard
             slug={p.id}
             title={p.data.title}

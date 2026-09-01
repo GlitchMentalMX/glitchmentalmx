@@ -1,0 +1,66 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
+import BuscadorPreciosIA from '../../components/BuscadorPreciosIA.astro';
+import NotaActualizacionBanxico from '../../components/NotaActualizacionBanxico.astro';
+import { getCollection } from 'astro:content';
+import tipoCambio from '../../data/tipo-cambio.json';
+import { formatDate } from '../../lib/format';
+
+const posts = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).sort((a, b) =>
+  a.data.herramienta.localeCompare(b.data.herramienta, 'es')
+);
+
+const buscadorItems = posts.map((post) => ({
+  nombre: post.data.herramienta,
+  slug: post.id,
+}));
+
+const title = 'Precios Digitales: cuánto cuestan tus suscripciones hoy en México';
+const description =
+  'Cuánto cuestan VPNs, antivirus, gestores de contraseñas, streaming, gaming y otras suscripciones digitales hoy en México, en pesos mexicanos, con el tipo de cambio oficial de Banxico actualizado a diario.';
+const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+---
+
+<Layout title={title} description={description}>
+  <Breadcrumbs items={[{ name: 'Precios Digitales' }]} />
+  <section class="container header">
+    <p class="eyebrow">Precios Digitales · {posts.length} servicios · dato del {formatDate(fechaDato)}</p>
+    <h1>Cuánto cuestan realmente tus servicios digitales en México</h1>
+    <p class="categorias">VPN · Antivirus · Contraseñas · Almacenamiento · Membresías · Educación · Gaming · Streaming · Música</p>
+    <p class="dek">
+      El precio de lista de cada servicio, convertido a pesos mexicanos con el tipo de cambio FIX de
+      Banxico. Así puedes comparar cuánto cuesta realmente cada suscripción sin hacer cuentas antes de
+      contratar. Usamos como referencia el precio oficial de EE. UU.; algunos servicios tienen precios
+      propios en México, por lo que el importe que aparece aquí puede no coincidir con el que ves
+      directamente en su tienda o aplicación.
+    </p>
+    <NotaActualizacionBanxico />
+  </section>
+
+  <section class="container list">
+    <p class="eyebrow list-label">Los servicios</p>
+    <BuscadorPreciosIA items={buscadorItems} label="Buscar servicio digital por nombre" />
+    {posts.map((post, i) => (
+      <CollectionArticleRow
+        index={i + 1}
+        slug={post.id}
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        body={post.body}
+      />
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 24px; max-width: 760px; }
+  .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
+  .categorias { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-faint); margin: 0 0 18px; }
+  .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+
+  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list-label { margin-bottom: 6px; }
+</style>

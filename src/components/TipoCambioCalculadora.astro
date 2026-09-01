@@ -5,32 +5,47 @@
 // expuesto. tipo-cambio.json lo actualiza a diario el GitHub Action de
 // Banxico; precios-ia-usd.json se edita a mano cuando una empresa cambia precio.
 import tipoCambio from '../data/tipo-cambio.json';
-import preciosUSD from '../data/precios-ia-usd.json';
+import preciosIAUSD from '../data/precios-ia-usd.json';
+import preciosDigitalesUSD from '../data/precios-digitales-usd.json';
 import { formatDate } from '../lib/format';
 import NotaActualizacionBanxico from './NotaActualizacionBanxico.astro';
 
 interface Props {
   herramientaId: string;
   herramienta: string;
+  // 'digitales' para la familia Precios Digitales (VPNs, streaming, etc.,
+  // fuera de "IA sin letra chiquita") — mismo mecanismo, tabla de precios
+  // aparte para no mezclar catálogos. Default 'ia' preserva el comportamiento
+  // de siempre para preciosIA.
+  fuente?: 'ia' | 'digitales';
 }
 
-const { herramientaId, herramienta } = Astro.props;
-const precio = (preciosUSD as Record<string, { nombre: string; precioUSD: number; periodo: string }>)[
+const { herramientaId, herramienta, fuente = 'ia' } = Astro.props;
+const preciosUSD = fuente === 'digitales' ? preciosDigitalesUSD : preciosIAUSD;
+const archivoFuente = fuente === 'digitales' ? 'precios-digitales-usd.json' : 'precios-ia-usd.json';
+const precio = (preciosUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; periodo: string }>)[
   herramientaId
 ];
 
 if (!precio) {
-  throw new Error(`No hay precio USD registrado para herramientaId "${herramientaId}" en precios-ia-usd.json`);
+  throw new Error(`No hay precio registrado para herramientaId "${herramientaId}" en ${archivoFuente}`);
 }
 
-const precioMXN = precio.precioUSD * tipoCambio.valor;
+// Caso especial de Precios Digitales: servicios sin ancla en dólares (ej.
+// Meli+, Rappi Pro) — venden directo en pesos mexicanos, país por país, sin
+// versión USD que convertir. Forzar esos precios por el tipo de cambio de
+// Banxico inventaría un dato que no existe, así que la entrada trae
+// `precioMXN` en vez de `precioUSD` y la calculadora muestra el monto
+// directo, sin la fila "USD × FIX =".
+const tienePrecioMXNDirecto = precio.precioMXN !== undefined;
+const precioMXN = tienePrecioMXNDirecto ? precio.precioMXN! : (precio.precioUSD ?? 0) * tipoCambio.valor;
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 
 const formatMXN = (n: number) =>
   n.toLocaleString('es-MX', { style: 'currency', currency: 'MXN', minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const formatUSD = (n: number) =>
   n.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const esGratis = precio.precioUSD === 0;
+const esGratis = !tienePrecioMXNDirecto && precio.precioUSD === 0;
 ---
 
 <div class="calc-box" aria-label={`Calculadora de precio de ${precio.nombre} en pesos mexicanos`}>
@@ -39,9 +54,13 @@ const esGratis = precio.precioUSD === 0;
     <div class="calc-row">
       <span class="calc-mxn">$0 MXN — es gratis</span>
     </div>
+  ) : tienePrecioMXNDirecto ? (
+    <div class="calc-row">
+      <span class="calc-mxn">{formatMXN(precioMXN)} MXN</span>
+    </div>
   ) : (
     <div class="calc-row">
-      <span class="calc-usd">{formatUSD(precio.precioUSD)} USD</span>
+      <span class="calc-usd">{formatUSD(precio.precioUSD!)} USD</span>
       <span class="calc-op">×</span>
       <span class="calc-fx">{tipoCambio.valor.toFixed(4)}</span>
       <span class="calc-op">=</span>
@@ -51,7 +70,9 @@ const esGratis = precio.precioUSD === 0;
   <p class="calc-foot">
     {esGratis
       ? 'No tiene plan de pago para el público general en México — el tipo de cambio no aplica.'
-      : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Antes de comisiones bancarias por transacción en dólares o impuestos según tu método de pago.`}
+      : tienePrecioMXNDirecto
+        ? 'Precio oficial directo en pesos mexicanos — este servicio no vende en dólares, así que el tipo de cambio de Banxico no aplica aquí.'
+        : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Antes de comisiones bancarias por transacción en dólares o impuestos según tu método de pago.`}
   </p>
   <NotaActualizacionBanxico />
 </div>

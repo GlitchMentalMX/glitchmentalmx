@@ -32,6 +32,15 @@ const slugsPreciosIA = new Set(
     .map((archivo) => archivo.replace(/\.md$/, ''))
 );
 
+// Precios Digitales usa el mismo dato de Banxico como señal de "verificado
+// al día" que Precios de IA — familia hermana, mismo criterio de lastmod.
+const preciosDigitalesDir = new URL('./src/content/precios-digitales/', import.meta.url);
+const slugsPreciosDigitales = new Set(
+  readdirSync(preciosDigitalesDir)
+    .filter((archivo) => archivo.endsWith('.md'))
+    .map((archivo) => archivo.replace(/\.md$/, ''))
+);
+
 let fechaTipoCambio;
 try {
   const tipoCambio = JSON.parse(
@@ -53,14 +62,14 @@ export default defineConfig({
       serialize(item) {
         const { pathname } = new URL(item.url);
 
-        if (pathname === '/precios-ia/' && fechaTipoCambio) {
+        if ((pathname === '/precios-ia/' || pathname === '/precios-digitales/') && fechaTipoCambio) {
           return { ...item, lastmod: fechaTipoCambio.toISOString() };
         }
 
         const match = pathname.match(/^\/articulos\/([^/]+)\/$/);
         if (match) {
           const slug = match[1];
-          if (slugsPreciosIA.has(slug) && fechaTipoCambio) {
+          if ((slugsPreciosIA.has(slug) || slugsPreciosDigitales.has(slug)) && fechaTipoCambio) {
             return { ...item, lastmod: fechaTipoCambio.toISOString() };
           }
           const fecha = fechaPorSlugPost.get(slug);

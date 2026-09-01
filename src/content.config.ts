@@ -208,6 +208,29 @@ const pruebaGratis = defineCollection({
 // consistencia con el resto de la familia, pero la semántica es propia de
 // esta serie: rojo = no existe código real, amarillo = solo promos oficiales
 // limitadas, verde = sí existe un código/promo activa y verificable hoy.
+// Familia hermana de preciosIA pero fuera de "IA sin letra chiquita" a
+// propósito: suscripciones digitales sin ángulo de IA (VPNs, antivirus,
+// gestores de contraseñas, streaming, gaming...). Mismo esquema y misma
+// mecánica de calculadora/Banxico que preciosIA, pero colección e historial
+// separados para que el ticker y el buscador de la serie de IA nunca se
+// contaminen con estas entidades. Solo precio por ahora — sin series
+// hermanas de privacidad/prueba gratis/códigos de descuento para esta familia.
+const preciosDigitales = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/precios-digitales' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    herramienta: z.string(),
+    herramientaId: z.string(),
+    sitioOficial: z.string().url(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
 const codigosDescuento = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/codigos-descuento' }),
   schema: z.object({
@@ -263,4 +286,5 @@ export const collections = {
   entrenaIA,
   pruebaGratis,
   codigosDescuento,
+  preciosDigitales,
 };
