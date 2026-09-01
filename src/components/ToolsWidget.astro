@@ -13,6 +13,7 @@ const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft
 const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
 const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
 const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).length;
+const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
 
 const toolsList = [
   { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
@@ -20,6 +21,21 @@ const toolsList = [
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
   { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales, quién entrena su IA con tus datos, si piden tarjeta para probarla y si su código de descuento es real — cuatro series verificadas, herramienta por herramienta.', stat: `Precios: ${preciosCount} · Privacidad: ${entrenaCount} · Prueba gratis: ${pruebaGratisCount} · Descuentos: ${codigosDescuentoCount}`, icon: 'shield' as const },
 ];
+
+// Aparte del grid principal, no como 5to elemento: en desktop el grid es de
+// 2 columnas, así que un 5to card se vería chueco (2+2+1). Se muestra en su
+// propia fila con divisor + etiqueta — mismo patrón que ya usa el dropdown
+// de Colecciones en el header. Funciona igual en mobile (donde el grid
+// principal ya colapsa a 1 columna): la separación la da el texto, no el
+// layout, así que no hace falta una versión distinta para cada ancho.
+const otrosServicios = {
+  href: '/precios-digitales/',
+  tag: 'Referencia',
+  title: 'Precios Digitales',
+  desc: 'VPNs, antivirus, streaming y otras suscripciones digitales — cuánto cuestan de verdad en México, sin ángulo de IA.',
+  stat: `${preciosDigitalesCount} servicios`,
+  icon: 'tag' as const,
+};
 ---
 
 <section class="tools container">
@@ -49,6 +65,19 @@ const toolsList = [
         <span class="stat">{t.stat}</span>
       </a>
     ))}
+  </div>
+
+  <p class="eyebrow group-label">Otros servicios</p>
+  <div class="tools-grid group-grid">
+    <a href={otrosServicios.href} class="tool-card">
+      <span class="tool-icon">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
+      </span>
+      <span class="tag">{otrosServicios.tag}</span>
+      <h3>{otrosServicios.title}</h3>
+      <p>{otrosServicios.desc}</p>
+      <span class="stat">{otrosServicios.stat}</span>
+    </a>
   </div>
 </section>
 
@@ -95,4 +124,11 @@ const toolsList = [
   @media (max-width: 900px) {
     .tools-grid { grid-template-columns: 1fr; }
   }
+
+  .group-label {
+    margin: 32px 0 20px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .group-grid { grid-template-columns: 1fr; }
 </style>

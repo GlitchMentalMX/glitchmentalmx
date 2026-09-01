@@ -17,6 +17,7 @@ const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft
 const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
 const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
 const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).length;
+const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
 
 const [featured] = allPosts;
 const recentThree = allPosts.slice(1, 4);
@@ -98,6 +99,20 @@ const toolsList = [
   { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales, quién entrena su IA con tus datos, si piden tarjeta para probarla y si su código de descuento es real — cuatro series verificadas, herramienta por herramienta.', stat: `Precios: ${preciosCount} · Privacidad: ${entrenaCount} · Prueba gratis: ${pruebaGratisCount} · Descuentos: ${codigosDescuentoCount}`, icon: 'shield' as const },
 ];
 
+// Aparte del grid principal, no como 5to elemento: en desktop el grid es de
+// 2 columnas, así que un 5to card se vería chueco (2+2+1). Se muestra en su
+// propia fila con divisor + etiqueta — mismo patrón que ya usa el dropdown
+// de Colecciones en el header. Sí entra al pool de "Señal en vivo" (más
+// abajo) para que también rote ahí.
+const otrosServicios = {
+  href: '/precios-digitales/',
+  tag: 'Referencia',
+  title: 'Precios Digitales',
+  desc: 'VPNs, antivirus, streaming y otras suscripciones digitales — cuánto cuestan de verdad en México, sin ángulo de IA.',
+  stat: `${preciosDigitalesCount} servicios`,
+  icon: 'tag' as const,
+};
+
 // Señal en vivo — widget bajo el hero. Nada de imágenes ni carrusel: un solo
 // dato a la vez, con datos reales (nunca relleno). Qué ITEM le toca a cada
 // categoría se decide en el cliente por ventana de 12h (sin rebuild); el
@@ -144,7 +159,7 @@ const signalPools = {
     text: h.data.title,
     href: `/colecciones/${h.id}/`,
   })),
-  herramienta: toolsList.map((t) => ({
+  herramienta: [...toolsList, otrosServicios].map((t) => ({
     tag: 'Recurso',
     text: t.title,
     href: t.href,
@@ -343,6 +358,19 @@ const signalPools = {
           <span class="stat">{t.stat}</span>
         </a>
       ))}
+    </div>
+
+    <p class="eyebrow group-label">Otros servicios</p>
+    <div class="tools-grid group-grid">
+      <a href={otrosServicios.href} class="tool-card">
+        <span class="tool-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
+        </span>
+        <span class="tag">{otrosServicios.tag}</span>
+        <h3 class="scramble" data-text={otrosServicios.title}>{otrosServicios.title}</h3>
+        <p>{otrosServicios.desc}</p>
+        <span class="stat">{otrosServicios.stat}</span>
+      </a>
     </div>
   </section>
 
@@ -839,6 +867,13 @@ const signalPools = {
     .explora-grid { grid-template-columns: 1fr; }
     .tools-grid { grid-template-columns: 1fr; }
   }
+
+  .group-label {
+    margin: 32px 0 20px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  .group-grid { grid-template-columns: 1fr; }
 </style>
 
 <script>

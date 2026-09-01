@@ -7,6 +7,7 @@ const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft
 const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
 const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
 const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).length;
+const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
 
 const cards = [
   {
@@ -56,6 +57,17 @@ const cards = [
       </a>
     ))}
   </section>
+
+  <section class="container group-section">
+    <p class="eyebrow group-label">Otros servicios</p>
+    <div class="grid">
+      <a href="/precios-digitales/" class="card">
+        <p class="eyebrow">{preciosDigitalesCount} servicios</p>
+        <h2>Precios Digitales</h2>
+        <p class="dek">VPNs, antivirus, streaming y otras suscripciones digitales — cuánto cuestan de verdad en México, mismo criterio de precio oficial y tipo de cambio Banxico, sin ángulo de IA.</p>
+      </a>
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -63,12 +75,20 @@ const cards = [
   .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
   .sub { color: var(--text-muted); font-size: 1.05rem; }
 
+  .group-section { padding: 8px 24px 8px; }
+  .group-label {
+    margin: 40px 0 22px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+
   .grid {
     padding: 0 24px 72px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 22px;
   }
+  .group-section .grid { padding: 0 0 72px; }
   .card {
     padding: 30px;
     border-radius: var(--radius);
