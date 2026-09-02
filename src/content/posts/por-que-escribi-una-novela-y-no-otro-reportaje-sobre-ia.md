@@ -11,7 +11,7 @@ heroImageAlt: >-
   Por qué escribí una novela: libro abierto con página desprendida entre
   registros documentales documentos pegados en una pared
 ---
-Escribí una línea en GlitchMentalMX y cinco minutos después supe que tenía una novela. La línea era esta: _"La neutralidad religiosa en IA no existe. La pregunta no es si hay sesgo — es quién lo decide, con qué proceso, y quién puede cuestionarlo."_ Venía de [un artículo sobre el sesgo religioso en los LLMs occidentales](/articulos/la-ia-occidental-tiene-un-problema-de-religion-serio/). Era un dato verificado, documentado, frío. Y era completamente insuficiente.
+Escribí una línea en glitchMentalMX y cinco minutos después supe que tenía una novela. La línea era esta: _"La neutralidad religiosa en IA no existe. La pregunta no es si hay sesgo — es quién lo decide, con qué proceso, y quién puede cuestionarlo."_ Venía de [un artículo sobre el sesgo religioso en los LLMs occidentales](/articulos/la-ia-occidental-tiene-un-problema-de-religion-serio/). Era un dato verificado, documentado, frío. Y era completamente insuficiente.
 
 El periodismo señala. **Eso es lo que hace bien y lo que no puede evitar hacer.** Señala el corpus contaminado, el summit cristiano en las oficinas de Anthropic, la jerarquía implícita de representación religiosa codificada en los modelos antes de que nadie haga ninguna pregunta. Lo señala con precisión y lo deja ahí, frente al lector, que lo procesa como información y sigue con su día. Eso no es un defecto del periodismo — es su naturaleza. Un reportaje te pone frente al problema. Una novela te mete adentro.
 

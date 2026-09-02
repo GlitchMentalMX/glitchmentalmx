@@ -16,7 +16,7 @@ const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }
 const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
 
 const toolsList = [
-  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice GlitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
+  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
   { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
   { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales, quién entrena su IA con tus datos, si piden tarjeta para probarla y si su código de descuento es real — cuatro series verificadas, herramienta por herramienta.', stat: `Precios: ${preciosCount} · Privacidad: ${entrenaCount} · Prueba gratis: ${pruebaGratisCount} · Descuentos: ${codigosDescuentoCount}`, icon: 'shield' as const },

@@ -33,7 +33,7 @@ Aquí aparece la segunda capa del fenómeno, la que casi nadie discute. Cuando d
 
 > La IA no le ahorró tiempo al maestro: le quitó el último oficio manual que lo distinguía frente al pizarrón.
 
-Esto ya tiene un precedente documentado en otro sector: en GlitchMentalMX reportamos que **casi la mitad de las imágenes en bancos como Adobe Stock ya son generadas por IA**, un mecanismo estructural equivalente — la sustitución de la producción visual humana por convergencia estética algorítmica — pero en la industria de la fotografía comercial. [Ese proceso ya ocurrió antes en la fotografía de stock](https://glitchmental.com/articulos/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/), y el aula educativa lo está viviendo ahora con un desfase de meses, no de años.
+Esto ya tiene un precedente documentado en otro sector: en glitchMentalMX reportamos que **casi la mitad de las imágenes en bancos como Adobe Stock ya son generadas por IA**, un mecanismo estructural equivalente — la sustitución de la producción visual humana por convergencia estética algorítmica — pero en la industria de la fotografía comercial. [Ese proceso ya ocurrió antes en la fotografía de stock](https://glitchmental.com/articulos/la-fotografia-de-stock-murio-y-nadie-fue-al-velorio/), y el aula educativa lo está viviendo ahora con un desfase de meses, no de años.
 
 ![IA en educación: pluma roja cerrada junto a laptop con calificación automática](/images/uploads/la-ia-no-ahorra-tiempo-sec.webp "La IA no ahorra tiempo al maestro: borra un oficio")
 
@@ -47,7 +47,7 @@ Por otro lado, esa misma nivelación borra variación. Si todas las escuelas de 
 
 La velocidad del cambio ya es medible. Según la Encuesta sobre la IA en la Educación Superior en América Latina 2026, del Digital Education Council en colaboración con el Tecnológico de Monterrey, el uso de IA entre el profesorado universitario de la región **subió de 61% en 2025 a 79% en 2026**, un salto de 18 puntos en un solo año. Entre quienes ya usan IA en su docencia, el caso de uso más común — reportado por el 76% del profesorado — es precisamente **crear materiales de enseñanza**.
 
-El problema es que **esa adopción avanza sin marco pedagógico que la sostenga**. [Ya reportamos en GlitchMentalMX el patrón general de uso masivo sin regulación en las aulas de la región](https://glitchmental.com/articulos/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/); lo que este artículo agrega es el ángulo específico de la habilidad visual: nadie está discutiendo, en ningún foro educativo formal de México o LATAM, qué se pierde cuando el pizarrón deja de tener trazo humano.
+El problema es que **esa adopción avanza sin marco pedagógico que la sostenga**. [Ya reportamos en glitchMentalMX el patrón general de uso masivo sin regulación en las aulas de la región](https://glitchmental.com/articulos/ia-en-las-aulas-de-latam-uso-masivo-regulacion-nula/); lo que este artículo agrega es el ángulo específico de la habilidad visual: nadie está discutiendo, en ningún foro educativo formal de México o LATAM, qué se pierde cuando el pizarrón deja de tener trazo humano.
 
 ## La pregunta que el aula todavía no se hace
 

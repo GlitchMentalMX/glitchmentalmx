@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getEntry, getCollection } from 'astro:content';
 import { parseMesEs } from '../../lib/format';
@@ -57,6 +58,7 @@ const itemListSchema = {
   locale="es_MX"
   titleSuffix={false}
 >
+  <Breadcrumbs items={[{ name: 'Índice glitchMentalMX' }]} />
   <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <section class="container hero">
     <p class="eyebrow">Ranking B2B — Actualización mensual</p>
@@ -68,7 +70,7 @@ const itemListSchema = {
     <details class="methodology">
       <summary>+ Metodología</summary>
       <p>
-        El Índice GlitchMentalMX se basa exclusivamente en señales públicas verificables: cobertura especializada,
+        El Índice glitchMentalMX se basa exclusivamente en señales públicas verificables: cobertura especializada,
         documentación oficial, casos de uso, actividad técnica visible y tendencias sostenidas. Las fuentes de
         referencia incluyen reportes de Gartner, McKinsey e IDC, entre otras. Cada posición refleja adopción real e
         integración operativa en el mercado B2B.
@@ -154,6 +156,7 @@ const itemListSchema = {
           pubDate={post.data.pubDate}
           heroImage={post.data.heroImage}
           heroImageAlt={post.data.heroImageAlt}
+          body={post.body}
           variant="grid"
         />
       ))}

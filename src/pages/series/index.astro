@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 
 const series = (await getCollection('editorialCollections', ({ data }) => data.kind === 'series')).sort(
@@ -12,6 +13,7 @@ const series = (await getCollection('editorialCollections', ({ data }) => data.k
   description="Investigaciones de varias entregas sobre IA, poder y cultura digital, para leer en orden."
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: 'Series' }]} />
   <section class="container header">
     <p class="eyebrow">Series editoriales</p>
     <h1>Investigaciones en <span class="accent">varias entregas</span></h1>

@@ -5,7 +5,7 @@ pubDate: 2026-03-17T00:05:00.052Z
 updatedDate: 2026-07-15T14:36:58.631Z
 description: >-
   El discurso sobre IA está roto. Sin optimismo artificial ni apocalipsis
-  laboral — solo claridad. El manifiesto de glitchmentalMX sobre IA y el futuro.
+  laboral — solo claridad. El manifiesto de glitchMentalMX sobre IA y el futuro.
 heroImage: /images/posts/la-ia-no-viene-por-tu-trabajo-ya-lo-esta-evaluando/hero.jpg
 heroImageAlt: Mujer mide terreno con instrumento topográfico en medio de niebla
   densa mientras otros permanecen inmóviles al fondo

@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { getCollection } from 'astro:content';
 import { insightCategoryLinks } from '../../data/insightCategoryLinks';
@@ -32,6 +33,7 @@ const modifiedTime = page.data.reduce(
   modifiedTime={modifiedTime}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: 'Insights Visuales' }]} />
   <PageHeader eyebrow="Insights Visuales" title="Una imagen. Una idea. **Un momento para pensar.**" />
 
   <script define:vars={{ prevUrl: page.url.prev ?? null, nextUrl: page.url.next ?? null }}>

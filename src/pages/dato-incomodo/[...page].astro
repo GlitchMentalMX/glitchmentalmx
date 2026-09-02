@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection } from 'astro:content';
@@ -32,6 +33,7 @@ const modifiedTime = page.data.reduce(
   modifiedTime={modifiedTime}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: 'Dato Incómodo' }]} />
   <PageHeader eyebrow="Dato Incómodo" title="Lo que no te conviene saber... **publicado de todas formas.**" />
 
   <script define:vars={{ prevUrl: page.url.prev ?? null, nextUrl: page.url.next ?? null }}>

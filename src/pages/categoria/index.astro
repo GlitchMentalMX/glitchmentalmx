@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../../data/categories';
 
@@ -11,9 +12,10 @@ const counts = Object.fromEntries(
 
 <Layout
   title="Leer por categoría"
-  description="Explora los artículos de glitchmentalMX organizados por tema."
+  description="Explora los artículos de glitchMentalMX organizados por tema."
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: 'Categorías' }]} />
   <section class="container header">
     <p class="eyebrow">Leer</p>
     <h1>Explora <span class="accent">por categoría</span></h1>

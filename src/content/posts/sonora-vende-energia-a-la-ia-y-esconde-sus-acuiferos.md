@@ -41,7 +41,7 @@ Hermosillo, la capital del estado, sí tiene un programa de gestión hídrica: e
 
 Es importante ser precisos aquí: **CUIDA es un programa municipal contra la sequía urbana**, no un proyecto diseñado para abastecer centros de datos de IA. Que exista infraestructura de reúso industrial en la ciudad no significa que el estado haya resuelto la ecuación hídrica de un data center, que además del agua para procesos industriales generales requiere volúmenes constantes para enfriamiento de servidores.
 
-Este patrón —un recurso que se vuelve dato público, exportable y monetizable, y otro que se queda fuera del lenguaje de inversión— no es exclusivo de Sonora. GlitchMentalMX ya documentó un mecanismo similar en Querétaro, donde una reclasificación regulatoria trató a los centros de datos como "servicio" en lugar de "industria", eximiéndolos de ciertos requisitos ambientales. En Sonora el mecanismo es distinto —no hay ley ni laguna regulatoria de por medio—, pero el resultado es el mismo: **un solo recurso queda visible en el discurso público**.
+Este patrón —un recurso que se vuelve dato público, exportable y monetizable, y otro que se queda fuera del lenguaje de inversión— no es exclusivo de Sonora. glitchMentalMX ya documentó un mecanismo similar en Querétaro, donde una reclasificación regulatoria trató a los centros de datos como "servicio" en lugar de "industria", eximiéndolos de ciertos requisitos ambientales. En Sonora el mecanismo es distinto —no hay ley ni laguna regulatoria de por medio—, pero el resultado es el mismo: **un solo recurso queda visible en el discurso público**.
 
 ## Lo que un centro de datos realmente necesita
 

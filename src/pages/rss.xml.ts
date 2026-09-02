@@ -8,7 +8,7 @@ import { getCollection } from 'astro:content';
 // ítem — se usa en ambos para que agregadores como Friendica (que necesita
 // poder atribuir un autor a cada entrada para importarla) tengan de dónde
 // tomarlo.
-const SITE_AUTHOR = 'glitchmentalMX';
+const SITE_AUTHOR = 'glitchMentalMX';
 
 export async function GET(context: APIContext) {
   const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -19,7 +19,7 @@ export async function GET(context: APIContext) {
   const logoURL = new URL('/og-default.png', context.site!).href;
 
   return rss({
-    title: 'glitchmentalMX',
+    title: 'glitchMentalMX',
     description: 'Análisis crítico de inteligencia artificial, tecnología y cultura digital.',
     site: context.site!,
     xmlns: {
@@ -37,7 +37,7 @@ export async function GET(context: APIContext) {
     <dc:creator>${SITE_AUTHOR}</dc:creator>
     <image>
       <url>${logoURL}</url>
-      <title>glitchmentalMX</title>
+      <title>glitchMentalMX</title>
       <link>${siteURL}</link>
     </image>
     <atom:link href="${siteURL}rss.xml" rel="self" type="application/rss+xml" />`,

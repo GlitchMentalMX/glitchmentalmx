@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 
 const hubs = (await getCollection('editorialCollections', ({ data }) => data.kind === 'hub')).sort(
@@ -13,9 +14,10 @@ const groupName = grouped[0]?.data.group;
 
 <Layout
   title="Colecciones"
-  description="Selecciones temáticas curadas de artículos de glitchmentalMX."
+  description="Selecciones temáticas curadas de artículos de glitchMentalMX."
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: 'Colecciones' }]} />
   <section class="container header">
     <p class="eyebrow">Colecciones</p>
     <h1>Lecturas <span class="accent">curadas por tema</span></h1>

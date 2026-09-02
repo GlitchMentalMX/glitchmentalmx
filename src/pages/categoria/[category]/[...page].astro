@@ -28,8 +28,8 @@ const pageSuffix = page.currentPage > 1 ? ` — página ${page.currentPage}` : '
 const title = `${category.name}${pageSuffix}`;
 const description =
   page.currentPage > 1
-    ? `Artículos de glitchmentalMX en la categoría ${category.name} — página ${page.currentPage} de ${page.lastPage}.`
-    : `Todos los artículos de glitchmentalMX en la categoría ${category.name}.`;
+    ? `Artículos de glitchMentalMX en la categoría ${category.name} — página ${page.currentPage} de ${page.lastPage}.`
+    : `Todos los artículos de glitchMentalMX en la categoría ${category.name}.`;
 const modifiedTime = page.data.reduce(
   (max, p) => (p.data.pubDate > max ? p.data.pubDate : max),
   page.data[0]?.data.pubDate

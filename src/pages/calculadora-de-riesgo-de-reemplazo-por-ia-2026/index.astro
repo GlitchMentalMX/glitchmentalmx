@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
@@ -88,7 +89,7 @@ const softwareAppSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'glitchmentalMX',
+    name: 'glitchMentalMX',
     logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
   },
 };
@@ -112,6 +113,7 @@ const faqSchema = {
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"
 >
+  <Breadcrumbs items={[{ name: 'Calculadora de Riesgo IA' }]} />
   <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
@@ -257,6 +259,7 @@ const faqSchema = {
       <div class="badges-row">
         <span>🔒 100% Anónimo</span><span>•</span><span>⚡ Sin registros</span>
       </div>
+      <p class="last-reviewed">Última revisión: {formatDate(lastReviewed)}.</p>
       <p class="disclaimer">
         Este diagnóstico es orientativo. Los niveles de riesgo se basan en tendencias documentadas por
         investigadores de automatización (Frey &amp; Osborne, McKinsey Global Institute, Foro Económico Mundial),
@@ -602,6 +605,7 @@ const faqSchema = {
   .scan-btn:hover { background: #0052cc; transform: scale(1.015); }
 
   .badges-row { display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 0.85em; gap: 10px; margin: 20px 0; }
+  .last-reviewed { color: rgba(255, 255, 255, 0.4); font-family: var(--font-mono); font-size: 0.7em; margin: 0; }
   .disclaimer { color: rgba(255, 255, 255, 0.55); font-size: 0.72em; font-style: italic; line-height: 1.6; margin-top: 8px; }
 
   #gmr-result { display: none; animation: gmrFadeIn 0.5s ease; background: rgba(0, 102, 255, 0.05); border-radius: 10px; margin-top: 26px; padding: 20px; }

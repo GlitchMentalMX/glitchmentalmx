@@ -13,7 +13,7 @@ heroImageAlt: >-
 ---
 Seguro ya escuchaste la frase de que _"la IA no te va a quitar el trabajo, sino alguien que sepa usar la herramienta de IA"_. Suena muy bien en un post de LinkedIn, pero la realidad en este inicio de 2026 es mucho más cruda y directa. La automatización ya no es una promesa del futuro; es una fuerza que está rediseñando la economía de **México** y de todo el mundo en tiempo real.
 
-Desde la llegada de los modelos de lenguaje avanzado y los agentes autónomos que pueden gestionar procesos enteros sin supervisión humana, la pregunta dejó de ser "si" la tecnología afectará tu empleo, para convertirse en "cuándo" y "qué tanto". Por eso, en **GlitchMental** hemos diseñado una [**herramienta para que dejes de adivinar**](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) y empieces a planear tu siguiente movimiento estratégico.
+Desde la llegada de los modelos de lenguaje avanzado y los agentes autónomos que pueden gestionar procesos enteros sin supervisión humana, la pregunta dejó de ser "si" la tecnología afectará tu empleo, para convertirse en "cuándo" y "qué tanto". Por eso, en **glitchMentalMX** hemos diseñado una [**herramienta para que dejes de adivinar**](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) y empieces a planear tu siguiente movimiento estratégico.
 
 ## La gran purga de las tareas repetitivas
 

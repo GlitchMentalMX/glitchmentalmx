@@ -51,8 +51,8 @@ En Midjourney, "glitch art style" es un prompt establecido. Los usuarios no pide
 
 > La IA más sofisticada de la historia genera la estética del error más coleccionada del momento. El ciclo no se rompe — se acelera.
 
-## Lo que el nombre glitchmentalMX tiene que ver con todo esto
+## Lo que el nombre glitchMentalMX tiene que ver con todo esto
 
 Este sitio lleva el nombre que lleva porque cubre tecnología desde el único ángulo que tiene sentido: el del error que expone la arquitectura real. No el comunicado de prensa, no la promesa de la demo, no el hype del lanzamiento — sino la grieta por donde se cuela lo que el sistema realmente hace cuando nadie está mirando.
 
-El glitch como postura editorial no es una metáfora decorativa. Es una metodología: **buscar la imperfección porque ahí está la información más honesta**. Desde los VHS con cabezal sucio hasta los artefactos de Sora, la historia del glitch es la historia de una cultura que, repetidamente, elige documentar los límites de sus propias herramientas en lugar de ignorarlos. Eso es lo que hace glitchmentalMX. Cortito, ácido, sin hype — y sin pretender que los sistemas son perfectos.
+El glitch como postura editorial no es una metáfora decorativa. Es una metodología: **buscar la imperfección porque ahí está la información más honesta**. Desde los VHS con cabezal sucio hasta los artefactos de Sora, la historia del glitch es la historia de una cultura que, repetidamente, elige documentar los límites de sus propias herramientas en lugar de ignorarlos. Eso es lo que hace glitchMentalMX. Cortito, ácido, sin hype — y sin pretender que los sistemas son perfectos.

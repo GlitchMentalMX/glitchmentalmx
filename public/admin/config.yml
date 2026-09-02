@@ -107,7 +107,7 @@ collections:
         required: false
 
   - name: "indice_glitchmentalmx"
-    label: "Índice GlitchMentalMX"
+    label: "Índice glitchMentalMX"
     label_singular: "Edición mensual"
     files:
       - name: "indice-actual"

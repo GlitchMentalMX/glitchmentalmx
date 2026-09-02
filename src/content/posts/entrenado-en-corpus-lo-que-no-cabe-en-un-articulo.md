@@ -27,7 +27,7 @@ _Entrenado en Corpus_ es un tecnothriller de ritmo periodístico. No hay persecu
 
   
 
-La serie editorial _El Negocio de la Virtud_, publicada en GlitchMentalMX a lo largo de 2026, desmontó el discurso moral de las grandes empresas de inteligencia artificial: la alianza entre Silicon Valley y el Vaticano, el sesgo religioso en modelos occidentales, la alineación como estrategia de relaciones públicas. Esa investigación es la columna vertebral de esta novela.
+La serie editorial _El Negocio de la Virtud_, publicada en glitchMentalMX a lo largo de 2026, desmontó el discurso moral de las grandes empresas de inteligencia artificial: la alianza entre Silicon Valley y el Vaticano, el sesgo religioso en modelos occidentales, la alineación como estrategia de relaciones públicas. Esa investigación es la columna vertebral de esta novela.
 
 La ficción usa nombres y empresas inventados. Los hechos que la inspiran están en el registro público. La novela no denuncia — obliga a ver juntos los datos que el periodismo publicó por separado.
 

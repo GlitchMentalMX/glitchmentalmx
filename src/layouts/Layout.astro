@@ -20,7 +20,7 @@ interface Props {
 
 const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime, titleSuffix = true, robots, locale } = Astro.props;
 
-const siteName = 'glitchmentalMX';
+const siteName = 'glitchMentalMX';
 const fullTitle = title === siteName || !titleSuffix ? title : `${title} · ${siteName}`;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image

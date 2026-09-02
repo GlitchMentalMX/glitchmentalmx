@@ -172,7 +172,7 @@ const articleSchema =
         },
         publisher: {
           '@type': 'Organization',
-          name: 'glitchmentalMX',
+          name: 'glitchMentalMX',
           logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
@@ -181,7 +181,7 @@ const articleSchema =
           cssSelector: ['h1', 'meta[name="description"]'],
         },
         about: [{ '@type': 'Thing', name: category }],
-        isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
+        isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
         articleSection: category,
       }
     : {
@@ -200,11 +200,11 @@ const articleSchema =
         },
         publisher: {
           '@type': 'Organization',
-          name: 'glitchmentalMX',
+          name: 'glitchMentalMX',
           logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
-        isPartOf: { '@type': 'WebSite', name: 'glitchmentalMX', url: Astro.site?.toString() },
+        isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
         articleSection:
           kind === 'preciosIA'
             ? 'Precios de IA'

@@ -25,7 +25,7 @@ _La inteligencia artificial no falla cuando es limitada. Falla cuando se sobreve
 
 ## Un índice editorial, no una lista de moda
 
-El **Índice GlitchMentalMX** no es una lista de “lo más nuevo” ni un ranking diseñado para quedar bien con el ecosistema. Es una herramienta editorial construida con una metodología fija, pensada para evaluar tecnologías, herramientas y enfoques con un criterio claro: su valor real para negocio B2B.
+El **Índice glitchMentalMX** no es una lista de “lo más nuevo” ni un ranking diseñado para quedar bien con el ecosistema. Es una herramienta editorial construida con una metodología fija, pensada para evaluar tecnologías, herramientas y enfoques con un criterio claro: su valor real para negocio B2B.
 
 Cada elemento evaluado es puntuado bajo cinco dimensiones: relevancia actual, tracción real, impacto en negocio, diferenciación y señales de adopción futura. No se premia la narrativa aspiracional. Se penaliza explícitamente el hype sin evidencia pública verificable.
 
@@ -43,7 +43,7 @@ Para quienes toman decisiones, **la claridad es más valiosa que la novedad**.
 
 La edición actual del índice ya está disponible como una página estática, pensada para consulta recurrente y comparación mensual.
 
-[**Índice GlitchMentalMX**](/indice-glitchmentalmx/)
+[**Índice glitchMentalMX**](/indice-glitchmentalmx/)
 
 Ahí encontrarás el ranking completo, los destacados del Top 5 y una lectura editorial que explica qué está cambiando realmente en el ecosistema tecnológico.
 

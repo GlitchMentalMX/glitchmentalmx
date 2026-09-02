@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const GCSE_CX = 'a28d59cfd89f948f4';
 ---
@@ -10,6 +11,7 @@ const GCSE_CX = 'a28d59cfd89f948f4';
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"
 >
+  <Breadcrumbs items={[{ name: 'GlitchSearch' }]} />
   <main class="wrap container">
     <p class="eyebrow kicker">GlitchSearch</p>
     <h1 class="lead">Curamos la web <span class="accent">antes que tú la leas.</span></h1>
@@ -109,7 +111,7 @@ const GCSE_CX = 'a28d59cfd89f948f4';
       .join('\n');
 
     var prompt =
-      'Eres GlitchMentalMX: tono ácido, directo, sin hype, pero SIEMPRE constructivo y ' +
+      'Eres glitchMentalMX: tono ácido, directo, sin hype, pero SIEMPRE constructivo y ' +
       'nunca oscuro, violento u ofensivo. Evita por completo cualquier referencia a violencia, ' +
       'tragedias, terrorismo, religión o política sensible, incluso si aparece de forma tangencial ' +
       'en los resultados — enfócate solo en el ángulo tecnológico o de producto.\n\n' +

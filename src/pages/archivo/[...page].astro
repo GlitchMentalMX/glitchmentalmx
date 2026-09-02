@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
@@ -17,8 +18,8 @@ const pageSuffix = page.currentPage > 1 ? ` — página ${page.currentPage}` : '
 const title = `Archivo${pageSuffix}`;
 const description =
   page.currentPage > 1
-    ? `Todos los artículos de glitchmentalMX, en orden cronológico — página ${page.currentPage} de ${page.lastPage}.`
-    : 'Todos los artículos de glitchmentalMX, en orden cronológico.';
+    ? `Todos los artículos de glitchMentalMX, en orden cronológico — página ${page.currentPage} de ${page.lastPage}.`
+    : 'Todos los artículos de glitchMentalMX, en orden cronológico.';
 const modifiedTime = page.data.reduce(
   (max, p) => (p.data.pubDate > max ? p.data.pubDate : max),
   page.data[0]?.data.pubDate
@@ -31,6 +32,7 @@ const modifiedTime = page.data.reduce(
   modifiedTime={modifiedTime}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: 'Archivo' }]} />
   <section class="container header">
     <p class="eyebrow">Archivo</p>
     <h1>Archivo <span class="accent">Total</span></h1>
