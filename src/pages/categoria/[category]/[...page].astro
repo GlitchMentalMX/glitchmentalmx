@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import ArticleCard from '../../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../../../data/categories';
@@ -19,12 +20,29 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props;
 const { category: categorySlugParam } = Astro.params;
 const category = categories.find((c) => c.slug === categorySlugParam)!;
+
+// Título/descripción distintos por página de paginación — antes todas las
+// páginas de una misma categoría (/2/, /3/...) compartían exactamente el
+// mismo <title>, lo que las vuelve contenido duplicado a ojos de Google.
+const pageSuffix = page.currentPage > 1 ? ` — página ${page.currentPage}` : '';
+const title = `${category.name}${pageSuffix}`;
+const description =
+  page.currentPage > 1
+    ? `Artículos de glitchmentalMX en la categoría ${category.name} — página ${page.currentPage} de ${page.lastPage}.`
+    : `Todos los artículos de glitchmentalMX en la categoría ${category.name}.`;
+const modifiedTime = page.data.reduce(
+  (max, p) => (p.data.pubDate > max ? p.data.pubDate : max),
+  page.data[0]?.data.pubDate
+);
 ---
 
 <Layout
-  title={category.name}
-  description={`Todos los artículos de glitchmentalMX en la categoría ${category.name}.`}
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
+  <Breadcrumbs items={[{ name: category.name }]} />
   <section class="container header">
     <p class="eyebrow">Categoría</p>
     <h1>{category.name}</h1>

@@ -13,11 +13,24 @@ export const getStaticPaths = (async ({ paginate }) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
+
+const pageSuffix = page.currentPage > 1 ? ` — página ${page.currentPage}` : '';
+const title = `Dato Incómodo${pageSuffix}`;
+const description =
+  page.currentPage > 1
+    ? `Lo que no te conviene saber... publicado de todas formas — página ${page.currentPage} de ${page.lastPage}.`
+    : 'Lo que no te conviene saber... publicado de todas formas.';
+const modifiedTime = page.data.reduce(
+  (max, item) => (item.data.date > max ? item.data.date : max),
+  page.data[0]?.data.date
+);
 ---
 
 <Layout
-  title="Dato Incómodo"
-  description="Lo que no te conviene saber... publicado de todas formas."
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
   <PageHeader eyebrow="Dato Incómodo" title="Lo que no te conviene saber... **publicado de todas formas.**" />
 

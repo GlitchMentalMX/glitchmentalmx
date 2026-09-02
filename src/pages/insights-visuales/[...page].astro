@@ -13,11 +13,24 @@ export const getStaticPaths = (async ({ paginate }) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
+
+const pageSuffix = page.currentPage > 1 ? ` — página ${page.currentPage}` : '';
+const title = `Insights Visuales${pageSuffix}`;
+const description =
+  page.currentPage > 1
+    ? `Una imagen. Una idea. Un momento para pensar — página ${page.currentPage} de ${page.lastPage}.`
+    : 'Una imagen. Una idea. Un momento para pensar.';
+const modifiedTime = page.data.reduce(
+  (max, item) => (item.data.date > max ? item.data.date : max),
+  page.data[0]?.data.date
+);
 ---
 
 <Layout
-  title="Insights Visuales"
-  description="Una imagen. Una idea. Un momento para pensar."
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
   <PageHeader eyebrow="Insights Visuales" title="Una imagen. Una idea. **Un momento para pensar.**" />
 

@@ -12,9 +12,25 @@ export const getStaticPaths = (async ({ paginate }) => {
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;
+
+const pageSuffix = page.currentPage > 1 ? ` — página ${page.currentPage}` : '';
+const title = `Archivo${pageSuffix}`;
+const description =
+  page.currentPage > 1
+    ? `Todos los artículos de glitchmentalMX, en orden cronológico — página ${page.currentPage} de ${page.lastPage}.`
+    : 'Todos los artículos de glitchmentalMX, en orden cronológico.';
+const modifiedTime = page.data.reduce(
+  (max, p) => (p.data.pubDate > max ? p.data.pubDate : max),
+  page.data[0]?.data.pubDate
+);
 ---
 
-<Layout title="Archivo" description="Todos los artículos de glitchmentalMX, en orden cronológico.">
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
   <section class="container header">
     <p class="eyebrow">Archivo</p>
     <h1>Archivo <span class="accent">Total</span></h1>

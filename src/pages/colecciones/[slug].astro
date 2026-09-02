@@ -55,9 +55,23 @@ const usedTags = sections
 // se muestran como grid de tarjetas en vez de lista de filas.
 const isInvestigative = Boolean(hub.data.findings || hub.data.conclusion || hub.data.capstone);
 const capstonePost = hub.data.capstone ? postMap.get(hub.data.capstone) : undefined;
+
+// Frescura e imagen derivadas de los artículos que ya componen la colección
+// — no hay que mantener una fecha o una imagen aparte a mano.
+const modifiedTime = posts.reduce(
+  (max, p) => ((p.data.updatedDate ?? p.data.pubDate) > max ? (p.data.updatedDate ?? p.data.pubDate) : max),
+  posts[0]?.data.pubDate
+);
+const collectionImage = posts[0]?.data.heroImage;
 ---
 
-<Layout title={hub.data.title} description={hub.data.description}>
+<Layout
+  title={hub.data.title}
+  description={hub.data.description}
+  image={collectionImage}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
   <Breadcrumbs items={[
     { name: 'Colecciones', url: '/colecciones/' },
     { name: hub.data.title },

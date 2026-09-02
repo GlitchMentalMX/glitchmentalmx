@@ -11,6 +11,15 @@ export function formatDateShort(date: Date): string {
   return `${date.getDate()} ${MONTHS_ES[date.getMonth()].slice(0, 3)} ${date.getFullYear()}`;
 }
 
+// Convierte 'Septiembre 2026' (el campo `mes` del Índice glitchMentalMX) en la
+// fecha de su última actualización real — para article:modified_time, sin
+// tener que mantener una fecha aparte a mano cada mes en el JSON del índice.
+export function parseMesEs(mes: string): Date {
+  const [monthName, year] = mes.split(' ');
+  const monthIndex = MONTHS_ES.indexOf(monthName.toLowerCase());
+  return new Date(Date.UTC(Number(year), monthIndex, 1, 12));
+}
+
 // Title tag corto para la serie "Precios de IA" — deliberadamente distinto
 // del H1 (que se queda largo y descriptivo). Nombres de herramienta cortos
 // (<=12) usan la plantilla larga con pregunta; nombres largos usan la

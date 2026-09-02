@@ -19,9 +19,23 @@ const posts = (
 
 const categories = [...new Set(posts.map((p) => p.data.category))];
 const book = series.data.relatedBook ? getBook(series.data.relatedBook) : undefined;
+
+const modifiedTime = posts.length
+  ? posts.reduce(
+      (max, p) => ((p.data.updatedDate ?? p.data.pubDate) > max ? (p.data.updatedDate ?? p.data.pubDate) : max),
+      posts[0].data.pubDate
+    )
+  : undefined;
+const seriesImage = posts[0]?.data.heroImage;
 ---
 
-<Layout title={series.data.title} description={series.data.description}>
+<Layout
+  title={series.data.title}
+  description={series.data.description}
+  image={seriesImage}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
   <Breadcrumbs items={[
     { name: 'Series editoriales', url: '/series/' },
     { name: series.data.title },

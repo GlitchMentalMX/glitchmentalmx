@@ -22,9 +22,33 @@ const buscadorItems = posts.map((post) => ({
 const title = 'Quién entrena su IA con tus datos';
 const description =
   '¿Meta, TikTok, LinkedIn o Adobe usan lo que subes o escribes para entrenar su inteligencia artificial? Verificado directamente en cada política de privacidad, con la opción de salir si existe.';
+const modifiedTime = posts.reduce(
+  (max, p) => ((p.data.updatedDate ?? p.data.pubDate) > max ? (p.data.updatedDate ?? p.data.pubDate) : max),
+  posts[0]?.data.pubDate
+);
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description,
+  numberOfItems: posts.length,
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: posts.map((post, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: post.data.herramienta,
+    url: new URL(`/articulos/${post.id}/`, Astro.site).toString(),
+  })),
+};
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <Breadcrumbs items={[
     { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
     { name: 'Quién entrena con tus datos' },

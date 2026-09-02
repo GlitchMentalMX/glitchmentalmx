@@ -21,9 +21,30 @@ const title = 'Precios Digitales: cuánto cuestan tus suscripciones hoy en Méxi
 const description =
   'Cuánto cuestan VPNs, antivirus, gestores de contraseñas, streaming, gaming y otras suscripciones digitales hoy en México, en pesos mexicanos, con el tipo de cambio oficial de Banxico actualizado a diario.';
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description,
+  numberOfItems: posts.length,
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: posts.map((post, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: post.data.herramienta,
+    url: new URL(`/articulos/${post.id}/`, Astro.site).toString(),
+  })),
+};
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={fechaDato}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <Breadcrumbs items={[{ name: 'Precios Digitales' }]} />
   <section class="container header">
     <p class="eyebrow">Precios Digitales · {posts.length} servicios · dato del {formatDate(fechaDato)}</p>

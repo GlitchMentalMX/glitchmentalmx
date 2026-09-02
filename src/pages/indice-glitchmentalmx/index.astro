@@ -1,16 +1,63 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getEntry } from 'astro:content';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getEntry, getCollection } from 'astro:content';
+import { parseMesEs } from '../../lib/format';
 
 const entry = await getEntry('indiceGlitchmentalmx', 'actual');
 const { mes, ranking, destacados, sube, baja, insight } = entry!.data;
 const maxPts = Math.max(...ranking.map((r) => r.pts));
+const lastUpdated = parseMesEs(mes);
+
+const title = `Índice glitchMentalMX: ranking de adopción real de IA B2B (${mes})`;
+const description = `20 tecnologías B2B rankeadas por adopción real e integración operativa, con fuentes verificables. Sin patrocinadores, sin agenda. Actualizado en ${mes}.`;
+const toolImage = '/images/posts/el-indice-que-separa-la-ia-real-del-humo-tecnologico/hero.jpg';
+
+// Lote evergreen sobre adopción/autonomía de IA — deliberadamente NO atado a
+// los nombres exactos de las categorías del ranking de este mes (esos
+// cambian cada vez que se reemplaza actual.json), para no quedar obsoleto
+// cuando el índice se actualice el próximo mes.
+const RELATED_SLUGS = [
+  'agentes-de-ia-en-tu-trabajo-el-salto-del-5-al-40-en-2026',
+  'de-asistente-a-agente-como-cambio-el-lenguaje-de-la-ia',
+  'un-agente-de-ia-borro-la-base-de-datos-en-9-segundos',
+  'automatizacion-y-autonomia-no-son-lo-mismo-confundirlas-tiene-consecuencias',
+  'stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver',
+  'el-papel-de-big-tech-en-decidir-que-tecnologia-viene',
+];
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
+  (p): p is NonNullable<typeof p> => Boolean(p)
+);
+
+// ItemList generado directo del ranking — sobrevive el reemplazo mensual de
+// actual.json sin mantenimiento aparte, a diferencia de un schema escrito a
+// mano que quedaría desincronizado en cuanto cambie el top 20.
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `Índice glitchMentalMX — ${mes}`,
+  description,
+  numberOfItems: ranking.length,
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  itemListElement: ranking.map((r) => ({
+    '@type': 'ListItem',
+    position: r.pos,
+    name: r.nombre,
+  })),
+};
 ---
 
 <Layout
-  title="Índice GlitchMentalMX"
-  description="20 tecnologías B2B rankeadas por adopción real, integración operativa y señales públicas verificables. Sin patrocinadores, sin agenda."
+  title={title}
+  description={description}
+  image={toolImage}
+  modifiedTime={lastUpdated}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  locale="es_MX"
+  titleSuffix={false}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <section class="container hero">
     <p class="eyebrow">Ranking B2B — Actualización mensual</p>
     <h1>El índice que separa<br /><span class="accent">el hype del impacto real.</span></h1>
@@ -33,7 +80,7 @@ const maxPts = Math.max(...ranking.map((r) => r.pts));
     <p class="month-label">Mes actual</p>
     <h2 class="month-title">— {mes}</h2>
 
-    <p class="section-label">Ranking general</p>
+    <h3 class="section-label">Ranking general</h3>
     <div class="table-wrap">
       <table class="ranking">
         <thead>
@@ -64,20 +111,20 @@ const maxPts = Math.max(...ranking.map((r) => r.pts));
   </section>
 
   <section class="container">
-    <p class="section-label destacados-label">Destacados del Top 5</p>
+    <h3 class="section-label destacados-label">Destacados del Top 5</h3>
     <div class="destacados">
       {destacados.map((d) => (
         <div class="destacado" class:list={{ top: d.pos === 1 }}>
           <div class="num">{d.pos}</div>
           <div>
-            <p class="destacado-name">{d.nombre}</p>
+            <h4 class="destacado-name">{d.nombre}</h4>
             <p class="destacado-text">{d.texto}</p>
           </div>
         </div>
       ))}
     </div>
 
-    <p class="section-label">Qué sube / qué baja vs. mes anterior</p>
+    <h3 class="section-label">Qué sube / qué baja vs. mes anterior</h3>
     <div class="movers">
       <div class="mover up">
         <p class="mover-label">↑ Sube</p>
@@ -89,9 +136,27 @@ const maxPts = Math.max(...ranking.map((r) => r.pts));
       </div>
     </div>
 
-    <p class="section-label">Insight editorial del mes</p>
+    <h3 class="section-label">Insight editorial del mes</h3>
     <div class="insight">
       <p>{insight}</p>
+    </div>
+  </section>
+
+  <section class="container related">
+    <p class="eyebrow">Contexto y lecturas relacionadas</p>
+    <h2>Cómo llegamos hasta aquí</h2>
+    <div class="related-grid">
+      {relatedPosts.map((post) => (
+        <ArticleCard
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          heroImage={post.data.heroImage}
+          heroImageAlt={post.data.heroImageAlt}
+          variant="grid"
+        />
+      ))}
     </div>
   </section>
 </Layout>
@@ -248,4 +313,12 @@ const maxPts = Math.max(...ranking.map((r) => r.pts));
   }
   .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
   .cta-sub { color: var(--text-muted); font-size: 0.9rem; margin: 0; max-width: 46ch; }
+
+  .related { padding: 24px 24px 72px; max-width: 900px; margin: 0 auto; }
+  .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
 </style>

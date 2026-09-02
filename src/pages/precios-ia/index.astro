@@ -33,9 +33,33 @@ const title = 'Precios de IA: cuánto cuesta cada herramienta hoy en México';
 const description =
   'Cuánto cuesta ChatGPT, Claude, Gemini y el resto de las herramientas de IA hoy en México, en pesos mexicanos, con el tipo de cambio oficial de Banxico actualizado a diario.';
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+
+// Referencia a cada ficha de herramienta (que ya lleva su propio schema
+// Product/Offer) en vez de duplicar el precio aquí — así los dos nunca
+// pueden desincronizarse entre sí.
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description,
+  numberOfItems: posts.length,
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: posts.map((post, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: post.data.herramienta,
+    url: new URL(`/articulos/${post.id}/`, Astro.site).toString(),
+  })),
+};
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={fechaDato}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <Breadcrumbs items={[
     { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
     { name: 'Precios de IA' },

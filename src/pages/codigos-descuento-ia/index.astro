@@ -22,9 +22,33 @@ const buscadorItems = posts.map((post) => ({
 const title = 'Códigos de descuento de IA: los reales y los cuentos chinos';
 const description =
   'La mayoría de los "códigos de descuento" que circulan para herramientas de IA son falsos, caducados o no oficiales. Verificamos herramienta por herramienta cuáles canales de descuento son reales.';
+const modifiedTime = posts.reduce(
+  (max, p) => ((p.data.updatedDate ?? p.data.pubDate) > max ? (p.data.updatedDate ?? p.data.pubDate) : max),
+  posts[0]?.data.pubDate
+);
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: title,
+  description,
+  numberOfItems: posts.length,
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: posts.map((post, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: post.data.herramienta,
+    url: new URL(`/articulos/${post.id}/`, Astro.site).toString(),
+  })),
+};
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <Breadcrumbs items={[
     { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
     { name: 'Códigos de descuento' },
