@@ -1,17 +1,146 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../lib/format';
+
+const title = '¿La IA te va a quitar el trabajo? Calculadora gratis';
+const description =
+  'Calculadora gratuita de riesgo de reemplazo por IA para tu profesión, sin registro y con resultado en segundos. Basada en datos de México y LATAM.';
+const canonicalPath = '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/';
+const toolImage = '/images/posts/te-reemplazara-la-ia-escaner-de-riesgo-profesional-2026/hero.jpg';
+
+// Fecha de última revisión de contenido de esta página (intro, FAQ, enlaces
+// internos) — no del cálculo en sí, que no cambia. Actualizar a mano cada
+// vez que se revise, mismo principio de frescura que la fecha de Banxico en
+// Precios de IA, pero aquí no hay feed diario que la actualice sola.
+const lastReviewed = new Date('2026-09-02T12:00:00-06:00');
+
+// Mismo lote curado a mano que ya usa /articulos/[slug].astro para decidir
+// qué artículos muestran la tarjeta de la calculadora en su footer — aquí
+// se usa al revés: seis de esos artículos, enlazados de vuelta desde la
+// calculadora, para reforzar autoridad temática en ambas direcciones.
+const RELATED_SLUGS = [
+  'ia-y-empleos-en-mexico-el-golpe-ya-empezo',
+  'los-empleos-que-la-ia-no-puede-tocar-segun-microsoft',
+  'que-trabajos-cambia-primero-la-ia-y-por-que-esos',
+  'las-habilidades-que-mas-importan-en-la-era-de-la-ia',
+  'como-preparar-tu-carrera-para-la-ia-en-2026-guia-real',
+  'la-automatizacion-que-nadie-vio-venir-los-trabajos-de-cuello-blanco',
+];
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
+  (p): p is NonNullable<typeof p> => Boolean(p)
+);
+
+const faqs = [
+  {
+    q: '¿Qué tan confiable es esta calculadora de riesgo de IA?',
+    a: 'Es un diagnóstico orientativo, no una encuesta estadística. Cruza tu área, país, nivel de estudios y experiencia contra tendencias documentadas por Frey & Osborne (Oxford), McKinsey Global Institute y el Foro Económico Mundial. No sustituye un estudio actuarial de tu puesto específico, pero te da una lectura honesta de hacia dónde va tu sector.',
+  },
+  {
+    q: '¿Qué trabajos son más vulnerables a la inteligencia artificial?',
+    a: 'Los que dependen de tareas repetitivas, basadas en patrones o de bajo juicio contextual: contabilidad y finanzas, transporte, administración, manufactura rutinaria y atención al cliente encabezan la lista en esta calculadora. Los menos expuestos exigen juicio situacional, vínculo humano directo o destreza física en contextos impredecibles, como enfermería, psicología y oficios especializados.',
+  },
+  {
+    q: '¿Qué hago si mi resultado de riesgo es alto o crítico?',
+    a: 'No esperes a que la presión llegue directo a tu puesto. Identifica qué partes de tu rol exigen negociación, criterio ético o relaciones de confianza —eso es lo que la IA no replica todavía— y especialízate ahí. Si tu resultado es crítico, la ventana para reposicionarte se mide en meses, no en años.',
+  },
+  {
+    q: '¿La calculadora guarda mis datos o necesita que me registre?',
+    a: 'No. No pide correo, no pide nombre y no guarda tus respuestas en ningún servidor: el cálculo corre completo en tu navegador. El seguimiento mensual por sector que se ofrece al final es un paso aparte y opcional.',
+  },
+  {
+    q: '¿En qué datos se basa el resultado?',
+    a: 'En cuatro factores: tu área profesional, tu país o región, tu nivel de estudios y tus años de experiencia. Cada uno tiene un peso distinto según literatura pública sobre automatización —no son porcentajes inventados, pero tampoco una proyección estadística exacta de tu carrera individual.',
+  },
+  {
+    q: '¿Qué significan los niveles de riesgo (bajo, moderado, alto, crítico)?',
+    a: 'Bajo: tu rol exige capacidades que los modelos actuales no replican con fiabilidad. Moderado: una parte de tus tareas ya se está automatizando, sin desplazar el rol completo todavía. Alto: presión estructural activa en tu sector, con recortes o pilotos de sustitución en marcha. Crítico: tu perfil está en el centro de una transformación sectorial en curso.',
+  },
+  {
+    q: '¿La calculadora aplica solo a México o a cualquier país?',
+    a: 'Cubre 16 regiones, de México y LATAM a Europa, Asia y Medio Oriente, porque la velocidad de adopción de IA no es la misma en todos lados. Elige tu región y el resultado ajusta el riesgo según qué tan rápido avanza la automatización ahí.',
+  },
+  {
+    q: '¿Qué tan grave es la situación en México específicamente?',
+    a: 'Según el Área de Estudios Económicos de Banamex, con datos del INEGI y la OIT, cerca del 30% de los empleos formales en México enfrenta un riesgo alto de automatización en las próximas dos décadas, concentrado en servicios administrativos, comercio al por menor, manufactura rutinaria y transporte. Los detalles completos están en el artículo enlazado abajo.',
+  },
+  {
+    q: '¿Cada cuánto se actualiza esta calculadora?',
+    a: `Se revisa cuando cambian las tendencias documentadas en las que se basa, no en un ciclo fijo. Última revisión de contenido: ${formatDate(lastReviewed)}.`,
+  },
+];
+
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Calculadora de Riesgo de Reemplazo por IA 2026',
+  description,
+  url: new URL(canonicalPath, Astro.site).toString(),
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Any (web browser)',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'MXN',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchmentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
 ---
 
 <Layout
-  title="Calculadora de Riesgo de Reemplazo por IA 2026"
-  description="Mide qué tan expuesto está tu trabajo a la automatización en 2026. Descúbrelo gratis, en segundos."
+  title={title}
+  description={description}
+  image={toolImage}
+  modifiedTime={lastReviewed}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  locale="es_MX"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
   <PageHeader
     eyebrow="IA Risk Scanner 2026"
     title="¿La IA puede **quitarte tu trabajo?**"
     dek="Mide qué tan expuesto está tu trabajo a la automatización en 2026. Descúbrelo gratis, en segundos."
   />
+
+  <section class="container intro">
+    <p>
+      La pregunta no es si la IA va a tocar tu trabajo. Es cuánto ya lo tocó y qué tan rápido sigue.
+    </p>
+    <p>
+      En México, el Área de Estudios Económicos de Banamex calcula que cerca del <strong>30% de los
+      empleos formales</strong> enfrenta un riesgo alto de automatización en las próximas dos
+      décadas, con datos del INEGI y la OIT de por medio —no es una consultora extranjera vendiendo
+      pánico, es un banco mexicano leyendo su propia economía—. El golpe no es parejo: pega distinto
+      según tu área, tu país, tu formación y tus años de experiencia. Más contexto y fuentes en <a
+        href="/articulos/ia-y-empleos-en-mexico-el-golpe-ya-empezo/">IA y empleos en México: el golpe
+        ya empezó</a>.
+    </p>
+    <p>
+      Esta calculadora cruza esas cuatro variables contra tendencias documentadas por Frey &amp; Osborne
+      (Oxford), McKinsey Global Institute y el Foro Económico Mundial para darte un diagnóstico
+      orientativo —no una sentencia, no un horóscopo—. Elige tu perfil, corre el escaneo, y decide qué
+      hacer con la respuesta.
+    </p>
+  </section>
 
   <section class="container steps">
     <div class="step"><span class="n">1</span><span class="l">Elige tu área</span></div>
@@ -180,6 +309,37 @@ import PageHeader from '../../components/PageHeader.astro';
     <div class="buttons">
       <button id="gm-share-wa" class="chip-btn wa">WhatsApp</button>
       <button id="gm-copy-link" class="chip-btn"><span>Copiar enlace</span></button>
+    </div>
+  </section>
+
+  <section class="container related">
+    <p class="eyebrow">Para profundizar</p>
+    <h2>Qué está pasando realmente con la IA y el empleo</h2>
+    <div class="related-grid">
+      {relatedPosts.map((post) => (
+        <ArticleCard
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          heroImage={post.data.heroImage}
+          heroImageAlt={post.data.heroImageAlt}
+          variant="grid"
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="container faq">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Antes de que preguntes</h2>
+    <div class="faq-list">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
     </div>
   </section>
 </Layout>
@@ -488,7 +648,7 @@ import PageHeader from '../../components/PageHeader.astro';
   .share-prompt { color: rgba(255, 255, 255, 0.45); font-size: 0.75em; text-align: center; display: block; margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
   .share-prompt b { color: rgba(255, 255, 255, 0.65); }
 
-  .share-row { padding: 8px 24px 96px; max-width: 600px; }
+  .share-row { padding: 8px 24px 56px; max-width: 600px; }
   .buttons { display: flex; gap: 10px; margin-top: 12px; }
   .chip-btn {
     display: inline-flex; align-items: center; gap: 6px; background: var(--bg-inset);
@@ -498,4 +658,50 @@ import PageHeader from '../../components/PageHeader.astro';
   }
   .chip-btn.wa:hover { background: #25d366; border-color: #25d366; color: #fff; }
   .chip-btn.copied { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .intro { padding: 0 24px 40px; max-width: 680px; }
+  .intro p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin: 0 0 18px; }
+  .intro p:last-child { margin-bottom: 0; }
+  .intro strong { color: var(--text); }
+
+  .related { padding: 16px 24px 56px; max-width: 900px; }
+  .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+
+  .faq { padding: 16px 24px 96px; max-width: 760px; }
+  .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 1.2em;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 14px 0 0;
+  }
 </style>
