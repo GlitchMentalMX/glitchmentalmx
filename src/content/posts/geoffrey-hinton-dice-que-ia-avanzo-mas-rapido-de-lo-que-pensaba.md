@@ -84,7 +84,7 @@ A pesar de advertencias de Hinton y otros expertos, mayoría de público general
 
 ## El debate dentro de comunidad de IA
 
-No todos investigadores de IA están de acuerdo con Hinton. Hay debate significativo dentro de comunidad sobre qué tan preocupados deberíamos estar. **Escépticos argumentan:** Inteligencia artificial general (AGI) está mucho más lejos de lo que alarmistas creen, riesgos actuales (sesgo, desinformación, desplazamiento laboral) merecen más atención que riesgos especulativos futuros, enfocarse en escenarios apocalípticos distrae de problemas reales y solucionables.
+No todos investigadores de IA están de acuerdo con Hinton. Hay debate significativo dentro de comunidad sobre qué tan preocupados deberíamos estar. **Escépticos argumentan:** Inteligencia artificial general ([AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/)) está mucho más lejos de lo que alarmistas creen, riesgos actuales (sesgo, desinformación, desplazamiento laboral) merecen más atención que riesgos especulativos futuros, enfocarse en escenarios apocalípticos distrae de problemas reales y solucionables.
 
 **Preocupados argumentan:** Velocidad de progreso sugiere que AGI podría llegar antes de lo esperado, una vez que tengamos AGI, podría ser demasiado tarde para implementar salvaguardas, principio precautorio sugiere que deberíamos ser cautelosos con tecnología potencialmente transformadora.
 

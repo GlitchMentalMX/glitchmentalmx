@@ -20,7 +20,7 @@ Este no es el primer CEO de tecnología que suelta una bomba sobre el futuro del
 
 ## De qué estamos hablando cuando hablamos de AGI profesional
 
-Suleyman introdujo un nuevo término en la conversación: **AGI de grado profesional**. No se refiere a una inteligencia artificial que piensa como humano en todo sentido, sino a modelos de IA capaces de realizar prácticamente cualquier tarea cognitiva que un profesional humano puede manejar en un entorno de trabajo. La distinción es importante porque el objetivo no es crear conciencia artificial, sino crear herramientas que puedan hacer el trabajo sin necesitar a la persona.
+Suleyman introdujo un nuevo término en la conversación: **[AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/) de grado profesional**. No se refiere a una inteligencia artificial que piensa como humano en todo sentido, sino a modelos de IA capaces de realizar prácticamente cualquier tarea cognitiva que un profesional humano puede manejar en un entorno de trabajo. La distinción es importante porque el objetivo no es crear conciencia artificial, sino crear herramientas que puedan hacer el trabajo sin necesitar a la persona.
 
 Microsoft ya está viendo esto en acción internamente. Suleyman reveló que los ingenieros de software en Microsoft reportan que usan herramientas de codificación asistida por IA para la gran mayoría de su trabajo de programación. Lo que antes requería horas de escribir código línea por línea ahora se puede generar, revisar y ajustar con la ayuda de sistemas como GitHub Copilot.
 
