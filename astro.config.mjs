@@ -6,9 +6,9 @@ import { readFileSync, readdirSync } from 'node:fs';
 // lastmod real del sitemap — antes no se mandaba ninguno. Se calcula leyendo
 // el frontmatter crudo (no astro:content, que no está disponible en este
 // contexto) una sola vez al arrancar el build. Alcance a propósito acotado a
-// /articulos/ (posts + precios-ia): son las páginas donde una fecha de
-// modificación real y verificable existe y le sirve a Google — el resto del
-// sitio se queda sin lastmod en vez de adivinar una fecha incorrecta.
+// páginas donde una fecha de modificación real y verificable existe y le
+// sirve a Google — el resto del sitio se queda sin lastmod en vez de
+// adivinar una fecha incorrecta.
 function leerFechaFrontmatter(fileUrl) {
   const contenido = readFileSync(fileUrl, 'utf-8');
   const actualizado = contenido.match(/^updatedDate:\s*(\d{4}-\d{2}-\d{2})/m);
@@ -17,12 +17,66 @@ function leerFechaFrontmatter(fileUrl) {
   return fecha ? new Date(`${fecha}T12:00:00Z`) : undefined;
 }
 
+// Igual que leerFechaFrontmatter, pero para las colecciones que usan `date:`
+// en vez de pubDate/updatedDate (dato-incomodo, insights).
+function leerFechaSimple(fileUrl) {
+  const contenido = readFileSync(fileUrl, 'utf-8');
+  const fecha = contenido.match(/^date:\s*'?(\d{4}-\d{2}-\d{2})/m);
+  return fecha?.[1] ? new Date(`${fecha[1]}T12:00:00Z`) : undefined;
+}
+
+function leerCategoria(fileUrl) {
+  const contenido = readFileSync(fileUrl, 'utf-8');
+  return contenido.match(/^category:\s*(.+)$/m)?.[1]?.trim();
+}
+
+// postSlugs es una lista YAML (`- slug` por línea) bajo la llave `postSlugs:`
+// — se lee como texto plano en vez de parsear YAML completo porque solo
+// hace falta esa una lista, no el resto del frontmatter.
+function leerPostSlugs(fileUrl) {
+  const contenido = readFileSync(fileUrl, 'utf-8');
+  const bloque = contenido.match(/^postSlugs:\n((?:\s*-\s*.+\n?)*)/m)?.[1] ?? '';
+  return [...bloque.matchAll(/^\s*-\s*(.+)$/gm)].map((m) => m[1].trim());
+}
+
 const postsDir = new URL('./src/content/posts/', import.meta.url);
 const fechaPorSlugPost = new Map();
+const categoriaPorSlugPost = new Map();
+let fechaMaxPosts;
 for (const archivo of readdirSync(postsDir)) {
   if (!archivo.endsWith('.md')) continue;
-  const fecha = leerFechaFrontmatter(new URL(archivo, postsDir));
-  if (fecha) fechaPorSlugPost.set(archivo.replace(/\.md$/, ''), fecha);
+  const slug = archivo.replace(/\.md$/, '');
+  const url = new URL(archivo, postsDir);
+  const fecha = leerFechaFrontmatter(url);
+  if (fecha) {
+    fechaPorSlugPost.set(slug, fecha);
+    if (!fechaMaxPosts || fecha > fechaMaxPosts) fechaMaxPosts = fecha;
+  }
+  const categoria = leerCategoria(url);
+  if (categoria) categoriaPorSlugPost.set(slug, categoria);
+}
+
+// Mismo mapeo nombre→slug que src/data/categories.ts, duplicado aquí por la
+// misma razón que MESES_ES: este archivo corre en Node plano, sin el
+// pipeline de Astro/TS que permite importar ese módulo directamente.
+const SLUG_POR_CATEGORIA = {
+  'Inteligencia Artificial': 'inteligencia-artificial',
+  'Cultura Digital': 'cultura-digital',
+  'Tendencias Digitales': 'tendencias-digitales',
+  'Tecnología de Consumo': 'tecnologia-de-consumo',
+};
+
+// Fecha más reciente por categoría — para el lastmod de /categoria/{slug}/
+// (solo la página 1, la única URL que vale la pena declarar: las páginas de
+// paginación /2/, /3/... muestran contenido cada vez más viejo, así que
+// adivinar su lastmod sería tan incorrecto como no mandar ninguno).
+const fechaMaxPorSlugCategoria = new Map();
+for (const [slug, fecha] of fechaPorSlugPost) {
+  const categoria = categoriaPorSlugPost.get(slug);
+  const slugCategoria = categoria ? SLUG_POR_CATEGORIA[categoria] : undefined;
+  if (!slugCategoria) continue;
+  const actual = fechaMaxPorSlugCategoria.get(slugCategoria);
+  if (!actual || fecha > actual) fechaMaxPorSlugCategoria.set(slugCategoria, fecha);
 }
 
 const preciosDir = new URL('./src/content/precios-ia/', import.meta.url);
@@ -52,6 +106,76 @@ try {
   // lastmod para esas páginas — mejor omitirlo que adivinar.
 }
 
+// Familia "IA sin letra chiquita" (Códigos de Descuento, Prueba Gratis,
+// Quién Entrena con tus Datos) — cada índice usa la fecha más reciente entre
+// sus propias fichas, mismo criterio que ya usa /articulos/.
+function fechaMaxDeColeccion(dirRelativo) {
+  const dir = new URL(dirRelativo, import.meta.url);
+  let max;
+  for (const archivo of readdirSync(dir)) {
+    if (!archivo.endsWith('.md')) continue;
+    const fecha = leerFechaFrontmatter(new URL(archivo, dir));
+    if (fecha && (!max || fecha > max)) max = fecha;
+  }
+  return max;
+}
+const fechaCodigosDescuento = fechaMaxDeColeccion('./src/content/codigos-descuento/');
+const fechaPruebaGratis = fechaMaxDeColeccion('./src/content/prueba-gratis/');
+const fechaEntrenaIA = fechaMaxDeColeccion('./src/content/entrena-ia/');
+
+// Dato Incómodo e Insights Visuales — mismo criterio, pero con el campo
+// `date` en vez de pubDate/updatedDate.
+function fechaMaxSimple(dirRelativo) {
+  const dir = new URL(dirRelativo, import.meta.url);
+  let max;
+  for (const archivo of readdirSync(dir)) {
+    if (!archivo.endsWith('.md')) continue;
+    const fecha = leerFechaSimple(new URL(archivo, dir));
+    if (fecha && (!max || fecha > max)) max = fecha;
+  }
+  return max;
+}
+const fechaDatoIncomodo = fechaMaxSimple('./src/content/dato-incomodo/');
+const fechaInsights = fechaMaxSimple('./src/content/insights/');
+
+// Colecciones y series individuales — la fecha del artículo más reciente
+// entre los que agrupa cada una, cruzando su `postSlugs` contra las fechas
+// de /articulos/ que ya se calcularon arriba.
+const collectionsDir = new URL('./src/content/collections/', import.meta.url);
+const fechaPorHub = new Map();
+for (const archivo of readdirSync(collectionsDir)) {
+  if (!archivo.endsWith('.md')) continue;
+  const id = archivo.replace(/\.md$/, '');
+  const slugs = leerPostSlugs(new URL(archivo, collectionsDir));
+  let max;
+  for (const slug of slugs) {
+    const fecha = fechaPorSlugPost.get(slug);
+    if (fecha && (!max || fecha > max)) max = fecha;
+  }
+  if (max) fechaPorHub.set(id, max);
+}
+
+// Índice glitchMentalMX — su `mes` ("Septiembre 2026") es la señal de
+// frescura real; mismo parseo que src/lib/format.ts (parseMesEs), duplicado
+// aquí a propósito porque este archivo corre en Node plano, fuera del
+// pipeline de Astro/TS.
+const MESES_ES = [
+  'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+  'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre',
+];
+let fechaIndice;
+try {
+  const indice = JSON.parse(
+    readFileSync(new URL('./src/content/indice/actual.json', import.meta.url), 'utf-8')
+  );
+  const [nombreMes, anio] = indice.mes.split(' ');
+  const mesIndex = MESES_ES.indexOf(nombreMes.toLowerCase());
+  if (mesIndex !== -1 && anio) fechaIndice = new Date(Date.UTC(Number(anio), mesIndex, 1, 12));
+} catch {
+  // Igual que arriba: si falta el archivo o el formato cambió, se omite
+  // el lastmod en vez de adivinar.
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://glitchmental.com',
@@ -61,22 +185,34 @@ export default defineConfig({
       filter: (page) => !page.includes('/stats/'),
       serialize(item) {
         const { pathname } = new URL(item.url);
+        const conFecha = (fecha) => (fecha ? { ...item, lastmod: fecha.toISOString() } : item);
 
         if ((pathname === '/precios-ia/' || pathname === '/precios-digitales/') && fechaTipoCambio) {
-          return { ...item, lastmod: fechaTipoCambio.toISOString() };
+          return conFecha(fechaTipoCambio);
         }
 
-        const match = pathname.match(/^\/articulos\/([^/]+)\/$/);
-        if (match) {
-          const slug = match[1];
+        const matchArticulo = pathname.match(/^\/articulos\/([^/]+)\/$/);
+        if (matchArticulo) {
+          const slug = matchArticulo[1];
           if ((slugsPreciosIA.has(slug) || slugsPreciosDigitales.has(slug)) && fechaTipoCambio) {
-            return { ...item, lastmod: fechaTipoCambio.toISOString() };
+            return conFecha(fechaTipoCambio);
           }
-          const fecha = fechaPorSlugPost.get(slug);
-          if (fecha) {
-            return { ...item, lastmod: fecha.toISOString() };
-          }
+          return conFecha(fechaPorSlugPost.get(slug));
         }
+
+        if (pathname === '/indice-glitchmentalmx/') return conFecha(fechaIndice);
+        if (pathname === '/codigos-descuento-ia/') return conFecha(fechaCodigosDescuento);
+        if (pathname === '/prueba-gratis-sin-tarjeta/') return conFecha(fechaPruebaGratis);
+        if (pathname === '/quien-entrena-con-tus-datos/') return conFecha(fechaEntrenaIA);
+        if (pathname === '/archivo/') return conFecha(fechaMaxPosts);
+        if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
+        if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
+
+        const matchCategoria = pathname.match(/^\/categoria\/([^/]+)\/$/);
+        if (matchCategoria) return conFecha(fechaMaxPorSlugCategoria.get(matchCategoria[1]));
+
+        const matchColeccion = pathname.match(/^\/(?:colecciones|series)\/([^/]+)\/$/);
+        if (matchColeccion) return conFecha(fechaPorHub.get(matchColeccion[1]));
 
         return item;
       },

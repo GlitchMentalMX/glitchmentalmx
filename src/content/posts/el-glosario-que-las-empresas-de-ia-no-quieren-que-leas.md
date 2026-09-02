@@ -17,7 +17,7 @@ heroImageAlt: >-
 
 Las palabras que usamos para describir la tecnología determinan cómo la regulamos, cómo asignamos responsabilidad cuando falla y cuánto pagamos por ella. Una empresa que logra que su producto sea percibido como "inteligente" puede cobrar más, atraer más inversión y esquivar más preguntas incómodas que una empresa que describe el mismo producto como "software de predicción estadística". El incentivo para estirar el lenguaje es estructural, no accidental.
 
-MIT Technology Review documentó en diciembre de 2025 que términos como "razonamiento" e "inteligencia" son **jerga técnica vestida con brillo de marketing**. Luc Julia, científico jefe en Renault Group con tres décadas en IA, argumenta en su libro _La ilusión de la IA_ — reseñado en Nature en marzo de 2026 — que el término "inteligencia" ha estado mal aplicado durante casi 70 años, desde que la investigación formal de IA comenzó en 1956, y que esa confusión beneficia a quienes tienen interés comercial en mantenerla.
+[MIT Technology Review](https://www.technologyreview.com/) documentó en diciembre de 2025 que términos como "razonamiento" e "inteligencia" son **jerga técnica vestida con brillo de marketing**. Luc Julia, científico jefe en Renault Group con tres décadas en IA, argumenta en su libro _La ilusión de la IA_ — reseñado en Nature en marzo de 2026 — que el término "inteligencia" ha estado mal aplicado durante casi 70 años, desde que la investigación formal de IA comenzó en 1956, y que esa confusión beneficia a quienes tienen interés comercial en mantenerla.
 
 ## Los términos clave y lo que realmente significan
 

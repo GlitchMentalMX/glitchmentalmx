@@ -14,7 +14,7 @@ heroImageAlt: >-
 ---
 Capitalistas de riesgo de [Silicon Valley](https://www.semana.com/tecnologia/articulo/que-es-el-silicon-valley-y-por-que-es-importante-en-la-industria-de-la-tecnologia/202117/) están prediciendo impacto masivo de IA en mercado laboral durante 2026. **Según encuesta de Accel a 75 inversionistas tecnológicos, mayoría espera que automatización de IA acelere desplazamiento de empleos este año**, particularmente en funciones de servicio al cliente, entrada de datos, análisis básico, y trabajo administrativo.
 
-No es especulación abstracta. MIT encontró que 11.7% de trabajos estadounidenses ya podrían automatizarse económicamente con tecnología de IA existente. Y empresas están activamente cambiando presupuestos: reduciendo contrataciones en áreas automatizables, reasignando recursos a implementación de IA.
+No es especulación abstracta. [MIT](https://www.mit.edu/) encontró que 11.7% de trabajos estadounidenses ya podrían automatizarse económicamente con tecnología de IA existente. Y empresas están activamente cambiando presupuestos: reduciendo contrataciones en áreas automatizables, reasignando recursos a implementación de IA.
 
 ## Qué funciones están en mayor riesgo inmediato
 

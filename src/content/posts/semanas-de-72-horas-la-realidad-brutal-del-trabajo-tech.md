@@ -35,7 +35,7 @@ La segunda razón, según Caroline Winnett, directora ejecutiva de Berkeley SkyD
 
 Inaki Berenguer, fundador de tecnología y socio en el fondo de IA LifeX Ventures, compartió una anécdota personal: en un almuerzo de cumpleaños reciente un domingo, sus amigos se fueron inmediatamente después de comer para regresar a la oficina. Dominic McGregor, cofundador de Social Chain, destacó la presión creciente para que los empleados trabajen las horas de los fundadores: "El fin de semana está desapareciendo en tech".
 
-Pero hay un problema: la tecnología no está cumpliendo sus promesas. Construir productos del mundo real todavía requiere ingeniería extensiva y prueba y error. McKinsey reportó que el 80% de las empresas que usan IA generativa no ven un impacto material en las ganancias. Demis Hassabis, CEO de DeepMind, advirtió sobre el _hype_ de la industria.
+Pero hay un problema: la tecnología no está cumpliendo sus promesas. Construir productos del mundo real todavía requiere ingeniería extensiva y prueba y error. [McKinsey](https://www.mckinsey.com/) reportó que el 80% de las empresas que usan IA generativa no ven un impacto material en las ganancias. Demis Hassabis, CEO de DeepMind, advirtió sobre el _hype_ de la industria.
 
 ## Las empresas tech gastarán $650 mil millones en IA este año
 
@@ -73,7 +73,7 @@ Pero para la mayoría de los trabajadores, incluyendo trabajadores mayores y tra
 
 No todas las empresas están abrazando la cultura 996. Algunas están tomando el camino opuesto, usando la IA para habilitar semanas laborales más cortas. Microsoft Japón redujo las horas de trabajo en un 20% y vio aumentar la productividad en un 40%. Startups tecnológicas del Reino Unido reportan menos rotación, grupos de solicitantes más fuertes y producción constante después de cambiar a semanas de cuatro días, gracias a la automatización de procesos y herramientas inteligentes de gestión de proyectos.
 
-Un estudio reciente de Buffer encontró que casi el 91% de las empresas con una semana de cuatro días reportan productividad aumentada. McKinsey señala que la automatización de tareas puede reducir el tiempo de trabajo en actividades repetitivas en un 50%. El Foro Económico Mundial predice que para 2027, casi el 43% de las tareas serán automatizadas.
+Un estudio reciente de Buffer encontró que casi el 91% de las empresas con una semana de cuatro días reportan productividad aumentada. McKinsey señala que la automatización de tareas puede reducir el tiempo de trabajo en actividades repetitivas en un 50%. El [Foro Económico Mundial](https://www.weforum.org/) predice que para 2027, casi el 43% de las tareas serán automatizadas.
 
 Las empresas que aprovechan la IA para una semana laboral más corta disfrutan de mayor productividad por hora, mejor retención de empleados, marca de empleador más fuerte para atraer talento, y menores tasas de absentismo y burnout. Sin embargo, la transición requiere establecer KPIs claros, fomentar una cultura de confianza enfocada en resultados y no en horas, y abordar la resistencia al cambio con capacitación y lanzamientos por fases.
 

@@ -18,7 +18,7 @@ La IA no solo está revolucionando la forma en que trabajamos, sino _quién deci
 
 ## La IA ya toma decisiones (y no siempre son justas)
 
-Empecemos con los datos duros. Según estudios de MIT y la Universidad de Stanford, más del 55% de las empresas grandes en Estados Unidos ya usan alguna forma de IA en sus procesos de contratación. Hablamos de sistemas que escanean CVs, analizan entrevistas en video y hasta predicen qué candidatos tienen más probabilidades de quedarse en la empresa a largo plazo.
+Empecemos con los datos duros. Según estudios de [MIT](https://www.mit.edu/) y la Universidad de Stanford, más del 55% de las empresas grandes en Estados Unidos ya usan alguna forma de IA en sus procesos de contratación. Hablamos de sistemas que escanean CVs, analizan entrevistas en video y hasta predicen qué candidatos tienen más probabilidades de quedarse en la empresa a largo plazo.
 
 El problema es que estos sistemas **no son neutrales**. Un caso famoso: Amazon desarrolló un algoritmo de contratación que terminó discriminando a mujeres porque fue entrenado con datos históricos de una industria dominada por hombres. El sistema "aprendió" que ser hombre era un indicador de éxito. Amazon lo canceló, pero ¿cuántas empresas están usando sistemas similares sin saberlo?
 

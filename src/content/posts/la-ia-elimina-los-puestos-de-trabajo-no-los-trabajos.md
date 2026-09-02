@@ -17,7 +17,7 @@ Forética, la organización española de sostenibilidad empresarial, publicó es
 
 ## El dato que nadie esperaba: el 63% ya usa IA en su trabajo
 
-Según InfoJobs 2026, el 63% de los profesionales en España ya usa inteligencia artificial en su trabajo. En México y el resto de América Latina, la adopción está un paso atrás, pero la tendencia es la misma. El Foro Económico Mundial, en su reporte Future of Jobs 2025, proyecta que **el 39% de las competencias consideradas esenciales hoy evolucionarán radicalmente en los próximos cinco años**. No desaparecerán, se transformarán. El problema es que muchas empresas no tienen un plan claro para gestionar esa transformación.
+Según InfoJobs 2026, el 63% de los profesionales en España ya usa inteligencia artificial en su trabajo. En México y el resto de América Latina, la adopción está un paso atrás, pero la tendencia es la misma. El [Foro Económico Mundial](https://www.weforum.org/), en su reporte Future of Jobs 2025, proyecta que **el 39% de las competencias consideradas esenciales hoy evolucionarán radicalmente en los próximos cinco años**. No desaparecerán, se transformarán. El problema es que muchas empresas no tienen un plan claro para gestionar esa transformación.
 
 La respuesta corporativa que Forética identifica como la más efectiva incluye cuatro movimientos: mapear qué competencias son críticas para el negocio hoy y en tres años, identificar los _gaps_ entre lo que los empleados tienen y lo que la empresa necesita, diseñar programas de reskilling y upskilling enfocados en esos _gaps_ concretos, y construir marcos de IA responsable que guíen cómo se integran las herramientas sin destruir la confianza del equipo.
 

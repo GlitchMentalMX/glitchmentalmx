@@ -19,7 +19,7 @@ Project Prometheus**, el laboratorio de inteligencia artificial de Jeff Bezos, e
 
 Prometheus no es otro laboratorio de modelos de lenguaje. Su tesis central es el **Physical AI**: sistemas de inteligencia artificial entrenados con datos del mundo físico — comportamiento de materiales, tolerancias de ingeniería, interacciones robóticas, procesos de manufactura — en lugar de texto e imágenes de internet. Los sectores objetivo declarados por la empresa son manufactura, aeroespacial, robótica, descubrimiento de fármacos y automatización logística, sectores donde los LLMs han tenido, hasta ahora, un impacto superficial.
 
-El laboratorio fue lanzado en noviembre de 2025 con $6,200 millones en financiamiento inicial. En menos de seis meses creció a más de 120 empleados reclutados de OpenAI, xAI, Meta y DeepMind. Su director ejecutivo es Vikram Bajaj, ex científico de Google X, cofundador de Foresite Labs y doctor en química física por el MIT. Bezos participa como uno de los inversionistas iniciales y ha liderado el proceso de captación junto a Bajaj — marcando su primer rol operativo en una empresa tecnológica desde que dejó Amazon en 2021.
+El laboratorio fue lanzado en noviembre de 2025 con $6,200 millones en financiamiento inicial. En menos de seis meses creció a más de 120 empleados reclutados de OpenAI, xAI, Meta y DeepMind. Su director ejecutivo es Vikram Bajaj, ex científico de Google X, cofundador de Foresite Labs y doctor en química física por el [MIT](https://www.mit.edu/). Bezos participa como uno de los inversionistas iniciales y ha liderado el proceso de captación junto a Bajaj — marcando su primer rol operativo en una empresa tecnológica desde que dejó Amazon en 2021.
 
 ## Por qué BlackRock y JPMorgan escriben cheques de este tamaño
 

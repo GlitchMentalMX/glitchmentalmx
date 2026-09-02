@@ -34,7 +34,7 @@ Anthropic usa explícitamente el lenguaje de la amplificación en sus comunicaci
 
 ## La evidencia empírica: ¿cuál relato es más preciso?
 
-Los datos disponibles a principios de 2026 son más consistentes con el relato de la amplificación que con el de la sustitución, al menos en el corto plazo. El Wall Street Journal reportó en noviembre de 2025 que pocas empresas que desplegaron agentes de IA habían recibido retorno sobre la inversión. Gartner proyecta que más del 40% de los proyectos de IA agéntica serán cancelados antes de finales de 2027, según datos citados por SDxCentral en enero de 2026.
+Los datos disponibles a principios de 2026 son más consistentes con el relato de la amplificación que con el de la sustitución, al menos en el corto plazo. El Wall Street Journal reportó en noviembre de 2025 que pocas empresas que desplegaron agentes de IA habían recibido retorno sobre la inversión. [Gartner](https://www.gartner.com/en) proyecta que más del 40% de los proyectos de IA agéntica serán cancelados antes de finales de 2027, según datos citados por SDxCentral en enero de 2026.
 
 Al mismo tiempo, los usos donde la IA claramente amplifica capacidades humanas — asistencia en codificación, síntesis de documentos extensos, generación de primeros borradores — están bien documentados y son consistentes. La adopción más exitosa, según múltiples fuentes de 2025 y 2026, ocurre cuando la IA se integra como herramienta bajo supervisión humana, no como sistema autónomo de decisión.
 

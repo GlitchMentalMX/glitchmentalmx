@@ -17,7 +17,7 @@ heroImageAlt: >-
 
 **No toda información pública es un dato abierto.** La diferencia es técnica y política al mismo tiempo. Un dato abierto es información que puede ser leída, procesada y reutilizada por cualquier persona o máquina, sin restricciones de formato ni de licencia. Un PDF escaneado con el presupuesto federal es "información pública". Un archivo CSV descargable con esos mismos números es un dato abierto. Solo el segundo permite el periodismo de datos, la auditoría ciudadana y el desarrollo de herramientas que hagan ese conocimiento accesible a quien no sabe programar.
 
-**El portal datos.gob.mx** —activo como repositorio federal— concentra miles de conjuntos de datos de la Administración Pública Federal: contratos, nóminas, licitaciones, padrón de beneficiarios de programas sociales, registros del INEGI. En teoría, cualquier persona puede descargar esa información y cruzarla o publicarla. En la práctica, la calidad y actualización de esos datasets varía enormemente según la dependencia que los publica. Que exista el portal no garantiza que los datos sirvan.
+**El portal datos.gob.mx** —activo como repositorio federal— concentra miles de conjuntos de datos de la Administración Pública Federal: contratos, nóminas, licitaciones, padrón de beneficiarios de programas sociales, registros del [INEGI](https://www.inegi.org.mx/). En teoría, cualquier persona puede descargar esa información y cruzarla o publicarla. En la práctica, la calidad y actualización de esos datasets varía enormemente según la dependencia que los publica. Que exista el portal no garantiza que los datos sirvan.
 
 ## La nueva Ley General de Transparencia
 

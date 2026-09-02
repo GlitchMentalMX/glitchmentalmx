@@ -20,7 +20,7 @@ El impacto fue inmediato y brutal. Nvidia, la reina de los chips para IA, perdi�
 
 La escala del impacto bursátil quedó documentada con precisión: Nvidia perdió cerca de $600 mil millones en valor de mercado el 27 de enero de 2025, la mayor pérdida de capitalización de una sola empresa en un solo día en la historia de los mercados financieros de Estados Unidos, según datos de Bloomberg.
 
-El modelo técnico de DeepSeek R1 fue analizado en detalle por investigadores de MIT y Stanford, quienes confirmaron en preprint publicado en arXiv el 22 de enero de 2026 que el uso de reinforcement learning con Group Relative Policy Optimization (GRPO) en lugar de los métodos estándar de la industria explica gran parte de la eficiencia de cómputo. El paper técnico oficial de DeepSeek, publicado simultáneamente en arXiv (2501.12948), está disponible públicamente con la metodología completa.
+El modelo técnico de DeepSeek R1 fue analizado en detalle por investigadores de [MIT](https://www.mit.edu/) y Stanford, quienes confirmaron en preprint publicado en arXiv el 22 de enero de 2026 que el uso de reinforcement learning con Group Relative Policy Optimization (GRPO) en lugar de los métodos estándar de la industria explica gran parte de la eficiencia de cómputo. El paper técnico oficial de DeepSeek, publicado simultáneamente en arXiv (2501.12948), está disponible públicamente con la metodología completa.
 
 ## El momento Sputnik de la inteligencia artificial
 
@@ -42,7 +42,7 @@ El modelo está completamente disponible como **código abierto bajo licencia MI
 
 No todo es celebración. Los críticos señalan que DeepSeek R1 tiene problemas de censura en temas políticos sensibles, especialmente aquellos relacionados con el gobierno chino. El modelo se niega a responder preguntas sobre Tiananmen, Hong Kong o el líder chino, lo que genera preocupaciones sobre su alineamiento con intereses estatales.
 
-Además, investigadores independientes han documentado problemas de _hallucinations_ (alucinaciones) en datos factuales, especialmente cuando se le pide información específica sobre eventos recientes. MIT Technology Review advirtió que, aunque el razonamiento lógico es excepcional, la precisión factual todavía tiene margen de mejora significativo.
+Además, investigadores independientes han documentado problemas de _hallucinations_ (alucinaciones) en datos factuales, especialmente cuando se le pide información específica sobre eventos recientes. [MIT Technology Review](https://www.technologyreview.com/) advirtió que, aunque el razonamiento lógico es excepcional, la precisión factual todavía tiene margen de mejora significativo.
 
 ## El fin de la era del "scaling" a toda costa
 

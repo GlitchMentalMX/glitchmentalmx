@@ -15,7 +15,7 @@ Casi toda tecnología significativa pasa por el mismo arco: atención masiva, de
 
 ## Las cinco fases y lo que realmente pasa en cada una
 
-El Hype Cycle de Gartner, introducido en 1995 por la analista Jackie Fenn, describe cinco fases del ciclo de expectativas tecnológicas. Su valor no está en ser un modelo científico preciso — Wikipedia documenta que los académicos han señalado repetidamente que no es una herramienta predictiva con validación estadística robusta — sino en ser un vocabulario útil para describir patrones que se repiten con suficiente frecuencia como para ser relevantes.
+El Hype Cycle de [Gartner](https://www.gartner.com/en), introducido en 1995 por la analista Jackie Fenn, describe cinco fases del ciclo de expectativas tecnológicas. Su valor no está en ser un modelo científico preciso — Wikipedia documenta que los académicos han señalado repetidamente que no es una herramienta predictiva con validación estadística robusta — sino en ser un vocabulario útil para describir patrones que se repiten con suficiente frecuencia como para ser relevantes.
 
 La primera fase es el **disparador de innovación**: una demostración, un paper, un lanzamiento de producto genera cobertura mediática significativa. En este punto, frecuentemente no existe un producto usable ni evidencia de aplicación comercial. La segunda es el **pico de expectativas infladas**: los primeros casos de uso exitosos generan cobertura masiva, la inversión se acelera y el lenguaje se vuelve superlativo. Según Gartner, en su Hype Cycle para Tecnologías Emergentes de 2024, cuatro tecnologías estaban en ese pico: agentes de IA, modelos de lenguaje grandes, IA espacial y gemelos digitales humanos.
 

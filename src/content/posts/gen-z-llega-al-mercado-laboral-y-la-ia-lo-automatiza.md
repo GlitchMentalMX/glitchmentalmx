@@ -31,7 +31,7 @@ La respuesta de Gen Z al mercado laboral actual no es la parálisis. Es una adap
 
 Una parte significativa de esta generación ya monetiza habilidades digitales de forma independiente antes de buscar empleo formal. El comercio social, la creación de contenido, la venta de servicios freelance y la gestión de comunidades digitales son fuentes de ingreso que no dependen de que una empresa abra una posición de nivel junior. 
 
-El informe del Foro Económico Mundial proyecta un crecimiento neto del 8% en los puestos de trabajo globales hacia 2030, incluso con la automatización en curso. Pero ese crecimiento no está distribuido de forma uniforme. Los empleos que crecen requieren competencias distintas a las que desaparecen. Y la brecha entre lo que el sistema educativo entrega y lo que el mercado demanda en 2026 es más visible que nunca.
+El informe del [Foro Económico Mundial](https://www.weforum.org/) proyecta un crecimiento neto del 8% en los puestos de trabajo globales hacia 2030, incluso con la automatización en curso. Pero ese crecimiento no está distribuido de forma uniforme. Los empleos que crecen requieren competencias distintas a las que desaparecen. Y la brecha entre lo que el sistema educativo entrega y lo que el mercado demanda en 2026 es más visible que nunca.
 
 ## Lo que no resuelve aprender a usar ChatGPT
 

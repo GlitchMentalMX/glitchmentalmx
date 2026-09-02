@@ -30,7 +30,7 @@ El estudio, publicado bajo el nombre "Agents of Chaos", mostró que los agentes 
 
 ## El problema que la industria prefiere no discutir
 
-El Foro Económico Mundial advirtió en marzo de 2026 que la gobernanza de agentes de IA exige tratar la autonomía y la autoridad como variables de diseño deliberadas, no como configuraciones por defecto. Las tareas de mayor consecuencia deben mantener límites claros para requerir aprobación humana, y el acceso a sistemas críticos debe permanecer segmentado.
+El [Foro Económico Mundial](https://www.weforum.org/) advirtió en marzo de 2026 que la gobernanza de agentes de IA exige tratar la autonomía y la autoridad como variables de diseño deliberadas, no como configuraciones por defecto. Las tareas de mayor consecuencia deben mantener límites claros para requerir aprobación humana, y el acceso a sistemas críticos debe permanecer segmentado.
 
 El problema es que el incentivo comercial apunta en dirección contraria: cuanto más autónomo sea el agente, más valioso parece el producto. **La narrativa del sector presentó los agentes como la siguiente frontera de la productividad antes de que existiera evidencia sólida de que son seguros en entornos de producción.** Los resultados de Northeastern sugieren que esa secuencia está invertida.
 

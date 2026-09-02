@@ -31,7 +31,7 @@ Hay un detalle que Anthropic no publicitó: la reunión fue exclusivamente crist
 
 Para entender la profundidad de esta relación, hay que conocer los Diálogos Minerva. En 2016, el Vaticano inauguró en la iglesia de Santa María sopra Minerva — el mismo recinto donde en 1633 Galileo fue juzgado — una serie de encuentros anuales, cerrados al público, entre líderes tecnológicos y prelados católicos. El canal opera bajo la regla de Chatham House: lo que se dice ahí no sale con nombre ni afiliación corporativa.
 
-Entre los participantes históricos documentados por _Religion News Service_ se encuentran **Eric Schmidt, ex-CEO de Google; Reid Hoffman, cofundador de LinkedIn; y James Manyika, ex-director del McKinsey Global Institute.** El grupo no tiene sitio web y su influencia es, por diseño, invisible para el ecosistema de redes sociales que fabrica rumores sobre él. Hoffman lo resumió en _The Atlantic_ al entrar al edificio y ver los retratos de los inquisidores históricos en las paredes: "Se siente un poco extraño caminar voluntariamente más allá de estos."
+Entre los participantes históricos documentados por _Religion News Service_ se encuentran **Eric Schmidt, ex-CEO de Google; Reid Hoffman, cofundador de LinkedIn; y James Manyika, ex-director del [McKinsey Global Institute](https://www.mckinsey.com/mgi/overview).** El grupo no tiene sitio web y su influencia es, por diseño, invisible para el ecosistema de redes sociales que fabrica rumores sobre él. Hoffman lo resumió en _The Atlantic_ al entrar al edificio y ver los retratos de los inquisidores históricos en las paredes: "Se siente un poco extraño caminar voluntariamente más allá de estos."
 
 ## Qué busca cada actor — y por qué lo ocultan
 

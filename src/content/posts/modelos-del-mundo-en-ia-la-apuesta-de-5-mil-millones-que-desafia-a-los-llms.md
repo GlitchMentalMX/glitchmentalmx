@@ -42,7 +42,7 @@ Los modelos del mundo tienen ventajas claras sobre los LLMs en ciertas aplicacio
 
 El modelo V-JEPA 2 de LeCun, desarrollado en Meta, alcanza una precisión del 77.3% en pruebas de comprensión de movimiento y permite el control de robots en entornos nuevos sin entrenamiento previo (zero-shot). La eficiencia de entrenamiento es 6 veces mejor que los enfoques generativos tradicionales.
 
-AMI Labs tiene como objetivo inicial el sector médico. Jean-Baptiste LeBrun, cofundador, dijo a Forbes que los prototipos podrían lanzarse dentro de un año, enfocándose en herramientas de diagnóstico que modelan dinámicamente la fisiología del paciente. **"Los modelos del mundo podrían predecir la progresión de enfermedades simulando interacciones corporales"**, explicó LeCun en una entrevista con MIT Technology Review.
+AMI Labs tiene como objetivo inicial el sector médico. Jean-Baptiste LeBrun, cofundador, dijo a Forbes que los prototipos podrían lanzarse dentro de un año, enfocándose en herramientas de diagnóstico que modelan dinámicamente la fisiología del paciente. **"Los modelos del mundo podrían predecir la progresión de enfermedades simulando interacciones corporales"**, explicó LeCun en una entrevista con [MIT Technology Review](https://www.technologyreview.com/).
 
 ## Por qué París y no Silicon Valley
 

@@ -11,7 +11,7 @@ heroImageAlt: >-
   valor IA empresas: ejecutivo solo en auditorio corporativo vacío frente a
   proyección de gráfica de concentración extrema
 ---
-El AI Performance Study 2026 de PwC entrevistó a **1,217 ejecutivos senior de grandes empresas en 25 sectores a nivel global**, y su hallazgo central es incómodo: el 74% del valor económico generado por la IA lo captura solo el 20% de las organizaciones. El resto sigue en modo piloto.
+El AI Performance Study 2026 de [PwC](https://www.pwc.com/) entrevistó a **1,217 ejecutivos senior de grandes empresas en 25 sectores a nivel global**, y su hallazgo central es incómodo: el 74% del valor económico generado por la IA lo captura solo el 20% de las organizaciones. El resto sigue en modo piloto.
 
 ## Qué separa a los líderes del resto
 

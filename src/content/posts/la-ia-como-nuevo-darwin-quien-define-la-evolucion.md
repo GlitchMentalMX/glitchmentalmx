@@ -21,7 +21,7 @@ heroImageAlt: >-
 
 ## EVOLVEpro y el fin de la evolución sin dueño
 
-**En enero de 2025, investigadores del MIT y del Broad Institute publicaron en _Science_ un sistema llamado EVOLVEpro** — un marco de aprendizaje activo— que combina modelos de lenguaje proteico con modelos de regresión para optimizar proteínas con una cantidad mínima de datos experimentales. Con 16 mutantes por ronda en diez rondas de evolución, el sistema logra mejoras de hasta 100 veces en las propiedades deseadas, superando métodos anteriores en seis tipos distintos de proteínas: producción de ARN, edición genómica y unión de anticuerpos.
+**En enero de 2025, investigadores del [MIT](https://www.mit.edu/) y del Broad Institute publicaron en _Science_ un sistema llamado EVOLVEpro** — un marco de aprendizaje activo— que combina modelos de lenguaje proteico con modelos de regresión para optimizar proteínas con una cantidad mínima de datos experimentales. Con 16 mutantes por ronda en diez rondas de evolución, el sistema logra mejoras de hasta 100 veces en las propiedades deseadas, superando métodos anteriores en seis tipos distintos de proteínas: producción de ARN, edición genómica y unión de anticuerpos.
 
 **La palabra clave en esa descripción es "propiedades deseadas".** EVOLVEpro no optimiza hacia ningún criterio de éxito reproductivo natural: optimiza hacia una función objetivo que alguien definió antes de correr el experimento. Esa persona —o esa empresa— decide qué significa "mejor" para esa proteína. El proceso es acelerado, eficiente y reproducible. Pero el criterio de éxito no lo pone la naturaleza.
 

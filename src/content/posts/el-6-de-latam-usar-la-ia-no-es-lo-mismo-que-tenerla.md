@@ -9,7 +9,7 @@ description: >-
 heroImage: /images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/hero.jpg
 heroImageAlt: 'IA en LATAM: mujer en workstation con cable hacia rack sellado con candado.'
 ---
-Solo el **6% de las organizaciones de América Latina genera valor económico significativo con inteligencia artificial**, según el Foro Económico Mundial (FEM) y McKinsey. El reporte lo diagnostica como falta de ejecución. La causa real es otra: en la región se renta la capacidad de IA, no se construye.
+Solo el **6% de las organizaciones de América Latina genera valor económico significativo con inteligencia artificial**, según el [Foro Económico Mundial](https://www.weforum.org/) (FEM) y [McKinsey](https://www.mckinsey.com/). El reporte lo diagnostica como falta de ejecución. La causa real es otra: en la región se renta la capacidad de IA, no se construye.
 
 ## El dato que el reporte del FEM y McKinsey dejó en una gráfica
 
@@ -37,7 +37,7 @@ Esa desproporción explica, en buena medida, por qué el uso de IA generativa pu
 
 ## El sesgo de tamaño: seis de cada diez pymes no capturan nada
 
-El patrón no es exclusivo de LATAM. El estudio global de PwC sobre desempeño de IA, con 1,217 ejecutivos de 25 sectores, documentó que **el 74% del valor generado por la IA lo captura únicamente el 20% de las organizaciones a nivel mundial**, como ya [documentamos en el 74/20 de la IA](/articulos/el-7420-de-la-ia-por-que-casi-nadie-gana-con-ella/). En América Latina ese sesgo de tamaño se agrava por la variable patrimonial: las grandes empresas de la región tienen el capital para construir la capa que no se renta —datos propios, integración, gobernanza—; las pymes, que son la inmensa mayoría del tejido empresarial, no. **Es el mismo embudo que documentó Capgemini** para el [tránsito global del piloto al presupuesto real](/articulos/ia-empresarial-2026-del-piloto-al-presupuesto-real/), aplicado sobre una base de capital estructuralmente más delgada.
+El patrón no es exclusivo de LATAM. El estudio global de [PwC](https://www.pwc.com/) sobre desempeño de IA, con 1,217 ejecutivos de 25 sectores, documentó que **el 74% del valor generado por la IA lo captura únicamente el 20% de las organizaciones a nivel mundial**, como ya [documentamos en el 74/20 de la IA](/articulos/el-7420-de-la-ia-por-que-casi-nadie-gana-con-ella/). En América Latina ese sesgo de tamaño se agrava por la variable patrimonial: las grandes empresas de la región tienen el capital para construir la capa que no se renta —datos propios, integración, gobernanza—; las pymes, que son la inmensa mayoría del tejido empresarial, no. **Es el mismo embudo que documentó Capgemini** para el [tránsito global del piloto al presupuesto real](/articulos/ia-empresarial-2026-del-piloto-al-presupuesto-real/), aplicado sobre una base de capital estructuralmente más delgada.
 
 ## Estrategias nacionales que son comunicados
 

@@ -19,7 +19,7 @@ El ecosistema tecnológico produce hype de forma continua porque el hype tiene v
 
 > El hype tiene valor económico antes de que la tecnología tenga valor real. Ese desfase es el negocio de media industria — y la trampa del resto.
 
-El resultado es un ruido de fondo permanente donde es difícil calibrar qué señales importan. Gartner publica desde 1995 su Hype Cycle — un marco que mapea el ciclo de expectativas de las tecnologías emergentes a través de cinco fases: disparador de innovación, pico de expectativas infladas, valle de la desilusión, pendiente de la iluminación y meseta de productividad. El marco es útil como vocabulario compartido, aunque la Wikipedia de Gartner documenta que los estudios independientes muestran que **solo alrededor de una quinta parte de las tecnologías sigue el ciclo completo de forma identificable**, y que aproximadamente seis de cada diez tecnologías que caen en el valle de la desilusión no se recuperan.
+El resultado es un ruido de fondo permanente donde es difícil calibrar qué señales importan. [Gartner](https://www.gartner.com/en) publica desde 1995 su Hype Cycle — un marco que mapea el ciclo de expectativas de las tecnologías emergentes a través de cinco fases: disparador de innovación, pico de expectativas infladas, valle de la desilusión, pendiente de la iluminación y meseta de productividad. El marco es útil como vocabulario compartido, aunque la Wikipedia de Gartner documenta que los estudios independientes muestran que **solo alrededor de una quinta parte de las tecnologías sigue el ciclo completo de forma identificable**, y que aproximadamente seis de cada diez tecnologías que caen en el valle de la desilusión no se recuperan.
 
 ## Señal 1: adopción por usuarios que no necesitan creer en la tecnología
 

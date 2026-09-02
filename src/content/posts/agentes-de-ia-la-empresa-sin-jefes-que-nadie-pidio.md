@@ -11,7 +11,7 @@ heroImageAlt: >-
   agentes de IA: niveles superiores tachados de organigrama institucional en
   sala de juntas vacía
 ---
-Para 2028, al menos el 15% de las decisiones cotidianas en empresas de todo el mundo serán tomadas de forma autónoma por sistemas de inteligencia artificial, sin intervención humana en cada paso. Eso lo proyecta Gartner. Lo que nadie proyecta con claridad es quién responde cuando esas decisiones sean incorrectas.
+Para 2028, al menos el 15% de las decisiones cotidianas en empresas de todo el mundo serán tomadas de forma autónoma por sistemas de inteligencia artificial, sin intervención humana en cada paso. Eso lo proyecta [Gartner](https://www.gartner.com/en). Lo que nadie proyecta con claridad es quién responde cuando esas decisiones sean incorrectas.
 
 ## Qué es realmente un agente de IA
 
@@ -35,7 +35,7 @@ Al mismo tiempo, hay implementaciones reales y documentadas funcionando en produ
 
 El cambio más significativo no ocurrirá en la capa técnica sino en la capa organizacional. Gartner proyecta que para 2027 el costo de los contratos de servicios basados en procesos se reducirá al menos un 50% por la reinvención agéntica: lo que hoy se factura por horas de trabajo humano pasará a ejecutarse mediante agentes que no cobran por hora. Eso transforma la economía de sectores completos: consultoría, servicios legales, contabilidad, soporte técnico, análisis financiero.
 
-Para 2028, McKinsey estima que hasta el 30% de las horas trabajadas en la economía de Estados Unidos podrían ser automatizables con la tecnología disponible. Ese porcentaje no equivale al 30% de los empleos desaparecidos; equivale al 30% de las tareas dentro de cada empleo que un agente podría ejecutar. La diferencia importa: la mayoría de los roles no desaparecerán de golpe, sino que se vaciarán de las tareas repetitivas y quedarán redefinidos en torno a lo que los agentes no pueden hacer todavía. El problema es que nadie está formando a las personas para ese residuo de tareas.
+Para 2028, [McKinsey](https://www.mckinsey.com/) estima que hasta el 30% de las horas trabajadas en la economía de Estados Unidos podrían ser automatizables con la tecnología disponible. Ese porcentaje no equivale al 30% de los empleos desaparecidos; equivale al 30% de las tareas dentro de cada empleo que un agente podría ejecutar. La diferencia importa: la mayoría de los roles no desaparecerán de golpe, sino que se vaciarán de las tareas repetitivas y quedarán redefinidos en torno a lo que los agentes no pueden hacer todavía. El problema es que nadie está formando a las personas para ese residuo de tareas.
 
 Para 2030, Gartner proyecta que el 22% de las transacciones financieras globales incluirán condiciones programables que otorgarán agencia económica a sistemas de IA —capacidad de negociar, contratar y pagar de forma autónoma en nombre de organizaciones—. Es el horizonte donde los agentes no solo ejecutan tareas sino que participan en mercados.
 

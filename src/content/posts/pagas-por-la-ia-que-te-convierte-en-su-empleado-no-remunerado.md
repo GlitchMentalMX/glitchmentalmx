@@ -22,7 +22,7 @@ El segundo hallazgo es más revelador aún. Según el análisis, en las ocupacio
 
 ## El costo oculto que no aparece en la factura mensual
 
-Un estudio de Stanford y MIT, publicado en 2023 y citado ampliamente desde entonces, encontró que el uso de herramientas de IA **aumentó la productividad de trabajadores de servicio al cliente en un 14-15%**, principalmente entre empleados con menos experiencia. El dato circula constantemente en presentaciones corporativas y argumentos de venta de suscripciones premium.
+Un estudio de Stanford y [MIT](https://www.mit.edu/), publicado en 2023 y citado ampliamente desde entonces, encontró que el uso de herramientas de IA **aumentó la productividad de trabajadores de servicio al cliente en un 14-15%**, principalmente entre empleados con menos experiencia. El dato circula constantemente en presentaciones corporativas y argumentos de venta de suscripciones premium.
 
 Lo que no circula con la misma frecuencia es la segunda parte del mismo estudio. Según reportó Infobae en abril de 2024, el uso de ChatGPT disminuyó el tiempo dedicado a generar borradores, pero aumentó el tiempo dedicado a revisar y mejorar los resultados. El trabajo no desapareció. Cambió de fase: pasó de producción a control de calidad.
 
@@ -36,7 +36,7 @@ Ese desplazamiento tiene un nombre en economía del trabajo: _task substitution 
 
   
 
-El Barómetro Global de IA en el Empleo de PwC, publicado en 2024 con análisis de más de 500,000 ofertas de trabajo en 15 países, encontró que **los sectores más expuestos a la IA experimentan un crecimiento de la productividad laboral casi cinco veces mayor que el promedio**. Ese dato aparece en el resumen ejecutivo de cualquier presentación sobre el futuro del trabajo.
+El Barómetro Global de IA en el Empleo de [PwC](https://www.pwc.com/), publicado en 2024 con análisis de más de 500,000 ofertas de trabajo en 15 países, encontró que **los sectores más expuestos a la IA experimentan un crecimiento de la productividad laboral casi cinco veces mayor que el promedio**. Ese dato aparece en el resumen ejecutivo de cualquier presentación sobre el futuro del trabajo.
 
 El dato que no aparece en el resumen ejecutivo es quién captura ese crecimiento. Según PwC, el 46% de los directores ejecutivos globales afirma que la IA aumentará la rentabilidad de sus empresas. El 41% prevé que aumentará los ingresos. La pregunta sobre si aumentará los salarios de los trabajadores que generaron esa productividad adicional no formó parte del estudio.
 

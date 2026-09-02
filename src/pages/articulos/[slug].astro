@@ -396,7 +396,9 @@ const otrosPreciosDigitales =
       ) : (
         <a href="/precios-digitales/" class="tag category-tag">Precios Digitales</a>
       )}
-      <p class="eyebrow">{formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}</p>
+      <p class="eyebrow">
+        Por <a href="/acerca-de/" class="byline-link" rel="author">Jorge A. Diaz Elizondo</a> · {formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}
+      </p>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
       {kind === 'entrenaIA' && veredicto && (
@@ -613,6 +615,8 @@ const otrosPreciosDigitales =
   }
   .category-tag { margin-bottom: 14px; }
   .category-tag:hover { background: var(--accent); color: #fff; }
+  .byline-link { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
+  .byline-link:hover { color: var(--accent); }
   .post-header h1 {
     font-size: clamp(1.9rem, 4.6vw, 2.9rem);
     margin: 14px 0 18px;
@@ -690,6 +694,19 @@ const otrosPreciosDigitales =
 </style>
 
 <script>
+  // Cualquier link externo dentro del cuerpo del artículo (citas a fuentes,
+  // o los que el editor ya haya puesto a mano) abre en pestaña nueva con
+  // rel="noopener" — si no, la cita saca al lector del sitio en la misma
+  // pestaña. Se hace en cliente porque el markdown de <Content /> se
+  // renderiza sin pasar por un plugin rehype configurable en esta versión
+  // de Astro. Deliberadamente SIN "nofollow": son citas editoriales
+  // genuinas a fuentes verificadas, no enlaces pagados ni de usuarios.
+  document.querySelectorAll<HTMLAnchorElement>('.prose a[href^="http"]').forEach((a) => {
+    if (a.hostname === window.location.hostname) return;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
   const copyBtn = document.getElementById('share-copy') as HTMLButtonElement | null;
   const copyLabel = copyBtn?.querySelector('span');
 

@@ -12,7 +12,7 @@ heroImageAlt: >-
   Agentes IA empresas 2026: mujer en pasillo de oficina con luz azul filtrándose
   bajo múltiples puertas cerradas
 ---
-Hay una cifra que Gartner publicó hace unos meses y que apenas está empezando a aterrizar en las conversaciones de oficina: a finales de 2025, menos del 5% de las aplicaciones empresariales a nivel global tenía integrado algún agente de IA. Para finales de 2026, esa cifra llegará al 40% —según las proyecciones globales de la firma. En mercados como LATAM, el punto de partida es más bajo, pero la dirección es la misma. Un crecimiento de ocho veces en un solo año.
+Hay una cifra que [Gartner](https://www.gartner.com/en) publicó hace unos meses y que apenas está empezando a aterrizar en las conversaciones de oficina: a finales de 2025, menos del 5% de las aplicaciones empresariales a nivel global tenía integrado algún agente de IA. Para finales de 2026, esa cifra llegará al 40% —según las proyecciones globales de la firma. En mercados como LATAM, el punto de partida es más bajo, pero la dirección es la misma. Un crecimiento de ocho veces en un solo año.
 
 La pregunta que la mayoría ignora no es _si_ esto va a pasar, sino qué significa concretamente para las personas que trabajan con esas aplicaciones todos los días.
 
@@ -20,7 +20,7 @@ La pregunta que la mayoría ignora no es _si_ esto va a pasar, sino qué signifi
 
 Finanzas fue el primero en mover ficha. Los agentes de IA ya manejan detección de fraudes en tiempo real, conciliaciones contables y monitoreo de cumplimiento regulatorio en instituciones que antes usaban equipos enteros para esas tareas. En atención al cliente, ServiceNow reporta agentes operando en ITSM, recursos humanos y soporte de servicio sin intervención humana en el flujo base.
 
-El dato que más incomoda viene de McKinsey: el 32% de los ejecutivos encuestados anticipa una reducción en la plantilla laboral durante 2026 como consecuencia directa de la automatización agéntica. El 43% no prevé cambios. Y el 13% espera crecimiento. La polarización en esas cifras lo dice todo: no hay consenso, pero la dirección general apunta hacia menos personas haciendo las mismas tareas operativas.
+El dato que más incomoda viene de [McKinsey](https://www.mckinsey.com/): el 32% de los ejecutivos encuestados anticipa una reducción en la plantilla laboral durante 2026 como consecuencia directa de la automatización agéntica. El 43% no prevé cambios. Y el 13% espera crecimiento. La polarización en esas cifras lo dice todo: no hay consenso, pero la dirección general apunta hacia menos personas haciendo las mismas tareas operativas.
 
 ## El perfil que más riesgo tiene (y el que más oportunidad tiene)
 

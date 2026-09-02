@@ -41,7 +41,7 @@ El informe de Anthropic añade otro matiz importante: **los trabajadores más ex
 
 Los datos no muestran que estos empleos vayan a desaparecer en masa de un día para otro. Lo que muestran es una transformación en la composición de las tareas. Según el mismo estudio de Anthropic, la investigación no encontró un aumento sistemático en el desempleo para los trabajadores más expuestos desde finales de 2022, aunque sí hay evidencia de que **la contratación de trabajadores jóvenes en las ocupaciones más expuestas ha frenado**. En términos prácticos: los puestos no desaparecen de golpe, pero se contratan menos personas nuevas para cubrirlos.
 
-El Foro Económico Mundial proyectó en su informe de empleos de 2025, basado en encuestas a más de 1,000 empleadores que representan 14 millones de trabajadores, que **92 millones de empleos serán desplazados hacia 2030, mientras se crearán 170 millones nuevos**, con un saldo neto positivo de 78 millones. La pregunta incómoda no es si habrá trabajo, sino si las personas desplazadas por un tipo de empleo tendrán acceso a los nuevos que se crean.
+El [Foro Económico Mundial](https://www.weforum.org/) proyectó en su informe de empleos de 2025, basado en encuestas a más de 1,000 empleadores que representan 14 millones de trabajadores, que **92 millones de empleos serán desplazados hacia 2030, mientras se crearán 170 millones nuevos**, con un saldo neto positivo de 78 millones. La pregunta incómoda no es si habrá trabajo, sino si las personas desplazadas por un tipo de empleo tendrán acceso a los nuevos que se crean.
 
 ## Lo que esto significa para quienes trabajan hoy
 

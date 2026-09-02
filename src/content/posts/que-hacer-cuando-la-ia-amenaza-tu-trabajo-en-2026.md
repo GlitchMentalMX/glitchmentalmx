@@ -21,7 +21,7 @@ Lo más inquietante no es la cifra. Es la frase que repiten todos los CEOs: **"n
 
 Antes de entrar en pánico, hay un dato que equilibra la narrativa. La revista Harvard Business Review publicó en enero de 2026 una investigación con una conclusión incómoda: muchas empresas están tomando decisiones de despido basadas en el _potencial proyectado_ de la IA, no en su desempeño real comprobado. En otras palabras, están apostando a lo que la tecnología podría hacer, no a lo que ya hace.
 
-La consultora Gartner añade un dato que conviene tener presente: solo una de cada cincuenta inversiones en IA genera un impacto verdaderamente transformador en el negocio, y apenas una de cada cinco produce algún retorno medible. Forrester, por su parte, predice que la mitad de los despidos atribuidos a la IA irán seguidos de recontrataciones silenciosas, generalmente _offshore_ y con salarios más bajos. Además, el 55% de los empleadores que ya recortaron por IA reportan arrepentimiento posterior.
+La consultora [Gartner](https://www.gartner.com/en) añade un dato que conviene tener presente: solo una de cada cincuenta inversiones en IA genera un impacto verdaderamente transformador en el negocio, y apenas una de cada cinco produce algún retorno medible. Forrester, por su parte, predice que la mitad de los despidos atribuidos a la IA irán seguidos de recontrataciones silenciosas, generalmente _offshore_ y con salarios más bajos. Además, el 55% de los empleadores que ya recortaron por IA reportan arrepentimiento posterior.
 
 En círculos económicos ha empezado a circular el término _AI washing_: la práctica de presentar recortes laborales como consecuencia directa de la inteligencia artificial cuando, en realidad, responden también a la sobrecontratación de los años de pandemia, la presión sobre los márgenes o cambios estratégicos que nada tienen que ver con los algoritmos.
 
@@ -57,6 +57,6 @@ En la misma semana en que Block anunció sus despidos, Ethan Mollick, profesor d
 
 Eso no hace el riesgo menos real. Hace el panorama más honesto. La IA ya está cambiando el trabajo, pero lo hace de manera más irregular, más sectorial y más lenta de lo que los titulares sugieren. Las empresas que despiden por el _potencial_ de la IA están también asumiendo un riesgo: que la tecnología no llegue a tiempo, que los empleados que quedan no puedan asumir la carga adicional, o que la calidad del trabajo caiga junto con la plantilla.
 
-El Foro Económico Mundial proyecta un crecimiento neto del 8% en los puestos de trabajo globales hacia 2030, incluso considerando la automatización. Ese número no promete que tu trabajo específico estará ahí. Promete que habrá trabajo. La pregunta es si estarás preparado para el que exista.
+El [Foro Económico Mundial](https://www.weforum.org/) proyecta un crecimiento neto del 8% en los puestos de trabajo globales hacia 2030, incluso considerando la automatización. Ese número no promete que tu trabajo específico estará ahí. Promete que habrá trabajo. La pregunta es si estarás preparado para el que exista.
 
 Dorsey predijo que la mayoría de las empresas llegarán a la misma conclusión que Block en el próximo año. Puede que tenga razón. Lo que no dijo es que ninguna de esas empresas le va a avisar con antelación.

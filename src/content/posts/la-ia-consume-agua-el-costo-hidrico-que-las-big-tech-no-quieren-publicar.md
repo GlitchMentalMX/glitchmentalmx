@@ -72,7 +72,7 @@ Aquí está ironía brutal. Uno de casos de uso de IA es optimización de recurs
 
 Defensores de IA argumentan que valor generado justifica costos ambientales. Si IA puede acelerar descubrimiento de medicamentos, mejorar productividad económica, o resolver problemas complejos, entonces consumo de recursos es inversión que vale la pena.
 
-Es argumento válido en teoría. Pero requiere dos cosas: **que IA realmente entregue ese valor masivo** (todavía por determinar según reportes recientes de MIT), **que beneficios sean distribuidos equitativamente**, no solo capturados por compañías tecnológicas y sus accionistas.
+Es argumento válido en teoría. Pero requiere dos cosas: **que IA realmente entregue ese valor masivo** (todavía por determinar según reportes recientes de [MIT](https://www.mit.edu/)), **que beneficios sean distribuidos equitativamente**, no solo capturados por compañías tecnológicas y sus accionistas.
 
 Si IA consume agua de comunidades locales pero beneficios fluyen principalmente a corporaciones multimillonarias, eso es distribución injusta de costos versus beneficios. Comunidad paga costo (agua escasa) pero no recibe beneficio proporcional.
 

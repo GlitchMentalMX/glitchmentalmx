@@ -26,7 +26,7 @@ Los casos operativos actuales cubren un espectro amplio. En manufactura, Boeing 
 
 En infraestructura urbana, Singapur tiene un gemelo digital de toda la ciudad-estado, llamado Virtual Singapore, que permite simular el impacto de nuevas construcciones sobre ventilación, inundaciones y flujos peatonales antes de aprobar proyectos. Helsinki tiene un modelo similar. Ciudad de México y São Paulo tienen proyectos en etapas tempranas de desarrollo. La escala a la que estas implementaciones operan hoy es todavía limitada, pero la dirección es clara: **las ciudades que gestionen su infraestructura con gemelos digitales tomarán decisiones de planeación urbana con un nivel de precisión que las que no los tengan simplemente no podrán alcanzar.**
 
-El mercado global de gemelos digitales —estimado por Gartner en 183,000 millones de dólares para 2031— es el indicador más robusto del compromiso industrial con la tecnología. ABI Research proyecta el mercado del metaverso industrial en 100,000 millones de dólares para 2030. Esas proyecciones corresponden a mercados globales, con concentración en Estados Unidos, Europa y Asia del Este.
+El mercado global de gemelos digitales —estimado por [Gartner](https://www.gartner.com/en) en 183,000 millones de dólares para 2031— es el indicador más robusto del compromiso industrial con la tecnología. ABI Research proyecta el mercado del metaverso industrial en 100,000 millones de dólares para 2030. Esas proyecciones corresponden a mercados globales, con concentración en Estados Unidos, Europa y Asia del Este.
 
 ## Qué cambia y cuándo: tres horizontes de adopción
 

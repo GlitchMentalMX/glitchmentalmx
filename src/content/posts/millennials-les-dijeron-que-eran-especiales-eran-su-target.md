@@ -16,7 +16,7 @@ Durante más de una década, los millennials fueron **el grupo demográfico más
 
 ## El hype generacional siempre fue un negocio
 
-El patrón no es nuevo ni accidental. Las marcas no siguen generaciones por afinidad cultural — siguen el dinero. **Firmas como Deloitte, McKinsey y Nielsen han documentado consistentemente que el foco de las empresas sigue al grupo con mayor capacidad de gasto visible y aspiracional**, no al que más lo necesita ni al que más lo merece. Cuando los millennials —nacidos entre 1981 y 1996, según la definición del Pew Research Center— entraron a su pico de consumo en la década de 2010, recibieron una narrativa construida a propósito: que eran únicos, que redefinían el trabajo y el amor, que el mundo giraba alrededor de su experiencia.
+El patrón no es nuevo ni accidental. Las marcas no siguen generaciones por afinidad cultural — siguen el dinero. **Firmas como Deloitte, [McKinsey](https://www.mckinsey.com/) y Nielsen han documentado consistentemente que el foco de las empresas sigue al grupo con mayor capacidad de gasto visible y aspiracional**, no al que más lo necesita ni al que más lo merece. Cuando los millennials —nacidos entre 1981 y 1996, según la definición del Pew Research Center— entraron a su pico de consumo en la década de 2010, recibieron una narrativa construida a propósito: que eran únicos, que redefinían el trabajo y el amor, que el mundo giraba alrededor de su experiencia.
 
 No fue coincidencia. Fue diseño de marketing. **La narrativa generacional es, en la mayoría de los casos, una herramienta de segmentación de mercado disfrazada de análisis cultural.** Antes de los millennials, la misma lógica aplicó con los baby boomers y con la Generación X. Y ahora le toca a la Generación Z ocupar ese lugar.
 

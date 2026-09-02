@@ -21,7 +21,7 @@ Los hallazgos que el reporte presenta como tendencias son los siguientes. Primer
 
 El reporte también identifica un dato técnico importante. **Hasta el 90% del contenido en línea podría ser generado por IA en 2026**, según las estimaciones que cita McCann, lo que generaría una "sensación de repetición y vacío" entre los consumidores. La respuesta cultural sería una revalorización de lo imperfecto, lo artesanal y lo espontáneo.
 
-Sobre la Generación Z, el reporte ofrece tres datos puntuales: 52% de los jóvenes mexicanos adopta el thrifting (compra de segunda mano) como estándar identitario, 70% participa en causas sociales o políticas y considera la neutralidad de marca como complicidad, y **47.6% de los jóvenes entre 15 y 29 años no desempeña actividad económica formal**. Más de 14.5 millones de mexicanos trabajan de forma independiente, alrededor del 27% de la población ocupada según INEGI. Sumando esquemas mixtos (empleo formal más freelance), la cifra supera 40%.
+Sobre la Generación Z, el reporte ofrece tres datos puntuales: 52% de los jóvenes mexicanos adopta el thrifting (compra de segunda mano) como estándar identitario, 70% participa en causas sociales o políticas y considera la neutralidad de marca como complicidad, y **47.6% de los jóvenes entre 15 y 29 años no desempeña actividad económica formal**. Más de 14.5 millones de mexicanos trabajan de forma independiente, alrededor del 27% de la población ocupada según [INEGI](https://www.inegi.org.mx/). Sumando esquemas mixtos (empleo formal más freelance), la cifra supera 40%.
 
 ## Qué dice el reporte (traducido)
 

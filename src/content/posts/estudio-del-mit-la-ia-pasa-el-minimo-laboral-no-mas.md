@@ -11,7 +11,7 @@ heroImageAlt: >-
   evaluación IA MIT: mujer revisa hoja de resultados frente a línea automatizada
   de producción
 ---
-El MIT probó 41 modelos de lenguaje en más de 11,000 tareas reales del mercado laboral. La IA aprobó. Pero apenas. Y eso desmonta tanto el relato del apocalipsis como el del reemplazo total.
+El [MIT](https://www.mit.edu/) probó 41 modelos de lenguaje en más de 11,000 tareas reales del mercado laboral. La IA aprobó. Pero apenas. Y eso desmonta tanto el relato del apocalipsis como el del reemplazo total.
 
 ## Qué midió el estudio y cómo
 

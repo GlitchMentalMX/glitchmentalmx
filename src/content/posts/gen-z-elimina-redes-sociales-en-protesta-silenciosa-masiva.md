@@ -22,7 +22,7 @@ Ben Richards, quien usaba un smartphone desde los 11 años como la mayoría de l
 
 Los números respaldan esta tendencia. Una encuesta de Deloitte sobre consumidores mostró que casi un cuarto de los encuestados que eliminaron aplicaciones de redes sociales reportaron que estas aplicaciones habían impactado negativamente su salud mental y consumido demasiado de su tiempo. Una encuesta Q1 2024 de Sprout Pulse reveló que el 63% de Gen Z planeaba tomar un descanso de redes sociales en 2024, el más alto de cualquier generación.
 
-Esto no es solo una intención, es una práctica común. Para 2025, el 55% de la generación ya había tomado al menos un "detox de redes sociales" en el año pasado, señalando un movimiento deliberado hacia la conciencia digital. Una investigación de McKinsey muestra que dos de cada cinco (43%) de Gen Z rara vez o nunca publican, comparado con el 35% de los millennials.
+Esto no es solo una intención, es una práctica común. Para 2025, el 55% de la generación ya había tomado al menos un "detox de redes sociales" en el año pasado, señalando un movimiento deliberado hacia la conciencia digital. Una investigación de [McKinsey](https://www.mckinsey.com/) muestra que dos de cada cinco (43%) de Gen Z rara vez o nunca publican, comparado con el 35% de los millennials.
 
 Lucy Stace, empresaria de 36 años, dijo que está limitando su uso de redes sociales porque está "disminuyendo" su salud mental a pesar de ser esencial para su negocio. "Somos inundados todo el tiempo con tanta información que nuestros cerebros no son capaces de manejar esa cantidad de información", dijo. "Estamos disminuyendo la capacidad de nuestro cerebro para poder mirar hacia adentro y escucharnos a nosotros mismos".
 

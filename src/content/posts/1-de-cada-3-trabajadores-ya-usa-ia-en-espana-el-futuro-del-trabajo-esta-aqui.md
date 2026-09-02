@@ -44,7 +44,7 @@ Esto crea una dinámica interesante en el mercado laboral. Los trabajadores más
 
 ## El Impacto en Productividad (Que Nadie Está Midiendo)
 
-Uno de los hallazgos más significativos del Barómetro global de la Inteligencia Artificial en el empleo 2024, elaborado por PwC, es que la IA permite aumentar la productividad laboral casi 5 veces más en los sectores más expuestos a esta tecnología. Eso no es un aumento marginal. Es un salto cuántico en eficiencia.
+Uno de los hallazgos más significativos del Barómetro global de la Inteligencia Artificial en el empleo 2024, elaborado por [PwC](https://www.pwc.com/), es que la IA permite aumentar la productividad laboral casi 5 veces más en los sectores más expuestos a esta tecnología. Eso no es un aumento marginal. Es un salto cuántico en eficiencia.
 
 Pero aquí está el problema: si casi un tercio de los trabajadores está usando IA sin que su empresa lo sepa, esas ganancias de productividad no están siendo medidas, reconocidas ni aprovechadas estratégicamente. Las organizaciones están perdiendo una oportunidad enorme de entender cómo sus empleados están mejorando procesos, ahorrando tiempo, y generando valor de formas nuevas.
 

@@ -21,7 +21,7 @@ La IA generativa —ChatGPT, Claude, Gemini— funciona bajo un esquema reactivo
 
 La IA agéntica cambia esa dinámica. Le das un objetivo de alto nivel —por ejemplo, "revisa los correos de clientes de esta semana, clasifica los urgentes, genera borradores de respuesta y agenda los seguimientos en el calendario"— y el sistema lo descompone en pasos, decide qué herramientas usar en cada uno, los ejecuta en secuencia, revisa los resultados y ajusta si algo sale mal. **El humano supervisa el resultado, no cada paso del proceso.**
 
-IBM lo define como sistemas capaces de percibir su entorno, razonar, decidir y actuar para lograr un objetivo con mínima intervención constante. Gartner proyecta que para 2028 el 33% del software empresarial incluirá capacidades agénticas. En 2024, esa cifra era menor al 1%. La velocidad del cambio es inusual incluso para los estándares del sector tech.
+IBM lo define como sistemas capaces de percibir su entorno, razonar, decidir y actuar para lograr un objetivo con mínima intervención constante. [Gartner](https://www.gartner.com/en) proyecta que para 2028 el 33% del software empresarial incluirá capacidades agénticas. En 2024, esa cifra era menor al 1%. La velocidad del cambio es inusual incluso para los estándares del sector tech.
 
 ## Cómo funciona un agente de IA, paso a paso
 

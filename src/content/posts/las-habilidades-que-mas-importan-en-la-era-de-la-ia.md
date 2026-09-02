@@ -17,7 +17,7 @@ La intuición dice que en la era de la IA lo más valioso será saber programar 
 
 Hay una paradoja en cómo las organizaciones están respondiendo al auge de la IA. La reacción inmediata ha sido invertir en habilidades técnicas: prompts, automatización, manejo de herramientas de IA. Eso no está mal. Pero un estudio de Harvard Business School de 2025 advirtió que **las habilidades generales de comunicación, trabajo en equipo y pensamiento crítico pueden resultar más importantes a largo plazo** que las habilidades técnicas específicas, tanto para individuos como para organizaciones. La razón es que las habilidades técnicas se vuelven obsoletas más rápido que las capacidades cognitivas fundamentales.
 
-McKinsey lo formuló de forma directa en un análisis publicado en enero de 2026: los agentes de IA pueden automatizar muchas tareas digitales, de información y de comunicación rutinaria, pero **las personas siguen siendo indispensables para el juicio matizado, la creatividad, la conciencia situacional y las habilidades socioemocionales**: exactamente lo que los modelos todavía hacen mal.
+[McKinsey](https://www.mckinsey.com/) lo formuló de forma directa en un análisis publicado en enero de 2026: los agentes de IA pueden automatizar muchas tareas digitales, de información y de comunicación rutinaria, pero **las personas siguen siendo indispensables para el juicio matizado, la creatividad, la conciencia situacional y las habilidades socioemocionales**: exactamente lo que los modelos todavía hacen mal.
 
 ## Las cuatro categorías del nuevo stack
 

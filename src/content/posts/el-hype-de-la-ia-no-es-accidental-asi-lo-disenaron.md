@@ -12,7 +12,7 @@ heroImageAlt: >-
   El hype de la IA: mujer operando la impresión masiva de hojas con métricas y
   datos industriales
 ---
-En los últimos años, los investigadores de OpenAI hacían fogatas y cantaban _"Feel the [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/)!"_ alrededor de ellas. No es una metáfora: es lo que reportó MIT Technology Review en octubre de 2025, citando reuniones internas donde el exjefe científico Ilya Sutskever dirigía esos cánticos como si la inteligencia artificial general fuera una deidad que necesitaba ser invocada. **El hype1 de la IA no describe el futuro: lo administra.** Y tiene una función económica y política muy concreta.
+En los últimos años, los investigadores de OpenAI hacían fogatas y cantaban _"Feel the [AGI](/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/)!"_ alrededor de ellas. No es una metáfora: es lo que reportó [MIT Technology Review](https://www.technologyreview.com/) en octubre de 2025, citando reuniones internas donde el exjefe científico Ilya Sutskever dirigía esos cánticos como si la inteligencia artificial general fuera una deidad que necesitaba ser invocada. **El hype1 de la IA no describe el futuro: lo administra.** Y tiene una función económica y política muy concreta.
 
 ## La inevitabilidad no se descubre: se fabrica
 
@@ -32,7 +32,7 @@ Esto crea una estructura circular difícil de cuestionar desde adentro: las narr
 
 ## "Agent washing": el vocabulario del hype industrial
 
-El mismo patrón que opera a nivel de las grandes narrativas se reproduce en el mercado de productos. En junio de 2025, Gartner publicó una predicción que no llegó a muchos keynotes: **más del 40% de los proyectos de agentes de IA serán cancelados antes de finales de 2027**, por costos escalantes, valor de negocio poco claro y controles de riesgo insuficientes.
+El mismo patrón que opera a nivel de las grandes narrativas se reproduce en el mercado de productos. En junio de 2025, [Gartner](https://www.gartner.com/en) publicó una predicción que no llegó a muchos keynotes: **más del 40% de los proyectos de agentes de IA serán cancelados antes de finales de 2027**, por costos escalantes, valor de negocio poco claro y controles de riesgo insuficientes.
 
 La analista senior de Gartner Anushree Verma fue directa en el comunicado oficial: "La mayoría de los proyectos de agentes de IA son experimentos en etapas tempranas, principalmente impulsados por hype y frecuentemente mal aplicados." El mismo reporte identificó un fenómeno que Gartner denominó _agent washing_: la práctica de rebautizar productos existentes —asistentes de IA, chatbots, herramientas de automatización— como "agentes de IA" sin que tengan capacidades agénticas reales. **De los miles de proveedores que venden soluciones agénticas, Gartner estima que solo alrededor de 130 ofrecen capacidades genuinas.**
 
@@ -44,7 +44,7 @@ La IA generativa, por su parte, lleva desde 2024 en lo que Gartner llama el _Tro
 
 ## Los números que no aparecen en los keynotes
 
-En julio de 2025, el MIT Project NANDA publicó _The GenAI Divide: State of AI in Business 2025_, basado en más de 300 iniciativas de IA revisadas, 52 entrevistas con ejecutivos y 153 encuestas a líderes senior. La conclusión: **pese a que se han invertido entre 30 y 40 mil millones de dólares invertidos globalmente en IA generativa empresarial, el 95% de las organizaciones no ve ningún retorno financiero medible**. Solo el 5% de los pilotos personalizados de IA empresarial llegan a producción. El resto falla no por limitaciones técnicas de los modelos, sino por flujos de trabajo frágiles y desalineación con las operaciones reales. El informe también documentó lo que llamó "_shadow AI economy_": el 90% de los empleados usa herramientas personales de IA para tareas de trabajo, saltándose los sistemas oficiales que sus empresas invirtieron en implementar. Estos datos no contradicen el potencial de la tecnología. Documentan la distancia entre las narrativas de inevitabilidad de los keynotes y la realidad operativa de la mayoría de las organizaciones.
+En julio de 2025, el [MIT](https://www.mit.edu/) Project NANDA publicó _The GenAI Divide: State of AI in Business 2025_, basado en más de 300 iniciativas de IA revisadas, 52 entrevistas con ejecutivos y 153 encuestas a líderes senior. La conclusión: **pese a que se han invertido entre 30 y 40 mil millones de dólares invertidos globalmente en IA generativa empresarial, el 95% de las organizaciones no ve ningún retorno financiero medible**. Solo el 5% de los pilotos personalizados de IA empresarial llegan a producción. El resto falla no por limitaciones técnicas de los modelos, sino por flujos de trabajo frágiles y desalineación con las operaciones reales. El informe también documentó lo que llamó "_shadow AI economy_": el 90% de los empleados usa herramientas personales de IA para tareas de trabajo, saltándose los sistemas oficiales que sus empresas invirtieron en implementar. Estos datos no contradicen el potencial de la tecnología. Documentan la distancia entre las narrativas de inevitabilidad de los keynotes y la realidad operativa de la mayoría de las organizaciones.
 
 ## El vibe shift de 2025–2026: ¿corrección o rebranding?
 
