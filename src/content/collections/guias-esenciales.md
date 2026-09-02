@@ -5,7 +5,7 @@ status: published
 description: >-
   Las ideas clave detrás de la cultura digital, los comportamientos online, la
   inteligencia artificial y el impacto real de la tecnología en la vida
-  cotidiana. El punto de entrada si es tu primera vez en glitchmentalMX.
+  cotidiana. El punto de entrada si es tu primera vez en glitchMentalMX.
 intro: >-
   Esta colección reúne las ideas clave detrás de la cultura digital, los
   comportamientos online, la inteligencia artificial y el impacto real de la

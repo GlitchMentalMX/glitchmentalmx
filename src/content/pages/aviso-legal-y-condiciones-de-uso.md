@@ -1,6 +1,6 @@
 ---
 title: Aviso Legal y Condiciones de Uso
-description: Aviso legal y condiciones de uso de glitchmentalMX.
+description: Aviso legal y condiciones de uso de glitchMentalMX.
 eyebrow: Legal
 headline: Aviso Legal y Condiciones de Uso
 ---

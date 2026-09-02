@@ -40,10 +40,10 @@ Como parte de nuestro criterio editorial, publicamos el [Índice glitchMentalMX]
 
 ## Transparencia
 
-Todas las colaboraciones se identifican con una nota clara: *"Este contenido forma parte de una colaboración editorial. glitchmentalMX mantiene control total sobre el enfoque y la publicación."*
+Todas las colaboraciones se identifican con una nota clara: *"Este contenido forma parte de una colaboración editorial. glitchMentalMX mantiene control total sobre el enfoque y la publicación."*
 
 ## ¿Te interesa colaborar?
 
-Si tu marca, producto o proyecto encaja con el enfoque de glitchmentalMX, escríbenos con: breve descripción del proyecto, objetivo de la colaboración y tipo de contenido que tienes en mente. Evaluamos cada propuesta de forma individual.
+Si tu marca, producto o proyecto encaja con el enfoque de glitchMentalMX, escríbenos con: breve descripción del proyecto, objetivo de la colaboración y tipo de contenido que tienes en mente. Evaluamos cada propuesta de forma individual.
 
 [contacto@glitchmental.com](mailto:contacto@glitchmental.com) · [Ver opciones de publicidad →](/publicidad-en-glitchmentalmx/)

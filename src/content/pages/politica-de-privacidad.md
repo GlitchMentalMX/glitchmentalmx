@@ -1,6 +1,6 @@
 ---
 title: Política de Privacidad
-description: Política de privacidad de glitchmentalMX.
+description: Política de privacidad de glitchMentalMX.
 eyebrow: Legal
 headline: Política de Privacidad
 ---

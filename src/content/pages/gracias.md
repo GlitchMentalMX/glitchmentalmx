@@ -1,13 +1,13 @@
 ---
-title: Ya eres parte de glitchmentalMX
+title: Ya eres parte de glitchMentalMX
 description: Sin hype, sin spam. Análisis crítico de tech e IA directo a tu inbox.
 eyebrow: Acceso confirmado
-headline: Ya eres parte de **glitchmentalMX.**
+headline: Ya eres parte de **glitchMentalMX.**
 dek: Sin hype, sin spam. Análisis crítico de tech e IA directo a tu inbox. Mientras tanto, descarga los archivos del mes.
 noIndex: true
 ---
 
-## Índice GlitchMentalMX
+## Índice glitchMentalMX
 
 _Versión ejecutiva — ranking mensual de tecnologías._
 
