@@ -3,11 +3,26 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 
-const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft)).length;
-const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
-const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
-const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).length;
+const preciosPosts = await getCollection('preciosIA', ({ data }) => !data.draft);
+const entrenaPosts = await getCollection('entrenaIA', ({ data }) => !data.draft);
+const pruebaGratisPosts = await getCollection('pruebaGratis', ({ data }) => !data.draft);
+const codigosDescuentoPosts = await getCollection('codigosDescuento', ({ data }) => !data.draft);
+const preciosCount = preciosPosts.length;
+const entrenaCount = entrenaPosts.length;
+const pruebaGratisCount = pruebaGratisPosts.length;
+const codigosDescuentoCount = codigosDescuentoPosts.length;
 const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
+
+// Fecha más reciente entre las 4 series hermanas — mismo criterio que cada
+// una usa para su propio modifiedTime, para que el hub también mande una
+// señal de frescura real a Google en vez de quedarse sin ninguna.
+const modifiedTime = [...preciosPosts, ...entrenaPosts, ...pruebaGratisPosts, ...codigosDescuentoPosts].reduce(
+  (max, p) => {
+    const fecha = p.data.updatedDate ?? p.data.pubDate;
+    return !max || fecha > max ? fecha : max;
+  },
+  undefined as Date | undefined
+);
 
 const cards = [
   {
@@ -40,6 +55,7 @@ const cards = [
 <Layout
   title="IA sin letra chiquita"
   description="Lo que las herramientas de IA no ponen en el primer párrafo: cuánto cuestan de verdad en México, si entrenan su IA con tus datos y si piden tarjeta para probarlas."
+  modifiedTime={modifiedTime}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
   <Breadcrumbs items={[{ name: 'IA sin letra chiquita' }]} />

@@ -212,6 +212,13 @@ export default defineConfig({
         if (pathname === '/codigos-descuento-ia/') return conFecha(fechaCodigosDescuento);
         if (pathname === '/prueba-gratis-sin-tarjeta/') return conFecha(fechaPruebaGratis);
         if (pathname === '/quien-entrena-con-tus-datos/') return conFecha(fechaEntrenaIA);
+        // El hub en sí (/ia-sin-letra-chiquita/) nunca tuvo lastmod propio —
+        // se le había puesto a sus 4 series hijas pero no al índice que las
+        // enlaza. Usa la más reciente de las 4.
+        if (pathname === '/ia-sin-letra-chiquita/') {
+          const fechas = [fechaTipoCambio, fechaEntrenaIA, fechaPruebaGratis, fechaCodigosDescuento].filter(Boolean);
+          return conFecha(fechas.length ? new Date(Math.max(...fechas.map((f) => f.getTime()))) : undefined);
+        }
         if (pathname === '/archivo/') return conFecha(fechaMaxPosts);
         if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
