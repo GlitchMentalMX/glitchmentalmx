@@ -59,6 +59,10 @@ for (const archivo of readdirSync(postsDir)) {
 // Mismo mapeo nombre→slug que src/data/categories.ts, duplicado aquí por la
 // misma razón que MESES_ES: este archivo corre en Node plano, sin el
 // pipeline de Astro/TS que permite importar ese módulo directamente.
+// ADVERTENCIA: si se agrega, quita o renombra una categoría en
+// src/data/categories.ts, esta copia hay que actualizarla a mano también
+// — si no, el sitemap sigue generando lastmod con datos viejos para esa
+// categoría, sin lanzar ningún error.
 const SLUG_POR_CATEGORIA = {
   'Inteligencia Artificial': 'inteligencia-artificial',
   'Cultura Digital': 'cultura-digital',
@@ -159,6 +163,10 @@ for (const archivo of readdirSync(collectionsDir)) {
 // frescura real; mismo parseo que src/lib/format.ts (parseMesEs), duplicado
 // aquí a propósito porque este archivo corre en Node plano, fuera del
 // pipeline de Astro/TS.
+// ADVERTENCIA: si cambia el array MONTHS_ES de src/lib/format.ts, esta
+// copia hay que actualizarla a mano también — si no, el parseo de `mes`
+// falla en silencio y el sitemap deja de generar lastmod para el Índice
+// sin lanzar ningún error.
 const MESES_ES = [
   'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
   'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre',

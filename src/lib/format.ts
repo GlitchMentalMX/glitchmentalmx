@@ -1,3 +1,8 @@
+// Duplicado como MESES_ES en astro.config.mjs — ese archivo corre en Node
+// plano para calcular el lastmod del sitemap y no puede importar este
+// módulo (fuera del pipeline de Astro/TS). Si cambias este array, cambia
+// también la copia en astro.config.mjs o el sitemap generará lastmod con
+// datos viejos sin lanzar ningún error.
 const MONTHS_ES = [
   'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
   'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre',
