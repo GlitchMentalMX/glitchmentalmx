@@ -1,7 +1,7 @@
 ---
 title: 'La voz no compitió con la IA: se la apropiaron'
 category: Cultura Digital
-pubDate: 2026-09-03T06:32
+pubDate: 2026-09-03T06:35
 updatedDate: ''
 description: Un actor japonés litiga por su voz, un sindicato en EE.UU. ya la blindó por contrato y México legisló, pero tarde. Tres respuestas al mismo despojo.
 heroImage: /images/uploads/clonación-de-voz-ia.webp
