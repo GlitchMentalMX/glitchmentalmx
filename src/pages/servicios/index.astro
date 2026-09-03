@@ -1,0 +1,99 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+
+const cards = [
+  {
+    eyebrow: 'Redacción editorial',
+    title: 'Servicios Editoriales',
+    dek: 'La operación completa de una sala de redacción digital. Sin el equipo.',
+    href: '/servicios-editoriales-glitchmentalmx/',
+    altLang: { href: '/editorial-services-glitchmentalmx/', label: 'Read this in English →' },
+  },
+  {
+    eyebrow: 'Alcance',
+    title: 'Publicidad',
+    dek: 'Tu marca frente a una audiencia que sí le importa la tecnología.',
+    href: '/publicidad-en-glitchmentalmx/',
+  },
+  {
+    eyebrow: 'Colaboraciones editoriales',
+    title: 'Colabora',
+    dek: 'Publicamos colaboraciones seleccionadas que encajan con nuestra línea y aportan valor real — no publicidad disfrazada.',
+    href: '/colabora/',
+  },
+  {
+    eyebrow: 'Conexión directa',
+    title: 'Contacto',
+    dek: 'Escríbenos: ideas, preguntas o caos bien intencionado.',
+    href: '/contacto/',
+  },
+];
+---
+
+<Layout
+  title="Servicios"
+  description="Redacción editorial completa, publicidad integrada, colaboraciones seleccionadas o contacto directo — las formas de trabajar con glitchMentalMX."
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <Breadcrumbs items={[{ name: 'Servicios' }]} />
+  <section class="container header">
+    <p class="eyebrow">Servicios</p>
+    <h1>Cuatro formas de <span class="accent">trabajar con nosotros</span></h1>
+    <p class="sub">Redacción editorial completa, publicidad integrada, una colaboración puntual o un mensaje directo. Elige la que corresponda.</p>
+  </section>
+
+  <section class="container grid">
+    {cards.map((c) => (
+      <div class="card">
+        <p class="eyebrow">{c.eyebrow}</p>
+        <h2><a href={c.href}>{c.title}</a></h2>
+        <p class="dek">{c.dek}</p>
+        {c.altLang && <a class="alt-lang" href={c.altLang.href}>{c.altLang.label}</a>}
+      </div>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 40px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
+  .sub { color: var(--text-muted); font-size: 1.05rem; }
+
+  .grid {
+    padding: 0 24px 72px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+  .card {
+    position: relative;
+    padding: 30px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    color: var(--text);
+  }
+  .card:hover { outline: 1.5px solid var(--accent); }
+  .card h2 { font-size: 1.5rem; margin: 10px 0 12px; }
+  .card h2 a { color: inherit; text-decoration: none; }
+  /* Cada card entero es el área de click (patrón "stretched link"): el ::after
+     del <a> del título se estira sobre todo el .card, así que no hace falta
+     envolver el card completo en una etiqueta <a> — lo que sí haría falta
+     aquí, porque el card de Servicios Editoriales necesita un segundo enlace
+     independiente (la versión en inglés) que un <a> envolvente no permitiría
+     anidar. */
+  .card h2 a::after { content: ''; position: absolute; inset: 0; }
+  .card .dek { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+  .alt-lang {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: var(--accent);
+  }
+
+  @media (max-width: 700px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
