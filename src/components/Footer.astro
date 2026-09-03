@@ -70,7 +70,10 @@ const columns = [
     </div>
 
     <div class="footer-preferred-source" data-placement="footer">
-      <p>Si nos lees seguido, puedes marcarnos como fuente preferida en Google.</p>
+      <div class="text">
+        <p>¿Quieres ver más glitchMentalMX en Google?</p>
+        <p>Márcanos como fuente preferida y aparecerá más cerca de tus búsquedas.</p>
+      </div>
       <PreferredSourceButton variant="compact" />
     </div>
 
@@ -132,7 +135,8 @@ const columns = [
     font-size: 0.85rem;
     color: var(--text-muted);
   }
-  .footer-preferred-source p { margin: 0; }
+  .footer-preferred-source .text p { margin: 0; }
+  .footer-preferred-source .text p:first-child { margin-bottom: 2px; }
 
   .grid {
     display: grid;

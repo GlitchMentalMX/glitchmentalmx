@@ -473,7 +473,10 @@ const otrosPreciosDigitales =
     </div>
 
     <div class="preferred-source container" data-placement="article-end">
-      <p>¿Te sirvió esto? Márcanos como fuente preferida en Google y no te lo pierdas la próxima vez.</p>
+      <div class="text">
+        <p>¿Quieres ver más glitchMentalMX en Google?</p>
+        <p>Márcanos como fuente preferida y aparecerá más cerca de tus búsquedas.</p>
+      </div>
       <PreferredSourceButton variant="compact" />
     </div>
   </article>
@@ -672,7 +675,8 @@ const otrosPreciosDigitales =
     font-size: 0.88rem;
     color: var(--text-muted);
   }
-  .preferred-source p { margin: 0; }
+  .preferred-source .text p { margin: 0; }
+  .preferred-source .text p:first-child { margin-bottom: 2px; }
 
   .related {
     padding: 64px 24px 40px;
