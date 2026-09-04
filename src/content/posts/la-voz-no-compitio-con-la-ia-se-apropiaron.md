@@ -2,7 +2,7 @@
 title: 'La voz no compitió con la IA: se la apropiaron'
 category: Cultura Digital
 pubDate: 2026-09-03T06:35
-updatedDate: ''
+updatedDate: 2026-09-03T21:33
 description: Un actor japonés litiga por su voz, un sindicato en EE.UU. ya la blindó por contrato y México legisló, pero tarde. Tres respuestas al mismo despojo.
 heroImage: /images/uploads/clonación-de-voz-ia.webp
 heroImageAlt: 'clonación de voz IA: actriz frente a micrófono mientras un sistema desvía su voz para reutilizarla.'
@@ -25,7 +25,7 @@ Mientras tanto, en Los Ángeles, [el sindicato que ya convirtió el consentimien
 
 ## El mercado que dobla toda la región
 
-La apropiación de una voz no es un riesgo abstracto: [ya está vaciando cuentas bancarias en México y otros mercados](https://glitchmental.com/articulos/tu-voz-ya-no-es-tuya-biometria-banca-rota/) mediante fraudes que usan clones vocales para pasar controles de identidad. Y la tecnología para producir esos clones ya no requiere un estudio profesional: modelos abiertos como [Voxtral TTS de Mistral clonan cualquier voz con apenas unos segundos de audio](https://glitchmental.com/articulos/mistral-lanza-voxtral-tts-voz-open-source-que-clona-voces/), sin costo de licencia. México no es un país más en este mapa. Según el factsheet oficial del **Consejo de Empresas Mexicanas de la Industria del Doblaje (CEMID)**, la industria mexicana del doblaje vale cerca de 66 millones de dólares, emplea a 1,500 actores en 35 estudios, y controla el 60% del mercado de doblaje al español en toda América Latina. El 80% de las películas extranjeras que se exhiben en México se doblan en estudios nacionales. Es, literalmente, el audio que consume la mayoría de la región hispanohablante — y por eso lo que le pase a la voz mexicana no se queda en México.
+La apropiación de una voz no es un riesgo abstracto: [ya está vaciando cuentas bancarias en México y otros mercados](https://glitchmental.com/articulos/tu-voz-ya-no-es-tuya-biometria-banca-rota/) mediante fraudes que usan clones vocales para pasar controles de identidad. Y la tecnología para producir esos clones ya no requiere un estudio profesional: modelos abiertos como [Voxtral TTS de Mistral clonan cualquier voz con apenas unos segundos de audio](https://glitchmental.com/articulos/mistral-lanza-voxtral-tts-voz-open-source-que-clona-voces/), sin costo de licencia. México no es un país más en este mapa. Según el factsheet oficial del **Consejo de Empresas Mexicanas de la Industria del Doblaje (CEMID)**, la industria mexicana del doblaje vale cerca de 66 millones de dólares, emplea a 1,500 actores en 35 estudios,\* y controla el 60% del mercado de doblaje al español en toda América Latina. El 80% de las películas extranjeras que se exhiben en México se doblan en estudios nacionales. Es, literalmente, el audio que consume la mayoría de la región hispanohablante — y por eso lo que le pase a la voz mexicana no se queda en México.
 
 ![clonación de voz IA: una forma de onda es desviada desde un micrófono hacia un sistema.](/images/uploads/clonaci%C3%B3n-de-voz-ia-sec.webp)
 
@@ -52,3 +52,5 @@ Esa reforma no llegó sola. Más de 128 asociaciones, entre ellas la **Asociaci�
 El contraste con SAG-AFTRA no es una receta que México debiera copiar — **son resultados distintos frente al mismo mecanismo**. El sindicato estadounidense blindó por contrato antes de que el problema escalara en su sector. México legisló casi un año después de que la industria ya llevara meses anunciando el uso de IA en doblaje, y después de un caso —el de Lavat— que ninguna ley habría evitado por sí sola. La reforma existe. Lo que todavía no existe, públicamente, es **evidencia de que las empresas que ya clonan voces en México la estén cumpliendo**.
 
 **¿Qué vale más**: una ley que llega después de que la voz ya fue clonada, o un contrato que la protege antes de que alguien lo intente?
+
+<small><em>\*Las cifras sobre el número de profesionales del doblaje varían según la fuente. El CEMID reporta más de 1,500 actores, mientras que la ANDA calcula 1,800 actores y actrices de doblaje en México.</em></small>
