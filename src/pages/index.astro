@@ -219,7 +219,7 @@ const signalPools = {
 >
   <section class="hero container">
     <p class="eyebrow">Publicación independiente · IA, tecnología y cultura digital</p>
-    <h1>Entender la tecnología <span class="accent hero-decode" data-text="que nos está reescribiendo.">que nos está reescribiendo.</span></h1>
+    <h1>Entender la tecnología <span class="accent">que nos está reescribiendo.</span></h1>
     <p class="hero-dek">
       Análisis crítico, sin hype ni relaciones públicas disfrazadas de periodismo.
       Escrito para gente que quiere entender qué está pasando de verdad.
@@ -1002,31 +1002,14 @@ const signalPools = {
   // Hero — mismo efecto de decodificación, pero disparado una sola vez al
   // cargar la página, no por IntersectionObserver: al estar pegado arriba,
   // re-disparar cada vez que el usuario sube el scroll se sentiría repetitivo.
-  // El h1 se congela a una altura FIJA (no mínima) con overflow oculto
-  // mientras corre: en pantallas angostas, un carácter individual sustituido
-  // puede seguir siendo un poco más ancho que la letra real y correr el
-  // punto de salto de línea a una tercera línea a mitad de animación — con
-  // min-height eso todavía empujaba el contenido de abajo. Con altura fija,
-  // esa tercera línea (si aparece) queda invisible un instante en vez de
-  // mover algo; se libera al terminar.
-  const heroTarget = document.querySelector<HTMLElement>('.hero-decode');
-  if (!reduceMotion && heroTarget) {
-    const heroHeading = heroTarget.closest('h1');
-    const heroScrambler = new TextScramble(heroTarget);
-    const heroText = heroTarget.dataset.text || heroTarget.textContent || '';
-    setTimeout(() => {
-      if (heroHeading) {
-        heroHeading.style.height = heroHeading.getBoundingClientRect().height + 'px';
-        heroHeading.style.overflow = 'hidden';
-      }
-      heroScrambler.setText(heroText).then(() => {
-        if (heroHeading) {
-          heroHeading.style.height = '';
-          heroHeading.style.overflow = '';
-        }
-      });
-    }, 200);
-  }
+  // El scramble del H1 del hero se quitó a propósito (ver PageSpeed: era la
+  // causa más probable del Cambios de Diseño Acumulados en escritorio — el
+  // set de caracteres de reemplazo incluye símbolos más anchos que letras
+  // normales, y en el título más grande y más arriba de la página eso podía
+  // empujar una palabra a otra línea a mitad de animación). El intento
+  // anterior de congelar la altura del H1 mientras corría no bastó. Se
+  // queda el efecto en las cards de Recursos (.scramble) — texto más chico,
+  // más abajo, mucho menor riesgo.
 
   // Señal en vivo — un solo dato a la vez, nunca un carrusel. Qué item le
   // toca a cada categoría se fija por ventana de 12h (mismo cálculo para
