@@ -68,7 +68,7 @@ const duracionSegundos = items.length * 4.5;
           {[0, 1].map((copy) => (
             <span class="ticker-copy" aria-hidden={copy === 1 ? 'true' : undefined}>
               {items.map((item) => (
-                <a href={item.href} class="ticker-item">
+                <a href={item.href} class="ticker-item" tabindex={copy === 1 ? -1 : undefined}>
                   <span class="ticker-name">{item.herramienta}</span>
                   <span class="ticker-price">{item.label}{!item.esGratis && <sub class="ticker-currency">MXN</sub>}</span>
                 </a>

@@ -10,7 +10,9 @@ export const getStaticPaths = (() => {
 const { book } = Astro.props as { book: Book };
 
 const pageURL = new URL(`/novelas/${book.id}/`, Astro.site).toString();
-const pageTitle = `${book.title} — ${book.genre} de Jorge A. Diaz Elizondo`;
+// Sin género ni "de" — formato Título — Autor, igual que Amazon/Goodreads,
+// y así el nombre completo del autor nunca se corta ni se abrevia.
+const pageTitle = `${book.title} — Jorge A. Diaz Elizondo`;
 
 const bookSchema = {
   '@context': 'https://schema.org',
