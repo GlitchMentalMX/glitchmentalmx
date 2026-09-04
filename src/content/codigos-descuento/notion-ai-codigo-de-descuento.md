@@ -1,6 +1,6 @@
 ---
 title: "¿Notion AI tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en la página oficial de precios de Notion si existe un código de descuento real, y cuál es el plan educativo que sí regala Notion Plus y reduce el add-on de IA a la mitad."
+description: "Verificamos en precios de Notion si existe un código real, y cuál es el plan educativo que regala Notion Plus y reduce el add-on de IA a la mitad."
 herramienta: "Notion AI"
 herramientaId: "notion-ai"
 empresa: "Notion"

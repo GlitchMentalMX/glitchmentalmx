@@ -1,6 +1,6 @@
 ---
 title: "¿Meta AI (la app) entrena su IA con lo que le escribo?"
-description: "Meta AI como app independiente entrena con cada conversación que tienes con ella. Fuera de la UE, Reino Unido y un puñado de países, no hay forma de objetar."
+description: "Meta AI como app independiente entrena con cada conversación que tienes. Fuera de la UE, Reino Unido y un puñado de países, no hay forma de objetar."
 herramienta: "Meta AI"
 herramientaId: "meta-ai-app"
 empresa: "Meta"

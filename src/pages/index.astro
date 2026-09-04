@@ -13,11 +13,16 @@ const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
 // colecciones (ChatGPT, Claude, Grammarly, etc.) y no hay una forma barata
 // de deduplicar sin una tabla de equivalencias manual entre herramientaId
 // de precios-ia y entrenaIA que habría que mantener a mano.
-const preciosCount = (await getCollection('preciosIA', ({ data }) => !data.draft)).length;
-const entrenaCount = (await getCollection('entrenaIA', ({ data }) => !data.draft)).length;
-const pruebaGratisCount = (await getCollection('pruebaGratis', ({ data }) => !data.draft)).length;
-const codigosDescuentoCount = (await getCollection('codigosDescuento', ({ data }) => !data.draft)).length;
-const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
+const preciosIAPosts = await getCollection('preciosIA', ({ data }) => !data.draft);
+const entrenaIAPosts = await getCollection('entrenaIA', ({ data }) => !data.draft);
+const pruebaGratisPosts = await getCollection('pruebaGratis', ({ data }) => !data.draft);
+const codigosDescuentoPosts = await getCollection('codigosDescuento', ({ data }) => !data.draft);
+const preciosDigitalesPosts = await getCollection('preciosDigitales', ({ data }) => !data.draft);
+const preciosCount = preciosIAPosts.length;
+const entrenaCount = entrenaIAPosts.length;
+const pruebaGratisCount = pruebaGratisPosts.length;
+const codigosDescuentoCount = codigosDescuentoPosts.length;
+const preciosDigitalesCount = preciosDigitalesPosts.length;
 
 const [featured] = allPosts;
 const recentThree = allPosts.slice(1, 4);
@@ -137,9 +142,32 @@ function truncate(text: string, max = 90): string {
   return `${cut.slice(0, lastSpace > 40 ? lastSpace : max)}…`;
 }
 
+// Las 220+ fichas de "IA sin letra chiquita" (las 4 series) y las 30 de
+// Precios Digitales no tenían NINGÚN lugar en el home más allá de una card
+// fija de "Recursos" — a diferencia de los posts, nunca rotaban en Señal en
+// vivo. Se capan a 40/20 (recientes primero) para no inflar el HTML del
+// home con cientos de items que además se actualizan solo cuando se publica
+// contenido nuevo.
+const iaSinLetraChiquitaPool = [...preciosIAPosts, ...entrenaIAPosts, ...pruebaGratisPosts, ...codigosDescuentoPosts]
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 40);
+const preciosDigitalesPool = [...preciosDigitalesPosts]
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 20);
+
 const signalPools = {
   destacado: discoverPool.map((p) => ({
     tag: 'Artículo',
+    text: p.data.title,
+    href: `/articulos/${p.id}/`,
+  })),
+  iaSinLetraChiquita: iaSinLetraChiquitaPool.map((p) => ({
+    tag: 'IA sin letra chiquita',
+    text: p.data.title,
+    href: `/articulos/${p.id}/`,
+  })),
+  preciosDigitales: preciosDigitalesPool.map((p) => ({
+    tag: 'Precios Digitales',
     text: p.data.title,
     href: `/articulos/${p.id}/`,
   })),
@@ -1025,8 +1053,10 @@ const signalPools = {
       'indiceSube',
       'serie',
       'herramienta',
+      'iaSinLetraChiquita',
       'indiceBaja',
       'coleccion',
+      'preciosDigitales',
       'datoIncomodo',
       'novela',
     ];

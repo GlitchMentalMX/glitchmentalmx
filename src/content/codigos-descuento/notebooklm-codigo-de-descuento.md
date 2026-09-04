@@ -1,6 +1,6 @@
 ---
 title: "¿NotebookLM tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos si existe un código de descuento real para NotebookLM, y por qué el único descuento oficial es un año gratis de Google AI para estudiantes verificados."
+description: "Verificamos si existe un código real para NotebookLM, y por qué el único descuento oficial es un año gratis de Google AI para estudiantes verificados."
 herramienta: "NotebookLM"
 herramientaId: "notebooklm"
 empresa: "Google"

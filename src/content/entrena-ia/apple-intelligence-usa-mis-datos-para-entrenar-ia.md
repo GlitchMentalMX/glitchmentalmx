@@ -1,6 +1,6 @@
 ---
 title: "¿Apple Intelligence usa mis datos personales para entrenar su IA?"
-description: "Apple dice que nunca usa tus datos privados ni tus interacciones para entrenar sus modelos de IA. Lo que sí usa es información sintética, con licencia o pública."
+description: "Apple dice que nunca usa tus datos privados ni interacciones para entrenar su IA. Sí usa información sintética, con licencia o pública."
 herramienta: "Apple Intelligence"
 herramientaId: "apple-intelligence"
 empresa: "Apple"

@@ -1,6 +1,6 @@
 ---
 title: "¿Perplexity entrena su IA con lo que le busco?"
-description: "En julio de 2026, Perplexity quitó de su política la promesa de dejarte optar por no participar en el entrenamiento. El control técnico puede seguir ahí — la garantía, no."
+description: "En julio 2026, Perplexity quitó de su política la promesa de optar por no participar en el entrenamiento. El control técnico sigue — la garantía, no."
 herramienta: "Perplexity"
 herramientaId: "perplexity"
 empresa: "Perplexity AI"

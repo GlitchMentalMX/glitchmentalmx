@@ -1,6 +1,6 @@
 ---
 title: "¿Threads usa mis publicaciones para entrenar la IA de Meta?"
-description: "Threads corre bajo la misma política de IA generativa que Facebook e Instagram. Entrena con tus posts públicos — y fuera de la UE, no hay botón para negarte."
+description: "Threads corre bajo la misma política de IA que Facebook e Instagram. Entrena con tus posts públicos — fuera de la UE, no hay botón para negarte."
 herramienta: "Threads"
 herramientaId: "threads"
 empresa: "Meta"

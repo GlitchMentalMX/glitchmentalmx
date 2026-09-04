@@ -1,6 +1,6 @@
 ---
 title: "¿Pinterest usa mis pines y fotos para entrenar su IA?"
-description: "Pinterest cambió sus términos para poder entrenar IA con tus pines, sin importar cuándo los subiste. El interruptor para salir existe, pero viene encendido."
+description: "Pinterest cambió sus términos para entrenar IA con tus pines, sin importar cuándo los subiste. El interruptor para salir existe, pero viene encendido."
 herramienta: "Pinterest"
 herramientaId: "pinterest"
 empresa: "Pinterest"

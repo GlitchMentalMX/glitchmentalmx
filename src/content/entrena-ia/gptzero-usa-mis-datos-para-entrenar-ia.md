@@ -1,6 +1,6 @@
 ---
 title: "¿GPTZero entrena su IA con los textos que le subo?"
-description: "Los documentos que analizas en el dashboard gratuito de GPTZero sí se usan, agregados, para mejorar su detector. Vía API, la promesa es distinta: no se guardan."
+description: "Los documentos que analizas en el dashboard gratuito de GPTZero sí se usan, agregados, para mejorar su detector. Vía API no se guardan."
 herramienta: "GPTZero"
 herramientaId: "gptzero"
 empresa: "GPTZero"

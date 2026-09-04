@@ -1,6 +1,6 @@
 ---
 title: "¿Fireflies.ai tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en fireflies.ai/pricing si existe algún código de descuento real para Fireflies.ai, y cuál es el descuento oficial para estudiantes y sin fines de lucro."
+description: "Verificamos en fireflies.ai/pricing si hay un código real para Fireflies.ai, y cuál es el descuento oficial para estudiantes y sin fines de lucro."
 herramienta: "Fireflies.ai"
 herramientaId: "fireflies-ai"
 empresa: "Fireflies.ai, Inc."

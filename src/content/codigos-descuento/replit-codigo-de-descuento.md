@@ -1,6 +1,6 @@
 ---
 title: "¿Replit tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en replit.com/pricing y en el changelog oficial de Replit si existe un código de descuento real, y cuál es el descuento oficial que sí aplica hoy."
+description: "Verificamos en replit.com/pricing y el changelog oficial si existe un código real de Replit, y cuál es el descuento oficial que sí aplica hoy."
 herramienta: "Replit"
 herramientaId: "replit"
 empresa: "Replit"

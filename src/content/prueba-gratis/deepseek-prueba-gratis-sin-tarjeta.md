@@ -1,6 +1,6 @@
 ---
 title: "¿DeepSeek tiene prueba gratis sin tarjeta de crédito?"
-description: "Aclaramos por qué DeepSeek no encaja como 'prueba gratis': su chat es gratuito para siempre, sin tarjeta y sin fecha de corte, verificado en su sitio oficial."
+description: "Aclaramos por qué DeepSeek no encaja como 'prueba gratis': su chat es gratuito para siempre, sin tarjeta ni fecha de corte, verificado en su sitio oficial."
 herramienta: "DeepSeek"
 herramientaId: "deepseek"
 empresa: "DeepSeek"

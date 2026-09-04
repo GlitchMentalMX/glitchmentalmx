@@ -1,6 +1,6 @@
 ---
 title: "¿Kimi entrena su IA con mis conversaciones?"
-description: "Kimi (Moonshot AI) entrena con tus prompts, archivos y contenido generado por default. No hay un interruptor en la app — solo un derecho legal limitado a ciertas regiones."
+description: "Kimi (Moonshot AI) entrena con tus prompts y contenido generado por default. No hay interruptor en la app — solo un derecho legal en ciertas regiones."
 herramienta: "Kimi"
 herramientaId: "kimi"
 empresa: "Moonshot AI"

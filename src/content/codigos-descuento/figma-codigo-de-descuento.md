@@ -1,6 +1,6 @@
 ---
 title: "¿Figma tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en figma.com/pricing si existe un código de descuento real para Figma, y cuál es el programa oficial que sí regala el plan completo a estudiantes y maestros."
+description: "Verificamos en figma.com/pricing si existe un código real para Figma, y cuál es el programa oficial que regala el plan completo a estudiantes y maestros."
 herramienta: "Figma"
 herramientaId: "figma"
 empresa: "Figma, Inc."

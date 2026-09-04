@@ -1,6 +1,6 @@
 ---
 title: "¿DeepSeek tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos por qué no existe ningún canal oficial de descuento para DeepSeek: el chat es gratis y la API se cobra por token, sin plan de suscripción que descontar."
+description: "Verificamos por qué no hay canal oficial de descuento para DeepSeek: el chat es gratis y la API se cobra por token, sin plan que descontar."
 herramienta: "DeepSeek"
 herramientaId: "deepseek"
 empresa: "DeepSeek"

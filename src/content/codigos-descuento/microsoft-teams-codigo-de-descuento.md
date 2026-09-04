@@ -1,6 +1,6 @@
 ---
 title: "¿Microsoft Teams tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en los sitios oficiales de Microsoft si existe un código de descuento real para Teams, y cuáles son los canales oficiales de instituciones educativas y ONGs que sí existen."
+description: "Verificamos en Microsoft si existe un código real para Teams, y cuáles son los canales oficiales para instituciones educativas y ONGs que sí existen."
 herramienta: "Microsoft Teams"
 herramientaId: "microsoft-teams"
 empresa: "Microsoft"

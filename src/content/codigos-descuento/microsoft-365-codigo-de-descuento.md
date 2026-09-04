@@ -1,6 +1,6 @@
 ---
 title: "¿Microsoft 365 tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en microsoft.com si existe un código de descuento real para Microsoft 365, y por qué el descuento de estudiante de 50% sí es oficial y verificable."
+description: "Verificamos en microsoft.com si existe un código real para Microsoft 365, y por qué el descuento de estudiante de 50% sí es oficial y verificable."
 herramienta: "Microsoft 365"
 herramientaId: "microsoft-365"
 empresa: "Microsoft"

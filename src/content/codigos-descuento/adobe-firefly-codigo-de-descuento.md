@@ -1,6 +1,6 @@
 ---
 title: "¿Adobe Firefly tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en firefly.adobe.com y en las páginas oficiales de Adobe si existe un código de descuento real para Firefly, y cuál es el único canal de ahorro que sí es legítimo."
+description: "Verificamos en firefly.adobe.com si existe un código real para Firefly, y cuál es el único canal de ahorro que sí es legítimo."
 herramienta: "Adobe Firefly"
 herramientaId: "adobe-firefly"
 empresa: "Adobe"

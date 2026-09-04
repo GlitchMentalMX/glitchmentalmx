@@ -112,20 +112,31 @@ try {
 
 // Familia "IA sin letra chiquita" (Códigos de Descuento, Prueba Gratis,
 // Quién Entrena con tus Datos) — cada índice usa la fecha más reciente entre
-// sus propias fichas, mismo criterio que ya usa /articulos/.
+// sus propias fichas, mismo criterio que ya usa /articulos/. También arma un
+// mapa slug→fecha por ficha individual: hasta ahora solo el índice de cada
+// serie mandaba lastmod, las 296 fichas individuales de estas 3 colecciones
+// no mandaban ninguno (a diferencia de precios-ia/precios-digitales, que sí
+// lo tenían ficha por ficha) — bug real, se corrige aquí.
 function fechaMaxDeColeccion(dirRelativo) {
   const dir = new URL(dirRelativo, import.meta.url);
+  const porSlug = new Map();
   let max;
   for (const archivo of readdirSync(dir)) {
     if (!archivo.endsWith('.md')) continue;
     const fecha = leerFechaFrontmatter(new URL(archivo, dir));
-    if (fecha && (!max || fecha > max)) max = fecha;
+    if (fecha) {
+      porSlug.set(archivo.replace(/\.md$/, ''), fecha);
+      if (!max || fecha > max) max = fecha;
+    }
   }
-  return max;
+  return { max, porSlug };
 }
-const fechaCodigosDescuento = fechaMaxDeColeccion('./src/content/codigos-descuento/');
-const fechaPruebaGratis = fechaMaxDeColeccion('./src/content/prueba-gratis/');
-const fechaEntrenaIA = fechaMaxDeColeccion('./src/content/entrena-ia/');
+const codigosDescuentoInfo = fechaMaxDeColeccion('./src/content/codigos-descuento/');
+const pruebaGratisInfo = fechaMaxDeColeccion('./src/content/prueba-gratis/');
+const entrenaIAInfo = fechaMaxDeColeccion('./src/content/entrena-ia/');
+const fechaCodigosDescuento = codigosDescuentoInfo.max;
+const fechaPruebaGratis = pruebaGratisInfo.max;
+const fechaEntrenaIA = entrenaIAInfo.max;
 
 // Dato Incómodo e Insights Visuales — mismo criterio, pero con el campo
 // `date` en vez de pubDate/updatedDate.
@@ -205,7 +216,12 @@ export default defineConfig({
           if ((slugsPreciosIA.has(slug) || slugsPreciosDigitales.has(slug)) && fechaTipoCambio) {
             return conFecha(fechaTipoCambio);
           }
-          return conFecha(fechaPorSlugPost.get(slug));
+          return conFecha(
+            fechaPorSlugPost.get(slug)
+              ?? entrenaIAInfo.porSlug.get(slug)
+              ?? pruebaGratisInfo.porSlug.get(slug)
+              ?? codigosDescuentoInfo.porSlug.get(slug)
+          );
         }
 
         if (pathname === '/indice-glitchmentalmx/') return conFecha(fechaIndice);

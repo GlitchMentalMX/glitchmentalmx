@@ -1,6 +1,6 @@
 ---
 title: "¿Amazon Prime tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el sitio y el Centro de Ayuda oficial de Amazon si existe un código de descuento real para Prime, y cuáles son los dos programas oficiales que sí bajan el precio a la mitad."
+description: "Verificamos en Amazon si existe un código real para Prime, y cuáles son los dos programas oficiales que sí bajan el precio a la mitad."
 herramienta: "Amazon Prime"
 herramientaId: "amazon-prime"
 empresa: "Amazon"

@@ -1,6 +1,6 @@
 ---
 title: "¿Meta AI tiene prueba gratis sin tarjeta de crédito?"
-description: "Aclaramos por qué Meta AI no encaja como 'prueba gratis' en México: es gratuito para casi todos, sin tarjeta y sin fecha de corte, verificado en su sitio oficial."
+description: "Aclaramos por qué Meta AI no encaja como 'prueba gratis' en México: es gratis para casi todos, sin tarjeta ni fecha de corte, según su sitio oficial."
 herramienta: "Meta AI"
 herramientaId: "meta-ai"
 empresa: "Meta"

@@ -1,6 +1,6 @@
 ---
 title: "¿Kling AI tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el programa oficial de referidos de Kling AI si existe un código de descuento real, y por qué los 'códigos promocionales' que circulan en internet son en realidad códigos de referido de otros usuarios."
+description: "Verificamos en el programa oficial de referidos de Kling AI, y por qué los 'códigos promocionales' que circulan son en realidad códigos de referido ajenos."
 herramienta: "Kling AI"
 herramientaId: "kling-ai"
 empresa: "Kuaishou"

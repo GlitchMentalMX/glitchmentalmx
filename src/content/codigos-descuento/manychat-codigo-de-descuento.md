@@ -1,6 +1,6 @@
 ---
 title: "¿ManyChat tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos si existe un código de descuento real para ManyChat, y por qué el único ahorro oficial confirmado es el pago anual, no un cupón ni un programa para ONGs."
+description: "Verificamos si existe un código real para ManyChat, y por qué el único ahorro oficial confirmado es el pago anual, no un cupón ni un programa para ONGs."
 herramienta: "ManyChat"
 herramientaId: "manychat"
 empresa: "Manychat, Inc."

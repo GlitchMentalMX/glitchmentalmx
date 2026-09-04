@@ -1,6 +1,6 @@
 ---
 title: "¿Perplexity tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el centro de ayuda oficial de Perplexity si existe un código de descuento real para Perplexity Pro, y cuál es el plan educativo que sí reduce el precio a la mitad."
+description: "Verificamos en el centro de ayuda de Perplexity si existe un código real para Pro, y cuál es el plan educativo que sí reduce el precio a la mitad."
 herramienta: "Perplexity"
 herramientaId: "perplexity"
 empresa: "Perplexity AI"

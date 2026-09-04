@@ -1,6 +1,6 @@
 ---
 title: "¿Le Chat tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el centro de ayuda oficial de Mistral AI si existe un código de descuento real para Le Chat, y cuál es el plan Educación que sí ofrece un ahorro real."
+description: "Verificamos en el centro de ayuda de Mistral AI si existe un código real para Le Chat, y cuál es el plan Educación que sí ofrece ahorro real."
 herramienta: "Le Chat"
 herramientaId: "le-chat"
 empresa: "Mistral AI"

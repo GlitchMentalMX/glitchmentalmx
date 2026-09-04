@@ -1,6 +1,6 @@
 ---
 title: "¿Codex tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el centro de ayuda oficial de OpenAI si existe un código de descuento real para Codex, y cuál es el programa que sí da créditos gratis a estudiantes."
+description: "Verificamos en el centro de ayuda de OpenAI si existe un código real para Codex, y cuál es el programa que sí da créditos gratis a estudiantes."
 herramienta: "Codex"
 herramientaId: "codex"
 empresa: "OpenAI"

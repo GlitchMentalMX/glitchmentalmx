@@ -1,6 +1,6 @@
 ---
 title: "¿Adobe Podcast entrena su IA con mi audio?"
-description: "Adobe dice explícitamente que no entrena modelos generativos con tu contenido. Pero el 'análisis de contenido para mejora de producto' sí viene activado por default."
+description: "Adobe no entrena modelos generativos con tu contenido. Pero el 'análisis de contenido para mejora de producto' sí viene activado por default."
 herramienta: "Adobe Podcast"
 herramientaId: "adobe-podcast"
 empresa: "Adobe"

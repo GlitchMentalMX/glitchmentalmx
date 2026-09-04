@@ -1,6 +1,6 @@
 ---
 title: "¿Photomath usa mis fotos para entrenar su IA?"
-description: "Photomath (propiedad de Google) usa las fotos de tus problemas de matemáticas para mejorar su tecnología de visión artificial. No hay opción para excluirte de eso."
+description: "Photomath (de Google) usa las fotos de tus problemas de matemáticas para mejorar su visión artificial. No hay opción para excluirte de eso."
 herramienta: "Photomath"
 herramientaId: "photomath"
 empresa: "Photomath / Google"

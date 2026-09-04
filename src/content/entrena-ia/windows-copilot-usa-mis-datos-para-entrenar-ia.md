@@ -1,6 +1,6 @@
 ---
 title: "¿Windows usa lo que hago en mi compu para entrenar su IA?"
-description: "Copilot en Windows entrena con tus conversaciones por default. Recall, la función que fotografía tu pantalla, aprendió de su propio escándalo y ahora es opcional."
+description: "Copilot en Windows entrena con tus conversaciones por default. Recall, que fotografía tu pantalla, aprendió de su propio escándalo y ahora es opcional."
 herramienta: "Windows (Copilot)"
 herramientaId: "windows-copilot"
 empresa: "Microsoft"

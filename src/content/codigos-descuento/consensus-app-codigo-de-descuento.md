@@ -1,6 +1,6 @@
 ---
 title: "¿Consensus tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en consensus.app si existe un código de descuento real para Consensus, y por qué el descuento oficial de 40% para estudiantes y profesores sí es verificable."
+description: "Verificamos en consensus.app si existe un código real para Consensus, y por qué el 40% de descuento para estudiantes y profesores sí es verificable."
 herramienta: "Consensus"
 herramientaId: "consensus-app"
 empresa: "Consensus NLP"

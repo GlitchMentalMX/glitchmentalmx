@@ -1,6 +1,6 @@
 ---
 title: "¿Claude Code tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en claude.com/pricing si existe un código de descuento real para Claude Code, y por qué su único ahorro oficial es el mismo descuento anual de Claude Pro y Max."
+description: "Verificamos en claude.com/pricing si existe un código real para Claude Code, y por qué su único ahorro oficial es el descuento anual de Pro y Max."
 herramienta: "Claude Code"
 herramientaId: "claude-code"
 empresa: "Anthropic"

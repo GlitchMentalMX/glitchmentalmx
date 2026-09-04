@@ -1,6 +1,6 @@
 ---
 title: "¿Higgsfield entrena su IA con mis videos e imágenes?"
-description: "Higgsfield entrena con tu contenido mientras tengas cuenta activa. La única forma de detenerlo es borrar tu contenido o tu cuenta — no hay un interruptor aparte."
+description: "Higgsfield entrena con tu contenido mientras tengas cuenta activa. La única forma de detenerlo es borrar tu contenido o cuenta — no hay interruptor aparte."
 herramienta: "Higgsfield"
 herramientaId: "higgsfield-ai"
 empresa: "Higgsfield"

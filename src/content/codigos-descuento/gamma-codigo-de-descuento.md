@@ -1,6 +1,6 @@
 ---
 title: "¿Gamma tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en gamma.app y el centro de ayuda oficial de Gamma si existe un código de descuento real, y por qué el descuento educativo que buscan muchos todavía no existe."
+description: "Verificamos en gamma.app y su centro de ayuda si existe un código real, y por qué el descuento educativo que muchos buscan todavía no existe."
 herramienta: "Gamma"
 herramientaId: "gamma"
 empresa: "Gamma Tech, Inc."

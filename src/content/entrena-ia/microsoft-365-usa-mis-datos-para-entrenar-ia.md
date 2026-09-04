@@ -1,6 +1,6 @@
 ---
 title: "¿Microsoft 365 entrena su IA con mis documentos y correos?"
-description: "Tus documentos de Word, correos de Outlook y hojas de Excel no entrenan los modelos de Microsoft Copilot integrado en Microsoft 365 — Microsoft lo garantiza por contrato."
+description: "Tus documentos de Word, correos de Outlook y hojas de Excel no entrenan los modelos de Copilot en Microsoft 365 — Microsoft lo garantiza por contrato."
 herramienta: "Microsoft 365"
 herramientaId: "microsoft-365"
 empresa: "Microsoft"

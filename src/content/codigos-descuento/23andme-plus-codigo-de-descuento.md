@@ -1,6 +1,6 @@
 ---
 title: "¿23andMe+ tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el sitio oficial de 23andMe si existe un código de descuento real para la membresía 23andMe+, y cuál es el único canal de descuento que sí es oficial."
+description: "Verificamos en el sitio oficial de 23andMe si hay un código real para 23andMe+, y cuál es el único canal de descuento que sí es oficial."
 herramienta: "23andMe+"
 herramientaId: "23andme-plus"
 empresa: "23andMe / TTAM Research Institute"

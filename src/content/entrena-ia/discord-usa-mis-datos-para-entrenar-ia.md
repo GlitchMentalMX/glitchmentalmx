@@ -1,6 +1,6 @@
 ---
 title: "¿Discord usa mis mensajes para entrenar su IA?"
-description: "OpenAI no puede entrenar otros modelos con tus mensajes de Discord, según su propia política. Sus funciones de IA internas, como AutoMod, no tienen esa misma promesa."
+description: "OpenAI no puede entrenar otros modelos con tus mensajes de Discord, según su política. Sus funciones internas, como AutoMod, no tienen esa promesa."
 herramienta: "Discord"
 herramientaId: "discord"
 empresa: "Discord"

@@ -35,6 +35,24 @@ export function buildPrecioIATitleTag(herramienta: string): string {
     : `${herramienta}: precio en MXN hoy, no en USD`;
 }
 
+// Mismo criterio que buildPrecioIATitleTag, para las otras 3 series de "IA
+// sin letra chiquita" — el título largo del frontmatter se queda para el H1
+// y las redes sociales; el <title> real que ve Google sale de aquí. El
+// nombre más largo del catálogo (Adobe Creative Cloud, 21) ya cabe sin
+// truncar en las tres, así que no hace falta la rama compacta que sí
+// necesita buildPrecioIATitleTag.
+export function buildEntrenaIATitleTag(herramienta: string): string {
+  return `¿${herramienta} entrena su IA con tus datos?`;
+}
+
+export function buildPruebaGratisTitleTag(herramienta: string): string {
+  return `¿${herramienta}: prueba gratis sin tarjeta?`;
+}
+
+export function buildCodigoDescuentoTitleTag(herramienta: string): string {
+  return `¿${herramienta}: código de descuento real?`;
+}
+
 export function readingTime(text: string): number {
   const words = text.trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 200));

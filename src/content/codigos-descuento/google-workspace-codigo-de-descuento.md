@@ -1,6 +1,6 @@
 ---
 title: "¿Google Workspace tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en google.com/nonprofits si existe un código de descuento real para Google Workspace, y por qué el programa para organizaciones sin fines de lucro sí es oficial."
+description: "Verificamos en google.com/nonprofits si existe un código real para Google Workspace, y por qué el programa para sin fines de lucro sí es oficial."
 herramienta: "Google Workspace"
 herramientaId: "google-workspace"
 empresa: "Google"

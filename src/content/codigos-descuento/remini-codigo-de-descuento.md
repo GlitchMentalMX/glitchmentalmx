@@ -1,6 +1,6 @@
 ---
 title: "¿Remini tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el centro de ayuda oficial de Remini si existe un código de descuento real, y por qué la propia empresa admite que no tiene una lista de precios fija."
+description: "Verificamos en el centro de ayuda de Remini si existe un código real, y por qué la empresa admite que no tiene una lista de precios fija."
 herramienta: "Remini"
 herramientaId: "remini"
 empresa: "Bending Spoons"

@@ -1,6 +1,6 @@
 ---
 title: "¿Monica AI tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en monica.im/pricing si existe un código de descuento real para Monica AI, y cuáles son los descuentos oficiales que sí aparecen hoy en el precio."
+description: "Verificamos en monica.im/pricing si existe un código real para Monica AI, y cuáles son los descuentos oficiales que sí aparecen hoy en el precio."
 herramienta: "Monica AI"
 herramientaId: "monica-ai"
 empresa: "Monica"

@@ -1,6 +1,6 @@
 ---
 title: "¿Voicemod tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en el centro de ayuda oficial de Voicemod si existe un código de descuento real, y por qué el sistema de cupones que sí tiene no sirve para cualquiera."
+description: "Verificamos en el centro de ayuda de Voicemod si existe un código real, y por qué el sistema de cupones que sí tiene no sirve para cualquiera."
 herramienta: "Voicemod"
 herramientaId: "voicemod"
 empresa: "Voicemod S.L."

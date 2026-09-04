@@ -1,6 +1,6 @@
 ---
 title: "¿Copilot tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en las páginas oficiales de Microsoft si existe un código de descuento real para Copilot en Microsoft 365, y cuál es la promoción oficial vigente para estudiantes."
+description: "Verificamos en Microsoft si existe un código real para Copilot en Microsoft 365, y cuál es la promoción oficial vigente para estudiantes."
 herramienta: "Copilot"
 herramientaId: "copilot"
 empresa: "Microsoft"

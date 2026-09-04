@@ -1,6 +1,6 @@
 ---
 title: "¿Google usa lo que le busco (fotos, voz, archivos) para entrenar su IA?"
-description: "Desde junio de 2026, lo que subes a Google Lens, Voz o Translate entrena IA por default. El cambio pasó casi sin aviso — el opt-out existe, pero hay que ir a buscarlo."
+description: "Desde junio 2026, lo que subes a Lens, Voz o Translate entrena IA por default. El cambio pasó casi sin aviso — el opt-out existe, pero hay que buscarlo."
 herramienta: "Google Búsqueda"
 herramientaId: "google-search"
 empresa: "Google"

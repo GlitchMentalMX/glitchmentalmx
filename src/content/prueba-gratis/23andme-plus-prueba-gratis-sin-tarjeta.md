@@ -1,6 +1,6 @@
 ---
 title: "¿23andMe+ tiene prueba gratis sin tarjeta de crédito?"
-description: "Verificamos en el sitio oficial de 23andMe si la membresía 23andMe+ (Premium Ancestry + Health) tiene un periodo de prueba, o si el cobro es inmediato al registrar el kit."
+description: "Verificamos en 23andMe si la membresía 23andMe+ (Premium Ancestry + Health) tiene periodo de prueba, o si el cobro es inmediato al registrar el kit."
 herramienta: "23andMe+"
 herramientaId: "23andme-plus"
 empresa: "23andMe / TTAM Research Institute"

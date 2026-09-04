@@ -1,6 +1,6 @@
 ---
 title: "¿ClickUp tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en clickup.com si existe un código de descuento real para ClickUp, y por qué el único programa oficial de ahorro es para startups, no para cualquier usuario."
+description: "Verificamos en clickup.com si existe un código real para ClickUp, y por qué el único programa oficial de ahorro es para startups, no cualquier usuario."
 herramienta: "ClickUp"
 herramientaId: "clickup"
 empresa: "ClickUp"

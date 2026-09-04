@@ -1,6 +1,6 @@
 ---
 title: "¿Claude entrena su IA con lo que le escribo?"
-description: "Desde agosto de 2025, Anthropic cambió su postura: Claude entrena con tus chats por default en cuentas Free, Pro y Max. El interruptor existe, pero hay que buscarlo."
+description: "Desde agosto de 2025, Claude entrena con tus chats por default en cuentas Free, Pro y Max. El interruptor existe, pero hay que buscarlo."
 herramienta: "Claude"
 herramientaId: "claude"
 empresa: "Anthropic"

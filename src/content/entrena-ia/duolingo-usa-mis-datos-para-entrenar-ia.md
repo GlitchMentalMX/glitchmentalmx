@@ -1,6 +1,6 @@
 ---
 title: "¿Duolingo usa mi voz y mi forma de aprender para entrenar su IA?"
-description: "Tus grabaciones de voz y tus patrones de aprendizaje alimentan la IA de Duolingo. Solo puedes desactivar el audio a futuro — no existe un botón general de salida."
+description: "Tus grabaciones de voz y patrones de aprendizaje alimentan la IA de Duolingo. Solo puedes desactivar el audio a futuro — no hay salida general."
 herramienta: "Duolingo"
 herramientaId: "duolingo"
 empresa: "Duolingo"

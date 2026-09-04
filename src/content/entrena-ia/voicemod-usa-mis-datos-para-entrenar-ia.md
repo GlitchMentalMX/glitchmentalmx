@@ -1,6 +1,6 @@
 ---
 title: "¿Voicemod entrena su IA con mi voz?"
-description: "Voicemod no usa tu voz para entrenar modelos salvo que tú decidas participar activamente en un programa de mejora, con muestras anonimizadas desde su recolección."
+description: "Voicemod no usa tu voz para entrenar modelos salvo que decidas participar en un programa de mejora, con muestras anonimizadas desde su recolección."
 herramienta: "Voicemod"
 herramientaId: "voicemod"
 empresa: "Voicemod"

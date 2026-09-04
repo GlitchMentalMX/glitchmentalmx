@@ -1,6 +1,6 @@
 ---
 title: "¿Ring Protect tiene prueba gratis sin tarjeta de crédito?"
-description: "Verificamos en el centro de ayuda oficial de Ring si la prueba gratuita de 30 días de Ring Protect pide tarjeta de crédito, y qué tan gratis es en realidad."
+description: "Verificamos en el centro de ayuda de Ring si la prueba gratuita de 30 días de Ring Protect pide tarjeta de crédito, y qué tan gratis es en realidad."
 herramienta: "Ring Protect"
 herramientaId: "ring-protect"
 empresa: "Amazon (Ring)"

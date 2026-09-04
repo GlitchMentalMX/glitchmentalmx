@@ -1,6 +1,6 @@
 ---
 title: "¿Gauth usa mis fotos y preguntas para entrenar su IA?"
-description: "Gauth (de ByteDance, la empresa detrás de TikTok) admite en su política que entrena sus modelos de machine learning con el contenido que subes. No hay opción de exclusión."
+description: "Gauth (de ByteDance, dueña de TikTok) admite que entrena sus modelos de machine learning con el contenido que subes. No hay opción de exclusión."
 herramienta: "Gauth"
 herramientaId: "gauth"
 empresa: "Gauth / ByteDance"

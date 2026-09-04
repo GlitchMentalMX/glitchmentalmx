@@ -1,6 +1,6 @@
 ---
 title: "¿Slack tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en slack.com/pricing y en el programa oficial Slack for Nonprofits si existe un código de descuento real para Slack, y cuál es el canal oficial que sí funciona."
+description: "Verificamos en slack.com/pricing y Slack for Nonprofits si existe un código real para Slack, y cuál es el canal oficial que sí funciona."
 herramienta: "Slack"
 herramientaId: "slack"
 empresa: "Slack (Salesforce)"

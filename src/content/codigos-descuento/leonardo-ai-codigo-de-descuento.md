@@ -1,6 +1,6 @@
 ---
 title: "¿Leonardo AI tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en leonardo.ai/pricing si existe un código de descuento real para Leonardo AI, y cuál es el único descuento oficial que confirma la propia página de precios."
+description: "Verificamos en leonardo.ai/pricing si existe un código real para Leonardo AI, y cuál es el único descuento que confirma su propia página de precios."
 herramienta: "Leonardo AI"
 herramientaId: "leonardo-ai"
 empresa: "Leonardo AI"

@@ -1,6 +1,6 @@
 ---
 title: "¿GitHub Copilot tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en la documentación oficial de GitHub si existe un código de descuento real para Copilot, y cuáles son los dos beneficios oficiales que sí existen."
+description: "Verificamos en la documentación de GitHub si existe un código real para Copilot, y cuáles son los dos beneficios oficiales que sí existen."
 herramienta: "GitHub Copilot"
 herramientaId: "github-copilot"
 empresa: "GitHub (Microsoft)"

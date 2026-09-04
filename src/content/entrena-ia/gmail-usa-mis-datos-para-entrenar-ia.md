@@ -1,6 +1,6 @@
 ---
 title: "¿Gmail lee mis correos para entrenar su IA?"
-description: "Tus correos no entrenan los modelos grandes de Google (Gemini) salvo que lo permitas. Sí alimentan, por default, las funciones inteligentes del propio Gmail."
+description: "Tus correos no entrenan los modelos grandes de Google (Gemini) salvo que lo permitas. Sí alimentan, por default, las funciones inteligentes de Gmail."
 herramienta: "Gmail"
 herramientaId: "gmail"
 empresa: "Google"

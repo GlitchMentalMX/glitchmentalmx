@@ -1,6 +1,6 @@
 ---
 title: "¿Google Nest Aware tiene prueba gratis sin tarjeta de crédito?"
-description: "Verificamos en la tienda oficial de Google si Nest Aware (ahora Google Home Premium) tiene un periodo de prueba sin tarjeta, o si el cobro empieza desde el registro."
+description: "Verificamos en Google si Nest Aware (ahora Google Home Premium) tiene un periodo de prueba sin tarjeta, o si el cobro empieza desde el registro."
 herramienta: "Google Nest Aware"
 herramientaId: "nest-aware"
 empresa: "Google"

@@ -1,6 +1,6 @@
 ---
 title: "¿Beautiful.ai tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en beautiful.ai/pricing si existe un código de descuento real para Beautiful.ai Pro, y cuál es el descuento oficial que sí pueden usar los estudiantes."
+description: "Verificamos en beautiful.ai/pricing si existe un código real para Beautiful.ai Pro, y cuál es el descuento oficial que sí usan los estudiantes."
 herramienta: "Beautiful.ai"
 herramientaId: "beautiful-ai"
 empresa: "Beautiful.ai, Inc."

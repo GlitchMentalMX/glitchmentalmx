@@ -1,6 +1,6 @@
 ---
 title: "¿Codex entrena su IA con mi código?"
-description: "Codex hereda los controles de ChatGPT: en Plus y Pro entrena con tu código por default salvo que lo apagues. En cuentas de negocio y Enterprise queda excluido."
+description: "Codex hereda los controles de ChatGPT: en Plus y Pro entrena con tu código por default salvo que lo apagues. En Enterprise queda excluido."
 herramienta: "Codex"
 herramientaId: "codex"
 empresa: "OpenAI"

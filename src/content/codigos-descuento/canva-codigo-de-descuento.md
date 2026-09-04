@@ -1,6 +1,6 @@
 ---
 title: "¿Canva tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos si existe un código de descuento real para Canva Pro, y cuáles son los programas oficiales que sí regalan la versión Pro completa a escuelas y organizaciones sin fines de lucro."
+description: "Verificamos si existe un código real para Canva Pro, y cuáles son los programas oficiales que regalan la versión Pro a escuelas y sin fines de lucro."
 herramienta: "Canva"
 herramientaId: "canva"
 empresa: "Canva"

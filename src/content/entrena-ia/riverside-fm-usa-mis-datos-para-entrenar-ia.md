@@ -1,6 +1,6 @@
 ---
 title: "¿Riverside.fm entrena su IA con mis grabaciones?"
-description: "Riverside usa tus grabaciones y transcripciones para entrenar sus propios modelos de IA. El opt-out solo existe para clientes de plan Business con contrato firmado."
+description: "Riverside usa tus grabaciones y transcripciones para entrenar sus propios modelos. El opt-out solo existe en plan Business con contrato firmado."
 herramienta: "Riverside.fm"
 herramientaId: "riverside-fm"
 empresa: "Riverside"

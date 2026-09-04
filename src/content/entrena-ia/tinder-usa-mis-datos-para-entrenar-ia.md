@@ -1,6 +1,6 @@
 ---
 title: "¿Tinder usa mis fotos para entrenar su IA?"
-description: "OkCupid, de la misma empresa que Tinder, entregó 3 millones de fotos de usuarios para entrenar reconocimiento facial sin avisarles. La FTC lo confirmó y no hubo multa."
+description: "OkCupid, de la misma empresa que Tinder, entregó 3 millones de fotos para entrenar reconocimiento facial sin avisar. La FTC lo confirmó y no hubo multa."
 herramienta: "Tinder"
 herramientaId: "tinder"
 empresa: "Match Group"

@@ -1,6 +1,6 @@
 ---
 title: "¿Murf tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en la página oficial de Murf si existe un código de descuento real, y cuál es el único descuento verificado que sí existe para estudiantes, profesores y sin fines de lucro."
+description: "Verificamos en Murf si existe un código real, y cuál es el único descuento verificado para estudiantes, profesores y sin fines de lucro."
 herramienta: "Murf"
 herramientaId: "murf-ai"
 empresa: "Murf AI, Inc."

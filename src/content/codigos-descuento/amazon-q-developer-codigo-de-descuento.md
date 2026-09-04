@@ -1,6 +1,6 @@
 ---
 title: "¿Amazon Q Developer tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en la página oficial de precios de AWS si existe un código de descuento real para Amazon Q Developer, y por qué ahora mismo ni siquiera hay forma de suscribirse como cliente nuevo."
+description: "Verificamos en precios de AWS si existe un código real para Amazon Q Developer, y por qué ahora ni siquiera hay forma de suscribirse como cliente nuevo."
 herramienta: "Amazon Q Developer"
 herramientaId: "amazon-q-developer"
 empresa: "Amazon (AWS)"

@@ -1,6 +1,6 @@
 ---
 title: "¿Veo entrena su IA con mis videos y prompts?"
-description: "Veo, el modelo de video de Google dentro de Flow, entrena con tus prompts y generaciones por default. El interruptor 'Ayuda a mejorar Flow' existe, pero viene activado."
+description: "Veo, el modelo de video de Google en Flow, entrena con tus prompts por default. El interruptor 'Ayuda a mejorar Flow' existe, pero viene activado."
 herramienta: "Veo"
 herramientaId: "veo"
 empresa: "Google"

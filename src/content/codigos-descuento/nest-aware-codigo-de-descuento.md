@@ -1,6 +1,6 @@
 ---
 title: "¿Google Nest Aware tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en la tienda oficial de Google si existe un código de descuento real para Nest Aware (ahora Google Home Premium), y cuál es el único ahorro oficial que sí existe."
+description: "Verificamos en la tienda de Google si existe un código real para Nest Aware (ahora Google Home Premium), y cuál es el único ahorro oficial que existe."
 herramienta: "Google Nest Aware"
 herramientaId: "nest-aware"
 empresa: "Google"

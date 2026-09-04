@@ -1,6 +1,6 @@
 ---
 title: "¿Monica entrena su IA con mis conversaciones?"
-description: "Monica no entrena modelos propios con tus chats — no tiene modelo fundacional propio, y su plataforma API asegura por escrito que tus datos no se usan para entrenar."
+description: "Monica no entrena modelos propios con tus chats — no tiene modelo fundacional propio, y su API asegura por escrito que tus datos no se usan para entrenar."
 herramienta: "Monica"
 herramientaId: "monica-ai"
 empresa: "Monica"

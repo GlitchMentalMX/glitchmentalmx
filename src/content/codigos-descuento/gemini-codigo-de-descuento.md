@@ -1,6 +1,6 @@
 ---
 title: "¿Gemini tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en la página oficial de planes de Google AI si existe un código de descuento real para Gemini, y cuál es el programa oficial que sí da un año gratis a estudiantes."
+description: "Verificamos en los planes de Google AI si existe un código real para Gemini, y cuál es el programa oficial que da un año gratis a estudiantes."
 herramienta: "Gemini"
 herramientaId: "gemini"
 empresa: "Google"

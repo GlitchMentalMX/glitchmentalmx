@@ -1,6 +1,6 @@
 ---
 title: "¿Framer tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en framer.com/pricing y framer.com/education/students si existe un código de descuento real para Framer, y cuál es el único canal oficial de ahorro que sí existe."
+description: "Verificamos en framer.com/pricing y framer.com/education/students si existe un código real, y cuál es el único canal oficial de ahorro que sí existe."
 herramienta: "Framer"
 herramientaId: "framer"
 empresa: "Framer B.V."

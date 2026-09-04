@@ -1,6 +1,6 @@
 ---
 title: "¿Qwen tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos por qué no existe ningún canal oficial de descuento para Qwen: el chat es gratis y la API se cobra por token, sin plan de suscripción de consumidor que descontar."
+description: "Verificamos por qué no hay canal oficial de descuento para Qwen: el chat es gratis y la API se cobra por token, sin plan de consumidor que descontar."
 herramienta: "Qwen"
 herramientaId: "qwen"
 empresa: "Alibaba Cloud"

@@ -1,6 +1,6 @@
 ---
 title: "¿Mi Samsung Smart TV usa lo que veo para entrenar su IA?"
-description: "Tu Smart TV puede reconocer qué programa estás viendo para alimentar sus sistemas de recomendación y publicidad. Hay opción de apagarlo, aunque no siempre es obvia."
+description: "Tu Smart TV puede reconocer qué programa ves para alimentar sus sistemas de recomendación y publicidad. Hay opción de apagarlo, aunque no siempre es obvia."
 herramienta: "Samsung Smart TV"
 herramientaId: "samsung-tv"
 empresa: "Samsung"

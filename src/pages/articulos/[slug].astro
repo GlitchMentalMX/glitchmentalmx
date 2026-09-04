@@ -12,7 +12,14 @@ import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection, render } from 'astro:content';
-import { formatDate, readingTime, buildPrecioIATitleTag } from '../../lib/format';
+import {
+  formatDate,
+  readingTime,
+  buildPrecioIATitleTag,
+  buildEntrenaIATitleTag,
+  buildPruebaGratisTitleTag,
+  buildCodigoDescuentoTitleTag,
+} from '../../lib/format';
 import { categorySlug } from '../../data/categories';
 import { getBook } from '../../data/books';
 import tipoCambio from '../../data/tipo-cambio.json';
@@ -235,6 +242,8 @@ const sitioOficial =
   kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
     ? (post.data as any).sitioOficial
     : undefined;
+const empresaFrontmatter =
+  kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).empresa : undefined;
 
 const precio =
   kind === 'preciosIA'
@@ -255,7 +264,16 @@ const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 
 // Title tag corto y sin sufijo de sitio, distinto del H1 (que se queda
 // largo). El H1 no cambia — solo lo que ve Google en el <title>.
-const metaTitle = kind === 'preciosIA' || kind === 'preciosDigitales' ? buildPrecioIATitleTag(herramienta) : title;
+const metaTitle =
+  kind === 'preciosIA' || kind === 'preciosDigitales'
+    ? buildPrecioIATitleTag(herramienta)
+    : kind === 'entrenaIA'
+      ? buildEntrenaIATitleTag(herramienta)
+      : kind === 'pruebaGratis'
+        ? buildPruebaGratisTitleTag(herramienta)
+        : kind === 'codigosDescuento'
+          ? buildCodigoDescuentoTitleTag(herramienta)
+          : title;
 
 // ---------------------------------------------------------------------------
 // Rama "entrenaIA" (serie "¿[App] usa mis datos para entrenar su IA?") —
@@ -265,6 +283,14 @@ const metaTitle = kind === 'preciosIA' || kind === 'preciosDigitales' ? buildPre
 // falta la capa de indirección que sí necesita Banxico.
 const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).veredicto : undefined;
 
+// Product con Offer para las series de precio (dato real: precio, moneda,
+// vigencia). Product SIN Offer para las otras 3 — entidad real (nombre,
+// marca), pero sin inventar una oferta que no existe: estas fichas
+// verifican una política o un flujo de registro, no un precio. Se
+// consideró ClaimReview (encaja más con "veredicto verificado"), pero
+// Google solo lo muestra en su resultado de Fact Check a medios reconocidos
+// como verificadores — no calificamos, así que sería puro ruido sin
+// beneficio. Product sin Offer es honesto con lo que sí sabemos.
 const productSchema =
   (kind === 'preciosIA' || kind === 'preciosDigitales') && precio && precioMXN !== undefined
     ? {
@@ -285,7 +311,17 @@ const productSchema =
           priceValidUntil: tipoCambio.fecha,
         },
       }
-    : undefined;
+    : (kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento') && empresaFrontmatter
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: herramienta,
+          description,
+          image: articleImage ?? new URL('/og-default.png', Astro.site).toString(),
+          brand: { '@type': 'Brand', name: empresaFrontmatter },
+          url: articleURL,
+        }
+      : undefined;
 
 // Selección pseudoaleatoria (seedeada por el slug del artículo actual) en vez
 // de slice(0, 3) tras ordenar alfabéticamente: con 60 herramientas en la

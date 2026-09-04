@@ -1,6 +1,6 @@
 ---
 title: "¿Notion tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en notion.com/pricing si existe un código de descuento real para los planes Plus o Business de Notion, y cuáles son los canales oficiales de descuento que sí existen."
+description: "Verificamos en notion.com/pricing si existe un código real para los planes Plus o Business, y cuáles son los canales oficiales de descuento que sí existen."
 herramienta: "Notion"
 herramientaId: "notion"
 empresa: "Notion"

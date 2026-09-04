@@ -1,6 +1,6 @@
 ---
 title: "¿23andMe usa mi ADN para entrenar modelos de IA?"
-description: "Tu ADN puede entrar a estudios de investigación —algunos con IA— si diste consentimiento al comprar la prueba. Puedes salir cuando quieras, pero no de lo ya usado."
+description: "Tu ADN puede entrar a estudios con IA si diste consentimiento al comprar la prueba. Puedes salir cuando quieras, pero no de lo ya usado."
 herramienta: "23andMe"
 herramientaId: "23andme"
 empresa: "23andMe / TTAM Research Institute"

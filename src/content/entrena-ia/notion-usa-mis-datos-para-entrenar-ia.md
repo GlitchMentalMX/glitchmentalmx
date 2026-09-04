@@ -1,6 +1,6 @@
 ---
 title: "¿Notion usa el contenido de mi workspace para entrenar su IA?"
-description: "Notion dice no entrenar modelos con tu contenido, y obliga por contrato a Anthropic y OpenAI a lo mismo. Compartir tu workspace para mejorar la IA es, aquí sí, opcional de verdad."
+description: "Notion dice no entrenar modelos con tu contenido, y obliga por contrato a Anthropic y OpenAI a lo mismo. Compartir tu workspace sí es opcional de verdad."
 herramienta: "Notion"
 herramientaId: "notion"
 empresa: "Notion"

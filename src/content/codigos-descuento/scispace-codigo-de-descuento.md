@@ -1,6 +1,6 @@
 ---
 title: "¿SciSpace tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en scispace.com si existe un código de descuento real para SciSpace: su propia página de precios confirma el código SCI30, sin verificación necesaria."
+description: "Verificamos en scispace.com si existe un código real para SciSpace: su propia página de precios confirma el código SCI30, sin verificación necesaria."
 herramienta: "SciSpace"
 herramientaId: "scispace"
 empresa: "SciSpace"
