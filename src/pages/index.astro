@@ -511,6 +511,7 @@ const signalPools = {
     color: var(--accent);
     padding-right: 16px;
     border-right: 1px solid var(--border);
+    transition: opacity 0.5s ease;
   }
   .signal-body {
     flex: 1;
@@ -526,7 +527,9 @@ const signalPools = {
     overflow: hidden;
     font-size: 0.9rem;
     line-height: 1.3;
+    transition: opacity 0.5s ease;
   }
+  .signal-tag.is-fading, .signal-text.is-fading { opacity: 0; }
   @media (max-width: 640px) {
     .signal-card { flex-direction: column; align-items: flex-start; gap: 10px; padding: 14px 40px 14px 16px; }
     .signal-live-full { display: none; }
@@ -1051,16 +1054,31 @@ const signalPools = {
     const textEl = document.getElementById('signal-text');
 
     if (lineup.length && tagEl && textEl) {
-      const scrambler = reduceMotion ? null : new TextScramble(textEl);
       let i = 0;
 
+      // Antes usaba TextScramble aquí también — se cambió a un fundido lento
+      // (ver CSS de .signal-tag/.signal-text) porque, a diferencia del hero
+      // y las cards de Recursos (que revuelven una sola vez), esta pieza se
+      // repite cada 5.5s todo el tiempo que el visitante esté en el home —
+      // un efecto llamativo constante deja de ser acento y se vuelve ruido.
+      // El fundido es puro cambio de opacidad, así que además no puede
+      // causar el tipo de salto de layout que sí arriesgaba el scramble.
       function render(item: SignalItem, animate: boolean) {
-        tagEl!.textContent = item.tag;
-        signalCard!.href = item.href;
-        if (animate && scrambler) {
-          scrambler.setText(item.text);
-        } else {
+        const swap = () => {
+          tagEl!.textContent = item.tag;
           textEl!.textContent = item.text;
+          signalCard!.href = item.href;
+        };
+        if (animate && !reduceMotion) {
+          tagEl!.classList.add('is-fading');
+          textEl!.classList.add('is-fading');
+          setTimeout(() => {
+            swap();
+            tagEl!.classList.remove('is-fading');
+            textEl!.classList.remove('is-fading');
+          }, 500);
+        } else {
+          swap();
         }
       }
 
