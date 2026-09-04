@@ -30,6 +30,16 @@ const ogImage = image
 const authorURL = new URL('/acerca-de/', Astro.site).toString();
 const logoURL = new URL('/og-default.png', Astro.site).toString();
 
+// Perfiles de marca (no personales) — el Organization de abajo usa estos.
+// personSchema, más abajo, tiene su propio sameAs aparte que sí incluye el
+// LinkedIn personal de Jorge, porque ese perfil es de él, no de la marca.
+const BRAND_SOCIAL_URLS = [
+  'https://x.com/GlitchMentalMX',
+  'https://www.facebook.com/GlitchMentalMX/',
+  'https://mastodon.social/@GlitchMentalMX',
+  'https://bsky.app/profile/glitchmentalmx.bsky.social',
+];
+
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -42,6 +52,7 @@ const websiteSchema = {
     '@type': 'Organization',
     name: siteName,
     logo: { '@type': 'ImageObject', url: logoURL },
+    sameAs: BRAND_SOCIAL_URLS,
   },
   potentialAction: {
     '@type': 'SearchAction',

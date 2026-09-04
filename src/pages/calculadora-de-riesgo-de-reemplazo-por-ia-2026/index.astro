@@ -5,6 +5,7 @@ import PageHeader from '../../components/PageHeader.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import { formatDate } from '../../lib/format';
+import calculadoraData from '../../data/calculadora-riesgo-ia.json';
 
 const title = '¿La IA te va a quitar el trabajo? Calculadora gratis';
 const description =
@@ -13,10 +14,13 @@ const canonicalPath = '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/';
 const toolImage = '/images/posts/te-reemplazara-la-ia-escaner-de-riesgo-profesional-2026/hero.jpg';
 
 // Fecha de última revisión de contenido de esta página (intro, FAQ, enlaces
-// internos) — no del cálculo en sí, que no cambia. Actualizar a mano cada
-// vez que se revise, mismo principio de frescura que la fecha de Banxico en
-// Precios de IA, pero aquí no hay feed diario que la actualice sola.
-const lastReviewed = new Date('2026-09-02T12:00:00-06:00');
+// internos) — no del cálculo en sí, que no cambia. Vive en un JSON aparte
+// (src/data/calculadora-riesgo-ia.json) en vez de hardcodeada aquí porque
+// astro.config.mjs también la necesita para el lastmod del sitemap — un
+// solo lugar que actualizar a mano cada vez que se revise el contenido,
+// mismo principio de frescura que la fecha de Banxico en Precios de IA,
+// pero aquí no hay feed diario que la actualice sola.
+const lastReviewed = new Date(`${calculadoraData.lastReviewed}T12:00:00-06:00`);
 
 // Mismo lote curado a mano que ya usa /articulos/[slug].astro para decidir
 // qué artículos muestran la tarjeta de la calculadora en su footer — aquí

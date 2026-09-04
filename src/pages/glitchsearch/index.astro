@@ -3,14 +3,38 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const GCSE_CX = 'a28d59cfd89f948f4';
+const description = 'Busca en la web con curaduría editorial y veredicto de IA instantáneo. Gratis, privado, sin ads y sin rastreo.';
+
+// Mismo patrón que la Calculadora de Riesgo IA — ambas son herramientas
+// reales del sitio, mismo tipo de elegibilidad para resultados enriquecidos.
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'GlitchSearch',
+  description,
+  url: new URL('/glitchsearch/', Astro.site).toString(),
+  applicationCategory: 'BrowserApplication',
+  operatingSystem: 'Any (web browser)',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'MXN',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+};
 ---
 
 <Layout
   title="GlitchSearch: la web curada, con veredicto de IA"
-  description="Busca en la web con curaduría editorial y veredicto de IA instantáneo. Gratis, privado, sin ads y sin rastreo."
+  description={description}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
   <Breadcrumbs items={[{ name: 'GlitchSearch' }]} />
   <main class="wrap container">
     <p class="eyebrow kicker">GlitchSearch</p>

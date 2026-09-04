@@ -63,7 +63,11 @@ const {
 } = Astro.props;
 ---
 
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
   <Breadcrumbs items={[{ name: title }]} />
   <section class="container hero">
     <p class="eyebrow">{eyebrow}</p>

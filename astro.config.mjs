@@ -99,6 +99,18 @@ const slugsPreciosDigitales = new Set(
     .map((archivo) => archivo.replace(/\.md$/, ''))
 );
 
+// Última revisión de contenido de la Calculadora de Riesgo IA — mismo JSON
+// que lee la página en build-time, un solo lugar que actualizar a mano.
+let fechaCalculadoraRiesgo;
+try {
+  const calculadora = JSON.parse(
+    readFileSync(new URL('./src/data/calculadora-riesgo-ia.json', import.meta.url), 'utf-8')
+  );
+  fechaCalculadoraRiesgo = new Date(`${calculadora.lastReviewed}T12:00:00Z`);
+} catch {
+  // Igual que el resto: si falta el archivo, se omite el lastmod.
+}
+
 let fechaTipoCambio;
 try {
   const tipoCambio = JSON.parse(
@@ -201,7 +213,10 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/stats/'),
+      // /buscar/ es noIndex (páginas de resultados de búsqueda interna no
+      // deberían indexarse) — se excluye también del sitemap por la misma
+      // razón, no tiene caso mandarla a rastrear si le decimos que no indexe.
+      filter: (page) => !page.includes('/stats/') && !page.includes('/buscar/'),
       serialize(item) {
         const { pathname } = new URL(item.url);
         const conFecha = (fecha) => (fecha ? { ...item, lastmod: fecha.toISOString() } : item);
@@ -238,12 +253,22 @@ export default defineConfig({
         if (pathname === '/archivo/') return conFecha(fechaMaxPosts);
         if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
+        if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/') return conFecha(fechaCalculadoraRiesgo);
 
         const matchCategoria = pathname.match(/^\/categoria\/([^/]+)\/$/);
         if (matchCategoria) return conFecha(fechaMaxPorSlugCategoria.get(matchCategoria[1]));
 
         const matchColeccion = pathname.match(/^\/(?:colecciones|series)\/([^/]+)\/$/);
         if (matchColeccion) return conFecha(fechaPorHub.get(matchColeccion[1]));
+
+        // Los índices /series/ y /colecciones/ (a diferencia de sus páginas
+        // hijas, que ya tenían lastmod) nunca mandaban ninguno — mismo
+        // patrón que el hub /ia-sin-letra-chiquita/ que se corrigió antes.
+        // Usan la fecha más reciente entre todas sus hijas.
+        if (pathname === '/series/' || pathname === '/colecciones/') {
+          const fechas = [...fechaPorHub.values()];
+          return conFecha(fechas.length ? new Date(Math.max(...fechas.map((f) => f.getTime()))) : undefined);
+        }
 
         return item;
       },

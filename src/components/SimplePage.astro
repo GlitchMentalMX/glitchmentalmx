@@ -10,7 +10,12 @@ const { title, description, eyebrow, headline, dek, noIndex } = entry.data;
 const { Content } = await render(entry);
 ---
 
-<Layout title={title} description={description} noIndex={noIndex}>
+<Layout
+  title={title}
+  description={description}
+  noIndex={noIndex}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
   <Breadcrumbs items={[{ name: mdStrip(headline) }]} />
   <PageHeader eyebrow={eyebrow} title={headline} dek={dek} />
   <section class="container prose">
