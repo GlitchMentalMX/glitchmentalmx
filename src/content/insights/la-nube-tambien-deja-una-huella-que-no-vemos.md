@@ -6,6 +6,6 @@ imagenAlt: 'Huella de carbono IA: mujer en escritorio con torres de enfriamiento
 enlace: ''
 date: 2026-08-31T06:24
 draft: false
-categoria: ''
+categoria: Narrativa de la IA
 punchline: La nube también deja una huella que no vemos.
 ---
