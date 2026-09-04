@@ -35,11 +35,25 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
 
     let preferredSourceApi: any = null;
 
-    const script = document.createElement('script');
-    script.async = true;
-    script.setAttribute('preferred-sources-control', 'manual');
-    script.src = 'https://news.google.com/swg/js/v1/publisher.js';
-    document.head.appendChild(script);
+    // El SDK de Google (+ el iframe que trae) pesa ~230 KB y el navegador lo
+    // detecta tan temprano que le asigna prioridad alta, compitiendo con el
+    // CSS/fuentes críticos del primer pintado — aunque el propio <script> ya
+    // es async. Como nadie puede darle clic al botón antes de verlo (está en
+    // el footer o en un placement contextual, nunca above the fold), no hay
+    // razón para cargarlo antes de que el navegador esté libre. requestIdleCallback
+    // con timeout de respaldo cubre Safari (que no lo implementa).
+    const loadPreferredSourceSDK = () => {
+      const script = document.createElement('script');
+      script.async = true;
+      script.setAttribute('preferred-sources-control', 'manual');
+      script.src = 'https://news.google.com/swg/js/v1/publisher.js';
+      document.head.appendChild(script);
+    };
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadPreferredSourceSDK, { timeout: 2000 });
+    } else {
+      setTimeout(loadPreferredSourceSDK, 1000);
+    }
 
     const getCurrentTheme = (): 'light' | 'dark' =>
       document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
