@@ -35,24 +35,40 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
 
     let preferredSourceApi: any = null;
 
-    // El SDK de Google (+ el iframe que trae) pesa ~230 KB y el navegador lo
-    // detecta tan temprano que le asigna prioridad alta, compitiendo con el
-    // CSS/fuentes críticos del primer pintado — aunque el propio <script> ya
-    // es async. Como nadie puede darle clic al botón antes de verlo (está en
-    // el footer o en un placement contextual, nunca above the fold), no hay
-    // razón para cargarlo antes de que el navegador esté libre. requestIdleCallback
-    // con timeout de respaldo cubre Safari (que no lo implementa).
+    // El SDK de Google (+ el iframe que trae) pesa ~230 KB y, aunque el script
+    // es async, cargarlo apenas entra la página compite con el CSS/fuentes
+    // críticos del primer pintado. Un intento anterior lo pospuso con
+    // requestIdleCallback(timeout: 2000) — mejoró FCP/LCP, pero el timeout
+    // forzaba la carga de todos modos a los ~2s, y ese trabajo (los ~1s de
+    // CPU de los scripts de gstatic.com) cayó dentro de la ventana de Total
+    // Blocking Time, empeorándolo. La solución real: cargarlo solo cuando el
+    // botón esté a punto de entrar en pantalla — nadie puede darle clic antes
+    // de verlo, y la mayoría de las visitas nunca llegan al footer, así que
+    // para ellas el costo desaparece por completo, no solo se retrasa.
+    let sdkLoadRequested = false;
     const loadPreferredSourceSDK = () => {
+      if (sdkLoadRequested) return;
+      sdkLoadRequested = true;
       const script = document.createElement('script');
       script.async = true;
       script.setAttribute('preferred-sources-control', 'manual');
       script.src = 'https://news.google.com/swg/js/v1/publisher.js';
       document.head.appendChild(script);
     };
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(loadPreferredSourceSDK, { timeout: 2000 });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting)) {
+            loadPreferredSourceSDK();
+            observer.disconnect();
+          }
+        },
+        { rootMargin: '600px 0px' }
+      );
+      document.querySelectorAll('[data-preferred-source-container]').forEach((el) => observer.observe(el));
     } else {
-      setTimeout(loadPreferredSourceSDK, 1000);
+      loadPreferredSourceSDK();
     }
 
     const getCurrentTheme = (): 'light' | 'dark' =>
