@@ -21,7 +21,17 @@ interface Props {
 const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime, titleSuffix = true, robots, locale } = Astro.props;
 
 const siteName = 'glitchMentalMX';
-const fullTitle = title === siteName || !titleSuffix ? title : `${title} · ${siteName}`;
+const suffix = ` · ${siteName}`;
+const wantsSuffix = title !== siteName && titleSuffix;
+// El <title> real (lo que trunca Google, ~60 caracteres) solo lleva el
+// sufijo si cabe sin pasarse — un título ya largo sin sufijo se trunca
+// igual, pero uno corto SÍ gana refuerzo de marca gratis. Afecta sobre
+// todo a `posts` (98% de los 388 títulos se pasaban de 60 con el sufijo
+// fijo). OG/Twitter no tienen ese límite de SERP, así que ahí el sufijo
+// siempre se agrega — mejor contexto de marca al compartir.
+const fitsWithSuffix = title.length + suffix.length <= 60;
+const pageTitle = wantsSuffix && fitsWithSuffix ? `${title}${suffix}` : title;
+const fullTitle = wantsSuffix ? `${title}${suffix}` : title;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = image
   ? new URL(image, Astro.site).toString()
@@ -104,7 +114,7 @@ const personSchema = {
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
-    <title>{fullTitle}</title>
+    <title>{pageTitle}</title>
     {description && <meta name="description" content={description} />}
     {noIndex ? <meta name="robots" content="noindex, nofollow" /> : <meta name="robots" content={robots ?? 'max-image-preview:large'} />}
 
