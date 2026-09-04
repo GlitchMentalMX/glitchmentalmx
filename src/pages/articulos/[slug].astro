@@ -25,6 +25,7 @@ import { getBook } from '../../data/books';
 import tipoCambio from '../../data/tipo-cambio.json';
 import preciosUSD from '../../data/precios-ia-usd.json';
 import preciosDigitalesUSD from '../../data/precios-digitales-usd.json';
+import postTitleOverrides from '../../data/post-title-overrides.json';
 
 // Enlazado inverso Panóptico Digital → Cero Orgánico: estos 5 artículos son
 // justo los que integran esa serie (ver postSlugs en
@@ -264,6 +265,10 @@ const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
 
 // Title tag corto y sin sufijo de sitio, distinto del H1 (que se queda
 // largo). El H1 no cambia — solo lo que ve Google en el <title>.
+// postTitleOverrides cubre el mismo caso para `posts`: 92 artículos cuyo
+// título real (H1) pasa de 60 caracteres — en vez de acortar el H1 (que ya
+// está publicado, compartido, posiblemente indexado), se les da un <title>
+// aparte, corto y con gancho propio, solo para el resultado de búsqueda.
 const metaTitle =
   kind === 'preciosIA' || kind === 'preciosDigitales'
     ? buildPrecioIATitleTag(herramienta)
@@ -273,7 +278,9 @@ const metaTitle =
         ? buildPruebaGratisTitleTag(herramienta)
         : kind === 'codigosDescuento'
           ? buildCodigoDescuentoTitleTag(herramienta)
-          : title;
+          : kind === 'posts' && (postTitleOverrides as Record<string, string>)[post.id]
+            ? (postTitleOverrides as Record<string, string>)[post.id]
+            : title;
 
 // ---------------------------------------------------------------------------
 // Rama "entrenaIA" (serie "¿[App] usa mis datos para entrenar su IA?") —
