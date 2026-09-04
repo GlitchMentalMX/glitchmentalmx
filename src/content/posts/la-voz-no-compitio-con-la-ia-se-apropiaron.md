@@ -53,4 +53,6 @@ El contraste con SAG-AFTRA no es una receta que México debiera copiar — **son
 
 **¿Qué vale más**: una ley que llega después de que la voz ya fue clonada, o un contrato que la protege antes de que alguien lo intente?
 
+—
+
 <small><em>\*Las cifras sobre el número de profesionales del doblaje varían según la fuente. El CEMID reporta más de 1,500 actores, mientras que la ANDA calcula 1,800 actores y actrices de doblaje en México.</em></small>
