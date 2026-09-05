@@ -218,6 +218,8 @@ const faqSchema = {
             <button id="dia-copy-link" type="button" class="chip-btn"><span>Copiar enlace</span></button>
           </div>
         </div>
+
+        <button id="dia-reset" type="button" class="dia-reset-link">Volver a hacer el test</button>
       </div>
     </div>
   </section>
@@ -405,6 +407,19 @@ const faqSchema = {
       });
     });
   }
+
+  var resetBtn = document.getElementById('dia-reset');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function () {
+      form.reset();
+      form.querySelectorAll('.dia-q.missing').forEach(function (fieldset) {
+        fieldset.classList.remove('missing');
+      });
+      document.getElementById('dia-warning').style.display = 'none';
+      document.getElementById('dia-result').style.display = 'none';
+      form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
 </script>
 
 <style>
@@ -511,6 +526,13 @@ const faqSchema = {
   }
   .chip-btn.wa:hover { background: #25d366; border-color: #25d366; color: #fff; }
   .chip-btn.copied { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .dia-reset-link {
+    display: block; background: none; border: none; cursor: pointer;
+    color: rgba(255, 255, 255, 0.4); font-family: var(--font-body); font-size: 0.78em;
+    text-decoration: underline; text-underline-offset: 3px; margin-top: 18px; padding: 0;
+  }
+  .dia-reset-link:hover { color: rgba(255, 255, 255, 0.7); }
 
   .related { padding: 40px 24px 56px; max-width: 900px; margin: 0 auto; }
   .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }
