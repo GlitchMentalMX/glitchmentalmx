@@ -1,7 +1,7 @@
 ---
 title: ¿Necesitas un detox de IA? Este test evalúa tus hábitos
 category: Cultura Digital
-pubDate: 2026-09-05T16:47
+pubDate: 2026-09-05T17:03
 updatedDate: ''
 description: 'No es un diagnóstico: es una fotografía de tus hábitos con IA. Qué mide el test de glitchMentalMX y qué significan sus cuatro dimensiones.'
 heroImage: /images/uploads/detox-ia-16-9.webp
@@ -12,13 +12,6 @@ draft: false
 El test de **detox de IA** no diagnostica nada — mide hábitos. Esa distinción parece menor, pero es justo lo que todavía nadie ha resuelto: ¿qué haces cuando una fotografía de tus costumbres empieza a parecerse a un síntoma?
 
 glitchMentalMX diseñó su propia herramienta para eso. El **test de detox de IA**, disponible en el sitio, no busca clasificarte como adicto ni como sano — busca describir cómo usas la inteligencia artificial en tu día a día. Si quieres saltarte la teoría, [la autoevaluación completa toma dos minutos](/detox-de-ia/).
-
-<div style="margin:36px 0;padding:30px 28px;border-radius:20px;background:linear-gradient(145deg,#0e1520 0%,#080c10 100%);border:1px solid rgba(0,102,255,0.25);box-shadow:rgba(0,102,255,0.15) 0px 0px 30px;">
-  <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1.4px;text-transform:uppercase;color:#4d94ff;margin:0 0 14px;">Test gratuito · 2 minutos · sin registro</p>
-  <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:600;line-height:1.3;color:#fff;margin:0 0 12px;">¿Cuánto espacio le estás dando a la IA sin darte cuenta?</p>
-  <p style="font-size:0.96rem;line-height:1.65;color:rgba(255,255,255,0.65);margin:0 0 24px;">7 preguntas, 4 dimensiones, cero diagnósticos. Descúbrelo antes de que alguien más lo note por ti.</p>
-  <a href="/detox-de-ia/" style="display:inline-block;background:#0066ff;color:#fff;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;font-size:0.85rem;padding:14px 30px;border-radius:999px;text-decoration:none;box-shadow:rgba(0,102,255,0.35) 0px 4px 15px;">Hacer el test →</a>
-</div>
 
 ## Las cuatro dimensiones que el test realmente mide
 
@@ -52,6 +45,6 @@ La evidencia empírica más grande hasta ahora viene de OpenAI, que analizó cer
 
 ## El vacío legal que nadie en América Latina ha empezado a llenar
 
-Mientras tanto, la conversación regulatoria ya arrancó en otro lado. **California** activó la ley SB 243 el 1 de enero de 2026, la primera en Estados Unidos enfocada en chatbots de compañía: exige avisos claros de que se trata de una IA y protocolos ante contenido de autolesión. Oregon, Nebraska, Washington, Colorado y Tennessee tienen leyes similares en distintas etapas entre 2026 y 2027.
+Mientras tanto, la conversación regulatoria ya arrancó en otro lado. **California** activó la ley SB 243 el 1 de enero de 2026, la primera en Estados Unidos enfocada en chatbots de compañía: exige avisos claros de que se trata de una IA y protocolos ante contenido de autolesión. Tennessee y Colorado ya tienen leyes similares vigentes desde mediados de 2026; Oregon y Washington aprobaron las suyas en marzo de 2026, pero entran en vigor hasta enero de 2027, y Nebraska hará lo mismo en julio de ese año.
 
 En **México y el resto de América Latina**, esa conversación legislativa todavía no existe. No hay una ley que distinga entre un chatbot transaccional y uno diseñado para generar apego, ni una autoridad que exija el aviso de que se está hablando con una IA, ya obligatorio en California. Si te interesa saber dónde te ubicas tú antes de que alguien más decida por ti, [la autoevaluación completa toma dos minutos](/detox-de-ia/). La pregunta que queda abierta no es si tus hábitos con la IA son buenos o malos — es quién, en esta región, va a decidir si eso necesita una ley.
