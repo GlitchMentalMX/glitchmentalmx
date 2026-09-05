@@ -111,6 +111,18 @@ try {
   // Igual que el resto: si falta el archivo, se omite el lastmod.
 }
 
+// Última revisión de contenido del test Detox de IA — mismo criterio que la
+// Calculadora de Riesgo IA (JSON aparte, leído aquí y en la página en build).
+let fechaDetoxDeIA;
+try {
+  const detoxDeIA = JSON.parse(
+    readFileSync(new URL('./src/data/detox-de-ia.json', import.meta.url), 'utf-8')
+  );
+  fechaDetoxDeIA = new Date(`${detoxDeIA.lastReviewed}T12:00:00Z`);
+} catch {
+  // Igual que el resto: si falta el archivo, se omite el lastmod.
+}
+
 let fechaTipoCambio;
 try {
   const tipoCambio = JSON.parse(
@@ -254,6 +266,7 @@ export default defineConfig({
         if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
         if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/') return conFecha(fechaCalculadoraRiesgo);
+        if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
 
         const matchCategoria = pathname.match(/^\/categoria\/([^/]+)\/$/);
         if (matchCategoria) return conFecha(fechaMaxPorSlugCategoria.get(matchCategoria[1]));

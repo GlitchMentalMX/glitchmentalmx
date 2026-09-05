@@ -97,26 +97,19 @@ const exploraColumns = [
   maxCount: Math.max(...col.items.map((i) => i.count), 1),
 }));
 
+// 6 cards, simétrico en dos columnas (3 filas de 2) — Precios Digitales ya no
+// vive en su propia fila con divisor: al llegar a un número par de cards, ese
+// tratamiento aparte (pensado para cuando era el 5to elemento suelto, 2+2+1)
+// dejó de hacer falta. Su etiqueta pasa a decir "Otros Servicios" en vez de
+// "Referencia" para no perder esa distinción ahora que comparte grid.
 const toolsList = [
   { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
   { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
+  { href: '/detox-de-ia/', tag: 'Herramienta', title: 'Detox de IA', desc: 'Identifica tus patrones y hábitos de uso de IA con un test breve. Sin diagnósticos, con fuentes citadas.', stat: '7 preguntas · 2 minutos', icon: 'checklist' as const },
   { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales, quién entrena su IA con tus datos, si piden tarjeta para probarla y si su código de descuento es real — cuatro series verificadas, herramienta por herramienta.', stat: `Precios: ${preciosCount} · Privacidad: ${entrenaCount} · Prueba gratis: ${pruebaGratisCount} · Descuentos: ${codigosDescuentoCount}`, icon: 'shield' as const },
+  { href: '/precios-digitales/', tag: 'Otros Servicios', title: 'Precios Digitales', desc: 'VPNs, antivirus, streaming y otras suscripciones digitales — cuánto cuestan de verdad en México, sin ángulo de IA.', stat: `${preciosDigitalesCount} servicios`, icon: 'tag' as const },
 ];
-
-// Aparte del grid principal, no como 5to elemento: en desktop el grid es de
-// 2 columnas, así que un 5to card se vería chueco (2+2+1). Se muestra en su
-// propia fila con divisor + etiqueta — mismo patrón que ya usa el dropdown
-// de Colecciones en el header. Sí entra al pool de "Señal en vivo" (más
-// abajo) para que también rote ahí.
-const otrosServicios = {
-  href: '/precios-digitales/',
-  tag: 'Referencia',
-  title: 'Precios Digitales',
-  desc: 'VPNs, antivirus, streaming y otras suscripciones digitales — cuánto cuestan de verdad en México, sin ángulo de IA.',
-  stat: `${preciosDigitalesCount} servicios`,
-  icon: 'tag' as const,
-};
 
 // Señal en vivo — widget bajo el hero. Nada de imágenes ni carrusel: un solo
 // dato a la vez, con datos reales (nunca relleno). Qué ITEM le toca a cada
@@ -187,7 +180,7 @@ const signalPools = {
     text: h.data.title,
     href: `/colecciones/${h.id}/`,
   })),
-  herramienta: [...toolsList, otrosServicios].map((t) => ({
+  herramienta: toolsList.map((t) => ({
     tag: 'Recurso',
     text: t.title,
     href: t.href,
@@ -381,6 +374,12 @@ const signalPools = {
             {t.icon === 'shield' && (
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             )}
+            {t.icon === 'checklist' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            )}
+            {t.icon === 'tag' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
+            )}
           </span>
           <span class="tag">{t.tag}</span>
           <h3 class="scramble" data-text={t.title}>{t.title}</h3>
@@ -388,19 +387,6 @@ const signalPools = {
           <span class="stat">{t.stat}</span>
         </a>
       ))}
-    </div>
-
-    <p class="eyebrow group-label">Otros servicios</p>
-    <div class="tools-grid group-grid">
-      <a href={otrosServicios.href} class="tool-card">
-        <span class="tool-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
-        </span>
-        <span class="tag">{otrosServicios.tag}</span>
-        <h3 class="scramble" data-text={otrosServicios.title}>{otrosServicios.title}</h3>
-        <p>{otrosServicios.desc}</p>
-        <span class="stat">{otrosServicios.stat}</span>
-      </a>
     </div>
   </section>
 
@@ -900,13 +886,6 @@ const signalPools = {
     .explora-grid { grid-template-columns: 1fr; }
     .tools-grid { grid-template-columns: 1fr; }
   }
-
-  .group-label {
-    margin: 32px 0 20px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-  }
-  .group-grid { grid-template-columns: 1fr; }
 </style>
 
 <script>

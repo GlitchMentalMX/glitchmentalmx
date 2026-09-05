@@ -77,6 +77,21 @@ const INDICE_SLUGS = new Set([
   'agentes-de-ia-openai-y-google-ya-no-compiten-con-chatbots',
 ]);
 
+// Promoción puntual del test de Detox de IA — mismo criterio que las dos
+// anteriores: lote fijo, no un campo de esquema. Los 7 artículos de la
+// sección "Psicología Digital" de Guías Esenciales (ver postSlugs en
+// src/content/collections/guias-esenciales.md), porque son exactamente el
+// terreno temático del test (hábitos, dopamina, apego, aislamiento).
+const DETOX_DE_IA_SLUGS = new Set([
+  'dopamina-y-diseno-por-que-las-apps-son-adictivas',
+  'ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro',
+  'tu-atencion-ya-no-te-pertenece-la-fragmentacion-digital',
+  'redes-sociales-y-autoestima-la-trampa-de-la-comparacion',
+  'habitos-invisibles-tecnologia-que-reconfigura-tu-conducta',
+  'el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende',
+  'la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste',
+]);
+
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
   const preciosIA = await getCollection('preciosIA', ({ data }) => !data.draft);
@@ -159,7 +174,14 @@ const toolPromo =
             '20 tecnologías B2B rankeadas por adopción real, integración operativa y señales públicas verificables. Sin patrocinadores, sin agenda.',
           href: '/indice-glitchmentalmx/',
         }
-      : undefined;
+      : kind === 'posts' && DETOX_DE_IA_SLUGS.has(post.id)
+        ? {
+            title: '¿Necesitas un detox de IA?',
+            description:
+              'Identifica tus patrones y hábitos de uso de IA con un test breve, basado en investigación reciente. Sin diagnósticos, con fuentes citadas.',
+            href: '/detox-de-ia/',
+          }
+        : undefined;
 
 const articleImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
 const articleSchema =

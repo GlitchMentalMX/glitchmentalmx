@@ -1,0 +1,569 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../lib/format';
+import detoxData from '../../data/detox-de-ia.json';
+
+const title = '¿Necesitas un detox de IA? Test de autoevaluación gratis';
+const description =
+  'Identifica tus patrones y hábitos de uso de IA con este test breve, basado en investigación reciente sobre el tema. Sin diagnósticos, con fuentes citadas.';
+const canonicalPath = '/detox-de-ia/';
+const toolImage = '/images/posts/dopamina-y-diseno-por-que-las-apps-son-adictivas/hero.webp';
+
+// Misma mecánica que la Calculadora de Riesgo IA: fecha de última revisión de
+// contenido en un JSON aparte (src/data/detox-de-ia.json), que astro.config.mjs
+// también lee para el lastmod del sitemap — un solo lugar que actualizar a mano.
+const lastReviewed = new Date(`${detoxData.lastReviewed}T12:00:00-06:00`);
+
+// Los 7 artículos de la sección "Psicología Digital" de Guías Esenciales (ver
+// postSlugs en src/content/collections/guias-esenciales.md) — mismo terreno
+// temático del test, enlazados aquí en ambas direcciones: cada uno de estos
+// también muestra una tarjeta de vuelta hacia el test (ver DETOX_DE_IA_SLUGS
+// en src/pages/articulos/[slug].astro).
+const RELATED_SLUGS = [
+  'dopamina-y-diseno-por-que-las-apps-son-adictivas',
+  'ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro',
+  'tu-atencion-ya-no-te-pertenece-la-fragmentacion-digital',
+  'redes-sociales-y-autoestima-la-trampa-de-la-comparacion',
+  'habitos-invisibles-tecnologia-que-reconfigura-tu-conducta',
+  'el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende',
+  'la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste',
+];
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
+  (p): p is NonNullable<typeof p> => Boolean(p)
+);
+
+const faqs = [
+  {
+    q: '¿Este test diagnostica una adicción a la IA?',
+    a: 'No. Esto no es un diagnóstico clínico ni mide una adicción como hecho establecido. Es una autoevaluación informativa sobre tus hábitos de uso de IA. El término "dependencia hacia la IA" no es, hoy, un diagnóstico médico reconocido —es objeto de estudio activo—. Si tienes una preocupación real sobre tu bienestar, esto no sustituye hablar con un profesional.',
+  },
+  {
+    q: '¿Guardan o comparten mis respuestas?',
+    a: 'No. El test corre completo en tu navegador: no hay backend, no se guarda tu historial de resultados en ningún servidor, y no se pide correo ni ningún otro dato personal en ningún punto del flujo.',
+  },
+  {
+    q: '¿En qué se basa la puntuación?',
+    a: 'En 7 preguntas organizadas en 4 dimensiones documentadas por investigación reciente: delegación cognitiva, apego emocional, búsqueda compulsiva y aislamiento social. El detalle completo, con las fuentes citadas, está en la metodología al final de esta página.',
+  },
+  {
+    q: '¿Qué significa el resultado de "vale la pena platicarlo"?',
+    a: 'Se activa solo cuando tu respuesta a la pregunta de aislamiento social —hablar con una IA en vez de con una persona cercana— es la más alta y tu puntuación total también lo es. Separa "delego mucho en la IA" de "estoy sustituyendo vínculos humanos", que es una señal distinta y amerita otro tono, no un veredicto.',
+  },
+  {
+    q: '¿Cada cuánto se actualiza esta metodología?',
+    a: `Se revisa cuando cambian los hallazgos de investigación en los que se basa, no en un ciclo fijo. Última revisión: ${formatDate(lastReviewed)}.`,
+  },
+];
+
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Detox de IA — Test de autoevaluación',
+  description,
+  url: new URL(canonicalPath, Astro.site).toString(),
+  applicationCategory: 'LifestyleApplication',
+  operatingSystem: 'Any (web browser)',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'MXN',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  image={toolImage}
+  modifiedTime={lastReviewed}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  locale="es_MX"
+>
+  <Breadcrumbs items={[{ name: 'Detox de IA' }]} />
+  <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <PageHeader
+    eyebrow="Autoevaluación · glitchMentalMX"
+    title="¿Necesitas un detox de IA?"
+    dek="Identifica tus patrones y hábitos de uso de IA con este test breve, basado en investigación reciente sobre el tema. Sin diagnósticos, con fuentes citadas."
+  />
+
+  <section class="container disclaimer-box">
+    <p class="disclaimer-label">Antes de empezar</p>
+    <p>
+      Esto no es un diagnóstico clínico ni mide una adicción. Es una autoevaluación informativa sobre tus hábitos de
+      uso de IA, basada en investigación reciente y todavía emergente sobre el tema. Los términos como
+      "dependencia hacia la IA" no son, hoy, un diagnóstico médico reconocido —son objeto de estudio activo—. Si
+      tienes una preocupación real sobre tu bienestar, esto no sustituye hablar con un profesional.
+    </p>
+  </section>
+
+  <section class="container test-wrap">
+    <div id="dia-container">
+      <h2 class="dia-title">Detox de IA</h2>
+      <div class="dia-meta">
+        <span>7 preguntas</span><span>•</span><span>2 minutos</span>
+      </div>
+
+      <form id="dia-form">
+        <fieldset class="dia-q" data-q="1">
+          <legend><span class="dia-q-num">1 / 7</span><span class="dia-q-text">¿Le pides a la IA que piense por ti antes de intentar resolver algo solo —una decisión, un problema, una idea?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q1" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q1" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q1" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q1" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="dia-q" data-q="2">
+          <legend><span class="dia-q-num">2 / 7</span><span class="dia-q-text">¿Sientes que se te dificulta escribir, argumentar o decidir sin apoyarte primero en una IA?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q2" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q2" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q2" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q2" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="dia-q" data-q="3">
+          <legend><span class="dia-q-num">3 / 7</span><span class="dia-q-text">¿Le cuentas a una IA cosas que no le has contado a ninguna persona?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q3" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q3" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q3" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q3" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="dia-q" data-q="4">
+          <legend><span class="dia-q-num">4 / 7</span><span class="dia-q-text">¿Sientes alivio, compañía o menos soledad específicamente después de hablar con una IA?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q4" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q4" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q4" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q4" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="dia-q" data-q="5">
+          <legend><span class="dia-q-num">5 / 7</span><span class="dia-q-text">¿Te cuesta parar una conversación con una IA aunque ya obtuviste lo que buscabas?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q5" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q5" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q5" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q5" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="dia-q" data-q="6">
+          <legend><span class="dia-q-num">6 / 7</span><span class="dia-q-text">¿Revisas o le preguntas algo a una IA sin tener una razón concreta, solo por costumbre?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q6" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q6" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q6" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q6" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="dia-q" data-q="7">
+          <legend><span class="dia-q-num">7 / 7</span><span class="dia-q-text">¿Ha pasado que prefieres hablarlo con una IA en vez de con una persona cercana, aunque esa persona esté disponible?</span></legend>
+          <div class="dia-options">
+            <label class="dia-opt"><input type="radio" name="q7" value="0" /><span>Nunca</span></label>
+            <label class="dia-opt"><input type="radio" name="q7" value="1" /><span>Rara vez</span></label>
+            <label class="dia-opt"><input type="radio" name="q7" value="2" /><span>A veces</span></label>
+            <label class="dia-opt"><input type="radio" name="q7" value="3" /><span>Seguido</span></label>
+          </div>
+        </fieldset>
+
+        <p id="dia-warning" role="alert"></p>
+        <button type="submit" id="dia-submit" class="dia-btn">Ver mi resultado</button>
+      </form>
+
+      <p class="last-reviewed">Última revisión: {formatDate(lastReviewed)}.</p>
+
+      <div id="dia-result">
+        <div class="dia-score-row">
+          <span id="dia-score-num"></span>
+          <div class="fill-track"><div id="dia-score-fill"></div></div>
+        </div>
+        <h3 id="dia-headline"></h3>
+        <p id="dia-desc"></p>
+
+        <div id="dia-share-row">
+          <span class="share-prompt">Comparte con contexto — esto no es un diagnóstico.</span>
+          <div class="buttons">
+            <button id="dia-share-wa" type="button" class="chip-btn wa">WhatsApp</button>
+            <button id="dia-copy-link" type="button" class="chip-btn"><span>Copiar enlace</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container related">
+    <p class="eyebrow">Para profundizar</p>
+    <h2>Psicología digital: qué hay detrás de estos hábitos</h2>
+    <div class="related-grid">
+      {relatedPosts.map((post) => (
+        <ArticleCard
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          heroImage={post.data.heroImage}
+          heroImageAlt={post.data.heroImageAlt}
+          body={post.body}
+          variant="grid"
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="container faq">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Antes de que preguntes</h2>
+    <div class="faq-list">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="container methodology">
+    <p class="eyebrow">Metodología y fuentes</p>
+    <p class="method-updated">Metodología actualizada: septiembre de 2026.</p>
+    <p>
+      Este test no diagnostica. Está inspirado en las siguientes fuentes de investigación, revisadas
+      periódicamente:
+    </p>
+    <ul class="sources">
+      <li>
+        Shen, M.K., Huang, J., Liang, O., Kim, I-J. &amp; Yoon, D. (2026). "The AI Genie Phenomenon and Three
+        Types of AI Chatbot Addiction: Escapist Roleplays, Pseudosocial Companions, and Epistemic Rabbit
+        Holes." Presentado en la <em>CHI Conference on Human Factors in Computing Systems 2026</em>. Universidad
+        de British Columbia. arXiv:2601.13348.
+      </li>
+      <li>
+        Goh, A.Y.H., Hartanto, A. &amp; Majeed, N.M. (2025). "Generative artificial intelligence dependency:
+        Scale development, validation, and its motivational, behavioral, and psychological correlates."
+        <em>Computers in Human Behavior Reports</em>, 20, 100845. Escala validada con 1,333 participantes
+        (EE.UU. y Singapur), estructura de tres factores: preocupación cognitiva, consecuencias negativas,
+        síndrome de abstinencia.
+      </li>
+      <li>
+        Kooli, C., Kooli, Y. &amp; Kooli, E. (2025). "Generative artificial intelligence addiction syndrome: A
+        new behavioral disorder?" <em>Asian Journal of Psychiatry</em>, 107, 104476.
+        <span class="source-note">
+          [Nota: carta al editor / propuesta conceptual, no estudio empírico con datos propios — presentar con
+          ese matiz, no como hallazgo con muestra y metodología].
+        </span>
+      </li>
+      <li>
+        OpenAI &amp; MIT Media Lab (marzo 2025). Investigación conjunta sobre uso afectivo y bienestar emocional
+        en ChatGPT: análisis observacional de ~40 millones de interacciones (OpenAI) + ensayo controlado
+        aleatorizado con ~1,000 participantes durante cuatro semanas (MIT Media Lab).
+      </li>
+    </ul>
+    <p>
+      Términos como "dependencia hacia la IA" describen un fenómeno de investigación activa, no un diagnóstico
+      médico reconocido formalmente. Si esta metodología cambia por evidencia nueva, se actualizará esta fecha y
+      esta lista.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  var DIA_CONTENT = {
+    low: {
+      headline: 'Uso funcional.',
+      desc: 'Usas la IA como herramienta, no como muleta. Le pides cosas puntuales y sigues resolviendo el resto por tu cuenta. No hay mucho que ajustar aquí.',
+    },
+    mid: {
+      headline: 'Ahí la llevas, pero vale la pena mirarlo.',
+      desc: 'Hay patrones de delegación o de costumbre que empiezan a asomar. No es alarma, es una invitación a notar cuándo le preguntas a la IA por necesidad real y cuándo es solo reflejo.',
+    },
+    high: {
+      headline: 'La IA está ocupando más espacio del que crees.',
+      desc: 'Varias de tus respuestas apuntan a que estás delegando decisiones, tiempo o incluso compañía a la IA más de lo que probablemente reconocerías si te lo preguntaran de otra forma. No es un diagnóstico —es una señal para prestar atención.',
+    },
+    special: {
+      headline: 'Si sientes que estás usando esto como respuesta:',
+      desc: 'Tus respuestas muestran algo que va más allá de curiosidad o de un hábito que se pueda ajustar solo. Esto no es algo que un test pueda resolver, y no lo intentamos. Vale la pena platicarlo con alguien: un profesional de salud mental, o simplemente una persona de confianza. No es una señal de que algo esté mal contigo —es una señal de que este tema merece más espacio del que le puede dar una pantalla.',
+    },
+  };
+
+  var form = document.getElementById('dia-form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var warning = document.getElementById('dia-warning');
+    var values = [];
+    var firstMissing = null;
+
+    for (var i = 1; i <= 7; i++) {
+      var checked = form.querySelector('input[name="q' + i + '"]:checked');
+      var fieldset = form.querySelector('.dia-q[data-q="' + i + '"]');
+      if (!checked) {
+        fieldset.classList.add('missing');
+        if (!firstMissing) firstMissing = fieldset;
+      } else {
+        fieldset.classList.remove('missing');
+        values.push(Number(checked.value));
+      }
+    }
+
+    if (values.length < 7) {
+      warning.textContent = 'Responde las 7 preguntas para ver tu resultado.';
+      warning.style.display = 'block';
+      if (firstMissing) {
+        firstMissing.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      return;
+    }
+
+    warning.style.display = 'none';
+
+    var total = values.reduce(function (a, b) { return a + b; }, 0);
+    var p7 = values[6];
+    var special = p7 === 3 && total >= 14;
+
+    var tier;
+    if (special) tier = 'special';
+    else if (total <= 6) tier = 'low';
+    else if (total <= 13) tier = 'mid';
+    else tier = 'high';
+
+    var content = DIA_CONTENT[tier];
+
+    document.getElementById('dia-score-num').textContent = total + ' / 21';
+    var fill = document.getElementById('dia-score-fill');
+    fill.style.width = '0%';
+    setTimeout(function () {
+      fill.style.width = Math.round((total / 21) * 100) + '%';
+    }, 100);
+
+    document.getElementById('dia-headline').textContent = content.headline;
+    document.getElementById('dia-desc').textContent = content.desc;
+
+    var shareRow = document.getElementById('dia-share-row');
+    shareRow.style.display = tier === 'special' ? 'none' : 'flex';
+
+    var result = document.getElementById('dia-result');
+    result.style.display = 'block';
+    setTimeout(function () {
+      var top = result.getBoundingClientRect().top + window.pageYOffset - 120;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }, 150);
+  });
+
+  var shareWaBtn = document.getElementById('dia-share-wa');
+  if (shareWaBtn) {
+    shareWaBtn.addEventListener('click', function () {
+      var url = encodeURIComponent(window.location.href);
+      var text = encodeURIComponent(document.title);
+      window.open('https://wa.me/?text=' + text + '%20' + url, '_blank');
+    });
+  }
+
+  var copyBtn = document.getElementById('dia-copy-link');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var btn = this;
+      navigator.clipboard.writeText(window.location.href).then(function () {
+        btn.classList.add('copied');
+        btn.querySelector('span').textContent = 'Copiado';
+        setTimeout(function () {
+          btn.classList.remove('copied');
+          btn.querySelector('span').textContent = 'Copiar enlace';
+        }, 2000);
+      });
+    });
+  }
+</script>
+
+<style>
+  .disclaimer-box { padding: 0 24px 32px; max-width: 680px; }
+  .disclaimer-box p:last-child {
+    background: var(--bg-inset);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 18px 20px;
+    color: var(--text);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .disclaimer-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 10px;
+  }
+
+  .test-wrap { padding: 0 24px 24px; display: flex; justify-content: center; }
+
+  #dia-container {
+    background: linear-gradient(145deg, #0e1520 0%, #080c10 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    box-shadow: rgba(0, 102, 255, 0.12) 0px 0px 30px;
+    color: #fff;
+    max-width: 640px;
+    width: 100%;
+    padding: 32px;
+    font-family: var(--font-body);
+  }
+  .dia-title { font-size: 1.5em; letter-spacing: 1px; text-align: center; text-transform: uppercase; margin: 0 0 12px; color: #fff; }
+  .dia-meta {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: rgba(255, 255, 255, 0.5); font-family: var(--font-mono); font-size: 0.8em;
+    margin: 0 0 28px;
+  }
+
+  .dia-q { border: none; padding: 0; margin: 0 0 22px; }
+  .dia-q legend { display: block; padding: 0; margin-bottom: 10px; width: 100%; }
+  .dia-q-num {
+    display: block; font-family: var(--font-mono); font-size: 0.68em; letter-spacing: 1.2px;
+    color: var(--accent); text-transform: uppercase; margin-bottom: 6px;
+  }
+  .dia-q-text { display: block; font-size: 0.96em; line-height: 1.5; color: rgba(255, 255, 255, 0.9); }
+
+  .dia-options { display: flex; flex-wrap: wrap; gap: 8px; }
+  .dia-opt { cursor: pointer; }
+  .dia-opt input {
+    position: absolute; opacity: 0; width: 1px; height: 1px; overflow: hidden;
+  }
+  .dia-opt span {
+    display: inline-block; background: #0d1117; border: 1px solid rgba(0, 102, 255, 0.25);
+    border-radius: 999px; color: rgba(255, 255, 255, 0.75); font-size: 0.8em;
+    padding: 8px 14px; transition: 0.15s;
+  }
+  .dia-opt input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .dia-opt input:checked + span { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .dia-q.missing .dia-q-text { color: var(--accent); }
+  .dia-q.missing .dia-opt span { border-color: rgba(0, 102, 255, 0.5); }
+
+  #dia-warning {
+    display: none; color: var(--accent); font-size: 0.82em; margin: 4px 0 16px;
+  }
+
+  .dia-btn {
+    background: var(--accent); border: none; border-radius: 999px;
+    box-shadow: rgba(0, 102, 255, 0.3) 0px 4px 15px; color: #fff; cursor: pointer;
+    font-family: var(--font-body); font-size: 1em; font-weight: 800; letter-spacing: 1px;
+    padding: 17px; text-transform: uppercase; width: 100%; margin-top: 8px;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+  .dia-btn:hover { background: #0052cc; transform: scale(1.015); }
+
+  .last-reviewed { color: rgba(255, 255, 255, 0.4); font-family: var(--font-mono); font-size: 0.7em; margin: 16px 0 0; }
+
+  #dia-result { display: none; animation: diaFadeIn 0.5s ease; background: rgba(0, 102, 255, 0.05); border-radius: 10px; margin-top: 26px; padding: 20px; }
+  @keyframes diaFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  .dia-score-row { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  #dia-score-num { font-family: var(--font-mono); font-size: 1.1em; font-weight: 700; color: var(--accent); flex-shrink: 0; }
+  .fill-track { background: rgba(255, 255, 255, 0.08); border-radius: 999px; height: 6px; overflow: hidden; width: 100%; }
+  .fill-track > div { background: var(--accent); border-radius: 999px; height: 100%; transition: width 1s; width: 0%; }
+
+  #dia-headline { font-size: 1.15em; font-weight: 700; margin: 0 0 10px; color: #fff; }
+  #dia-desc { color: rgba(255, 255, 255, 0.7); font-size: 0.92em; line-height: 1.75; margin: 0; }
+
+  #dia-share-row {
+    display: none; flex-direction: column; gap: 12px; margin-top: 20px; padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .share-prompt { color: rgba(255, 255, 255, 0.45); font-size: 0.75em; }
+  .buttons { display: flex; gap: 10px; }
+  .chip-btn {
+    display: inline-flex; align-items: center; gap: 6px; background: rgba(255, 255, 255, 0.06);
+    border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 999px; color: #fff;
+    cursor: pointer; font-size: 13px; font-weight: 600; padding: 8px 16px;
+    transition: 0.15s;
+  }
+  .chip-btn.wa:hover { background: #25d366; border-color: #25d366; color: #fff; }
+  .chip-btn.copied { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .related { padding: 40px 24px 56px; max-width: 900px; margin: 0 auto; }
+  .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+
+  .faq { padding: 16px 24px 56px; max-width: 760px; margin: 0 auto; }
+  .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 1.2em;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 14px 0 0;
+  }
+
+  .methodology { padding: 16px 24px 96px; max-width: 760px; margin: 0 auto; }
+  .method-updated {
+    font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);
+    letter-spacing: 0.02em; margin: 6px 0 20px;
+  }
+  .methodology > p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
+  .sources { list-style: none; margin: 16px 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .sources li {
+    font-size: 0.85rem; line-height: 1.65; color: var(--text-muted);
+    padding-left: 18px; border-left: 2px solid var(--border-strong);
+  }
+  .sources li em { color: var(--text); font-style: italic; }
+  .source-note { display: block; margin-top: 6px; font-style: italic; color: var(--text-faint); }
+</style>
