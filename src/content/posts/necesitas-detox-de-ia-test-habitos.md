@@ -1,7 +1,7 @@
 ---
 title: ¿Necesitas un detox de IA? Este test evalúa tus hábitos
 category: Cultura Digital
-pubDate: 2026-09-05T16:30
+pubDate: 2026-09-05T16:39
 updatedDate: ''
 description: 'No es un diagnóstico: es una fotografía de tus hábitos con IA. Qué mide el test de GlitchMentalMX y qué significan sus cuatro dimensiones.'
 heroImage: /images/uploads/detox-ia-16-9.webp
