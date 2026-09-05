@@ -1,9 +1,9 @@
 ---
 title: ¿Necesitas un detox de IA? Este test evalúa tus hábitos
 category: Cultura Digital
-pubDate: 2026-09-05T16:39
+pubDate: 2026-09-05T16:47
 updatedDate: ''
-description: 'No es un diagnóstico: es una fotografía de tus hábitos con IA. Qué mide el test de GlitchMentalMX y qué significan sus cuatro dimensiones.'
+description: 'No es un diagnóstico: es una fotografía de tus hábitos con IA. Qué mide el test de glitchMentalMX y qué significan sus cuatro dimensiones.'
 heroImage: /images/uploads/detox-ia-16-9.webp
 heroImageAlt: 'Detox de IA: suero conectado a un smartphone con icono de inteligencia artificial'
 draft: false
@@ -11,7 +11,7 @@ draft: false
 
 El test de **detox de IA** no diagnostica nada — mide hábitos. Esa distinción parece menor, pero es justo lo que todavía nadie ha resuelto: ¿qué haces cuando una fotografía de tus costumbres empieza a parecerse a un síntoma?
 
-GlitchMentalMX diseñó su propia herramienta para responder eso sin necesidad de consultorio. El **test de detox de IA**, disponible en el sitio, no busca clasificarte como adicto ni como sano — busca describir cómo usas la inteligencia artificial en tu día a día. Si quieres saltarte la teoría, [la autoevaluación completa toma dos minutos](/detox-de-ia/).
+glitchMentalMX diseñó su propia herramienta para eso. El **test de detox de IA**, disponible en el sitio, no busca clasificarte como adicto ni como sano — busca describir cómo usas la inteligencia artificial en tu día a día. Si quieres saltarte la teoría, [la autoevaluación completa toma dos minutos](/detox-de-ia/).
 
 <div style="margin:36px 0;padding:30px 28px;border-radius:20px;background:linear-gradient(145deg,#0e1520 0%,#080c10 100%);border:1px solid rgba(0,102,255,0.25);box-shadow:rgba(0,102,255,0.15) 0px 0px 30px;">
   <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1.4px;text-transform:uppercase;color:#4d94ff;margin:0 0 14px;">Test gratuito · 2 minutos · sin registro</p>
@@ -36,7 +36,7 @@ El resultado tampoco llega como una etiqueta. En lugar de un veredicto de "sí" 
 
 Tiene sentido tomarlo si sientes **curiosidad genuina** sobre tus propios hábitos, si usas IA todos los días para trabajo o estudio, o si simplemente quieres un punto de referencia antes de que el uso crezca más. También sirve si alguien cercano te comentó que "hablas distinto" desde que usas más un chatbot, o si tú mismo notas que consultarlo se volvió el primer paso antes de pensar, en lugar del último. Tiene menos sentido si ya buscas ayuda por angustia real — para eso, la ruta es un profesional de salud mental, no un cuestionario en línea.
 
-La curiosidad por medir esto no es exclusiva de GlitchMentalMX. Una escala publicada en _Computers in Human Behavior Reports_ — validada con 1,333 participantes en Estados Unidos y Singapur — identificó tres factores distintos de **dependencia hacia la IA generativa**: preocupación cognitiva, consecuencias negativas y síndrome de abstinencia, según Goh, Hartanto y Majeed. Son categorías distintas a las cuatro del test de GlitchMentalMX, pero apuntan al mismo terreno: la dependencia se puede describir sin necesidad de patologizarla de entrada.
+La curiosidad por medir esto no es exclusiva de glitchMentalMX. Una escala publicada en _Computers in Human Behavior Reports_ — validada con 1,333 participantes en Estados Unidos y Singapur — identificó tres factores distintos de **dependencia hacia la IA generativa**: preocupación cognitiva, consecuencias negativas y síndrome de abstinencia, según Goh, Hartanto y Majeed. Son categorías distintas a las cuatro del test de glitchMentalMX, pero apuntan al mismo terreno: la dependencia se puede describir sin necesidad de patologizarla de entrada.
 
 ![Detox de IA: suero conectado a un smartphone con icono de inteligencia artificial](/images/uploads/detox-ia-sec.webp)
 
