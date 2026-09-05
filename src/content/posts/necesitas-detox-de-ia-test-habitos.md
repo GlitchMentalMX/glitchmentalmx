@@ -13,6 +13,13 @@ El test de **detox de IA** no diagnostica nada — mide hábitos. Esa distinció
 
 GlitchMentalMX diseñó su propia herramienta para responder eso sin necesidad de consultorio. El **test de detox de IA**, disponible en el sitio, no busca clasificarte como adicto ni como sano — busca describir cómo usas la inteligencia artificial en tu día a día. Si quieres saltarte la teoría, [la autoevaluación completa toma dos minutos](/detox-de-ia/).
 
+<div style="margin:36px 0;padding:30px 28px;border-radius:20px;background:linear-gradient(145deg,#0e1520 0%,#080c10 100%);border:1px solid rgba(0,102,255,0.25);box-shadow:rgba(0,102,255,0.15) 0px 0px 30px;">
+  <p style="font-family:var(--font-mono);font-size:0.72rem;letter-spacing:1.4px;text-transform:uppercase;color:#4d94ff;margin:0 0 14px;">Test gratuito · 2 minutos · sin registro</p>
+  <p style="font-family:var(--font-display);font-size:1.4rem;font-weight:600;line-height:1.3;color:#fff;margin:0 0 12px;">¿Cuánto espacio le estás dando a la IA sin darte cuenta?</p>
+  <p style="font-size:0.96rem;line-height:1.65;color:rgba(255,255,255,0.65);margin:0 0 24px;">7 preguntas, 4 dimensiones, cero diagnósticos. Descúbrelo antes de que alguien más lo note por ti.</p>
+  <a href="/detox-de-ia/" style="display:inline-block;background:#0066ff;color:#fff;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;font-size:0.85rem;padding:14px 30px;border-radius:999px;text-decoration:none;box-shadow:rgba(0,102,255,0.35) 0px 4px 15px;">Hacer el test →</a>
+</div>
+
 ## Las cuatro dimensiones que el test realmente mide
 
 La primera dimensión es la **delegación cognitiva**: qué tanto le entregas a un modelo de lenguaje decisiones, redacciones o razonamientos que antes resolvías solo. No mide si usas IA — mide si dejaste de intentar la tarea sin ella primero.
