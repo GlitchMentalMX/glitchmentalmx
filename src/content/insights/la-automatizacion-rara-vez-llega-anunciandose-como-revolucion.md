@@ -4,8 +4,8 @@ resumen: El Foro Económico Mundial identifica cajeros, capturistas y auxiliares
 imagen: /images/uploads/automatización.webp
 imagenAlt: 'automatización laboral: trabajadora procesa documentos mientras un sistema automatizado realiza la misma tarea'
 enlace: ''
-date: 2026-09-06T07:32
-draft: true
+date: 2026-09-07T06:08
+draft: false
 categoria: Futuro del Trabajo
 punchline: La automatización rara vez llega anunciándose como revolución
 ---
