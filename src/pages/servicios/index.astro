@@ -17,12 +17,6 @@ const cards = [
     href: '/publicidad-en-glitchmentalmx/',
   },
   {
-    eyebrow: 'Colaboraciones editoriales',
-    title: 'Colabora',
-    dek: 'Publicamos colaboraciones seleccionadas que encajan con nuestra línea y aportan valor real — no publicidad disfrazada.',
-    href: '/colabora/',
-  },
-  {
     eyebrow: 'Conexión directa',
     title: 'Contacto',
     dek: 'Escríbenos: ideas, preguntas o caos bien intencionado.',
@@ -33,14 +27,14 @@ const cards = [
 
 <Layout
   title="Servicios"
-  description="Redacción editorial completa, publicidad integrada, colaboraciones seleccionadas o contacto directo — las formas de trabajar con glitchMentalMX."
+  description="Redacción editorial completa, publicidad integrada o contacto directo — las formas de trabajar con glitchMentalMX."
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
   <Breadcrumbs items={[{ name: 'Servicios' }]} />
   <section class="container header">
     <p class="eyebrow">Servicios</p>
-    <h1>Cuatro formas de <span class="accent">trabajar con nosotros</span></h1>
-    <p class="sub">Redacción editorial completa, publicidad integrada, una colaboración puntual o un mensaje directo. Elige la que corresponda.</p>
+    <h1>Tres formas de <span class="accent">trabajar con nosotros</span></h1>
+    <p class="sub">Redacción editorial completa, publicidad integrada o un mensaje directo. Elige la que corresponda.</p>
   </section>
 
   <section class="container grid">
@@ -63,7 +57,7 @@ const cards = [
   .grid {
     padding: 0 24px 72px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
   }
   .card {

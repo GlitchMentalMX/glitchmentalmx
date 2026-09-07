@@ -9,7 +9,7 @@ const proof = [
   { value: `${postCount}`, label: 'artículos publicados — audiencia activa' },
   { value: 'Nicho', label: 'IA, Tech, Cultura Digital y tendencias' },
   { value: 'LATAM', label: 'enfoque hispanohablante — México, LATAM + España' },
-  { value: '100%', label: 'contenido editorial — sin relleno' },
+  { value: '', label: 'Contenido patrocinado con criterio editorial — sin relleno' },
 ];
 
 const formats = [
@@ -70,7 +70,7 @@ const reasons = [
   <section class="container proof-bar">
     {proof.map((p) => (
       <div class="proof-item">
-        <span class="proof-value">{p.value}</span>
+        {p.value && <span class="proof-value">{p.value}</span>}
         <span class="proof-label">{p.label}</span>
       </div>
     ))}
@@ -91,6 +91,7 @@ const reasons = [
         </div>
       ))}
     </div>
+    <p class="format-note">* Contenido patrocinado, identificado como tal.</p>
   </section>
 
   <section class="container block">
@@ -166,6 +167,7 @@ const reasons = [
   }
 
   .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .format-note { margin: 14px 2px 0; font-size: 0.8rem; font-style: italic; color: var(--text-faint); }
   .format {
     position: relative;
     border: 1px solid var(--border-strong);
