@@ -408,6 +408,60 @@ const otrosPreciosDigitales =
         post.id,
       ).slice(0, 3)
     : [];
+
+// Enlaces automáticos artículo → familia "IA sin letra chiquita": cuando el
+// título de un artículo editorial nombra una herramienta que también tiene
+// ficha en precios-ia/codigos-descuento/prueba-gratis/entrena-ia, se enlazan
+// sus variantes existentes. Esas ~400 páginas casi no reciben enlaces
+// entrantes desde contenido ya indexado (diagnóstico Search Console,
+// 2026-09-08) — esto lo corrige de forma automática y autosostenida (un
+// artículo o herramienta nueva queda cubierto solo, sin curación manual por
+// slug como los otros promos de esta página).
+function normalizeText(s: string): string {
+  return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+}
+function escapeRegex(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+type ToolEntry = { precio?: string; codigo?: string; prueba?: string; entrena?: string };
+
+const relatedToolLinks: { herramienta: string; variants: { label: string; href: string }[] }[] = [];
+
+if (kind === 'posts') {
+  const [preciosIAAll, entrenaIAAll, pruebaGratisAll, codigosDescuentoAll] = await Promise.all([
+    getCollection('preciosIA', ({ data }) => !data.draft),
+    getCollection('entrenaIA', ({ data }) => !data.draft),
+    getCollection('pruebaGratis', ({ data }) => !data.draft),
+    getCollection('codigosDescuento', ({ data }) => !data.draft),
+  ]);
+
+  const byHerramienta = new Map<string, ToolEntry>();
+  for (const p of preciosIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), precio: p.id });
+  for (const p of codigosDescuentoAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), codigo: p.id });
+  for (const p of pruebaGratisAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), prueba: p.id });
+  for (const p of entrenaIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), entrena: p.id });
+
+  const normTitle = normalizeText(title);
+  const matches: { herramienta: string; entry: ToolEntry }[] = [];
+  for (const [herramienta, entry] of byHerramienta) {
+    const re = new RegExp(`(?<![a-z0-9])${escapeRegex(normalizeText(herramienta))}(?![a-z0-9])`);
+    if (re.test(normTitle)) matches.push({ herramienta, entry });
+  }
+  // Más específico primero (p. ej. "Claude Code" antes que "Claude") si el
+  // título nombra a ambos; tope de 2 herramientas para no saturar la página.
+  matches.sort((a, b) => b.herramienta.length - a.herramienta.length);
+
+  for (const { herramienta, entry } of matches.slice(0, 2)) {
+    const variants = [
+      entry.precio && { label: `¿Cuánto cuesta ${herramienta} hoy?`, href: `/articulos/${entry.precio}/` },
+      entry.codigo && { label: '¿Tiene código de descuento real?', href: `/articulos/${entry.codigo}/` },
+      entry.prueba && { label: '¿Tiene prueba gratis sin pedir tarjeta?', href: `/articulos/${entry.prueba}/` },
+      entry.entrena && { label: '¿Usa tus datos para entrenar su IA?', href: `/articulos/${entry.entrena}/` },
+    ].filter((v): v is { label: string; href: string } => Boolean(v));
+    if (variants.length > 0) relatedToolLinks.push({ herramienta, variants });
+  }
+}
 ---
 
 <Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'}>
@@ -555,6 +609,21 @@ const otrosPreciosDigitales =
   {kind === 'posts' && toolPromo && (
     <section class="container book-section">
       <ToolPromo title={toolPromo.title} description={toolPromo.description} href={toolPromo.href} />
+    </section>
+  )}
+
+  {kind === 'posts' && relatedToolLinks.length > 0 && (
+    <section class="container related-tools-section">
+      {relatedToolLinks.map((r) => (
+        <div class="related-tools-group">
+          <p class="related-tools-label">Sobre {r.herramienta}</p>
+          <ul class="related-tools-list">
+            {r.variants.map((v) => (
+              <li><a href={v.href}>{v.label} →</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   )}
 
@@ -708,6 +777,19 @@ const otrosPreciosDigitales =
   .content { padding: 0 24px 20px; display: flex; flex-direction: column; align-items: center; }
 
   .book-section { max-width: 720px; padding: 32px 24px 96px; }
+
+  .related-tools-section { max-width: 720px; padding: 8px 24px 64px; display: flex; flex-direction: column; gap: 22px; }
+  .related-tools-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 10px;
+  }
+  .related-tools-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 7px; }
+  .related-tools-list a { color: var(--text-muted); font-size: 0.92rem; text-decoration: none; }
+  .related-tools-list a:hover { color: var(--accent); text-decoration: underline; }
 
   .otros-precios { max-width: 720px; margin: -12px auto 8px; text-align: right; }
   /* :global() — cuando este párrafo viene del cuerpo markdown (serie "IA sin
