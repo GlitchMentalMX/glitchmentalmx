@@ -17,6 +17,6 @@ Premium da 1,200 créditos mensuales para usar en las herramientas de IA del cat
 
 ## El plan gratuito ya deja probar la herramienta principal, Chat with PDF
 
-A diferencia de otras herramientas académicas que bloquean todo detrás del muro de pago, SciSpace deja usar Chat with PDF de forma gratuita con límites — la razón real para pagar Premium no es "desbloquear la IA", es dejar de toparte con el tope de créditos a media revisión bibliográfica.
+A diferencia de otras herramientas académicas que bloquean todo detrás del muro de pago, SciSpace deja usar Chat with PDF de forma gratuita con límites — la razón real para pagar Premium no es "desbloquear la IA", es dejar de toparte con el límite de créditos a media revisión bibliográfica.
 
 <a href="https://scispace.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de SciSpace →</a>
