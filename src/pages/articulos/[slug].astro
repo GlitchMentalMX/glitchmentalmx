@@ -265,9 +265,6 @@ const sitioOficial =
   kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
     ? (post.data as any).sitioOficial
     : undefined;
-const empresaFrontmatter =
-  kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).empresa : undefined;
-
 const precio =
   kind === 'preciosIA'
     ? (preciosUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; periodo: string; empresa: string }>)[herramientaId]
@@ -312,14 +309,13 @@ const metaTitle =
 // falta la capa de indirección que sí necesita Banxico.
 const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).veredicto : undefined;
 
-// Product con Offer para las series de precio (dato real: precio, moneda,
-// vigencia). Product SIN Offer para las otras 3 — entidad real (nombre,
-// marca), pero sin inventar una oferta que no existe: estas fichas
-// verifican una política o un flujo de registro, no un precio. Se
-// consideró ClaimReview (encaja más con "veredicto verificado"), pero
-// Google solo lo muestra en su resultado de Fact Check a medios reconocidos
-// como verificadores — no calificamos, así que sería puro ruido sin
-// beneficio. Product sin Offer es honesto con lo que sí sabemos.
+// Product solo para las series de precio, y solo con Offer: Google Search
+// Console marca como error crítico un Product sin "offers", "review" ni
+// "aggregateRating" (lo tuvimos así para entrenaIA/pruebaGratis/
+// codigosDescuento — entidad real sin inventar una oferta que no existe —
+// pero Google lo rechaza igual, no hay tipo de schema honesto para "esta
+// ficha verifica una política, no un precio". Esas 3 series se quedan solo
+// con el Article schema de abajo, que ya las cubre.
 const productSchema =
   (kind === 'preciosIA' || kind === 'preciosDigitales') && precio && precioMXN !== undefined
     ? {
@@ -340,17 +336,7 @@ const productSchema =
           priceValidUntil: tipoCambio.fecha,
         },
       }
-    : (kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento') && empresaFrontmatter
-      ? {
-          '@context': 'https://schema.org',
-          '@type': 'Product',
-          name: herramienta,
-          description,
-          image: articleImage ?? new URL('/og-default.png', Astro.site).toString(),
-          brand: { '@type': 'Brand', name: empresaFrontmatter },
-          url: articleURL,
-        }
-      : undefined;
+    : undefined;
 
 // Selección pseudoaleatoria (seedeada por el slug del artículo actual) en vez
 // de slice(0, 3) tras ordenar alfabéticamente: con 60 herramientas en la
