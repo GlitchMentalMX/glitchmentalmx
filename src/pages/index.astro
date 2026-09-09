@@ -417,8 +417,24 @@ const signalPools = {
     max-width: 760px;
   }
   .hero h1 {
-    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    /* Máximo bajado de 3.4rem a 3.1rem: a 3.4rem, la segunda línea ("que
+       nos está reescribiendo.") mide más que el contenedor de 760px en
+       cuanto la fuente cae a su respaldo (Georgia/serif) — con
+       font-display:optional eso pasa en visitas al azar (caché frío, carga
+       lenta), y por eso se veía inconsistente entre navegadores y entre
+       una visita y otra. Medido en vivo: con Georgia forzado, 51.7px es el
+       límite exacto para que quepa en una sola línea a 760px de ancho;
+       3.1rem (49.6px) deja margen real incluso en ese peor caso. */
+    font-size: clamp(2.2rem, 5vw, 3.1rem);
     margin: 14px 0 18px;
+  }
+  /* Cinturón y tirantes: aun con el margen de arriba, que la segunda línea
+     nunca pueda partirse en dos — en escritorio siempre son exactamente 2
+     líneas, sin importar qué fuente esté activa en ese momento. En móvil
+     no aplica: "que nos está reescribiendo." nunca cabe en una sola línea
+     ahí, y no se toca ese comportamiento (pedido explícito). */
+  @media (min-width: 641px) {
+    .hero h1 .accent { white-space: nowrap; }
   }
   .hero-dek {
     font-size: 1.15rem;
