@@ -45,9 +45,22 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
     // botón esté a punto de entrar en pantalla — nadie puede darle clic antes
     // de verlo, y la mayoría de las visitas nunca llegan al footer, así que
     // para ellas el costo desaparece por completo, no solo se retrasa.
+    // El SDK es la única cookie de terceros real del sitio (ver
+    // CookieConsent.astro) — no se carga sin que el usuario haya aceptado.
+    // Si el botón entra en pantalla antes de que decida, se queda "en cola"
+    // (wantsToLoad) y se dispara solo si acepta después, sin esperar a que
+    // recargue la página.
     let sdkLoadRequested = false;
+    let wantsToLoad = false;
+    const hasConsent = () => {
+      try {
+        return localStorage.getItem('gm-cookie-consent') === 'accepted';
+      } catch (e) {
+        return false;
+      }
+    };
     const loadPreferredSourceSDK = () => {
-      if (sdkLoadRequested) return;
+      if (sdkLoadRequested || !hasConsent()) return;
       sdkLoadRequested = true;
       const script = document.createElement('script');
       script.async = true;
@@ -55,11 +68,15 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
       script.src = 'https://news.google.com/swg/js/v1/publisher.js';
       document.head.appendChild(script);
     };
+    window.addEventListener('gm-cookie-consent', ((e: CustomEvent<string>) => {
+      if (e.detail === 'accepted' && wantsToLoad) loadPreferredSourceSDK();
+    }) as EventListener);
 
     if ('IntersectionObserver' in window) {
       const observer = new IntersectionObserver(
         (entries) => {
           if (entries.some((e) => e.isIntersecting)) {
+            wantsToLoad = true;
             loadPreferredSourceSDK();
             observer.disconnect();
           }
@@ -68,6 +85,7 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
       );
       document.querySelectorAll('[data-preferred-source-container]').forEach((el) => observer.observe(el));
     } else {
+      wantsToLoad = true;
       loadPreferredSourceSDK();
     }
 

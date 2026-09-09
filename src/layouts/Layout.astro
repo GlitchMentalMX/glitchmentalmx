@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Lightbox from '../components/Lightbox.astro';
 import Analytics from '../components/Analytics.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 
 interface Props {
   title: string;
@@ -160,6 +161,7 @@ const personSchema = {
     <Footer />
     <Lightbox />
     <Analytics />
+    <CookieConsent />
     <style>
       .skip-link {
         position: absolute;
