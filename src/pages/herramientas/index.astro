@@ -1,0 +1,99 @@
+---
+// Landing de la pestaña "Tools" del header/footer — antes ese link caía
+// directo en /glitchsearch/ (el primer hijo del dropdown) en vez de un hub
+// propio, a diferencia de cómo se comportan las demás pestañas con
+// submenú (Leer → /categoria/, Colecciones → /colecciones/, IA sin letra
+// chiquita → /ia-sin-letra-chiquita/). Mismo patrón de cards que esa
+// última página.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const queIATabla = await getCollection('herramientasIA');
+const queIACount = queIATabla[0]?.data.herramientas.length ?? 0;
+
+const cards = [
+  {
+    href: '/que-ia-me-conviene/',
+    eyebrow: `${queIACount} herramientas comparadas`,
+    title: '¿Qué IA me conviene?',
+    dek: 'Responde unas preguntas y te decimos qué IA te conviene según lo que necesitas — no cuál es "la mejor". Con la razón detrás de cada número.',
+  },
+  {
+    href: '/glitchsearch/',
+    eyebrow: 'Herramienta',
+    title: 'GlitchSearch',
+    dek: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.',
+  },
+  {
+    href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/',
+    eyebrow: 'Herramienta',
+    title: 'Calculadora de Riesgo IA',
+    dek: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.',
+  },
+  {
+    href: '/detox-de-ia/',
+    eyebrow: 'Herramienta',
+    title: 'Detox de IA',
+    dek: 'Identifica tus patrones y hábitos de uso de IA con un test breve. Sin diagnósticos, con fuentes citadas.',
+  },
+  {
+    href: '/buscar/',
+    eyebrow: 'Utilidad',
+    title: 'Buscar en el sitio',
+    dek: 'Busca entre todos los artículos de glitchMentalMX.',
+  },
+];
+---
+
+<Layout
+  title="Tools"
+  description="Las herramientas interactivas de glitchMentalMX: recomendador de IA, buscador curado, calculadora de riesgo de automatización, test de hábitos de IA y búsqueda interna."
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <Breadcrumbs items={[{ name: 'Tools' }]} />
+  <section class="container header">
+    <p class="eyebrow">Tools</p>
+    <h1>Herramientas <span class="accent">interactivas</span></h1>
+    <p class="sub">Nada de artículos aquí — solo lo que puedes usar directamente: recomendador, buscador, calculadora y tests, todos con datos verificados.</p>
+  </section>
+
+  <section class="container grid">
+    {cards.map((c) => (
+      <a href={c.href} class="card">
+        <p class="eyebrow">{c.eyebrow}</p>
+        <h2>{c.title}</h2>
+        <p class="dek">{c.dek}</p>
+      </a>
+    ))}
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 40px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 12px 0 10px; }
+  .sub { color: var(--text-muted); font-size: 1.05rem; }
+
+  .grid {
+    padding: 0 24px 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .card {
+    padding: 30px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    color: var(--text);
+  }
+  .card:hover { outline: 1.5px solid var(--accent); }
+  .card h2 { font-size: 1.4rem; margin: 10px 0 12px; }
+  .card .dek { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+  @media (max-width: 1100px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
