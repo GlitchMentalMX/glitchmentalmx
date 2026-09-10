@@ -69,10 +69,15 @@ const EXTRAS = [
   { key: 'disponibleMexico', label: 'Disponible en México' },
 ] as const;
 
+// timeZone: 'UTC' a propósito — fechaVerificacion se guarda como fecha pura
+// (sin hora) y Zod la coerciona a medianoche UTC; sin fijar la zona aquí,
+// toLocaleDateString la renderiza en la zona local del server/navegador y
+// en México (UTC-6) se corre un día hacia atrás.
 const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es-MX', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  timeZone: 'UTC',
 });
 ---
 

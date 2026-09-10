@@ -159,6 +159,22 @@
       "disponibleMexico": true,
       "fuenteCapacidades": "Video: fuerte por diseño — es su producto principal (Gen-4.5 con audio nativo, secuencias multi-toma, consistencia de personajes hasta 1 minuto). Imágenes: básico — Gen-4 Image existe y es real (vía API), pero es secundario frente a su identidad de video, mismo criterio aplicado a la inversa que en Midjourney. Voz: verdadero por Eleven v3 vía API (habla expresiva) y la función 'Characters' con voz. API: Runway Dev/API documentada y activa. Memoria: no se encontró evidencia de memoria conversacional en el producto de consumo (Characters con 'knowledge bases' es una función de desarrollador, no memoria de chat). Escritura/investigación/código/español: no aplican o no se encontró evidencia — no es un producto conversacional de propósito general. México: artículo propio de precios en pesos mexicanos.",
       "fechaVerificacion": "2026-09-09"
+    },
+    {
+      "herramientaId": "canva",
+      "escritura": "basico",
+      "investigacion": "no",
+      "codigo": "no",
+      "imagenes": "fuerte",
+      "video": "basico",
+      "espanol": "basico",
+      "api": false,
+      "memoria": true,
+      "voz": false,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Imágenes: fuerte por diseño — Magic Media (motor dual con Leonardo Phoenix) es su función de IA central, con la biblioteca de plantillas/assets más grande de las 11 herramientas de este recomendador; confirmado en canva.com/pricing (visitado en vivo, 10/sep/2026, ya localizado con precios en MX$). Escritura: básico — Magic Write genera primeros borradores de copy (captions, títulos, texto de presentaciones), descrito en varias reseñas como apoyo de diseño, no herramienta de escritura independiente. Video: básico — Magic Media también genera video (motor Runway Gen-3 por debajo, hasta 4K/60s según reseñas), pero sin benchmark independiente que lo compare con especialistas dedicados como Runway. Memoria e integraciones: confirmadas — Canva AI 2.0 (lanzado 16/abr/2026) tiene 'memoria persistente que aprende los gustos y el estilo del usuario' e integraciones reales con Slack, Gmail, Notion, Zoom y Google Drive (wwwhatsnew.com, 17/abr/2026). API: no existe API para automatización de las funciones de IA (solo un SDK de apps/plugins, que es otra cosa) — confirmado por varias reseñas técnicas. Voz: no se encontró evidencia de modo de voz. Código: no se encontró evidencia de una función real de programación (una mención vaga de 'código' en cobertura de prensa parece referirse a orquestación de la suite, no a asistencia de programación) — se deja en 'no' en vez de sobreinterpretar. Español: sin comparativa específica de calidad, básico como valor neutral. Privacidad y precio ya estaban verificados en las series propias del sitio (veredicto amarillo en entrena-ia, precio en pesos mexicanos en precios-ia) — no se reverificaron desde cero, se reutilizó lo ya confirmado ahí porque sigue vigente.",
+      "fechaVerificacion": "2026-09-10"
     }
   ]
 }
