@@ -380,10 +380,23 @@ const faqSchema = {
         '<details class="por-que"><summary>¿Por qué me salió esta recomendación?</summary>' +
         '<table><thead><tr><th>Criterio</th><th>Peso</th><th>' + top.tool.nombre + '</th></tr></thead><tbody>' + filasTabla + '</tbody></table></details>' +
         (otrasHTML ? '<div class="otras-opciones"><p class="otras-label">También podrías considerar</p>' + otrasHTML + '</div>' : '') +
-        '<div class="comparador"><p class="comp-label">Comparación completa</p>' + tablaComparador(resultados) + '</div>';
+        '<div class="comparador"><p class="comp-label">Comparación completa</p>' + tablaComparador(resultados) + '</div>' +
+        '<button type="button" id="qic-reset" class="qic-reset-link">Volver a hacer el recomendador</button>';
 
       cont.hidden = false;
       cont.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // El botón se crea de nuevo en cada render (va dentro del innerHTML de
+      // arriba), así que el listener se vuelve a enganchar cada vez — no hay
+      // riesgo de duplicarlo porque el botón anterior ya no existe en el DOM.
+      document.getElementById('qic-reset').addEventListener('click', function () {
+        document.querySelectorAll('[data-group] button.selected').forEach(function (b) {
+          b.classList.remove('selected');
+        });
+        cont.hidden = true;
+        cont.innerHTML = '';
+        document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
     }
 
     document.getElementById('ver-resultado').addEventListener('click', function () {
@@ -473,6 +486,21 @@ const faqSchema = {
   :global(#resultado .comp-table .ico-up) { color: var(--up-line); }
   :global(#resultado .comp-table .ico-warn) { color: var(--warn-line); }
   :global(#resultado .comp-table .ico-down) { color: var(--down-line); }
+
+  :global(#resultado .qic-reset-link) {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-faint);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-top: 24px;
+    padding: 0;
+  }
+  :global(#resultado .qic-reset-link:hover) { color: var(--text-muted); }
 
   .faq { padding: 16px 24px 96px; max-width: 760px; }
   .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
