@@ -251,6 +251,44 @@ const codigosDescuento = defineCollection({
   }),
 });
 
+// Taxonomía de capacidades para "¿Qué IA me conviene?" — insumo del motor de
+// scoring del recomendador. Un solo JSON (mismo patrón que indice/actual.json)
+// en vez de un archivo por herramienta: para el puñado de campos que mide,
+// es más fácil de auditar de un vistazo que un archivo markdown por cada una.
+// Se une con precios-ia/entrena-ia/prueba-gratis/codigos-descuento por
+// herramientaId — este archivo NO repite precio ni privacidad, eso ya vive
+// en esas colecciones.
+const nivelUso = z.enum(['no', 'basico', 'fuerte']);
+
+const herramientasIA = defineCollection({
+  loader: singleJsonEntryLoader('./src/content/herramientas-ia/actual.json', 'actual'),
+  schema: z.object({
+    herramientas: z.array(
+      z.object({
+        herramientaId: z.string(),
+        escritura: nivelUso,
+        investigacion: nivelUso,
+        codigo: nivelUso,
+        imagenes: nivelUso,
+        video: nivelUso,
+        // Mide calidad de la respuesta en español (naturalidad, modismos
+        // regionales, sin traducción forzada) — NO disponibilidad de interfaz,
+        // que hoy es casi universal y no discrimina entre herramientas.
+        espanol: nivelUso,
+        api: z.boolean(),
+        memoria: z.boolean(),
+        voz: z.boolean(),
+        integraciones: z.boolean(),
+        disponibleMexico: z.boolean(),
+        // Una fuente/fecha por herramienta, no por eje — evaluación editorial
+        // de una sola pasada, no una auditoría independiente por campo.
+        fuenteCapacidades: z.string(),
+        fechaVerificacion: z.coerce.date(),
+      })
+    ),
+  }),
+});
+
 const indiceGlitchmentalmx = defineCollection({
   loader: singleJsonEntryLoader('./src/content/indice/actual.json', 'actual'),
   schema: z.object({
@@ -287,4 +325,5 @@ export const collections = {
   pruebaGratis,
   codigosDescuento,
   preciosDigitales,
+  herramientasIA,
 };
