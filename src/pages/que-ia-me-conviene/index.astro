@@ -84,15 +84,23 @@ const canonicalPath = '/que-ia-me-conviene/';
 const faqs = [
   {
     q: '¿Qué IA es mejor para escribir?',
-    a: 'Con los datos verificados hoy, Claude y ChatGPT son las más fuertes para escribir. En una prueba ciega con 134 participantes, Claude ganó las rondas de simplificación, creatividad y consistencia de tono; ChatGPT destacó en estructura y diálogo. Gemini escribe bien, pero su ventaja medida está en investigación con fuentes en tiempo real, no en prosa pura. Usa el recomendador de arriba para ver tu compatibilidad exacta según lo que vas a escribir.',
+    a: 'No hay una sola "mejor" — depende de la tarea. En una prueba ciega independiente con 134 participantes (no es un estudio académico ni nuestro — tómalo como una señal, no una verdad absoluta), Claude ganó 4 de 8 rondas, incluida la de simplificación (71% de los votos) y una de escritura creativa (62%); ChatGPT ganó la ronda de análisis estratégico de negocio (53%); Gemini ganó 3 de 8 rondas, descrito ahí como "el generalista que nunca es la peor opción" — el artículo no explica por qué ganó esas rondas específicas. Usa el recomendador de arriba para ver tu compatibilidad exacta según lo que vas a escribir.',
+    fuente: {
+      texto: 'Fuente: "ChatGPT vs Claude vs Gemini Compared", Product with Attitude, 22 de febrero de 2026',
+      url: 'https://aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared',
+    },
   },
   {
     q: '¿Qué IA usar para programar?',
-    a: 'Según benchmarks SWE-bench Verified de septiembre de 2026, Claude lidera con claridad (~96% con Opus 5), seguido de ChatGPT (~85% con GPT-5.3 Codex); Gemini queda notablemente atrás en el mismo benchmark. DeepSeek es la sorpresa: su modelo R1 compite arriba en benchmarks de código a una fracción del precio de los otros. Y si programas todos los días dentro de un editor, GitHub Copilot sigue siendo la opción dedicada, integrada directo en VS Code y JetBrains, en vez de un chat de propósito general.',
+    a: 'Según el leaderboard de SWE-bench Verified, Claude encabeza con modelos por encima del 95% (Opus 5), con GPT-5.6 muy cerca (~96%) y Gemini más abajo (~87% con Grok 4.5 en ese rango). Ojo: existen dos formas de medir esto — el número que reporta cada empresa con su propio scaffold, y el de un tercero independiente (Scale AI, scaffold estandarizado), y pueden diferir 15-30 puntos entre sí, así que trátalo como una referencia de qué tan cerca están, no una cifra exacta. DeepSeek es la sorpresa aparte: su modelo R1 compite arriba en benchmarks de código a una fracción del precio de los otros. Y si programas todos los días dentro de un editor, GitHub Copilot sigue siendo la opción dedicada, integrada directo en VS Code y JetBrains, en vez de un chat de propósito general.',
   },
   {
     q: 'ChatGPT o Claude, ¿cuál elegir?',
-    a: 'Depende de para qué. Para código, Claude tiene ventaja medible en benchmarks públicos. Para escribir, ambos son fuertes pero con matices distintos: Claude gana más rondas en pruebas ciegas de prosa, ChatGPT gana en estructura y diálogo. Para imágenes, ChatGPT tiende a ganar en realismo. Para privacidad, ninguno gana: ambos entrenan con tus datos por default hoy, según nuestra serie de privacidad verificada. Corre el recomendador de arriba con tu caso específico para un número, no una opinión.',
+    a: 'Depende de para qué. Para código, Claude tiene ventaja medible en los leaderboards públicos de SWE-bench, aunque el margen exacto varía según quién corrió la prueba. Para escribir, en una prueba ciega independiente de 134 participantes, Claude ganó más rondas que ChatGPT —incluida una de escritura creativa—, pero ChatGPT ganó la ronda de análisis estratégico de negocio: no es que uno "escriba mejor" en general, ganan en tareas distintas. Para imágenes, ChatGPT tiende a ganar en realismo según pruebas comparativas. Para privacidad, ninguno gana: ambos entrenan con tus datos por default hoy, según nuestra serie de privacidad verificada. Corre el recomendador de arriba con tu caso específico para un número, no una opinión.',
+    fuente: {
+      texto: 'Fuente de la prueba de escritura: Product with Attitude, 22 de febrero de 2026',
+      url: 'https://aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared',
+    },
   },
   {
     q: '¿Cuál es la mejor IA gratis?',
@@ -165,28 +173,33 @@ const faqSchema = {
   </section>
 
   <section class="container quiz" id="quiz">
+    <p class="quiz-meta">4 preguntas · 1 minuto</p>
+
     <div class="step">
-      <h2>1. ¿Para qué la vas a usar? <span class="hint">elige una o varias</span></h2>
+      <p class="step-num">1 / 4</p>
+      <h2>¿Para qué la vas a usar? <span class="hint">elige una o varias</span></h2>
       <div class="opciones opciones-check" data-group="usos">
-        <button type="button" data-value="escritura">✍️ Escribir</button>
-        <button type="button" data-value="investigacion">🔎 Investigar</button>
-        <button type="button" data-value="codigo">💻 Programar</button>
-        <button type="button" data-value="imagenes">🎨 Crear imágenes</button>
-        <button type="button" data-value="video">🎬 Crear video</button>
+        <button type="button" data-value="escritura">Escribir</button>
+        <button type="button" data-value="investigacion">Investigar</button>
+        <button type="button" data-value="codigo">Programar</button>
+        <button type="button" data-value="imagenes">Crear imágenes</button>
+        <button type="button" data-value="video">Crear video</button>
       </div>
     </div>
 
     <div class="step">
-      <h2>2. ¿Qué tan importante es la privacidad?</h2>
+      <p class="step-num">2 / 4</p>
+      <h2>¿Qué tan importante es la privacidad?</h2>
       <div class="opciones opciones-radio" data-group="privacidad">
-        <button type="button" data-value="mucho">🔒 Muchísimo</button>
-        <button type="button" data-value="algo">👍 Importante</button>
-        <button type="button" data-value="no">🤷 Me da igual</button>
+        <button type="button" data-value="mucho">Muchísimo</button>
+        <button type="button" data-value="algo">Importante</button>
+        <button type="button" data-value="no">Me da igual</button>
       </div>
     </div>
 
     <div class="step">
-      <h2>3. ¿Necesitas que sea buena en español?</h2>
+      <p class="step-num">3 / 4</p>
+      <h2>¿Necesitas que sea buena en español?</h2>
       <div class="opciones opciones-radio" data-group="espanol">
         <button type="button" data-value="si">Sí, mucho</button>
         <button type="button" data-value="poco">Un poco</button>
@@ -195,7 +208,8 @@ const faqSchema = {
     </div>
 
     <div class="step">
-      <h2>4. ¿Necesitas algo específico? <span class="hint">opcional</span></h2>
+      <p class="step-num">4 / 4</p>
+      <h2>¿Necesitas algo específico? <span class="hint">opcional</span></h2>
       <div class="opciones opciones-check" data-group="extras">
         <button type="button" data-value="api">API</button>
         <button type="button" data-value="memoria">Memoria entre conversaciones</button>
@@ -218,6 +232,11 @@ const faqSchema = {
         <details class="faq-item">
           <summary>{f.q}</summary>
           <p>{f.a}</p>
+          {f.fuente && (
+            <a class="faq-fuente" href={f.fuente.url} target="_blank" rel="noopener noreferrer nofollow">
+              {f.fuente.texto} →
+            </a>
+          )}
         </details>
       ))}
     </div>
@@ -427,12 +446,24 @@ const faqSchema = {
   .nota { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); margin-top: 8px; }
 
   .quiz { max-width: 700px; padding: 32px 24px 56px; display: flex; flex-direction: column; gap: 36px; }
-  .step h2 { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 14px; }
+  .quiz-meta {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: var(--text-faint); font-family: var(--font-mono); font-size: 0.8rem;
+    margin: 0 0 -12px;
+  }
+  .step-num {
+    font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 1.2px;
+    color: var(--accent); text-transform: uppercase; margin: 0 0 8px;
+  }
+  /* Mismo cuerpo tipográfico que Detox de IA (--font-body, no serif ni
+     mono) en pregunta y pills — la serie de tests del sitio usa una sola
+     tipografía consistente, no la de titulares editoriales. */
+  .step h2 { font-family: var(--font-body); font-weight: 600; font-size: 1.15rem; margin: 0 0 14px; }
   .hint { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-faint); text-transform: none; letter-spacing: 0; font-weight: 400; }
 
   .opciones { display: flex; flex-wrap: wrap; gap: 10px; }
   .opciones button {
-    font-family: var(--font-mono); font-size: 0.88rem;
+    font-family: var(--font-body); font-size: 0.88rem;
     padding: 10px 16px; border-radius: 999px;
     border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text);
     cursor: pointer;
@@ -534,4 +565,12 @@ const faqSchema = {
     line-height: 1.65;
     margin: 14px 0 0;
   }
+  .faq-fuente {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    margin-top: 10px;
+  }
+  .faq-fuente:hover { color: var(--accent); }
 </style>
