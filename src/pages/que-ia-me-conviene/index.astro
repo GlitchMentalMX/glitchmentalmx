@@ -1,0 +1,509 @@
+---
+// "¿Qué IA me conviene?" — recomendador personalizado, no ranking. El
+// usuario responde unas preguntas y el motor calcula una compatibilidad
+// 0-100 por herramienta (Capas 2-4 del proyecto), transparente vía la
+// tabla de "por qué". Precio queda fuera del scoring a propósito: no existe
+// como campo estructurado (vive en prosa dentro de precios-ia) y las 4
+// herramientas de este primer corte tienen precio muy similar — se enlaza
+// como referencia, no se puntúa.
+//
+// Cobertura inicial: solo las herramientas que ya tienen entrada en
+// herramientasIA (hoy: Claude, ChatGPT, Gemini, Perplexity). Se amplía
+// llenando ese archivo, sin tocar esta página.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const [tabla, precios, entrena] = await Promise.all([
+  getCollection('herramientasIA'),
+  getCollection('preciosIA', ({ data }) => !data.draft),
+  getCollection('entrenaIA', ({ data }) => !data.draft),
+]);
+
+const capacidades = tabla[0]?.data.herramientas ?? [];
+
+// La serie "Quién entrena con tus datos" ya cubre Grok y Meta AI, pero bajo
+// un herramientaId propio de esa serie ("x-grok", "meta-ai-app") distinto al
+// que usa precios-ia/esta taxonomía ("grok", "meta-ai") — decisión editorial
+// anterior para distinguir matices (X vs. Grok, la app standalone vs. las
+// integraciones en Facebook/Instagram/WhatsApp/Messenger). Sin este alias,
+// el recomendador mostraría "sin verificar" para dos herramientas que sí
+// tienen artículo — y escribir uno nuevo hubiera sido contenido duplicado.
+const ALIAS_ENTRENA_IA: Record<string, string> = { grok: 'x-grok', 'meta-ai': 'meta-ai-app' };
+
+const TOOLS = capacidades.map((cap) => {
+  const precio = precios.find((p) => p.data.herramientaId === cap.herramientaId);
+  const privId = ALIAS_ENTRENA_IA[cap.herramientaId] ?? cap.herramientaId;
+  const priv = entrena.find((p) => p.data.herramientaId === privId);
+  return {
+    id: cap.herramientaId,
+    nombre: precio?.data.herramienta ?? priv?.data.herramienta ?? cap.herramientaId,
+    cap: {
+      escritura: cap.escritura,
+      investigacion: cap.investigacion,
+      codigo: cap.codigo,
+      imagenes: cap.imagenes,
+      video: cap.video,
+      espanol: cap.espanol,
+      api: cap.api,
+      memoria: cap.memoria,
+      voz: cap.voz,
+      integraciones: cap.integraciones,
+      disponibleMexico: cap.disponibleMexico,
+    },
+    // null (no 'amarillo' por default) cuando la herramienta todavía no
+    // tiene artículo en la serie "Quién entrena con tus datos" — mostrar un
+    // veredicto inventado se vería igual que uno verificado, y no lo es.
+    privacidad: priv?.data.veredicto ?? null,
+  };
+});
+
+const nombresTools = TOOLS.map((t) => t.nombre);
+const listaTools =
+  nombresTools.length > 1
+    ? `${nombresTools.slice(0, -1).join(', ')} y ${nombresTools[nombresTools.length - 1]}`
+    : nombresTools.join('');
+
+const modifiedTime = capacidades.reduce(
+  (max, c) => {
+    const fecha = new Date(c.fechaVerificacion);
+    return !max || fecha > max ? fecha : max;
+  },
+  undefined as Date | undefined
+);
+
+const title = '¿Qué IA me conviene?';
+const description =
+  "Responde unas preguntas y comparamos las herramientas de IA contra lo que tú necesitas — no contra cuál es 'la mejor'. Recomendación personalizada, transparente y con fuente.";
+const canonicalPath = '/que-ia-me-conviene/';
+
+// Preguntas frecuentes: mismo criterio que el resto del sitio — solo lo que
+// podemos verificar hoy, citando la fuente. Nada de "la mejor IA es X" sin
+// matiz; cuando la evidencia está pareja (imágenes) o no la encontramos
+// (español entre las 3 grandes), se dice así en vez de inventar un ganador.
+const faqs = [
+  {
+    q: '¿Qué IA es mejor para escribir?',
+    a: 'Con los datos verificados hoy, Claude y ChatGPT son las más fuertes para escribir. En una prueba ciega con 134 participantes, Claude ganó las rondas de simplificación, creatividad y consistencia de tono; ChatGPT destacó en estructura y diálogo. Gemini escribe bien, pero su ventaja medida está en investigación con fuentes en tiempo real, no en prosa pura. Usa el recomendador de arriba para ver tu compatibilidad exacta según lo que vas a escribir.',
+  },
+  {
+    q: '¿Qué IA usar para programar?',
+    a: 'Según benchmarks SWE-bench Verified de septiembre de 2026, Claude lidera con claridad (~96% con Opus 5), seguido de ChatGPT (~85% con GPT-5.3 Codex); Gemini queda notablemente atrás en el mismo benchmark. Para programación seria, Claude y ChatGPT son las opciones a considerar primero entre estas cuatro.',
+  },
+  {
+    q: 'ChatGPT o Claude, ¿cuál elegir?',
+    a: 'Depende de para qué. Para código, Claude tiene ventaja medible en benchmarks públicos. Para escribir, ambos son fuertes pero con matices distintos: Claude gana más rondas en pruebas ciegas de prosa, ChatGPT gana en estructura y diálogo. Para imágenes, ChatGPT tiende a ganar en realismo. Para privacidad, ninguno gana: ambos entrenan con tus datos por default hoy, según nuestra serie de privacidad verificada. Corre el recomendador de arriba con tu caso específico para un número, no una opinión.',
+  },
+  {
+    q: '¿Cuál es la mejor IA gratis?',
+    a: 'Las cuatro que cubrimos aquí tienen plan gratuito, pero ninguna ofrece un período de prueba del plan de pago sin pedir tarjeta — lo verificamos herramienta por herramienta en nuestra serie "Prueba gratis sin tarjeta". Gratis y sin compromiso no son lo mismo en ninguna de las cuatro.',
+  },
+  {
+    q: '¿Cuál es la mejor IA para estudiantes?',
+    a: 'No la medimos como categoría propia porque depende de la materia y la tarea, no de ser estudiante. Sí verificamos que Gemini y Perplexity tienen programas oficiales de descuento para estudiantes universitarios (Gemini: año gratis o con descuento; Perplexity: plan educativo al 50%). Para elegir cuál conviene académicamente, corre el recomendador según lo que vas a hacer: investigar, escribir o programar.',
+  },
+  {
+    q: '¿Cuál es la mejor IA para investigación?',
+    a: 'De las cuatro, Perplexity es la especializada: nació como motor de búsqueda con IA y citación de fuentes, no como chatbot de propósito general. Entre las de propósito general, Gemini tiene ventaja verificada por su acceso a búsqueda en vivo con citas automáticas.',
+  },
+  {
+    q: '¿Cómo decide esta herramienta qué IA me conviene?',
+    a: 'No rankeamos "la mejor IA". Calculamos una compatibilidad de 0 a 100 entre tu perfil — para qué la vas a usar, qué tan importante es la privacidad, si necesitas español, qué extras quieres — y los datos verificados de cada herramienta. El desglose exacto de cada resultado está disponible en "¿Por qué me salió esta recomendación?", con el peso y el valor de cada criterio.',
+  },
+];
+
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: title,
+  description,
+  url: new URL(canonicalPath, Astro.site).toString(),
+  applicationCategory: 'UtilitiesApplication',
+  operatingSystem: 'Any (web browser)',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'MXN',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={modifiedTime}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <Breadcrumbs items={[{ name: '¿Qué IA me conviene?' }]} />
+  <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="container header">
+    <p class="eyebrow">Recomendador</p>
+    <h1>¿Qué IA me conviene?</h1>
+    <p class="sub">
+      Hay demasiadas. Tú dime qué necesitas y comparamos
+      {' '}{listaTools} contra tu perfil — con la razón detrás de cada
+      número, no un ranking genérico.
+    </p>
+    <p class="nota">Primera versión: cubre estas {TOOLS.length} herramientas. Iremos sumando más conforme las verifiquemos.</p>
+  </section>
+
+  <section class="container quiz" id="quiz">
+    <div class="step">
+      <h2>1. ¿Para qué la vas a usar? <span class="hint">elige una o varias</span></h2>
+      <div class="opciones opciones-check" data-group="usos">
+        <button type="button" data-value="escritura">✍️ Escribir</button>
+        <button type="button" data-value="investigacion">🔎 Investigar</button>
+        <button type="button" data-value="codigo">💻 Programar</button>
+        <button type="button" data-value="imagenes">🎨 Crear imágenes</button>
+        <button type="button" data-value="video">🎬 Crear video</button>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>2. ¿Qué tan importante es la privacidad?</h2>
+      <div class="opciones opciones-radio" data-group="privacidad">
+        <button type="button" data-value="mucho">🔒 Muchísimo</button>
+        <button type="button" data-value="algo">👍 Importante</button>
+        <button type="button" data-value="no">🤷 Me da igual</button>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>3. ¿Necesitas que sea buena en español?</h2>
+      <div class="opciones opciones-radio" data-group="espanol">
+        <button type="button" data-value="si">Sí, mucho</button>
+        <button type="button" data-value="poco">Un poco</button>
+        <button type="button" data-value="no">No es prioridad</button>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>4. ¿Necesitas algo específico? <span class="hint">opcional</span></h2>
+      <div class="opciones opciones-check" data-group="extras">
+        <button type="button" data-value="api">API</button>
+        <button type="button" data-value="memoria">Memoria entre conversaciones</button>
+        <button type="button" data-value="voz">Modo de voz</button>
+        <button type="button" data-value="integraciones">Integraciones</button>
+        <button type="button" data-value="disponibleMexico">Disponible en México</button>
+      </div>
+    </div>
+
+    <button type="button" id="ver-resultado" class="cta-primary">Ver mi recomendación →</button>
+  </section>
+
+  <section class="container resultado" id="resultado" hidden></section>
+
+  <section class="container faq">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Antes de que preguntes</h2>
+    <div class="faq-list">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<script is:inline define:vars={{ TOOLS }}>
+  (function () {
+    var DIMENSIONES_USO = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video'];
+    var EXTRAS = ['api', 'memoria', 'voz', 'integraciones', 'disponibleMexico'];
+    var LABELS = {
+      escritura: 'Escritura',
+      investigacion: 'Investigación',
+      codigo: 'Código',
+      imagenes: 'Imágenes',
+      video: 'Video',
+      espanol: 'Español',
+      privacidad: 'Privacidad',
+      api: 'API',
+      memoria: 'Memoria',
+      voz: 'Modo de voz',
+      integraciones: 'Integraciones',
+      disponibleMexico: 'Disponible en México',
+    };
+    var NIVEL_VALOR = { fuerte: 100, basico: 55, no: 10 };
+    var VEREDICTO_VALOR = { verde: 100, amarillo: 55, rojo: 10 };
+    var NIVEL_ICONO = { fuerte: '✓', basico: '~', no: '✕' };
+    var NIVEL_CLASE = { fuerte: 'up', basico: 'warn', no: 'down' };
+
+    document.querySelectorAll('[data-group]').forEach(function (group) {
+      var isRadio = group.classList.contains('opciones-radio');
+      group.querySelectorAll('button').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          if (isRadio) {
+            group.querySelectorAll('button').forEach(function (b) { b.classList.remove('selected'); });
+            btn.classList.add('selected');
+          } else {
+            btn.classList.toggle('selected');
+          }
+        });
+      });
+    });
+
+    function calcular(respuestas) {
+      var pesos = {};
+      var usosSeleccionados = respuestas.usos.size ? Array.from(respuestas.usos) : DIMENSIONES_USO;
+      var pesoUsoBase = respuestas.usos.size ? 10 : 5;
+      DIMENSIONES_USO.forEach(function (d) {
+        pesos[d] = usosSeleccionados.indexOf(d) !== -1 ? pesoUsoBase : 0;
+      });
+      pesos.privacidad = { mucho: 10, algo: 5, no: 0 }[respuestas.privacidad] || 0;
+      pesos.espanol = { si: 10, poco: 5, no: 0 }[respuestas.espanol] || 0;
+      EXTRAS.forEach(function (e) {
+        pesos[e] = respuestas.extras.has(e) ? 6 : 0;
+      });
+
+      var pesoTotal = Object.keys(pesos).reduce(function (acc, k) { return acc + pesos[k]; }, 0) || 1;
+
+      var resultados = TOOLS.map(function (tool) {
+        var detalle = [];
+        var acumulado = 0;
+        DIMENSIONES_USO.forEach(function (d) {
+          if (pesos[d] > 0) {
+            var valor = NIVEL_VALOR[tool.cap[d]];
+            acumulado += pesos[d] * valor;
+            detalle.push({ criterio: LABELS[d], peso: pesos[d], valor: valor });
+          }
+        });
+        if (pesos.privacidad > 0) {
+          // Sin verificar (aún no hay artículo de "quién entrena con tus
+          // datos" para esta herramienta): cuenta neutral en el número para
+          // no penalizarla ni favorecerla, pero el criterio se etiqueta
+          // distinto para que no se vea como un dato verificado que no es.
+          var privVerificada = tool.privacidad !== null;
+          var valorPriv = privVerificada ? VEREDICTO_VALOR[tool.privacidad] : 55;
+          acumulado += pesos.privacidad * valorPriv;
+          detalle.push({
+            criterio: privVerificada ? 'Privacidad' : 'Privacidad (sin verificar)',
+            peso: pesos.privacidad,
+            valor: valorPriv,
+          });
+        }
+        if (pesos.espanol > 0) {
+          var valorEsp = NIVEL_VALOR[tool.cap.espanol];
+          acumulado += pesos.espanol * valorEsp;
+          detalle.push({ criterio: 'Español', peso: pesos.espanol, valor: valorEsp });
+        }
+        EXTRAS.forEach(function (e) {
+          if (pesos[e] > 0) {
+            var valorExtra = tool.cap[e] ? 100 : 0;
+            acumulado += pesos[e] * valorExtra;
+            detalle.push({ criterio: LABELS[e], peso: pesos[e], valor: valorExtra });
+          }
+        });
+        return { tool: tool, score: Math.round(acumulado / pesoTotal), detalle: detalle, pesoTotal: pesoTotal };
+      });
+
+      resultados.sort(function (a, b) { return b.score - a.score; });
+      return resultados;
+    }
+
+    function compatLabel(score) {
+      if (score >= 80) return 'Muy buena compatibilidad';
+      if (score >= 60) return 'Buena compatibilidad';
+      if (score >= 40) return 'Compatibilidad parcial';
+      return 'Compatibilidad baja';
+    }
+
+    function tablaComparador(resultados) {
+      var ejes = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video', 'espanol'];
+      var filas = ejes.map(function (eje) {
+        var celdas = resultados
+          .map(function (r) {
+            var nivel = r.tool.cap[eje];
+            return '<td class="ico-' + NIVEL_CLASE[nivel] + '">' + NIVEL_ICONO[nivel] + '</td>';
+          })
+          .join('');
+        return '<tr><td>' + LABELS[eje] + '</td>' + celdas + '</tr>';
+      }).join('');
+      var head = resultados.map(function (r) { return '<th><a href="/que-ia-me-conviene/' + r.tool.id + '/">' + r.tool.nombre + '</a></th>'; }).join('');
+      var scoreRow = resultados.map(function (r) { return '<td>' + r.score + '/100</td>'; }).join('');
+      return (
+        '<table class="comp-table"><thead><tr><th></th>' + head + '</tr></thead><tbody>' +
+        '<tr class="score-row"><td>Compatibilidad contigo</td>' + scoreRow + '</tr>' +
+        filas + '</tbody></table>'
+      );
+    }
+
+    function render(resultados) {
+      var top = resultados[0];
+      var otras = resultados.slice(1, 3);
+      var cont = document.getElementById('resultado');
+
+      var bullets = top.detalle
+        .filter(function (d) { return d.peso > 0; })
+        .map(function (d) {
+          var clase = d.valor >= 80 ? 'up' : d.valor >= 45 ? 'warn' : 'down';
+          var icono = d.valor >= 80 ? '✓' : d.valor >= 45 ? '~' : '✕';
+          return '<li class="' + clase + '">' + icono + ' ' + d.criterio + '</li>';
+        })
+        .join('');
+
+      var filasTabla = top.detalle
+        .map(function (d) {
+          return '<tr><td>' + d.criterio + '</td><td>' + Math.round((d.peso / top.pesoTotal) * 100) + '%</td><td>' + d.valor + '</td></tr>';
+        })
+        .join('');
+
+      var otrasHTML = otras
+        .map(function (r) {
+          return '<div class="otra-opcion"><p class="otra-nombre"><a href="/que-ia-me-conviene/' + r.tool.id + '/">' + r.tool.nombre + '</a> — ' + r.score + '/100</p></div>';
+        })
+        .join('');
+
+      cont.innerHTML =
+        '<p class="eyebrow">Tu mejor opción</p>' +
+        '<h2><a href="/que-ia-me-conviene/' + top.tool.id + '/">' + top.tool.nombre + '</a></h2>' +
+        '<p class="score">' + top.score + '/100 — ' + compatLabel(top.score) + '</p>' +
+        '<ul class="bullets">' + bullets + '</ul>' +
+        '<details class="por-que"><summary>¿Por qué me salió esta recomendación?</summary>' +
+        '<table><thead><tr><th>Criterio</th><th>Peso</th><th>' + top.tool.nombre + '</th></tr></thead><tbody>' + filasTabla + '</tbody></table></details>' +
+        (otrasHTML ? '<div class="otras-opciones"><p class="otras-label">También podrías considerar</p>' + otrasHTML + '</div>' : '') +
+        '<div class="comparador"><p class="comp-label">Comparación completa</p>' + tablaComparador(resultados) + '</div>';
+
+      cont.hidden = false;
+      cont.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    document.getElementById('ver-resultado').addEventListener('click', function () {
+      var usos = new Set(
+        Array.from(document.querySelectorAll('[data-group="usos"] .selected')).map(function (b) { return b.dataset.value; })
+      );
+      var extras = new Set(
+        Array.from(document.querySelectorAll('[data-group="extras"] .selected')).map(function (b) { return b.dataset.value; })
+      );
+      var privBtn = document.querySelector('[data-group="privacidad"] .selected');
+      var espBtn = document.querySelector('[data-group="espanol"] .selected');
+      var respuestas = {
+        usos: usos,
+        extras: extras,
+        privacidad: privBtn ? privBtn.dataset.value : 'no',
+        espanol: espBtn ? espBtn.dataset.value : 'no',
+      };
+      render(calcular(respuestas));
+    });
+  })();
+</script>
+
+<style>
+  .header { padding: 56px 24px 8px; max-width: 700px; }
+  .header h1 { font-size: clamp(2rem, 4vw, 2.6rem); margin: 10px 0 12px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); }
+  .sub { color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; }
+  .nota { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); margin-top: 8px; }
+
+  .quiz { max-width: 700px; padding: 32px 24px 56px; display: flex; flex-direction: column; gap: 36px; }
+  .step h2 { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 14px; }
+  .hint { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-faint); text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+  .opciones { display: flex; flex-wrap: wrap; gap: 10px; }
+  .opciones button {
+    font-family: var(--font-mono); font-size: 0.88rem;
+    padding: 10px 16px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text);
+    cursor: pointer;
+  }
+  .opciones button:hover { border-color: var(--accent); }
+  .opciones button.selected { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+
+  .cta-primary {
+    align-self: flex-start;
+    font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600;
+    padding: 14px 26px; border-radius: 999px; border: none;
+    background: var(--accent); color: var(--accent-ink); cursor: pointer;
+  }
+  .cta-primary:hover { opacity: 0.9; }
+
+  /* Todo lo de aquí en adelante vive dentro de #resultado, que Astro llena
+     con innerHTML desde el <script> del cliente. Ese HTML nunca recibe el
+     atributo data-astro-cid- del scoping de Astro, así que estas reglas
+     tienen que ser :global() o simplemente no aplican. */
+  .resultado { max-width: 700px; padding: 0 24px 72px; border-top: 1px solid var(--border); }
+  :global(#resultado .eyebrow) { margin-top: 32px; }
+  :global(#resultado h2) { font-family: var(--font-display); font-size: 2rem; margin: 8px 0 4px; }
+  :global(#resultado h2 a) { color: var(--text); }
+  :global(#resultado .score) { font-family: var(--font-mono); color: var(--accent); font-size: 1.1rem; margin: 0 0 18px; }
+
+  :global(#resultado .bullets) { list-style: none; margin: 0 0 20px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  :global(#resultado .bullets li) { font-size: 0.95rem; padding: 8px 12px; border-radius: var(--radius-sm); background: var(--bg-inset); }
+  :global(#resultado .bullets li.up) { color: var(--up-line); }
+  :global(#resultado .bullets li.warn) { color: var(--warn-line); }
+  :global(#resultado .bullets li.down) { color: var(--down-line); }
+
+  :global(#resultado .por-que) { margin: 0 0 28px; }
+  :global(#resultado .por-que summary) { font-family: var(--font-mono); font-size: 0.88rem; color: var(--accent); cursor: pointer; }
+  :global(#resultado .por-que table) { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 0.88rem; }
+  :global(#resultado .por-que th), :global(#resultado .por-que td) { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+  :global(#resultado .por-que th) { color: var(--text-faint); font-family: var(--font-mono); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; }
+
+  :global(#resultado .otras-opciones) { margin: 0 0 32px; padding-top: 20px; border-top: 1px solid var(--border); }
+  :global(#resultado .otras-label) { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--text-faint); margin-bottom: 10px; }
+  :global(#resultado .otra-opcion) { padding: 8px 0; }
+  :global(#resultado .otra-nombre) { margin: 0; }
+  :global(#resultado .otra-nombre a) { color: var(--text); font-family: var(--font-display); font-size: 1.05rem; }
+
+  :global(#resultado .comparador) { padding-top: 20px; border-top: 1px solid var(--border); overflow-x: auto; }
+  :global(#resultado .comp-label) { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--text-faint); margin-bottom: 14px; }
+  :global(#resultado .comp-table) { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  :global(#resultado .comp-table th), :global(#resultado .comp-table td) { padding: 10px; text-align: center; border-bottom: 1px solid var(--border); }
+  :global(#resultado .comp-table th:first-child), :global(#resultado .comp-table td:first-child) { text-align: left; }
+  :global(#resultado .comp-table th a) { color: var(--text); font-family: var(--font-display); }
+  :global(#resultado .comp-table .score-row td) { font-family: var(--font-mono); font-weight: 600; color: var(--accent); }
+  :global(#resultado .comp-table .ico-up) { color: var(--up-line); }
+  :global(#resultado .comp-table .ico-warn) { color: var(--warn-line); }
+  :global(#resultado .comp-table .ico-down) { color: var(--down-line); }
+
+  .faq { padding: 16px 24px 96px; max-width: 760px; }
+  .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 1.2em;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 14px 0 0;
+  }
+</style>

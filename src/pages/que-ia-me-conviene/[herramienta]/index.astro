@@ -1,0 +1,229 @@
+---
+// Ficha por herramienta de "¿Qué IA me conviene?". A propósito NO es un
+// artículo nuevo: agrega datos que ya existen en precios-ia/entrena-ia/
+// prueba-gratis/codigos-descuento + la taxonomía de capacidades propia de
+// esta herramienta, y enlaza a los artículos completos en vez de repetirlos
+// — evita competir por la misma búsqueda que esos artículos ya cubren.
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import VeredictoBadge from '../../../components/VeredictoBadge.astro';
+import PruebaGratisBadge from '../../../components/PruebaGratisBadge.astro';
+import CodigoDescuentoBadge from '../../../components/CodigoDescuentoBadge.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const [tabla, precios, entrena, pruebaGratis, codigos] = await Promise.all([
+    getCollection('herramientasIA'),
+    getCollection('preciosIA', ({ data }) => !data.draft),
+    getCollection('entrenaIA', ({ data }) => !data.draft),
+    getCollection('pruebaGratis', ({ data }) => !data.draft),
+    getCollection('codigosDescuento', ({ data }) => !data.draft),
+  ]);
+
+  const capacidades = tabla[0]?.data.herramientas ?? [];
+
+  // Mismo alias que en /que-ia-me-conviene/: "grok" y "meta-ai" ya tienen
+  // artículo en la serie de privacidad, solo que archivado bajo el
+  // herramientaId propio de esa serie ("x-grok", "meta-ai-app").
+  const ALIAS_ENTRENA_IA: Record<string, string> = { grok: 'x-grok', 'meta-ai': 'meta-ai-app' };
+
+  return capacidades.map((cap) => {
+    const precio = precios.find((p) => p.data.herramientaId === cap.herramientaId);
+    const privId = ALIAS_ENTRENA_IA[cap.herramientaId] ?? cap.herramientaId;
+    const priv = entrena.find((p) => p.data.herramientaId === privId);
+    const gratis = pruebaGratis.find((p) => p.data.herramientaId === cap.herramientaId);
+    const descuento = codigos.find((p) => p.data.herramientaId === cap.herramientaId);
+
+    return {
+      params: { herramienta: cap.herramientaId },
+      props: { cap, precio, priv, gratis, descuento },
+    };
+  });
+}
+
+const { cap, precio, priv, gratis, descuento } = Astro.props;
+
+const nombre = precio?.data.herramienta ?? priv?.data.herramienta ?? cap.herramientaId;
+const sitioOficial = precio?.data.sitioOficial ?? priv?.data.sitioOficial;
+
+const NIVEL_LABEL = {
+  fuerte: { icon: '✓', texto: 'Es de lo mejor para esto', clase: 'up' },
+  basico: { icon: '~', texto: 'Cumple, pero no es su fuerte', clase: 'warn' },
+  no: { icon: '✕', texto: 'No es buena opción para esto', clase: 'down' },
+};
+
+const EJES_USO = [
+  { key: 'escritura', label: 'Escritura' },
+  { key: 'investigacion', label: 'Investigación' },
+  { key: 'codigo', label: 'Código' },
+  { key: 'imagenes', label: 'Imágenes' },
+  { key: 'video', label: 'Video' },
+  { key: 'espanol', label: 'Calidad en español' },
+] as const;
+
+const EXTRAS = [
+  { key: 'api', label: 'API' },
+  { key: 'memoria', label: 'Memoria entre conversaciones' },
+  { key: 'voz', label: 'Modo de voz' },
+  { key: 'integraciones', label: 'Integraciones' },
+  { key: 'disponibleMexico', label: 'Disponible en México' },
+] as const;
+
+const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es-MX', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Layout
+  title={`${nombre} — ¿Qué IA me conviene?`}
+  description={`Ficha de ${nombre}: para qué sirve, si entrena con tus datos, si pide tarjeta para probarla y si tiene código de descuento real — con fuente y fecha de verificación.`}
+  type="article"
+  modifiedTime={new Date(cap.fechaVerificacion)}
+>
+  <Breadcrumbs
+    items={[
+      { name: '¿Qué IA me conviene?', url: '/que-ia-me-conviene/' },
+      { name: nombre },
+    ]}
+  />
+
+  <section class="container header">
+    <p class="eyebrow">Ficha verificada</p>
+    <h1>{nombre}</h1>
+    {sitioOficial && (
+      <a class="sitio" href={sitioOficial} target="_blank" rel="noopener noreferrer nofollow">
+        Sitio oficial ↗
+      </a>
+    )}
+  </section>
+
+  <section class="container block">
+    <h2>¿Para qué sirve?</h2>
+    <ul class="ejes">
+      {EJES_USO.map((eje) => {
+        const nivel = NIVEL_LABEL[cap[eje.key] as 'no' | 'basico' | 'fuerte'];
+        return (
+          <li class={`eje eje-${nivel.clase}`}>
+            <span class="eje-icon" aria-hidden="true">{nivel.icon}</span>
+            <span class="eje-text">
+              <span class="eje-label">{eje.label}</span>
+              <span class="eje-dek">{nivel.texto}</span>
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+
+  <section class="container block">
+    <h2>Extras</h2>
+    <ul class="extras">
+      {EXTRAS.map((ex) => (
+        <li class={cap[ex.key] ? 'si' : 'no'}>
+          <span aria-hidden="true">{cap[ex.key] ? '✓' : '✕'}</span> {ex.label}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="container block">
+    <h2>Lo que ya verificamos</h2>
+    <div class="referencia-grid">
+      {precio && (
+        <a class="ref-card" href={`/articulos/${precio.id}/`}>
+          <p class="ref-label">Precio en México</p>
+          <p class="ref-cta">Ver precio actualizado en pesos →</p>
+        </a>
+      )}
+      {priv && (
+        <a class="ref-card" href={`/articulos/${priv.id}/`}>
+          <p class="ref-label">¿Entrena su IA con tus datos?</p>
+          <VeredictoBadge veredicto={priv.data.veredicto} size="sm" />
+          <p class="ref-dek">{priv.data.fraseCorta}</p>
+        </a>
+      )}
+      {gratis && (
+        <a class="ref-card" href={`/articulos/${gratis.id}/`}>
+          <p class="ref-label">¿Prueba gratis sin tarjeta?</p>
+          <PruebaGratisBadge veredicto={gratis.data.veredicto} size="sm" />
+          <p class="ref-dek">{gratis.data.fraseCorta}</p>
+        </a>
+      )}
+      {descuento && (
+        <a class="ref-card" href={`/articulos/${descuento.id}/`}>
+          <p class="ref-label">¿Código de descuento real?</p>
+          <CodigoDescuentoBadge veredicto={descuento.data.veredicto} size="sm" />
+          <p class="ref-dek">{descuento.data.fraseCorta}</p>
+        </a>
+      )}
+    </div>
+  </section>
+
+  <section class="container footer-cta">
+    <p class="verificado">Capacidades verificadas el {fechaVerificacion} · {cap.fuenteCapacidades}</p>
+    <a class="cta-quiz" href="/que-ia-me-conviene/">← Volver al recomendador</a>
+  </section>
+</Layout>
+
+<style>
+  .header { padding: 56px 24px 24px; max-width: 700px; }
+  .header h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 8px 0 12px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); }
+  .sitio { font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); }
+
+  .block { max-width: 700px; padding: 24px 24px 8px; }
+  .block h2 { font-family: var(--font-display); font-size: 1.3rem; margin: 0 0 16px; }
+
+  .ejes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .eje {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+  }
+  .eje-icon {
+    display: flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; border-radius: 999px;
+    font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700;
+  }
+  .eje-up .eje-icon { background: var(--up-bg); color: var(--up-line); }
+  .eje-warn .eje-icon { background: var(--warn-bg); color: var(--warn-line); }
+  .eje-down .eje-icon { background: var(--down-bg); color: var(--down-line); }
+  .eje-text { display: flex; flex-direction: column; gap: 2px; }
+  .eje-label { font-family: var(--font-display); font-size: 1.02rem; }
+  .eje-dek { color: var(--text-muted); font-size: 0.88rem; }
+
+  .extras { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .extras li {
+    font-family: var(--font-mono); font-size: 0.82rem;
+    padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border);
+  }
+  .extras li.si { color: var(--up-line); border-color: var(--up-line); }
+  .extras li.no { color: var(--text-faint); }
+
+  .referencia-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+  }
+  .ref-card {
+    display: flex; flex-direction: column; gap: 8px;
+    padding: 18px; border-radius: var(--radius-sm);
+    border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text);
+  }
+  .ref-card:hover { border-color: var(--accent); }
+  .ref-label { font-family: var(--font-display); font-size: 1rem; margin: 0; }
+  .ref-cta { font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent); margin: 0; }
+  .ref-dek { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+
+  .footer-cta { max-width: 700px; padding: 32px 24px 72px; border-top: 1px solid var(--border); margin-top: 24px; }
+  .verificado { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); margin: 0 0 16px; }
+  .cta-quiz { font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .referencia-grid { grid-template-columns: 1fr; }
+  }
+</style>
