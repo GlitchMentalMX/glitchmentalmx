@@ -37,6 +37,15 @@ function mxHour(date) {
   return new Date(date.getTime() - MX_OFFSET_MS).getUTCHours();
 }
 
+// Timestamp unix (segundos) de la medianoche de HOY en hora de Ciudad de
+// México. A diferencia de "1h"/"7d"/etc. (ventanas móviles de N segundos),
+// esto es un corte fijo de calendario: no se recorre conforme avanza el
+// día, así que nunca mezcla horas del día anterior.
+function mxTodayStartTs(date) {
+  const day = mxDay(date);
+  return Math.floor((Date.parse(`${day}T00:00:00.000Z`) + MX_OFFSET_MS) / 1000);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -168,12 +177,20 @@ async function handleStats(request, env, url, matchedOrigin) {
   }
 
   const rangeParam = url.searchParams.get('range') || '30d';
-  // "1h"/"24h" son ventanas móviles reales (última hora / últimas 24 horas
-  // exactas desde ahora), no un corte por día calendario — por eso todo se
-  // filtra por ts (segundos unix) en vez de por la columna day.
-  const RANGE_SECONDS = { '1h': 3600, '24h': 24 * 3600, '7d': 7 * 86400, '30d': 30 * 86400, '90d': 90 * 86400 };
-  const rangeSeconds = RANGE_SECONDS[rangeParam] || RANGE_SECONDS['30d'];
-  const sinceTs = Math.floor(Date.now() / 1000) - rangeSeconds;
+  // "1h"/"7d"/"30d"/"90d" son ventanas móviles reales (última hora, últimos
+  // N días exactos desde ahora) — todo se filtra por ts (segundos unix) en
+  // vez de por la columna day. "hoy" es distinto a propósito: un corte fijo
+  // en la medianoche de Ciudad de México, no una ventana móvil — si no,
+  // mezcla horas de ayer y ese resto disminuye conforme avanza el día, que
+  // es justo lo que hacía inútil a la vieja opción "24 horas".
+  let sinceTs;
+  if (rangeParam === 'hoy') {
+    sinceTs = mxTodayStartTs(new Date());
+  } else {
+    const RANGE_SECONDS = { '1h': 3600, '7d': 7 * 86400, '30d': 30 * 86400, '90d': 90 * 86400 };
+    const rangeSeconds = RANGE_SECONDS[rangeParam] || RANGE_SECONDS['30d'];
+    sinceTs = Math.floor(Date.now() / 1000) - rangeSeconds;
+  }
 
   try {
     const [
