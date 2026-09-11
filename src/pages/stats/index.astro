@@ -27,9 +27,10 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
           <div class="range-picker" role="group" aria-label="Rango de fechas">
             <button type="button" class="range-btn" data-range="1h">1 hora</button>
             <button type="button" class="range-btn" data-range="hoy">Hoy</button>
-            <button type="button" class="range-btn" data-range="7d">7 días</button>
-            <button type="button" class="range-btn active" data-range="30d">30 días</button>
-            <button type="button" class="range-btn" data-range="90d">90 días</button>
+            <button type="button" class="range-btn" data-range="ayer">Ayer</button>
+            <button type="button" class="range-btn active" data-range="semana">Semana</button>
+            <button type="button" class="range-btn" data-range="semana_anterior">Semana anterior</button>
+            <button type="button" class="range-btn" data-range="mes">Mes</button>
           </div>
           <button type="button" id="refresh-btn" class="btn btn-ghost refresh-btn">↻ Actualizar</button>
         </div>
@@ -118,7 +119,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   const refreshBtn = document.getElementById('refresh-btn');
 
   const STORAGE_KEY = 'gm-stats-token';
-  let currentRange = '30d';
+  let currentRange = 'semana';
 
   function fmt(n) {
     return new Intl.NumberFormat('es-MX').format(n || 0);

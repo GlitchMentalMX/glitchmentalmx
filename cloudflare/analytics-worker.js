@@ -37,13 +37,32 @@ function mxHour(date) {
   return new Date(date.getTime() - MX_OFFSET_MS).getUTCHours();
 }
 
-// Timestamp unix (segundos) de la medianoche de HOY en hora de Ciudad de
-// México. A diferencia de "1h"/"7d"/etc. (ventanas móviles de N segundos),
-// esto es un corte fijo de calendario: no se recorre conforme avanza el
-// día, así que nunca mezcla horas del día anterior.
+// Timestamp unix (segundos) de la medianoche de un día 'YYYY-MM-DD' (hora
+// de Ciudad de México).
+function mxMidnightTs(dayStr) {
+  return Math.floor((Date.parse(`${dayStr}T00:00:00.000Z`) + MX_OFFSET_MS) / 1000);
+}
+
+// Timestamp de la medianoche de HOY en hora de México. A diferencia de "1h"
+// (ventana móvil), esto es un corte fijo de calendario: no se recorre
+// conforme avanza el día, así que nunca mezcla horas del día anterior.
 function mxTodayStartTs(date) {
-  const day = mxDay(date);
-  return Math.floor((Date.parse(`${day}T00:00:00.000Z`) + MX_OFFSET_MS) / 1000);
+  return mxMidnightTs(mxDay(date));
+}
+
+// 'YYYY-MM-DD' del lunes (hora de México) de la semana que contiene `date`.
+function mxMondayOf(date) {
+  const local = new Date(date.getTime() - MX_OFFSET_MS);
+  const dow = local.getUTCDay(); // 0=domingo..6=sábado
+  const daysSinceMonday = (dow + 6) % 7;
+  local.setUTCDate(local.getUTCDate() - daysSinceMonday);
+  return local.toISOString().slice(0, 10);
+}
+
+// 'YYYY-MM-DD' del día 1 (hora de México) del mes que contiene `date`.
+function mxMonthStart(date) {
+  const local = new Date(date.getTime() - MX_OFFSET_MS);
+  return new Date(Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), 1)).toISOString().slice(0, 10);
 }
 
 export default {
@@ -176,20 +195,36 @@ async function handleStats(request, env, url, matchedOrigin) {
     return json({ error: 'No autorizado' }, 401, matchedOrigin);
   }
 
-  const rangeParam = url.searchParams.get('range') || '30d';
-  // "1h"/"7d"/"30d"/"90d" son ventanas móviles reales (última hora, últimos
-  // N días exactos desde ahora) — todo se filtra por ts (segundos unix) en
-  // vez de por la columna day. "hoy" es distinto a propósito: un corte fijo
-  // en la medianoche de Ciudad de México, no una ventana móvil — si no,
-  // mezcla horas de ayer y ese resto disminuye conforme avanza el día, que
-  // es justo lo que hacía inútil a la vieja opción "24 horas".
+  const rangeParam = url.searchParams.get('range') || 'semana';
+  const now = new Date();
+  const nowTs = Math.floor(now.getTime() / 1000);
+
+  // "1h" es la única ventana móvil que queda. Todo lo demás es un corte de
+  // calendario real en hora de Ciudad de México: "hoy"/"semana"/"mes" van
+  // desde el inicio del período hasta ahora (siguen sumando y se reinician
+  // solos al cruzar la medianoche/lunes/día 1) y "ayer"/"semana_anterior"
+  // son períodos ya cerrados (con tope superior), para que nunca se mezclen
+  // con el período actual.
   let sinceTs;
+  let untilTs = nowTs;
   if (rangeParam === 'hoy') {
-    sinceTs = mxTodayStartTs(new Date());
+    sinceTs = mxTodayStartTs(now);
+  } else if (rangeParam === 'ayer') {
+    const todayStart = mxTodayStartTs(now);
+    sinceTs = todayStart - 86400;
+    untilTs = todayStart;
+  } else if (rangeParam === 'semana') {
+    sinceTs = mxMidnightTs(mxMondayOf(now));
+  } else if (rangeParam === 'semana_anterior') {
+    const thisMonday = mxMidnightTs(mxMondayOf(now));
+    sinceTs = thisMonday - 7 * 86400;
+    untilTs = thisMonday;
+  } else if (rangeParam === 'mes') {
+    sinceTs = mxMidnightTs(mxMonthStart(now));
+  } else if (rangeParam === '1h') {
+    sinceTs = nowTs - 3600;
   } else {
-    const RANGE_SECONDS = { '1h': 3600, '7d': 7 * 86400, '30d': 30 * 86400, '90d': 90 * 86400 };
-    const rangeSeconds = RANGE_SECONDS[rangeParam] || RANGE_SECONDS['30d'];
-    sinceTs = Math.floor(Date.now() / 1000) - rangeSeconds;
+    sinceTs = mxMidnightTs(mxMondayOf(now));
   }
 
   try {
@@ -208,60 +243,66 @@ async function handleStats(request, env, url, matchedOrigin) {
       eventTotals,
       preferredSourceByPlacement,
     ] = await Promise.all([
-      env.DB.prepare('SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND is_bot = 0')
-        .bind(sinceTs)
+      env.DB.prepare(
+        'SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0'
+      )
+        .bind(sinceTs, untilTs)
         .first(),
-      env.DB.prepare('SELECT COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 1').bind(sinceTs).first(),
+      env.DB.prepare('SELECT COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 1')
+        .bind(sinceTs, untilTs)
+        .first(),
       env.DB.prepare('SELECT COUNT(*) AS views FROM hits WHERE is_bot = 0').first(),
       env.DB.prepare(
-        'SELECT day, COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY day ORDER BY day'
+        'SELECT day, COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY day ORDER BY day'
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT path, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20'
+        'SELECT path, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20'
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT traffic_source, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY traffic_source ORDER BY views DESC'
+        'SELECT traffic_source, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY traffic_source ORDER BY views DESC'
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
         `SELECT referrer_host, COUNT(*) AS views FROM hits
-         WHERE ts >= ? AND is_bot = 0 AND referrer_host != '' GROUP BY referrer_host ORDER BY views DESC LIMIT 15`
+         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND referrer_host != '' GROUP BY referrer_host ORDER BY views DESC LIMIT 15`
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT country, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY country ORDER BY views DESC LIMIT 20'
+        'SELECT country, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY country ORDER BY views DESC LIMIT 20'
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT device, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY device ORDER BY views DESC'
+        'SELECT device, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY device ORDER BY views DESC'
       )
-        .bind(sinceTs)
-        .all(),
-      env.DB.prepare('SELECT os, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY os ORDER BY views DESC')
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT browser, COUNT(*) AS views FROM hits WHERE ts >= ? AND is_bot = 0 GROUP BY browser ORDER BY views DESC'
+        'SELECT os, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY os ORDER BY views DESC'
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT name, COUNT(*) AS count FROM events WHERE ts >= ? AND is_bot = 0 GROUP BY name ORDER BY count DESC'
+        'SELECT browser, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY browser ORDER BY views DESC'
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
+        .all(),
+      env.DB.prepare(
+        'SELECT name, COUNT(*) AS count FROM events WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY name ORDER BY count DESC'
+      )
+        .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
         `SELECT json_extract(data, '$.placement') AS placement, COUNT(*) AS count FROM events
-         WHERE ts >= ? AND is_bot = 0 AND name = 'preferred-source-click' GROUP BY placement ORDER BY count DESC`
+         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND name = 'preferred-source-click' GROUP BY placement ORDER BY count DESC`
       )
-        .bind(sinceTs)
+        .bind(sinceTs, untilTs)
         .all(),
     ]);
 
