@@ -100,27 +100,44 @@ const exploraColumns = [
   maxCount: Math.max(...col.items.map((i) => i.count), 1),
 }));
 
-// 6 cards, simétrico en dos columnas (3 filas de 2). Precios Digitales vive
-// aparte, en su propia fila con divisor (mismo tratamiento que ya usa
-// ToolsWidget.astro) — con "¿Qué IA me conviene?" el grid principal vuelve
-// a ser par, así que no hace falta forzarlo a compartir fila con las demás.
-const toolsList = [
-  { href: '/que-ia-me-conviene/', tag: 'Herramienta', title: '¿Qué IA me conviene?', desc: 'Responde unas preguntas y te decimos qué IA te conviene según lo que necesitas — no cuál es "la mejor". Con la razón detrás de cada número.', stat: `${queIACount} herramientas comparadas`, icon: 'compass' as const },
-  { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
-  { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
-  { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización en 2026.', stat: '60 segundos', icon: 'gauge' as const },
-  { href: '/detox-de-ia/', tag: 'Herramienta', title: 'Detox de IA', desc: 'Identifica tus patrones y hábitos de uso de IA con un test breve. Sin diagnósticos, con fuentes citadas.', stat: '7 preguntas · 2 minutos', icon: 'checklist' as const },
-  { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales, quién entrena su IA con tus datos, si piden tarjeta para probarla y si su código de descuento es real — cuatro series verificadas, herramienta por herramienta.', stat: `Precios: ${preciosCount} · Privacidad: ${entrenaCount} · Prueba gratis: ${pruebaGratisCount} · Descuentos: ${codigosDescuentoCount}`, icon: 'shield' as const },
-];
-
-const otrosServiciosHome = {
-  href: '/precios-digitales/',
-  tag: 'Otros Servicios',
-  title: 'Precios Digitales',
-  desc: 'VPNs, antivirus, streaming y otras suscripciones digitales — cuánto cuestan de verdad en México, sin ángulo de IA.',
-  stat: `${preciosDigitalesCount} servicios`,
-  icon: 'tag' as const,
+// Panel de Señales — reemplaza el grid de cards de "Recursos" por una lista
+// de filas más compacta. El orden y el copy siguen el mockup de Jorge; los
+// números (queIACount, preciosDigitalesCount, etc.) se calculan arriba a
+// partir de las colecciones reales, nunca se escriben a mano.
+type PanelRow = {
+  href: string;
+  title: string;
+  desc: string;
+  stat: string;
+  icon: 'compass' | 'chart' | 'search' | 'gauge' | 'checklist' | 'tag' | 'shield';
+  featured?: {
+    sublinks: { label: string; href: string }[];
+  };
 };
+
+const panelRows: PanelRow[] = [
+  { href: '/que-ia-me-conviene/', title: '¿Qué IA me conviene?', desc: 'Responde unas preguntas y te decimos qué IA se adapta a lo que necesitas.', stat: `${queIACount} comparadas`, icon: 'compass' },
+  {
+    href: '/ia-sin-letra-chiquita/',
+    title: 'IA sin letra chiquita',
+    desc: 'Precios reales actualizados, privacidad, quién entrena su IA con tus datos y si su código de descuento es real.',
+    stat: 'Ver comparación',
+    icon: 'shield',
+    featured: {
+      sublinks: [
+        { label: 'Precios', href: '/precios-ia/' },
+        { label: 'Privacidad', href: '/quien-entrena-con-tus-datos/' },
+        { label: 'Pruebas gratis', href: '/prueba-gratis-sin-tarjeta/' },
+        { label: 'Descuentos', href: '/codigos-descuento-ia/' },
+      ],
+    },
+  },
+  { href: '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/', title: 'Calculadora de Riesgo IA', desc: 'Qué tan expuesto está tu trabajo a la automatización.', stat: '60 segundos', icon: 'gauge' },
+  { href: '/detox-de-ia/', title: 'Detox de IA', desc: 'Identifica tus patrones de uso con un test breve. Sin diagnósticos, con fuentes citadas.', stat: '7 preguntas', icon: 'checklist' },
+  { href: '/indice-glitchmentalmx/', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: 'mensual', icon: 'chart' },
+  { href: '/glitchsearch/', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' },
+  { href: '/precios-digitales/', title: 'Precios Digitales', desc: 'VPNs, antivirus, streaming y otras suscripciones digitales. Cuánto cuestan de verdad en México, sin ángulo de IA.', stat: `${preciosDigitalesCount} servicios`, icon: 'tag' },
+];
 
 // Señal en vivo — widget bajo el hero. Nada de imágenes ni carrusel: un solo
 // dato a la vez, con datos reales (nunca relleno). Qué ITEM le toca a cada
@@ -191,7 +208,7 @@ const signalPools = {
     text: h.data.title,
     href: `/colecciones/${h.id}/`,
   })),
-  herramienta: [...toolsList, otrosServiciosHome].map((t) => ({
+  herramienta: panelRows.map((t) => ({
     tag: 'Recurso',
     text: t.title,
     href: t.href,
@@ -365,55 +382,89 @@ const signalPools = {
     </section>
   )}
 
-  <section class="tools container">
-    <div class="section-head">
-      <h2>Recursos</h2>
-    </div>
-    <div class="tools-grid">
-      {toolsList.map((t) => (
-        <a href={t.href} class="tool-card">
-          <span class="tool-icon">
-            {t.icon === 'search' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            )}
-            {t.icon === 'gauge' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 15a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15L16 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor"/></svg>
-            )}
-            {t.icon === 'chart' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M5 19V13M12 19V9M19 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            )}
-            {t.icon === 'shield' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            )}
-            {t.icon === 'checklist' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            )}
-            {t.icon === 'tag' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
-            )}
-            {t.icon === 'compass' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M15 9l-2 5-5 2 2-5 5-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-            )}
-          </span>
-          <span class="tag">{t.tag}</span>
-          <h3 class="scramble" data-text={t.title}>{t.title}</h3>
-          <p>{t.desc}</p>
-          <span class="stat">{t.stat}</span>
-        </a>
-      ))}
+  <section class="panel-senales container">
+    <div class="panel-head">
+      <div class="panel-head-text">
+        <p class="eyebrow panel-eyebrow">Herramientas</p>
+        <h2 class="scramble" data-text="Panel de Señales">Panel de Señales</h2>
+        <p class="section-sub">Herramientas de glitchMentalMX para decidir, comparar y entender la tecnología con datos reales.</p>
+      </div>
+      <div class="panel-sysinfo" aria-hidden="true">
+        <p class="sys-line sys-proto">glitchmental://sistema</p>
+        <p class="sys-line sys-count"><span class="sys-dot"></span>{panelRows.length} módulos</p>
+        <p class="sys-line">Datos · Análisis · Contexto</p>
+      </div>
     </div>
 
-    <p class="eyebrow group-label">Otros servicios</p>
-    <div class="tools-grid group-grid">
-      <a href={otrosServiciosHome.href} class="tool-card">
-        <span class="tool-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
-        </span>
-        <span class="tag">{otrosServiciosHome.tag}</span>
-        <h3 class="scramble" data-text={otrosServiciosHome.title}>{otrosServiciosHome.title}</h3>
-        <p>{otrosServiciosHome.desc}</p>
-        <span class="stat">{otrosServiciosHome.stat}</span>
-      </a>
+    <div class="panel-list">
+      {panelRows.map((row) => {
+        const icon = (
+          <span class="row-icon">
+            {row.icon === 'search' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            )}
+            {row.icon === 'gauge' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 15a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 15L16 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15" r="1.3" fill="currentColor"/></svg>
+            )}
+            {row.icon === 'chart' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M5 19V13M12 19V9M19 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            )}
+            {row.icon === 'shield' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            )}
+            {row.icon === 'checklist' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            )}
+            {row.icon === 'tag' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M3 11.5V5a2 2 0 0 1 2-2h6.5a2 2 0 0 1 1.41.59l7.5 7.5a2 2 0 0 1 0 2.82l-6.5 6.5a2 2 0 0 1-2.82 0l-7.5-7.5A2 2 0 0 1 3 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.3" fill="currentColor"/></svg>
+            )}
+            {row.icon === 'compass' && (
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M15 9l-2 5-5 2 2-5 5-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            )}
+            <span class="row-dot" aria-hidden="true"></span>
+          </span>
+        );
+        const chevron = (
+          <span class="row-chevron" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        );
+
+        return row.featured ? (
+          <div class="panel-row featured">
+            {icon}
+            <div class="row-content">
+              <div class="row-main">
+                <h3 class="row-title-line">
+                  <span class="row-title glitch-text" data-text={row.title}>{row.title}</span>
+                </h3>
+                <p class="row-desc">{row.desc}</p>
+              </div>
+              <p class="row-sublinks">
+                {row.featured.sublinks.map((s, i) => (
+                  <>
+                    <a href={s.href}>{s.label}</a>
+                    {i < row.featured!.sublinks.length - 1 && <span aria-hidden="true"> · </span>}
+                  </>
+                ))}
+              </p>
+            </div>
+            <span class="row-stat row-cta">{row.stat}</span>
+            {chevron}
+            <a href={row.href} class="row-stretch" aria-label={`Ver ${row.title}`}></a>
+          </div>
+        ) : (
+          <a href={row.href} class="panel-row">
+            {icon}
+            <div class="row-main">
+              <h3 class="row-title glitch-text" data-text={row.title}>{row.title}</h3>
+              <p class="row-desc">{row.desc}</p>
+            </div>
+            <span class="row-stat">{row.stat}</span>
+            {chevron}
+          </a>
+        );
+      })}
     </div>
   </section>
 
@@ -571,7 +622,7 @@ const signalPools = {
   .featured { padding: 40px 24px 56px; }
   .featured-label { font-size: 1.4rem; margin: 0 0 18px; }
 
-  section.recent, section.explora, section.insights, section.novelas, section.tools, section.archivo-cta {
+  section.recent, section.explora, section.insights, section.novelas, section.panel-senales, section.archivo-cta {
     padding: 44px 24px;
     border-top: 1px solid var(--border);
   }
@@ -845,45 +896,224 @@ const signalPools = {
     .novelas-head { flex-direction: column; align-items: flex-start; gap: 12px; }
   }
 
-  .tools-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  /* Panel de Señales — reemplaza el grid de cards de Recursos por una lista
+     de filas: más denso verticalmente, y cada fila lee como un dato real
+     (métrica a la derecha), no como una tarjeta decorativa. */
+  .panel-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
   }
-  .group-label {
-    margin: 32px 0 20px;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
+  .panel-eyebrow { color: var(--accent); margin: 0 0 10px; }
+  .panel-head-text h2 { font-size: 2rem; margin-bottom: 10px; }
+  .panel-head-text .section-sub { max-width: 52ch; margin: 0; }
+  .panel-sysinfo {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    padding-top: 4px;
+    text-align: right;
   }
-  .group-grid { grid-template-columns: 1fr; }
-  .tool-card {
-    background: var(--bg-inset);
+  .sys-line {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .sys-proto { text-transform: none; }
+  .sys-count { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 700; }
+  .sys-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 999px;
+    background: var(--accent);
+    animation: signalPulse 1.8s ease-in-out infinite;
+  }
+
+  .panel-list {
+    border: 1px solid var(--border);
     border-radius: var(--radius);
-    border-top: 2px solid var(--accent);
-    padding: 26px 28px 22px;
+    background: var(--bg-inset);
+    overflow: hidden;
+  }
+  .panel-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 28px;
     color: var(--text);
   }
-  .tool-card:hover { outline: 1.5px solid var(--accent); }
-  .tool-icon {
+  .panel-row:not(:first-child):not(.featured) { border-top: 1px solid var(--border); }
+  .panel-row.featured + .panel-row { border-top: none; }
+  a.panel-row:hover .row-title { color: var(--accent); }
+  a.panel-row:hover .row-chevron { color: var(--accent); transform: translateX(2px); }
+
+  .row-icon {
+    position: relative;
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 999px;
     background: var(--accent-soft);
     color: var(--accent);
-    margin: 0 10px 14px 0;
-    vertical-align: middle;
   }
-  .tool-card h3 { font-size: 1.2rem; margin: 12px 0 8px; font-variant-ligatures: none; }
-  .tool-card p { color: var(--text-muted); font-size: 0.9rem; margin: 0 0 16px; }
-  .tool-card .stat {
-    display: block;
+  /* punto de estado — un solo pulso simple, sin retraso por fila, para que
+     todas las filas parpadeen juntas en vez de en cascada (efecto "árbol de
+     navidad" que se pidió evitar) */
+  .row-dot {
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 9px;
+    height: 9px;
+    border-radius: 999px;
+    background: var(--up-line);
+    border: 2px solid var(--bg-inset);
+    animation: signalPulse 1.8s ease-in-out infinite;
+  }
+
+  .row-main {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 28px;
+  }
+  .row-title, .row-title-line {
+    flex: 0 0 auto;
+    width: 220px;
+    font-size: 1.05rem;
+    margin: 0;
+    font-variant-ligatures: none;
+  }
+  .row-title-line { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+  .row-desc {
+    flex: 1;
+    min-width: 0;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.45;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .row-stat {
+    flex-shrink: 0;
+    width: 150px;
+    text-align: right;
     font-family: var(--font-mono);
-    font-size: 0.74rem;
+    font-size: 0.82rem;
     color: var(--accent);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
+  }
+  .row-chevron {
+    flex-shrink: 0;
+    display: inline-flex;
+    color: var(--text-faint);
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+
+  /* fila destacada — borde azul, sin card individual (el resto de la fila
+     no es un <a>: tiene sub-enlaces propios, así que el link principal es
+     un overlay que cubre la fila y queda debajo de ellos) */
+  .panel-row.featured {
+    margin: 12px 14px;
+    padding: 20px 24px;
+    border: 1.5px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: var(--accent-soft);
+  }
+  .panel-row.featured .row-title { color: var(--text); width: auto; }
+  /* envuelve título+descripción (fila interna) y los sub-enlaces (debajo);
+     sustituye a .row-main como hijo flex de .panel-row para que los
+     sub-enlaces no compitan por ancho dentro de la misma fila flex */
+  .row-content { flex: 1; min-width: 0; }
+  /* la descripción de la destacada es más larga que las demás — no se
+     recorta a 2 líneas en ningún viewport, la fila simplemente crece.
+     display:block (no -webkit-box) porque line-clamp:unset con el truco de
+     -webkit-box-orient:vertical todavía activo parte el texto en una
+     columna vertical, palabra por palabra. */
+  .panel-row.featured .row-desc {
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: visible;
+  }
+  .row-sublinks {
+    margin: 8px 0 0;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+  .row-sublinks a {
+    position: relative;
+    z-index: 2;
+    color: var(--accent);
+  }
+  .row-sublinks a:hover { text-decoration: underline; }
+  .row-cta { font-weight: 700; }
+  .row-stretch { position: absolute; inset: 0; z-index: 1; }
+  .panel-row.featured:hover { border-color: #0052cc; }
+  .panel-row.featured:hover .row-cta { text-decoration: underline; }
+
+  /* aberración cromática roja/cian en el nombre al pasar el cursor — mismo
+     timing y estilo (steps, text-shadow de dos colores + jitter) que el
+     glitch del wordmark del footer; se declara aquí porque los estilos
+     <style> de Astro están encapsulados por componente y no se comparten
+     entre archivos. */
+  .glitch-text { position: relative; }
+  @keyframes rowGlitch {
+    0%   { text-shadow: none; transform: translateX(0); }
+    8%   { text-shadow: -1px 0 var(--down-line), 1px 0 #00d4ff; transform: translateX(-1px); }
+    18%  { text-shadow: 1px 0 var(--down-line), -1px 0 #00d4ff; transform: translateX(1px); }
+    28%  { text-shadow: -1px 0 var(--down-line), 1px 0 #00d4ff; transform: translateX(0); }
+    38%  { text-shadow: none; transform: translateX(0); }
+    48%  { text-shadow: 1px 0 var(--down-line), -1px 0 #00d4ff; transform: translateX(0); }
+    58%  { text-shadow: -1px 0 var(--down-line), 1px 0 #00d4ff; transform: translateX(-1px); }
+    72%  { text-shadow: none; transform: translateX(0); }
+    100% { text-shadow: none; }
+  }
+  .panel-row:hover .glitch-text,
+  .panel-row:focus-visible .glitch-text {
+    animation: rowGlitch 0.7s steps(1) 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .row-dot, .sys-dot { animation: none; }
+    .panel-row:hover .glitch-text, .panel-row:focus-visible .glitch-text { animation: none; }
+  }
+
+  @media (max-width: 640px) {
+    .panel-head { flex-direction: column; gap: 16px; }
+    .panel-sysinfo { display: none; }
+    .row-main { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .row-title, .row-title-line { width: auto; }
+    /* sin recorte en móvil: apilada, la descripción ya no necesita caber en
+       la altura de una fila de escritorio, así que se deja crecer entera */
+    .row-desc { display: block; -webkit-line-clamp: unset; -webkit-box-orient: unset; overflow: visible; }
+    .panel-row { flex-wrap: wrap; align-items: flex-start; padding: 18px 20px; }
+    .row-icon { margin-top: 2px; }
+    .row-stat {
+      width: auto;
+      text-align: left;
+      order: 3;
+      flex-basis: 100%;
+      margin-left: 62px;
+    }
+    .panel-row.featured { margin: 10px; padding: 18px; }
   }
 
   /* Archivo Total — momento tipográfico, no un banner con caja/botón, para
@@ -933,7 +1163,6 @@ const signalPools = {
 
   @media (max-width: 900px) {
     .explora-grid { grid-template-columns: 1fr; }
-    .tools-grid { grid-template-columns: 1fr; }
   }
 </style>
 
