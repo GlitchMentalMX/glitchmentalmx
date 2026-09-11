@@ -51,7 +51,16 @@ const modifiedTime = page.data.reduce(
   <section class="container grid">
     {page.data.map(({ data: item }) => (
       <div class="card">
-        <img src={item.imagen} alt={item.imagenAlt || item.titulo} data-lightbox loading="lazy" width="900" height="506" />
+        <img
+          src={item.imagen}
+          alt={item.imagenAlt || item.titulo}
+          data-lightbox
+          data-title={item.titulo}
+          data-desc={item.resumen}
+          loading="lazy"
+          width="900"
+          height="506"
+        />
         <div class="body">
           <h3>{item.titulo}</h3>
           <p>{item.resumen}</p>
