@@ -383,8 +383,8 @@ const signalPools = {
   )}
 
   <section class="panel-senales container">
-    <div class="panel-head">
-      <div class="panel-head-text">
+    <div class="signals-head">
+      <div class="signals-head-text">
         <p class="eyebrow panel-eyebrow">Herramientas</p>
         <h2 class="scramble" data-text="Panel de Señales">Panel de Señales</h2>
         <p class="section-sub">Herramientas de glitchMentalMX para decidir, comparar y entender la tecnología con datos reales.</p>
@@ -899,7 +899,7 @@ const signalPools = {
   /* Panel de Señales — reemplaza el grid de cards de Recursos por una lista
      de filas: más denso verticalmente, y cada fila lee como un dato real
      (métrica a la derecha), no como una tarjeta decorativa. */
-  .panel-head {
+  .signals-head {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -907,8 +907,8 @@ const signalPools = {
     margin-bottom: 28px;
   }
   .panel-eyebrow { color: var(--accent); margin: 0 0 10px; }
-  .panel-head-text h2 { font-size: 2rem; margin-bottom: 10px; }
-  .panel-head-text .section-sub { max-width: 52ch; margin: 0; }
+  .signals-head-text h2 { font-size: 2rem; margin-bottom: 10px; }
+  .signals-head-text .section-sub { max-width: 52ch; margin: 0; }
   .panel-sysinfo {
     flex-shrink: 0;
     display: flex;
@@ -1097,7 +1097,7 @@ const signalPools = {
   }
 
   @media (max-width: 640px) {
-    .panel-head { flex-direction: column; gap: 16px; }
+    .signals-head { flex-direction: column; gap: 16px; }
     .panel-sysinfo { display: none; }
     .row-main { flex-direction: column; align-items: flex-start; gap: 4px; }
     .row-title, .row-title-line { width: auto; }
