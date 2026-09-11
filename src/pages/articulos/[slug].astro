@@ -450,7 +450,7 @@ if (kind === 'posts') {
 }
 ---
 
-<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'}>
+<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'} robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
 
