@@ -57,7 +57,7 @@ Se escribieron scripts de Node (carpeta `scripts/`, documentados, reutilizables 
                                     (Biblioteca de IA/Tecnología/Sociedad, Recursos para Enseñar IA,
                                     Mapa de Poder Tech)
 /glitchsearch/                     herramienta de búsqueda (ver sección 6)
-/calculadora-de-riesgo-de-reemplazo-por-ia-2026/   calculadora (ver sección 6)
+/calculadora-de-riesgo-de-reemplazo-por-ia/   calculadora (ver sección 6)
 /indice-glitchmentalmx/            ranking mensual de 20 tecnologías B2B
 /insights-visuales/                galería de "imagen + análisis" (95 items)
 /dato-incomodo/                    galería de datos incómodos (112 items, el dueño la actualiza A DIARIO)

@@ -80,7 +80,7 @@ La pregunta real es:
 
 > ¿Qué tan reemplazable es el tuyo, hoy, con la tecnología que ya existe?
 
-[→ Evalúa tu riesgo con la Calculadora de Riesgo de IA](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/)
+[→ Evalúa tu riesgo con la Calculadora de Riesgo de IA](/calculadora-de-riesgo-de-reemplazo-por-ia/)
 
 Ignorarla no la hace desaparecer. Medirla, al menos, te devuelve algo de control.
 
@@ -98,4 +98,4 @@ No prometen tranquilidad. Prometen claridad.
 
 **¿Listo para llevar esta conversación al siguiente nivel?**
 
-[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) · [Índice glitchMentalMX →](/indice-glitchmentalmx/)
+[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia/) · [Índice glitchMentalMX →](/indice-glitchmentalmx/)

@@ -228,7 +228,13 @@ export default defineConfig({
       // /buscar/ es noIndex (páginas de resultados de búsqueda interna no
       // deberían indexarse) — se excluye también del sitemap por la misma
       // razón, no tiene caso mandarla a rastrear si le decimos que no indexe.
-      filter: (page) => !page.includes('/stats/') && !page.includes('/buscar/'),
+      // /calculadora-de-riesgo-de-reemplazo-por-ia-2026/ es ahora un stub de
+      // redirección (ver src/pages/.../index.astro) — noindex y fuera del
+      // sitemap, igual que las páginas migradas de Blogger.
+      filter: (page) =>
+        !page.includes('/stats/') &&
+        !page.includes('/buscar/') &&
+        !page.includes('/calculadora-de-riesgo-de-reemplazo-por-ia-2026/'),
       serialize(item) {
         const { pathname } = new URL(item.url);
         const conFecha = (fecha) => (fecha ? { ...item, lastmod: fecha.toISOString() } : item);
@@ -265,7 +271,7 @@ export default defineConfig({
         if (pathname === '/archivo/') return conFecha(fechaMaxPosts);
         if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
-        if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia-2026/') return conFecha(fechaCalculadoraRiesgo);
+        if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia/') return conFecha(fechaCalculadoraRiesgo);
         if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
 
         const matchCategoria = pathname.match(/^\/categoria\/([^/]+)\/$/);

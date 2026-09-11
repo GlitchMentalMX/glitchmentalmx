@@ -13,7 +13,7 @@ heroImageAlt: >-
 ---
 Seguro ya escuchaste la frase de que _"la IA no te va a quitar el trabajo, sino alguien que sepa usar la herramienta de IA"_. Suena muy bien en un post de LinkedIn, pero la realidad en este inicio de 2026 es mucho más cruda y directa. La automatización ya no es una promesa del futuro; es una fuerza que está rediseñando la economía de **México** y de todo el mundo en tiempo real.
 
-Desde la llegada de los modelos de lenguaje avanzado y los agentes autónomos que pueden gestionar procesos enteros sin supervisión humana, la pregunta dejó de ser "si" la tecnología afectará tu empleo, para convertirse en "cuándo" y "qué tanto". Por eso, en **glitchMentalMX** hemos diseñado una [**herramienta para que dejes de adivinar**](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/) y empieces a planear tu siguiente movimiento estratégico.
+Desde la llegada de los modelos de lenguaje avanzado y los agentes autónomos que pueden gestionar procesos enteros sin supervisión humana, la pregunta dejó de ser "si" la tecnología afectará tu empleo, para convertirse en "cuándo" y "qué tanto". Por eso, en **glitchMentalMX** hemos diseñado una [**herramienta para que dejes de adivinar**](/calculadora-de-riesgo-de-reemplazo-por-ia/) y empieces a planear tu siguiente movimiento estratégico.
 
 ## La gran purga de las tareas repetitivas
 
@@ -29,13 +29,13 @@ Para entender el nivel de exposición que tienes, debes analizar tres factores f
 
 En este contexto, la educación tradicional está sufriendo una crisis de identidad. Ya no basta con tener un título de una universidad prestigiosa si tus habilidades son fácilmente replicables por un algoritmo. La verdadera ventaja competitiva en este 2026 es la capacidad de adaptación y el dominio de las herramientas de _IA Agéntica_.
 
-## Usa el [Escáner de Riesgo Profesional 2026](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/)
+## Usa el [Escáner de Riesgo Profesional 2026](/calculadora-de-riesgo-de-reemplazo-por-ia/)
 
 A continuación, presentamos nuestra herramienta interactiva de diagnóstico. Este escáner analiza tu área de especialidad, tu formación académica y tu ubicación geográfica para entregarte un porcentaje de riesgo basado en las tendencias actuales de automatización.
 
 **Instrucciones:** Selecciona tus datos honestamente y presiona el botón de análisis. Recuerda que un resultado de riesgo alto no es una sentencia, sino una señal para que empieces a actualizar tu _stack_ de habilidades digitales.
 
-**[Escáner de riesgo profesional 2026](/calculadora-de-riesgo-de-reemplazo-por-ia-2026/)**
+**[Escáner de riesgo profesional 2026](/calculadora-de-riesgo-de-reemplazo-por-ia/)**
 
 _Si estás leyendo esto en el feed principal, haz clic en el título para ir a la versión interactiva._
 
