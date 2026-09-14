@@ -4,8 +4,8 @@ resumen: En TikTok, las cuentas de creadores representan cerca de la mitad de la
 imagen: /images/uploads/creador-sistema-distribucion.webp
 imagenAlt: 'El creador como distribución digital: creadora conecta contenido con múltiples usuarios'
 enlace: ''
-date: 2026-09-12T08:17
-draft: true
+date: 2026-09-14T05:57
+draft: false
 categoria: Cultura Digital
 punchline: El creador se volvió parte del sistema de distribución
 ---
