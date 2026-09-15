@@ -1,7 +1,7 @@
 ---
 title: 'El agente de IA que va de compras: quién pierde el negocio'
 category: Inteligencia Artificial
-pubDate: 2026-09-15T06:00
+pubDate: 2026-09-15T06:12
 updatedDate: ''
 description: El agente de IA que compra por ti ya mueve dinero real. Quién gana, quién pierde y por qué Google no se está muriendo limpio.
 heroImage: /images/uploads/ia-compras.webp
@@ -13,7 +13,7 @@ El agente de IA que va de compras ya existe: en John Lewis, las **búsquedas de 
 
 ## El salto de John Lewis y por qué la cifra importa más que su tamaño
 
-Peter Ruis, entonces director general de las tiendas John Lewis, lo dijo sin rodeos a Reuters el 3 de septiembre de 2026: el crecimiento es **exponencial y ocurre en todos los grupos de edad**, no solo entre early adopters. La cifra en sí —2.5% del tráfico de producto— todavía es marginal. Lo que no es marginal es la velocidad: **multiplicarse por más de ocho en doce mese** es la clase de curva que las empresas suelen ignorar hasta que ya es tarde. John Lewis respondió abriendo un estudio de contenido para influencers en su tienda insignia de Oxford Street, apostando a que si el agente va a decidir, mejor que decida con tu contenido enfrente.
+Peter Ruis, director general de las tiendas John Lewis en ese momento —dejó el cargo el 6 de septiembre, apenas tres días después—, lo dijo sin rodeos a Reuters el 3 de septiembre de 2026: el crecimiento es **exponencial y ocurre en todos los grupos de edad**, no solo entre early adopters. La cifra en sí —2.5% del tráfico de producto— todavía es marginal. Lo que no es marginal es la velocidad: **multiplicarse por más de ocho en doce mese** es la clase de curva que las empresas suelen ignorar hasta que ya es tarde. John Lewis respondió abriendo un estudio de contenido para influencers en su tienda insignia de Oxford Street, apostando a que si el agente va a decidir, mejor que decida con tu contenido enfrente.
 
 ## Cuánto dinero publicitario está realmente en juego
 
