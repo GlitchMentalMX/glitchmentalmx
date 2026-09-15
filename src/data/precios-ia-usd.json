@@ -2,6 +2,7 @@
   "chatgpt": { "nombre": "ChatGPT Plus", "precioUSD": 20, "periodo": "mensual", "empresa": "OpenAI" },
   "claude": { "nombre": "Claude Pro", "precioUSD": 20, "periodo": "mensual", "empresa": "Anthropic" },
   "gemini": { "nombre": "Google AI Pro", "precioUSD": 19.99, "periodo": "mensual", "empresa": "Google" },
+  "google-ai-plus": { "nombre": "Google AI Plus", "precioUSD": 4.99, "periodo": "mensual", "empresa": "Google" },
   "copilot": { "nombre": "Microsoft 365 Premium", "precioUSD": 19.99, "periodo": "mensual", "empresa": "Microsoft" },
   "perplexity": { "nombre": "Perplexity Pro", "precioUSD": 20, "periodo": "mensual", "empresa": "Perplexity AI" },
   "grok": { "nombre": "SuperGrok", "precioUSD": 30, "periodo": "mensual", "empresa": "xAI" },
