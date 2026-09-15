@@ -72,7 +72,7 @@ const esGratis = !tienePrecioMXNDirecto && precio.precioUSD === 0;
       ? 'No tiene plan de pago para el público general en México — el tipo de cambio no aplica.'
       : tienePrecioMXNDirecto
         ? 'Precio oficial directo en pesos mexicanos — este servicio no vende en dólares, así que el tipo de cambio de Banxico no aplica aquí.'
-        : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Antes de comisiones bancarias por transacción en dólares o impuestos según tu método de pago.`}
+        : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Es el precio oficial en dólares antes de IVA — muchas empresas ya lo incluyen en el precio que cobran directo en pesos en México, así que tu tarjeta puede reflejar un monto más alto. También puede sumarse la comisión de tu banco por ser una transacción en el extranjero.`}
   </p>
   <NotaActualizacionBanxico />
 </div>

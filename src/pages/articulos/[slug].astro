@@ -531,7 +531,7 @@ if (kind === 'posts') {
               {precio.precioUSD === 0 ? (
                 <>Cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
               ) : (
-                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México ({precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al tipo de cambio FIX de Banxico del {formatDate(fechaDato)}), antes de comisiones bancarias o impuestos según tu método de pago.</>
+                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México ({precio.precioUSD.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al tipo de cambio FIX de Banxico del {formatDate(fechaDato)}), antes de IVA — muchas empresas ya lo incluyen en el precio que cobran directo en pesos en México — y antes de la comisión que tu banco pueda sumar por ser una transacción en el extranjero.</>
               )}
             </p>
             <TipoCambioCalculadora herramientaId={herramientaId} herramienta={herramienta} />
@@ -546,7 +546,7 @@ if (kind === 'posts') {
               ) : precio.precioUSD === 0 ? (
                 <>Cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
               ) : (
-                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México ({precio.precioUSD!.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al tipo de cambio FIX de Banxico del {formatDate(fechaDato)}), antes de comisiones bancarias o impuestos según tu método de pago.</>
+                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México ({precio.precioUSD!.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} USD al tipo de cambio FIX de Banxico del {formatDate(fechaDato)}), antes de IVA — muchas empresas ya lo incluyen en el precio que cobran directo en pesos en México — y antes de la comisión que tu banco pueda sumar por ser una transacción en el extranjero.</>
               )}
             </p>
             <TipoCambioCalculadora herramientaId={herramientaId} herramienta={herramienta} fuente="digitales" />
