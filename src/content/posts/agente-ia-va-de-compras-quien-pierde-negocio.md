@@ -1,7 +1,7 @@
 ---
 title: 'El agente de IA que va de compras: quién pierde el negocio'
 category: Inteligencia Artificial
-pubDate: 2026-09-14T10:59
+pubDate: 2026-09-15T05:56
 updatedDate: ''
 description: El agente de IA que compra por ti ya mueve dinero real. Quién gana, quién pierde y por qué Google no se está muriendo limpio.
 heroImage: /images/uploads/ia-compras.webp
