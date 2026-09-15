@@ -6,7 +6,7 @@ updatedDate: ''
 description: El agente de IA que compra por ti ya mueve dinero real. Quién gana, quién pierde y por qué Google no se está muriendo limpio.
 heroImage: /images/uploads/ia-compras.webp
 heroImageAlt: 'agente de IA de compras: sistema autónomo completa una compra mientras la compradora queda fuera del proceso.'
-draft: true
+draft: false
 ---
 
 El agente de IA que va de compras ya existe: en John Lewis, las **búsquedas de producto vía agentes de IA pasaron de 0.3% a 2.5% en un año**. La pregunta incómoda no es si va a crecer —va a crecer—, sino quién queda fuera del negocio.
