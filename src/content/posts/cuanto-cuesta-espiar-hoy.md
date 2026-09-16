@@ -1,7 +1,7 @@
 ---
 title: 'Cuánto cuesta espiar hoy: de $12 al mes a $650,000'
 category: Tendencias Digitales
-pubDate: 2026-09-16T11:23
+pubDate: 2026-09-16T11:28
 updatedDate: ''
 description: |-
   Espiar a tu pareja cuesta $12 al mes. Hackear un país, $650,000.
