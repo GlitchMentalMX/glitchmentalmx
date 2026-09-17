@@ -1,12 +1,12 @@
 ---
 title: 'Cuánto cuesta espiar hoy: de $12 al mes a $650,000'
 category: Tendencias Digitales
-pubDate: 2026-09-16T11:28
+pubDate: 2026-09-17T05:46
 updatedDate: ''
 description: Espiar a tu pareja cuesta $12 al mes. Hackear un país, $650,000. La vigilancia ya tiene tarifa, tiers y descuentos, igual que cualquier SaaS.
 heroImage: /images/uploads/cuanto-cuesta-espiar.webp
 heroImageAlt: Mujer examinando lentes de cámaras espía y servidores de intercepción de datos de grado militar en estantes, ilustrando las tarifas de vigilancia.
-draft: true
+draft: false
 ---
 
 Vigilar ya tiene tarifa: $650,000 por hackear diez teléfonos si eres gobierno, $5 al mes por empleado si eres empresa, desde $12 al mes si solo quieres espiar a tu pareja. La escala cambia. El modelo de negocio no.
