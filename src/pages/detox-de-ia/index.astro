@@ -22,7 +22,9 @@ const lastReviewed = new Date(`${detoxData.lastReviewed}T12:00:00-06:00`);
 // postSlugs en src/content/collections/guias-esenciales.md) — mismo terreno
 // temático del test, enlazados aquí en ambas direcciones: cada uno de estos
 // también muestra una tarjeta de vuelta hacia el test (ver DETOX_DE_IA_SLUGS
-// en src/pages/articulos/[slug].astro).
+// en src/pages/articulos/[slug].astro). Más
+// "detox-digital-por-que-desconectarte-no-soluciona-nada" (fuera de esa
+// colección, mismo argumento central: abstinencia vs. diseño intencional).
 const RELATED_SLUGS = [
   'dopamina-y-diseno-por-que-las-apps-son-adictivas',
   'ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro',
@@ -31,6 +33,7 @@ const RELATED_SLUGS = [
   'habitos-invisibles-tecnologia-que-reconfigura-tu-conducta',
   'el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende',
   'la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste',
+  'detox-digital-por-que-desconectarte-no-soluciona-nada',
 ];
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
