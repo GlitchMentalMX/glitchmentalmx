@@ -200,7 +200,7 @@ const signalPools = {
     : [],
   serie: seriesPool.map((s) => ({
     tag: 'Serie',
-    text: s.data.title,
+    text: s.data.audio ? `🎧 ${s.data.title}` : s.data.title,
     href: `/series/${s.id}/`,
   })),
   coleccion: hubPool.map((h) => ({
