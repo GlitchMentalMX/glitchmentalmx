@@ -36,16 +36,47 @@ const audioSchema = {
 
 <script type="application/ld+json" set:html={JSON.stringify(audioSchema)} />
 
-<div class="series-audio">
+<div class="series-audio" data-series-audio>
   <div class="series-audio-label">
     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
       <path d="M4 10v4M8 6v12M12 3v18M16 6v12M20 10v4" />
     </svg>
-    <span>Escucha la serie · {durationLabel}</span>
+    <span>Escucha el resumen · {durationLabel}</span>
   </div>
-  <audio controls preload="none" src={audioUrl}>
-    <p>Tu navegador no soporta audio HTML5. <a href={audioUrl}>Descarga el audio</a>.</p>
-  </audio>
+
+  <audio preload="none" src={src} data-series-audio-el></audio>
+
+  <div class="series-audio-player">
+    <button type="button" class="series-audio-playbtn" data-series-audio-play aria-label="Reproducir">
+      <svg data-icon="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5-9-5.5z" /></svg>
+      <svg data-icon="pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" hidden>
+        <rect x="3" y="2" width="3.5" height="12" /><rect x="9.5" y="2" width="3.5" height="12" />
+      </svg>
+    </button>
+
+    <div class="series-audio-controls">
+      <input type="range" class="series-audio-scrubber" min="0" max={durationSeconds} step="0.1" value="0" data-series-audio-range aria-label="Progreso del audio" />
+      <div class="series-audio-time">
+        <span data-series-audio-current>0:00</span> / <span>{durationLabel}</span>
+      </div>
+    </div>
+
+    <button type="button" class="series-audio-mutebtn" data-series-audio-mute aria-label="Silenciar">
+      <svg data-icon="unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M11 5 6 9H3v6h3l5 4V5z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M18.5 5.5a9 9 0 0 1 0 13" />
+      </svg>
+      <svg data-icon="muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden>
+        <path d="M11 5 6 9H3v6h3l5 4V5z" /><path d="M16 9l5 6M21 9l-5 6" />
+      </svg>
+    </button>
+  </div>
+
+  <noscript>
+    <audio controls preload="none" src={src}>
+      <p>Tu navegador no soporta audio HTML5. <a href={src}>Descarga el audio</a>.</p>
+    </audio>
+  </noscript>
+
   <details class="series-audio-transcript">
     <summary>Leer la transcripción</summary>
     <div class="series-audio-transcript-body">
@@ -54,8 +85,84 @@ const audioSchema = {
   </details>
 </div>
 
+<script>
+  if (!window.__seriesAudioWired) {
+    window.__seriesAudioWired = true;
+
+    const formatTime = (s: number): string => {
+      if (!isFinite(s) || s < 0) return '0:00';
+      const m = Math.floor(s / 60);
+      const sec = Math.floor(s % 60);
+      return `${m}:${String(sec).padStart(2, '0')}`;
+    };
+
+    const initPlayer = (container: Element) => {
+      const audio = container.querySelector<HTMLAudioElement>('[data-series-audio-el]');
+      const playBtn = container.querySelector<HTMLButtonElement>('[data-series-audio-play]');
+      const range = container.querySelector<HTMLInputElement>('[data-series-audio-range]');
+      const currentEl = container.querySelector('[data-series-audio-current]');
+      const muteBtn = container.querySelector<HTMLButtonElement>('[data-series-audio-mute]');
+      if (!audio || !playBtn || !range || !currentEl || !muteBtn) return;
+
+      const playIcon = playBtn.querySelector<SVGElement>('[data-icon="play"]');
+      const pauseIcon = playBtn.querySelector<SVGElement>('[data-icon="pause"]');
+      const unmutedIcon = muteBtn.querySelector<SVGElement>('[data-icon="unmuted"]');
+      const mutedIcon = muteBtn.querySelector<SVGElement>('[data-icon="muted"]');
+
+      let seeking = false;
+
+      playBtn.addEventListener('click', () => {
+        if (audio.paused) audio.play();
+        else audio.pause();
+      });
+
+      audio.addEventListener('play', () => {
+        playIcon?.toggleAttribute('hidden', true);
+        pauseIcon?.toggleAttribute('hidden', false);
+        playBtn.setAttribute('aria-label', 'Pausar');
+      });
+      audio.addEventListener('pause', () => {
+        playIcon?.toggleAttribute('hidden', false);
+        pauseIcon?.toggleAttribute('hidden', true);
+        playBtn.setAttribute('aria-label', 'Reproducir');
+      });
+      audio.addEventListener('ended', () => {
+        range.value = '0';
+        currentEl.textContent = '0:00';
+      });
+      audio.addEventListener('timeupdate', () => {
+        if (seeking) return;
+        range.value = String(audio.currentTime);
+        currentEl.textContent = formatTime(audio.currentTime);
+      });
+      audio.addEventListener('loadedmetadata', () => {
+        if (isFinite(audio.duration)) range.max = String(audio.duration);
+      });
+
+      range.addEventListener('input', () => {
+        seeking = true;
+        currentEl.textContent = formatTime(Number(range.value));
+      });
+      range.addEventListener('change', () => {
+        audio.currentTime = Number(range.value);
+        seeking = false;
+      });
+
+      muteBtn.addEventListener('click', () => {
+        audio.muted = !audio.muted;
+        unmutedIcon?.toggleAttribute('hidden', audio.muted);
+        mutedIcon?.toggleAttribute('hidden', !audio.muted);
+        muteBtn.setAttribute('aria-label', audio.muted ? 'Activar sonido' : 'Silenciar');
+      });
+    };
+
+    document.querySelectorAll('[data-series-audio]').forEach(initPlayer);
+  }
+</script>
+
 <style>
   .series-audio {
+    --player-accent: #ff7a1a;
     border: 1px solid var(--border);
     background: var(--bg-inset);
     border-radius: var(--radius-sm);
@@ -64,7 +171,7 @@ const audioSchema = {
     max-width: 720px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
   }
 
   .series-audio-label {
@@ -73,16 +180,75 @@ const audioSchema = {
     gap: 8px;
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--text);
   }
   .series-audio-label svg { color: var(--accent); flex-shrink: 0; }
 
-  .series-audio audio {
-    width: 100%;
-    accent-color: var(--accent);
+  .series-audio audio { display: none; }
+
+  .series-audio-player {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 
+  .series-audio-playbtn {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: var(--player-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .series-audio-playbtn:hover { opacity: 0.85; }
+  .series-audio-playbtn svg { width: 16px; height: 16px; }
+  .series-audio-playbtn svg[data-icon='play'] { transform: translateX(1px); }
+
+  .series-audio-controls {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .series-audio-scrubber {
+    width: 100%;
+    accent-color: var(--player-accent);
+    cursor: pointer;
+  }
+
+  .series-audio-time {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .series-audio-mutebtn {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    color: var(--player-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .series-audio-mutebtn svg { width: 18px; height: 18px; }
+
   .series-audio-transcript summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-family: var(--font-mono);
     font-size: 0.75rem;
     letter-spacing: 0.02em;
@@ -90,6 +256,16 @@ const audioSchema = {
     cursor: pointer;
     user-select: none;
   }
+  .series-audio-transcript summary::-webkit-details-marker { display: none; }
+  .series-audio-transcript summary::marker { content: none; }
+  .series-audio-transcript summary::before {
+    content: '+';
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+  }
+  .series-audio-transcript[open] summary::before { content: '−'; }
+
   .series-audio-transcript-body {
     margin-top: 12px;
     padding-top: 12px;
