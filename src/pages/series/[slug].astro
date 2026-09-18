@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
 import BookPromo from '../../components/BookPromo.astro';
+import SeriesAudio from '../../components/SeriesAudio.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getBook } from '../../data/books';
 import { mdBold } from '../../lib/format';
@@ -51,6 +52,17 @@ const seriesImage = posts[0]?.data.heroImage;
       </div>
     )}
   </section>
+
+  {series.data.audio && (
+    <SeriesAudio
+      title={series.data.title}
+      src={series.data.audio.src}
+      durationSeconds={series.data.audio.durationSeconds}
+      transcript={series.data.audio.transcript}
+      description={series.data.audio.description}
+      pageUrl={Astro.url.toString()}
+    />
+  )}
 
   {series.data.intro && (
     <section class="container intro-box">

@@ -40,4 +40,32 @@ closing: >-
   operación salió con tus credenciales, tu autenticación y tu instrucción,
   ¿quién decide que el fraude fue tuyo?**
 order: 7
+audio:
+  src: /audio/series/ingenieria-de-la-confianza.m4a
+  durationSeconds: 101
+  transcript: >-
+    Aquí tienes el resumen directo sobre la serie **Ingeniería de la
+    confianza**. Esta mirada cruda de glitchMentalMX expone que el fraude
+    digital ya no hackea códigos, sabes, sino el diseño roto de nuestras
+    instituciones y mentes. Digo, yo estoy segura: si armamos defensas
+    corporativas sobre cimientos de adobe, ¿por qué nos sorprende cuando el
+    sistema colapsa al primer engaño? Primero, la ilusión técnica. El
+    protocolo de correo SMTP es de 1982 y jamás se diseñó para verificar
+    quién te escribe. Por eso el phishing siempre gana. Y claro, la banca nos
+    vendió que la biometría de voz era infalsificable, pero la realidad es
+    que está rotísima desde 2019. Al fallar la tecnología básica validando
+    identidades, el ataque te manipula directamente a ti. Segundo, la
+    fabricación del engaño humano. El fraude romántico es literalmente un
+    guion de manipulación, un love bombing de meses. Es loquísimo: operativos
+    de Corea del Norte pasan entrevistas corporativas por videollamada para
+    infiltrarse, mientras muchos estafadores asiáticos son irónicamente
+    víctimas de trata. Si una videollamada ya no confirma que hay alguien
+    real del otro lado, ¿qué nos queda del contrato social a distancia?
+    Finalmente, la trampa del famoso fraude autorizado. Como tú ingresaste la
+    contraseña engañado, el banco se lava las manos y decreta que la
+    operación fue tuya. El sistema financiero diseñó su exclusión perfecta:
+    te culpan por caer en una trampa que sus propias fallas de verificación
+    permitieron. En resumen, la ciberseguridad tradicional es inútil cuando
+    el ataque atraviesa limpiamente tu propia voluntad. Bajen en esta landing
+    page para leer los artículos completos de la serie.
 ---

@@ -1,0 +1,106 @@
+---
+import { mdBold, mdStrip } from '../lib/format';
+
+interface Props {
+  title: string;
+  src: string;
+  durationSeconds: number;
+  transcript: string;
+  description?: string;
+  pageUrl: string;
+}
+
+const { title, src, durationSeconds, transcript, description, pageUrl } = Astro.props;
+
+const audioUrl = new URL(src, Astro.site).toString();
+const minutes = Math.floor(durationSeconds / 60);
+const seconds = Math.round(durationSeconds % 60);
+const durationLabel = `${minutes}:${String(seconds).padStart(2, '0')}`;
+const isoDuration = `PT${minutes}M${seconds}S`;
+
+const paragraphs = transcript.split('\n').map((p) => p.trim()).filter(Boolean);
+const plainTranscript = mdStrip(transcript);
+
+const audioSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AudioObject',
+  name: `Audio: ${title}`,
+  contentUrl: audioUrl,
+  encodingFormat: 'audio/mp4',
+  duration: isoDuration,
+  transcript: plainTranscript,
+  ...(description ? { description } : {}),
+  isPartOf: { '@type': 'WebPage', '@id': pageUrl },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(audioSchema)} />
+
+<div class="series-audio">
+  <div class="series-audio-label">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <path d="M4 10v4M8 6v12M12 3v18M16 6v12M20 10v4" />
+    </svg>
+    <span>Escucha la serie · {durationLabel}</span>
+  </div>
+  <audio controls preload="none" src={audioUrl}>
+    <p>Tu navegador no soporta audio HTML5. <a href={audioUrl}>Descarga el audio</a>.</p>
+  </audio>
+  <details class="series-audio-transcript">
+    <summary>Leer la transcripción</summary>
+    <div class="series-audio-transcript-body">
+      {paragraphs.map((p) => <p set:html={mdBold(p)} />)}
+    </div>
+  </details>
+</div>
+
+<style>
+  .series-audio {
+    border: 1px solid var(--border);
+    background: var(--bg-inset);
+    border-radius: var(--radius-sm);
+    padding: 16px 20px;
+    margin: 24px auto 0;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .series-audio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+  .series-audio-label svg { color: var(--accent); flex-shrink: 0; }
+
+  .series-audio audio {
+    width: 100%;
+    accent-color: var(--accent);
+  }
+
+  .series-audio-transcript summary {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    cursor: pointer;
+    user-select: none;
+  }
+  .series-audio-transcript-body {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .series-audio-transcript-body p {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0 0 12px;
+  }
+  .series-audio-transcript-body p:last-child { margin-bottom: 0; }
+  .series-audio-transcript-body p :global(strong) { color: var(--text); font-weight: 700; }
+</style>

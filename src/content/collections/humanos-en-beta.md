@@ -34,4 +34,44 @@ closing: >-
   error que la rompe. **Siete formas de preguntarte quién quedó del otro
   lado de la pantalla.**
 order: 5
+audio:
+  src: /audio/series/humanos-en-beta.m4a
+  durationSeconds: 108
+  transcript: >-
+    Este es el resumen rápido de la serie **Humanos en beta** de
+    glitchMentalMX. Y mira, la tecnología no solo está cambiando lo que
+    hacemos todos los días, sino que está **reescribiendo nuestra identidad
+    en tiempo real**. Y la verdad, **nadie pausó este experimento para
+    preguntarnos si queríamos participar**.
+
+    Primero, **tu identidad online ya no te pertenece**. Hoy dependemos
+    completamente de la biometría, como escanear tu cara o tu huella,
+    **matando por completo el anonimato**. Y ojo, mientras las generaciones
+    mayores ven la privacidad como algo que deben ocultar, los más jóvenes la
+    ven como una **simple negociación comercial de sus datos**. Básicamente,
+    tu identidad digital hoy es como un **pasaporte emitido por una agencia
+    de publicidad**. Te dejan viajar libremente, sí, pero solo para **medir
+    exactamente dónde pisas**.
+
+    Segundo, en este espacio prestado, **¿con quién nos relacionamos?** Te
+    cuento que **los humanos ya somos minoría**. El tráfico automatizado
+    creció un **23,5% frente a un triste 3% nuestro**. En este internet casi
+    muerto, **nuestras relaciones están superindustrializadas**. Ese vínculo
+    con tu influencer favorito es una **maquinaria millonaria diseñada con
+    datos para simular intimidad**. En serio, ¿qué pasa con tu psicología
+    cuando descubres que esa **conexión es solo un algoritmo para venderte
+    cosas**?
+
+    Tercero, **olvida el mito de que internet es para siempre**. Plataformas
+    enteras desaparecen por decisiones corporativas, **borrando nuestra
+    historia**. A la par, nuestra política se reduce a **memes con
+    inteligencia artificial** que instalan ideologías mucho antes de que tu
+    cerebro logre verificarlas. Tu memoria digital solo existe mientras a una
+    empresa le **resulte rentable no borrarla**.
+
+    En resumen, eres el **sujeto de prueba** en un ecosistema donde la
+    privacidad es moneda de cambio, las emociones son puro marketing y tu
+    historia es un archivo **100% desechable**. Lector sin tiempo, te invito
+    a que leas los **siete artículos completos de Humanos en beta** justo
+    aquí abajo en la landing page.
 ---
