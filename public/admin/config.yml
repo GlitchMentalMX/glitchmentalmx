@@ -105,6 +105,15 @@ collections:
         name: "punchline"
         widget: "string"
         required: false
+      - label: "Video del home (MP4, 16:9, ~10 s, con el texto ya quemado — solo se muestra si este es el insight más reciente)"
+        name: "video"
+        widget: "file"
+        required: false
+        accept: "video/mp4,.mp4"
+        choose_url: false
+        media_folder: "/public/videos/insights"
+        public_folder: "/videos/insights"
+        hint: "Opcional. Si lo dejas vacío, el home muestra la imagen con el punchline como siempre. Ideal: menos de 4 MB."
 
   - name: "indice_glitchmentalmx"
     label: "Índice glitchMentalMX"
