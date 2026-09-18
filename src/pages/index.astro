@@ -70,9 +70,10 @@ const exploraColumns = [
     href: '/series/',
     items: series.map((s) => ({
       href: `/series/${s.id}/`,
-      label: s.data.audio ? `🎧 ${s.data.title}` : s.data.title,
+      label: s.data.title,
       count: s.data.postSlugs.length,
       soon: s.data.status === 'coming-soon',
+      audioSrc: s.data.audio?.src,
     })),
   },
   {
@@ -347,6 +348,14 @@ const signalPools = {
           <ul class="signal-list">
             {col.items.map((item) => (
               <li>
+                {item.audioSrc && (
+                  <button type="button" class="mini-play" data-mini-play={item.audioSrc} aria-label="Reproducir resumen en audio">
+                    <svg data-icon="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5-9-5.5z" /></svg>
+                    <svg data-icon="pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" hidden>
+                      <rect x="3" y="2" width="3.5" height="12" /><rect x="9.5" y="2" width="3.5" height="12" />
+                    </svg>
+                  </button>
+                )}
                 <a href={item.href} class:list={{ muted: item.soon }}>
                   <span class="label">{item.label}</span>
                   {item.soon ? (
@@ -772,7 +781,14 @@ const signalPools = {
     flex-direction: column;
     gap: 11px;
   }
+  .signal-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
   .signal-list li a {
+    flex: 1;
+    min-width: 0;
     display: grid;
     grid-template-columns: 1fr 56px 22px;
     align-items: center;
@@ -780,6 +796,21 @@ const signalPools = {
     font-size: 0.86rem;
     color: var(--text);
   }
+  .mini-play {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .mini-play svg { width: 13px; height: 13px; }
+  .mini-play svg[data-icon='play'] { transform: translateX(1px); }
   .signal-list li a:hover .label { color: var(--accent); }
   .signal-list li a.muted { color: var(--text-muted); }
   .signal-list .label { line-height: 1.3; }
@@ -1357,5 +1388,46 @@ const signalPools = {
         signalCard.addEventListener('mouseleave', startCycle);
       }
     }
+  }
+</script>
+
+<script>
+  // Play/pausa de los resúmenes en audio dentro de Explora — un solo Audio()
+  // compartido (no uno por fila) porque solo puede sonar uno a la vez; al
+  // arrancar uno se pausa el anterior y su ícono vuelve a "play".
+  if (!window.__exploraAudioWired) {
+    window.__exploraAudioWired = true;
+
+    const audio = new Audio();
+    audio.preload = 'none';
+    let activeBtn: HTMLButtonElement | null = null;
+
+    const setPlaying = (btn: HTMLButtonElement, playing: boolean) => {
+      btn.querySelector('[data-icon="play"]')?.toggleAttribute('hidden', playing);
+      btn.querySelector('[data-icon="pause"]')?.toggleAttribute('hidden', !playing);
+      btn.setAttribute('aria-label', playing ? 'Pausar' : 'Reproducir resumen en audio');
+    };
+
+    document.querySelectorAll<HTMLButtonElement>('[data-mini-play]').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (activeBtn === btn) {
+          if (audio.paused) audio.play();
+          else audio.pause();
+          return;
+        }
+
+        if (activeBtn) setPlaying(activeBtn, false);
+        audio.src = btn.dataset.miniPlay || '';
+        audio.play();
+        activeBtn = btn;
+      });
+    });
+
+    audio.addEventListener('play', () => activeBtn && setPlaying(activeBtn, true));
+    audio.addEventListener('pause', () => activeBtn && setPlaying(activeBtn, false));
+    audio.addEventListener('ended', () => activeBtn && setPlaying(activeBtn, false));
   }
 </script>
