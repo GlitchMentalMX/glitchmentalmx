@@ -70,7 +70,7 @@ const exploraColumns = [
     href: '/series/',
     items: series.map((s) => ({
       href: `/series/${s.id}/`,
-      label: s.data.title,
+      label: s.data.audio ? `🎧 ${s.data.title}` : s.data.title,
       count: s.data.postSlugs.length,
       soon: s.data.status === 'coming-soon',
     })),
