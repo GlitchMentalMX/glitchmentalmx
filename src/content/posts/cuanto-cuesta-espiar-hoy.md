@@ -1,19 +1,19 @@
 ---
 title: 'Cuánto cuesta espiar hoy: de $12 al mes a $650,000'
 category: Tendencias Digitales
-pubDate: 2026-09-16T11:28
+pubDate: 2026-09-17T05:50
 updatedDate: ''
 description: Espiar a tu pareja cuesta $12 al mes. Hackear un país, $650,000. La vigilancia ya tiene tarifa, tiers y descuentos, igual que cualquier SaaS.
 heroImage: /images/uploads/cuanto-cuesta-espiar.webp
 heroImageAlt: Mujer examinando lentes de cámaras espía y servidores de intercepción de datos de grado militar en estantes, ilustrando las tarifas de vigilancia.
-draft: true
+draft: false
 ---
 
 Vigilar ya tiene tarifa: $650,000 por hackear diez teléfonos si eres gobierno, $5 al mes por empleado si eres empresa, desde $12 al mes si solo quieres espiar a tu pareja. La escala cambia. El modelo de negocio no.
 
 ## El mito de la vigilancia sin precio
 
-Durante décadas la vigilancia se pensó como un poder excepcional: algo reservado a Estados con presupuesto de inteligencia, imposible de replicar fuera de esa esfera. Esa idea ya no corresponde a la realidad del mercado. **Hoy espiar a alguien —un país entero, una plantilla de empleados o una pareja— se compra con tarjeta, tiene tiers de suscripción y descuentos por compromiso anual**, exactamente la misma lógica comercial que cualquier herramienta de oficina tipo SaaS (_software as a service_: programas que se rentan por suscripción en vez de comprarse una sola vez). Lo único que separa a un gobierno de un particular en este mercado no es el modelo de negocio: son los ceros.
+Durante décadas la vigilancia se pensó como un poder excepcional: algo reservado a Estados con presupuesto de inteligencia, imposible de replicar fuera de esa esfera. Esa idea ya no corresponde a la realidad del mercado. **Hoy espiar a alguien —un país entero, una plantilla de empleados o una pareja— se compra con tarjeta de crédito, tiene tiers de suscripción y descuentos por compromiso anual**, exactamente la misma lógica comercial que cualquier herramienta de oficina tipo SaaS (_software as a service_: programas que se rentan por suscripción en vez de comprarse una sola vez). Lo único que separa a un gobierno de un particular en este mercado no es el modelo de negocio: son los ceros.
 
 ## Nivel Estado: lo que cuesta hackear un país
 
