@@ -1,0 +1,12 @@
+---
+titulo: Cuando la IA funciona offline, cambia lo que esperamos
+resumen: Apple permite integrar sus modelos fundacionales en dispositivos y señala que esas funciones pueden trabajar sin conexión. La IA empieza a parecer una capacidad del hardware.
+imagen: /images/uploads/ia-offline.webp
+imagenAlt: 'Tecnología de Consumo: Mano sosteniendo dispositivo con chip expuesto procesando IA sin conexión en laboratorio.'
+enlace: ''
+date: 2026-09-18T22:38
+draft: true
+categoria: Tecnología de Consumo
+punchline: Cuando la IA funciona offline, cambia lo que esperamos
+video: /videos/insights/ia-offline.mp4
+---
