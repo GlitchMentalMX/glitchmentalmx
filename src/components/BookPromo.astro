@@ -16,9 +16,14 @@ const { book } = Astro.props;
     </a>
     <div class="promo-text">
       <span class="tag">{book.genre}</span>
-      <h3 class="promo-title">{book.title}</h3>
+      <h3 class="promo-title"><a href={`/novelas/${book.id}/`}>{book.title}</a></h3>
       <p class="promo-desc">{book.desc}</p>
-      <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+      <div class="promo-actions">
+        <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+        {book.whyIWroteThisSlug && (
+          <a class="promo-why" href={`/articulos/${book.whyIWroteThisSlug}/`}>Cómo nació esta novela →</a>
+        )}
+      </div>
     </div>
   </div>
 </div>
@@ -41,7 +46,13 @@ const { book } = Astro.props;
   }
   .promo-text { min-width: 0; }
   .promo-title { font-family: var(--font-display); font-size: 1.2rem; margin: 8px 0 8px; }
+  .promo-title a { color: var(--text); }
+  .promo-title a:hover { color: var(--accent); }
   .promo-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 16px; }
+
+  .promo-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+  .promo-why { font-size: 0.9rem; color: var(--accent); }
+  .promo-why:hover { text-decoration: underline; }
 
   @media (max-width: 560px) {
     .promo-body { flex-direction: column; }

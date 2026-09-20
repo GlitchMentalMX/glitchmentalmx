@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { books, amazonMxUrl, type Book } from '../../data/books';
+import { books, formatUrl, type Book } from '../../data/books';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (() => {
@@ -45,7 +45,7 @@ const bookSchema = {
             : 'https://schema.org/Paperback',
       offers: {
         '@type': 'Offer',
-        url: amazonMxUrl(f.asin),
+        url: formatUrl(book, f.asin),
         availability: 'https://schema.org/InStock',
       },
     })),
@@ -70,7 +70,7 @@ const bookSchema = {
           {book.formats.map((f, i) => (
             <>
               {i > 0 && ' · '}
-              <a href={amazonMxUrl(f.asin)} target="_blank" rel="noopener">{f.label}</a>
+              <a href={formatUrl(book, f.asin)} target="_blank" rel="noopener">{f.label}</a>
             </>
           ))}
         </p>

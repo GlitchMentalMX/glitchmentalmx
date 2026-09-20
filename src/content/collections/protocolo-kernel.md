@@ -31,6 +31,7 @@ closing: >-
   que los laboratorios tampoco responden: **¿quién escribe el siguiente
   kernel del ser humano?**
 order: 4
+relatedBook: umbral-20
 audio:
   src: /audio/series/protocolo-kernel.m4a
   durationSeconds: 114

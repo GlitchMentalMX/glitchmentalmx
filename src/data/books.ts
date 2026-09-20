@@ -16,10 +16,22 @@ export interface Book {
   // Formatos individuales con su propio ASIN — opcional, solo para las
   // páginas dedicadas de cada novela (no se muestra en el catálogo).
   formats?: BookFormat[];
+  // Tienda a la que apuntan los ASIN de `formats`. Por defecto amazon.com.mx;
+  // 'us' para libros cuyos 3 formatos solo están juntos en amazon.com (el
+  // lector elige ahí si importa el impreso o va a su tienda por el eBook).
+  store?: 'mx' | 'us';
 }
 
 export function amazonMxUrl(asin: string): string {
   return `https://www.amazon.com.mx/dp/${asin}`;
+}
+
+export function amazonUsUrl(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}`;
+}
+
+export function formatUrl(book: Book, asin: string): string {
+  return book.store === 'us' ? amazonUsUrl(asin) : amazonMxUrl(asin);
 }
 
 export interface UpcomingBook {
@@ -27,19 +39,21 @@ export interface UpcomingBook {
   desc: string;
 }
 
+// Orden: de más reciente a más antigua. El home muestra las primeras 3.
 export const books: Book[] = [
   {
-    id: 'entrenado-en-corpus',
-    title: 'Entrenado en Corpus',
+    id: 'umbral-20',
+    title: 'UMBRAL 20',
     genre: 'Tecnothriller',
-    cover: '/images/novelas/entrenado-en-corpus.webp',
-    desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
-    buy: 'https://mybook.to/EntrenadoEnCorpus',
-    whyIWroteThisSlug: 'por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia',
+    cover: '/images/novelas/umbral-20.webp',
+    desc: 'La edición genética humana ya no es una posibilidad. Es un procedimiento. Treinta y nueve mil expedientes lo documentan. Una firma al pie de uno de ellos es la suya.',
+    buy: 'https://www.amazon.com/dp/B0HKFT5GMF',
+    whyIWroteThisSlug: 'umbral-20-novela-edicion-genetica',
+    store: 'us',
     formats: [
-      { label: 'eBook', asin: 'B0H4J5WTCR' },
-      { label: 'Tapa blanda', asin: 'B0H4LVMQ3J' },
-      { label: 'Tapa dura', asin: 'B0H4QKTLJQ' },
+      { label: 'eBook', asin: 'B0HKF7KD6L' },
+      { label: 'Tapa blanda', asin: 'B0HKFT5GMF' },
+      { label: 'Tapa dura', asin: 'B0HKFRX391' },
     ],
   },
   {
@@ -56,13 +70,23 @@ export const books: Book[] = [
       { label: 'Tapa dura', asin: 'B0H8MQKQ5Z' },
     ],
   },
+  {
+    id: 'entrenado-en-corpus',
+    title: 'Entrenado en Corpus',
+    genre: 'Tecnothriller',
+    cover: '/images/novelas/entrenado-en-corpus.webp',
+    desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
+    buy: 'https://mybook.to/EntrenadoEnCorpus',
+    whyIWroteThisSlug: 'por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia',
+    formats: [
+      { label: 'eBook', asin: 'B0H4J5WTCR' },
+      { label: 'Tapa blanda', asin: 'B0H4LVMQ3J' },
+      { label: 'Tapa dura', asin: 'B0H4QKTLJQ' },
+    ],
+  },
 ];
 
 export const upcomingBooks: UpcomingBook[] = [
-  {
-    title: 'UMBRAL 20',
-    desc: '2031. Una clínica en Singapur vende modificaciones genéticas hereditarias que no eliminan enfermedades — producen ventaja cognitiva irreversible. Una investigadora de la ONU recibe la lista de compradores. Varios de esos nombres deberían estar investigándolo.',
-  },
   {
     title: 'Deprecado',
     desc: 'Un escritor descubre que su obra completa entrenó al modelo que lo superó. Las editoriales ya no lo llaman. Su agente representa ahora a tres IAs. Nadie fue plagiado. Todos fueron deprecados.',

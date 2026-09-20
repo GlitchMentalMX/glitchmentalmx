@@ -45,10 +45,8 @@ Y tiene un umbral: **el veinte por ciento.** Ya se cruzó. Nadie hizo ruido.
 
 ## Dónde leer UMBRAL 20
 
-Toda la investigación que sostiene esta historia sigue disponible en [Protocolo Kernel](https://glitchmental.com/series/protocolo-kernel/). La novela que salió de ella está en [Novelas](https://glitchmental.com/novelas/), y **ya puedes leerla aquí:** [glitchmental.com/umbral20](https://glitchmental.com/umbral20/).
+Toda la investigación que sostiene esta historia sigue disponible en [Protocolo Kernel](https://glitchmental.com/series/protocolo-kernel/). La novela que salió de ella ya está disponible: **[conoce UMBRAL 20](https://glitchmental.com/novelas/umbral-20/)**, o explora el resto del catálogo en [Novelas](https://glitchmental.com/novelas/).
 
-![Portada de UMBRAL 20, novela de Jorge A. Diaz Elizondo](https://glitchmental.com/images/novelas/umbral-20-og.jpg)
+[![Portada de UMBRAL 20, novela de Jorge A. Diaz Elizondo](/images/novelas/umbral-20.webp)](https://glitchmental.com/novelas/umbral-20/)
 
-- **eBook (ASIN):** B0HKF7KD6L
-- **Tapa blanda (ASIN):** B0HKFT5GMF
-- **Tapa dura (ASIN):** B0HKFRX391
+**Formatos disponibles en Amazon:** [eBook](https://www.amazon.com/dp/B0HKF7KD6L) · [tapa blanda](https://www.amazon.com/dp/B0HKFT5GMF) · [tapa dura](https://www.amazon.com/dp/B0HKFRX391)

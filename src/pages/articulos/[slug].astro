@@ -27,17 +27,28 @@ import preciosUSD from '../../data/precios-ia-usd.json';
 import preciosDigitalesUSD from '../../data/precios-digitales-usd.json';
 import postTitleOverrides from '../../data/post-title-overrides.json';
 
-// Enlazado inverso Panóptico Digital → Cero Orgánico: estos 5 artículos son
-// justo los que integran esa serie (ver postSlugs en
-// src/content/collections/panoptico-digital.md), y hoy la serie enlaza hacia
-// la novela pero no al revés. No es un campo de esquema porque es una
-// promoción puntual de 5 artículos, no un comportamiento general de posts.
-const PANOPTICO_DIGITAL_SLUGS = new Set([
+// Enlazado inverso serie → novela: los artículos de cada serie que inspiró una
+// novela cierran con su promo (la serie ya enlaza hacia la novela, pero no
+// al revés). Los slugs salen de postSlugs de cada colección en
+// src/content/collections/. No es un campo de esquema porque es una promoción
+// puntual por serie, no un comportamiento general de posts.
+const PANOPTICO_DIGITAL_SLUGS = [
   'economia-de-creadores-a-donde-va-el-dinero-realmente',
   'estas-hablando-con-un-humano-o-un-bot-ya-no-importa',
   'el-algoritmo-no-existe-por-que-seguimos-creyendo-el-cuento',
   'las-redes-sociales-son-maquinas-de-vigilancia-entre-pares',
   'web3-la-descentralizacion-que-siempre-fue-un-pitch',
+];
+const PROTOCOLO_KERNEL_SLUGS = [
+  'biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion',
+  'el-adn-como-codigo-quien-controla-el-software-de-la-vida',
+  'editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo',
+  'la-ia-como-nuevo-darwin-quien-define-la-evolucion',
+  'bioseguridad-global-el-codigo-que-nadie-audita-todavia',
+];
+const NOVELA_POR_ARTICULO = new Map<string, string>([
+  ...PANOPTICO_DIGITAL_SLUGS.map((slug) => [slug, 'cero-organico'] as [string, string]),
+  ...PROTOCOLO_KERNEL_SLUGS.map((slug) => [slug, 'umbral-20'] as [string, string]),
 ]);
 
 // Promoción puntual de la Calculadora de Riesgo IA — deliberadamente
@@ -163,7 +174,7 @@ const relatedFinal =
     ? relatedSameCategory
     : [...relatedSameCategory, ...relatedPool.filter((p) => p.data.category !== category)].slice(0, 3);
 
-const ceroOrganico = kind === 'posts' && PANOPTICO_DIGITAL_SLUGS.has(post.id) ? getBook('cero-organico') : undefined;
+const novelaPromo = kind === 'posts' && NOVELA_POR_ARTICULO.has(post.id) ? getBook(NOVELA_POR_ARTICULO.get(post.id)!) : undefined;
 
 const toolPromo =
   kind === 'posts' && RISK_CALCULATOR_SLUGS.has(post.id)
@@ -591,9 +602,9 @@ if (kind === 'posts') {
     </div>
   </article>
 
-  {kind === 'posts' && ceroOrganico && (
+  {kind === 'posts' && novelaPromo && (
     <section class="container book-section">
-      <BookPromo book={ceroOrganico} />
+      <BookPromo book={novelaPromo} />
     </section>
   )}
 

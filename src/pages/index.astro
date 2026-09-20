@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import PreciosTicker from '../components/PreciosTicker.astro';
+import { books } from '../data/books';
 import { getCollection, getEntry } from 'astro:content';
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -44,22 +45,9 @@ const insights = (await getCollection('visualInsights', ({ data }) => !data.draf
 );
 const latestInsight = insights[0];
 
-const novelasPublicadas = [
-  {
-    title: 'Entrenado en Corpus',
-    genre: 'Tecnothriller',
-    cover: '/images/novelas/entrenado-en-corpus.webp',
-    desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares.',
-    buy: 'https://mybook.to/EntrenadoEnCorpus',
-  },
-  {
-    title: 'Cero Orgánico',
-    genre: 'Tecnothriller',
-    cover: '/images/novelas/cero-organico.webp',
-    desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
-    buy: 'https://mybook.to/CeroOrganico',
-  },
-];
+// Las 3 novelas más recientes (books.ts ya viene ordenado de más reciente a
+// más antigua). El catálogo completo vive en /novelas/.
+const novelasPublicadas = books.slice(0, 3);
 
 // Explora — cada columna es una lista real de contenido, con una barra
 // proporcional al número de artículos de cada serie/colección (dato real,
@@ -292,19 +280,19 @@ const signalPools = {
       </div>
       <a href="/novelas/" class="link-accent">Ver catálogo completo →</a>
     </div>
-    <div class="novelas-grid">
+    <div class="novelas-grid" role="region" aria-label="Novelas más recientes" tabindex="0">
       {novelasPublicadas.map((n) => (
-        <div class="novela-card">
-          <a href="/novelas/" class="novela-cover-link">
-            <img src={n.cover} alt={`Portada de ${n.title}`} loading="lazy" width="200" height="310" />
+        <article class="novela-card">
+          <a href={`/novelas/${n.id}/`} class="novela-cover-link" tabindex="-1" aria-hidden="true">
+            <img src={n.cover} alt="" loading="lazy" width="400" height="640" />
           </a>
           <div class="novela-body">
             <span class="tag">{n.genre}</span>
-            <h3><a href="/novelas/">{n.title}</a></h3>
+            <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
             <p>{n.desc}</p>
             <a class="link-accent" href={n.buy} target="_blank" rel="noopener">Adquirir →</a>
           </div>
-        </div>
+        </article>
       ))}
     </div>
   </section>
@@ -971,33 +959,55 @@ const signalPools = {
   }
   .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 
-  /* Novelas — protagonista: portada real + sinopsis + CTA de compra */
+  /* Novelas — 3 más recientes: portada + sinopsis + CTA. En escritorio, grid
+     de 3; en móvil, carrusel con snap y la siguiente tarjeta asomando (así no
+     crece en vertical cuando lleguen más novelas). */
   .novelas-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
   .novela-card {
     display: flex;
-    gap: 22px;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 18px;
     background: var(--bg-inset);
     border-radius: var(--radius);
     padding: 24px;
   }
   .novela-cover-link { flex-shrink: 0; display: block; }
   .novela-cover-link img {
-    width: 108px;
-    height: 168px;
+    width: 150px;
+    height: 240px;
     object-fit: cover;
     border-radius: 6px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
   }
-  .novela-body { min-width: 0; }
+  .novela-body {
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
   .novela-body h3 { font-family: var(--font-display); font-size: 1.25rem; margin: 10px 0 10px; }
   .novela-body h3 a { color: var(--text); }
   .novela-body h3 a:hover { color: var(--accent); }
-  .novela-body p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin: 0 0 14px; }
+  .novela-body p {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0 0 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .novela-body .link-accent {
+    margin-top: auto;
     display: inline-flex;
     align-items: center;
     padding: 0.5em 1.1em;
@@ -1008,12 +1018,23 @@ const signalPools = {
   }
   .novela-body .link-accent:hover { color: #0052cc; }
 
-  @media (min-width: 901px) {
-    .novela-cover-link img { width: 128px; height: 199px; }
+  @media (max-width: 900px) {
+    .novelas-grid {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      /* sangrado hasta el borde de la pantalla: la siguiente tarjeta asoma */
+      margin: 0 -24px;
+      padding: 0 24px 4px;
+      scroll-padding: 0 24px;
+    }
+    .novelas-grid::-webkit-scrollbar { display: none; }
+    .novela-card { flex: 0 0 78%; max-width: 340px; scroll-snap-align: start; }
   }
   @media (max-width: 700px) {
-    .novelas-grid { grid-template-columns: 1fr; }
-    .novela-card { flex-direction: column; }
     .novelas-head { flex-direction: column; align-items: flex-start; gap: 12px; }
   }
 
