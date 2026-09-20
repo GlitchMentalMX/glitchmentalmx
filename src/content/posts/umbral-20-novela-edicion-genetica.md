@@ -1,7 +1,7 @@
 ---
 title: 'UMBRAL 20: la novela del riesgo que alguien firmó por ti'
 category: Cultura Digital
-pubDate: 2026-09-20T09:49
+pubDate: 2026-09-20T09:50
 updatedDate: ''
 description: 'Un archivo, una firma, un umbral del veinte por ciento. Thriller sobre la edición genética humana que ya no es posibilidad: es procedimiento.'
 heroImage: /images/uploads/riesgo-que-alguien firmo.webp
