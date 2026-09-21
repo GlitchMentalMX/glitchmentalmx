@@ -1,7 +1,7 @@
 ---
 title: 'El doom loop: midieron cómo rompían la web y siguieron'
 category: Inteligencia Artificial
-pubDate: 2026-09-20T20:37
+pubDate: 2026-09-20T20:50
 updatedDate: ''
 description: Microsoft midió con telemetría propia cómo su IA rompía la web, lo llamó doom loop y escaló igual. El expediente desclasificado.
 heroImage: /images/uploads/doom-loop.webp
@@ -9,7 +9,7 @@ heroImageAlt: 'El doom loop: ingeniera de sistemas analiza datos de falla y docu
 draft: false
 ---
 
-El 17 de septiembre se desclasificó el expediente donde Microsoft llama **doom loop** a su propia estrategia de IA. El dato nuevo no es que la IA drene tráfico: es que lo midieron, le pusieron nombre y escalaron igual.
+El 17 de septiembre de 2026 se desclasificó el expediente donde Microsoft llama **doom loop** a su propia estrategia de IA. El dato nuevo no es que la IA drene tráfico: es que lo midieron, le pusieron nombre y escalaron igual.
 
 ## Qué se desclasificó el 17 de septiembre y por qué estaba sellado
 
