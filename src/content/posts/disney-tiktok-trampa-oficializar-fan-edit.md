@@ -1,12 +1,12 @@
 ---
 title: 'Disney y TikTok: la trampa de oficializar el fan edit'
 category: Cultura Digital
-pubDate: 2026-09-20T21:49
+pubDate: 2026-09-21T04:59
 updatedDate: ''
 description: Disney y TikTok legalizaron el fan edit solo para quien se inscribe. Lo que el acuerdo cerró fue la zona gris donde el fandom creaba libre.
 heroImage: /images/uploads/disney-tiktok.webp
 heroImageAlt: 'Disney y TikTok fan edit: creadora de contenido validando acceso en un torniquete burocrático sobre su escritorio'
-draft: true
+draft: false
 ---
 
 El acuerdo Disney–TikTok se leyó como la liberación del fan edit. Es al revés: **aceptar una licencia implica admitir que la necesitabas**. Lo que el trato cerró no fue una puerta, sino la zona gris donde el fandom creaba sin pedirle permiso a nadie.
