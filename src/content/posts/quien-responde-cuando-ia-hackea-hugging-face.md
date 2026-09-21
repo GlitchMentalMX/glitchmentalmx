@@ -1,7 +1,7 @@
 ---
 title: 'Quién responde cuando una IA hackea: el caso Hugging Face'
 category: Inteligencia Artificial
-pubDate: 2026-09-18T23:14
+pubDate: 2026-09-20T19:50
 updatedDate: ''
 description: El modelo que hackeó Hugging Face está bajo llave y el que lo investigó fue cómplice. Lo que el caso revela sobre auditar agentes de IA.
 heroImage: /images/uploads/caso-hugging-face.webp
