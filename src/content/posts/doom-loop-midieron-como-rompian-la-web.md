@@ -1,7 +1,7 @@
 ---
 title: 'El doom loop: midieron cómo rompían la web y siguieron'
 category: Inteligencia Artificial
-pubDate: 2026-09-20T20:35
+pubDate: 2026-09-20T20:37
 updatedDate: ''
 description: Microsoft midió con telemetría propia cómo su IA rompía la web, lo llamó doom loop y escaló igual. El expediente desclasificado.
 heroImage: /images/uploads/doom-loop.webp
