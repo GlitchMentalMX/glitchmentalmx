@@ -29,7 +29,7 @@ La tolerancia tenía una lógica simple: el fan creaba sin pedir permiso y la ma
 
 Para justificar el acuerdo, el propio comunicado cita datos internos de TikTok: los fans publicaron en promedio 6.5 millones de videos diarios sobre cine y televisión en toda la plataforma durante 2025, una cifra que, según Forbes, no ha sido auditada de forma independiente. **Disney justificó el acuerdo con el tamaño de una actividad que nunca autorizó.**
 
-## Una licencia es un reconocimiento de dueño
+## Una licencia es un reconocimiento de propietario
 
 En Estados Unidos, esa zona gris tenía al menos un argumento legal disponible. El _fair use_ (uso justo) es la doctrina que permite usar obras protegidas sin licencia en ciertas circunstancias; según la [Oficina de Copyright de EE. UU.](https://www.copyright.gov/fair-use/index.html), **cada caso se evalúa por separado y los usos transformativos tienen más probabilidades de considerarse justos**. Ningún fan necesitaba ganar un juicio para publicar su edit, y esa indefinición era parte del equilibrio.
 
@@ -37,7 +37,7 @@ El acuerdo no cambia la ley, pero sí la posición del fan frente a ella. **El f
 
 ![Disney y TikTok fan edit: creador sellando documentos oficiales frente a un torniquete en su set de grabación](/images/uploads/disney-tiktok-sec.webp)
 
-> Aceptar una licencia es admitir que la necesitabas: el fan que se inscribe no ganó un derecho, reconoció un dueño.
+> Aceptar una licencia es admitir que la necesitabas: el fan que se inscribe no ganó un derecho, reconoció un propietario.
 
 Mientras no existía un carril oficial, un edit sin permiso podía leerse como homenaje. Con el carril abierto, el mismo video parece una infracción evitable. **Lo que antes era una práctica tolerada ahora es una concesión con dueño, curaduría y condiciones que nadie ha publicado.**
 
