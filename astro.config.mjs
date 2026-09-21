@@ -231,12 +231,14 @@ export default defineConfig({
       // /calculadora-de-riesgo-de-reemplazo-por-ia-2026/ es ahora un stub de
       // redirección (ver src/pages/.../index.astro) — noindex y fuera del
       // sitemap, igual que las páginas migradas de Blogger.
-      // /umbral20/ es un enlace corto de campaña que redirige a Amazon:
-      // noindex y fuera del sitemap por lo mismo.
+      // /umbral20/, /ceroorganico/ y /entrenadoencorpus/ son enlaces cortos de
+      // campaña que redirigen a Amazon: noindex y fuera del sitemap por lo mismo.
       filter: (page) =>
         !page.includes('/stats/') &&
         !page.includes('/buscar/') &&
         !page.includes('/umbral20/') &&
+        !page.includes('/ceroorganico/') &&
+        !page.includes('/entrenadoencorpus/') &&
         !page.includes('/calculadora-de-riesgo-de-reemplazo-por-ia-2026/'),
       serialize(item) {
         const { pathname } = new URL(item.url);
