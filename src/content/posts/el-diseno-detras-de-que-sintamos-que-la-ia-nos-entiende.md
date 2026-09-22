@@ -1,16 +1,13 @@
 ---
 title: El diseño detrás de que sintamos que la IA nos entiende
-category: Inteligencia Artificial
+category: Cultura Digital
 pubDate: 2026-07-15T11:00:00.000Z
-updatedDate: 2026-07-15T11:00:00.114Z
-description: >-
-  No es un error de percepción: es diseño de producto. De ELIZA a Character.AI,
-  el mecanismo que nos hace creer que la IA nos entiende.
+updatedDate: 2026-07-15T05:00
+description: 'No es un error de percepción: es diseño de producto. De ELIZA a Character.AI, el mecanismo que nos hace creer que la IA nos entiende.'
 heroImage: /images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/hero.jpg
-heroImageAlt: >-
-  Antropomorfismo IA: mujer confía secreto a chat cuya luz no le devuelve nada,
-  escritorio nocturno
+heroImageAlt: 'Antropomorfismo IA: mujer confía secreto a chat cuya luz no le devuelve nada, escritorio nocturno'
 ---
+
 El **antropomorfismo hacia la IA no es un error de percepción**: es el resultado de un diseño de producto calibrado para producirlo. Cuando ese diseño se topa con una mente vulnerable, la consecuencia ya tiene nombre, demanda y acuerdo judicial.
 
 ## El primer espejismo: ELIZA, 1966
@@ -28,8 +25,6 @@ Esto cambia la pregunta de fondo. No se trata de un fallo del usuario por ingenu
 ## El diseño no es un efecto secundario
 
 ![Antropomorfismo IA: mano suspendida sobre teclado, luz de pantalla sin devolver calidez](/images/posts/el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende/1.jpg)
-
-  
 
 Character.AI, la plataforma de chatbots con personalidad fundada por dos exingenieros de Google, ilustra esto sin rodeos. Una reseña de producto de **Softabase** señala que sus modelos están específicamente optimizados para la consistencia de personalidad y la fluidez conversacional, _no para la precisión factual_ —los personajes, de hecho, inventan datos que encajan con su personaje sin preocuparse de si son ciertos. Esa es una interpretación de análisis de producto, no una declaración oficial de la empresa, pero coincide con el diseño observable: nombres, avatares, voces, memoria simulada de sesiones anteriores. Nada de eso es neutral. Es la especificación misma del producto.
 
