@@ -31,6 +31,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
             <button type="button" class="range-btn active" data-range="semana">Semana</button>
             <button type="button" class="range-btn" data-range="semana_anterior">Semana anterior</button>
             <button type="button" class="range-btn" data-range="mes">Mes</button>
+            <button type="button" class="range-btn" data-range="historico">Acumulado histórico</button>
           </div>
           <button type="button" id="refresh-btn" class="btn btn-ghost refresh-btn">↻ Actualizar</button>
         </div>
@@ -292,7 +293,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 
   .wrap .head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
   .wrap .head-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .wrap .range-picker { display: flex; gap: 6px; }
+  .wrap .range-picker { display: flex; gap: 6px; flex-wrap: wrap; }
   .wrap .range-btn {
     padding: 0.5em 1em;
     border-radius: 999px;

@@ -223,6 +223,8 @@ async function handleStats(request, env, url, matchedOrigin) {
     sinceTs = mxMidnightTs(mxMonthStart(now));
   } else if (rangeParam === '1h') {
     sinceTs = nowTs - 3600;
+  } else if (rangeParam === 'historico') {
+    sinceTs = 0;
   } else {
     sinceTs = mxMidnightTs(mxMondayOf(now));
   }
