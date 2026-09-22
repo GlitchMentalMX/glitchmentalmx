@@ -26,6 +26,14 @@ const faqs = [
     a: 'No hay una forma 100% confiable —ni este escáner ni ningún detector comercial la tiene—. Lo que sí puedes hacer es buscar señales: muletillas de apertura ("en el vasto mundo de..."), condescendencia ("es importante destacar que"), cierres automáticos, abuso del guion largo, y frases que suenan traducidas del inglés. Ninguna señal aislada es prueba definitiva; varias juntas sí son sospechosas.',
   },
   {
+    q: '¿Puedo usar esto como prueba de que alguien usó IA?',
+    a: 'No. Esto no es evidencia de nada —es una señal de estilo, no una prueba de autoría—. Si necesitas algo defendible para una acusación formal, un trabajo entregado o una nota periodística, esta herramienta no te sirve para eso: sirve para darte una idea rápida y gratuita, nada más. Y aunque tu texto no encienda ninguna alerta, eso tampoco prueba que sea 100% humano: una IA bien editada, o a la que le pediste que sonara más natural, se salta el escáner sin problema.',
+  },
+  {
+    q: '¿Por qué un texto que sé que escribió un humano se marca en rojo?',
+    a: 'Porque el escáner detecta un estilo, no un autor. Si escribes con las mismas muletillas que la IA —correlativos repetidos, relleno adverbial, el "falso equilibrio" de presentar todo como oportunidades y desafíos—, vas a encender las mismas alertas que un texto generado. No es un error del escáner: es información real sobre cómo suena tu texto, sin importar quién lo escribió.',
+  },
+  {
     q: '¿Guardan o envían mi texto a algún lado?',
     a: 'No. Todo el análisis corre en tu navegador con JavaScript normal: no hay backend, no se llama a ningún modelo de IA, y tu texto no se guarda en ningún servidor ni se comparte con nadie.',
   },
@@ -88,12 +96,34 @@ const faqSchema = {
   />
 
   <section class="container disclaimer-box">
-    <p class="disclaimer-label">Antes de pegar tu texto</p>
-    <p>
-      Esto no es un detector probabilístico ni compite contra herramientas como GPTZero o Copyleaks — no te da
-      un "% de IA" inventado. Es un escáner de estilo: busca frases y patrones concretos de escritura de IA en
-      español y te los señala para que decidas tú. Tu texto nunca sale de tu navegador: no hay backend, no se
-      envía a ningún modelo, no se guarda en ningún lado.
+    <p class="disclaimer-label">Qué hace esto, y qué no</p>
+    <p class="disclaimer-intro">
+      Esto no es un detector de mentiras. Es un escáner de estilo, y esa diferencia importa: te dice si un texto
+      tiene los tics que hoy se leen como IA, no quién lo escribió. No te da un "% de IA" inventado, ni compite
+      contra herramientas estadísticas como GPTZero o Copyleaks.
+    </p>
+    <div class="disclaimer-grid">
+      <div>
+        <p class="disclaimer-sub">Sirve para</p>
+        <ul>
+          <li>Revisar tu propio texto antes de publicarlo y notar si, sin querer, escribes como IA.</li>
+          <li>Darte una primera idea rápida y gratis sobre un texto que te generó sospecha — un punto de partida, no un veredicto.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="disclaimer-sub">No sirve para</p>
+        <ul>
+          <li>Probar que alguien usó IA. No es evidencia para una acusación, una tesis o una nota — es una señal de estilo, nada más.</li>
+          <li>Cazar una IA bien editada, o a la que le pediste que sonara más natural. Si ya no tiene los tics, el escáner no tiene nada que agarrar.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="disclaimer-flip">
+      Y funciona en los dos sentidos: si tu texto se enciende de rojo, no significa que lo escribió una IA —puede
+      que tú también escribas con esas muletillas—. El escáner lee un estilo, no un autor.
+    </p>
+    <p class="disclaimer-privacy">
+      Tu texto nunca sale de tu navegador: no hay backend, no se envía a ningún modelo, no se guarda en ningún lado.
     </p>
   </section>
 
@@ -148,6 +178,11 @@ const faqSchema = {
       cualquier parafraseo, esto te enseña la frase exacta para que decidas si de verdad suena a máquina o si el
       patrón coincidió por casualidad.
     </p>
+    <p>
+      Y para ser claros sobre el límite: esto detecta un estilo, no prueba una autoría. Sirve para revisarte a ti
+      mismo o para darte una primera pista gratis sobre un texto ajeno. No sirve como evidencia de nada, y una IA
+      a la que le pidieron sonar más natural se lo va a saltar sin problema.
+    </p>
   </section>
 
   <section class="container faq">
@@ -179,6 +214,10 @@ const faqSchema = {
       <li><strong>Falso entusiasmo</strong> — verbos cliché como "sumerjámonos en" o "exploremos cómo". Señal fuerte.</li>
       <li><strong>Metáfora de IA / sustantivo cliché</strong> — "navegar por el complejo panorama", "un crisol de". Señal fuerte.</li>
       <li><strong>Abuso de guion largo</strong> — frecuencia de "—" muy por encima de lo normal en español. Señal fuerte.</li>
+      <li><strong>Relleno correlativo</strong> — "no solo X, sino también Y". Señal fuerte.</li>
+      <li><strong>Transición genérica</strong> — "sin embargo, esta evolución también plantea...". Señal fuerte.</li>
+      <li><strong>Falso equilibrio</strong> — presentar el tema como un balance simétrico de "oportunidades y desafíos" o "beneficios y limitaciones", sin comprometerse con ninguno. Señal fuerte.</li>
+      <li><strong>Intensificador repetido, correlativo repetido, relleno adverbial repetido</strong> — "cada vez más", "tanto X como Y", "de manera [adjetivo]" usados 2 o más veces en el mismo texto. Ninguna es rara una vez; repetida sí delata plantilla. Señal fuerte.</li>
       <li><strong>Capitalización inglesa</strong> — secuencias de Varias Palabras Con Mayúscula. Señal débil: falsos positivos frecuentes con nombres de marca, se muestra aparte.</li>
     </ul>
     <p>
@@ -202,10 +241,31 @@ const faqSchema = {
     { regex: /navegar por el (complejo|intrincado|desafiante) (paisaje|mundo)/gi, categoria: 'Metáfora de IA', peso: 1 },
     { regex: /un crisol de/gi, categoria: 'Sustantivo cliché', peso: 1 },
     { regex: /un testimonio de/gi, categoria: 'Traducción perezosa ("a testament to")', peso: 1 },
+    // Las dos de abajo cubren el GPT-ismo "aburrido/corporativo" (hedging,
+    // hinchazón estructural) — distinto del GPT-ismo "florido" (metáforas,
+    // falso entusiasmo) que cubren los patrones de arriba. Un texto puede
+    // sonar a IA sin una sola metáfora ni un "sumerjámonos en".
+    { regex: /no s[oó]lo\s+.{1,100}?\s+sino también/gi, categoria: 'Relleno correlativo ("no solo... sino también")', peso: 1 },
+    { regex: /sin embargo,?\s+(esta|esto|ello|dicha)\s+\S+\s+también\s+(plantea|genera|implica|conlleva|trae)/gi, categoria: 'Transición genérica', peso: 1 },
+    // "Oportunidades y desafíos" / "beneficios... limitaciones" es la muletilla
+    // retórica del registro corporativo de IA: presentar cualquier tema como
+    // un balance simétrico de pros y contras, sin comprometerse con ninguno.
+    { regex: /oportunidades?\b.{0,40}?\bdesaf[ií]os?/gi, categoria: 'Falso equilibrio ("oportunidades / desafíos")', peso: 1 },
+    { regex: /beneficios?\b.{0,60}?\blimitaciones/gi, categoria: 'Falso equilibrio ("beneficios / limitaciones")', peso: 1 },
     { regex: /([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\s){3,}[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+/g, categoria: 'Capitalización inglesa', peso: 0.3, debil: true },
   ];
 
   var UMBRAL_GUIONES_POR_100_PALABRAS = 1.5;
+  // Frases que un texto humano normal usa una vez, pero que IA repite porque
+  // las trae como plantilla retórica — la repetición dentro del mismo texto
+  // es la señal, no la frase en sí (por eso no van en PATRONES como
+  // ocurrencia única). Umbral en conteo absoluto, no normalizado por
+  // palabras: lo que delata no es la densidad, es que se repita.
+  var PATRONES_REPETICION = [
+    { regex: /cada vez más/gi, categoria: 'Intensificador repetido ("cada vez más")', umbral: 2 },
+    { regex: /tanto\s+.{1,50}?\s+como\s+/gi, categoria: 'Correlativo repetido ("tanto... como")', umbral: 2 },
+    { regex: /de manera (?!que\b)\w+/gi, categoria: 'Relleno adverbial repetido ("de manera...")', umbral: 2 },
+  ];
 
   function escapeHtml(s) {
     return s
@@ -247,6 +307,23 @@ const faqSchema = {
         crudas.push({ inicio: idx, fin: idx + 1, texto: '—', categoria: 'Abuso de guion largo', peso: 1, debil: false });
       });
     }
+
+    // Igual que el guion largo: si la repetición pasa el umbral, se resaltan
+    // todas las apariciones, no solo se cuentan.
+    PATRONES_REPETICION.forEach(function (patron) {
+      patron.regex.lastIndex = 0;
+      var matches = [];
+      var mc;
+      while ((mc = patron.regex.exec(texto)) !== null) {
+        matches.push(mc);
+        if (mc[0].length === 0) patron.regex.lastIndex++;
+      }
+      if (matches.length >= patron.umbral) {
+        matches.forEach(function (mc2) {
+          crudas.push({ inicio: mc2.index, fin: mc2.index + mc2[0].length, texto: mc2[0], categoria: patron.categoria, peso: 1, debil: false });
+        });
+      }
+    });
 
     // Resuelve solapamientos: prioriza señal fuerte sobre débil y, dentro del
     // mismo peso, la coincidencia más larga.
@@ -349,23 +426,62 @@ const faqSchema = {
 
 <style>
   .disclaimer-box { padding: 0 24px 32px; max-width: 680px; }
-  .disclaimer-box p:last-child {
-    background: var(--bg-inset);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    padding: 18px 20px;
-    color: var(--text);
-    font-size: 0.94rem;
-    line-height: 1.65;
-    margin: 0;
-  }
   .disclaimer-label {
     font-family: var(--font-mono);
     font-size: 0.72rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-faint);
-    margin: 0 0 10px;
+    margin: 0 0 12px;
+  }
+  .disclaimer-intro {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin: 0 0 20px;
+  }
+  .disclaimer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 18px;
+  }
+  .disclaimer-sub {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--text);
+    margin: 0 0 8px;
+  }
+  .disclaimer-grid ul {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .disclaimer-grid li {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+  .disclaimer-flip {
+    background: var(--bg-inset);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 16px 20px;
+    color: var(--text);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0 0 14px;
+  }
+  .disclaimer-privacy {
+    color: var(--text-faint);
+    font-size: 0.8rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+  @media (max-width: 640px) {
+    .disclaimer-grid { grid-template-columns: 1fr; }
   }
 
   .scan-wrap { padding: 0 24px 24px; display: flex; justify-content: center; }
