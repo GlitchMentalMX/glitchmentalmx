@@ -123,19 +123,6 @@ try {
   // Igual que el resto: si falta el archivo, se omite el lastmod.
 }
 
-// Última revisión de contenido del Escáner de GPT-ismos — mismo criterio que
-// la Calculadora de Riesgo IA y Detox de IA (JSON aparte, leído aquí y en la
-// página en build).
-let fechaEscanerGptismos;
-try {
-  const escanerGptismos = JSON.parse(
-    readFileSync(new URL('./src/data/escaner-de-gptismos.json', import.meta.url), 'utf-8')
-  );
-  fechaEscanerGptismos = new Date(`${escanerGptismos.lastReviewed}T12:00:00Z`);
-} catch {
-  // Igual que el resto: si falta el archivo, se omite el lastmod.
-}
-
 let fechaTipoCambio;
 try {
   const tipoCambio = JSON.parse(
@@ -291,7 +278,6 @@ export default defineConfig({
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
         if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia/') return conFecha(fechaCalculadoraRiesgo);
         if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
-        if (pathname === '/escaner-de-gptismos/') return conFecha(fechaEscanerGptismos);
 
         const matchCategoria = pathname.match(/^\/categoria\/([^/]+)\/$/);
         if (matchCategoria) return conFecha(fechaMaxPorSlugCategoria.get(matchCategoria[1]));

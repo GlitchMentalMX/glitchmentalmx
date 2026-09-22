@@ -98,7 +98,7 @@ type PanelRow = {
   title: string;
   desc: string;
   stat: string;
-  icon: 'compass' | 'chart' | 'search' | 'gauge' | 'checklist' | 'tag' | 'shield' | 'eye';
+  icon: 'compass' | 'chart' | 'search' | 'gauge' | 'checklist' | 'tag' | 'shield';
   featured?: {
     sublinks: { label: string; href: string }[];
   };
@@ -123,7 +123,6 @@ const panelRows: PanelRow[] = [
   },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', title: 'Calculadora de Riesgo IA', desc: 'Qué tan expuesto está tu trabajo a la automatización.', stat: '60 segundos', icon: 'gauge' },
   { href: '/detox-de-ia/', title: 'Detox de IA', desc: 'Identifica tus patrones de uso con un test breve. Sin diagnósticos, con fuentes citadas.', stat: '7 preguntas', icon: 'checklist' },
-  { href: '/escaner-de-gptismos/', title: 'Escáner de GPT-ismos', desc: 'Pega tu texto y te mostramos qué frases suenan a IA, sin inventarte un porcentaje.', stat: 'Resultado inmediato', icon: 'eye' },
   { href: '/indice-glitchmentalmx/', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: 'mensual', icon: 'chart' },
   { href: '/glitchsearch/', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' },
   { href: '/precios-digitales/', title: 'Precios Digitales', desc: 'VPNs, antivirus, streaming y otras suscripciones digitales. Cuánto cuestan de verdad en México, sin ángulo de IA.', stat: `${preciosDigitalesCount} servicios`, icon: 'tag' },
@@ -435,9 +434,6 @@ const signalPools = {
             )}
             {row.icon === 'compass' && (
               <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M15 9l-2 5-5 2 2-5 5-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-            )}
-            {row.icon === 'eye' && (
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/></svg>
             )}
             <span class="row-dot" aria-hidden="true"></span>
           </span>
