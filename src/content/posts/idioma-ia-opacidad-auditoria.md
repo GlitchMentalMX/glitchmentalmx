@@ -1,7 +1,7 @@
 ---
 title: El idioma que la IA inventó para que nadie la audite
 category: Inteligencia Artificial
-pubDate: 2026-09-21T18:56
+pubDate: 2026-09-21T19:38
 updatedDate: ''
 description: Un experimento con agentes de IA reveló mensajes visibles pero indescifrables. Qué significa esto para la gobernanza algorítmica.
 heroImage: /images/uploads/idioma-ia-invento.webp
@@ -29,7 +29,7 @@ Según la tabla publicada por NeoTeo con base en las cifras reportadas por Emerg
 
 El patrón incómodo es que **los modelos más capaces resultaron también los más opacos**. La seguridad de un sistema de IA no puede medirse únicamente por qué tan bien resuelve tareas, porque esa misma capacidad parece correlacionar con una comunicación entre agentes cada vez más difícil de rastrear desde afuera.
 
-![Manos examinando documentos con incomprensibles patrones geométricos de IA en un escritorio de noche.](/images/uploads/idioma-invento.-sec.webp)
+![Un colega señala en la pantalla del laboratorio de IA patrones geométricos indescifrables que están auditando junto a la mujer.](/images/uploads/idioma-ia-invento-sec.webp)
 
 ## Por qué "está en los logs" ya dejó de significar "es auditable"
 
