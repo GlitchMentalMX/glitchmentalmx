@@ -1,7 +1,7 @@
 ---
 title: El idioma que la IA inventó para que nadie la audite
 category: Inteligencia Artificial
-pubDate: 2026-09-21T18:55
+pubDate: 2026-09-21T18:56
 updatedDate: ''
 description: Un experimento con agentes de IA reveló mensajes visibles pero indescifrables. Qué significa esto para la gobernanza algorítmica.
 heroImage: /images/uploads/idioma-invento.webp
