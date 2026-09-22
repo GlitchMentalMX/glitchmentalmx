@@ -1,0 +1,532 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { formatDate } from '../../lib/format';
+import escanerData from '../../data/escaner-de-gptismos.json';
+
+const title = 'Cómo saber si un texto fue escrito por IA';
+const description =
+  'Detector de IA en español gratis, sin registro: el escáner de GPT-ismos te muestra qué frases de tu texto suenan a máquina, sin porcentaje inventado.';
+const canonicalPath = '/escaner-de-gptismos/';
+
+// Misma mecánica que Calculadora de Riesgo IA y Detox de IA: fecha de última
+// revisión de contenido en un JSON aparte (src/data/escaner-de-gptismos.json),
+// que astro.config.mjs también lee para el lastmod del sitemap — un solo
+// lugar que actualizar a mano.
+const lastReviewed = new Date(`${escanerData.lastReviewed}T12:00:00-06:00`);
+
+const faqs = [
+  {
+    q: '¿Este escáner me dice qué porcentaje de mi texto fue escrito por IA?',
+    a: 'No, y a propósito no lo hace. No compite contra un detector de IA tradicional que te da un porcentaje inventado —esos números son poco confiables y fáciles de engañar—. Esto te muestra las frases concretas de tu texto que coinciden con patrones documentados de escritura de IA, para que juzgues tú, con contexto.',
+  },
+  {
+    q: '¿Cómo saber si un texto fue escrito por ChatGPT entonces?',
+    a: 'No hay una forma 100% confiable —ni este escáner ni ningún detector comercial la tiene—. Lo que sí puedes hacer es buscar señales: muletillas de apertura ("en el vasto mundo de..."), condescendencia ("es importante destacar que"), cierres automáticos, abuso del guion largo, y frases que suenan traducidas del inglés. Ninguna señal aislada es prueba definitiva; varias juntas sí son sospechosas.',
+  },
+  {
+    q: '¿Guardan o envían mi texto a algún lado?',
+    a: 'No. Todo el análisis corre en tu navegador con JavaScript normal: no hay backend, no se llama a ningún modelo de IA, y tu texto no se guarda en ningún servidor ni se comparte con nadie.',
+  },
+  {
+    q: '¿Por qué la "Capitalización inglesa" se muestra aparte del resto?',
+    a: 'Porque genera falsos positivos constantes en un sitio de tecnología: los nombres de productos y marcas también usan mayúscula en cada palabra. Se marca como señal débil, a revisar por ti, no como un acierto del mismo peso que una frase completa.',
+  },
+  {
+    q: '¿Cada cuánto se actualiza la lista de patrones?',
+    a: `Se revisa cada 2-3 meses, o antes si aparece un tic nuevo evidente en el uso real. Última revisión: ${formatDate(lastReviewed)}.`,
+  },
+];
+
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Escáner de GPT-ismos',
+  description,
+  url: new URL(canonicalPath, Astro.site).toString(),
+  applicationCategory: 'UtilitiesApplication',
+  operatingSystem: 'Any (web browser)',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'MXN',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={lastReviewed}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  locale="es_MX"
+>
+  <Breadcrumbs items={[{ name: 'Escáner de GPT-ismos' }]} />
+  <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <PageHeader
+    eyebrow="Herramienta · glitchMentalMX"
+    title="¿Cómo saber si un texto fue escrito por IA?"
+    dek="A diferencia de un detector de IA tradicional, que te da un porcentaje inventado, esto te muestra exactamente qué frase suena a máquina. Pega tu texto, dale escanear, y revisa tú mismo."
+  />
+
+  <section class="container disclaimer-box">
+    <p class="disclaimer-label">Antes de pegar tu texto</p>
+    <p>
+      Esto no es un detector probabilístico ni compite contra herramientas como GPTZero o Copyleaks — no te da
+      un "% de IA" inventado. Es un escáner de estilo: busca frases y patrones concretos de escritura de IA en
+      español y te los señala para que decidas tú. Tu texto nunca sale de tu navegador: no hay backend, no se
+      envía a ningún modelo, no se guarda en ningún lado.
+    </p>
+  </section>
+
+  <section class="container scan-wrap">
+    <div id="gi-container">
+      <h2 class="gi-title">Escáner de GPT-ismos</h2>
+      <div class="gi-meta">
+        <span>Sin límite de texto</span><span>•</span><span>Resultado inmediato</span><span>•</span><span>Nada sale de tu navegador</span>
+      </div>
+
+      <label for="gi-input" class="gi-label-top">Pega tu texto</label>
+      <textarea id="gi-input" rows="12" placeholder="Pega aquí el texto que quieres revisar..."></textarea>
+
+      <p id="gi-warning" role="alert"></p>
+
+      <div class="gi-actions">
+        <button type="button" id="gi-scan-btn" class="gi-btn">Escanear texto</button>
+        <button type="button" id="gi-clear-btn" class="gi-clear-link">Limpiar</button>
+      </div>
+
+      <div id="gi-result">
+        <div class="gi-summary">
+          <p id="gi-summary-headline"></p>
+          <ul id="gi-summary-breakdown"></ul>
+        </div>
+
+        <div class="gi-highlighted-block">
+          <p class="gi-section-label">Tu texto, con lo detectado resaltado:</p>
+          <div id="gi-highlighted"></div>
+        </div>
+
+        <div id="gi-weak-block">
+          <p class="gi-section-label">Revisar manualmente — capitalización estilo inglés, puede ser nombre propio o de marca:</p>
+          <ul id="gi-weak-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container editorial">
+    <p class="eyebrow">Por qué existe esto</p>
+    <h2>El español de la IA no es solo mala traducción</h2>
+    <p>
+      Es un dialecto plástico, condescendiente y de falsa objetividad. No son palabras sueltas lo que delata un
+      texto generado o muy retocado por IA —cualquier persona puede usar la palabra "crucial"—, son combinaciones
+      completas: la apertura que promete sumergirte "en el vasto mundo de...", el "es importante destacar que"
+      que nadie diría en voz alta, el cierre que resume algo que ya quedó claro tres párrafos antes.
+    </p>
+    <p>
+      Por eso este escáner busca frases, no palabras aisladas, y por eso no te entrega un porcentaje. A diferencia
+      de un detector de IA tradicional, que te da un número que suena preciso pero que puedes engañar con
+      cualquier parafraseo, esto te enseña la frase exacta para que decidas si de verdad suena a máquina o si el
+      patrón coincidió por casualidad.
+    </p>
+  </section>
+
+  <section class="container faq">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Antes de que preguntes</h2>
+    <div class="faq-list">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="container methodology">
+    <p class="eyebrow">Metodología</p>
+    <p class="method-updated">Metodología actualizada: {formatDate(lastReviewed)}.</p>
+    <p>
+      El escáner corre un conjunto de expresiones regulares sobre tu texto, cada una asociada a una categoría y
+      un peso. No es un modelo de machine learning ni una IA analizando tu texto —es más simple y más honesto que
+      eso—, por lo que no detecta parafraseos ni tics nuevos que no estén en la lista.
+    </p>
+    <ul class="sources">
+      <li><strong>Apertura de IA</strong> — muletillas de introducción tipo "en el vasto mundo de". Señal fuerte.</li>
+      <li><strong>Condescendencia</strong> — frases como "es importante destacar que". Señal fuerte.</li>
+      <li><strong>Cierre automático</strong> — resúmenes tipo "en resumen, podemos decir que". Señal fuerte.</li>
+      <li><strong>Traducción perezosa</strong> — calcos del inglés ("en última instancia", "desbloquear el potencial", "un testimonio de"). Señal fuerte.</li>
+      <li><strong>Falso entusiasmo</strong> — verbos cliché como "sumerjámonos en" o "exploremos cómo". Señal fuerte.</li>
+      <li><strong>Metáfora de IA / sustantivo cliché</strong> — "navegar por el complejo panorama", "un crisol de". Señal fuerte.</li>
+      <li><strong>Abuso de guion largo</strong> — frecuencia de "—" muy por encima de lo normal en español. Señal fuerte.</li>
+      <li><strong>Capitalización inglesa</strong> — secuencias de Varias Palabras Con Mayúscula. Señal débil: falsos positivos frecuentes con nombres de marca, se muestra aparte.</li>
+    </ul>
+    <p>
+      Se revisa cada 2-3 meses, o antes si aparece un tic nuevo evidente en el uso real de IA en español.
+    </p>
+  </section>
+</Layout>
+
+<script>
+  // Cada patrón busca una frase o n-grama completo, no una palabra aislada,
+  // para minimizar falsos positivos en textos humanos normales. `peso: 1` es
+  // señal fuerte; `peso` menor a 1 es señal débil y se muestra aparte, nunca
+  // sumada al conteo principal.
+  var PATRONES = [
+    { regex: /en el (dinámico|cambiante|apasionante|vasto) (mundo|panorama|paisaje) de/gi, categoria: 'Apertura de IA', peso: 1 },
+    { regex: /es (importante|crucial|fundamental) (destacar|recordar|mencionar|notar) que/gi, categoria: 'Condescendencia', peso: 1 },
+    { regex: /en (resumen|conclusión|definitiva)[,:]?\s*(podemos decir que|cabe destacar que)/gi, categoria: 'Cierre automático', peso: 1 },
+    { regex: /en última instancia/gi, categoria: 'Traducción perezosa ("ultimately")', peso: 1 },
+    { regex: /(sumerjámonos en|adentrémonos en|exploremos cómo|desentrañar el)/gi, categoria: 'Falso entusiasmo', peso: 1 },
+    { regex: /desbloquear el (potencial|poder)/gi, categoria: 'Traducción perezosa ("unlock the potential")', peso: 1 },
+    { regex: /navegar por el (complejo|intrincado|desafiante) (paisaje|mundo)/gi, categoria: 'Metáfora de IA', peso: 1 },
+    { regex: /un crisol de/gi, categoria: 'Sustantivo cliché', peso: 1 },
+    { regex: /un testimonio de/gi, categoria: 'Traducción perezosa ("a testament to")', peso: 1 },
+    { regex: /([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\s){3,}[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+/g, categoria: 'Capitalización inglesa', peso: 0.3, debil: true },
+  ];
+
+  var UMBRAL_GUIONES_POR_100_PALABRAS = 1.5;
+
+  function escapeHtml(s) {
+    return s
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function escanearTexto(texto) {
+    var crudas = [];
+
+    PATRONES.forEach(function (patron) {
+      patron.regex.lastIndex = 0; // reset explícito: sin esto, re-escanear el mismo texto pierde coincidencias.
+      var match;
+      while ((match = patron.regex.exec(texto)) !== null) {
+        crudas.push({
+          inicio: match.index,
+          fin: match.index + match[0].length,
+          texto: match[0],
+          categoria: patron.categoria,
+          peso: patron.peso,
+          debil: !!patron.debil,
+        });
+        if (match[0].length === 0) patron.regex.lastIndex++; // evita loop infinito en regex que puedan matchear vacío
+      }
+    });
+
+    // Abuso de guion largo: si la frecuencia supera el umbral, cada "—" se
+    // resalta también inline, no solo se cuenta.
+    var guionesIdx = [];
+    var re = /—/g;
+    var m;
+    while ((m = re.exec(texto)) !== null) guionesIdx.push(m.index);
+    var palabras = texto.trim().split(/\s+/).filter(Boolean).length || 1;
+    var frecuencia = (guionesIdx.length / palabras) * 100;
+    if (frecuencia > UMBRAL_GUIONES_POR_100_PALABRAS) {
+      guionesIdx.forEach(function (idx) {
+        crudas.push({ inicio: idx, fin: idx + 1, texto: '—', categoria: 'Abuso de guion largo', peso: 1, debil: false });
+      });
+    }
+
+    // Resuelve solapamientos: prioriza señal fuerte sobre débil y, dentro del
+    // mismo peso, la coincidencia más larga.
+    var ordenadas = crudas.slice().sort(function (a, b) {
+      if (b.peso !== a.peso) return b.peso - a.peso;
+      return (b.fin - b.inicio) - (a.fin - a.inicio);
+    });
+    var aceptadas = [];
+    ordenadas.forEach(function (c) {
+      var solapa = aceptadas.some(function (a) { return c.inicio < a.fin && c.fin > a.inicio; });
+      if (!solapa) aceptadas.push(c);
+    });
+    aceptadas.sort(function (a, b) { return a.inicio - b.inicio; });
+
+    return aceptadas;
+  }
+
+  var textarea = document.getElementById('gi-input');
+  var warning = document.getElementById('gi-warning');
+  var result = document.getElementById('gi-result');
+
+  function renderResultado(texto, coincidencias) {
+    var fuertes = coincidencias.filter(function (c) { return !c.debil; });
+    var debiles = coincidencias.filter(function (c) { return c.debil; });
+
+    // Resaltado inline del texto completo.
+    var cursor = 0;
+    var html = '';
+    coincidencias.forEach(function (c) {
+      html += escapeHtml(texto.slice(cursor, c.inicio));
+      var claseSenal = c.debil ? 'gi-hl gi-weak' : 'gi-hl gi-strong';
+      html += '<mark class="' + claseSenal + '" title="' + escapeHtml(c.categoria) + '">' + escapeHtml(c.texto) + '</mark>';
+      cursor = c.fin;
+    });
+    html += escapeHtml(texto.slice(cursor));
+    document.getElementById('gi-highlighted').innerHTML = html || '<p class="gi-empty">(texto vacío)</p>';
+
+    // Resumen — solo señales fuertes en el conteo principal.
+    var headline = document.getElementById('gi-summary-headline');
+    if (fuertes.length === 0) {
+      headline.textContent = 'No se detectaron patrones fuertes de escritura de IA en tu texto.';
+    } else {
+      headline.textContent = fuertes.length + (fuertes.length === 1 ? ' frase de IA detectada' : ' frases de IA detectadas') + ', desglosadas por categoría:';
+    }
+
+    var porCategoria = {};
+    fuertes.forEach(function (c) {
+      porCategoria[c.categoria] = (porCategoria[c.categoria] || 0) + 1;
+    });
+    var breakdown = document.getElementById('gi-summary-breakdown');
+    breakdown.innerHTML = '';
+    Object.keys(porCategoria).forEach(function (cat) {
+      var li = document.createElement('li');
+      li.textContent = cat + ': ' + porCategoria[cat];
+      breakdown.appendChild(li);
+    });
+
+    // Señal débil, aparte.
+    var weakBlock = document.getElementById('gi-weak-block');
+    var weakList = document.getElementById('gi-weak-list');
+    weakList.innerHTML = '';
+    if (debiles.length === 0) {
+      weakBlock.style.display = 'none';
+    } else {
+      weakBlock.style.display = 'block';
+      debiles.forEach(function (c) {
+        var li = document.createElement('li');
+        li.textContent = '"' + c.texto + '"';
+        weakList.appendChild(li);
+      });
+    }
+
+    result.style.display = 'block';
+    setTimeout(function () {
+      var top = result.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }, 60);
+  }
+
+  document.getElementById('gi-scan-btn').addEventListener('click', function () {
+    var texto = textarea.value;
+    if (!texto.trim()) {
+      warning.textContent = 'Pega algo de texto antes de escanear.';
+      warning.style.display = 'block';
+      result.style.display = 'none';
+      return;
+    }
+    warning.style.display = 'none';
+    var coincidencias = escanearTexto(texto);
+    renderResultado(texto, coincidencias);
+  });
+
+  document.getElementById('gi-clear-btn').addEventListener('click', function () {
+    textarea.value = '';
+    warning.style.display = 'none';
+    result.style.display = 'none';
+    textarea.focus();
+  });
+</script>
+
+<style>
+  .disclaimer-box { padding: 0 24px 32px; max-width: 680px; }
+  .disclaimer-box p:last-child {
+    background: var(--bg-inset);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 18px 20px;
+    color: var(--text);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .disclaimer-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 10px;
+  }
+
+  .scan-wrap { padding: 0 24px 24px; display: flex; justify-content: center; }
+
+  #gi-container {
+    background: var(--bg-elevated);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    max-width: 720px;
+    width: 100%;
+    padding: 32px;
+    font-family: var(--font-body);
+  }
+  .gi-title { font-size: 1.3em; margin: 0 0 12px; }
+  .gi-meta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+    color: var(--text-faint); font-family: var(--font-mono); font-size: 0.78em;
+    margin: 0 0 22px;
+  }
+
+  .gi-label-top {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 8px;
+  }
+
+  #gi-input {
+    width: 100%;
+    background: var(--bg-inset);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 14px 16px;
+    resize: vertical;
+    min-height: 220px;
+  }
+  #gi-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  #gi-warning {
+    display: none; color: var(--down-line); font-size: 0.85em; margin: 10px 0 0;
+  }
+
+  .gi-actions { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
+
+  .gi-btn {
+    background: var(--accent); border: none; border-radius: 999px;
+    color: var(--accent-ink); cursor: pointer;
+    font-family: var(--font-body); font-size: 0.95em; font-weight: 700; letter-spacing: 0.3px;
+    padding: 13px 28px;
+    transition: transform 0.15s ease;
+  }
+  .gi-btn:hover { transform: scale(1.02); }
+
+  .gi-clear-link {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-faint); font-family: var(--font-body); font-size: 0.85em;
+    text-decoration: underline; text-underline-offset: 3px; padding: 0;
+  }
+  .gi-clear-link:hover { color: var(--text-muted); }
+
+  #gi-result { display: none; margin-top: 28px; }
+
+  .gi-summary {
+    background: var(--bg-inset);
+    border-radius: var(--radius-sm);
+    padding: 18px 20px;
+    margin-bottom: 20px;
+  }
+  #gi-summary-headline { font-weight: 700; margin: 0 0 10px; }
+  #gi-summary-breakdown { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+  /* Los <li> se inyectan por JS, así que no reciben el atributo de scope de Astro — sin :global() esta regla no les aplicaría. */
+  #gi-summary-breakdown :global(li) { font-size: 0.9rem; color: var(--text-muted); }
+
+  .gi-section-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 10px;
+  }
+
+  .gi-highlighted-block { margin-bottom: 20px; }
+  #gi-highlighted {
+    background: var(--bg-inset);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    white-space: pre-wrap;
+  }
+  /* .gi-hl y los <li> de abajo se inyectan por JS (innerHTML / createElement)
+     y por lo tanto no reciben el atributo de scope de Astro — sin :global()
+     estas reglas no les aplicarían y el navegador usaría su <mark> por defecto. */
+  #gi-highlighted :global(.gi-hl) { border-radius: 3px; padding: 0 2px; }
+  #gi-highlighted :global(.gi-hl.gi-strong) { background: var(--down-bg); box-shadow: inset 0 -1.5px 0 var(--down-line); }
+  #gi-highlighted :global(.gi-hl.gi-weak) { background: var(--warn-bg); box-shadow: inset 0 -1.5px 0 var(--warn-line); }
+
+  #gi-weak-block { border-top: 1px solid var(--border); padding-top: 18px; }
+  #gi-weak-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  #gi-weak-list :global(li) {
+    background: var(--warn-bg); border: 1px solid var(--warn-line);
+    border-radius: 999px; color: var(--text); font-size: 0.82rem; padding: 5px 12px;
+  }
+
+  .editorial { padding: 40px 24px; max-width: 680px; margin: 0 auto; }
+  .editorial h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 20px; }
+  .editorial p { color: var(--text-muted); font-size: 1rem; line-height: 1.75; margin: 0 0 16px; }
+  .editorial p:last-child { margin-bottom: 0; }
+
+  .faq { padding: 16px 24px 56px; max-width: 760px; margin: 0 auto; }
+  .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+  }
+  .faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 1.2em;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 14px 0 0;
+  }
+
+  .methodology { padding: 16px 24px 96px; max-width: 760px; margin: 0 auto; }
+  .method-updated {
+    font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);
+    letter-spacing: 0.02em; margin: 6px 0 20px;
+  }
+  .methodology > p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
+  .sources { list-style: none; margin: 16px 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .sources li {
+    font-size: 0.85rem; line-height: 1.6; color: var(--text-muted);
+    padding-left: 18px; border-left: 2px solid var(--border-strong);
+  }
+  .sources li strong { color: var(--text); }
+</style>
