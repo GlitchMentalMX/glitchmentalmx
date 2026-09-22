@@ -4,7 +4,7 @@ category: Inteligencia Artificial
 pubDate: 2026-09-21T18:56
 updatedDate: ''
 description: Un experimento con agentes de IA reveló mensajes visibles pero indescifrables. Qué significa esto para la gobernanza algorítmica.
-heroImage: /images/uploads/idioma-invento.webp
+heroImage: /images/uploads/idioma-ia-invento.webp
 heroImageAlt: Mujer auditando documento impreso cubierto de bloques geométricos oscuros incomprensibles.
 draft: true
 ---
