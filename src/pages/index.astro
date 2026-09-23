@@ -369,29 +369,12 @@ const signalPools = {
         <h2>Insights Visuales</h2>
         <p class="tagline">Una imagen. Una idea. Un momento para pensar.</p>
       </div>
-      <div class="insight-wrap" data-insight-video={latestInsight.data.video ? '' : undefined}>
-        <a href="/insights-visuales/" class="insight-hero">
-          <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
-          {latestInsight.data.video && (
-            <video class="insight-video" data-src={latestInsight.data.video} muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
-          )}
-          {latestInsight.data.punchline && (
-            <span class="insight-punchline">{latestInsight.data.punchline}</span>
-          )}
-        </a>
-        {latestInsight.data.video && (
-          <div class="insight-controls" hidden>
-            <button type="button" class="insight-btn" data-insight-toggle aria-label="Pausar video">
-              <svg data-icon="pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="3.5" height="12" /><rect x="9.5" y="2" width="3.5" height="12" /></svg>
-              <svg data-icon="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" hidden><path d="M4 2.5v11l9-5.5-9-5.5z" /></svg>
-            </button>
-            <button type="button" class="insight-btn" data-insight-sound aria-label="Activar sonido">
-              <svg data-icon="muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5z" /><path d="M16 9l5 6M21 9l-5 6" /></svg>
-              <svg data-icon="unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><path d="M11 5 6 9H3v6h3l5 4V5z" /><path d="M15.5 8.5a5 5 0 0 1 0 7" /><path d="M18.5 5.5a9 9 0 0 1 0 13" /></svg>
-            </button>
-          </div>
+      <a href="/insights-visuales/" class="insight-hero">
+        <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
+        {latestInsight.data.punchline && (
+          <span class="insight-punchline">{latestInsight.data.punchline}</span>
         )}
-      </div>
+      </a>
       <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
     </section>
   )}
@@ -865,60 +848,13 @@ const signalPools = {
   /* Insights Visuales — single hero image */
   .insights-head { flex-direction: column; align-items: flex-start; gap: 6px; }
   .tagline { color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin: 0; }
-  .insight-wrap {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-  }
   .insight-hero {
     position: relative;
     display: block;
+    max-width: 900px;
+    margin: 0 auto;
     isolation: isolate;
   }
-  /* El video vive encima de la imagen (que sigue siendo la base y el fallback):
-     entra con fade solo cuando ya está reproduciendo. */
-  .insight-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--radius);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    z-index: 1;
-  }
-  .insight-wrap.is-playing .insight-video { opacity: 1; }
-  /* El texto ya va quemado en el video — con video activo se omite el punchline. */
-  .insight-wrap.is-playing .insight-punchline,
-  .insight-wrap.is-playing .insight-hero::before { display: none; }
-  .insight-controls {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 3;
-    display: flex;
-    gap: 8px;
-  }
-  .insight-controls[hidden] { display: none; }
-  .insight-btn {
-    width: 36px;
-    height: 36px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: rgba(10, 11, 15, 0.55);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    backdrop-filter: blur(6px);
-    transition: background 0.15s;
-  }
-  .insight-btn:hover { background: rgba(10, 11, 15, 0.8); }
-  .insight-btn svg { width: 16px; height: 16px; }
-  .insight-btn svg[hidden] { display: none; }
   .insight-hero img {
     width: 100%;
     height: auto;
@@ -1537,137 +1473,8 @@ const signalPools = {
       });
     });
 
-    audio.addEventListener('play', () => {
-      if (activeBtn) setPlaying(activeBtn, true);
-      window.dispatchEvent(new CustomEvent('gm-audio', { detail: 'explora' }));
-    });
+    audio.addEventListener('play', () => activeBtn && setPlaying(activeBtn, true));
     audio.addEventListener('pause', () => activeBtn && setPlaying(activeBtn, false));
     audio.addEventListener('ended', () => activeBtn && setPlaying(activeBtn, false));
-
-    // Si el video del home activa su sonido, el resumen en audio se pausa (nunca dos audios a la vez).
-    window.addEventListener('gm-audio', (e) => {
-      if ((e as CustomEvent).detail !== 'explora' && !audio.paused) audio.pause();
-    });
-  }
-</script>
-
-<script>
-  // Insights Visuales — video del home. La imagen es siempre la base y el
-  // fallback: el <video> no recibe `src` hasta que el widget está por entrar
-  // en pantalla (así no pesa nada en la carga inicial), y si el usuario pidió
-  // menos movimiento o ahorro de datos, nunca se carga y queda la imagen.
-  const wrap = document.querySelector<HTMLElement>('.insight-wrap[data-insight-video]');
-  const video = wrap?.querySelector<HTMLVideoElement>('.insight-video');
-  const controls = wrap?.querySelector<HTMLElement>('.insight-controls');
-  const toggleBtn = wrap?.querySelector<HTMLButtonElement>('[data-insight-toggle]');
-  const soundBtn = wrap?.querySelector<HTMLButtonElement>('[data-insight-sound]');
-
-  const conn = (navigator as any).connection;
-  const skip =
-    true || // DESACTIVADO TEMPORALMENTE — para descartar el video como causa de la lentitud general del sitio. Quitar el "true ||" para reactivar.
-    matchMedia('(prefers-reduced-motion: reduce)').matches ||
-    conn?.saveData === true ||
-    ['slow-2g', '2g'].includes(conn?.effectiveType);
-
-  if (wrap && video && controls && toggleBtn && soundBtn && !skip && 'IntersectionObserver' in window) {
-    let loaded = false;
-    let userPaused = false;
-
-    const swap = (btn: HTMLElement, show: string, hide: string) => {
-      btn.querySelector(`[data-icon="${show}"]`)?.removeAttribute('hidden');
-      btn.querySelector(`[data-icon="${hide}"]`)?.setAttribute('hidden', '');
-    };
-    const syncPlay = () => {
-      const playing = !video.paused;
-      swap(toggleBtn, playing ? 'pause' : 'play', playing ? 'play' : 'pause');
-      toggleBtn.setAttribute('aria-label', playing ? 'Pausar video' : 'Reproducir video');
-    };
-    const syncSound = () => {
-      swap(soundBtn, video.muted ? 'muted' : 'unmuted', video.muted ? 'unmuted' : 'muted');
-      soundBtn.setAttribute('aria-label', video.muted ? 'Activar sonido' : 'Silenciar');
-    };
-
-    // El fade-in espera a que el video haya avanzado de verdad: así nunca se
-    // revela un cuadro vacío/negro por encima de la imagen.
-    const reveal = () => {
-      if (video.currentTime > 0) {
-        wrap.classList.add('is-playing');
-        video.removeEventListener('timeupdate', reveal);
-      }
-    };
-    video.addEventListener('timeupdate', reveal);
-    video.addEventListener('playing', syncPlay);
-    video.addEventListener('play', syncPlay);
-    video.addEventListener('pause', syncPlay);
-    video.addEventListener('volumechange', syncSound);
-
-    toggleBtn.addEventListener('click', () => {
-      if (video.paused) {
-        userPaused = false;
-        video.play().catch(() => {});
-      } else {
-        userPaused = true;
-        video.pause();
-      }
-    });
-    soundBtn.addEventListener('click', () => {
-      video.muted = !video.muted;
-      if (!video.muted) window.dispatchEvent(new CustomEvent('gm-audio', { detail: 'insight-video' }));
-    });
-    window.addEventListener('gm-audio', (e) => {
-      if ((e as CustomEvent).detail !== 'insight-video') video.muted = true;
-    });
-
-    const load = () => {
-      loaded = true;
-      controls.hidden = false;
-      const src = video.dataset.src || '';
-
-      // `canplaythrough` no bastó: es una estimación sobre el ritmo de
-      // descarga EN ESE MOMENTO, y GitHub Pages sirve estos mp4 con
-      // throughput muy irregular incluso dentro de una misma descarga
-      // (medimos de ~100 KB/s a ~2 MB/s para el mismo archivo, cambiando
-      // segundo a segundo). Si la velocidad cae después de que arrancó, se
-      // corta igual. La única forma de garantizar cero cortes es bajar el
-      // archivo completo a un blob local ANTES de reproducir — una vez que
-      // el video vive en memoria, ya no depende de la red para nada. Cuesta
-      // un poco más de espera antes de que arranque (se queda la imagen
-      // mientras tanto, que ya es un buen respaldo); gana que, una vez que
-      // arranca, nunca se detiene a media reproducción.
-      fetch(src)
-        .then((r) => r.blob())
-        .then((blob) => {
-          video.src = URL.createObjectURL(blob);
-          if (inView && !userPaused) video.play().catch(syncPlay);
-        })
-        .catch(() => {
-          // Si el fetch falla (red cortada, etc.), degradamos a la reproducción directa de siempre.
-          video.src = src;
-          if (inView && !userPaused) video.play().catch(syncPlay);
-        });
-    };
-
-    let inView = false;
-    new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          inView = entry.isIntersecting;
-          if (inView) {
-            if (!loaded) load();
-            else if (!userPaused) video.play().catch(() => {});
-          } else if (loaded) {
-            video.pause();
-          }
-        }
-      },
-      { rootMargin: '200px 0px', threshold: 0.25 }
-    ).observe(wrap);
-
-    // Al volver a la pestaña el navegador puede haber pausado el video por su cuenta.
-    document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible' && inView && loaded && !userPaused && video.paused) {
-        video.play().catch(() => {});
-      }
-    });
   }
 </script>

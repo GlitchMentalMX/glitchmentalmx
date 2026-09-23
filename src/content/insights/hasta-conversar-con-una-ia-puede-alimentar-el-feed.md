@@ -8,5 +8,4 @@ date: 2026-09-22T06:13
 draft: false
 categoria: Tendencias Digitales
 punchline: Hasta conversar con una IA puede alimentar el feed
-video: /videos/insights/insights_visuales_ia_feed_v1.mp4
 ---

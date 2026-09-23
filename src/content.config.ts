@@ -119,8 +119,6 @@ const visualInsights = defineCollection({
     ),
     // Solo para el home y material de RS — nunca se muestra en los cards de /insights-visuales/.
     punchline: z.string().optional(),
-    // Clip de 10 s (16:9, texto quemado) — solo lo usa el home y solo para el insight más reciente.
-    video: z.string().optional(),
   }),
 });
 
