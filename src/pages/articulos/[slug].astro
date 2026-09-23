@@ -332,6 +332,16 @@ const metaTitle =
 // externo: a diferencia del precio, no cambia a diario, así que no hace
 // falta la capa de indirección que sí necesita Banxico.
 const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).veredicto : undefined;
+// fraseCorta ya existe en el frontmatter de estas 3 colecciones y ya se
+// mostraba en las páginas de listado (PruebaGratisRow.astro, etc.), pero
+// nunca en el artículo individual — justo donde aterriza alguien que llega
+// desde Google. Sin ella, el H1 (la pregunta) y el veredicto genérico del
+// badge ("Requiere tarjeta desde el inicio") dejaban al lector sin la
+// respuesta concreta hasta que leyera todo el cuerpo — y varias fichas
+// mezclan "el plan gratuito no pide tarjeta" con "el plan de pago no tiene
+// prueba" en el mismo párrafo, lo cual lee como ambiguo si no se aclara de
+// entrada cuál de las dos preguntas se está respondiendo.
+const fraseCorta = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).fraseCorta : undefined;
 
 // Product solo para las series de precio, y solo con Offer: Google Search
 // Console marca como error crítico un Product sin "offers", "review" ni
@@ -539,6 +549,7 @@ if (kind === 'posts') {
       {kind === 'codigosDescuento' && veredicto && (
         <div class="veredicto-top"><CodigoDescuentoBadge veredicto={veredicto} size="lg" /></div>
       )}
+      {fraseCorta && <p class="frase-corta">{fraseCorta}</p>}
     </header>
 
     {heroImage && (
@@ -762,6 +773,13 @@ if (kind === 'posts') {
 
 <style>
   .veredicto-top { margin-top: 18px; }
+  .frase-corta {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 14px;
+    max-width: 60ch;
+  }
   .post-header {
     max-width: 760px;
     padding: 48px 24px 32px;
