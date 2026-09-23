@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Freepik/Magnific no ofrece prueba gratuita de Premium: el botón de pago lleva directo al cobro, sin periodo de evaluación."
 fuenteVerificacion: "Página oficial de precios de Magnific, antes Freepik (freepik.com/pricing redirige a magnific.com/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/freepik.png
+heroImageAlt: Freepik — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Freepik?

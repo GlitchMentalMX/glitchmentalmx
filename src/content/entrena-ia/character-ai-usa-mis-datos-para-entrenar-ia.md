@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El opt-out existe solo si vives en la Unión Europea o el Reino Unido — en México no hay ese botón."
 fuentePolitica: "Página oficial de Entrenamiento de Modelos de Character.AI"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/character-ai.png
+heroImageAlt: Character.AI — Privacidad de IA
 ---
 
 Sí, sin opción de negarte si vives fuera de la Unión Europea o el Reino Unido. Character.AI usa el contenido que generas en tus conversaciones con sus personajes para "mejorar la calidad de escritura creativa y la funcionalidad" de sus modelos de IA. La propia empresa es explícita sobre quién puede decir que no: el mecanismo de opt-out está documentado únicamente para residentes del Espacio Económico Europeo y el Reino Unido. Para el resto del mundo, incluido México, no hay un procedimiento equivalente descrito en ningún lado — participar es, literalmente, parte de usar el servicio. Fuente: página oficial de Entrenamiento de Modelos de Character.AI, verificado el 24 de agosto de 2026.

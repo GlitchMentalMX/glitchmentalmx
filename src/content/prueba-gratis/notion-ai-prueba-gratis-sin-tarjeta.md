@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "La prueba de Business no pide tarjeta; solo te la piden si decides quedarte al terminar."
 fuenteVerificacion: "Centro de Ayuda oficial de Notion, artículo 'Notion paid plan trials' (notion.com/help), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/notion-ai.png
+heroImageAlt: Notion AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Notion AI?

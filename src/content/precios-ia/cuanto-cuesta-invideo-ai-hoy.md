@@ -5,6 +5,8 @@ herramienta: "InVideo AI"
 herramientaId: "invideo-ai"
 sitioOficial: "https://invideo.io/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/invideo-ai.png
+heroImageAlt: InVideo AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

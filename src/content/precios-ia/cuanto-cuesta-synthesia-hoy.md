@@ -5,6 +5,8 @@ herramienta: "Synthesia"
 herramientaId: "synthesia"
 sitioOficial: "https://www.synthesia.io/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/synthesia.png
+heroImageAlt: Synthesia — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público que canjear, pero sí un 17% de descuento por pago anual y una oferta relámpago de 33% activa hoy en el plan Max."
 fuenteVerificacion: "Página oficial de precios de Monica AI (monica.im/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/monica-ai.png
+heroImageAlt: Monica AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Monica AI?

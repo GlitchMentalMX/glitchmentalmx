@@ -5,6 +5,8 @@ herramienta: "Sider"
 herramientaId: "sider-ai"
 sitioOficial: "https://sider.ai/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/sider-ai.png
+heroImageAlt: Sider — Precios de IA
 ---
 
 ## Qué cambia el precio final

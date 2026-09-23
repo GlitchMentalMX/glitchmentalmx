@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Sider no ofrece ninguna prueba gratuita de sus planes de pago, según su propio centro de ayuda: se cobra desde el primer momento."
 fuenteVerificacion: "Centro de Ayuda oficial de Sider (sider.ai/help-center), sección Problema de Pago, pregunta \"¿Es posible tener una prueba gratuita?\", consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/sider-ai.png
+heroImageAlt: Sider — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Sider?

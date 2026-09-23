@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Creator: solo un primer mes con 50% de descuento, pagando desde el día uno."
 fuenteVerificacion: "Página oficial de precios de ElevenLabs (elevenlabs.io/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/elevenlabs.png
+heroImageAlt: ElevenLabs — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de ElevenLabs?

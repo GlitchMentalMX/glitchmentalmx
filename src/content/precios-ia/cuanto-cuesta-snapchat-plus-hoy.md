@@ -5,6 +5,8 @@ herramienta: "Snapchat+"
 herramientaId: "snapchat-plus"
 sitioOficial: "https://accounts.snapchat.com/plus/plans"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/snapchat-plus.png
+heroImageAlt: Snapchat+ — Precios de IA
 ---
 
 ## Qué cambia el precio final

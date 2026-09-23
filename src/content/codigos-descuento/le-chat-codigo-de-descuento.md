@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un plan Educación real con 60% de descuento para estudiantes y profesores verificados, más un descuento por pago anual en el plan Team."
 fuenteVerificacion: "Centro de ayuda oficial de Mistral AI (help.mistral.ai) y página oficial de precios (mistral.ai/pricing), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/le-chat.png
+heroImageAlt: Le Chat — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Le Chat?

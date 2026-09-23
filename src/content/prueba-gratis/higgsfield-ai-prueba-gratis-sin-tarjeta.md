@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "El plan gratuito básico no pide tarjeta, pero la prueba de 24 horas con acceso ilimitado sí la exige, aunque cobra $0."
 fuenteVerificacion: "Blog oficial de Higgsfield, artículo \"How to Get Free Unlimited AI Video Generation\" (higgsfield.ai/blog), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/higgsfield-ai.png
+heroImageAlt: Higgsfield — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Higgsfield?

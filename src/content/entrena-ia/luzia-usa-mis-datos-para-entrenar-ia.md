@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena con tus conversaciones, según su propia política de privacidad."
 fuentePolitica: "Política de Privacidad oficial de Luzia, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/luzia.png
+heroImageAlt: Luzia — Privacidad de IA
 ---
 
 No. La Política de Privacidad de Luzia lo declara sin condiciones: "Luzia no está entrenada con tus conversaciones." La empresa detalla además que sus mensajes se procesan de forma anónima, y que aunque Luzia se apoya en modelos de terceros para funcionar —incluye entre sus proveedores a "WhatsApp LLC, Telegram, OpenAI y Stability AI"— aclara que esos proveedores "no acceden a los datos personales de la Aplicación". Fuente: Política de Privacidad oficial de Luzia, verificado el 31 de agosto de 2026.

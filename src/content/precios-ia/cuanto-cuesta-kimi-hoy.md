@@ -5,6 +5,8 @@ herramienta: "Kimi"
 herramientaId: "kimi"
 sitioOficial: "https://www.kimi.com/membership/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/kimi.png
+heroImageAlt: Kimi — Precios de IA
 ---
 
 ## Qué cambia el precio final

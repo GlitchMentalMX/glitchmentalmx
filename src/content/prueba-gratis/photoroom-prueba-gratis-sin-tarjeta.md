@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de 7 días cobra sola al terminar, lo que confirma que la tarjeta ya quedó registrada desde el inicio."
 fuenteVerificacion: "Centro de Ayuda oficial de Photoroom, artículos 'Free trials of Photoroom' y 'Cancel a free trial' (help.photoroom.com), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/photoroom.png
+heroImageAlt: Photoroom — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Photoroom?

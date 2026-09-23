@@ -5,6 +5,8 @@ herramienta: "Copy.ai"
 herramientaId: "copy-ai"
 sitioOficial: "https://www.copy.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/copy-ai.png
+heroImageAlt: Copy.ai — Precios de IA
 ---
 
 ## Qué cambia el precio final

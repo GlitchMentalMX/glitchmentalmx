@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Usa las fotos de tus problemas de matemáticas para entrenar su visión artificial, sin un botón para excluirte."
 fuentePolitica: "Política de Privacidad de Photomath"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/photomath.png
+heroImageAlt: Photomath — Privacidad de IA
 ---
 
 Sí. La política de privacidad de Photomath lo dice sin ambigüedad: "we use the images and feedback you send by using the Service to improve the Service, including its math problem solving capabilities, and to improve our other products and services, such as machine vision technologies" ("usamos las imágenes y el feedback que envías al usar el Servicio para mejorar el Servicio, incluida su capacidad de resolver problemas matemáticos, y para mejorar nuestros otros productos y servicios, como tecnologías de visión artificial"). En otra sección la política es todavía más directa sobre la base legal: "We will use the pictures taken by you in order to gather information about how to improve our AI" ("usaremos las fotos que tomes para reunir información sobre cómo mejorar nuestra IA"). Fuente: Política de Privacidad de Photomath, verificado el 31 de agosto de 2026.

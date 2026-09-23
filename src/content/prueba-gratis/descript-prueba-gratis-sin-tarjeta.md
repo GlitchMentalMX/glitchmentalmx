@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero el plan de pago (Creator) no tiene prueba: se paga directo."
 fuenteVerificacion: "Página oficial de precios de Descript (descript.com/pricing), sección de preguntas frecuentes, consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/descript.png
+heroImageAlt: Descript — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Descript?

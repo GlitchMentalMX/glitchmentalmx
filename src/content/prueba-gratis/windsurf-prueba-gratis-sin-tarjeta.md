@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "La prueba de Pro no es para todos: la decide un algoritmo, no una regla fija."
 fuenteVerificacion: "Documentación oficial de Windsurf/Devin (docs.devin.ai, sección \"Plans and Usage\") y windsurf.com/pricing, consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/windsurf.png
+heroImageAlt: Windsurf — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Windsurf?

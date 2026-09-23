@@ -5,6 +5,8 @@ herramienta: "Hailuo AI"
 herramientaId: "hailuo-ai"
 sitioOficial: "https://hailuoai.video/subscribe"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/hailuo-ai.png
+heroImageAlt: Hailuo AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

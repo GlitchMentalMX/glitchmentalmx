@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tus chats por default — puedes apagarlo, pero no borra lo ya usado."
 fuentePolitica: "Centro de Ayuda de OpenAI: Preguntas frecuentes de Controles de Datos"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/chatgpt.png
+heroImageAlt: ChatGPT — Privacidad de IA
 ---
 
 Sí, por default. En las cuentas ChatGPT Free, Plus y Pro, tus conversaciones se usan para entrenar y mejorar los modelos de OpenAI salvo que tú desactives esa opción — no es algo que actives, es algo que ya viene activado desde que abres tu cuenta. Fuente: Centro de Ayuda de OpenAI, sección de Controles de Datos, verificado el 24 de agosto de 2026.

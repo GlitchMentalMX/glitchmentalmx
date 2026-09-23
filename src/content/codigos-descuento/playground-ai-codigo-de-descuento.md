@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real del 20% por pagar anual en los planes Pro y Pro Plus."
 fuenteVerificacion: "Página oficial de precios de Playground AI (playgroundai.com/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/playground-ai.png
+heroImageAlt: Playground AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Playground AI?

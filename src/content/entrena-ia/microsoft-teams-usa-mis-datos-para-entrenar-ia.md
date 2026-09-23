@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Microsoft lo dice por escrito: tus juntas y chats de trabajo no entrenan sus modelos de IA."
 fuentePolitica: "Documentación oficial de Microsoft Learn: Privacidad de Microsoft Copilot"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/microsoft-teams.png
+heroImageAlt: Microsoft Teams — Privacidad de IA
 ---
 
 No. Microsoft es explícito, sin condiciones ni letra chica: "los prompts, las respuestas y los datos a los que se accede a través de Microsoft Graph no se usan para entrenar los modelos de lenguaje base, incluidos los que usa Microsoft Copilot". Esto cubre tus juntas, chats, transcripciones y resúmenes generados por Copilot dentro de Teams — todo se procesa y almacena bajo los mismos compromisos contractuales que ya protegen el resto de tu contenido en Microsoft 365, sin salir para entrenar modelos que después usan otros clientes. Fuente: documentación oficial de Microsoft Learn sobre privacidad de Copilot, verificado el 24 de agosto de 2026.

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados, pero sí un descuento oficial real por pago anual y un programa de campus que da créditos gratis a estudiantes verificados."
 fuenteVerificacion: "Página oficial de precios de Manus (manus.im/pricing) y Campus Program (manus.im/edu), consultadas el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/manus-ai.png
+heroImageAlt: Manus — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Manus?

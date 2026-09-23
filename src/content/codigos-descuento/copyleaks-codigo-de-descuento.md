@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay campo de cupón ni código confirmado en su página oficial: el único ahorro real es pagar el plan anual en vez del mensual."
 fuenteVerificacion: "Página oficial de precios de Copyleaks (copyleaks.com/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/copyleaks.png
+heroImageAlt: Copyleaks — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Copyleaks?

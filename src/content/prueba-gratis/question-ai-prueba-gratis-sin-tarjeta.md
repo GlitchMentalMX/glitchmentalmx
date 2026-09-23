@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ninguna prueba gratuita del plan de pago: la página oficial de precios solo muestra botones de 'Buy Now' que llevan directo al cobro."
 fuenteVerificacion: "Página oficial de precios de Question.AI (questionai.ai/pricing), consultada el 31/08/2026 — sin mención de periodo de prueba en el sitio."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/question-ai.png
+heroImageAlt: Question.AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Question.AI?

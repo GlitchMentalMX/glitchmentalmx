@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos verificados, pero sí programas oficiales que regalan Canva Pro completo a escuelas y organizaciones sin fines de lucro elegibles."
 fuenteVerificacion: "Centro de ayuda oficial de Canva (canva.com/help), páginas \"About Canva for Education\" y \"Canva for Nonprofits\", consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/canva.png
+heroImageAlt: Canva — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Canva Pro?

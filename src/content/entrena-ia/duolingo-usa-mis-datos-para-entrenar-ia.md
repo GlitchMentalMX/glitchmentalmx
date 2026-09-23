@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Tu voz y tu forma de aprender entrenan su IA — solo puedes apagar el micrófono, no el resto."
 fuentePolitica: "Política de Privacidad de Duolingo (revisada el 26 de mayo de 2026)"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/duolingo.png
+heroImageAlt: Duolingo — Privacidad de IA
 ---
 
 Sí, y sin un botón dedicado para negarte. Duolingo recopila grabaciones de voz de tus ejercicios de pronunciación, patrones detallados de cómo aprendes y datos de comportamiento dentro de la app, y usa toda esa información para entrenar sus propios sistemas de IA y guiar el desarrollo de producto. También comparte información con proveedores externos que dan soporte a funciones como reconocimiento de voz y moderación de contenido. Fuente: Política de Privacidad de Duolingo, revisada el 26 de mayo de 2026, verificado el 23 de agosto de 2026.

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un programa oficial que regala Figma completo a estudiantes y maestros, más un 20% de descuento por pago anual."
 fuenteVerificacion: "Páginas oficiales de Figma: figma.com/pricing y figma.com/education, consultadas el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/figma.png
+heroImageAlt: Figma — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Figma?

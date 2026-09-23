@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero Pro no tiene prueba aparte: subes de plan pagando directo."
 fuenteVerificacion: "Página oficial de precios de Lovable (lovable.dev/pricing) y preguntas frecuentes oficiales (docs.lovable.dev/introduction/faq), consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/lovable.png
+heroImageAlt: Lovable — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Lovable?

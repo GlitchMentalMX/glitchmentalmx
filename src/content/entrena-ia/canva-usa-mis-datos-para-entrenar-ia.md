@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tu contenido por default en cuentas Free y Pro — en Teams y Enterprise no puede activarse."
 fuentePolitica: "Política de Privacidad de Canva"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/canva.png
+heroImageAlt: Canva — Privacidad de IA
 ---
 
 Sí, por default en cuentas individuales. Canva puede usar el contenido que subes o creas —imágenes, texto en tus diseños— para entrenar y mejorar sus modelos de IA (los que impulsan Magic Studio) salvo que apagues esa opción en tus preferencias de privacidad. En cuentas Free y Pro, el ajuste de entrenamiento de IA viene activado; tienes que encontrarlo y desactivarlo tú mismo. Fuente: Política de Privacidad de Canva, verificado el 24 de agosto de 2026.

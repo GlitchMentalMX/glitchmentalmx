@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Lo que subes al dashboard se usa agregado para mejorar el detector — vía API, la promesa es que no se guarda nada."
 fuentePolitica: "Política de Privacidad de GPTZero + FAQ oficial"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/gptzero.png
+heroImageAlt: GPTZero — Privacidad de IA
 ---
 
 Depende de por dónde entres. GPTZero es explícito en que trata distinto el uso gratuito por dashboard y el uso vía API: "we do not store or collect the documents passed into any calls to our API" ("no almacenamos ni recolectamos los documentos que pasan en las llamadas a nuestra API"). Pero para quien usa el detector directamente en el sitio, la propia empresa lo aclara en su FAQ: "we do store inputs from calls made from our dashboard. This data is only used in aggregate by GPTZero to further improve the service for our users" ("sí almacenamos las entradas de las llamadas hechas desde nuestro dashboard. Estos datos solo se usan de forma agregada por GPTZero para seguir mejorando el servicio"). Fuente: FAQ oficial de GPTZero y Política de Privacidad de GPTZero, sección 13 "User-Submitted Data", verificado el 31 de agosto de 2026.

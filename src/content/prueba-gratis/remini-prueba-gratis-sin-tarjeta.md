@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El propio centro de ayuda de Remini explica que la prueba se activa como una suscripción normal, con cobro automático si no cancelas a tiempo — eso implica dar un método de pago desde el inicio."
 fuenteVerificacion: "Centro de Ayuda oficial de Remini (remini.zendesk.com), artículos \"Can I use the Remini app without paying or start a free trial?\" y \"Subscription Channels & Options\", consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/remini.png
+heroImageAlt: Remini — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Remini?

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Su asistente de compras aprende de ti por default — y no existe un botón para apagarlo."
 fuentePolitica: "Aviso de Privacidad de Amazon"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/amazon.png
+heroImageAlt: Amazon — Privacidad de IA
 ---
 
 Sí, sin ninguna forma de decir que no. El asistente de compras con IA de Amazon —que se llamó Rufus hasta mayo de 2026 y ahora vive integrado como "Alexa for Shopping" directamente en la barra de búsqueda— usa tus búsquedas, tu historial de compras, tus reseñas y tus conversaciones con el propio asistente para volverse más preciso. Amazon no es transparente sobre los detalles exactos de cómo funciona ese entrenamiento, pero es claro en algo: la función viene activada desde que entras a la app o al sitio, sin haberla pedido, y no existe un ajuste en tu cuenta para desactivarla. Fuente: Aviso de Privacidad de Amazon, verificado el 23 de agosto de 2026.

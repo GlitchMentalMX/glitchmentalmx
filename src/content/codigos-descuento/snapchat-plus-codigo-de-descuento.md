@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay un cupón público que puedas escribir tú mismo, pero sí un canal oficial real: promociones de socios canjeables por código."
 fuenteVerificacion: "Centro de ayuda oficial de Snapchat (help.snapchat.com), artículos \"Can I get a discount for a Snapchat+ subscription?\" y \"How do I redeem a promo code for Snapchat+?\", consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/snapchat-plus.png
+heroImageAlt: Snapchat+ — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Snapchat+?

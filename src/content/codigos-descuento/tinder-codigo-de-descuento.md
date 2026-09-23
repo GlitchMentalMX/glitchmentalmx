@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos de Tinder, pero sí un descuento oficial real para estudiantes verificados — hasta 75% off Gold por 6 meses — a través de partners autorizados como Student Beans y UNiDAYS."
 fuenteVerificacion: "Programas oficiales de verificación estudiantil asociados a Tinder en Student Beans (studentbeans.com) y UNiDAYS (myunidays.com), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/tinder.png
+heroImageAlt: Tinder — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Tinder Gold o Platinum?

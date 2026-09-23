@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El registro a la prueba gratis de Prime exige una tarjeta de crédito vigente desde el inicio — no existe forma de activarla sin ella."
 fuenteVerificacion: "Centro de Ayuda oficial de Amazon (amazon.com), artículo \"Sign Up for the Amazon Prime Free Trial\", consultado el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/prueba-gratis/amazon-prime.png
+heroImageAlt: Amazon Prime — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Prime?

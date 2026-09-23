@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de 3 días existe, pero pide tarjeta desde el registro y se convierte en cobro si no cancelas."
 fuenteVerificacion: "Términos de servicio oficiales de Speechify (speechify.com/terms), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/speechify.png
+heroImageAlt: Speechify — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Speechify?

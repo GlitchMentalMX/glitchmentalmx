@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Firefly sí ofrece 7 días de prueba en sus planes de pago, pero el checkout oficial pide tarjeta desde el inicio y cobra automáticamente en cuanto termina la prueba."
 fuenteVerificacion: "Flujo oficial de compra en firefly.adobe.com (planes Standard, Pro y Pro Plus), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/adobe-firefly.png
+heroImageAlt: Adobe Firefly — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Adobe Firefly?

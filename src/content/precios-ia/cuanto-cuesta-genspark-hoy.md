@@ -5,6 +5,8 @@ herramienta: "Genspark"
 herramientaId: "genspark"
 sitioOficial: "https://www.genspark.ai/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/genspark.png
+heroImageAlt: Genspark — Precios de IA
 ---
 
 ## Qué cambia el precio final

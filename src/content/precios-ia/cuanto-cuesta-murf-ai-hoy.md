@@ -5,6 +5,8 @@ herramienta: "Murf"
 herramientaId: "murf-ai"
 sitioOficial: "https://murf.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/murf-ai.png
+heroImageAlt: Murf — Precios de IA
 ---
 
 ## Qué cambia el precio final

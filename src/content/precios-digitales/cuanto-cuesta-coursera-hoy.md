@@ -5,6 +5,8 @@ herramienta: "Coursera"
 herramientaId: "coursera"
 sitioOficial: "https://www.coursera.org/courseraplus"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/coursera.png
+heroImageAlt: Coursera — Precios Digitales
 ---
 
 ## Qué cambia el precio final

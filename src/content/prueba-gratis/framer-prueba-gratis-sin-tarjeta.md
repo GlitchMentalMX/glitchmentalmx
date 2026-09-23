@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Framer no ofrece prueba de sus planes pagados: solo puedes evitar la tarjeta quedándote en el plan gratuito, más limitado."
 fuenteVerificacion: "Página oficial de precios de Framer (framer.com/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/framer.png
+heroImageAlt: Framer — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Framer?

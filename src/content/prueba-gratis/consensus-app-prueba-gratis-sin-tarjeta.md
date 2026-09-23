@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Pro ni Deep: el centro de ayuda oficial solo describe un plan Free permanente y limitado, y botones directos para 'actualizar' a los planes de pago."
 fuenteVerificacion: "Centro de ayuda oficial de Consensus (help.consensus.app), artículo 'Subscription Plans', y página oficial de precios (consensus.app/pricing), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/consensus-app.png
+heroImageAlt: Consensus — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Consensus?

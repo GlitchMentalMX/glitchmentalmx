@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena con tu Workspace — tiene acuerdos de retención cero con sus tres proveedores de modelos."
 fuentePolitica: "Centro de Ayuda de ClickUp: FAQ de modelos de IA, privacidad y seguridad"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/clickup.png
+heroImageAlt: ClickUp — Privacidad de IA
 ---
 
 No. ClickUp lo dice sin rodeos en su propio centro de ayuda: "ClickUp AI is not trained on data from your Workspace" ("ClickUp AI no está entrenada con datos de tu Workspace"). La empresa asegura haber firmado licencias con sus socios de modelos —OpenAI, Anthropic y Google, los tres proveedores detrás de ClickUp Brain— específicamente para que ninguno acceda a tu contenido con fines de entrenamiento, y sostiene tener acuerdos de retención cero de datos con las tres: tus prompts y el contenido de tu Workspace se procesan y luego se eliminan, sin quedar almacenados en el modelo. Fuente: Centro de Ayuda de ClickUp, artículo "ClickUp AI models, privacy, and security FAQ", verificado el 31 de agosto de 2026.

@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "En los países donde está disponible, la prueba de 7 días de CapCut Pro no pide tarjeta, según el propio centro de ayuda de CapCut."
 fuenteVerificacion: "Centro de ayuda oficial de CapCut (capcut.com/help), artículos \"How Can I Enjoy the CapCut Pro Free Trial?\" y \"What is the Free Trial of CapCut Pro\", consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/capcut.png
+heroImageAlt: CapCut — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de CapCut?

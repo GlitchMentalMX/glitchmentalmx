@@ -5,6 +5,8 @@ herramienta: "Freepik"
 herramientaId: "freepik"
 sitioOficial: "https://www.freepik.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/freepik.png
+heroImageAlt: Freepik — Precios de IA
 ---
 
 ## Qué cambia el precio final

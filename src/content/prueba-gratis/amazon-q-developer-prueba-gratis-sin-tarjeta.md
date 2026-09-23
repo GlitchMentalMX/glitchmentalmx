@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Ya no puedes registrarte, ni gratis ni de pago: AWS bloqueó cuentas nuevas de Amazon Q Developer desde el 15 de mayo de 2026."
 fuenteVerificacion: "Blog oficial AWS DevOps & Developer Productivity, \"Amazon Q Developer end-of-support announcement\" (aws.amazon.com/blogs/devops), y documentación oficial de niveles de servicio (docs.aws.amazon.com/amazonq), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/amazon-q-developer.png
+heroImageAlt: Amazon Q Developer — Prueba gratis sin tarjeta
 ---
 
 ## Antes de la tarjeta: la pregunta real es si puedes registrarte

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Tabnine no tiene plan gratuito ni prueba de autoservicio: la página oficial solo ofrece 'Get a quote' para sus dos planes de pago."
 fuenteVerificacion: "Página oficial de precios de Tabnine (tabnine.com/pricing), consultada el 31/08/2026 — sin mención de plan gratuito ni periodo de prueba."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/tabnine.png
+heroImageAlt: Tabnine — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Tabnine?

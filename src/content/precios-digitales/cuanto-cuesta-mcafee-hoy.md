@@ -5,6 +5,8 @@ herramienta: "McAfee"
 herramientaId: "mcafee"
 sitioOficial: "https://www.mcafee.com/en-us/antivirus.html"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/mcafee.png
+heroImageAlt: McAfee — Precios Digitales
 ---
 
 ## Qué cambia el precio final

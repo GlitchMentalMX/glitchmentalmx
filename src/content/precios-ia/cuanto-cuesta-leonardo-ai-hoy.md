@@ -5,6 +5,8 @@ herramienta: "Leonardo AI"
 herramientaId: "leonardo-ai"
 sitioOficial: "https://leonardo.ai/pricing/"
 pubDate: 2026-08-20
+heroImage: /images/precios-ia/leonardo-ai.png
+heroImageAlt: Leonardo AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

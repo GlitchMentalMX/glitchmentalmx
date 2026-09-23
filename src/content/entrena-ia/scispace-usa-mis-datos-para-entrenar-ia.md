@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Tus PDFs son privados y no entrenan sus modelos de IA — igual en el plan gratuito que en el de pago."
 fuentePolitica: "Centro de Ayuda de SciSpace: Cómo SciSpace protege tus PDFs subidos"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/scispace.png
+heroImageAlt: SciSpace — Privacidad de IA
 ---
 
 No. SciSpace lo responde de forma directa en su propio centro de ayuda, sin condicionales ni excepciones por tipo de cuenta: "your uploaded PDFs are private and are not used for training our AI models. This policy applies equally to both Free and Paid users" ("tus PDFs subidos son privados y no se usan para entrenar nuestros modelos de IA. Esta política aplica igual para usuarios Gratuitos y de Pago"). La misma página responde de forma explícita a la pregunta directa: "Does SciSpace Train AI on Uploaded Files? No, SciSpace AI models are not trained on any uploaded PDFs" ("¿SciSpace entrena su IA con los archivos subidos? No, los modelos de IA de SciSpace no se entrenan con ningún PDF subido"). Fuente: Centro de Ayuda de SciSpace, artículo "How SciSpace Protects Your Uploaded PDFs", verificado el 31 de agosto de 2026.

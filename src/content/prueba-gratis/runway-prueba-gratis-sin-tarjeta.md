@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Standard: el plan gratuito permanente es la única forma de evitar la tarjeta."
 fuenteVerificacion: "Página oficial de precios de Runway (runway.com/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/runway.png
+heroImageAlt: Runway — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Runway?

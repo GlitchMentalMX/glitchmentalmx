@@ -5,6 +5,8 @@ herramienta: "23andMe+"
 herramientaId: "23andme-plus"
 sitioOficial: "https://www.23andme.org/shop/premium-ancestry-health/"
 pubDate: 2026-08-30
+heroImage: /images/precios-ia/23andme-plus.png
+heroImageAlt: 23andMe+ — Precios de IA
 ---
 
 ## Qué cambia el precio final

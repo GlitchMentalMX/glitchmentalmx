@@ -5,6 +5,8 @@ herramienta: "Duolingo"
 herramientaId: "duolingo"
 sitioOficial: "https://www.duolingo.com/super"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/duolingo.png
+heroImageAlt: Duolingo — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "ChatGPT Plus no tiene botón de prueba gratuita: la página oficial de precios solo ofrece suscribirte y pagar de inmediato."
 fuenteVerificacion: "Página oficial de precios de ChatGPT (chatgpt.com, sección Precios), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/chatgpt.png
+heroImageAlt: ChatGPT — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de ChatGPT?

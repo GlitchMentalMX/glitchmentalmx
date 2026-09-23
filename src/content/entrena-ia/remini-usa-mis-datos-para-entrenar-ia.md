@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena con tus fotos por default — solo con consentimiento explícito, y ni siquiera con tus datos biométricos aunque aceptes."
 fuentePolitica: "Política de Privacidad y Cookies de Remini, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/remini.png
+heroImageAlt: Remini — Privacidad de IA
 ---
 
 No, sin tu consentimiento explícito. Remini lo dice de forma directa: "Without your explicit consent, Remini doesn't perform this activity of using your data for AI training." Las fotos y videos que subes a la versión web se eliminan automáticamente de sus servidores 15 días después de procesarlos, salvo que tú decidas lo contrario: "You are also free to decide to help us to improve our apps by becoming part of our app development program, and uploading media with specific features we request." Solo en ese caso —un programa opcional al que te sumas por decisión propia— tus archivos se retienen hasta un año para fines de entrenamiento. Fuente: Política de Privacidad y Cookies de Remini, verificado el 31 de agosto de 2026.

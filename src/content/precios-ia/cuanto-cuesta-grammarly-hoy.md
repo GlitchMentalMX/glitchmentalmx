@@ -5,6 +5,8 @@ herramienta: "Grammarly"
 herramientaId: "grammarly"
 sitioOficial: "https://www.grammarly.com/pro"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/grammarly.png
+heroImageAlt: Grammarly — Precios de IA
 ---
 
 ## Qué cambia el precio final

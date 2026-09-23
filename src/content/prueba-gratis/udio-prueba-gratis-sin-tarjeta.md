@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de Standard cobra sola a los 7 días si no cancelas — pide tarjeta desde el inicio."
 fuenteVerificacion: "Centro de ayuda oficial de Udio (help.udio.com), artículo \"The subscription trial\", y FAQ de udio.com/pricing, consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/udio.png
+heroImageAlt: Udio — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Udio?

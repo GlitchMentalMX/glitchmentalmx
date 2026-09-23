@@ -5,6 +5,8 @@ herramienta: "Otter.ai"
 herramientaId: "otter-ai"
 sitioOficial: "https://otter.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/otter-ai.png
+heroImageAlt: Otter.ai — Precios de IA
 ---
 
 ## Qué cambia el precio final

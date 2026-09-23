@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para los planes Plus o Business, pero sí un plan educativo gratis, un programa para startups y hasta 20% de descuento por pago anual."
 fuenteVerificacion: "Página oficial de precios de Notion (notion.com/pricing) y centro de ayuda \"Notion for students & education\", consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/notion.png
+heroImageAlt: Notion — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Notion?

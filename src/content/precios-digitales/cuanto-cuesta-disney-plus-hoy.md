@@ -5,6 +5,8 @@ herramienta: "Disney+"
 herramientaId: "disney-plus"
 sitioOficial: "https://www.disneyplus.com/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/disney-plus.png
+heroImageAlt: Disney+ — Precios Digitales
 ---
 
 ## Qué cambia el precio final

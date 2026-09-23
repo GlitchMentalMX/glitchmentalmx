@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Diste el consentimiento al comprar la prueba, aunque no lo recuerdes — puedes salir, pero no de lo que ya se usó."
 fuentePolitica: "Declaración de Privacidad de 23andMe / TTAM Research Institute"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/23andme.png
+heroImageAlt: 23andMe — Privacidad de IA
 ---
 
 Depende de una casilla que probablemente marcaste sin pensarlo mucho al comprar tu kit. 23andMe pide consentimiento para incluir tu información genética —desidentificada, sin tu nombre, fecha de nacimiento ni dirección— en estudios de investigación, algunos de los cuales usan inteligencia artificial y aprendizaje automático para encontrar patrones genéticos. Ese consentimiento se pide al inicio, no es algo que tengas que activar después: para la mayoría de los usuarios, ya está dado. Fuente: Declaración de Privacidad de 23andMe / TTAM Research Institute, verificado el 23 de agosto de 2026.

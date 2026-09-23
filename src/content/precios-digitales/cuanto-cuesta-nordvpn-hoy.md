@@ -5,6 +5,8 @@ herramienta: "NordVPN"
 herramientaId: "nordvpn"
 sitioOficial: "https://nordvpn.com/pricing/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/nordvpn.png
+heroImageAlt: NordVPN — Precios Digitales
 ---
 
 ## Qué cambia el precio final

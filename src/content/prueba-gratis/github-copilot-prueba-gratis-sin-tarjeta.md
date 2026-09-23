@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "GitHub Copilot Pro no tiene prueba gratuita hoy: la documentación oficial pide datos de pago desde el primer paso para suscribirte."
 fuenteVerificacion: "Documentación oficial de GitHub, 'Getting started with a GitHub Copilot plan' (docs.github.com), y la página oficial de planes de GitHub Copilot, consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/github-copilot.png
+heroImageAlt: GitHub Copilot — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de GitHub Copilot?

@@ -5,6 +5,8 @@ herramienta: "Playground AI"
 herramientaId: "playground-ai"
 sitioOficial: "https://playgroundai.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/playground-ai.png
+heroImageAlt: Playground AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

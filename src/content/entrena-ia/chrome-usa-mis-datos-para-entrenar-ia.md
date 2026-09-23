@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Gemini en Chrome lee lo que ves para ayudarte — y esas conversaciones entrenan IA salvo que lo apagues."
 fuentePolitica: "Centro de Ayuda de Chrome Empresarial: Gemini en Chrome"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/chrome.png
+heroImageAlt: Google Chrome — Privacidad de IA
 ---
 
 Depende de tu tipo de cuenta y de qué actives. Gemini en Chrome, la función que puede leer el contenido de la página que tienes abierta para responder tus preguntas, usa el mismo mecanismo que la app de Gemini: si tienes una cuenta personal de Google y el ajuste de "Actividad de Gemini" está encendido —que es como viene por default—, esas conversaciones e interacciones dentro de Chrome se usan para entrenar los modelos de Google. Si usas una cuenta administrada por tu trabajo o escuela (Google Workspace), tus prompts y lo que Gemini lee de tu navegación quedan explícitamente fuera del entrenamiento de los modelos públicos de Google. Fuente: Centro de Ayuda de Chrome Empresarial, verificado el 23 de agosto de 2026.

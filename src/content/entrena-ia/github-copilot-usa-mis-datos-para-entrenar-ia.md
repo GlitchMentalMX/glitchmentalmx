@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena por default en planes individuales desde abril de 2026 — Business y Enterprise quedan fuera."
 fuentePolitica: "GitHub Blog: actualización de política de uso de datos de interacción de Copilot, marzo 2026"
 pubDate: 2026-09-09
+heroImage: /images/entrena-ia/github-copilot.png
+heroImageAlt: GitHub Copilot — Privacidad de IA
 ---
 
 Sí, en los planes individuales, por default desde el 24 de abril de 2026 — antes de esa fecha la política era distinta. GitHub anunció en marzo de 2026 que los datos de interacción (entradas, salidas, fragmentos de código y su contexto) de usuarios de Copilot Free, Pro y Pro+ se usan para entrenar y mejorar sus modelos de IA, salvo que la persona decida no participar. Es una cláusula de opt-out, no de opt-in: si no apagas la opción a mano, tus interacciones se recolectan. Fuente: blog oficial de GitHub, "Updates to GitHub Copilot interaction data usage policy", verificado el 9 de septiembre de 2026.

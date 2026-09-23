@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni descuento para estudiantes, pero sí un 20% real por pagar el plan anual por adelantado."
 fuenteVerificacion: "Documentación oficial de Midjourney (docs.midjourney.com), artículos \"Comparing Midjourney Plans\" y \"Midjourney Subscription Plans\", consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/midjourney.png
+heroImageAlt: Midjourney — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Midjourney?

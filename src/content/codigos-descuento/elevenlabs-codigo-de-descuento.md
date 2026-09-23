@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No necesitas ningún código: ElevenLabs tiene hoy un 50% de descuento automático en el primer mes del plan Creator, visible en su propia página de precios."
 fuenteVerificacion: "Página oficial de precios de ElevenLabs (elevenlabs.io/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/elevenlabs.png
+heroImageAlt: ElevenLabs — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ElevenLabs?

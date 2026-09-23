@@ -5,6 +5,8 @@ herramienta: "Krea"
 herramientaId: "krea-ai"
 sitioOficial: "https://www.krea.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/krea-ai.png
+heroImageAlt: Krea — Precios de IA
 ---
 
 ## Qué cambia el precio final

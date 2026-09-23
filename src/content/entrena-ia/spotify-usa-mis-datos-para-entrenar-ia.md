@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Le prohíbe a terceros entrenar con su catálogo — y se queda ese mismo derecho para sí mismo con tus datos."
 fuentePolitica: "Política de Privacidad de Spotify (vigente desde el 27 de agosto de 2025)"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/spotify.png
+heroImageAlt: Spotify — Privacidad de IA
 ---
 
 Sí, sin una forma real de negarte. La Política de Privacidad de Spotify, vigente desde agosto de 2025, es explícita: la empresa usa tus datos personales para "desarrollar y entrenar" modelos algorítmicos y de aprendizaje automático que mejoran sus recomendaciones y construyen funciones de IA como el DJ con IA y las playlists generadas automáticamente. La base legal que usa Spotify para esto es su "interés legítimo" —no tu consentimiento explícito—, lo que significa que participas por el simple hecho de usar el servicio. Fuente: Política de Privacidad de Spotify, verificado el 23 de agosto de 2026.

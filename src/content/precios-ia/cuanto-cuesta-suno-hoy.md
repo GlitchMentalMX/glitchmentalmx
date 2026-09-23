@@ -5,6 +5,8 @@ herramienta: "Suno"
 herramientaId: "suno"
 sitioOficial: "https://suno.com/pricing"
 pubDate: 2026-08-20
+heroImage: /images/precios-ia/suno.png
+heroImageAlt: Suno — Precios de IA
 ---
 
 ## Qué cambia el precio final

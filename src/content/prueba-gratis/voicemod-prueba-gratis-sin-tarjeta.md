@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "La versión gratuita se descarga directo desde el sitio oficial sin registro ni tarjeta, y cuando Voicemod sí ofrece una prueba PRO, su propio soporte aclara que no se cobra nada durante ese periodo."
 fuenteVerificacion: "Sitio oficial de Voicemod (voicemod.net) y su Centro de Ayuda, artículo \"How to enable your Voicemod PRO trial with Voicemod Key\" (support.voicemod.net), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/voicemod.png
+heroImageAlt: Voicemod — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Voicemod?

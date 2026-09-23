@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos universales, pero sí un año gratis de Pro para estudiantes con correo .edu, además del descuento normal por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Beautiful.ai (beautiful.ai/pricing) y su programa de educación (beautiful.ai/education), consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/beautiful-ai.png
+heroImageAlt: Beautiful.ai — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Beautiful.ai?

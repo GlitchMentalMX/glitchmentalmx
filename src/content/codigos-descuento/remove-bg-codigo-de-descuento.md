@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni descuento para estudiantes, pero sí un ahorro oficial real por pagar anual."
 fuenteVerificacion: "Página oficial de precios y centro de ayuda de remove.bg (remove.bg/pricing, remove.bg/help), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/remove-bg.png
+heroImageAlt: remove.bg — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para remove.bg?

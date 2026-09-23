@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público para cualquiera, pero el programa oficial ClickUp for Startups da $3,000 USD en crédito real a startups que califican."
 fuenteVerificacion: "Página oficial de ClickUp for Startups (clickup.com/startup-program), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/clickup.png
+heroImageAlt: ClickUp — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ClickUp?

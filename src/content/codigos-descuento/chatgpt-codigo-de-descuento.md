@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí una promoción oficial de regreso a clases para estudiantes, vigente por tiempo limitado."
 fuenteVerificacion: "Centro de ayuda oficial de OpenAI (help.openai.com), artículos \"ChatGPT Plus promotions and referrals\" y \"ChatGPT Back to School offer for students\", consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/chatgpt.png
+heroImageAlt: ChatGPT — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ChatGPT Plus?

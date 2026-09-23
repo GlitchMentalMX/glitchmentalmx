@@ -5,6 +5,8 @@ herramienta: "ViX"
 herramientaId: "vix"
 sitioOficial: "https://www.vix.com/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/vix.png
+heroImageAlt: ViX — Precios Digitales
 ---
 
 ## Qué cambia el precio final

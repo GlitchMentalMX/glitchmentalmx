@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay un cupón que teclear, pero sí un 41% de descuento oficial y automático por pagar el plan anual, visible en la propia página de precios."
 fuenteVerificacion: "Página oficial de precios de Submagic (submagic.co/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/submagic.png
+heroImageAlt: Submagic — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Submagic?

@@ -5,6 +5,8 @@ herramienta: "Jasper"
 herramientaId: "jasper-ai"
 sitioOficial: "https://www.jasper.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/jasper-ai.png
+heroImageAlt: Jasper — Precios de IA
 ---
 
 ## Qué cambia el precio final

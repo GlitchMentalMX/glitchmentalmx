@@ -5,6 +5,8 @@ herramienta: "Uber One"
 herramientaId: "uber-one"
 sitioOficial: "https://www.uber.com/us/en/uberone/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/uber-one.png
+heroImageAlt: Uber One — Precios Digitales
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Gamma no ofrece prueba de Plus o Pro: el plan gratuito no pide tarjeta, pero los planes pagados se cobran desde el primer clic."
 fuenteVerificacion: "Página oficial de precios de Gamma (gamma.app/pricing) y su sección de preguntas frecuentes, consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/gamma.png
+heroImageAlt: Gamma — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Gamma?

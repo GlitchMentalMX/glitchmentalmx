@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Puedes bloquear el uso de tus Snaps públicos — no tus charlas con My AI."
 fuentePolitica: "Política de Privacidad de Snap"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/snapchat.png
+heroImageAlt: Snapchat — Privacidad de IA
 ---
 
 Depende de qué parte de Snapchat uses. Snap puede usar las imágenes, videos, audio y texto que publicas públicamente para desarrollar, entrenar y mejorar sus modelos de creación de contenido con IA generativa — pero para esta categoría específica, Snap sí ofrece un ajuste para excluir tu contenido público. Aparte, tus conversaciones con My AI, el chatbot integrado en la app, se usan para mejorar las respuestas del propio asistente a través de los algoritmos y modelos de machine learning de Snap, sin un opt-out dedicado. Fuente: Política de Privacidad de Snap, verificado el 23 de agosto de 2026.

@@ -5,6 +5,8 @@ herramienta: "Windsurf"
 herramientaId: "windsurf"
 sitioOficial: "https://windsurf.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/windsurf.png
+heroImageAlt: Windsurf — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -5,6 +5,8 @@ herramienta: "Meli+"
 herramientaId: "meli-plus"
 sitioOficial: "https://www.mercadolibre.com.mx/suscripciones/melimas"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/meli-plus.png
+heroImageAlt: Meli+ — Precios Digitales
 ---
 
 ## Qué cambia el precio final

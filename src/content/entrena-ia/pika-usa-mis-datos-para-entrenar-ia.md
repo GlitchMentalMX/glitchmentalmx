@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Usa tus prompts y videos para entrenar — el único opt-out real existe solo en ciertas regiones."
 fuentePolitica: "Política de Privacidad de Pika (Mellis, Inc.), consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/pika.png
+heroImageAlt: Pika — Privacidad de IA
 ---
 
 Sí, sin un interruptor dentro de la app. La Política de Privacidad de Pika es directa: "donde lo permita la ley aplicable o con tu consentimiento, también podemos usar el contenido que envías —incluyendo Inputs y Outputs— para mejorar nuestros modelos de inteligencia artificial y tecnologías relacionadas", lo que incluye explícitamente "entrenamiento, evaluación, moderación y optimización". No hay una configuración de cuenta que apague esto para usuarios normales: la política solo ofrece un derecho legal a "objetar el procesamiento" de tus datos, y ese derecho aplica únicamente a residentes de la Unión Europea, el Reino Unido y algunos estados de EE.UU. Fuente: Política de Privacidad de Pika, verificado el 31 de agosto de 2026.

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Tus chats con contactos no entrenan IA — tus conversaciones con Meta AI, sí."
 fuentePolitica: "Política de Privacidad de WhatsApp y Centro de Privacidad de Meta"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/whatsapp.png
+heroImageAlt: WhatsApp — Privacidad de IA
 ---
 
 Depende de con quién estés hablando. Tus chats cifrados de extremo a extremo con otras personas siguen fuera del entrenamiento de IA de Meta — la promesa de cifrado no cambió. Pero en cuanto le escribes a Meta AI dentro de WhatsApp, esa conversación deja de ser un chat privado entre personas: se convierte en una interacción con un producto de IA, y Meta la puede usar para mejorar sus modelos. Fuente: Política de Privacidad de WhatsApp y Centro de Privacidad de Meta, verificado el 23 de agosto de 2026.

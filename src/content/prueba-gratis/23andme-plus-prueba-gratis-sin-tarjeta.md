@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba: el sitio oficial exige un método de pago válido al registrar el kit, y el cobro del primer año se hace de inmediato."
 fuenteVerificacion: "Página oficial de 23andme.org, sección \"Premium Ancestry + Health\" (23andme.org/shop/premium-ancestry-health/), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/prueba-gratis/23andme-plus.png
+heroImageAlt: 23andMe+ — Prueba gratis sin tarjeta
 ---
 
 ## ¿Existe una prueba gratis de 23andMe+?

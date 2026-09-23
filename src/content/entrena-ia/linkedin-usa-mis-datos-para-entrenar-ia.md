@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "El interruptor para salir existe, pero viene encendido desde que abres tu cuenta."
 fuentePolitica: "Centro de Ayuda de LinkedIn, actualización de Términos y uso de datos"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/linkedin.png
+heroImageAlt: LinkedIn — Privacidad de IA
 ---
 
 Sí, por default. Desde noviembre de 2025, LinkedIn usa datos como los detalles de tu perfil y el contenido público que publicas para entrenar modelos de IA generativa — no incluye tus mensajes privados. El ajuste que controla esto, "Datos para la mejora de IA generativa", viene activado automáticamente en cuentas creadas en Estados Unidos y en buena parte del resto del mundo. Fuente: Centro de Ayuda de LinkedIn, verificado el 23 de agosto de 2026.

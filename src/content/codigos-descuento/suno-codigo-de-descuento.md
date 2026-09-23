@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni programa de referidos confirmado — el único descuento oficial es el 20% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Suno (suno.com/pricing) y centro de ayuda oficial de Suno (help.suno.com), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/suno.png
+heroImageAlt: Suno — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Suno?

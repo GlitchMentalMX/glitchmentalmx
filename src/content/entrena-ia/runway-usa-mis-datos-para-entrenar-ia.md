@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tu contenido en todos los planes de consumo — solo Enterprise queda fuera, por contrato."
 fuentePolitica: "Página oficial de Seguridad de Datos y Privacidad de Runway"
 pubDate: 2026-09-09
+heroImage: /images/entrena-ia/runway.png
+heroImageAlt: Runway — Privacidad de IA
 ---
 
 Sí, en todos los planes de consumo. Runway mantiene una licencia para usar tu contenido —lo que subes y lo que generas— y entrenar y mejorar sus modelos de IA con él por default, y esto aplica a los planes Free, Standard, Pro y Unlimited. La única excepción son los planes Enterprise, donde ese uso queda fuera por contrato. Runway aclara que no reclama la propiedad de tus entradas ni salidas —sigues siendo dueño de lo que generas—, pero eso es un asunto distinto a si ese contenido entrena sus modelos, que sí ocurre salvo que tengas Enterprise. Fuente: página oficial de Seguridad de Datos y Privacidad de Runway, verificado el 9 de septiembre de 2026.

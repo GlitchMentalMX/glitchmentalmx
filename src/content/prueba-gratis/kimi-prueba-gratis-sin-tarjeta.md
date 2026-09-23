@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Las membresías de pago de Kimi (desde Moderato) no tienen ninguna prueba gratuita: piden tarjeta porque es la suscripción real, no un trial."
 fuenteVerificacion: "Centro de ayuda oficial de Kimi (kimi.ai/help), sección \"Getting Started\", consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/kimi.png
+heroImageAlt: Kimi — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Kimi?

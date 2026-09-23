@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Tus fotos no salen de Fotos para entrenar otros modelos — pero si pasan por Gmail o Drive, cambia la regla."
 fuentePolitica: "Centro de Privacidad de Funciones Gemini en Google Fotos"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/google-photos.png
+heroImageAlt: Google Fotos — Privacidad de IA
 ---
 
 No, con una condición importante. Google es explícito: no entrena modelos de IA generativa fuera de Google Fotos con los datos personales que guardas ahí, y esas fotos tampoco se usan nunca para publicidad. Lo que sí ocurre por default es que funciones como "Preguntar a Fotos" —que te deja buscar cosas como "encuentra fotos de mis últimas vacaciones"— sí analizan tu biblioteca con IA para funcionar, aunque ese análisis se queda dentro del propio producto Fotos, sin alimentar modelos que Google usa en otros lados. Fuente: Centro de Privacidad de Funciones Gemini en Fotos, verificado el 23 de agosto de 2026.

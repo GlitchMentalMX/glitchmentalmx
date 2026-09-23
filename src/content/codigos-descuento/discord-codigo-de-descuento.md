@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para Nitro, pero sí un mes gratis oficial para estudiantes vía UNiDAYS y descuentos de socios dentro de Nitro Rewards."
 fuenteVerificacion: "Página oficial de Discord Nitro (discord.com/nitro) y centro de soporte de Discord (support.discord.com), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/discord.png
+heroImageAlt: Discord — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Discord Nitro?

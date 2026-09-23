@@ -5,6 +5,8 @@ herramienta: "Apple Music"
 herramientaId: "apple-music"
 sitioOficial: "https://www.apple.com/apple-music/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/apple-music.png
+heroImageAlt: Apple Music — Precios Digitales
 ---
 
 ## Qué cambia el precio final

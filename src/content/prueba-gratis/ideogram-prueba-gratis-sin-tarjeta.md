@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Ideogram lo dice en su propia página: no ofrece descuentos ni pruebas gratuitas de ningún plan pagado."
 fuenteVerificacion: "Página oficial de precios de Ideogram (ideogram.ai/pricing), sección de preguntas frecuentes, consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/ideogram.png
+heroImageAlt: Ideogram — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Ideogram?

@@ -5,6 +5,8 @@ herramienta: "Bitwarden"
 herramientaId: "bitwarden"
 sitioOficial: "https://bitwarden.com/pricing/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/bitwarden.png
+heroImageAlt: Bitwarden — Precios Digitales
 ---
 
 ## Qué cambia el precio final

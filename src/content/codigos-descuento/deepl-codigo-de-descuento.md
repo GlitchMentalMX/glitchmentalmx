@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un plan anual más barato por mes y un programa oficial para instituciones educativas."
 fuenteVerificacion: "Sitio oficial de DeepL Pro (deepl.com/pro) y DeepL para Educación (deepl.com/en/education), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/deepl.png
+heroImageAlt: DeepL — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para DeepL?

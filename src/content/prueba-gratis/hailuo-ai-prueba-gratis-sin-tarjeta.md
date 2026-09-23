@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan Standard de pago no tiene ninguna prueba gratuita — los créditos de bienvenida son del nivel gratuito, no un adelanto del plan pagado."
 fuenteVerificacion: "Página oficial de suscripción de Hailuo AI (hailuoai.video/subscribe), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/hailuo-ai.png
+heroImageAlt: Hailuo AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Hailuo AI?

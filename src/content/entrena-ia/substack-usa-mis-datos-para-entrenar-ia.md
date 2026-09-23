@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Hay un interruptor para bloquear IA, pero viene apagado y no lo obedecen todos."
 fuentePolitica: "Centro de Ayuda de Substack"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/substack.png
+heroImageAlt: Substack — Privacidad de IA
 ---
 
 Depende de qué le pidas a Substack y de qué IA estemos hablando. Substack ofrece un ajuste por publicación para indicarle a herramientas como ChatGPT, Claude o Gemini que no entrenen sus modelos con tu contenido — pero ese ajuste viene apagado por default en cada publicación nueva, así que si nunca lo tocaste, tu contenido está abierto. Además, esta señal solo funciona con rastreadores que deciden respetarla voluntariamente: algunos bots ignoran robots.txt y siguen recolectando contenido de todos modos. Fuente: Centro de Ayuda de Substack, verificado el 23 de agosto de 2026.

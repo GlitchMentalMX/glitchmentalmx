@@ -5,6 +5,8 @@ herramienta: "Manus"
 herramientaId: "manus-ai"
 sitioOficial: "https://manus.im/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/manus-ai.png
+heroImageAlt: Manus — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar anual — hasta 39% menos que pagar mes a mes."
 fuenteVerificacion: "Página oficial de precios de Elicit (elicit.com/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/elicit.png
+heroImageAlt: Elicit — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Elicit?

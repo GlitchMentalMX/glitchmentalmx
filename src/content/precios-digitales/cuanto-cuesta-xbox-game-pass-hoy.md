@@ -5,6 +5,8 @@ herramienta: "Xbox Game Pass"
 herramientaId: "xbox-game-pass"
 sitioOficial: "https://www.xbox.com/en-US/xbox-game-pass"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/xbox-game-pass.png
+heroImageAlt: Xbox Game Pass — Precios Digitales
 ---
 
 ## Qué cambia el precio final

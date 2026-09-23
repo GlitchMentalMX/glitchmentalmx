@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No es una prueba: es gratis para siempre en México, sin tarjeta y sin fecha de corte."
 fuenteVerificacion: "Sitio oficial de Meta AI (meta.ai) y cobertura verificada sobre el piloto de planes de pago de Meta One anunciado en 2026 (Singapur, Guatemala y Bolivia), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/meta-ai.png
+heroImageAlt: Meta AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Meta AI?

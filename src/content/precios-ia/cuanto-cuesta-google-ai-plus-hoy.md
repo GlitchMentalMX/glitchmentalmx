@@ -5,6 +5,8 @@ herramienta: "Google AI Plus"
 herramientaId: "google-ai-plus"
 sitioOficial: "https://one.google.com/about/google-ai-plans/"
 pubDate: 2026-09-15
+heroImage: /images/precios-ia/google-ai-plus.png
+heroImageAlt: Google AI Plus — Precios de IA
 ---
 
 ## Qué cambia el precio final

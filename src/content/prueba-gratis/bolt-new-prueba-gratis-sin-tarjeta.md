@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe una prueba del plan Pro: Bolt.new solo ofrece un plan gratuito permanente o pagar Pro de inmediato con tarjeta."
 fuenteVerificacion: "Página oficial de precios de Bolt.new (bolt.new/pricing) y centro de soporte de Bolt (support.bolt.new), sección de facturación, consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/bolt-new.png
+heroImageAlt: Bolt.new — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Bolt.new?

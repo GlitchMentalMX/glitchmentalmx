@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Pro se compra directo sin prueba, y la única prueba que existe (Business) sí pide tarjeta."
 fuenteVerificacion: "Centro de Ayuda oficial de Otter.ai, artículo 'About your Otter Business free trial' (help.otter.ai), y página oficial de precios (otter.ai/pricing), consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/otter-ai.png
+heroImageAlt: Otter.ai — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Otter.ai?

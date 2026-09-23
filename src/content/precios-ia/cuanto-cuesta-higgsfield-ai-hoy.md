@@ -5,6 +5,8 @@ herramienta: "Higgsfield"
 herramientaId: "higgsfield-ai"
 sitioOficial: "https://higgsfield.ai/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/higgsfield-ai.png
+heroImageAlt: Higgsfield — Precios de IA
 ---
 
 ## Qué cambia el precio final

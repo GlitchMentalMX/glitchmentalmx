@@ -5,6 +5,8 @@ herramienta: "Gemini"
 herramientaId: "gemini"
 sitioOficial: "https://one.google.com/about/google-ai-plans/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/gemini.png
+heroImageAlt: Gemini — Precios de IA
 ---
 
 ## Qué cambia el precio final

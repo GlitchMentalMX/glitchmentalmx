@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan Basic no pide tarjeta, pero Starter no tiene prueba: se paga directo desde el inicio."
 fuenteVerificacion: "Página oficial de precios de Synthesia (synthesia.io/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/synthesia.png
+heroImageAlt: Synthesia — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Synthesia?

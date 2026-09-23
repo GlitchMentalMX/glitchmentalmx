@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El camino directo para suscribirte no incluye prueba: Snapchat autoriza tu tarjeta de inmediato, sin paso previo gratuito."
 fuenteVerificacion: "Centro de ayuda oficial de Snapchat (help.snapchat.com), artículos \"How do I subscribe to Snapchat+?\" y \"How do I redeem a promo code for Snapchat+?\", consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/prueba-gratis/snapchat-plus.png
+heroImageAlt: Snapchat+ — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Snapchat+?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Tus búsquedas mejoran su motor de relevancia y sus anuncios — Microsoft dice que no entrenan sus modelos generativos."
 fuentePolitica: "Declaración de Privacidad de Microsoft"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/bing.png
+heroImageAlt: Bing — Privacidad de IA
 ---
 
 Depende de qué tipo de "entrenar" preguntes — y aquí conviene ser preciso, porque Bing como buscador clásico (bing.com, texto e imágenes) es un caso distinto al de los asistentes de IA generativa del resto de esta lista. La Declaración de Privacidad de Microsoft confirma que usa tu historial de búsquedas en Bing —y el de otras personas agregado— para mejorar la relevancia de los resultados, y usa tus búsquedas, páginas que visitas y datos demográficos para personalizar los anuncios que ves. Por separado, en su documentación técnica sobre cómo Microsoft Copilot usa Bing como motor de búsqueda web, Microsoft afirma que las consultas de búsqueda de Bing específicamente no se usan para entrenar los modelos base de IA generativa. Fuente: Declaración de Privacidad de Microsoft, verificado el 24 de agosto de 2026.

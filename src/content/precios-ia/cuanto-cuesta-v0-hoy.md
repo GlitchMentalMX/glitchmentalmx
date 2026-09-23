@@ -5,6 +5,8 @@ herramienta: "v0"
 herramientaId: "v0"
 sitioOficial: "https://v0.app/pricing"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/v0.png
+heroImageAlt: v0 — Precios de IA
 ---
 
 ## Qué cambia el precio final

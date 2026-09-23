@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "El interruptor 'Actividad de Gemini' viene encendido — hay que apagarlo a mano."
 fuentePolitica: "Centro de Ayuda de Gemini (Google): Actividad de Gemini"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/google-assistant.png
+heroImageAlt: Google Assistant — Privacidad de IA
 ---
 
 Sí, por default. Google usa lo que le dices por voz a Google Assistant y a Gemini —junto con lo que escribes o subes— para entrenar sus modelos de IA generativa, mientras el ajuste "Actividad de Gemini" esté encendido. Esa configuración viene activada desde que empiezas a usar el asistente: no es algo que actives tú, es algo que tienes que notar y apagar. Fuente: Centro de Ayuda de Gemini, verificado el 23 de agosto de 2026.

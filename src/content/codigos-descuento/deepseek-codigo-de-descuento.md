@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento porque no hay nada que descontar: el chat es gratis y la API se cobra por token, sin plan de suscripción."
 fuenteVerificacion: "Documentación oficial de precios de la API de DeepSeek (api-docs.deepseek.com/quick_start/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/deepseek.png
+heroImageAlt: DeepSeek — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para DeepSeek?

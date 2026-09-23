@@ -5,6 +5,8 @@ herramienta: "Copyleaks"
 herramientaId: "copyleaks"
 sitioOficial: "https://copyleaks.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/copyleaks.png
+heroImageAlt: Copyleaks — Precios de IA
 ---
 
 ## Qué cambia el precio final

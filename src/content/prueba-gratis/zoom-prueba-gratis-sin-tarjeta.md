@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan Pro no tiene prueba gratis: el botón dice 'Comprar ahora' y va directo al pago."
 fuenteVerificacion: "Página oficial de precios de Zoom (zoom.us/pricing), consultada el 25/08/2026 — el plan Pro usa un botón de compra directa (/buy?product=ZOPRO), no uno de prueba gratuita."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/zoom.png
+heroImageAlt: Zoom — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Zoom?

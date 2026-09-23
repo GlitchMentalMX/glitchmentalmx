@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero Pro no tiene prueba: se contrata directo desde $14.99 USD."
 fuenteVerificacion: "Página oficial de precios de Mistral AI (mistral.ai/pricing) y centro de ayuda de Mistral (help.mistral.ai), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/le-chat.png
+heroImageAlt: Le Chat — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Le Chat?

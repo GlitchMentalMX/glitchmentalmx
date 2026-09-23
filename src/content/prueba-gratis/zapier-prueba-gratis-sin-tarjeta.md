@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "14 días de prueba de Professional sin tarjeta, y no se cobra sola si no la conviertes."
 fuenteVerificacion: "Centro de ayuda oficial de Zapier (help.zapier.com), artículo \"Get started with your free Zapier trial\", consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/zapier.png
+heroImageAlt: Zapier — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Zapier?

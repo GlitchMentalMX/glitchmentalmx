@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial para estudiantes verificados — y ahora Windsurf ni siquiera se llama Windsurf."
 fuenteVerificacion: "windsurf.com (redirige a devin.ai/desktop) y windsurf.com/student-terms-and-conditions, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/windsurf.png
+heroImageAlt: Windsurf — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Windsurf?

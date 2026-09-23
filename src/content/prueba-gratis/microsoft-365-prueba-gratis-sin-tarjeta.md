@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La propia página oficial de la prueba de un mes lo dice sin rodeos: se requiere tarjeta de crédito para registrarte, aunque no te cobren hasta que termine el periodo."
 fuenteVerificacion: "Página oficial de la prueba gratuita de Microsoft 365 Business Standard (microsoft.com), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/microsoft-365.png
+heroImageAlt: Microsoft 365 — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Microsoft 365?

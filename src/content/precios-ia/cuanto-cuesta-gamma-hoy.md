@@ -5,6 +5,8 @@ herramienta: "Gamma"
 herramientaId: "gamma"
 sitioOficial: "https://gamma.app/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/gamma.png
+heroImageAlt: Gamma — Precios de IA
 ---
 
 ## Qué cambia el precio final

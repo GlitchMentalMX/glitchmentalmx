@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Premium ni Professional: la página oficial de precios solo tiene botones de compra directa, sin ningún periodo de evaluación."
 fuenteVerificacion: "Página oficial de precios de GPTZero (gptzero.me/pricing) y FAQ oficial (gptzero.me/faq), consultadas el 31/08/2026 — sin la palabra 'trial' en el código de la página."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/gptzero.png
+heroImageAlt: GPTZero — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de GPTZero?

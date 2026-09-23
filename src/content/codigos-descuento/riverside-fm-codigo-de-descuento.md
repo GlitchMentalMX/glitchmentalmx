@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos verificados, pero sí hasta 20% de descuento oficial y automático por pagar los planes anuales."
 fuenteVerificacion: "Página oficial de precios de Riverside (riverside.com/pricing, antes riverside.fm), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/riverside-fm.png
+heroImageAlt: Riverside.fm — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Riverside.fm?

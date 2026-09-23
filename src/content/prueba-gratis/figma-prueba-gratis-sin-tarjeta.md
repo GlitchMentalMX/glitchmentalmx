@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Figma no ofrece ninguna prueba temporal de Professional, el plan que de verdad da acceso completo a Figma AI: es suscripción directa desde el primer cargo."
 fuenteVerificacion: "Página oficial de precios de Figma (figma.com/pricing) y Preguntas Frecuentes de Precios (figma.com/pricing-faq), consultadas el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/figma.png
+heroImageAlt: Figma — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Figma?

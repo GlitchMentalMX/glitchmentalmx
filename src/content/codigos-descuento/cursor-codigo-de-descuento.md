@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, y el descuento estudiantil ya cerró inscripciones nuevas — lo único vigente es el ahorro por pago anual."
 fuenteVerificacion: "Documentación oficial de Cursor (cursor.com/help/account-and-billing/pricing y cursor.com/help/account-and-billing/student-discount), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/cursor.png
+heroImageAlt: Cursor — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Cursor?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos universales, pero sí un descuento oficial real de 50% para estudiantes verificados, además del ahorro normal por pagar anual."
 fuenteVerificacion: "Páginas oficiales de Microsoft: microsoft.com/en-us/microsoft-365/premium y microsoft.com/en-us/microsoft-365/college-student-pricing, consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/copilot.png
+heroImageAlt: Copilot — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Copilot?

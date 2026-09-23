@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real del 17% por pagar anual — Poe no reparte códigos por fuera de eso."
 fuenteVerificacion: "Página oficial de planes de suscripción de Poe (poe.com/subscription_plans), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/poe.png
+heroImageAlt: Poe — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Poe?

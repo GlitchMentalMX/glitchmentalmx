@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento real: Luzia+ ni siquiera publica un precio fijo en su sitio, así que no hay nada verificable que descontar."
 fuenteVerificacion: "Sitio oficial de Luzia (luzia.com), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/luzia.png
+heroImageAlt: Luzia — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Luzia?

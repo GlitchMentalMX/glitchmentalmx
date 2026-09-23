@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No hay cupón genérico, pero Google Workspace for Nonprofits es real: organizaciones elegibles pagan $0 al mes, con Gemini incluido."
 fuenteVerificacion: "Google for Nonprofits: comparativo oficial de Google Workspace para organizaciones sin fines de lucro (google.com/nonprofits/workspace/compare), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/google-workspace.png
+heroImageAlt: Google Workspace — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Google Workspace?

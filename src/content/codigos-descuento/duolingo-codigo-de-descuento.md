@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni descuento de estudiante vigente, pero sí dos canales reales: precio anual y plan familiar."
 fuenteVerificacion: "Páginas oficiales de Duolingo (duolingo.com/super y duolingo.com/family) y Centro de ayuda de Duolingo, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/duolingo.png
+heroImageAlt: Duolingo — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Super Duolingo?

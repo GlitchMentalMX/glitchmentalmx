@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Runway sí tiene un campo de cupón en el checkout, pero los códigos son de un solo uso y por cuenta — no hay uno público activo hoy."
 fuenteVerificacion: "Centro de ayuda oficial de Runway (help.runwayml.com), artículos \"Coupon codes\" y \"Student and Educator Discounts\", y runway.com/pricing, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/runway.png
+heroImageAlt: Runway — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Runway?

@@ -5,6 +5,8 @@ herramienta: "Discord"
 herramientaId: "discord"
 sitioOficial: "https://discord.com/nitro"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/discord.png
+heroImageAlt: Discord — Precios de IA
 ---
 
 ## Qué cambia el precio final

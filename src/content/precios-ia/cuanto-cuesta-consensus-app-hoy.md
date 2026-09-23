@@ -5,6 +5,8 @@ herramienta: "Consensus"
 herramientaId: "consensus-app"
 sitioOficial: "https://consensus.app/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/consensus-app.png
+heroImageAlt: Consensus — Precios de IA
 ---
 
 ## Qué cambia el precio final

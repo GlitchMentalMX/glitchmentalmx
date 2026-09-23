@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para Claude Code — no se vende aparte —, pero sí el descuento oficial real por pagar Claude Pro o Max de forma anual."
 fuenteVerificacion: "Página oficial de precios de Anthropic (claude.com/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/claude-code.png
+heroImageAlt: Claude Code — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Claude Code?

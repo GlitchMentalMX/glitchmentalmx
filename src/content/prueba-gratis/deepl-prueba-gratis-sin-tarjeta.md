@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Sí hay prueba gratuita, pero solo si pagas con tarjeta; con transferencia bancaria ni siquiera te la dan."
 fuenteVerificacion: "Centro de ayuda oficial de DeepL (support.deepl.com), artículos \"About DeepL plans\" y \"Payment methods\", consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/deepl.png
+heroImageAlt: DeepL — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de DeepL?

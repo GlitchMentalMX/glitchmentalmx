@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tu contenido mientras tengas cuenta activa — borrar es la única forma de detenerlo."
 fuentePolitica: "Política de Privacidad de Higgsfield, consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/higgsfield-ai.png
+heroImageAlt: Higgsfield — Privacidad de IA
 ---
 
 Sí, mientras tu cuenta o tu contenido sigan activos. La Política de Privacidad de Higgsfield lo dice sin rodeos: usa "los datos multimedia que compartes, tus consultas y prompts, y los Inputs y Outputs... para entrenar y mejorar nuestros modelos de IA y algoritmos (y los de nuestras afiliadas)". No hay un interruptor dedicado para apagar esto dentro de tu cuenta —la única forma de detenerlo, según la propia empresa, es borrar tu contenido o cerrar tu cuenta: "puedes detener esto hacia adelante borrando tu contenido o tu cuenta". Fuente: Política de Privacidad de Higgsfield, verificado el 31 de agosto de 2026.

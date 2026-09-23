@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Tus fotos y captions públicos entrenan IA de Meta — sin botón de salida en México."
 fuentePolitica: "Centro de Privacidad de Meta, sección de IA generativa"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/instagram.png
+heroImageAlt: Instagram — Privacidad de IA
 ---
 
 Sí. Meta trata a Instagram igual que a Facebook para este propósito: usa tus fotos públicas, captions, comentarios y conversaciones con Meta AI dentro de la app para entrenar sus modelos generativos, sumado a contenido público de internet y datos licenciados de terceros. Los mensajes directos privados quedan fuera de este entrenamiento. Fuente: Centro de Privacidad de Meta, sección "Cómo usa Meta la información para IA generativa", verificado el 23 de agosto de 2026.

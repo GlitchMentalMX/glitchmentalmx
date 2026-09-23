@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Su empresa hermana entregó 3 millones de fotos para entrenar reconocimiento facial, sin avisar a nadie."
 fuentePolitica: "Política de Privacidad de Tinder (Match Group) e investigación de la FTC"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/tinder.png
+heroImageAlt: Tinder — Privacidad de IA
 ---
 
 El historial reciente de su propia empresa matriz es la mejor respuesta disponible. La Comisión Federal de Comercio de Estados Unidos (FTC) confirmó que OkCupid —otra app de citas propiedad de Match Group, la misma empresa dueña de Tinder— entregó cerca de tres millones de fotos de usuarios, junto con datos de ubicación y demográficos, para entrenar tecnología de reconocimiento facial. Lo hizo sin ningún acuerdo formal que limitara ese uso, sin avisar a los usuarios y sin darles oportunidad de negarse. La investigación no derivó en ninguna multa. Fuente: Política de Privacidad de Tinder e investigación pública de la FTC, verificado el 23 de agosto de 2026.

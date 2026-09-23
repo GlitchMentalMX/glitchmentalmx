@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real del 20% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Recraft (recraft.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/recraft-ai.png
+heroImageAlt: Recraft — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Recraft?

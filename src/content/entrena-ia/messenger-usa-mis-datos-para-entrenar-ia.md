@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Depende con quién hables: tus DMs no entrenan IA, tus chats con Meta AI sí."
 fuentePolitica: "Centro de Privacidad de Meta, sección de IA generativa"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/messenger.png
+heroImageAlt: Messenger — Privacidad de IA
 ---
 
 Depende. Meta excluye explícitamente los mensajes privados entre amigos y familiares de su entrenamiento de IA generativa, y esto aplica también a Messenger. Pero, igual que en WhatsApp, tus conversaciones directas con Meta AI dentro de la app sí caen en la categoría de "interacciones con IA" que Meta sí puede usar para mejorar sus modelos. La diferencia clave frente a WhatsApp es que Messenger no cifra de extremo a extremo tus chats normales por default — solo las "conversaciones secretas" que actives manualmente lo hacen. Fuente: Centro de Privacidad de Meta, sección de IA generativa, verificado el 23 de agosto de 2026.

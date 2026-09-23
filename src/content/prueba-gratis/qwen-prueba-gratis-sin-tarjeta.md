@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No es una 'prueba': el chat de Qwen es gratis, sin registro obligatorio y sin pedir tarjeta en ningún momento."
 fuenteVerificacion: "Sitio oficial de Qwen Chat (chat.qwen.ai), verificado el 31/08/2026 — sin plan de pago dirigido a consumidores."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/qwen.png
+heroImageAlt: Qwen — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Qwen?

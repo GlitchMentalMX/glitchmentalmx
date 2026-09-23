@@ -5,6 +5,8 @@ herramienta: "Meta AI"
 herramientaId: "meta-ai"
 sitioOficial: "https://www.meta.ai/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/meta-ai.png
+heroImageAlt: Meta AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

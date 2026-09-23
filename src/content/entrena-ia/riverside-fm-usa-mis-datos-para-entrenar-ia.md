@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tus grabaciones por default — el opt-out solo existe para clientes Business con un contrato firmado."
 fuentePolitica: "Política de Privacidad de Riverside, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/riverside-fm.png
+heroImageAlt: Riverside.fm — Privacidad de IA
 ---
 
 Sí. Riverside define tus grabaciones, transcripciones y demás contenido generado en la plataforma como "Content Data", y es explícito sobre qué hace con eso: "In some situations, Content Data may be used by Riverside for improving the Services, including for training Riverside's Artificial Intelligence ('AI') and Machine Learning ('ML') models and capabilities." Más adelante la política confirma quién puede escapar de eso, y es un grupo muy específico: "Content Data does not include personal data contained in content of Customers on a business plan who have opted out of AI training pursuant to a written agreement with Riverside." Si tienes un plan Pro, Grow o Webinar —los planes que cubre la calculadora de precios de esta serie— no hay opt-out disponible, sin importar en qué país vivas. Fuente: Política de Privacidad de Riverside, verificado el 31 de agosto de 2026.

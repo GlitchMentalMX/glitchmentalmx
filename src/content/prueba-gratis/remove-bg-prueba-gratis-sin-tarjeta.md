@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El uso gratuito básico no pide tarjeta, pero Lite y Pro no tienen prueba: se suscriben y cobran directo."
 fuenteVerificacion: "Página oficial de precios de remove.bg (remove.bg/pricing) y centro de ayuda de remove.bg, consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/remove-bg.png
+heroImageAlt: remove.bg — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de remove.bg?

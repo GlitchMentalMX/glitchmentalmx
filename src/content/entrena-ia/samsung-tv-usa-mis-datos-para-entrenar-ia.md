@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "La tele 'reconoce' lo que ves para armar tu perfil de anuncios — viene sugerido al configurarla."
 fuentePolitica: "Centro de Soporte de Samsung: función de Reconocimiento Automático de Contenido (ACR)"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/samsung-tv.png
+heroImageAlt: Samsung Smart TV — Privacidad de IA
 ---
 
 Depende de si tocaste algo durante la instalación. Los Smart TV de Samsung usan una tecnología llamada Reconocimiento Automático de Contenido (ACR) que genera "huellas digitales" de lo que ves —programas, canales, tiempo de pantalla— para alimentar sus sistemas de recomendación y personalización de anuncios. Samsung aclara que no graba ni observa el contenido que se muestra en pantalla, solo genera esas huellas de reconocimiento. La función suele presentarse como sugerida durante la configuración inicial de la TV, en una pantalla que la mayoría de la gente acepta sin leer. Fuente: Centro de Soporte de Samsung, verificado el 23 de agosto de 2026.

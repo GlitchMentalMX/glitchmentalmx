@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de una semana de Super existe, pero pide método de pago desde el primer día."
 fuenteVerificacion: "Página oficial duolingo.com/super, consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/duolingo.png
+heroImageAlt: Duolingo — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Duolingo Super?

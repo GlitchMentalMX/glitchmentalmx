@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial del 20% para organizaciones sin fines de lucro, más el ahorro habitual por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Jasper (jasper.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/jasper-ai.png
+heroImageAlt: Jasper — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Jasper?

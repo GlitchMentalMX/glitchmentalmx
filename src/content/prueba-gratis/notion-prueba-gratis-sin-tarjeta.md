@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "La prueba de 30 días de Business no pide tarjeta, y no se cobra sola si no la confirmas."
 fuenteVerificacion: "Centro de ayuda oficial de Notion (notion.com/help/paid-plan-trials), consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/notion.png
+heroImageAlt: Notion — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Notion?

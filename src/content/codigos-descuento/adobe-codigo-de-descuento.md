@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos genéricos, pero sí un descuento oficial real y grande para estudiantes y maestros verificados."
 fuenteVerificacion: "Página oficial de ayuda de Adobe para estudiantes y maestros (helpx.adobe.com/creative-cloud/faq/students-teachers.html) y adobe.com/creativecloud, consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/adobe.png
+heroImageAlt: Adobe Creative Cloud — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Adobe Creative Cloud?

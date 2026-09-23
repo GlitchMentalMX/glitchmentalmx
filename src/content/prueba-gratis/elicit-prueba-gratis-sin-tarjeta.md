@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba del plan Pro: se factura por tarjeta a través de Stripe desde la primera suscripción."
 fuenteVerificacion: "Página oficial de precios de Elicit (elicit.com/pricing) y centro de soporte de Elicit, categoría de cuenta y facturación (support.elicit.com), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/elicit.png
+heroImageAlt: Elicit — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Elicit?

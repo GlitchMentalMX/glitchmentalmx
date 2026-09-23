@@ -5,6 +5,8 @@ herramienta: "Elicit"
 herramientaId: "elicit"
 sitioOficial: "https://elicit.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/elicit.png
+heroImageAlt: Elicit — Precios de IA
 ---
 
 ## Qué cambia el precio final

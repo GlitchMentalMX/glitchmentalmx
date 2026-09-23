@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un 25% de descuento oficial por pagar anual — y ojo, Freepik ahora se llama Magnific."
 fuenteVerificacion: "Página oficial de precios (freepik.com/pricing, que redirige a magnific.com/pricing tras el rebranding de abril de 2026 — misma empresa, Freepik Company S.L.U.), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/freepik.png
+heroImageAlt: Freepik — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Freepik?

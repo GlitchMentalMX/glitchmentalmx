@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No hay cupón genérico, pero el descuento oficial de 40% para estudiantes y profesores (25% para clínicos) es real y se reclama directo en consensus.app/pricing."
 fuenteVerificacion: "Centro de Ayuda de Consensus: 'How to Get a Student or Clinician Discount' (help.consensus.app) y consensus.app/pricing, consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/consensus-app.png
+heroImageAlt: Consensus — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Consensus?

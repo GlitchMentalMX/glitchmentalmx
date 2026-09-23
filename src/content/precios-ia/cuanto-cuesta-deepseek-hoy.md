@@ -5,6 +5,8 @@ herramienta: "DeepSeek"
 herramientaId: "deepseek"
 sitioOficial: "https://chat.deepseek.com/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/deepseek.png
+heroImageAlt: DeepSeek — Precios de IA
 ---
 
 ## Qué cambia el precio final

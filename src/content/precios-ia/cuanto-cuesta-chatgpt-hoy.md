@@ -5,6 +5,8 @@ herramienta: "ChatGPT"
 herramientaId: "chatgpt"
 sitioOficial: "https://chatgpt.com/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/chatgpt.png
+heroImageAlt: ChatGPT — Precios de IA
 ---
 
 ## Qué cambia el precio final

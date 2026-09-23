@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Los Términos de Servicio oficiales tratan la prueba como una compra: se activa dentro del checkout de la App Store o Google Play, que piden método de pago desde el inicio."
 fuenteVerificacion: "Términos de Servicio oficiales de Photomath (photomath.com/terms), sección 10 'Purchases and Payments — No cost trials', vigentes desde el 1 de octubre de 2025, consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/photomath.png
+heroImageAlt: Photomath — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Photomath Plus?

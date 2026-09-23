@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "La propia página de precios lo dice en el botón principal: 'Try out with 3 free videos. No credit card required.'"
 fuenteVerificacion: "Página oficial de precios de Submagic (submagic.co/pricing) y su Centro de Ayuda, artículo \"Does Submagic have a Free Trial\" (care.submagic.co), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/submagic.png
+heroImageAlt: Submagic — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Submagic?

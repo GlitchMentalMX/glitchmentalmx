@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tu texto por default en cuentas personales — en cuentas de trabajo o escuela, ya vienes excluido."
 fuentePolitica: "Centro de Confianza de Grammarly: Mejora de Producto y Control de Entrenamiento"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/grammarly.png
+heroImageAlt: Grammarly — Privacidad de IA
 ---
 
 Sí, por default, si tienes una cuenta personal. En los planes Free, Premium y Pro individual, el ajuste "Mejora de Producto y Entrenamiento" viene activado desde que creas tu cuenta, y permite a Grammarly tomar fragmentos aleatorios de tu texto, desvincularlos de tu identidad y usarlos para entrenar sus modelos y mejorar el producto para todos los usuarios. Fuente: Centro de Soporte de Grammarly, artículo "Product Improvement and Training Control", verificado el 23 de agosto de 2026.

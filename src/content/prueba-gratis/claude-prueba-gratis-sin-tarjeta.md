@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Claude Pro no ofrece prueba: el centro de ayuda de Anthropic describe el registro como pagar de inmediato con tarjeta."
 fuenteVerificacion: "Centro de ayuda oficial de Anthropic (support.claude.com), artículo \"How do I sign up for the Pro plan?\", consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/claude.png
+heroImageAlt: Claude — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Claude?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados, pero sí un descuento oficial real de 20% por pagar el plan Plus anual en vez de mensual."
 fuenteVerificacion: "Página oficial de precios de Higgsfield (higgsfield.ai/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/higgsfield-ai.png
+heroImageAlt: Higgsfield — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Higgsfield?

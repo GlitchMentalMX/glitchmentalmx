@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un plan educativo oficial gratis y un 50% de descuento en el add-on de IA para estudiantes."
 fuenteVerificacion: "Página oficial de precios de Notion (notion.com/pricing) y centro de ayuda \"Notion for students & education\", consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/notion-ai.png
+heroImageAlt: Notion AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Notion AI?

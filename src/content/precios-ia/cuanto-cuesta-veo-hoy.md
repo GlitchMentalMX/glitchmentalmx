@@ -5,6 +5,8 @@ herramienta: "Veo"
 herramientaId: "veo"
 sitioOficial: "https://labs.google/flow/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/veo.png
+heroImageAlt: Veo — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados, pero sí un descuento oficial real de más del 40% por pagar el plan Standard anual en vez de mensual."
 fuenteVerificacion: "Página oficial de suscripción de Hailuo AI (hailuoai.video/subscribe), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/hailuo-ai.png
+heroImageAlt: Hailuo AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Hailuo AI?

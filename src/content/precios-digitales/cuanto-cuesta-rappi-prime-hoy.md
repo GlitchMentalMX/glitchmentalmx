@@ -5,6 +5,8 @@ herramienta: "Rappi Prime"
 herramientaId: "rappi-prime"
 sitioOficial: "https://pro.rappi.com/mexico"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/rappi-prime.png
+heroImageAlt: Rappi Prime — Precios Digitales
 ---
 
 ## Qué cambia el precio final

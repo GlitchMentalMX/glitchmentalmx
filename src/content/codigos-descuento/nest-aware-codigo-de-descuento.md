@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un ahorro real por pagar anual — y un mes gratis oficial si compras una cámara o timbre nuevo."
 fuenteVerificacion: "Tienda oficial de Google (store.google.com/us/product/google_home_premium), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/nest-aware.png
+heroImageAlt: Google Nest Aware — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Nest Aware?

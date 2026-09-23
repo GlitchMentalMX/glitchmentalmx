@@ -5,6 +5,8 @@ herramienta: "LinkedIn"
 herramientaId: "linkedin"
 sitioOficial: "https://premium.linkedin.com/careers/career"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/linkedin.png
+heroImageAlt: LinkedIn — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni descuento estudiantil oficial, pero el pago anual sí baja el precio hasta 20% según el plan."
 fuenteVerificacion: "Página oficial de precios de HeyGen (heygen.com/pricing) y foro oficial de la comunidad HeyGen (community.heygen.com), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/heygen.png
+heroImageAlt: HeyGen — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para HeyGen?

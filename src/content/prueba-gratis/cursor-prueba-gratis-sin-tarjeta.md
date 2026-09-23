@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Cursor quitó su prueba de Pro en 2026: hoy solo hay plan gratuito limitado o pago directo."
 fuenteVerificacion: "Página oficial de precios de Cursor (cursor.com/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/cursor.png
+heroImageAlt: Cursor — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Cursor?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero la propia página de precios confirma hasta 20% de descuento real por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Leonardo AI (leonardo.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/leonardo-ai.png
+heroImageAlt: Leonardo AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Leonardo AI?

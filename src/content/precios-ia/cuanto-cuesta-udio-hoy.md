@@ -5,6 +5,8 @@ herramienta: "Udio"
 herramientaId: "udio"
 sitioOficial: "https://www.udio.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/udio.png
+heroImageAlt: Udio — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Monica no ofrece ninguna prueba temporal de sus planes pagados: los botones de Pro, Max y Ultra dicen 'Inicia sesión para suscribirte', cobro directo."
 fuenteVerificacion: "Página oficial de precios de Monica (monica.im/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/monica-ai.png
+heroImageAlt: Monica — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Monica?

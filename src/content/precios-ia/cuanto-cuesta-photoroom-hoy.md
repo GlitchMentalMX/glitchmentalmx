@@ -5,6 +5,8 @@ herramienta: "Photoroom"
 herramientaId: "photoroom"
 sitioOficial: "https://www.photoroom.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/photoroom.png
+heroImageAlt: Photoroom — Precios de IA
 ---
 
 ## Qué cambia el precio final

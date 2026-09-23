@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos generales, pero sí un programa educativo oficial con hasta 43% de descuento para estudiantes y personal académico verificado."
 fuenteVerificacion: "Cuenta oficial de Sider AI en X (@Sider_AI) y página sider.ai/education-pricing, consultadas el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/sider-ai.png
+heroImageAlt: Sider AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Sider AI?

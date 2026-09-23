@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni descuentos para estudiantes o nonprofits, pero sí un ahorro oficial real de hasta 38% por pagar anual."
 fuenteVerificacion: "Centro de ayuda oficial de Synthesia (help.synthesia.io, artículo \"Can I get a discount from Synthesia?\") y synthesia.io/pricing, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/synthesia.png
+heroImageAlt: Synthesia — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Synthesia?

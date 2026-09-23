@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "La prueba no pide tarjeta, pero son 10 minutos de por vida, no al mes."
 fuenteVerificacion: "Centro de Ayuda oficial de Murf, artículo 'Is Murf free to use' (help.murf.ai), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/murf-ai.png
+heroImageAlt: Murf — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Murf?

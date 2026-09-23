@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba gratuita de un mes exige tarjeta de crédito desde el registro."
 fuenteVerificacion: "Página oficial de prueba gratuita de Microsoft 365 Business Standard (microsoft.com/en-us/microsoft-365/business/microsoft-365-business-standard-one-month-trial), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/microsoft-teams.png
+heroImageAlt: Microsoft Teams — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Microsoft Teams?

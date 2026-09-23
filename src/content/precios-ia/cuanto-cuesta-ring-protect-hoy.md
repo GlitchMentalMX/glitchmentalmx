@@ -5,6 +5,8 @@ herramienta: "Ring Protect"
 herramientaId: "ring-protect"
 sitioOficial: "https://ring.com/protect-plans"
 pubDate: 2026-08-30
+heroImage: /images/precios-ia/ring-protect.png
+heroImageAlt: Ring Protect — Precios de IA
 ---
 
 ## Qué cambia el precio final

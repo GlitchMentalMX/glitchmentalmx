@@ -5,6 +5,8 @@ herramienta: "Google Workspace"
 herramientaId: "google-workspace"
 sitioOficial: "https://workspace.google.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/google-workspace.png
+heroImageAlt: Google Workspace — Precios de IA
 ---
 
 ## Qué cambia el precio final

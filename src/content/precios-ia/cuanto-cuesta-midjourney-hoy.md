@@ -5,6 +5,8 @@ herramienta: "Midjourney"
 herramientaId: "midjourney"
 sitioOficial: "https://www.midjourney.com/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/midjourney.png
+heroImageAlt: Midjourney — Precios de IA
 ---
 
 ## Qué cambia el precio final

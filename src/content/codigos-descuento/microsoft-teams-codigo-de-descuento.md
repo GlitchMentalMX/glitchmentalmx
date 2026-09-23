@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón para Teams, pero sí dos canales oficiales reales: Office 365 A1 gratis para instituciones educativas (incluye Teams) y descuentos para organizaciones sin fines de lucro."
 fuenteVerificacion: "Microsoft Education (microsoft.com/en-us/education/products/office) y Microsoft Nonprofits (microsoft.com/en-us/nonprofits/offers-for-nonprofits), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/microsoft-teams.png
+heroImageAlt: Microsoft Teams — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Microsoft Teams?

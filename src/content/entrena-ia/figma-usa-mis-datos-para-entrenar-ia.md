@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tu contenido por default en Starter y Professional — el admin del equipo puede apagarlo en cualquier momento."
 fuentePolitica: "Centro de Ayuda de Figma: Administrar ajustes de IA y entrenamiento de contenido, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/figma.png
+heroImageAlt: Figma — Privacidad de IA
 ---
 
 Sí, si tu equipo está en el plan Starter o Professional —los dos niveles donde vive la mayoría de las cuentas individuales y de equipos pequeños. El propio Centro de Ayuda de Figma lo confirma: "By default, content training is turned on for Starter teams" y, en la misma línea, "By default, content training is turned on for Professional teams." La historia cambia en los niveles corporativos: "By default, content training is turned off on Organization and Enterprise plans", y ahí ni siquiera se puede volver a activar manualmente. Fuente: Centro de Ayuda de Figma, artículo "Manage AI settings and content training for your team or organization", verificado el 31 de agosto de 2026.

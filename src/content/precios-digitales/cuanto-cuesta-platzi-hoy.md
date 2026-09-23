@@ -5,6 +5,8 @@ herramienta: "Platzi"
 herramientaId: "platzi"
 sitioOficial: "https://platzi.com/precios/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/platzi.png
+heroImageAlt: Platzi — Precios Digitales
 ---
 
 ## Qué cambia el precio final

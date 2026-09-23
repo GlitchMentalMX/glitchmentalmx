@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial para estudiantes y un ahorro real por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Replit (replit.com/pricing) y changelog oficial de Replit (docs.replit.com/updates/2025/09/19), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/replit.png
+heroImageAlt: Replit — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Replit?

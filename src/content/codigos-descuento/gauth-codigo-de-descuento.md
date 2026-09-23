@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento confirmado por Gauth: su propia página de precios no menciona cupón, promoción ni descuento de estudiante."
 fuenteVerificacion: "Página oficial de precios de Gauth Plus (gauthmath.com/plus), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/gauth.png
+heroImageAlt: Gauth — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Gauth?

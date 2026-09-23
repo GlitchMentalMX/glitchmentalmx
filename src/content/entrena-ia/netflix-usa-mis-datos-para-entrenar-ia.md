@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Tu historial entrena el algoritmo que decide qué ves — no existe opción de apagar la personalización."
 fuentePolitica: "Política de Privacidad de Netflix"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/netflix.png
+heroImageAlt: Netflix — Privacidad de IA
 ---
 
 Sí, aunque Netflix no lo llama "entrenar IA" en su política de privacidad. Lo que sí dice, textualmente, es que usa tu información personal para "ofrecer recomendaciones personalizadas de contenido de Netflix" y para "investigar, analizar y mejorar" el servicio — lenguaje deliberadamente general que cubre lo que Netflix sí explica abiertamente en su propio blog técnico: usa deep learning y modelos de aprendizaje automático sobre tu historial de reproducción, tus calificaciones ("me gusta", "me encanta", "no es para mí") y cuánto tiempo ves cada título para entrenar el sistema que decide qué te muestra después. Fuente: Política de Privacidad de Netflix, verificado el 24 de agosto de 2026.

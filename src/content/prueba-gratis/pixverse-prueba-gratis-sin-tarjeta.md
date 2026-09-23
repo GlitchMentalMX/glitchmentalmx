@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan Basic de PixVerse no pide tarjeta, pero los planes de pago no tienen prueba: el botón lleva directo a 'Suscribirse', sin periodo de evaluación."
 fuenteVerificacion: "Página oficial de suscripción de PixVerse (app.pixverse.ai/subscribe), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/pixverse.png
+heroImageAlt: PixVerse — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de PixVerse?

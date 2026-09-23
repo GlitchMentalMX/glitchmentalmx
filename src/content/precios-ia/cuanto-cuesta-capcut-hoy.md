@@ -5,6 +5,8 @@ herramienta: "CapCut"
 herramientaId: "capcut"
 sitioOficial: "https://www.capcut.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/capcut.png
+heroImageAlt: CapCut — Precios de IA
 ---
 
 ## Qué cambia el precio final

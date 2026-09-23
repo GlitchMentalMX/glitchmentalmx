@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Desde agosto de 2025 entrena con tus chats por default — el interruptor existe, pero hay que buscarlo."
 fuentePolitica: "Centro de Privacidad de Claude / Anthropic: uso de datos personales en entrenamiento de modelos"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/claude.png
+heroImageAlt: Claude — Privacidad de IA
 ---
 
 Sí, por default desde agosto de 2025 — un cambio real de postura, no una continuación de cómo operaba antes. Hasta entonces, Anthropic se distinguía del resto del sector por no usar conversaciones de consumidor para entrenar modelos salvo permiso explícito. Eso cambió: en cuentas Claude Free, Pro y Max, el ajuste "Ayudar a mejorar Claude" viene activado desde la instalación, y Anthropic exige que actives o desactives explícitamente esta opción para poder seguir usando la app —no puedes simplemente ignorar el aviso. Si lo dejas activado, tus chats y sesiones de código pueden retenerse hasta 5 años en formato desidentificado; si lo desactivas, la retención regresa a 30 días. Fuente: Centro de Privacidad de Claude, verificado el 24 de agosto de 2026.

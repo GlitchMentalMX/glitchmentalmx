@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Prohíbe por escrito entrenar IA con datos de la plataforma — incluso para ella misma."
 fuentePolitica: "Términos de la API de Telegram"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/telegram.png
+heroImageAlt: Telegram — Privacidad de IA
 ---
 
 No. Telegram prohíbe explícitamente en sus Términos de la API usar, acceder o recopilar datos de la plataforma para entrenar, ajustar o desarrollar modelos de inteligencia artificial o aprendizaje automático — y esa prohibición está redactada de forma amplia, sin dejar una puerta abierta para que la propia Telegram lo haga bajo otra justificación. Es de los pocos casos en esta lista donde la política no solo no menciona el entrenamiento de IA como uso permitido: lo prohíbe directamente, por escrito. Fuente: Términos de la API de Telegram, verificado el 23 de agosto de 2026.

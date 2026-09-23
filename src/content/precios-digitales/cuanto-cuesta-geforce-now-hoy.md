@@ -5,6 +5,8 @@ herramienta: "GeForce NOW"
 herramientaId: "geforce-now"
 sitioOficial: "https://www.nvidia.com/en-us/geforce-now/premium-memberships/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/geforce-now.png
+heroImageAlt: GeForce NOW — Precios Digitales
 ---
 
 ## Qué cambia el precio final

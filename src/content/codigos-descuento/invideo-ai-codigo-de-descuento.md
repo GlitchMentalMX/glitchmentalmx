@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público ni descuento estudiantil confirmado en el sitio oficial, pero el pago anual sí da hasta 15% de descuento real."
 fuenteVerificacion: "Página oficial de precios de InVideo (invideo.io/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/invideo-ai.png
+heroImageAlt: InVideo AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para InVideo AI?

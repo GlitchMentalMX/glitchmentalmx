@@ -5,6 +5,8 @@ herramienta: "HeyGen"
 herramientaId: "heygen"
 sitioOficial: "https://www.heygen.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/heygen.png
+heroImageAlt: HeyGen — Precios de IA
 ---
 
 ## Qué cambia el precio final

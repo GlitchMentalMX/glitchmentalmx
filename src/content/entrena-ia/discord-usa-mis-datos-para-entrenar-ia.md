@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Sus asistentes de IA no entrenan otros modelos con tus mensajes — sus herramientas internas de moderación, no está tan claro."
 fuentePolitica: "Política de Privacidad de Discord"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/discord.png
+heroImageAlt: Discord — Privacidad de IA
 ---
 
 Depende de qué función de IA estés usando. Discord dice explícitamente que OpenAI no tiene permitido usar los datos de sus usuarios para entrenar otros modelos de IA, y que Clyde, su propio asistente, solo puede acceder a los mensajes donde interactúas directamente con él. Pero esa misma promesa no se extiende, con la misma claridad, a otras funciones de IA integradas en la plataforma, como AutoMod (moderación automática) o los Resúmenes de Conversación. Fuente: Política de Privacidad de Discord, verificado el 23 de agosto de 2026.

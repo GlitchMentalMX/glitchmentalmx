@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El propio centro de ayuda de Riverside lo detalla paso a paso: para activar la prueba Pro de 14 días hay que ingresar los datos de tu tarjeta."
 fuenteVerificacion: "Centro de Ayuda oficial de Riverside, artículo \"Can I try Riverside Pro for free?\" (support.riverside.com), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/riverside-fm.png
+heroImageAlt: Riverside.fm — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Riverside.fm?

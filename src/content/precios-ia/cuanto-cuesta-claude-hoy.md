@@ -5,6 +5,8 @@ herramienta: "Claude"
 herramientaId: "claude"
 sitioOficial: "https://claude.com/pricing"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/claude.png
+heroImageAlt: Claude — Precios de IA
 ---
 
 ## Qué cambia el precio final

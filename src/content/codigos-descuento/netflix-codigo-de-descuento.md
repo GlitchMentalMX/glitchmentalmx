@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento, plan anual ni programa de estudiantes oficial — Netflix cobra el mismo precio fijo a todos."
 fuenteVerificacion: "Centro de ayuda oficial de Netflix, artículo sobre planes y precios (help.netflix.com), consultado el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/netflix.png
+heroImageAlt: Netflix — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Netflix?

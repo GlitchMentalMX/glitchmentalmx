@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Cuando ofrece prueba gratis, Poe pide tarjeta desde el registro para activarla."
 fuenteVerificacion: "Términos de servicio de suscriptor de Poe (poe.com/pages/subscriber-tos), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/poe.png
+heroImageAlt: Poe — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Poe?

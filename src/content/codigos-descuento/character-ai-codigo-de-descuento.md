@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público confirmado por Character.AI, pero sí un descuento oficial real de alrededor de 20% por pagar el plan anual."
 fuenteVerificacion: "Página oficial de suscripción c.ai+ (character.ai/plus), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/character-ai.png
+heroImageAlt: Character.AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Character.AI?

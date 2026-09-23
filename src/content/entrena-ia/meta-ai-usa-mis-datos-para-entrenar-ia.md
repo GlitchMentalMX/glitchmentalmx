@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Cada conversación aquí es directamente con la IA — y fuera de la UE no hay opción de salir."
 fuentePolitica: "Centro de Privacidad de Meta, sección de IA generativa"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/meta-ai-app.png
+heroImageAlt: Meta AI — Privacidad de IA
 ---
 
 Sí. Esta es la app y el sitio (meta.ai) donde usas a Meta AI de forma directa, sin pasar por Facebook, Instagram, WhatsApp o Messenger — y aquí no hay ambigüedad posible sobre qué cuenta como "interacción con la IA": todo lo que escribes es, por definición, una conversación con Meta AI. Esas conversaciones, junto con contenido público disponible en internet y datos con licencia de terceros, entrenan los modelos de IA generativa de Meta. Fuente: Centro de Privacidad de Meta, sección de IA generativa, verificado el 24 de agosto de 2026.

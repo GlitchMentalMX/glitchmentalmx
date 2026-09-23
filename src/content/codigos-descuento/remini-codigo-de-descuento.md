@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento público: la propia Remini admite en su centro de ayuda que no tiene una lista de precios fija ni un programa de cupones."
 fuenteVerificacion: "Centro de ayuda oficial de Remini (remini.zendesk.com), artículo \"How much does a Remini mobile subscription cost?\", consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/remini.png
+heroImageAlt: Remini — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Remini?

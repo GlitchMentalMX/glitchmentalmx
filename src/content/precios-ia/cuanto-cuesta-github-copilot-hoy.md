@@ -5,6 +5,8 @@ herramienta: "GitHub Copilot"
 herramientaId: "github-copilot"
 sitioOficial: "https://github.com/features/copilot/plans"
 pubDate: 2026-08-20
+heroImage: /images/precios-ia/github-copilot.png
+heroImageAlt: GitHub Copilot — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público genérico, pero sí un programa oficial de referidos con 50% de créditos extra, y el pago anual baja el precio hasta 34%."
 fuenteVerificacion: "Programa oficial de referidos de Kling AI (app.klingai.com/global/invitation) y página oficial de membresía (app.klingai.com/global/membership/membership-plan), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/kling-ai.png
+heroImageAlt: Kling AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Kling AI?

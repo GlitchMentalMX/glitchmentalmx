@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La página oficial de Google AI Pro para México no muestra ningún periodo de prueba: el botón lleva directo a contratar la suscripción de pago."
 fuenteVerificacion: "Página oficial de planes Google AI (one.google.com/about/google-ai-plans), versión mostrada para México, consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/gemini.png
+heroImageAlt: Gemini — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Gemini?

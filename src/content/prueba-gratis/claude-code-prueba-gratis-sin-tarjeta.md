@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Pro y Max, los planes que de verdad dan margen para usar Claude Code en serio, no tienen ninguna prueba gratuita."
 fuenteVerificacion: "Página oficial de precios de Claude (claude.com/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/claude-code.png
+heroImageAlt: Claude Code — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Claude Code?

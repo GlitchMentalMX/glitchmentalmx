@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena con tu contenido, y obliga por contrato a Anthropic y OpenAI a lo mismo."
 fuentePolitica: "Prácticas de Seguridad y Privacidad de Notion AI"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/notion.png
+heroImageAlt: Notion — Privacidad de IA
 ---
 
 No. Notion afirma que no usa el contenido de tu workspace para entrenar modelos de IA, y va un paso más allá: exige por contrato a los proveedores externos que procesan tu contenido —Anthropic y OpenAI, entre otros— que se comprometan a no usar los datos de sus clientes para entrenar sus propios modelos tampoco. En los planes que no son Enterprise, esos proveedores retienen tu contenido un máximo de 30 días antes de borrarlo; en planes Enterprise, la retención es cero. Fuente: Prácticas de Seguridad de Notion AI, verificado el 23 de agosto de 2026.

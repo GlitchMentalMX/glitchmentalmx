@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "La IA ya analiza tu video para describir lo que ve — usarlo para entrenar modelos requiere que tú lo autorices."
 fuentePolitica: "Centro de Seguridad de Google (Nest) y Centro de Ayuda de Google Home"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/nest.png
+heroImageAlt: Google Nest — Privacidad de IA
 ---
 
 Depende de qué función estemos hablando. Desde el lanzamiento de "Gemini for Home", las cámaras Nest usan IA para generar descripciones automáticas de lo que graban y responder preguntas sobre eventos pasados — ese análisis corre por default en las cámaras compatibles. Pero que Google use tu audio y video específicamente para mejorar o entrenar sus modelos de IA es una configuración distinta, de tipo opt-in: viene apagada, y tienes que activarla tú mismo. Fuente: Centro de Seguridad de Google para Nest y Centro de Ayuda de Google Home, verificado el 23 de agosto de 2026.

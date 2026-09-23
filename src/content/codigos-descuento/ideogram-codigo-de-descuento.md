@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones ni descuento estudiantil oficial, pero el pago anual sí baja el precio 20% frente al mensual."
 fuenteVerificacion: "Página oficial de precios de Ideogram (ideogram.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/ideogram.png
+heroImageAlt: Ideogram — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Ideogram?

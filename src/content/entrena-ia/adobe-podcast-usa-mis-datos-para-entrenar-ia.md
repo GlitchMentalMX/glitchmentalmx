@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena IA generativa con tu audio — pero el análisis de contenido para 'mejora de producto' sí está activado por default."
 fuentePolitica: "Preguntas Frecuentes de Análisis de Contenido de Adobe, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/adobe-podcast.png
+heroImageAlt: Adobe Podcast — Privacidad de IA
 ---
 
 No. Adobe Podcast opera bajo la política general de Adobe para Creative Cloud y Document Cloud, y ahí la empresa es directa sobre el punto que más preocupa: "We do not analyze your content to train generative AI models, unless you choose to submit content to the Adobe Stock marketplace." Es decir, ni el audio que subes a Enhance Speech ni ningún otro archivo procesado en tus apps de Adobe entra a entrenar modelos generativos —la única puerta para eso es que tú mismo decidas enviar contenido a Adobe Stock. Fuente: Preguntas Frecuentes de Análisis de Contenido para Mejora de Producto de Adobe, verificado el 31 de agosto de 2026.

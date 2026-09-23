@@ -5,6 +5,8 @@ herramienta: "Telegram Premium"
 herramientaId: "telegram-premium"
 sitioOficial: "https://telegram.org/premium"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/telegram-premium.png
+heroImageAlt: Telegram Premium — Precios de IA
 ---
 
 ## Qué cambia el precio final

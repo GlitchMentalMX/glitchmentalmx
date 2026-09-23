@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Mismo interruptor que el resto del ecosistema Google — viene encendido, hay que apagarlo a mano."
 fuentePolitica: "Centro de Ayuda de Gemini (Google): Actividad de Gemini"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/gemini.png
+heroImageAlt: Gemini — Privacidad de IA
 ---
 
 Sí, por default. Mientras el ajuste "Actividad de Gemini" esté encendido —que es como viene desde que empiezas a usarlo—, Google usa tus conversaciones para entrenar y mejorar sus modelos, y una muestra de esos chats puede ser revisada por personas. Esto aplica igual si usas Gemini en su app propia, en gemini.google.com, o dentro de Google Assistant: es el mismo interruptor de cuenta, no uno distinto por cada superficie. Fuente: Centro de Ayuda de Gemini, verificado el 24 de agosto de 2026.

@@ -5,6 +5,8 @@ herramienta: "iCloud+"
 herramientaId: "icloud-plus"
 sitioOficial: "https://www.apple.com/icloud/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/icloud-plus.png
+heroImageAlt: iCloud+ — Precios Digitales
 ---
 
 ## Qué cambia el precio final

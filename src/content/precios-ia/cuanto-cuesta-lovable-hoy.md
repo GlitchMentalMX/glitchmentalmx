@@ -5,6 +5,8 @@ herramienta: "Lovable"
 herramientaId: "lovable"
 sitioOficial: "https://lovable.dev/pricing"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/lovable.png
+heroImageAlt: Lovable — Precios de IA
 ---
 
 ## Qué cambia el precio final

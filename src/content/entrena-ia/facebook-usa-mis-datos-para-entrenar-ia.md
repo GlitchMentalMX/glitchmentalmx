@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tus posts públicos — el 'derecho a objetar' solo existe fuera de México."
 fuentePolitica: "Centro de Privacidad de Meta, sección de IA generativa"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/facebook.png
+heroImageAlt: Facebook — Privacidad de IA
 ---
 
 Sí. Meta usa tus publicaciones públicas, fotos, subtítulos, comentarios e interacciones con Meta AI en Facebook para entrenar sus modelos de inteligencia artificial generativa, junto con información disponible públicamente en internet y datos con licencia de terceros. Lo que queda fuera son los mensajes privados entre amigos y familiares. Fuente: Centro de Privacidad de Meta, sección "Cómo usa Meta la información para IA generativa", verificado el 23 de agosto de 2026.

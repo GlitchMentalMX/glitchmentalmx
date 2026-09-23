@@ -5,6 +5,8 @@ herramienta: "PlayStation Plus"
 herramientaId: "ps-plus"
 sitioOficial: "https://www.playstation.com/en-us/ps-plus/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/ps-plus.png
+heroImageAlt: PlayStation Plus — Precios Digitales
 ---
 
 ## Qué cambia el precio final

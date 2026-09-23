@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de Pro dura 14 días pero pide tarjeta para activarla y cobra sola si no cancelas."
 fuenteVerificacion: "Centro de ayuda oficial de Manychat (help.manychat.com), artículos \"Pro plan\" y \"Billing FAQ\", consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/manychat.png
+heroImageAlt: ManyChat — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de ManyChat?

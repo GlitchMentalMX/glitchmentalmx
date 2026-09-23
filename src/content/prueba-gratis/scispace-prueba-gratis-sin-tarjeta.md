@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La página oficial de SciSpace Premium no muestra ningún plan gratis ni prueba en su tabla de precios: solo Premium, Advanced y Teams, todos de pago desde el primer clic."
 fuenteVerificacion: "Página oficial de precios de SciSpace Premium (scispace.com/pricing), consultada el 31/08/2026 — sin la palabra 'trial' referida a un producto en el código de la página, y sin plan gratis en la tabla de precios."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/scispace.png
+heroImageAlt: SciSpace — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de SciSpace Premium?

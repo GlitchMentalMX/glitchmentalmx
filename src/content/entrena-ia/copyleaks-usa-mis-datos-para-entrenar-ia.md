@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con lo que escaneas por default — puedes pedir salir, pero solo escribiendo a soporte, no con un interruptor."
 fuentePolitica: "Política de Privacidad de Copyleaks"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/copyleaks.png
+heroImageAlt: Copyleaks — Privacidad de IA
 ---
 
 Sí, por default. La política de privacidad de Copyleaks lo declara sin rodeos sobre el contenido que subes para escanear —textos, documentos, imágenes, audio y video—: "We also use this information to train our models" ("también usamos esta información para entrenar nuestros modelos"). La misma política ofrece la salida, pero no como un ajuste dentro de tu cuenta: "If you are a direct customer, you may opt out of our use of your information to train our models by contacting customer support at support@copyleaks.com" ("si eres cliente directo, puedes optar por no participar en el uso de tu información para entrenar nuestros modelos contactando a soporte al cliente"). Fuente: Política de Privacidad de Copyleaks, sección "Personal Information We Collect", verificado el 31 de agosto de 2026.

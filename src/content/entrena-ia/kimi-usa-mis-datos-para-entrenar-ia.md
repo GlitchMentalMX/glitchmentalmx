@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tus prompts y archivos por default — no hay interruptor, solo un derecho legal limitado a ciertas regiones."
 fuentePolitica: "Política de Privacidad de Kimi / Moonshot AI (Novascent Private Limited), consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/kimi.png
+heroImageAlt: Kimi — Privacidad de IA
 ---
 
 Sí, por default. La Política de Privacidad de Kimi define el "Contenido de Usuario" —tus prompts, audio, imágenes, videos y archivos— y es directa sobre qué hace con él: "procesamos esta información para proveer y mejorar los Servicios, incluyendo el entrenamiento y optimización de nuestros modelos de inteligencia artificial ('IA')". La base legal para hacerlo, aclara la propia política, "puede ser nuestro interés legítimo o tu consentimiento, dependiendo de tu jurisdicción" —es decir, en la mayoría de los países no se te pide permiso, se asume. Fuente: Política de Privacidad de Kimi, verificado el 31 de agosto de 2026.

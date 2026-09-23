@@ -5,6 +5,8 @@ herramienta: "Luma AI"
 herramientaId: "luma-ai"
 sitioOficial: "https://lumalabs.ai/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/luma-ai.png
+heroImageAlt: Luma AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

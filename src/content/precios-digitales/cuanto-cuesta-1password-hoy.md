@@ -5,6 +5,8 @@ herramienta: "1Password"
 herramientaId: "1password"
 sitioOficial: "https://1password.com/pricing/personal"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/1password.png
+heroImageAlt: 1Password — Precios Digitales
 ---
 
 ## Qué cambia el precio final

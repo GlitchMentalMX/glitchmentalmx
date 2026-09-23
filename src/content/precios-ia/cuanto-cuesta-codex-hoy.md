@@ -5,6 +5,8 @@ herramienta: "Codex"
 herramientaId: "codex"
 sitioOficial: "https://openai.com/codex/"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/codex.png
+heroImageAlt: Codex — Precios de IA
 ---
 
 ## Qué cambia el precio final

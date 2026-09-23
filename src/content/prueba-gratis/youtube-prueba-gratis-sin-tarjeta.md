@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "YouTube Premium pide método de pago desde el inicio, aunque no cobra durante el mes de prueba."
 fuenteVerificacion: "Centro de Ayuda oficial de YouTube/Google (support.google.com/youtube/answer/10324204), consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/youtube.png
+heroImageAlt: YouTube — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de YouTube Premium?

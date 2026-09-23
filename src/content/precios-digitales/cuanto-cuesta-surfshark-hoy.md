@@ -5,6 +5,8 @@ herramienta: "Surfshark"
 herramientaId: "surfshark"
 sitioOficial: "https://surfshark.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/surfshark.png
+heroImageAlt: Surfshark — Precios Digitales
 ---
 
 ## Qué cambia el precio final

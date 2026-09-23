@@ -5,6 +5,8 @@ herramienta: "Domestika"
 herramientaId: "domestika"
 sitioOficial: "https://www.domestika.org/en/plus"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/domestika.png
+heroImageAlt: Domestika — Precios Digitales
 ---
 
 ## Qué cambia el precio final

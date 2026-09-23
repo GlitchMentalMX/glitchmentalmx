@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de 7 días pide tarjeta desde el registro y cobra sola si no cancelas a tiempo."
 fuenteVerificacion: "Centro de ayuda oficial de Jasper (help.jasper.ai), artículo \"Free Trial\", consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/jasper-ai.png
+heroImageAlt: Jasper — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Jasper?

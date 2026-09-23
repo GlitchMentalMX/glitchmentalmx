@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Procesa casi todo en tu propio teléfono — y usar tu voz para mejorar Siri requiere que tú digas que sí."
 fuentePolitica: "Sala de prensa de Apple: compromiso de privacidad con Siri"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/siri.png
+heroImageAlt: Siri — Privacidad de IA
 ---
 
 No, por default. Apple procesa la mayoría de las solicitudes de Siri directamente en tu dispositivo, y cuando una solicitud necesita más capacidad de cómputo, la manda a Private Cloud Compute — un entorno donde ni Apple ni nadie más puede acceder ni almacenar esa información, ni usarla para entrenar modelos. Apple no retiene grabaciones de audio de tus interacciones con Siri a menos que tú actives explícitamente la opción de ayudar a mejorar Siri, y puedes desactivarla en cualquier momento. Fuente: sala de prensa de Apple, comunicado "Our longstanding privacy commitment with Siri", verificado el 23 de agosto de 2026.

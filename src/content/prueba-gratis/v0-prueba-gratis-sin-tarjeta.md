@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero Plus no tiene prueba: se contrata directo."
 fuenteVerificacion: "Página oficial de precios de v0 (v0.app/pricing) y documentación oficial de Vercel sobre el plan Hobby, consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/v0.png
+heroImageAlt: v0 — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de v0?

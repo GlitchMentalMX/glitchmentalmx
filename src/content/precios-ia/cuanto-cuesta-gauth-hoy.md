@@ -5,6 +5,8 @@ herramienta: "Gauth"
 herramientaId: "gauth"
 sitioOficial: "https://www.gauthmath.com/plus"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/gauth.png
+heroImageAlt: Gauth — Precios de IA
 ---
 
 ## Qué cambia el precio final

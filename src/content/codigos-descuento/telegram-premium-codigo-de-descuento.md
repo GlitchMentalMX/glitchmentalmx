@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero Telegram confirma por escrito tres descuentos reales: pago anual, suscripción por @PremiumBot y regalos prepagados."
 fuenteVerificacion: "FAQ oficial de Telegram Premium (telegram.org/faq_premium), consultado el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/telegram-premium.png
+heroImageAlt: Telegram Premium — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Telegram Premium?

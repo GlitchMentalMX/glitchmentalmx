@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Los planes de pago de Manus no tienen ninguna prueba gratuita: se contratan directamente, sin periodo de gracia."
 fuenteVerificacion: "Sitio oficial de Manus (manus.im/pricing) y centro de ayuda (help.manus.im), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/manus-ai.png
+heroImageAlt: Manus — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Manus?

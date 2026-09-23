@@ -5,6 +5,8 @@ herramienta: "Spotify"
 herramientaId: "spotify"
 sitioOficial: "https://www.spotify.com/us/premium/"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/spotify.png
+heroImageAlt: Spotify — Precios de IA
 ---
 
 ## Qué cambia el precio final

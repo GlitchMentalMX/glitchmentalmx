@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un plan oficial para estudiantes con verificación por SheerID, más barato que el plan individual."
 fuenteVerificacion: "youtube.com/premium/student, página oficial de Google/YouTube, consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/youtube.png
+heroImageAlt: YouTube — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para YouTube Premium?

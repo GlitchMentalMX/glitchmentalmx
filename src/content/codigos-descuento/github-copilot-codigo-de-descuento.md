@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí acceso gratis real para estudiantes verificados y un descuento por pago anual."
 fuenteVerificacion: "Documentación oficial de GitHub (docs.github.com/copilot y github.com/features/copilot/plans), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/github-copilot.png
+heroImageAlt: GitHub Copilot — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para GitHub Copilot?

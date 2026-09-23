@@ -5,6 +5,8 @@ herramienta: "Canva"
 herramientaId: "canva"
 sitioOficial: "https://www.canva.com/pricing/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/canva.png
+heroImageAlt: Canva — Precios de IA
 ---
 
 ## Qué cambia el precio final

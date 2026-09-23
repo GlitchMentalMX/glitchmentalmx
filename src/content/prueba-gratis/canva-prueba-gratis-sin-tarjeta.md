@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "El flujo normal de la prueba Pro pide tarjeta, pero el propio soporte de Canva reconoce que algunas pruebas arrancan sin ese dato y solo expiran."
 fuenteVerificacion: "Centro de ayuda oficial de Canva (canva.com/help), artículo \"Upgrading to Canva Pro or Canva Business\", consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/canva.png
+heroImageAlt: Canva — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Canva?

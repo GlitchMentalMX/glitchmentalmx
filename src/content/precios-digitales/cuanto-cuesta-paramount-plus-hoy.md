@@ -5,6 +5,8 @@ herramienta: "Paramount+"
 herramientaId: "paramount-plus"
 sitioOficial: "https://www.paramountplus.com/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/paramount-plus.png
+heroImageAlt: Paramount+ — Precios Digitales
 ---
 
 ## Qué cambia el precio final

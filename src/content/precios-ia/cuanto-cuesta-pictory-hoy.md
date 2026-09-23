@@ -5,6 +5,8 @@ herramienta: "Pictory"
 herramientaId: "pictory"
 sitioOficial: "https://pictory.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/pictory.png
+heroImageAlt: Pictory — Precios de IA
 ---
 
 ## Qué cambia el precio final

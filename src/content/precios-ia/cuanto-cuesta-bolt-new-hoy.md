@@ -5,6 +5,8 @@ herramienta: "Bolt.new"
 herramientaId: "bolt-new"
 sitioOficial: "https://bolt.new/pricing"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/bolt-new.png
+heroImageAlt: Bolt.new — Precios de IA
 ---
 
 ## Qué cambia el precio final

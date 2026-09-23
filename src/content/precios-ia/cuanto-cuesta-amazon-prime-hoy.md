@@ -5,6 +5,8 @@ herramienta: "Amazon Prime"
 herramientaId: "amazon-prime"
 sitioOficial: "https://www.amazon.com/amazonprime"
 pubDate: 2026-08-30
+heroImage: /images/precios-ia/amazon-prime.png
+heroImageAlt: Amazon Prime — Precios de IA
 ---
 
 ## Qué cambia el precio final

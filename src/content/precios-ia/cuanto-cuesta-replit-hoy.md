@@ -5,6 +5,8 @@ herramienta: "Replit"
 herramientaId: "replit"
 sitioOficial: "https://replit.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/replit.png
+heroImageAlt: Replit — Precios de IA
 ---
 
 ## Qué cambia el precio final

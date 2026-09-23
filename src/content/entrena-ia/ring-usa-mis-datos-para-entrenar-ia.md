@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay forma de usar Ring sin mandar tu video a la nube — y su IA facial capta a quien pasa, no lo pida o no."
 fuentePolitica: "Aviso de Privacidad de Ring (Amazon)"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/ring.png
+heroImageAlt: Ring — Privacidad de IA
 ---
 
 Prácticamente sí, y sin alternativa real. No existe una forma significativa de usar un timbre o cámara Ring sin el servicio en la nube de Amazon, lo que significa que Ring tiene acceso continuo a tu video mientras uses el dispositivo. La función más reciente y más discutida, "Rostros Familiares", usa reconocimiento facial con IA para identificar a quién ve tu cámara — y aunque Amazon dice que el dueño del dispositivo debe activarla explícitamente, esa activación no aplica a las personas que la cámara capta sin saberlo: un repartidor, un vecino, cualquiera que pase frente a tu puerta nunca recibe aviso ni puede dar u objetar su consentimiento. Fuente: Aviso de Privacidad de Ring, verificado el 23 de agosto de 2026.

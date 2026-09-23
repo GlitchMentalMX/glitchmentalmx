@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Plus y Pro, los planes de pago de Genspark, no tienen ninguna prueba gratuita: se cobran desde el primer cargo."
 fuenteVerificacion: "Centro de ayuda oficial de Genspark (genspark.ai/helpcenter), artículo \"Membership Plans\", consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/genspark.png
+heroImageAlt: Genspark — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Genspark?

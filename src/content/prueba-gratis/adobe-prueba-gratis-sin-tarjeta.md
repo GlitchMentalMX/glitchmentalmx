@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de 7 días pide tarjeta desde el registro y el cobro empieza solo al día 8."
 fuenteVerificacion: "Página oficial de prueba gratuita de Adobe (adobe.com/products/photoshop/free-trial-download.html), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/adobe.png
+heroImageAlt: Adobe Creative Cloud — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Adobe Creative Cloud?

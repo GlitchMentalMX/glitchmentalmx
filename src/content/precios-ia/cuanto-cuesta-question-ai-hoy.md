@@ -5,6 +5,8 @@ herramienta: "Question.AI"
 herramientaId: "question-ai"
 sitioOficial: "https://questionai.ai/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/question-ai.png
+heroImageAlt: Question.AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial para estudiantes, educadores y organizaciones sin fines de lucro, verificado por solicitud."
 fuenteVerificacion: "Página oficial de precios de Descript (descript.com/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/descript.png
+heroImageAlt: Descript — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Descript?

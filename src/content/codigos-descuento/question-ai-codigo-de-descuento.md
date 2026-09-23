@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento confirmado por Question.AI: su propia página de precios no tiene campo de cupón ni promoción publicada."
 fuenteVerificacion: "Página oficial de precios de Question.AI (questionai.ai/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/question-ai.png
+heroImageAlt: Question.AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Question.AI?

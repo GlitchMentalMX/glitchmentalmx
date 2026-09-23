@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar anual — hasta 40% en el plan Ultra."
 fuenteVerificacion: "Estructura de precios oficial de PixVerse (app.pixverse.ai/subscribe), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/pixverse.png
+heroImageAlt: PixVerse — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para PixVerse?

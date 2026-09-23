@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Lo que subes a Lens, Voz o Translate entrena IA desde 2026 — el aviso llegó por correo y casi nadie lo notó."
 fuentePolitica: "Configuración de Actividad de Búsqueda de Google (Mi Cuenta)"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/google-search.png
+heroImageAlt: Google Búsqueda — Privacidad de IA
 ---
 
 Sí, desde junio de 2026 y por default. Google actualizó silenciosamente su configuración de privacidad para que las fotos, grabaciones de voz, archivos y videos que le mandas a través de sus herramientas de búsqueda —Google Lens, búsqueda por voz, Google Translate— puedan usarse para entrenar sus modelos de IA, sin que tuvieras que activar nada. El aviso llegó por correo electrónico en junio de 2026, pero pasó prácticamente desapercibido hasta que medios especializados lo señalaron semanas después. Fuente: Configuración de Actividad de Búsqueda en tu Cuenta de Google, verificado el 23 de agosto de 2026.

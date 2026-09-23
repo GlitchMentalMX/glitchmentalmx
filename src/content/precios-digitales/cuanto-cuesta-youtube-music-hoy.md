@@ -5,6 +5,8 @@ herramienta: "YouTube Music"
 herramientaId: "youtube-music"
 sitioOficial: "https://music.youtube.com/premium"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/youtube-music.png
+heroImageAlt: YouTube Music — Precios Digitales
 ---
 
 ## Qué cambia el precio final

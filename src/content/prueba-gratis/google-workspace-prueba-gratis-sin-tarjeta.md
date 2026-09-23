@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El centro de ayuda oficial es directo: 'antes de poder usar Google Workspace, necesitas completar la configuración de pago' — aunque no te cobren durante los 14 días."
 fuenteVerificacion: "Centro de ayuda oficial de Google Workspace (knowledge.workspace.google.com), artículo 'About your Google Workspace free trial', consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/google-workspace.png
+heroImageAlt: Google Workspace — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Google Workspace?

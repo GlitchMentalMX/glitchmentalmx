@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay un cupón público para Prime, pero sí dos programas oficiales que bajan el precio a la mitad: Prime para estudiantes y Prime Access."
 fuenteVerificacion: "Sitio corporativo oficial de Amazon (aboutamazon.com) y Centro de Ayuda oficial de Amazon (amazon.com), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/amazon-prime.png
+heroImageAlt: Amazon Prime — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Amazon Prime?

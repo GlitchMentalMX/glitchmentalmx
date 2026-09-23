@@ -5,6 +5,8 @@ herramienta: "Copilot"
 herramientaId: "copilot"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-365/premium"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/copilot.png
+heroImageAlt: Copilot — Precios de IA
 ---
 
 ## Qué cambia el precio final

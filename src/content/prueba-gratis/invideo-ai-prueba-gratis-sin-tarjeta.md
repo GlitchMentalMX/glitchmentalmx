@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero es un producto aparte: Plus no tiene prueba, se paga directo."
 fuenteVerificacion: "Centro de ayuda oficial de InVideo (help.invideo.io), artículo \"Can I use invideo AI for free?\", y página oficial de precios (invideo.io/pricing), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/invideo-ai.png
+heroImageAlt: InVideo AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de InVideo AI?

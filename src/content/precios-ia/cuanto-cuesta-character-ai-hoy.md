@@ -5,6 +5,8 @@ herramienta: "Character.AI"
 herramientaId: "character-ai"
 sitioOficial: "https://character.ai/plus"
 pubDate: 2026-08-20
+heroImage: /images/precios-ia/character-ai.png
+heroImageAlt: Character.AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

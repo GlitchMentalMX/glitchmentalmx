@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para cuentas normales, pero sí un descuento oficial real de 50% para organizaciones sin fines de lucro verificadas."
 fuenteVerificacion: "Página oficial de precios de Zoom (zoom.com/pricing) y programa Zoom Cares (zoom.com/en/zoom-cares), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/zoom.png
+heroImageAlt: Zoom — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Zoom?

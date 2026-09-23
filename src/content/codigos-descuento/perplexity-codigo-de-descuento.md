@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un plan educativo oficial al 50% de descuento y un programa de referidos con crédito real."
 fuenteVerificacion: "Centro de ayuda oficial de Perplexity (perplexity.ai/help-center), artículo \"What is Education Pro?\", consultado el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/perplexity.png
+heroImageAlt: Perplexity — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Perplexity Pro?

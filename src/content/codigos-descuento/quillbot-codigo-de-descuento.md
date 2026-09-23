@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones genéricos, pero sí un descuento oficial real para estudiantes verificados — hasta 25% en el plan anual."
 fuenteVerificacion: "Página oficial de descuento para estudiantes de QuillBot (quillbot.com/premium/student-discount), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/quillbot.png
+heroImageAlt: QuillBot — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para QuillBot?

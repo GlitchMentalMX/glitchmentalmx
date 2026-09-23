@@ -5,6 +5,8 @@ herramienta: "Adobe Creative Cloud"
 herramientaId: "adobe"
 sitioOficial: "https://www.adobe.com/creativecloud/plans.html"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/adobe.png
+heroImageAlt: Adobe Creative Cloud — Precios de IA
 ---
 
 ## Qué cambia el precio final

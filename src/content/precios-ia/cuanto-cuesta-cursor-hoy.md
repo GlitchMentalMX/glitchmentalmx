@@ -5,6 +5,8 @@ herramienta: "Cursor"
 herramientaId: "cursor"
 sitioOficial: "https://cursor.com/pricing"
 pubDate: 2026-08-21
+heroImage: /images/precios-ia/cursor.png
+heroImageAlt: Cursor — Precios de IA
 ---
 
 ## Qué cambia el precio final

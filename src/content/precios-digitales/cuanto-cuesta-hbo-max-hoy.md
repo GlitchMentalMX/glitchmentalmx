@@ -5,6 +5,8 @@ herramienta: "HBO Max"
 herramientaId: "hbo-max"
 sitioOficial: "https://www.hbomax.com/plans"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/hbo-max.png
+heroImageAlt: HBO Max — Precios Digitales
 ---
 
 ## Qué cambia el precio final

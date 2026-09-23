@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe prueba de c.ai+: la página oficial de suscripción solo ofrece pagar de inmediato, mensual o anual."
 fuenteVerificacion: "Página oficial de suscripción de Character.AI (character.ai/subscribe), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/character-ai.png
+heroImageAlt: Character.AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Character.AI?

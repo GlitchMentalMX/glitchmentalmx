@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento ni canal oficial de promoción — y desde mayo de 2026 AWS ni siquiera acepta suscripciones nuevas al producto."
 fuenteVerificacion: "Página oficial de precios de AWS (aws.amazon.com/q/developer/pricing/) y anuncio oficial de fin de soporte en el blog de AWS DevOps & Developer Productivity, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/amazon-q-developer.png
+heroImageAlt: Amazon Q Developer — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Amazon Q Developer?

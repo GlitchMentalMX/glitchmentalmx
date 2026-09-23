@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "LinkedIn Premium exige una tarjeta válida para activar el mes de prueba."
 fuenteVerificacion: "Centro de Ayuda oficial de LinkedIn (linkedin.com/help/linkedin/answer/a1355837), consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/linkedin.png
+heroImageAlt: LinkedIn — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de LinkedIn Premium?

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Nitro no tiene prueba gratis oficial: solo botones de compra directa."
 fuenteVerificacion: "Página oficial discord.com/nitro, consultada el 25/08/2026 — sin mención de periodo de prueba estándar en la oferta de Nitro ni Nitro Basic."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/discord.png
+heroImageAlt: Discord — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Discord Nitro?

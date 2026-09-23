@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Tu contenido entrena sus modelos y no hay ningún botón para impedirlo."
 fuentePolitica: "Política de Privacidad de TikTok"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/tiktok.png
+heroImageAlt: TikTok — Privacidad de IA
 ---
 
 Sí. La política de privacidad de TikTok dice explícitamente que usa la información que recolecta para "entrenar y mejorar" su tecnología, incluyendo "modelos y algoritmos de machine learning". Esto no se limita a lo que publicas: la política contempla el análisis de contenido, mensajes e interacciones con IA, y según investigaciones independientes, TikTok se reserva el derecho de analizar no solo tus videos públicos, sino también videos privados y borradores que nunca llegaste a publicar. Fuente: Política de Privacidad de TikTok, sección "Cómo usamos tu información", verificado el 23 de agosto de 2026.

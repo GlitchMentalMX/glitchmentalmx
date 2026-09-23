@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tus videos por default — el opt-out solo existe si vives en la Unión Europea o el EEE."
 fuentePolitica: "Política de Privacidad de OpusClip, sección Opt-Out de Investigación y Desarrollo de IA, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/opus-clip.png
+heroImageAlt: Opus Clip — Privacidad de IA
 ---
 
 Sí, si usas una cuenta individual (no empresarial). El Centro de Ayuda de OpusClip lo dice sin rodeos: "For individual (non-enterprise) users, we may use your data to improve our AI models and enhance the quality of our services." Su Política de Privacidad formaliza ese uso como "AI research and model-development activities" y describe cómo objetar a ese procesamiento — pero solo para una región: "If you are based in the European Union or European Economic Area, you are free to opt out of any use of your personal data for our AI research and model-development activities... Send an e-mail to contact@opus.pro with the subject line 'AI R&D – Opt-Out'." Fuera de la Unión Europea o el Espacio Económico Europeo, incluido México, no existe un procedimiento equivalente descrito en ningún lado. Fuente: Política de Privacidad de OpusClip, verificado el 31 de agosto de 2026.

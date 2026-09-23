@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tus prompts e imágenes — no hay un interruptor de cuenta para desactivarlo."
 fuentePolitica: "Política de Privacidad de Midjourney"
 pubDate: 2026-09-09
+heroImage: /images/entrena-ia/midjourney.png
+heroImageAlt: Midjourney — Privacidad de IA
 ---
 
 Sí, sin un interruptor de cuenta para usuarios normales. La Política de Privacidad de Midjourney confirma que recolecta los prompts que envías (texto, imágenes, y los generados desde entrada por voz) y el contenido que subes al servicio, y que ese material —incluyendo tus prompts y las imágenes de muestra que subas— se usa para entrenar y refinar sus modelos de generación. No existe una opción de "no entrenar con mi contenido" dentro de la configuración de la cuenta, a diferencia de la privacidad de tus imágenes (que sí puedes ocultar de la galería pública con Stealth Mode en planes de pago). Fuente: Política de Privacidad de Midjourney, verificado el 9 de septiembre de 2026.

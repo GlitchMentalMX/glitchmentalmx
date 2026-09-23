@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con tu contenido en todos los planes, incluidos los de pago — no hay un interruptor para apagarlo."
 fuentePolitica: "Términos de Servicio de Luma AI, consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/luma-ai.png
+heroImageAlt: Luma AI — Privacidad de IA
 ---
 
 Sí, en todos los niveles de cuenta, incluidos los de pago. En el plan gratuito, Luma se otorga a sí misma derechos amplios sobre lo que subes y generas: puede "mostrar públicamente, reproducir... crear obras derivadas de, y distribuir" tu contenido, además de "crear, probar, mejorar, entrenar o de otra forma desarrollar" sus modelos de inteligencia artificial con él —derechos que la empresa describe como perpetuos e irrevocables para cualquier input ya incorporado a un resultado. En los planes de pago (Plus, Unlimited y Enterprise) la licencia es más limitada —ya no incluye mostrar tu contenido públicamente— pero conserva exactamente la misma cláusula de entrenamiento: "crear, probar, mejorar, entrenar o de otra forma desarrollar" modelos de IA con tu contenido sigue estando permitido. Fuente: Términos de Servicio de Luma AI, verificado el 31 de agosto de 2026.

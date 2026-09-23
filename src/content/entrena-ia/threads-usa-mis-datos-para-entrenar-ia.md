@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Mismo trato que Facebook e Instagram: entrena con tus posts públicos, sin opción real en México."
 fuentePolitica: "Centro de Privacidad de Meta, sección de IA generativa"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/threads.png
+heroImageAlt: Threads — Privacidad de IA
 ---
 
 Sí. Threads corre bajo la misma política de IA generativa que el resto de las apps de Meta: tus publicaciones públicas, respuestas y las interacciones que tengas con Meta AI dentro de la app se usan para entrenar los modelos de inteligencia artificial generativa de la empresa. Al ser una plataforma pensada para publicar de forma pública por diseño —a diferencia de WhatsApp o Messenger—, prácticamente todo lo que escribes en Threads cae dentro de este uso, salvo que mantengas tu cuenta privada. Fuente: Centro de Privacidad de Meta, sección de IA generativa, verificado el 24 de agosto de 2026.

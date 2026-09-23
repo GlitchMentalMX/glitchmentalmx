@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento porque no hay nada que descontar: el chat es gratis y la API se cobra por token, sin plan de suscripción de consumidor."
 fuenteVerificacion: "Sitio oficial de Qwen Chat (chat.qwen.ai) y documentación de precios de Alibaba Cloud Model Studio, consultadas el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/qwen.png
+heroImageAlt: Qwen — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Qwen?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial de 20% para estudiantes y profesores, más hasta 51% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Otter.ai (otter.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/otter-ai.png
+heroImageAlt: Otter.ai — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Otter.ai?

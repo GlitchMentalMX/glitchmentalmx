@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No es una 'prueba': el chat es gratis para siempre, sin tarjeta y sin fecha de corte."
 fuenteVerificacion: "Sitio oficial de DeepSeek (chat.deepseek.com) y verificación cruzada con reportes recientes sobre su modelo de negocio, consultados el 25/08/2026 — sin plan de pago dirigido a consumidores."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/deepseek.png
+heroImageAlt: DeepSeek — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de DeepSeek?

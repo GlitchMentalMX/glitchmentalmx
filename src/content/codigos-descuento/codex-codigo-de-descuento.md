@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón universal, pero sí $100 USD en créditos reales para estudiantes universitarios de EE.UU. y Canadá, verificados con SheerID."
 fuenteVerificacion: "Centro de ayuda oficial de OpenAI (help.openai.com), artículo \"Codex credits for Students - Terms of Service\", y chatgpt.com/codex/students/, consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/codex.png
+heroImageAlt: Codex — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Codex?

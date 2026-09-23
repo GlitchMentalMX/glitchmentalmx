@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba gratis oficial: Tinder Gold y Platinum se cobran desde la compra."
 fuenteVerificacion: "Ficha oficial de Tinder en la App Store (apps.apple.com), consultada el 25/08/2026 — divulgación de suscripción redactada por la propia Tinder, sin mención de periodo de prueba."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/tinder.png
+heroImageAlt: Tinder — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Tinder?

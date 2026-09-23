@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar anual — 20% menos que pagar mes a mes."
 fuenteVerificacion: "Página oficial de precios de Copy.ai (copy.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/copy-ai.png
+heroImageAlt: Copy.ai — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Copy.ai?

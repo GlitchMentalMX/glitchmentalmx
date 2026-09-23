@@ -5,6 +5,8 @@ herramienta: "Runway"
 herramientaId: "runway"
 sitioOficial: "https://runway.com/pricing"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/runway.png
+heroImageAlt: Runway — Precios de IA
 ---
 
 ## Qué cambia el precio final

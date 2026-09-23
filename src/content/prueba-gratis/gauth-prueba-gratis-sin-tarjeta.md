@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de 3 días de Gauth PLUS aparece dentro del mismo selector de planes de pago, con aviso de renovación automática antes de arrancarla — no es un paso separado sin tarjeta."
 fuenteVerificacion: "Flujo oficial de suscripción de Gauth PLUS (gauthmath.com/plus), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/gauth.png
+heroImageAlt: Gauth — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Gauth?

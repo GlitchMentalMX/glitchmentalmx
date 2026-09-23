@@ -5,6 +5,8 @@ herramienta: "Microsoft Teams"
 herramientaId: "microsoft-teams"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/microsoft-teams.png
+heroImageAlt: Microsoft Teams — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No entrena a Gemini con tus correos — pero sí a las funciones inteligentes de Gmail, y eso viene encendido."
 fuentePolitica: "Centro de Ayuda de Gmail: funciones inteligentes"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/gmail.png
+heroImageAlt: Gmail — Privacidad de IA
 ---
 
 Depende de qué IA. El contenido de tus correos en Gmail no se usa para entrenar los modelos generativos grandes que impulsan Gemini o la Búsqueda de Google, a menos que tú compartas ese contenido explícitamente o des un permiso específico para ello. Pero sí se usa, por default, para mejorar las funciones inteligentes propias de Gmail —como Smart Compose, que sugiere cómo terminar tus frases, o Smart Reply, que sugiere respuestas cortas— y ese ajuste viene encendido desde que abres tu cuenta, no apagado. Fuente: Centro de Ayuda de Gmail, verificado el 23 de agosto de 2026.

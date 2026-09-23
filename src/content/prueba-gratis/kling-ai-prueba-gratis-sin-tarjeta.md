@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero Standard no tiene prueba: se suscribe directo con tarjeta."
 fuenteVerificacion: "Página oficial de membresías de Kling AI (app.klingai.com/global/membership) y verificación cruzada de su estructura de pago vigente, consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/kling-ai.png
+heroImageAlt: Kling AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Kling AI?

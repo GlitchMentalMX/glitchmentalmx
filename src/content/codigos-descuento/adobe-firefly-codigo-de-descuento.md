@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para Firefly como producto suelto, pero sí un descuento real si lo obtienes dentro de Creative Cloud Pro para estudiantes y maestros."
 fuenteVerificacion: "Páginas oficiales de Adobe: adobe.com/education/students/creativecloud.html y adobe.com/products/pricing-info/ccste-pricing-info.html, consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/adobe-firefly.png
+heroImageAlt: Adobe Firefly — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Adobe Firefly?

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Amazon quitó el botón que evitaba mandar tus grabaciones de voz a la nube."
 fuentePolitica: "Centro de Privacidad de Alexa (Amazon) y anuncio oficial del cambio a Alexa+"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/alexa.png
+heroImageAlt: Alexa — Privacidad de IA
 ---
 
 Sí, y sin manera de evitarlo. Hasta marzo de 2025, Alexa tenía una opción llamada "No enviar grabaciones de voz" que mantenía tu audio fuera de los servidores de Amazon en ciertos dispositivos. Amazon la eliminó al anunciar que Alexa+, su versión con IA generativa, necesita procesar todo en la nube para funcionar — y en febrero de 2026 la extendió a todos los equipos Echo. Hoy, cada palabra que le dices a Alexa llega a los servidores de Amazon, sin excepción. Fuente: Centro de Privacidad de Alexa y el anuncio oficial de Amazon sobre el cambio, verificado el 23 de agosto de 2026.

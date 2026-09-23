@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El único acceso al producto es una prueba de 14 días que pide tarjeta desde el registro y cobra automático si no cancelas."
 fuenteVerificacion: "Centro de soporte oficial de Beautiful.ai (support.beautiful.ai), artículo \"How does the free 14-day Pro trial work?\", y página oficial de precios (beautiful.ai/pricing), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/beautiful-ai.png
+heroImageAlt: Beautiful.ai — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Beautiful.ai?

@@ -5,6 +5,8 @@ herramienta: "NotebookLM"
 herramientaId: "notebooklm"
 sitioOficial: "https://notebook.google/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/notebooklm.png
+heroImageAlt: NotebookLM — Precios de IA
 ---
 
 ## Qué cambia el precio final

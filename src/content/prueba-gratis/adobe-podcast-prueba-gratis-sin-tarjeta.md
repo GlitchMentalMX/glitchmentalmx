@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito de Adobe Podcast no pide tarjeta, pero la prueba de 7 días de Podcast Premium corre sobre el plan Adobe Firefly Pro, que sí la pide, como el resto de las suscripciones de Adobe."
 fuenteVerificacion: "Página oficial de planes de Adobe Podcast (podcast.adobe.com/en/plans), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/adobe-podcast.png
+heroImageAlt: Adobe Podcast — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Adobe Podcast?

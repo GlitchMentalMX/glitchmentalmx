@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "La prueba de 7 días sí existe, pero pide tarjeta para activarla y cobra si no cancelas a tiempo."
 fuenteVerificacion: "Centro de ayuda oficial de Fireflies.ai (guide.fireflies.ai), artículo \"Learn about the Fireflies free trial\", consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/fireflies-ai.png
+heroImageAlt: Fireflies.ai — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Fireflies.ai?

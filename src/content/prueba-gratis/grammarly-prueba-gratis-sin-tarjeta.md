@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Cuando Grammarly ofrece una prueba de Pro, pide tarjeta desde el inicio y cobra automático si no cancelas a tiempo."
 fuenteVerificacion: "Centro de soporte oficial de Grammarly, artículos '¿Grammarly ofrece una prueba?' y '¿Por qué me cobraron durante una prueba gratis?' (support.grammarly.com), consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/grammarly.png
+heroImageAlt: Grammarly — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Grammarly?

@@ -5,6 +5,8 @@ herramienta: "Slack"
 herramientaId: "slack"
 sitioOficial: "https://slack.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/slack.png
+heroImageAlt: Slack — Precios de IA
 ---
 
 ## Qué cambia el precio final

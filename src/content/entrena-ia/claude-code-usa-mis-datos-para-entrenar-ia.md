@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Con cuenta Pro o Max entrena por default, igual que Claude. Con API, Team o Enterprise, no entrena salvo que lo actives tú."
 fuentePolitica: "Documentación oficial de Uso de Datos de Claude Code (Anthropic), consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/claude-code.png
+heroImageAlt: Claude Code — Privacidad de IA
 ---
 
 Depende de con qué cuenta entras a Claude Code —no hay una sola respuesta para toda la herramienta. Si inicias sesión con tu cuenta personal Free, Pro o Max, Claude Code hereda exactamente la misma política que Claude: Anthropic entrena nuevos modelos con tu código y tus prompts cuando el ajuste de mejora de modelo está activado, algo que viene así desde agosto de 2025. Si en cambio usas Claude Code con una API key de Anthropic, a través de Amazon Bedrock, Google Cloud, Microsoft Foundry, o con una cuenta Claude for Teams o Enterprise, aplican los Términos Comerciales: "Anthropic no entrena modelos generativos usando código o prompts enviados a Claude Code bajo términos comerciales, a menos que el cliente haya elegido proporcionarnos sus datos para mejora de modelo" —por ejemplo, mediante el Programa de Socios de Desarrollo. Fuente: documentación oficial de Uso de Datos de Claude Code, verificado el 31 de agosto de 2026.

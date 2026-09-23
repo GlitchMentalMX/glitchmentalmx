@@ -5,6 +5,8 @@ herramienta: "Notion"
 herramientaId: "notion"
 sitioOficial: "https://www.notion.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/notion.png
+heroImageAlt: Notion — Precios de IA
 ---
 
 ## Qué cambia el precio final

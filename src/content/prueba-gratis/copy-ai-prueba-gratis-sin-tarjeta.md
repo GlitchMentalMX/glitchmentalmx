@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe una prueba del plan de pago: se contrata y se cobra desde el primer día."
 fuenteVerificacion: "Página oficial de precios de Copy.ai (copy.ai/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/copy-ai.png
+heroImageAlt: Copy.ai — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Copy.ai?

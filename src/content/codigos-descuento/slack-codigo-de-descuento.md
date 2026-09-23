@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real: gratis o hasta 85% off para organizaciones sin fines de lucro verificadas, más el ahorro estándar por pago anual."
 fuenteVerificacion: "Página oficial de precios de Slack (slack.com/pricing) y programa oficial Slack for Nonprofits vía TechSoup (techsoup.org/slack), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/slack.png
+heroImageAlt: Slack — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Slack?

@@ -5,6 +5,8 @@ herramienta: "Riverside.fm"
 herramientaId: "riverside-fm"
 sitioOficial: "https://riverside.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/riverside-fm.png
+heroImageAlt: Riverside.fm — Precios de IA
 ---
 
 ## Qué cambia el precio final

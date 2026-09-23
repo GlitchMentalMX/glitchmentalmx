@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Replit no ofrece prueba de Core: solo queda el plan gratuito Starter o pagar directamente."
 fuenteVerificacion: "Documentación oficial de precios y planes de Replit (docs.replit.com/help/pricing-and-plans), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/replit.png
+heroImageAlt: Replit — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Replit?

@@ -5,6 +5,8 @@ herramienta: "Norton 360"
 herramientaId: "norton"
 sitioOficial: "https://us.norton.com/store"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/norton.png
+heroImageAlt: Norton 360 — Precios Digitales
 ---
 
 ## Qué cambia el precio final

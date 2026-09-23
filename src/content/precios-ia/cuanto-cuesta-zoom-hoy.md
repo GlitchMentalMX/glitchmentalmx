@@ -5,6 +5,8 @@ herramienta: "Zoom"
 herramientaId: "zoom"
 sitioOficial: "https://www.zoom.com/en/pricing/"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/zoom.png
+heroImageAlt: Zoom — Precios de IA
 ---
 
 ## Qué cambia el precio final

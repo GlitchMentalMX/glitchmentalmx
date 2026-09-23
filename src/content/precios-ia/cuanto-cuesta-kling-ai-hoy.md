@@ -5,6 +5,8 @@ herramienta: "Kling AI"
 herramientaId: "kling-ai"
 sitioOficial: "https://app.klingai.com/global/membership/membership-plan"
 pubDate: 2026-08-21
+heroImage: /images/precios-ia/kling-ai.png
+heroImageAlt: Kling AI — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -5,6 +5,8 @@ herramienta: "remove.bg"
 herramientaId: "remove-bg"
 sitioOficial: "https://www.remove.bg/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/remove-bg.png
+heroImageAlt: remove.bg — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tus prompts y videos por default dentro de Flow — el interruptor existe, pero viene activado."
 fuentePolitica: "Aviso de Privacidad de Google Flow (Google Labs), consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/veo.png
+heroImageAlt: Veo — Privacidad de IA
 ---
 
 Sí, por default. Veo se genera dentro de Flow, la herramienta de video de Google Labs, y su Aviso de Privacidad es explícito: "Google usa estos datos, de forma consistente con nuestra Política de Privacidad, para proveer, mejorar y desarrollar los productos y servicios de Google y las tecnologías de machine learning" —eso incluye tus prompts, tus archivos subidos y los videos que generas. Un equipo de revisores humanos lee, anota y procesa una muestra de esos datos para mejorar la calidad, aunque Google desconecta esa muestra de tu cuenta antes de que la vean. Fuente: Aviso de Privacidad de Google Flow, verificado el 31 de agosto de 2026.

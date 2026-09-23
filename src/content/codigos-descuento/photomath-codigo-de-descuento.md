@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento oficial: Photomath Plus solo tiene precio mensual o anual, sin promoción para estudiantes ni cupón alguno."
 fuenteVerificacion: "Página oficial de precios de Photomath (photomath.com/en/), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/photomath.png
+heroImageAlt: Photomath — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Photomath?

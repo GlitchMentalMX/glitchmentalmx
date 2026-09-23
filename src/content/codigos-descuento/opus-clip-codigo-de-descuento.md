@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero el plan anual sí recorta el precio del plan Pro casi a la mitad frente a pagar mes a mes."
 fuenteVerificacion: "Página oficial de precios de Opus Clip (opus.pro/pricing) y centro de ayuda (help.opus.pro/docs/article/plans-and-credits), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/opus-clip.png
+heroImageAlt: Opus Clip — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Opus Clip?

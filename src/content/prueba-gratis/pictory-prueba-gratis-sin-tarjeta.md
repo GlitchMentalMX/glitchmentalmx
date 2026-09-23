@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Los 14 días de prueba se activan solo con correo electrónico, sin pedir tarjeta."
 fuenteVerificacion: "Sitio oficial de Pictory (pictory.ai/pricing y flujo de registro en app.pictory.ai), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/pictory.png
+heroImageAlt: Pictory — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Pictory?

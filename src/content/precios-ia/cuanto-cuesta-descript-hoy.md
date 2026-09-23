@@ -5,6 +5,8 @@ herramienta: "Descript"
 herramientaId: "descript"
 sitioOficial: "https://www.descript.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/descript.png
+heroImageAlt: Descript — Precios de IA
 ---
 
 ## Qué cambia el precio final

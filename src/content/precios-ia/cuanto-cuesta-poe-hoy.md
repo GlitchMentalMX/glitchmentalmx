@@ -5,6 +5,8 @@ herramienta: "Poe"
 herramientaId: "poe"
 sitioOficial: "https://poe.com/subscription_plans"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/poe.png
+heroImageAlt: Poe — Precios de IA
 ---
 
 ## Qué cambia el precio final

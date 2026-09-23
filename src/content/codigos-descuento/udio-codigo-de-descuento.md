@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real para estudiantes verificados — 50% off por 6 meses — más el ahorro estándar por pago anual."
 fuenteVerificacion: "Centro de ayuda oficial de Udio (help.udio.com, artículo \"Obtaining a student discount on your subscription\") y udio.com/pricing, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/udio.png
+heroImageAlt: Udio — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Udio?

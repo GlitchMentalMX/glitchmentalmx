@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Tus chats con Copilot entrenan IA por default — Recall, en cambio, aprendió de su escándalo y ahora es opcional."
 fuentePolitica: "FAQ de Privacidad de Microsoft Copilot"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/windows-copilot.png
+heroImageAlt: Windows (Copilot) — Privacidad de IA
 ---
 
 Depende de qué parte de la IA de Windows uses. Tus conversaciones con Copilot se usan para entrenar los modelos de Microsoft salvo que tú desactives esa opción — el ajuste existe, pero el punto de partida es que sí participas. Recall, la función más polémica de Windows —que toma capturas periódicas de tu pantalla para que luego puedas "buscar en tu memoria" digital— tiene una historia distinta: se anunció en 2024, se pausó por la presión pública sobre cómo manejaba esos datos, y regresó como una función que tienes que activar tú mismo durante la configuración, con todo almacenado localmente y cifrado. Fuente: FAQ de Privacidad de Microsoft Copilot, verificado el 23 de agosto de 2026.

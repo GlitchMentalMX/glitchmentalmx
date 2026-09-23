@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento porque no hay nada que descontar: en México, Meta AI es gratis para prácticamente todos los usuarios."
 fuenteVerificacion: "Sitio oficial de Meta AI (meta.ai) y cobertura de prensa sobre el piloto de planes de pago en Singapur, Guatemala y Bolivia, consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/meta-ai.png
+heroImageAlt: Meta AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Meta AI?

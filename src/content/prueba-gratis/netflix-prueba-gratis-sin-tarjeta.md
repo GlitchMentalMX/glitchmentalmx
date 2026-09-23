@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Netflix no ofrece prueba gratis en la mayoría de países: se paga desde el día uno."
 fuenteVerificacion: "Página oficial de Netflix México (netflix.com/mx) y artículo de prueba gratis del Centro de Ayuda de Netflix (help.netflix.com), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/netflix.png
+heroImageAlt: Netflix — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Netflix?

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena sus modelos con las fotos y preguntas que subes — sin ningún interruptor para excluirte."
 fuentePolitica: "Política de Privacidad de Gauth (Gauthtech Pte. Ltd.)"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/gauth.png
+heroImageAlt: Gauth — Privacidad de IA
 ---
 
 Sí. La política de privacidad de Gauth, operada por Gauthtech Pte. Ltd. —una empresa del grupo ByteDance, la misma matriz de TikTok—, incluye entre los usos de tu información: "Review, improve, and develop the Services, including by monitoring interactions and usage across your devices, analyzing how people are using it, and by training and improving our technology, such as our machine learning models and algorithms" ("revisar, mejorar y desarrollar los Servicios, incluyendo monitorear interacciones y uso en tus dispositivos, analizar cómo la gente lo usa, y entrenar y mejorar nuestra tecnología, como nuestros modelos y algoritmos de machine learning"). Esto cubre el "Contenido de Usuario" que la misma política define como las fotos de tus tareas, preguntas y descripciones que subes al resolver un problema. Fuente: Política de Privacidad de Gauth, verificado el 31 de agosto de 2026.

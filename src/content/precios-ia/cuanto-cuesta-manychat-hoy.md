@@ -5,6 +5,8 @@ herramienta: "ManyChat"
 herramientaId: "manychat"
 sitioOficial: "https://manychat.com/pricing"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/manychat.png
+heroImageAlt: ManyChat — Precios de IA
 ---
 
 ## Qué cambia el precio final

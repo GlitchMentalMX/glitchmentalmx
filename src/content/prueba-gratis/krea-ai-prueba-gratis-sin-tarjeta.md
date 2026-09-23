@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero Basic y Pro no tienen prueba: se contratan directo."
 fuenteVerificacion: "Página oficial de precios de Krea (krea.ai/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/krea-ai.png
+heroImageAlt: Krea — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Krea?

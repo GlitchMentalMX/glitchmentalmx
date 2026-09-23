@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Hereda el entrenamiento por default de ChatGPT Plus/Pro — puedes apagarlo, pero no es un ajuste propio de Codex."
 fuentePolitica: "Centro de Ayuda de OpenAI: Usar Codex con tu plan de ChatGPT, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/codex.png
+heroImageAlt: Codex — Privacidad de IA
 ---
 
 Depende de qué cuenta uses para entrar a Codex, porque Codex no tiene una política de datos propia — hereda la de la cuenta ChatGPT con la que inicias sesión. En planes individuales Plus y Pro, la respuesta oficial es sí por default: "Conversations may be used to improve models unless you turn off training in ChatGPT data controls." En cuentas de negocio la respuesta se invierte: "By default, OpenAI does not use any inputs or outputs from our products for business users, including ChatGPT Business, ChatGPT Enterprise, and the API, to improve our models." Fuente: Centro de Ayuda de OpenAI, artículo "Usar Codex con tu plan de ChatGPT", sección FAQ "Does OpenAI train on my Codex usage?", verificado el 31 de agosto de 2026.

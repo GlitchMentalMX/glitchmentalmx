@@ -5,6 +5,8 @@ herramienta: "Dashlane"
 herramientaId: "dashlane"
 sitioOficial: "https://www.dashlane.com/pricing-personal"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/dashlane.png
+heroImageAlt: Dashlane — Precios Digitales
 ---
 
 ## Qué cambia el precio final

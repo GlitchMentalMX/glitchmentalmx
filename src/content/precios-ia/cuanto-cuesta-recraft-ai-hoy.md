@@ -5,6 +5,8 @@ herramienta: "Recraft"
 herramientaId: "recraft-ai"
 sitioOficial: "https://www.recraft.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/recraft-ai.png
+heroImageAlt: Recraft — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un programa oficial para estudiantes de universidades específicas que da un año de Premium gratis."
 fuenteVerificacion: "Página oficial de precios de Vercel (v0.app/pricing) y portal oficial v0.app/students, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/v0.png
+heroImageAlt: v0 — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para v0?

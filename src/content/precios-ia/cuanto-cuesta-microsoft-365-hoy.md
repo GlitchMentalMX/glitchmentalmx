@@ -5,6 +5,8 @@ herramienta: "Microsoft 365"
 herramientaId: "microsoft-365"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/microsoft-365.png
+heroImageAlt: Microsoft 365 — Precios de IA
 ---
 
 ## Qué cambia el precio final

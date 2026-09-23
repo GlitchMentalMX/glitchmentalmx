@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Pro: el botón de la página es \"Suscribirse\", sin ningún paso previo."
 fuenteVerificacion: "Página oficial de precios de Suno (suno.com/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/suno.png
+heroImageAlt: Suno — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Suno?

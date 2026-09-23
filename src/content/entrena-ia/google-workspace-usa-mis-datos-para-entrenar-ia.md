@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Tu contenido de Workspace no entrena los modelos de Gemini fuera de tu organización — ni con permiso, salvo que tú lo autorices."
 fuentePolitica: "Centro de Privacidad de IA Generativa en Google Workspace"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/google-workspace.png
+heroImageAlt: Google Workspace — Privacidad de IA
 ---
 
 No. Google es directo en el centro de privacidad dedicado específicamente a esto: "Workspace does not use customer data for training models without customer's prior permission or instruction" ("Workspace no usa los datos del cliente para entrenar modelos sin el permiso o instrucción previa del cliente"). Esto aplica a tus documentos de Docs, hojas de Sheets, correos de Gmail y cualquier prompt que le escribas a Gemini dentro de Workspace: "none of your content is used for generative AI model training outside of your domain without permission" ("ninguno de tus contenidos se usa para entrenar modelos de IA generativa fuera de tu dominio sin permiso"). Fuente: Centro de Privacidad de IA Generativa en Google Workspace, documentación oficial de Google, verificado el 31 de agosto de 2026.

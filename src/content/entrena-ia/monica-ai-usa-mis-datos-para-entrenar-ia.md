@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena modelos propios con tus chats — no tiene modelo fundacional propio, solo orquesta modelos de terceros."
 fuentePolitica: "Política de Seguridad y Contenido de Usuario de Monica, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/monica-ai.png
+heroImageAlt: Monica — Privacidad de IA
 ---
 
 No. Monica es explícita sobre un punto que la distingue del resto de esta lista: no tiene modelo propio que entrenar. Su Política de Seguridad y Contenido de Usuario lo dice así: "Monica enhances your chat, search, writing, image generation, video generation, and coding experiences by leveraging multiple third-party AI models and tools; we do not train our own foundation models for this service." Su plataforma de API, usada por desarrolladores que integran Monica en sus propios productos, va más lejos y lo hace explícito en términos de entrenamiento: "The data you send to us is protected by our Privacy Policy and will not be used for model training. We only store your data for security auditing purposes and delete it after 30 days." Fuente: Política de Seguridad y Contenido de Usuario de Monica, verificado el 31 de agosto de 2026.

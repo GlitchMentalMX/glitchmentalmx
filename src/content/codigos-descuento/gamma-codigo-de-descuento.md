@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público ni descuento educativo oficial todavía (solo está propuesto), pero el pago anual sí baja el precio hasta 25-39% según el plan."
 fuenteVerificacion: "Centro de ayuda oficial de Gamma (help.gamma.app) y tablero oficial de ideas de Gamma, \"Gamma Love\" (ideas.gamma.app), consultado el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/gamma.png
+heroImageAlt: Gamma — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Gamma?

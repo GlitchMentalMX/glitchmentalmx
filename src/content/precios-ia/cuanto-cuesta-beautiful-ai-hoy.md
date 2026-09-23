@@ -5,6 +5,8 @@ herramienta: "Beautiful.ai"
 herramientaId: "beautiful-ai"
 sitioOficial: "https://www.beautiful.ai/pricing"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/beautiful-ai.png
+heroImageAlt: Beautiful.ai — Precios de IA
 ---
 
 ## Qué cambia el precio final

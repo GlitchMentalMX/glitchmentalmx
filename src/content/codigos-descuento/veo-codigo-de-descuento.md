@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para Veo, pero sí un año gratis oficial de Google AI Pro para estudiantes universitarios, que incluye los créditos de Flow."
 fuenteVerificacion: "Página oficial de precios de Flow (labs.google/flow/pricing) y programa de estudiantes de Google AI (gemini.google/students), consultadas el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/veo.png
+heroImageAlt: Veo — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Veo?

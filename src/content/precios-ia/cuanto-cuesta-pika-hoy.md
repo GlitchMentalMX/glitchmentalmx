@@ -5,6 +5,8 @@ herramienta: "Pika"
 herramientaId: "pika"
 sitioOficial: "https://pika.art/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/pika.png
+heroImageAlt: Pika — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -5,6 +5,8 @@ herramienta: "PixVerse"
 herramientaId: "pixverse"
 sitioOficial: "https://app.pixverse.ai/subscribe"
 pubDate: 2026-08-21
+heroImage: /images/precios-ia/pixverse.png
+heroImageAlt: PixVerse — Precios de IA
 ---
 
 ## Qué cambia el precio final

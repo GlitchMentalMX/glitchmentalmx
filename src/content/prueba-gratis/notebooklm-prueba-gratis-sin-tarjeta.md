@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El NotebookLM base es gratis para siempre; para ampliarlo con Google AI Pro sí piden tarjeta desde el inicio."
 fuenteVerificacion: "Centro de Ayuda oficial de Google One, artículo 'Get a Google AI Pro membership' (support.google.com/googleone), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/notebooklm.png
+heroImageAlt: NotebookLM — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de NotebookLM?

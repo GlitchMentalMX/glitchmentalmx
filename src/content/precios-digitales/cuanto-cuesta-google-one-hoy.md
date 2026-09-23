@@ -5,6 +5,8 @@ herramienta: "Google One"
 herramientaId: "google-one"
 sitioOficial: "https://one.google.com/about/plans"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/google-one.png
+heroImageAlt: Google One — Precios Digitales
 ---
 
 ## Qué cambia el precio final

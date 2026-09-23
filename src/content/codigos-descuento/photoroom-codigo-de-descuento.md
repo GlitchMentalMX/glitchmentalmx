@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados ni descuento para estudiantes — el único ahorro real y oficial es el 33% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Photoroom (photoroom.com/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/photoroom.png
+heroImageAlt: Photoroom — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Photoroom?

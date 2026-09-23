@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Los planes Premium y Definitivo de Vidu no tienen ninguna prueba gratuita: se pagan desde el primer mes."
 fuenteVerificacion: "Centro de ayuda oficial de Vidu (vidu.com/help-center), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/vidu.png
+heroImageAlt: Vidu — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Vidu?

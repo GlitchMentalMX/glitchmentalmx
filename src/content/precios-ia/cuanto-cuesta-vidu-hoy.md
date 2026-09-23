@@ -5,6 +5,8 @@ herramienta: "Vidu"
 herramientaId: "vidu"
 sitioOficial: "https://www.vidu.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/vidu.png
+heroImageAlt: Vidu — Precios de IA
 ---
 
 ## Qué cambia el precio final

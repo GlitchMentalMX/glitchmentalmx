@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "La IA generativa necesita tu permiso explícito — los modelos internos, no."
 fuentePolitica: "Principios de Privacidad de Slack: Búsqueda, Aprendizaje e IA"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/slack.png
+heroImageAlt: Slack — Privacidad de IA
 ---
 
 Depende de qué tipo de IA. Slack no usa los mensajes, archivos y contenido de tu workspace para entrenar modelos de IA generativa a menos que la organización dé un consentimiento explícito de opt-in — eso incluye funciones como resúmenes de conversaciones o búsqueda potenciada por IA. Pero para modelos de machine learning más tradicionales, como las recomendaciones de emojis o canales, Slack sí analiza el contenido de tu workspace por default, aunque dice trabajar sobre datos desidentificados y agregados en vez de leer el contenido de los mensajes directamente. Fuente: Principios de Privacidad de Slack, verificado el 23 de agosto de 2026.

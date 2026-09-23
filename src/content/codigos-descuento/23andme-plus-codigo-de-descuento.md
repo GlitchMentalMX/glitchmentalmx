@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un programa de referidos oficial con 10% de descuento mínimo, más rebajas de temporada frecuentes."
 fuenteVerificacion: "Sitio oficial de 23andme.org y programa de referidos (refer.23andme.com), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/23andme-plus.png
+heroImageAlt: 23andMe+ — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para 23andMe+?

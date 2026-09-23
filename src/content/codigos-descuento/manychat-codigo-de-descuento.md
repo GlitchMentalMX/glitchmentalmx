@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay programa oficial para estudiantes ni ONGs — lo confirmó un moderador de su propia comunidad —, pero sí un descuento real de hasta 30% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Manychat (manychat.com/pricing) y comunidad oficial de soporte (community.manychat.com), consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/manychat.png
+heroImageAlt: ManyChat — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ManyChat?

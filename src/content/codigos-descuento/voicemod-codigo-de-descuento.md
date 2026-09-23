@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "El checkout sí tiene un campo real de cupón, pero los códigos activos vienen de creadores asociados a Voicemod, no de un cupón público en su sitio."
 fuenteVerificacion: "Centro de ayuda oficial de Voicemod (support.voicemod.net), artículos sobre cómo comprar y canjear cupones, consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/voicemod.png
+heroImageAlt: Voicemod — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Voicemod?

@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "El propio centro de ayuda de Opus Clip lo dice sin rodeos: no hace falta tarjeta para empezar tu prueba gratuita."
 fuenteVerificacion: "Centro de Ayuda oficial de Opus Clip (help.opus.pro), artículo \"Payments & Billing info\", consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/opus-clip.png
+heroImageAlt: Opus Clip — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Opus Clip?

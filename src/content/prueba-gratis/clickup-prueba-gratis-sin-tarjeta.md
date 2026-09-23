@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "El botón 'Get started' de los planes de pago activa una prueba gratuita — el centro de ayuda solo pide tarjeta cuando decides quedarte con el plan, no para probarlo."
 fuenteVerificacion: "Página oficial de precios de ClickUp (clickup.com/pricing), centro de ayuda oficial (help.clickup.com), artículo 'Upgrade your plan' sección 'Free trials', y flujo oficial de registro (clickup.com/signup), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/clickup.png
+heroImageAlt: ClickUp — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de ClickUp?

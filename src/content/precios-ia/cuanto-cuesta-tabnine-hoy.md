@@ -5,6 +5,8 @@ herramienta: "Tabnine"
 herramientaId: "tabnine"
 sitioOficial: "https://www.tabnine.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/tabnine.png
+heroImageAlt: Tabnine — Precios de IA
 ---
 
 ## Qué cambia el precio final

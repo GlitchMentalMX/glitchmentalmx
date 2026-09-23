@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados por Pictory — el único descuento oficial real es hasta 40% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Pictory (pictory.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/pictory.png
+heroImageAlt: Pictory — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Pictory?

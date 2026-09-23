@@ -5,6 +5,8 @@ herramienta: "Figma"
 herramientaId: "figma"
 sitioOficial: "https://www.figma.com/pricing/"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/figma.png
+heroImageAlt: Figma — Precios de IA
 ---
 
 ## Qué cambia el precio final

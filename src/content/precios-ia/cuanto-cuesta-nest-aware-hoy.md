@@ -5,6 +5,8 @@ herramienta: "Google Nest Aware"
 herramientaId: "nest-aware"
 sitioOficial: "https://store.google.com/us/product/google_home_premium"
 pubDate: 2026-08-30
+heroImage: /images/precios-ia/nest-aware.png
+heroImageAlt: Google Nest Aware — Precios de IA
 ---
 
 ## Qué cambia el precio final

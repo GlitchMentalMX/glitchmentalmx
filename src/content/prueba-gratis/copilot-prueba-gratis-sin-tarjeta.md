@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Pide tarjeta desde el registro, aunque no te cobra hasta que termina el mes de prueba."
 fuenteVerificacion: "Página oficial de prueba de Microsoft 365 (microsoft.com/en-us/microsoft-365/try) y preguntas frecuentes de soporte de Microsoft sobre el requisito de tarjeta en la prueba gratuita, consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/copilot.png
+heroImageAlt: Copilot — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Copilot?

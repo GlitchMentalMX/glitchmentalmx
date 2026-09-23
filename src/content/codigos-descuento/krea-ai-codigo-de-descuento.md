@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento real por pagar anual y promociones puntuales al lanzarse un modelo nuevo, visibles directo en la página de precios."
 fuenteVerificacion: "Página oficial de precios de Krea (krea.ai/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/krea-ai.png
+heroImageAlt: Krea — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Krea?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público confirmado por StackBlitz, pero sí un descuento oficial real de hasta 28% por pagar anual."
 fuenteVerificacion: "Página oficial de precios de Bolt.new (bolt.new/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/bolt-new.png
+heroImageAlt: Bolt.new — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Bolt.new?

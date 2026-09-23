@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Compartir tus datos de manejo es opcional — pero es lo que mejora el Autopilot, así que casi todos dicen que sí."
 fuentePolitica: "Aviso de Privacidad para Clientes de Tesla"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/tesla.png
+heroImageAlt: Tesla — Privacidad de IA
 ---
 
 Depende de si aceptaste "Compartir Datos". Tesla no asocia por default los datos que genera tu manejo con tu identidad o cuenta, y para que las grabaciones de las cámaras se usen en el entrenamiento de su sistema de conducción autónoma (lo que Tesla llama "fleet learning"), necesita tu consentimiento explícito a través de la pantalla del auto — puedes aceptar todo, elegir categorías específicas, o rechazarlo. Cuando aceptas, Tesla usa esos datos para identificar en qué situaciones el Autopilot o el Full Self-Driving se equivocan o requieren que el conductor intervenga, y esos casos alimentan versiones futuras del sistema. Fuente: Aviso de Privacidad para Clientes de Tesla, verificado el 23 de agosto de 2026.

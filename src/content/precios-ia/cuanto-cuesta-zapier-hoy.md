@@ -5,6 +5,8 @@ herramienta: "Zapier"
 herramientaId: "zapier"
 sitioOficial: "https://zapier.com/pricing"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/zapier.png
+heroImageAlt: Zapier — Precios de IA
 ---
 
 ## Qué cambia el precio final

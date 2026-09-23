@@ -5,6 +5,8 @@ herramienta: "Speechify"
 herramientaId: "speechify"
 sitioOficial: "https://speechify.com/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/speechify.png
+heroImageAlt: Speechify — Precios de IA
 ---
 
 ## Qué cambia el precio final

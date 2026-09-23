@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento real ni un canal oficial de promoción — ni para estudiantes, ni por pago anual, ni para organizaciones sin fines de lucro."
 fuenteVerificacion: "Página oficial de precios de Tabnine (tabnine.com/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/tabnine.png
+heroImageAlt: Tabnine — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Tabnine?

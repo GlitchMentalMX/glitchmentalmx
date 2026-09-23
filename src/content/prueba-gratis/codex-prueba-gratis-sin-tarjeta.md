@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Codex no tiene una prueba gratuita de los planes que de verdad lo desbloquean sin límites cortos: solo viene incluido, muy acotado, en el plan Free de ChatGPT."
 fuenteVerificacion: "Centro de Ayuda oficial de OpenAI, artículo \"Using Codex with your ChatGPT plan\" (help.openai.com), consultado el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/codex.png
+heroImageAlt: Codex — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Codex?

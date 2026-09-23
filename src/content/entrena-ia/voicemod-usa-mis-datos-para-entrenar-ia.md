@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No entrena con tu voz por default — solo si te sumas activamente a un programa de mejora, y de forma anonimizada."
 fuentePolitica: "Política de Privacidad oficial de Voicemod, consultado el 31/08/2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/voicemod.png
+heroImageAlt: Voicemod — Privacidad de IA
 ---
 
 No, salvo que tú decidas participar. Voicemod documenta proyectos de mejora donde usuarios pueden aportar muestras de voz de forma voluntaria, y es explícito sobre la condición: esa participación "only takes place if you actively opt-in", y cualquier muestra que se recolecte para esos fines "is anonymised as soon as it's collected". Para la función de creación de voces con IA en particular, la política va todavía más lejos: "we do not listen to any voice recordings you provide for the purposes of AI voice creation." Fuente: Política de Privacidad oficial de Voicemod, verificado el 31 de agosto de 2026.

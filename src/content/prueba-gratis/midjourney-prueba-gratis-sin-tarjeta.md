@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Cero imágenes gratis en el sitio o Discord: hay que pagar desde la primera generación."
 fuenteVerificacion: "Documentación oficial de Midjourney, artículo 'Free Trials' (docs.midjourney.com), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/midjourney.png
+heroImageAlt: Midjourney — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Midjourney?

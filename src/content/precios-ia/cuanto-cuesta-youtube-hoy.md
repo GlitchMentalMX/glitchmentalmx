@@ -5,6 +5,8 @@ herramienta: "YouTube"
 herramientaId: "youtube"
 sitioOficial: "https://www.youtube.com/premium"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/youtube.png
+heroImageAlt: YouTube — Precios de IA
 ---
 
 ## Qué cambia el precio final

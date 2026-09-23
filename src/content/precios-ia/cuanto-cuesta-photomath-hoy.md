@@ -5,6 +5,8 @@ herramienta: "Photomath"
 herramientaId: "photomath"
 sitioOficial: "https://photomath.com/en/"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/photomath.png
+heroImageAlt: Photomath — Precios de IA
 ---
 
 ## Qué cambia el precio final

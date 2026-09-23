@@ -5,6 +5,8 @@ herramienta: "Nintendo Switch Online"
 herramientaId: "nintendo-switch-online"
 sitioOficial: "https://www.nintendo.com/us/switch/online/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/nintendo-switch-online.png
+heroImageAlt: Nintendo Switch Online — Precios Digitales
 ---
 
 ## Qué cambia el precio final

@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba: es una garantía de reembolso de 3 días, así que ya pagaste con tarjeta desde el día uno."
 fuenteVerificacion: "Página oficial de Premium de QuillBot (quillbot.com/premium) y centro de ayuda de QuillBot (help.quillbot.com), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/quillbot.png
+heroImageAlt: QuillBot — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de QuillBot?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Tus publicaciones entrenan a Grok por default — puedes apagarlo, pero no de forma retroactiva."
 fuentePolitica: "Política de Privacidad de X y Política de Privacidad de xAI"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/x-grok.png
+heroImageAlt: X (Grok) — Privacidad de IA
 ---
 
 Sí, por default. xAI usa tus publicaciones públicas en X, los datos de tu perfil y tus conversaciones con Grok para entrenar sus modelos, salvo que tu cuenta sea privada — el contenido de cuentas privadas queda excluido tanto del entrenamiento como de las herramientas de "remix" de imágenes de Grok. Esto aplica a usuarios fuera de la Unión Europea; dentro de la UE, Grok está bajo investigación regulatoria por posibles violaciones al GDPR, lo que ha forzado ajustes distintos en esa región. Fuente: Política de Privacidad de X, verificado el 23 de agosto de 2026.

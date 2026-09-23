@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un programa oficial que da un año gratis o con descuento a estudiantes universitarios."
 fuenteVerificacion: "Página oficial de planes de Google AI (one.google.com/about/google-ai-plans), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/gemini.png
+heroImageAlt: Gemini — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Gemini?

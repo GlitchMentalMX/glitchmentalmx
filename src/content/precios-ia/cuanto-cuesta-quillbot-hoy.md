@@ -5,6 +5,8 @@ herramienta: "QuillBot"
 herramientaId: "quillbot"
 sitioOficial: "https://quillbot.com/premium"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/quillbot.png
+heroImageAlt: QuillBot — Precios de IA
 ---
 
 ## Qué cambia el precio final

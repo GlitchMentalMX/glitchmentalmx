@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Los planes Plus, Pro y Ultra de Luma AI no tienen ninguna prueba gratuita: se pagan desde el primer cargo."
 fuenteVerificacion: "Página oficial de precios de Luma AI (lumalabs.ai/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/luma-ai.png
+heroImageAlt: Luma AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Luma AI?

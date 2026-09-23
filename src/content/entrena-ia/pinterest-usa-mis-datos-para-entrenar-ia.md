@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tus pines aunque los hayas subido hace años — el interruptor para salir viene encendido."
 fuentePolitica: "Términos de Servicio y Política de Privacidad de Pinterest"
 pubDate: 2026-08-23
+heroImage: /images/entrena-ia/pinterest.png
+heroImageAlt: Pinterest — Privacidad de IA
 ---
 
 Sí, por default. Pinterest actualizó sus Términos de Servicio para dejar explícito que usa la información de sus usuarios —incluidas las imágenes— para "entrenar, desarrollar y mejorar" su tecnología, incluidos sus modelos de aprendizaje automático, sin importar cuándo hayas subido el pin. Este uso alimenta directamente a Pinterest Canvas, su modelo de IA generativa de imagen a imagen, diseñado para "mejorar imágenes y productos existentes en la plataforma". El ajuste que permite esto viene activado desde el inicio: tienes que ir a buscarlo para apagarlo. Fuente: Términos de Servicio y Política de Privacidad de Pinterest, verificado el 23 de agosto de 2026.

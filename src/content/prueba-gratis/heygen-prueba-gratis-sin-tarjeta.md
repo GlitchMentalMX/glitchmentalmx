@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "HeyGen deja probar funciones premium gratis sin tarjeta, pero el plan Creator de pago no tiene prueba: se cobra desde el primer clic."
 fuenteVerificacion: "Página oficial de precios de HeyGen (heygen.com/pricing), sección de preguntas frecuentes, consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/heygen.png
+heroImageAlt: HeyGen — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de HeyGen?

@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados para la membresía, pero sí un descuento oficial real de más del 20% por pagar el plan Moderato anual."
 fuenteVerificacion: "Página oficial de precios de la membresía de Kimi (kimi.com/membership/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/kimi.png
+heroImageAlt: Kimi — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Kimi?

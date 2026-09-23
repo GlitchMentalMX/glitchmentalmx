@@ -5,6 +5,8 @@ herramienta: "Perplexity"
 herramientaId: "perplexity"
 sitioOficial: "https://www.perplexity.ai/pro"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/perplexity.png
+heroImageAlt: Perplexity — Precios de IA
 ---
 
 ## Qué cambia el precio final

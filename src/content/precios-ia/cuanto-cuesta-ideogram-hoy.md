@@ -5,6 +5,8 @@ herramienta: "Ideogram"
 herramientaId: "ideogram"
 sitioOficial: "https://ideogram.ai/pricing"
 pubDate: 2026-08-21
+heroImage: /images/precios-ia/ideogram.png
+heroImageAlt: Ideogram — Precios de IA
 ---
 
 ## Qué cambia el precio final

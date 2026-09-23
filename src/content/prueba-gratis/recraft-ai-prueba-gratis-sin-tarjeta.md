@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Basic: el botón de upgrade cobra a través de Stripe desde el primer momento."
 fuenteVerificacion: "Página oficial de precios de Recraft (recraft.ai/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/recraft-ai.png
+heroImageAlt: Recraft — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Recraft?

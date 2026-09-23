@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar anual — y créditos ocasionales al lanzar un modelo nuevo."
 fuenteVerificacion: "Página oficial de precios de Anthropic (claude.com/pricing), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/claude.png
+heroImageAlt: Claude — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Claude?

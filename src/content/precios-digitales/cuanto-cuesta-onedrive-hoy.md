@@ -5,6 +5,8 @@ herramienta: "Microsoft OneDrive"
 herramientaId: "onedrive"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-365/onedrive/compare-onedrive-plans"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/onedrive.png
+heroImageAlt: Microsoft OneDrive — Precios Digitales
 ---
 
 ## Qué cambia el precio final

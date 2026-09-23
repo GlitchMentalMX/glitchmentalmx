@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Sí: Speechify tiene un descuento oficial activo hoy en su propio sitio — 40% off con el código READFAST40, sin depender de cupones de terceros."
 fuenteVerificacion: "Página oficial speechify.com/new-member-offer/ y speechify.com/pricing, consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/speechify.png
+heroImageAlt: Speechify — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Speechify?

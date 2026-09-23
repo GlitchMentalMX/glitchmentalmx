@@ -5,6 +5,8 @@ herramienta: "Fireflies.ai"
 herramientaId: "fireflies-ai"
 sitioOficial: "https://fireflies.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/fireflies-ai.png
+heroImageAlt: Fireflies.ai — Precios de IA
 ---
 
 ## Qué cambia el precio final

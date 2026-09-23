@@ -5,6 +5,8 @@ herramienta: "Adobe Firefly"
 herramientaId: "adobe-firefly"
 sitioOficial: "https://firefly.adobe.com/"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/adobe-firefly.png
+heroImageAlt: Adobe Firefly — Precios de IA
 ---
 
 ## Qué cambia el precio final

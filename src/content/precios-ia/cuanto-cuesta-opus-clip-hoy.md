@@ -5,6 +5,8 @@ herramienta: "Opus Clip"
 herramientaId: "opus-clip"
 sitioOficial: "https://www.opus.pro/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/opus-clip.png
+heroImageAlt: Opus Clip — Precios de IA
 ---
 
 ## Qué cambia el precio final

@@ -5,6 +5,8 @@ herramienta: "ElevenLabs"
 herramientaId: "elevenlabs"
 sitioOficial: "https://elevenlabs.io/pricing"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/elevenlabs.png
+heroImageAlt: ElevenLabs — Precios de IA
 ---
 
 ## Qué cambia el precio final

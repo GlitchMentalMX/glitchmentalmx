@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El chat gratuito de Grok no pide tarjeta, pero activar SuperGrok sí: la documentación oficial de xAI no describe ninguna prueba de pago sin dar un método de cobro."
 fuenteVerificacion: "Flujo oficial de suscripción en grok.com/plans (con redirección a accounts.x.ai para iniciar el checkout) y FAQ oficial de xAI (docs.x.ai/grok/faq), consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/grok.png
+heroImageAlt: Grok — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Grok?

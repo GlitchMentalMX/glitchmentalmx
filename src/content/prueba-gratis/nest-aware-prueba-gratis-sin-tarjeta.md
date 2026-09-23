@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Sí hay 30 días de prueba, pero la tienda oficial de Google exige tarjeta desde el registro y cobra sola si no cancelas a tiempo."
 fuenteVerificacion: "Tienda oficial de Google (store.google.com/us/product/google_home_premium), sección de preguntas frecuentes y nota 9 de términos, consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/prueba-gratis/nest-aware.png
+heroImageAlt: Google Nest Aware — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Nest Aware?

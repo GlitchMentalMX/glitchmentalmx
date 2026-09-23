@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No se vende por separado ni tiene cupones — pero Google ofrece un año gratis de Google AI Pro o Plus, con NotebookLM incluido, a estudiantes verificados."
 fuenteVerificacion: "Centro de precios oficial de Google One / Google AI (one.google.com) y blog oficial de Google (blog.google), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/notebooklm.png
+heroImageAlt: NotebookLM — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para NotebookLM?

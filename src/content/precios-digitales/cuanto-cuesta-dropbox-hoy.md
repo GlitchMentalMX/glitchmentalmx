@@ -5,6 +5,8 @@ herramienta: "Dropbox"
 herramientaId: "dropbox"
 sitioOficial: "https://www.dropbox.com/plans"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/dropbox.png
+heroImageAlt: Dropbox — Precios Digitales
 ---
 
 ## Qué cambia el precio final

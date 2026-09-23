@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupón público, pero el plan Premium sí baja de precio si pagas por año en vez de mes a mes."
 fuenteVerificacion: "Página oficial de planes de Adobe Podcast (podcast.adobe.com/en/plans), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/adobe-podcast.png
+heroImageAlt: Adobe Podcast — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Adobe Podcast?

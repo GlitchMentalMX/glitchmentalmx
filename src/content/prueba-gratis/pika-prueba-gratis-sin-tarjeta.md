@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Standard, Pro y Fancy —los planes de pago de Pika— no tienen ninguna prueba gratuita: se cobran desde el primer cargo."
 fuenteVerificacion: "Página oficial de precios de Pika (pika.art/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/pika.png
+heroImageAlt: Pika — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Pika?

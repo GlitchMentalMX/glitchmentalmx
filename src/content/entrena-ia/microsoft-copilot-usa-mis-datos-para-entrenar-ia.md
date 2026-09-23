@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tus chats por default en México — hay países exentos por ley, el tuyo no es uno de ellos."
 fuentePolitica: "FAQ de Privacidad de Microsoft Copilot"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/microsoft-copilot.png
+heroImageAlt: Microsoft Copilot — Privacidad de IA
 ---
 
 Sí, por default. El Microsoft Copilot al que accedes en copilot.microsoft.com, su app móvil o el sitio directo —el mismo asistente conversacional, sin pasar por Windows ni por Microsoft 365— usa tus conversaciones de texto y voz para entrenar sus modelos salvo que tú lo desactives. Microsoft guarda tu historial de conversaciones por 18 meses por default. Un dato que casi nadie menciona: usuarios en Brasil, China (fuera de Hong Kong), Israel, Nigeria, Corea del Sur y Vietnam quedan excluidos de este entrenamiento por default, por regulación local — México no está en esa lista, así que aquí sí participas salvo que lo apagues tú. Fuente: FAQ de Privacidad de Microsoft Copilot, verificado el 24 de agosto de 2026.

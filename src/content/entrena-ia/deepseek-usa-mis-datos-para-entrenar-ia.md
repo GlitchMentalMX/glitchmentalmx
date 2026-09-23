@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Tus datos se procesan en China bajo su ley — el 'derecho a opt-out' no tiene un botón claro en la app."
 fuentePolitica: "Política de Privacidad de DeepSeek"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/deepseek.png
+heroImageAlt: DeepSeek — Privacidad de IA
 ---
 
 Sí. La política de privacidad de DeepSeek confirma que usa tus interacciones para "entrenar y mejorar" sus modelos de machine learning, y reconoce por escrito que tienes "el derecho a optar por no participar en el uso de tus Datos Personales para entrenar nuestros modelos". El problema es lo que no dice: la política no describe un interruptor o configuración dentro de la app o el sitio para ejercer ese derecho — es un derecho que existe en el papel, sin un mecanismo de autoservicio documentado públicamente. Fuente: Política de Privacidad de DeepSeek, verificado el 24 de agosto de 2026.

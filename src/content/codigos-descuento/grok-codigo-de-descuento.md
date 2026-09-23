@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos ni promoción vigente para estudiantes, pero sí un descuento oficial real por pagar el plan anual."
 fuenteVerificacion: "Estructura oficial de precios de Grok / xAI (grok.com/plans), consultada el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/grok.png
+heroImageAlt: Grok — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Grok?

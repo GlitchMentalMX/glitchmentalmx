@@ -5,6 +5,8 @@ herramienta: "Framer"
 herramientaId: "framer"
 sitioOficial: "https://www.framer.com/pricing/"
 pubDate: 2026-08-23
+heroImage: /images/precios-ia/framer.png
+heroImageAlt: Framer — Precios de IA
 ---
 
 ## Qué cambia el precio final

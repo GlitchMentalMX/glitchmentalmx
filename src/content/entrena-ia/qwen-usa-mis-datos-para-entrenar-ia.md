@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Entrena con una versión desidentificada de tu contenido por default — no hay interruptor en la app."
 fuentePolitica: "Política de Privacidad de Qwen Studio / Alibaba Cloud (Singapore), consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/qwen.png
+heroImageAlt: Qwen — Privacidad de IA
 ---
 
 Sí, por default. La Política de Privacidad de Qwen —operada por Alibaba Cloud (Singapore) Private Limited— incluye una tabla explícita de propósitos de uso de datos, y una fila dice exactamente esto: el "Contenido de Usuario desidentificado" y tus comentarios de retroalimentación se usan "para entrenar y mejorar la precisión, el desempeño y la calidad de nuestros servicios (incluyendo nuestros modelos de IA)", bajo la base legal de "interés legítimo". No es opt-in: participas desde que usas el servicio, salvo que tu jurisdicción te dé un derecho legal para objetar. Fuente: Política de Privacidad de Qwen, verificado el 31 de agosto de 2026.

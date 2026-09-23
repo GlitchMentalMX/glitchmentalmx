@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Sí existe: GPTZero publica en su propia página de precios el código BTS26, con 30% adicional de descuento sobre el plan anual."
 fuenteVerificacion: "Página oficial de precios de GPTZero (gptzero.me/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/gptzero.png
+heroImageAlt: GPTZero — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para GPTZero?

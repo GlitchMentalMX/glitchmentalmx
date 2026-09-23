@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Tus documentos, correos y hojas de cálculo no entrenan los modelos base de Copilot — es un compromiso contractual, sin opt-in necesario."
 fuentePolitica: "Documentación oficial de Microsoft Learn: Privacidad de Microsoft Copilot"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/microsoft-365.png
+heroImageAlt: Microsoft 365 — Privacidad de IA
 ---
 
 No. Microsoft lo declara como "Important" en su propia documentación técnica: "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft Copilot" ("los prompts, las respuestas y los datos a los que se accede a través de Microsoft Graph no se usan para entrenar los modelos de lenguaje base, incluidos los que usa Microsoft Copilot"). Esto cubre el contenido que Copilot toca dentro de toda la suite: tus documentos de Word, hojas de Excel, presentaciones de PowerPoint, correos de Outlook y archivos en OneDrive o SharePoint — todo se procesa bajo los mismos compromisos contractuales que ya protegen el resto de tu contenido de Microsoft 365, sin salir de ahí para entrenar modelos que después usan otros clientes. Fuente: documentación oficial de Microsoft Learn sobre privacidad de Copilot, verificado el 31 de agosto de 2026.

@@ -5,6 +5,8 @@ herramienta: "ExpressVPN"
 herramientaId: "expressvpn"
 sitioOficial: "https://www.expressvpn.com/order"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/expressvpn.png
+heroImageAlt: ExpressVPN — Precios Digitales
 ---
 
 ## Qué cambia el precio final

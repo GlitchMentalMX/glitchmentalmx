@@ -5,6 +5,8 @@ herramienta: "DeepL"
 herramientaId: "deepl"
 sitioOficial: "https://www.deepl.com/pro"
 pubDate: 2026-08-20
+heroImage: /images/precios-ia/deepl.png
+heroImageAlt: DeepL — Precios de IA
 ---
 
 ## Qué cambia el precio final

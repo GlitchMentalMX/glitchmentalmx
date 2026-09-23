@@ -6,6 +6,8 @@ herramientaId: "amazon-q-developer"
 sitioOficial: "https://aws.amazon.com/q/developer/pricing/"
 pubDate: 2026-08-23
 updatedDate: 2026-08-30
+heroImage: /images/precios-ia/amazon-q-developer.png
+heroImageAlt: Amazon Q Developer — Precios de IA
 ---
 
 ## Aviso: AWS está descontinuando esta herramienta

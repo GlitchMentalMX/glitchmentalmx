@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un 33% de descuento oficial por pagar anual y un 15% adicional para organizaciones sin fines de lucro."
 fuenteVerificacion: "Centro de ayuda oficial de Zapier (help.zapier.com), artículo \"Discounts for Zapier plans\", y zapier.com/non-profits, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/zapier.png
+heroImageAlt: Zapier — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Zapier?

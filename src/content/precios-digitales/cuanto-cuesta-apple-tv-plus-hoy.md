@@ -5,6 +5,8 @@ herramienta: "Apple TV+"
 herramientaId: "apple-tv-plus"
 sitioOficial: "https://www.apple.com/apple-tv-plus/"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/apple-tv-plus.png
+heroImageAlt: Apple TV+ — Precios Digitales
 ---
 
 ## Qué cambia el precio final

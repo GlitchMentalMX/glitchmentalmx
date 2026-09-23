@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Sí existe: la propia página de precios de SciSpace publica el código SCI30, con 30% de descuento sobre los planes anuales."
 fuenteVerificacion: "Página oficial de precios de SciSpace, sección de preguntas frecuentes '¿Ofrecen descuentos?' (scispace.com/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/scispace.png
+heroImageAlt: SciSpace — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para SciSpace?

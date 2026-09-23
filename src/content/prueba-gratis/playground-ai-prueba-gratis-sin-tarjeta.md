@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "No hay prueba de Pro: el botón de upgrade cobra el plan completo desde que lo confirmas."
 fuenteVerificacion: "Página oficial de precios de Playground AI (playgroundai.com/pricing), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/playground-ai.png
+heroImageAlt: Playground AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Playground AI?

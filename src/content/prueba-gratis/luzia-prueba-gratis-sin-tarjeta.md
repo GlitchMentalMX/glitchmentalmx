@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Los propios Términos y Condiciones de Luzia dicen que la prueba de 3 días de Luzia+ se activa 'contratando' la suscripción, y que se cobra sola si no cancelas a tiempo — eso implica dar un método de pago desde el inicio."
 fuenteVerificacion: "Términos y Condiciones oficiales de Luzia (luzia.com/terminos-y-condiciones), sección V, consultados el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/luzia.png
+heroImageAlt: Luzia — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Luzia?

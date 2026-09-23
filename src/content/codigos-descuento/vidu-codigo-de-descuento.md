@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados, pero sí un 20% de descuento oficial real por pagar cualquier plan anual en vez de mensual."
 fuenteVerificacion: "Página oficial de precios de Vidu (vidu.com/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/vidu.png
+heroImageAlt: Vidu — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Vidu?

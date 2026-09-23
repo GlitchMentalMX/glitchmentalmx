@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay botón de prueba directa; solo accedes gratis vía promociones, y la mayoría sí piden tarjeta."
 fuenteVerificacion: "Centro de Ayuda oficial de Perplexity, artículo 'Billing FAQ for Pro Plan Subscribers' (perplexity.ai/help-center), consultada el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/perplexity.png
+heroImageAlt: Perplexity — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Perplexity?

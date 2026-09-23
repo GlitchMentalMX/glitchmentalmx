@@ -5,6 +5,8 @@ herramienta: "Bitdefender"
 herramientaId: "bitdefender"
 sitioOficial: "https://www.bitdefender.com/en-us/consumer/total-security"
 pubDate: 2026-08-31
+heroImage: /images/precios-digitales/bitdefender.png
+heroImageAlt: Bitdefender — Precios Digitales
 ---
 
 ## Qué cambia el precio final

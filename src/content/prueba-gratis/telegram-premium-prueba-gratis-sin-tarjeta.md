@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El FAQ oficial de Telegram Premium no menciona ninguna prueba gratuita: describe la suscripción como un pago inmediato con método de pago desde el inicio."
 fuenteVerificacion: "FAQ oficial de Telegram Premium (telegram.org/faq_premium), consultado el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/prueba-gratis/telegram-premium.png
+heroImageAlt: Telegram Premium — Prueba gratis sin tarjeta
 ---
 
 ## ¿Telegram Premium tiene periodo de prueba?

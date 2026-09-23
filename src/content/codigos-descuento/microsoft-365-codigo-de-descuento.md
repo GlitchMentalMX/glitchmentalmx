@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No hay cupón genérico, pero el descuento de 50% para estudiantes es real, oficial y tiene su propia página dedicada en Microsoft.com."
 fuenteVerificacion: "Página oficial de Microsoft: descuento de estudiante para Microsoft 365 (microsoft.com/en-us/microsoft-365/college-student-pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/codigos-descuento/microsoft-365.png
+heroImageAlt: Microsoft 365 — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Microsoft 365?

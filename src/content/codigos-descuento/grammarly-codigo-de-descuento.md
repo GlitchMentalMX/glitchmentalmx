@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento real de hasta 60% por pago anual, y acceso gratis si tu universidad tiene licencia."
 fuenteVerificacion: "Página oficial de precios de Grammarly (grammarly.com/pro) y grammarly.com/students, consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/grammarly.png
+heroImageAlt: Grammarly — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Grammarly?

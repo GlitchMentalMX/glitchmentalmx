@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Los planes que de verdad desbloquean Veo sin marca de agua (Google AI Plus, Pro, Ultra) no tienen ninguna prueba gratuita: se cobran desde el primer momento."
 fuenteVerificacion: "Página oficial de precios de Google Flow (labs.google/flow/pricing), consultada el 31/08/2026."
 pubDate: 2026-08-31
+heroImage: /images/prueba-gratis/veo.png
+heroImageAlt: Veo — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Veo?

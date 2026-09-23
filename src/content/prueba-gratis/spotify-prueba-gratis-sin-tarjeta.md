@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan Premium exige tarjeta desde el inicio: se cobra automáticamente si no cancelas a tiempo."
 fuenteVerificacion: "Términos y condiciones oficiales de la prueba gratuita de Spotify (spotify.com/us/legal/90-days-free-trial-terms-and-conditions), consultados el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/spotify.png
+heroImageAlt: Spotify — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Spotify?

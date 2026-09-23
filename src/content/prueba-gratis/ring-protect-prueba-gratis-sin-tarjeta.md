@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "La prueba de 30 días no pide tarjeta para arrancar, pero solo existe si ya tienes un dispositivo Ring activado — no es una prueba que puedas iniciar desde el sitio como cualquier software."
 fuenteVerificacion: "Centro de ayuda oficial de Ring (ring.com/support), artículos \"Ring subscription trial information\" y \"General Information on Ring Protect Subscription Plans\", consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/prueba-gratis/ring-protect.png
+heroImageAlt: Ring Protect — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Ring Protect?

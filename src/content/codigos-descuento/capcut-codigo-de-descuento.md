@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial para estudiantes verificados y un precio menor por pagar anual."
 fuenteVerificacion: "Página oficial de precios de CapCut (capcut.com/pricing) y flujo oficial de verificación de estudiante dentro de la cuenta de CapCut (vía SheerID), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/capcut.png
+heroImageAlt: CapCut — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para CapCut?

@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Tus búsquedas y contenido nunca entrenan modelos de IA — ni los suyos ni los de OpenAI, Anthropic o Google, sus proveedores."
 fuentePolitica: "Política de Privacidad de Consensus"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/consensus-app.png
+heroImageAlt: Consensus — Privacidad de IA
 ---
 
 No. Consensus lo declara como uno de sus compromisos explícitos bajo el encabezado "What we will never do with your data" ("lo que nunca haremos con tus datos"): "We do not use your data to train large language models. Your queries, content, and personal information are never used to train AI models — neither our own nor those of any third party" ("no usamos tus datos para entrenar modelos de lenguaje grande. Tus consultas, contenido e información personal nunca se usan para entrenar modelos de IA — ni los nuestros ni los de ningún tercero"). Fuente: Política de Privacidad de Consensus, sección "Use of Information Collected", verificado el 31 de agosto de 2026.

@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "Dice no usar tu información personal para entrenar modelos, y ofrece un interruptor de Opt-Out de Entrenamiento."
 fuentePolitica: "Política de Privacidad de Manus, consultado el 31 de agosto de 2026"
 pubDate: 2026-08-31
+heroImage: /images/entrena-ia/manus-ai.png
+heroImageAlt: Manus — Privacidad de IA
 ---
 
 No, según su propia política. Manus, el agente autónomo de tareas, es explícito sobre este punto: "no procesamos, divulgamos ni de otra forma utilizamos tu información personal para el desarrollo, entrenamiento o refinamiento de ningún modelo de inteligencia artificial o de machine learning". La empresa sí reconoce un matiz: puede usar metadatos agregados o desidentificados —sin vincularlos a ti— para mejorar el desempeño del agente, diagnosticar fallas y prevenir abuso, pero eso es distinto a entrenar un modelo con tus prompts o el contenido de tus tareas. Fuente: Política de Privacidad de Manus, verificado el 31 de agosto de 2026.

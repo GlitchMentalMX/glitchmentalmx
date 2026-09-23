@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "El plan gratuito no pide tarjeta, pero Essential no tiene prueba: se paga desde el primer mes."
 fuenteVerificacion: "Página oficial de precios de Leonardo AI (leonardo.ai/pricing) y preguntas frecuentes de precios y planes (docs.leonardo.ai), consultadas el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/leonardo-ai.png
+heroImageAlt: Leonardo AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Leonardo AI?

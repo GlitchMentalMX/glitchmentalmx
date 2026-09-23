@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No pide tarjeta para la prueba, y si no decides nada, vuelve sola al plan Gratis."
 fuenteVerificacion: "Centro de ayuda oficial de Slack, artículo \"Prueba gratis un plan de pago de Slack\" (slack.com/help), consultado el 25/08/2026."
 pubDate: 2026-08-25
+heroImage: /images/prueba-gratis/slack.png
+heroImageAlt: Slack — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Slack?

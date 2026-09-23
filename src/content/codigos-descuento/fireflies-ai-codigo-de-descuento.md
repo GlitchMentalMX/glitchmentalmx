@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial del 10% para estudiantes y ONG, verificable por correo institucional."
 fuenteVerificacion: "Página oficial de precios de Fireflies.ai (fireflies.ai/pricing) y su centro de ayuda oficial (guide.fireflies.ai), consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/fireflies-ai.png
+heroImageAlt: Fireflies.ai — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Fireflies.ai?

@@ -5,6 +5,8 @@ herramienta: "Le Chat"
 herramientaId: "le-chat"
 sitioOficial: "https://mistral.ai/pricing"
 pubDate: 2026-08-22
+heroImage: /images/precios-ia/le-chat.png
+heroImageAlt: Le Chat — Precios de IA
 ---
 
 ## Qué cambia el precio final

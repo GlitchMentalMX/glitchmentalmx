@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real de alrededor de 30% por pagar el plan anual por adelantado."
 fuenteVerificacion: "Página oficial de LinkedIn Premium (linkedin.com/premium/products) y Centro de ayuda de LinkedIn, consultados el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/linkedin.png
+heroImageAlt: LinkedIn — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para LinkedIn Premium?

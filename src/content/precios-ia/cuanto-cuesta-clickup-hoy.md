@@ -5,6 +5,8 @@ herramienta: "ClickUp"
 herramientaId: "clickup"
 sitioOficial: "https://clickup.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/clickup.png
+heroImageAlt: ClickUp — Precios de IA
 ---
 
 ## Qué cambia el precio final

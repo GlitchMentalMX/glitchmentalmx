@@ -9,6 +9,8 @@ veredicto: "amarillo"
 fraseCorta: "No hay cupones genéricos, pero sí un descuento oficial real de 50% para estudiantes y profesores verificados, válido hasta 12 meses."
 fuenteVerificacion: "Páginas oficiales lovable.dev/pricing y lovable.dev/students, consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/lovable.png
+heroImageAlt: Lovable — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Lovable?

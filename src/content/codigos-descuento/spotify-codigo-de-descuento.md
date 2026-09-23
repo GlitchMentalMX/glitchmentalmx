@@ -9,6 +9,8 @@ veredicto: "verde"
 fraseCorta: "No hay cupones públicos, pero el descuento de 50% para estudiantes es real, oficial y está activo hoy en la página de precios."
 fuenteVerificacion: "Páginas oficiales de Spotify (spotify.com/premium y spotify.com/student), consultadas el 30/08/2026."
 pubDate: 2026-08-30
+heroImage: /images/codigos-descuento/spotify.png
+heroImageAlt: Spotify — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Spotify?

@@ -5,6 +5,8 @@ herramienta: "SciSpace"
 herramientaId: "scispace"
 sitioOficial: "https://scispace.com/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/scispace.png
+heroImageAlt: SciSpace — Precios de IA
 ---
 
 ## Qué cambia el precio final

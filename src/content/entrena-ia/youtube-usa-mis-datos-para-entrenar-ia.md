@@ -9,6 +9,8 @@ veredicto: "rojo"
 fraseCorta: "Subir un video te hace ceder una licencia amplia que Google ya usa para justificar entrenamiento de IA."
 fuentePolitica: "Términos de Servicio de YouTube"
 pubDate: 2026-08-24
+heroImage: /images/entrena-ia/youtube.png
+heroImageAlt: YouTube — Privacidad de IA
 ---
 
 Sí, según la propia postura legal de Google. Al subir contenido a YouTube, le otorgas a la plataforma una licencia mundial, no exclusiva, libre de regalías y transferible para usar ese contenido —incluido reproducirlo, distribuirlo y preparar obras derivadas—. Google ha usado esa misma cláusula, redactada en 2019 antes de que existiera la IA generativa moderna, para defenderse en una demanda que alega que Lyria 3, su modelo de generación musical, se entrenó con canciones de artistas independientes extraídas de YouTube sin su consentimiento ni compensación. YouTube confirma directamente que usa el contenido subido a la plataforma para entrenar aplicaciones de machine learning e IA, con el fin de mejorar la experiencia del producto. Fuente: Términos de Servicio de YouTube, verificado el 24 de agosto de 2026.

@@ -5,6 +5,8 @@ herramienta: "Grok"
 herramientaId: "grok"
 sitioOficial: "https://grok.com/plans"
 pubDate: 2026-08-19
+heroImage: /images/precios-ia/grok.png
+heroImageAlt: Grok — Precios de IA
 ---
 
 ## Qué cambia el precio final

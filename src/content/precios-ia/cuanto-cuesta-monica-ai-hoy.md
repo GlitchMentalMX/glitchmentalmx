@@ -5,6 +5,8 @@ herramienta: "Monica"
 herramientaId: "monica-ai"
 sitioOficial: "https://monica.im/pricing"
 pubDate: 2026-08-31
+heroImage: /images/precios-ia/monica-ai.png
+heroImageAlt: Monica — Precios de IA
 ---
 
 ## Qué cambia el precio final
