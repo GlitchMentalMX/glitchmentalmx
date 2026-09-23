@@ -1564,6 +1564,7 @@ const signalPools = {
 
   const conn = (navigator as any).connection;
   const skip =
+    true || // DESACTIVADO TEMPORALMENTE — para descartar el video como causa de la lentitud general del sitio. Quitar el "true ||" para reactivar.
     matchMedia('(prefers-reduced-motion: reduce)').matches ||
     conn?.saveData === true ||
     ['slow-2g', '2g'].includes(conn?.effectiveType);
