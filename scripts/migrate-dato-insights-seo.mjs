@@ -16,52 +16,14 @@
 //
 // Uso: node scripts/migrate-dato-insights-seo.mjs [--dry-run]
 
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
-import yaml from 'js-yaml';
 import { assignPieceSlugs } from '../src/lib/pieceSlug.mjs';
+import { setFrontmatterFields } from './lib/frontmatter.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const DRY_RUN = process.argv.includes('--dry-run');
-
-function setFrontmatterFields(filePath, fields) {
-  const raw = readFileSync(filePath, 'utf-8');
-  const lines = raw.split('\n');
-  if (lines[0].trim() !== '---') throw new Error('frontmatter no encontrado');
-  let closeIdx = -1;
-  for (let i = 1; i < lines.length; i++) {
-    if (lines[i] === '---') {
-      closeIdx = i;
-      break;
-    }
-  }
-  if (closeIdx === -1) throw new Error('frontmatter no cerrado');
-
-  let fmLines = lines.slice(1, closeIdx);
-
-  for (const [key, value] of Object.entries(fields)) {
-    const dumped = yaml.dump({ [key]: value }).replace(/\n$/, '');
-    const dumpedLines = dumped.split('\n');
-
-    const startIdx = fmLines.findIndex((l) => new RegExp(`^${key}:`).test(l));
-    if (startIdx === -1) {
-      fmLines = [...fmLines, ...dumpedLines];
-      continue;
-    }
-    let endIdx = fmLines.length;
-    for (let i = startIdx + 1; i < fmLines.length; i++) {
-      if (/^[A-Za-z_][\w-]*:/.test(fmLines[i])) {
-        endIdx = i;
-        break;
-      }
-    }
-    fmLines = [...fmLines.slice(0, startIdx), ...dumpedLines, ...fmLines.slice(endIdx)];
-  }
-
-  const newLines = ['---', ...fmLines, '---', ...lines.slice(closeIdx + 1)];
-  writeFileSync(filePath, newLines.join('\n'));
-}
 
 function loadEntries(dir) {
   return readdirSync(dir)

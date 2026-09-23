@@ -7,4 +7,5 @@ date: 2026-08-17T06:18
 draft: false
 slug: >-
   las-impresoras-3d-domesticas-prometian-fabricar-de-todo-en-casa-la-mayoria-termina
+categoria: Tecnología de Consumo
 ---

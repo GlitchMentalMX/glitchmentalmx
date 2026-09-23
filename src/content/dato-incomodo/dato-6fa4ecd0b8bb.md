@@ -7,4 +7,5 @@ date: 2026-09-04T05:10
 draft: false
 slug: >-
   el-ano-del-metaverso-se-cancelo-silenciosamente-nadie-hizo-el-anuncio-oficial-simplemente
+categoria: Tendencias Digitales
 ---

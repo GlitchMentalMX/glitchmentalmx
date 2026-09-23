@@ -9,4 +9,5 @@ imagenAlt: >-
   celular, para quedarse.
 slug: >-
   los-codigos-qr-volvieron-por-la-pandemia-el-menu-de-pdf-ilegible-en-tu-celular-para
+categoria: Tecnología de Consumo
 ---

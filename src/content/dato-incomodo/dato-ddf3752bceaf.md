@@ -7,4 +7,5 @@ date: 2026-09-21T04:58
 draft: false
 slug: >-
   las-torres-de-celular-en-zonas-rurales-llegan-tarde-porque-ahi-no-hay-suficiente-gente
+categoria: Tecnología de Consumo
 ---

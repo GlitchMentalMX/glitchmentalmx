@@ -7,4 +7,5 @@ date: 2026-08-15T05:46
 draft: false
 slug: >-
   los-drones-de-entrega-existen-hace-una-decada-siguen-entregando-menos-paquetes-que-un
+categoria: Tecnología de Consumo
 ---

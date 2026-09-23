@@ -9,4 +9,5 @@ imagenAlt: >-
   que unos cuantos vendan publicidad.
 slug: >-
   la-economia-creativa-significa-que-millones-producen-contenido-gratis-para-que-unos
+categoria: Futuro del Trabajo
 ---

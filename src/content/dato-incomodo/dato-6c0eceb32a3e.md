@@ -7,4 +7,5 @@ date: 2026-08-31T06:25
 draft: false
 slug: >-
   el-streaming-en-vivo-de-videojuegos-genera-mas-ingresos-publicitarios-que-muchas-ligas
+categoria: Cultura Digital
 ---

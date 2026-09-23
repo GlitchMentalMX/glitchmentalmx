@@ -9,4 +9,5 @@ imagenAlt: >-
   cobra por sesión.
 slug: >-
   el-texto-predictivo-de-tu-telefono-ya-te-conoce-mejor-que-tu-terapeuta-y-no-cobra-por
+categoria: Psicología Digital
 ---

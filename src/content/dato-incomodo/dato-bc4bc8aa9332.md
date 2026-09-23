@@ -7,4 +7,5 @@ date: 2026-09-02T05:28
 draft: false
 slug: >-
   las-notificaciones-push-se-disenaron-estudiando-el-mismo-circuito-de-recompensa-que-las
+categoria: Psicología Digital
 ---

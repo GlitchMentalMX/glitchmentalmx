@@ -9,4 +9,5 @@ imagenAlt: >-
   en una foto del router.
 slug: >-
   los-hackers-no-necesitan-romper-tu-contrasena-si-tu-mama-la-publico-sin-querer-en-una
+categoria: Tendencias Digitales
 ---

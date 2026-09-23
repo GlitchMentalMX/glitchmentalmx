@@ -7,4 +7,5 @@ date: 2026-08-11T22:37
 draft: false
 slug: >-
   el-trabajo-remoto-para-siempre-duro-hasta-que-las-oficinas-ya-estaban-rentadas-por-cinco
+categoria: Futuro del Trabajo
 ---

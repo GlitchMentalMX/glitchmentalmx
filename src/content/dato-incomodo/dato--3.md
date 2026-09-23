@@ -9,4 +9,5 @@ imagenAlt: >-
   notificación a las 7am. Generoso.
 slug: >-
   el-chip-de-tu-smartwatch-sabe-que-dormiste-mal-te-lo-recuerda-con-una-notificacion-a-las
+categoria: Tecnología de Consumo
 ---

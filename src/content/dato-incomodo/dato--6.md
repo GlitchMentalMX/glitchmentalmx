@@ -10,4 +10,5 @@ imagenAlt: >-
   prefiere que sigas pagando a que encuentres pareja.
 slug: >-
   las-apps-de-citas-te-muestran-perfiles-compatibles-que-ya-viste-el-algoritmo-prefiere-que
+categoria: Psicología Digital
 ---

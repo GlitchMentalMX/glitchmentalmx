@@ -1,15 +1,20 @@
 ---
 // Página individual por pieza — ver la nota completa en
 // src/pages/dato-incomodo/[slug].astro (misma mecánica, misma spec).
-// Diferencia deliberada de esa página: el enlace relacionado SIEMPRE es a
-// la categoría (insightCategoryLinks), nunca a `enlace` (el artículo que
-// inspiró la pieza) — así se decidió para el grid y no cambia aquí.
+// Diferencia deliberada de esa página: el enlace principal SIEMPRE es a la
+// categoría (insightCategoryLinks), nunca a `enlace` (el artículo que
+// inspiró la pieza) — así se decidió para el grid y no cambia aquí. `enlace`
+// sí se usa más abajo, pero solo como señal de entrada para la sección
+// "Sigue leyendo" (ver relatedPostsForPiece) — un uso nuevo y separado, no
+// una reversión de esa decisión.
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import { insightCategoryLinks } from '../../data/insightCategoryLinks';
 import { truncate } from '../../lib/format';
 import { assignPieceSlugs } from '../../lib/pieceSlug.mjs';
+import { relatedPostsForPiece } from '../../lib/relatedPosts';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async () => {
@@ -22,7 +27,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { item } = Astro.props;
-const { titulo, resumen, imagen, imagenAlt, date, categoria, keywords } = item.data;
+const { titulo, resumen, imagen, imagenAlt, date, categoria, keywords, enlace } = item.data;
 
 // Ver la misma nota en src/pages/dato-incomodo/[slug].astro — 70 en vez de
 // 60 para no cortar la última palabra de los títulos que ya vienen cortos.
@@ -31,6 +36,7 @@ const description = truncate(resumen, 155);
 const pageURL = new URL(Astro.url.pathname, Astro.site).toString();
 const imageURL = new URL(imagen, Astro.site).toString();
 const categoryHref = categoria ? insightCategoryLinks[categoria] : undefined;
+const relatedPosts = await relatedPostsForPiece({ categoria, date, enlace });
 
 const imageSchema = {
   '@context': 'https://schema.org',
@@ -76,6 +82,25 @@ const imageSchema = {
       <a class="btn btn-ghost" href="/insights-visuales/">Ver todos los Insights Visuales →</a>
     </div>
   </article>
+
+  {relatedPosts.length > 0 && (
+    <section class="related container">
+      <h2>Sigue leyendo</h2>
+      <div class="grid">
+        {relatedPosts.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage}
+            heroImageAlt={p.data.heroImageAlt}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
 </Layout>
 
 <style>
@@ -116,5 +141,24 @@ const imageSchema = {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+  }
+
+  .related {
+    padding: 64px 24px 40px;
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+    max-width: var(--container);
+  }
+  .related h2 { font-size: 1.4rem; margin-bottom: 28px; }
+  .related .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 28px;
+  }
+  @media (max-width: 900px) {
+    .related .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .related .grid { grid-template-columns: 1fr; }
   }
 </style>
