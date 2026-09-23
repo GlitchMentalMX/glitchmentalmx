@@ -12,6 +12,7 @@ import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection, render } from 'astro:content';
+import { relatedInsightVisualByPostId } from '../../lib/relatedInsightVisual';
 import {
   formatDate,
   readingTime,
@@ -151,6 +152,13 @@ const editorialCollections =
     ? await getCollection('editorialCollections', ({ id, data }) => data.kind === 'series' || id === 'detras-del-prompt')
     : [];
 const parentCollection = kind === 'posts' ? editorialCollections.find((c) => c.data.postSlugs.includes(post.id)) : undefined;
+
+// Enlace recíproco: si este artículo inspiró una pieza de Insights
+// Visuales (campo `enlace` de esa colección), se enlaza de vuelta — ver
+// src/lib/relatedInsightVisual.ts. Sin esto, la página individual de esa
+// pieza no recibía ningún link entrante real del catálogo, solo el
+// sitemap.
+const relatedInsightVisual = kind === 'posts' ? (await relatedInsightVisualByPostId()).get(post.id) : undefined;
 
 const allPosts =
   kind === 'posts'
@@ -593,6 +601,12 @@ if (kind === 'posts') {
       <button id="share-copy" class="btn btn-ghost" type="button"><span>Copiar enlace</span></button>
     </div>
 
+    {relatedInsightVisual && (
+      <p class="related-insight container">
+        Este artículo inspiró un Insight Visual: <a href={relatedInsightVisual.href}>{relatedInsightVisual.titulo} →</a>
+      </p>
+    )}
+
     <div class="preferred-source container" data-placement="article-end">
       <div class="text">
         <p>¿Quieres ver más glitchMentalMX en Google?</p>
@@ -812,6 +826,16 @@ if (kind === 'posts') {
     padding-top: 24px;
   }
   .share .btn { padding: 0.55em 1.1em; font-size: 0.82rem; }
+
+  .related-insight {
+    max-width: var(--measure);
+    margin: 18px auto 0;
+    padding: 0 24px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  .related-insight a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
+  .related-insight a:hover { color: var(--accent); }
 
   .preferred-source {
     max-width: var(--measure);
