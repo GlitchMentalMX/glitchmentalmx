@@ -9,13 +9,16 @@ veredicto: "rojo"
 fraseCorta: "ChatGPT Plus no tiene botón de prueba gratuita: la página oficial de precios solo ofrece suscribirte y pagar de inmediato."
 fuenteVerificacion: "Página oficial de precios de ChatGPT (chatgpt.com, sección Precios), consultada el 25/08/2026."
 pubDate: 2026-08-25
+updatedDate: 2026-09-23
 heroImage: /images/prueba-gratis/chatgpt.png
 heroImageAlt: ChatGPT — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de ChatGPT?
 
-La versión gratuita de ChatGPT es genuinamente gratis, sin fecha de corte ni tarjeta de por medio: cualquiera puede usarla con chats de texto ilimitados (sujetos a las medidas contra abuso de OpenAI), aunque con límites en imágenes, voz e investigación a fondo. Pero eso es distinto de "probar" el plan Plus. La página oficial de precios de ChatGPT muestra cuatro columnas —Gratis, Go, Plus y Pro— y cada una tiene un botón directo ("Obtener Gratis", "Obtener Plus", etc.); en ningún lado aparece un botón o mención de prueba gratuita para Plus. Suscribirte a Plus significa pagar la mensualidad desde el primer cargo.
+Esta ficha verifica específicamente el plan **Plus** ($20 USD/mes) — el que la mayoría busca "probar" al preguntar por ChatGPT. No cubre Go ni Pro, los otros dos planes de pago que existen hoy: no tienen verificación propia aquí, así que no asumas que corren la misma suerte que Plus sin confirmarlo tú mismo en la página oficial.
+
+La versión **gratuita** de ChatGPT sí es genuinamente gratis, sin fecha de corte ni tarjeta de por medio: cualquiera puede usarla con chats de texto ilimitados (sujetos a las medidas contra abuso de OpenAI), aunque con límites en imágenes, voz e investigación a fondo. Pero esa versión gratuita es un producto aparte — no es una "prueba" de Plus. En la página oficial de precios, el botón de Plus dice "Obtener Plus" y lleva directo al cobro: no hay ningún botón ni mención de periodo de prueba antes de esa suscripción. Suscribirte a Plus significa pagar la mensualidad desde el primer cargo.
 
 ## No hay una prueba estándar, solo promociones ocasionales que igual piden tarjeta
 
