@@ -10,4 +10,5 @@ date: 2026-08-11T13:36:00.000-06:00
 draft: false
 categoria: Inteligencia Artificial
 punchline: ¿Y si la IA se vuelve demasiado barata para ignorarla?
+slug: y-si-la-ia-se-vuelve-demasiado-barata-para-ignorarla
 ---

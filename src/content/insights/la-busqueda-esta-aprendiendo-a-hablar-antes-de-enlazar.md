@@ -10,4 +10,5 @@ date: 2026-08-11T18:26:00.000-06:00
 draft: false
 categoria: Tendencias Digitales
 punchline: La búsqueda está aprendiendo a hablar antes de enlazar
+slug: la-busqueda-esta-aprendiendo-a-hablar-antes-de-enlazar
 ---

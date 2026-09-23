@@ -5,4 +5,6 @@ imagen: /images/uploads/metaverso.webp
 imagenAlt: El 'año del metaverso' se canceló silenciosamente. Nadie hizo el anuncio oficial. Simplemente dejaron de mencionarlo.
 date: 2026-09-04T05:10
 draft: false
+slug: >-
+  el-ano-del-metaverso-se-cancelo-silenciosamente-nadie-hizo-el-anuncio-oficial-simplemente
 ---

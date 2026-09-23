@@ -10,4 +10,5 @@ date: 2026-08-11T18:09:00.000-06:00
 draft: false
 categoria: Cultura Digital
 punchline: Cuando el feed informa, también decide qué parece importante
+slug: cuando-el-feed-informa-tambien-decide-que-parece-importante
 ---

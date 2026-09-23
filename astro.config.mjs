@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { readFileSync, readdirSync } from 'node:fs';
+import matter from 'gray-matter';
+import { assignPieceSlugs } from './src/lib/pieceSlug.mjs';
 
 // lastmod real del sitemap — antes no se mandaba ninguno. Se calcula leyendo
 // el frontmatter crudo (no astro:content, que no está disponible en este
@@ -177,6 +179,32 @@ function fechaMaxSimple(dirRelativo) {
 const fechaDatoIncomodo = fechaMaxSimple('./src/content/dato-incomodo/');
 const fechaInsights = fechaMaxSimple('./src/content/insights/');
 
+// lastmod por pieza individual de /dato-incomodo/{slug}/ e
+// /insights-visuales/{slug}/ — el slug tiene que calcularse EXACTAMENTE
+// igual que en las páginas (ver src/pages/.../[slug].astro), por eso usa
+// la misma función compartida en vez de repetir la lógica aquí. Usa
+// gray-matter (no las regex de línea simple de arriba) porque `resumen`
+// suele venir en bloque YAML multilínea (`>-`), que esas regex no parsean.
+function porSlugSimple(dirRelativo, textField) {
+  const dir = new URL(dirRelativo, import.meta.url);
+  const entries = [];
+  for (const archivo of readdirSync(dir)) {
+    if (!archivo.endsWith('.md')) continue;
+    const { data } = matter(readFileSync(new URL(archivo, dir), 'utf-8'));
+    if (data.draft) continue;
+    entries.push({ id: archivo.replace(/\.md$/, ''), override: data.slug, text: data[textField], date: data.date });
+  }
+  const slugs = assignPieceSlugs(entries);
+  const porSlug = new Map();
+  for (const entry of entries) {
+    const fecha = entry.date ? new Date(entry.date) : undefined;
+    if (fecha) porSlug.set(slugs.get(entry.id), fecha);
+  }
+  return porSlug;
+}
+const porSlugDatoIncomodo = porSlugSimple('./src/content/dato-incomodo/', 'resumen');
+const porSlugInsights = porSlugSimple('./src/content/insights/', 'titulo');
+
 // Colecciones y series individuales — la fecha del artículo más reciente
 // entre los que agrupa cada una, cruzando su `postSlugs` contra las fechas
 // de /articulos/ que ya se calcularon arriba.
@@ -276,6 +304,20 @@ export default defineConfig({
         if (pathname === '/archivo/') return conFecha(fechaMaxPosts);
         if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
+
+        // Páginas individuales por pieza. El slug nunca es puramente
+        // numérico (ver assignPieceSlugs), así que esto nunca choca con las
+        // páginas de paginación /dato-incomodo/2/, /insights-visuales/3/...
+        // — esas simplemente no están en el mapa y caen al `return item`
+        // de abajo, sin lastmod, igual que antes de este cambio.
+        const matchDatoIncomodoPieza = pathname.match(/^\/dato-incomodo\/([^/]+)\/$/);
+        if (matchDatoIncomodoPieza && porSlugDatoIncomodo.has(matchDatoIncomodoPieza[1])) {
+          return conFecha(porSlugDatoIncomodo.get(matchDatoIncomodoPieza[1]));
+        }
+        const matchInsightPieza = pathname.match(/^\/insights-visuales\/([^/]+)\/$/);
+        if (matchInsightPieza && porSlugInsights.has(matchInsightPieza[1])) {
+          return conFecha(porSlugInsights.get(matchInsightPieza[1]));
+        }
         if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia/') return conFecha(fechaCalculadoraRiesgo);
         if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
 

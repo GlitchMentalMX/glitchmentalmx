@@ -53,6 +53,18 @@ export function buildCodigoDescuentoTitleTag(herramienta: string): string {
   return `¿${herramienta}: código de descuento real?`;
 }
 
+// Recorta un texto a `max` caracteres en el último espacio antes del corte
+// (nunca a mitad de palabra) y agrega "…" — para <title>/meta description
+// de piezas sin título editorial propio (Dato Incómodo, Insights Visuales),
+// donde el texto de la pieza puede pasarse de lo que Google trunca.
+export function truncate(text: string, max: number): string {
+  const clean = text.trim().replace(/\s+/g, ' ');
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > max * 0.5 ? cut.slice(0, lastSpace) : cut).trimEnd() + '…';
+}
+
 export function readingTime(text: string): number {
   const words = text.trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 200));

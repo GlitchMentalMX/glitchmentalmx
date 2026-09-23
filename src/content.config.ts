@@ -91,6 +91,32 @@ const pages = defineCollection({
   }),
 });
 
+// Compartido entre visualInsights y datoIncomodo — la página individual de
+// Dato Incómodo reusa el mismo mapeo categoría → destino que ya usa el grid
+// de Insights Visuales (src/data/insightCategoryLinks.ts), así que ambas
+// colecciones deben poder guardar exactamente los mismos valores.
+const CATEGORIAS_INSIGHTS = [
+  'Inteligencia Artificial',
+  'Narrativa de la IA',
+  'Sistemas Autónomos',
+  'IA Agéntica',
+  'Futuro del Trabajo',
+  'Cultura Digital',
+  'Psicología Digital',
+  'Tecnología de Consumo',
+  'Tendencias Digitales',
+] as const;
+
+// slug: override manual opcional para la URL de la página individual — si
+// se deja vacío, se calcula del texto principal de la pieza en build time
+// (ver src/lib/pieceSlug.mjs). keywords: temas libres del autor, opcional;
+// si hay valores se incluyen en el JSON-LD ImageObject de la página
+// individual, no se usa como <meta name="keywords"> (Google no lo lee).
+const pieceSeoFields = {
+  slug: z.preprocess((val) => (val === '' ? undefined : val), z.string().optional()),
+  keywords: z.array(z.string()).optional(),
+};
+
 const visualInsights = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/insights' }),
   schema: z.object({
@@ -101,24 +127,10 @@ const visualInsights = defineCollection({
     enlace: z.string().nullable().optional(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
-    categoria: z.preprocess(
-      (val) => (val === '' ? undefined : val),
-      z
-        .enum([
-          'Inteligencia Artificial',
-          'Narrativa de la IA',
-          'Sistemas Autónomos',
-          'IA Agéntica',
-          'Futuro del Trabajo',
-          'Cultura Digital',
-          'Psicología Digital',
-          'Tecnología de Consumo',
-          'Tendencias Digitales',
-        ])
-        .optional()
-    ),
+    categoria: z.preprocess((val) => (val === '' ? undefined : val), z.enum(CATEGORIAS_INSIGHTS).optional()),
     // Solo para el home y material de RS — nunca se muestra en los cards de /insights-visuales/.
     punchline: z.string().optional(),
+    ...pieceSeoFields,
   }),
 });
 
@@ -128,9 +140,14 @@ const datoIncomodo = defineCollection({
     titulo: z.string(),
     resumen: z.string(),
     imagen: z.string(),
-    imagenAlt: z.string().optional(),
+    // Obligatorio: las 138 entradas existentes se migraron con un backfill
+    // retroactivo (copiando `resumen`, ver scripts/migrate-dato-insights-seo.mjs)
+    // — necesario para la página individual y para elegibilidad en Discover.
+    imagenAlt: z.string(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
+    categoria: z.preprocess((val) => (val === '' ? undefined : val), z.enum(CATEGORIAS_INSIGHTS).optional()),
+    ...pieceSeoFields,
   }),
 });
 

@@ -10,4 +10,5 @@ date: 2026-08-11T18:12:00.000-06:00
 draft: false
 categoria: Tecnología de Consumo
 punchline: La IA personal ya tiene arquitectura, no solo interfaz
+slug: la-ia-personal-ya-tiene-arquitectura-no-solo-interfaz
 ---

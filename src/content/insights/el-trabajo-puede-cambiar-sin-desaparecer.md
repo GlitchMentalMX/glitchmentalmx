@@ -10,4 +10,5 @@ date: 2026-08-11T18:13:00.000-06:00
 draft: false
 categoria: Futuro del Trabajo
 punchline: El trabajo puede cambiar sin desaparecer
+slug: el-trabajo-puede-cambiar-sin-desaparecer
 ---

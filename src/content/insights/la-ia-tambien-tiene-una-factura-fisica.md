@@ -10,4 +10,5 @@ date: 2026-08-11T18:24:00.000-06:00
 draft: false
 categoria: Inteligencia Artificial
 punchline: La IA también tiene una factura física
+slug: la-ia-tambien-tiene-una-factura-fisica
 ---

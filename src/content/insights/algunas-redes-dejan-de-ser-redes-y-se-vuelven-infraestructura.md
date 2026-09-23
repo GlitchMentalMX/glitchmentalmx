@@ -8,4 +8,5 @@ date: 2026-08-19T05:09
 draft: false
 categoria: Cultura Digital
 punchline: Algunas redes dejan de ser redes y se vuelven infraestructura
+slug: algunas-redes-dejan-de-ser-redes-y-se-vuelven-infraestructura
 ---

@@ -8,4 +8,5 @@ date: 2026-09-21T04:59
 draft: false
 categoria: Tecnología de Consumo
 punchline: Cuando la IA funciona offline, cambia lo que esperamos
+slug: cuando-la-ia-funciona-offline-cambia-lo-que-esperamos
 ---

@@ -8,4 +8,5 @@ date: 2026-09-14T05:57
 draft: false
 categoria: Cultura Digital
 punchline: El creador se volvió parte del sistema de distribución
+slug: el-creador-se-volvio-parte-del-sistema-de-distribucion
 ---

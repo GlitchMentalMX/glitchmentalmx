@@ -8,4 +8,5 @@ date: 2026-09-02T05:30
 draft: false
 categoria: Sistemas Autónomos
 punchline: Cuantos más pasos, más lugares donde equivocarse
+slug: cuantos-mas-pasos-mas-lugares-donde-equivocarse
 ---

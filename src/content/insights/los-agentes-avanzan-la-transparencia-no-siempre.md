@@ -9,4 +9,5 @@ date: 2026-08-11T18:21:00.000-06:00
 draft: false
 categoria: Sistemas Autónomos
 punchline: Los agentes avanzan. La transparencia no siempre
+slug: los-agentes-avanzan-la-transparencia-no-siempre
 ---

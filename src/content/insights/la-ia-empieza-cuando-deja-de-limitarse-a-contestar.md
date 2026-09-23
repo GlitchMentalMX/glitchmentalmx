@@ -9,4 +9,5 @@ date: 2026-08-11T18:17:00.000-06:00
 draft: false
 categoria: Sistemas Autónomos
 punchline: La IA empieza cuando deja de limitarse a contestar
+slug: la-ia-empieza-cuando-deja-de-limitarse-a-contestar
 ---

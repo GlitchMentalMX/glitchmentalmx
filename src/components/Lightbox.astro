@@ -55,6 +55,13 @@
     line-height: 1.3;
     margin: 0 0 6px;
   }
+  /* Dato Incómodo no tiene un título propio distinto del mensaje (su
+     `titulo` interno siempre es literal "Dato Incómodo") — su caption solo
+     manda data-desc, nunca data-title, así que el h3 queda vacío. Sin
+     :empty se ve un hueco en blanco arriba del texto. */
+  .lightbox-caption h3:empty {
+    display: none;
+  }
   .lightbox-caption p {
     color: rgba(255, 255, 255, 0.82);
     font-size: 0.88rem;
@@ -63,6 +70,7 @@
     max-width: 640px;
   }
   .lightbox-close,
+  .lightbox-permalink,
   .lightbox-nav {
     position: absolute;
     z-index: 2;
@@ -76,6 +84,7 @@
     justify-content: center;
   }
   .lightbox-close:hover,
+  .lightbox-permalink:hover,
   .lightbox-nav:hover {
     background: rgba(255, 255, 255, 0.2);
   }
@@ -87,6 +96,23 @@
     border-radius: 999px;
     font-size: 22px;
     line-height: 1;
+  }
+  /* Único punto de acceso visible del sitio a la página individual de una
+     pieza (SPEC punto 2) — discreto a propósito, arriba a la izquierda,
+     lejos del botón de cerrar. Solo aparece si la imagen trae
+     data-permalink (ver showAt() abajo); las imágenes de .prose y los
+     hero de artículo no lo traen, así que ahí nunca se muestra. */
+  .lightbox-permalink {
+    top: 20px;
+    left: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    display: none;
+  }
+  .lightbox-permalink svg {
+    width: 18px;
+    height: 18px;
   }
   .lightbox-nav {
     top: 50%;
@@ -148,6 +174,15 @@
       closeBtn.setAttribute('aria-label', 'Cerrar imagen ampliada');
       closeBtn.textContent = '×';
 
+      var permalinkBtn = document.createElement('a');
+      permalinkBtn.className = 'lightbox-permalink';
+      permalinkBtn.setAttribute('aria-label', 'Ver esta pieza en su propia página');
+      permalinkBtn.innerHTML =
+        '<svg viewBox="0 0 24 24" fill="none"><path d="M9 15l6-6M11 6l1-1a4 4 0 015.66 5.66l-1 1M13 18l-1 1A4 4 0 016.34 13.34l1-1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      permalinkBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+
       var frame = document.createElement('div');
       frame.className = 'lightbox-frame';
 
@@ -166,6 +201,7 @@
       overlay.appendChild(prevBtn);
       overlay.appendChild(nextBtn);
       overlay.appendChild(closeBtn);
+      overlay.appendChild(permalinkBtn);
       overlay.appendChild(frame);
       document.body.appendChild(overlay);
 
@@ -197,6 +233,16 @@
       overlay.querySelector('.lightbox-caption h3').textContent = title || '';
       overlay.querySelector('.lightbox-caption p').textContent = desc || '';
       overlay.classList.toggle('has-caption', !!(title || desc));
+
+      var permalink = el.getAttribute('data-permalink');
+      var permalinkBtn = overlay.querySelector('.lightbox-permalink');
+      if (permalink) {
+        permalinkBtn.href = permalink;
+        permalinkBtn.style.display = 'flex';
+      } else {
+        permalinkBtn.removeAttribute('href');
+        permalinkBtn.style.display = 'none';
+      }
     }
 
     function step(delta) {

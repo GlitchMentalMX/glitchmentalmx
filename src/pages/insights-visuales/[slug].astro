@@ -1,0 +1,120 @@
+---
+// Página individual por pieza — ver la nota completa en
+// src/pages/dato-incomodo/[slug].astro (misma mecánica, misma spec).
+// Diferencia deliberada de esa página: el enlace relacionado SIEMPRE es a
+// la categoría (insightCategoryLinks), nunca a `enlace` (el artículo que
+// inspiró la pieza) — así se decidió para el grid y no cambia aquí.
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { insightCategoryLinks } from '../../data/insightCategoryLinks';
+import { truncate } from '../../lib/format';
+import { assignPieceSlugs } from '../../lib/pieceSlug.mjs';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async () => {
+  const items = await getCollection('visualInsights', ({ data }) => !data.draft);
+  const slugs = assignPieceSlugs(items.map((item) => ({ id: item.id, override: item.data.slug, text: item.data.titulo })));
+  return items.map((item) => ({
+    params: { slug: slugs.get(item.id)! },
+    props: { item },
+  }));
+}) satisfies GetStaticPaths;
+
+const { item } = Astro.props;
+const { titulo, resumen, imagen, imagenAlt, date, categoria, keywords } = item.data;
+
+// Ver la misma nota en src/pages/dato-incomodo/[slug].astro — 70 en vez de
+// 60 para no cortar la última palabra de los títulos que ya vienen cortos.
+const title = truncate(titulo, 70);
+const description = truncate(resumen, 155);
+const pageURL = new URL(Astro.url.pathname, Astro.site).toString();
+const imageURL = new URL(imagen, Astro.site).toString();
+const categoryHref = categoria ? insightCategoryLinks[categoria] : undefined;
+
+const imageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  contentUrl: imageURL,
+  thumbnailUrl: imageURL,
+  name: title,
+  description: resumen,
+  ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),
+  datePublished: date.toISOString(),
+  creator: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageURL },
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  image={imagen}
+  type="article"
+  publishedTime={date}
+  modifiedTime={date}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(imageSchema)} />
+
+  <Breadcrumbs items={[{ name: 'Insights Visuales', url: '/insights-visuales/' }, { name: title }]} />
+
+  <article class="piece container">
+    <p class="eyebrow">Insights Visuales</p>
+    <div class="frame">
+      <img src={imagen} alt={imagenAlt || titulo} width="1200" height="675" data-lightbox />
+    </div>
+    <h1>{titulo}</h1>
+    <p class="text">{resumen}</p>
+    <div class="links">
+      {categoryHref && <a class="btn btn-ghost" href={categoryHref}>Explorar {categoria} →</a>}
+      <a class="btn btn-ghost" href="/insights-visuales/">Ver todos los Insights Visuales →</a>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .piece {
+    max-width: 760px;
+    padding: 40px 24px 80px;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 20px;
+  }
+  .frame {
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+  .frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .piece h1 {
+    font-size: clamp(1.6rem, 3.6vw, 2.1rem);
+    line-height: 1.3;
+    margin: 0 0 14px;
+  }
+  .text {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 0 32px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+</style>

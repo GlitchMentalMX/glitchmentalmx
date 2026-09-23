@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { getCollection } from 'astro:content';
 import { insightCategoryLinks } from '../../data/insightCategoryLinks';
+import { assignPieceSlugs } from '../../lib/pieceSlug.mjs';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async ({ paginate }) => {
@@ -12,6 +13,17 @@ export const getStaticPaths = (async ({ paginate }) => {
   );
   return paginate(items, { pageSize: 12 });
 }) satisfies GetStaticPaths;
+
+// Mismo cálculo que src/pages/insights-visuales/[slug].astro — el permalink
+// del lightbox (ver data-permalink abajo) tiene que apuntar a exactamente
+// la misma URL que esa página genera para la misma pieza.
+const slugs = assignPieceSlugs(
+  (await getCollection('visualInsights', ({ data }) => !data.draft)).map((item) => ({
+    id: item.id,
+    override: item.data.slug,
+    text: item.data.titulo,
+  }))
+);
 
 const { page } = Astro.props;
 
@@ -49,7 +61,9 @@ const modifiedTime = page.data.reduce(
   <p class="container hint">Haz clic en la imagen para agrandarla.</p>
 
   <section class="container grid">
-    {page.data.map(({ data: item }) => (
+    {page.data.map((entry) => {
+      const item = entry.data;
+      return (
       <div class="card">
         <img
           src={item.imagen}
@@ -57,6 +71,7 @@ const modifiedTime = page.data.reduce(
           data-lightbox
           data-title={item.titulo}
           data-desc={item.resumen}
+          data-permalink={`/insights-visuales/${slugs.get(entry.id)}/`}
           loading="lazy"
           width="900"
           height="506"
@@ -80,7 +95,8 @@ const modifiedTime = page.data.reduce(
           )}
         </div>
       </div>
-    ))}
+      );
+    })}
   </section>
 
   <nav class="container pager" aria-label="Paginación">

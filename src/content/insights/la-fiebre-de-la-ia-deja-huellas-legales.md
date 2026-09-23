@@ -9,4 +9,5 @@ date: 2026-08-11T18:27:00.000-06:00
 draft: false
 categoria: Narrativa de la IA
 punchline: La fiebre de la IA deja huellas legales
+slug: la-fiebre-de-la-ia-deja-huellas-legales
 ---

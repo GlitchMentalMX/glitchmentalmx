@@ -8,4 +8,5 @@ date: 2026-08-24T06:10
 draft: false
 categoria: Tecnología de Consumo
 punchline: ¿Dónde piensa la IA cuando la usas?
+slug: donde-piensa-la-ia-cuando-la-usas
 ---

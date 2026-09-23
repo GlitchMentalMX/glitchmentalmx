@@ -10,4 +10,5 @@ date: 2026-08-11T18:29:00.000-06:00
 draft: false
 categoria: IA Agéntica
 punchline: Delegar no elimina la necesidad de mirar
+slug: delegar-no-elimina-la-necesidad-de-mirar
 ---

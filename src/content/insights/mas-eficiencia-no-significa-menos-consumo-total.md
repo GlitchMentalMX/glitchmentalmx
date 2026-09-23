@@ -8,4 +8,5 @@ date: 2026-08-28T06:03
 draft: false
 categoria: Sistemas Autónomos
 punchline: Más eficiencia no significa menos consumo total
+slug: mas-eficiencia-no-significa-menos-consumo-total
 ---

@@ -10,4 +10,5 @@ date: 2026-08-11T18:16:00.000-06:00
 draft: false
 categoria: Narrativa de la IA
 punchline: La carrera de la IA no ocurre en una sola pista
+slug: la-carrera-de-la-ia-no-ocurre-en-una-sola-pista
 ---

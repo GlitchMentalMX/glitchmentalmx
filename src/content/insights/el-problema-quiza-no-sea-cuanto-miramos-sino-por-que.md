@@ -10,4 +10,5 @@ date: 2026-08-11T18:31:00.000-06:00
 draft: false
 categoria: Psicología Digital
 punchline: El problema quizá no sea cuánto miramos, sino por qué
+slug: el-problema-quiza-no-sea-cuanto-miramos-sino-por-que
 ---

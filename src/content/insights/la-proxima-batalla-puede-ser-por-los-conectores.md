@@ -8,4 +8,5 @@ date: 2026-08-14T06:04
 draft: false
 categoria: IA Agéntica
 punchline: La próxima batalla puede ser por los conectores
+slug: la-proxima-batalla-puede-ser-por-los-conectores
 ---

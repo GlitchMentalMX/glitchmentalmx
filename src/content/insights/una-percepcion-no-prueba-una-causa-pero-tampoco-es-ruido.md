@@ -8,4 +8,5 @@ date: 2026-09-16T05:47
 draft: false
 categoria: Psicología Digital
 punchline: Una percepción no prueba una causa, pero tampoco es ruido
+slug: una-percepcion-no-prueba-una-causa-pero-tampoco-es-ruido
 ---

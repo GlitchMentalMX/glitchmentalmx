@@ -8,4 +8,5 @@ date: 2026-09-07T06:08
 draft: false
 categoria: Futuro del Trabajo
 punchline: La automatización rara vez llega anunciándose como revolución
+slug: la-automatizacion-rara-vez-llega-anunciandose-como-revolucion
 ---

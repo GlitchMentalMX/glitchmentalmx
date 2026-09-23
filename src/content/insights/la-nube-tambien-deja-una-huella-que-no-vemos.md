@@ -8,4 +8,5 @@ date: 2026-08-31T06:24
 draft: false
 categoria: Narrativa de la IA
 punchline: La nube también deja una huella que no vemos.
+slug: la-nube-tambien-deja-una-huella-que-no-vemos
 ---

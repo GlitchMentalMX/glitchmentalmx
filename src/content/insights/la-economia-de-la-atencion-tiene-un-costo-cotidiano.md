@@ -8,4 +8,5 @@ date: 2026-08-21T06:27
 draft: false
 categoria: Psicología Digital
 punchline: La economía de la atención tiene un costo cotidiano
+slug: la-economia-de-la-atencion-tiene-un-costo-cotidiano
 ---

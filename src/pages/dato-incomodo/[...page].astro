@@ -4,6 +4,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection } from 'astro:content';
+import { assignPieceSlugs } from '../../lib/pieceSlug.mjs';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async ({ paginate }) => {
@@ -12,6 +13,17 @@ export const getStaticPaths = (async ({ paginate }) => {
   );
   return paginate(items, { pageSize: 18 });
 }) satisfies GetStaticPaths;
+
+// Mismo cálculo que src/pages/dato-incomodo/[slug].astro — el permalink que
+// se muestra en el lightbox (ver data-permalink abajo) tiene que apuntar a
+// exactamente la misma URL que esa página genera para la misma pieza.
+const slugs = assignPieceSlugs(
+  (await getCollection('datoIncomodo', ({ data }) => !data.draft)).map((item) => ({
+    id: item.id,
+    override: item.data.slug,
+    text: item.data.resumen,
+  }))
+);
 
 const { page } = Astro.props;
 
@@ -43,11 +55,20 @@ const modifiedTime = page.data.reduce(
   <p class="container hint">Haz clic en la imagen para agrandarla.</p>
 
   <section class="container grid">
-    {page.data.map(({ data: item }) => (
+    {page.data.map((entry) => (
       <div class="card">
-        <img src={item.imagen} alt={item.imagenAlt || item.resumen} data-lightbox loading="lazy" width="900" height="506" />
+        <img
+          src={entry.data.imagen}
+          alt={entry.data.imagenAlt}
+          data-lightbox
+          data-desc={entry.data.resumen}
+          data-permalink={`/dato-incomodo/${slugs.get(entry.id)}/`}
+          loading="lazy"
+          width="900"
+          height="506"
+        />
         <div class="body">
-          <p class="text">{item.resumen}</p>
+          <p class="text">{entry.data.resumen}</p>
         </div>
       </div>
     ))}

@@ -9,4 +9,5 @@ date: 2026-08-11T05:16:00.000-06:00
 draft: false
 categoria: Inteligencia Artificial
 punchline: El último oficio manual del maestro ya lo hace la IA
+slug: el-ultimo-oficio-manual-del-maestro-ya-lo-hace-la-ia
 ---

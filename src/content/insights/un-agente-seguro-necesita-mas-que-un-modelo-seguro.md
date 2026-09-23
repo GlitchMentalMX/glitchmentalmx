@@ -8,4 +8,5 @@ date: 2026-09-04T05:09
 draft: false
 categoria: IA Agéntica
 punchline: Un agente seguro necesita más que un modelo seguro
+slug: un-agente-seguro-necesita-mas-que-un-modelo-seguro
 ---

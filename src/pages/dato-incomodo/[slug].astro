@@ -1,0 +1,117 @@
+---
+// Página individual por pieza — SPEC: páginas indexables para Dato
+// Incómodo/Insights Visuales. El grid en [...page].astro sigue igual; esta
+// ruta existe para que Google indexe cada dato como entidad propia. No está
+// enlazada de forma prominente en la navegación — el único acceso visible
+// desde el sitio es el ícono de permalink dentro del lightbox del grid (ver
+// data-permalink en [...page].astro y src/components/Lightbox.astro).
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { insightCategoryLinks } from '../../data/insightCategoryLinks';
+import { truncate } from '../../lib/format';
+import { assignPieceSlugs } from '../../lib/pieceSlug.mjs';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async () => {
+  const items = await getCollection('datoIncomodo', ({ data }) => !data.draft);
+  const slugs = assignPieceSlugs(items.map((item) => ({ id: item.id, override: item.data.slug, text: item.data.resumen })));
+  return items.map((item) => ({
+    params: { slug: slugs.get(item.id)! },
+    props: { item },
+  }));
+}) satisfies GetStaticPaths;
+
+const { item } = Astro.props;
+const { resumen, imagen, imagenAlt, date, categoria, keywords } = item.data;
+
+// 70, no 60: la mediana de `resumen` es ~107 caracteres, así que casi
+// siempre se trunca de todos modos — 70 (vs. el ~60 "de libro" que pide
+// Google) evita cortar la última palabra de los pocos datos que ya vienen
+// cortos por un puñado de caracteres (ver SPEC punto 3, "~60 caracteres").
+const title = truncate(resumen, 70);
+const description = truncate(resumen, 155);
+const pageURL = new URL(Astro.url.pathname, Astro.site).toString();
+const imageURL = new URL(imagen, Astro.site).toString();
+const categoryHref = categoria ? insightCategoryLinks[categoria] : undefined;
+
+const imageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ImageObject',
+  contentUrl: imageURL,
+  thumbnailUrl: imageURL,
+  name: title,
+  description: resumen,
+  ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),
+  datePublished: date.toISOString(),
+  creator: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageURL },
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  image={imagen}
+  type="article"
+  publishedTime={date}
+  modifiedTime={date}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(imageSchema)} />
+
+  <Breadcrumbs items={[{ name: 'Dato Incómodo', url: '/dato-incomodo/' }, { name: title }]} />
+
+  <article class="piece container">
+    <p class="eyebrow">Dato Incómodo</p>
+    <div class="frame">
+      <img src={imagen} alt={imagenAlt} width="1200" height="675" data-lightbox />
+    </div>
+    <p class="text">{resumen}</p>
+    <div class="links">
+      {categoryHref && <a class="btn btn-ghost" href={categoryHref}>Explorar {categoria} →</a>}
+      <a class="btn btn-ghost" href="/dato-incomodo/">Ver todos los Datos Incómodos →</a>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .piece {
+    max-width: 760px;
+    padding: 40px 24px 80px;
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 20px;
+  }
+  .frame {
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+  .frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .text {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    line-height: 1.45;
+    margin: 0 0 32px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+</style>

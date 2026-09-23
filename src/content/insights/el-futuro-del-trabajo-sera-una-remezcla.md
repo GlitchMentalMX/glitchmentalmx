@@ -8,4 +8,5 @@ date: 2026-08-17T06:18
 draft: false
 categoria: Futuro del Trabajo
 punchline: El futuro del trabajo será una remezcla
+slug: el-futuro-del-trabajo-sera-una-remezcla
 ---

@@ -8,4 +8,5 @@ date: 2026-08-26T05:30
 draft: false
 categoria: Tendencias Digitales
 punchline: La respuesta automática ya tiene geografía planetaria
+slug: la-respuesta-automatica-ya-tiene-geografia-planetaria
 ---
