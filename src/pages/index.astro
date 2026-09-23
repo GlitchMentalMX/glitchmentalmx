@@ -1621,8 +1621,23 @@ const signalPools = {
       loaded = true;
       video.src = video.dataset.src || '';
       controls.hidden = false;
-      // Si el navegador bloquea el autoplay (p. ej. ahorro de batería en iOS) queda la imagen y el botón de play.
-      video.play().catch(syncPlay);
+
+      // GitHub Pages sirve estos mp4 con throughput muy irregular (llegamos a
+      // medir entre ~100 KB/s y ~1 MB/s para el mismo archivo). Si le damos
+      // play de inmediato, un tramo lento hace que el video se quede sin
+      // buffer y se corte a media reproducción. Esperamos a `canplaythrough`
+      // (el navegador ya estimó que puede reproducir sin detenerse al ritmo
+      // de descarga actual) antes de arrancar — cuesta un poco de arranque,
+      // gana fluidez. Si nunca llega (conexión muy mala), a los 4s
+      // arrancamos de todos modos: mejor tartamudeo que quedarse sin nada.
+      let started = false;
+      const start = () => {
+        if (started) return;
+        started = true;
+        video.play().catch(syncPlay);
+      };
+      video.addEventListener('canplaythrough', start, { once: true });
+      setTimeout(start, 4000);
     };
 
     let inView = false;
