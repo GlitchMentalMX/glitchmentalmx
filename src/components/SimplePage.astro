@@ -23,6 +23,16 @@ const { Content } = await render(entry);
   </section>
 </Layout>
 
+<script>
+  // Markdown can't set target; links marked with ↗ in the copy open in a new tab.
+  document.querySelectorAll<HTMLAnchorElement>('.prose a').forEach((a) => {
+    if (a.textContent?.includes('↗')) {
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+    }
+  });
+</script>
+
 <style>
   .prose { padding: 0 24px 96px; }
 </style>
