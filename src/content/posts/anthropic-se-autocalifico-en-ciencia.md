@@ -6,7 +6,7 @@ updatedDate: ''
 description: Anthropic anunció que Claude halló una enzima tipo CRISPR sin revisión de pares, cinco días después de confirmar su laboratorio y rumbo a su IPO.
 heroImage: /images/uploads/anthropic-autocalifica.webp
 heroImageAlt: 'Anthropic autocalificación ciencia: mujer científica pone sello de aprobación junto a estación de revisión vacía en laboratorio'
-draft: true
+draft: false
 ---
 
 Anthropic anunció que Claude descubrió una enzima con arquitectura parecida a CRISPR, y lo hizo exactamente cinco días después de confirmar que abrió un laboratorio propio, en plena ventana de salida a bolsa. La empresa se **autocalificó su propia tarea de ciencia** — y se puso A+.
