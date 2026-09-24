@@ -9,7 +9,7 @@ heroImageAlt: 'Anthropic autocalificación ciencia: mujer científica pone sello
 draft: false
 ---
 
-Anthropic anunció que Claude descubrió una enzima con arquitectura parecida a CRISPR (repeticiones palindrómicas cortas agrupadas y regularmente interespaciadas, por sus siglas en inglés), y lo hizo exactamente cinco días después de confirmar que abrió un laboratorio propio, en plena ventana de salida a bolsa. La empresa se **autocalificó su propia tarea de ciencia** — y se puso A+.
+Anthropic anunció que Claude descubrió una enzima con arquitectura parecida a CRISPR (repeticiones palindrómicas cortas agrupadas y regularmente interespaciadas, por sus siglas en inglés), y lo hizo exactamente cinco días después de confirmar que abrió un laboratorio propio, en plena ventana de salida a bolsa. La empresa **autocalificó su propia tarea de ciencia** — y se puso A+.
 
 ## Qué encontró Claude, sin el gancho de CRISPR
 
