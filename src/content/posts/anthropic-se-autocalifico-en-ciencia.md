@@ -1,7 +1,7 @@
 ---
 title: Anthropic se autocalificó su tarea de ciencia y sacó A+
 category: Inteligencia Artificial
-pubDate: 2026-09-24T05:33
+pubDate: 2026-09-24T05:43
 updatedDate: ''
 description: Anthropic anunció que Claude halló una enzima tipo CRISPR sin revisión de pares, cinco días después de confirmar su laboratorio y rumbo a su IPO.
 heroImage: /images/uploads/anthropic-autocalifica.webp
@@ -9,7 +9,7 @@ heroImageAlt: 'Anthropic autocalificación ciencia: mujer científica pone sello
 draft: false
 ---
 
-Anthropic anunció que Claude descubrió una enzima con arquitectura parecida a CRISPR, y lo hizo exactamente cinco días después de confirmar que abrió un laboratorio propio, en plena ventana de salida a bolsa. La empresa se **autocalificó su propia tarea de ciencia** — y se puso A+.
+Anthropic anunció que Claude descubrió una enzima con arquitectura parecida a CRISPR (repeticiones palindrómicas cortas agrupadas y regularmente interespaciadas, por sus siglas en inglés), y lo hizo exactamente cinco días después de confirmar que abrió un laboratorio propio, en plena ventana de salida a bolsa. La empresa se **autocalificó su propia tarea de ciencia** — y se puso A+.
 
 ## Qué encontró Claude, sin el gancho de CRISPR
 
@@ -17,7 +17,7 @@ El 23 de septiembre de 2026, Anthropic publicó en su blog oficial y en un prepr
 
 ## Cinco días que nadie en el comunicado menciona
 
-Aquí está el dato que Anthropic no puso en su blog: el anuncio llegó apenas cinco días después de que la empresa confirmara ante Reuters, el 18 de septiembre de 2026, que opera un laboratorio húmedo propio en la Bahía de San Francisco. Y ambos eventos ocurren dentro de la ventana en la que, de acuerdo con múltiples reportes financieros —entre ellos Wall Street Journal y agregadores especializados—, Anthropic planea debutar en Nasdaq: la compañía presentó un S-1 confidencial ante la SEC el primero de junio de 2026 (el formulario que toda empresa debe entregar al regulador bursátil de Estados Unidos antes de cotizar en bolsa), con una valuación cercana a los **965 mil millones de dólares** tras su ronda Serie H, y apunta a listar entre septiembre y octubre de este año. Anthropic no ha vinculado el anuncio científico con el calendario de su IPO. Eso es, hasta ahora, una lectura editorial basada en la coincidencia de fechas —no un hecho confirmado por la empresa—, pero la coincidencia es demasiado exacta como para no señalarla.
+Aquí está el dato que Anthropic no puso en su blog: el anuncio llegó apenas cinco días después de que la empresa confirmara ante Reuters, el 18 de septiembre de 2026, que opera un laboratorio húmedo propio en la Bahía de San Francisco. Y ambos eventos ocurren dentro de la ventana en la que, de acuerdo con múltiples reportes financieros —entre ellos Wall Street Journal y agregadores especializados—, Anthropic planea debutar en Nasdaq: la compañía presentó un S-1 confidencial ante la SEC el primero de junio de 2026 (el formulario que toda empresa debe entregar al regulador bursátil de Estados Unidos antes de cotizar en bolsa), con una valuación cercana a los **965 mil millones de dólares** tras su ronda Serie H, y apunta a listar entre septiembre y octubre de este año. Anthropic no ha vinculado el anuncio científico con el calendario de su IPO (Initial Public Offering / Oferta Pública Inicial). Eso es, hasta ahora, una lectura editorial basada en la coincidencia de fechas —no un hecho confirmado por la empresa—, pero la coincidencia es demasiado exacta como para no señalarla.
 
 ## Quién audita el anuncio cuando el auditor es el propio investigador
 
