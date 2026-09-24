@@ -1,5 +1,5 @@
 ---
-title: Anthropic se autocalificó su tarea de ciencia y sacó A+
+title: Anthropic autocalificó su tarea de ciencia y sacó A+
 category: Inteligencia Artificial
 pubDate: 2026-09-24T05:43
 updatedDate: ''
@@ -29,7 +29,7 @@ Un preprint no es un paper. La diferencia importa: un preprint se publica antes 
 
 ## Stanford llegó casi al mismo lugar, sin IA y sin comunicado
 
-El propio director ejecutivo de Anthropic, Dario Amodei, reconoció en su anuncio que un equipo de la Universidad de Stanford había descrito previamente, de forma independiente, un sistema en algunos aspectos similar al que Claude señaló. No hubo comunicado de prensa para ese hallazgo, ni ronda de entrevistas, ni cobertura en decenas de medios el mismo día. **La ciencia hecha sin marketing no genera titulares, aunque llegue a conclusiones parecidas.** Esto no resta mérito al proceso de Claude —redujo 200,000 candidatos a 20 en 21 horas, una tarea que a un equipo humano le tomaría semanas o meses—, pero sí resta exclusividad a la narrativa de "descubrimiento sin precedentes" que domina la cobertura. Si te interesa cómo la IA está cambiando la forma en que se define qué línea de investigación avanza, lo exploramos en [la IA como nuevo Darwin: quién define la evolución](/articulos/la-ia-como-nuevo-darwin-quien-define-la-evolucion/).
+El propio director ejecutivo de Anthropic, Dario Amodei, reconoció en su anuncio que un equipo de la Universidad de Stanford había descrito previamente, de forma independiente, un sistema en algunos aspectos similar al que Claude señaló. No hubo comunicado de prensa para ese hallazgo, ni ronda de entrevistas, ni cobertura en decenas de medios el mismo día. **La ciencia hecha sin marketing no genera titulares, aunque llegue a conclusiones parecidas.** Esto no resta mérito al proceso de Claude —redujo 200,000 candidatos a 20 en 21 horas, una tarea que a un equipo humano le tomaría semanas o meses—, pero sí resta exclusividad a la narrativa de "descubrimiento sin precedentes" que domina la cobertura.
 
 ## El mercado ya reaccionó, sin que nada esté probado
 
@@ -37,6 +37,6 @@ Las acciones de CRISPR Therapeutics y de otras compañías de edición genética
 
 ## Qué significa para un lector en México y América Latina
 
-Ninguna instancia regulatoria de la región tiene capacidad técnica para auditar afirmaciones científicas de laboratorios corporativos extranjeros como el de Anthropic. La dependencia es total: si Anthropic dice que Claude hizo ciencia, la región lo recibe como noticia, no como algo que pueda verificar de forma independiente. **Esa misma brecha** es la que conecta este caso con la discusión más amplia sobre [bioseguridad global y quién audita el código](/articulos/bioseguridad-global-el-codigo-que-nadie-audita-todavia/) y los laboratorios que hoy operan casi sin supervisión externa.
+Ninguna instancia regulatoria de la región tiene capacidad técnica para auditar afirmaciones científicas de laboratorios corporativos extranjeros como el de Anthropic. La dependencia es total: si Anthropic dice que Claude hizo ciencia, la región lo recibe como noticia, no como algo que pueda verificar de forma independiente. **Esa misma brecha** es la que conecta este caso con la discusión más amplia sobre bioseguridad global y quién audita el código y los laboratorios que hoy operan casi sin supervisión externa.
 
 La pregunta que queda abierta no es si ART resultará ser una herramienta real de edición genética. Es esta: **¿cuánto tiempo puede una empresa autocalificarse su propia tarea de ciencia**, con el mercado bursátil como jurado, antes de que alguien —regulador, competidor, comunidad científica— le pida las cuentas?
