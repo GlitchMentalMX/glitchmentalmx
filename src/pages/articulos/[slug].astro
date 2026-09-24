@@ -482,6 +482,26 @@ if (kind === 'posts') {
     if (variants.length > 0) relatedToolLinks.push({ herramienta, variants });
   }
 }
+
+// Puente ficha → artículos editoriales: el enlace ya existía en sentido
+// contrario (artículo → fichas, arriba), pero quien llegaba a una ficha
+// desde Google no tenía ningún camino hacia el análisis de esa misma
+// herramienta. Mismo criterio de coincidencia que relatedToolLinks (nombre
+// de la herramienta como palabra completa en el título del artículo);
+// solo aparece si hay coincidencia real, nunca se rellena. Tope de 3,
+// los más recientes primero.
+const toolKinds = ['preciosIA', 'entrenaIA', 'pruebaGratis', 'codigosDescuento', 'preciosDigitales'];
+const articulosSobreHerramienta: { id: string; title: string }[] = [];
+if (toolKinds.includes(kind) && herramienta) {
+  const re = new RegExp(`(?<![a-z0-9])${escapeRegex(normalizeText(herramienta))}(?![a-z0-9])`);
+  const editorialPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+  for (const p of editorialPosts) {
+    if (re.test(normalizeText(p.data.title))) articulosSobreHerramienta.push({ id: p.id, title: p.data.title });
+    if (articulosSobreHerramienta.length === 3) break;
+  }
+}
 ---
 
 <Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'} robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -662,6 +682,17 @@ if (kind === 'posts') {
     </section>
   )}
 
+  {articulosSobreHerramienta.length > 0 && (
+    <section class="container tool-articles">
+      <p class="tool-articles-label">Lo que hemos escrito sobre {herramienta}</p>
+      <ul>
+        {articulosSobreHerramienta.map((a) => (
+          <li><a href={`/articulos/${a.id}/`}>{a.title} →</a></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
   {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales') && <ToolsWidget />}
 
   {kind === 'posts' && relatedFinal.length > 0 && (
@@ -820,6 +851,18 @@ if (kind === 'posts') {
 
   .book-section { max-width: 720px; padding: 32px 24px 96px; }
 
+  .tool-articles { max-width: 720px; padding: 8px 24px 40px; }
+  .tool-articles-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 10px;
+  }
+  .tool-articles ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+  .tool-articles a { color: var(--text-muted); font-size: 0.95rem; text-decoration: none; }
+  .tool-articles a:hover { color: var(--accent); text-decoration: underline; }
   .related-tools-section { max-width: 720px; padding: 8px 24px 64px; display: flex; flex-direction: column; gap: 22px; }
   .related-tools-label {
     font-family: var(--font-mono);
