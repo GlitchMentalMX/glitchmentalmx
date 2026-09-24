@@ -552,7 +552,15 @@ if (kind === 'posts') {
       {fraseCorta && <p class="frase-corta">{fraseCorta}</p>}
     </header>
 
-    {heroImage && (
+    {/* Las 5 colecciones "IA sin letra chiquita"/Precios Digitales tienen
+       heroImage generado (tarjeta de marca, no foto editorial) desde hoy —
+       decisión de Jorge: se queda alimentando og:image/twitter:image/JSON-LD
+       (sigue pasando por Layout `image` más abajo y por articleSchema), pero
+       no se renderiza en la página — no encaja con el tono editorial
+       restringido del sitio y las páginas de esta familia son para Google
+       Search, no para pasear al usuario por una imagen decorativa. `posts`
+       sigue mostrando su hero normal, sin cambios. */}
+    {kind === 'posts' && heroImage && (
       <div class="hero container">
         <img src={heroImage} alt={heroImageAlt} width="1600" height="1000" data-lightbox />
       </div>
