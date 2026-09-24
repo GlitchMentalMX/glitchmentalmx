@@ -9,7 +9,7 @@ description: >-
   está pasando detrás: quién tiene el poder, quién lo pierde y qué queda fuera
   de la conversación pública.
 intro: >-
-  Noventa y seis artículos organizados en diez secciones, de fundamentos a
+  Ciento siete artículos organizados en diez secciones, de fundamentos a
   geopolítica. No hace falta leerlos en orden ni todos de un jalón: cada
   sección funciona sola. Si es tu primera visita, empieza por la ruta
   recomendada de abajo — son los textos que dan el contexto que el resto da
@@ -114,6 +114,14 @@ postSlugs:
   - correo-electronico-phishing-nunca-murio
   - tu-voz-ya-no-es-tuya-biometria-banca-rota
   - quien-responde-fraude-autorizado
+  - cual-es-la-mejor-ia-pregunta-mal-planteada
+  - necesitas-detox-de-ia-test-habitos
+  - cuanto-cuesta-espiar-hoy
+  - doom-loop-midieron-como-rompian-la-web
+  - agente-ia-va-de-compras-quien-pierde-negocio
+  - disney-tiktok-trampa-oficializar-fan-edit
+  - idioma-ia-opacidad-auditoria
+  - quien-responde-cuando-ia-hackea-hugging-face
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -135,6 +143,7 @@ sections:
       - slug: etica-de-la-ia-tres-marcos-para-decisiones-reales
         tag: ancla
       - slug: el-problema-del-control-humano-en-ia-autonoma
+      - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
   - title: Crítica e Impacto Social de la IA
     description: >-
       Cómo la IA afecta la cognición, las relaciones y el poder — más allá
@@ -154,6 +163,7 @@ sections:
       - slug: el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende
       - slug: tu-voz-ya-no-es-tuya-biometria-banca-rota
         tag: serie
+      - slug: necesitas-detox-de-ia-test-habitos
   - title: Privacidad y Vigilancia
     description: Lo que cedes cuando usas tecnología, quién lo recibe y para qué.
     posts:
@@ -171,6 +181,7 @@ sections:
       - slug: data-brokers-el-negocio-que-vive-de-tu-casa-inteligente
         tag: serie
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
+      - slug: cuanto-cuesta-espiar-hoy
   - title: Trabajo y Automatización
     description: >-
       Qué empleos cambian, cuáles desaparecen y qué no te va a decir
@@ -219,6 +230,9 @@ sections:
       - slug: el-algoritmo-no-te-hace-protagonista-te-convierte-en-su-actor
       - slug: por-que-sientes-que-conoces-a-tu-influencer-favorito
       - slug: la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste
+      - slug: doom-loop-midieron-como-rompian-la-web
+      - slug: agente-ia-va-de-compras-quien-pierde-negocio
+      - slug: disney-tiktok-trampa-oficializar-fan-edit
   - title: Desinformación
     description: >-
       Cómo se fabrica, distribuye y monetiza la información falsa en la era
@@ -260,6 +274,8 @@ sections:
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
       - slug: quien-responde-fraude-autorizado
         tag: serie
+      - slug: idioma-ia-opacidad-auditoria
+      - slug: quien-responde-cuando-ia-hackea-hugging-face
   - title: Tecnología y Cuerpo
     description: >-
       Cuando la biología deja de ser un límite fijo y se convierte en

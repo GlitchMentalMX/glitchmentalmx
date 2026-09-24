@@ -69,6 +69,12 @@ postSlugs:
   - la-ia-como-nuevo-darwin-quien-define-la-evolucion
   - bioseguridad-global-el-codigo-que-nadie-audita-todavia
   - neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
+  - quien-responde-cuando-ia-hackea-hugging-face
+  - disney-tiktok-trampa-oficializar-fan-edit
+  - idioma-ia-opacidad-auditoria
+  - cuanto-cuesta-espiar-hoy
+  - doom-loop-midieron-como-rompian-la-web
+  - agente-ia-va-de-compras-quien-pierde-negocio
 sections:
   - title: Geopolítica de la IA
     description: >-
@@ -85,6 +91,7 @@ sections:
         tag: serie
       - slug: trump-quiere-una-ley-de-ia-federal-que-pierde-latam
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
+      - slug: quien-responde-cuando-ia-hackea-hugging-face
   - title: Monopolios e Infraestructura
     description: >-
       Quién controla los cables, los chips, la nube y los modelos — y qué
@@ -100,6 +107,7 @@ sections:
         tag: serie
       - slug: el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues
         tag: serie
+      - slug: disney-tiktok-trampa-oficializar-fan-edit
   - title: Vigilancia y Control Social
     description: >-
       Cómo la tecnología se convierte en instrumento de poder sobre
@@ -122,6 +130,8 @@ sections:
       - slug: el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende
       - slug: la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
+      - slug: idioma-ia-opacidad-auditoria
+      - slug: cuanto-cuesta-espiar-hoy
   - title: Economía Política de la IA
     description: >-
       Quién gana, quién pierde y cómo se distribuye el valor generado por
@@ -142,6 +152,8 @@ sections:
         tag: serie
       - slug: pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado
       - slug: el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas
+      - slug: doom-loop-midieron-como-rompian-la-web
+      - slug: agente-ia-va-de-compras-quien-pierde-negocio
   - title: Desinformación como Sistema
     description: >-
       Cómo la mentira se industrializó y por qué es tan difícil

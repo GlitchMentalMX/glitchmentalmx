@@ -90,6 +90,14 @@ postSlugs:
   - granja-cerdos-digital-trata-fraude
   - empleado-que-nunca-existio-corea-del-norte-empresa
   - quien-responde-fraude-autorizado
+  - cual-es-la-mejor-ia-pregunta-mal-planteada
+  - necesitas-detox-de-ia-test-habitos
+  - disney-tiktok-trampa-oficializar-fan-edit
+  - agente-ia-va-de-compras-quien-pierde-negocio
+  - cuanto-cuesta-espiar-hoy
+  - idioma-ia-opacidad-auditoria
+  - doom-loop-midieron-como-rompian-la-web
+  - quien-responde-cuando-ia-hackea-hugging-face
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -105,6 +113,7 @@ sections:
       - slug: el-glosario-que-las-empresas-de-ia-no-quieren-que-leas
       - slug: que-hace-autonomo-a-un-sistema-mas-alla-del-robot
       - slug: de-asistente-a-agente-como-cambio-el-lenguaje-de-la-ia
+      - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
   - title: Para Bachillerato
     description: >-
       Lecturas accesibles con alta carga crítica. Generan discusión sin
@@ -122,6 +131,7 @@ sections:
       - slug: lo-que-se-pierde-cuando-muere-una-plataforma-digital
       - slug: por-que-sientes-que-conoces-a-tu-influencer-favorito
       - slug: por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
+      - slug: necesitas-detox-de-ia-test-habitos
   - title: Para Universidad
     description: >-
       Artículos con densidad analítica para cursos de comunicación, derecho,
@@ -142,6 +152,9 @@ sections:
       - slug: el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues
       - slug: la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste
       - slug: el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla
+      - slug: disney-tiktok-trampa-oficializar-fan-edit
+      - slug: agente-ia-va-de-compras-quien-pierde-negocio
+      - slug: cuanto-cuesta-espiar-hoy
   - title: Para Posgrado e Investigación
     description: >-
       Mayor profundidad analítica. Para seminarios, marcos teóricos y
@@ -168,6 +181,9 @@ sections:
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
         tag: ancla
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
+      - slug: idioma-ia-opacidad-auditoria
+      - slug: doom-loop-midieron-como-rompian-la-web
+      - slug: quien-responde-cuando-ia-hackea-hugging-face
   - title: Debates para el Aula
     description: >-
       Artículos que generan discusión. Posiciones claras, datos
@@ -209,6 +225,8 @@ sections:
         tag: debate
       - slug: quien-responde-fraude-autorizado
         tag: debate
+      - slug: disney-tiktok-trampa-oficializar-fan-edit
+        tag: debate
   - title: Casos de Estudio
     description: >-
       Situaciones reales documentadas para análisis estructurado, trabajos
@@ -248,6 +266,16 @@ sections:
         tag: caso
       - slug: empleado-que-nunca-existio-corea-del-norte-empresa
         tag: caso
+      - slug: idioma-ia-opacidad-auditoria
+        tag: caso
+      - slug: doom-loop-midieron-como-rompian-la-web
+        tag: caso
+      - slug: quien-responde-cuando-ia-hackea-hugging-face
+        tag: caso
+      - slug: agente-ia-va-de-compras-quien-pierde-negocio
+        tag: caso
+      - slug: cuanto-cuesta-espiar-hoy
+        tag: caso
   - title: Perspectiva LATAM
     description: >-
       Para docentes que enseñan tecnología desde América Latina — con
@@ -265,6 +293,10 @@ sections:
       - slug: neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
       - slug: el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla
+      - slug: disney-tiktok-trampa-oficializar-fan-edit
+      - slug: doom-loop-midieron-como-rompian-la-web
+      - slug: quien-responde-cuando-ia-hackea-hugging-face
+      - slug: cuanto-cuesta-espiar-hoy
   - title: Guías de Uso Práctico
     description: >-
       Para integrar IA en el trabajo docente y en procesos educativos — sin
@@ -276,6 +308,7 @@ sections:
       - slug: datos-abiertos-el-poder-publico-que-nadie-te-explica
       - slug: deepseek-la-guia-practica-para-usarlo-bien
       - slug: la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas
+      - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
 related:
   - biblioteca-de-ia-tecnologia-y-sociedad
   - mapa-de-poder-tech

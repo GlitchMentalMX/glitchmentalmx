@@ -73,6 +73,11 @@ postSlugs:
   - data-brokers-el-negocio-que-vive-de-tu-casa-inteligente
   - neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
   - la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real
+  - necesitas-detox-de-ia-test-habitos
+  - cual-es-la-mejor-ia-pregunta-mal-planteada
+  - quien-responde-cuando-ia-hackea-hugging-face
+  - agente-ia-va-de-compras-quien-pierde-negocio
+  - idioma-ia-opacidad-auditoria
 sections:
   - title: Cultura Digital
     description: Identidad, atención y vida en internet.
@@ -98,6 +103,7 @@ sections:
       - slug: habitos-invisibles-tecnologia-que-reconfigura-tu-conducta
       - slug: el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende
       - slug: la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste
+      - slug: necesitas-detox-de-ia-test-habitos
   - title: Tendencias Digitales
     description: Cómo cambian los formatos, el contenido y la forma de consumirlo.
     posts:
@@ -131,6 +137,7 @@ sections:
       - slug: para-que-sirve-claude-si-no-eres-programador
       - slug: microsoft-copilot-para-que-sirve-y-que-planes-existen
       - slug: deepseek-la-guia-practica-para-usarlo-bien
+      - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
   - title: Narrativa de la IA
     description: Cómo el lenguaje moldea lo que creemos posible.
     posts:
@@ -152,6 +159,9 @@ sections:
       - slug: el-problema-del-control-humano-en-ia-autonoma
       - slug: la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
+      - slug: quien-responde-cuando-ia-hackea-hugging-face
+      - slug: agente-ia-va-de-compras-quien-pierde-negocio
+      - slug: idioma-ia-opacidad-auditoria
   - title: Tendencias Tecnológicas
     description: Cómo distinguir una tendencia pasajera de una transformación de fondo.
     posts:
