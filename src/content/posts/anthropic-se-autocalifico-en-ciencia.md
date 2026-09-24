@@ -1,7 +1,7 @@
 ---
 title: Anthropic se autocalificó su tarea de ciencia y sacó A+
 category: Inteligencia Artificial
-pubDate: 2026-09-23T20:58
+pubDate: 2026-09-23T20:59
 updatedDate: ''
 description: Anthropic anunció que Claude halló una enzima tipo CRISPR sin revisión de pares, cinco días después de confirmar su laboratorio y rumbo a su IPO.
 heroImage: /images/uploads/anthropic-autocalifica.webp
