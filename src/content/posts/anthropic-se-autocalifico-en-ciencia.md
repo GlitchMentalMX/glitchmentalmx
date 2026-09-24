@@ -1,19 +1,19 @@
 ---
 title: Anthropic se autocalificó su tarea de ciencia y sacó A+
 category: Inteligencia Artificial
-pubDate: 2026-09-23T20:59
+pubDate: 2026-09-24T05:33
 updatedDate: ''
 description: Anthropic anunció que Claude halló una enzima tipo CRISPR sin revisión de pares, cinco días después de confirmar su laboratorio y rumbo a su IPO.
 heroImage: /images/uploads/anthropic-autocalifica.webp
 heroImageAlt: 'Anthropic autocalificación ciencia: mujer científica pone sello de aprobación junto a estación de revisión vacía en laboratorio'
-draft: true
+draft: false
 ---
 
 Anthropic anunció que Claude descubrió una enzima con arquitectura parecida a CRISPR, y lo hizo exactamente cinco días después de confirmar que abrió un laboratorio propio, en plena ventana de salida a bolsa. La empresa se **autocalificó su propia tarea de ciencia** — y se puso A+.
 
 ## Qué encontró Claude, sin el gancho de CRISPR
 
-El 23 de septiembre de 2026, Anthropic publicó en su blog oficial y en un preprint que un grupo de agentes basados en Claude identificó un sistema enzimático nunca antes descrito en el ADN de bacteriófagos, los virus que infectan bacterias. Lo llamó **ART** (array-associated reverse transcriptases): una transcriptasa reversa —una enzima que copia ARN a ADN— acompañada de un gen vecino de función desconocida y un arreglo de repeticiones de ADN espaciadas de forma regular, un patrón que recuerda al de los sistemas CRISPR sin serlo. Según el propio comunicado de Anthropic, cerca de 950 agentes de Claude trabajaron en paralelo durante 21 horas, procesaron alrededor de 210 millones de tokens, revisaron más de 200,000 transcriptasas reversas y redujeron la lista a 20 candidatos relevantes. **La función real de ART todavía se desconoce por completo.** El trabajo de laboratorio —con bacterias E. coli, en instalaciones de nivel BSL-1 y BSL-2 que no manejan patógenos humanos— lo hicieron científicos humanos, no la IA.
+El 23 de septiembre de 2026, Anthropic publicó en su blog oficial y en un preprint que un grupo de agentes basados en Claude identificó un sistema enzimático nunca antes descrito en el ADN de bacteriófagos, los virus que infectan bacterias. Lo llamó **ART** (array-associated reverse transcriptases): una transcriptasa reversa —una enzima que copia ARN a ADN— acompañada de un gen vecino de función desconocida y un arreglo de repeticiones de ADN espaciadas de forma regular, un patrón que recuerda al de los sistemas CRISPR sin serlo. Según el propio comunicado de Anthropic, cerca de 950 agentes de Claude trabajaron en paralelo durante 21 horas, procesaron alrededor de 210 millones de tokens, revisaron más de 200,000 transcriptasas reversas y redujeron la lista a 20 candidatos relevantes. **La función real de ART todavía se desconoce por completo.** El trabajo de laboratorio —con bacterias _E. coli_, en instalaciones de nivel BSL-1 y BSL-2 que no manejan patógenos humanos— lo hicieron científicos humanos, no la IA.
 
 ## Cinco días que nadie en el comunicado menciona
 
