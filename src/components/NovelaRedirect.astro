@@ -4,14 +4,13 @@ import { getBook } from '../data/books';
 
 interface Props {
   bookId: string;
-  // Ruta corta sin barras (p. ej. 'umbral20' → /umbral20/).
-  path: string;
-  // Destino de Amazon al que redirige.
-  target: string;
 }
 
-const { bookId, path, target } = Astro.props;
-const book = getBook(bookId)!;
+// Ruta corta (book.buy) y destino (book.storeUrl) salen de books.ts: un solo
+// lugar donde cambiar el ASIN o la tienda.
+const book = getBook(Astro.props.bookId)!;
+const path = book.buy.replace(/\//g, '');
+const target = book.storeUrl;
 
 // Enlace corto de campaña para una novela (redes, WhatsApp, impresos). Redirige
 // a Amazon al instante; cada visita queda en el beacon propio de

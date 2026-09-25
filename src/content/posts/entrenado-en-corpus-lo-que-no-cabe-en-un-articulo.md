@@ -37,7 +37,7 @@ Quien quiera leer la investigación que precedió al libro puede hacerlo en [El 
 
 ![Entrenado en corpus: figura encapuchada sobre flujo de datos binarios y red neuronal digital](/images/posts/entrenado-en-corpus-lo-que-no-cabe-en-un-articulo/2.jpg)
 
-_Entrenado en Corpus_ de Jorge A. Diaz Elizondo está disponible en Amazon en formato eBook, tapa blanda y tapa dura. El único enlace oficial es [mybook.to/EntrenadoEnCorpus](http://mybook.to/EntrenadoEnCorpus), que redirige a la tienda Amazon correspondiente según el país del lector.
+_Entrenado en Corpus_ de Jorge A. Diaz Elizondo está disponible en Amazon en formato eBook, tapa blanda y tapa dura. El único enlace oficial es [glitchmental.com/entrenadoencorpus](https://glitchmental.com/entrenadoencorpus/), que lleva a la ficha del libro en Amazon, donde eliges el formato y, si prefieres, la tienda de tu país.
 
 _eBook: B0H4J5WTCR_
 

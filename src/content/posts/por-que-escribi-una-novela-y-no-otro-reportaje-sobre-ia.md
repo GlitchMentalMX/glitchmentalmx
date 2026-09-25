@@ -35,7 +35,7 @@ Es ficción. Está anclada en hechos que cualquier lector de este sitio ya conoc
 
 ![Claude respondió: Entrenado en Corpus — novela de Jorge A.Entrenado en Corpus — novela de Jorge A. Diaz Elizondo. Tecnothriller sobre IA, Vaticano y periodismo.](/images/posts/por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia/2.jpg)
 
-[Disponible en Amazon.](https://mybook.to/EntrenadoEnCorpus)
+[Disponible en Amazon.](https://glitchmental.com/entrenadoencorpus/)
 
   
 

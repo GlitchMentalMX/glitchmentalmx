@@ -9,7 +9,12 @@ export interface Book {
   genre: string;
   cover: string;
   desc: string;
+  // Enlace corto propio (/umbral20/…): es el que se muestra en todo el sitio,
+  // porque cada visita queda contada en /stats/ (Analytics.astro).
   buy: string;
+  // Ficha real en amazon.com: destino de la redirección y `offers.url` del
+  // schema (un schema no debe apuntar a una página noindex).
+  storeUrl: string;
   // Slug en src/content/posts del artículo "por qué escribí esta novela" —
   // opcional porque no todas las novelas tienen uno todavía.
   whyIWroteThisSlug?: string;
@@ -47,7 +52,8 @@ export const books: Book[] = [
     genre: 'Tecnothriller',
     cover: '/images/novelas/umbral-20.webp',
     desc: 'La edición genética humana ya no es una posibilidad. Es un procedimiento. Treinta y nueve mil expedientes lo documentan. Una firma al pie de uno de ellos es la suya.',
-    buy: 'https://www.amazon.com/dp/B0HKFT5GMF',
+    buy: '/umbral20/',
+    storeUrl: 'https://www.amazon.com/dp/B0HKFT5GMF',
     whyIWroteThisSlug: 'umbral-20-novela-edicion-genetica',
     store: 'us',
     formats: [
@@ -62,7 +68,8 @@ export const books: Book[] = [
     genre: 'Tecnothriller',
     cover: '/images/novelas/cero-organico.webp',
     desc: 'Naia Soler tiene millones de seguidores y contratos de ocho cifras. Detrás de cada publicación, un sistema que la conoce mejor que ella misma. El algoritmo no es caprichoso. Decide.',
-    buy: 'https://mybook.to/CeroOrganico',
+    buy: '/ceroorganico/',
+    storeUrl: 'https://www.amazon.com/dp/B0H8M9SSV6',
     whyIWroteThisSlug: 'cero-organico-la-novela-sobre-el-algoritmo-que-controla-a-los-influencers',
     formats: [
       { label: 'eBook', asin: 'B0H8M9SSV6' },
@@ -76,7 +83,8 @@ export const books: Book[] = [
     genre: 'Tecnothriller',
     cover: '/images/novelas/entrenado-en-corpus.webp',
     desc: 'Una periodista investiga el vínculo entre las grandes tecnológicas y el Vaticano. El modelo de IA que responde sus preguntas opera, al mismo tiempo, en la identificación de blancos militares. El corpus fue humano. Las consecuencias, no.',
-    buy: 'https://mybook.to/EntrenadoEnCorpus',
+    buy: '/entrenadoencorpus/',
+    storeUrl: 'https://www.amazon.com/dp/B0H4J5WTCR',
     whyIWroteThisSlug: 'por-que-escribi-una-novela-y-no-otro-reportaje-sobre-ia',
     formats: [
       { label: 'eBook', asin: 'B0H4J5WTCR' },

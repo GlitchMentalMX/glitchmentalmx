@@ -49,4 +49,4 @@ Toda la investigación que sostiene esta historia sigue disponible en [Protocolo
 
 [![Portada de UMBRAL 20, novela de Jorge A. Diaz Elizondo](/images/novelas/umbral-20.webp)](https://glitchmental.com/novelas/umbral-20/)
 
-**Formatos disponibles en Amazon:** [eBook](https://www.amazon.com/dp/B0HKF7KD6L) · [tapa blanda](https://www.amazon.com/dp/B0HKFT5GMF) · [tapa dura](https://www.amazon.com/dp/B0HKFRX391)
+**Disponible en eBook, tapa blanda y tapa dura:** [glitchmental.com/umbral20](https://glitchmental.com/umbral20/)

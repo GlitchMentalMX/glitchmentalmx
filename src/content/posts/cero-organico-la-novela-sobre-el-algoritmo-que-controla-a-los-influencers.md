@@ -70,7 +70,7 @@ que ella misma. El algoritmo no es caprichoso. Decide.
 Toda la investigación que sostiene esta historia sigue disponible en
 [Panóptico Digital](https://glitchmental.com/series/panoptico-digital/).
 La novela que salió de ella está en [/novelas/](/novelas/), y ya
-puedes leerla aquí: https://mybook.to/CeroOrganico
+puedes leerla aquí: https://glitchmental.com/ceroorganico/
 
 ![Portada de la novela Cero Orgánico](/images/uploads/Cero%20Org%C3%A1nico%20%E2%80%94%20Portada.webp)
 

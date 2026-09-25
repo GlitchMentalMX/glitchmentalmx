@@ -31,7 +31,7 @@ const bookSchema = {
   inLanguage: 'es',
   offers: {
     '@type': 'Offer',
-    url: book.buy,
+    url: book.storeUrl,
     availability: 'https://schema.org/InStock',
   },
   ...(book.formats && {
@@ -66,13 +66,7 @@ const bookSchema = {
 
       {book.formats && (
         <p class="formats">
-          También en:{' '}
-          {book.formats.map((f, i) => (
-            <>
-              {i > 0 && ' · '}
-              <a href={formatUrl(book, f.asin)} target="_blank" rel="noopener">{f.label}</a>
-            </>
-          ))}
+          Disponible en {book.formats.map((f) => (f.label === 'eBook' ? f.label : f.label.toLowerCase())).join(', ').replace(/, ([^,]*)$/, ' y $1')}. Elige el formato en la ficha de Amazon.
         </p>
       )}
 
@@ -120,8 +114,6 @@ const bookSchema = {
   .desc { color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; margin: 0 0 26px; max-width: 52ch; }
   .buy { font-size: 1rem; padding: 0.8em 1.6em; }
   .formats { margin: 12px 0 0; font-size: 0.85rem; color: var(--text-faint); }
-  .formats a { color: var(--text-muted); }
-  .formats a:hover { color: var(--accent); }
   .links {
     margin-top: 22px;
     display: flex;
