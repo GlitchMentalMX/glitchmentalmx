@@ -8,8 +8,10 @@ backend:
 site_url: https://glitchmental.com
 display_url: https://glitchmental.com
 
-media_folder: "public/images/uploads"
-public_folder: "/images/uploads"
+# Carpeta global = todo /public, para que el panel encuentre y previsualice cualquier imagen del sitio.
+# Las subidas nuevas van a uploads (media_folder por colección más abajo).
+media_folder: "public"
+public_folder: "/"
 
 slug:
   encoding: "unicode"
@@ -23,6 +25,8 @@ collections:
     label: "Artículos"
     label_singular: "Artículo"
     folder: "src/content/posts"
+    media_folder: "/public/images/uploads"
+    public_folder: "/images/uploads"
     create: true
     slug: "{{title}}"
     identifier_field: title
@@ -44,6 +48,8 @@ collections:
   - name: "pages"
     label: "Páginas fijas"
     label_singular: "Página"
+    media_folder: "/public/images/uploads"
+    public_folder: "/images/uploads"
     files:
       - name: "acerca-de"
         label: "Acerca de"
@@ -117,6 +123,8 @@ collections:
   - name: "indice_glitchmentalmx"
     label: "Índice glitchMentalMX"
     label_singular: "Edición mensual"
+    media_folder: "/public/images/uploads"
+    public_folder: "/images/uploads"
     files:
       - name: "indice-actual"
         label: "Edición del mes actual"
