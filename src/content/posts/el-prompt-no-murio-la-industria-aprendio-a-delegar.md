@@ -1,7 +1,7 @@
 ---
 title: 'El prompt no murió: la industria aprendió a delegar'
 category: Inteligencia Artificial
-pubDate: 2026-09-26T07:22
+pubDate: 2026-09-27T06:41
 updatedDate: ''
 description: El clip viral "prompting is dead" le inventa una frase a Sam Altman. Detrás, la industria dejó de enseñar a preguntar y empezó a delegar.
 heroImage: /images/uploads/ia-delegar.webp
@@ -49,6 +49,6 @@ Ya existe un antecedente directo en este sitio sobre cómo se transformó el pue
 
 Si la interacción se mueve de "escribir bien" a "delegar bien", el valor no se queda con quien delega. Se concentra en quien diseñó el sistema que decide cómo se ejecuta esa delegación: qué herramientas están disponibles, qué límites tiene el agente, qué datos puede tocar y cuáles no. El usuario que aprende a delegar mejor sigue dependiendo por completo de reglas que otro escribió antes.
 
-Esa asimetría no es solo técnica. **El 6% de los usuarios de IA en LATAM capta valor real de la tecnología, y la región recibe apenas 1% de la inversión global** — la brecha no es de habilidad individual, es de quién es dueño de la infraestructura. Delegar mejor no cierra esa brecha si el sistema al que le delegas sigue diseñado, alojado y monetizado en otro lugar.
+Esa asimetría no es solo técnica. [**El 6% de los usuarios de IA en LATAM capta valor real de la tecnología**](/articulos/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/)**, y la región recibe apenas 1% de la inversión global** — la brecha no es de habilidad individual, es de quién es dueño de la infraestructura. Delegar mejor no cierra esa brecha si el sistema al que le delegas sigue diseñado, alojado y monetizado en otro lugar.
 
 ¿Aprender a delegarle trabajo a una IA es una habilidad nueva, o es la misma vieja habilidad de saber dar instrucciones claras a alguien que no piensa como tú — solo que ahora el intermediario es un sistema cuyos incentivos nunca fueron diseñados para alinearse con los tuyos?
