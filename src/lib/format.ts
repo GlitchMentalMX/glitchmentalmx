@@ -25,6 +25,16 @@ export function parseMesEs(mes: string): Date {
   return new Date(Date.UTC(Number(year), monthIndex, 1, 12));
 }
 
+// Suma días a una fecha 'YYYY-MM-DD' y devuelve el resultado en el mismo
+// formato — para priceValidUntil del JSON-LD de Offer, que Google exige
+// posterior a validFrom. Parsea a mediodía en vez de medianoche UTC para
+// evitar que el corrimiento de zona horaria reste un día en el resultado.
+export function addDaysISO(fechaISO: string, days: number): string {
+  const d = new Date(`${fechaISO}T12:00:00-06:00`);
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
 // Title tag corto para la serie "Precios de IA" — deliberadamente distinto
 // del H1 (que se queda largo y descriptivo). Nombres de herramienta cortos
 // (<=12) usan la plantilla larga con pregunta; nombres largos usan la

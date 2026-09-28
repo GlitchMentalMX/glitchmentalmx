@@ -20,6 +20,7 @@ import {
   buildEntrenaIATitleTag,
   buildPruebaGratisTitleTag,
   buildCodigoDescuentoTitleTag,
+  addDaysISO,
 } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
 import { getBook } from '../../data/books';
@@ -367,7 +368,12 @@ const productSchema =
           url: sitioOficial,
           availability: 'https://schema.org/InStock',
           validFrom: tipoCambio.fecha,
-          priceValidUntil: tipoCambio.fecha,
+          // Antes era igual a validFrom: la oferta "vencía" el mismo día que
+          // empezaba a valer. Google exige priceValidUntil posterior, y con
+          // el tipo de cambio actualizándose a diario, quedaba vencida desde
+          // el día siguiente al build — 7 días de colchón cubre el caso de
+          // que el fetch de Banxico falle un día sin dejar el precio inválido.
+          priceValidUntil: addDaysISO(tipoCambio.fecha, 7),
         },
       }
     : undefined;
