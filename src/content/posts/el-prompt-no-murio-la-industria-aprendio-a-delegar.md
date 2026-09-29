@@ -1,12 +1,12 @@
 ---
 title: 'El prompt no murió: la industria aprendió a delegar'
 category: Inteligencia Artificial
-pubDate: 2026-09-27T06:41
+pubDate: 2026-09-29T06:07
 updatedDate: ''
 description: El clip viral "prompting is dead" le inventa una frase a Sam Altman. Detrás, la industria dejó de enseñar a preguntar y empezó a delegar.
 heroImage: /images/uploads/ia-delegar.webp
 heroImageAlt: 'El prompt no murió: ejecutiva frente dashboard con tareas automatizadas activas junto a teclado en oficina'
-draft: true
+draft: false
 ---
 
 ## La cita que Sam Altman nunca dijo
