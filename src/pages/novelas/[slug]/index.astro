@@ -136,13 +136,15 @@ const bookSchema = {
     </div>
   </section>
 
-  {book.synopsis && (
+  {(book.synopsis || book.lede || book.themes) && (
     <section class="container block" aria-labelledby="sinopsis">
       <h2 id="sinopsis">¿De qué trata {book.title}?</h2>
       {book.lede && <p class="lede">{book.lede}</p>}
-      <div class="copy">
-        {book.synopsis.map((p, i) => <p class={i === book.synopsis!.length - 1 ? 'closer' : undefined}>{p}</p>)}
-      </div>
+      {book.synopsis && (
+        <div class="copy">
+          {book.synopsis.map((p, i) => <p class={i === book.synopsis!.length - 1 ? 'closer' : undefined}>{p}</p>)}
+        </div>
+      )}
       <dl class="facts">
         <div><dt>Género</dt><dd>{book.genre}</dd></div>
         <div><dt>Idioma</dt><dd>Español</dd></div>
@@ -206,7 +208,7 @@ const bookSchema = {
             <img
               src={img.src}
               srcset={img.srcset}
-              sizes={img.srcset ? '615px' : undefined}
+              sizes={img.srcset ? `${Math.round((300 * img.width) / img.height)}px` : undefined}
               width={img.width}
               height={img.height}
               alt={img.alt}
