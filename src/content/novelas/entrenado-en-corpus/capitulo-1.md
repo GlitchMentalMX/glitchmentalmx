@@ -3,8 +3,8 @@ book: entrenado-en-corpus
 number: 1
 title: El rumor que no era
 description: >-
-  Lee gratis el primer capítulo de Entrenado en Corpus: una periodista
-  desmiente una foto falsa del Papa y recibe una llamada desde Roma.
+  Lee gratis el primer capítulo de Entrenado en Corpus, tecnothriller sobre IA:
+  una periodista desmiente una foto falsa del Papa y recibe una llamada de Roma.
 ---
 El rumor llegó a Ciudad de México a las seis y cuarenta de la mañana, antes que el café.
 

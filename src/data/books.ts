@@ -36,6 +36,9 @@ export interface Book {
   tagline?: string;
   // Portada en mayor resolución para el hero (la de `cover` es de catálogo).
   coverHd?: { src: string; width: number; height: number };
+  // Una frase que nombra la novela como la describiría alguien que la busca
+  // (género, tema, idioma). Va antes de la sinopsis; escrita para personas.
+  lede?: string;
   // Sinopsis oficial (contraportada), un párrafo por elemento, sin reescribir.
   synopsis?: string[];
   // Mapa temático real de la novela — también alimenta `about` del schema.
@@ -52,16 +55,20 @@ export interface GalleryImage {
   srcset?: string;
   width: number;
   height: number;
-  // `alt` describe lo que se ve; `caption` es el pie editorial. Ninguno debe
-  // afirmar nada de la trama que el autor no haya confirmado.
+  // `alt` describe lo que se ve (oculto); `caption` es un pie editorial
+  // visible y opcional. Ninguno debe afirmar nada de la trama que el autor no
+  // haya confirmado.
   alt: string;
-  caption: string;
+  // Solo si dice algo que la imagen no dice por sí sola; si no, se omite.
+  caption?: string;
 }
 
 // Bloque "Lo real detrás de la novela" de la página dedicada: el hecho
 // documentado que la novela ficcionaliza. `articles` son slugs de
 // src/content/posts — título y descripción se leen del propio artículo.
 export interface RealBehind {
+  // H2 propio; si falta, "Lo real detrás de la novela".
+  title?: string;
   paragraphs: string[];
   articles: string[];
 }
@@ -129,6 +136,7 @@ export const books: Book[] = [
       'Tecnothriller en español sobre periodismo, IA y el Vaticano. Una periodista recibe un cuaderno guardado doce años en Roma. Lee el primer capítulo gratis.',
     tagline: 'El sistema aprendió a callar — y aprendió de las mejores fuentes posibles.',
     coverHd: { src: '/images/novelas/entrenado-en-corpus/portada.webp', width: 720, height: 1168 },
+    lede: 'Un tecnothriller en español sobre inteligencia artificial, periodismo y el Vaticano, anclado en hechos reales.',
     synopsis: [
       'Una periodista recibe un sobre. Dentro, un cuaderno verde y una memoria USB que llevan doce años guardados en un archivo secreto en Roma.',
       'Lo que encuentra adentro no es un escándalo. Es algo peor: la prueba de que el sistema que hoy le resume las noticias, le redacta correos y le explica el mundo aprendió a callar — y aprendió de las mejores fuentes posibles.',
@@ -145,6 +153,7 @@ export const books: Book[] = [
       'Datos de entrenamiento',
     ],
     realBehind: {
+      title: 'Lo real detrás de la novela: IA, religión y el Vaticano',
       paragraphs: [
         'La novela abre con un rumor falso que se vuelve viral en horas. Tiene un espejo real: a finales de marzo de 2026, Anthropic reunió en secreto a unos 15 líderes religiosos cristianos en San Francisco para hablar de cómo darle formación moral a Claude. La noticia llegó al mainstream con dos semanas de retraso, y en ese lapso X ya había inventado una reunión entre Dario Amodei y el Papa. El rumor era falso; la historia detrás, no.',
         'El escenario tampoco es inventado. Según la investigación de la serie, desde 2016 el Vaticano celebra en Santa María sopra Minerva —la iglesia donde en 1633 juzgaron a Galileo— los Diálogos Minerva: encuentros anuales, cerrados al público, entre líderes tecnológicos y prelados católicos, bajo la regla de Chatham House.',
@@ -167,7 +176,6 @@ export const books: Book[] = [
         width: 1600,
         height: 780,
         alt: 'Figuras con túnicas recorridas por cables luminosos avanzan por la nave de una iglesia barroca; una de ellas voltea a mirar a la cámara.',
-        caption: 'Una nave barroca, cables de luz bajo las túnicas.',
       },
       {
         src: '/images/novelas/entrenado-en-corpus/atril-salon-marmol-1600.webp',
@@ -176,7 +184,6 @@ export const books: Book[] = [
         width: 1600,
         height: 780,
         alt: 'Un dispositivo luminoso sobre un atril de piedra tallada, en un salón de mármol con una red de líneas de luz en el suelo.',
-        caption: 'Un atril de piedra y un dispositivo, sobre un suelo hecho de red.',
       },
       {
         src: '/images/novelas/entrenado-en-corpus/salon-columnas-rojas-1600.webp',
@@ -185,7 +192,6 @@ export const books: Book[] = [
         width: 1600,
         height: 780,
         alt: 'Una mujer con un documento en la mano, bajo un haz de luz, en un salón de columnas rojas con una red dorada dibujada en el techo y el suelo.',
-        caption: 'Un salón de columnas rojas y una mujer con un documento.',
       },
       {
         src: '/images/novelas/entrenado-en-corpus/biblioteca-libro-abierto-1600.webp',
@@ -194,14 +200,12 @@ export const books: Book[] = [
         width: 1600,
         height: 780,
         alt: 'Una mujer sostiene un libro abierto cuyas páginas muestran un diagrama de red, en una biblioteca antigua con círculos dibujados en el suelo.',
-        caption: 'Una biblioteca antigua y un libro abierto sobre un mapa de conexiones.',
       },
       {
         src: '/images/novelas/entrenado-en-corpus/caliz-codigo-binario.webp',
         width: 1024,
         height: 1536,
         alt: 'Un cáliz plateado del que se desprende código binario, bajo una esfera de red luminosa, sobre un fondo de estrellas conectadas.',
-        caption: 'Un cáliz que se deshace en código.',
       },
     ],
     formats: [

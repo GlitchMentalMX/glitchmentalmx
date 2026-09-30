@@ -22,7 +22,7 @@ const words = (chapter.body ?? '').trim().split(/\s+/).length;
 const minutes = readingTime(chapter.body ?? '');
 const pageURL = new URL(`/novelas/${book.id}/capitulo-${chapter.data.number}/`, Astro.site).toString();
 const bookURL = new URL(`/novelas/${book.id}/`, Astro.site).toString();
-const pageTitle = `Capítulo ${chapter.data.number}: ${chapter.data.title} — ${book.title}`;
+const pageTitle = `${book.title} — capítulo ${chapter.data.number} gratis: ${chapter.data.title}`;
 const [series] = await getCollection(
   'editorialCollections',
   ({ data }) => data.kind === 'series' && data.relatedBook === book.id

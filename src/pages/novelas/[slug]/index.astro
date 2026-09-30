@@ -113,7 +113,7 @@ const bookSchema = {
         fetchpriority="high"
       />
       <div class="info">
-        <p class="eyebrow">Novela · {book.genre}</p>
+        <p class="eyebrow">Novela en español · {book.genre}</p>
         <h1>{book.title}</h1>
         {book.tagline && <p class="tagline">{book.tagline}</p>}
         <p class="desc">{book.desc}</p>
@@ -139,6 +139,7 @@ const bookSchema = {
   {book.synopsis && (
     <section class="container block" aria-labelledby="sinopsis">
       <h2 id="sinopsis">¿De qué trata {book.title}?</h2>
+      {book.lede && <p class="lede">{book.lede}</p>}
       <div class="copy">
         {book.synopsis.map((p, i) => <p class={i === book.synopsis!.length - 1 ? 'closer' : undefined}>{p}</p>)}
       </div>
@@ -174,7 +175,7 @@ const bookSchema = {
 
   {book.realBehind && (
     <section class="container block" aria-labelledby="lo-real">
-      <h2 id="lo-real">Lo real detrás de la novela</h2>
+      <h2 id="lo-real">{book.realBehind.title ?? 'Lo real detrás de la novela'}</h2>
       <div class="copy">
         {book.realBehind.paragraphs.map((p) => <p>{p}</p>)}
       </div>
@@ -214,7 +215,7 @@ const bookSchema = {
               loading="lazy"
               decoding="async"
             />
-            <figcaption>{img.caption}</figcaption>
+            {img.caption && <figcaption>{img.caption}</figcaption>}
           </figure>
         ))}
       </div>
@@ -318,6 +319,7 @@ const bookSchema = {
 
   .block { max-width: 780px; padding: 56px 24px 0; margin-left: auto; margin-right: auto; }
   .block h2 { font-size: clamp(1.45rem, 3vw, 1.85rem); margin: 0 0 20px; }
+  .lede { font-size: 1.12rem; line-height: 1.6; color: var(--text-muted); margin: -6px 0 22px; max-width: var(--measure); }
   .copy p { color: var(--text); font-size: 1.05rem; line-height: 1.7; margin: 0 0 1.05em; max-width: var(--measure); }
   .copy .closer {
     font-family: var(--font-display);
