@@ -1,0 +1,141 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { getBook } from '../../../data/books';
+import { getCollection, render } from 'astro:content';
+import { readingTime } from '../../../lib/format';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async () => {
+  const chapters = await getCollection('novelaChapters');
+  return chapters.map((chapter) => ({
+    params: { slug: chapter.data.book, capitulo: `capitulo-${chapter.data.number}` },
+    props: { chapter },
+  }));
+}) satisfies GetStaticPaths;
+
+const { chapter } = Astro.props;
+const book = getBook(chapter.data.book)!;
+const { Content } = await render(chapter);
+
+const words = (chapter.body ?? '').trim().split(/\s+/).length;
+const minutes = readingTime(chapter.body ?? '');
+const pageURL = new URL(`/novelas/${book.id}/capitulo-${chapter.data.number}/`, Astro.site).toString();
+const bookURL = new URL(`/novelas/${book.id}/`, Astro.site).toString();
+const pageTitle = `Capítulo ${chapter.data.number}: ${chapter.data.title} — ${book.title}`;
+const [series] = await getCollection(
+  'editorialCollections',
+  ({ data }) => data.kind === 'series' && data.relatedBook === book.id
+);
+const formatsText = book.formats
+  ?.map((f) => (f.label === 'eBook' ? f.label : f.label.toLowerCase()))
+  .join(', ')
+  .replace(/, ([^,]*)$/, ' y $1');
+
+const author = {
+  '@type': 'Person',
+  name: 'Jorge A. Diaz Elizondo',
+  url: new URL('/acerca-de/', Astro.site).toString(),
+};
+const chapterSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Chapter',
+  name: `Capítulo ${chapter.data.number}: ${chapter.data.title}`,
+  position: chapter.data.number,
+  url: pageURL,
+  inLanguage: 'es',
+  wordCount: words,
+  isAccessibleForFree: true,
+  author,
+  isPartOf: { '@type': 'Book', name: book.title, url: bookURL, author },
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={chapter.data.description}
+  image={`/images/novelas/${book.id}-og.jpg`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(chapterSchema)} />
+  <Breadcrumbs
+    items={[
+      { name: 'Novelas', url: '/novelas/' },
+      { name: book.title, url: `/novelas/${book.id}/` },
+      { name: `Capítulo ${chapter.data.number}` },
+    ]}
+  />
+
+  <header class="container head">
+    <p class="eyebrow">{book.title} · Capítulo {chapter.data.number}</p>
+    <h1>{chapter.data.title}</h1>
+    <p class="meta">
+      Jorge A. Diaz Elizondo · {minutes} min de lectura · gratis, sin registro
+    </p>
+  </header>
+
+  <article class="container chapter">
+    <Content />
+  </article>
+
+  <aside class="container after" aria-labelledby="seguir">
+    <div class="card">
+      <p class="eyebrow">Fin del capítulo {chapter.data.number}</p>
+      <h2 id="seguir">¿Quieres seguir leyendo?</h2>
+      <p class="lead">
+        Este fue el primer capítulo de <strong>{book.title}</strong>, un {book.genre.toLowerCase()} de Jorge A. Diaz Elizondo.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Seguir leyendo en Amazon →</a>
+        <a class="btn btn-ghost" href={`/novelas/${book.id}/`}>Sobre la novela</a>
+      </div>
+      {formatsText && <p class="fine">Disponible en {formatsText}.</p>}
+      {series && (
+        <p class="series">
+          La investigación real detrás de la novela:
+          <a href={`/series/${series.id}/`}>{series.data.title} →</a>
+        </p>
+      )}
+    </div>
+    <p class="rights">© Jorge A. Diaz Elizondo. Todos los derechos reservados. Capítulo compartido para lectura gratuita.</p>
+  </aside>
+</Layout>
+
+<style>
+  .head { max-width: 680px; padding: 48px 24px 28px; margin-left: auto; margin-right: auto; }
+  .head h1 { font-size: clamp(2rem, 4.6vw, 2.8rem); margin: 12px 0 12px; }
+  .meta { font-size: 0.88rem; color: var(--text-faint); margin: 0; }
+
+  /* Lectura prolongada: serif, medida corta, interlineado amplio. */
+  .chapter {
+    max-width: 680px;
+    padding-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text);
+    font-variation-settings: 'opsz' 18;
+  }
+  .chapter :global(p) { margin: 0 0 1.05em; }
+  .chapter :global(hr) { border: 0; margin: 2.4em 0; text-align: center; height: auto; }
+  .chapter :global(hr)::after { content: '* * *'; letter-spacing: 0.5em; color: var(--text-faint); }
+
+  .after { max-width: 680px; padding: 40px 24px 96px; margin-left: auto; margin-right: auto; }
+  .card { padding: 30px 32px; border-radius: var(--radius); background: var(--bg-inset); }
+  .card h2 { font-size: 1.5rem; margin: 10px 0 12px; }
+  .lead { color: var(--text-muted); line-height: 1.65; margin: 0 0 22px; }
+  .lead strong { color: var(--text); }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .fine { margin: 14px 0 0; font-size: 0.82rem; color: var(--text-faint); }
+  .series { margin: 20px 0 0; padding-top: 18px; border-top: 1px solid var(--border); font-size: 0.92rem; color: var(--text-muted); }
+  .series a { color: var(--accent); margin-left: 4px; white-space: nowrap; }
+  .series a:hover { text-decoration: underline; }
+  .rights { margin: 20px 4px 0; font-size: 0.78rem; color: var(--text-faint); }
+
+  @media (max-width: 560px) {
+    .chapter { font-size: 1.12rem; line-height: 1.75; }
+    .card { padding: 24px 22px; }
+  }
+</style>

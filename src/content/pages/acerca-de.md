@@ -28,6 +28,8 @@ glitchMentalMX es para quienes buscan algo más que titulares: buscan el porqué
 
 **Jorge A. Diaz Elizondo** escribe sobre IA, cultura digital y el futuro del trabajo desde México. Sin hype, sin promesas. Fundador de glitchMentalMX — análisis crítico para quienes prefieren datos incómodos sobre discursos bonitos.
 
+También escribe tecnothrillers en español, y cada uno nace de una serie de investigación del sitio: [Entrenado en Corpus](/novelas/entrenado-en-corpus/), [Cero Orgánico](/novelas/cero-organico/) y [UMBRAL 20](/novelas/umbral-20/).
+
 [Conoce las novelas de Jorge →](/novelas/)
 
 ## Explora por categoría

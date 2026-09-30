@@ -338,6 +338,19 @@ const indiceGlitchmentalmx = defineCollection({
   }),
 });
 
+// Capítulo de muestra de cada novela, en HTML indexable y sin registro. El id
+// de la entrada es "{libro}/capitulo-{n}" y coincide con la URL pública
+// /novelas/{libro}/capitulo-{n}/. `book` debe ser el id de src/data/books.ts.
+const novelaChapters = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/novelas' }),
+  schema: z.object({
+    book: z.string(),
+    number: z.number(),
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
 export const collections = {
   posts,
   editorialCollections,
@@ -351,4 +364,5 @@ export const collections = {
   codigosDescuento,
   preciosDigitales,
   herramientasIA,
+  novelaChapters,
 };

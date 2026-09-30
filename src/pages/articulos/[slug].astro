@@ -41,6 +41,13 @@ const PANOPTICO_DIGITAL_SLUGS = [
   'las-redes-sociales-son-maquinas-de-vigilancia-entre-pares',
   'web3-la-descentralizacion-que-siempre-fue-un-pitch',
 ];
+const NEGOCIO_DE_LA_VIRTUD_SLUGS = [
+  'anthropic-y-el-vaticano-la-alianza-de-ia-que-si-existe',
+  'la-ia-occidental-tiene-un-problema-de-religion-serio',
+  'como-una-ia-te-puede-adoctrinar-sin-que-nadie-lo-planeara',
+  'la-ia-china-no-tiene-sesgo-religioso-tiene-algo-peor',
+  'consultaron-al-papa-luego-automatizaron-a-sus-feligreses',
+];
 const PROTOCOLO_KERNEL_SLUGS = [
   'biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion',
   'el-adn-como-codigo-quien-controla-el-software-de-la-vida',
@@ -51,6 +58,7 @@ const PROTOCOLO_KERNEL_SLUGS = [
 const NOVELA_POR_ARTICULO = new Map<string, string>([
   ...PANOPTICO_DIGITAL_SLUGS.map((slug) => [slug, 'cero-organico'] as [string, string]),
   ...PROTOCOLO_KERNEL_SLUGS.map((slug) => [slug, 'umbral-20'] as [string, string]),
+  ...NEGOCIO_DE_LA_VIRTUD_SLUGS.map((slug) => [slug, 'entrenado-en-corpus'] as [string, string]),
 ]);
 
 // Promoción puntual de la Calculadora de Riesgo IA — deliberadamente

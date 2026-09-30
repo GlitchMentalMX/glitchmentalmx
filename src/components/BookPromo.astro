@@ -20,6 +20,9 @@ const { book } = Astro.props;
       <p class="promo-desc">{book.desc}</p>
       <div class="promo-actions">
         <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+        {book.firstChapter && (
+          <a class="promo-why" href={`/novelas/${book.id}/capitulo-1/`}>Leer el primer capítulo gratis →</a>
+        )}
         {book.whyIWroteThisSlug && (
           <a class="promo-why" href={`/articulos/${book.whyIWroteThisSlug}/`}>Cómo nació esta novela →</a>
         )}

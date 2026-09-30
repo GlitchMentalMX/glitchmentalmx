@@ -2,11 +2,16 @@
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { books as published, upcomingBooks as upcoming } from '../../data/books';
+import { getCollection } from 'astro:content';
+
+// Serie de origen de cada novela: sale de `relatedBook` en las colecciones.
+const seriesList = await getCollection('editorialCollections', ({ data }) => data.kind === 'series' && !!data.relatedBook);
+const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
 ---
 
 <Layout
-  title="Novelas — Jorge A. Diaz Elizondo"
-  description="Tecnothriller de credibilidad periodística. Ficción anclada en hechos reales."
+  title="Novelas sobre IA y tecnología en español"
+  description="Tecnothrillers en español sobre inteligencia artificial, vigilancia algorítmica y edición genética, de Jorge A. Diaz Elizondo. Ficción anclada en hechos reales."
 >
   <PageHeader
     eyebrow="Novelas · Jorge A. Diaz Elizondo"
@@ -20,6 +25,10 @@ import { books as published, upcomingBooks as upcoming } from '../../data/books'
       en español especializada en inteligencia artificial, tecnología y cultura digital. La investigación
       detrás de sus novelas nace ahí — en el cruce entre el análisis crítico y la pregunta que los datos
       no responden solos.
+    </p>
+    <p>
+      Son historias sobre tecnología, inteligencia artificial y lo que ocurre cuando esas tecnologías
+      dejan de ser teoría. Cada novela nace de una serie editorial del sitio: primero el análisis, después la ficción.
     </p>
   </section>
 
@@ -35,7 +44,15 @@ import { books as published, upcomingBooks as upcoming } from '../../data/books'
             <span class="tag">{b.genre}</span>
             <h3><a href={`/novelas/${b.id}/`}>{b.title}</a></h3>
             <p>{b.desc}</p>
-            <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+            {seriesByBook.get(b.id) && (
+              <p class="origin">
+                Nació de la serie <a href={`/series/${seriesByBook.get(b.id)!.id}/`}>{seriesByBook.get(b.id)!.data.title}</a>
+              </p>
+            )}
+            <div class="actions-row">
+              <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
+              {b.firstChapter && <a class="chapter-link" href={`/novelas/${b.id}/capitulo-1/`}>Leer el primer capítulo →</a>}
+            </div>
           </div>
         </div>
       ))}
@@ -88,6 +105,12 @@ import { books as published, upcomingBooks as upcoming } from '../../data/books'
   .book-card h3 a { color: var(--text); }
   .book-card h3 a:hover { color: var(--accent); }
   .book-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0 0 18px; }
+  .book-card .origin { font-size: 0.85rem; margin: -6px 0 16px; color: var(--text-faint); }
+  .book-card .origin a { color: var(--accent); }
+  .book-card .origin a:hover { text-decoration: underline; }
+  .actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+  .chapter-link { font-size: 0.9rem; color: var(--accent); }
+  .chapter-link:hover { text-decoration: underline; }
   .footnote { font-size: 0.82rem; color: var(--text-faint); margin-top: 16px; }
 
   .actions { padding: 24px 24px 96px; display: flex; flex-wrap: wrap; gap: 12px; }

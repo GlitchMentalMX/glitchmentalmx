@@ -1,0 +1,433 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { books, formatUrl, type Book } from '../../../data/books';
+import { getCollection, getEntry } from 'astro:content';
+import { readingTime } from '../../../lib/format';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (() => {
+  return books.map((book) => ({ params: { slug: book.id }, props: { book } }));
+}) satisfies GetStaticPaths;
+
+const { book } = Astro.props as { book: Book };
+
+const pageURL = new URL(`/novelas/${book.id}/`, Astro.site).toString();
+// Sin género ni "de" — formato Título — Autor, igual que Amazon/Goodreads,
+// y así el nombre completo del autor nunca se corta ni se abrevia.
+const pageTitle = `${book.title} — Jorge A. Diaz Elizondo`;
+
+// La serie que originó la novela ya está declarada del otro lado
+// (`relatedBook` en src/content/collections/): aquí solo se lee al revés.
+const [series] = await getCollection(
+  'editorialCollections',
+  ({ data }) => data.kind === 'series' && data.relatedBook === book.id
+);
+
+const chapter = book.firstChapter ? await getEntry('novelaChapters', `${book.id}/capitulo-1`) : undefined;
+const chapterURL = chapter ? `/novelas/${book.id}/capitulo-${chapter.data.number}/` : undefined;
+const chapterMinutes = chapter ? readingTime(chapter.body ?? '') : undefined;
+// Gancho del capítulo: sus dos primeros párrafos, con comillas tipográficas.
+const chapterTeaser = (chapter?.body ?? '')
+  .split(/\n\s*\n/)
+  .slice(0, 2)
+  .map((p) => p.trim().replace(/"([^"]*)"/g, '“$1”'));
+
+const realArticles = book.realBehind
+  ? (await Promise.all(book.realBehind.articles.map((slug) => getEntry('posts', slug)))).filter(
+      (p): p is NonNullable<typeof p> => Boolean(p)
+    )
+  : [];
+
+const otherBooks = books.filter((b) => b.id !== book.id);
+const formatsText = book.formats
+  ?.map((f) => (f.label === 'eBook' ? f.label : f.label.toLowerCase()))
+  .join(', ')
+  .replace(/, ([^,]*)$/, ' y $1');
+
+const cover = book.coverHd ?? { src: book.cover, width: 400, height: 640 };
+const ogImage = `/images/novelas/${book.id}-og.jpg`;
+
+const bookSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: book.title,
+  author: {
+    '@type': 'Person',
+    name: 'Jorge A. Diaz Elizondo',
+    url: new URL('/acerca-de/', Astro.site).toString(),
+  },
+  bookFormat: 'https://schema.org/EBook',
+  genre: book.genre,
+  description: book.desc,
+  image: new URL(book.cover, Astro.site).toString(),
+  url: pageURL,
+  mainEntityOfPage: pageURL,
+  inLanguage: 'es',
+  ...(book.themes && { about: book.themes.map((name) => ({ '@type': 'Thing', name })) }),
+  ...(chapter && {
+    hasPart: {
+      '@type': 'Chapter',
+      name: `Capítulo ${chapter.data.number}: ${chapter.data.title}`,
+      position: chapter.data.number,
+      url: new URL(chapterURL!, Astro.site).toString(),
+      isAccessibleForFree: true,
+    },
+  }),
+  offers: {
+    '@type': 'Offer',
+    url: book.storeUrl,
+    availability: 'https://schema.org/InStock',
+  },
+  ...(book.formats && {
+    workExample: book.formats.map((f) => ({
+      '@type': 'Book',
+      bookFormat:
+        f.label === 'eBook'
+          ? 'https://schema.org/EBook'
+          : f.label === 'Tapa dura'
+            ? 'https://schema.org/Hardcover'
+            : 'https://schema.org/Paperback',
+      offers: {
+        '@type': 'Offer',
+        url: formatUrl(book, f.asin),
+        availability: 'https://schema.org/InStock',
+      },
+    })),
+  }),
+};
+---
+
+<Layout title={pageTitle} description={book.metaDescription ?? book.desc} image={ogImage}>
+  <script type="application/ld+json" set:html={JSON.stringify(bookSchema)} />
+  <Breadcrumbs items={[{ name: 'Novelas', url: '/novelas/' }, { name: book.title }]} />
+
+  <section class="container hero-wrap">
+    <div class="hero">
+      <img
+        class="cover"
+        src={cover.src}
+        alt={`Portada de ${book.title}, novela de Jorge A. Diaz Elizondo`}
+        width={cover.width}
+        height={cover.height}
+        fetchpriority="high"
+      />
+      <div class="info">
+        <p class="eyebrow">Novela · {book.genre}</p>
+        <h1>{book.title}</h1>
+        {book.tagline && <p class="tagline">{book.tagline}</p>}
+        <p class="desc">{book.desc}</p>
+
+        <div class="cta">
+          {chapterURL ? (
+            <>
+              <a class="btn btn-primary" href={chapterURL}>Leer el primer capítulo gratis →</a>
+              <a class="btn btn-ghost" href={book.buy} target="_blank" rel="noopener">Comprar en Amazon</a>
+            </>
+          ) : (
+            <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Comprar en Amazon →</a>
+          )}
+        </div>
+        <p class="fine">
+          {chapter && <>Capítulo 1 · {chapterMinutes} min de lectura · sin registro.{' '}</>}
+          {formatsText && <>Disponible en {formatsText}.</>}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {book.synopsis && (
+    <section class="container block" aria-labelledby="sinopsis">
+      <h2 id="sinopsis">¿De qué trata {book.title}?</h2>
+      <div class="copy">
+        {book.synopsis.map((p, i) => <p class={i === book.synopsis!.length - 1 ? 'closer' : undefined}>{p}</p>)}
+      </div>
+      <dl class="facts">
+        <div><dt>Género</dt><dd>{book.genre}</dd></div>
+        <div><dt>Idioma</dt><dd>Español</dd></div>
+        <div><dt>Autor</dt><dd><a href="/acerca-de/">Jorge A. Diaz Elizondo</a></dd></div>
+        {formatsText && <div><dt>Formatos</dt><dd>{formatsText.charAt(0).toUpperCase() + formatsText.slice(1)}</dd></div>}
+      </dl>
+      {book.themes && (
+        <>
+          <p class="eyebrow themes-label">Temas de la novela</p>
+          <ul class="themes">
+            {book.themes.map((t) => <li>{t}</li>)}
+          </ul>
+        </>
+      )}
+    </section>
+  )}
+
+  {chapter && (
+    <section class="container block" aria-labelledby="primer-capitulo">
+      <h2 id="primer-capitulo">Lee el primer capítulo</h2>
+      <div class="excerpt">
+        <p class="eyebrow">Capítulo {chapter.data.number} · {chapter.data.title}</p>
+        <div class="excerpt-text" aria-hidden="false">
+          {chapterTeaser.map((p) => <p>{p}</p>)}
+        </div>
+        <a class="btn btn-primary" href={chapterURL}>Seguir leyendo · {chapterMinutes} min →</a>
+      </div>
+    </section>
+  )}
+
+  {book.realBehind && (
+    <section class="container block" aria-labelledby="lo-real">
+      <h2 id="lo-real">Lo real detrás de la novela</h2>
+      <div class="copy">
+        {book.realBehind.paragraphs.map((p) => <p>{p}</p>)}
+      </div>
+      {realArticles.length > 0 && (
+        <>
+          <p class="eyebrow list-label">La investigación, artículo por artículo</p>
+          <ol class="articles">
+            {realArticles.map((post) => (
+              <li>
+                <a href={`/articulos/${post.id}/`}>
+                  <span class="a-title">{post.data.title}</span>
+                  <span class="a-desc">{post.data.description}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+    </section>
+  )}
+
+  {book.gallery && book.gallery.length > 0 && (
+    <section class="container block gallery-block" aria-labelledby="universo">
+      <h2 id="universo">El universo visual</h2>
+      <div class="strip" role="group" aria-label={`Imágenes de ${book.title}`} tabindex="0">
+        {book.gallery.map((img) => (
+          <figure>
+            <img
+              src={img.src}
+              srcset={img.srcset}
+              sizes={img.srcset ? '615px' : undefined}
+              width={img.width}
+              height={img.height}
+              alt={img.alt}
+              data-lightbox
+              data-desc={img.caption}
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>{img.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {(series || book.whyIWroteThisSlug) && (
+    <section class="container block" aria-labelledby="origen">
+      <h2 id="origen">De dónde salió</h2>
+      <div class="origin">
+        {series && (
+          <a class="origin-card" href={`/series/${series.id}/`}>
+            <span class="eyebrow">Serie editorial · {series.data.postSlugs.length} artículos</span>
+            <span class="o-title">{series.data.title}</span>
+            <span class="o-desc">{series.data.subtitle ?? series.data.description}</span>
+          </a>
+        )}
+        {book.whyIWroteThisSlug && (
+          <a class="origin-card" href={`/articulos/${book.whyIWroteThisSlug}/`}>
+            <span class="eyebrow">Artículo</span>
+            <span class="o-title">Por qué escribí esta novela</span>
+            <span class="o-desc">Cómo una frase de la investigación se volvió una novela.</span>
+          </a>
+        )}
+      </div>
+      <p class="author">
+        <strong>Jorge A. Diaz Elizondo</strong> es escritor y director editorial de glitchMentalMX, publicación
+        independiente en español sobre inteligencia artificial, tecnología y cultura digital.{' '}
+        <a href="/acerca-de/">Sobre el autor →</a>
+      </p>
+    </section>
+  )}
+
+  <section class="container block closing" aria-labelledby="comprar">
+    <h2 id="comprar">{book.title} en Amazon</h2>
+    <div class="cta">
+      <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Comprar en Amazon →</a>
+      {chapterURL && <a class="btn btn-ghost" href={chapterURL}>Leer el primer capítulo</a>}
+    </div>
+    {formatsText && <p class="fine">Disponible en {formatsText}. Elige el formato en la ficha de Amazon.</p>}
+  </section>
+
+  {otherBooks.length > 0 && (
+    <section class="container block others" aria-labelledby="otras">
+      <p class="eyebrow" id="otras">Más novelas</p>
+      <ul>
+        {otherBooks.map((b) => (
+          <li>
+            <a href={`/novelas/${b.id}/`}>
+              <img src={b.cover} alt={`Portada de ${b.title}`} width="60" height="92" loading="lazy" />
+              <span>{b.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="all" href="/novelas/">← Ver catálogo completo</a>
+    </section>
+  )}
+</Layout>
+
+<style>
+  /* Hero: panel oscuro fijo en ambos temas (es una "portada", no una
+     sección de lectura); el resto de la página sigue las variables. */
+  .hero-wrap { padding-top: 16px; padding-bottom: 8px; }
+  .hero {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    padding: 48px 56px;
+    border-radius: var(--radius);
+    color: #eef0f4;
+    background:
+      radial-gradient(ellipse 60% 90% at 88% 50%, rgba(0, 102, 255, 0.28), transparent 70%),
+      #0a0b0f;
+  }
+  .cover {
+    width: 260px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 6px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06);
+    order: 2;
+  }
+  .info { min-width: 0; order: 1; flex: 1; }
+  .info .eyebrow { color: #8fb4ff; }
+  .hero h1 { color: #fff; font-size: clamp(2.2rem, 5vw, 3.4rem); margin: 10px 0 14px; }
+  .tagline {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    line-height: 1.35;
+    color: #fff;
+    margin: 0 0 14px;
+    max-width: 30ch;
+  }
+  .desc { color: #aab1c0; font-size: 1.02rem; line-height: 1.6; margin: 0 0 26px; max-width: 54ch; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero .btn-ghost { border-color: rgba(255, 255, 255, 0.3); color: #fff; }
+  .hero .btn-ghost:hover { border-color: #8fb4ff; color: #8fb4ff; }
+  .fine { margin: 14px 0 0; font-size: 0.82rem; color: var(--text-faint); }
+  .hero .fine { color: #7d8597; }
+
+  .block { max-width: 780px; padding: 56px 24px 0; margin-left: auto; margin-right: auto; }
+  .block h2 { font-size: clamp(1.45rem, 3vw, 1.85rem); margin: 0 0 20px; }
+  .copy p { color: var(--text); font-size: 1.05rem; line-height: 1.7; margin: 0 0 1.05em; max-width: var(--measure); }
+  .copy .closer {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    margin-top: 1.4em;
+    padding-top: 1em;
+    border-top: 3px solid var(--accent);
+    display: inline-block;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px 20px;
+    margin: 28px 0 0;
+    padding: 18px 20px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+  }
+  .facts dt { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); }
+  .facts dd { margin: 4px 0 0; font-size: 0.95rem; color: var(--text); }
+  .facts a { text-decoration: underline; text-decoration-color: var(--prose-link-line); text-underline-offset: 3px; }
+  .facts a:hover { color: var(--accent); }
+  .themes-label { margin: 28px 0 10px; }
+  .themes { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .themes li {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    padding: 5px 14px;
+  }
+
+  .excerpt { padding: 26px 28px; border-radius: var(--radius); background: var(--bg-inset); }
+  .excerpt-text { margin: 14px 0 22px; font-family: var(--font-display); font-size: 1.12rem; line-height: 1.75; max-width: var(--measure); }
+  .excerpt-text p { margin: 0 0 0.9em; }
+  .excerpt-text p:last-child { margin-bottom: 0; opacity: 0.55; }
+
+  .list-label { margin: 28px 0 10px; }
+  .articles { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--border); counter-reset: art; }
+  .articles li { border-bottom: 1px solid var(--border); counter-increment: art; }
+  .articles a { display: block; padding: 16px 0 16px 38px; position: relative; }
+  .articles a::before {
+    content: counter(art, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 18px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-faint);
+  }
+  .a-title { display: block; font-family: var(--font-display); font-size: 1.12rem; line-height: 1.3; color: var(--text); }
+  .a-desc { display: block; margin-top: 4px; font-size: 0.9rem; line-height: 1.5; color: var(--text-muted); }
+  .articles a:hover .a-title { color: var(--accent); }
+
+  .gallery-block { max-width: var(--container); }
+  .strip {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-bottom: 14px;
+    scrollbar-width: thin;
+  }
+  .strip figure { margin: 0; flex: 0 0 auto; scroll-snap-align: start; }
+  .strip img {
+    height: 300px;
+    width: auto;
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+  }
+  /* El pie nunca ensancha la figura: su ancho lo manda la imagen. */
+  .strip figcaption { width: 0; min-width: 100%; margin-top: 8px; font-size: 0.8rem; line-height: 1.4; color: var(--text-faint); }
+
+  .origin { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .origin-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 22px;
+    border-radius: var(--radius);
+    background: var(--bg-inset);
+    transition: box-shadow 0.15s ease;
+  }
+  .origin-card:hover { box-shadow: 0 0 0 1px var(--accent-line); }
+  .o-title { font-family: var(--font-display); font-size: 1.25rem; line-height: 1.2; color: var(--text); }
+  .origin-card:hover .o-title { color: var(--accent); }
+  .o-desc { font-size: 0.9rem; line-height: 1.5; color: var(--text-muted); }
+  .author { margin: 26px 0 0; font-size: 0.95rem; line-height: 1.6; color: var(--text-muted); max-width: var(--measure); }
+  .author strong { color: var(--text); }
+  .author a { color: var(--accent); white-space: nowrap; }
+  .author a:hover { text-decoration: underline; }
+
+  .closing { text-align: left; }
+  .closing .fine { margin-top: 14px; }
+
+  .others { padding-bottom: 96px; }
+  .others ul { list-style: none; margin: 12px 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 16px 24px; }
+  .others li a { display: flex; align-items: center; gap: 12px; font-family: var(--font-display); font-size: 1.05rem; color: var(--text); }
+  .others li a:hover { color: var(--accent); }
+  .others img { width: 44px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(20, 22, 28, 0.2); }
+  .all { font-size: 0.9rem; color: var(--text-muted); }
+  .all:hover { color: var(--accent); }
+
+  @media (max-width: 760px) {
+    .hero { flex-direction: column; align-items: flex-start; padding: 28px 24px 32px; gap: 28px; }
+    .cover { order: 0; width: 170px; align-self: center; }
+    .info { order: 1; }
+    .block { padding-top: 44px; }
+    .strip img { height: 240px; }
+    .excerpt { padding: 22px; }
+  }
+</style>
