@@ -27,7 +27,7 @@ _Ensayo mensual sobre tecnología y cultura digital._
 
 _Versión ejecutiva — ranking mensual de tecnologías._
 
-* [Octubre 2026 ↗  · **Nuevo** ](https://drive.google.com/file/d/1sT2zCRsLg9lfaSZjZF5kfdZTKyDKerSb/view?usp=sharing)
+* [Octubre 2026 ↗  · **Nuevo** ](https://drive.google.com/file/d/1VozsMWh96peMc0D5ITEMQa91vyzXNoKd/view?usp=sharing)
 * [Septiembre 2026 ↗](https://drive.google.com/file/d/1IC-j9K-J28KSVTfbOrGOfmTMxYcvaqbc/view?usp=sharing)
 * [Agosto 2026 ↗](https://drive.google.com/file/d/1qJlPltrp1rgbl7FWZpV7zJeVbSVLbT6K/view?usp=sharing)
 * [Julio 2026 ↗](https://drive.google.com/file/d/1ErtgNPHWrne1lOWVuOTiYQoYdhbD5_Tn/view?usp=sharing)
