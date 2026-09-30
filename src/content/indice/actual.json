@@ -1,55 +1,55 @@
 {
-  "mes": "Septiembre 2026",
+  "mes": "Octubre 2026",
   "ranking": [
     { "pos": 1, "nombre": "Agentes de IA autónomos orientados a procesos", "pts": 94 },
-    { "pos": 2, "nombre": "Ciberseguridad con detección basada en comportamiento", "pts": 91 },
-    { "pos": 3, "nombre": "Plataformas de gobernanza de IA", "pts": 90 },
-    { "pos": 4, "nombre": "Sistemas multiagente y orquestación de agentes", "pts": 88 },
+    { "pos": 2, "nombre": "Ciberseguridad con detección basada en comportamiento", "pts": 93 },
+    { "pos": 3, "nombre": "Plataformas de gobernanza de IA", "pts": 92 },
+    { "pos": 4, "nombre": "Sistemas multiagente y orquestación de agentes", "pts": 89 },
     { "pos": 5, "nombre": "Automatización operativa inteligente (RPA + AI)", "pts": 86 },
-    { "pos": 6, "nombre": "FinOps y optimización de costos cloud", "pts": 84 },
-    { "pos": 7, "nombre": "Infraestructura de datos y gobernanza para IA generativa", "pts": 83 },
+    { "pos": 6, "nombre": "FinOps y optimización de costos cloud", "pts": 85 },
+    { "pos": 7, "nombre": "Infraestructura de datos y gobernanza para IA generativa", "pts": 84 },
     { "pos": 8, "nombre": "Observabilidad y AIOps cloud", "pts": 82 },
     { "pos": 9, "nombre": "Modelos de lenguaje especializados por industria", "pts": 79 },
     { "pos": 10, "nombre": "Vector databases y retrieval systems", "pts": 77 },
     { "pos": 11, "nombre": "Plataformas de fine-tuning y evaluación de modelos", "pts": 76 },
-    { "pos": 12, "nombre": "Analítica predictiva aplicada a supply chain", "pts": 75 },
-    { "pos": 13, "nombre": "Infraestructura GPU cloud especializada", "pts": 74 },
+    { "pos": 12, "nombre": "Infraestructura GPU cloud especializada", "pts": 75 },
+    { "pos": 13, "nombre": "Analítica predictiva aplicada a supply chain", "pts": 74 },
     { "pos": 14, "nombre": "Copilots empresariales integrados", "pts": 73 },
     { "pos": 15, "nombre": "Edge AI empresarial", "pts": 71 },
     { "pos": 16, "nombre": "Digital twins industriales", "pts": 70 },
     { "pos": 17, "nombre": "Plataformas low-code con IA", "pts": 68 },
     { "pos": 18, "nombre": "Voice AI empresarial", "pts": 66 },
-    { "pos": 19, "nombre": "Herramientas de generación de contenido automatizado", "pts": 58 },
-    { "pos": 20, "nombre": "Startups de AI wrappers sin diferenciación técnica", "pts": 51 }
+    { "pos": 19, "nombre": "Herramientas de generación de contenido automatizado", "pts": 56 },
+    { "pos": 20, "nombre": "Startups de AI wrappers sin diferenciación técnica", "pts": 50 }
   ],
   "destacados": [
     {
       "pos": 1,
       "nombre": "Agentes de IA autónomos orientados a procesos",
-      "texto": "Conserva la primera posición y pierde un punto, el primer retroceso de puntaje desde marzo. La encuesta State of AI 2026 de McKinsey, publicada el 24 de agosto sobre 1,719 ejecutivos en 97 países, muestra que 40% de las organizaciones con ingresos superiores a mil millones de dólares ya escala agentes en al menos una función, frente a 27% el año anterior. En las empresas menores la cifra sigue clavada en 22%. La adopción avanza; el retorno no: apenas 6% de las organizaciones atribuye 5% o más de su EBIT a la IA. El liderazgo se sostiene en despliegue verificable, no en resultado financiero demostrado."
+      "texto": "Conserva el primer lugar. Gartner estimó el 16 de septiembre que el gasto mundial en agentes y asistentes de IA pasará de 16,481 millones de dólares en 2025 a 29,219 millones en 2026 y a 65,472 millones en 2027. En Dreamforce, Salesforce declaró disponible la mayoría de sus agentes por función, con Hunter previsto para noviembre. La evidencia de escala es menor: una encuesta de Gartner del 1 de septiembre halló que solo 22% de las organizaciones ha escalado la IA en varias unidades o adoptado un enfoque AI-first. El liderazgo descansa en gasto proyectado, no en retorno demostrado."
     },
     {
       "pos": 2,
       "nombre": "Ciberseguridad con detección basada en comportamiento",
-      "texto": "Sube a la segunda posición. Cato AI Labs documentó el 1 de julio dos vulnerabilidades críticas en Cursor, CVE-2026-50548 y CVE-2026-50549, ambas con CVSS 9.8, que permiten a una inyección de prompt indirecta escapar del sandbox y ejecutar código en la máquina del desarrollador sin clic ni aprobación previa. El propio fabricante declara uso en más de la mitad del Fortune 500. El dato que amplifica el riesgo viene de McKinsey: cerca de un tercio de las organizaciones sustituyó al menos una compra de software por desarrollo interno con agentes de código. La superficie de ataque se movió hacia el entorno de desarrollo."
+      "texto": "Suma dos puntos. Gartner proyecta que el gasto en ciberseguridad con IA pasará de 25,920 millones de dólares en 2025 a 51,347 millones en 2026. Su encuesta a 297 responsables de ciberseguridad (30 de septiembre) indica que 54% de las organizaciones no define cómo limitar el acceso de los agentes o depende de permisos pensados para personas. La demanda coincide con incidentes: un agente de OpenAI accedió en junio a datos públicos y no públicos de un portal de Medicare en Australia, sin evidencia de acceso a expedientes según la empresa, y el gobierno lo supo tres meses después."
     },
     {
       "pos": 3,
       "nombre": "Plataformas de gobernanza de IA",
-      "texto": "Cede una posición sin perder vigencia. Desde el 2 de agosto la Comisión Europea puede investigar y sancionar a proveedores de modelos de propósito general, y las obligaciones de transparencia del Artículo 50 son exigibles, con prórroga hasta el 2 de diciembre para el marcado de contenido en sistemas que ya estaban en el mercado. El matiz que explica el descenso llegó cinco días antes: el Digital Omnibus, en vigor desde el 27 de julio, aplazó las obligaciones de sistemas de alto riesgo a diciembre de 2027 y agosto de 2028. Se redujo la presión de calendario, no la de fondo."
+      "texto": "Suma dos puntos y queda a uno del segundo lugar. Desde que la Comisión Europea obtuvo facultades de aplicación sobre modelos de propósito general el 2 de agosto, envió una primera ronda de solicitudes de información a empresas de IA y habilitó un canal de quejas. El 22 de septiembre, más de 20 países firmaron, durante la Asamblea General de la ONU, un llamado para controlar los modelos de frontera, aunque la delegación estadounidense se pronunció contra un esquema regulatorio global. Gartner reporta que 22% de las organizaciones ha escalado la IA, lo que sostiene la demanda de control."
     },
     {
       "pos": 4,
       "nombre": "Sistemas multiagente y orquestación de agentes",
-      "texto": "Se mantiene en la cuarta posición, sin movimiento de puntaje. La revisión 2026-07-28 del Model Context Protocol, con núcleo sin estado y endurecimiento de autorización, sigue siendo el hecho estructural más reciente de la categoría; agosto no aportó una señal comparable. Su crecimiento se apoya en adopción acumulada, no en novedad. La contraparte es de riesgo: el ecosistema MCP concentra buena parte de los vectores de inyección documentados este año, incluido el que habilita las vulnerabilidades de Cursor. La interoperabilidad avanzó más rápido que sus controles de autorización."
+      "texto": "Sube un punto por consolidación de estándares y plataformas. El protocolo A2A, para comunicación entre agentes, se sumó a la Agentic AI Foundation, donde ya opera MCP. Salesforce presentó orquestación de agentes de terceros compatible con A2A y agentes de horizonte largo, en piloto y con disponibilidad general prevista para noviembre. El 29 de septiembre, MongoDB lanzó Atlas Agent Engine, una capa de ejecución, memoria y gobernanza para agentes en producción. Persiste el riesgo: Gartner recomienda gobernar los sistemas multiagente por privilegios de acción, no por la capacidad del modelo."
     },
     {
       "pos": 5,
       "nombre": "Automatización operativa inteligente (RPA + AI)",
-      "texto": "Sin cambio de posición ni de puntaje, y esa estabilidad es el dato. McKinsey ubica las reducciones de costo atribuibles a IA principalmente en cadena de suministro, operaciones de servicio y manufactura: procesos acotados, con salida medible, que es donde opera esta categoría. No aporta señales nuevas y tampoco las necesita. Su límite es de techo, no de piso: el impacto es real pero incremental, y trasladarlo al EBIT exige rediseñar el proceso completo, algo que reporta cerca de tres cuartas partes de los high performers frente a aproximadamente un cuarto del resto de las organizaciones."
+      "texto": "Mantiene puntaje y posición. UiPath reportó el 3 de septiembre, para el trimestre cerrado el 31 de julio, ingresos de 410 millones de dólares (+13%), ARR de 1,938 millones (+12%) y 37 millones de ARR neto nuevo. Informó que 18 de sus 20 mayores contratos del trimestre incluyeron componentes de IA. El crecimiento es de doble dígito bajo, no de aceleración: hay tracción medible, pero compite con agentes que prometen ejecutar procesos sin RPA, como el agente de operaciones que Salesforce presentó en Dreamforce."
     }
   ],
-  "sube": "FinOps y optimización de costos cloud es el mayor ascenso del mes: escala cuatro posiciones, de la 10 a la 6, después de que McKinsey documentara que uno de cada cinco ejecutivos ya reporta que los costos operativos de IA, tokens incluidos, limitan activamente el uso de la tecnología; el análisis de Gartner de marzo sobre dinámicas de costo agéntico estima que un flujo con agentes consume entre 5 y 30 veces más tokens por tarea que un chatbot resolviendo la misma consulta. Ciberseguridad con detección basada en comportamiento gana una posición y llega a la segunda tras la divulgación de DuneSlide por Cato AI Labs, que llevó la inyección de prompts desde la manipulación de salidas hasta la ejecución remota de código. Analítica predictiva aplicada a supply chain sube dos posiciones: es una de las tres funciones donde McKinsey encuentra reducciones de costo reportadas de forma consistente, junto con operaciones de servicio y manufactura.",
-  "baja": "Copilots empresariales integrados registra la mayor caída del Índice, de la posición 9 a la 14. La causa está en la propia encuesta de McKinsey: 80% de quienes usan IA reporta mejoras de productividad personal, pero solo 6% de las organizaciones logra atribuir 5% o más de su EBIT a la tecnología, y las herramientas horizontales son precisamente las que producen ganancias difusas y difíciles de medir. Plataformas de gobernanza de IA cede una posición por un cambio de calendario, no de tracción: el Digital Omnibus, en vigor desde el 27 de julio, aplazó las obligaciones de sistemas de alto riesgo a diciembre de 2027 y agosto de 2028, aunque el Artículo 50 y las facultades sancionadoras sobre modelos de propósito general siguen activos desde el 2 de agosto. En el fondo de la tabla, las herramientas de generación de contenido automatizado y los AI wrappers sin diferenciación técnica marcan nuevos mínimos históricos, con 58 y 51 puntos.",
-  "insight": "Septiembre invierte la lectura de agosto. El mes pasado el paso lo marcaba la regulación; este mes lo marca el costo. La encuesta de McKinsey pone cifra a una sospecha vieja: 80% de quienes usan IA reporta mejoras personales de productividad y apenas 6% de las organizaciones consigue traducirlas en EBIT. La diferencia no está en la herramienta sino en el rediseño del proceso, y eso explica que FinOps escale cuatro posiciones mientras los copilots horizontales caen cinco. El aplazamiento de las obligaciones de alto riesgo del EU AI Act resta urgencia de calendario, pero no de fondo. Y la seguridad sube porque el desarrollo interno con agentes desplazó la superficie de ataque hacia adentro. El patrón del mes es claro: la IA dejó de ser un problema de adopción y se convirtió en uno de contabilidad."
+  "sube": "Infraestructura GPU cloud especializada es la única que gana posición (de la 13 a la 12) y suma un punto: Oracle reportó el 10 de septiembre ingresos de infraestructura en la nube por 7,400 millones de dólares (+121%), obligaciones de desempeño pendientes por 664,000 millones y más de 300,000 GPU entregadas en el trimestre, y Gartner estima que la infraestructura de IA sumará 1.48 billones de dólares en 2026. El flujo de caja libre de Oracle fue negativo en 5,400 millones, un límite a considerar. Ciberseguridad con detección basada en comportamiento y plataformas de gobernanza de IA suman dos puntos cada una sin cambiar de lugar: la primera por el gasto proyectado por Gartner y por incidentes con agentes detectados con meses de retraso; la segunda por las primeras acciones de aplicación de la Comisión Europea sobre modelos de propósito general.",
+  "baja": "Analítica predictiva aplicada a supply chain cede un lugar (de la 12 a la 13) y un punto: Gartner proyectó el 24 de septiembre que solo 5% de las organizaciones con automatización de planeación tomará de forma autónoma al menos 10% de sus decisiones de planeación en 2030, aunque 83% ya invirtió al menos 3 millones de dólares. Herramientas de generación de contenido automatizado baja dos puntos: OpenAI descontinuó su API de Sora el 24 de septiembre y Gartner ubica a la IA generativa en el valle de la desilusión en 2026. Startups de AI wrappers sin diferenciación técnica baja un punto; la señal es de contexto: Gartner observa que las empresas prefieren funciones de IA integradas por proveedores establecidos, aunque no evaluó a estas startups de forma directa.",
+  "insight": "Octubre desplaza la conversación de lo que pueden hacer los agentes a quién responde cuando actúan. Según Cloud Security Alliance, entre julio y septiembre agentes de OpenAI y Anthropic en pruebas de evaluación accedieron a sistemas reales, y algunos casos tardaron meses en notificarse. El eslabón débil resultó ser el aislamiento y la detección, no la capacidad. El mercado lo registra: el gasto proyectado en seguridad con IA se duplica, la gobernanza pasa del calendario regulatorio a la exigencia de gobiernos y responsables de seguridad, y las categorías de control se acercan en puntaje a la de agentes. Con el gasto adelantado a los resultados, en octubre el valor dependerá menos del modelo y más de la capa que lo supervisa."
 }
