@@ -102,6 +102,72 @@ export const books: Book[] = [
     storeUrl: 'https://www.amazon.com/dp/B0HKFT5GMF',
     whyIWroteThisSlug: 'umbral-20-novela-edicion-genetica',
     store: 'us',
+    metaDescription:
+      'Tecnothriller en español sobre edición genética humana: treinta y nueve mil expedientes y una firma al pie de uno de ellos. Lee el primer capítulo gratis.',
+    lede: 'Un tecnothriller en español sobre edición genética, bioética y el poder detrás de un archivo filtrado, anclado en hechos reales.',
+    coverHd: { src: '/images/novelas/umbral-20/portada.webp', width: 720, height: 1152 },
+    synopsis: [
+      'La edición genética humana ya no es una posibilidad. Es un procedimiento.',
+      'Treinta y nueve mil expedientes lo documentan.',
+      'Una firma al pie de uno de ellos es la suya.',
+    ],
+    themes: [
+      'Edición genética humana',
+      'Biología sintética y CRISPR',
+      'Bioética y comités de ética',
+      'Conflictos de interés',
+      'Acceso y desigualdad',
+      'Filtraciones y documentos',
+    ],
+    realBehind: {
+      title: 'Lo real detrás de la novela: edición genética, CRISPR y quién controla el ADN',
+      paragraphs: [
+        'El primer capítulo arranca con una base de datos: miles de expedientes, montos de entre 220 mil y 3.8 millones de dólares y una lista de instituciones que hacen de intermediarias. La serie parte del precio real: Casgevy, la primera terapia basada en CRISPR aprobada por la FDA (diciembre de 2023), cuesta 2.2 millones de dólares por paciente, y otras terapias génicas aprobadas en 2023 y 2024 se fijaron entre 3.1 y 4.25 millones. Quien puede pagarlo no es quien más lo necesita: el 80% de los casos de anemia falciforme, la enfermedad que trata Casgevy, está en África subsahariana.',
+        'El mapa de quién controla la tecnología también es real. Según un informe del PNUMA de 2024 que recoge la serie, China concentra el 49.1% de las patentes globales de biología sintética y Estados Unidos el 12.8%. Y el sistema que debería vigilar los laboratorios de mayor riesgo depende de la buena fe de cada país: el tratado que prohíbe las armas biológicas desde 1972 nunca tuvo forma de comprobar que alguien lo cumple.',
+        'UMBRAL 20 lleva esas preguntas a la ficción: qué ocurre cuando la edición genética humana ya es un procedimiento, treinta y nueve mil expedientes lo documentan y una firma al pie de uno de ellos es la suya.',
+      ],
+      articles: [
+        'biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion',
+        'el-adn-como-codigo-quien-controla-el-software-de-la-vida',
+        'editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo',
+        'la-ia-como-nuevo-darwin-quien-define-la-evolucion',
+        'bioseguridad-global-el-codigo-que-nadie-audita-todavia',
+      ],
+    },
+    firstChapter: true,
+    gallery: [
+      {
+        src: '/images/novelas/umbral-20/oficina-ginebra-documento-firmado-1600.webp',
+        srcset:
+          '/images/novelas/umbral-20/oficina-ginebra-documento-firmado-800.webp 800w, /images/novelas/umbral-20/oficina-ginebra-documento-firmado-1600.webp 1600w',
+        width: 1600,
+        height: 900,
+        alt: 'Una mujer de saco oscuro lee con gesto tenso una hoja con una firma, en una oficina de noche con vista a un lago, una fuente y montañas; sobre el escritorio, pilas de documentos.',
+      },
+      {
+        src: '/images/novelas/umbral-20/dos-lectoras-cuaderno-20-1600.webp',
+        srcset:
+          '/images/novelas/umbral-20/dos-lectoras-cuaderno-20-800.webp 800w, /images/novelas/umbral-20/dos-lectoras-cuaderno-20-1600.webp 1600w',
+        width: 1600,
+        height: 900,
+        alt: 'Imagen dividida en dos: a la izquierda, una mujer en un estudio con vista a una ciudad europea señala el número 20% rodeado en un cuaderno; a la derecha, otra mujer, en un cuarto lleno de libretas, muestra el mismo 20% en el suyo.',
+      },
+      {
+        src: '/images/novelas/umbral-20/archivo-estantes-expedientes-1024.webp',
+        srcset:
+          '/images/novelas/umbral-20/archivo-estantes-expedientes-640.webp 640w, /images/novelas/umbral-20/archivo-estantes-expedientes-1024.webp 1024w',
+        width: 1024,
+        height: 1206,
+        alt: 'Una mujer de espaldas, con un fólder en la mano, frente a una pared de archiveros con expedientes etiquetados, en un archivo amplio y sombrío.',
+      },
+      {
+        src: '/images/novelas/umbral-20/manos-codigo-de-recepcion.webp',
+        width: 992,
+        height: 1586,
+        alt: 'Dos manos se acercan, una desde arriba y otra desde abajo, sobre una franja de luz; entre ellas flota una etiqueta con el código 7G1Q3K9L2M8.',
+      },
+    ],
+
     formats: [
       { label: 'eBook', asin: 'B0HKF7KD6L' },
       { label: 'Tapa blanda', asin: 'B0HKFT5GMF' },
