@@ -1,12 +1,12 @@
 ---
 title: 'La aduana del comercio de IA: quién decide quién entra'
 category: Inteligencia Artificial
-pubDate: 2026-10-01T05:22
+pubDate: 2026-10-01T05:25
 updatedDate: ''
 description: Amazon bloqueó a Muse, el agente de Meta, mientras Shopify y PayPal lo integraron. La pelea real es quién controla el checkout de la IA.
 heroImage: /images/uploads/aduana-ia.webp
 heroImageAlt: 'aduana del comercio de IA: mujer observa panel de autorización con carril bloqueado y carril activo en checkout'
-draft: true
+draft: false
 ---
 
 El comercio de IA ya tiene aduana. Amazon la inauguró: **bloqueó a Muse**, el agente de Meta, el mismo día que Shopify y PayPal le abrieron la puerta. La pregunta ya no es si la IA compra por ti. Es quién decide qué agente entra a tu tienda.
