@@ -20,11 +20,11 @@ const chapterURL = book.firstChapter ? `/novelas/${book.id}/capitulo-1/` : undef
   {chapterURL ? (
     <a class="btn btn-primary main" href={chapterURL}>Leer capítulo 1 gratis →</a>
   ) : (
-    <a class="btn btn-primary main" href={bookURL}>Ver la novela →</a>
+    <a class="btn btn-primary main" href={bookURL}>Ver novela →</a>
   )}
   <div class="secondary">
-    {chapterURL && <a class="more" href={bookURL}>Ver la novela →</a>}
-    <a class="btn btn-ghost buy" href={book.buy} target="_blank" rel="noopener">Comprar</a>
+    {chapterURL && <a class="more" href={bookURL}>Ver novela →</a>}
+    <a class="btn btn-ghost buy" href={book.buy} target="_blank" rel="noopener">Adquirir</a>
   </div>
 </div>
 

@@ -17,7 +17,10 @@ const { book } = Astro.props;
     </a>
     <div class="promo-text">
       <span class="tag">{book.genre}</span>
-      <h3 class="promo-title"><a href={`/novelas/${book.id}/`}>{book.title}</a></h3>
+      <div class="promo-title-row">
+        <h3 class="promo-title"><a href={`/novelas/${book.id}/`}>{book.title}</a></h3>
+        <a class="title-more" href={`/novelas/${book.id}/`}>Ver novela →</a>
+      </div>
       <p class="promo-desc">{book.desc}</p>
       <BookActions book={book} />
       {book.whyIWroteThisSlug && (
@@ -44,7 +47,12 @@ const { book } = Astro.props;
     box-shadow: 0 6px 18px rgba(20, 22, 28, 0.18);
   }
   .promo-text { min-width: 0; }
-  .promo-title { font-family: var(--font-display); font-size: 1.2rem; margin: 8px 0 8px; }
+  .promo-title-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 12px; margin: 8px 0 8px; }
+  .promo-title { font-family: var(--font-display); font-size: 1.2rem; margin: 0; }
+  /* En escritorio "Ver la novela" va junto al título; en móvil baja a las acciones. */
+  .title-more { display: none; font-size: 0.85rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+  .title-more:hover { text-decoration: underline; }
+  :global(:root[data-theme='dark']) .title-more { color: #5b93ff; }
   .promo-title a { color: var(--text); }
   .promo-title a:hover { color: var(--accent); }
   .promo-desc { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 16px; }
@@ -52,6 +60,12 @@ const { book } = Astro.props;
   .promo-why { display: inline-block; margin-top: 12px; font-size: 0.9rem; color: var(--accent); }
   .promo-why:hover { text-decoration: underline; }
 
+  @media (min-width: 561px) {
+    .title-more { display: inline; }
+    .promo-text :global(.book-actions .more) { display: none; }
+    .promo-text :global(.book-actions) { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .promo-text :global(.book-actions.block .main) { width: auto; flex: 1 1 auto; }
+  }
   @media (max-width: 560px) {
     .promo-body { flex-direction: column; }
   }

@@ -43,7 +43,10 @@ const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
           </a>
           <div class="body">
             <span class="tag">{b.genre}</span>
-            <h3><a href={`/novelas/${b.id}/`}>{b.title}</a></h3>
+            <div class="title-row">
+              <h3><a href={`/novelas/${b.id}/`}>{b.title}</a></h3>
+              <a class="title-more link-accent" href={`/novelas/${b.id}/`}>Ver novela →</a>
+            </div>
             <p>{b.desc}</p>
             {seriesByBook.get(b.id) && (
               <p class="origin">
@@ -99,7 +102,11 @@ const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
   }
   .book-card .body { min-width: 0; }
   .cover-link { display: block; flex-shrink: 0; }
-  .book-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin: 10px 0 10px; }
+  .title-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 12px; margin: 10px 0 10px; }
+  .book-card h3 { font-family: var(--font-display); font-size: 1.3rem; margin: 0; }
+  /* En escritorio "Ver la novela" va junto al título; en móvil baja a las acciones. */
+  .title-more { display: none; font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+  .title-more:hover { text-decoration: underline; }
   .book-card h3 a { color: var(--text); }
   .book-card h3 a:hover { color: var(--accent); }
   .book-card p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin: 0 0 18px; }
@@ -110,6 +117,12 @@ const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
 
   .actions { padding: 24px 24px 96px; display: flex; flex-wrap: wrap; gap: 12px; }
 
+  @media (min-width: 701px) {
+    .title-more { display: inline; }
+    .book-card :global(.book-actions .more) { display: none; }
+    .book-card :global(.book-actions) { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .book-card :global(.book-actions.block .main) { width: auto; flex: 1 1 auto; }
+  }
   @media (max-width: 700px) {
     .grid { grid-template-columns: 1fr; }
     .book-card { flex-direction: column; }

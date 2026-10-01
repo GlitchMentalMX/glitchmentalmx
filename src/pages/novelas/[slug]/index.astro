@@ -122,10 +122,10 @@ const bookSchema = {
           {chapterURL ? (
             <>
               <a class="btn btn-primary" href={chapterURL}>Leer el primer capítulo gratis →</a>
-              <a class="btn btn-ghost" href={book.buy} target="_blank" rel="noopener">Comprar en Amazon</a>
+              <a class="btn btn-ghost" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon</a>
             </>
           ) : (
-            <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Comprar en Amazon →</a>
+            <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
           )}
         </div>
         <p class="fine">
@@ -254,7 +254,7 @@ const bookSchema = {
   <section class="container block closing" aria-labelledby="comprar">
     <h2 id="comprar">{book.title} en Amazon</h2>
     <div class="cta">
-      <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Comprar en Amazon →</a>
+      <a class="btn btn-primary" href={book.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
       {chapterURL && <a class="btn btn-ghost" href={chapterURL}>Leer el primer capítulo</a>}
     </div>
     {formatsText && <p class="fine">Disponible en {formatsText}. Elige el formato en la ficha de Amazon.</p>}

@@ -289,7 +289,10 @@ const signalPools = {
           </a>
           <div class="novela-body">
             <span class="tag">{n.genre}</span>
-            <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
+            <div class="novela-title-row">
+              <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
+              <a class="title-more link-accent" href={`/novelas/${n.id}/`}>Ver novela →</a>
+            </div>
             <p>{n.desc}</p>
             <BookActions book={n} block />
           </div>
@@ -930,7 +933,12 @@ const signalPools = {
     align-items: flex-start;
     flex: 1;
   }
-  .novela-body h3 { font-family: var(--font-display); font-size: 1.25rem; margin: 10px 0 10px; }
+  /* "Ver la novela" vive junto al título en escritorio; en móvil/carrusel baja
+     al bloque de acciones (BookActions) y aquí se oculta. */
+  .novela-title-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 12px; width: 100%; margin: 10px 0 10px; }
+  .novela-body h3 { font-family: var(--font-display); font-size: 1.25rem; margin: 0; }
+  .title-more { display: none; font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+  .title-more:hover { text-decoration: underline; }
   .novela-body h3 a { color: var(--text); }
   .novela-body h3 a:hover { color: var(--accent); }
   .novela-body p {
@@ -944,6 +952,12 @@ const signalPools = {
     overflow: hidden;
   }
   .novela-body :global(.book-actions) { margin-top: auto; }
+  @media (min-width: 901px) {
+    .title-more { display: inline; }
+    .novela-body :global(.book-actions .more) { display: none; }
+    .novela-body :global(.book-actions) { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .novela-body :global(.book-actions.block .main) { width: auto; flex: 1 1 auto; }
+  }
 
   @media (max-width: 900px) {
     .novelas-grid {
