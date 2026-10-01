@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import PreciosTicker from '../components/PreciosTicker.astro';
 import { books } from '../data/books';
+import BookActions from '../components/BookActions.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -290,7 +291,7 @@ const signalPools = {
             <span class="tag">{n.genre}</span>
             <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
             <p>{n.desc}</p>
-            <a class="link-accent" href={n.buy} target="_blank" rel="noopener">Adquirir →</a>
+            <BookActions book={n} block />
           </div>
         </article>
       ))}
@@ -942,17 +943,7 @@ const signalPools = {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  .novela-body .link-accent {
-    margin-top: auto;
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5em 1.1em;
-    border: 1px solid var(--accent);
-    border-radius: 999px;
-    background: transparent;
-    transition: color .15s ease;
-  }
-  .novela-body .link-accent:hover { color: #0052cc; }
+  .novela-body :global(.book-actions) { margin-top: auto; }
 
   @media (max-width: 900px) {
     .novelas-grid {

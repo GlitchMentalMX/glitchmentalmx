@@ -1,0 +1,46 @@
+---
+import type { Book } from '../data/books';
+
+interface Props {
+  book: Book;
+  // true: el botón principal ocupa todo el ancho (tarjetas angostas del home).
+  block?: boolean;
+}
+
+const { book, block = false } = Astro.props;
+
+// Misma jerarquía en todas las tarjetas de novela (home, /novelas/, artículos
+// y series): lo gratuito primero, la ficha después, la compra a la vista pero
+// sin ser la única puerta. Sin capítulo disponible, la ficha pasa a principal.
+const bookURL = `/novelas/${book.id}/`;
+const chapterURL = book.firstChapter ? `/novelas/${book.id}/capitulo-1/` : undefined;
+---
+
+<div class:list={['book-actions', { block }]}>
+  {chapterURL ? (
+    <a class="btn btn-primary main" href={chapterURL}>Leer capítulo 1 gratis →</a>
+  ) : (
+    <a class="btn btn-primary main" href={bookURL}>Ver la novela →</a>
+  )}
+  <div class="secondary">
+    {chapterURL && <a class="more" href={bookURL}>Ver la novela →</a>}
+    <a class="btn btn-ghost buy" href={book.buy} target="_blank" rel="noopener">Comprar</a>
+  </div>
+</div>
+
+<style>
+  .book-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; width: 100%; }
+  .main { justify-content: center; min-height: 44px; white-space: nowrap; padding-left: 1em; padding-right: 1em; }
+  .book-actions.block .main { width: 100%; }
+  .secondary { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 14px; }
+  .more { font-size: 0.88rem; font-weight: 600; color: var(--accent); min-height: 44px; display: inline-flex; align-items: center; }
+  .more:hover { text-decoration: underline; }
+  .buy { font-size: 0.85rem; padding: 0.5em 1em; min-height: 40px; }
+  :global(:root[data-theme='dark']) .more { color: #5b93ff; }
+
+  /* Móvil: el principal ocupa todo el ancho (blanco de toque cómodo). */
+  @media (max-width: 560px) {
+    .main { width: 100%; }
+    .secondary { width: 100%; justify-content: space-between; }
+  }
+</style>

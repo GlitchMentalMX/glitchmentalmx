@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { books as published, upcomingBooks as upcoming } from '../../data/books';
+import BookActions from '../../components/BookActions.astro';
 import { getCollection } from 'astro:content';
 
 // Serie de origen de cada novela: sale de `relatedBook` en las colecciones.
@@ -49,10 +50,7 @@ const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
                 Nació de la serie <a href={`/series/${seriesByBook.get(b.id)!.id}/`}>{seriesByBook.get(b.id)!.data.title}</a>
               </p>
             )}
-            <div class="actions-row">
-              <a class="btn btn-primary" href={b.buy} target="_blank" rel="noopener">Adquirir en Amazon →</a>
-              {b.firstChapter && <a class="chapter-link" href={`/novelas/${b.id}/capitulo-1/`}>Leer el primer capítulo →</a>}
-            </div>
+            <BookActions book={b} />
           </div>
         </div>
       ))}
@@ -108,9 +106,6 @@ const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
   .book-card .origin { font-size: 0.85rem; margin: -6px 0 16px; color: var(--text-faint); }
   .book-card .origin a { color: var(--accent); }
   .book-card .origin a:hover { text-decoration: underline; }
-  .actions-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
-  .chapter-link { font-size: 0.9rem; color: var(--accent); }
-  .chapter-link:hover { text-decoration: underline; }
   .footnote { font-size: 0.82rem; color: var(--text-faint); margin-top: 16px; }
 
   .actions { padding: 24px 24px 96px; display: flex; flex-wrap: wrap; gap: 12px; }
