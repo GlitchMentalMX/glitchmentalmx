@@ -47,6 +47,9 @@ export interface Book {
   gallery?: GalleryImage[];
   // true si existe src/content/novelas/{id}/capitulo-1.md.
   firstChapter?: boolean;
+  // Imagen 16:9 del encabezado del capítulo (como el hero de los artículos);
+  // también es el og:image de esa página. Sin texto incrustado.
+  chapterHero?: GalleryImage;
 }
 
 export interface GalleryImage {
@@ -135,6 +138,13 @@ export const books: Book[] = [
       ],
     },
     firstChapter: true,
+    chapterHero: {
+      src: '/images/novelas/umbral-20/dos-lectoras-cuaderno-20-1600.webp',
+      srcset: '/images/novelas/umbral-20/dos-lectoras-cuaderno-20-800.webp 800w, /images/novelas/umbral-20/dos-lectoras-cuaderno-20-1600.webp 1600w',
+      width: 1600,
+      height: 900,
+      alt: 'Imagen dividida en dos: a la izquierda, una mujer en un estudio con vista a una ciudad europea señala el número 20% rodeado en un cuaderno; a la derecha, otra mujer, en un cuarto lleno de libretas, muestra el mismo 20% en el suyo.',
+    },
     gallery: [
       {
         src: '/images/novelas/umbral-20/oficina-ginebra-documento-firmado-1600.webp',
@@ -211,6 +221,13 @@ export const books: Book[] = [
       ],
     },
     firstChapter: true,
+    chapterHero: {
+      src: '/images/novelas/cero-organico/de-rodillas-salon-oscuro-1600.webp',
+      srcset: '/images/novelas/cero-organico/de-rodillas-salon-oscuro-800.webp 800w, /images/novelas/cero-organico/de-rodillas-salon-oscuro-1600.webp 1600w',
+      width: 1600,
+      height: 900,
+      alt: 'Una mujer arrodillada, con la cabeza baja, en un salón oscuro con persianas, líneas de datos azules sobre la pared de concreto y una luz azul vertical al fondo.',
+    },
     gallery: [
       {
         src: '/images/novelas/cero-organico/de-pie-salon-oscuro-1600.webp',
@@ -292,6 +309,13 @@ export const books: Book[] = [
       ],
     },
     firstChapter: true,
+    chapterHero: {
+      src: '/images/novelas/entrenado-en-corpus/capitulo-1-nave-barroca-1600.webp',
+      srcset: '/images/novelas/entrenado-en-corpus/capitulo-1-nave-barroca-800.webp 800w, /images/novelas/entrenado-en-corpus/capitulo-1-nave-barroca-1600.webp 1600w',
+      width: 1600,
+      height: 900,
+      alt: 'Figuras con túnicas recorridas por cables luminosos avanzan por la nave de una iglesia barroca; una de ellas voltea a mirar a la cámara.',
+    },
     gallery: [
       {
         src: '/images/novelas/entrenado-en-corpus/procesion-nave-barroca-1600.webp',

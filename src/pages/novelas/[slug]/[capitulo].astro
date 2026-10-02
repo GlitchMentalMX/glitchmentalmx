@@ -48,13 +48,14 @@ const chapterSchema = {
   isAccessibleForFree: true,
   author,
   isPartOf: { '@type': 'Book', name: book.title, url: bookURL, author },
+  ...(book.chapterHero && { image: new URL(book.chapterHero.src, Astro.site).toString() }),
 };
 ---
 
 <Layout
   title={pageTitle}
   description={chapter.data.description}
-  image={`/images/novelas/${book.id}-og.jpg`}
+  image={book.chapterHero?.src ?? `/images/novelas/${book.id}-og.jpg`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(chapterSchema)} />
   <Breadcrumbs
@@ -72,6 +73,21 @@ const chapterSchema = {
       Jorge A. Diaz Elizondo · {minutes} min de lectura · gratis, sin registro
     </p>
   </header>
+
+  {book.chapterHero && (
+    <div class="container hero">
+      <img
+        src={book.chapterHero.src}
+        srcset={book.chapterHero.srcset}
+        sizes="(max-width: 1180px) calc(100vw - 48px), 1132px"
+        width={book.chapterHero.width}
+        height={book.chapterHero.height}
+        alt={book.chapterHero.alt}
+        fetchpriority="high"
+        data-lightbox
+      />
+    </div>
+  )}
 
   <article class="container chapter">
     <Content />
@@ -102,6 +118,9 @@ const chapterSchema = {
 
 <style>
   .head { max-width: 680px; padding: 48px 24px 28px; margin-left: auto; margin-right: auto; }
+  /* Igual que el hero de los artículos: ancho del contenedor, esquinas del sitio. */
+  .hero { padding: 0 24px; margin-bottom: 40px; }
+  .hero img { width: 100%; height: auto; border-radius: var(--radius); }
   .head h1 { font-size: clamp(2rem, 4.6vw, 2.8rem); margin: 12px 0 12px; }
   .meta { font-size: 0.88rem; color: var(--text-faint); margin: 0; }
 
