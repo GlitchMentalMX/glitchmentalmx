@@ -69,6 +69,10 @@ const faqs: { q: string; a: string; link?: { href: string; label: string } }[] =
     link: { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', label: 'Ir a la Calculadora de Riesgo IA' },
   },
   {
+    q: '¿Es gratis?',
+    a: 'Sí. No tiene costo, no pide registro y no hay versión de pago.',
+  },
+  {
     q: '¿Y si estoy retirado, jubilado o sin empleo?',
     a: 'La herramienta se adapta. Si eliges retirado o jubilado, se omite la pregunta sobre exposición laboral y el resultado se centra en cómo filtrar la información sobre IA. Si buscas trabajo, la pregunta de exposición se refiere al tipo de trabajo que buscas.',
   },
@@ -86,7 +90,7 @@ const faqs: { q: string; a: string; link?: { href: string; label: string } }[] =
   },
   {
     q: '¿Guardan o comparten mis respuestas?',
-    a: 'No. Todo corre en tu navegador: no hay servidor que reciba tus respuestas, no se pide correo y no se crea cuenta.',
+    a: 'No. Todo corre en tu navegador: ningún servidor recibe tus respuestas, no se pide nombre, correo ni teléfono y no se crea cuenta. Como en todo el sitio, la visita se cuenta de forma anónima y agregada (qué página se abrió, país y tipo de dispositivo), sin guardar tu IP y sin cookies.',
   },
   {
     q: '¿Por qué no me da un número o un porcentaje?',
@@ -239,7 +243,7 @@ const clientData = {
           </fieldset>
         ))}
 
-        <p class="yq-age-note">Pensado para mayores de 18 años.</p>
+        <p class="yq-age-note">Pensado para mayores de 18 años. Gratis, sin cuenta, y tus respuestas no salen de tu navegador.</p>
         <p id="yq-warning" role="alert"></p>
         <button type="submit" id="yq-submit" class="yq-btn">Ver qué hacer ahora</button>
       </form>
@@ -265,6 +269,18 @@ const clientData = {
         <button id="yq-reset" type="button" class="yq-reset-link">Volver a empezar</button>
       </div>
     </div>
+  </section>
+
+  <section class="container static privacy" id="privacidad-y-alcance">
+    <p class="eyebrow">Privacidad y alcance</p>
+    <h2>Qué hace y qué no hace esta herramienta con tus datos</h2>
+    <ul class="privacy-list">
+      <li><strong>Es gratuita.</strong> No tiene costo, no pide registro y no hay versión de pago.</li>
+      <li><strong>Tus respuestas no salen de tu navegador.</strong> El resultado se calcula en tu dispositivo: no se envían a ningún servidor, no se guardan y no quedan escritas en la dirección de la página.</li>
+      <li><strong>No pedimos datos personales.</strong> Ni nombre, ni correo, ni teléfono. No usa cookies.</li>
+      <li><strong>No guardamos tu IP.</strong> Como en todo el sitio, contamos las visitas de forma anónima y agregada —qué página se abrió, desde qué país, en qué tipo de dispositivo—, sin guardar tu dirección IP y sin seguirte de un día a otro. Más detalle en la <a href="/politica-de-privacidad/">política de privacidad</a>.</li>
+      <li><strong>Es orientación, no un diagnóstico.</strong> No sustituye atención médica, psicológica, legal ni financiera, y está pensada para mayores de 18 años. Si lo que sientes ya afecta tu sueño, tu concentración o tu día a día, <a href={alertPath}>hay líneas de ayuda gratuitas</a>.</li>
+    </ul>
   </section>
 
   <section class="container static">
@@ -713,6 +729,10 @@ const clientData = {
   .static h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 20px; }
   .howto { padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: var(--text-muted); font-size: 0.96rem; line-height: 1.65; }
   .howto strong { color: var(--text); }
+  .privacy-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+  .privacy-list li { color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; padding-left: 14px; border-left: 2px solid var(--border-strong); }
+  .privacy-list strong { color: var(--text); }
+  .privacy-list a { text-decoration: underline; text-underline-offset: 3px; }
   .static-note { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; margin: 20px 0 0; }
   .static-note a { text-decoration: underline; text-underline-offset: 3px; }
   .eje { border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 10px; }
