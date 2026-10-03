@@ -1,0 +1,118 @@
+{
+  "lastReviewed": "2026-10-03",
+  "lineas": {
+    "verificadoEl": "2026-10-03",
+    "lineaDeLaVida": {
+      "nombre": "Línea de la Vida",
+      "telefono": "800 911 2000",
+      "tel": "8009112000",
+      "detalle": "gratuita, 24 horas, los 365 días, nacional",
+      "fuente": "https://www.gob.mx/conasama/articulos/linea-de-la-vida-800-911-2000",
+      "fuenteNombre": "CONASAMA, Secretaría de Salud"
+    },
+    "saptel": {
+      "nombre": "SAPTEL",
+      "telefono": "55 5259 8121",
+      "tel": "5552598121",
+      "detalle": "gratuita, 24 horas",
+      "fuente": "https://www.saptel.org.mx/",
+      "fuenteNombre": "saptel.org.mx"
+    }
+  },
+  "fuentes": {
+    "oit": {
+      "etiqueta": "OIT, 2025",
+      "titulo": "Generative AI and Jobs: A Refined Global Index of Occupational Exposure (OIT, mayo de 2025)",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"
+    },
+    "oms": {
+      "etiqueta": "OMS, 2026",
+      "titulo": "Mental health at work (OMS, ficha técnica actualizada en septiembre de 2026)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work"
+    }
+  },
+  "preocupaciones": [
+    { "id": "trabajo", "label": "Trabajo", "modulo": "riesgo" },
+    { "id": "dinero", "label": "Dinero", "modulo": "riesgo" },
+    { "id": "futuro", "label": "Futuro", "modulo": "ninguno" },
+    { "id": "familia", "label": "Familia", "modulo": "ninguno" },
+    { "id": "informacion", "label": "Demasiada información", "modulo": "detox" }
+  ],
+  "ejes": {
+    "exposicion": {
+      "pregunta": "¿Qué tan cerca está la IA de tu trabajo?",
+      "midePorQue": "Qué proporción de tu trabajo diario se solapa con tareas que la IA ya puede hacer. Es el mismo eje que mide la Calculadora de Riesgo IA.",
+      "opciones": [
+        { "id": "baja", "label": "Nada", "nivel": "Baja" },
+        { "id": "media", "label": "Algo", "nivel": "Media" },
+        { "id": "alta", "label": "Bastante, ya la estoy usando", "nivel": "Alta" }
+      ],
+      "fragmentos": {
+        "baja": { "texto": "Tu campo todavía no muestra señales fuertes de automatización. Eso no es garantía permanente, es tu punto de partida hoy.", "fuente": "oit" },
+        "media": { "texto": "Algunas de tus tareas ya se pueden hacer con IA, pero eso no equivale a que tu puesto desaparezca — la mayoría de los casos documentados son transformación, no sustitución completa.", "fuente": "oit" },
+        "alta": { "texto": "Buena parte de tu trabajo diario ya se solapa con lo que la IA puede hacer. Eso no significa que estés condenado, significa que ignorarlo te cuesta más que a otros.", "fuente": "oit" }
+      }
+    },
+    "ruido": {
+      "pregunta": "¿Qué te pasa cuando consumes información sobre IA?",
+      "midePorQue": "Si lo que lees y ves sobre IA te informa o te desgasta. Es el mismo eje que explora el test de Detox de IA.",
+      "opciones": [
+        { "id": "bajo", "label": "Me informa, sigo tranquilo", "nivel": "Bajo" },
+        { "id": "medio", "label": "A veces me preocupa", "nivel": "Medio" },
+        { "id": "alto", "label": "Me abruma, ya no sé qué creer", "nivel": "Alto" }
+      ],
+      "fragmentos": {
+        "bajo": { "texto": "Lo que consumes sobre IA no te está distorsionando el panorama. Sigue así: infórmate, no te atasques." },
+        "medio": { "texto": "Entre el miedo real y el contenido diseñado para asustarte hay una línea borrosa — y tú ya la estás cruzando de vez en cuando." },
+        "alto": { "texto": "Lo que estás consumiendo sobre IA ya no te informa, te agota. Esa diferencia es medible, y es justo lo que evalúa Detox IA." }
+      }
+    },
+    "capacidad": {
+      "pregunta": "¿Cómo describirías tu situación ahora mismo?",
+      "midePorQue": "Cuánto margen tienes para actuar. Es la única pregunta que también funciona como salida: si tu respuesta es que esto ya afecta tu sueño, tu concentración o tu vida diaria, la herramienta deja el flujo normal y te lleva a una página de ayuda.",
+      "opciones": [
+        { "id": "alta", "label": "Preocupado pero funcionando normal", "nivel": "Alta" },
+        { "id": "media", "label": "Preocupado y no sé por dónde empezar", "nivel": "Media" },
+        { "id": "baja", "label": "Estoy evitando tomar decisiones por esto", "nivel": "Baja" },
+        { "id": "alerta", "label": "Esto ya está afectando mi sueño, concentración o vida diaria", "nivel": "Alerta" }
+      ],
+      "fragmentos": {
+        "alta": { "texto": "Estás preocupado, pero sigues funcionando con normalidad — eso es margen real para moverte antes de que la presión decida por ti." },
+        "media": { "texto": "Sabes que algo cambia, pero no sabes por dónde empezar. Eso se resuelve con un paso, no con un plan completo." },
+        "baja": { "texto": "Estás evitando decisiones por esto. Evitar no es neutral — también tiene costo, solo que no se nota de inmediato." }
+      }
+    },
+    "edad": {
+      "pregunta": "¿En qué rango está tu edad?",
+      "midePorQue": "El tipo de paso que tiene más sentido cambia con la trayectoria que ya tienes. No cambia tu nivel de riesgo.",
+      "opciones": [
+        { "id": "18-25", "label": "18-25" },
+        { "id": "26-39", "label": "26-39" },
+        { "id": "40-59", "label": "40-59" },
+        { "id": "60+", "label": "60+" }
+      ],
+      "fragmentos": {
+        "18-25": { "texto": "No construyas tu estrategia aprendiendo veinte herramientas. Elige una función concreta, domina IA dentro de ella, y junta evidencia real de lo que puedes producir." },
+        "26-39": { "texto": "Ya tienes experiencia — identifica qué parte de ella se puede amplificar con IA en vez de empezar de cero como si no tuvieras trayectoria." },
+        "40-59": { "texto": "No necesitas convertirte en programador. Necesitas identificar qué tareas de tu trabajo ya no justifican tanto tiempo tuyo, y probar IA ahí primero." },
+        "60+": { "texto": "No compites laboralmente con un algoritmo. Lo que sí vale la pena es saber reconocer cuándo una afirmación sobre IA es alarmismo y cuándo es real." }
+      }
+    },
+    "laboral": {
+      "pregunta": "¿Cuál es tu situación laboral ahora mismo?",
+      "midePorQue": "Desde dónde te toca moverte: dentro de un puesto, buscando uno, con clientes propios o fuera del mercado laboral.",
+      "opciones": [
+        { "id": "empleado", "label": "Empleado" },
+        { "id": "buscando", "label": "Buscando trabajo" },
+        { "id": "independiente", "label": "Trabajo independiente" },
+        { "id": "retirado", "label": "Retirado o jubilado" }
+      ],
+      "fragmentos": {
+        "empleado": { "texto": "Tu palanca inmediata es tu propio puesto: qué tareas puedes mejorar con IA sin pedir permiso para reinventar tu trabajo completo." },
+        "buscando": { "texto": "El filtro ya cambió — las empresas buscan evidencia de que usas IA con criterio, no solo que la conoces de nombre." },
+        "independiente": { "texto": "Tu riesgo y tu oportunidad vienen del mismo lado: tus clientes también están decidiendo si te reemplazan con IA o te pagan por usarla mejor que ellos." },
+        "retirado": { "texto": "No necesitas prepararte para un mercado laboral al que no vas a volver. Lo que sí te sirve es protegerte de la desinformación que corre más rápido que cualquier explicación seria." }
+      }
+    }
+  }
+}

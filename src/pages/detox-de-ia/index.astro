@@ -214,6 +214,8 @@ const faqSchema = {
         <h3 id="dia-headline"></h3>
         <p id="dia-desc"></p>
 
+        <p id="dia-help"><a href="/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/">Líneas de ayuda gratuitas, 24 horas →</a></p>
+
         <div id="dia-share-row">
           <span class="share-prompt">Comparte con contexto — esto no es un diagnóstico.</span>
           <div class="buttons">
@@ -225,6 +227,13 @@ const faqSchema = {
         <button id="dia-reset" type="button" class="dia-reset-link">Volver a hacer el test</button>
       </div>
     </div>
+  </section>
+
+  <section class="container disclaimer-box next-step">
+    <p>
+      ¿Quieres pasar del resultado a la acción? <a href="/herramientas/y-ahora-que-hago-con-la-ia/">¿Y ahora qué
+      hago con la IA?</a> combina tu consumo de información con tu exposición laboral y te dice por dónde empezar.
+    </p>
   </section>
 
   <section class="container related">
@@ -375,6 +384,7 @@ const faqSchema = {
 
     var shareRow = document.getElementById('dia-share-row');
     shareRow.style.display = tier === 'special' ? 'none' : 'flex';
+    document.getElementById('dia-help').style.display = tier === 'special' ? 'block' : 'none';
 
     var result = document.getElementById('dia-result');
     result.style.display = 'block';
@@ -511,6 +521,10 @@ const faqSchema = {
 
   #dia-headline { font-size: 1.15em; font-weight: 700; margin: 0 0 10px; color: #fff; }
   #dia-desc { color: rgba(255, 255, 255, 0.7); font-size: 0.92em; line-height: 1.75; margin: 0; }
+
+  #dia-help { display: none; margin: 16px 0 0; font-size: 0.9em; font-weight: 600; }
+  #dia-help a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+  .next-step a { text-decoration: underline; text-underline-offset: 3px; }
 
   #dia-share-row {
     display: none; flex-direction: column; gap: 12px; margin-top: 20px; padding-top: 18px;

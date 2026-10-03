@@ -1,0 +1,160 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../../components/Breadcrumbs.astro';
+import { formatDate } from '../../../../lib/format';
+import data from '../../../../data/y-ahora-que-hago.json';
+
+// Rama de alerta de "¿Y ahora qué hago con la IA?". Página propia e indexable
+// para que se encuentre directo por búsqueda. A propósito NO enlaza de vuelta
+// al cuestionario ni ofrece "repetir el test": quien llega aquí no debe
+// recibir una salida que le reste importancia a lo que acaba de admitir.
+const title = 'Líneas de ayuda emocional gratuitas en México: 800 911 2000 y SAPTEL';
+const description =
+  'Línea de la Vida (800 911 2000) y SAPTEL (55 5259 8121): gratuitas, 24 horas. Qué ofrece cada una y qué pasa si llamas.';
+const canonicalPath = '/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/';
+
+const { lineaDeLaVida: vida, saptel, verificadoEl } = data.lineas;
+const verificado = new Date(`${verificadoEl}T12:00:00-06:00`);
+const lastReviewed = new Date(`${data.lastReviewed}T12:00:00-06:00`);
+
+// Solo afirmaciones verificables contra las fuentes oficiales de cada línea
+// (gob.mx/conasama y saptel.org.mx), más una postura editorial marcada como tal.
+const faqs = [
+  {
+    q: '¿La Línea de la Vida es gratuita?',
+    a: `Sí. Según CONASAMA, de la Secretaría de Salud, la Línea de la Vida es un servicio gratuito, disponible las 24 horas del día, los 365 días del año. El número es ${vida.telefono}.`,
+  },
+  {
+    q: '¿SAPTEL es gratuita y atiende las 24 horas?',
+    a: `Sí. SAPTEL indica en su sitio oficial que su servicio es gratuito y atiende las 24 horas. El número es ${saptel.telefono}.`,
+  },
+  {
+    q: '¿Necesito estar en crisis para llamar?',
+    a: 'No. Puedes llamar porque algo te está afectando —el sueño, la concentración, tu rutina— aunque no sea una emergencia. Según CONASAMA, la Línea de la Vida ofrece información, orientación y apoyo breve en salud mental, además de atención en crisis emocionales.',
+  },
+  {
+    q: '¿Qué pasa si llamo?',
+    a: 'Te contesta una persona. Según CONASAMA, la Línea de la Vida ofrece información general, intervenciones breves para quien enfrenta un problema de salud mental, y canaliza los casos graves, como riesgo suicida, a centros especializados. No necesitas llegar con tu situación explicada con claridad: puedes empezar por decir que no sabes cómo empezar.',
+  },
+  {
+    q: '¿Y si hay un peligro inmediato?',
+    a: 'Llama al 911, el número nacional de emergencias en México. Las líneas de esta página son para hablar con alguien; si tú o alguien cerca están en peligro ahora mismo, el 911 es la vía más rápida.',
+  },
+  {
+    q: '¿Puedo pedir ayuda si lo que me preocupa es la inteligencia artificial?',
+    a: 'Sí. Lo que cuenta para pedir ayuda es cómo te está afectando —tu sueño, tu concentración, tu día a día—, no que el motivo parezca lo bastante serio. Incertidumbre sobre el trabajo, el dinero o el futuro es un motivo tan válido como cualquier otro.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const lineas = [vida, saptel];
+---
+
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={lastReviewed}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  locale="es_MX"
+>
+  <Breadcrumbs items={[{ name: 'Tools', url: '/herramientas/' }, { name: 'Necesitas ayuda ahora' }]} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="container head" id="necesitas-ayuda-ahora">
+    <p class="eyebrow">Ayuda ahora</p>
+    <h1>Si esto ya está afectando tu día a día, habla con alguien ahora</h1>
+    <p class="lead">
+      Esto ya no es solo información sobre IA — es algo que está afectando tu día a día, y eso importa más que
+      cualquier resultado de esta herramienta.
+    </p>
+  </section>
+
+  <section class="container lines" aria-label="Líneas de ayuda">
+    {lineas.map((l) => (
+      <div class="line">
+        <p class="line-name">{l.nombre}</p>
+        <a class="line-num" href={`tel:${l.tel}`}>{l.telefono}</a>
+        <p class="line-detail">{l.detalle}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="container body">
+    <p class="strong">
+      No necesitas estar en crisis para llamar. Hablar con alguien ahora es más útil que cualquier consejo que te
+      podamos dar aquí.
+    </p>
+    <p class="emergency">
+      Si hay un peligro inmediato para ti o para alguien cerca, llama al <a href="tel:911">911</a>.
+    </p>
+  </section>
+
+  <section class="container faq">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-list">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="container sources">
+    <p>
+      Datos tomados de las fuentes oficiales —
+      <a href={vida.fuente} rel="noopener" target="_blank">{vida.fuenteNombre}</a> y
+      <a href={saptel.fuente} rel="noopener" target="_blank">{saptel.fuenteNombre}</a>— y verificados el {formatDate(verificado)}.
+      Esta página no sustituye atención médica ni psicológica.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  .head { padding: 56px 24px 24px; max-width: 760px; }
+  .head h1 { font-size: clamp(1.9rem, 4.2vw, 2.6rem); margin: 12px 0 16px; }
+  .lead { font-size: 1.12rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+  .lines { padding: 8px 24px 8px; max-width: 760px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .line { background: var(--bg-inset); border-radius: var(--radius); padding: 26px 24px; }
+  .line-name { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 10px; }
+  .line-num { display: block; font-size: clamp(1.6rem, 4vw, 2rem); font-weight: 700; color: var(--text); letter-spacing: 0.01em; margin-bottom: 8px; }
+  .line-num:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .line-detail { color: var(--text-muted); font-size: 0.95rem; margin: 0; }
+
+  .body { padding: 28px 24px 8px; max-width: 760px; }
+  .strong { font-size: 1.1rem; line-height: 1.65; color: var(--text); margin: 0 0 16px; }
+  .emergency { color: var(--text-muted); font-size: 0.98rem; line-height: 1.6; margin: 0; }
+  .emergency a { color: var(--text); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+  .faq { padding: 40px 24px 24px; max-width: 760px; }
+  .faq h2 { font-family: var(--font-display); font-size: 1.5rem; margin: 0 0 20px; }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item { border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 16px 20px; }
+  .faq-item summary {
+    cursor: pointer; font-weight: 600; list-style: none; display: flex;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-family: var(--font-mono); color: var(--text-muted); font-size: 1.2em; flex-shrink: 0; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; margin: 14px 0 0; }
+
+  .sources { padding: 8px 24px 96px; max-width: 760px; }
+  .sources p { color: var(--text-faint); font-size: 0.8rem; line-height: 1.65; margin: 0; }
+  .sources a { text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (max-width: 560px) {
+    .lines { grid-template-columns: 1fr; }
+  }
+</style>

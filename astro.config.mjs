@@ -125,6 +125,18 @@ try {
   // Igual que el resto: si falta el archivo, se omite el lastmod.
 }
 
+// Última revisión del orientador "¿Y ahora qué hago con la IA?" — mismo JSON
+// que lee la página (incluye la fecha de verificación de las líneas de ayuda).
+let fechaYAhoraQueHago;
+try {
+  const yAhora = JSON.parse(
+    readFileSync(new URL('./src/data/y-ahora-que-hago.json', import.meta.url), 'utf-8')
+  );
+  fechaYAhoraQueHago = new Date(`${yAhora.lastReviewed}T12:00:00Z`);
+} catch {
+  // Igual que el resto: si falta el archivo, se omite el lastmod.
+}
+
 let fechaTipoCambio;
 try {
   const tipoCambio = JSON.parse(
@@ -320,6 +332,12 @@ export default defineConfig({
         }
         if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia/') return conFecha(fechaCalculadoraRiesgo);
         if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
+        if (
+          pathname === '/herramientas/y-ahora-que-hago-con-la-ia/' ||
+          pathname === '/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/'
+        ) {
+          return conFecha(fechaYAhoraQueHago);
+        }
 
         const matchCategoria = pathname.match(/^\/categoria\/([^/]+)\/$/);
         if (matchCategoria) return conFecha(fechaMaxPorSlugCategoria.get(matchCategoria[1]));

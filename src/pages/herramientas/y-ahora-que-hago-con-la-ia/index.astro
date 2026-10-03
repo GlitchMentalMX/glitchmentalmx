@@ -1,0 +1,629 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../../lib/format';
+import data from '../../../data/y-ahora-que-hago.json';
+
+const title = '¿Te preocupa la IA? Esto es lo que puedes hacer';
+const description =
+  'Herramienta gratuita para separar riesgo real, ruido informativo y próximos pasos frente a la IA. Fuentes de OIT y OMS. Sin cuenta, sin correo.';
+const canonicalPath = '/herramientas/y-ahora-que-hago-con-la-ia/';
+const alertPath = '/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/';
+
+// Misma mecánica que Riesgo y Detox: fecha de última revisión en un JSON que
+// astro.config.mjs también lee para el lastmod del sitemap.
+const lastReviewed = new Date(`${data.lastReviewed}T12:00:00-06:00`);
+
+const { ejes, preocupaciones, fuentes } = data;
+
+// Orden de las preguntas puntuables (la 0 es encuadre y va aparte).
+const ejeOrden = [
+  { key: 'exposicion', num: 1, titulo: 'Exposición laboral' },
+  { key: 'ruido', num: 2, titulo: 'Ruido informativo' },
+  { key: 'capacidad', num: 3, titulo: 'Capacidad de acción' },
+  { key: 'edad', num: 4, titulo: 'Edad' },
+  { key: 'laboral', num: 5, titulo: 'Situación laboral' },
+] as const;
+
+// Artículos ya existentes, temáticamente evergreen (nada atado a una cifra
+// de este mes): trabajo/habilidades por un lado, ruido y ansiedad por otro.
+const RELATED_SLUGS = [
+  'que-trabajos-cambia-primero-la-ia-y-por-que-esos',
+  'las-habilidades-que-mas-importan-en-la-era-de-la-ia',
+  'como-preparar-tu-carrera-para-la-ia-en-2026-guia-real',
+  'ia-y-empleos-en-mexico-el-golpe-ya-empezo',
+  'ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro',
+  'detox-digital-por-que-desconectarte-no-soluciona-nada',
+];
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
+  (p): p is NonNullable<typeof p> => Boolean(p)
+);
+
+// Pasos del HowTo: el mismo array renderiza la lista visible y el JSON-LD.
+const pasos = [
+  { name: 'Dinos qué te preocupa más', text: 'Elige entre trabajo, dinero, futuro, familia o demasiada información. Esta respuesta no puntúa: solo decide qué parte del resultado aparece primero.' },
+  { name: 'Responde sobre tu exposición y tu consumo de información', text: 'Dos preguntas: qué tan cerca está la IA de tu trabajo y qué te pasa cuando consumes información sobre IA.' },
+  { name: 'Describe tu situación actual', text: 'Una pregunta sobre tu margen para actuar. Si tu respuesta es que esto ya afecta tu sueño, tu concentración o tu vida diaria, la herramienta te lleva a una página con líneas de ayuda gratuitas.' },
+  { name: 'Indica tu edad y tu situación laboral', text: 'Con eso se arma tu siguiente paso concreto, ajustado a la trayectoria que ya tienes.' },
+];
+
+const faqs = [
+  {
+    q: '¿Esto es un diagnóstico?',
+    a: 'No. No diagnostica ansiedad ni ninguna condición, no te da un puntaje y no predice qué pasará con tu trabajo. Combina seis respuestas tuyas en una lectura orientativa y te dice por dónde tiene más sentido empezar.',
+  },
+  {
+    q: '¿De dónde salen las recomendaciones?',
+    a: 'La lectura de exposición laboral se apoya en el índice de exposición a IA generativa de la OIT (2025), que concluye que la transformación de los puestos es el impacto más probable, no su desaparición. El resto —ruido informativo, capacidad de acción, edad y situación laboral— son criterios editoriales de glitchMentalMX, y se identifican como tal en la metodología de esta página.',
+  },
+  {
+    q: '¿Qué pasa si marco la opción de alerta?',
+    a: 'La herramienta sale del flujo normal y te lleva a una página con dos líneas de ayuda gratuitas, de atención las 24 horas. No te muestra un resultado, no te pide más respuestas y no te recomienda ninguna herramienta de IA.',
+  },
+  {
+    q: '¿Guardan o comparten mis respuestas?',
+    a: 'No. Todo corre en tu navegador: no hay servidor que reciba tus respuestas, no se pide correo y no se crea cuenta.',
+  },
+  {
+    q: '¿Por qué no me da un número o un porcentaje?',
+    a: 'Porque un número daría una precisión que no existe. Con seis respuestas se puede decir qué parte de tu situación pesa más, no cuánto vale tu futuro laboral.',
+  },
+  {
+    q: '¿Qué relación tiene con la Calculadora de Riesgo y con Detox de IA?',
+    a: 'Son dos módulos más profundos de la misma pregunta. La Calculadora mide con más detalle la exposición de tu trabajo; Detox de IA mide tus hábitos de uso. Esta herramienta es el paso previo: te dice cuál de las dos te conviene hacer primero y qué hacer con lo que encuentres.',
+  },
+  {
+    q: '¿Cada cuánto se actualiza?',
+    a: `Se revisa cuando cambian las fuentes en las que se apoya, y los números de las líneas de ayuda se verifican cada vez que se revisa. Última revisión: ${formatDate(lastReviewed)}.`,
+  },
+];
+
+const softwareAppSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: '¿Y ahora qué hago con la IA? — Orientador',
+  description,
+  url: new URL(canonicalPath, Astro.site).toString(),
+  applicationCategory: 'LifestyleApplication',
+  operatingSystem: 'Any (web browser)',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'MXN' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Cómo usar el orientador "¿Y ahora qué hago con la IA?"',
+  description: 'Seis preguntas, 3 a 4 minutos, para saber por dónde empezar frente a la IA.',
+  totalTime: 'PT4M',
+  step: pasos.map((p, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: p.name,
+    text: p.text,
+  })),
+};
+
+// Los datos que necesita el cliente; los textos viven una sola vez en el JSON.
+const clientData = {
+  alertPath,
+  preocupaciones,
+  fuentes,
+  exposicion: ejes.exposicion.fragmentos,
+  ruido: ejes.ruido.fragmentos,
+  capacidad: ejes.capacidad.fragmentos,
+  edad: ejes.edad.fragmentos,
+  laboral: ejes.laboral.fragmentos,
+  niveles: {
+    exposicion: Object.fromEntries(ejes.exposicion.opciones.map((o) => [o.id, o.nivel])),
+    ruido: Object.fromEntries(ejes.ruido.opciones.map((o) => [o.id, o.nivel])),
+    capacidad: Object.fromEntries(ejes.capacidad.opciones.map((o) => [o.id, o.nivel])),
+  },
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={lastReviewed}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  locale="es_MX"
+>
+  <Breadcrumbs items={[{ name: 'Tools', url: '/herramientas/' }, { name: '¿Y ahora qué hago con la IA?' }]} />
+  <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <PageHeader
+    eyebrow="Orientador · glitchMentalMX"
+    title="¿Te preocupa la inteligencia artificial? **Esto es lo que puedes hacer**"
+    dek="Seis preguntas, tres o cuatro minutos. Sin diagnóstico, sin puntaje y sin prometerte que vas a estar a salvo: solo separar qué es riesgo real, qué es ruido y por dónde empezar."
+  />
+
+  <section class="container disclaimer-box">
+    <p class="disclaimer-label">Antes de empezar</p>
+    <p>
+      Esto no es un diagnóstico ni un pronóstico. Es una lectura orientativa que combina lo que contestes con fuentes
+      públicas. Si lo que sientes ya afecta tu sueño, tu concentración o tu día a día, no necesitas contestar nada:
+      <a href={alertPath}>hay líneas de ayuda gratuitas aquí</a>.
+    </p>
+  </section>
+
+  <section class="container test-wrap">
+    <div id="yq-container">
+      <h2 class="yq-title">¿Y ahora qué hago?</h2>
+      <div class="yq-meta"><span>6 preguntas</span><span>•</span><span>3-4 minutos</span></div>
+
+      <noscript>
+        <p class="yq-noscript">
+          El cuestionario necesita JavaScript. Mientras tanto, abajo está escrito qué mide cada pregunta y qué dice
+          cada nivel. Si necesitas ayuda ahora, <a href={alertPath}>entra aquí</a>.
+        </p>
+      </noscript>
+
+      <form id="yq-form">
+        <fieldset class="yq-q" data-q="0">
+          <legend><span class="yq-q-num">0 / 5 · Para empezar</span><span class="yq-q-text">¿Qué te preocupa más?</span></legend>
+          <div class="yq-options">
+            {preocupaciones.map((o) => (
+              <label class="yq-opt"><input type="radio" name="q0" value={o.id} /><span>{o.label}</span></label>
+            ))}
+          </div>
+        </fieldset>
+
+        {ejeOrden.map((e) => (
+          <fieldset class="yq-q" data-q={e.num}>
+            <legend>
+              <span class="yq-q-num">{e.num} / 5 · {e.titulo}</span>
+              <span class="yq-q-text">{ejes[e.key].pregunta}</span>
+            </legend>
+            <div class="yq-options">
+              {ejes[e.key].opciones.map((o) => (
+                <label class="yq-opt"><input type="radio" name={`q${e.num}`} value={o.id} /><span>{o.label}</span></label>
+              ))}
+            </div>
+            {e.key === 'capacidad' && (
+              <p id="yq-help-inline" class="yq-help-inline" hidden>
+                Gracias por decirlo. <a href={alertPath}>Aquí hay dos líneas de ayuda gratuitas, de atención las 24 horas</a>.
+              </p>
+            )}
+          </fieldset>
+        ))}
+
+        <p class="yq-age-note">Pensado para mayores de 18 años.</p>
+        <p id="yq-warning" role="alert"></p>
+        <button type="submit" id="yq-submit" class="yq-btn">Ver qué hacer ahora</button>
+      </form>
+
+      <p class="yq-last">Última revisión: {formatDate(lastReviewed)}.</p>
+
+      <div id="yq-result" aria-live="polite">
+        <p class="yq-from">Partiendo de lo que más te preocupa: <strong id="yq-from-label"></strong></p>
+        <div id="yq-blocks"></div>
+        <div id="yq-next">
+          <h3>Tu siguiente paso</h3>
+          <ul id="yq-next-list"></ul>
+        </div>
+        <p class="yq-disclaimer">Esto es una lectura orientativa, no un diagnóstico.</p>
+        <button id="yq-reset" type="button" class="yq-reset-link">Volver a empezar</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container static">
+    <p class="eyebrow">Cómo funciona</p>
+    <h2>Seis preguntas, cuatro pasos</h2>
+    <ol class="howto">
+      {pasos.map((p) => (
+        <li><strong>{p.name}.</strong> {p.text}</li>
+      ))}
+    </ol>
+    <p class="static-note">
+      El resultado no se escribe de cero para cada persona: se arma combinando un fragmento por cada eje. Aquí abajo
+      están todos, completos, para que sepas exactamente qué puede decirte esta herramienta antes de usarla.
+    </p>
+  </section>
+
+  <section class="container static" id="que-mide-cada-eje">
+    <h2>Qué mide cada eje y qué dice cada nivel</h2>
+    {ejeOrden.map((e) => (
+      <details class="eje">
+        <summary>{e.titulo}: {ejes[e.key].pregunta}</summary>
+        <p class="eje-mide">{ejes[e.key].midePorQue}</p>
+        <ul class="niveles">
+          {ejes[e.key].opciones.map((o) => {
+            const frag = (ejes[e.key].fragmentos as Record<string, { texto: string; fuente?: string }>)[o.id];
+            return frag ? (
+              <li>
+                <span class="nivel-tag">{'nivel' in o ? `${o.nivel} · ` : ''}{o.label}</span>
+                <span class="nivel-texto">
+                  {frag.texto}
+                  {frag.fuente && (
+                    <>
+                      {' '}<a href={fuentes[frag.fuente as 'oit'].url} rel="noopener" target="_blank" class="src-inline">[{fuentes[frag.fuente as 'oit'].etiqueta}]</a>
+                    </>
+                  )}
+                </span>
+              </li>
+            ) : (
+              <li>
+                <span class="nivel-tag">{'nivel' in o ? `${o.nivel} · ` : ''}{o.label}</span>
+                <span class="nivel-texto">Sale del flujo normal y lleva a una <a href={alertPath}>página de ayuda con líneas telefónicas gratuitas</a>. No muestra un resultado.</span>
+              </li>
+            );
+          })}
+        </ul>
+      </details>
+    ))}
+    <p class="static-note">
+      Para profundizar en los dos primeros ejes tienes herramientas completas:
+      <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Calculadora de Riesgo IA</a> (exposición laboral) y
+      <a href="/detox-de-ia/">Detox de IA</a> (consumo de información y hábitos de uso).
+    </p>
+  </section>
+
+  <section class="container related">
+    <p class="eyebrow">Para profundizar</p>
+    <h2>Trabajo, habilidades y ruido: lecturas de fondo</h2>
+    <div class="related-grid">
+      {relatedPosts.map((post) => (
+        <ArticleCard
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          heroImage={post.data.heroImage}
+          heroImageAlt={post.data.heroImageAlt}
+          body={post.body}
+          variant="grid"
+        />
+      ))}
+    </div>
+  </section>
+
+  <section class="container faq">
+    <p class="eyebrow">Preguntas frecuentes</p>
+    <h2>Antes de que preguntes</h2>
+    <div class="faq-list">
+      {faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="container methodology">
+    <p class="eyebrow">Metodología y fuentes</p>
+    <p class="method-updated">Metodología actualizada: {formatDate(lastReviewed)}.</p>
+    <p>
+      Qué viene de una fuente y qué es criterio editorial, sin mezclar:
+    </p>
+    <ul class="sources">
+      <li>
+        <strong>Exposición laboral.</strong> Se apoya en {fuentes.oit.titulo}. Hallazgo usado: la exposición a IA
+        generativa es amplia pero parcial, y la transformación de los puestos es el impacto más probable.
+        <a href={fuentes.oit.url} rel="noopener" target="_blank">Ver fuente</a>.
+      </li>
+      <li>
+        <strong>Bienestar y rama de alerta.</strong> El marco general —los factores del trabajo como riesgo para la
+        salud mental y la existencia de intervenciones individuales para manejar el estrés— sigue la ficha técnica
+        {' '}{fuentes.oms.titulo}. <a href={fuentes.oms.url} rel="noopener" target="_blank">Ver fuente</a>. Los números
+        telefónicos vienen de las fuentes oficiales de cada línea y se verificaron el {formatDate(new Date(`${data.lineas.verificadoEl}T12:00:00-06:00`))}.
+      </li>
+      <li>
+        <strong>Ruido informativo, capacidad de acción, edad y situación laboral.</strong> Son criterios editoriales
+        de glitchMentalMX, no resultados de un estudio. Por eso están redactados como orientación y no como
+        predicción.
+      </li>
+    </ul>
+    <p>
+      Lo que esta herramienta no hace: no diagnostica, no puntúa tu ansiedad, no promete que estarás a salvo y no
+      sustituye hablar con un profesional.
+    </p>
+  </section>
+
+  <script type="application/json" id="yq-data" set:html={JSON.stringify(clientData)} />
+</Layout>
+
+<script>
+  var DATA = JSON.parse(document.getElementById('yq-data').textContent);
+  var form = document.getElementById('yq-form');
+
+  var AXIS_TITLES = { exposicion: 'Exposición laboral', ruido: 'Ruido informativo', capacidad: 'Capacidad de acción' };
+  var MODULE_LINKS = {
+    exposicion: { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', label: 'Mide tu exposición en la Calculadora de Riesgo IA →' },
+    ruido: { href: '/detox-de-ia/', label: 'Evalúa tu consumo con Detox de IA →' },
+  };
+
+  function checkedValue(name) {
+    var el = form.querySelector('input[name="' + name + '"]:checked');
+    return el ? el.value : null;
+  }
+
+  // La opción de alerta se ofrece la salida de inmediato, sin esperar al envío.
+  var helpInline = document.getElementById('yq-help-inline');
+  form.addEventListener('change', function () {
+    helpInline.hidden = checkedValue('q3') !== 'alerta';
+  });
+
+  function buildBlock(axis, id) {
+    var frag = DATA[axis][id];
+    var nivel = DATA.niveles[axis][id];
+    var block = document.createElement('div');
+    block.className = 'yq-block';
+
+    var tag = document.createElement('p');
+    tag.className = 'yq-axis';
+    tag.textContent = AXIS_TITLES[axis] + ' · ' + nivel;
+    block.appendChild(tag);
+
+    var text = document.createElement('p');
+    text.className = 'yq-frag';
+    text.textContent = frag.texto;
+    block.appendChild(text);
+
+    if (frag.fuente) {
+      var src = DATA.fuentes[frag.fuente];
+      var s = document.createElement('p');
+      s.className = 'yq-src';
+      s.appendChild(document.createTextNode('Fuente: '));
+      var a = document.createElement('a');
+      a.href = src.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = src.etiqueta;
+      s.appendChild(a);
+      block.appendChild(s);
+    }
+
+    if (MODULE_LINKS[axis]) {
+      var l = document.createElement('a');
+      l.className = 'yq-module';
+      l.href = MODULE_LINKS[axis].href;
+      l.textContent = MODULE_LINKS[axis].label;
+      block.appendChild(l);
+    }
+    return block;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Rama de alerta: sale del flujo sin exigir el resto de respuestas.
+    if (checkedValue('q3') === 'alerta') {
+      window.location.assign(DATA.alertPath);
+      return;
+    }
+
+    var warning = document.getElementById('yq-warning');
+    var vals = [];
+    var firstMissing = null;
+    for (var i = 0; i <= 5; i++) {
+      var v = checkedValue('q' + i);
+      var fs = form.querySelector('.yq-q[data-q="' + i + '"]');
+      if (v === null) {
+        fs.classList.add('missing');
+        if (!firstMissing) firstMissing = fs;
+      } else {
+        fs.classList.remove('missing');
+      }
+      vals.push(v);
+    }
+    if (firstMissing) {
+      warning.textContent = 'Responde las 6 preguntas para ver tu resultado.';
+      warning.style.display = 'block';
+      firstMissing.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    warning.style.display = 'none';
+
+    var pre = DATA.preocupaciones.filter(function (p) { return p.id === vals[0]; })[0];
+    document.getElementById('yq-from-label').textContent = pre.label;
+
+    // La pregunta 0 no puntúa: solo decide qué módulo se muestra primero.
+    var order = pre.modulo === 'detox' ? ['ruido', 'exposicion'] : ['exposicion', 'ruido'];
+    var picks = { exposicion: vals[1], ruido: vals[2] };
+    var blocks = document.getElementById('yq-blocks');
+    blocks.textContent = '';
+    order.forEach(function (axis) { blocks.appendChild(buildBlock(axis, picks[axis])); });
+    blocks.appendChild(buildBlock('capacidad', vals[3]));
+
+    var list = document.getElementById('yq-next-list');
+    list.textContent = '';
+    [DATA.edad[vals[4]].texto, DATA.laboral[vals[5]].texto].forEach(function (t) {
+      var li = document.createElement('li');
+      li.textContent = t;
+      list.appendChild(li);
+    });
+
+    var result = document.getElementById('yq-result');
+    result.style.display = 'block';
+    setTimeout(function () {
+      var top = result.getBoundingClientRect().top + window.pageYOffset - 120;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }, 150);
+  });
+
+  document.getElementById('yq-reset').addEventListener('click', function () {
+    form.reset();
+    helpInline.hidden = true;
+    form.querySelectorAll('.yq-q.missing').forEach(function (f) { f.classList.remove('missing'); });
+    document.getElementById('yq-result').style.display = 'none';
+    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>
+
+<style>
+  .disclaimer-box { padding: 0 24px 32px; max-width: 680px; }
+  .disclaimer-box p:last-child {
+    background: var(--bg-inset);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 18px 20px;
+    color: var(--text);
+    font-size: 0.94rem;
+    line-height: 1.65;
+    margin: 0;
+  }
+  .disclaimer-box a { text-decoration: underline; text-underline-offset: 3px; }
+  .disclaimer-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 10px;
+  }
+
+  .test-wrap { padding: 0 24px 24px; display: flex; justify-content: center; }
+
+  #yq-container {
+    background: linear-gradient(145deg, #0e1520 0%, #080c10 100%);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    box-shadow: rgba(0, 102, 255, 0.12) 0px 0px 30px;
+    color: #fff;
+    max-width: 640px;
+    width: 100%;
+    padding: 32px;
+    font-family: var(--font-body);
+  }
+  .yq-title { font-size: 1.5em; letter-spacing: 1px; text-align: center; text-transform: uppercase; margin: 0 0 12px; color: #fff; }
+  .yq-meta {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: rgba(255, 255, 255, 0.5); font-family: var(--font-mono); font-size: 0.8em; margin: 0 0 28px;
+  }
+  .yq-noscript { color: rgba(255, 255, 255, 0.75); font-size: 0.9em; line-height: 1.6; }
+  .yq-noscript a, .yq-help-inline a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+  .yq-q { border: none; padding: 0; margin: 0 0 22px; min-width: 0; }
+  .yq-q legend { display: block; padding: 0; margin-bottom: 10px; width: 100%; }
+  .yq-q-num {
+    display: block; font-family: var(--font-mono); font-size: 0.68em; letter-spacing: 1.2px;
+    color: var(--accent); text-transform: uppercase; margin-bottom: 6px;
+  }
+  .yq-q-text { display: block; font-size: 0.96em; line-height: 1.5; color: rgba(255, 255, 255, 0.9); }
+  .yq-options { display: flex; flex-wrap: wrap; gap: 8px; }
+  .yq-opt { cursor: pointer; }
+  .yq-opt input { position: absolute; opacity: 0; width: 1px; height: 1px; overflow: hidden; }
+  .yq-opt span {
+    display: inline-block; background: #0d1117; border: 1px solid rgba(0, 102, 255, 0.25);
+    border-radius: 999px; color: rgba(255, 255, 255, 0.75); font-size: 0.8em;
+    padding: 8px 14px; transition: 0.15s;
+  }
+  .yq-opt input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .yq-opt input:checked + span { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .yq-q.missing .yq-q-text { color: var(--accent); }
+  .yq-q.missing .yq-opt span { border-color: rgba(0, 102, 255, 0.5); }
+  .yq-help-inline {
+    margin: 12px 0 0; font-size: 0.85em; line-height: 1.55; color: rgba(255, 255, 255, 0.85);
+    border-left: 2px solid var(--accent); padding-left: 12px;
+  }
+  .yq-help-inline[hidden] { display: none; }
+  .yq-age-note { color: rgba(255, 255, 255, 0.4); font-family: var(--font-mono); font-size: 0.7em; margin: 0 0 8px; }
+
+  #yq-warning { display: none; color: var(--accent); font-size: 0.82em; margin: 4px 0 16px; }
+  .yq-btn {
+    background: var(--accent); border: none; border-radius: 999px;
+    box-shadow: rgba(0, 102, 255, 0.3) 0px 4px 15px; color: #fff; cursor: pointer;
+    font-family: var(--font-body); font-size: 1em; font-weight: 800; letter-spacing: 1px;
+    padding: 17px; text-transform: uppercase; width: 100%; margin-top: 8px;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+  }
+  .yq-btn:hover { background: #0052cc; transform: scale(1.015); }
+  .yq-last { color: rgba(255, 255, 255, 0.4); font-family: var(--font-mono); font-size: 0.7em; margin: 16px 0 0; }
+
+  #yq-result {
+    display: none; animation: yqFadeIn 0.5s ease; background: rgba(0, 102, 255, 0.05);
+    border-radius: 10px; margin-top: 26px; padding: 20px;
+  }
+  @keyframes yqFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .yq-from { font-size: 0.82em; color: rgba(255, 255, 255, 0.55); margin: 0 0 18px; }
+  .yq-from strong { color: #fff; }
+  .yq-block { padding: 0 0 18px; margin: 0 0 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  .yq-axis {
+    font-family: var(--font-mono); font-size: 0.68em; letter-spacing: 1.2px;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 8px;
+  }
+  .yq-frag { font-size: 0.95em; line-height: 1.7; color: rgba(255, 255, 255, 0.88); margin: 0; }
+  .yq-src { font-size: 0.72em; color: rgba(255, 255, 255, 0.45); margin: 8px 0 0; font-family: var(--font-mono); }
+  .yq-src a { color: rgba(255, 255, 255, 0.7); text-decoration: underline; text-underline-offset: 3px; }
+  .yq-module {
+    display: inline-block; margin-top: 12px; font-size: 0.82em; font-weight: 600; color: #fff;
+    text-decoration: underline; text-underline-offset: 3px;
+  }
+  #yq-next h3 { font-size: 1.05em; margin: 0 0 10px; color: #fff; }
+  #yq-next ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px; }
+  #yq-next li { font-size: 0.93em; line-height: 1.65; color: rgba(255, 255, 255, 0.85); }
+  .yq-disclaimer { font-size: 0.75em; color: rgba(255, 255, 255, 0.4); margin: 20px 0 0; }
+  .yq-reset-link {
+    display: block; background: none; border: none; cursor: pointer;
+    color: rgba(255, 255, 255, 0.4); font-family: var(--font-body); font-size: 0.78em;
+    text-decoration: underline; text-underline-offset: 3px; margin-top: 14px; padding: 0;
+  }
+  .yq-reset-link:hover { color: rgba(255, 255, 255, 0.7); }
+
+  .static { padding: 40px 24px 8px; max-width: 760px; margin: 0 auto; }
+  .static h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 20px; }
+  .howto { padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: var(--text-muted); font-size: 0.96rem; line-height: 1.65; }
+  .howto strong { color: var(--text); }
+  .static-note { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; margin: 20px 0 0; }
+  .static-note a { text-decoration: underline; text-underline-offset: 3px; }
+  .eje { border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 10px; }
+  .eje summary { cursor: pointer; font-weight: 600; }
+  .eje-mide { color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; margin: 14px 0; }
+  .niveles { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+  .niveles li { display: flex; flex-direction: column; gap: 4px; padding-left: 14px; border-left: 2px solid var(--border-strong); }
+  .nivel-tag { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-faint); }
+  .nivel-texto { color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; }
+  .nivel-texto a { text-decoration: underline; text-underline-offset: 3px; }
+
+  .related { padding: 40px 24px 56px; max-width: 900px; margin: 0 auto; }
+  .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+
+  .faq { padding: 16px 24px 56px; max-width: 760px; margin: 0 auto; }
+  .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item { border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 16px 20px; }
+  .faq-item summary {
+    cursor: pointer; font-weight: 600; list-style: none; display: flex;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-family: var(--font-mono); color: var(--accent); font-size: 1.2em; flex-shrink: 0; }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; margin: 14px 0 0; }
+
+  .methodology { padding: 16px 24px 96px; max-width: 760px; margin: 0 auto; }
+  .method-updated { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint); letter-spacing: 0.02em; margin: 6px 0 20px; }
+  .methodology > p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
+  .sources { list-style: none; margin: 16px 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+  .sources li { font-size: 0.85rem; line-height: 1.65; color: var(--text-muted); padding-left: 18px; border-left: 2px solid var(--border-strong); }
+  .sources li strong { color: var(--text); }
+  .sources a { text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (max-width: 520px) {
+    #yq-container { padding: 24px 18px; }
+  }
+</style>
