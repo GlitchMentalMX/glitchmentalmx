@@ -334,7 +334,7 @@ export default defineConfig({
         if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
         if (
           pathname === '/herramientas/que-hacer-si-te-preocupa-la-ia/' ||
-          pathname === '/herramientas/que-hacer-si-te-preocupa-la-ia/necesitas-ayuda-ahora/'
+          pathname === '/herramientas/que-hacer-si-te-preocupa-la-ia/lineas-de-ayuda-emocional-gratuitas/'
         ) {
           return conFecha(fechaYAhoraQueHago);
         }

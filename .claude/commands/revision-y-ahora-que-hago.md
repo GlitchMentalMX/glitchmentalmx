@@ -6,7 +6,7 @@ description: Revisión trimestral del orientador "¿Te preocupa la IA?" — veri
 
 Páginas:
 - src/pages/herramientas/que-hacer-si-te-preocupa-la-ia/index.astro (orientador)
-- src/pages/herramientas/que-hacer-si-te-preocupa-la-ia/necesitas-ayuda-ahora/index.astro (rama de alerta)
+- src/pages/herramientas/que-hacer-si-te-preocupa-la-ia/lineas-de-ayuda-emocional-gratuitas/index.astro (rama de alerta)
 
 Datos (única fuente de textos, teléfonos y fuentes): src/data/y-ahora-que-hago.json
 
