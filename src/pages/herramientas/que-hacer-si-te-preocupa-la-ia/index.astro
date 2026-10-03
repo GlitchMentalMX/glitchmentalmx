@@ -9,9 +9,10 @@ import data from '../../../data/y-ahora-que-hago.json';
 
 const title = '¿Te preocupa la IA? Esto es lo que puedes hacer';
 const description =
-  'Herramienta gratuita para separar riesgo real, ruido informativo y próximos pasos frente a la IA. Fuentes de OIT y OMS. Sin cuenta, sin correo.';
-const canonicalPath = '/herramientas/y-ahora-que-hago-con-la-ia/';
-const alertPath = '/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/';
+  'Si te preocupa la inteligencia artificial por tu trabajo o tu futuro: separa riesgo real, ruido y próximos pasos. Gratis, sin cuenta. Fuentes OIT y OMS.';
+const toolImage = '/images/herramientas/que-hacer-si-te-preocupa-la-ia.png';
+const canonicalPath = '/herramientas/que-hacer-si-te-preocupa-la-ia/';
+const alertPath = '/herramientas/que-hacer-si-te-preocupa-la-ia/necesitas-ayuda-ahora/';
 
 // Misma mecánica que Riesgo y Detox: fecha de última revisión en un JSON que
 // astro.config.mjs también lee para el lastmod del sitemap.
@@ -28,15 +29,19 @@ const ejeOrden = [
   { key: 'laboral', num: 5, titulo: 'Situación laboral' },
 ] as const;
 
-// Artículos ya existentes, temáticamente evergreen (nada atado a una cifra
-// de este mes): trabajo/habilidades por un lado, ruido y ansiedad por otro.
+// Lote de artículos que muestran la tarjeta de esta herramienta (ver
+// QUE_HACER_SI_TE_PREOCUPA_SLUGS en src/pages/articulos/[slug].astro) —
+// enlazados aquí en ambas direcciones. Ninguno pertenece a otro lote de
+// herramienta: un artículo no carga dos tarjetas.
 const RELATED_SLUGS = [
-  'que-trabajos-cambia-primero-la-ia-y-por-que-esos',
-  'las-habilidades-que-mas-importan-en-la-era-de-la-ia',
-  'como-preparar-tu-carrera-para-la-ia-en-2026-guia-real',
-  'ia-y-empleos-en-mexico-el-golpe-ya-empezo',
-  'ansiedad-digital-que-le-hacen-las-notificaciones-al-cerebro',
-  'detox-digital-por-que-desconectarte-no-soluciona-nada',
+  'ia-y-salud-mental-lo-que-nadie-te-dice-en-2026',
+  'las-palabras-que-construyen-el-miedo-y-la-fe-en-la-ia',
+  'el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron',
+  'como-distinguir-una-tendencia-real-de-puro-hype',
+  'la-ia-borra-el-empleo-junior-el-talento-en-riesgo',
+  'despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre',
+  'oracle-despide-a-30000-por-ia-el-patron-ya-es-claro',
+  'jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico',
 ];
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
@@ -51,7 +56,17 @@ const pasos = [
   { name: 'Indica tu edad y tu situación laboral', text: 'Con eso se arma tu siguiente paso concreto, ajustado a la trayectoria que ya tienes.' },
 ];
 
-const faqs = [
+const faqs: { q: string; a: string; link?: { href: string; label: string } }[] = [
+  {
+    q: '¿Es normal que me preocupe la inteligencia artificial?',
+    a: 'Preocuparte por un cambio que puede afectar tu trabajo, tu dinero o tu familia es una reacción comprensible, y no es lo mismo que un problema de salud. Lo que importa es cuánto interfiere con tu día a día: si ya afecta tu sueño o tu concentración, hay líneas de ayuda gratuitas de atención las 24 horas.',
+    link: { href: alertPath, label: 'Ver las líneas de ayuda' },
+  },
+  {
+    q: '¿La inteligencia artificial me va a quitar el trabajo?',
+    a: 'Nadie puede asegurarlo para tu caso. El estudio más reciente de la OIT (2025) estima que una de cada cuatro personas trabaja en una ocupación con alguna exposición a IA generativa, y concluye que lo más probable es la transformación de los puestos, no su desaparición. Esta herramienta no predice tu caso: te dice qué tan cerca está la IA de tu trabajo según lo que respondes y te lleva a la Calculadora de Riesgo para medirlo con más detalle.',
+    link: { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', label: 'Ir a la Calculadora de Riesgo IA' },
+  },
   {
     q: '¿Esto es un diagnóstico?',
     a: 'No. No diagnostica ansiedad ni ninguna condición, no te da un puntaje y no predice qué pasará con tu trabajo. Combina seis respuestas tuyas en una lectura orientativa y te dice por dónde tiene más sentido empezar.',
@@ -143,6 +158,7 @@ const clientData = {
 <Layout
   title={title}
   description={description}
+  image={toolImage}
   modifiedTime={lastReviewed}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"
@@ -155,8 +171,18 @@ const clientData = {
   <PageHeader
     eyebrow="Orientador · glitchMentalMX"
     title="¿Te preocupa la inteligencia artificial? **Esto es lo que puedes hacer**"
-    dek="Seis preguntas, tres o cuatro minutos. Sin diagnóstico, sin puntaje y sin prometerte que vas a estar a salvo: solo separar qué es riesgo real, qué es ruido y por dónde empezar."
+    dek="Seis preguntas, tres o cuatro minutos, sin cuenta ni correo."
   />
+
+  <section class="container intro">
+    <p>
+      Si te preocupa la inteligencia artificial —que te quite el trabajo, que el dinero no alcance, que el futuro se
+      vuelva impredecible, que tu familia no esté preparada o que haya tanta información sobre IA que ya no sepas qué
+      creer— esta herramienta te ayuda a separar tres cosas: cuánto riesgo real hay en tu situación, cuánto es ruido
+      informativo y qué paso concreto puedes dar hoy. No te diagnostica, no te asigna un puntaje y no te promete que
+      vas a estar a salvo.
+    </p>
+  </section>
 
   <section class="container disclaimer-box">
     <p class="disclaimer-label">Antes de empezar</p>
@@ -282,7 +308,7 @@ const clientData = {
 
   <section class="container related">
     <p class="eyebrow">Para profundizar</p>
-    <h2>Trabajo, habilidades y ruido: lecturas de fondo</h2>
+    <h2>Miedo, ruido y trabajo: lecturas de fondo</h2>
     <div class="related-grid">
       {relatedPosts.map((post) => (
         <ArticleCard
@@ -306,7 +332,7 @@ const clientData = {
       {faqs.map((f) => (
         <details class="faq-item">
           <summary>{f.q}</summary>
-          <p>{f.a}</p>
+          <p>{f.a}{f.link && <>{' '}<a href={f.link.href} class="faq-link">{f.link.label} →</a></>}</p>
         </details>
       ))}
     </div>
@@ -474,6 +500,10 @@ const clientData = {
 </script>
 
 <style>
+  .intro { padding: 0 24px 32px; max-width: 680px; }
+  .intro p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin: 0; }
+  .faq-link { color: var(--text); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+
   .disclaimer-box { padding: 0 24px 32px; max-width: 680px; }
   .disclaimer-box p:last-child {
     background: var(--bg-inset);

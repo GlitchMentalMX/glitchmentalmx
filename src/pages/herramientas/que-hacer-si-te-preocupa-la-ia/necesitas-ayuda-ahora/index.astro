@@ -11,7 +11,8 @@ import data from '../../../../data/y-ahora-que-hago.json';
 const title = 'Líneas de ayuda emocional gratuitas en México: 800 911 2000 y SAPTEL';
 const description =
   'Línea de la Vida (800 911 2000) y SAPTEL (55 5259 8121): gratuitas, 24 horas. Qué ofrece cada una y qué pasa si llamas.';
-const canonicalPath = '/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/';
+const alertImage = '/images/herramientas/necesitas-ayuda-ahora.png';
+const canonicalPath = '/herramientas/que-hacer-si-te-preocupa-la-ia/necesitas-ayuda-ahora/';
 
 const { lineaDeLaVida: vida, saptel, verificadoEl } = data.lineas;
 const verificado = new Date(`${verificadoEl}T12:00:00-06:00`);
@@ -62,6 +63,7 @@ const lineas = [vida, saptel];
 <Layout
   title={title}
   description={description}
+  image={alertImage}
   modifiedTime={lastReviewed}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"

@@ -5,8 +5,8 @@ description: Revisión trimestral del orientador "¿Y ahora qué hago con la IA?
 # Revisión "¿Y ahora qué hago con la IA?"
 
 Páginas:
-- src/pages/herramientas/y-ahora-que-hago-con-la-ia/index.astro (orientador)
-- src/pages/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/index.astro (rama de alerta)
+- src/pages/herramientas/que-hacer-si-te-preocupa-la-ia/index.astro (orientador)
+- src/pages/herramientas/que-hacer-si-te-preocupa-la-ia/necesitas-ayuda-ahora/index.astro (rama de alerta)
 
 Datos (única fuente de textos, teléfonos y fuentes): src/data/y-ahora-que-hago.json
 
@@ -38,7 +38,15 @@ parte del sitio.
    editorial, no estudio — no los presentes como lo segundo.
 6. **Enlaces internos:** Calculadora de Riesgo y Detox siguen enlazando de
    regreso; la alerta NO debe enlazar al cuestionario ni ofrecer "repetir".
-7. **Detalles de copy:** espacios faltantes alrededor de enlaces (Astro
+7. **Tarjeta en artículos.** Lote QUE_HACER_SI_TE_PREOCUPA_SLUGS en
+   src/pages/articulos/[slug].astro (8 artículos) y RELATED_SLUGS de la
+   página de la herramienta deben coincidir; ningún artículo puede estar en
+   dos lotes de herramienta. Revisar si hay artículos nuevos sobre miedo a la
+   IA, despidos o ruido informativo que merezcan entrar.
+8. **og:image.** Tarjetas en public/images/herramientas/ (regenerar con
+   `node scripts/generate-herramientas-hero-images.mjs`). Sin teléfonos en la
+   imagen a propósito.
+9. **Detalles de copy:** espacios faltantes alrededor de enlaces (Astro
    elimina el espacio si el `<a>` empieza en línea nueva; usar `{' '}`),
    numeración de preguntas, y que el Panel de Señales de la home,
    /herramientas/, Header y Footer sigan listando la herramienta.

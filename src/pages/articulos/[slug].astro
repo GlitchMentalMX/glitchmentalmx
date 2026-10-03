@@ -118,6 +118,23 @@ const DETOX_DE_IA_SLUGS = new Set([
   'detox-digital-por-que-desconectarte-no-soluciona-nada',
 ]);
 
+// Promoción puntual del orientador "¿Y ahora qué hago con la IA?" (URL
+// /herramientas/que-hacer-si-te-preocupa-la-ia/) — mismo criterio: lote fijo,
+// no un campo de esquema. Artículos sobre miedo/ruido/salud mental frente a
+// la IA y sobre despidos y empleo, que no están en ningún otro lote de
+// herramienta (ningún artículo debe cargar dos tarjetas). Enlazados de
+// vuelta en RELATED_SLUGS de la página de la herramienta.
+const QUE_HACER_SI_TE_PREOCUPA_SLUGS = new Set([
+  'ia-y-salud-mental-lo-que-nadie-te-dice-en-2026',
+  'las-palabras-que-construyen-el-miedo-y-la-fe-en-la-ia',
+  'el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron',
+  'como-distinguir-una-tendencia-real-de-puro-hype',
+  'la-ia-borra-el-empleo-junior-el-talento-en-riesgo',
+  'despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre',
+  'oracle-despide-a-30000-por-ia-el-patron-ya-es-claro',
+  'jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico',
+]);
+
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
   const preciosIA = await getCollection('preciosIA', ({ data }) => !data.draft);
@@ -214,7 +231,14 @@ const toolPromo =
               'Identifica tus patrones y hábitos de uso de IA con un test breve, basado en investigación reciente. Sin diagnósticos, con fuentes citadas.',
             href: '/detox-de-ia/',
           }
-        : undefined;
+        : kind === 'posts' && QUE_HACER_SI_TE_PREOCUPA_SLUGS.has(post.id)
+          ? {
+              title: '¿Te preocupa la inteligencia artificial?',
+              description:
+                'Seis preguntas para separar riesgo real, ruido y próximos pasos. Gratis, sin cuenta, sin diagnóstico ni promesas falsas.',
+              href: '/herramientas/que-hacer-si-te-preocupa-la-ia/',
+            }
+          : undefined;
 
 const articleImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
 const articleSchema =

@@ -333,8 +333,8 @@ export default defineConfig({
         if (pathname === '/calculadora-de-riesgo-de-reemplazo-por-ia/') return conFecha(fechaCalculadoraRiesgo);
         if (pathname === '/detox-de-ia/') return conFecha(fechaDetoxDeIA);
         if (
-          pathname === '/herramientas/y-ahora-que-hago-con-la-ia/' ||
-          pathname === '/herramientas/y-ahora-que-hago-con-la-ia/necesitas-ayuda-ahora/'
+          pathname === '/herramientas/que-hacer-si-te-preocupa-la-ia/' ||
+          pathname === '/herramientas/que-hacer-si-te-preocupa-la-ia/necesitas-ayuda-ahora/'
         ) {
           return conFecha(fechaYAhoraQueHago);
         }
