@@ -162,7 +162,7 @@ const clientData = {
     <p class="disclaimer-label">Antes de empezar</p>
     <p>
       Esto no es un diagnóstico ni un pronóstico. Es una lectura orientativa que combina lo que contestes con fuentes
-      públicas. Si lo que sientes ya afecta tu sueño, tu concentración o tu día a día, no necesitas contestar nada:
+      públicas. Si lo que sientes ya afecta tu sueño, tu concentración o tu día a día, no necesitas contestar nada:{' '}
       <a href={alertPath}>hay líneas de ayuda gratuitas aquí</a>.
     </p>
   </section>
@@ -175,13 +175,13 @@ const clientData = {
       <noscript>
         <p class="yq-noscript">
           El cuestionario necesita JavaScript. Mientras tanto, abajo está escrito qué mide cada pregunta y qué dice
-          cada nivel. Si necesitas ayuda ahora, <a href={alertPath}>entra aquí</a>.
+          cada nivel. Si necesitas ayuda ahora,{' '}<a href={alertPath}>entra aquí</a>.
         </p>
       </noscript>
 
       <form id="yq-form">
         <fieldset class="yq-q" data-q="0">
-          <legend><span class="yq-q-num">0 / 5 · Para empezar</span><span class="yq-q-text">¿Qué te preocupa más?</span></legend>
+          <legend><span class="yq-q-num">1 / 6 · Para empezar</span><span class="yq-q-text">¿Qué te preocupa más?</span></legend>
           <div class="yq-options">
             {preocupaciones.map((o) => (
               <label class="yq-opt"><input type="radio" name="q0" value={o.id} /><span>{o.label}</span></label>
@@ -192,7 +192,7 @@ const clientData = {
         {ejeOrden.map((e) => (
           <fieldset class="yq-q" data-q={e.num}>
             <legend>
-              <span class="yq-q-num">{e.num} / 5 · {e.titulo}</span>
+              <span class="yq-q-num">{e.num + 1} / 6 · {e.titulo}</span>
               <span class="yq-q-text">{ejes[e.key].pregunta}</span>
             </legend>
             <div class="yq-options">
@@ -274,8 +274,8 @@ const clientData = {
       </details>
     ))}
     <p class="static-note">
-      Para profundizar en los dos primeros ejes tienes herramientas completas:
-      <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Calculadora de Riesgo IA</a> (exposición laboral) y
+      Para profundizar en los dos primeros ejes tienes herramientas completas:{' '}
+      <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Calculadora de Riesgo IA</a> (exposición laboral) y{' '}
       <a href="/detox-de-ia/">Detox de IA</a> (consumo de información y hábitos de uso).
     </p>
   </section>
