@@ -22,11 +22,11 @@ const { ejes, preocupaciones, fuentes } = data;
 
 // Orden de las preguntas puntuables (la 0 es encuadre y va aparte).
 const ejeOrden = [
-  { key: 'exposicion', num: 1, titulo: 'Exposición laboral' },
-  { key: 'ruido', num: 2, titulo: 'Ruido informativo' },
-  { key: 'capacidad', num: 3, titulo: 'Capacidad de acción' },
-  { key: 'edad', num: 4, titulo: 'Edad' },
-  { key: 'laboral', num: 5, titulo: 'Situación laboral' },
+  { key: 'laboral', num: 1, titulo: 'Situación laboral' },
+  { key: 'exposicion', num: 2, titulo: 'Exposición laboral' },
+  { key: 'ruido', num: 3, titulo: 'Ruido informativo' },
+  { key: 'capacidad', num: 4, titulo: 'Capacidad de acción' },
+  { key: 'edad', num: 5, titulo: 'Edad' },
 ] as const;
 
 // Lote de artículos que muestran la tarjeta de esta herramienta (ver
@@ -50,10 +50,11 @@ const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === s
 
 // Pasos del HowTo: el mismo array renderiza la lista visible y el JSON-LD.
 const pasos = [
-  { name: 'Dinos qué te preocupa más', text: 'Elige entre trabajo, dinero, futuro, familia o demasiada información. Esta respuesta no puntúa: solo decide qué parte del resultado aparece primero.' },
-  { name: 'Responde sobre tu exposición y tu consumo de información', text: 'Dos preguntas: qué tan cerca está la IA de tu trabajo y qué te pasa cuando consumes información sobre IA.' },
-  { name: 'Describe tu situación actual', text: 'Una pregunta sobre tu margen para actuar. Si tu respuesta es que esto ya afecta tu sueño, tu concentración o tu vida diaria, la herramienta te lleva a una página con líneas de ayuda gratuitas.' },
-  { name: 'Indica tu edad y tu situación laboral', text: 'Con eso se arma tu siguiente paso concreto, ajustado a la trayectoria que ya tienes.' },
+  { name: 'Dinos qué te preocupa más', text: 'Elige entre trabajo, dinero, futuro, familia o demasiada información. Esta respuesta no puntúa: decide con qué frase abre tu resultado y qué parte aparece primero.' },
+  { name: 'Cuéntanos tu situación laboral', text: 'Empleado, buscando trabajo, independiente o retirado. Si eliges retirado o jubilado, se omite la pregunta de exposición laboral.' },
+  { name: 'Responde sobre tu exposición y tu consumo de información', text: 'Dos preguntas: qué tan cerca está la IA del trabajo que haces o buscas, y qué te pasa cuando consumes información sobre IA.' },
+  { name: 'Describe tu situación actual y tu edad', text: 'Una pregunta sobre tu margen para actuar. Si tu respuesta es que esto ya afecta tu sueño, tu concentración o tu vida diaria, la herramienta te lleva a una página con líneas de ayuda gratuitas. Con tu edad se ajusta el tipo de paso.' },
+  { name: 'Lee por dónde empezar y tu paso para esta semana', text: 'El resultado abre con una prioridad, sigue con una lectura por cada eje y cierra con una acción concreta para esta semana.' },
 ];
 
 const faqs: { q: string; a: string; link?: { href: string; label: string } }[] = [
@@ -68,8 +69,12 @@ const faqs: { q: string; a: string; link?: { href: string; label: string } }[] =
     link: { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', label: 'Ir a la Calculadora de Riesgo IA' },
   },
   {
+    q: '¿Y si estoy retirado, jubilado o sin empleo?',
+    a: 'La herramienta se adapta. Si eliges retirado o jubilado, se omite la pregunta sobre exposición laboral y el resultado se centra en cómo filtrar la información sobre IA. Si buscas trabajo, la pregunta de exposición se refiere al tipo de trabajo que buscas.',
+  },
+  {
     q: '¿Esto es un diagnóstico?',
-    a: 'No. No diagnostica ansiedad ni ninguna condición, no te da un puntaje y no predice qué pasará con tu trabajo. Combina seis respuestas tuyas en una lectura orientativa y te dice por dónde tiene más sentido empezar.',
+    a: 'No. No diagnostica ansiedad ni ninguna condición, no te da un puntaje y no predice qué pasará con tu trabajo. Combina seis respuestas tuyas en una lectura orientativa, te dice por dónde tiene más sentido empezar y te propone un paso concreto para esta semana.',
   },
   {
     q: '¿De dónde salen las recomendaciones?',
@@ -85,7 +90,7 @@ const faqs: { q: string; a: string; link?: { href: string; label: string } }[] =
   },
   {
     q: '¿Por qué no me da un número o un porcentaje?',
-    a: 'Porque un número daría una precisión que no existe. Con seis respuestas se puede decir qué parte de tu situación pesa más, no cuánto vale tu futuro laboral.',
+    a: 'Porque un número daría una precisión que no existe. Con seis respuestas se puede decir qué parte de tu situación pesa más y qué hacer primero, no cuánto vale tu futuro laboral.',
   },
   {
     q: '¿Qué relación tiene con la Calculadora de Riesgo y con Detox de IA?',
@@ -100,7 +105,7 @@ const faqs: { q: string; a: string; link?: { href: string; label: string } }[] =
 const softwareAppSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: '¿Y ahora qué hago con la IA? — Orientador',
+  name: '¿Te preocupa la IA? — Orientador',
   description,
   url: new URL(canonicalPath, Astro.site).toString(),
   applicationCategory: 'LifestyleApplication',
@@ -126,7 +131,7 @@ const faqSchema = {
 const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Cómo usar el orientador "¿Y ahora qué hago con la IA?"',
+  name: 'Cómo usar el orientador "¿Te preocupa la IA?"',
   description: 'Seis preguntas, 3 a 4 minutos, para saber por dónde empezar frente a la IA.',
   totalTime: 'PT4M',
   step: pasos.map((p, i) => ({
@@ -142,6 +147,7 @@ const clientData = {
   alertPath,
   preocupaciones,
   fuentes,
+  prioridad: data.prioridad,
   exposicion: ejes.exposicion.fragmentos,
   ruido: ejes.ruido.fragmentos,
   capacidad: ejes.capacidad.fragmentos,
@@ -163,7 +169,7 @@ const clientData = {
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"
 >
-  <Breadcrumbs items={[{ name: 'Tools', url: '/herramientas/' }, { name: '¿Y ahora qué hago con la IA?' }]} />
+  <Breadcrumbs items={[{ name: 'Tools', url: '/herramientas/' }, { name: '¿Te preocupa la IA?' }]} />
   <script type="application/ld+json" set:html={JSON.stringify(softwareAppSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
@@ -185,17 +191,16 @@ const clientData = {
   </section>
 
   <section class="container disclaimer-box">
-    <p class="disclaimer-label">Antes de empezar</p>
+    <p class="disclaimer-label">Si necesitas ayuda ahora</p>
     <p>
-      Esto no es un diagnóstico ni un pronóstico. Es una lectura orientativa que combina lo que contestes con fuentes
-      públicas. Si lo que sientes ya afecta tu sueño, tu concentración o tu día a día, no necesitas contestar nada:{' '}
+      Si lo que sientes ya afecta tu sueño, tu concentración o tu día a día, no necesitas contestar nada:{' '}
       <a href={alertPath}>hay líneas de ayuda gratuitas aquí</a>.
     </p>
   </section>
 
   <section class="container test-wrap">
     <div id="yq-container">
-      <h2 class="yq-title">¿Y ahora qué hago?</h2>
+      <h2 class="yq-title">¿Te preocupa la IA?</h2>
       <div class="yq-meta"><span>6 preguntas</span><span>•</span><span>3-4 minutos</span></div>
 
       <noscript>
@@ -206,7 +211,7 @@ const clientData = {
       </noscript>
 
       <form id="yq-form">
-        <fieldset class="yq-q" data-q="0">
+        <fieldset class="yq-q" data-q="0" data-title="Para empezar" id="yq-q-preocupacion">
           <legend><span class="yq-q-num">1 / 6 · Para empezar</span><span class="yq-q-text">¿Qué te preocupa más?</span></legend>
           <div class="yq-options">
             {preocupaciones.map((o) => (
@@ -216,7 +221,7 @@ const clientData = {
         </fieldset>
 
         {ejeOrden.map((e) => (
-          <fieldset class="yq-q" data-q={e.num}>
+          <fieldset class="yq-q" data-q={e.num} data-title={e.titulo} id={`yq-q-${e.key}`}>
             <legend>
               <span class="yq-q-num">{e.num + 1} / 6 · {e.titulo}</span>
               <span class="yq-q-text">{ejes[e.key].pregunta}</span>
@@ -243,12 +248,20 @@ const clientData = {
 
       <div id="yq-result" aria-live="polite">
         <p class="yq-from">Partiendo de lo que más te preocupa: <strong id="yq-from-label"></strong></p>
+        <p id="yq-concern"></p>
+        <div id="yq-priority">
+          <p class="yq-axis">Por dónde empezar</p>
+          <p id="yq-priority-text"></p>
+        </div>
         <div id="yq-blocks"></div>
         <div id="yq-next">
           <h3>Tu siguiente paso</h3>
           <ul id="yq-next-list"></ul>
         </div>
-        <p class="yq-disclaimer">Esto es una lectura orientativa, no un diagnóstico.</p>
+        <p class="yq-disclaimer">
+          Esto es una lectura orientativa, no un diagnóstico. Si en algún momento esto te pesa más de lo que esperabas,{' '}
+          <a href={alertPath}>hay líneas de ayuda gratuitas</a>.
+        </p>
         <button id="yq-reset" type="button" class="yq-reset-link">Volver a empezar</button>
       </div>
     </div>
@@ -256,7 +269,7 @@ const clientData = {
 
   <section class="container static">
     <p class="eyebrow">Cómo funciona</p>
-    <h2>Seis preguntas, cuatro pasos</h2>
+    <h2>Seis preguntas, cinco pasos</h2>
     <ol class="howto">
       {pasos.map((p) => (
         <li><strong>{p.name}.</strong> {p.text}</li>
@@ -270,18 +283,46 @@ const clientData = {
 
   <section class="container static" id="que-mide-cada-eje">
     <h2>Qué mide cada eje y qué dice cada nivel</h2>
+    <details class="eje">
+      <summary>Para empezar: ¿qué te preocupa más?</summary>
+      <p class="eje-mide">No puntúa. Decide con qué frase abre tu resultado y si la lectura de ruido informativo aparece antes que la de exposición laboral.</p>
+      <ul class="niveles">
+        {preocupaciones.map((o) => (
+          <li>
+            <span class="nivel-tag">{o.label}</span>
+            <span class="nivel-texto">{o.texto}</span>
+          </li>
+        ))}
+      </ul>
+    </details>
+    <details class="eje">
+      <summary>Por dónde empezar: la prioridad de tu resultado</summary>
+      <p class="eje-mide">Se elige una sola, con este orden: primero ruido, después exposición, después margen para actuar. Es criterio editorial, no un cálculo.</p>
+      <ul class="niveles">
+        <li><span class="nivel-tag">Si tu ruido informativo es alto</span><span class="nivel-texto">{data.prioridad.ruido}</span></li>
+        <li><span class="nivel-tag">Si tu exposición laboral es alta</span><span class="nivel-texto">{data.prioridad.exposicion}</span></li>
+        <li><span class="nivel-tag">Si no sabes por dónde empezar o estás evitando decisiones</span><span class="nivel-texto">{data.prioridad.paso}</span></li>
+        <li><span class="nivel-tag">Si tienes margen y nada de lo anterior</span><span class="nivel-texto">{data.prioridad.margen}</span></li>
+        <li><span class="nivel-tag">Si eres retirado o jubilado y tu ruido no es alto</span><span class="nivel-texto">{data.prioridad.filtro}</span></li>
+      </ul>
+    </details>
     {ejeOrden.map((e) => (
       <details class="eje">
         <summary>{e.titulo}: {ejes[e.key].pregunta}</summary>
         <p class="eje-mide">{ejes[e.key].midePorQue}</p>
         <ul class="niveles">
           {ejes[e.key].opciones.map((o) => {
-            const frag = (ejes[e.key].fragmentos as Record<string, { texto: string; fuente?: string }>)[o.id];
+            const frag = (ejes[e.key].fragmentos as Record<string, { texto: string; fuente?: string; accion?: string }>)[o.id];
             return frag ? (
               <li>
                 <span class="nivel-tag">{'nivel' in o ? `${o.nivel} · ` : ''}{o.label}</span>
                 <span class="nivel-texto">
                   {frag.texto}
+                  {frag.accion && (
+                    <>
+                      {' '}<strong>Para esta semana:</strong> {frag.accion}
+                    </>
+                  )}
                   {frag.fuente && (
                     <>
                       {' '}<a href={fuentes[frag.fuente as 'oit'].url} rel="noopener" target="_blank" class="src-inline">[{fuentes[frag.fuente as 'oit'].etiqueta}]</a>
@@ -300,7 +341,7 @@ const clientData = {
       </details>
     ))}
     <p class="static-note">
-      Para profundizar en los dos primeros ejes tienes herramientas completas:{' '}
+      Para profundizar en la exposición laboral y en el ruido informativo tienes herramientas completas:{' '}
       <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Calculadora de Riesgo IA</a> (exposición laboral) y{' '}
       <a href="/detox-de-ia/">Detox de IA</a> (consumo de información y hábitos de uso).
     </p>
@@ -357,8 +398,8 @@ const clientData = {
         telefónicos vienen de las fuentes oficiales de cada línea y se verificaron el {formatDate(new Date(`${data.lineas.verificadoEl}T12:00:00-06:00`))}.
       </li>
       <li>
-        <strong>Ruido informativo, capacidad de acción, edad y situación laboral.</strong> Son criterios editoriales
-        de glitchMentalMX, no resultados de un estudio. Por eso están redactados como orientación y no como
+        <strong>Frase de encuadre, prioridad, ruido informativo, capacidad de acción, edad, situación laboral y acción
+        de la semana.</strong> Son criterios editoriales de glitchMentalMX, no resultados de un estudio. Por eso están redactados como orientación y no como
         predicción.
       </li>
     </ul>
@@ -375,6 +416,8 @@ const clientData = {
   var DATA = JSON.parse(document.getElementById('yq-data').textContent);
   var form = document.getElementById('yq-form');
 
+  // Orden de las preguntas: q0 preocupación, q1 situación laboral,
+  // q2 exposición, q3 ruido, q4 capacidad, q5 edad.
   var AXIS_TITLES = { exposicion: 'Exposición laboral', ruido: 'Ruido informativo', capacidad: 'Capacidad de acción' };
   var MODULE_LINKS = {
     exposicion: { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', label: 'Mide tu exposición en la Calculadora de Riesgo IA →' },
@@ -386,11 +429,25 @@ const clientData = {
     return el ? el.value : null;
   }
 
-  // La opción de alerta se ofrece la salida de inmediato, sin esperar al envío.
+  var expoQ = document.getElementById('yq-q-exposicion');
   var helpInline = document.getElementById('yq-help-inline');
-  form.addEventListener('change', function () {
-    helpInline.hidden = checkedValue('q3') !== 'alerta';
-  });
+
+  // Los retirados o jubilados no tienen "trabajo que hacer o buscar": la
+  // pregunta de exposición se omite y la numeración se recalcula.
+  function sync() {
+    var retirado = checkedValue('q1') === 'retirado';
+    expoQ.hidden = retirado;
+    if (retirado) {
+      expoQ.querySelectorAll('input').forEach(function (i) { i.checked = false; });
+      expoQ.classList.remove('missing');
+    }
+    var visibles = [].filter.call(form.querySelectorAll('.yq-q'), function (f) { return !f.hidden; });
+    visibles.forEach(function (f, i) {
+      f.querySelector('.yq-q-num').textContent = (i + 1) + ' / ' + visibles.length + ' · ' + f.getAttribute('data-title');
+    });
+    helpInline.hidden = checkedValue('q4') !== 'alerta';
+  }
+  form.addEventListener('change', sync);
 
   function buildBlock(axis, id) {
     var frag = DATA[axis][id];
@@ -432,11 +489,21 @@ const clientData = {
     return block;
   }
 
+  // Una sola prioridad, en este orden: ruido alto, exposición alta, falta de
+  // arranque o evitación, margen. Retirados: filtro, salvo ruido alto.
+  function pickPriority(laboral, exposicion, ruido, capacidad) {
+    if (ruido === 'alto') return DATA.prioridad.ruido;
+    if (laboral === 'retirado') return DATA.prioridad.filtro;
+    if (exposicion === 'alta') return DATA.prioridad.exposicion;
+    if (capacidad === 'media' || capacidad === 'baja') return DATA.prioridad.paso;
+    return DATA.prioridad.margen;
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     // Rama de alerta: sale del flujo sin exigir el resto de respuestas.
-    if (checkedValue('q3') === 'alerta') {
+    if (checkedValue('q4') === 'alerta') {
       window.location.assign(DATA.alertPath);
       return;
     }
@@ -444,10 +511,12 @@ const clientData = {
     var warning = document.getElementById('yq-warning');
     var vals = [];
     var firstMissing = null;
+    var retirado = checkedValue('q1') === 'retirado';
     for (var i = 0; i <= 5; i++) {
       var v = checkedValue('q' + i);
       var fs = form.querySelector('.yq-q[data-q="' + i + '"]');
-      if (v === null) {
+      var requerida = !(i === 2 && retirado);
+      if (v === null && requerida) {
         fs.classList.add('missing');
         if (!firstMissing) firstMissing = fs;
       } else {
@@ -456,7 +525,8 @@ const clientData = {
       vals.push(v);
     }
     if (firstMissing) {
-      warning.textContent = 'Responde las 6 preguntas para ver tu resultado.';
+      var total = retirado ? 5 : 6;
+      warning.textContent = 'Responde las ' + total + ' preguntas para ver tu resultado.';
       warning.style.display = 'block';
       firstMissing.scrollIntoView({ behavior: 'smooth', block: 'center' });
       return;
@@ -464,35 +534,52 @@ const clientData = {
     warning.style.display = 'none';
 
     var pre = DATA.preocupaciones.filter(function (p) { return p.id === vals[0]; })[0];
-    document.getElementById('yq-from-label').textContent = pre.label;
+    var laboral = vals[1], exposicion = vals[2], ruido = vals[3], capacidad = vals[4], edad = vals[5];
 
-    // La pregunta 0 no puntúa: solo decide qué módulo se muestra primero.
+    document.getElementById('yq-from-label').textContent = pre.label;
+    document.getElementById('yq-concern').textContent = pre.texto;
+    document.getElementById('yq-priority-text').textContent = pickPriority(laboral, exposicion, ruido, capacidad);
+
     var order = pre.modulo === 'detox' ? ['ruido', 'exposicion'] : ['exposicion', 'ruido'];
-    var picks = { exposicion: vals[1], ruido: vals[2] };
+    var picks = { exposicion: exposicion, ruido: ruido };
     var blocks = document.getElementById('yq-blocks');
     blocks.textContent = '';
-    order.forEach(function (axis) { blocks.appendChild(buildBlock(axis, picks[axis])); });
-    blocks.appendChild(buildBlock('capacidad', vals[3]));
+    order.forEach(function (axis) {
+      if (axis === 'exposicion' && retirado) return;
+      blocks.appendChild(buildBlock(axis, picks[axis]));
+    });
+    blocks.appendChild(buildBlock('capacidad', capacidad));
 
     var list = document.getElementById('yq-next-list');
     list.textContent = '';
-    [DATA.edad[vals[4]].texto, DATA.laboral[vals[5]].texto].forEach(function (t) {
+    function addItem(text, lead) {
       var li = document.createElement('li');
-      li.textContent = t;
+      if (lead) {
+        var b = document.createElement('strong');
+        b.textContent = lead + ' ';
+        li.appendChild(b);
+        li.className = 'yq-week';
+      }
+      li.appendChild(document.createTextNode(text));
       list.appendChild(li);
-    });
+    }
+    addItem(DATA.edad[edad].texto);
+    addItem(DATA.laboral[laboral].texto);
+    addItem(DATA.laboral[laboral].accion, 'Para esta semana:');
 
     var result = document.getElementById('yq-result');
     result.style.display = 'block';
     setTimeout(function () {
       var top = result.getBoundingClientRect().top + window.pageYOffset - 120;
       window.scrollTo({ top: top, behavior: 'smooth' });
+      result.setAttribute('tabindex', '-1');
+      result.focus({ preventScroll: true });
     }, 150);
   });
 
   document.getElementById('yq-reset').addEventListener('click', function () {
     form.reset();
-    helpInline.hidden = true;
+    sync();
     form.querySelectorAll('.yq-q.missing').forEach(function (f) { f.classList.remove('missing'); });
     document.getElementById('yq-result').style.display = 'none';
     form.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -502,6 +589,14 @@ const clientData = {
 <style>
   .intro { padding: 0 24px 32px; max-width: 680px; }
   .intro p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin: 0; }
+  .yq-q[hidden] { display: none; }
+  #yq-concern { font-size: 0.95em; line-height: 1.7; color: rgba(255, 255, 255, 0.85); margin: 0 0 20px; }
+  #yq-priority { background: rgba(0, 102, 255, 0.1); border-left: 2px solid var(--accent); border-radius: 0 8px 8px 0; padding: 14px 16px; margin: 0 0 22px; }
+  #yq-priority :global(.yq-axis) { margin-bottom: 6px; }
+  #yq-priority-text { margin: 0; font-size: 1em; font-weight: 600; line-height: 1.6; color: #fff; }
+  #yq-container :global(.yq-week) { margin-top: 14px; }
+  #yq-container :global(.yq-week strong) { color: #fff; }
+  .yq-disclaimer a { color: rgba(255, 255, 255, 0.65); text-decoration: underline; text-underline-offset: 3px; }
   .faq-link { color: var(--text); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 
   .disclaimer-box { padding: 0 24px 32px; max-width: 680px; }
@@ -587,24 +682,25 @@ const clientData = {
     display: none; animation: yqFadeIn 0.5s ease; background: rgba(0, 102, 255, 0.05);
     border-radius: 10px; margin-top: 26px; padding: 20px;
   }
+  #yq-result:focus { outline: none; }
   @keyframes yqFadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
   .yq-from { font-size: 0.82em; color: rgba(255, 255, 255, 0.55); margin: 0 0 18px; }
   .yq-from strong { color: #fff; }
-  .yq-block { padding: 0 0 18px; margin: 0 0 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
-  .yq-axis {
+  #yq-container :global(.yq-block) { padding: 0 0 18px; margin: 0 0 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  #yq-container :global(.yq-axis) {
     font-family: var(--font-mono); font-size: 0.68em; letter-spacing: 1.2px;
     text-transform: uppercase; color: var(--accent); margin: 0 0 8px;
   }
-  .yq-frag { font-size: 0.95em; line-height: 1.7; color: rgba(255, 255, 255, 0.88); margin: 0; }
-  .yq-src { font-size: 0.72em; color: rgba(255, 255, 255, 0.45); margin: 8px 0 0; font-family: var(--font-mono); }
-  .yq-src a { color: rgba(255, 255, 255, 0.7); text-decoration: underline; text-underline-offset: 3px; }
-  .yq-module {
+  #yq-container :global(.yq-frag) { font-size: 0.95em; line-height: 1.7; color: rgba(255, 255, 255, 0.88); margin: 0; }
+  #yq-container :global(.yq-src) { font-size: 0.72em; color: rgba(255, 255, 255, 0.45); margin: 8px 0 0; font-family: var(--font-mono); }
+  #yq-container :global(.yq-src a) { color: rgba(255, 255, 255, 0.7); text-decoration: underline; text-underline-offset: 3px; }
+  #yq-container :global(.yq-module) {
     display: inline-block; margin-top: 12px; font-size: 0.82em; font-weight: 600; color: #fff;
     text-decoration: underline; text-underline-offset: 3px;
   }
   #yq-next h3 { font-size: 1.05em; margin: 0 0 10px; color: #fff; }
   #yq-next ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px; }
-  #yq-next li { font-size: 0.93em; line-height: 1.65; color: rgba(255, 255, 255, 0.85); }
+  #yq-next :global(li) { font-size: 0.93em; line-height: 1.65; color: rgba(255, 255, 255, 0.85); }
   .yq-disclaimer { font-size: 0.75em; color: rgba(255, 255, 255, 0.4); margin: 20px 0 0; }
   .yq-reset-link {
     display: block; background: none; border: none; cursor: pointer;

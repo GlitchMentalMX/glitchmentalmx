@@ -1,8 +1,8 @@
 ---
-description: Revisión trimestral del orientador "¿Y ahora qué hago con la IA?" — verifica teléfonos de ayuda y fuentes OIT/OMS; diagnóstico primero, edita solo con aprobación explícita de Jorge
+description: Revisión trimestral del orientador "¿Te preocupa la IA?" — verifica teléfonos de ayuda y fuentes OIT/OMS; diagnóstico primero, edita solo con aprobación explícita de Jorge
 ---
 
-# Revisión "¿Y ahora qué hago con la IA?"
+# Revisión "¿Te preocupa la IA?"
 
 Páginas:
 - src/pages/herramientas/que-hacer-si-te-preocupa-la-ia/index.astro (orientador)
@@ -33,8 +33,13 @@ parte del sitio.
    si la conclusión citada (transformación > sustitución) se mantiene.
 4. **OMS.** Ficha "Mental health at work" (actualizada sept. 2026). Verificar
    que el marco citado siga vigente.
-5. **Fragmentos editoriales** (ruido, capacidad, edad, situación laboral):
-   siguen siendo honestos con el panorama laboral actual. Son criterio
+5. **Fragmentos editoriales** (frase de encuadre por preocupación, prioridad,
+   ruido, capacidad, edad, situación laboral y "para esta semana"; los 5
+   textos de prioridad y las 4 acciones están en el JSON):
+   siguen siendo honestos con el panorama laboral actual. Verificar también
+   que la lógica de prioridad (ruido > exposición > margen) y la omisión de la
+   pregunta de exposición para retirados sigan funcionando: probar en el
+   navegador un recorrido de retirado, uno de empleado y la rama de alerta. Son criterio
    editorial, no estudio — no los presentes como lo segundo.
 6. **Enlaces internos:** Calculadora de Riesgo y Detox siguen enlazando de
    regreso; la alerta NO debe enlazar al cuestionario ni ofrecer "repetir".
