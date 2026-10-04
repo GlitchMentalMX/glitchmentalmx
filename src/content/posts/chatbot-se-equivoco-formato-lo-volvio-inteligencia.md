@@ -1,7 +1,7 @@
 ---
 title: El chatbot se equivocó. El formato lo volvió inteligencia
 category: Inteligencia Artificial
-pubDate: 2026-10-03T20:04
+pubDate: 2026-10-03T20:05
 updatedDate: ''
 description: 'Un chatbot identificó mal la carga de un barco y un reporte estándar la volvió creíble. El problema no fue solo la alucinación: fue el formato.'
 heroImage: /images/uploads/chatbot-equivoco.webp
