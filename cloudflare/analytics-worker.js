@@ -19,6 +19,20 @@ const ALLOWED_ORIGINS = ['https://glitchmental.com', 'https://www.glitchmental.c
 const BOT_UA_RE =
   /bot|crawl|spider|slurp|headless|preview|facebookexternalhit|whatsapp|telegrambot|discordbot|pingdom|uptimerobot|monitor|lighthouse|pagespeed|ahrefs|semrush|mj12bot|petalbot/i;
 
+// Organizaciones de red (ASN) de hosting/nube/VPN comercial: un humano en
+// casa o en el celular no navega desde ahí, un scraper sí.
+const DATACENTER_ORG_RE =
+  /amazon|aws|google cloud|microsoft|azure|digitalocean|ovh|hetzner|linode|vultr|oracle|alibaba|tencent|huawei cloud|contabo|leaseweb|choopa|m247|datacamp|scaleway|upcloud|kamatera|hostinger|godaddy|namecheap|colocrossing|quadranet|zenlayer|psychz|equinix|serverius|stark industries|hosting|datacenter|data center/i;
+
+function isLikelyBot(request, ua, width) {
+  if (BOT_UA_RE.test(ua)) return true;
+  const cf = request.cf || {};
+  if (DATACENTER_ORG_RE.test(cf.asOrganization || '')) return true;
+  if (!request.headers.get('Accept-Language')) return true;
+  if (typeof width === 'number' && width === 0) return true;
+  return false;
+}
+
 const SEARCH_HOST_RE = /google\.|bing\.|yahoo\.|duckduckgo\.|baidu\.|yandex\./i;
 const SOCIAL_HOST_RE =
   /facebook\.|instagram\.|twitter\.|x\.com|t\.co|linkedin\.|tiktok\.|reddit\.|pinterest\.|threads\.net|bsky\.app|mastodon\.|whatsapp\.|wa\.me|telegram\.|discord\./i;
@@ -111,7 +125,7 @@ async function handleCollect(request, env, origin, matchedOrigin) {
     const ts = Math.floor(now.getTime() / 1000);
 
     const visitorHash = await hashVisitor(env.ANALYTICS_SALT || '', day, ip, ua);
-    const bot = BOT_UA_RE.test(ua) ? 1 : 0;
+    const bot = isLikelyBot(request, ua, data.width) ? 1 : 0;
 
     // Evento custom (ej. clic en el botón "Fuente preferida") en vez de
     // vista de página: mismo endpoint, payload distinto (trae `event`),
