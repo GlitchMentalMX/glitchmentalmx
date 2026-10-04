@@ -9,6 +9,7 @@ import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro'
 import VeredictoBadge from '../../components/VeredictoBadge.astro';
 import PruebaGratisBadge from '../../components/PruebaGratisBadge.astro';
 import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
+import EstudiantesBadge from '../../components/EstudiantesBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import { getCollection, render } from 'astro:content';
@@ -20,6 +21,7 @@ import {
   buildEntrenaIATitleTag,
   buildPruebaGratisTitleTag,
   buildCodigoDescuentoTitleTag,
+  buildEstudiantesTitleTag,
   addDaysISO,
 } from '../../lib/format';
 import { categorySlug } from '../../data/categories';
@@ -141,6 +143,7 @@ export async function getStaticPaths() {
   const entrenaIA = await getCollection('entrenaIA', ({ data }) => !data.draft);
   const pruebaGratis = await getCollection('pruebaGratis', ({ data }) => !data.draft);
   const codigosDescuento = await getCollection('codigosDescuento', ({ data }) => !data.draft);
+  const estudiantes = await getCollection('estudiantes', ({ data }) => !data.draft);
   const preciosDigitales = await getCollection('preciosDigitales', ({ data }) => !data.draft);
   return [
     ...posts.map((post) => ({ params: { slug: post.id }, props: { kind: 'posts' as const, post } })),
@@ -148,6 +151,7 @@ export async function getStaticPaths() {
     ...entrenaIA.map((post) => ({ params: { slug: post.id }, props: { kind: 'entrenaIA' as const, post } })),
     ...pruebaGratis.map((post) => ({ params: { slug: post.id }, props: { kind: 'pruebaGratis' as const, post } })),
     ...codigosDescuento.map((post) => ({ params: { slug: post.id }, props: { kind: 'codigosDescuento' as const, post } })),
+    ...estudiantes.map((post) => ({ params: { slug: post.id }, props: { kind: 'estudiantes' as const, post } })),
     ...preciosDigitales.map((post) => ({ params: { slug: post.id }, props: { kind: 'preciosDigitales' as const, post } })),
   ];
 }
@@ -301,7 +305,9 @@ const articleSchema =
                 ? 'Prueba gratis sin tarjeta'
                 : kind === 'codigosDescuento'
                   ? 'Códigos de descuento'
-                  : 'Precios Digitales',
+                  : kind === 'estudiantes'
+                    ? 'Descuentos para estudiantes'
+                    : 'Precios Digitales',
       };
 
 // ---------------------------------------------------------------------------
@@ -311,15 +317,15 @@ const articleSchema =
 // /articulos/cuanto-cuesta-[herramienta]-hoy/ que pide el brief.
 // ---------------------------------------------------------------------------
 const herramienta =
-  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'estudiantes' || kind === 'preciosDigitales'
     ? (post.data as any).herramienta
     : undefined;
 const herramientaId =
-  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'estudiantes' || kind === 'preciosDigitales'
     ? (post.data as any).herramientaId
     : undefined;
 const sitioOficial =
-  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales'
+  kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'estudiantes' || kind === 'preciosDigitales'
     ? (post.data as any).sitioOficial
     : undefined;
 const precio =
@@ -354,9 +360,11 @@ const metaTitle =
         ? buildPruebaGratisTitleTag(herramienta)
         : kind === 'codigosDescuento'
           ? buildCodigoDescuentoTitleTag(herramienta)
-          : kind === 'posts' && (postTitleOverrides as Record<string, string>)[post.id]
-            ? (postTitleOverrides as Record<string, string>)[post.id]
-            : title;
+          : kind === 'estudiantes'
+            ? buildEstudiantesTitleTag(herramienta)
+            : kind === 'posts' && (postTitleOverrides as Record<string, string>)[post.id]
+              ? (postTitleOverrides as Record<string, string>)[post.id]
+              : title;
 
 // ---------------------------------------------------------------------------
 // Rama "entrenaIA" (serie "¿[App] usa mis datos para entrenar su IA?") —
@@ -364,7 +372,7 @@ const metaTitle =
 // veredicto (badge de color) viene directo del frontmatter, no de un JSON
 // externo: a diferencia del precio, no cambia a diario, así que no hace
 // falta la capa de indirección que sí necesita Banxico.
-const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).veredicto : undefined;
+const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'estudiantes' ? (post.data as any).veredicto : undefined;
 // fraseCorta ya existe en el frontmatter de estas 3 colecciones y ya se
 // mostraba en las páginas de listado (PruebaGratisRow.astro, etc.), pero
 // nunca en el artículo individual — justo donde aterriza alguien que llega
@@ -374,7 +382,21 @@ const veredicto = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'c
 // mezclan "el plan gratuito no pide tarjeta" con "el plan de pago no tiene
 // prueba" en el mismo párrafo, lo cual lee como ambiguo si no se aclara de
 // entrada cuál de las dos preguntas se está respondiendo.
-const fraseCorta = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' ? (post.data as any).fraseCorta : undefined;
+const fraseCorta = kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'estudiantes' ? (post.data as any).fraseCorta : undefined;
+
+// Vigencia de la oferta (solo serie estudiantes). `vigenteHasta` existe solo
+// cuando hay un plazo firme verificado — se muestra bajo la respuesta corta y,
+// como el sitio se reconstruye con cada commit, una oferta cuyo plazo ya pasó
+// se marca sola como vencida sin esperar a la siguiente revisión mensual. Se
+// compara contra el FIN del día límite (la fecha viene como medianoche UTC) y
+// se muestra con +12h para que ninguna zona horaria del build corra el día.
+const vigenteHasta = kind === 'estudiantes' ? ((post.data as any).vigenteHasta as Date | undefined) : undefined;
+const ofertaVencida = vigenteHasta ? vigenteHasta.getTime() + 24 * 3600 * 1000 < Date.now() : false;
+const vigenciaTexto = vigenteHasta
+  ? ofertaVencida
+    ? `Esta oferta venció el ${formatDate(new Date(vigenteHasta.getTime() + 12 * 3600 * 1000))}. La estamos reverificando.`
+    : `Oferta vigente hasta el ${formatDate(new Date(vigenteHasta.getTime() + 12 * 3600 * 1000))}.`
+  : undefined;
 
 // Product solo para las series de precio, y solo con Offer: Google Search
 // Console marca como error crítico un Product sin "offers", "review" ni
@@ -467,6 +489,27 @@ const otrosPreciosDigitales =
       ).slice(0, 3)
     : [];
 
+const otrosEstudiantes =
+  kind === 'estudiantes'
+    ? seededShuffle(
+        (await getCollection('estudiantes', ({ data }) => !data.draft)).filter((p) => p.id !== post.id),
+        post.id,
+      ).slice(0, 3)
+    : [];
+
+// Enlace automático ficha → página de estudiantes de la MISMA herramienta
+// (por herramientaId). Las fichas de las otras series se escriben a mano en
+// markdown y nunca iban a enterarse de que esta serie existe; así, cualquier
+// herramienta que gane una página de estudiantes queda enlazada desde sus 4
+// fichas hermanas sin tocar un solo .md — y un enlace interno desde páginas
+// ya indexadas es justo lo que una serie nueva necesita para que Google la
+// descubra rápido.
+const kindsConFichaHermana = ['preciosIA', 'entrenaIA', 'pruebaGratis', 'codigosDescuento', 'preciosDigitales'];
+const estudiantesDeHerramienta =
+  kindsConFichaHermana.includes(kind) && herramientaId
+    ? (await getCollection('estudiantes', ({ data }) => !data.draft)).find((p) => p.data.herramientaId === herramientaId)
+    : undefined;
+
 // Enlaces automáticos artículo → familia "IA sin letra chiquita": cuando el
 // título de un artículo editorial nombra una herramienta que también tiene
 // ficha en precios-ia/codigos-descuento/prueba-gratis/entrena-ia, se enlazan
@@ -482,16 +525,17 @@ function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-type ToolEntry = { precio?: string; codigo?: string; prueba?: string; entrena?: string };
+type ToolEntry = { precio?: string; codigo?: string; prueba?: string; entrena?: string; estudiantes?: string };
 
 const relatedToolLinks: { herramienta: string; variants: { label: string; href: string }[] }[] = [];
 
 if (kind === 'posts') {
-  const [preciosIAAll, entrenaIAAll, pruebaGratisAll, codigosDescuentoAll] = await Promise.all([
+  const [preciosIAAll, entrenaIAAll, pruebaGratisAll, codigosDescuentoAll, estudiantesAll] = await Promise.all([
     getCollection('preciosIA', ({ data }) => !data.draft),
     getCollection('entrenaIA', ({ data }) => !data.draft),
     getCollection('pruebaGratis', ({ data }) => !data.draft),
     getCollection('codigosDescuento', ({ data }) => !data.draft),
+    getCollection('estudiantes', ({ data }) => !data.draft),
   ]);
 
   const byHerramienta = new Map<string, ToolEntry>();
@@ -499,6 +543,7 @@ if (kind === 'posts') {
   for (const p of codigosDescuentoAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), codigo: p.id });
   for (const p of pruebaGratisAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), prueba: p.id });
   for (const p of entrenaIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), entrena: p.id });
+  for (const p of estudiantesAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), estudiantes: p.id });
 
   const normTitle = normalizeText(title);
   const matches: { herramienta: string; entry: ToolEntry }[] = [];
@@ -516,6 +561,7 @@ if (kind === 'posts') {
       entry.codigo && { label: '¿Tiene código de descuento real?', href: `/articulos/${entry.codigo}/` },
       entry.prueba && { label: '¿Tiene prueba gratis sin pedir tarjeta?', href: `/articulos/${entry.prueba}/` },
       entry.entrena && { label: '¿Usa tus datos para entrenar su IA?', href: `/articulos/${entry.entrena}/` },
+      entry.estudiantes && { label: '¿Tiene descuento para estudiantes en México?', href: `/articulos/${entry.estudiantes}/` },
     ].filter((v): v is { label: string; href: string } => Boolean(v));
     if (variants.length > 0) relatedToolLinks.push({ herramienta, variants });
   }
@@ -528,7 +574,7 @@ if (kind === 'posts') {
 // de la herramienta como palabra completa en el título del artículo);
 // solo aparece si hay coincidencia real, nunca se rellena. Tope de 3,
 // los más recientes primero.
-const toolKinds = ['preciosIA', 'entrenaIA', 'pruebaGratis', 'codigosDescuento', 'preciosDigitales'];
+const toolKinds = ['preciosIA', 'entrenaIA', 'pruebaGratis', 'codigosDescuento', 'estudiantes', 'preciosDigitales'];
 const articulosSobreHerramienta: { id: string; title: string }[] = [];
 if (toolKinds.includes(kind) && herramienta) {
   const re = new RegExp(`(?<![a-z0-9])${escapeRegex(normalizeText(herramienta))}(?![a-z0-9])`);
@@ -571,6 +617,11 @@ if (toolKinds.includes(kind) && herramienta) {
       { name: 'Códigos de descuento', url: '/codigos-descuento-ia/' },
       { name: title },
     ]} />
+  ) : kind === 'estudiantes' ? (
+    <Breadcrumbs items={[
+      { name: 'Descuentos para estudiantes', url: '/descuentos-para-estudiantes-ia/' },
+      { name: title },
+    ]} />
   ) : (
     <Breadcrumbs items={[
       { name: 'Precios Digitales', url: '/precios-digitales/' },
@@ -590,6 +641,8 @@ if (toolKinds.includes(kind) && herramienta) {
         <span class="tag category-tag">Prueba gratis sin tarjeta</span>
       ) : kind === 'codigosDescuento' ? (
         <span class="tag category-tag">Códigos de descuento</span>
+      ) : kind === 'estudiantes' ? (
+        <span class="tag category-tag">Descuentos para estudiantes</span>
       ) : (
         <a href="/precios-digitales/" class="tag category-tag">Precios Digitales</a>
       )}
@@ -607,7 +660,11 @@ if (toolKinds.includes(kind) && herramienta) {
       {kind === 'codigosDescuento' && veredicto && (
         <div class="veredicto-top"><CodigoDescuentoBadge veredicto={veredicto} size="lg" /></div>
       )}
+      {kind === 'estudiantes' && veredicto && (
+        <div class="veredicto-top"><EstudiantesBadge veredicto={veredicto} size="lg" /></div>
+      )}
       {fraseCorta && <p class="frase-corta">{fraseCorta}</p>}
+      {vigenciaTexto && <p class={`vigencia${ofertaVencida ? ' vigencia-vencida' : ''}`}>{vigenciaTexto}</p>}
     </header>
 
     {/* Las 5 colecciones "IA sin letra chiquita"/Precios Digitales tienen
@@ -655,6 +712,12 @@ if (toolKinds.includes(kind) && herramienta) {
           </>
         )}
         <Content />
+        {estudiantesDeHerramienta && (
+          <p class="estudiantes-enlace">
+            ¿{herramienta} tiene descuento o plan gratis para estudiantes?{' '}
+            <a href={`/articulos/${estudiantesDeHerramienta.id}/`}>Revisa si aplica en México →</a>
+          </p>
+        )}
       </div>
       {kind === 'posts' && parentCollection && (
         <SeriesCallout
@@ -731,7 +794,7 @@ if (toolKinds.includes(kind) && herramienta) {
     </section>
   )}
 
-  {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'preciosDigitales') && <ToolsWidget />}
+  {(kind === 'preciosIA' || kind === 'entrenaIA' || kind === 'pruebaGratis' || kind === 'codigosDescuento' || kind === 'estudiantes' || kind === 'preciosDigitales') && <ToolsWidget />}
 
   {kind === 'posts' && relatedFinal.length > 0 && (
     <section class="related container">
@@ -828,6 +891,25 @@ if (toolKinds.includes(kind) && herramienta) {
     </section>
   )}
 
+  {kind === 'estudiantes' && otrosEstudiantes.length > 0 && (
+    <section class="related container">
+      <h2>Más descuentos para estudiantes</h2>
+      <div class="grid">
+        {otrosEstudiantes.map((p) => (
+          <ArticleCard
+            slug={p.id}
+            title={p.data.title}
+            description={p.data.description}
+            pubDate={p.data.pubDate}
+            heroImage={p.data.heroImage ?? ''}
+            heroImageAlt={p.data.heroImageAlt ?? ''}
+            body={p.body}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
   {kind === 'preciosDigitales' && otrosPreciosDigitales.length > 0 && (
     <section class="related container">
       <h2>Más precios digitales</h2>
@@ -857,6 +939,16 @@ if (toolKinds.includes(kind) && herramienta) {
     margin-top: 14px;
     max-width: 60ch;
   }
+  .vigencia {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+  }
+  .vigencia-vencida { color: var(--warn-line); }
+  :global(.prose .estudiantes-enlace) { margin-top: 28px; }
+  :global(.prose .estudiantes-enlace a) { font-weight: 500; color: var(--accent); text-decoration: none; }
+  :global(.prose .estudiantes-enlace a:hover) { text-decoration: underline; }
   .post-header {
     max-width: 760px;
     padding: 48px 24px 32px;

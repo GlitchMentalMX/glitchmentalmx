@@ -19,6 +19,7 @@ const preciosIAPosts = await getCollection('preciosIA', ({ data }) => !data.draf
 const entrenaIAPosts = await getCollection('entrenaIA', ({ data }) => !data.draft);
 const pruebaGratisPosts = await getCollection('pruebaGratis', ({ data }) => !data.draft);
 const codigosDescuentoPosts = await getCollection('codigosDescuento', ({ data }) => !data.draft);
+const estudiantesPosts = await getCollection('estudiantes', ({ data }) => !data.draft);
 const preciosDigitalesPosts = await getCollection('preciosDigitales', ({ data }) => !data.draft);
 const preciosCount = preciosIAPosts.length;
 const entrenaCount = entrenaIAPosts.length;
@@ -110,7 +111,7 @@ const panelRows: PanelRow[] = [
   {
     href: '/ia-sin-letra-chiquita/',
     title: 'IA sin letra chiquita',
-    desc: 'Precios reales actualizados, privacidad, quién entrena su IA con tus datos y si su código de descuento es real.',
+    desc: 'Precios reales actualizados, privacidad, quién entrena su IA con tus datos, si su código de descuento es real y qué ofertas para estudiantes aplican en México.',
     stat: 'Ver comparación',
     icon: 'shield',
     featured: {
@@ -119,6 +120,7 @@ const panelRows: PanelRow[] = [
         { label: 'Privacidad', href: '/quien-entrena-con-tus-datos/' },
         { label: 'Pruebas gratis', href: '/prueba-gratis-sin-tarjeta/' },
         { label: 'Descuentos', href: '/codigos-descuento-ia/' },
+        { label: 'Estudiantes', href: '/descuentos-para-estudiantes-ia/' },
       ],
     },
   },
@@ -160,7 +162,7 @@ function truncate(text: string, max = 90): string {
 // vivo. Se capan a 40/20 (recientes primero) para no inflar el HTML del
 // home con cientos de items que además se actualizan solo cuando se publica
 // contenido nuevo.
-const iaSinLetraChiquitaPool = [...preciosIAPosts, ...entrenaIAPosts, ...pruebaGratisPosts, ...codigosDescuentoPosts]
+const iaSinLetraChiquitaPool = [...preciosIAPosts, ...entrenaIAPosts, ...pruebaGratisPosts, ...codigosDescuentoPosts, ...estudiantesPosts]
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 40);
 const preciosDigitalesPool = [...preciosDigitalesPosts]

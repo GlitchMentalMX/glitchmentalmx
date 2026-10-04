@@ -276,6 +276,38 @@ const codigosDescuento = defineCollection({
   }),
 });
 
+// Quinta serie hermana de "IA sin letra chiquita", mismo criterio de
+// separación que las demás: contenido utilitario/referencial (si una
+// herramienta tiene plan gratis o descuento para estudiantes — y si APLICA EN
+// MÉXICO, que es el ángulo propio de la serie), no debe mezclarse con
+// `category` de posts ni aparecer en RSS/archivo/home. Comparte la ruta
+// /articulos/[slug].astro con las demás (unión en getStaticPaths).
+// `veredicto`: verde = oferta vigente que aplica a estudiantes en México;
+// amarillo = existe pero algo la limita (instituciones específicas, cupo,
+// tarjeta, vence pronto, la empresa no confirma México); rojo = no hay oferta
+// que aplique en México. `vigenteHasta` (opcional) solo cuando hay un plazo
+// firme verificado — permite detectar ofertas vencidas sin leer el cuerpo.
+const estudiantes = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/estudiantes' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    herramienta: z.string(),
+    herramientaId: z.string(),
+    empresa: z.string(),
+    sitioOficial: z.string().url(),
+    veredicto: z.enum(['rojo', 'verde', 'amarillo']),
+    fraseCorta: z.string(),
+    fuenteVerificacion: z.string(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    vigenteHasta: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+    heroImage: z.string().optional(),
+    heroImageAlt: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
 // Taxonomía de capacidades para "¿Qué IA me conviene?" — insumo del motor de
 // scoring del recomendador. Un solo JSON (mismo patrón que indice/actual.json)
 // en vez de un archivo por herramienta: para el puñado de campos que mide,
@@ -362,6 +394,7 @@ export const collections = {
   entrenaIA,
   pruebaGratis,
   codigosDescuento,
+  estudiantes,
   preciosDigitales,
   herramientasIA,
   novelaChapters,

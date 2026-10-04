@@ -63,6 +63,14 @@ export function buildCodigoDescuentoTitleTag(herramienta: string): string {
   return `¿${herramienta}: código de descuento real?`;
 }
 
+// Quinta serie ("Descuentos para estudiantes"): la pregunta real del lector
+// no es solo si existe la oferta sino si APLICA EN MÉXICO — por eso va en el
+// <title>. Mismo ancho que las otras tres plantillas cortas (<=45 caracteres
+// con el nombre más largo del catálogo), sin rama compacta.
+export function buildEstudiantesTitleTag(herramienta: string): string {
+  return `${herramienta} para estudiantes: ¿aplica en México?`;
+}
+
 // Recorta un texto a `max` caracteres en el último espacio antes del corte
 // (nunca a mitad de palabra) y agrega "…" — para <title>/meta description
 // de piezas sin título editorial propio (Dato Incómodo, Insights Visuales),

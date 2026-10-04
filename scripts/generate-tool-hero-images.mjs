@@ -42,6 +42,9 @@ function buildPruebaGratisTitleTag(herramienta) {
 function buildCodigoDescuentoTitleTag(herramienta) {
   return `¿${herramienta}: código de descuento real?`;
 }
+function buildEstudiantesTitleTag(herramienta) {
+  return `${herramienta} para estudiantes: ¿aplica en México?`;
+}
 
 // `label` es el texto en mayúsculas que se dibuja en la tarjeta (estilo
 // eyebrow); `displayLabel` es la forma con mayúsculas/minúsculas correctas
@@ -54,6 +57,7 @@ const COLLECTIONS = [
   { dir: 'entrena-ia', label: 'PRIVACIDAD DE IA', displayLabel: 'Privacidad de IA', accent: '#ff5c5c', tagline: buildEntrenaIATitleTag },
   { dir: 'prueba-gratis', label: 'PRUEBA GRATIS', displayLabel: 'Prueba gratis sin tarjeta', accent: '#2ecc8f', tagline: buildPruebaGratisTitleTag },
   { dir: 'codigos-descuento', label: 'CÓDIGOS DE DESCUENTO', displayLabel: 'Códigos de descuento', accent: '#f5a623', tagline: buildCodigoDescuentoTitleTag },
+  { dir: 'estudiantes', label: 'DESCUENTOS PARA ESTUDIANTES', displayLabel: 'Descuentos para estudiantes', accent: '#14b8a6', tagline: buildEstudiantesTitleTag },
   { dir: 'precios-digitales', label: 'PRECIOS DIGITALES', displayLabel: 'Precios Digitales', accent: '#a855f7', tagline: buildPrecioIATitleTag },
 ];
 

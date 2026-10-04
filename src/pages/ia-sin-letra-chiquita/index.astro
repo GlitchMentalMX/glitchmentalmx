@@ -7,16 +7,18 @@ const preciosPosts = await getCollection('preciosIA', ({ data }) => !data.draft)
 const entrenaPosts = await getCollection('entrenaIA', ({ data }) => !data.draft);
 const pruebaGratisPosts = await getCollection('pruebaGratis', ({ data }) => !data.draft);
 const codigosDescuentoPosts = await getCollection('codigosDescuento', ({ data }) => !data.draft);
+const estudiantesPosts = await getCollection('estudiantes', ({ data }) => !data.draft);
 const preciosCount = preciosPosts.length;
 const entrenaCount = entrenaPosts.length;
 const pruebaGratisCount = pruebaGratisPosts.length;
 const codigosDescuentoCount = codigosDescuentoPosts.length;
+const estudiantesCount = estudiantesPosts.length;
 const preciosDigitalesCount = (await getCollection('preciosDigitales', ({ data }) => !data.draft)).length;
 
-// Fecha más reciente entre las 4 series hermanas — mismo criterio que cada
+// Fecha más reciente entre las 5 series hermanas — mismo criterio que cada
 // una usa para su propio modifiedTime, para que el hub también mande una
 // señal de frescura real a Google en vez de quedarse sin ninguna.
-const modifiedTime = [...preciosPosts, ...entrenaPosts, ...pruebaGratisPosts, ...codigosDescuentoPosts].reduce(
+const modifiedTime = [...preciosPosts, ...entrenaPosts, ...pruebaGratisPosts, ...codigosDescuentoPosts, ...estudiantesPosts].reduce(
   (max, p) => {
     const fecha = p.data.updatedDate ?? p.data.pubDate;
     return !max || fecha > max ? fecha : max;
@@ -49,12 +51,18 @@ const cards = [
     title: 'Códigos de descuento',
     dek: 'Si el código de descuento que circula para cada herramienta es real o falso — y cuáles son los canales legítimos de descuento cuando sí existen.',
   },
+  {
+    href: '/descuentos-para-estudiantes-ia/',
+    eyebrow: `${estudiantesCount} herramientas`,
+    title: 'Descuentos para estudiantes',
+    dek: 'Qué herramientas tienen plan gratis o descuento para estudiantes y cuáles de esas ofertas aplican de verdad en México — verificado en la fuente oficial.',
+  },
 ];
 ---
 
 <Layout
   title="IA sin letra chiquita"
-  description="Lo que las herramientas de IA no ponen en el primer párrafo: cuánto cuestan de verdad en México, si entrenan su IA con tus datos y si piden tarjeta para probarlas."
+  description="Lo que las herramientas de IA no ponen en el primer párrafo: cuánto cuestan de verdad en México, si entrenan su IA con tus datos, si piden tarjeta para probarlas y qué descuentos para estudiantes aplican."
   modifiedTime={modifiedTime}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
@@ -62,7 +70,7 @@ const cards = [
   <section class="container header">
     <p class="eyebrow">IA sin letra chiquita</p>
     <h1>Lo que la letra chiquita <span class="accent">no te dice</span></h1>
-    <p class="sub">Cuatro series de referencia, verificadas una por una: cuánto cuesta cada herramienta, qué hace con tus datos, si te pide tarjeta para probarla y si su código de descuento es real.</p>
+    <p class="sub">Cinco series de referencia, verificadas una por una: cuánto cuesta cada herramienta, qué hace con tus datos, si te pide tarjeta para probarla, si su código de descuento es real y si tiene oferta para estudiantes que aplique en México.</p>
   </section>
 
   <section class="container grid">
@@ -102,7 +110,7 @@ const cards = [
   .grid {
     padding: 0 24px 72px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
   }
   .group-section .grid { padding: 0 0 72px; }
