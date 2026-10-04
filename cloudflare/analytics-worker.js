@@ -19,15 +19,11 @@ const ALLOWED_ORIGINS = ['https://glitchmental.com', 'https://www.glitchmental.c
 const BOT_UA_RE =
   /bot|crawl|spider|slurp|headless|preview|facebookexternalhit|whatsapp|telegrambot|discordbot|pingdom|uptimerobot|monitor|lighthouse|pagespeed|ahrefs|semrush|mj12bot|petalbot/i;
 
-// Organizaciones de red (ASN) de hosting/nube/VPN comercial: un humano en
-// casa o en el celular no navega desde ahí, un scraper sí.
-const DATACENTER_ORG_RE =
-  /amazon|aws|google cloud|microsoft|azure|digitalocean|ovh|hetzner|linode|vultr|oracle|alibaba|tencent|huawei cloud|contabo|leaseweb|choopa|m247|datacamp|scaleway|upcloud|kamatera|hostinger|godaddy|namecheap|colocrossing|quadranet|zenlayer|psychz|equinix|serverius|stark industries|hosting|datacenter|data center/i;
-
+// Solo señales que un navegador real casi nunca incumple. A propósito NO se
+// filtra por país, ASN/hosting ni VPN: VPNs, redes de universidades y
+// empresas dan orígenes raros en visitas humanas válidas.
 function isLikelyBot(request, ua, width) {
   if (BOT_UA_RE.test(ua)) return true;
-  const cf = request.cf || {};
-  if (DATACENTER_ORG_RE.test(cf.asOrganization || '')) return true;
   if (!request.headers.get('Accept-Language')) return true;
   if (typeof width === 'number' && width === 0) return true;
   return false;
