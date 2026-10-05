@@ -5,13 +5,14 @@ herramienta: "Amazon Prime"
 herramientaId: "amazon-prime"
 sitioOficial: "https://www.amazon.com/amazonprime"
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/precios-ia/amazon-prime.png
 heroImageAlt: Amazon Prime — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Amazon vende Prime en Estados Unidos a $14.99 USD al mes, o $139 USD al año si pagas de una sola vez — el propio sitio corporativo de Amazon lo confirma así: "cualquiera puede unirse a Prime por $14.99 USD al mes o $139 USD al año si paga anualmente". Pagar el año completo de entrada te ahorra cerca de $41 USD frente a doce pagos mensuales, casi un mes gratis. Pero ese no es el único precio que existe: Amazon reserva dos membresías con el mismo beneficio a mitad de costo — Prime para adultos jóvenes (18 a 24 años o estudiantes verificados) baja a $7.49 USD al mes o $69 USD al año después de un periodo de prueba de seis meses en $0, y Prime Access, para quien recibe algún programa de asistencia gubernamental (SNAP, Medicaid, WIC, SSI, entre otros trece) o verifica ingresos bajos, cuesta $6.99 USD al mes. Si calificas para cualquiera de las dos, el precio "oficial" de $14.99 USD nunca te aplica. Si compras desde México, la calculadora de arriba usa el FIX de Banxico, el tipo de cambio de referencia oficial — no necesariamente el que tu banco aplique en el estado de cuenta, que casi siempre trae encima una comisión por transacción internacional.
+Amazon vende Prime en Estados Unidos a $14.99 USD al mes, o $139 USD al año si pagas de una sola vez — el propio sitio corporativo de Amazon lo confirma así: "cualquiera puede unirse a Prime por $14.99 USD al mes o $139 USD al año si paga anualmente". Pagar el año completo de entrada te ahorra cerca de $41 USD frente a doce pagos mensuales, casi un mes gratis. Pero ese no es el único precio que existe: Amazon reserva dos membresías con el mismo beneficio a mitad de costo — Prime para adultos jóvenes (18 a 24 años o estudiantes verificados) baja a $7.49 USD al mes o $69 USD al año después de un periodo de prueba de seis meses en $0, y Prime Access, para quien recibe algún programa de asistencia gubernamental (SNAP, Medicaid, WIC, SSI, entre otros trece) o verifica ingresos bajos, cuesta $6.99 USD al mes. Si calificas para cualquiera de las dos, el precio "oficial" de $14.99 USD nunca te aplica. Si compras desde México, la calculadora de arriba usa el FIX de Banxico, el tipo de cambio de referencia oficial — no necesariamente el que tu banco aplique en el estado de cuenta, que casi siempre trae encima una comisión por transacción internacional. Amazon anuncia además, en su página principal de Prime, una prueba gratis de 30 días (revisado el 04/10/2026); confirma en la pantalla de registro si tu cuenta es elegible.
 
 ## Qué incluye la membresía
 

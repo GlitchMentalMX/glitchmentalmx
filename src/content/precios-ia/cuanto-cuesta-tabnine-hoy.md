@@ -5,17 +5,18 @@ herramienta: "Tabnine"
 herramientaId: "tabnine"
 sitioOficial: "https://www.tabnine.com/pricing"
 pubDate: 2026-08-22
+updatedDate: 2026-10-04
 heroImage: /images/precios-ia/tabnine.png
 heroImageAlt: Tabnine — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Este es un caso especial en la serie: Tabnine ya no tiene plan gratuito ni un plan barato para un solo desarrollador — el plan gratuito Basic se retiró el 2 de abril de 2025, y el antiguo plan económico para individuos también fue descontinuado. Hoy Tabnine se vende como Code Assistant Platform, a $39 USD por usuario al mes, y solo con compromiso de facturación anual — no existe la opción de pagar mes a mes. Si recuerdas a Tabnine como una herramienta barata o gratuita de hace un par de años, ese modelo de negocio ya no existe.
+Aquí el cambio ya no es de precio: es de dueño. El 30 de julio de 2026 Tricentis, empresa de pruebas de software, anunció la compra de Tabnine para integrar su motor de contexto empresarial en su propia plataforma. Al revisar el 04/10/2026, tabnine.com/pricing ya no muestra planes: redirige (301) a la página de contacto de Tricentis, y el resto de tabnine.com también redirige al sitio de Tricentis. Es decir, hoy no existe una página oficial de precios que podamos verificar. La última cifra pública que confirmamos, el 31/08/2026, era $39 USD por usuario al mes para Code Assistant Platform ($59 USD para Agentic Platform), solo con facturación anual; esa cifra ya no se puede comprobar en una fuente oficial vigente, así que tómala como referencia, no como precio. Tampoco hay plan gratuito (el Basic se retiró el 2 de abril de 2025) ni plan barato para un solo desarrollador.
 
 ## Qué incluye el plan pagado
 
-La plataforma actual está posicionada para equipos y empresas más que para uso individual casual, aunque se factura por asiento. Incluye autocompletado de código con IA, y las funciones específicas del nivel de plataforma que Tabnine ha ido consolidando conforme se reposicionó como herramienta empresarial en los últimos dos años.
+El comunicado oficial de Tricentis describe a Tabnine como una plataforma de IA para programar pensada para empresas, con despliegue en la nube privada, en servidores propios o totalmente aislado de internet, y no menciona planes de autoservicio, precios por usuario ni qué pasará con el producto actual. En la práctica, hoy Tabnine se contrata hablando con ventas, no con una tarjeta. Si quieres saber qué incluye exactamente y cuánto cuesta, el único camino que existe es pedir cotización a través de Tricentis.
 
 ## De herramienta gratuita a plataforma empresarial: el cambio más brusco de toda esta lista
 

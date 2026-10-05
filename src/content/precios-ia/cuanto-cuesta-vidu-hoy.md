@@ -5,13 +5,14 @@ herramienta: "Vidu"
 herramientaId: "vidu"
 sitioOficial: "https://www.vidu.com/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/precios-ia/vidu.png
 heroImageAlt: Vidu — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-El plan Estándar de Vidu cuesta $10 USD al mes facturado mensual, o $8 USD al mes si pagas el año completo por adelantado ($96 USD al año). Arriba están Premium, a $35 USD al mes ($28 en anual), y Definitivo, a $99 USD al mes ($79 en anual), cada uno con más créditos y generación por lotes más rápida. El plan gratuito da 10 referencias de personaje al mes y generación limitada, con la particularidad de que Vidu ofrece un modo de horas de menor actividad con generación gratuita en cualquier plan, algo que no es común entre sus competidores directos.
+El plan Estándar de Vidu cuesta $10 USD al mes facturado mensual, o $8 USD al mes si pagas el año completo por adelantado ($96 USD al año). Arriba están Premium, a $35 USD al mes ($28 en anual), y Definitivo, a $99 USD al mes ($79 en anual), cada uno con más créditos y generación por lotes más rápida. El plan gratuito da 10 referencias de personaje al mes y generación limitada, con la particularidad de que Vidu ofrece un modo de horas de menor actividad con generación gratuita en cualquier plan, algo que no es común entre sus competidores directos. Ojo con la fecha: la propia página de precios de Vidu avisa que los planes se actualizarán el 6 de octubre (el detalle está en sus «Platform Messages»), así que las cifras de arriba son las vigentes al 04/10/2026 y pueden moverse días después.
 
 ## Qué incluye el plan pagado
 

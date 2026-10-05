@@ -5,21 +5,22 @@ herramienta: "InVideo AI"
 herramientaId: "invideo-ai"
 sitioOficial: "https://invideo.io/pricing"
 pubDate: 2026-08-22
+updatedDate: 2026-10-04
 heroImage: /images/precios-ia/invideo-ai.png
 heroImageAlt: InVideo AI — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-InVideo Plus cuesta $17 USD al mes pagado mensual, o $16.67 USD al mes con pago anual ($200 al año) — el descuento anual más pequeño de toda esta lista, apenas 2%, así que aquí pagar mes a mes casi no te cuesta más que comprometerte a un año. Eso cambia el cálculo habitual de esta serie: en la mayoría de las herramientas conviene el plan anual si vas a usarlo varios meses, pero en InVideo AI la diferencia es tan chica que casi no importa cuál elijas.
+InVideo AI reordenó sus planes y el plan Plus, de $17 USD al mes, ya no aparece en la página oficial. Hoy la escalera es Basic, Pro y Ultra, y se cobra por asiento. Basic cuesta $9 USD al mes por asiento y, lo raro, cuesta lo mismo pagado mensual que anual: la propia página dice que no hay diferencia contra el plan mensual. Pro cuesta $30 USD al mes por asiento pagado mensual, o $18 USD al mes con pago anual (el sitio presume un ahorro de $144 al año por asiento). Ultra cuesta $80 USD al mes mensual, o $40 USD al mes en anual. Si recordabas a InVideo Plus a $17 USD, el equivalente más cercano hoy es Basic, que es más barato pero trae menos.
 
 ## Qué incluye el plan pagado
 
-Plus da 75 créditos mensuales, acceso a modelos de IA de video recientes (incluidos modelos como Seedance 2.5, Veo 3.1 y Kling 3 integrados en la misma plataforma), hasta 4 avatares o clones de voz con IA, 20 GB de almacenamiento, y exportación sin límite ni marca de agua. El plan gratuito permite probar la generación de video con IA, pero con créditos y almacenamiento mucho más limitados.
+Basic da 190 créditos al mes por asiento, editor de línea de tiempo completo, edición multijugador para hasta 5 asientos, 100 GB de almacenamiento y 45 videos de stock premium. Sus límites son claros: solo accede al agente Agent Two Lite y a los modelos Seedance 2.0 Fast y 2.0 Mini, sin acceso a Seedance 2.5 ni a Seedance 2.0 completo, y no incluye acceso anticipado a funciones nuevas. Pro sube a 1,000 créditos al mes por asiento, acceso a todos los agentes (Lite, Pro y Ultra) y a todos los modelos Seedance, 300 GB y 10 asientos de invitado gratis con 190 créditos cada uno. Ultra da 3,000 créditos al mes, 800 GB, hasta 20 asientos de invitado y el costo por crédito más bajo. Los créditos no usados no se acumulan al mes siguiente.
 
-## Un solo plan, acceso a varios modelos de video de distintas empresas
+## Qué plan te da qué modelos
 
-Similar a Krea con imagen, InVideo AI no depende de un solo modelo de video propio — te da acceso a varios modelos de distintas empresas (Google, ByteDance y otros) bajo la misma suscripción. Si lo que buscas es comparar resultados entre modelos sin pagar cada uno por separado, esa es la ventaja específica de esta herramienta frente a generadores de video de un solo modelo.
+En InVideo AI el plan decide a qué modelos de video llegas. Según su página de precios al 04/10/2026, Basic solo accede a Seedance 2.0 Fast y 2.0 Mini; Pro abre todos los modelos Seedance y los tres agentes (Lite, Pro y Ultra). Si lo que te importa es el nivel de calidad y no solo el precio, compara el plan por modelos incluidos y créditos, no por la cifra mensual.
 
 ¿InVideo AI tiene un código de descuento real? [Verifícalo aquí →](/articulos/invideo-ai-codigo-de-descuento/)
 

@@ -5,6 +5,7 @@ herramienta: "Adobe Firefly"
 herramientaId: "adobe-firefly"
 sitioOficial: "https://firefly.adobe.com/"
 pubDate: 2026-08-19
+updatedDate: 2026-10-04
 heroImage: /images/precios-ia/adobe-firefly.png
 heroImageAlt: Adobe Firefly — Precios de IA
 ---
@@ -15,7 +16,7 @@ Adobe vende Firefly en varios niveles, y es fácil terminar pagando de más si n
 
 ## Qué incluye el plan pagado
 
-El plan Standard de Firefly da 2,000 créditos mensuales para generación premium de video y audio, además de generación de imagen estándar prácticamente sin límite dentro de un uso razonable. La versión gratuita de Firefly ofrece solo 25 créditos al mes, suficiente para probar la herramienta pero no para un flujo de trabajo real — es, de las 14 herramientas de esta lista, una de las que tiene la brecha más amplia entre lo que puedes hacer gratis y lo que puedes hacer pagando.
+El plan Standard de Firefly da 2,000 créditos mensuales para generación premium de video y audio (hasta 20 videos de 5 segundos), además de funciones de imagen estándar como Generative Fill sin límite. También suma Adobe Express Premium, Photoshop en web y móvil con acceso completo y acceso ilimitado a Firefly Boards. La versión gratuita ya no se mide en un tope mensual de créditos: Adobe da generaciones diarias gratis de imagen, video y audio, con modelos como Nano Banana y Luma Ray3.14, y los límites se reinician cada día. Sirve para explorar la herramienta, pero un flujo de trabajo constante, sobre todo con video, termina topándose con esos límites.
 
 ## El uso comercial es el verdadero motivo para pagar, no solo la cantidad
 
@@ -26,5 +27,7 @@ Firefly se promociona como "seguro para uso comercial" porque Adobe entrena sus 
 No, por default — salvo que subas tu contenido a Adobe Stock. [Lee el detalle verificado →](/articulos/adobe-usa-mis-datos-para-entrenar-ia/)
 
 ¿Adobe Firefly tiene un código de descuento real? [Verifícalo aquí →](/articulos/adobe-firefly-codigo-de-descuento/)
+
+¿Necesitas más créditos? Revisa [Adobe Firefly Pro](/articulos/cuanto-cuesta-adobe-firefly-pro-hoy/).
 
 <a href="https://firefly.adobe.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Adobe Firefly →</a>

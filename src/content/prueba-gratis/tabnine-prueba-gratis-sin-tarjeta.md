@@ -6,16 +6,17 @@ herramientaId: "tabnine"
 empresa: "Tabnine"
 sitioOficial: "https://www.tabnine.com/pricing"
 veredicto: "rojo"
-fraseCorta: "Tabnine no tiene plan gratuito ni prueba de autoservicio: la página oficial solo ofrece 'Get a quote' para sus dos planes de pago."
-fuenteVerificacion: "Página oficial de precios de Tabnine (tabnine.com/pricing), consultada el 31/08/2026 — sin mención de plan gratuito ni periodo de prueba."
+fraseCorta: "Tabnine no tiene plan gratuito ni prueba de autoservicio, y desde su compra por Tricentis tabnine.com/pricing redirige a un formulario de contacto."
+fuenteVerificacion: "Redirección de tabnine.com/pricing a la página de contacto de Tricentis y comunicado oficial de Tricentis del 30/07/2026, consultados el 04/10/2026; antes, página de precios de Tabnine consultada el 31/08/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/prueba-gratis/tabnine.png
 heroImageAlt: Tabnine — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Tabnine?
 
-Aquí conviene aclarar la pregunta antes de responderla: hoy Tabnine no tiene ni plan gratuito ni una prueba de autoservicio que puedas activar tú mismo, con o sin tarjeta. Revisamos la página oficial de precios (tabnine.com/pricing) el 31 de agosto de 2026 y no aparece ningún plan a $0, ningún botón de "prueba gratuita" ni la palabra "trial" en ningún lugar de la página: solo dos planes de pago —Code Assistant Platform a $39 USD por usuario al mes y Agentic Platform a $59 USD por usuario al mes—, ambos con un único botón, "Get a quote" ("Solicitar cotización"), que lleva a un formulario de contacto con ventas, no a un checkout de autoservicio.
+Aquí conviene aclarar la pregunta antes de responderla: hoy Tabnine no tiene ni plan gratuito ni una prueba de autoservicio que puedas activar tú mismo, con o sin tarjeta. El 31 de agosto de 2026 su página oficial de precios solo mostraba dos planes de pago —Code Assistant Platform y Agentic Platform— con un único botón, "Get a quote", que lleva a un formulario de ventas, sin ningún plan a $0 ni botón de prueba. Desde entonces el panorama es todavía más cerrado: Tricentis anunció el 30 de julio de 2026 la compra de Tabnine, y al revisar el 4 de octubre de 2026 tabnine.com/pricing redirige directamente a la página de contacto de Tricentis. No hay ninguna ruta de autoservicio visible, ni de prueba ni de pago.
 
 ## De prueba con tarjeta a "pide cotización": el cambio no es sobre tarjetas
 
@@ -29,4 +30,4 @@ Esto es distinto al resto de la serie, donde la pregunta suele ser "¿pide tarje
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]
