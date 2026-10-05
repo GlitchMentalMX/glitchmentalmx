@@ -7,8 +7,9 @@ empresa: "Runway"
 sitioOficial: "https://runway.com/pricing"
 veredicto: "amarillo"
 fraseCorta: "Runway sí tiene un campo de cupón en el checkout, pero los códigos son de un solo uso y por cuenta — no hay uno público activo hoy."
-fuenteVerificacion: "Centro de ayuda oficial de Runway (help.runwayml.com), artículos \"Coupon codes\" y \"Student and Educator Discounts\", y runway.com/pricing, consultados el 30/08/2026."
+fuenteVerificacion: "Centro de ayuda oficial de Runway (help.runwayml.com), artículos \"Coupon codes\" y \"Student and Educator Discounts\", y runway.com/pricing, consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/runway.png
 heroImageAlt: Runway — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ Aquí hay un matiz importante frente a otras herramientas de esta serie: Runway 
 
 ## Los dos descuentos reales que sí existen hoy
 
-El primero es el de facturación anual: la propia página de precios de Runway confirma que pagar anual te da 20% de descuento frente a pagar mes a mes en todos los planes de paga — por ejemplo, el plan Standard baja de $15 a $12 al mes, y el plan Pro de $35 a $28 al mes, facturado por adelantado. El segundo es el descuento para estudiantes y educadores: según el centro de ayuda de Runway, quienes verifiquen su estatus académico a través de SheerID (el mismo verificador que usan Grammarly y otras plataformas) obtienen 25% de descuento en cualquier plan de paga, sin necesidad de un código — se activa directamente en tu cuenta tras la verificación.
+El primero es el de facturación anual: la propia página de precios de Runway confirma que pagar anual te da 20% de descuento frente a pagar mes a mes en todos los planes de paga — por ejemplo, el plan Standard baja de $15 a $12 al mes, y el plan Pro de $35 a $28 al mes, facturado por adelantado. El segundo es el descuento para estudiantes y educadores: según el centro de ayuda de Runway, quienes verifiquen su estatus académico a través de SheerID (el mismo verificador que usan Grammarly y otras plataformas) obtienen 25% de descuento (antes 20%) en los planes de suscripción, sin necesidad de un código — se activa directamente en tu cuenta tras la verificación. Ojo con la letra chiquita: solo aplica a estudiantes de universidad o posgrado acreditados (preparatoria o menos queda fuera) y a docentes o personal de instituciones de nivel superior, no cubre la compra de créditos sueltos, y la verificación de estudiante dura un año (la de educador, dos) antes de tener que repetirla. Las solicitudes se aceptan desde cualquier lugar excepto China, así que México no está excluido, aunque Runway no garantiza que la universidad o el correo de cada persona pase la verificación.
 
 ## Por qué desconfiar de los "códigos Runway" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Sitios agregadores listan códigos como "30% off" o "40% off para estudiantes" p
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

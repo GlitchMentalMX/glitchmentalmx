@@ -7,8 +7,9 @@ empresa: "Google"
 sitioOficial: "https://workspace.google.com/pricing"
 veredicto: "verde"
 fraseCorta: "No hay cupón genérico, pero Google Workspace for Nonprofits es real: organizaciones elegibles pagan $0 al mes, con Gemini incluido."
-fuenteVerificacion: "Google for Nonprofits: comparativo oficial de Google Workspace para organizaciones sin fines de lucro (google.com/nonprofits/workspace/compare), consultado el 31/08/2026."
+fuenteVerificacion: "Google for Nonprofits: comparativo oficial de Google Workspace para organizaciones sin fines de lucro (google.com/nonprofits/workspace/compare), consultado el 04/10/2026; precios y requisitos para México en workspace.google.com/pricing y en las pautas de elegibilidad de Google para organizaciones sin fines de lucro (support.google.com/nonprofits)."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/google-workspace.png
 heroImageAlt: Google Workspace — Códigos de descuento
 ---
@@ -17,9 +18,11 @@ heroImageAlt: Google Workspace — Códigos de descuento
 
 No como cupón que cualquier persona o empresa pueda usar en el checkout de Business Starter, Standard o Plus. Google no tiene un campo de "código promocional" abierto al público en esos planes. Lo que sí existe, confirmado directamente por Google, son dos programas completos de descuento para grupos específicos: organizaciones sin fines de lucro e instituciones educativas.
 
-## El descuento real: Google Workspace for Nonprofits, gratis o con hasta 80% menos
+## El descuento real: Google Workspace for Nonprofits, gratis o con 70-75% menos
 
-Para organizaciones sin fines de lucro elegibles con una cuenta de Google for Nonprofits, Google ofrece la edición Workspace for Nonprofits completamente gratis ($0 USD por usuario al mes), con 100 TB de almacenamiento compartido y hasta 2,000 usuarios — y ahora incluye Gemini y NotebookLM sin costo adicional. Si la organización necesita niveles superiores, Business Standard baja a $3.00 USD por usuario al mes (frente a $14.00 USD estándar) y Business Plus a $5.04 USD (frente a $22.00 USD), descuentos de más de 75%. Existe un programa equivalente para instituciones educativas verificadas, con Workspace for Education gratuito para escuelas que califican. Ninguno de los dos se activa con un código: se solicita una cuenta en Google for Nonprofits o Google for Education y se verifica el estatus de la organización.
+Para organizaciones sin fines de lucro elegibles con una cuenta de Google for Nonprofits, Google ofrece la edición Workspace for Nonprofits completamente gratis ($0 USD por usuario al mes), con 100 TB de almacenamiento compartido y hasta 2,000 usuarios — y ahora incluye Gemini y NotebookLM sin costo adicional. Si la organización necesita niveles superiores, Business Standard baja a $3.50 USD por usuario al mes con compromiso de un año (Google lo presenta como 75% menos que el precio estándar) y Business Plus a $6.16 USD (72% menos); los planes Enterprise tienen más de 70% de descuento. Son precios en dólares de EE.UU.: la página muestra cifras distintas según tu país. Existe un programa equivalente para instituciones educativas verificadas: Workspace for Education Fundamentals es gratuito para las que cumplen los requisitos. Ninguno de los dos se activa con un código: se solicita una cuenta en Google for Nonprofits o Google for Education y se verifica el estatus de la organización.
+
+En México, las pautas de elegibilidad de Google aceptan a donatarias autorizadas, organizaciones con CLUNI, otras organizaciones privadas benéficas o de asistencia sin fines de lucro y asociaciones religiosas, verificadas por Goodstack, el socio de validación de Google. Quedan fuera gobiernos, hospitales y escuelas o universidades (las divisiones filantrópicas de instituciones educativas sí pueden participar). Para una empresa normal en México existe además una promoción de lanzamiento, no un código: la página de precios en pesos muestra 10% de descuento en Business Starter durante los primeros 12 meses, hasta 20 usuarios.
 
 ## Por qué desconfiar de los "códigos Google Workspace" que circulan en sitios de cupones
 
@@ -35,4 +38,4 @@ Hay sitios de cupones que anuncian "15% de descuento" para cualquier cliente nue
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

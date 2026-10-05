@@ -7,8 +7,9 @@ empresa: "Alibaba Cloud"
 sitioOficial: "https://chat.qwen.ai/"
 veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento porque no hay nada que descontar: el chat es gratis y la API se cobra por token, sin plan de suscripción de consumidor."
-fuenteVerificacion: "Sitio oficial de Qwen Chat (chat.qwen.ai) y documentación de precios de Alibaba Cloud Model Studio, consultadas el 31/08/2026."
+fuenteVerificacion: "Sitio oficial de Qwen Chat (chat.qwen.ai), documentación de precios y del Coding Plan de Alibaba Cloud Model Studio y página del programa AI Catalyst de Alibaba Cloud, consultadas el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/qwen.png
 heroImageAlt: Qwen — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No, y aquí ni siquiera tiene mucho sentido buscarlo: Qwen no vende una suscripc
 
 ## Lo que sí existe: precios variables para desarrolladores, sin código
 
-Para desarrolladores, Alibaba Cloud sí cobra por los modelos Qwen a través de su API, con tarifas por token que además varían según la hora del día (hasta 80% menos en horario de baja demanda para usuarios internacionales). Ese ajuste es automático y depende del reloj, no de un código que ingreses. Alibaba Cloud también tiene un programa de startups que da créditos gratis a empresas elegibles y un plan de "Qwen Coding" con tarifa mensual fija para agentes de código — pero ninguno de los dos se activa con un cupón: uno requiere aplicar y ser aprobado como startup, y el otro es simplemente un plan con precio fijo publicado.
+Para desarrolladores, Alibaba Cloud sí cobra por los modelos Qwen a través de su API, con tarifas por token. La documentación de precios publica descuentos temporales en modelos seleccionados para las regiones internacionales (por ejemplo, en Hong Kong y Frankfurt, "night 60% off, daytime 20% off" en ciertos modelos, con la noche definida de 22:00 a 08:00 hora de China, UTC+8). Ese ajuste es automático y depende del reloj y del modelo, no de un código que ingreses. Alibaba Cloud también tiene un programa para startups de IA (AI Catalyst) que ofrece hasta 2 mil millones de tokens gratis de Model Studio y hasta 120,000 USD en créditos, previa solicitud y aprobación, y un plan "Qwen Coding" con tarifa mensual fija para agentes de código (hoy el plan Pro, 50 USD al mes, con cupo limitado; el plan Lite ya no acepta nuevos pedidos) — pero ninguno de los dos se activa con un cupón: uno requiere aplicar y ser aprobado, y el otro es simplemente un plan con precio fijo publicado.
 
 ## Por qué desconfiar de los "códigos Qwen" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Hay sitios que mezclan ofertas reales de la infraestructura de Alibaba Cloud (cr
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

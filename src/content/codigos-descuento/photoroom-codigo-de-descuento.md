@@ -1,14 +1,15 @@
 ---
 title: "¿Photoroom tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en photoroom.com/pricing si existe un código de descuento real, y por qué el único ahorro confirmado es el 33% por pago anual."
+description: "Verificamos en photoroom.com/pricing si existe un código de descuento real, y por qué el único ahorro confirmado es el de pagar anual."
 herramienta: "Photoroom"
 herramientaId: "photoroom"
 empresa: "Photoroom SAS"
 sitioOficial: "https://www.photoroom.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos confirmados ni descuento para estudiantes — el único ahorro real y oficial es el 33% por pagar anual."
-fuenteVerificacion: "Página oficial de precios de Photoroom (photoroom.com/pricing), consultada el 30/08/2026."
+fraseCorta: "No hay cupones públicos confirmados ni descuento para estudiantes — el único ahorro real y oficial es pagar anual (la página anuncia \"Save 33%\")."
+fuenteVerificacion: "Página oficial de precios de Photoroom (photoroom.com/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/photoroom.png
 heroImageAlt: Photoroom — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No hay un código de descuento público confirmado por Photoroom. Su página ofi
 
 ## El único canal real: pago anual
 
-Photoroom confirma en su página oficial que cambiar de facturación mensual a anual da un ahorro de 33% en todos los planes de pago (Pro, Max y Ultra) — por ejemplo, el plan base baja de $9.99 USD al mes a $4.99 USD al mes facturado por año. Es un descuento fijo y automático, no un cupón: se aplica solo con elegir la opción anual al momento de pagar, sin ingresar ningún código.
+Photoroom confirma en su página oficial que cambiar de facturación mensual a anual da un ahorro: el interruptor de la página dice "Save 33%". Es un descuento automático, no un cupón: se aplica solo con elegir la opción anual al momento de pagar, sin ingresar ningún código. Visto desde México, la página muestra los precios en pesos mexicanos; en facturación anual, Pro queda en MX$83.50 al mes (tachado MX$149), Max en MX$205 (MX$399) y Ultra en MX$1,441 (MX$1,729). Ojo: según esas cifras el ahorro real no es igual en todos los planes (cerca de 44% en Pro, 49% en Max y 17% en Ultra), así que revisa el precio de tu plan antes de pagar.
 
 ## Por qué desconfiar de los "códigos Photoroom" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Hay sitios que anuncian códigos como "PHOTOROOM15" o "JESS20" prometiendo hasta
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

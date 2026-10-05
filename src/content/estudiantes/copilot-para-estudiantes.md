@@ -6,7 +6,7 @@ herramientaId: "copilot"
 empresa: "Microsoft"
 sitioOficial: "https://www.microsoft.com/es-mx/microsoft-365/college-student-pricing"
 veredicto: "amarillo"
-fraseCorta: "El descuento de 50% es de Microsoft 365 Personal (Copilot incluido), pide método de pago y Microsoft solo dice que varía por institución y región."
+fraseCorta: "50% en Microsoft 365 Personal (incluye Copilot); pide método de pago y Microsoft no lista países, solo dice que varía por región."
 fuenteVerificacion: "Fuente oficial (microsoft.com/es-mx/microsoft-365/college-student-pricing y microsoft.com/es-mx/microsoft-365-copilot/personal), consultada el 04/10/2026."
 pubDate: 2026-10-04
 heroImage: /images/estudiantes/copilot.png

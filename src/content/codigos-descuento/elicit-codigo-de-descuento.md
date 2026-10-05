@@ -6,20 +6,21 @@ herramientaId: "elicit"
 empresa: "Elicit (Ought Inc.)"
 sitioOficial: "https://elicit.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar anual — hasta 39% menos que pagar mes a mes."
-fuenteVerificacion: "Página oficial de precios de Elicit (elicit.com/pricing), consultada el 30/08/2026."
+fraseCorta: "No hay cupones públicos, pero sí un descuento oficial por pagar anual: la página marca \"Save 35%\" en Pro y \"Save 39%\" en Scale."
+fuenteVerificacion: "Página oficial de precios de Elicit (elicit.com/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/elicit.png
 heroImageAlt: Elicit — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Elicit?
 
-No como cupón público. Elicit no tiene un campo de "código promocional" en su checkout, y no hay evidencia de que la empresa emita descuentos puntuales a quien los solicite por soporte. Lo que sí confirma la propia página de precios es el ahorro por pago anual: el plan Pro marca "Save 35%" ($588 USD al año frente a $49 USD al mes pagando mes a mes) y el plan superior marca "Save 39%" ($2,028 USD al año frente a $169 USD al mes). No es un cupón — es una condición de precio fija, visible sin ingresar ningún código.
+No como cupón público. Elicit no tiene un campo de "código promocional" en su checkout, y no hay evidencia de que la empresa emita descuentos puntuales a quien los solicite por soporte. Lo que sí confirma la propia página de precios es el ahorro por pago anual: el plan Pro marca "Save 35%" ($49 USD por usuario al mes, facturado como $588 USD al año) y el plan Scale marca "Save 39%" ($169 USD por usuario al mes, facturado como $2,028 USD al año). Ojo: esos $49 y $169 son el equivalente mensual pagando el año completo, no el precio de pagar mes a mes; la página no nos mostró el precio mensual que sirve de base para esos porcentajes. No es un cupón — es una condición de precio fija, visible sin ingresar ningún código.
 
 ## Por qué desconfiar de los "códigos Elicit" que circulan en sitios de cupones
 
-Varios sitios agregadores listan supuestos códigos como "AVA" con 10% de descuento, o promociones de "hasta 80% off" para Elicit. Ninguno de esos códigos aparece confirmado en elicit.com/pricing, y de hecho un rastreador independiente reporta cero actividad real de cupones en los últimos dos años para esta herramienta. Si un sitio te ofrece un "código Elicit" universal, no viene de la empresa.
+Varios sitios agregadores listan supuestos códigos como "AVA" con 10% de descuento, o promociones de "hasta 80% off" para Elicit. Ninguno de esos códigos aparece confirmado en elicit.com/pricing, y la página de precios no tiene campo de cupón. Si un sitio te ofrece un "código Elicit" universal, no viene de la empresa.
 
 ¿Buscas cuánto cuesta Elicit exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-elicit-hoy/)
 
@@ -29,4 +30,4 @@ Varios sitios agregadores listan supuestos códigos como "AVA" con 10% de descue
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

@@ -6,20 +6,21 @@ herramientaId: "elevenlabs"
 empresa: "ElevenLabs"
 sitioOficial: "https://elevenlabs.io/pricing"
 veredicto: "verde"
-fraseCorta: "No necesitas ningún código: ElevenLabs tiene hoy un 50% de descuento automático en el primer mes del plan Creator, visible en su propia página de precios."
-fuenteVerificacion: "Página oficial de precios de ElevenLabs (elevenlabs.io/pricing), consultada el 30/08/2026."
+fraseCorta: "No necesitas ningún código: ElevenLabs tiene hoy un 50% de descuento automático en el primer mes del plan Creator (facturación mensual), visible en su propia página de precios."
+fuenteVerificacion: "Página oficial de precios de ElevenLabs (elevenlabs.io/pricing), elevenlabs.io/students y elevenlabs.io/impact, consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/elevenlabs.png
 heroImageAlt: ElevenLabs — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ElevenLabs?
 
-No como cupón que tengas que ingresar — pero sí hay algo mejor, y es poco común en esta serie: al momento de esta verificación, la propia página oficial de precios de ElevenLabs muestra una promoción activa en el plan Creator: 50% de descuento en el primer mes, con el precio bajando de $22 USD a $11 USD. No es un código de terceros ni una oferta que necesites buscar en sitios de cupones — aparece directamente en elevenlabs.io/pricing y se aplica de forma automática al suscribirte, sin campo de "código promocional" de por medio.
+No como cupón que tengas que ingresar — pero sí hay algo mejor, y es poco común en esta serie: al momento de esta verificación, la propia página oficial de precios de ElevenLabs muestra una promoción activa en el plan Creator: 50% de descuento en el primer mes, con el precio bajando de $22 USD a $11 USD (se ve al elegir facturación mensual; en la vista de facturación anual no aparece esa etiqueta). Hoy también muestra el plan Starter con 83% de descuento el primer mes ($6 a $1 USD), con la leyenda "Until Oct 18" (18 de octubre): es una promoción con fecha de cierre, así que revisa la página antes de contar con ella. No es un código de terceros ni una oferta que necesites buscar en sitios de cupones — aparece directamente en elevenlabs.io/pricing y se aplica de forma automática al suscribirte, sin campo de "código promocional" de por medio.
 
 ## Los otros descuentos oficiales confirmados
 
-Fuera de esa promoción del primer mes, ElevenLabs tiene tres canales reales más. El primero es la facturación anual, que en la propia página de precios equivale a dos meses gratis frente a pagar mes a mes en cualquier plan de paga. El segundo es para estudiantes: con un correo .edu (o el equivalente de tu universidad) puedes reclamar un año gratis de ElevenReader Ultra, según el centro de ayuda oficial de ElevenLabs. El tercero es el Programa de Impacto de ElevenLabs, que da hasta 12 meses de acceso Pro gratuito a organizaciones sin fines de lucro con estatus 501(c)(3) o su equivalente, mediante una solicitud directa en el sitio de la compañía.
+Fuera de esa promoción del primer mes, ElevenLabs tiene tres canales reales más. El primero es la facturación anual, que en la propia página de precios aparece como "2 months free" frente a pagar mes a mes en los planes de paga. El segundo es para estudiantes, y son dos ofertas distintas: ElevenLabs for Students da 3 meses del plan Creator gratis, pero el anuncio oficial la limita a universitarios de 18 años o más en EE.UU., Canadá, la UE, Australia y el Reino Unido, y México no está en esa lista; y ElevenReader Ultra (la app de lectura en voz alta, no la plataforma de creación) da un año gratis con un correo .edu o equivalente, donde la empresa no especifica si aplica en México porque depende del dominio y del país de tu escuela. El tercero es el Programa de Impacto de ElevenLabs, que da hasta 12 meses de acceso Pro gratuito a organizaciones sin fines de lucro con estatus 501(c)(3) o su equivalente, mediante una solicitud directa en el sitio de la compañía.
 
 ## Por qué desconfiar de los "códigos ElevenLabs" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ A pesar de que sí hay una promoción real y activa hoy, sitios agregadores de c
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

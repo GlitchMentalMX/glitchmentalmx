@@ -1,25 +1,26 @@
 ---
 title: "¿v0 tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en v0.app/pricing si existe algún código de descuento real para v0 de Vercel, y cuál es el único programa oficial que sí regala acceso premium."
+description: "Verificamos en v0.app/pricing si existe algún código de descuento real para v0 de Vercel, y cuál es el único programa oficial que regala créditos a estudiantes."
 herramienta: "v0"
 herramientaId: "v0"
 empresa: "Vercel Inc."
 sitioOficial: "https://v0.app/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un programa oficial para estudiantes de universidades específicas que da un año de Premium gratis."
-fuenteVerificacion: "Página oficial de precios de Vercel (v0.app/pricing) y portal oficial v0.app/students, consultados el 30/08/2026."
+fraseCorta: "No hay cupones públicos, y v0 dice que no ofrece descuentos; solo existe un programa de $20 USD en créditos al mes por un año para 15 universidades (EE.UU. y una de Canadá), ninguna mexicana."
+fuenteVerificacion: "Página oficial de precios de v0 (v0.app/pricing, incluida su sección de preguntas frecuentes) y portal oficial v0.app/students, consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/v0.png
 heroImageAlt: v0 — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para v0?
 
-No como cupón público. v0.app/pricing no tiene un campo de "código promocional" en el checkout, y Vercel no distribuye descuentos genéricos que cualquiera pueda canjear escribiendo un código en una caja de texto. Lo único que la propia página oficial reconoce como beneficio real es un programa cerrado: v0 for Students, pensado para estudiantes de un grupo específico de universidades, no para el público en general.
+No como cupón público. En la sección de preguntas frecuentes de v0.app/pricing, a la pregunta "¿ofrecen descuentos para estudiantes, veteranos, organizaciones sin fines de lucro?" la respuesta oficial es "No, we do not offer discounts at this time". Vercel no distribuye descuentos genéricos que cualquiera pueda canjear escribiendo un código. Lo único que existe es un programa cerrado: v0 for Students, pensado para estudiantes de un grupo específico de universidades, no para el público en general.
 
 ## El programa real: v0 for Students
 
-En v0.app/students, Vercel ofrece un año completo de v0 Premium gratis (un valor de alrededor de $240 USD) a estudiantes inscritos con correo institucional .edu en universidades seleccionadas — entre ellas Stanford, Harvard, Princeton, UC Berkeley, MIT, Georgia Tech, NYU, Cornell, USC y Universidad de Washington, entre otras. Si tu institución no aparece en la lista, solo puedes anotarte en lista de espera: Vercel dice estar expandiendo el programa, pero hoy no cubre a cualquier estudiante con correo .edu, solo a los de esas escuelas. No es un código que se comparta ni se revenda — se activa iniciando sesión con tu propio correo institucional.
+En v0.app/students, Vercel dice que los estudiantes que verifiquen su estatus en una escuela activa reciben $20 USD en créditos al mes gratis durante 1 año. La página lo describe como un programa para estudiantes de "a number of US-based universities" y hoy lista 15 escuelas: Stanford, Harvard, Princeton, UC Berkeley, MIT, San Francisco State, Arizona State, Georgia Tech, Waterloo (Canadá), NYU, Grand Canyon, Northwestern, Washington, Cornell y USC. Ninguna es mexicana, así que si estudias en México este programa hoy no te aplica. Si tu institución no aparece en la lista, la página no ofrece lista de espera ni formulario: solo dice "More coming soon", sin fechas ni países. No es un código que se comparta ni se revenda — se activa verificando tu estatus de estudiante.
 
 ## Por qué desconfiar de los "códigos v0" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Hay sitios agregadores que anuncian cupones de v0 con porcentajes altos ("hasta 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

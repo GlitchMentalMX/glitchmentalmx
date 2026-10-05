@@ -7,19 +7,20 @@ empresa: "23andMe / TTAM Research Institute"
 sitioOficial: "https://www.23andme.org/shop/premium-ancestry-health/"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un programa de referidos oficial con 10% de descuento mínimo, más rebajas de temporada frecuentes."
-fuenteVerificacion: "Sitio oficial de 23andme.org y programa de referidos (refer.23andme.com), consultados el 30/08/2026."
+fuenteVerificacion: "Sitio oficial de 23andme.org y programa de referidos (refer.23andme.com), consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/23andme-plus.png
 heroImageAlt: 23andMe+ — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para 23andMe+?
 
-No como cupón genérico que cualquiera pueda teclear en el checkout. El sitio oficial de 23andme.org no tiene un campo de "código promocional" abierto al público en la página de Premium Ancestry + Health (el nombre actual de 23andMe+), y la empresa no confirma cupones sueltos que circulan en internet. Lo que sí existe, y que puede confundirse con un código de descuento, son las rebajas de temporada que el propio sitio aplica automáticamente al precio: al momento de esta verificación había una oferta de "Labor Day" con 55% de descuento sobre el primer año, vigente solo hasta el 7 de septiembre de 2026 y sin necesidad de ingresar ningún código — el descuento ya viene aplicado en el precio que ves.
+No como cupón genérico que cualquiera pueda teclear en el checkout. El sitio oficial de 23andme.org no tiene un campo de "código promocional" abierto al público en la página de Premium Ancestry + Health (el nombre actual de 23andMe+), y la empresa no confirma cupones sueltos que circulan en internet. Lo que sí puede confundirse con un código de descuento son las rebajas de temporada que el propio sitio aplica automáticamente al precio, sin ingresar ningún código. La oferta de "Labor Day" (55% de descuento sobre el primer año) que citaba este artículo llegó hasta el 7 de septiembre de 2026 y ya terminó: al 04/10/2026 la página de Premium Ancestry + Health muestra el precio completo, $199 USD (tienda de EE.UU.), sin ninguna rebaja ni banner promocional.
 
 ## El canal real que sí existe: el programa de referidos
 
-Fuera de las rebajas de temporada, 23andMe sí tiene un programa de referidos activo en refer.23andme.com: quien compra usando el enlace de un cliente existente recibe un mínimo de 10% de descuento sobre su pedido (el porcentaje sube si hay una oferta mayor corriendo en el sitio en ese momento), y quien refiere recibe una tarjeta de regalo de Amazon de hasta $20 USD una vez que el pedido se envía. No es un código universal — necesitas el enlace personal de alguien que ya sea cliente — pero es un descuento real y verificable, documentado en la propia página del programa, a diferencia de los porcentajes que prometen los sitios de cupones genéricos.
+Fuera de las rebajas de temporada, 23andMe sí tiene un programa de referidos activo en refer.23andme.com: quien compra usando el enlace de un cliente existente recibe un mínimo de 10% de descuento sobre su pedido (el porcentaje sube si hay una oferta mayor corriendo en el sitio en ese momento), y quien refiere recibe una tarjeta de regalo de Amazon de hasta $20 USD una vez que el pedido se envía. Ojo, lector de México: la página del programa está en dólares y no aclara si aplica fuera de EE.UU., así que no podemos confirmar que funcione en México. No es un código universal — necesitas el enlace personal de alguien que ya sea cliente — pero es un descuento real y verificable, documentado en la propia página del programa, a diferencia de los porcentajes que prometen los sitios de cupones genéricos.
 
 ## Por qué desconfiar de los "códigos 23andMe" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Búsquedas de "código de descuento 23andMe" devuelven agregadores de cupones co
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

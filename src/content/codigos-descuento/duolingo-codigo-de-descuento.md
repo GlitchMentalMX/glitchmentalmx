@@ -1,29 +1,30 @@
 ---
 title: "¿Duolingo tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en duolingo.com si existe un código de descuento real para Super Duolingo, y cuáles son los dos descuentos oficiales que sí existen."
+description: "Verificamos en duolingo.com si existe un código de descuento real para Super Duolingo, y qué hay en su lugar: plan familiar y prueba de 1 semana."
 herramienta: "Duolingo"
 herramientaId: "duolingo"
 empresa: "Duolingo"
 sitioOficial: "https://www.duolingo.com/super"
-veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos ni descuento de estudiante vigente, pero sí dos canales reales: precio anual y plan familiar."
-fuenteVerificacion: "Páginas oficiales de Duolingo (duolingo.com/super y duolingo.com/family) y Centro de ayuda de Duolingo, consultados el 30/08/2026."
+veredicto: "rojo"
+fraseCorta: "No hay cupones ni descuento de estudiante: lo único oficial es una prueba de 1 semana y el plan Super Family de hasta 6 cuentas, que no es un descuento."
+fuenteVerificacion: "Páginas oficiales de Duolingo (duolingo.com/super y duolingo.com/family) y Centro de ayuda de Duolingo, consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/duolingo.png
 heroImageAlt: Duolingo — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Super Duolingo?
 
-No como cupón genérico. Duolingo no tiene un campo de "código promocional" abierto al público en su checkout — el campo de canje que sí existe, en duolingo.com/redeem, está pensado para regalos y códigos ligados a una cuenta específica, no para cupones porcentuales que cualquiera pueda usar. Vale la pena aclarar algo que cambió recientemente: Duolingo sí tuvo un programa oficial de descuento para estudiantes, con verificación por SheerID, disponible en varios países. Ese programa terminó — usuarios reportaron su cierre a inicios de 2026, y Duolingo no lo ha reactivado ni mantiene ya una página de inscripción para él.
+No como cupón genérico. Duolingo no tiene un campo de "código promocional" abierto al público en su checkout — el campo de canje que sí existe, en duolingo.com/redeem, está pensado para regalos y códigos ligados a una cuenta específica, no para cupones porcentuales que cualquiera pueda usar. Vale la pena aclarar algo que cambió recientemente: Duolingo sí tuvo un programa oficial de descuento para estudiantes, con verificación por SheerID, disponible en varios países. Hoy ese programa no aparece en la página de Super ni en el centro de ayuda de Duolingo, así que no hay cómo solicitarlo.
 
-## Los dos descuentos reales que sí existen: plan anual y plan familiar
+## Lo que sí existe: plan familiar y prueba de 1 semana
 
-El precio mensual de Super Duolingo ronda los $12.99 USD, pero pagar el plan anual de una sola vez baja el costo efectivo a cerca de $7 USD al mes — un ahorro real de casi 50% frente a pagar mes a mes, visible directamente al elegir el plan en duolingo.com/super. El segundo canal real es el Plan Familiar: hasta seis cuentas independientes comparten una sola suscripción, y dividido entre los seis, el costo por persona puede bajar a menos de $2 USD al mes. Ninguno de los dos es un "código" — son estructuras de precio fijas, disponibles para cualquiera sin necesidad de reclamar nada especial ni verificar elegibilidad.
+Ni la página de Super ni el centro de ayuda de Duolingo publican precios (se ven al elegir plan dentro de la app o la web, y pueden variar por país), así que no damos cifras ni porcentajes de ahorro por pagar anual. Lo que sí confirma la página oficial es Super Family: hasta 6 cuentas de Super en una sola suscripción, con la excepción de quien ya tenga una suscripción de pago activa. Repartir el costo entre varias personas es el único camino oficial para ahorrar. No es un "código": es una estructura de plan, disponible sin verificar elegibilidad.
 
 ## Por qué desconfiar de los "códigos Duolingo" que circulan en sitios de cupones
 
-Sitios de cupones listan supuestos códigos que prometen meses gratis o un 20% de descuento adicional. Ninguno de esos códigos está confirmado por Duolingo ni aparece en su documentación oficial de precios. Lo único gratuito que Duolingo sí ofrece de forma oficial y automática es una prueba de Super de 7 a 14 días para quien nunca lo ha usado — se activa sola, sin ingresar ningún código.
+Sitios de cupones listan supuestos códigos que prometen meses gratis o un 20% de descuento adicional. Ninguno de esos códigos está confirmado por Duolingo ni aparece en su documentación oficial de precios. Lo único gratuito que Duolingo sí ofrece de forma oficial y automática es una prueba de 1 semana ("1 week free"): recibes recordatorio el día 5 y el día 7 se cobra tu cuenta si no cancelas al menos 24 horas antes. No se ingresa ningún código.
 
 ¿Duolingo entrena su IA con tus datos? [Lee el veredicto verificado →](/articulos/duolingo-usa-mis-datos-para-entrenar-ia/)
 
@@ -33,4 +34,4 @@ Sitios de cupones listan supuestos códigos que prometen meses gratis o un 20% d
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

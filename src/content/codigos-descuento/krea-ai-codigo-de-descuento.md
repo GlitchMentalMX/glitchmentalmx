@@ -6,20 +6,21 @@ herramientaId: "krea-ai"
 empresa: "Krea AI, Inc."
 sitioOficial: "https://www.krea.ai/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un descuento real por pagar anual y promociones puntuales al lanzarse un modelo nuevo, visibles directo en la página de precios."
-fuenteVerificacion: "Página oficial de precios de Krea (krea.ai/pricing), consultada el 30/08/2026."
+fraseCorta: "No hay cupones públicos, pero sí un descuento real de 40% por pagar anual y, de vez en cuando, promociones puntuales por lanzamiento de modelo, visibles directo en la página de precios."
+fuenteVerificacion: "Página oficial de precios de Krea (krea.ai/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/krea-ai.png
 heroImageAlt: Krea — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Krea?
 
-No como cupón público. La página oficial de precios de Krea no tiene ningún campo de "código promocional" en el checkout, y la compañía no distribuye códigos de descuento canjeables por cualquier usuario. Lo que sí existe, visible para cualquiera en krea.ai/pricing, es un selector de facturación Mensual/Anual: elegir el plan anual reduce el costo frente a pagar mes a mes en cada uno de los planes de pago (Basic, Pro, Max). Eso no es un cupón — es una condición de precio fija que no requiere ingresar ningún código.
+No como cupón público. La página oficial de precios de Krea no tiene ningún campo de "código promocional" en el checkout, y la compañía no distribuye códigos de descuento canjeables por cualquier usuario. Lo que sí existe, visible para cualquiera en krea.ai/pricing, es un selector de facturación Mensual/Anual: elegir el plan anual reduce el costo frente a pagar mes a mes en los planes individuales de pago (Basic, Pro, Max): la página anuncia "Save 40% on yearly plans" (por ejemplo, Pro pasa de $35 a $21 USD al mes y Max de $105 a $63 USD al mes con facturación anual, precios en dólares). Eso no es un cupón — es una condición de precio fija que no requiere ingresar ningún código.
 
 ## El otro canal real: promociones puntuales por lanzamiento de modelo
 
-Krea corre de vez en cuando ofertas de tiempo limitado ligadas al lanzamiento de un modelo nuevo — por ejemplo, una promoción vigente al momento de esta verificación regalaba una semana de generaciones ilimitadas con el modelo de video H3 Max a quien contratara un plan Pro o Max anual, con cuenta regresiva visible en la propia página de precios. No es un código que circule por internet ni algo que puedas pedir por soporte: aparece directo en el sitio oficial, tiene fecha de expiración, y desaparece cuando termina.
+Krea corre de vez en cuando ofertas de tiempo limitado ligadas al lanzamiento de un modelo nuevo — por ejemplo, la verificación del 30/08/2026 encontró una semana de generaciones ilimitadas con el modelo de video H3 Max para quien contratara un plan Pro o Max anual. Al 04/10/2026 esa promoción ya no aparece en la página de precios y no vimos ninguna otra vigente. No es un código que circule por internet ni algo que puedas pedir por soporte: aparece directo en el sitio oficial, tiene fecha de expiración, y desaparece cuando termina.
 
 ## Por qué desconfiar de los "códigos Krea" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Existen varios sitios agregadores de cupones que listan códigos como "20% de de
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

@@ -6,24 +6,25 @@ herramientaId: "canva"
 empresa: "Canva"
 sitioOficial: "https://www.canva.com/pricing/"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos verificados, pero sí programas oficiales que regalan Canva Pro completo a escuelas y organizaciones sin fines de lucro elegibles."
-fuenteVerificacion: "Centro de ayuda oficial de Canva (canva.com/help), páginas \"About Canva for Education\" y \"Canva for Nonprofits\", consultadas el 30/08/2026."
+fraseCorta: "No hay cupones públicos verificados, pero sí programas oficiales que regalan Canva Pro completo a docentes y escuelas K-12 certificados y a organizaciones sin fines de lucro elegibles; no hay oferta para universitarios."
+fuenteVerificacion: "Páginas oficiales de Canva: precios (canva.com/es_mx/precios), reglas de elegibilidad de Canva for Education (canva.com/education/eligibility-guidelines) y Canva for Nonprofits (canva.com/nonprofits), consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/canva.png
 heroImageAlt: Canva — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Canva Pro?
 
-No como cupón de checkout. Canva no confirma en sus canales oficiales un campo de "código promocional" abierto al público general para Canva Pro. Lo que sí existe, y está documentado en su propio centro de ayuda, son dos programas gratuitos completos: Canva for Education, que da acceso gratis a las funciones de Canva Pro a profesores, bibliotecarios y estudiantes de nivel K-12; y Canva for Nonprofits, que da Canva Pro gratis hasta para 50 miembros de equipo a organizaciones sin fines de lucro registradas oficialmente (como las 501(c)(3) en Estados Unidos) que no operen con fines comerciales ni dependan de apropiaciones gubernamentales directas.
+No como cupón de checkout. Canva no confirma en sus canales oficiales un campo de "código promocional" abierto al público general para Canva Pro. Lo que sí existe, y está documentado en su propio centro de ayuda, son dos programas gratuitos completos: Canva for Education, que da acceso gratis a las funciones de Canva Pro a docentes y bibliotecarios escolares certificados de primaria y secundaria (K-12) y a escuelas acreditadas de ese nivel —los alumnos entran por invitación de su maestro, y la propia Canva dice que el programa no está restringido a ningún país—; y Canva for Nonprofits, que da Canva Pro gratis hasta para 50 miembros de equipo a organizaciones sin fines de lucro registradas oficialmente (como las 501(c)(3) en Estados Unidos) que no operen con fines comerciales ni dependan de apropiaciones gubernamentales directas. Ojo si eres universitario: Canva excluye expresamente a estudiantes y docentes de universidades; para ellos solo existe Canva for Campus, una oferta de paga que contrata la institución, no tú.
 
 ## El otro descuento real: pago anual
 
-Fuera de esos dos programas, Canva Pro individual cuesta aproximadamente $18 USD al mes o $144 USD al año (unos $12 USD al mes equivalentes), un ahorro de alrededor de 33% por pagar el plan completo por adelantado, visible directamente al elegir esa opción de facturación, sin código.
+Fuera de esos dos programas, en la página de precios de Canva México (consultada el 04/10/2026) Canva Pro individual cuesta MX$150 al mes o MX$1,210 al año (unos MX$101 al mes equivalentes), un ahorro de alrededor de 33% por pagar el plan completo por adelantado, visible directamente al elegir esa opción de facturación, sin código.
 
 ## Por qué desconfiar de los "códigos Canva" que circulan en sitios de cupones
 
-Abundan los sitios agregadores que anuncian cupones de "20%", "40%" o hasta "50% off" para Canva Pro. Ninguno de esos porcentajes específicos aparece confirmado en el centro de ayuda oficial de Canva, que sí documenta con detalle sus programas de educación y de organizaciones sin fines de lucro, pero no un sistema de cupones para el público en general. Si buscas ahorrar de forma legítima, el camino verificado es aplicar a uno de esos dos programas o usar la prueba gratuita de 30 días de Canva Pro, no un código de un sitio externo.
+Abundan los sitios agregadores que anuncian cupones de "20%", "40%" o hasta "50% off" para Canva Pro. Ninguno de esos porcentajes específicos aparece confirmado en el centro de ayuda oficial de Canva, que sí documenta con detalle sus programas de educación y de organizaciones sin fines de lucro, pero no un sistema de cupones para el público en general. Si buscas ahorrar de forma legítima, el camino verificado es aplicar a uno de esos dos programas (si cumples los requisitos) o usar la prueba gratuita de Canva Pro, no un código de un sitio externo.
 
 ¿Buscas cuánto cuesta Canva exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-canva-hoy/)
 
@@ -35,4 +36,4 @@ Abundan los sitios agregadores que anuncian cupones de "20%", "40%" o hasta "50%
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

@@ -7,8 +7,9 @@ empresa: "Google"
 sitioOficial: "https://www.youtube.com/premium/student"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un plan oficial para estudiantes con verificación por SheerID, más barato que el plan individual."
-fuenteVerificacion: "youtube.com/premium/student, página oficial de Google/YouTube, consultada el 30/08/2026."
+fuenteVerificacion: "youtube.com/premium/student (versión de México, con precios en MXN) y Ayuda de YouTube (membresías para estudiantes y países disponibles), consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/youtube.png
 heroImageAlt: YouTube — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón genérico. El flujo de suscripción de YouTube Premium no tiene u
 
 ## El descuento real que sí existe: YouTube Premium para estudiantes
 
-En youtube.com/premium/student, Google ofrece un plan reducido exclusivo para estudiantes de universidades acreditadas, verificando la inscripción a través de SheerID (subiendo comprobante si hace falta). El plan incluye YouTube y YouTube Music sin anuncios, descargas y reproducción en segundo plano — lo mismo que el plan individual, pero a un precio menor. La verificación se renueva cada año y se puede mantener mientras sigas siendo estudiante, hasta un máximo de cuatro años. No es un código que se comparta: se activa dentro de tu propia cuenta de Google, con tu propio comprobante de inscripción.
+En youtube.com/premium/student, Google ofrece un plan reducido exclusivo para estudiantes de universidades acreditadas, verificando la inscripción a través de SheerID (subiendo comprobante si hace falta). El plan incluye YouTube y YouTube Music sin anuncios, descargas y reproducción en segundo plano — lo mismo que el plan individual, pero a un precio menor. En México, la página oficial muestra el plan para estudiantes en MXN 99 al mes (con una prueba de 1 mes por MXN 0) frente a MXN 159 del plan Individual, y el Centro de ayuda de YouTube incluye a México entre los países con membresía para estudiantes; eso sí, tu institución también debe estar aprobada por SheerID. La verificación se renueva cada año y se puede mantener mientras sigas siendo estudiante, hasta un máximo de cuatro años. No es un código que se comparta: se activa dentro de tu propia cuenta de Google, con tu propio comprobante de inscripción.
 
 ## Por qué desconfiar de los "códigos YouTube Premium" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Existen decenas de sitios de cupones que anuncian códigos de YouTube Premium co
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

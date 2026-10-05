@@ -1,29 +1,30 @@
 ---
 title: "¿GPTZero tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en gptzero.me si existe un código de descuento real para GPTZero: la propia página de precios publica el código BTS26, activo por temporada."
+description: "Verificamos en gptzero.me si existe un código de descuento real para GPTZero: el código BTS26 de regreso a clases ya no aparece en su página de precios; solo queda el ahorro por pagar anual."
 herramienta: "GPTZero"
 herramientaId: "gptzero"
 empresa: "GPTZero"
 sitioOficial: "https://gptzero.me/pricing"
-veredicto: "verde"
-fraseCorta: "Sí existe: GPTZero publica en su propia página de precios el código BTS26, con 30% adicional de descuento sobre el plan anual."
-fuenteVerificacion: "Página oficial de precios de GPTZero (gptzero.me/pricing), consultada el 31/08/2026."
+veredicto: "amarillo"
+fraseCorta: "No hay cupón vigente: el código BTS26 de regreso a clases ya no aparece en la página oficial, solo queda el ahorro de 45% por pagar el plan anual."
+fuenteVerificacion: "Página oficial de precios de GPTZero (gptzero.me/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/gptzero.png
 heroImageAlt: GPTZero — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para GPTZero?
 
-Sí, y en este caso no hay que buscarlo en sitios de terceros: aparece directamente en la propia página oficial de precios de GPTZero. gptzero.me/pricing muestra el mensaje "Save an additional 30% on annual plans with code BTS26 for back to school" ("Ahorra un 30% adicional en planes anuales con el código BTS26 por regreso a clases"), aplicado sobre los planes Premium y Professional facturados anualmente.
+Hoy no. Este artículo reportaba el código BTS26 ("Save an additional 30% on annual plans with code BTS26 for back to school"), publicado por GPTZero en su página de precios por la temporada de regreso a clases. El 04/10/2026 revisamos gptzero.me/pricing y ese mensaje ya no aparece, ni el código en ninguna parte de la página. Lo que sí queda a la vista es el descuento por pagar anual: la página marca "Save 45%" frente al plan mensual.
 
-## Cómo funciona el descuento: 30% extra sobre un plan que ya baja de precio al año
+## Lo que sí confirma la página oficial: ahorro por pagar anual
 
-El plan Premium anual ya cuesta menos por mes que el mensual (la propia página lo marca como "Save 62%" frente al precio de lista); el código BTS26 se suma encima de eso, mostrado en el momento de elegir el plan con la etiqueta "30% Off" junto al precio tachado. GPTZero aclara en la misma página que es una "oferta por tiempo limitado" ligada a la temporada de regreso a clases, así que no está garantizado que siga activa fuera de esas fechas — pero al momento de esta verificación, el código funciona y aparece publicado por la propia empresa, no por un agregador.
+Con la página mostrando precios en pesos mexicanos (MXN), Premium cuesta MX$149 al mes si pagas anual (300,000 palabras al mes) contra MX$299 pagando mes a mes, y Professional MX$319 al mes anual contra MX$599 mensual. No es un código: es la condición de precio del plan anual, igual para todos. GPTZero presentó BTS26 como una "oferta por tiempo limitado" ligada a regreso a clases, y tal como avisaba, se retiró; hay que mirar la página cada temporada, porque la empresa lanza promociones por fechas.
 
-## Por qué sí puedes confiar en este código, a diferencia de otros que circulan por ahí
+## Por qué desconfiar de los "códigos GPTZero" que circulan por ahí
 
-A diferencia de otras herramientas de esta serie donde los "códigos" solo existen en sitios de cupones sin confirmación oficial, BTS26 aparece impreso directamente en gptzero.me — la fuente más confiable posible. Aun así, verifica en el momento de pagar que el porcentaje que ves coincida con el que muestra la página oficial: las promociones por temporada como esta pueden cambiar de código o vencer sin aviso.
+Cualquier sitio de cupones que todavía te dé BTS26 (u otro código) como vigente está desactualizado: la propia GPTZero ya no lo publica. Si un código promete un descuento extra, confirma en gptzero.me/pricing, antes de pagar, que el porcentaje que ves en el checkout coincide con lo que muestra la página oficial.
 
 ¿GPTZero entrena su IA con los textos que le subes? [Lee el veredicto verificado →](/articulos/gptzero-usa-mis-datos-para-entrenar-ia/)
 
@@ -33,4 +34,4 @@ A diferencia de otras herramientas de esta serie donde los "códigos" solo exist
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

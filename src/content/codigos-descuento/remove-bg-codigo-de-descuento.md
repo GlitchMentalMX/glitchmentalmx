@@ -5,25 +5,26 @@ herramienta: "remove.bg"
 herramientaId: "remove-bg"
 empresa: "Kaleido AI GmbH (Canva)"
 sitioOficial: "https://www.remove.bg/pricing"
-veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos ni descuento para estudiantes, pero sí un ahorro oficial real por pagar anual."
-fuenteVerificacion: "Página oficial de precios y centro de ayuda de remove.bg (remove.bg/pricing, remove.bg/help), consultados el 30/08/2026."
+veredicto: "rojo"
+fraseCorta: "No existe ningún código de descuento verificable, y el sitio independiente de remove.bg dejará de estar disponible el 1 de diciembre de 2026 al migrar a Canva."
+fuenteVerificacion: "Página oficial de precios y centro de ayuda de remove.bg (remove.bg/pricing, remove.bg/faq), consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/remove-bg.png
 heroImageAlt: remove.bg — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para remove.bg?
 
-No como cupón público abierto a cualquiera. remove.bg, operado por Kaleido AI GmbH (propiedad de Canva), no publica códigos de descuento generales, y su propio centro de ayuda confirma que no existe una tarifa dedicada para estudiantes ni para organizaciones sin fines de lucro — algo que sí ofrecen otras herramientas de Canva, pero no remove.bg como producto independiente. Lo que sí existe es un ahorro real por facturación anual: los planes Lite, Pro y Volume+ bajan alrededor de 10% frente a pagar mes a mes.
+No. remove.bg, operado por Kaleido AI GmbH (propiedad de Canva), no publica códigos de descuento, y hoy tampoco muestra en su página de precios un descuento verificable: ofrece una compra puntual (3 créditos por $3) y una suscripción de 40 créditos por $9 al mes (la página no indica la moneda), sin opción de pago anual a la vista. Una versión anterior de esta página mostraba un ahorro de alrededor de 10% por facturación anual en planes Lite, Pro y Volume+; hoy ya no aparece. No encontré tarifa dedicada para estudiantes ni para organizaciones sin fines de lucro.
 
-## El sistema de "vales de descuento": no es un cupón abierto
+## Lo importante hoy: remove.bg se muda a Canva
 
-remove.bg tiene una función de "Add Discount" en el checkout donde se puede canjear un vale, según su propio centro de ayuda. Pero ese mecanismo está pensado para códigos entregados de forma individual (por ejemplo, en una campaña puntual o un acuerdo específico), no para una promoción pública que cualquiera pueda reclamar escribiéndola en Google.
+La propia página de remove.bg avisa que la herramienta para quitar fondos se traslada a Canva y que el sitio independiente dejará de estar disponible el 1 de diciembre de 2026 a las 9:00 (hora de Europa central, CET). La página de precios también indica que los créditos caducan en esa fecha. Antes de pagar algo, revisa en remove.bg/faq qué pasa con tu suscripción y tus créditos; el camino que propone la empresa es usar la función dentro de Canva.
 
 ## Por qué desconfiar de los "códigos remove.bg" que circulan en sitios de cupones
 
-Múltiples sitios de cupones anuncian códigos como "SAVE30", "WELCOME30" o "FRIDAY50" con descuentos de hasta 50%. Ninguno de esos códigos está confirmado por remove.bg, y su centro de ayuda no documenta ninguna promoción pública de ese tamaño — el único ahorro verificable en la página oficial es el 10% por pago anual. Si un código promete un descuento mucho mayor, no viene de remove.bg.
+Múltiples sitios de cupones anuncian códigos como "SAVE30", "WELCOME30" o "FRIDAY50" con descuentos de hasta 50%. Ninguno de esos códigos está confirmado por remove.bg, y su centro de ayuda no documenta ninguna promoción pública de ese tamaño — en la página oficial de precios de hoy no hay ningún descuento verificable. Si un código promete un descuento mucho mayor, no viene de remove.bg.
 
 ¿Buscas cuánto cuesta remove.bg hoy en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-remove-bg-hoy/)
 
@@ -33,4 +34,4 @@ Múltiples sitios de cupones anuncian códigos como "SAVE30", "WELCOME30" o "FRI
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

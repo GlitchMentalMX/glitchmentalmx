@@ -11,7 +11,7 @@ heroImageAlt: Cursor — Precios de IA
 
 ## Qué cambia el precio final
 
-Cursor no tiene descuento por pago anual — a diferencia de la mayoría de esta lista, el plan Pro cuesta $20 USD al mes sin importar si pagas mes a mes o por adelantado. Arriba existen Pro+ ($60 USD/mes) y Ultra ($200 USD/mes), pensados para quien usa agentes de IA de forma intensiva todo el día, no para uso diario normal de programación — Pro es el punto de entrada real. Un detalle que aclara la propia empresa: Cursor solo se vende directo en cursor.com; cualquier revendedor o "cuenta barata" de terceros no es oficial y puede suspenderse en cualquier momento.
+La página de precios de Cursor muestra un selector Mensual/Anual pero solo publica cifras mensuales: el precio publicado del plan Pro es $20 USD al mes, y no confirmamos si pagar por adelantado lo cambia (revísalo en el checkout antes de pagar). Arriba existen [Pro+](/articulos/cuanto-cuesta-cursor-pro-plus-hoy/) ($60 USD/mes) y Ultra ($200 USD/mes), pensados para quien usa agentes de IA de forma intensiva todo el día, no para uso diario normal de programación — Pro es el punto de entrada real. Un detalle que aclara la propia empresa: Cursor solo se vende directo en cursor.com; cualquier revendedor o "cuenta barata" de terceros no es oficial y puede suspenderse en cualquier momento.
 
 ## Qué incluye el plan pagado
 

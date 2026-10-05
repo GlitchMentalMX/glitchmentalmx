@@ -7,8 +7,9 @@ empresa: "Uncharted Labs, Inc."
 sitioOficial: "https://www.udio.com/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real para estudiantes verificados — 50% off por 6 meses — más el ahorro estándar por pago anual."
-fuenteVerificacion: "Centro de ayuda oficial de Udio (help.udio.com, artículo \"Obtaining a student discount on your subscription\") y udio.com/pricing, consultados el 30/08/2026."
+fuenteVerificacion: "Centro de ayuda oficial de Udio (help.udio.com, artículo \"Obtaining a student discount on your subscription\") y udio.com/pricing, consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/udio.png
 heroImageAlt: Udio — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón público. Udio no distribuye códigos de descuento a través de r
 
 ## El descuento real: 50% para estudiantes verificados
 
-El centro de ayuda oficial de Udio confirma un programa real: estudiantes de universidades acreditadas pueden obtener 50% de descuento en su suscripción durante 6 meses. El sistema intenta verificar automáticamente el correo de la cuenta contra una base de dominios universitarios; si el precio con descuento no aparece solo, Udio pide contactar a soporte con el nombre de la universidad y el correo escolar para verificación manual. Aparte de esto, pagar anual en vez de mensual da un ahorro fijo de aproximadamente 20% tanto en el plan Standard como en el Pro, visible directo en udio.com/pricing.
+El centro de ayuda oficial de Udio confirma un programa real: estudiantes de universidades acreditadas pueden obtener 50% de descuento en su suscripción durante 6 meses. El sistema intenta verificar automáticamente el correo de la cuenta contra una base de dominios universitarios; si el precio con descuento no aparece solo, Udio pide contactar a soporte con el nombre de la universidad y el correo escolar para verificación manual. Ojo si estás en México: la ayuda de Udio no menciona países ni publica la lista de instituciones, y tampoco excluye a ninguno, así que no hay confirmación oficial de que aplique en México; solo se sabe intentándolo. Tampoco aclara qué se cobra al terminar los 6 meses. Aparte de esto, pagar anual en vez de mensual da un ahorro fijo de aproximadamente 20% tanto en el plan Standard como en el Pro, visible directo en udio.com/pricing.
 
 ## Por qué desconfiar de los "códigos Udio" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Hay agregadores que anuncian códigos de 20%, 30% o hasta 58% de descuento para 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

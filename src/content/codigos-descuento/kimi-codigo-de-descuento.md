@@ -6,20 +6,21 @@ herramientaId: "kimi"
 empresa: "Moonshot AI"
 sitioOficial: "https://www.kimi.com/membership/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos confirmados para la membresía, pero sí un descuento oficial real de más del 20% por pagar el plan Moderato anual."
-fuenteVerificacion: "Página oficial de precios de la membresía de Kimi (kimi.com/membership/pricing), consultada el 31/08/2026."
+fraseCorta: "No hay cupones públicos confirmados para la membresía, pero sí un descuento oficial real de cerca de 20% por pagar anual cualquier plan de la membresía."
+fuenteVerificacion: "Página oficial de precios de la membresía de Kimi (kimi.com/membership/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/kimi.png
 heroImageAlt: Kimi — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Kimi?
 
-No como cupón público confirmado para la membresía de consumidor. La página oficial de precios de Kimi no documenta un campo de "código promocional" para el plan Moderato ni para los niveles superiores. Lo que sí confirma esa misma página es el ahorro por pago anual: Moderato baja de $19 a $15 USD al mes ($180 USD al año) si pagas por adelantado, un descuento real cercano al 21%, visible directo al elegir esa opción de facturación.
+No como cupón público confirmado para la membresía de consumidor. La página oficial de precios de Kimi no publica ningún código promocional para la membresía; solo trae un acceso a "canjear código" (兑换码) en el encabezado, sin códigos públicos. Hoy la página muestra los planes Plus, Pro, Max y Ultra, y avisa que hay nuevos planes de membresía y que la elegibilidad de compra depende de lo que muestre la página. Lo que sí confirma es el ahorro por pago anual, en dólares de EE.UU.: Plus baja de $19 a $15 al mes ($180 al año), Pro de $39 a $31 ($372 al año), Max de $99 a $79 ($948) y Ultra de $199 a $159 ($1,908), un descuento real de entre 20% y 21% (la página presume "hasta $480" de ahorro, en Ultra), visible directo al elegir facturación anual.
 
-## Lo que no aplica a la membresía: descuentos de la API
+## Lo que no aplica a la membresía: la API
 
-Moonshot AI, la empresa detrás de Kimi, sí anuncia promociones puntuales para su API de desarrolladores en platform.moonshot.ai — por ejemplo, descuentos temporales sobre ciertos modelos o bonos por recarga de saldo. Esas ofertas son para uso de API por consumo, no para la membresía Moderato/Allegretto/Allegro/Vivace que usa la mayoría de la gente en kimi.com, y no se aplican con un "código" que ingreses en el checkout de la membresía.
+Moonshot AI, la empresa detrás de Kimi, tiene también una API para desarrolladores (platform.kimi.ai, antes platform.moonshot.ai) que se cobra por consumo. Su página de precios de hoy no menciona promociones, bonos ni vales. Es otro producto, aparte de la membresía de consumidor de kimi.com, y nada de lo que se publique ahí se aplica con un "código" en el checkout de la membresía.
 
 ## Por qué desconfiar de los "códigos Kimi" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Hay sitios que anuncian "157 ofertas activas" o hasta 50% de descuento en "Kimi+
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

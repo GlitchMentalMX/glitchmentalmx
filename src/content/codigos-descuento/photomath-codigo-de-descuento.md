@@ -7,15 +7,16 @@ empresa: "Photomath / Google"
 sitioOficial: "https://photomath.com/en/"
 veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento oficial: Photomath Plus solo tiene precio mensual o anual, sin promoción para estudiantes ni cupón alguno."
-fuenteVerificacion: "Página oficial de precios de Photomath (photomath.com/en/), consultada el 31/08/2026."
+fuenteVerificacion: "Página oficial de precios de Photomath (photomath.com/en/) y centro de ayuda de Photomath (support.google.com/photomath), consultados el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/photomath.png
 heroImageAlt: Photomath — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Photomath?
 
-No. La página oficial de precios de Photomath muestra exactamente dos formas de pagar Photomath Plus: $9.99 USD al mes o $69.99 USD al año, sin ningún campo de "código promocional" en el flujo de compra ni mención de descuento para estudiantes, maestros o cualquier otro grupo. Photomath pertenece a Google desde 2023, pero no se factura junto con ninguna suscripción de Google ni hereda ninguno de sus programas de descuento educativo.
+No. La página oficial de precios de Photomath muestra exactamente dos formas de pagar Photomath Plus: $9.99 USD al mes o $69.99 USD al año, sin ningún campo de "código promocional" en el flujo de compra ni mención de descuento para estudiantes, maestros o cualquier otro grupo. Photomath pertenece a Google, pero su página oficial no menciona ningún programa de descuento educativo heredado de Google. Según su centro de ayuda, Plus se cobra a través de Google Play o la App Store, así que el monto final depende de tu tienda y de tu país.
 
 ## El único "ahorro" real es pagar anual en vez de mensual
 
@@ -23,7 +24,7 @@ Lo más parecido a un descuento que ofrece Photomath es la diferencia entre paga
 
 ## Por qué desconfiar de los "códigos Photomath" que circulan en sitios de cupones
 
-Existen sitios agregadores y páginas de "referidos" que prometen códigos de descuento para Photomath Plus, pero ninguno de esos porcentajes aparece confirmado en la página oficial de precios ni en el centro de ayuda de la app. El checkout de Photomath no tiene un campo genérico para canjear cupones de terceros — si un sitio te ofrece un "código Photomath", no viene de la empresa.
+Existen sitios agregadores y páginas de "referidos" que prometen códigos de descuento para Photomath Plus, pero ninguno de esos porcentajes aparece confirmado en la página oficial de precios ni en el centro de ayuda de la app. Photomath no publica ningún código ni cupón en su página oficial — si un sitio te ofrece un "código Photomath", no viene de la empresa.
 
 ¿Buscas cuánto cuesta Photomath exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-photomath-hoy/)
 
@@ -35,4 +36,4 @@ Existen sitios agregadores y páginas de "referidos" que prometen códigos de de
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

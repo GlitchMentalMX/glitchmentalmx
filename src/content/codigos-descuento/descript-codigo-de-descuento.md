@@ -7,8 +7,9 @@ empresa: "Descript, Inc."
 sitioOficial: "https://www.descript.com/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial para estudiantes, educadores y organizaciones sin fines de lucro, verificado por solicitud."
-fuenteVerificacion: "Página oficial de precios de Descript (descript.com/pricing), consultada el 30/08/2026."
+fuenteVerificacion: "Página oficial de precios de Descript (descript.com/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/descript.png
 heroImageAlt: Descript — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón genérico. Descript no tiene un campo de "código promocional" en
 
 ## El descuento real que sí existe: estudiantes, educadores y sin fines de lucro
 
-La sección de preguntas frecuentes de descript.com/pricing confirma que sí hay precio especial para estudiantes, profesores y organizaciones sin fines de lucro verificadas: se solicita llenando un formulario oficial de Descript, no ingresando un código en el checkout. No es un descuento que se anuncie con un porcentaje fijo en la página pública — se aprueba caso por caso tras verificar tu estatus, y se mantiene mientras sigas siendo elegible.
+La sección de preguntas frecuentes de descript.com/pricing confirma que sí hay precio especial para estudiantes, profesores y organizaciones sin fines de lucro verificadas: se solicita llenando un formulario oficial de Descript, no ingresando un código en el checkout. No es un descuento que se anuncie con un porcentaje fijo en la página pública — la página solo dice "Yes, fill out this form" y no publica requisitos, países, duración ni monto, así que no podemos confirmar si aplica en México ni cuánto dura.
 
 ## Por qué desconfiar de los "códigos Descript" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Docenas de sitios agregadores prometen "35% off", "40% off" o cupones exclusivos
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

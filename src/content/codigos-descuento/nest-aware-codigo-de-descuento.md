@@ -7,19 +7,20 @@ empresa: "Google"
 sitioOficial: "https://store.google.com/us/product/google_home_premium"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un ahorro real por pagar anual — y un mes gratis oficial si compras una cámara o timbre nuevo."
-fuenteVerificacion: "Tienda oficial de Google (store.google.com/us/product/google_home_premium), consultada el 30/08/2026."
+fuenteVerificacion: "Tienda oficial de Google (store.google.com/us/product/google_home_premium) y términos de la prueba de Google Home Premium (support.google.com/product-documentation/answer/9796732), consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/nest-aware.png
 heroImageAlt: Google Nest Aware — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Nest Aware?
 
-No como cupón genérico. La tienda oficial de Google —donde Nest Aware ahora se vende bajo el nombre Google Home Premium— no publica ningún campo de "código promocional" ni ningún porcentaje de descuento canjeable en la página del producto. El único ahorro que la propia tienda confirma como oficial es el de pagar por adelantado: el plan Standard (lo que antes era Nest Aware) baja de $120 USD al año pagando mes a mes a $100 USD si pagas la anualidad completa, un ahorro de $20 USD. El plan Advanced (antes Nest Aware Plus) baja de $240 USD a $200 USD anuales bajo el mismo esquema, un ahorro de $40 USD. En ambos casos es alrededor de 17% menos que la mensualidad — no es un cupón, es una condición de precio fija y visible para cualquiera en la tienda, sin necesidad de ingresar ningún código.
+No como cupón genérico. La tienda oficial de Google —donde Nest Aware ahora se vende bajo el nombre Google Home Premium— no publica ningún campo de "código promocional" ni ningún porcentaje de descuento canjeable en la página del producto. El único ahorro que la propia tienda confirma como oficial es el de pagar por adelantado (precios de la tienda de EE.UU., en dólares; la página del producto no aparece en la tienda de México, así que confirma el monto en pesos antes de contratar): el plan Standard (lo que antes era Nest Aware) baja de $120 USD al año pagando mes a mes a $100 USD si pagas la anualidad completa, un ahorro de $20 USD. El plan Advanced (antes Nest Aware Plus) baja de $240 USD a $200 USD anuales bajo el mismo esquema, un ahorro de $40 USD. En ambos casos es alrededor de 17% menos que la mensualidad — no es un cupón, es una condición de precio fija y visible para cualquiera en la tienda, sin necesidad de ingresar ningún código.
 
 ## El otro canal real: un mes gratis al comprar una cámara nueva
 
-Fuera del descuento anual, existe una promoción oficial vigente y verificable: quien compra una Nest Cam Indoor, Nest Cam Outdoor o Nest Doorbell de la generación actual recibe un mes de prueba de Google Home Premium sin costo adicional, canjeable durante la configuración del dispositivo en la app de Google Home. Ojo con la letra chica: la tienda exige una forma de pago válida desde el registro y la suscripción se cobra sola al terminar el mes si no la cancelas antes — no es un descuento sobre el precio, es un mes gratis condicionado a comprar hardware nuevo primero.
+Fuera del descuento anual, existe una prueba gratis oficial: según los términos de Google, la prueba de 30 días de Google Home Premium se limita a una por hogar y aplica a quien compra una Nest Cam o Nest Doorbell de generación nueva, y se activa al configurar el dispositivo en la app de Google Home; no está disponible en todos los países. Ojo con la letra chica: los términos distinguen dos versiones. En la general no se pide forma de pago para empezar; la versión que sí exige una forma de pago válida desde el registro y cobra sola al terminar el periodo es exclusiva de EE.UU. Al terminar, el servicio se acaba salvo que contrates un plan, y una vez iniciada la prueba no se puede cancelar. No es un descuento sobre el precio, es un periodo gratis condicionado a comprar hardware nuevo primero. No pudimos confirmar cuál de las dos versiones aplica en México.
 
 ## Por qué desconfiar de los "códigos Nest Aware" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Existen sitios agregadores de cupones que listan supuestos códigos de descuento
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

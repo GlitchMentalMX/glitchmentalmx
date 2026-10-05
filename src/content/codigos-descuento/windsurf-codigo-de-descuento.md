@@ -5,10 +5,11 @@ herramienta: "Windsurf"
 herramientaId: "windsurf"
 empresa: "Cognition AI, Inc."
 sitioOficial: "https://windsurf.com/pricing"
-veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un descuento oficial para estudiantes verificados — y ahora Windsurf ni siquiera se llama Windsurf."
-fuenteVerificacion: "windsurf.com (redirige a devin.ai/desktop) y windsurf.com/student-terms-and-conditions, consultados el 30/08/2026."
+veredicto: "rojo"
+fraseCorta: "No hay cupones públicos ni oferta vigente: solo quedan unos términos viejos de un descuento para estudiantes que ninguna página de precios ofrece — y Windsurf ya se llama Devin Desktop."
+fuenteVerificacion: "windsurf.com (redirige a devin.ai/desktop), devin.ai/pricing y windsurf.com/student-terms-and-conditions, consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/windsurf.png
 heroImageAlt: Windsurf — Códigos de descuento
 ---
@@ -17,9 +18,9 @@ heroImageAlt: Windsurf — Códigos de descuento
 
 No como cupón público — y antes de buscar uno vale la pena saber esto: desde el 2 de junio de 2026, Cognition AI (la empresa detrás de Devin, que compró Windsurf) renombró el producto a Devin Desktop. Si entras a windsurf.com hoy, te redirige directo a devin.ai. Tu cuenta, tu plan y tu historial siguieron intactos según Cognition, pero el nombre "Windsurf" ya no aparece en el sitio oficial. Ni antes ni ahora existe un campo de "código promocional" genérico en el checkout: no hay un cupón universal que puedas escribir para bajar el precio.
 
-## El descuento real que sí existe: plan para estudiantes
+## El descuento para estudiantes: solo quedan los términos viejos
 
-Windsurf sí tuvo — y la página de términos sigue publicada en windsurf.com/student-terms-and-conditions — un programa oficial para estudiantes de instituciones educativas acreditadas: con verificación por correo institucional y un servicio externo de validación, el plan Pro baja a una fracción del precio normal por periodos de hasta 12 meses, renovables hasta tres veces más. No es un código que se comparta en redes: se activa por cuenta, verificando que de verdad estás inscrito en una escuela.
+Windsurf tuvo un programa oficial para estudiantes de instituciones de educación superior acreditadas, y la página de términos sigue publicada en windsurf.com/student-terms-and-conditions: con verificación de datos (nombre, institución, correo, fecha de nacimiento) y un servicio externo de validación, el plan Pro tenía una mensualidad con descuento por periodos de hasta 12 meses consecutivos, renovables hasta tres veces más. Los términos nunca dicen de cuánto es el descuento, ni mencionan países, y reservan el derecho de terminar o modificar el programa en cualquier momento. Hoy, la página de precios de Devin (devin.ai/pricing) lista Free, Pro ($20 al mes, sin aclarar moneda), Max, Teams y Enterprise, sin ningún plan o descuento para estudiantes. Es decir: no hay una oferta vigente confirmada que puedas reclamar, y tampoco se puede confirmar si aplicaría en México.
 
 ## Por qué desconfiar de los "códigos Windsurf" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Sitios agregadores siguen anunciando "cupones Windsurf" con descuentos de hasta 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

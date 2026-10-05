@@ -7,8 +7,9 @@ empresa: "Recraft Ltd."
 sitioOficial: "https://www.recraft.ai/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real del 20% por pagar anual."
-fuenteVerificacion: "Página oficial de precios de Recraft (recraft.ai/pricing), consultada el 30/08/2026."
+fuenteVerificacion: "Página oficial de precios de Recraft (recraft.ai/pricing), consultada el 04/10/2026; programa de referidos según el blog oficial de Recraft (recraft.ai/blog)."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/recraft-ai.png
 heroImageAlt: Recraft — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón público. Recraft Ltd. no anuncia un código de descuento general
 
 ## Por qué desconfiar de los "códigos Recraft" que circulan en sitios de cupones
 
-Sitios de cupones listan docenas de códigos como "SHARK11", "PIXEL12" o "MODEL20" con descuentos de hasta 65%. Ninguno de esos códigos aparece mencionado en recraft.ai, y no hay evidencia de que Recraft distribuya cupones masivos fuera de su programa de referidos, que da créditos gratis tanto a quien invita como a quien se une — no un descuento en efectivo. Si un sitio te ofrece un porcentaje mucho mayor al 20% oficial, desconfía.
+Sitios de cupones listan docenas de códigos como "SHARK11", "PIXEL12" o "MODEL20" con descuentos de hasta 65%. Ninguno de esos códigos aparece mencionado en recraft.ai, y no hay evidencia de que Recraft distribuya cupones masivos fuera de su programa de referidos, que según un artículo del blog oficial da 200 créditos gratis tanto a quien invita como a quien se une (no un descuento en efectivo); no pude confirmar hoy que ese programa siga activo, porque su página de ayuda ya no carga. Si un sitio te ofrece un porcentaje mucho mayor al 20% oficial, desconfía.
 
 ¿Buscas cuánto cuesta Recraft hoy en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-recraft-ai-hoy/)
 
@@ -29,4 +30,4 @@ Sitios de cupones listan docenas de códigos como "SHARK11", "PIXEL12" o "MODEL2
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

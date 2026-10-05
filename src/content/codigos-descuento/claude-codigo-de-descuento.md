@@ -6,20 +6,21 @@ herramientaId: "claude"
 empresa: "Anthropic"
 sitioOficial: "https://claude.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar anual — y créditos ocasionales al lanzar un modelo nuevo."
-fuenteVerificacion: "Página oficial de precios de Anthropic (claude.com/pricing), consultada el 30/08/2026."
+fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real por pagar Claude Pro de forma anual: de $20 a $17 USD al mes."
+fuenteVerificacion: "Página oficial de precios de Anthropic (claude.com/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/claude.png
 heroImageAlt: Claude — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Claude?
 
-No como cupón público. Anthropic no ofrece códigos de descuento canjeables para Claude Pro o Max — no hay un campo de "código promocional" en el checkout, y su soporte no emite descuentos puntuales a quien los pida. Lo único que la página oficial de precios confirma como descuento real es el pago anual: Claude Pro baja de $20 USD al mes a $17 USD al mes si pagas los $200 USD por adelantado, un ahorro de alrededor de 15% frente a pagar mes a mes. Eso no es un cupón — es una condición de precio fija, visible para cualquiera en claude.com/pricing, sin necesidad de ingresar ningún código.
+No como cupón público. Anthropic no ofrece códigos de descuento canjeables para Claude Pro o Max — no hay un campo de "código promocional" en el checkout, y su soporte no emite descuentos puntuales a quien los pida. Lo único que la página oficial de precios confirma como descuento real es el pago anual: Claude Pro baja de $20 USD al mes a $17 USD al mes si pagas los $200 USD por adelantado, un ahorro de alrededor de 17% frente a pagar mes a mes (precios en dólares y sin impuestos, tal como los muestra la página). Eso no es un cupón — es una condición de precio fija, visible para cualquiera en claude.com/pricing, sin necesidad de ingresar ningún código.
 
-## El otro canal real: créditos por lanzamiento de modelo
+## Créditos por lanzamiento de modelo: no confirmados
 
-Fuera del descuento anual, Anthropic reparte ocasionalmente créditos de uso a suscriptores activos cuando lanza un modelo nuevo — no es un beneficio permanente ni algo que puedas solicitar, sino una promoción puntual que llega directo al dashboard de quien ya es cliente de pago. No es un código que circule en internet: si no apareció en tu cuenta, no existe una forma de conseguirlo por fuera.
+Una versión anterior de este artículo mencionaba créditos de uso que Anthropic reparte ocasionalmente a suscriptores cuando lanza un modelo nuevo. Ya no lo damos por confirmado: ni la página de precios ni el centro de ayuda de Anthropic consultados hoy documentan ese beneficio. Lo que sí documentan son los "créditos de uso" que tú puedes activar para seguir usando Claude después de alcanzar el límite de tu plan, que se cobran a tarifa de API: es consumo de pago, no un descuento. Y cualquier crédito que llegue a tu cuenta no es un código que circule en internet.
 
 ## Por qué desconfiar de los "códigos Claude" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Existen decenas de sitios de cupones (agregadores genéricos de "promo codes") q
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

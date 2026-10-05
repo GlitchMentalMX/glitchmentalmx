@@ -1,6 +1,6 @@
 ---
 title: "¿Duolingo tiene descuento para estudiantes? Qué sí existe en México"
-description: "Duolingo no publica descuento de estudiante en su página de Super ni en su centro de ayuda. Lo que sí hay: 1 semana gratis, plan Family y Escuelas para docentes."
+description: "Duolingo no publica descuento de estudiante en Super ni en su ayuda. Lo que sí hay: 1 semana gratis, plan Family y Escuelas para docentes."
 herramienta: "Duolingo"
 herramientaId: "duolingo"
 empresa: "Duolingo, Inc."

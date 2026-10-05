@@ -7,8 +7,9 @@ empresa: "Microsoft"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-365/buy/compare-all-microsoft-365-products"
 veredicto: "verde"
 fraseCorta: "No hay cupón genérico, pero el descuento de 50% para estudiantes es real, oficial y tiene su propia página dedicada en Microsoft.com."
-fuenteVerificacion: "Página oficial de Microsoft: descuento de estudiante para Microsoft 365 (microsoft.com/en-us/microsoft-365/college-student-pricing), consultada el 31/08/2026."
+fuenteVerificacion: "Páginas oficiales de Microsoft: descuento de estudiante para Microsoft 365 (microsoft.com/es-mx/microsoft-365/college-student-pricing y su versión de EE.UU. microsoft.com/en-us/microsoft-365/college-student-pricing) y comparativa de planes de EE.UU., consultadas el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/microsoft-365.png
 heroImageAlt: Microsoft 365 — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón que cualquiera pueda usar en el checkout de Personal o Family. Mi
 
 ## El descuento real: 50% para estudiantes, con página oficial propia
 
-Microsoft tiene una página dedicada exclusivamente a esto — microsoft.com/en-us/microsoft-365/college-student-pricing — donde ofrece Microsoft 365 Personal, con Copilot incluido, a $4.99 USD al mes en vez de los $9.99 USD normales: la mitad de precio. Para reclamarlo, verificas tu estatus de estudiante universitario con tu correo EDU u otra documentación aceptada, directamente en el flujo de compra — no hay un código que compartir, es una cuenta verificada. La misma página oficial explica qué pasa con la suscripción cuando te gradúas y dejas de calificar.
+Microsoft tiene una página dedicada exclusivamente a esto, publicada también en su sitio de México (microsoft.com/es-mx/microsoft-365/college-student-pricing), donde anuncia "50% de ahorro" en Microsoft 365 Personal, con Copilot incluido: la mitad del precio mensual normal (en la tienda de EE.UU., Personal cuesta $9.99 USD al mes; las páginas de México que consultamos no muestran el monto en pesos, así que revisa el precio en el checkout). Para reclamarlo, verificas tu estatus de estudiante universitario con tu correo EDU u otra información de estudiante, después de iniciar sesión con tu cuenta Microsoft — no hay un código que compartir, es una cuenta verificada. Durante el periodo de descuento la suscripción se renueva sola al precio mensual con descuento, a menos que la canceles en tu cuenta Microsoft. La misma página oficial explica qué pasa con la suscripción cuando te gradúas y dejas de calificar.
 
 ## Por qué desconfiar de los "códigos Microsoft 365" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Hay sitios que anuncian "cupones Microsoft 365" con porcentajes que no coinciden
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

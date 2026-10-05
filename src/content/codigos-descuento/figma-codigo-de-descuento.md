@@ -6,16 +6,17 @@ herramientaId: "figma"
 empresa: "Figma, Inc."
 sitioOficial: "https://www.figma.com/pricing/"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un programa oficial que regala Figma completo a estudiantes y maestros, más un 20% de descuento por pago anual."
-fuenteVerificacion: "Páginas oficiales de Figma: figma.com/pricing y figma.com/education, consultadas el 31/08/2026."
+fraseCorta: "No hay cupones públicos, pero sí un programa oficial que regala el plan Professional a estudiantes y docentes (solo en \"regiones selectas\", sin confirmar México), más un 20% de descuento por pago anual."
+fuenteVerificacion: "Páginas oficiales de Figma: figma.com/pricing y figma.com/education, help.figma.com (artículo «Figma for Education») y figma.com/es-la/pricing, consultadas el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/figma.png
 heroImageAlt: Figma — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Figma?
 
-No como cupón de checkout. La página oficial de precios de Figma no tiene un campo de "código promocional" abierto al público general. Lo que sí existe, documentado en su propio sitio, es un programa completo de acceso gratuito: Figma for Education da acceso sin costo a Figma Design, FigJam y Dev Mode a estudiantes y maestros de nivel K-12 y de educación superior, verificando tu condición con un correo escolar en figma.com/education. No es un porcentaje de descuento — es el plan completo, gratis, mientras mantengas tu estatus de estudiante o educador verificado.
+No como cupón de checkout. La página oficial de precios de Figma no tiene un campo de "código promocional" abierto al público general. Lo que sí existe, documentado en su propio sitio, es un programa completo de acceso gratuito: Figma for Education da el plan Professional sin costo (con Figma Design, FigJam y Dev Mode) a estudiantes y docentes de educación superior, bootcamps aprobados y preparatoria; en educación superior y bootcamps incluye además herramientas de IA (Figma Make, con créditos mensuales) y Figma Sites. Los alumnos y docentes de primaria y secundaria (K-12) acceden a través de su escuela o distrito. Se verifica con correo escolar en figma.com/education. No es un porcentaje de descuento: es el plan gratis mientras tu verificación esté vigente (un año para estudiantes; después hay que renovarla). Ojo con México: Figma dice que el programa "solo está disponible en regiones selectas" y no publica la lista ni nombra a México, así que no podemos confirmar que te funcione; la forma de saberlo es intentar el trámite con tu correo escolar.
 
 ## El otro descuento real: pago anual
 
@@ -35,4 +36,4 @@ Existen sitios que anuncian cupones de "30%" o "50% off" para Figma Professional
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

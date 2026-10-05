@@ -7,19 +7,20 @@ empresa: "DeepSeek"
 sitioOficial: "https://chat.deepseek.com/"
 veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento porque no hay nada que descontar: el chat es gratis y la API se cobra por token, sin plan de suscripción."
-fuenteVerificacion: "Documentación oficial de precios de la API de DeepSeek (api-docs.deepseek.com/quick_start/pricing), consultada el 30/08/2026."
+fuenteVerificacion: "Documentación oficial de precios de la API de DeepSeek (api-docs.deepseek.com/quick_start/pricing) y anuncio oficial de la app (deepseek.com/en/news/deepseek-app), consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/deepseek.png
 heroImageAlt: DeepSeek — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para DeepSeek?
 
-No, y en este caso ni siquiera tiene sentido buscarlo: DeepSeek no vende una suscripción de consumidor como ChatGPT Plus o Claude Pro. El chat en chat.deepseek.com y su app oficial son completamente gratuitos, sin límite de mensajes, sin plan "Pro" de pago y sin muro de pago para historial largo o subida de archivos. No hay un precio fijo que un cupón pudiera reducir, porque no hay nada que cobrar en primer lugar.
+No, y en este caso ni siquiera tiene sentido buscarlo: DeepSeek no vende una suscripción de consumidor como ChatGPT Plus o Claude Pro. El chat en chat.deepseek.com y su app oficial son gratuitos: el anuncio oficial de la app dice "100% FREE", sin anuncios ni compras dentro de la app, y no publica límites de mensajes ni planes de suscripción. No hay un precio fijo que un cupón pudiera reducir, porque no hay nada que cobrar en primer lugar.
 
 ## Lo único que existe: precios por token en la API, sin descuentos
 
-Para desarrolladores, DeepSeek sí cobra por su API, con tarifas por millón de tokens que varían entre horario de baja demanda y horario pico. La documentación oficial no menciona código de descuento, plan anual, programa de estudiantes ni descuento por volumen; solo advierte que los precios pueden variar y que la compañía se reserva el derecho de ajustarlos. DeepSeek ha bajado precios de forma general en el pasado, pero eso es un cambio de tarifa para todos los usuarios de la API, no un descuento que se reclame con un código.
+Para desarrolladores, DeepSeek sí cobra por su API, con tarifas por millón de tokens que varían por modelo y entre horario de baja demanda y horario pico (la tarifa fuera de pico es la mitad de la de pico). La documentación oficial no menciona código de descuento, plan anual, programa de estudiantes ni descuento por volumen; solo advierte que los precios pueden variar y que la compañía se reserva el derecho de ajustarlos. DeepSeek ha bajado precios de forma general en el pasado, pero eso es un cambio de tarifa para todos los usuarios de la API, no un descuento que se reclame con un código.
 
 ## Por qué desconfiar de los "códigos DeepSeek" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Hay sitios de cupones que anuncian códigos de "40%" o "90% off" para DeepSeek, 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

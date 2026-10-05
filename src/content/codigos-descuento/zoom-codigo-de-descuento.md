@@ -7,8 +7,9 @@ empresa: "Zoom"
 sitioOficial: "https://www.zoom.com/en/pricing/"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos para cuentas normales, pero sí un descuento oficial real de 50% para organizaciones sin fines de lucro verificadas."
-fuenteVerificacion: "Página oficial de precios de Zoom (zoom.com/pricing) y programa Zoom Cares (zoom.com/en/zoom-cares), consultados el 30/08/2026."
+fuenteVerificacion: "Página oficial de precios de Zoom (zoom.com/pricing, que hoy redirige a zoom.us/en/pricing), programa Zoom Cares (zoom.com/en/zoom-cares) y artículo de ayuda \"Subscribing to Zoom as a nonprofit organization\" (support.zoom.com), consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/zoom.png
 heroImageAlt: Zoom — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No para una cuenta personal o de negocio normal. El checkout de Zoom Pro no tien
 
 ## El descuento real: Zoom Cares, para organizaciones sin fines de lucro
 
-Zoom Cares es el programa oficial de Zoom que ofrece 50% de descuento en productos elegibles (como Zoom Workplace Pro y Business) para organizaciones sin fines de lucro con estatus 501(c)(3) o su equivalente internacional, y bibliotecas públicas, siempre que su presupuesto operativo no supere los $10 millones de dólares. El descuento solo aplica a planes anuales, no mensuales. Desde mediados de 2025 la verificación de elegibilidad la hace Goodstack (antes la hacía TechSoup): una vez que Goodstack confirma el estatus de la organización, Zoom envía por correo un código de descuento que se canjea directo en la cuenta. Es, técnicamente, un código — pero uno que solo se obtiene después de pasar una verificación como organización sin fines de lucro, no algo que un usuario individual pueda conseguir o compartir libremente.
+Zoom Cares es el programa oficial de Zoom que ofrece 50% de descuento en productos elegibles (como Zoom Workplace Pro y Business) para organizaciones sin fines de lucro con estatus 501(c)(3) o su equivalente internacional, y bibliotecas públicas, siempre que su presupuesto operativo no supere los $10 millones de dólares. El descuento solo aplica a planes anuales, no mensuales. Desde mediados de 2025 la verificación de elegibilidad la hace Goodstack (antes la hacía TechSoup): Goodstack responde a la solicitud en 2-3 días hábiles según la ayuda de Zoom y, si la organización califica, le da las instrucciones para comprar con el descuento (no se publica un código genérico; la página de Zoom no detalla el mecanismo exacto). Quedan fuera instituciones educativas (K-12 y superior), organizaciones de salud, agencias de gobierno y otras figuras como 501(c)(4) y 501(c)(6), y la ayuda aclara que no se reembolsan cobros anteriores a la verificación. Es un descuento que solo se obtiene después de pasar una verificación como organización sin fines de lucro, no algo que un usuario individual pueda conseguir o compartir libremente. Aplica a organizaciones de cualquier país si su figura equivale a la 501(c)(3) y está reconocida por su regulador local; no está pensado para personas físicas.
 
 ## Por qué desconfiar de los "códigos Zoom" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Sitios de cupones anuncian docenas de códigos genéricos con "hasta 60% de desc
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

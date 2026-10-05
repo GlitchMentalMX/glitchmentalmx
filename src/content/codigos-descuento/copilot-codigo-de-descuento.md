@@ -7,19 +7,20 @@ empresa: "Microsoft"
 sitioOficial: "https://www.microsoft.com/en-us/microsoft-365/premium"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos universales, pero sí un descuento oficial real de 50% para estudiantes verificados, además del ahorro normal por pagar anual."
-fuenteVerificacion: "Páginas oficiales de Microsoft: microsoft.com/en-us/microsoft-365/premium y microsoft.com/en-us/microsoft-365/college-student-pricing, consultadas el 30/08/2026."
+fuenteVerificacion: "Páginas oficiales de Microsoft: microsoft.com/en-us/microsoft-365/premium, microsoft.com/en-us/microsoft-365/college-student-pricing, microsoft.com/es-mx/microsoft-365/college-student-pricing y microsoft.com/es-mx/microsoft-365-copilot/personal, consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/copilot.png
 heroImageAlt: Copilot — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Copilot?
 
-No como cupón genérico para cualquier persona. Microsoft 365 Premium (el plan que incluye Copilot) cuesta $19.99 USD al mes o $199.99 USD al año en su página oficial de precios, sin un campo de "código promocional" abierto al público en el checkout estándar. Los descuentos reales que sí existen están ligados a quién eres, no a un texto que cualquiera pueda copiar.
+No como cupón genérico para cualquier persona. En la página oficial de EE.UU., Microsoft 365 Premium (el plan con más Copilot) cuesta $19.99 USD al mes o $199.99 USD al año; son precios de EE.UU., no de México. La página mexicana de planes muestra Microsoft 365 Personal en MXN$184.99 al mes. En ninguna hay un campo de "código promocional" abierto al público en el checkout estándar. Los descuentos reales que sí existen están ligados a quién eres, no a un texto que cualquiera pueda copiar.
 
 ## Los canales reales: pago anual y estudiantes verificados
 
-Pagar el plan anual en vez de mes a mes ya representa un ahorro frente a los $239.88 USD que costarían doce meses pagados por separado — sin necesidad de código. El descuento más notable, sin embargo, es para estudiantes: la página oficial de Microsoft confirma que estudiantes universitarios de tiempo completo o parcial en instituciones acreditadas pueden obtener Microsoft 365 Personal con Copilot a $4.99 USD al mes, un 50% menos que el precio regular, verificando su condición de estudiante con correo escolar, credencial, boleta o carta de aceptación en microsoft.com/en-us/microsoft-365/college-student-pricing.
+Pagar el plan anual en vez de mes a mes ya representa un ahorro frente a los $239.88 USD que costarían doce meses pagados por separado — sin necesidad de código. El descuento más notable, sin embargo, es para estudiantes: la página oficial de Microsoft anuncia 50% de descuento en Microsoft 365 Personal (que incluye Copilot) para estudiantes de educación superior, verificando su condición de estudiante con correo escolar u otro comprobante. Existe una página equivalente en la versión mexicana del sitio (microsoft.com/es-mx/microsoft-365/college-student-pricing), aunque Microsoft no publica ahí una lista de países ni el precio ya con descuento; el monto exacto del precio con descuento no aparece en la página oficial, así que no lo damos por confirmado. Hay que agregar un método de pago, y el descuento se renueva solo al precio mensual normal si no cancelas.
 
 ## Por qué desconfiar de los "códigos Copilot" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Existen sitios de cupones y hasta revendedores que anuncian códigos de 15%, 30%
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

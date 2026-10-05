@@ -7,19 +7,20 @@ empresa: "Riverside"
 sitioOficial: "https://riverside.com/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos verificados, pero sí hasta 20% de descuento oficial y automático por pagar los planes anuales."
-fuenteVerificacion: "Página oficial de precios de Riverside (riverside.com/pricing, antes riverside.fm), consultada el 31/08/2026."
+fuenteVerificacion: "Página oficial de precios de Riverside (riverside.com/pricing, antes riverside.fm), consultada el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/riverside-fm.png
 heroImageAlt: Riverside.fm — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Riverside.fm?
 
-No como cupón genérico de checkout. Riverside.fm (ahora bajo el dominio riverside.com) no tiene un campo público de "código promocional" en su página de precios. Lo que sí existe, mostrado directamente en un banner de la propia página oficial, es un descuento de hasta 20% por elegir facturación anual: el plan Pro baja de $29 a $24 USD al mes ($288 al año), el Grow de $39 a $34 USD al mes ($408 al año), y el Webinar de $99 a $79 USD al mes ($408 al año). Se aplica automáticamente al seleccionar la opción anual, sin necesidad de ningún código.
+No como cupón genérico de checkout. Riverside.fm (ahora bajo el dominio riverside.com) no tiene un campo público de "código promocional" en su página de precios. Lo que sí existe, mostrado directamente en un banner de la propia página oficial, es un descuento de hasta 20% por elegir facturación anual: el plan Pro baja de $29 a $24 al mes ($288 al año), el Grow de $39 a $34 al mes ($408 al año), y el Webinar de $99 a $79 al mes (unos $948 al año, por cálculo: 12 × $79). La página no indica la moneda. Se aplica automáticamente al seleccionar la opción anual, sin necesidad de ningún código.
 
 ## No hay un programa confirmado para estudiantes ni nonprofits
 
-A pesar de que sitios de terceros mencionan descuentos "para estudiantes" o "para startups", ninguno de esos programas aparece documentado en el centro de ayuda oficial de Riverside. El plan gratuito de por vida sigue siendo la opción real para quien no puede pagar, no un descuento porcentual verificado sobre los planes de paga.
+A pesar de que sitios de terceros mencionan descuentos "para estudiantes" o "para startups", ninguno de esos programas aparece documentado en el centro de ayuda oficial de Riverside. Lo que la página de precios sí ofrece hoy es una prueba gratis de 14 días en los planes de pago, que no es un descuento porcentual sobre ellos.
 
 ## Por qué desconfiar de los "códigos Riverside" que circulan en sitios de cupones
 
@@ -35,4 +36,4 @@ Existen decenas de sitios que anuncian códigos como "AMANDA30" o "BUZZSPROUT" c
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

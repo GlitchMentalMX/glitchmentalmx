@@ -1,21 +1,22 @@
 ---
 title: "¿Claude Code tiene código de descuento real, o es un cupón falso?"
-description: "Verificamos en claude.com/pricing si existe un código real para Claude Code, y por qué su único ahorro oficial es el descuento anual de Pro y Max."
+description: "Verificamos en claude.com/pricing si existe un código real para Claude Code, y por qué su único ahorro oficial es el descuento anual de Pro."
 herramienta: "Claude Code"
 herramientaId: "claude-code"
 empresa: "Anthropic"
 sitioOficial: "https://claude.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos para Claude Code — no se vende aparte —, pero sí el descuento oficial real por pagar Claude Pro o Max de forma anual."
-fuenteVerificacion: "Página oficial de precios de Anthropic (claude.com/pricing), consultada el 31/08/2026."
+fraseCorta: "No hay cupones públicos para Claude Code — no se vende aparte —, pero sí el descuento oficial real por pagar Claude Pro de forma anual."
+fuenteVerificacion: "Página oficial de precios de Anthropic (claude.com/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/claude-code.png
 heroImageAlt: Claude Code — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Claude Code?
 
-No, y aquí hay un matiz importante: Claude Code no se vende como producto aparte con su propio precio. Es una herramienta incluida dentro de los planes de chat de Anthropic — Pro, Max, Team o Enterprise —, así que no existe un checkout específico de "Claude Code" donde canjear un cupón. El único descuento real que confirma la página oficial de precios de Anthropic es el mismo que aplica a cualquier suscriptor: Claude Pro baja de $20 a $17 USD al mes si pagas los $200 USD del año completo por adelantado, un ahorro de alrededor de 15%. Ese descuento también cubre el acceso a Claude Code, sin cargo adicional.
+No, y aquí hay un matiz importante: Claude Code no se vende como producto aparte con su propio precio. Es una herramienta incluida dentro de los planes de chat de Anthropic — Pro, Max, Team o Enterprise —, así que no existe un checkout específico de "Claude Code" donde canjear un cupón. El único descuento real que confirma la página oficial de precios de Anthropic es el mismo que aplica a cualquier suscriptor: Claude Pro baja de $20 a $17 USD al mes si pagas los $200 USD del año completo por adelantado, un ahorro de alrededor de 17% (precios en dólares y sin impuestos, como los muestra la página). Ese descuento también cubre el acceso a Claude Code, sin cargo adicional.
 
 ## La otra vía: pagar por consumo, sin descuento fijo
 
@@ -35,4 +36,4 @@ Hay sitios de cupones que listan códigos de descuento específicos para "Claude
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

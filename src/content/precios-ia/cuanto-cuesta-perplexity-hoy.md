@@ -27,4 +27,6 @@ Sí — y desde julio de 2026 ya ni promete por escrito dejarte optar por no par
 
 ¿Perplexity tiene un código de descuento real? [Verifícalo aquí →](/articulos/perplexity-codigo-de-descuento/)
 
+¿Necesitas más que Perplexity Pro? Revisa [Perplexity Max](/articulos/cuanto-cuesta-perplexity-max-hoy/).
+
 <a href="https://www.perplexity.ai/pro" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Perplexity Pro →</a>

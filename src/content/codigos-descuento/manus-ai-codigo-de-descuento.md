@@ -6,24 +6,25 @@ herramientaId: "manus-ai"
 empresa: "Manus AI"
 sitioOficial: "https://manus.im/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos confirmados, pero sí un descuento oficial real por pago anual y un programa de campus que da créditos gratis a estudiantes verificados."
-fuenteVerificacion: "Página oficial de precios de Manus (manus.im/pricing) y Campus Program (manus.im/edu), consultadas el 31/08/2026."
+fraseCorta: "No hay cupones públicos confirmados, pero sí un descuento oficial real por pago anual y un programa de campus con créditos (sin monto publicado) para estudiantes de las escuelas de su lista; sin confirmar para México."
+fuenteVerificacion: "Página oficial de precios de Manus (manus.im/pricing) y reglas del Campus Program (manus.im/edu/rules; manus.im/edu ya redirige a la página principal), consultadas el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/manus-ai.png
 heroImageAlt: Manus — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Manus?
 
-No como cupón público confirmado. La página oficial de precios de Manus no documenta un campo de "código promocional" abierto al público general. Lo que sí confirma esa misma página es el ahorro por facturación anual: el primer plan de pago, de $20 USD al mes, baja aproximadamente 17% si pagas el año completo por adelantado. Es una condición de precio fija, no un cupón que tengas que buscar.
+No como cupón público confirmado. La página oficial de precios de Manus no documenta un campo de "código promocional" abierto al público general. Lo que sí confirma esa misma página es el ahorro por facturación anual: la página de precios muestra un selector Mensual/Anual con la leyenda "Ahorra 17%" en los planes de pago si pagas el año completo por adelantado. Es una condición de precio fija, no un cupón que tengas que buscar.
 
 ## El programa real para estudiantes: Manus Campus
 
-Fuera del descuento anual, Manus documenta oficialmente el Campus Program en manus.im/edu: estudiantes, egresados y personal de instituciones participantes que verifican su correo académico reciben créditos iniciales gratis (los mismos 1,000 créditos de bienvenida más 300 diarios que da el plan gratuito), acceso anticipado a funciones nuevas, y créditos adicionales por cada compañero que se una con su referido. No es un descuento porcentual sobre un plan de pago — es un programa de acceso gratuito documentado directamente por la compañía, disponible en miles de instituciones.
+Fuera del descuento anual, Manus documenta oficialmente el Campus Program en manus.im/edu/rules: está abierto a estudiantes, egresados y personal (mayores de 18 años) de instituciones que aparezcan en su lista de escuelas participantes, con acceso anticipado a funciones y créditos que se ganan cuando refieres a alguien nuevo de tu misma institución (ambos reciben créditos). Las reglas no publican cuántos créditos son ("may vary", a discreción de Manus), ni cuántas instituciones participan, ni mencionan países, así que no podemos confirmar que incluya escuelas de México. No es un descuento porcentual sobre un plan de pago, y Manus puede terminar el programa o tu participación sin aviso.
 
 ## Por qué desconfiar de los "códigos Manus" que circulan en sitios de cupones
 
-Hay sitios que anuncian descuentos de hasta 75% u ofertas de "6 meses gratis" para Manus, y hasta una supuesta herramienta de "buscador automático de cupones". Ninguno de esos porcentajes específicos aparece confirmado en manus.im. El único descuento porcentual real que documenta la propia compañía es el 17% por pago anual, además del programa de referidos (que da créditos, no dinero) y el Campus Program para instituciones verificadas.
+Hay sitios que anuncian descuentos de hasta 75% u ofertas de "6 meses gratis" para Manus, y hasta una supuesta herramienta de "buscador automático de cupones". Ninguno de esos porcentajes específicos aparece confirmado en manus.im. El único descuento porcentual real que documenta la propia compañía es el 17% por pago anual, además del Campus Program (que da créditos, no dinero) para instituciones de su lista.
 
 ¿Buscas cuánto cuesta Manus exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-manus-ai-hoy/)
 
@@ -35,4 +36,4 @@ Hay sitios que anuncian descuentos de hasta 75% u ofertas de "6 meses gratis" pa
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

@@ -6,8 +6,8 @@ herramientaId: "scispace"
 empresa: "SciSpace (PubGenius Inc.)"
 sitioOficial: "https://scispace.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "30% en planes anuales con el código SCI30, pero no es exclusivo de estudiantes ni se verifica; la pantalla de precios lo marca como venta relámpago."
-fuenteVerificacion: "Fuente oficial (scispace.com: página de precios y Help Center, artículo 'Discounts on SciSpace Plans'; education.scispace.com), consultada el 04/10/2026."
+fraseCorta: "30% en planes anuales con el código SCI30, abierto a cualquiera (no exclusivo de estudiantes); la empresa lo mantiene en su FAQ de precios."
+fuenteVerificacion: "Fuente oficial (scispace.com: página de precios y Help Center, artículo 'Discounts on SciSpace Plans'; education.scispace.com), consultada el 04/10/2026 (confirmada de nuevo en el FAQ de precios al cierre del día)."
 pubDate: 2026-10-04
 heroImage: /images/estudiantes/scispace.png
 heroImageAlt: SciSpace — Descuentos para estudiantes
@@ -31,7 +31,7 @@ La empresa no especifica países para ninguna de las dos ofertas. El Help Center
 
 Para la beca, aplicas desde education.scispace.com con tu correo universitario y SciSpace confirma tus credenciales. La página no aclara qué correos o instituciones aceptan, ni cuánto tarda la respuesta.
 
-Cuidado con la fecha: el Help Center presenta el código como permanente (artículo del 20 de abril de 2026), pero los datos de la página de precios lo etiquetan como "venta relámpago hasta el 04 de octubre de 2026", o sea hoy. Si el cupón ya no funciona, es por eso.
+Cuidado con la fecha: hasta el 04 de octubre de 2026 la página de precios marcaba el código como "venta relámpago". Ese aviso ya no aparece, y tanto el FAQ de la página de precios como el Help Center siguen presentando SCI30 como oferta vigente, sin fecha de fin. Aun así, no hay promesa de que sea permanente: si el cupón no funciona en el checkout, es por eso.
 
 ## Qué pasa cuando termina
 

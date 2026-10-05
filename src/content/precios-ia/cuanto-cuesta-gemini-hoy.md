@@ -29,4 +29,6 @@ Sí, por default — el mismo interruptor que cubre todo el ecosistema de Google
 
 ¿Gemini tiene un código de descuento real? [Verifícalo aquí →](/articulos/gemini-codigo-de-descuento/)
 
+¿Buscas el escalón más alto de Google? Revisa [Google AI Ultra](/articulos/cuanto-cuesta-google-ai-ultra-hoy/).
+
 <a href="https://one.google.com/about/google-ai-plans/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Google AI Pro →</a>

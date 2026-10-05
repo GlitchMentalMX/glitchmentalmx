@@ -11,7 +11,7 @@ heroImageAlt: Claude — Precios de IA
 
 ## Qué cambia el precio final
 
-Claude Pro sí tiene descuento por pago anual: facturado mes a mes cuesta $20 USD, pero facturado una vez al año baja a un equivalente de $17 USD mensuales — alrededor de $204 USD al año contra $240 USD si pagas mes con mes. Es una diferencia real, de casi un mes gratis al año, así que vale la pena decidir de entrada si vas a usar Claude más de unas semanas antes de escoger el plan mensual por costumbre. El canal de compra también mueve el número final: comprado vía la app de iOS, el plan anual puede salir más caro que en la web — hasta con un sobreprecio reportado de doble dígito porcentual en el tier superior "Max" — porque Apple cobra su comisión de plataforma y Anthropic la traslada al precio. El plan mensual básico, en cambio, suele mantenerse igual en ambos canales dentro de Estados Unidos. Si vas a pagar el anual, hazlo desde el sitio web de Anthropic, no desde la App Store, para no perder el ahorro que buscabas en primer lugar.
+Claude Pro sí tiene descuento por pago anual: facturado mes a mes cuesta $20 USD, pero facturado una vez al año baja a un equivalente de $17 USD mensuales — $200 USD facturados por adelantado al año contra $240 USD si pagas mes con mes. Es una diferencia real, de casi un mes gratis al año, así que vale la pena decidir de entrada si vas a usar Claude más de unas semanas antes de escoger el plan mensual por costumbre. El canal de compra también mueve el número final: comprado vía la app de iOS, el plan anual puede salir más caro que en la web — hasta con un sobreprecio reportado de doble dígito porcentual en el tier superior "Max" — porque Apple cobra su comisión de plataforma y Anthropic la traslada al precio. El plan mensual básico, en cambio, suele mantenerse igual en ambos canales dentro de Estados Unidos. Si vas a pagar el anual, hazlo desde el sitio web de Anthropic, no desde la App Store, para no perder el ahorro que buscabas en primer lugar.
 
 ## Qué incluye el plan pagado
 
@@ -26,5 +26,7 @@ Mucha gente busca cuánto cuesta Claude pensando en un solo producto, pero Anthr
 Sí, desde agosto de 2025 y por default — Anthropic cambió su postura. [Lee el detalle verificado →](/articulos/claude-usa-mis-datos-para-entrenar-ia/)
 
 ¿Claude tiene un código de descuento real? [Verifícalo aquí →](/articulos/claude-codigo-de-descuento/)
+
+¿Necesitas más uso que Claude Pro? Revisa [Claude Max](/articulos/cuanto-cuesta-claude-max-hoy/).
 
 <a href="https://claude.com/pricing" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Claude →</a>

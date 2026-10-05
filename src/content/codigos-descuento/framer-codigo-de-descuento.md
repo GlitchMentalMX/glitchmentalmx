@@ -6,20 +6,21 @@ herramientaId: "framer"
 empresa: "Framer B.V."
 sitioOficial: "https://www.framer.com/pricing/"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos, pero sí un descuento oficial real del 100% para estudiantes verificados, más una tarifa más baja al pagar anual."
-fuenteVerificacion: "Página oficial de precios de Framer (framer.com/pricing) y framer.com/education/students, consultada el 30/08/2026."
+fraseCorta: "No hay cupones públicos, pero sí un plan Basic gratis para estudiantes verificados (uso personal; la página no lista países ni confirma México)."
+fuenteVerificacion: "Página oficial de precios de Framer (framer.com/pricing) y framer.com/education/students, consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/framer.png
 heroImageAlt: Framer — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Framer?
 
-No como cupón público. La página oficial de precios de Framer no tiene un campo de "código promocional" abierto al público en el checkout, y Framer no distribuye códigos de descuento genéricos que cualquiera pueda canjear. Lo único que la propia página confirma como ahorro real es la facturación anual, que reduce la tarifa mensual efectiva frente a pagar mes a mes — sin necesidad de ingresar ningún código.
+No como cupón público. La página oficial de precios de Framer no tiene un campo de "código promocional" abierto al público en el checkout, y Framer no distribuye códigos de descuento genéricos que cualquiera pueda canjear. Lo único que la propia página muestra aparte es el selector de facturación anual, que incluye un dominio gratis; Framer no publica ahí un porcentaje de ahorro frente a pagar mes a mes, así que no damos cifra. Visto desde México, la vista anual muestra el plan Basic en MX$162 al mes y Pro en MX$487 al mes.
 
 ## El descuento real que sí existe: plan Basic gratis para estudiantes
 
-Framer tiene un programa educativo oficial, enlazado directamente desde su página de precios: en framer.com/education/students, cualquier estudiante verificado (con identificación escolar o correo .edu) puede obtener el plan Basic completo —valorado en 180 USD al año— totalmente gratis, para portafolios, sitios personales o proyectos de clase. La solicitud se revisa en unos 5 días hábiles y se puede renovar cada 11 meses mientras sigas siendo estudiante. No aplica a proyectos comerciales, pero es un descuento real, oficial y del 100%.
+Framer tiene un programa educativo oficial, enlazado directamente desde su página de precios: en framer.com/education/students, los estudiantes inscritos en un programa certificado, presencial o en línea (preparatoria, college o universidad), pueden obtener el plan Basic —que la página valúa en $120 al año, sin aclarar la moneda— gratis, con 1,000 créditos de IA al mes, para portafolios, sitios personales o proyectos de clase. Se pide un formulario con correo escolar y foto de tu credencial de estudiante; Framer dice que busca revisar las solicitudes en 5 días hábiles, y si te aprueban recibes un código de descuento que por ahora solo pueden canjear clientes nuevos. Se puede volver a solicitar cada 11 meses mientras sigas siendo estudiante. No aplica a proyectos comerciales. La página no lista países ni excluye ninguno, así que Framer no confirma expresamente México.
 
 ## Por qué desconfiar de los "códigos Framer" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Sitios agregadores de cupones listan códigos como "FRAMER25INFLUENCER" o "PARTN
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

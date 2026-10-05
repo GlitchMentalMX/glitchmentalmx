@@ -6,9 +6,10 @@ herramientaId: "ideogram"
 empresa: "Ideogram"
 sitioOficial: "https://ideogram.ai/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones ni descuento estudiantil oficial, pero el pago anual sí baja el precio 20% frente al mensual."
-fuenteVerificacion: "Página oficial de precios de Ideogram (ideogram.ai/pricing), consultada el 30/08/2026."
+fraseCorta: "No hay cupones ni descuento estudiantil oficial, pero el pago anual sí baja el precio de 25% a 33% frente al mensual, según el plan."
+fuenteVerificacion: "Página oficial de precios de Ideogram (ideogram.ai/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/ideogram.png
 heroImageAlt: Ideogram — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No. La página oficial de precios de Ideogram es clara al respecto: la empresa n
 
 ## El único descuento real: pagar anual
 
-El ahorro oficial que sí existe en Ideogram es la facturación anual: los planes de pago cuestan aproximadamente 20% menos por mes si pagas el año completo por adelantado en vez de mes a mes, además de que los créditos de los planes anuales suelen acumularse (rollover) de forma más favorable que en el plan mensual. No es un código — es la tarifa que se aplica automáticamente al elegir facturación anual en ideogram.ai/pricing.
+El ahorro oficial que sí existe en Ideogram es la facturación anual: la página marca "Up to 33% off" en facturación anual. Con las cifras en dólares de EE.UU. que muestra hoy: Plus pasa de $20 al mes a $15 al mes ($180 al año, 25% menos), Pro de $60 a $42 ($504 al año, 30% menos) y el plan Team de $30 a $20 por usuario (33% menos, mínimo 2 usuarios). No es un código — es la tarifa que se aplica automáticamente al elegir facturación anual en ideogram.ai/pricing.
 
 ## Por qué desconfiar de los "códigos Ideogram" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Hay decenas de sitios agregadores que anuncian códigos de "50% off" o "65% off"
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

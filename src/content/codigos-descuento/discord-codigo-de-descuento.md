@@ -6,9 +6,10 @@ herramientaId: "discord"
 empresa: "Discord"
 sitioOficial: "https://discord.com/nitro"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos para Nitro, pero sí un mes gratis oficial para estudiantes vía UNiDAYS y descuentos de socios dentro de Nitro Rewards."
-fuenteVerificacion: "Página oficial de Discord Nitro (discord.com/nitro) y centro de soporte de Discord (support.discord.com), consultados el 30/08/2026."
+fraseCorta: "No hay cupones públicos para Nitro, pero sí un mes gratis oficial vía UNiDAYS (con tarjeta, cobro mensual después y sin confirmar México) y descuentos de socios dentro de Nitro Rewards."
+fuenteVerificacion: "Página oficial de Discord Nitro (discord.com/nitro) y centro de soporte de Discord (artículo «Unidays x Discord Nitro», support.discord.com), consultados el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/discord.png
 heroImageAlt: Discord — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón genérico. Discord no tiene un campo de "código promocional" uni
 
 ## Los canales reales: UNiDAYS para estudiantes y Nitro Rewards
 
-Discord sí opera dos canales oficiales de ahorro. El primero es una promoción con UNiDAYS, vigente del 9 de julio de 2026 al 9 de julio de 2027, que da un mes de Nitro gratis a estudiantes verificados con cuenta activa en UNiDAYS — se activa directo en la plataforma de UNiDAYS y el descuento se aplica automáticamente al redirigirte a Discord, sin necesidad de copiar ningún código. El segundo es Nitro Rewards, un beneficio incluido para quien ya paga Nitro o Nitro Basic, que da descuentos de socios como Logitech G, SteelSeries y KontrolFreek en productos de gaming — no reduce el precio de la suscripción misma, pero sí es un ahorro real y oficial.
+Discord sí opera dos canales oficiales de ahorro. El primero es una promoción con UNiDAYS, vigente del 9 de julio de 2026 al 9 de julio de 2027, que da un mes de Nitro gratis a estudiantes verificados con cuenta activa en UNiDAYS — se activa directo en la plataforma de UNiDAYS y el descuento se aplica automáticamente al redirigirte a Discord, sin necesidad de copiar ningún código. Tres letras chicas importantes: no vale si tuviste Nitro o una prueba de Nitro en los últimos 12 meses; al activarlo Discord hace una retención temporal en tu método de pago (la revierte de inmediato, pero tu banco puede tardar unos días en liberarla); y pasado el mes la suscripción se vuelve mensual recurrente y te cobra hasta que canceles. Sobre México: Discord solo excluye a Siria, Rusia, Turquía, Irán, Corea del Norte y cuatro zonas de Ucrania, pero tampoco nombra a México (al describir UNiDAYS cita EE.UU., Reino Unido, Australia, Canadá, Francia, Alemania, Italia, Nueva Zelanda y España), así que no podemos confirmar que te funcione. Si ves "Unknown Gift Code", Discord dice que no eres elegible. El segundo es Nitro Rewards, un beneficio incluido en la membresía de Nitro, que según discord.com/nitro da descuentos mensuales de socios como Logitech G y SteelSeries — no reduce el precio de la suscripción misma, pero sí es un ahorro real y oficial.
 
 ## Por qué desconfiar de los "códigos Discord Nitro" que circulan en internet
 
@@ -33,4 +34,4 @@ Es habitual encontrar publicaciones y sitios que prometen "Nitro gratis" con un 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

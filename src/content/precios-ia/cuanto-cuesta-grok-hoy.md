@@ -27,4 +27,6 @@ Sí, por default fuera de la Unión Europea — puedes desactivarlo, pero no de 
 
 ¿Grok tiene un código de descuento real? [Verifícalo aquí →](/articulos/grok-codigo-de-descuento/)
 
+¿Buscas el plan de gama alta de xAI? Revisa [SuperGrok Heavy](/articulos/cuanto-cuesta-supergrok-heavy-hoy/).
+
 <a href="https://grok.com/plans" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Grok →</a>

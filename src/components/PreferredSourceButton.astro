@@ -1,30 +1,26 @@
 ---
-// Botón de Google "Fuentes Preferidas" — implementación "manual" (control
-// programático), siguiendo el patrón oficial: NO existe un modo donde Google
-// dibuje su propio botón dentro de un contenedor y luego se pueda re-renderizar
-// a demanda (no hay `renderAll()` ni equivalente en la doc real). El patrón
-// documentado es justo al revés: un botón propio del sitio, con su propio
-// texto/estilo, que en el click llama a `preferredSource.addPreferredSource()`.
-// Eso además resuelve solo el problema de sincronizar tema/oscuro: al ser HTML
-// nuestro, ya hereda el tema del sitio por CSS, sin re-render ni JS extra.
+// Botón de Google "Fuentes Preferidas" — implementación ESTÁNDAR de la doc
+// oficial: Google dibuja su propio botón dentro de
+// <div google-add-preferred-source-btn></div> cuando carga su script (sin el
+// atributo preferred-sources-control="manual", que es el modo avanzado donde
+// uno dibuja el botón y llama a addPreferredSource()). Se cambió del modo
+// manual al estándar a pedido de Jorge (2026-10-04); el modo manual se había
+// elegido cuando la doc no describía un botón declarativo.
 // Doc oficial: https://developers.google.com/search/docs/appearance/preferred-sources
+//
+// El script NO va fijo en el <head> a propósito: es la única cookie de
+// terceros real del sitio (ver CookieConsent.astro y la Política de
+// Privacidad, que prometen que solo se carga si el visitante acepta) y pesa
+// ~230 KB — cargarlo en cada página para todos devolvería el Total Blocking
+// Time de ~900 ms que ya se había eliminado. Se inyecta desde aquí, con
+// consentimiento y cuando el botón está por entrar en pantalla.
 interface Props {
   variant?: 'button' | 'compact';
   className?: string;
 }
-
-const { variant = 'button', className = '' } = Astro.props;
-const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 9)}`;
 ---
 
-<button
-  type="button"
-  id={containerId}
-  class:list={['btn', 'btn-ghost', 'preferred-source-btn', variant, className]}
-  data-preferred-source-container
->
-  Marcar como preferida →
-</button>
+<div google-add-preferred-source-btn></div>
 
 <script>
   // Astro bundlea este bloque una sola vez por página aunque el componente se
@@ -33,23 +29,10 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
   if (!window.__preferredSourceWired) {
     window.__preferredSourceWired = true;
 
-    let preferredSourceApi: any = null;
-
-    // El SDK de Google (+ el iframe que trae) pesa ~230 KB y, aunque el script
-    // es async, cargarlo apenas entra la página compite con el CSS/fuentes
-    // críticos del primer pintado. Un intento anterior lo pospuso con
-    // requestIdleCallback(timeout: 2000) — mejoró FCP/LCP, pero el timeout
-    // forzaba la carga de todos modos a los ~2s, y ese trabajo (los ~1s de
-    // CPU de los scripts de gstatic.com) cayó dentro de la ventana de Total
-    // Blocking Time, empeorándolo. La solución real: cargarlo solo cuando el
-    // botón esté a punto de entrar en pantalla — nadie puede darle clic antes
-    // de verlo, y la mayoría de las visitas nunca llegan al footer, así que
-    // para ellas el costo desaparece por completo, no solo se retrasa.
-    // El SDK es la única cookie de terceros real del sitio (ver
-    // CookieConsent.astro) — no se carga sin que el usuario haya aceptado.
-    // Si el botón entra en pantalla antes de que decida, se queda "en cola"
-    // (wantsToLoad) y se dispara solo si acepta después, sin esperar a que
-    // recargue la página.
+    // Se carga solo si hubo consentimiento y el botón está por entrar en
+    // pantalla. Si el botón llega a pantalla antes de que el visitante
+    // decida, se queda "en cola" (wantsToLoad) y se dispara solo si acepta
+    // después, sin esperar a que recargue la página.
     let sdkLoadRequested = false;
     let wantsToLoad = false;
     const hasConsent = () => {
@@ -59,15 +42,30 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
         return false;
       }
     };
+
     const loadPreferredSourceSDK = () => {
       if (sdkLoadRequested || !hasConsent()) return;
       sdkLoadRequested = true;
+
+      // El modo estándar toma tema e idioma de atributos del div (la doc
+      // oficial los documenta como data-theme / data-lang). Se fijan justo
+      // antes de cargar el script para que el botón salga en español y con el
+      // tema real del sitio, sin tocar el marcado del div.
+      const themeAttr = document.documentElement.dataset.theme;
+      const theme = themeAttr
+        ? themeAttr === 'dark' ? 'dark' : 'light'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.querySelectorAll('[google-add-preferred-source-btn]').forEach((el) => {
+        el.setAttribute('data-theme', theme);
+        el.setAttribute('data-lang', 'es');
+      });
+
       const script = document.createElement('script');
       script.async = true;
-      script.setAttribute('preferred-sources-control', 'manual');
       script.src = 'https://news.google.com/swg/js/v1/publisher.js';
       document.head.appendChild(script);
     };
+
     window.addEventListener('gm-cookie-consent', ((e: CustomEvent<string>) => {
       if (e.detail === 'accepted' && wantsToLoad) loadPreferredSourceSDK();
     }) as EventListener);
@@ -83,20 +81,11 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
         },
         { rootMargin: '600px 0px' }
       );
-      document.querySelectorAll('[data-preferred-source-container]').forEach((el) => observer.observe(el));
+      document.querySelectorAll('[google-add-preferred-source-btn]').forEach((el) => observer.observe(el));
     } else {
       wantsToLoad = true;
       loadPreferredSourceSDK();
     }
-
-    const getCurrentTheme = (): 'light' | 'dark' =>
-      document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
-
-    window.PREFERRED_SOURCE = window.PREFERRED_SOURCE || [];
-    window.PREFERRED_SOURCE.push((preferredSource: any) => {
-      preferredSourceApi = preferredSource;
-      preferredSource.init({ theme: getCurrentTheme(), lang: 'es' });
-    });
 
     // Mismo Worker/beacon que Analytics.astro (no Umami: este sitio no lo
     // usa). Endpoint de eventos custom: mismo /collect, distinto payload
@@ -122,29 +111,22 @@ const containerId = `preferred-source-btn-${Math.random().toString(36).slice(2, 
       }
     }
 
-    // Delegado en document (no por contenedor) para cubrir instancias que
-    // Astro pudiera montar después del primer render.
+    // Delegado en document: el botón lo dibuja Google dentro del div, así
+    // que el clic llega con el div (o su host) como ancestro. Si Google lo
+    // renderiza en un iframe, ese clic no sube hasta aquí y el conteo se
+    // pierde — limitación del modo estándar que el modo manual no tenía.
     document.addEventListener('click', (e) => {
-      const container = (e.target as HTMLElement)?.closest?.('[data-preferred-source-container]');
-      if (!container) return;
-
-      // Re-init con el tema actual justo antes de disparar el flujo: así la
-      // superficie que muestra Google (su propio diálogo/confirmación) usa
-      // el tema real del sitio en ese momento, sin depender de un evento de
-      // cambio de tema por separado.
-      if (preferredSourceApi) {
-        preferredSourceApi.init({ theme: getCurrentTheme(), lang: 'es' });
-        preferredSourceApi.addPreferredSource();
-      }
-
-      trackClick(container);
+      const container = (e.target as HTMLElement)?.closest?.('[google-add-preferred-source-btn]');
+      if (container) trackClick(container);
     });
   }
 </script>
 
-<style>
-  .preferred-source-btn.compact {
-    padding: 0.55em 1.1em;
-    font-size: 0.85rem;
+<style is:global>
+  /* Reserva el alto del botón de Google para que, al renderizarse tras el
+     consentimiento, no empuje el layout del footer. Es solo el div; el
+     contenedor general y sus márgenes no se tocan. */
+  [google-add-preferred-source-btn] {
+    min-height: 36px;
   }
 </style>

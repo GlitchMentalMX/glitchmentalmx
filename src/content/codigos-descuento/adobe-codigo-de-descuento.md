@@ -7,8 +7,9 @@ empresa: "Adobe"
 sitioOficial: "https://www.adobe.com/creativecloud/plans.html"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos genéricos, pero sí un descuento oficial real y grande para estudiantes y maestros verificados."
-fuenteVerificacion: "Página oficial de ayuda de Adobe para estudiantes y maestros (helpx.adobe.com/creative-cloud/faq/students-teachers.html) y adobe.com/creativecloud, consultadas el 30/08/2026."
+fuenteVerificacion: "Página oficial de Adobe México para estudiantes y profesores (adobe.com/mx/education/students/creativecloud.html) y su ficha verificada en la serie de estudiantes, consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/adobe.png
 heroImageAlt: Adobe Creative Cloud — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón genérico que cualquiera pueda usar. Adobe sí tiene, ocasionalme
 
 ## El descuento real: plan de estudiantes y maestros, verificado
 
-Adobe ofrece Creative Cloud completo, con todas las apps, a estudiantes y maestros elegibles con un descuento sustancial durante el primer año frente al precio estándar. La página oficial de ayuda de Adobe para estudiantes y maestros detalla los requisitos: tener al menos 13 años y estar inscrito en una escuela primaria, secundaria, universidad, educación en casa o programa educativo alternativo reconocido. Para reclamarlo, te registras en la sección de estudiantes y maestros de adobe.com/creativecloud y verificas tu estatus, generalmente con un correo institucional. El descuento se mantiene mientras revalides tu estatus educativo cada año; si dejas de verificar, el plan sube al precio estándar en la siguiente renovación. No es un código que se comparta entre personas — es una cuenta marcada como elegible después de pasar la verificación.
+Adobe ofrece Creative Cloud completo, con todas las apps, a estudiantes y maestros elegibles con un descuento sustancial durante el primer año frente al precio estándar. En México, Adobe lo anuncia en adobe.com/mx como 73% de ahorro: Creative Cloud Pro a MXN $249 al mes sin IVA el primer año (plan anual con facturación mensual), contra MXN $949 al mes de precio habitual. La página oficial de ayuda de Adobe para estudiantes y maestros detalla los requisitos: tener al menos 13 años y estar inscrito en una escuela primaria, secundaria, universidad, educación en casa o programa educativo alternativo reconocido. Para reclamarlo, te registras en la sección de estudiantes y maestros de adobe.com/creativecloud y verificas tu estatus, generalmente con un correo institucional. Ojo con la letra chiquita: el plan exige compromiso de 12 meses y, al terminar el primer año, se renueva solo a MXN $499 al mes sin IVA, el precio estándar para estudiantes, casi el doble de lo que pagaste al inicio (sigue siendo menor que el habitual de MXN $949). No es un código que se comparta entre personas — es una cuenta marcada como elegible después de pasar la verificación.
 
 ## Por qué desconfiar de los "códigos Adobe" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Es común encontrar sitios de cupones que prometen "hasta 75% de descuento" en C
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]

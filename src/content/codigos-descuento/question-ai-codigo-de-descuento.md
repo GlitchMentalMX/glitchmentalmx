@@ -3,19 +3,20 @@ title: "¿Question.AI tiene código de descuento real, o es un cupón falso?"
 description: "Verificamos en questionai.ai si existe un código de descuento real para Question.AI, y por qué su propia página de precios no tiene campo de cupón."
 herramienta: "Question.AI"
 herramientaId: "question-ai"
-empresa: "Question.AI / Zuoyebang"
+empresa: "Question.AI"
 sitioOficial: "https://questionai.ai/pricing"
 veredicto: "rojo"
 fraseCorta: "No existe ningún código de descuento confirmado por Question.AI: su propia página de precios no tiene campo de cupón ni promoción publicada."
-fuenteVerificacion: "Página oficial de precios de Question.AI (questionai.ai/pricing), consultada el 31/08/2026."
+fuenteVerificacion: "Página oficial de precios de Question.AI (questionai.ai/pricing), consultada el 04/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/question-ai.png
 heroImageAlt: Question.AI — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Question.AI?
 
-No, según su propia página de precios. questionai.ai/pricing muestra solo dos opciones — $9.90 USD al mes o $4.90 USD al mes con pago anual — sin ningún campo de código promocional visible ni mención de descuento para estudiantes en la página ni en sus preguntas frecuentes. Question.AI pertenece a D3 Dimension Technology Pte. Ltd., una empresa vinculada a Zuoyebang, la edtech china detrás de otras apps de ayuda con tarea.
+No, según su propia página de precios. questionai.ai/pricing muestra solo dos opciones — $9.90 USD al mes o $4.90 USD al mes con pago anual — sin ningún campo de código promocional visible ni mención de descuento para estudiantes en la página ni en sus preguntas frecuentes. Un detalle de la letra chica: el plan mensual limita a 30 preguntas resueltas y 30 imágenes; el anual las ofrece sin límite.
 
 ## El "49% de descuento" que se anuncia es solo el plan anual, no un cupón
 
@@ -33,4 +34,4 @@ Existen sitios de terceros, incluida al menos una plataforma de descuentos estud
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 04/10/2026]

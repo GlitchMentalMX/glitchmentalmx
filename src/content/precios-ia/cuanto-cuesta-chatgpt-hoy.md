@@ -27,4 +27,6 @@ Sí, por default en Free, Plus y Pro — puedes apagarlo, pero no borra lo ya us
 
 ¿ChatGPT tiene un código de descuento real? [Verifícalo aquí →](/articulos/chatgpt-codigo-de-descuento/)
 
+¿Buscas un plan distinto de ChatGPT Plus? Revisa [ChatGPT Go](/articulos/cuanto-cuesta-chatgpt-go-hoy/) (el más barato) y [ChatGPT Pro](/articulos/cuanto-cuesta-chatgpt-pro-hoy/) (el de gama alta).
+
 <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de ChatGPT →</a>

@@ -7,8 +7,9 @@ empresa: "Beautiful.ai, Inc."
 sitioOficial: "https://www.beautiful.ai/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos universales, pero sí un año gratis de Pro para estudiantes con correo .edu, además del descuento normal por pagar anual."
-fuenteVerificacion: "Página oficial de precios de Beautiful.ai (beautiful.ai/pricing) y su programa de educación (beautiful.ai/education), consultadas el 30/08/2026."
+fuenteVerificacion: "Página oficial de precios de Beautiful.ai (beautiful.ai/pricing) y su programa de educación (beautiful.ai/education), consultadas el 04/10/2026."
 pubDate: 2026-08-30
+updatedDate: 2026-10-04
 heroImage: /images/codigos-descuento/beautiful-ai.png
 heroImageAlt: Beautiful.ai — Códigos de descuento
 ---
@@ -19,7 +20,7 @@ No como cupón genérico para cualquier persona. La página oficial de precios d
 
 ## Los dos canales reales: pago anual y estudiantes
 
-Dentro del sitio oficial hay dos formas legítimas de pagar menos. La primera es simplemente elegir facturación anual en vez de mensual, algo que aplica también al plan Team, donde el precio por usuario baja de $50 a $40 al mes. La segunda, más notable, es el programa de educación de Beautiful.ai: estudiantes con un correo .edu válido pueden reclamar un año completo del plan Pro sin costo (un valor de $144 USD) directamente en beautiful.ai/education, verificando su condición de estudiante — no es un código que se comparta entre desconocidos, es un beneficio ligado a tu propia cuenta escolar.
+Dentro del sitio oficial hay dos formas legítimas de pagar menos. La primera es simplemente elegir facturación anual en vez de mensual, algo que aplica también al plan Team, donde el precio por usuario baja de $50 a $40 al mes. La segunda, más notable, es el programa de educación de Beautiful.ai: estudiantes con un correo .edu válido pueden reclamar un año completo del plan Pro sin costo directamente en beautiful.ai/education, verificando su condición de estudiante (solo para nuevos suscriptores, válido por 12 meses desde la activación). La página pide específicamente un correo .edu y no aclara si un correo institucional de México (como .edu.mx) cuenta, ni si la oferta aplica en México — no es un código que se comparta entre desconocidos, es un beneficio ligado a tu propia cuenta escolar.
 
 ## Por qué desconfiar de los "códigos Beautiful.ai" que circulan en sitios de cupones
 
@@ -33,4 +34,4 @@ Abundan los sitios de cupones que anuncian descuentos de 40%, 60% o hasta 73% pa
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 30/08/2026]
+[Última actualización: 04/10/2026]
