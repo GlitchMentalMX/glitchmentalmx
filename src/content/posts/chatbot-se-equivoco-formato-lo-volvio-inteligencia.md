@@ -1,7 +1,7 @@
 ---
 title: El chatbot se equivocó. El formato lo volvió inteligencia
 category: Inteligencia Artificial
-pubDate: 2026-10-06T05:26
+pubDate: 2026-10-06T06:04
 updatedDate: ''
 description: 'Un chatbot identificó mal la carga de un barco y un reporte estándar la volvió creíble. El problema no fue solo la alucinación: fue el formato.'
 heroImage: /images/uploads/chatbot-equivoco.webp
@@ -51,7 +51,7 @@ En inteligencia el cálculo cambia. **Verificar un reporte construido con inteli
 
 Los tribunales, además, dejan registro. La base de datos de Damien Charlotin contabilizaba **2,125 casos identificados** al 2 de octubre de 2026, y su autor aclara que no cubre el universo total de citas falsas. La verificabilidad, y no la IA, decide dónde el error se queda y dónde se detiene.
 
-## Dónde el oficio es la prueba: una hipótesis para México y Latinoamérica
+## Los sistemas donde el oficio es la prueba: una hipótesis para México y Latinoamérica
 
 La misma base registra casos en Brasil (41), Argentina (9), Chile (3), Colombia (3) y Costa Rica (1). México no aparece en la lista de países. **Eso no prueba que no existan casos**: puede reflejar que no se publican o que no se identifican. Es una hipótesis, no un hallazgo.
 
