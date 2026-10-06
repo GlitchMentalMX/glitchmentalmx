@@ -1,12 +1,12 @@
 ---
 title: El chatbot se equivocó. El formato lo volvió inteligencia
 category: Inteligencia Artificial
-pubDate: 2026-10-03T20:05
+pubDate: 2026-10-06T05:26
 updatedDate: ''
 description: 'Un chatbot identificó mal la carga de un barco y un reporte estándar la volvió creíble. El problema no fue solo la alucinación: fue el formato.'
 heroImage: /images/uploads/chatbot-equivoco.webp
 heroImageAlt: 'El chatbot se equivocó: analista revisa reporte de carga impreso con tablas frente a un barco portacontenedores'
-draft: true
+draft: false
 ---
 
 Una **alucinación de IA** no se volvió peligrosa por ser falsa, sino por llegar con el formato correcto. Según CNN, un reporte de inteligencia estándar, armado con ayuda de un chatbot, activó un plan de intercepción con aviones en el aire.
