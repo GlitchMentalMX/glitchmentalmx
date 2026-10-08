@@ -367,7 +367,7 @@ export const books: Book[] = [
 export const upcomingBooks: UpcomingBook[] = [
   {
     title: 'Deprecado',
-    desc: 'Un escritor descubre que su obra completa entrenó al modelo que lo superó. Las editoriales ya no lo llaman. Su agente representa ahora a tres IAs. Nadie fue plagiado. Todos fueron deprecados.',
+    desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley no es la víctima, sino su «sucesor creativo». Con cuatro prescindibles más, cruza Estados Unidos tras un expediente que nunca debió existir: CONSENT-0.',
   },
 ];
 
