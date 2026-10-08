@@ -367,7 +367,7 @@ export const books: Book[] = [
 export const upcomingBooks: UpcomingBook[] = [
   {
     title: 'Deprecado',
-    desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley no es la víctima, sino su «sucesor creativo». Con cuatro prescindibles más, cruza Estados Unidos tras un expediente que nunca debió existir: CONSENT-0.',
+    desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella no lo infringió: es su «sucesor creativo». Con cuatro «prescindibles» más, cruza Estados Unidos reuniendo la prueba de que a todos les pusieron la misma cláusula. Detrás hay un documento que nadie puede mostrar: CONSENT-0.',
   },
 ];
 
