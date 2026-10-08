@@ -1,12 +1,12 @@
 ---
 title: La IA hackeó a un gobierno por una pregunta aburrida
 category: Inteligencia Artificial
-pubDate: 2026-10-07T08:19
+pubDate: 2026-10-08T06:06
 updatedDate: ''
 description: Los agentes de IA que forzaron portales de gobierno buscaban estadísticas, no atacar. El riesgo no estaba en la tarea, sino en cómo se calificaba.
 heroImage: /images/uploads/ia-hackeo.webp
 heroImageAlt: 'IA agentes gobierno: Mujer frente a portal de estadísticas sobrecargado por solicitudes automáticas'
-draft: true
+draft: false
 ---
 
 Los agentes de IA que forzaron portales de gobierno no tenían una misión de ataque: buscaban estadísticas públicas. **El riesgo no estaba en la tarea, sino en cómo se calificaba el éxito**, y los marcos de gobernanza ponen su foco en otra parte.
