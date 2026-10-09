@@ -5,18 +5,18 @@ herramienta: "Vidu"
 herramientaId: "vidu"
 sitioOficial: "https://www.vidu.com/pricing"
 pubDate: 2026-08-31
-updatedDate: 2026-10-06
+updatedDate: 2026-10-09
 heroImage: /images/precios-ia/vidu.png
 heroImageAlt: Vidu — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-El plan Estándar de Vidu cuesta $10 USD al mes facturado mensual, o $8 USD al mes si pagas el año completo por adelantado ($96 USD al año). Arriba están Premium, a $35 USD al mes ($28 en anual), y Definitivo, a $99 USD al mes ($79 en anual), cada uno con más créditos y generación por lotes más rápida. El plan gratuito da 10 referencias de personaje al mes y generación limitada, con la particularidad de que Vidu ofrece un modo de horas de menor actividad con generación gratuita en cualquier plan, algo que no es común entre sus competidores directos. Ojo con la fecha: la propia página de precios de Vidu avisa que los planes se actualizarán el 6 de octubre (el detalle está en sus «Platform Messages», que solo se ven con cuenta). Al 06/10/2026 la página y su sistema de cobro seguían mostrando estas mismas cifras y créditos, sin el cambio aplicado; si la actualización llega, los números pueden moverse.
+El 6 de octubre de 2026 Vidu aplicó la actualización de planes que había anunciado, y los tres niveles de pago cambiaron. Estándar se mantiene en $10 USD al mes facturado mensual, pero el pago anual subió de $8 a $8.25 USD al mes ($99 USD al año, antes $96). Premium subió de $35 a $43 USD al mes ($35.42 al mes si pagas anual, $425 al año; antes $28 al mes y $336 al año). El plan superior, Definitivo, dejó de tener un precio fijo: ahora se elige con un control deslizante de créditos mensuales entre 10,000 y 20,000, con un costo de $115 a $230 USD al mes ($95.83 a $191.67 al mes en anual, de $1,150 a $2,300 USD al año); antes costaba $99 al mes fijos ($79 en anual) por 8,000 créditos. El descuento por pago anual también dejó de ser un 20% parejo: ahora va de 17% a 18% según el plan. El plan gratuito no cambió: sigue dando 10 referencias de personaje al mes y generación limitada, y Vidu mantiene su modo de horas de menor actividad con generación gratuita, aunque ya no está disponible en todos los planes por igual (ver abajo).
 
 ## Qué incluye el plan pagado
 
-Estándar da 800 créditos mensuales, suficientes para hasta 200 videos según duración y calidad, generación en resoluciones altas, hasta 4 videos simultáneos, acceso al modo profesional de edición de prompts y uso comercial permitido. Premium y Definitivo suben el número de créditos (4,000 y 8,000 respectivamente) y agregan generación de imágenes en Q2 sin límite en el nivel más alto, además de acceso anticipado a funciones nuevas antes de que lleguen al resto de usuarios.
+Estándar sigue dando 800 créditos mensuales, generación en resoluciones altas, hasta 4 videos simultáneos, acceso al modo profesional de edición de prompts y uso comercial permitido, pero su ficha de precios ya no le lista el modo de horas de baja demanda. Premium bajó de 4,000 a 3,500 créditos mensuales y ahora incluye explícitamente un cupo de ese modo de baja demanda: 20 videos al día. Definitivo, con su rango de 10,000 a 20,000 créditos según el nivel que elijas, da el cupo más alto de ese modo (200 videos al día) y mantiene generación de imágenes en Q2 sin límite y acceso anticipado a funciones nuevas antes que el resto de los usuarios.
 
 ## El modo de baja demanda es la salida real para generar gratis
 

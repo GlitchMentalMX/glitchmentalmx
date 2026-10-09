@@ -6,25 +6,25 @@ herramientaId: "vidu"
 empresa: "Vidu"
 sitioOficial: "https://www.vidu.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupones públicos confirmados, pero sí un 20% de descuento oficial real por pagar cualquier plan anual en vez de mensual, y rebajas en créditos adicionales solo hasta el 6 de octubre."
-fuenteVerificacion: "Página oficial de precios de Vidu (vidu.com/pricing), consultada el 04/10/2026."
+fraseCorta: "No hay cupones públicos confirmados; el descuento oficial real por pagar anual ya no es un 20% parejo, ahora va de 17% a 18% según el plan tras la actualización de precios del 6 de octubre."
+fuenteVerificacion: "Página oficial de precios de Vidu (vidu.com/pricing) y su endpoint de precios, consultados el 09/10/2026."
 pubDate: 2026-08-31
-updatedDate: 2026-10-04
+updatedDate: 2026-10-09
 heroImage: /images/codigos-descuento/vidu.png
 heroImageAlt: Vidu — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Vidu?
 
-No como cupón público confirmado. La página oficial de precios de Vidu no documenta un campo de "código promocional" abierto al público general, y no hay evidencia de un sistema de cupones respaldado por la compañía. Lo que sí confirma esa misma página es el ahorro por pago anual: el plan Estándar baja de $10 a $8 USD al mes, Premium de $35 a $28 USD al mes, y Definitivo de $99 a $79 USD al mes — un descuento real de 20% en los tres niveles, visible directo al elegir esa opción de facturación.
+No como cupón público confirmado. La página oficial de precios de Vidu no documenta un campo de "código promocional" abierto al público general, y no hay evidencia de un sistema de cupones respaldado por la compañía. Lo que sí confirma esa misma página es el ahorro por pago anual, aunque desde la actualización de planes del 6 de octubre de 2026 ya no es un 20% parejo en los tres niveles: el plan Estándar baja de $10 a $8.25 USD al mes (17% menos), Premium de $43 a $35.42 USD al mes (18% menos), y Definitivo —que ahora se cobra por un rango de créditos de 10,000 a 20,000 en vez de un precio fijo— de $115–$230 a $95.83–$191.67 USD al mes (17% menos), según el nivel de créditos que elijas.
 
 ## Ahorros adicionales sin código
 
-Vidu tiene una particularidad poco común entre sus competidores: un modo de horas de menor actividad (Off-Peak) con generación gratuita. Corrección importante frente a lo que decía este artículo antes: según la tabla de planes de vidu.com/pricing, ese modo está disponible solo en el plan Ultimate (hasta 200 videos al día), no en el gratuito ni en Standard o Premium. Además, la página muestra una oferta con fecha límite: créditos adicionales con hasta 45% de descuento (Standard y Premium) o hasta 55% (Ultimate) "until October 6", es decir, hasta el 6 de octubre de 2026, y avisa que los planes se actualizarán ese mismo 6 de octubre, sin detallar qué cambia. Ninguno de los dos es un cupón: son condiciones que aparecen en la propia página.
+Vidu sigue teniendo una particularidad poco común entre sus competidores: un modo de horas de menor actividad (Off-Peak) con generación gratuita. Tras la actualización del 6 de octubre ese modo ya no es exclusivo de Definitivo: Premium ahora da un cupo explícito de 20 videos al día en ese modo, y Definitivo sube a 200 videos al día; el plan Estándar no lo incluye en su ficha de precios. El aviso de actualización de planes para el 6 de octubre que este artículo reportaba ya se cumplió, y junto con él desapareció de la página la fecha límite que traían las rebajas en créditos adicionales; al 09/10/2026 esa oferta de créditos con descuento sigue visible pero sin fecha de vencimiento anunciada.
 
 ## Por qué desconfiar de los "códigos Vidu" que circulan en sitios de cupones
 
-Hay sitios agregadores que anuncian cupones de hasta 75% off, y algunos incluso listan un supuesto "$100 off" sin especificar sobre qué plan aplicaría. Ninguno de esos códigos está confirmado en vidu.com. El único ahorro permanente que la propia compañía documenta con claridad es el 20% por facturación anual; lo demás son condiciones de plan o promociones con fecha límite.
+Hay sitios agregadores que anuncian cupones de hasta 75% off, y algunos incluso listan un supuesto "$100 off" sin especificar sobre qué plan aplicaría. Ninguno de esos códigos está confirmado en vidu.com. El único ahorro permanente que la propia compañía documenta con claridad es el descuento por facturación anual (17% a 18% según el plan); lo demás son condiciones de plan o promociones sin fecha de vencimiento confirmada.
 
 ¿Buscas cuánto cuesta Vidu exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-vidu-hoy/)
 
@@ -34,4 +34,4 @@ Hay sitios agregadores que anuncian cupones de hasta 75% off, y algunos incluso 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 09/10/2026]
