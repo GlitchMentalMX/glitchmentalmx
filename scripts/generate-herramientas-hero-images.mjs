@@ -1,5 +1,6 @@
 // Tarjetas og:image (1200x630, SVG -> PNG con sharp) para el orientador
-// "¿Y ahora qué hago con la IA?" y su página de alerta. Mismo estilo que
+// "¿Y ahora qué hago con la IA?", su página de alerta y la calculadora de
+// riesgo de reemplazo por IA. Mismo estilo que
 // scripts/generate-tool-hero-images.mjs: sin imagen propia caerían al logo
 // genérico (og-default.png), que no compite en Google Discover. A propósito
 // sin teléfonos en la imagen: si un número cambia, la tarjeta no queda
@@ -30,6 +31,13 @@ const cards = [
     title: ['Habla con alguien', 'ahora'],
     tagline: 'Líneas de ayuda emocional gratuitas, de atención las 24 horas.',
     accent: '#2ecc8f',
+  },
+  {
+    file: 'calculadora-riesgo-reemplazo-ia.png',
+    label: 'CALCULADORA · GRATIS · SIN REGISTRO',
+    title: ['¿La IA puede quitarte', 'tu trabajo?'],
+    tagline: 'Tu profesión, 16 regiones del mundo, resultado en segundos.',
+    accent: '#0066ff',
   },
 ];
 
