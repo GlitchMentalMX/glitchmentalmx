@@ -57,9 +57,17 @@ const PROTOCOLO_KERNEL_SLUGS = [
   'la-ia-como-nuevo-darwin-quien-define-la-evolucion',
   'bioseguridad-global-el-codigo-que-nadie-audita-todavia',
 ];
+const MANOS_LIBRES_SLUGS = [
+  'la-fotografia-de-stock-murio-y-nadie-fue-al-velorio',
+  'el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos',
+  'la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba',
+  'disenadores-freelance-e-ia-el-colapso-del-nivel-medio',
+  'la-voz-no-compitio-con-la-ia-se-apropiaron',
+];
 const NOVELA_POR_ARTICULO = new Map<string, string>([
   ...PANOPTICO_DIGITAL_SLUGS.map((slug) => [slug, 'cero-organico'] as [string, string]),
   ...PROTOCOLO_KERNEL_SLUGS.map((slug) => [slug, 'umbral-20'] as [string, string]),
+  ...MANOS_LIBRES_SLUGS.map((slug) => [slug, 'deprecado'] as [string, string]),
   ...NEGOCIO_DE_LA_VIRTUD_SLUGS.map((slug) => [slug, 'entrenado-en-corpus'] as [string, string]),
 ]);
 

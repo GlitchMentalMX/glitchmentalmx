@@ -34,6 +34,7 @@ closing: >-
   la misma en los cinco casos: **¿quién paga el costo humano de la
   eficiencia?**
 order: 3
+relatedBook: deprecado
 audio:
   src: /audio/series/manos-libres.m4a
   durationSeconds: 114

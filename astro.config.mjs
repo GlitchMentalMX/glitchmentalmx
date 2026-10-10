@@ -273,7 +273,7 @@ export default defineConfig({
       // /calculadora-de-riesgo-de-reemplazo-por-ia-2026/ es ahora un stub de
       // redirección (ver src/pages/.../index.astro) — noindex y fuera del
       // sitemap, igual que las páginas migradas de Blogger.
-      // /umbral20/, /ceroorganico/ y /entrenadoencorpus/ son enlaces cortos de
+      // /umbral20/, /ceroorganico/, /entrenadoencorpus/ y /deprecado/ son enlaces cortos de
       // campaña que redirigen a Amazon: noindex y fuera del sitemap por lo mismo.
       filter: (page) =>
         !page.includes('/stats/') &&
@@ -281,6 +281,9 @@ export default defineConfig({
         !page.includes('/umbral20/') &&
         !page.includes('/ceroorganico/') &&
         !page.includes('/entrenadoencorpus/') &&
+        // Ruta exacta: includes('/deprecado/') también sacaría del sitemap la
+        // ficha /novelas/deprecado/ y su capítulo.
+        new URL(page).pathname !== '/deprecado/' &&
         !page.includes('/calculadora-de-riesgo-de-reemplazo-por-ia-2026/'),
       serialize(item) {
         const { pathname } = new URL(item.url);

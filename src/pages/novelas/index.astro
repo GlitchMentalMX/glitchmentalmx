@@ -59,16 +59,20 @@ const seriesByBook = new Map(seriesList.map((s) => [s.data.relatedBook!, s]));
       ))}
     </div>
 
-    <p class="eyebrow section-label upcoming-label">En desarrollo · Vienen más</p>
-    <div class="grid">
-      {upcoming.map((b) => (
-        <div class="book-card muted">
-          <h3>{b.title}</h3>
-          <p>{b.desc}</p>
+    {upcoming.length > 0 && (
+      <>
+        <p class="eyebrow section-label upcoming-label">En desarrollo · Vienen más</p>
+        <div class="grid">
+          {upcoming.map((b) => (
+            <div class="book-card muted">
+              <h3>{b.title}</h3>
+              <p>{b.desc}</p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-    <p class="footnote">* Estas son las próximas en desarrollo — los títulos y sinopsis pueden cambiar antes de su publicación.</p>
+        <p class="footnote">* Estas son las próximas en desarrollo — los títulos y sinopsis pueden cambiar antes de su publicación.</p>
+      </>
+    )}
   </section>
 
   <section class="container actions">

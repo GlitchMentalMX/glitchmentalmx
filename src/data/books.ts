@@ -93,8 +93,84 @@ export interface UpcomingBook {
   desc: string;
 }
 
-// Orden: de más reciente a más antigua. El home muestra las primeras 3.
+// Orden: de más reciente a más antigua. El home muestra las primeras 4.
 export const books: Book[] = [
+  {
+    id: 'deprecado',
+    title: 'DEPRECADO',
+    genre: 'Tecnothriller',
+    cover: '/images/novelas/deprecado.webp',
+    desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella no lo infringió: es su «sucesor creativo». Con cuatro «prescindibles» más, cruza Estados Unidos reuniendo la prueba de que a todos les pusieron la misma cláusula. Detrás hay un documento que nadie puede mostrar: CONSENT-0.',
+    buy: '/deprecado/',
+    storeUrl: 'https://www.amazon.com/dp/B0HMGF498X',
+    metaDescription:
+      'Tecnothriller en español sobre un redactor que entrenó a la IA que lo reemplazó, derechos de autor y consentimiento. Lee el primer capítulo gratis.',
+    lede: 'Un tecnothriller en español sobre inteligencia artificial, derechos de autor y trabajo creativo, anclado en hechos reales.',
+    coverHd: { src: '/images/novelas/deprecado/portada.webp', width: 720, height: 1151 },
+    // Texto de la contraportada aprobada por el autor, sin reescribir.
+    synopsis: [
+      'A Josh Turner nadie lo plagió. Solo le pidieron entrenar a la herramienta que haría su trabajo. Cinco meses después, la herramienta se quedó. Él no.',
+      'Cuando busca protección legal, descubre que para la ley nadie le hizo nada: la máquina que lo reemplazó no es una infractora, es su «sucesor creativo».',
+      'Con una diseñadora, un músico, un fotógrafo y una periodista igual de prescindibles, Josh cruza Estados Unidos reuniendo la única prueba que importa: que a todos les pusieron la misma cláusula. Lo que encuentra detrás tiene nombre, y nadie puede mostrarlo: CONSENT-0.',
+    ],
+    themes: [
+      'IA y trabajo creativo',
+      'Entrenar a la herramienta que te reemplaza',
+      'Derechos de autor y entrenamiento de modelos',
+      'Consentimiento sobre la obra propia',
+      'Monitoreo y vigilancia laboral',
+      'Periodismo, diseño, música y fotografía ante la IA',
+    ],
+    realBehind: {
+      title: 'Lo real detrás de la novela: IA, trabajo creativo y consentimiento',
+      paragraphs: [
+        'El primer capítulo arranca con una orden: documentar cómo decides, entregar todos los borradores —los descartados, sobre todo— e instalar una extensión que registra cada sesión de escritura. Su espejo real ya es una industria. La doctora Alice Chiao, que enseñó medicina de urgencias en Stanford, hoy entrena a un chatbot para responder como ella: según Pitchbook, la economía de expertos que enseñan a la IA a hacer su trabajo vale al menos 17 mil millones de dólares, y suele ser trabajo por proyecto, sin prestaciones ni antigüedad.',
+        'Los «prescindibles» de la historia también tienen su cifra. Al 8 de abril de 2025, el 47.85% de las imágenes de Adobe Stock ya eran generadas por IA. El estudio de CISAC proyecta que para 2028 el 60% de los ingresos de las bibliotecas musicales B2B vendrán de la IA. Los proyectos de creación de imágenes en plataformas freelance cayeron 17% en los ocho meses posteriores al lanzamiento de ChatGPT, los de escritura en Upwork cayeron 32% en 2025 y el Washington Post eliminó en febrero de 2026 más de 300 puestos periodísticos.',
+        'Y la pregunta legal es la que la novela pone en la boca de la ley: ¿entrenar con la obra de alguien exige su consentimiento? Un tribunal alemán falló contra OpenAI por reproducir letras de GEMA, Anthropic llegó a un acuerdo de alrededor de 1,500 millones de dólares con autores por usar libros de bibliotecas piratas, y SAG-AFTRA ya convirtió el consentimiento previo y por escrito en cláusula de contrato. DEPRECADO lleva esa pregunta a la ficción: qué pasa cuando la herramienta que te reemplazó es, ante la ley, tu sucesora.',
+      ],
+      articles: [
+        'expertos-que-entrenan-ia-para-reemplazarse-el-negocio',
+        'la-fotografia-de-stock-murio-y-nadie-fue-al-velorio',
+        'el-negocio-de-la-musica-de-fondo-ya-no-necesita-musicos',
+        'la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba',
+        'disenadores-freelance-e-ia-el-colapso-del-nivel-medio',
+        'el-fin-del-entrenamiento-gratis-la-ia-contra-el-copyright',
+      ],
+    },
+    firstChapter: true,
+    chapterHero: {
+      src: '/images/novelas/deprecado/capitulo-1-mano-pluma-992.webp',
+      width: 992,
+      height: 558,
+      alt: 'Primer plano de una mano que sostiene una pluma fuente sobre una hoja, bajo una lámpara cálida; la línea que escribe pasa del trazo manuscrito a pequeñas marcas rectangulares, como código.',
+    },
+    gallery: [
+      {
+        src: '/images/novelas/deprecado/vitrina-prescindibles-deprecado.webp',
+        width: 992,
+        height: 1586,
+        alt: 'Una vitrina de museo en una sala oscura con cinco objetos sobre pedestales negros —una pluma fuente, una cámara, una paleta de diseño con un lápiz, unos audífonos y un micrófono—, cada uno con una placa roja que dice «DEPRECADO».',
+      },
+      {
+        src: '/images/novelas/deprecado/calle-nueva-york-deprecado-099.webp',
+        width: 992,
+        height: 1586,
+        alt: 'Una avenida de Nueva York en blanco y negro, con una multitud borrosa en movimiento y el Empire State al fondo; un hombre de abrigo oscuro y maletín queda quieto, de espaldas, dentro de un recuadro rojo con la etiqueta «deprecado · 0.99».',
+      },
+      {
+        src: '/images/novelas/deprecado/escritorio-objetos-deshechos.webp',
+        width: 993,
+        height: 1584,
+        alt: 'Un escritorio de noche junto a un ventanal con lluvia y rascacielos iluminados; una cámara, un teclado, un micrófono y una tableta con bocetos se deshacen en fragmentos oscuros sobre la mesa.',
+      },
+      {
+        src: '/images/novelas/deprecado/mano-pluma-escritura.webp',
+        width: 992,
+        height: 1586,
+        alt: 'Una mano sostiene una pluma fuente sobre una hoja, junto a una lámpara y una pila de libros en la penumbra; la línea escrita pasa del trazo manuscrito a marcas como de código.',
+      },
+    ],
+  },
   {
     id: 'umbral-20',
     title: 'UMBRAL 20',
@@ -364,12 +440,9 @@ export const books: Book[] = [
   },
 ];
 
-export const upcomingBooks: UpcomingBook[] = [
-  {
-    title: 'Deprecado',
-    desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella no lo infringió: es su «sucesor creativo». Con cuatro «prescindibles» más, cruza Estados Unidos reuniendo la prueba de que a todos les pusieron la misma cláusula. Detrás hay un documento que nadie puede mostrar: CONSENT-0.',
-  },
-];
+// Novelas anunciadas pero sin publicar (título + sinopsis corta). Vacío por ahora:
+// /novelas/ oculta la sección «En desarrollo» mientras no haya ninguna.
+export const upcomingBooks: UpcomingBook[] = [];
 
 export function getBook(id: string): Book | undefined {
   return books.find((b) => b.id === id);
