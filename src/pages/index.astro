@@ -297,7 +297,7 @@ const signalPools = {
               <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
               <a class="title-more link-accent" href={`/novelas/${n.id}/`}>Ver novela →</a>
             </div>
-            <p>{n.desc}</p>
+            <p>{n.homeDesc ?? n.desc}</p>
             <BookActions book={n} block />
           </div>
         </article>
@@ -951,7 +951,7 @@ const signalPools = {
     line-height: 1.6;
     margin: 0 0 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

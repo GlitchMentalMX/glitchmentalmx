@@ -9,6 +9,8 @@ export interface Book {
   genre: string;
   cover: string;
   desc: string;
+  // Versión de `desc` para la tarjeta del home (máx. 5 líneas); si falta se usa `desc`.
+  homeDesc?: string;
   // Enlace corto propio (/umbral20/…): es el que se muestra en todo el sitio,
   // porque cada visita queda contada en /stats/ (Analytics.astro).
   buy: string;
@@ -101,6 +103,7 @@ export const books: Book[] = [
     genre: 'Tecnothriller',
     cover: '/images/novelas/deprecado.webp',
     desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella no lo infringió: es su «sucesor creativo». Con cuatro «prescindibles» más, cruza Estados Unidos reuniendo la prueba de que a todos les pusieron la misma cláusula. Detrás hay un documento que nadie puede mostrar: CONSENT-0.',
+    homeDesc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella solo es su «sucesor creativo». Con cuatro «prescindibles» más, cruza EE. UU. en busca de la prueba de que a todos les pusieron la misma cláusula.',
     buy: '/deprecado/',
     storeUrl: 'https://www.amazon.com/dp/B0HMGF498X',
     metaDescription:
