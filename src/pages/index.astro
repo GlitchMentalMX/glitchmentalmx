@@ -47,9 +47,9 @@ const insights = (await getCollection('visualInsights', ({ data }) => !data.draf
 );
 const latestInsight = insights[0];
 
-// Las 4 novelas más recientes (books.ts ya viene ordenado de más reciente a
-// más antigua). El catálogo completo vive en /novelas/.
-const novelasPublicadas = books.slice(0, 4);
+// Las 3 novelas más recientes (books.ts ya viene ordenado de más reciente a
+// más antigua); el resto vive en /novelas/ ("Ver catálogo completo").
+const novelasPublicadas = books.slice(0, 3);
 
 // Explora — cada columna es una lista real de contenido, con una barra
 // proporcional al número de artículos de cada serie/colección (dato real,
@@ -217,7 +217,8 @@ const signalPools = {
       href: '/dato-incomodo/',
     },
   ],
-  novela: novelasPublicadas.map((n) => ({
+  // Todas las novelas, no solo las 3 de la tarjeta: aquí no ocupan espacio.
+  novela: books.map((n) => ({
     tag: 'Novela',
     text: `${n.title} — adquiérela en Amazon`,
     href: n.buy,
@@ -902,14 +903,13 @@ const signalPools = {
   }
   .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 
-  /* Novelas — 4 más recientes: portada + sinopsis + CTA. En escritorio ancho,
-     grid de 4; por debajo de 1101px y en móvil, carrusel con snap y la
-     siguiente tarjeta asomando (así no crece en vertical cuando lleguen más
-     novelas). */
+  /* Novelas — 3 más recientes: portada + sinopsis + CTA. En escritorio, grid
+     de 3; en móvil, carrusel con snap y la siguiente tarjeta asomando (así no
+     crece en vertical cuando lleguen más novelas). */
   .novelas-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
   .novela-card {
     display: flex;
@@ -951,7 +951,7 @@ const signalPools = {
     line-height: 1.6;
     margin: 0 0 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 12;
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -963,7 +963,7 @@ const signalPools = {
     .novela-body :global(.book-actions.block .main) { width: auto; flex: 1 1 auto; }
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 900px) {
     .novelas-grid {
       display: flex;
       gap: 16px;
