@@ -103,7 +103,7 @@ export const books: Book[] = [
     genre: 'Tecnothriller',
     cover: '/images/novelas/deprecado.webp',
     desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella no lo infringió: es su «sucesor creativo». Con cuatro «prescindibles» más, cruza Estados Unidos reuniendo la prueba de que a todos les pusieron la misma cláusula. Detrás hay un documento que nadie puede mostrar: CONSENT-0.',
-    homeDesc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella solo es su «sucesor creativo». Con cuatro «prescindibles» más, cruza EE. UU. en busca de la prueba de que a todos les pusieron la misma cláusula.',
+    homeDesc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella es su «sucesor creativo». Con cuatro «prescindibles» más, cruza EE. UU. buscando la prueba de que a todos les pusieron la misma cláusula.',
     buy: '/deprecado/',
     storeUrl: 'https://www.amazon.com/dp/B0HMGF498X',
     metaDescription:
