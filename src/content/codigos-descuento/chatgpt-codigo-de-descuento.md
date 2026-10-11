@@ -7,9 +7,9 @@ empresa: "OpenAI"
 sitioOficial: "https://chatgpt.com/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos. Las promociones oficiales son limitadas: 4 meses gratis para estudiantes (solo universidades de EE.UU., hasta el 31 de octubre de 2026, no aplica en México) y un descuento para ONG en ChatGPT Business."
-fuenteVerificacion: "Centro de ayuda oficial de OpenAI (help.openai.com), artículos \"ChatGPT Plus promotions and referrals\" y \"ChatGPT Back to School offer for students\", página oficial chatgpt.com/students/2026 y artículo «OpenAI for Nonprofits» del mismo centro de ayuda, consultados el 04/10/2026."
+fuenteVerificacion: "Centro de ayuda oficial de OpenAI (help.openai.com), artículos «ChatGPT Plus promotions and referrals» y «ChatGPT Back to School offer for students», página oficial chatgpt.com/students/2026 y artículo «OpenAI for Nonprofits» del mismo centro de ayuda, consultados el 04/10/2026 y reverificados el 11/10/2026: la oferta de estudiantes sigue vigente, con el mismo plazo y las mismas condiciones."
 pubDate: 2026-08-30
-updatedDate: 2026-10-04
+updatedDate: 2026-10-11
 heroImage: /images/codigos-descuento/chatgpt.png
 heroImageAlt: ChatGPT — Códigos de descuento
 ---
@@ -36,4 +36,4 @@ Búsquedas de "código de descuento ChatGPT" devuelven decenas de sitios agregad
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 11/10/2026]
