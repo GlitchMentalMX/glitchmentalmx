@@ -104,6 +104,7 @@ export const books: Book[] = [
     cover: '/images/novelas/deprecado.webp',
     desc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella no lo infringió: es su «sucesor creativo». Con cuatro «prescindibles» más, cruza Estados Unidos reuniendo la prueba de que a todos les pusieron la misma cláusula. Detrás hay un documento que nadie puede mostrar: CONSENT-0.',
     homeDesc: 'Josh Turner entrenó a la herramienta que lo reemplazó. Ante la ley, ella es su «sucesor creativo». Con cuatro «prescindibles» más, cruza EE. UU. buscando la prueba de que a todos les pusieron la misma cláusula.',
+    whyIWroteThisSlug: 'deprecado-novela-creadores-inteligencia-artificial',
     buy: '/deprecado/',
     storeUrl: 'https://www.amazon.com/dp/B0HMGF498X',
     metaDescription:
@@ -171,6 +172,22 @@ export const books: Book[] = [
         width: 992,
         height: 1586,
         alt: 'Una mano sostiene una pluma fuente sobre una hoja, junto a una lámpara y una pila de libros en la penumbra; la línea escrita pasa del trazo manuscrito a marcas como de código.',
+      },
+      {
+        src: '/images/novelas/deprecado/escritor-pila-manuscritos-1600.webp',
+        srcset:
+          '/images/novelas/deprecado/escritor-pila-manuscritos-800.webp 800w, /images/novelas/deprecado/escritor-pila-manuscritos-1600.webp 1600w',
+        width: 1600,
+        height: 893,
+        alt: 'Un hombre de barba y cárdigan verde, sentado en un estudio lleno de libros, acomoda con ambas manos una pila de manuscritos con notas adhesivas junto a un monitor que muestra un texto.',
+      },
+      {
+        src: '/images/novelas/deprecado/escritorio-pila-manuscritos-1600.webp',
+        srcset:
+          '/images/novelas/deprecado/escritorio-pila-manuscritos-800.webp 800w, /images/novelas/deprecado/escritorio-pila-manuscritos-1600.webp 1600w',
+        width: 1600,
+        height: 893,
+        alt: 'Un escritorio de madera en un estudio con estantes de libros: una pila de manuscritos con notas adhesivas, una taza, una pluma y un monitor encendido; la silla vacía tiene un suéter colgado.',
       },
     ],
   },
