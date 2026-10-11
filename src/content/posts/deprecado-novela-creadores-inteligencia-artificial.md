@@ -1,7 +1,7 @@
 ---
 title: 'DEPRECADO: la novela del creador que entrenó a su reemplazo'
 category: Cultura Digital
-pubDate: 2026-10-10T19:58
+pubDate: 2026-10-10T19:59
 updatedDate: ''
 description: Un redactor entrena a la herramienta que lo reemplaza. Tecnothriller nacido de la serie Manos Libres sobre IA y trabajo creativo.
 heroImage: /images/uploads/deprecado-hero.webp
