@@ -9,7 +9,7 @@ veredicto: "amarillo"
 fraseCorta: "Es gratis para estudiantes verificados de 13 años o más, pero GitHub no menciona países, y cada beneficio del paquete trae su propia duración y límites."
 fuenteVerificacion: "Fuente oficial (education.github.com/pack; github.com/education/students; docs.github.com: Apply to GitHub Education as a student y About GitHub Education for students), consultada el 11/10/2026."
 pubDate: 2026-10-11
-heroImage: /images/estudiantes/github-copilot.png
+heroImage: /images/estudiantes/github-student-developer-pack.png
 heroImageAlt: GitHub Student Developer Pack — Descuentos para estudiantes
 ---
 
