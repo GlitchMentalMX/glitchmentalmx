@@ -305,6 +305,7 @@
       var overlay = getOverlay();
       showAt(gallery.indexOf(clickedEl));
       overlay.classList.add('open');
+      fit(overlay.querySelector('.lightbox-frame img'));
       document.body.style.overflow = 'hidden';
     }
 
@@ -341,6 +342,7 @@
       var overlay = getOverlay();
       showAt(mode === 'last' ? gallery.length - 1 : 0);
       overlay.classList.add('open');
+      fit(overlay.querySelector('.lightbox-frame img'));
       document.body.style.overflow = 'hidden';
     })();
   })();
