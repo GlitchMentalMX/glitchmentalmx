@@ -41,10 +41,10 @@ function saveManifest(set) {
 function buildWatermarkSvg(width, height, corner) {
   const fontSize =
     corner === 'bottom'
-      ? Math.round(Math.max(14, width / 75))
+      ? Math.round(Math.max(18, width / 48))
       : Math.round(Math.min(26, Math.max(14, width / 42)));
   const margin = Math.round(fontSize * 0.9);
-  const strokeWidth = Math.max(1, Math.round(fontSize * 0.06));
+  const strokeWidth = Math.max(1, Math.round(fontSize * (corner === 'bottom' ? 0.14 : 0.06)));
   const y = corner === 'bottom' ? height - margin : margin + fontSize * 0.8;
   return Buffer.from(`
     <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
@@ -56,9 +56,9 @@ function buildWatermarkSvg(width, height, corner) {
         font-weight="600"
         font-size="${fontSize}"
         fill="#ffffff"
-        fill-opacity="0.55"
+        fill-opacity="${corner === 'bottom' ? 0.9 : 0.55}"
         stroke="#000000"
-        stroke-opacity="0.25"
+        stroke-opacity="${corner === 'bottom' ? 0.6 : 0.25}"
         stroke-width="${strokeWidth}"
         paint-order="stroke"
       >${WATERMARK_TEXT}</text>
