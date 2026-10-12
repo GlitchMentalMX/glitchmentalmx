@@ -56,7 +56,7 @@ function buildWatermarkSvg(width, height, corner) {
         font-weight="600"
         font-size="${fontSize}"
         fill="#ffffff"
-        fill-opacity="${corner === 'bottom' ? 0.9 : 0.55}"
+        fill-opacity="${corner === 'bottom' ? 1 : 0.55}"
         stroke="#000000"
         stroke-opacity="${corner === 'bottom' ? 0.6 : 0.25}"
         stroke-width="${strokeWidth}"
