@@ -225,6 +225,24 @@
       return overlay;
     }
 
+    // Tamaño explícito en px (como "contain" sin ampliar): Safari calculaba
+    // mal el ancho de una <img> aún cargando dentro del contenedor flex y
+    // algunas imágenes quedaban chicas; Chrome no tenía el problema.
+    function fit(img) {
+      var overlay = document.getElementById('lightbox-overlay');
+      if (!overlay || !img.naturalWidth) return;
+      var cs = getComputedStyle(overlay);
+      var maxW = overlay.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      var maxH = overlay.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      var scale = Math.min(1, maxW / img.naturalWidth, maxH / img.naturalHeight);
+      img.style.width = Math.floor(img.naturalWidth * scale) + 'px';
+      img.style.height = Math.floor(img.naturalHeight * scale) + 'px';
+    }
+    window.addEventListener('resize', function () {
+      var img = document.querySelector('#lightbox-overlay.open .lightbox-frame img');
+      if (img) fit(img);
+    });
+
     function showAt(index) {
       if (!gallery.length) return;
       currentIndex = (index + gallery.length) % gallery.length;
@@ -235,6 +253,9 @@
       var oldImg = overlay.querySelector('.lightbox-frame img');
       var img = document.createElement('img');
       oldImg.parentNode.replaceChild(img, oldImg);
+      img.addEventListener('load', function () {
+        fit(img);
+      });
       img.src = el.currentSrc || el.src;
       img.alt = el.alt || '';
       overlay.classList.toggle('single', gallery.length < 2);
