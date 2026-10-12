@@ -1,12 +1,12 @@
 ---
 title: 'Contrabando de chips de IA: cómo se cuelan a China'
 category: Inteligencia Artificial
-pubDate: 2026-10-11T20:01
+pubDate: 2026-10-11T21:51
 updatedDate: ''
 description: 'Cómo se contrabandea una GPU: transbordo por Malasia, comprador puente, servidores señuelo y marcas falsas. El mecanismo, caso por caso.'
 heroImage: /images/uploads/contrabando-chips-ia.webp
 heroImageAlt: 'AI CHIP SMUGGLING: GPU de tres ventiladores extraída de un servidor durante una inspección logística'
-draft: true
+draft: false
 ---
 
 El **contrabando de chips de IA** no se comete en la frontera con China, sino en el papeleo de los países de tránsito. El caso de Greg Lui, arrestado el 1 de octubre de 2026, lo muestra: facturas falsas, un envío a Kuala Lumpur y un comprador en China.
