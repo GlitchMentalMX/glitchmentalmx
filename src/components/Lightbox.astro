@@ -38,9 +38,24 @@
   }
   .lightbox-frame {
     position: relative;
-    display: inline-flex;
-    max-width: 100%;
-    max-height: 100%;
+    display: block;
+    flex: none;
+  }
+  .lightbox-overlay img {
+    flex: none;
+  }
+  .lightbox-debug {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    background: #000;
+    color: #0f0;
+    font: 12px/1.4 monospace;
+    padding: 6px 10px;
+    white-space: pre;
+    pointer-events: none;
   }
   .lightbox-caption {
     display: none;
@@ -237,6 +252,23 @@
       var scale = Math.min(1, maxW / img.naturalWidth, maxH / img.naturalHeight);
       img.style.width = Math.floor(img.naturalWidth * scale) + 'px';
       img.style.height = Math.floor(img.naturalHeight * scale) + 'px';
+      if (/[?&]lbdebug=1/.test(location.search)) {
+        var dbg = overlay.querySelector('.lightbox-debug');
+        if (!dbg) {
+          dbg = document.createElement('div');
+          dbg.className = 'lightbox-debug';
+          overlay.appendChild(dbg);
+        }
+        dbg.textContent =
+          'natural ' + img.naturalWidth + 'x' + img.naturalHeight +
+          '\nmax ' + Math.round(maxW) + 'x' + Math.round(maxH) +
+          '\nscale ' + scale.toFixed(3) +
+          '\nset ' + img.style.width + ' x ' + img.style.height +
+          '\nrendered ' + Math.round(img.getBoundingClientRect().width) + 'x' + Math.round(img.getBoundingClientRect().height) +
+          '\noverlay ' + overlay.clientWidth + 'x' + overlay.clientHeight +
+          '\nwin ' + innerWidth + 'x' + innerHeight + ' dpr ' + devicePixelRatio +
+          '\n' + (img.currentSrc || '').split('/').pop();
+      }
     }
     window.addEventListener('resize', function () {
       var img = document.querySelector('#lightbox-overlay.open .lightbox-frame img');
