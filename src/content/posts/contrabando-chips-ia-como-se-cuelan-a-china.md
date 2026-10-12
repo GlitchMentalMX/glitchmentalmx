@@ -1,7 +1,7 @@
 ---
 title: 'Contrabando de chips de IA: cómo se cuelan a China'
 category: Inteligencia Artificial
-pubDate: 2026-10-11T20:00
+pubDate: 2026-10-11T20:01
 updatedDate: ''
 description: 'Cómo se contrabandea una GPU: transbordo por Malasia, comprador puente, servidores señuelo y marcas falsas. El mecanismo, caso por caso.'
 heroImage: /images/uploads/contrabando-chips-ia.webp
