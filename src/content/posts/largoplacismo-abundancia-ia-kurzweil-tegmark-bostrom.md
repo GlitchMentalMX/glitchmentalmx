@@ -1,7 +1,7 @@
 ---
 title: 'Largoplacismo y abundancia: Kurzweil, Tegmark y Bostrom'
 category: Inteligencia Artificial
-pubDate: 2026-10-12T13:58
+pubDate: 2026-10-12T14:01
 updatedDate: ''
 description: Kurzweil, Bostrom y Tegmark prometen abundancia con IA. Qué afirma cada uno, qué objetan sus críticas y por qué el calendario es la alerta.
 heroImage: /images/uploads/largoplacismo-abundancia.webp
