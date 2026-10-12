@@ -243,15 +243,21 @@
     // Tamaño explícito en px (como "contain" sin ampliar): Safari calculaba
     // mal el ancho de una <img> aún cargando dentro del contenedor flex y
     // algunas imágenes quedaban chicas; Chrome no tenía el problema.
+    // Safari a veces reporta un naturalWidth/Height menor al real (p. ej.
+    // 723x407 para un archivo de 1672x941) y la imagen queda chica. Por eso
+    // las dimensiones reales se leen decodificando el archivo con
+    // createImageBitmap (img.__realSize) y naturalWidth solo es el respaldo.
     function fit(img) {
       var overlay = document.getElementById('lightbox-overlay');
-      if (!overlay || !img.naturalWidth) return;
+      var nw = img.__realSize ? img.__realSize[0] : img.naturalWidth;
+      var nh = img.__realSize ? img.__realSize[1] : img.naturalHeight;
+      if (!overlay || !nw) return;
       var cs = getComputedStyle(overlay);
       var maxW = overlay.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
       var maxH = overlay.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
-      var scale = Math.min(1, maxW / img.naturalWidth, maxH / img.naturalHeight);
-      img.style.width = Math.floor(img.naturalWidth * scale) + 'px';
-      img.style.height = Math.floor(img.naturalHeight * scale) + 'px';
+      var scale = Math.min(1, maxW / nw, maxH / nh);
+      img.style.width = Math.floor(nw * scale) + 'px';
+      img.style.height = Math.floor(nh * scale) + 'px';
       if (/[?&]lbdebug=1/.test(location.search)) {
         var dbg = overlay.querySelector('.lightbox-debug');
         if (!dbg) {
@@ -261,6 +267,7 @@
         }
         dbg.textContent =
           'natural ' + img.naturalWidth + 'x' + img.naturalHeight +
+          '\nreal ' + (img.__realSize ? img.__realSize.join('x') : 'n/a') +
           '\nmax ' + Math.round(maxW) + 'x' + Math.round(maxH) +
           '\nscale ' + scale.toFixed(3) +
           '\nset ' + img.style.width + ' x ' + img.style.height +
@@ -287,6 +294,16 @@
       oldImg.parentNode.replaceChild(img, oldImg);
       img.addEventListener('load', function () {
         fit(img);
+        if (!window.createImageBitmap || img.__realSize) return;
+        fetch(img.src)
+          .then(function (r) { return r.blob(); })
+          .then(function (b) { return createImageBitmap(b); })
+          .then(function (bmp) {
+            img.__realSize = [bmp.width, bmp.height];
+            if (bmp.close) bmp.close();
+            fit(img);
+          })
+          .catch(function () {});
       });
       img.src = el.currentSrc || el.src;
       img.alt = el.alt || '';
