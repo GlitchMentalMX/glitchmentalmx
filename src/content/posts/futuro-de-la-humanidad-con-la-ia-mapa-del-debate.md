@@ -11,7 +11,7 @@ draft: false
 
 El debate sobre el futuro de la humanidad con la IA (inteligencia artificial) mezcla hechos medidos, deducciones y especulación como si pesaran lo mismo. Este mapa los separa. **No dice quién tiene razón: dice qué clase de prueba exige cada postura.**
 
-Es la página de entrada de **[Sin Oráculos](/series/futuro-humanidad-ia-filosofos/)**, una serie de nueve artículos sobre lo que filósofos, científicos y ejecutivos dicen del futuro de la IA. Aquí no hay investigación nueva: este texto resume esos nueve artículos y presenta todo como lo que dicen las fuentes revisadas, no como la verdad de este sitio.
+Es la página de entrada de **Sin Oráculos**, una serie de nueve artículos sobre lo que filósofos, científicos y ejecutivos dicen del futuro de la IA. Aquí no hay investigación nueva: este texto resume esos nueve artículos y presenta todo como lo que dicen las fuentes revisadas, no como la verdad de este sitio.
 
 ## Cómo leer este mapa: la regla de etiquetado y el detector de marketing
 
@@ -30,7 +30,7 @@ Ord también matizó su argumento. En 2024 escribió que el escenario clásico d
 El detector de marketing son **cinco preguntas** que se le hacen a cualquier afirmación, sin importar quién la diga:
 
 1. **¿Quién gana si se lo creen?**
-2. **¿Es falsable?** Es decir, ¿existe una observación que la desmentiría?
+2. **¿Es falsable?** Es decir, ¿existe una observación que la desmienta?
 3. **¿Trae calendario?**
 4. **¿Hay conflicto de interés declarado u omitido?**
 5. **«Mi producto es tan poderoso que es peligroso»: ¿es advertencia o publicidad?**
