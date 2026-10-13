@@ -1,12 +1,12 @@
 ---
 title: 'Daños actuales de la IA: la postura de Crawford y Gebru'
 category: Inteligencia Artificial
-pubDate: 2026-10-12T12:59
+pubDate: 2026-10-13T07:25
 updatedDate: ''
 description: 'El daño de la IA ya se mide: energía, trabajo, sesgo. La postura de Crawford, Gebru, Bender y Vallor, con sus críticas más fuertes.'
 heroImage: /images/uploads/danos-actuales-ia.webp
 heroImageAlt: 'Investigadora analiza evidencia de los daños actuales de la IA: consumo energético, transformación del empleo y sesgos algorítmicos.'
-draft: true
+draft: false
 ---
 
 Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se disputa es qué cuenta como daño. La postura de Crawford, Gebru, Bender y Vallor es sólida donde mide y frágil donde adivina motivos.
