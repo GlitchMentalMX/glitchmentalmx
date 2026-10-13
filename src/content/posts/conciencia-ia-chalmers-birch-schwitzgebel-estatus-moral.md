@@ -9,8 +9,6 @@ heroImageAlt: 'IA consciente: investigadora analizando lecturas ambiguas en el m
 draft: false
 ---
 
-# ¿Puede una IA ser consciente? Chalmers, Birch y Schwitzgebel
-
 ¿Qué se le debe a una **IA consciente** si nadie puede comprobar que lo sea? Esa es la pregunta incómoda del debate. Chalmers, Birch y Schwitzgebel no afirman que ya ocurrió: discuten cuánta precaución corresponde antes de poder saberlo, y ahí está el verdadero problema.
 
 ## Cuatro palabras que se confunden: conciencia, sentiencia, comprensión, inteligencia
