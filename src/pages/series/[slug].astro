@@ -79,7 +79,7 @@ const seriesImage = posts[0]?.data.heroImage;
       <p class="eyebrow list-label">Los artículos — en orden de lectura</p>
       {posts.map((post, i) => (
         <CollectionArticleRow
-          index={i + 1}
+          index={i + (series.data.startIndex ?? 1)}
           slug={post.id}
           title={post.data.title}
           description={post.data.description}

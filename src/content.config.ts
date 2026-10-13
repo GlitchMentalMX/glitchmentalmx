@@ -68,6 +68,7 @@ const editorialCollections = defineCollection({
     related: z.array(z.string()).default([]),
     order: z.number().default(0),
     group: z.string().optional(),
+    startIndex: z.number().optional(),
     audio: z
       .object({
         src: z.string(),
