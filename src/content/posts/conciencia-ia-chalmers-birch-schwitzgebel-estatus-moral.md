@@ -1,12 +1,12 @@
 ---
 title: ¿Puede una IA ser consciente? Chalmers, Birch y Schwitzgebel
 category: Inteligencia Artificial
-pubDate: 2026-10-12T22:11
+pubDate: 2026-10-13T07:25
 updatedDate: ''
 description: 'Chalmers, Birch y Schwitzgebel: hoy es improbable que una IA sea consciente, pero nadie sabe cómo comprobarlo. Qué dicen y dónde se rompe.'
 heroImage: /images/uploads/ia-consciente.webp
 heroImageAlt: 'IA consciente: investigadora analizando lecturas ambiguas en el monitor físico de un servidor'
-draft: true
+draft: false
 ---
 
 # ¿Puede una IA ser consciente? Chalmers, Birch y Schwitzgebel
