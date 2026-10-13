@@ -1,12 +1,12 @@
 ---
 title: 'Riesgo existencial de la IA: Bostrom, Ord y Russell'
 category: Inteligencia Artificial
-pubDate: 2026-10-12T11:45
+pubDate: 2026-10-13T07:24
 updatedDate: ''
 description: 'El mejor argumento del riesgo existencial de la IA según Bostrom, Ord y Russell: qué sostienen, qué es hipótesis y qué dicen sus críticos.'
 heroImage: /images/uploads/riesgo-existencial.webp
 heroImageAlt: 'Riesgo existencial de la IA: Analista frente a una pantalla colosal mostrando un diagrama de red desbordado'
-draft: true
+draft: false
 ---
 
 Toby Ord pone en «1 de cada 10» el **riesgo existencial de la IA** este siglo. Esa cifra es una conjetura, no una medición. Lo que sí merece examen es el argumento que la sostiene.
