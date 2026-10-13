@@ -11,6 +11,8 @@ draft: false
 
 ¿Qué pierde la condición humana con la IA? Depende de dónde la ubiques. Arendt, Han y Harari la ubican en lugares distintos, así que sus advertencias **no suman: compiten**. Y Arendt murió en 1975: entra a este debate solo por sus lectores.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Tres lugares para lo humano: la acción, la negatividad y el lenguaje
 
 Esta es la pieza menos empírica de la serie. **No hay cifras que verificar: hay diagnósticos que comparar.** Los tres autores, además, no son colegas de oficio: según el Hannah Arendt Center, Arendt se describía a sí misma como teórica política; Han es filósofo; Harari es historiador, aunque la firma de _The Economist_ lo presenta como historiador y filósofo.

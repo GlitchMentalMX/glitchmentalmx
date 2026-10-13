@@ -11,6 +11,8 @@ draft: false
 
 Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se disputa es qué cuenta como daño. La postura de Crawford, Gebru, Bender y Vallor es sólida donde mide y frágil donde adivina motivos.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Qué cuenta como daño: el debate de fondo
 
 **«Riesgo» es una palabra con demasiados usos.** Según Swoboda et al., una reconstrucción académica de 2025, el debate sobre riesgo existencial mezcla escenarios distintos con términos ambiguos, en ambos bandos. Una cosa es el consumo eléctrico de un centro de datos; otra, una inteligencia hipotética fuera de control.

@@ -11,6 +11,8 @@ draft: false
 
 El largoplacismo y la promesa de abundancia con IA comparten premisa con el riesgo existencial: **el futuro vale muchísimo**. Kurzweil, Bostrom y Tegmark discrepan en si hay que construir superinteligencia. Casi todo lo que prometen vive en un calendario que nadie puede verificar.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## La promesa habla tres idiomas: pronóstico, filosofía y escenarios
 
 El **largoplacismo** sostiene que el rasgo más importante de nuestras acciones de hoy es su efecto en el futuro lejano, según el resumen que el Global Priorities Institute de Oxford hizo del argumento de Hilary Greaves y William MacAskill. La abundancia con IA es esa misma idea por su lado favorable: si la tecnología sale bien, el premio es gigantesco (INFERENCIA).

@@ -11,6 +11,8 @@ draft: false
 
 Los escépticos del riesgo existencial de la IA no son un bando: son cuatro argumentos distintos con **evidencia desigual**. Mezclarlos es la forma más cómoda de descartarlos, o de aplaudirlos, sin leerlos.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## El escéptico no existe: son cuatro argumentos distintos
 
 El **riesgo existencial** es el escenario en el que la IA provoca la extinción humana o un colapso sin regreso. La superinteligencia sería un sistema muy superior a la mente humana en casi todo.

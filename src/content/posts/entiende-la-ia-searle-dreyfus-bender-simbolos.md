@@ -11,6 +11,8 @@ draft: false
 
 ¿Entiende la IA o solo manipula símbolos? La pregunta tiene más de sesenta años, y tres argumentos célebres coinciden en que **manipular símbolos no basta**. Lo que sigue sin resolverse es qué implica eso para los modelos de hoy.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Una pregunta de más de sesenta años: de la alquimia a los loros
 
 Tres nombres aparecen juntos en esta discusión: Hubert Dreyfus, John Searle y Emily Bender. Se citan como si fueran una sola postura, y **no lo son**. [Dreyfus (1929-2017)](https://philosophy.fas.harvard.edu/news/memoriam-hubert-l-dreyfus-1929-2017) y [Searle (1932-2025)](https://dailynous.com/2025/09/28/john-searle-1932-2025/) fueron filósofos de Berkeley. Bender firmó con Alexander Koller un paper en una conferencia de lingüística computacional, no de filosofía.

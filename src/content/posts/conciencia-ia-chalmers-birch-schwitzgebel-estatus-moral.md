@@ -11,6 +11,8 @@ draft: false
 
 ¿Qué se le debe a una **IA consciente** si nadie puede comprobar que lo sea? Esa es la pregunta incómoda del debate. Chalmers, Birch y Schwitzgebel no afirman que ya ocurrió: discuten cuánta precaución corresponde antes de poder saberlo, y ahí está el verdadero problema.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Cuatro palabras que se confunden: conciencia, sentiencia, comprensión, inteligencia
 
 Antes de discutir hay que separar los términos, porque media discusión se pierde en ellos. **La conciencia es que exista algo que se siente ser ese sistema**: una experiencia, aunque sea mínima. Anil Seth, del Centro Sussex para la Ciencia de la Conciencia, toma esa definición de Thomas Nagel.

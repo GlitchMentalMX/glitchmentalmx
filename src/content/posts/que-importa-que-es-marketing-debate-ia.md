@@ -11,6 +11,8 @@ draft: false
 
 Después de siete posturas sobre el futuro de la IA, queda una pregunta: ¿qué es información y qué es marketing en el debate sobre la IA? **Este cierre no elige bando.** Aplica el mismo detector a todos. Datos al 12 de octubre de 2026.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubícalo en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Qué hace el detector y qué no
 
 El detector es una lista de preguntas que se le hace a cualquier afirmación sobre la IA, venga de quien venga. **No decide quién tiene razón: marca dónde una afirmación todavía no muestra su fuente.** Por eso «marketing» no designa aquí a una postura entera, sino a señales concretas dentro de ella, y esa etiqueta es siempre INFERENCIA de este sitio.

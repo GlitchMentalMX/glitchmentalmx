@@ -11,6 +11,8 @@ draft: false
 
 Toby Ord pone en «1 de cada 10» el **riesgo existencial de la IA** este siglo. Esa cifra es una conjetura, no una medición. Lo que sí merece examen es el argumento que la sostiene.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Quiénes sostienen esta postura y en qué se distinguen
 
 Los tres autores tienen oficios distintos. **Nick Bostrom y Toby Ord son filósofos**. Bostrom fundó el Future of Humanity Institute de Oxford (cerrado en 2024) y hoy es investigador principal del Macrostrategy Research Initiative; Ord es investigador sénior en la Oxford Martin AI Governance Initiative. **Stuart Russell es informático** en la Universidad de California en Berkeley. Bostrom formuló su argumento técnico en 2012, Russell publicó _Human Compatible_ en 2019 y Ord, _The Precipice_ en 2020.

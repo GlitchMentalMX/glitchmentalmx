@@ -11,6 +11,8 @@ draft: false
 
 El **debate sobre el futuro de la IA** parece una pelea sin puentes, pero en las fuentes revisadas, posturas que se rechazan comparten hábitos que ninguna admite. Y sus choques no los resuelven más datos: cada postura exige un tipo distinto de prueba.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubícalo en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 Este es el artículo 8 de la serie _Sin Oráculos_ y **no investiga nada nuevo**: resume los siete anteriores sobre el [riesgo existencial](https://glitchmental.com/articulos/riesgo-existencial-ia-bostrom-ord-russell/), los [escépticos](https://glitchmental.com/articulos/escepticos-riesgo-existencial-ia-argumentos/), los [daños actuales](https://glitchmental.com/articulos/danos-actuales-ia-crawford-gebru-bender-vallor/), el [largoplacismo y la abundancia](https://glitchmental.com/articulos/largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom/), si la IA [entiende](https://glitchmental.com/articulos/entiende-la-ia-searle-dreyfus-bender-simbolos/), su posible [conciencia](https://glitchmental.com/articulos/conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral/) y la [condición humana](https://glitchmental.com/articulos/condicion-humana-ia-arendt-han-harari-sentido/). Cada afirmación va marcada como HECHO o INFERENCIA.
 
 ## Tres hábitos que comparten posturas que no se hablan
