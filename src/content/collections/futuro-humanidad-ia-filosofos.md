@@ -3,7 +3,7 @@ title: Sin Oráculos
 kind: series
 status: published
 description: >-
-  Filósofos, científicos y ejecutivos sobre el futuro de la humanidad con la IA: siete posturas, dónde coinciden y chocan, y qué es hecho, inferencia o hipótesis.
+  Siete posturas sobre el futuro de la humanidad con la IA: qué dicen, dónde coinciden y chocan, y qué es hecho, inferencia o hipótesis.
 postSlugs:
   - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
   - riesgo-existencial-ia-bostrom-ord-russell
