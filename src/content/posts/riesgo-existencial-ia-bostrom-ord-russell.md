@@ -45,11 +45,11 @@ Su alternativa son tres principios, que propone en su libro _Human Compatible_ (
 
 ## Qué es hecho, qué es inferencia y qué es hipótesis
 
-**Hecho.** Russell figura entre los firmantes de la declaración del Center for AI Safety de mayo de 2023, que pide que mitigar el riesgo de extinción por IA sea una prioridad global junto a las pandemias y la guerra nuclear. Los resultados de CIRL se demuestran dentro de su modelo.
+HECHO: Russell figura entre los firmantes de la declaración del Center for AI Safety de mayo de 2023, que pide que mitigar el riesgo de extinción por IA sea una prioridad global junto a las pandemias y la guerra nuclear. Los resultados de CIRL se demuestran dentro de su modelo.
 
-**Inferencia.** Que la ortogonalidad y la convergencia instrumental apliquen a sistemas reales, y que estos se parezcan al modelo formal de CIRL. Que multiplicar dos juicios, 50 % por 20 %, produzca una estimación útil.
+INFERENCIA: Que la ortogonalidad y la convergencia instrumental apliquen a sistemas reales, y que estos se parezcan al modelo formal de CIRL. Que multiplicar dos juicios, 50 % por 20 %, produzca una estimación útil.
 
-**Hipótesis.** Que llegue una IA superior a los humanos en lo general. Que esa IA sea incontrolable. Cualquier probabilidad de catástrofe asociada.
+HIPÓTESIS: Que llegue una IA superior a los humanos en lo general. Que esa IA sea incontrolable. Cualquier probabilidad de catástrofe asociada.
 
 ## La crítica más seria: el escenario clásico y la «tecnología normal»
 
@@ -65,9 +65,11 @@ Ninguna de las dos críticas **dice que el riesgo sea cero**: cuestionan el esce
 
 **¿Es falsable?** Débilmente: casi todas las afirmaciones centrales no tienen hoy evidencia que las confirme o las descarte.
 
-**¿Tiene calendario?** En las fuentes revisadas, ninguno de los tres fija una fecha para la superinteligencia; Ord habla de «este siglo».
+**¿Trae calendario?** En las fuentes revisadas, ninguno de los tres fija una fecha para la superinteligencia; Ord habla de «este siglo».
 
-**¿Venden un producto?** No. La tensión está en otro lado: la declaración que firmó Russell la firmaron también Sam Altman (OpenAI), Demis Hassabis (Google DeepMind) y Dario Amodei (Anthropic), según la lista de signatarios del Center for AI Safety. Que una postura sin producto sea usada por quienes sí lo tienen es una inferencia, no una acusación.
+**«Mi producto es tan poderoso que es peligroso»: ¿es advertencia o publicidad?** No venden un producto. La tensión está en otro lado: la declaración que firmó Russell la firmaron también Sam Altman (OpenAI), Demis Hassabis (Google DeepMind) y Dario Amodei (Anthropic), según la lista de signatarios del Center for AI Safety. Que una postura sin producto sea usada por quienes sí lo tienen es una inferencia, no una acusación.
+
+**Alertas que dispara.** INFERENCIA: según el [tablero del artículo 9](/articulos/que-importa-que-es-marketing-debate-ia/), este artículo dispara S2 (una cifra de juicio presentada como dato); ahí se definen las cinco señales, S1 a S5.
 
 > Una hipótesis puede ser seria sin estar probada; el problema empieza cuando se cita como si lo estuviera.
 

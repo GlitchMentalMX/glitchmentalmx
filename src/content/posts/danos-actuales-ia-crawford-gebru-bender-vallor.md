@@ -11,6 +11,8 @@ draft: false
 
 Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se disputa es qué cuenta como daño. La postura de Crawford, Gebru, Bender y Vallor es sólida donde mide y frágil donde adivina motivos.
 
+*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
+
 ## Qué cuenta como daño: el debate de fondo
 
 **«Riesgo» es una palabra con demasiados usos.** Según Swoboda et al., una reconstrucción académica de 2025, el debate sobre riesgo existencial mezcla escenarios distintos con términos ambiguos, en ambos bandos. Una cosa es el consumo eléctrico de un centro de datos; otra, una inteligencia hipotética fuera de control.
@@ -67,11 +69,13 @@ Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se 
 
 **¿Es falsable?** Sí en lo medible: energía, salarios, sesgos. Poco en lo que afirma sobre motivos y sobre el linaje eugenésico de la AGI.
 
-**¿Tiene calendario?** En las fuentes consultadas no aparece un calendario de catástrofes.
+**¿Trae calendario?** En las fuentes consultadas no aparece un calendario de catástrofes.
 
-**¿Aplica el truco de «mi producto es tan poderoso que es peligroso»?** En las fuentes consultadas, no aparece.
+**«Mi producto es tan poderoso que es peligroso»: ¿es advertencia o publicidad?** En las fuentes consultadas, no aparece.
 
-**¿Hay conflictos?** Según la ficha de _Atlas of AI_ (2021), Crawford era investigadora principal sénior de Microsoft Research y cofundó el AI Now Institute (sin verificar si el cargo sigue vigente); según la ficha de su libro, Vallor fue especialista en ética de IA en Google. No todas son externas a la industria. Es un dato, no una descalificación; vale igual para Uuk y Hughes.
+**¿Hay conflicto de interés declarado u omitido?** Según la ficha de _Atlas of AI_ (2021), Crawford era investigadora principal sénior de Microsoft Research y cofundó el AI Now Institute (sin verificar si el cargo sigue vigente); según la ficha de su libro, Vallor fue especialista en ética de IA en Google. No todas son externas a la industria. Es un dato, no una descalificación; vale igual para Uuk y Hughes.
+
+**Alertas que dispara.** INFERENCIA: según el [tablero del artículo 9](/articulos/que-importa-que-es-marketing-debate-ia/), este artículo dispara S4 (el motivo como prueba); ahí se definen las cinco señales, S1 a S5.
 
 > Señal fuerte en lo medible (energía, trabajo, sesgo); más débil donde se infieren motivos o linajes ideológicos. El debate «presente contra futuro» está menos partido de lo que se vende.
 

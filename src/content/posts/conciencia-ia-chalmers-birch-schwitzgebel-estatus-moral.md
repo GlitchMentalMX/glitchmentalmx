@@ -83,25 +83,27 @@ Este sitio aplica un detector a cualquier afirmación sobre IA: quién gana, si 
 
 INFERENCIA: si la IA podría ser consciente, ganan los laboratorios con programas de bienestar de modelos, que obtienen credibilidad moral y usuarios más apegados. Si no puede serlo, ganan quienes venden la IA como una herramienta cómoda y sin dilemas. Según OODA Loop, Mustafa Suleyman, directivo de Microsoft AI, dijo a CNBC que solo los seres biológicos pueden ser conscientes y que ese tipo de investigación no debería hacerse. Es un directivo de una empresa, y su afirmación es una postura, no un resultado científico. **Hay simetría**: los dos lados tienen un incentivo.
 
-**¿Se puede falsar?**
+**¿Es falsable?**
 
 Débilmente, por lo ya visto: no hay una prueba aceptada y los indicadores se apoyan en teorías discutidas.
 
-**¿Qué plazo promete?**
+**¿Trae calendario?**
 
 Chalmers habla de la próxima década más o menos. Un plazo así es una apuesta informada, no un dato, y como tal debe leerse.
 
-**¿Quién tiene conflictos?**
+**¿Hay conflicto de interés declarado u omitido?**
 
 HECHO: Anthropic, que desarrolla Claude, anunció en abril de 2025 un programa de bienestar de modelos y dice haber apoyado un proyecto temprano en el que se basó un informe de expertos que incluye a Chalmers. La empresa también dice que sigue profundamente incierta y que no hay consenso científico. Seth declara ser asesor de Conscium Ltd y de AllJoined Inc. Suleyman dirige la división de IA de Microsoft. Birch, Bengio y Schwitzgebel son coautores del informe de Butlin y colegas. Declarar los conflictos no invalida los argumentos; permite pesarlos.
 
-**¿Y si "mi producto es tan poderoso que quizá sufra" también es marketing?**
+**«Mi producto es tan poderoso que es peligroso»: ¿es advertencia o publicidad?**
 
-INFERENCIA: esa variante del truco clásico existe y vale la pena preguntarla. En agosto de 2025, según TechCrunch, Anthropic permitió que algunos de sus modelos (Claude Opus 4 y 4.1) terminaran conversaciones en casos extremos de interacciones abusivas, por si acaso el bienestar de los modelos fuera posible; la empresa no afirma que Claude sea sintiente. Se plantea como pregunta, no como acusación.
+INFERENCIA: existe una variante del truco clásico, «mi producto es tan poderoso que quizá sufra», y vale la pena preguntarla. En agosto de 2025, según TechCrunch, Anthropic permitió que algunos de sus modelos (Claude Opus 4 y 4.1) terminaran conversaciones en casos extremos de interacciones abusivas, por si acaso el bienestar de los modelos fuera posible; la empresa no afirma que Claude sea sintiente. Se plantea como pregunta, no como acusación.
 
-Actualización del 13 de octubre de 2026: el 8 de octubre, Anthropic actualizó su política de uso y prohibió, a partir del 12 de noviembre, el comportamiento «abusivo o cruel sostenido y sin propósito» hacia sus modelos. Según PCWorld, que cita la publicación de Anthropic, la regla aplica solo en casos extremos y terminar la conversación sigue siendo el mecanismo principal de aplicación. La política no afirma que Claude sea consciente. Es un ejemplo concreto de la pregunta de este artículo: una empresa decidió cuánta precaución aplicar bajo incertidumbre, sin que ninguna autoridad externa lo exigiera (INFERENCIA).
+Actualización del 13 de octubre de 2026: el 8 de octubre, Anthropic actualizó su política de uso y prohibió, a partir del 12 de noviembre, el comportamiento «abusivo o cruel sostenido y sin propósito» hacia sus modelos. Según PCWorld, que cita la publicación de Anthropic, la regla aplica solo en casos extremos y terminar la conversación sigue siendo el mecanismo principal de aplicación. La política no afirma que Claude sea consciente. INFERENCIA: es un ejemplo concreto de la pregunta de este artículo: una empresa decidió cuánta precaución aplicar bajo incertidumbre, sin que ninguna autoridad externa lo exigiera.
 
 Nota de transparencia: parte del flujo editorial de este sitio usa Claude, un modelo de Anthropic, que tiene un programa de bienestar de modelos.
+
+**Alertas que dispara.** INFERENCIA: según el [tablero del artículo 9](/articulos/que-importa-que-es-marketing-debate-ia/), este artículo dispara S2, S3 y S5 (una cifra de juicio presentada como dato, «mi producto es tan poderoso que…» y la variante sobre la mente de la máquina); ahí se definen las cinco señales, S1 a S5.
 
 Veredicto: la pregunta está abierta. El valor de esta postura no está en predecir que una IA será consciente, sino en exigir criterios y precaución antes de que la duda se vuelva urgente.
 

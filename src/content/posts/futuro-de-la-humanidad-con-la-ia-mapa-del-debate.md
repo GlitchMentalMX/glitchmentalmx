@@ -11,7 +11,7 @@ draft: false
 
 El debate sobre el futuro de la humanidad con la IA (inteligencia artificial) mezcla hechos medidos, deducciones y especulación como si pesaran lo mismo. Este mapa los separa. **No dice quién tiene razón: dice qué clase de prueba exige cada postura.**
 
-Es la página de entrada de **Sin Oráculos**, una serie de nueve artículos sobre lo que filósofos, científicos y ejecutivos dicen del futuro de la IA. Aquí no hay investigación nueva: este texto resume esos nueve artículos y presenta todo como lo que dicen las fuentes revisadas, no como la verdad de este sitio.
+Es la página de entrada de **[Sin Oráculos](/series/futuro-humanidad-ia-filosofos/)**, una serie de diez artículos: este mapa (00) y nueve más (01 a 09) sobre lo que filósofos, científicos y ejecutivos dicen del futuro de la IA. Aquí no hay investigación nueva: este texto resume esos otros nueve artículos y presenta todo como lo que dicen las fuentes revisadas, no como la verdad de este sitio.
 
 ## Cómo leer este mapa: la regla de etiquetado y el detector de marketing
 
@@ -83,7 +83,7 @@ Este sitio usa tres criterios para separar lo que importa de lo que es ruido. **
 
 ## Cómo está armada la serie Sin Oráculos
 
-Son siete artículos por postura y dos de síntesis:
+Además de este mapa (00), son siete artículos por postura y dos de síntesis:
 
 - **Artículo 1:** [Riesgo existencial: Bostrom, Ord y Russell](/articulos/riesgo-existencial-ia-bostrom-ord-russell/), el argumento de control.
 - **Artículo 2:** [Los escépticos del riesgo existencial](/articulos/escepticos-riesgo-existencial-ia-argumentos/), cuatro argumentos distintos.
