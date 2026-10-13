@@ -1,12 +1,12 @@
 ---
 title: ¿Entiende la IA o solo manipula símbolos? Searle y Bender
 category: Inteligencia Artificial
-pubDate: 2026-10-12T17:16
+pubDate: 2026-10-13T07:25
 updatedDate: ''
 description: Dreyfus, Searle y Bender dicen que manipular símbolos no basta para entender. Qué prueba cada argumento, qué no, y qué evidencia hay.
 heroImage: /images/uploads/entiende-ia.webp
 heroImageAlt: '¿Entiende la IA o solo manipula símbolos? Searle y Bender: Mujer ordenando fichas físicas frente a monitor con diagramas'
-draft: true
+draft: false
 ---
 
 ¿Entiende la IA o solo manipula símbolos? La pregunta tiene más de sesenta años, y tres argumentos célebres coinciden en que **manipular símbolos no basta**. Lo que sigue sin resolverse es qué implica eso para los modelos de hoy.
