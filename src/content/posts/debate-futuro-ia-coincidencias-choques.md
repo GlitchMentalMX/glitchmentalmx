@@ -11,8 +11,6 @@ draft: false
 
 El **debate sobre el futuro de la IA** parece una pelea sin puentes, pero en las fuentes revisadas, posturas que se rechazan comparten hábitos que ninguna admite. Y sus choques no los resuelven más datos: cada postura exige un tipo distinto de prueba.
 
-*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubícalo en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
-
 Este es el artículo 8 de la serie _Sin Oráculos_ y **no investiga nada nuevo**: resume los siete anteriores sobre el [riesgo existencial](https://glitchmental.com/articulos/riesgo-existencial-ia-bostrom-ord-russell/), los [escépticos](https://glitchmental.com/articulos/escepticos-riesgo-existencial-ia-argumentos/), los [daños actuales](https://glitchmental.com/articulos/danos-actuales-ia-crawford-gebru-bender-vallor/), el [largoplacismo y la abundancia](https://glitchmental.com/articulos/largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom/), si la IA [entiende](https://glitchmental.com/articulos/entiende-la-ia-searle-dreyfus-bender-simbolos/), su posible [conciencia](https://glitchmental.com/articulos/conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral/) y la [condición humana](https://glitchmental.com/articulos/condicion-humana-ia-arendt-han-harari-sentido/). Cada afirmación va marcada como HECHO o INFERENCIA.
 
 ## Tres hábitos que comparten posturas que no se hablan
@@ -56,24 +54,8 @@ HECHO: los siete artículos de la serie cierran con una pregunta propia de este 
 
 HECHO: la carta del FLI condiciona la prohibición a un consenso científico y a un respaldo público; Swoboda et al. señalan que el obstáculo es reconocer el peligro y coordinar a los desarrolladores; Bostrom admite que nadie controla por completo el calendario. INFERENCIA: **en las fuentes revisadas, cada mecanismo es distinto y ninguno nombra una autoridad con poder vinculante**. Por eso las posturas se rechazan sin encontrarse: pedirle evidencia a quien exige consenso, o consenso a quien exige evidencia, no cierra nada cuando no hay árbitro.
 
-## Lo que este mapa no cubre
+Los límites de este mapa (selección de autores, ausencias, idioma y fecha de corte) están en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/) y en el [artículo 9](/articulos/que-importa-que-es-marketing-debate-ia/).
 
-HECHO: son siete posturas y **la selección de autores la hizo un modelo de IA, no una revisión sistemática**. Faltan voces como Eliezer Yudkowsky, Geoffrey Hinton, Yoshua Bengio y Gary Marcus. Casi todo el material está en inglés y no hay autores latinoamericanos. Los vínculos con la industria que aparecen arriba son los que se pudieron verificar en la fuente, así que la lista no es exhaustiva. Hipótesis propias: ninguna; cualquier predicción queda fuera.
-
-## Señal o marketing: el detector aplicado a nuestro propio mapa
-
-Aplicamos al mapa **las preguntas del detector del sitio**, una por línea.
-
-**¿Quién gana si se lo creen?** INFERENCIA: este sitio, porque un mapa ordenado se ve como autoridad. Por eso se declaran los límites.
-
-**¿Es falsable?** HECHO: sí. Cualquier celda se puede refutar abriendo la fuente enlazada.
-
-**¿Tiene calendario?** HECHO: el calendario es el tema del primer hábito y **este artículo no propone ninguno**.
-
-**¿Hay conflictos de interés?** HECHO: **Nota de transparencia: parte del flujo editorial de este sitio usa Claude, un modelo de Anthropic, y varias celdas de este mapa tratan de Anthropic.**
-
-**La quinta pregunta del detector no aplica a este mapa.**
-
-> Un mapa ordenado se parece mucho a una autoridad. Este solo se la gana si cualquiera puede abrir una fuente y tumbarlo.
+Nota de transparencia: parte del flujo editorial de este sitio usa Claude, un modelo de Anthropic, y varias celdas de este mapa tratan de Anthropic.
 
 Si todas las posturas terminan pidiendo una prueba que nadie sabe definir y **una autoridad que nadie ha nombrado**, ¿quién debería decidir primero qué cuenta como prueba?

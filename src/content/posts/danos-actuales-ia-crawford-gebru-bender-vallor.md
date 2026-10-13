@@ -11,8 +11,6 @@ draft: false
 
 Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se disputa es qué cuenta como daño. La postura de Crawford, Gebru, Bender y Vallor es sólida donde mide y frágil donde adivina motivos.
 
-*Este artículo es parte de la serie [Sin Oráculos](/series/futuro-humanidad-ia-filosofos/). Ubica esta postura en el [mapa del debate](/articulos/futuro-de-la-humanidad-con-la-ia-mapa-del-debate/).*
-
 ## Qué cuenta como daño: el debate de fondo
 
 **«Riesgo» es una palabra con demasiados usos.** Según Swoboda et al., una reconstrucción académica de 2025, el debate sobre riesgo existencial mezcla escenarios distintos con términos ambiguos, en ambos bandos. Una cosa es el consumo eléctrico de un centro de datos; otra, una inteligencia hipotética fuera de control.
@@ -77,7 +75,7 @@ Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se 
 
 > Señal fuerte en lo medible (energía, trabajo, sesgo); más débil donde se infieren motivos o linajes ideológicos. El debate «presente contra futuro» está menos partido de lo que se vende.
 
-**La versión local está en Querétaro:** según el reporte del sitio, los centros de datos de IA consumen agua en un estado en sequía ([IA en Querétaro: el agua que cuesta cada prompt](https://glitchmental.com/articulos/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/)).
+**La versión local de estos costos está documentada en la colección** [**Detrás del Prompt**](https://glitchmental.com/colecciones/detras-del-prompt/), 10 artículos que auditan el costo hídrico y eléctrico de la infraestructura de IA en México, estado por estado. El caso de Querétaro, el primero, es [IA en Querétaro: el agua que cuesta cada prompt](https://glitchmental.com/articulos/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/).
 
 ## La pregunta abierta: ¿se excluyen o se complementan?
 
