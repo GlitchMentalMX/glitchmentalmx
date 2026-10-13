@@ -3,13 +3,13 @@ title: Qué importa y qué es marketing en el debate sobre la IA
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:26
 updatedDate: ''
-description: 'Siete posturas sobre el futuro de la IA, un mismo detector: qué se mide, qué se decidió y qué suena a marketing. Datos al 12 de octubre de 2026.'
+description: 'Siete posturas sobre el futuro de la IA, un mismo detector: qué se mide, qué se decidió y qué suena a marketing. Datos al 13 de octubre de 2026.'
 heroImage: /images/uploads/debate-ia.webp
 heroImageAlt: 'Debate sobre la IA: analista compara siete posturas con datos, evaluaciones y afirmaciones de marketing'
 draft: false
 ---
 
-Después de siete posturas sobre el futuro de la IA, queda una pregunta: ¿qué es información y qué es marketing en el debate sobre la IA? **Este cierre no elige bando.** Aplica el mismo detector a todos. Datos al 12 de octubre de 2026.
+Después de siete posturas sobre el futuro de la IA, queda una pregunta: ¿qué es información y qué es marketing en el debate sobre la IA? **Este cierre no elige bando.** Aplica el mismo detector a todos. Datos al 13 de octubre de 2026.
 
 ## Qué hace el detector y qué no
 
@@ -91,7 +91,7 @@ HIPÓTESIS: con otros criterios, por ejemplo uno que premiara la coherencia inte
 
 **El detector señala alertas; no decide qué es verdad.** Que no haya conflicto declarado no prueba que no exista.
 
-La selección de las siete posturas la hizo un modelo. **Quedaron fuera Yudkowsky, Hinton, Bengio y Marcus.** La literatura es mayormente en inglés y no hay autores latinoamericanos. Los datos son al 12 de octubre de 2026, y el debate se mueve cada semana.
+La selección de las siete posturas la hizo un modelo. **Quedaron fuera Yudkowsky, Hinton, Bengio y Marcus.** La literatura es mayormente en inglés y no hay autores latinoamericanos. Los datos son al 13 de octubre de 2026, y el debate se mueve cada semana.
 
 > Una alerta no es una refutación: es el lugar donde la afirmación todavía no mostró su fuente.
 
