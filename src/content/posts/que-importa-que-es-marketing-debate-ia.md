@@ -2,7 +2,7 @@
 title: Qué importa y qué es marketing en el debate sobre la IA
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:26
-updatedDate: ''
+updatedDate: 2026-10-13T12:09
 description: 'Siete posturas sobre el futuro de la IA, un mismo detector: qué se mide, qué se decidió y qué suena a marketing. Datos al 13 de octubre de 2026.'
 heroImage: /images/uploads/debate-ia.webp
 heroImageAlt: 'Debate sobre la IA: analista compara siete posturas con datos, evaluaciones y afirmaciones de marketing'

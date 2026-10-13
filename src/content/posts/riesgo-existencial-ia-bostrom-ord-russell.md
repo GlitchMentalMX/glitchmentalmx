@@ -2,7 +2,7 @@
 title: 'Riesgo existencial de la IA: Bostrom, Ord y Russell'
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:24
-updatedDate: ''
+updatedDate: 2026-10-13T12:09
 description: 'El mejor argumento del riesgo existencial de la IA según Bostrom, Ord y Russell: qué sostienen, qué es hipótesis y qué dicen sus críticos.'
 heroImage: /images/uploads/riesgo-existencial.webp
 heroImageAlt: 'Riesgo existencial de la IA: Analista frente a una pantalla colosal mostrando un diagrama de red desbordado'

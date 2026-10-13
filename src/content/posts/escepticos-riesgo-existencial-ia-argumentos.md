@@ -2,7 +2,7 @@
 title: 'Escépticos del riesgo existencial de la IA: sus argumentos'
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:25
-updatedDate: ''
+updatedDate: 2026-10-13T12:09
 description: 'Los escépticos del riesgo existencial de la IA no son un bando: son cuatro argumentos con evidencia desigual. Qué sostiene cada uno.'
 heroImage: /images/uploads/escepticos-riesgo-existencial.webp
 heroImageAlt: 'Escépticos del riesgo existencial de la IA: investigadora compara cuatro argumentos y sus evidencias'

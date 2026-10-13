@@ -2,7 +2,7 @@
 title: 'Debate sobre el futuro de la IA: coincidencias y choques'
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:26
-updatedDate: ''
+updatedDate: 2026-10-13T12:09
 description: 'Mapa de siete posturas sobre el futuro de la IA: qué comparten, dónde chocan y qué prueba nadie define. Con fuentes enlazadas.'
 heroImage: /images/uploads/futuro-ia.webp
 heroImageAlt: 'Debate sobre el futuro de la IA: investigadora compara siete posturas, acuerdos, desacuerdos y evidencias pendientes.'

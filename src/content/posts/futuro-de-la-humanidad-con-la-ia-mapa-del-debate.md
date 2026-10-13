@@ -2,7 +2,7 @@
 title: 'El futuro de la humanidad con la IA: mapa del debate'
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:52
-updatedDate: ''
+updatedDate: 2026-10-13T12:09
 description: 'Mapa de las siete posturas sobre el futuro de la humanidad con la IA: qué es hecho, inferencia o hipótesis, y qué alerta dispara cada una.'
 heroImage: /images/uploads/futuro-humanidad-ia.webp
 heroImageAlt: 'El futuro de la humanidad con la IA: investigador compara evidencias y proyecciones en siete estaciones de análisis'

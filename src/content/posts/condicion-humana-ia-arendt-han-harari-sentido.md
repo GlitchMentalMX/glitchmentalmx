@@ -2,7 +2,7 @@
 title: ¿Dónde está lo humano? Arendt, Han y Harari ante la IA
 category: Inteligencia Artificial
 pubDate: 2026-10-13T07:26
-updatedDate: ''
+updatedDate: 2026-10-13T12:09
 description: 'Arendt, Han y Harari ubican lo humano en tres lugares distintos: la acción, la negatividad y el lenguaje. Qué pierde con la IA depende de cuál.'
 heroImage: /images/uploads/donde-esta-humano.webp
 heroImageAlt: 'Reflexión filosófica: joven de perfil analiza pensativo un texto sobre IA en un gran monitor dentro de una oficina corporativa'
