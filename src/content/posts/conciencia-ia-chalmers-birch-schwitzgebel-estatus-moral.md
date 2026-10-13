@@ -1,13 +1,15 @@
 ---
 title: ¿Puede una IA ser consciente? Chalmers, Birch y Schwitzgebel
 category: Inteligencia Artificial
-pubDate: 2026-10-12T17:47
+pubDate: 2026-10-12T22:11
 updatedDate: ''
 description: 'Chalmers, Birch y Schwitzgebel: hoy es improbable que una IA sea consciente, pero nadie sabe cómo comprobarlo. Qué dicen y dónde se rompe.'
 heroImage: /images/uploads/ia-consciente.webp
 heroImageAlt: 'IA consciente: investigadora analizando lecturas ambiguas en el monitor físico de un servidor'
 draft: true
 ---
+
+# ¿Puede una IA ser consciente? Chalmers, Birch y Schwitzgebel
 
 ¿Qué se le debe a una **IA consciente** si nadie puede comprobar que lo sea? Esa es la pregunta incómoda del debate. Chalmers, Birch y Schwitzgebel no afirman que ya ocurrió: discuten cuánta precaución corresponde antes de poder saberlo, y ahí está el verdadero problema.
 
@@ -35,13 +37,13 @@ En 2023, un equipo de 19 autores, entre ellos Yoshua Bengio, Jonathan Birch y Er
 
 Su análisis sugiere que ningún sistema actual es consciente. También sugiere que **no hay barreras técnicas obvias** para construir sistemas que cumplan esos indicadores. INFERENCIA: cumplir indicadores no es lo mismo que ser consciente; son pistas de probabilidad, no pruebas.
 
-INFERENCIA: el método descansa en el funcionalismo computacional, la idea de que ciertas computaciones bastan para producir conciencia sin importar el material que las ejecute. Según Seth, los propios autores reconocen que sus conclusiones dependen de ese supuesto. HIPÓTESIS: la ausencia de barreras técnicas obvias se sostendrá cuando alguien intente construir esos sistemas.
+INFERENCIA: el método descansa en el funcionalismo computacional, la idea de que ciertas computaciones bastan para producir conciencia sin importar el material que las ejecute. Según Seth, los propios autores reconocen que sus conclusiones dependen de ese supuesto. HIPÓTESIS: que la ausencia de barreras técnicas obvias se sostenga cuando alguien intente construir esos sistemas.
 
 ## Birch: precaución cuando no se puede saber
 
 Jonathan Birch, profesor de filosofía en la London School of Economics (LSE), publicó en 2024 [The Edge of Sentience](https://academic.oup.com/book/57949) con Oxford University Press, en acceso abierto. HECHO: según la presentación de la LSE, el libro propone un marco de precaución para decidir con criterio ético y evidencia aun bajo una incertidumbre enorme, y abarca a humanos, a otros animales y a la IA.
 
-El capítulo 16 se ocupa del problema de la manipulación del sistema (gaming problem). Según el [resumen de Oxford](https://academic.oup.com/book/57949/chapter/475705460), cuando un sistema puede aprovechar enormes cantidades de datos de entrenamiento generados por humanos, **puede imitar las conductas que convencen a las personas de su sentiencia** sin poseer la capacidad de fondo. INFERENCIA: si eso ocurre, la conducta pierde valor como prueba, porque el sistema aprendió justo de quienes describen cómo se ve sentir.
+El capítulo 16 se ocupa del problema del juego (_gaming problem_). Según el [resumen de Oxford](https://academic.oup.com/book/57949/chapter/475705460), cuando un sistema puede aprovechar enormes cantidades de datos de entrenamiento generados por humanos, **puede imitar las conductas que convencen a las personas de su sentiencia** sin poseer la capacidad de fondo. INFERENCIA: si eso ocurre, la conducta pierde valor como prueba, porque el sistema aprendió justo de quienes describen cómo se ve sentir.
 
 Un sistema puede sonar sintiente porque aprendió de millones de textos escritos por personas que sí sienten. Eso ni lo vuelve sintiente ni lo descarta.
 
@@ -91,11 +93,13 @@ Chalmers habla de la próxima década más o menos. Un plazo así es una apuesta
 
 **¿Quién tiene conflictos?**
 
-HECHO: Anthropic, que desarrolla Claude, anunció en abril de 2025 un programa de bienestar de modelos y dice haber apoyado un proyecto temprano en el que se basó un informe de expertos que incluye a Chalmers. La empresa también dice que mantiene una profunda incertidumbre y que no hay consenso científico. Seth declara ser asesor de Conscium Ltd y de AllJoined Inc. Suleyman dirige la división de IA de Microsoft. Birch, Bengio y Schwitzgebel son coautores del informe de Butlin y colegas. Declarar los conflictos no invalida los argumentos; permite pesarlos.
+HECHO: Anthropic, que desarrolla Claude, anunció en abril de 2025 un programa de bienestar de modelos y dice haber apoyado un proyecto temprano en el que se basó un informe de expertos que incluye a Chalmers. La empresa también dice que sigue profundamente incierta y que no hay consenso científico. Seth declara ser asesor de Conscium Ltd y de AllJoined Inc. Suleyman dirige la división de IA de Microsoft. Birch, Bengio y Schwitzgebel son coautores del informe de Butlin y colegas. Declarar los conflictos no invalida los argumentos; permite pesarlos.
 
 **¿Y si "mi producto es tan poderoso que quizá sufra" también es marketing?**
 
 INFERENCIA: esa variante del truco clásico existe y vale la pena preguntarla. En agosto de 2025, según TechCrunch, Anthropic permitió que algunos de sus modelos (Claude Opus 4 y 4.1) terminaran conversaciones en casos extremos de interacciones abusivas, por si acaso el bienestar de los modelos fuera posible; la empresa no afirma que Claude sea sintiente. Se plantea como pregunta, no como acusación.
+
+Actualización del 13 de octubre de 2026: el 8 de octubre, Anthropic actualizó su política de uso y prohibió, a partir del 12 de noviembre, el comportamiento «abusivo o cruel sostenido y sin propósito» hacia sus modelos. Según PCWorld, que cita la publicación de Anthropic, la regla aplica solo en casos extremos y terminar la conversación sigue siendo el mecanismo principal de aplicación. La política no afirma que Claude sea consciente. Es un ejemplo concreto de la pregunta de este artículo: una empresa decidió cuánta precaución aplicar bajo incertidumbre, sin que ninguna autoridad externa lo exigiera (INFERENCIA).
 
 Nota de transparencia: parte del flujo editorial de este sitio usa Claude, un modelo de Anthropic, que tiene un programa de bienestar de modelos.
 
