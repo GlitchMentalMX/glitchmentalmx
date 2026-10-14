@@ -5,13 +5,14 @@ herramienta: "Higgsfield"
 herramientaId: "higgsfield-ai"
 sitioOficial: "https://higgsfield.ai/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/higgsfield-ai.png
 heroImageAlt: Higgsfield — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-El plan Starter de Higgsfield cuesta $15 USD al mes facturado mensual. Arriba está Plus, a $49 USD al mes ($39 USD al mes si pagas anual), con más del doble de modelos ilimitados y muchas más generaciones incluidas. Higgsfield también vende acceso único de $3 USD sin suscripción, pensado para probar la herramienta un par de días sin comprometerte a un plan mensual — algo que no ofrecen la mayoría de las herramientas de video de esta lista.
+El plan Starter de Higgsfield cuesta $15 USD al mes facturado mensual. Arriba está Plus, a $49 USD al mes ($39 USD al mes si pagas anual), con más del doble de modelos ilimitados y muchas más generaciones incluidas. Arriba de Plus existe también Ultra, a $129 USD al mes ($99 USD al mes si pagas anual).
 
 ## Qué incluye el plan pagado
 

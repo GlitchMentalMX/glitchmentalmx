@@ -4,11 +4,12 @@ description: "El propio Centro de Ayuda de LinkedIn confirma que hace falta una 
 herramienta: "LinkedIn"
 herramientaId: "linkedin"
 empresa: "LinkedIn (Microsoft)"
-sitioOficial: "https://www.linkedin.com/help/linkedin/answer/a8059228"
+sitioOficial: "https://www.linkedin.com/help/linkedin/answer/a1355837"
 veredicto: "rojo"
 fraseCorta: "LinkedIn Premium exige una tarjeta válida para activar el mes de prueba."
-fuenteVerificacion: "Centro de Ayuda oficial de LinkedIn (linkedin.com/help/linkedin/answer/a1355837), consultado el 25/08/2026."
+fuenteVerificacion: "Centro de Ayuda oficial de LinkedIn, artículo \"Prueba gratis de LinkedIn Premium\" (linkedin.com/help/linkedin/answer/a1355837), consultado el 14/10/2026. Nota: el artículo a8059228 citado antes en sitioOficial ya no trata sobre la prueba de Premium — LinkedIn lo reasignó a un aviso sobre Condiciones de uso y entrenamiento de IA."
 pubDate: 2026-08-25
+updatedDate: 2026-10-14
 heroImage: /images/prueba-gratis/linkedin.png
 heroImageAlt: LinkedIn — Prueba gratis sin tarjeta
 ---
@@ -23,8 +24,8 @@ Si no cancelas al menos 24 horas antes de que termine la prueba, tu cuenta se co
 
 ¿LinkedIn tiene un código de descuento real? [Verifícalo aquí →](/articulos/linkedin-codigo-de-descuento/)
 
-<a href="https://www.linkedin.com/help/linkedin/answer/a8059228" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de LinkedIn →</a>
+<a href="https://www.linkedin.com/help/linkedin/answer/a1355837" target="_blank" rel="noopener noreferrer">Empieza en el sitio oficial de LinkedIn →</a>
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 25/08/2026]
+[Última actualización: 14/10/2026]

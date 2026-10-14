@@ -5,13 +5,14 @@ herramienta: "CapCut"
 herramientaId: "capcut"
 sitioOficial: "https://www.capcut.com/pricing"
 pubDate: 2026-08-22
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/capcut.png
 heroImageAlt: CapCut — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-CapCut Pro cuesta $19.99 USD al mes, o $179.99 USD al año (equivalente a $15 USD mensuales). La propia empresa advierte algo que vale la pena tomar en serio: el precio puede variar según tu región, la plataforma donde lo contrates (web, iOS, Android) y promociones activas — así que el número que veas al momento de suscribirte puede no coincidir exacto con esta calculadora, más que en otras herramientas de esta lista. También existe un plan intermedio, Standard, más barato pero sin el paquete completo de herramientas de IA que distingue a Pro.
+CapCut Pro cuesta $19.99 USD al mes. La propia empresa advierte algo que vale la pena tomar en serio: el precio puede variar según tu región, la plataforma donde lo contrates (web, iOS, Android) y promociones activas — así que el número que veas al momento de suscribirte puede no coincidir exacto con esta calculadora, más que en otras herramientas de esta lista. Ya no existe un plan "Standard" intermedio: hoy la lista de planes es Free, Pro, Ultra ($79 USD al mes) y Teams (desde $12.49 USD al mes por puesto), así que la escalera de precios es distinta a la de hace unos meses.
 
 ## Qué incluye el plan pagado
 

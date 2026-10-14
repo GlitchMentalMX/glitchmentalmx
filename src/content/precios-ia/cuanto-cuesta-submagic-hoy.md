@@ -5,13 +5,14 @@ herramienta: "Submagic"
 herramientaId: "submagic"
 sitioOficial: "https://www.submagic.co/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/submagic.png
 heroImageAlt: Submagic — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Submagic tiene un plan de entrada, Starter, a $19 USD al mes con facturación mensual — o $12 USD al mes si pagas el año completo por adelantado, un descuento del 41% que es mayor al de la mayoría de herramientas de esta lista. Ese precio base cubre subtítulos y edición de video, pero hay un complemento aparte que cambia el total si lo necesitas: Magic Clips, que convierte videos largos en clips cortos automáticamente, cuesta $19 USD al mes adicionales sobre el plan Starter. Si tu uso es solo subtitular y editar clips que ya grabaste cortos, no lo necesitas; si tu flujo depende de convertir podcasts o streams largos en recortes, el precio real termina siendo el doble del que anuncia el plan base.
+Submagic tiene un plan de entrada, Starter, a $19 USD al mes con facturación mensual — o $12 USD al mes si pagas el año completo por adelantado, un descuento del 41% que es mayor al de la mayoría de herramientas de esta lista. Ese precio base cubre subtítulos y edición de video. Magic Clips, la función que convierte videos largos en clips cortos automáticamente, ya no aparece en la página oficial de precios como complemento de pago aparte con un costo fijo de $19 USD al mes: hoy solo se menciona, sin precio público, como un límite personalizable dentro del plan Empresarial a la medida. Si tu flujo depende de convertir podcasts o streams largos en recortes, confirma directamente con ventas de Submagic si esa función sigue disponible fuera del plan a la medida.
 
 ## Qué incluye el plan pagado
 

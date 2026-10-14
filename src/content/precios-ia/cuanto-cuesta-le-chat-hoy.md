@@ -5,6 +5,7 @@ herramienta: "Le Chat"
 herramientaId: "le-chat"
 sitioOficial: "https://mistral.ai/pricing"
 pubDate: 2026-08-22
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/le-chat.png
 heroImageAlt: Le Chat — Precios de IA
 ---
@@ -15,7 +16,7 @@ Le Chat, el asistente conversacional de la empresa francesa Mistral AI, cuesta $
 
 ## Qué incluye el plan pagado
 
-Pro da uso ampliado de mensajes y búsqueda web, codificación asistida por IA disponible todo el día en CLI, editor de código y la versión web, generación de imágenes ampliada, y $30 USD mensuales en créditos de uso de la API (frente a $10 USD en el plan gratuito). El plan gratuito de Le Chat ya permite conversar y programar con límites diarios razonables para uso casual.
+Pro da uso ampliado de mensajes y búsqueda web, codificación asistida por IA disponible todo el día en CLI, editor de código y la versión web, generación de imágenes ampliada, y $15 USD mensuales en créditos de uso de la API — el plan gratuito ya no lista créditos de API en su descripción oficial. El plan gratuito de Le Chat ya permite conversar y programar con límites diarios razonables para uso casual.
 
 ## La opción europea de esta lista, con precio y origen distintos
 

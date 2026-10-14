@@ -6,20 +6,21 @@ herramientaId: "claude-code"
 empresa: "Anthropic"
 sitioOficial: "https://claude.com/pricing"
 veredicto: "rojo"
-fraseCorta: "Pro y Max, los planes que de verdad dan margen para usar Claude Code en serio, no tienen ninguna prueba gratuita."
-fuenteVerificacion: "Página oficial de precios de Claude (claude.com/pricing), consultada el 31/08/2026."
+fraseCorta: "Claude Code ya no está en el plan Free: solo se usa dentro de Pro o Max, y ninguno de los dos ofrece prueba gratuita."
+fuenteVerificacion: "Página oficial de precios de Claude (claude.com/pricing), tabla comparativa de funciones y sección de preguntas frecuentes, consultada el 14/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/prueba-gratis/claude-code.png
 heroImageAlt: Claude Code — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Claude Code?
 
-Claude Code no tiene un registro ni una prueba propia: se activa iniciando sesión con tu cuenta de Claude, y según la propia página oficial de precios de Anthropic, el plan Free —"gratis para todos"— ya incluye Claude Code entre sus funciones. Crear esa cuenta gratuita no pide tarjeta en ningún paso, así que sí puedes abrir una terminal y usar Claude Code sin dar un número de tarjeta.
+Claude Code no tiene un registro ni una prueba propia: se activa iniciando sesión con tu cuenta de Claude. Pero a diferencia de antes, hoy el plan Free —"gratis para todos"— ya no incluye Claude Code. La tabla comparativa de la propia página oficial de precios de Anthropic marca "No" para Claude Code en el plan Free, y "Sí" en Pro, Max 5x y Max 20x. El FAQ de la misma página lo confirma sin rodeos: "Claude Code está incluido en todos los planes de pago." No existe ninguna puerta gratuita para usarlo.
 
-## Por qué el veredicto es rojo, no verde
+## Por qué el veredicto es rojo
 
-El plan Free de Claude es real, pero está pensado para uso ligero de chat, así que el margen que deja para Claude Code es estrecho —pocos mensajes cada varias horas, suficiente para probar el flujo de trabajo, no para programar en serio todo el día—. Si necesitas más uso, los planes Pro (desde $20 USD al mes) y Max no ofrecen ningún periodo de prueba: se pagan directamente desde la suscripción. Mismo patrón que GitHub Copilot en esta serie — plan gratuito real, pero el plan de pago no ofrece prueba, así que el veredicto es rojo.
+Para usar Claude Code hoy necesitas un plan de pago desde el primer momento: Pro (desde $20 USD al mes, o $17 USD al mes con la suscripción anual facturada por adelantado) o Max (desde $100 USD al mes). Ninguno de los dos ofrece periodo de prueba — se pagan directamente desde la suscripción, sin ventana previa para probarlos sin tarjeta. Mismo patrón que GitHub Copilot en esta serie: existe un plan gratuito de la marca (el chat de Claude), pero no cubre la herramienta de esta ficha, así que el veredicto sigue siendo rojo — ahora por un motivo más tajante, porque ya no hay ningún uso gratuito de Claude Code en absoluto.
 
 ¿Buscas cuánto cuesta Claude Code? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-claude-code-hoy/)
 
@@ -29,4 +30,4 @@ El plan Free de Claude es real, pero está pensado para uso ligero de chat, así
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 14/10/2026]

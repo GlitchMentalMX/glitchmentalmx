@@ -5,17 +5,18 @@ herramienta: "Pika"
 herramientaId: "pika"
 sitioOficial: "https://pika.art/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/pika.png
 heroImageAlt: Pika — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Pika Standard cuesta $10 USD al mes facturado mensual, o $8 USD al mes si pagas el año completo por adelantado — un ahorro del 20% frente al pago mes a mes. Arriba están Pro, a $35 USD al mes ($28 en anual), y Fancy, a $95 USD al mes ($76 en anual), cada uno con más créditos y generaciones más rápidas. El plan gratuito da 80 créditos mensuales, pero limitado a Pika 2.5 en 480p y solo imagen-a-video, sin las herramientas de edición que distinguen a Pika del resto de generadores de video.
+Pika renombró sus planes de pago: el antiguo "Standard" ahora se llama Starter y el antiguo "Pro" ahora se llama Creator, aunque los precios no cambiaron. Starter cuesta $10 USD al mes facturado mensual, o $8 USD al mes si pagas el año completo por adelantado — un ahorro del 20% frente al pago mes a mes. Arriba están Creator, a $35 USD al mes ($28 en anual), y Fancy, a $95 USD al mes ($76 en anual, con niveles superiores de hasta $880 al mes para quien necesita más créditos). El plan gratuito ya no renueva créditos cada mes — ahora da 0 créditos de suscripción y solo permite seguir generando comprando paquetes de créditos sueltos.
 
 ## Qué incluye el plan pagado
 
-Standard da 700 créditos mensuales, acceso a Pika 2.5 en todas las resoluciones y a las herramientas propias de edición de la plataforma — Pikaframes, Pikascenes, Pikadditions, Pikaswaps y Pikatwists — además de descargas sin marca de agua y uso comercial. Pro y Fancy suman más créditos y generaciones más rápidas, pero no agregan herramientas nuevas: la diferencia entre niveles pagados es volumen y velocidad, no funciones exclusivas.
+Starter da 900 créditos mensuales (antes 700), acceso a Pika 2.5 en todas las resoluciones y a las herramientas propias de edición de la plataforma — Pikaframes, Pikascenes, Pikadditions, Pikaswaps y Pikatwists — además de descargas sin marca de agua. A diferencia de antes, Starter ya no incluye derechos de uso comercial: ese beneficio ahora empieza en Creator (3,150 créditos mensuales), que también es el primer nivel con licencia comercial. Fancy (8,550 créditos mensuales o más) suma cola prioritaria y acceso anticipado a modelos nuevos, los únicos beneficios exclusivos de nivel superior además de volumen y velocidad.
 
 ## No todas las funciones de Pika cuestan lo mismo
 

@@ -6,9 +6,10 @@ herramientaId: "pika"
 empresa: "Pika"
 sitioOficial: "https://pika.art/pricing"
 veredicto: "rojo"
-fraseCorta: "Standard, Pro y Fancy —los planes de pago de Pika— no tienen ninguna prueba gratuita: se cobran desde el primer cargo."
-fuenteVerificacion: "Página oficial de precios de Pika (pika.art/pricing), consultada el 31/08/2026."
+fraseCorta: "Starter, Creator y Fancy —los planes de pago de Pika— no tienen ninguna prueba gratuita: se cobran desde el primer cargo."
+fuenteVerificacion: "Página oficial de precios de Pika (pika.art/pricing), consultada el 31/08/2026 y re-verificada el 14/10/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/prueba-gratis/pika.png
 heroImageAlt: Pika — Prueba gratis sin tarjeta
 ---
@@ -19,7 +20,7 @@ Pika deja registrarte con Google, Facebook, Discord o correo electrónico, y el 
 
 ## Por qué el veredicto es rojo, no verde
 
-El plan gratuito es real, pero es un producto aparte, no una prueba de Standard, Pro o Fancy: esos tres se contratan directamente, con cargo inmediato y sin ventana de cancelación previa al primer cobro. Mismo patrón que GitHub Copilot en esta serie — plan gratuito real, pero el plan de pago no ofrece prueba, así que el veredicto es rojo.
+El plan gratuito es real, pero es un producto aparte, no una prueba de Starter, Creator o Fancy (Pika renombró sus planes de pago; ya no se llaman Standard y Pro): esos tres se contratan directamente, con cargo inmediato y sin ventana de cancelación previa al primer cobro. Mismo patrón que GitHub Copilot en esta serie — plan gratuito real, pero el plan de pago no ofrece prueba, así que el veredicto es rojo.
 
 ¿Buscas cuánto cuesta Pika? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-pika-hoy/)
 
@@ -29,4 +30,4 @@ El plan gratuito es real, pero es un producto aparte, no una prueba de Standard,
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 14/10/2026]

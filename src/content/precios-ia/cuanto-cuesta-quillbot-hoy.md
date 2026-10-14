@@ -5,13 +5,14 @@ herramienta: "QuillBot"
 herramientaId: "quillbot"
 sitioOficial: "https://quillbot.com/premium"
 pubDate: 2026-08-22
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/quillbot.png
 heroImageAlt: QuillBot — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-QuillBot Premium cuesta $19.95 USD al mes si pagas mensual, pero baja considerablemente si te comprometes por más tiempo: $13.31 USD al mes en el plan semestral, o $8.33 USD al mes en el anual ($99.95 al año) — de los descuentos por compromiso más agresivos de toda esta lista. Si vas a usar QuillBot de forma constante (por ejemplo, para trabajos académicos durante un semestre completo), el plan semestral puede ajustarse mejor que pagar mes a mes o comprometerte a un año entero.
+QuillBot Premium cuesta $19.95 USD al mes si pagas mensual, pero baja considerablemente si te comprometes por más tiempo: $13.31 USD al mes en el plan trimestral ($39.95 cada 3 meses), o $8.33 USD al mes en el anual ($99.95 al año) — de los descuentos por compromiso más agresivos de toda esta lista. QuillBot reemplazó el plan semestral que tenía (el mismo $13.31 USD al mes, pero facturado cada 6 meses) por este trimestral: mismo precio mensual, con la mitad del compromiso. Si vas a usar QuillBot de forma constante (por ejemplo, para trabajos académicos durante un semestre completo), el plan trimestral puede ajustarse mejor que pagar mes a mes o comprometerte a un año entero.
 
 ## Qué incluye el plan pagado
 

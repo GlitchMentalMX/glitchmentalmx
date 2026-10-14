@@ -5,13 +5,14 @@ herramienta: "Sider"
 herramientaId: "sider-ai"
 sitioOficial: "https://sider.ai/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/sider-ai.png
 heroImageAlt: Sider — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Sider vende tres niveles de pago con facturación mensual: Lite a $25 USD al mes, Pro a $50 USD al mes y Max a $100 USD al mes. Pagar el año completo por adelantado da 17% de descuento sobre esos precios en cualquiera de los tres niveles. La diferencia entre niveles no es solo la cantidad de créditos mensuales — también cambia la potencia de la "computadora en la nube" que Sider incluye con cada plan (más memoria RAM y almacenamiento entre más alto el nivel), un componente que la mayoría de extensiones de IA de este tipo no ofrecen y que Sider valora aparte dentro de cada plan.
+Sider vende cuatro niveles de pago con facturación mensual: Nano a $10 USD al mes, Lite a $25 USD al mes, Pro a $50 USD al mes y Max a $100 USD al mes. Nano es el más nuevo de los cuatro — un escalón de entrada más barato que Lite, pensado para tareas ocasionales simples, con acceso temporal a servidor en la nube en vez de la computadora dedicada de los otros tres. Pagar el año completo por adelantado da 17% de descuento sobre esos precios en cualquiera de los cuatro niveles. La diferencia entre niveles no es solo la cantidad de créditos mensuales — también cambia la potencia de la "computadora en la nube" que Sider incluye con cada plan (más memoria RAM y almacenamiento entre más alto el nivel), un componente que la mayoría de extensiones de IA de este tipo no ofrecen y que Sider valora aparte dentro de cada plan.
 
 ## Qué incluye el plan pagado
 

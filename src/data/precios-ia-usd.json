@@ -102,7 +102,7 @@
   "figma": { "nombre": "Figma Professional (seat completo, incluye créditos de Figma AI)", "precioUSD": 16, "periodo": "mensual", "empresa": "Figma, Inc." },
   "veo": { "nombre": "Google AI Plus (incluye Flow/Veo)", "precioUSD": 4.99, "periodo": "mensual", "empresa": "Google" },
   "luma-ai": { "nombre": "Luma AI Plus", "precioUSD": 30, "periodo": "mensual", "empresa": "Luma AI, Inc." },
-  "pika": { "nombre": "Pika Standard", "precioUSD": 10, "periodo": "mensual", "empresa": "Pika Labs, Inc." },
+  "pika": { "nombre": "Pika Starter", "precioUSD": 10, "periodo": "mensual", "empresa": "Pika Labs, Inc." },
   "hailuo-ai": { "nombre": "Hailuo Standard", "precioUSD": 14.99, "periodo": "mensual", "empresa": "MiniMax" },
   "higgsfield-ai": { "nombre": "Higgsfield Starter", "precioUSD": 15, "periodo": "mensual", "empresa": "Higgsfield AI" },
   "vidu": { "nombre": "Vidu Estándar", "precioUSD": 10, "periodo": "mensual", "empresa": "Shengshu Technology" },

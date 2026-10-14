@@ -7,6 +7,7 @@ sitioOficial: "https://www.heygen.com/pricing"
 pubDate: 2026-08-22
 heroImage: /images/precios-ia/heygen.png
 heroImageAlt: HeyGen — Precios de IA
+updatedDate: 2026-10-14
 ---
 
 ## Qué cambia el precio final
@@ -15,7 +16,7 @@ HeyGen Creator cuesta $29 USD al mes pagado mensual, o $24 USD al mes con pago a
 
 ## Qué incluye el plan pagado
 
-Creator da videos de hasta 30 minutos, exportación en 1080p, elimina la marca de agua de HeyGen, clonación de voz, y acceso a más de 175 idiomas para doblaje (frente a poco más de 30 en el plan gratuito). También suma acceso a 125 o más avatares prediseñados y hasta 3 avatares personales creados a partir de tu propio video.
+Creator da 600 créditos al mes, videos de hasta 30 minutos, exportación en 1080p, elimina la marca de agua de HeyGen, generación extendida con Avatar IV, procesamiento más rápido, fotoavatares ilimitados, clonación de voz, acumulación de créditos no usados y acceso a más de 175 idiomas y dialectos para doblaje (frente a poco más de 30 en el plan gratuito). El catálogo de más de 500 avatares prediseñados y el avatar personal de video ya vienen incluidos desde el plan gratuito — Creator no amplía ese número de avatares personales, solo suma los fotoavatares ilimitados y el resto de funciones de pago.
 
 ## Un minuto de video gratis alcanza para probar, no para producir
 

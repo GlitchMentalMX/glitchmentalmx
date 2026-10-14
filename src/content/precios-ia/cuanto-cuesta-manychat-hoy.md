@@ -5,6 +5,7 @@ herramienta: "ManyChat"
 herramientaId: "manychat"
 sitioOficial: "https://manychat.com/pricing"
 pubDate: 2026-08-23
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/manychat.png
 heroImageAlt: ManyChat — Precios de IA
 ---
@@ -15,7 +16,7 @@ ManyChat Pro cuesta $29 USD al mes pagado mensual. Un aviso de transparencia: la
 
 ## Qué incluye el plan pagado
 
-Pro conecta hasta tres canales de mensajería (WhatsApp, Instagram y Messenger, frente a solo dos en el plan gratuito), incluye 2,500 contactos activos, automatizaciones sin límite, hasta tres usuarios de equipo, funciones de conversación con IA ("Manychat AI"), y quita el branding de ManyChat de tus flujos. El plan gratuito conecta solo dos canales, limita a 25 contactos activos y un usuario, y no incluye las funciones de IA.
+Pro conecta cualquier combinación de tres canales a elegir entre Instagram, TikTok, Facebook Messenger, WhatsApp, Telegram, SMS y Email (frente a solo dos en el plan gratuito), incluye 2,500 contactos activos, automatizaciones sin límite, hasta tres usuarios de equipo, funciones de conversación con IA ("Manychat AI"), y quita el branding de ManyChat de tus flujos. El plan gratuito conecta solo dos canales, limita a 25 contactos activos y un usuario, y no incluye las funciones de IA.
 
 ## Muy usado por pequeños negocios en México para automatizar WhatsApp
 

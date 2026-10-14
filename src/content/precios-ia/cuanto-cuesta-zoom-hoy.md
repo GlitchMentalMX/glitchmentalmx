@@ -5,13 +5,14 @@ herramienta: "Zoom"
 herramientaId: "zoom"
 sitioOficial: "https://www.zoom.com/en/pricing/"
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/zoom.png
 heroImageAlt: Zoom — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Zoom Pro, el primer nivel de pago para un usuario individual, cuesta $16.99 USD al mes con facturación mensual, o baja a cerca de $13.33 USD al mes si pagas el año completo por adelantado — un ahorro de casi 22% solo por el compromiso anual. Arriba de Pro existen Business y Business Plus, pensados para equipos con varias licencias administradas de forma centralizada, con precio por usuario más alto y funciones de administración que un usuario individual no necesita. Zoom también vende complementos aparte, como funciones de IA para transcripción y resumen automático de reuniones, que no vienen incluidos en Pro por default y se cobran por separado.
+Zoom Pro, el primer nivel de pago para un usuario individual, cuesta $16.99 USD al mes con facturación mensual, o baja a $14.16 USD al mes si pagas el año completo por adelantado — un ahorro de cerca de 17% por el compromiso anual (antes el descuento rondaba el 22%, con una mensualidad anual cercana a $13.33). Arriba de Pro existen Business y Business Plus, pensados para equipos con varias licencias administradas de forma centralizada, con precio por usuario más alto y funciones de administración que un usuario individual no necesita. Zoom también vende complementos aparte, como funciones de IA para transcripción y resumen automático de reuniones, que no vienen incluidos en Pro por default y se cobran por separado.
 
 ## Qué incluye el plan pagado
 

@@ -5,21 +5,22 @@ herramienta: "Copy.ai"
 herramientaId: "copy-ai"
 sitioOficial: "https://www.copy.ai/pricing"
 pubDate: 2026-08-22
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/copy-ai.png
 heroImageAlt: Copy.ai — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Copy.ai cambió su estructura de precios: ya no vende un plan individual de un solo asiento en autoservicio — el plan Chat, que cubre esta calculadora, tiene un mínimo de 5 asientos incluso si solo lo vas a usar tú. Cuesta $29 USD al mes por asiento pagado mensual, o $24 USD al mes por asiento con pago anual (20% de descuento, $288 al año). Si buscas contratarlo para uso individual, vale la pena confirmar directamente con Copy.ai si existe alguna excepción al mínimo de asientos, porque no está garantizado por el precio de lista.
+Copy.ai cambió su estructura de precios: ya no vende un plan individual de un solo asiento en autoservicio — el plan Chat, que cubre esta calculadora, viene empaquetado con 5 asientos. Pero el precio no es "por asiento": son $29 USD al mes en total (pagado mensual) por los 5 asientos incluidos, o $24 USD al mes en total con pago anual (20% de descuento, $288 al año facturados de una vez). Si solo lo vas a usar tú, pagas lo mismo que pagaría un equipo de 5 — el precio no baja por usar menos asientos de los incluidos.
 
 ## Qué incluye el plan pagado
 
 Chat da palabras ilimitadas en el chat de generación, y acceso a los modelos de OpenAI, Anthropic y Google integrados en la misma interfaz, sin necesidad de contratar cada uno por separado. Copy.ai tampoco tiene plan gratuito permanente — su enfoque, como Jasper, es uso profesional de contenido y marketing en equipo, no personal.
 
-## El mínimo de asientos es la letra chica que más sorprende aquí
+## El precio es del plan completo, no por persona
 
-La mayoría de las herramientas de esta lista cobran por persona sin importar cuántas uses; Copy.ai te cobra como si fueras cinco personas aunque seas una sola. Antes de asumir que vas a pagar $29 USD al mes, confirma si tu caso de uso individual tiene alguna alternativa — de lo contrario, el gasto real es cinco veces mayor al que muestra esta calculadora.
+A diferencia de la mayoría de las herramientas de esta lista, que cobran por asiento, Copy.ai Chat es un precio fijo de $29 USD al mes (o $24 USD con pago anual) que ya incluye hasta 5 asientos — lo pagas igual si lo usas una sola persona o un equipo completo de 5. Si tu equipo crece más allá de esos 5 asientos, vale la pena confirmar directamente con Copy.ai cómo se cobran los asientos adicionales, porque no aparece en el precio de lista.
 
 ¿Copy.ai tiene un código de descuento real? [Verifícalo aquí →](/articulos/copy-ai-codigo-de-descuento/)
 

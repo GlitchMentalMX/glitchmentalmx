@@ -5,14 +5,14 @@ herramienta: "InVideo AI"
 herramientaId: "invideo-ai"
 sitioOficial: "https://invideo.io/pricing"
 pubDate: 2026-08-22
-updatedDate: 2026-10-04
+updatedDate: 2026-10-14
 heroImage: /images/precios-ia/invideo-ai.png
 heroImageAlt: InVideo AI — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-InVideo AI reordenó sus planes y el plan Plus, de $17 USD al mes, ya no aparece en la página oficial. Hoy la escalera es Basic, Pro y Ultra, y se cobra por asiento. Basic cuesta $9 USD al mes por asiento y, lo raro, cuesta lo mismo pagado mensual que anual: la propia página dice que no hay diferencia contra el plan mensual. Pro cuesta $30 USD al mes por asiento pagado mensual, o $18 USD al mes con pago anual (el sitio presume un ahorro de $144 al año por asiento). Ultra cuesta $80 USD al mes mensual, o $40 USD al mes en anual. Si recordabas a InVideo Plus a $17 USD, el equivalente más cercano hoy es Basic, que es más barato pero trae menos.
+InVideo AI reordenó sus planes y el plan Plus, de $17 USD al mes, ya no aparece en la página oficial. Hoy la escalera es Basic, Pro y Ultra, y se cobra por asiento. Basic cuesta $9 USD al mes por asiento pagado mensual, o $4 USD al mes con pago anual (ahorro de $54 al año por asiento) — ya no es cierto que cueste lo mismo mes a mes que anual, como mostraba antes la página oficial. Pro cuesta $30 USD al mes por asiento pagado mensual, o $15 USD al mes con pago anual (ahorro de $180 al año por asiento). Ultra cuesta $80 USD al mes mensual, o $40 USD al mes en anual. Si recordabas a InVideo Plus a $17 USD, el equivalente más cercano hoy es Basic, que es más barato pero trae menos.
 
 ## Qué incluye el plan pagado
 

@@ -7,19 +7,20 @@ empresa: "SciSpace"
 sitioOficial: "https://scispace.com/pricing"
 veredicto: "rojo"
 fraseCorta: "La página oficial de SciSpace Premium no muestra ningún plan gratis ni prueba en su tabla de precios: solo Premium, Advanced y Teams, todos de pago desde el primer clic."
-fuenteVerificacion: "Página oficial de precios de SciSpace Premium (scispace.com/pricing), consultada el 31/08/2026 — sin la palabra 'trial' referida a un producto en el código de la página, y sin plan gratis en la tabla de precios."
+fuenteVerificacion: "Página oficial de precios de SciSpace Premium (scispace.com/pricing), consultada el 14/10/2026 — planes Premium, Advanced y Max (antes 'Teams'), con aviso de reembolso de 24 horas tras el pago; sin plan gratis ni prueba previa al cobro en la tabla de precios."
 pubDate: 2026-08-31
+updatedDate: 2026-10-14
 heroImage: /images/prueba-gratis/scispace.png
 heroImageAlt: SciSpace — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de SciSpace Premium?
 
-Ojo con no confundir productos: SciSpace vende dos cosas distintas bajo el mismo nombre. Está el editor de escritura académica —con un plan "Basic" gratis para siempre— y está SciSpace Premium, el asistente de IA para buscar, leer y analizar papers, que es lo que cubre este artículo. En la página oficial de precios de SciSpace Premium revisamos el código completo y no aparece ningún plan gratis en la misma tabla que Premium, Advanced y Teams: los tres muestran botones de compra directa ("Get Advanced", "Create my team"), sin mención de un periodo de prueba.
+Ojo con no confundir productos: SciSpace vende dos cosas distintas bajo el mismo nombre. Está el editor de escritura académica —con un plan "Basic" gratis para siempre— y está SciSpace Premium, el asistente de IA para buscar, leer y analizar papers, que es lo que cubre este artículo. En la página oficial de precios de SciSpace Premium no aparece ningún plan gratis en la tabla de pago, que hoy son tres —Premium, Advanced y Max, ya no "Teams"—: los tres muestran botones de compra directa ("Get Premium", "Get Advanced", "Get Max"), sin mención de un periodo de prueba previo al cobro. Lo que sí aparece ahora, justo debajo de los precios, es un aviso nuevo: "All plans have 100% money back guarantee for 24 hours" — un reembolso de 24 horas después de pagar, no una prueba antes de pagar.
 
 ## Los créditos gratuitos no son lo mismo que probar Premium
 
-SciSpace sí regala una cuota mensual de créditos gratis a cualquier cuenta nueva, útiles para su agente de IA, pero esos créditos existen fuera de la tabla de planes Premium/Advanced/Teams y no están documentados como una "prueba" de esos planes — son un nivel de uso limitado disponible siempre, no una ventana temporal con acceso completo. Para las funciones exclusivas de Premium (más créditos mensuales, soporte prioritario, servicios de formato), la única ruta que muestra la página oficial es contratar directamente.
+SciSpace sí regala una cuota mensual de créditos gratis a cualquier cuenta nueva, útiles para su agente de IA, pero esos créditos existen fuera de la tabla de planes Premium/Advanced/Max y no están documentados como una "prueba" de esos planes — son un nivel de uso limitado disponible siempre, no una ventana temporal con acceso completo. Para las funciones exclusivas de Premium (más créditos mensuales, soporte prioritario, servicios de formato), la única ruta que muestra la página oficial es contratar directamente. La garantía de 24 horas tampoco cambia el veredicto: es una ventana de reembolso posterior al cobro, no una forma de evitar dar la tarjeta antes de probar Premium, Advanced o Max.
 
 ¿Buscas cuánto cuesta SciSpace? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-scispace-hoy/)
 
@@ -29,4 +30,4 @@ SciSpace sí regala una cuota mensual de créditos gratis a cualquier cuenta nue
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 14/10/2026]
