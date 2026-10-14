@@ -89,6 +89,9 @@ const exploraColumns = [
 ].map((col) => ({
   ...col,
   maxCount: Math.max(...col.items.map((i) => i.count), 1),
+  // Si alguna fila de la columna lleva play, las que no lo tienen reservan su ancho
+  // para que todos los nombres queden alineados.
+  hasAudio: col.items.some((i) => 'audioSrc' in i && Boolean(i.audioSrc)),
 }));
 
 // Panel de Señales — reemplaza el grid de cards de "Recursos" por una lista
@@ -352,6 +355,7 @@ const signalPools = {
                     </span>
                   </button>
                 )}
+                {col.hasAudio && !item.audioSrc && <span class="mini-play-spacer" aria-hidden="true"></span>}
                 <a href={item.href} class:list={{ muted: item.soon }}>
                   <span class="label">{item.label}</span>
                   {item.soon ? (
@@ -805,6 +809,7 @@ const signalPools = {
     justify-content: center;
     cursor: pointer;
   }
+  .mini-play-spacer { flex-shrink: 0; width: 20px; height: 20px; }
   .mini-play svg { width: 13px; height: 13px; }
   .mini-play svg[hidden] { display: none; }
   .mini-play svg[data-icon='play'] { transform: translateX(1px); }
