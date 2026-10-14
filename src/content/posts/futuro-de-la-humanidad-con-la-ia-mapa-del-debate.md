@@ -11,7 +11,7 @@ draft: false
 
 El debate sobre el futuro de la humanidad con la IA (inteligencia artificial) mezcla hechos medidos, deducciones y especulación como si pesaran lo mismo. Este mapa los separa. **No dice quién tiene razón: dice qué clase de prueba exige cada postura.**
 
-Es la página de entrada de **[Sin Oráculos](/series/futuro-humanidad-ia-filosofos/)**, una serie de diez artículos: este mapa (00) y nueve más (01 a 09) sobre lo que dicen filósofos, científicos y otros especialistas del futuro de la IA. Aquí no hay investigación nueva: este texto resume esos otros nueve artículos y presenta todo como lo que dicen las fuentes revisadas, no como la verdad de este sitio.
+Es la página de entrada de **[Sin Oráculos](/series/futuro-humanidad-ia-filosofos/)**, una serie de diez artículos: este mapa (00) y nueve más (01 a 09) sobre lo que dicen filósofos, científicos y otros especialistas del futuro de la IA. Aquí no hay investigación nueva: este texto resume esos otros nueve artículos y presenta todo como lo dicen las fuentes revisadas, no como la verdad de este sitio.
 
 ## Cómo leer este mapa: la regla de etiquetado y el detector de marketing
 
