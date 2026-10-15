@@ -107,4 +107,4 @@ Faltan voces: Yudkowsky, Hinton, Bengio y Marcus están ausentes. La literatura 
 
 ## La pregunta que el mapa deja abierta
 
-Si cada postura exige una prueba distinta y ninguna autoridad nombrada puede dar un veredicto, **¿qué debería tener un mapa para ser útil sin convertirse en una?**
+Si cada postura exige una prueba distinta y nadie tiene autoridad para decidir cuál vale, **¿qué debería tener un mapa para ser útil sin volverse esa autoridad?**
