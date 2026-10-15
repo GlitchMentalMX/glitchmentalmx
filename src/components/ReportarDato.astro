@@ -1,0 +1,156 @@
+---
+// "¿Ves un dato desactualizado?" — formulario mínimo para que el lector avise
+// de un precio, promo o política que ya cambió. Va a un Worker propio
+// (cloudflare/glitchmental-reporte-worker.js) que solo te manda un correo; no
+// guarda nada. El correo del lector es opcional: la mayoría solo quiere avisar.
+// Se parte de la clase global .form-field (global.css) para no duplicar estilos.
+interface Props {
+  titulo: string;
+  pagina: string;
+}
+
+const { titulo, pagina } = Astro.props;
+---
+
+<details class="reportar" data-reportar-pagina={pagina} data-reportar-titulo={titulo}>
+  <summary>¿Ves un dato desactualizado? Avísanos</summary>
+  <form class="reportar-form" novalidate>
+    <p class="reportar-intro">
+      Si un precio, una promo o una política ya no coincide con lo que ves en el sitio oficial, dinos
+      cuál y dónde lo viste. Lo revisamos y corregimos.
+    </p>
+
+    <div class="form-field">
+      <label for="reportar-mensaje">¿Qué cambió?</label>
+      <textarea
+        id="reportar-mensaje"
+        name="message"
+        required
+        minlength="10"
+        maxlength="1500"
+        placeholder="Ej.: Ahora cuesta $X al mes en la página oficial, o la promo ya no existe."
+      ></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="reportar-email">Tu correo <span class="opcional">(opcional, solo si quieres respuesta)</span></label>
+      <input id="reportar-email" name="email" type="email" autocomplete="email" maxlength="320" />
+    </div>
+
+    <!-- Honeypot — invisible para personas; los bots simples lo llenan. -->
+    <div class="form-honeypot" aria-hidden="true">
+      <label for="reportar-website">Website</label>
+      <input id="reportar-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <p class="reportar-legal">
+      Solo usamos el mensaje (y tu correo, si lo dejas) para revisar el dato y, si hace falta, responderte.
+    </p>
+
+    <button type="submit" class="btn btn-ghost">Enviar aviso</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</details>
+
+<script>
+  const WORKER_URL = 'https://glitchmental-reporte.glitchmental-web.workers.dev/';
+  const FALLBACK = 'No se pudo enviar. Escríbenos a contacto@glitchmental.com.';
+
+  const details = document.querySelector<HTMLDetailsElement>('details.reportar');
+  const form = details?.querySelector<HTMLFormElement>('.reportar-form');
+
+  if (details && form) {
+    const statusEl = form.querySelector('.form-status') as HTMLParagraphElement;
+    const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const messageInput = form.querySelector('[name="message"]') as HTMLTextAreaElement;
+    const emailInput = form.querySelector('[name="email"]') as HTMLInputElement;
+    const websiteInput = form.querySelector('[name="website"]') as HTMLInputElement;
+
+    // El tiempo de llenado se mide desde que se abre el panel, no desde que
+    // carga la página: un lector real tarda en escribir; un bot, no.
+    let openedAt = Date.now();
+    details.addEventListener('toggle', () => {
+      if (details.open) openedAt = Date.now();
+    });
+
+    const setStatus = (message: string, kind: 'ok' | 'error' | '') => {
+      statusEl.textContent = message;
+      statusEl.className = 'form-status' + (kind ? ` ${kind}` : '');
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      setStatus('', '');
+
+      const message = messageInput.value.trim();
+      const email = emailInput.value.trim();
+
+      if (message.length < 10) {
+        setStatus('Cuéntanos un poco más (mínimo 10 caracteres).', 'error');
+        messageInput.focus();
+        return;
+      }
+      if (email !== '' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setStatus('Ese correo no parece válido. Puedes dejarlo vacío.', 'error');
+        emailInput.focus();
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando…';
+
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message,
+            email,
+            pagina: details.dataset.reportarPagina,
+            titulo: details.dataset.reportarTitulo,
+            website: websiteInput.value,
+            formLoadedAt: openedAt,
+          }),
+        });
+        const data = await res.json();
+
+        if (res.ok && data.ok) {
+          setStatus('Gracias. Lo revisamos pronto.', 'ok');
+          form.reset();
+        } else {
+          setStatus(data.error || FALLBACK, 'error');
+        }
+      } catch {
+        setStatus(FALLBACK, 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar aviso';
+      }
+    });
+  }
+</script>
+
+<style>
+  .reportar {
+    max-width: var(--measure);
+    margin: 18px auto 0;
+    padding: 0 24px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  .reportar summary {
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .reportar summary:hover { color: var(--accent); }
+  .reportar[open] summary { margin-bottom: 16px; }
+
+  .reportar-form { display: flex; flex-direction: column; gap: 16px; max-width: 480px; }
+  .reportar-intro { margin: 0; line-height: 1.55; }
+  .reportar-legal { margin: 0; font-size: 0.82rem; line-height: 1.5; }
+  .reportar-form button[type='submit'] { align-self: flex-start; }
+  .opcional { font-weight: 400; color: var(--text-muted); }
+  .reportar-form textarea { min-height: 110px; }
+</style>

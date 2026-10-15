@@ -17,6 +17,8 @@ El Sitio recopila datos no personales a través de herramientas de terceros para
 * Páginas visitadas en el Sitio.
 * Tiempo de permanencia y patrones de navegación.
 
+**Formularios del Sitio:** el Sitio tiene tres formularios — suscripción, contacto y "Reportar un dato desactualizado". Los datos que escribas (nombre y correo en los dos primeros; el mensaje y, si quieres, tu correo en el tercero) se envían por correo electrónico a glitchMentalMX mediante un servicio de envío (Resend) y se usan solo para atender tu solicitud o, en la suscripción, para enviarte lo que aceptaste recibir. Los formularios no guardan los datos en una base del Sitio.
+
 ### 3. Uso de Cookies
 
 El Sitio **no utiliza cookies propias**. Nuestro sistema de analítica es propio, no guarda tu dirección IP, no usa cookies y no tiene ningún identificador que te siga entre visitas — solo registra la página vista, sin poder asociarla a ti.

@@ -12,6 +12,7 @@ import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
 import EstudiantesBadge from '../../components/EstudiantesBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
+import ReportarDato from '../../components/ReportarDato.astro';
 import { getCollection, render } from 'astro:content';
 import { relatedInsightVisualByPostId } from '../../lib/relatedInsightVisual';
 import {
@@ -748,6 +749,8 @@ if (toolKinds.includes(kind) && herramienta) {
       >WhatsApp</a>
       <button id="share-copy" class="btn btn-ghost" type="button"><span>Copiar enlace</span></button>
     </div>
+
+    {kind !== 'posts' && <ReportarDato titulo={title} pagina={`/articulos/${post.id}/`} />}
 
     {relatedInsightVisual && (
       <p class="related-insight container">
