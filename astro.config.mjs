@@ -313,6 +313,10 @@ export default defineConfig({
         if (pathname === '/prueba-gratis-sin-tarjeta/') return conFecha(fechaPruebaGratis);
         if (pathname === '/quien-entrena-con-tus-datos/') return conFecha(fechaEntrenaIA);
         if (pathname === '/descuentos-para-estudiantes-ia/') return conFecha(fechaEstudiantes);
+        if (pathname === '/datos/') {
+          const fechas = [fechaTipoCambio, fechaEntrenaIA, fechaPruebaGratis, fechaCodigosDescuento, fechaEstudiantes].filter(Boolean);
+          return conFecha(fechas.length ? new Date(Math.max(...fechas.map((f) => f.getTime()))) : undefined);
+        }
         // El hub en sí (/ia-sin-letra-chiquita/) nunca tuvo lastmod propio —
         // se le había puesto a sus series hijas pero no al índice que las
         // enlaza. Usa la más reciente de las 5.

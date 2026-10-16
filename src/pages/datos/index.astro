@@ -1,0 +1,216 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { SITE, cargarVeredictos, cargarPrecios, type Veredicto } from '../../lib/datos';
+
+const { filas, resumen, ultimaActualizacion, primeraPublicacion } = await cargarVeredictos();
+const precios = await cargarPrecios();
+
+const totalHerramientas = new Set(filas.map((f) => f.herramienta_id)).size;
+const pct = (n: number, total: number) => (total === 0 ? 0 : Math.round((n / total) * 100));
+const orden: Veredicto[] = ['verde', 'amarillo', 'rojo'];
+const emoji: Record<Veredicto, string> = { verde: '🟢', amarillo: '🟡', rojo: '🔴' };
+
+// La frase de cada serie se arma con los conteos reales: nunca se escribe a
+// mano una cifra que pueda quedar vieja.
+const cuenta = (key: string) => resumen.find((r) => r.serie.key === key)!;
+const frases: Record<string, string> = {
+  entrena: (() => {
+    const r = cuenta('entrena');
+    return `${r.conteo.rojo} de ${r.total} herramientas entrenan su IA con lo que haces; ${r.conteo.verde} no lo hacen por defecto.`;
+  })(),
+  prueba: (() => {
+    const r = cuenta('prueba');
+    return `Solo ${r.conteo.verde} de ${r.total} dejan probar su plan de pago sin tarjeta.`;
+  })(),
+  codigos: (() => {
+    const r = cuenta('codigos');
+    return `Solo ${r.conteo.verde} de ${r.total} tienen hoy un código o promoción activa verificable; en ${r.conteo.rojo} no existe ningún código real.`;
+  })(),
+  estudiantes: (() => {
+    const r = cuenta('estudiantes');
+    return `Solo ${r.conteo.verde} de ${r.total} ofertas para estudiantes aplican en México sin trabas.`;
+  })(),
+};
+
+const hoy = new Date();
+// Las fechas de las fichas son medianoche UTC: se formatean en UTC para que el
+// día mostrado coincida con el de dateModified aunque el build corra en CDMX.
+const actualizado = ultimaActualizacion
+  ? ultimaActualizacion.toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+  : '';
+const citaFecha = hoy.toLocaleDateString('es-MX', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'America/Mexico_City' });
+const anio = hoy.getFullYear();
+
+const title = 'Datos verificados de IA y servicios digitales en México';
+const description =
+  'Cuántas herramientas de IA entrenan con tus datos, piden tarjeta en su prueba gratis o tienen códigos reales. Datos abiertos, verificados en fuente oficial.';
+
+const csvVeredictos = `${SITE}/datos/veredictos.csv`;
+const csvPrecios = `${SITE}/datos/precios.csv`;
+
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: 'Datos verificados de IA y servicios digitales en México (glitchMentalMX)',
+  description:
+    `Veredictos verificados en fuentes oficiales para ${totalHerramientas} herramientas y servicios digitales: si entrenan su IA con los datos del usuario, si su prueba gratis pide tarjeta, si existe un código de descuento real y si su oferta para estudiantes aplica en México. Incluye el precio de entrada de cada ficha en dólares y en pesos mexicanos con el tipo de cambio FIX de Banxico.`,
+  url: `${SITE}/datos/`,
+  inLanguage: 'es',
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  isAccessibleForFree: true,
+  keywords: [
+    'inteligencia artificial',
+    'privacidad',
+    'entrenamiento de IA',
+    'prueba gratis',
+    'códigos de descuento',
+    'descuentos para estudiantes',
+    'precios en México',
+    'tipo de cambio Banxico',
+  ],
+  spatialCoverage: { '@type': 'Place', name: 'México' },
+  ...(primeraPublicacion && ultimaActualizacion
+    ? { temporalCoverage: `${primeraPublicacion.toISOString().slice(0, 10)}/..` }
+    : {}),
+  ...(ultimaActualizacion ? { dateModified: ultimaActualizacion.toISOString().slice(0, 10) } : {}),
+  creator: {
+    '@type': 'Person',
+    name: 'Jorge A. Diaz Elizondo',
+    url: `${SITE}/acerca-de/`,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    url: SITE,
+  },
+  distribution: [
+    {
+      '@type': 'DataDownload',
+      encodingFormat: 'text/csv',
+      name: 'Veredictos por herramienta (CSV)',
+      contentUrl: csvVeredictos,
+    },
+    {
+      '@type': 'DataDownload',
+      encodingFormat: 'text/csv',
+      name: 'Precios de entrada en USD y MXN (CSV)',
+      contentUrl: csvPrecios,
+    },
+  ],
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  modifiedTime={ultimaActualizacion}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />
+  <Breadcrumbs items={[
+    { name: 'IA sin letra chiquita', url: '/ia-sin-letra-chiquita/' },
+    { name: 'Datos' },
+  ]} />
+  <PageHeader
+    eyebrow={`Datos abiertos · actualizado el ${actualizado}`}
+    title={title}
+    dek={`Revisamos en la fuente oficial ${totalHerramientas} herramientas y servicios digitales, uno por uno, y publicamos lo que encontramos: aquí están las cifras, cómo se calculan y los archivos para descargarlas.`}
+  />
+
+  <section class="container cifras">
+    {resumen.map((r) => (
+      <article class="cifra">
+        <p class="eyebrow"><a href={r.serie.hub}>{r.serie.label}</a> · {r.total} herramientas</p>
+        <h2>{frases[r.serie.key]}</h2>
+        <p class="pregunta">{r.serie.pregunta}</p>
+        <table>
+          <tbody>
+            {orden.map((v) => (
+              <tr>
+                <th scope="row"><span aria-hidden="true">{emoji[v]}</span> {r.serie.significados[v]}</th>
+                <td>{r.conteo[v]}</td>
+                <td class="pct">{pct(r.conteo[v], r.total)}%</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </article>
+    ))}
+  </section>
+
+  <section class="container texto">
+    <h2>Cómo se verifica</h2>
+    <ul>
+      <li>Cada dato sale de la fuente oficial de la herramienta (su página de precios, su política de privacidad, su centro de ayuda), consultada por nosotros. Lo que no se puede confirmar ahí no se publica.</li>
+      <li>Cada ficha lleva la fecha de su última verificación y se revisa de forma periódica. Los veredictos son un juicio editorial sobre lo que dice la fuente en esa fecha; si la empresa cambia sus condiciones, el veredicto cambia.</li>
+      <li>Los precios son el precio oficial en dólares de la página global de cada empresa, antes de impuestos, convertido a pesos con el tipo de cambio FIX de Banxico del día. El precio que ves en tu tienda de apps o con tu tarjeta puede ser distinto.</li>
+    </ul>
+    <p>Los criterios completos de cada serie están en su página: <a href="/quien-entrena-con-tus-datos/">Quién entrena con tus datos</a>, <a href="/prueba-gratis-sin-tarjeta/">Prueba gratis sin tarjeta</a>, <a href="/codigos-descuento-ia/">Códigos de descuento</a> y <a href="/descuentos-para-estudiantes-ia/">Descuentos para estudiantes</a>.</p>
+  </section>
+
+  <section class="container texto">
+    <h2>Descargas</h2>
+    <p>Dos archivos CSV (se abren en Excel, Google Sheets o cualquier herramienta de datos), generados con las mismas fichas que ves en el sitio:</p>
+    <ul class="descargas">
+      <li>
+        <a href="/datos/veredictos.csv" download>veredictos.csv</a> — {filas.length} filas, una por herramienta y serie. Columnas: serie, herramienta, herramienta_id, veredicto, veredicto_significado, frase_corta, fuente_verificada, publicada, actualizada, url.
+      </li>
+      <li>
+        <a href="/datos/precios.csv" download>precios.csv</a> — {precios.length} filas, una por ficha de precios. Columnas: serie, herramienta_id, plan, empresa, precio_usd, precio_mxn_hoy, periodo, tipo_cambio_fix, fecha_tipo_cambio, url.
+      </li>
+    </ul>
+  </section>
+
+  <section class="container texto">
+    <h2>Licencia y cómo citar</h2>
+    <p>Puedes usar, copiar y compartir estos datos, también con fines comerciales, bajo la licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">Creative Commons Atribución 4.0</a>: solo pide que menciones la fuente. Una forma de citarlo:</p>
+    <blockquote class="cita">
+      glitchMentalMX ({anio}). <em>{title}</em>. https://glitchmental.com/datos/. Consultado el {citaFecha}.
+    </blockquote>
+    <p>Los datos los verifica y mantiene <a href="/acerca-de/">Jorge A. Diaz Elizondo</a>. Si ves un dato que ya cambió, avísanos desde el botón que aparece al final de cada ficha.</p>
+  </section>
+</Layout>
+
+<style>
+  .cifras {
+    max-width: 760px;
+    padding: 0 24px 24px;
+    display: grid;
+    gap: 20px;
+  }
+  .cifra {
+    border-radius: var(--radius);
+    border-top: 2px solid var(--accent);
+    padding: 22px 24px 20px;
+    background: var(--bg-inset);
+  }
+  .cifra .eyebrow { margin: 0; color: var(--text-muted); }
+  .cifra .eyebrow a { color: inherit; text-decoration: none; }
+  .cifra .eyebrow a:hover { color: var(--accent); }
+  .cifra h2 { font-size: 1.3rem; line-height: 1.3; margin: 8px 0 6px; }
+  .pregunta { color: var(--text-muted); font-size: 0.9rem; margin: 0 0 14px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  th, td { padding: 8px 0; border-top: 1px solid var(--border); text-align: left; }
+  th { font-weight: 400; color: var(--text-muted); }
+  td { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; width: 48px; }
+  td.pct { color: var(--text-muted); font-weight: 400; width: 56px; }
+
+  .texto { max-width: 760px; padding: 16px 24px 24px; }
+  .texto h2 { font-size: 1.3rem; margin: 0 0 12px; }
+  .texto p, .texto li { color: var(--text-muted); line-height: 1.6; }
+  .texto ul { padding-left: 20px; display: grid; gap: 10px; margin: 0 0 14px; }
+  .texto a { color: var(--accent); }
+  .descargas { list-style: none; padding-left: 0; }
+  .cita {
+    margin: 14px 0;
+    padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-inset);
+    color: var(--text);
+    font-size: 0.92rem;
+  }
+  .texto:last-of-type { padding-bottom: 96px; }
+</style>
