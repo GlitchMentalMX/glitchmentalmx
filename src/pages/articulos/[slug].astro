@@ -13,6 +13,7 @@ import EstudiantesBadge from '../../components/EstudiantesBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
+import { SIN_ORACULOS_ENLACES } from '../../data/sin-oraculos-enlaces';
 import { getCollection, render } from 'astro:content';
 import { relatedInsightVisualByPostId } from '../../lib/relatedInsightVisual';
 import {
@@ -204,6 +205,15 @@ const allPosts =
     ? (await getCollection('posts', ({ data }) => !data.draft)).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
     : [];
 const relatedPool = allPosts.filter((p) => p.id !== post.id);
+
+// Enlaces hacia la serie "Sin Oráculos" desde artículos anteriores (lote fijo
+// y curado en src/data/sin-oraculos-enlaces.ts).
+const sinOraculosEnlaces =
+  kind === 'posts'
+    ? (SIN_ORACULOS_ENLACES[post.id] ?? [])
+        .map((id) => allPosts.find((p) => p.id === id))
+        .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    : [];
 
 // "Sigue leyendo" prioriza la MISMA categoría — antes solo miraba cercanía de
 // fecha de publicación, así que podía recomendar una novela o un smartwatch
@@ -739,6 +749,17 @@ if (toolKinds.includes(kind) && herramienta) {
       )}
     </div>
 
+    {sinOraculosEnlaces.length > 0 && (
+      <aside class="sigue-debate container" aria-label="Sigue el debate">
+        <p class="sigue-debate-label">Sigue el debate · serie <a href="/series/futuro-humanidad-ia-filosofos/">Sin Oráculos</a></p>
+        <ul>
+          {sinOraculosEnlaces.map((p) => (
+            <li><a href={`/articulos/${p.id}/`}>{p.data.title} →</a></li>
+          ))}
+        </ul>
+      </aside>
+    )}
+
     <div class="share container">
       <span class="eyebrow">Compartir</span>
       <a
@@ -1036,6 +1057,24 @@ if (toolKinds.includes(kind) && herramienta) {
     padding-top: 24px;
   }
   .share .btn { padding: 0.55em 1.1em; font-size: 0.82rem; }
+
+  .sigue-debate {
+    max-width: var(--measure);
+    margin: 32px auto 0;
+    padding: 0 24px;
+  }
+  .sigue-debate-label {
+    margin: 0 0 8px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .sigue-debate-label a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .sigue-debate ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .sigue-debate li a { color: var(--accent); font-weight: 500; text-decoration: none; }
+  .sigue-debate li a:hover { text-decoration: underline; }
 
   .related-insight {
     max-width: var(--measure);
