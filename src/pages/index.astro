@@ -292,7 +292,7 @@ const signalPools = {
       {novelasPublicadas.map((n) => (
         <article class="novela-card">
           <a href={`/novelas/${n.id}/`} class="novela-cover-link" tabindex="-1" aria-hidden="true">
-            <img src={n.cover} alt="" loading="lazy" width="400" height="640" />
+            <img src={n.cover} alt={`Portada de la novela ${n.title}`} loading="lazy" width="400" height="640" />
           </a>
           <div class="novela-body">
             <span class="tag">{n.genre}</span>

@@ -13,7 +13,7 @@ const { book } = Astro.props;
   <p class="eyebrow promo-label">Esta investigación inspiró una novela</p>
   <div class="promo-body">
     <a href={`/novelas/${book.id}/`} class="cover-link" tabindex="-1" aria-hidden="true">
-      <img class="cover" src={book.cover} alt="" loading="lazy" width="120" height="186" />
+      <img class="cover" src={book.cover} alt={`Portada de la novela ${book.title}`} loading="lazy" width="120" height="186" />
     </a>
     <div class="promo-text">
       <span class="tag">{book.genre}</span>
