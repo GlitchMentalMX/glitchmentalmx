@@ -5,13 +5,14 @@ herramienta: "Replit"
 herramientaId: "replit"
 sitioOficial: "https://replit.com/pricing"
 pubDate: 2026-08-22
+updatedDate: 2026-10-17
 heroImage: /images/precios-ia/replit.png
 heroImageAlt: Replit — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Replit Core cuesta $25 USD al mes pagado mensual, o $20 USD al mes con pago anual ($240 al año, 20% de descuento). A diferencia de herramientas de código que cobran principalmente por asiento, Replit Core incluye una asignación de crédito (aproximadamente $25) para su Agent de IA cada mes — si tu uso del agente supera ese monto en créditos, vas a pagar extra sobre la suscripción base, algo que vale la pena monitorear si generas mucho código con el agente.
+Replit bajó el precio de Core: ahora cuesta $20 USD al mes pagado mensual, o $18 USD al mes con pago anual (hasta 10% de descuento) — antes costaba $25 USD mensual o $20 USD anual (20% de descuento). A diferencia de herramientas de código que cobran principalmente por asiento, Replit Core incluye una asignación de crédito (unos $20) para su Agent de IA cada mes — si tu uso del agente supera ese monto en créditos, vas a pagar extra sobre la suscripción base, algo que vale la pena monitorear si generas mucho código con el agente.
 
 ## Qué incluye el plan pagado
 

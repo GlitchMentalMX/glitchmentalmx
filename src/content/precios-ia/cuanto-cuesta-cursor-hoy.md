@@ -5,17 +5,18 @@ herramienta: "Cursor"
 herramientaId: "cursor"
 sitioOficial: "https://cursor.com/pricing"
 pubDate: 2026-08-21
+updatedDate: 2026-10-17
 heroImage: /images/precios-ia/cursor.png
 heroImageAlt: Cursor — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-La página de precios de Cursor muestra un selector Mensual/Anual pero solo publica cifras mensuales: el precio publicado del plan Pro es $20 USD al mes, y no confirmamos si pagar por adelantado lo cambia (revísalo en el checkout antes de pagar). Arriba existen [Pro+](/articulos/cuanto-cuesta-cursor-pro-plus-hoy/) ($60 USD/mes) y Ultra ($200 USD/mes), pensados para quien usa agentes de IA de forma intensiva todo el día, no para uso diario normal de programación — Pro es el punto de entrada real. Un detalle que aclara la propia empresa: Cursor solo se vende directo en cursor.com; cualquier revendedor o "cuenta barata" de terceros no es oficial y puede suspenderse en cualquier momento.
+Esto cambió de fondo: SpaceX cerró la compra de Cursor el 14 de agosto de 2026 y la integró a SpaceXAI, el mismo grupo detrás de Grok. Desde entonces, Cursor sustituyó sus planes individuales (Pro, Pro+, Ultra) por "The X Subscription", una sola suscripción que junta Grok, Cursor y X Premium en un solo pool de uso semanal. Quien ya tenía Cursor Pro a $20 USD al mes puede conservarlo hasta que decida migrar, pero cualquiera que se suscriba hoy ya no puede elegir ese plan: arranca directo en The X Subscription. Ahí, el plan de entrada que de verdad sirve para programar es Premium, a $30 USD al mes, antes de impuestos (la página aclara que los precios no incluyen impuestos aplicables). Debajo existe Plus, a $8 USD al mes, pero Plus no incluye Cloud Agents, Bugbot ni modelos de terceros — solo un acceso limitado al agente de Cursor y a los modelos de Grok — así que no reemplaza lo que hacía Pro. Arriba de Premium siguen [Cursor Super, antes Pro+](/articulos/cuanto-cuesta-cursor-pro-plus-hoy/) ($100 USD/mes) y Ultra ($200 USD/mes). La página sigue sin publicar un precio anual: todos los planes se facturan solo por mes.
 
 ## Qué incluye el plan pagado
 
-Pro da todo lo del plan gratuito Hobby (acceso a Composer, sin necesidad de tarjeta para probar) más límites de uso mucho más altos para los modelos de IA integrados, además de acceso a las funciones de agente más recientes. El plan Hobby gratuito ya deja programar con IA integrada, pero con solicitudes del agente limitadas — suficiente para probar el flujo de trabajo, no para depender de él todos los días.
+Premium da todo lo de Plus — agente de Cursor, autocompletado, y chat, voz e imagen de Grok — más 4 veces el uso de Plus, acceso a los modelos Grok más recientes, Cloud Agents y automatizaciones, alojamiento y revisión de código con Bugbot, y modelos de terceros (como Claude o GPT) a precio de lista de la API de cada uno. También suma el Bot de Grok y los beneficios de X Premium al conectar tu cuenta personal de X. El plan gratuito ya deja usar el agente de Cursor, pero con solicitudes limitadas tanto en Cursor como en Grok — suficiente para probar el flujo de trabajo, no para depender de él todos los días.
 
 ## El modo privacidad no es exclusivo del plan de pago
 

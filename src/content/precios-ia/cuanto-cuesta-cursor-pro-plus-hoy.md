@@ -1,27 +1,26 @@
 ---
-title: "¿Cuánto cuesta Cursor Pro+ hoy? Precio en pesos mexicanos actualizado"
-description: "Cursor Pro+ cuesta $60 USD al mes, tres veces el Pro de $20. Precio en pesos con el FIX de Banxico y cuándo conviene frente a Ultra de $200."
-herramienta: "Cursor Pro+"
+title: "¿Cuánto cuesta Cursor Pro+ (ahora Super) hoy? Precio en pesos mexicanos actualizado"
+description: "Cursor Pro+ se renombró a Super y ahora cuesta $100 USD al mes. Precio en pesos con el FIX de Banxico y cuándo conviene frente a Ultra de $200."
+herramienta: "Cursor Pro+ (ahora Super)"
 herramientaId: "cursor-pro-plus"
 sitioOficial: "https://cursor.com/pricing"
 pubDate: 2026-10-04
+updatedDate: 2026-10-17
 heroImage: /images/precios-ia/cursor-pro-plus.png
 heroImageAlt: Cursor Pro+ — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Cursor Pro+ es el escalón intermedio de los planes individuales de Cursor: queda entre [Cursor Pro](/articulos/cuanto-cuesta-cursor-hoy/) ($20 USD al mes) y Ultra ($200 USD al mes). Cursor lo escribe "Pro+" en su página de precios y "Pro Plus" en su documentación; es el mismo plan.
+Cursor Pro+ cambió de nombre: ahora se llama Super, y también cambió de precio. El cambio llegó después de que SpaceX cerrara la compra de Cursor el 14 de agosto de 2026 y la integrara a SpaceXAI, el mismo grupo detrás de Grok. Desde entonces, Cursor sustituyó sus planes individuales por "The X Subscription", que junta Grok, Cursor y X Premium en un solo pool de uso semanal.
 
-El precio publicado es $60 USD al mes. El sitio lo convierte a pesos con el FIX de Banxico. Cursor aclara en sus preguntas frecuentes que todos sus precios son antes de impuestos, así que lo que veas en tu estado de cuenta puede ser distinto: dependiendo de dónde estés, se puede sumar el impuesto aplicable, y tu banco añade su propio tipo de cambio. La página de precios tiene un selector mensual/anual, pero hoy solo publica la cifra mensual, y esa es la que usamos.
-
-Elegimos Pro+ porque Cursor lo recomienda a quien usa agentes todos los días.
+Super queda entre [Premium](/articulos/cuanto-cuesta-cursor-hoy/) ($30 USD al mes, el plan que reemplazó a Cursor Pro) y Ultra ($200 USD al mes). Quien ya tenía Pro+ a $60 USD puede conservarlo hasta que decida migrar, pero cualquiera que se suscriba hoy paga el precio de Super: $100 USD al mes, antes de impuestos — la página aclara que los precios no incluyen impuestos aplicables. Elegimos Super porque, igual que antes pasaba con Pro+, Cursor lo recomienda a quien usa agentes todos los días. La página sigue sin publicar un precio anual: todo se factura por mes.
 
 ## Qué incluye el plan pagado
 
-Pro, Pro+ y Ultra comparten las mismas funciones: autocompletado con Tab ilimitado, límites ampliados de uso del agente en todos los modelos, Bugbot, agentes en la nube, MCPs, skills y hooks. Lo que cambia es cuánto uso viene incluido.
+Premium, Super y Ultra comparten las mismas funciones base: agente de Cursor, Cloud Agents y automatizaciones, alojamiento y revisión de código con Bugbot, y modelos de terceros (como Claude o GPT) a precio de lista de la API de cada uno. Lo que cambia es cuánto uso viene incluido: Super da 15 veces el uso de Plus (el plan más barato, de $8 USD al mes), frente a 4 veces en Premium y 50 veces en Ultra. Super también suma acceso prioritario a los modelos en horas de alto tráfico, algo que ni Plus ni Premium traen.
 
-Cursor maneja dos bolsas de uso que se reinician cada ciclo de cobro: una para sus modelos propios (Grok 4.7, Grok 4.6, Grok 4.5 y Composer 2.5) y otra para modelos de terceros, que se cobra al precio de API de cada modelo. Los tres planes incluyen ambas. La documentación no publica un múltiplo exacto entre Pro y Pro+; lo que sí dice es el uso típico: quien usa el agente a diario suele gastar entre $60 y $100 USD al mes, y quien corre varios agentes en paralelo o automatizaciones suele pasar de $200 USD. Si excedes lo incluido, puedes pagar uso adicional a las mismas tarifas.
+El pool de uso ahora es compartido entre Cursor y Grok: el chat, la generación de imágenes, la voz y el Bot de Grok salen de la misma bolsa semanal que el agente de programación, a diferencia de como funcionaba antes, cuando el uso de Cursor no se mezclaba con el de otro producto.
 
 ## Para quién sí alcanza este plan, y para quién se queda corto
 

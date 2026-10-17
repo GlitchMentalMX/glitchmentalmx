@@ -7,15 +7,16 @@ empresa: "Replit, Inc."
 sitioOficial: "https://replit.com/pricing"
 veredicto: "rojo"
 fraseCorta: "Replit no ofrece prueba de Core: solo queda el plan gratuito Starter o pagar directamente."
-fuenteVerificacion: "Documentación oficial de precios y planes de Replit (docs.replit.com/help/pricing-and-plans), consultada el 25/08/2026."
+fuenteVerificacion: "Documentación oficial de precios y planes de Replit (docs.replit.com/help/pricing-and-plans) y página oficial de precios (replit.com/pricing), consultadas el 17/10/2026."
 pubDate: 2026-08-25
+updatedDate: 2026-10-17
 heroImage: /images/prueba-gratis/replit.png
 heroImageAlt: Replit — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Replit?
 
-Replit lo dice de forma explícita en su propia documentación oficial: "Replit no ofrece una prueba gratuita por tiempo limitado para los planes de pago". Lo que sí existe es el plan gratuito Starter, sin límite de tiempo y sin necesidad de tarjeta, que permite programar y usar el Agent de forma reducida —suficiente para proyectos pequeños, no para el flujo de trabajo completo que da Core. Para acceder a Core ($25 USD al mes, o $20 USD con pago anual), con sus créditos de Agent, colaboradores adicionales y publicación sin marca de agua, tienes que dar tu método de pago y empezar a pagar desde el primer momento: no hay una ventana previa de prueba.
+Replit lo dice de forma explícita en su propia documentación oficial: "Replit doesn't offer a time-limited free trial for paid plans" ("Replit no ofrece una prueba gratuita por tiempo limitado para los planes de pago"). Lo que sí existe es el plan gratuito Starter, sin límite de tiempo y sin necesidad de tarjeta, que permite programar y usar el Agent de forma reducida —suficiente para proyectos pequeños, no para el flujo de trabajo completo que da Core. Para acceder a Core ($20 USD al mes, o $18 USD con pago anual), con sus créditos de Agent, colaboradores adicionales y publicación sin marca de agua, tienes que dar tu método de pago y empezar a pagar desde el primer momento: no hay una ventana previa de prueba.
 
 Vale aclarar que Core no es solo una mensualidad fija: incluye un presupuesto de créditos para el Agent que se puede agotar y generar cargos adicionales, así que ni siquiera pagando tienes un tope de gasto completamente cerrado.
 
@@ -27,4 +28,4 @@ Vale aclarar que Core no es solo una mensualidad fija: incluye un presupuesto de
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 25/08/2026]
+[Última actualización: 17/10/2026]

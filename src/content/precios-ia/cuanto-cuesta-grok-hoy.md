@@ -5,21 +5,22 @@ herramienta: "Grok"
 herramientaId: "grok"
 sitioOficial: "https://grok.com/plans"
 pubDate: 2026-08-19
+updatedDate: 2026-10-17
 heroImage: /images/precios-ia/grok.png
 heroImageAlt: Grok — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Grok no tiene un solo precio: xAI vende varios niveles bajo el nombre "SuperGrok", y $30 USD al mes es el plan individual estándar, el que cubre esta calculadora. Pero también existe SuperGrok Lite a $10 USD para uso más ligero, y niveles superiores como SuperGrok Plus a $100 USD y SuperGrok Heavy a $300 USD para uso intensivo — antes de suscribirte vale la pena confirmar en grok.com/plans cuál necesitas, porque es fácil terminar pagando de más si asumes que solo hay un plan. Otro punto que genera confusión: Grok como modelo también aparece integrado en X (antes Twitter) dentro de los planes X Premium+, que son una suscripción distinta con su propio precio y beneficios — no es lo mismo pagar Grok directo en grok.com que pagar X Premium+ por el acceso a Grok dentro de la red social. Este artículo cubre el plan directo de grok.com, que es el que XAI vende como producto de IA independiente.
+xAI reestructuró por completo cómo se vende Grok. Desde octubre de 2026, grok.com/plans ya no vende "SuperGrok" como marca paraguas de niveles independientes — los planes ahora viven bajo "La suscripción de X" (The X Subscription), que une en un solo pago a Grok, el editor de código Cursor y X (antes Twitter). El plan que cubre esta calculadora, el de uso estándar para una persona, se renombró de SuperGrok a **Premium** y sigue costando lo mismo: $30 USD al mes. Lo nuevo es que ahora sí hay pago anual: $300 USD al año, equivalente a $25 USD al mes, algo que esta página no ofrecía antes. Por debajo está Plus, a $8 USD al mes (reemplaza a SuperGrok Lite, que costaba $10); por arriba, Super a $100 USD al mes (reemplaza a SuperGrok Plus, mismo precio) y Ultra a $200 USD al mes (reemplaza a SuperGrok Heavy, que antes costaba $300 — bajó de precio con el cambio). Si ya estabas suscrito a SuperGrok antes de este cambio, xAI indica que tu plan, precio y nombre anteriores se mantienen mientras no cambies ni canceles; lo de arriba es lo que ve hoy cualquiera que se suscribe por primera vez.
 
 ## Qué incluye el plan pagado
 
-SuperGrok da acceso al modelo Grok más reciente con límites de uso mucho más altos que el plan gratuito, conversaciones hasta cinco veces más largas, generación de imagen y video en alta definición con clips de hasta 30 segundos, conversaciones de voz más extensas y herramientas de programación más capaces. El plan gratuito permite probar el modelo con topes bajos de mensajes al día — suficiente para uso ocasional, pero limitante si lo usas como asistente principal.
+Premium (antes SuperGrok) da 4 veces más uso que el plan Plus de entrada, acceso a los modelos Grok más recientes, respuestas más rápidas, generación de imagen y video, Grok Bot, agentes y automatizaciones en la nube, y alojamiento y revisión de código con IA — esto último es nuevo frente a la oferta anterior, resultado de integrar Cursor a la suscripción. Un cambio a vigilar: el video en 1080p, que antes venía incluido en el plan estándar de $30, en la tabla vigente aparece reservado al nivel Super ($100); Premium ofrece generación de imagen y video, pero sin especificar esa resolución. La diferencia más grande frente a antes es que los beneficios de X (verificación, menos anuncios, mayor prioridad de respuesta) ya vienen incluidos desde Premium, no son un gasto aparte. El plan gratuito sigue permitiendo probar el modelo con topes bajos de mensajes al día — suficiente para uso ocasional, pero limitante si lo usas como asistente principal.
 
-## El nivel Heavy trae X Premium+ incluido, y eso confunde el cálculo
+## Los beneficios de X ya no son solo del nivel más caro
 
-Solo el plan más caro, SuperGrok Heavy, incluye la suscripción a X Premium+ sin costo adicional — en los demás niveles, incluido el que cubre este artículo, Grok y X Premium+ son gastos separados. Si tu plan es usar Grok dentro de X y no directamente en grok.com, el precio que te interesa comparar no es este, sino el de la suscripción de X.
+Antes, solo SuperGrok Heavy incluía la suscripción a X Premium+ sin costo adicional, y en los demás niveles Grok y X Premium se pagaban por separado. Con "La suscripción de X" eso cambió: los beneficios de X (menos anuncios, marca de verificación, mayor prioridad de respuesta) ya vienen incluidos desde Plus, el plan más barato, y se amplían en cada escalón superior. Si tu plan es usar Grok dentro de X y no directamente en grok.com, estos beneficios se reclaman conectando tu cuenta de X al plan que elijas.
 
 ## ¿X entrena a Grok con tus publicaciones?
 
@@ -27,6 +28,6 @@ Sí, por default fuera de la Unión Europea — puedes desactivarlo, pero no de 
 
 ¿Grok tiene un código de descuento real? [Verifícalo aquí →](/articulos/grok-codigo-de-descuento/)
 
-¿Buscas el plan de gama alta de xAI? Revisa [SuperGrok Heavy](/articulos/cuanto-cuesta-supergrok-heavy-hoy/).
+¿Buscas el plan de gama alta de xAI? Revisa [Ultra, antes SuperGrok Heavy](/articulos/cuanto-cuesta-supergrok-heavy-hoy/).
 
 <a href="https://grok.com/plans" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Grok →</a>
