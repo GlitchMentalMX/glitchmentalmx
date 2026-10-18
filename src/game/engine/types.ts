@@ -39,6 +39,8 @@ export interface Gait {
   noise?: number;
   /** Cuantiza el movimiento en N pasos (aspecto de 8 bits). */
   stepped?: number;
+  /** Oscilación de las piernas, en radianes (por defecto 0.28). */
+  legRot?: number;
   /** Fallos visuales aleatorios (Glitchman). */
   jitter?: boolean;
   breath: number;

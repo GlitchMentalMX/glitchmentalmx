@@ -133,7 +133,7 @@ export class Actor extends Phaser.GameObjects.Container {
       if (!leg) continue;
       const lo = b(leg);
       leg.y = lo.y - (moving ? Math.max(0, s * sign) * g.step * k : 0);
-      leg.rotation = moving ? s * sign * 0.28 * (g.stepped ? 0 : 1) : 0;
+      leg.rotation = moving ? s * sign * (g.legRot ?? 0.28) * (g.stepped ? 0 : 1) : 0;
     }
     if (P.head) {
       const ho = b(P.head);

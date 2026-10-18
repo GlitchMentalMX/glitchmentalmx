@@ -1,5 +1,5 @@
 import { blobPath, fillStroke, ink, pixelGrid, rng, roughPoly, roundRectPath, type Draw } from '../core/gfx';
-import { GLITCHMAN_HEAD, loadedImages } from '../core/images';
+import { GLITCHMAN_PIECES, loadedImages } from '../core/images';
 import type { PartSpec } from '../engine/types';
 
 // Arte PROVISIONAL de los cinco personajes, dibujado por código. Cada uno usa
@@ -212,7 +212,7 @@ const glGhost = (ctx: CanvasRenderingContext2D, path: () => void): void => {
     ctx.save(); ctx.translate(dx, dy); path(); ink(ctx, c, 2.6); ctx.stroke(); ctx.restore();
   }
 };
-const glHeadDrawn = (react: boolean): Draw => (ctx) => {
+const glHead = (react: boolean): Draw => (ctx) => {
   const r = rng(react ? 82 : 81);
   // orejas
   for (const cx of [11, 69]) {
@@ -262,24 +262,6 @@ const glHeadDrawn = (react: boolean): Draw => (ctx) => {
   // fallos: franjas fuera de lugar
   ctx.fillStyle = '#00e5ff'; ctx.fillRect(46, 20, 15, 4);
   ctx.fillStyle = '#ff2fd0'; ctx.fillRect(14, 62, 10, 3);
-};
-// Cabeza: la ilustración de referencia de Jorge (public/juego/glitchman-head.webp,
-// recorte hecho con scripts/make-glitchman-head.mjs). Si no cargó, se usa el
-// dibujo por código de arriba. En la reacción se le suman fallos de color.
-const glHead = (react: boolean): Draw => (ctx, w, h) => {
-  const im = loadedImages.get(GLITCHMAN_HEAD);
-  if (!im) return glHeadDrawn(react)(ctx, w, h);
-  ctx.drawImage(im, 0, 0, w, h);
-  if (react) {
-    ctx.fillStyle = '#00e5ff'; ctx.fillRect(w * 0.55, h * 0.12, w * 0.3, 3);
-    ctx.fillStyle = '#ff2fd0'; ctx.fillRect(w * 0.1, h * 0.7, w * 0.22, 3);
-    ctx.globalAlpha = 0.45; ctx.globalCompositeOperation = 'lighter';
-    ctx.drawImage(im, 2.5, -1, w, h);
-    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
-  } else {
-    ctx.fillStyle = '#00e5ff'; ctx.fillRect(w * 0.62, h * 0.08, w * 0.2, 2.5);
-    ctx.fillStyle = '#ff2fd0'; ctx.fillRect(w * 0.12, h * 0.8, w * 0.14, 2.5);
-  }
 };
 const glBody: Draw = (ctx) => {
   const r = rng(91);
@@ -351,6 +333,20 @@ const heroScarf: Draw = (ctx) => pixelGrid(ctx, ['kkkkkkk.', 'kcccccck', '.kkkkk
 
 // ---------------------------------------------------------------------
 
+// Glitchman con la ilustración de referencia de Jorge, cortada en piezas que el
+// Actor anima por separado. Escala: 0.18 unidades por píxel de la hoja original.
+const GS = 0.18;
+const sliceDraw = (key: keyof typeof GLITCHMAN_PIECES): Draw => (ctx, w, h) => {
+  const im = loadedImages.get(GLITCHMAN_PIECES[key]);
+  if (im) ctx.drawImage(im, 0, 0, w, h);
+};
+const glitchmanSprite: PartSpec[] = [
+  part('legL', 'glx_legs', 244 * GS, 352 * GS, 0, -(712 - 360) * GS, 0.5, 0, sliceDraw('legs')),
+  part('body', 'glx_torso', 244 * GS, 242 * GS, 0, -(712 - 392) * GS, 0.5, 1, sliceDraw('torso')),
+  part('head', 'glx_head', 160 * GS, 152 * GS, 0, -(712 - 152) * GS, 0.5, 1, sliceDraw('head')),
+  part('headReact', 'glx_head_r', 220 * 0.73 * GS, 250 * 0.73 * GS, 0, -(712 - 152) * GS + 4, 0.5, 1, sliceDraw('headReact')),
+];
+
 export const PARTS = {
   don: [
     part('legL', 'don_leg', 20, 22, -11, -20, 0.5, 0, donLeg),
@@ -376,13 +372,14 @@ export const PARTS = {
     part('head', 'chica_head', 64, 54, 0, -60, 0.5, 1, chicaHead(false)),
     part('headReact', 'chica_head_r', 64, 54, 0, -60, 0.5, 1, chicaHead(true)),
   ],
-  glitchman: [
+  glitchmanDrawn: [
     part('legL', 'gl_leg', 18, 28, -10, -26, 0.5, 0, glLeg),
     part('legR', 'gl_leg', 18, 28, 10, -26, 0.5, 0, glLeg),
     part('body', 'gl_body', 56, 46, 0, -22, 0.5, 1, glBody),
     part('head', 'gl_head', 72, 75, 0, -55, 0.5, 1, glHead(false)),
     part('headReact', 'gl_head_r', 72, 75, 0, -55, 0.5, 1, glHead(true)),
   ],
+  glitchman: glitchmanSprite,
   heroe: [
     part('legL', 'hero_leg', 4 * PX, 4 * PX, -11, -20, 0.5, 0, heroLeg, true),
     part('legR', 'hero_leg', 4 * PX, 4 * PX, 11, -20, 0.5, 0, heroLeg, true),

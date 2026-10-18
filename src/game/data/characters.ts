@@ -98,10 +98,10 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
     intro: 'No soy un error. Soy una función que olvidaron documentar.',
     signatureLine: 'ERROR 404: YO. Sigo aquí.',
     accent: '#00e5ff',
-    topY: 138,
-    style: 'Caricatura de tinta con fallos visuales',
+    topY: 130,
+    style: 'Caricatura editorial de tinta, con fallos visuales',
     signature: 'glitch',
-    gait: { walkHz: 2.2, runHz: 3.4, bob: 3, sway: 0.12, squash: 0.05, step: 4, jitter: true, breath: 0.02 },
+    gait: { walkHz: 1.9, runHz: 3.0, bob: 2.6, sway: 0.06, squash: 0.03, step: 3, legRot: 0.09, jitter: true, breath: 0.015 },
     parts: PARTS.glitchman,
     lines: {
       bot: 'Ese bot soy yo en otra versión: mejor sonrisa, peor alma.',
