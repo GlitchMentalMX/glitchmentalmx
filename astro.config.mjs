@@ -278,6 +278,9 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/stats/') &&
         !page.includes('/buscar/') &&
+        // /juego/ (prototipo del videojuego) es noindex hasta que se autorice
+        // su indexación; mientras tanto tampoco va al sitemap.
+        !page.includes('/juego/') &&
         !page.includes('/umbral20/') &&
         !page.includes('/ceroorganico/') &&
         !page.includes('/entrenadoencorpus/') &&
