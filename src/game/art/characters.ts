@@ -360,6 +360,64 @@ const donSprite: PartSpec[] = [
 // Pose característica (bastón en alto): 5% más grande en la hoja; ancla en el centro de los pies (531, 1479).
 const donPose: PartSpec = part('extra', 'dnx_pose', 384 * DS * 0.952, 743 * DS * 0.952, 0, 0, (531 - 300) / 384, (1479 - 740) / 743, sliceDraw(IMAGE_SETS.don.pose));
 
+// ---- Personajes ilustrados: piezas cortadas de las hojas de referencia ----
+// Cada pieza se ubica por (a) su recorte en la hoja, (b) su pivote normalizado
+// dentro del recorte y (c) el punto del rig donde cae ese pivote. `rigAt(ax, ay, s)`
+// convierte coordenadas de la hoja a coordenadas del rig, con el origen entre
+// los pies (ax, ay) y `s` unidades por píxel de la hoja.
+interface Slice {
+  role: PartSpec['role'];
+  key: string;
+  url: string;
+  crop: [number, number, number, number];
+  s: number;
+  k?: number;
+  pivot: [number, number];
+  at: [number, number];
+}
+const slice = (o: Slice): PartSpec =>
+  part(o.role, o.key, o.crop[2] * o.s * (o.k ?? 1), o.crop[3] * o.s * (o.k ?? 1), o.at[0], o.at[1], o.pivot[0], o.pivot[1], sliceDraw(o.url));
+const rigAt = (ax: number, ay: number, s: number) => (sx: number, sy: number): [number, number] => [(sx - ax) * s, (sy - ay) * s];
+
+// CapiCaos — hoja 1536x1024, cuerpo en x 155-850, patas en y≈490. Cuerpo, patas
+// traseras y delanteras se mueven aparte; la cabeza gira sobre la punta de la nariz.
+const CS = 0.19;
+const CR = rigAt(502, 490, CS);
+const CI = IMAGE_SETS.capibara;
+const capibaraSprite: PartSpec[] = [
+  slice({ role: 'legL', key: 'cpx_legs_back', url: CI.legsBack, crop: [150, 392, 275, 102], s: CS, pivot: [0.5, 0], at: CR(287.5, 392) }),
+  slice({ role: 'legR', key: 'cpx_legs_front', url: CI.legsFront, crop: [425, 392, 280, 102], s: CS, pivot: [0.5, 0], at: CR(565, 392) }),
+  slice({ role: 'body', key: 'cpx_body', url: CI.body, crop: [150, 95, 610, 318], s: CS, pivot: [0.5, 1], at: CR(455, 413) }),
+  slice({ role: 'head', key: 'cpx_head', url: CI.head, crop: [495, 10, 325, 295], s: CS, pivot: [0.9385, 0.39], at: CR(800, 125) }),
+  slice({ role: 'headReact', key: 'cpx_head_r', url: CI.headReact, crop: [1060, 20, 440, 450], s: CS, k: 0.56, pivot: [0.968, 0.511], at: CR(800, 125) }),
+];
+const capibaraPose = slice({ role: 'extra', key: 'cpx_pose', url: CI.pose, crop: [215, 522, 740, 470], s: CS, pivot: [0.446, 0.985], at: [0, 0] });
+
+// Poppy Power — hoja 1536x1024 en tres paneles; cuerpo en x 45-470, y 25-985.
+const PS = 0.125;
+const PR = rigAt(270, 985, PS);
+const PI = IMAGE_SETS['modo-dios'];
+const poppySprite: PartSpec[] = [
+  slice({ role: 'legL', key: 'ppx_legs', url: PI.legs, crop: [45, 430, 425, 555], s: PS, pivot: [0.5, 0], at: PR(257.5, 430) }),
+  slice({ role: 'body', key: 'ppx_torso', url: PI.torso, crop: [45, 250, 420, 400], s: PS, pivot: [0.5, 1], at: PR(255, 650) }),
+  slice({ role: 'head', key: 'ppx_head', url: PI.head, crop: [45, 25, 350, 265], s: PS, pivot: [(278 - 45) / 350, (172 - 25) / 265], at: PR(278, 172) }),
+  slice({ role: 'headReact', key: 'ppx_head_r', url: PI.headReact, crop: [515, 140, 505, 480], s: PS, k: 0.43, pivot: [(822 - 515) / 505, (465 - 140) / 480], at: PR(278, 172) }),
+];
+const poppyPose = slice({ role: 'extra', key: 'ppx_pose', url: PI.pose, crop: [1030, 20, 506, 970], s: PS, pivot: [0.449, 0.995], at: [0, 0] });
+
+// Cartucho — hoja 1536x1024 en tres paneles; cuerpo en x 60-490, y 262-870.
+const HS = 0.17;
+const HR = rigAt(245, 870, HS);
+const HI = IMAGE_SETS.heroe;
+const heroeSprite: PartSpec[] = [
+  slice({ role: 'legL', key: 'hrx_leg_l', url: HI.legLeft, crop: [60, 650, 190, 225], s: HS, pivot: [0.5, 0], at: HR(155, 650) }),
+  slice({ role: 'legR', key: 'hrx_leg_r', url: HI.legRight, crop: [250, 650, 180, 225], s: HS, pivot: [0.5, 0], at: HR(340, 650) }),
+  slice({ role: 'body', key: 'hrx_torso', url: HI.torso, crop: [60, 515, 440, 210], s: HS, pivot: [0.5, 1], at: HR(280, 725) }),
+  slice({ role: 'head', key: 'hrx_head', url: HI.head, crop: [80, 262, 340, 270], s: HS, pivot: [0.559, 0.456], at: HR(270, 385) }),
+  slice({ role: 'headReact', key: 'hrx_head_r', url: HI.headReact, crop: [545, 305, 450, 360], s: HS, k: 0.75, pivot: [0.6, 0.403], at: HR(270, 385) }),
+];
+const heroePose = slice({ role: 'extra', key: 'hrx_pose', url: HI.pose, crop: [1030, 85, 506, 835], s: HS, pivot: [0.445, 0.994], at: [0, 0] });
+
 export const PARTS = {
   donDrawn: [
     part('legL', 'don_leg', 20, 22, -11, -20, 0.5, 0, donLeg),
@@ -369,7 +427,7 @@ export const PARTS = {
     part('head', 'don_head', 72, 64, 0, -54, 0.5, 1, donHead(false)),
     part('headReact', 'don_head_r', 72, 64, 0, -54, 0.5, 1, donHead(true)),
   ],
-  capibara: [
+  capibaraDrawn: [
     part('legL', 'capi_leg', 20, 16, -26, -14, 0.5, 0, capiLeg),
     part('legR', 'capi_leg', 20, 16, 14, -14, 0.5, 0, capiLeg),
     part('body', 'capi_body', 108, 58, -8, -12, 0.5, 1, capiBody),
@@ -377,7 +435,7 @@ export const PARTS = {
     part('headReact', 'capi_head_r', 64, 52, 38, -40, 0.5, 1, capiHead(true)),
     part('hat', 'capi_yuzu', 20, 20, 32, -88, 0.5, 1, yuzu),
   ],
-  'modo-dios': [
+  'modo-diosDrawn': [
     part('legL', 'chica_leg', 20, 26, -10, -26, 0.5, 0, chicaLeg),
     part('legR', 'chica_leg', 20, 26, 10, -26, 0.5, 0, chicaLeg),
     part('body', 'chica_body', 58, 44, 0, -22, 0.5, 1, chicaBody),
@@ -394,7 +452,10 @@ export const PARTS = {
   ],
   glitchman: glitchmanSprite,
   don: donSprite,
-  heroe: [
+  capibara: capibaraSprite,
+  'modo-dios': poppySprite,
+  heroe: heroeSprite,
+  heroeDrawn: [
     part('legL', 'hero_leg', 4 * PX, 4 * PX, -11, -20, 0.5, 0, heroLeg, true),
     part('legR', 'hero_leg', 4 * PX, 4 * PX, 11, -20, 0.5, 0, heroLeg, true),
     part('body', 'hero_body', 10 * PX, 7 * PX, 0, -18, 0.5, 1, heroBody, true),
@@ -404,4 +465,4 @@ export const PARTS = {
   ],
 } satisfies Record<string, PartSpec[]>;
 
-export const POSES = { don: donPose } as const;
+export const POSES = { don: donPose, capibara: capibaraPose, 'modo-dios': poppyPose, heroe: heroePose } as const;

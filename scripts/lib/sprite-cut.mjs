@@ -46,14 +46,19 @@ export async function openSheet(src, { bg, tol = 14, pocket = 600 }) {
     if (comp.length > pocket) for (const q of comp) isBg[q] = 1;
   }
 
-  async function cut(folder, name, x, y, cw, ch, include = () => true) {
+  // `include(x, y)` devuelve true/false o un número 0-1 (opacidad): sirve para
+  // difuminar el borde de corte de una pieza y que no se note la costura.
+  async function cut(folder, name, x, y, cw, ch, include = () => true, keepRatio = 1) {
     const out = Buffer.alloc(cw * ch * 4);
     const fg = new Uint8Array(cw * ch);
+    const alpha = new Float32Array(cw * ch);
     for (let j = 0; j < ch; j++) {
       for (let i = 0; i < cw; i++) {
         const p = (y + j) * w + x + i;
         const o = j * cw + i;
-        fg[o] = !isBg[p] && include(x + i, y + j) ? 1 : 0;
+        const v = include(x + i, y + j);
+        alpha[o] = v === true ? 1 : v === false ? 0 : v;
+        fg[o] = !isBg[p] && alpha[o] > 0 ? 1 : 0;
         out[o * 4] = data[p * 3]; out[o * 4 + 1] = data[p * 3 + 1]; out[o * 4 + 2] = data[p * 3 + 2];
       }
     }
@@ -79,8 +84,9 @@ export async function openSheet(src, { bg, tol = 14, pocket = 600 }) {
       }
       sizes.push(n);
     }
-    const best = sizes.indexOf(Math.max(...sizes));
-    for (let o = 0; o < cw * ch; o++) out[o * 4 + 3] = lab[o] === best ? 255 : 0;
+    // keepRatio < 1 conserva también las manchas pequeñas sueltas (p. ej. la moneda flotante).
+    const biggest = Math.max(...sizes);
+    for (let o = 0; o < cw * ch; o++) out[o * 4 + 3] = lab[o] >= 0 && sizes[lab[o]] >= biggest * (keepRatio < 1 ? keepRatio : 1) ? Math.round(255 * Math.min(1, alpha[o])) : 0;
     mkdirSync(`public/juego/${folder}`, { recursive: true });
     await sharp(out, { raw: { width: cw, height: ch, channels: 4 } }).webp({ quality: 92, alphaQuality: 95 }).toFile(`public/juego/${folder}/${name}.webp`);
     console.log(`${folder}/${name}`, cw, ch);

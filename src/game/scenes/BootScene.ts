@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import { PARTS } from '../art/characters';
+import type { PartSpec } from '../engine/types';
 import { CHARACTERS, CHARACTER_LIST } from '../data/characters';
 import { buildCharacterTextures, buildCommonTextures } from '../engine/Actor';
 import { fitCamera, txt } from '../core/gfx';
@@ -34,7 +35,7 @@ export class BootScene extends Phaser.Scene {
       }
       if (!all) {
         const def = CHARACTERS[id as CharId];
-        def.parts = PARTS[`${id}Drawn` as 'donDrawn' | 'glitchmanDrawn'];
+        def.parts = (PARTS as unknown as Record<string, PartSpec[]>)[`${id}Drawn`];
         def.pose = undefined;
       }
     }
