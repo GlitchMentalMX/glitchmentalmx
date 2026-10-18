@@ -15,6 +15,8 @@ export interface Progress {
   y: number;
   flags: Record<string, FlagValue>;
   inventory: string[];
+  /** Segundos de juego acumulados (para el marcador del final). */
+  t?: number;
 }
 
 /** Lo que sobrevive a una partida nueva: finales vistos y preferencias de sonido. */

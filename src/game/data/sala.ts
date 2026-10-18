@@ -142,6 +142,7 @@ async function botBlocks(c: ScriptContext): Promise<void> {
   bot.teleport(487 - 4, 282);
   bot.setFace('hmm');
   await c.say('bot', "¡Alto ahí! Antes de cancelar, ¿podría responder una encuestita de 47 preguntas? Pregunta 1: ¿Cómo calificaría esta encuesta?");
+  await c.sayChar('botBlock');
   for (;;) {
     const opts = ['Responder la encuesta'];
     if (c.has('hoja')) opts.push('Darle la hoja con los Términos y Condiciones');
@@ -161,6 +162,7 @@ async function botBlocks(c: ScriptContext): Promise<void> {
       c.sfx('glitch');
       c.react('happy');
       await c.say('bot', 'Cláusula 1... qué prosa. Cláusula 2... ¡oh! Cláusula 3...');
+      await c.sayChar('botFrozen');
       c.ui.toast('El asistente se quedó leyendo');
       return;
     } else if (pick === 'Intentar rodearlo') {
@@ -383,6 +385,7 @@ async function subscribeDoor(c: ScriptContext): Promise<void> {
     });
     c.set('suscrito');
     await c.say('Puerta Suscríbete', 'Cruzas la puerta y apareces otra vez en la sala de espera. Tu suscripción se renovó automáticamente.');
+    await c.sayChar('subEnter');
   }
   void tween(w, { targets: L, x: lx, duration: 400 });
   await tween(w, { targets: R, x: rx, duration: 400 });
@@ -549,13 +552,15 @@ async function intro(c: ScriptContext): Promise<void> {
   await c.say('player', c.char.intro);
   c.react('signature');
   await c.wait(1500);
-  await c.say('Sala de espera', 'Atención al Cliente. Una suscripción que nunca pediste te trajo hasta aquí. Quieres cancelarla. Eso es todo.');
+  await c.say('Sala de espera', 'Atención al Cliente. Una suscripción que nunca pediste te trajo hasta aquí.');
+  await c.say('Sala de espera', 'Tu objetivo: cancelarla y salir. Contratarla costó un clic. Veamos cuánto cuesta irte.');
   c.ui.showHint('Toca para moverte · Dos toques para correr');
 }
 
 export const salaDeEspera: SceneDef = {
   id: 'sala-de-espera',
   title: 'Sala de espera de Atención al Cliente',
+  objective: 'Objetivo: cancelar suscripción',
   spawn: { x: 270, y: 830 },
   build,
   intro,

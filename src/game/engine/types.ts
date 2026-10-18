@@ -51,7 +51,8 @@ export type Signature = 'cane' | 'chew' | 'pose' | 'glitch' | 'hop';
 /** Frases que cada personaje dice ante los mismos sucesos del guion. */
 export type LineKey =
   | 'bot' | 'cookies' | 'cookiesNo' | 'clause' | 'shadow' | 'plant'
-  | 'postit' | 'subscribe' | 'display' | 'door' | 'eat' | 'chairs';
+  | 'postit' | 'subscribe' | 'display' | 'door' | 'eat' | 'chairs'
+  | 'botBlock' | 'botFrozen' | 'subEnter' | 'endRetenido' | 'endBaja';
 
 export interface CharacterDef {
   id: CharId;
@@ -70,6 +71,8 @@ export interface CharacterDef {
   parts: PartSpec[];
   /** Pose de cuerpo completo que reemplaza al rig durante la reacción característica. */
   pose?: PartSpec;
+  /** Globos cortos de reacción, con la voz del personaje. */
+  bubbles: Record<'surprise' | 'happy' | 'think', string>;
   lines: Record<LineKey, string>;
   /** Estilo visual, para el informe y la tarjeta de selección. */
   style: string;

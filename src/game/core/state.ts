@@ -14,6 +14,8 @@ class GameState extends Phaser.Events.EventEmitter {
   y = 0;
   flags: Record<string, FlagValue> = {};
   inventory: string[] = [];
+  /** Segundos jugados en esta partida. */
+  playSeconds = 0;
   meta: Meta = loadMeta();
   /** Tras un final la partida queda cerrada: nada debe volver a escribirla. */
   private closed = false;
@@ -33,6 +35,7 @@ class GameState extends Phaser.Events.EventEmitter {
     this.y = p.y;
     this.flags = p.flags ?? {};
     this.inventory = p.inventory ?? [];
+    this.playSeconds = p.t ?? 0;
     return true;
   }
 
@@ -44,6 +47,7 @@ class GameState extends Phaser.Events.EventEmitter {
     this.y = 0;
     this.flags = {};
     this.inventory = [];
+    this.playSeconds = 0;
     this.meta.lastCharacter = characterId;
     saveMeta(this.meta);
     this.persist();
@@ -63,6 +67,7 @@ class GameState extends Phaser.Events.EventEmitter {
       y: Math.round(this.y),
       flags: this.flags,
       inventory: this.inventory,
+      t: Math.round(this.playSeconds),
     });
   }
 

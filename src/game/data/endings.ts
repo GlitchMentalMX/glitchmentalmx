@@ -1,9 +1,12 @@
 import type { EndingId } from '../core/config';
 import { state } from '../core/state';
+import { CHARACTERS } from './characters';
 
 export interface EndingDef {
   id: EndingId;
   title: string;
+  /** Veredicto corto bajo el título: ganar aquí es perder, y perder es que ellos ganan. */
+  verdict: string;
   /** Color de fondo y de acento. */
   bg: string;
   accent: string;
@@ -14,10 +17,23 @@ export interface EndingDef {
 
 const cookies = () => state.flag('cookies');
 
+/** "7 min 42 s" / "38 s": el tiempo real que costó intentar irse. */
+export function formatPlayTime(seconds: number): string {
+  const s = Math.max(1, Math.round(seconds));
+  const m = Math.floor(s / 60);
+  return m > 0 ? `${m} min ${String(s % 60).padStart(2, '0')} s` : `${s} s`;
+}
+
+const quote = (key: 'endRetenido' | 'endBaja'): string => {
+  const c = CHARACTERS[state.characterId ?? 'don'];
+  return `“${c.lines[key]}” — ${c.name}`;
+};
+
 export const ENDINGS: Record<EndingId, EndingDef> = {
   retenido: {
     id: 'retenido',
     title: 'CLIENTE RETENIDO™',
+    verdict: 'PERDISTE. ELLOS GANARON.',
     bg: '#2a1650',
     accent: '#ffd23f',
     lines: () => {
@@ -27,6 +43,9 @@ export const ENDINGS: Record<EndingId, EndingDef> = {
       else l.push('Ni siquiera tocaste la máquina de galletas. Igual te conocían.');
       if (state.is('sombraFuera')) l.push('Tu sombra ahora es Gerente Regional de Retención. Te manda saludos.');
       if (state.is('botCongelado')) l.push('El asistente sigue leyendo las cláusulas. Va en la 6. Es feliz.');
+      l.push('Ellos: un cliente que no se va, tus datos y tu tiempo. Tú: un descuento.');
+      l.push(`Contratar: 1 clic. Intentar irte: ${formatPlayTime(state.playSeconds)}. Quedarte: 1 clic más.`);
+      l.push(quote('endRetenido'));
       return l;
     },
     closing: 'FINAL 1 DE 2 · Cliente retenido (cómodamente).',
@@ -34,6 +53,7 @@ export const ENDINGS: Record<EndingId, EndingDef> = {
   baja: {
     id: 'baja',
     title: 'BAJA COMPLETADA*',
+    verdict: 'GANASTE… Y PERDISTE.',
     bg: '#e9f4ff',
     accent: '#0066ff',
     lines: () => {
@@ -43,6 +63,9 @@ export const ENDINGS: Record<EndingId, EndingDef> = {
       else if (cookies() === 'rechazadas') l.push('Tus preferencias de privacidad se respetaron. Probablemente.');
       if (state.is('sombraFuera')) l.push('Saliste sin sombra. El sol no te reconoce, pero tampoco te cobra.');
       if (state.is('botCongelado')) l.push('Mientras te ibas, el asistente iba en la cláusula 31. No levantó la vista.');
+      l.push('Ganaste la baja. Ellos conservan tus datos, tu historial y todo lo que ya tenían de ti.');
+      l.push(`Contratarla: 1 clic. Cancelarla: ${formatPlayTime(state.playSeconds)}.`);
+      l.push(quote('endBaja'));
       return l;
     },
     closing: 'FINAL 2 DE 2 · Baja completada*  (*sujeta a términos y condiciones).',

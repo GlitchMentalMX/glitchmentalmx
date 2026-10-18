@@ -212,15 +212,15 @@ export class Actor extends Phaser.GameObjects.Container {
     if (kind === 'surprise') {
       this.swapHead(1000);
       this.hop(16);
-      this.say('!', 1000);
+      this.say(this.def.bubbles.surprise, 1400);
     } else if (kind === 'happy') {
       this.swapHead(1100);
       this.hop(10, 110);
       this.scene.time.delayedCall(240, () => this.hop(10, 110));
-      this.say('♪', 1000);
+      this.say(this.def.bubbles.happy, 1400);
     } else {
       this.swapHead(900);
-      this.say('…', 1200);
+      this.say(this.def.bubbles.think, 1500);
     }
   }
 

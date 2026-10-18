@@ -13,7 +13,6 @@ import { Actor } from '../engine/Actor';
  */
 export class EndingScene extends Phaser.Scene {
   private actor!: Actor;
-  private shadeActor?: Actor;
   private endingId: EndingId = 'retenido';
 
   constructor() {
@@ -41,21 +40,19 @@ export class EndingScene extends Phaser.Scene {
     const char = CHARACTERS[state.characterId ?? 'don'];
     txt(this, W / 2, 96, def.title, 34, def.accent, { fontStyle: 'bold', align: 'center', wordWrap: { width: W - 60 } }).setOrigin(0.5).setStroke(dark ? '#000000' : '#ffffff', 5);
 
-    this.actor = new Actor(this, W / 2, 350, char, { scale: 1.7, shadow: !state.is('sombraFuera') });
+    txt(this, W / 2, 158, def.verdict, 20, fg, { fontStyle: 'bold', align: 'center', wordWrap: { width: W - 60 } }).setOrigin(0.5);
+    this.actor = new Actor(this, W / 2, 352, char, { scale: 1.3, shadow: !state.is('sombraFuera') });
     if (this.endingId === 'baja') {
       this.actor.mode = 'run';
       this.tweens.add({ targets: this.actor, x: W / 2 + 14, duration: 900, yoyo: true, repeat: -1 });
     } else {
       this.time.delayedCall(500, () => this.actor.react('happy'));
-      this.add.text(W / 2, 412, 'PREMIUM™', { fontFamily: 'system-ui', fontSize: '22px', color: '#2a1650', backgroundColor: '#ffd23f', padding: { x: 14, y: 6 }, resolution: 2 }).setOrigin(0.5).setAngle(-6);
-    }
-    if (this.endingId === 'baja' && state.is('sombraFuera')) {
-      this.shadeActor = new Actor(this, W - 70, 760, char, { scale: 0.8, shade: true });
+      this.add.text(W / 2, 372, 'PREMIUM™', { fontFamily: 'system-ui', fontSize: '22px', color: '#2a1650', backgroundColor: '#ffd23f', padding: { x: 14, y: 6 }, resolution: 2 }).setOrigin(0.5).setAngle(-6);
     }
 
     // Las consecuencias aparecen una a una.
     const lines = [...def.lines(), def.closing];
-    const body = txt(this, W / 2, 462, '', 16, fg, { align: 'center', wordWrap: { width: W - 70 }, lineSpacing: 5 }).setOrigin(0.5, 0);
+    const body = txt(this, W / 2, 404, '', 17, fg, { align: 'center', wordWrap: { width: W - 70 }, lineSpacing: 7 }).setOrigin(0.5, 0);
     let shown = 0;
     const showNext = () => {
       if (shown >= lines.length) {
@@ -63,7 +60,12 @@ export class EndingScene extends Phaser.Scene {
         return;
       }
       shown += 1;
-      body.setText(lines.slice(0, shown).join('\n\n'));
+      body.setText(lines.slice(0, shown).join('\n'));
+      // Si hay muchas consecuencias, el texto se achica para no pisar los botones.
+      body.setFontSize(17);
+      while (body.height > H - 136 - 34 - 404 - 6 && parseInt(String(body.style.fontSize), 10) > 13) {
+        body.setFontSize(parseInt(String(body.style.fontSize), 10) - 1);
+      }
       audio.play('tap');
       this.time.delayedCall(shown >= lines.length ? 500 : 1700, showNext);
     };
@@ -94,6 +96,5 @@ export class EndingScene extends Phaser.Scene {
   update(_t: number, delta: number): void {
     const dt = Math.min(delta / 1000, 0.05);
     this.actor.tick(dt);
-    this.shadeActor?.tick(dt);
   }
 }

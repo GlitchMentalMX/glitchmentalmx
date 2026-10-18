@@ -13,7 +13,7 @@ export interface Speaker {
 
 const PANEL_X = 20;
 const PANEL_W = W - 40;
-const BTN_H = 52;
+const BTN_H = 56;
 const BTN_GAP = 9;
 
 /**
@@ -42,6 +42,8 @@ export class UIScene extends Phaser.Scene {
   private hud!: Phaser.GameObjects.Container;
   private hudLeft!: Phaser.GameObjects.Container;
   private hudRight!: Phaser.GameObjects.Container;
+  private hudCenter!: Phaser.GameObjects.Container;
+  private objective?: Phaser.GameObjects.Text;
   private invLayer!: Phaser.GameObjects.Container;
   private toastC!: Phaser.GameObjects.Container;
   private hint?: Phaser.GameObjects.Text;
@@ -66,7 +68,8 @@ export class UIScene extends Phaser.Scene {
     this.hud = this.add.container(0, 0).setDepth(10);
     this.hudLeft = this.add.container(0, 0);
     this.hudRight = this.add.container(0, 0);
-    this.hud.add([this.hudLeft, this.hudRight]);
+    this.hudCenter = this.add.container(0, 0);
+    this.hud.add([this.hudLeft, this.hudRight, this.hudCenter]);
     this.invLayer = this.add.container(0, 0);
     this.hudLeft.add(this.invLayer);
     this.buildMenuButton();
@@ -74,8 +77,8 @@ export class UIScene extends Phaser.Scene {
     this.panel = this.add.container(0, 0).setDepth(50).setVisible(false);
     this.panelG = this.add.graphics();
     this.nameTag = this.add.graphics();
-    this.nameText = txt(this, 0, 0, '', 15, '#111111', { fontStyle: 'bold' });
-    this.body = txt(this, PANEL_X + 18, 0, '', 19, '#f6f3ec', { wordWrap: { width: PANEL_W - 54 }, lineSpacing: 4 });
+    this.nameText = txt(this, 0, 0, '', 16, '#111111', { fontStyle: 'bold' });
+    this.body = txt(this, PANEL_X + 18, 0, '', 21, '#f6f3ec', { wordWrap: { width: PANEL_W - 54 }, lineSpacing: 4 });
     this.arrow = txt(this, W - 46, 0, '▼', 16, '#f6f3ec');
     this.panel.add([this.panelG, this.nameTag, this.nameText, this.body, this.arrow]);
     this.tweens.add({ targets: this.arrow, alpha: 0.2, duration: 450, yoyo: true, repeat: -1 });
@@ -116,9 +119,17 @@ export class UIScene extends Phaser.Scene {
     const v = this.view;
     this.hudLeft.setPosition(v.x0, v.y0);
     this.hudRight.setPosition(v.x1 - W, v.y0);
+    this.hudCenter.setPosition(W / 2 + 30, v.y0 + 39);
     this.tapZone?.setSize(v.w + 4, v.h + 4);
     if (this.tapZone?.input) this.tapZone.input.hitArea.setTo(0, 0, v.w + 4, v.h + 4);
     this.toastC?.setY(v.y0 + 96);
+  }
+
+  /** Objetivo corto siempre visible, bajo la fila de inventario y menú. */
+  setObjective(text: string): void {
+    this.objective?.destroy();
+    this.objective = txt(this, 0, 0, text, 14, '#ffd23f', { fontStyle: 'bold', backgroundColor: '#14121ccc', padding: { x: 10, y: 6 } }).setOrigin(0.5);
+    this.hudCenter.add(this.objective);
   }
 
   /** Marca el evento nativo para que la escena del mundo ignore este toque. */
@@ -152,7 +163,7 @@ export class UIScene extends Phaser.Scene {
 
   toast(msg: string): void {
     this.toastC.removeAll(true);
-    const t = txt(this, 0, 0, msg, 16, '#111111', { fontStyle: 'bold' }).setOrigin(0.5);
+    const t = txt(this, 0, 0, msg, 18, '#111111', { fontStyle: 'bold' }).setOrigin(0.5);
     const g = this.add.graphics();
     g.fillStyle(0xfff3b0, 1).fillRoundedRect(-t.width / 2 - 16, -17, t.width + 32, 34, 17);
     g.lineStyle(2.5, 0x111111, 1).strokeRoundedRect(-t.width / 2 - 16, -17, t.width + 32, 34, 17);
@@ -166,7 +177,7 @@ export class UIScene extends Phaser.Scene {
 
   showHint(msg: string, ms = 7000): void {
     this.hint?.destroy();
-    this.hint = txt(this, W / 2, this.view.y1 - 34, msg, 15, '#f6f3ec', { backgroundColor: '#14121ccc', padding: { x: 12, y: 7 } }).setOrigin(0.5).setDepth(20);
+    this.hint = txt(this, W / 2, this.view.y1 - 34, msg, 16, '#f6f3ec', { backgroundColor: '#14121ccc', padding: { x: 12, y: 7 } }).setOrigin(0.5).setDepth(20);
     this.tweens.add({ targets: this.hint, alpha: 0, delay: ms, duration: 600, onComplete: () => this.hint?.destroy() });
   }
 
@@ -297,7 +308,7 @@ export class UIScene extends Phaser.Scene {
             g.lineStyle(3, 0x111111, 1).strokeRoundedRect(PANEL_X, y, PANEL_W, BTN_H, 16);
           };
           draw(false);
-          const t = txt(this, W / 2, y + BTN_H / 2, label, 17, '#111111', { fontStyle: 'bold', align: 'center', wordWrap: { width: PANEL_W - 30 } }).setOrigin(0.5);
+          const t = txt(this, W / 2, y + BTN_H / 2, label, 19, '#111111', { fontStyle: 'bold', align: 'center', wordWrap: { width: PANEL_W - 30 } }).setOrigin(0.5);
           const hit = this.add.zone(W / 2, y + BTN_H / 2, PANEL_W, BTN_H).setInteractive({ useHandCursor: true });
           hit.on('pointerover', () => draw(true));
           hit.on('pointerout', () => draw(false));
@@ -390,7 +401,7 @@ export class UIScene extends Phaser.Scene {
         g.lineStyle(3, 0x111111, 1).strokeRoundedRect(60, y, W - 120, 52, 16);
       };
       draw(false);
-      const t = txt(this, W / 2, y + 26, r.label, 17, '#111111', { fontStyle: 'bold' }).setOrigin(0.5);
+      const t = txt(this, W / 2, y + 26, r.label, 19, '#111111', { fontStyle: 'bold' }).setOrigin(0.5);
       const hit = this.add.zone(W / 2, y + 26, W - 120, 52).setInteractive({ useHandCursor: true });
       hit.on('pointerover', () => draw(true));
       hit.on('pointerout', () => draw(false));

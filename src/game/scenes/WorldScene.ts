@@ -27,6 +27,8 @@ export interface Target {
 export interface SceneDef {
   id: string;
   title: string;
+  /** Objetivo corto, siempre visible en pantalla. */
+  objective: string;
   spawn: Vec;
   /** Construye fondo, props, bloqueos, objetivos y personajes de la escena. */
   build: (w: WorldScene) => void;
@@ -66,6 +68,7 @@ export class WorldScene extends Phaser.Scene {
   private saveT = 0;
   private clock = 0;
   private ready = false;
+  private ending = false;
   private uiReady!: Promise<UIScene>;
 
   constructor() {
@@ -86,7 +89,7 @@ export class WorldScene extends Phaser.Scene {
   addTarget(t: Target): void {
     this.targets.push(t);
     const dot = img(this, 0, 0, 'hotdot').setDepth(4000).setAlpha(0);
-    const label = txt(this, 0, 0, t.label, 14, '#ffffff', {
+    const label = txt(this, 0, 0, t.label, 16, '#ffffff', {
       fontStyle: 'bold',
       backgroundColor: '#14121ccc',
       padding: { x: 9, y: 5 },
@@ -120,6 +123,7 @@ export class WorldScene extends Phaser.Scene {
 
   create(): void {
     this.ready = false;
+    this.ending = false;
     this.scripting = false;
     this.blockers.clear();
     this.targets = [];
@@ -184,6 +188,7 @@ export class WorldScene extends Phaser.Scene {
   private async begin(): Promise<void> {
     const ui = await this.uiReady;
     this.ui = ui;
+    ui.setObjective(this.def.objective);
     ui.events.on('item', (id: string) => void this.runScript((c) => this.def.inspect?.(c, id) ?? Promise.resolve()));
     ui.events.on('menu', (a: string) => void this.onMenu(a));
     this.ready = true;
@@ -228,6 +233,7 @@ export class WorldScene extends Phaser.Scene {
 
   async finish(id: EndingId): Promise<void> {
     this.scripting = true;
+    this.ending = true;
     this.playerMover.stop();
     track('juego_final', { final: id, personaje: state.characterId ?? '' });
     state.finish(id);
@@ -319,6 +325,7 @@ export class WorldScene extends Phaser.Scene {
     if (!this.ready) return;
     const dt = Math.min(delta / 1000, 0.05);
     this.clock += dt;
+    if (!this.ending) state.playSeconds += dt;
     this.playerMover.update(dt);
     this.shadeMover?.update(dt);
     this.player.tick(dt);

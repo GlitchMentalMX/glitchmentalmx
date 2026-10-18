@@ -60,21 +60,21 @@ export class SelectScene extends Phaser.Scene {
     this.index = Math.max(0, CHAR_IDS.indexOf(saved ?? state.meta.lastCharacter ?? 'don'));
 
     txt(this, W / 2, 42, 'PULSA PARA EMPEORAR', 22, '#ffd23f', { fontStyle: 'bold' }).setOrigin(0.5);
-    txt(this, W / 2, 64, 'título a prueba', 11, '#ffffff', { fontStyle: 'italic' }).setOrigin(0.5).setAlpha(0.35);
+    txt(this, W / 2, 64, 'título a prueba', 12, '#ffffff', { fontStyle: 'italic' }).setOrigin(0.5).setAlpha(0.35);
     txt(this, W / 2, 104, 'ELIGE QUIÉN ERES', 34, '#f6f3ec', { fontStyle: 'bold' }).setOrigin(0.5);
-    txt(this, W / 2, 140, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 15, '#c9c5d4').setOrigin(0.5);
+    txt(this, W / 2, 140, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 17, '#c9c5d4').setOrigin(0.5);
 
     this.halo = this.add.graphics();
     this.nameT = txt(this, W / 2, 468, '', 32, '#ffffff', { fontStyle: 'bold' }).setOrigin(0.5);
-    this.titleT = txt(this, W / 2, 502, '', 17, '#c9c5d4').setOrigin(0.5);
+    this.titleT = txt(this, W / 2, 502, '', 19, '#c9c5d4').setOrigin(0.5);
     this.introG = this.add.graphics();
-    this.introT = txt(this, W / 2, 576, '', 18, '#f6f3ec', { align: 'center', wordWrap: { width: 440 }, fontStyle: 'bold' }).setOrigin(0.5);
+    this.introT = txt(this, W / 2, 576, '', 20, '#f6f3ec', { align: 'center', wordWrap: { width: 440 }, fontStyle: 'bold' }).setOrigin(0.5);
 
     this.buildCards();
     this.buildButtons();
     this.buildTopButtons();
 
-    this.footer = txt(this, W / 2, H - 22, `Finales descubiertos: ${state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length} de ${ENDING_IDS.length}`, 13, '#8d89a0').setOrigin(0.5);
+    this.footer = txt(this, W / 2, H - 22, `Finales descubiertos: ${state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length} de ${ENDING_IDS.length}`, 14, '#8d89a0').setOrigin(0.5);
 
     this.howLayer = this.add.container(0, 0).setDepth(90).setVisible(false);
     this.layoutEdges();
@@ -171,7 +171,7 @@ export class SelectScene extends Phaser.Scene {
     const b = this.makeButton(W / 2, hasSave ? 868 : 836, 380, 62, 'JUGAR', hexNum(CHARACTERS[CHAR_IDS[this.index]].accent), '#111111', () => this.play());
     this.playBtn = b.c;
     this.playLabel = b.t;
-    if (hasSave) txt(this, W / 2, 906, 'Una partida nueva reemplaza la guardada', 12, '#8d89a0').setOrigin(0.5);
+    if (hasSave) txt(this, W / 2, 906, 'Una partida nueva reemplaza la guardada', 13, '#8d89a0').setOrigin(0.5);
   }
 
   private refreshPlay(): void {
@@ -186,7 +186,7 @@ export class SelectScene extends Phaser.Scene {
   }
 
   private buildTopButtons(): void {
-    const pill = (label: string) => txt(this, 0, 0, label, 14, '#c9c5d4', { backgroundColor: '#14121c', padding: { x: 10, y: 6 } }).setInteractive({ useHandCursor: true });
+    const pill = (label: string) => txt(this, 0, 0, label, 15, '#c9c5d4', { backgroundColor: '#14121c', padding: { x: 10, y: 6 } }).setInteractive({ useHandCursor: true });
     this.backBtn = pill('← Salir al sitio');
     this.backBtn.on('pointerdown', () => {
       window.location.href = '/';

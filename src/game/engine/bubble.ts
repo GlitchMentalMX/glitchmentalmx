@@ -11,7 +11,7 @@ export const bubbleMs = (text: string): number => Math.max(2600, 1700 + text.len
  */
 export function makeBubble(scene: Phaser.Scene, x: number, y: number, text: string): Phaser.GameObjects.Container {
   const c = scene.add.container(x, y).setDepth(5000);
-  const t = txt(scene, 0, -15, text, 15, '#111111', { fontStyle: 'bold', align: 'center', wordWrap: { width: 170 } }).setOrigin(0.5, 1);
+  const t = txt(scene, 0, -15, text, 17, '#111111', { fontStyle: 'bold', align: 'center', wordWrap: { width: 190 } }).setOrigin(0.5, 1);
   const pw = Math.max(34, t.width + 22);
   const ph = t.height + 14;
   const g = scene.add.graphics();
