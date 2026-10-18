@@ -53,9 +53,10 @@ export class SelectScene extends Phaser.Scene {
     const saved = state.savedCharacter();
     this.index = Math.max(0, CHAR_IDS.indexOf(saved ?? state.meta.lastCharacter ?? 'don'));
 
-    txt(this, W / 2, 34, 'título provisional', 12, '#ffffff', { fontStyle: 'italic' }).setOrigin(0.5).setAlpha(0.4);
-    txt(this, W / 2, 84, 'ELIGE QUIÉN ERES', 38, '#f6f3ec', { fontStyle: 'bold' }).setOrigin(0.5);
-    txt(this, W / 2, 126, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 15, '#c9c5d4').setOrigin(0.5);
+    txt(this, W / 2, 42, 'PULSA PARA EMPEORAR', 22, '#ffd23f', { fontStyle: 'bold' }).setOrigin(0.5);
+    txt(this, W / 2, 64, 'título a prueba', 11, '#ffffff', { fontStyle: 'italic' }).setOrigin(0.5).setAlpha(0.35);
+    txt(this, W / 2, 104, 'ELIGE QUIÉN ERES', 34, '#f6f3ec', { fontStyle: 'bold' }).setOrigin(0.5);
+    txt(this, W / 2, 140, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 15, '#c9c5d4').setOrigin(0.5);
 
     this.halo = this.add.graphics();
     this.nameT = txt(this, W / 2, 468, '', 32, '#ffffff', { fontStyle: 'bold' }).setOrigin(0.5);
