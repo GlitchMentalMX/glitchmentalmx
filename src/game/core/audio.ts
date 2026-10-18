@@ -34,6 +34,15 @@ class AudioEngine {
     }
   }
 
+  /** Pausa el audio (p. ej. mientras se muestra el aviso de girar el teléfono). */
+  suspend(): void {
+    void this.ctx?.suspend();
+  }
+
+  resume(): void {
+    if (this.ctx && !state.meta.muted) void this.ctx.resume();
+  }
+
   get muted(): boolean {
     return state.meta.muted;
   }

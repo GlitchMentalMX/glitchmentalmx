@@ -53,4 +53,25 @@ window.addEventListener('resize', onResize);
 window.addEventListener('orientationchange', () => setTimeout(onResize, 250));
 window.visualViewport?.addEventListener('resize', onResize);
 
+// Teléfonos y tabletas en horizontal: la página muestra "Gira tu teléfono"
+// (mismo criterio que el CSS de #rotate) y el juego se pausa, con su audio.
+const landscapeTouch = window.matchMedia('(hover: none) and (pointer: coarse) and (orientation: landscape)');
+const applyOrientation = () => {
+  if (landscapeTouch.matches) {
+    if (game.loop.running) game.loop.sleep();
+    audio.suspend();
+  } else {
+    if (!game.loop.running) {
+      game.loop.wake();
+      audio.resume();
+      onResize();
+    }
+  }
+};
+landscapeTouch.addEventListener('change', applyOrientation);
+// El arranque de Phaser es asíncrono y recupera su bucle al volver el foco de
+// la pestaña: en vez de depender de esos eventos, se revisa cada medio segundo.
+window.setInterval(applyOrientation, 500);
+applyOrientation();
+
 if (import.meta.env.DEV) Object.assign(window, { __game: game, __audio: audio });
