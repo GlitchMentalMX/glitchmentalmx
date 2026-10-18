@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { S } from '../core/config';
 import { audio } from '../core/audio';
 import { img, makeTex } from '../core/gfx';
-import { dismissBubble, makeBubble } from './bubble';
+import { bubbleMs, dismissBubble, makeBubble, placeBubble } from './bubble';
 import type { CharacterDef, PartRole } from './types';
 
 export type Mode = 'idle' | 'walk' | 'run';
@@ -165,7 +165,7 @@ export class Actor extends Phaser.GameObjects.Container {
     }
 
     if (g.jitter || this.glitchBurst > 0) this.tickGlitch(dt, !!g.jitter);
-    if (this.bubble) this.bubble.setPosition(this.x, this.y - (this.def.topY + 24) * this.scaleY);
+    if (this.bubble) placeBubble(this.scene, this.bubble, this.x, this.y - (this.def.topY + 24) * this.scaleY);
   }
 
   private tickGlitch(dt: number, auto: boolean): void {
@@ -231,7 +231,7 @@ export class Actor extends Phaser.GameObjects.Container {
     const sc = this.scene;
     const done = (ms: number) => sc.time.delayedCall(ms, () => (this.busyFx = false));
     this.swapHead(1500);
-    this.say(this.def.signatureLine, 2400);
+    this.say(this.def.signatureLine, Math.max(2800, bubbleMs(this.def.signatureLine)));
     if (this.poseImg) this.showPose(1700);
     switch (this.def.signature) {
       case 'cane': {
@@ -292,11 +292,12 @@ export class Actor extends Phaser.GameObjects.Container {
     });
   }
 
-  say(text: string, ms = 2200): void {
+  say(text: string, ms = bubbleMs(text)): void {
     this.bubbleTimer?.remove();
     this.bubble?.destroy();
     const sc = this.scene;
     const c = makeBubble(sc, this.x, this.y - (this.def.topY + 24) * this.scaleY, text);
+    placeBubble(sc, c, this.x, this.y - (this.def.topY + 24) * this.scaleY);
     this.bubble = c;
     this.bubbleTimer = sc.time.delayedCall(ms, () => {
       dismissBubble(sc, c);

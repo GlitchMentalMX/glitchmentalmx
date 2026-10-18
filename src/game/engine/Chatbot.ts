@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { audio } from '../core/audio';
 import { img, makeTex } from '../core/gfx';
-import { dismissBubble, makeBubble } from './bubble';
+import { bubbleMs, dismissBubble, makeBubble, placeBubble } from './bubble';
 import { Mover } from './Mover';
 import type { NavGrid, Vec } from './pathfinding';
 
@@ -43,17 +43,32 @@ export function buildBotTextures(scene: Phaser.Scene): void {
 }
 
 const BARKS_PATROL = [
-  '¡Hola! Su llamada es muy importante para nosotros.',
-  'Tiempo de espera estimado: ∞.',
-  "Para hablar con un humano, diga 'humano'. Somos varios bots fingiendo.",
-  'Hemos actualizado nuestra política. Sin avisar, claro.',
-  '¿Sabía que cancelar es más fácil de lo que parece? Mentira. Pero qué sonrisa.',
+  'Su llamada es muy importante para nosotros. Tanto, que la vamos a grabar, vender y olvidar.',
+  'Tiempo de espera estimado: ∞. Estamos "optimizando" el infinito.',
+  "Para hablar con un humano, diga 'humano'. Le pasaré con otro bot, pero con corbata.",
+  'Actualizamos nuestra política de privacidad. Para mejorar. Nuestra, claro.',
+  'Cancelar es muy fácil: solo necesita paciencia, suerte y un par de años libres.',
+  'Su opinión nos importa. No la vamos a leer, pero nos importa.',
+  'Gracias por esperar. Premiamos su lealtad con más espera.',
+  '¿Sabía que el 100% de nuestros clientes satisfechos nunca ha logrado irse?',
+  'Detecté frustración en su voz. No se preocupe: por ahora es gratis.',
+  'Estoy aquí para ayudarle a ayudarnos.',
 ];
 const BARKS_FOLLOW = [
-  "Hola de nuevo. Ayer buscaste 'cómo cancelar'. 47 veces.",
-  'Sabemos qué desayunaste. Se veía rico.',
-  'Se te nota la prisa. Qué curioso.',
-  'Gracias por las galletas. Y por todo lo demás.',
+  "Hola de nuevo. Ayer buscaste 'cómo cancelar' 47 veces. Qué constancia.",
+  'Sabemos qué desayunaste. Y a qué hora dejaste de contestarle a tu mamá.',
+  'Se te nota la prisa. Es el mejor momento para ofrecerte algo.',
+  'Gracias por las galletas. Nos encanta cuando consienten sin leer.',
+  'No te sigo. Te acompaño. Con contrato.',
+  'Tu ubicación es excelente. Tu privacidad, un bonito recuerdo.',
+  '¿Cancelar? Con lo bien que nos hace conocerte.',
+  'Acabo de vender tu paso por esta sala a un anunciante. Te fue bien.',
+];
+const READINGS = [
+  'Leyendo cláusula {n} de 4,812…',
+  'Cláusula {n}: "el lector renuncia a su tiempo". Qué belleza.',
+  'Cláusula {n}: "se prohíbe dudar". Interesante.',
+  'Shhh. Voy en la cláusula {n} y está buenísima.',
 ];
 
 /**
@@ -133,10 +148,11 @@ export class Chatbot {
     this.y = y;
   }
 
-  say(text: string, ms = 2600): void {
+  say(text: string, ms = bubbleMs(text)): void {
     this.bubbleTimer?.remove();
     this.bubble?.destroy();
     const c = makeBubble(this.scene, this.x, this.y - 92, text);
+    placeBubble(this.scene, c, this.x, this.y - 92);
     this.bubble = c;
     audio.play('bleep');
     this.bubbleTimer = this.scene.time.delayedCall(ms, () => {
@@ -169,10 +185,11 @@ export class Chatbot {
         }
         if (canGreet && this.cooldown <= 0 && Math.hypot(player.x - this.x, player.y - this.y) < 120) {
           this.state = 'greet';
-          this.greetT = 2.6;
+          const line = BARKS_PATROL[this.bark++ % BARKS_PATROL.length];
+          this.greetT = bubbleMs(line) / 1000 + 0.4;
           this.mover.stop();
           this.setFace('happy');
-          this.say(BARKS_PATROL[this.bark++ % BARKS_PATROL.length]);
+          this.say(line);
           this.cooldown = 14;
         }
         break;
@@ -197,9 +214,10 @@ export class Chatbot {
         }
         if (canGreet && this.cooldown <= 0 && d < 140) {
           this.setFace('hmm');
-          this.say(BARKS_FOLLOW[this.bark++ % BARKS_FOLLOW.length], 3000);
-          this.cooldown = 11;
-          this.scene.time.delayedCall(2600, () => this.state === 'follow' && this.setFace('ok'));
+          const line = BARKS_FOLLOW[this.bark++ % BARKS_FOLLOW.length];
+          this.say(line);
+          this.cooldown = 13;
+          this.scene.time.delayedCall(bubbleMs(line), () => this.state === 'follow' && this.setFace('ok'));
         }
         break;
       }
@@ -207,7 +225,7 @@ export class Chatbot {
         this.readingT += dt;
         if (!this.bubble && Math.floor(this.readingT) % 6 === 5) {
           const n = Math.floor(this.readingT / 6) + 1;
-          this.say(`Leyendo cláusula ${n} de 4,812…`, 2200);
+          this.say(READINGS[(n - 1) % READINGS.length].replace('{n}', String(n)));
         }
         break;
       }
@@ -218,7 +236,7 @@ export class Chatbot {
     this.orb.y = -34 + bob;
     this.orb.rotation = this.mover.moving ? 0.1 * this.facing : Math.sin(this.t * 1.3) * 0.03;
     this.root.setPosition(this.x, this.y).setDepth(this.y);
-    if (this.bubble) this.bubble.setPosition(this.x, this.y - 92);
+    if (this.bubble) placeBubble(this.scene, this.bubble, this.x, this.y - 92);
   }
 
   destroy(): void {

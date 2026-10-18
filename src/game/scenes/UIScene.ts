@@ -1,9 +1,10 @@
 import Phaser from 'phaser';
 import { H, W } from '../core/config';
 import { audio } from '../core/audio';
-import { fitCamera, img, makeTex, txt } from '../core/gfx';
+import { fitCamera, img, makeTex, txt, viewRect } from '../core/gfx';
 import { state } from '../core/state';
 import { ITEMS } from '../data/items';
+import { showHowTo } from '../engine/howto';
 
 export interface Speaker {
   name: string;
@@ -39,6 +40,8 @@ export class UIScene extends Phaser.Scene {
   private tapZone!: Phaser.GameObjects.Zone;
   private choiceLayer!: Phaser.GameObjects.Container;
   private hud!: Phaser.GameObjects.Container;
+  private hudLeft!: Phaser.GameObjects.Container;
+  private hudRight!: Phaser.GameObjects.Container;
   private invLayer!: Phaser.GameObjects.Container;
   private toastC!: Phaser.GameObjects.Container;
   private hint?: Phaser.GameObjects.Text;
@@ -58,9 +61,14 @@ export class UIScene extends Phaser.Scene {
     this.menuOpen = false;
     for (const it of Object.values(ITEMS)) makeTex(this, `item_${it.id}`, 40, 40, it.icon);
 
+    // El HUD se ancla a los bordes REALES de la pantalla (no del escenario de
+    // diseño), así sigue pegado arriba aunque el mundo se extienda.
     this.hud = this.add.container(0, 0).setDepth(10);
+    this.hudLeft = this.add.container(0, 0);
+    this.hudRight = this.add.container(0, 0);
+    this.hud.add([this.hudLeft, this.hudRight]);
     this.invLayer = this.add.container(0, 0);
-    this.hud.add(this.invLayer);
+    this.hudLeft.add(this.invLayer);
     this.buildMenuButton();
 
     this.panel = this.add.container(0, 0).setDepth(50).setVisible(false);
@@ -80,7 +88,7 @@ export class UIScene extends Phaser.Scene {
     });
 
     this.choiceLayer = this.add.container(0, 0).setDepth(60);
-    this.toastC = this.add.container(W / 2, 96).setDepth(70).setAlpha(0);
+    this.toastC = this.add.container(W / 2, this.view.y0 + 96).setDepth(70).setAlpha(0);
     this.menuLayer = this.add.container(0, 0).setDepth(90).setVisible(false);
 
     state.on('inventory', this.refreshInventory, this);
@@ -91,8 +99,26 @@ export class UIScene extends Phaser.Scene {
     this.input.keyboard?.on('keydown-ENTER', () => this.onTapAdvance());
     this.input.keyboard?.on('keydown-ESC', () => this.toggleMenu());
 
+    this.layoutHud();
+    this.scale.on('resize', this.layoutHud, this);
+    this.events.once('shutdown', () => this.scale.off('resize', this.layoutHud, this));
+
     this.ready = true;
     this.events.emit('ui-ready');
+  }
+
+  /** Bordes visibles de la pantalla en unidades de diseño. */
+  private get view() {
+    return viewRect(this);
+  }
+
+  private layoutHud(): void {
+    const v = this.view;
+    this.hudLeft.setPosition(v.x0, v.y0);
+    this.hudRight.setPosition(v.x1 - W, v.y0);
+    this.tapZone?.setSize(v.w + 4, v.h + 4);
+    if (this.tapZone?.input) this.tapZone.input.hitArea.setTo(0, 0, v.w + 4, v.h + 4);
+    this.toastC?.setY(v.y0 + 96);
   }
 
   /** Marca el evento nativo para que la escena del mundo ignore este toque. */
@@ -132,14 +158,15 @@ export class UIScene extends Phaser.Scene {
     g.lineStyle(2.5, 0x111111, 1).strokeRoundedRect(-t.width / 2 - 16, -17, t.width + 32, 34, 17);
     this.toastC.add([g, t]);
     this.tweens.killTweensOf(this.toastC);
-    this.toastC.setAlpha(0).setY(80);
-    this.tweens.add({ targets: this.toastC, alpha: 1, y: 96, duration: 180 });
+    const ty = this.view.y0 + 96;
+    this.toastC.setAlpha(0).setY(ty - 16);
+    this.tweens.add({ targets: this.toastC, alpha: 1, y: ty, duration: 180 });
     this.tweens.add({ targets: this.toastC, alpha: 0, delay: 2300, duration: 300 });
   }
 
   showHint(msg: string, ms = 7000): void {
     this.hint?.destroy();
-    this.hint = txt(this, W / 2, H - 34, msg, 15, '#f6f3ec', { backgroundColor: '#14121ccc', padding: { x: 12, y: 7 } }).setOrigin(0.5).setDepth(20);
+    this.hint = txt(this, W / 2, this.view.y1 - 34, msg, 15, '#f6f3ec', { backgroundColor: '#14121ccc', padding: { x: 12, y: 7 } }).setOrigin(0.5).setDepth(20);
     this.tweens.add({ targets: this.hint, alpha: 0, delay: ms, duration: 600, onComplete: () => this.hint?.destroy() });
   }
 
@@ -231,7 +258,7 @@ export class UIScene extends Phaser.Scene {
       this.openDialogue();
       this.choiceLayer.removeAll(true);
       this.body.setText(text);
-      this.layoutPanel(sp, H - 24);
+      this.layoutPanel(sp, this.view.y1 - 24);
       this.panel.setVisible(true).setAlpha(1);
       this.arrow.setVisible(false);
       this.typeText(text, () => {
@@ -251,7 +278,7 @@ export class UIScene extends Phaser.Scene {
       this.openDialogue();
       this.choiceLayer.removeAll(true);
       const n = options.length;
-      const stackTop = H - 24 - n * BTN_H - (n - 1) * BTN_GAP;
+      const stackTop = this.view.y1 - 24 - n * BTN_H - (n - 1) * BTN_GAP;
       this.body.setText(text);
       this.layoutPanel(sp, stackTop - 14);
       this.panel.setVisible(true);
@@ -313,7 +340,7 @@ export class UIScene extends Phaser.Scene {
       this.markUi(p);
       if (!this.dialogueOpen) this.toggleMenu();
     });
-    this.hud.add([g, hit]);
+    this.hudRight.add([g, hit]);
   }
 
   private toggleMenu(): void {
@@ -334,11 +361,13 @@ export class UIScene extends Phaser.Scene {
 
   private renderMenu(): void {
     this.menuLayer.removeAll(true).setVisible(true);
-    const dim = this.add.rectangle(W / 2, H / 2, W, H, 0x000000, 0.7).setInteractive();
+    const v = this.view;
+    const dim = this.add.rectangle(W / 2, H / 2, v.w + 4, v.h + 4, 0x000000, 0.7).setInteractive();
     dim.on('pointerdown', (p: Phaser.Input.Pointer) => this.markUi(p));
     this.menuLayer.add(dim);
     const rows: { label: string; run: () => void }[] = [
       { label: 'Seguir jugando', run: () => this.closeMenu() },
+      { label: 'Cómo jugar', run: () => showHowTo(this, this.menuLayer, () => this.renderMenu(), (p) => this.markUi(p)) },
       { label: audio.muted ? 'Sonido: apagado' : 'Sonido: encendido', run: () => { audio.setMuted(!audio.muted); this.renderMenu(); } },
       { label: state.meta.ambient ? 'Ambiente: encendido' : 'Ambiente: apagado', run: () => { audio.setAmbient(!state.meta.ambient); this.renderMenu(); } },
     ];
@@ -348,7 +377,7 @@ export class UIScene extends Phaser.Scene {
         run: () => { this.scale.isFullscreen ? this.scale.stopFullscreen() : this.scale.startFullscreen(); this.closeMenu(); },
       });
     }
-    rows.push({ label: 'Volver a la selección', run: () => { this.closeMenu(); this.events.emit('menu', 'select'); } });
+    rows.push({ label: 'Volver al inicio', run: () => { this.closeMenu(); this.events.emit('menu', 'select'); } });
     rows.push({ label: 'Reiniciar esta partida', run: () => { this.closeMenu(); this.events.emit('menu', 'restart'); } });
     const total = rows.length * 62;
     const top = H / 2 - total / 2;

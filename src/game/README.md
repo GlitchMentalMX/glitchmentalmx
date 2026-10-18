@@ -15,6 +15,9 @@ Phaser 3 dentro de Astro, aislado del sitio editorial. **Estado: prototipo, `noi
 - `data/` — contenido: `characters.ts` (los 5 jugables), `sala.ts` (escenario, objetos y guiones), `endings.ts`, `items.ts`, `scenes.ts` (registro).
 - `art/` — arte provisional dibujado por código (`characters.ts`, `sala.ts`).
 
+## Pantalla
+El escenario de diseño es 9:16 (540x960), pero el canvas se adapta al aspecto real de la pantalla entre 0.42 y 0.75 (ver `core/viewport.ts`) para llenarla: el mundo se extiende a los lados o arriba/abajo y cada escena dibuja decorado ahí (en la sala: baldosas y pared extra). Lo jugable siempre está en los 540x960 centrales; el HUD y los diálogos se pegan a los bordes reales (`viewRect`). Fuera de ese rango (monitores horizontales) queda centrado con barras decorativas.
+
 ## Cómo ampliar
 - **Escena nueva:** crear `data/<id>.ts` con un `SceneDef` (`build`, `intro`, `restore`, `inspect`) y registrarla en `data/scenes.ts`. Las interacciones son funciones `async (c: ScriptContext) => …` con `await c.say(...)`, `c.ask(...)`, `c.give(...)`, `c.set(...)`.
 - **Personaje nuevo / diferencias de habilidad:** agregar una entrada en `data/characters.ts` (partes, `gait`, `signature`, `lines`). Las habilidades futuras serían un campo más de `CharacterDef`; el movimiento es único.

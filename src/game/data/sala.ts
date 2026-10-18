@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import { H, W } from '../core/config';
+import { H, S, W } from '../core/config';
 import { img } from '../core/gfx';
 import { state } from '../core/state';
 import { buildSalaTextures } from '../art/sala';
@@ -288,7 +288,7 @@ async function cookieMachine(c: ScriptContext): Promise<void> {
       w.addTrackers('mini_cookie', 3);
       await c.wait(700);
       await c.say('Cookie-Matic', '¡Gracias! Hemos instalado 3 galletas en tu persona. Para mejorar tu experiencia.');
-      w.bot?.say('¡Gracias por aceptar! Ahora nos conocemos de verdad.', 3200);
+      w.bot?.say('¡Gracias por aceptar! Ahora sí podemos fingir que nos conocemos.');
       c.ui.toast('Algo te sigue...');
       return;
     }
@@ -451,6 +451,11 @@ async function inspect(c: ScriptContext, id: string): Promise<void> {
 
 function build(w: WorldScene): void {
   buildSalaTextures(w);
+  // Decorado que continúa la sala más allá del escenario (pantallas más anchas
+  // o más altas que 9:16). Las baldosas se alinean con las del fondo.
+  w.add.tileSprite(-720, 208, 1980, 1500, 'sala_floor_tile').setOrigin(0, 0).setTileScale(1 / S, 1 / S).setDepth(-120);
+  w.add.rectangle(270, -450, 1980, 900, 0xcfd8e2).setDepth(-120);
+  w.add.image(-720, 0, 'sala_wall_ext').setOrigin(0, 0).setDisplaySize(1980, 208).setDepth(-119);
   img(w, W / 2, H / 2, 'sala_bg').setDepth(-100);
 
   w.addBlocker('pared', { x: 0, y: 0, w: W, h: 205 });

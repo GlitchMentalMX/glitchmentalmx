@@ -62,7 +62,7 @@ const bg: Draw = (ctx) => {
   text(ctx, 'ATENCIÓN', 375, 130, 9, '#222'); text(ctx, 'PERSONALIZADA*', 375, 141, 8, '#222');
   // viñeta
   const vg = ctx.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, 640);
-  vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(10,8,20,0.35)');
+  vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(10,8,20,0.1)');
   ctx.fillStyle = vg; ctx.fillRect(0, 0, W, H);
 };
 
@@ -215,6 +215,28 @@ const miniCookie: Draw = (ctx) => {
   ctx.fillStyle = '#4a2a14'; ctx.fillRect(5, 5, 2, 2); ctx.fillRect(9, 8, 2, 2); ctx.fillRect(6, 10, 2, 2);
   ctx.fillStyle = '#e02a2a'; ctx.beginPath(); ctx.arc(13, 3, 2, 0, Math.PI * 2); ctx.fill();
 };
+// Decorado que continúa la sala fuera del escenario 540x960 cuando la pantalla
+// es más ancha o más alta: baldosas del piso (alineadas con las del fondo) y
+// la franja de pared con su zoclo.
+const floorTile: Draw = (ctx) => {
+  for (let j = 0; j < 2; j++) {
+    for (let i = 0; i < 2; i++) {
+      ctx.fillStyle = (i + j) % 2 ? '#e7e0d0' : '#dcd4c0';
+      ctx.fillRect(i * 60, j * 60, 60, 60);
+    }
+  }
+  ink(ctx, 'rgba(120,110,90,0.25)', 1.2);
+  ctx.beginPath();
+  for (const p of [0, 60]) { ctx.moveTo(0, p); ctx.lineTo(120, p); ctx.moveTo(p, 0); ctx.lineTo(p, 120); }
+  ctx.stroke();
+};
+const wallExt: Draw = (ctx) => {
+  const wall = ctx.createLinearGradient(0, 0, 0, 205);
+  wall.addColorStop(0, '#cfd8e2'); wall.addColorStop(1, '#b3bfcc');
+  ctx.fillStyle = wall; ctx.fillRect(0, 0, 8, 205);
+  ctx.fillStyle = '#5b6678'; ctx.fillRect(0, 196, 8, 12);
+  ctx.fillStyle = '#3d4655'; ctx.fillRect(0, 205, 8, 3);
+};
 const confetti: Draw = (ctx) => { ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, 8, 8); };
 
 export function buildSalaTextures(scene: Phaser.Scene): void {
@@ -233,5 +255,7 @@ export function buildSalaTextures(scene: Phaser.Scene): void {
   makeTex(scene, 'sala_paper', 230, 258, paper);
   makeTex(scene, 'mini_cookie', 16, 16, miniCookie);
   makeTex(scene, 'confetti', 8, 8, confetti);
+  makeTex(scene, 'sala_floor_tile', 120, 120, floorTile);
+  makeTex(scene, 'sala_wall_ext', 8, 208, wallExt);
   makeTex(scene, 'cookie_world', 40, 40, ITEMS.galleta.icon);
 }

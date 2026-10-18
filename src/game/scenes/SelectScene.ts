@@ -1,7 +1,8 @@
 import Phaser from 'phaser';
 import { CHAR_IDS, ENDING_IDS, H, W, type CharId } from '../core/config';
 import { audio } from '../core/audio';
-import { fitCamera, hexNum, txt } from '../core/gfx';
+import { fitCamera, hexNum, txt, viewRect } from '../core/gfx';
+import { showHowTo } from '../engine/howto';
 import { state } from '../core/state';
 import { track } from '../core/track';
 import { CHARACTERS } from '../data/characters';
@@ -23,13 +24,17 @@ export class SelectScene extends Phaser.Scene {
   private halo!: Phaser.GameObjects.Graphics;
   private nameT!: Phaser.GameObjects.Text;
   private titleT!: Phaser.GameObjects.Text;
-  private styleT!: Phaser.GameObjects.Text;
   private introT!: Phaser.GameObjects.Text;
   private introG!: Phaser.GameObjects.Graphics;
   private playBtn!: Phaser.GameObjects.Container;
   private playLabel!: Phaser.GameObjects.Text;
   private bits: { r: Phaser.GameObjects.Rectangle; vy: number }[] = [];
   private leaving = false;
+  private backBtn!: Phaser.GameObjects.Text;
+  private soundBtn!: Phaser.GameObjects.Text;
+  private howBtn!: Phaser.GameObjects.Text;
+  private footer!: Phaser.GameObjects.Text;
+  private howLayer!: Phaser.GameObjects.Container;
 
   constructor() {
     super('Select');
@@ -45,8 +50,9 @@ export class SelectScene extends Phaser.Scene {
 
     // fondo con fragmentos que se mueven despacio (collage glitch)
     const cols = [0xff2e93, 0x00e5ff, 0xffd23f, 0x7a2cf0];
-    for (let i = 0; i < 16; i++) {
-      const r = this.add.rectangle(Math.random() * W, Math.random() * H, 20 + Math.random() * 60, 6 + Math.random() * 18, cols[i % 4], 0.1 + Math.random() * 0.12).setDepth(-5);
+    const v0 = viewRect(this);
+    for (let i = 0; i < 22; i++) {
+      const r = this.add.rectangle(v0.x0 + Math.random() * v0.w, v0.y0 + Math.random() * v0.h, 20 + Math.random() * 60, 6 + Math.random() * 18, cols[i % 4], 0.1 + Math.random() * 0.12).setDepth(-5);
       this.bits.push({ r, vy: 4 + Math.random() * 14 });
     }
 
@@ -61,7 +67,6 @@ export class SelectScene extends Phaser.Scene {
     this.halo = this.add.graphics();
     this.nameT = txt(this, W / 2, 468, '', 32, '#ffffff', { fontStyle: 'bold' }).setOrigin(0.5);
     this.titleT = txt(this, W / 2, 502, '', 17, '#c9c5d4').setOrigin(0.5);
-    this.styleT = txt(this, W / 2, 526, '', 12, '#8d89a0', { fontStyle: 'italic' }).setOrigin(0.5);
     this.introG = this.add.graphics();
     this.introT = txt(this, W / 2, 576, '', 18, '#f6f3ec', { align: 'center', wordWrap: { width: 440 }, fontStyle: 'bold' }).setOrigin(0.5);
 
@@ -69,7 +74,12 @@ export class SelectScene extends Phaser.Scene {
     this.buildButtons();
     this.buildTopButtons();
 
-    txt(this, W / 2, H - 22, `Finales descubiertos: ${state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length} de ${ENDING_IDS.length}`, 13, '#8d89a0').setOrigin(0.5);
+    this.footer = txt(this, W / 2, H - 22, `Finales descubiertos: ${state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length} de ${ENDING_IDS.length}`, 13, '#8d89a0').setOrigin(0.5);
+
+    this.howLayer = this.add.container(0, 0).setDepth(90).setVisible(false);
+    this.layoutEdges();
+    this.scale.on('resize', this.layoutEdges, this);
+    this.events.once('shutdown', () => this.scale.off('resize', this.layoutEdges, this));
 
     this.focus(this.index, false);
 
@@ -125,7 +135,6 @@ export class SelectScene extends Phaser.Scene {
     this.halo.lineStyle(3, col, 0.5).strokeCircle(W / 2, 330, 150);
     this.nameT.setText(def.name).setColor(def.accent);
     this.titleT.setText(def.title);
-    this.styleT.setText(def.style);
     this.introT.setText(`“${def.intro}”`);
     this.introG.clear();
     const h = this.introT.height + 26;
@@ -177,17 +186,33 @@ export class SelectScene extends Phaser.Scene {
   }
 
   private buildTopButtons(): void {
-    const back = txt(this, 18, 20, '← Salir al sitio', 14, '#c9c5d4', { backgroundColor: '#14121c', padding: { x: 10, y: 6 } }).setInteractive({ useHandCursor: true });
-    back.on('pointerdown', () => {
+    const pill = (label: string) => txt(this, 0, 0, label, 14, '#c9c5d4', { backgroundColor: '#14121c', padding: { x: 10, y: 6 } }).setInteractive({ useHandCursor: true });
+    this.backBtn = pill('← Salir al sitio');
+    this.backBtn.on('pointerdown', () => {
       window.location.href = '/';
     });
-    const snd = txt(this, W - 18, 20, audio.muted ? 'Sonido: no' : 'Sonido: sí', 14, '#c9c5d4', { backgroundColor: '#14121c', padding: { x: 10, y: 6 } }).setOrigin(1, 0).setInteractive({ useHandCursor: true });
-    snd.on('pointerdown', () => {
+    this.soundBtn = pill(audio.muted ? 'Sonido: no' : 'Sonido: sí').setOrigin(1, 0);
+    this.soundBtn.on('pointerdown', () => {
       audio.unlock();
       audio.setMuted(!audio.muted);
-      snd.setText(audio.muted ? 'Sonido: no' : 'Sonido: sí');
+      this.soundBtn.setText(audio.muted ? 'Sonido: no' : 'Sonido: sí');
       audio.play('tap');
     });
+    this.howBtn = pill('Cómo jugar').setOrigin(1, 0);
+    this.howBtn.on('pointerdown', () => {
+      audio.unlock();
+      audio.play('tap');
+      showHowTo(this, this.howLayer, () => this.howLayer.setVisible(false));
+    });
+  }
+
+  /** Los botones de las esquinas se pegan a los bordes reales de la pantalla. */
+  private layoutEdges(): void {
+    const v = viewRect(this);
+    this.backBtn?.setPosition(v.x0 + 18, v.y0 + 20);
+    this.soundBtn?.setPosition(v.x1 - 18, v.y0 + 20);
+    this.howBtn?.setPosition(v.x1 - 18, v.y0 + 54);
+    this.footer?.setPosition(W / 2, v.y1 - 22);
   }
 
   private go(): void {

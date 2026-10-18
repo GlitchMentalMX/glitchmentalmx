@@ -1,7 +1,7 @@
 import Phaser from 'phaser';
 import { ENDING_IDS, H, W, type EndingId } from '../core/config';
 import { audio } from '../core/audio';
-import { fitCamera, hexNum, txt } from '../core/gfx';
+import { fitCamera, hexNum, txt, viewRect } from '../core/gfx';
 import { state } from '../core/state';
 import { CHARACTERS } from '../data/characters';
 import { ENDINGS } from '../data/endings';
@@ -32,8 +32,9 @@ export class EndingScene extends Phaser.Scene {
     this.cameras.main.setBackgroundColor(def.bg);
     this.cameras.main.fadeIn(700, 255, 255, 255);
 
-    for (let i = 0; i < 18; i++) {
-      const r = this.add.rectangle(Math.random() * W, Math.random() * H, 20 + Math.random() * 80, 6 + Math.random() * 16, hexNum(def.accent), 0.12).setDepth(-5);
+    const v0 = viewRect(this);
+    for (let i = 0; i < 24; i++) {
+      const r = this.add.rectangle(v0.x0 + Math.random() * v0.w, v0.y0 + Math.random() * v0.h, 20 + Math.random() * 80, 6 + Math.random() * 16, hexNum(def.accent), 0.12).setDepth(-5);
       this.tweens.add({ targets: r, y: r.y + 60, alpha: 0.02, duration: 3000 + Math.random() * 3000, yoyo: true, repeat: -1 });
     }
 

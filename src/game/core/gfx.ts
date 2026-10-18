@@ -45,9 +45,23 @@ export function txt(
   return scene.add.text(x, y, text, { fontFamily: FONT, fontSize: `${size}px`, color, resolution: S, ...extra });
 }
 
-/** Cada escena muestra exactamente el escenario 540x960 sin importar el tamaño del canvas. */
+/** Cada escena mantiene el escenario 540x960 centrado; si el canvas es más grande, se ve decorado alrededor. */
 export function fitCamera(scene: Phaser.Scene): void {
-  scene.cameras.main.setZoom(S).centerOn(W / 2, H / 2);
+  const apply = () => {
+    const c = scene.cameras.main;
+    c.setSize(scene.scale.width, scene.scale.height);
+    c.setZoom(S).centerOn(W / 2, H / 2);
+  };
+  apply();
+  scene.scale.on('resize', apply);
+  scene.events.once('shutdown', () => scene.scale.off('resize', apply));
+}
+
+/** Lo que la pantalla muestra realmente, en unidades de diseño (incluye el decorado fuera del escenario). */
+export function viewRect(scene: Phaser.Scene): { x0: number; y0: number; x1: number; y1: number; w: number; h: number } {
+  const w = scene.scale.width / S;
+  const h = scene.scale.height / S;
+  return { x0: W / 2 - w / 2, y0: H / 2 - h / 2, x1: W / 2 + w / 2, y1: H / 2 + h / 2, w, h };
 }
 
 // ---------- Utilidades de dibujo "a mano" ----------
