@@ -39,7 +39,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
   },
   capibara: {
     id: 'capibara',
-    name: 'Capibara',
+    name: 'CapiCaos',
     title: 'Capibara del Caos',
     intro: 'Todo se está quemando. Yo traje bocadillos.',
     signatureLine: '*mastica con serenidad*',
@@ -66,7 +66,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
   },
   'modo-dios': {
     id: 'modo-dios',
-    name: 'Modo Dios',
+    name: 'Poppy Power',
     title: 'La Chica del Modo Dios',
     intro: "Si dice 'imposible', hay un botón que nadie debía tocar.",
     signatureLine: 'Imposible es solo un botón escondido.',
@@ -98,8 +98,8 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
     intro: 'No soy un error. Soy una función que olvidaron documentar.',
     signatureLine: 'ERROR 404: YO. Sigo aquí.',
     accent: '#00e5ff',
-    topY: 124,
-    style: 'Garabato mal dibujado con fallos',
+    topY: 138,
+    style: 'Caricatura de tinta con fallos visuales',
     signature: 'glitch',
     gait: { walkHz: 2.2, runHz: 3.4, bob: 3, sway: 0.12, squash: 0.05, step: 4, jitter: true, breath: 0.02 },
     parts: PARTS.glitchman,

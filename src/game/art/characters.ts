@@ -1,4 +1,5 @@
 import { blobPath, fillStroke, ink, pixelGrid, rng, roughPoly, roundRectPath, type Draw } from '../core/gfx';
+import { GLITCHMAN_HEAD, loadedImages } from '../core/images';
 import type { PartSpec } from '../engine/types';
 
 // Arte PROVISIONAL de los cinco personajes, dibujado por código. Cada uno usa
@@ -196,45 +197,120 @@ const chicaTail: Draw = (ctx) => {
 };
 
 // =====================================================================
-// 4. GLITCHMAN — garabato mal dibujado con contornos inestables
+// 4. GLITCHMAN — caricatura de tinta (basada en el close-up de referencia de
+//    Jorge) con fallos visuales: desfase cromático y fragmentos fuera de lugar.
+//    Piel gris, pelo negro revuelto, párpados caídos con ojeras, nariz larga,
+//    camisa azul eléctrico con bolsillo. Cuerpo y piernas son PROVISIONALES
+//    (la referencia solo muestra de los hombros hacia arriba).
 // =====================================================================
-const ghosted = (ctx: CanvasRenderingContext2D, drawShape: () => void, fill: string): void => {
-  for (const [dx, dy, c] of [[-3, 1, '#00e5ff'], [3, -1, '#ff2fd0']] as const) {
-    ctx.save(); ctx.translate(dx, dy); drawShape(); ink(ctx, c, 3); ctx.stroke(); ctx.restore();
+const GREY = '#a3a8ab';
+const GREY_D = '#7e8386';
+const BLUE = '#1f4fff';
+const BLUE_D = '#0e2fc4';
+const glGhost = (ctx: CanvasRenderingContext2D, path: () => void): void => {
+  for (const [dx, dy, c] of [[-2.5, 1, '#00e5ff'], [2.5, -1, '#ff2fd0']] as const) {
+    ctx.save(); ctx.translate(dx, dy); path(); ink(ctx, c, 2.6); ctx.stroke(); ctx.restore();
   }
-  drawShape(); ctx.fillStyle = fill; ctx.fill(); ink(ctx, '#111', 3.4); ctx.stroke();
 };
-const glHead = (react: boolean): Draw => (ctx) => {
+const glHeadDrawn = (react: boolean): Draw => (ctx) => {
   const r = rng(react ? 82 : 81);
-  const shape = () => roughPoly(ctx, [[8, 8], [56, 5], [58, 50], [30, 53], [7, 50]], rng(5), 2.4);
-  ghosted(ctx, shape, '#f4f4f0');
-  // fragmento "perdido": rectángulo de color que no pertenece a la cara
-  ctx.fillStyle = '#00e5ff'; ctx.fillRect(40, 8, 14, 7);
-  ctx.fillStyle = '#ff2fd0'; ctx.fillRect(10, 44, 9, 5);
-  ink(ctx, '#111', 3.4);
-  ctx.beginPath(); ctx.moveTo(15, 18); ctx.lineTo(27, 30); ctx.moveTo(27, 18); ctx.lineTo(15, 30); ctx.stroke();
-  ctx.fillStyle = '#111';
-  ctx.beginPath(); ctx.arc(43, 25, react ? 6 : 3.4, 0, Math.PI * 2); ctx.fill();
-  ink(ctx, '#111', 3);
+  // orejas
+  for (const cx of [11, 69]) {
+    blobPath(ctx, cx, 50, 7, 10, r, 1);
+    fillStroke(ctx, GREY, '#0d0f12', 3);
+    ink(ctx, '#0d0f12', 1.6); ctx.beginPath(); ctx.arc(cx + (cx < 40 ? 1 : -1), 50, 3.4, 0, Math.PI * 2); ctx.stroke();
+  }
+  // cara (con fantasmas cromáticos detrás)
+  const face = () => blobPath(ctx, 40, 50, 24, 26, rng(7), 1.8, 24);
+  glGhost(ctx, face);
+  face();
+  const g = ctx.createLinearGradient(20, 26, 60, 76);
+  g.addColorStop(0, '#c2c6c8'); g.addColorStop(1, '#9a9fa2');
+  fillStroke(ctx, g as unknown as string, '#0d0f12', 3.4);
+  // pelo revuelto
+  roughPoly(ctx, [[10, 46], [2, 30], [12, 28], [3, 12], [19, 17], [15, 3], [30, 13], [37, 0], [46, 12], [58, 3], [59, 15], [75, 9], [68, 23], [78, 32], [69, 40], [71, 50], [62, 38], [52, 30], [38, 33], [24, 31], [14, 42]], r, 1.2);
+  fillStroke(ctx, '#0d0f12', '#0d0f12', 2);
+  ink(ctx, '#7c8187', 1.4);
+  ctx.beginPath(); ctx.moveTo(20, 20); ctx.lineTo(28, 12); ctx.moveTo(46, 14); ctx.lineTo(52, 6); ctx.moveTo(62, 22); ctx.lineTo(70, 17); ctx.stroke();
+  // cejas
+  ink(ctx, '#0d0f12', 3.4);
   ctx.beginPath();
-  if (react) { ctx.moveTo(14, 40); for (let i = 0; i < 8; i++) ctx.lineTo(14 + i * 5.5, 40 + (i % 2 ? 7 : -3)); }
-  else { ctx.moveTo(16, 41); ctx.lineTo(24, 36); ctx.lineTo(31, 43); ctx.lineTo(40, 36); ctx.lineTo(47, 41); }
+  if (react) { ctx.moveTo(21, 33); ctx.quadraticCurveTo(29, 27, 36, 32); ctx.moveTo(44, 32); ctx.quadraticCurveTo(52, 27, 60, 33); }
+  else { ctx.moveTo(21, 41); ctx.quadraticCurveTo(28, 34, 37, 38); ctx.moveTo(44, 38); ctx.quadraticCurveTo(52, 34, 60, 41); }
   ctx.stroke();
-  void r;
+  // ojos: párpados caídos y ojeras (o bien abiertos de sorpresa)
+  for (const ex of [29, 52]) {
+    blobPath(ctx, ex, 48, react ? 7.5 : 8.5, react ? 7.5 : 5.2, r, 0.5);
+    fillStroke(ctx, '#e6e8e9', '#0d0f12', 2.6);
+    ctx.fillStyle = '#0d0f12';
+    ctx.beginPath(); ctx.arc(ex + (react ? 0 : 2), react ? 48 : 50, react ? 2 : 3, 0, Math.PI * 2); ctx.fill();
+    if (!react) { ink(ctx, '#0d0f12', 3.4); ctx.beginPath(); ctx.moveTo(ex - 9, 45.5); ctx.lineTo(ex + 9, 46.5); ctx.stroke(); }
+    ink(ctx, '#0d0f12', 1.6); ctx.beginPath(); ctx.arc(ex, 53.5, 8.5, 0.15 * Math.PI, 0.85 * Math.PI); ctx.stroke();
+  }
+  // nariz larga y caída
+  ctx.beginPath();
+  ctx.moveTo(40, 42); ctx.quadraticCurveTo(43, 58, 51, 61); ctx.quadraticCurveTo(63, 62, 59, 70); ctx.quadraticCurveTo(50, 75, 40, 69); ctx.quadraticCurveTo(35, 60, 36, 47);
+  fillStroke(ctx, '#cfd3d5', '#0d0f12', 3.4);
+  // boca y arrugas
+  ink(ctx, '#0d0f12', 2.6);
+  ctx.beginPath();
+  if (react) { ctx.arc(32, 69, 3, 0, Math.PI * 2); }
+  else { ctx.moveTo(26, 69); ctx.quadraticCurveTo(34, 64, 44, 69); ctx.lineTo(46, 72); }
+  ctx.stroke();
+  ink(ctx, '#0d0f12', 1.4);
+  ctx.beginPath(); ctx.moveTo(26, 58); ctx.lineTo(23, 63); ctx.moveTo(58, 58); ctx.lineTo(61, 63); ctx.stroke();
+  // fallos: franjas fuera de lugar
+  ctx.fillStyle = '#00e5ff'; ctx.fillRect(46, 20, 15, 4);
+  ctx.fillStyle = '#ff2fd0'; ctx.fillRect(14, 62, 10, 3);
+};
+// Cabeza: la ilustración de referencia de Jorge (public/juego/glitchman-head.webp,
+// recorte hecho con scripts/make-glitchman-head.mjs). Si no cargó, se usa el
+// dibujo por código de arriba. En la reacción se le suman fallos de color.
+const glHead = (react: boolean): Draw => (ctx, w, h) => {
+  const im = loadedImages.get(GLITCHMAN_HEAD);
+  if (!im) return glHeadDrawn(react)(ctx, w, h);
+  ctx.drawImage(im, 0, 0, w, h);
+  if (react) {
+    ctx.fillStyle = '#00e5ff'; ctx.fillRect(w * 0.55, h * 0.12, w * 0.3, 3);
+    ctx.fillStyle = '#ff2fd0'; ctx.fillRect(w * 0.1, h * 0.7, w * 0.22, 3);
+    ctx.globalAlpha = 0.45; ctx.globalCompositeOperation = 'lighter';
+    ctx.drawImage(im, 2.5, -1, w, h);
+    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+  } else {
+    ctx.fillStyle = '#00e5ff'; ctx.fillRect(w * 0.62, h * 0.08, w * 0.2, 2.5);
+    ctx.fillStyle = '#ff2fd0'; ctx.fillRect(w * 0.12, h * 0.8, w * 0.14, 2.5);
+  }
 };
 const glBody: Draw = (ctx) => {
-  const shape = () => roughPoly(ctx, [[10, 4], [42, 4], [48, 44], [4, 44]], rng(9), 2);
-  ghosted(ctx, shape, '#f4f4f0');
-  ink(ctx, '#111', 2);
-  ctx.beginPath();
-  for (let i = 0; i < 6; i++) { ctx.moveTo(14 + i * 5, 12); ctx.lineTo(10 + i * 5, 36); }
-  ctx.stroke();
-  ctx.fillStyle = '#ff2fd0'; ctx.fillRect(22, 22, 12, 4);
+  const r = rng(91);
+  // manos
+  for (const cx of [6, 50]) { blobPath(ctx, cx, 40, 4.5, 5, r, 0.6); fillStroke(ctx, GREY, '#0d0f12', 2.4); }
+  const shirt = () => roughPoly(ctx, [[14, 6], [42, 6], [53, 14], [55, 38], [48, 40], [46, 22], [44, 44], [12, 44], [10, 22], [8, 40], [1, 38], [3, 14]], rng(5), 0.8);
+  glGhost(ctx, shirt);
+  shirt();
+  fillStroke(ctx, BLUE, '#0d0f12', 3.2);
+  ink(ctx, BLUE_D, 2.4);
+  ctx.beginPath(); ctx.moveTo(20, 14); ctx.lineTo(18, 42); ctx.moveTo(36, 14); ctx.lineTo(38, 42); ctx.moveTo(8, 18); ctx.lineTo(6, 36); ctx.moveTo(48, 18); ctx.lineTo(50, 36); ctx.stroke();
+  // cuello y solapas
+  roughPoly(ctx, [[22, 3], [34, 3], [28, 17]], r, 0.5);
+  fillStroke(ctx, GREY, '#0d0f12', 2.4);
+  roughPoly(ctx, [[14, 6], [24, 3], [28, 17], [20, 22]], r, 0.5);
+  fillStroke(ctx, BLUE, '#0d0f12', 2.4);
+  roughPoly(ctx, [[42, 6], [32, 3], [28, 17], [36, 22]], r, 0.5);
+  fillStroke(ctx, BLUE, '#0d0f12', 2.4);
+  // bolsillo y botones
+  ctx.strokeStyle = '#0d0f12'; ctx.lineWidth = 2; ctx.strokeRect(33, 24, 10, 10);
+  ctx.fillStyle = '#0d0f12';
+  for (const y of [26, 34]) { ctx.beginPath(); ctx.arc(28, y, 1.4, 0, Math.PI * 2); ctx.fill(); }
+  ctx.fillStyle = '#ff2fd0'; ctx.fillRect(10, 30, 8, 3);
 };
 const glLeg: Draw = (ctx) => {
-  ink(ctx, '#00e5ff', 5); ctx.beginPath(); ctx.moveTo(6, 0); ctx.lineTo(5, 22); ctx.stroke();
-  ink(ctx, '#ff2fd0', 5); ctx.beginPath(); ctx.moveTo(9, 0); ctx.lineTo(10, 22); ctx.stroke();
-  ink(ctx, '#111', 5); ctx.beginPath(); ctx.moveTo(7.5, 0); ctx.lineTo(7.5, 22); ctx.lineTo(13, 27); ctx.stroke();
+  const r = rng(95);
+  roughPoly(ctx, [[3, 1], [14, 1], [13, 20], [4, 20]], r, 0.6);
+  fillStroke(ctx, '#1a2038', '#0d0f12', 2.8);
+  roughPoly(ctx, [[1, 20], [16, 20], [18, 27], [0, 27]], r, 0.6);
+  fillStroke(ctx, '#0d0f12', '#0d0f12', 2);
+  ctx.fillStyle = '#00e5ff'; ctx.fillRect(3, 24, 5, 1.6);
 };
 
 // =====================================================================
@@ -301,11 +377,11 @@ export const PARTS = {
     part('headReact', 'chica_head_r', 64, 54, 0, -60, 0.5, 1, chicaHead(true)),
   ],
   glitchman: [
-    part('legL', 'gl_leg', 16, 28, -10, -26, 0.5, 0, glLeg),
-    part('legR', 'gl_leg', 16, 28, 10, -26, 0.5, 0, glLeg),
-    part('body', 'gl_body', 54, 48, 0, -24, 0.5, 1, glBody),
-    part('head', 'gl_head', 66, 58, 0, -64, 0.5, 1, glHead(false)),
-    part('headReact', 'gl_head_r', 66, 58, 0, -64, 0.5, 1, glHead(true)),
+    part('legL', 'gl_leg', 18, 28, -10, -26, 0.5, 0, glLeg),
+    part('legR', 'gl_leg', 18, 28, 10, -26, 0.5, 0, glLeg),
+    part('body', 'gl_body', 56, 46, 0, -22, 0.5, 1, glBody),
+    part('head', 'gl_head', 72, 75, 0, -55, 0.5, 1, glHead(false)),
+    part('headReact', 'gl_head_r', 72, 75, 0, -55, 0.5, 1, glHead(true)),
   ],
   heroe: [
     part('legL', 'hero_leg', 4 * PX, 4 * PX, -11, -20, 0.5, 0, heroLeg, true),
