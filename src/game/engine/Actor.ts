@@ -11,6 +11,7 @@ export type ReactKind = 'surprise' | 'happy' | 'think' | 'signature';
 /** Crea (una sola vez) las texturas de un personaje a partir de su definición. */
 export function buildCharacterTextures(scene: Phaser.Scene, def: CharacterDef): void {
   for (const p of def.parts) makeTex(scene, p.key, p.w, p.h, p.draw, p.pixel);
+  if (def.pose) makeTex(scene, def.pose.key, def.pose.w, def.pose.h, def.pose.draw, def.pose.pixel);
 }
 
 export function buildCommonTextures(scene: Phaser.Scene): void {
@@ -62,6 +63,8 @@ export class Actor extends Phaser.GameObjects.Container {
   private bubble?: Phaser.GameObjects.Container;
   private bubbleTimer?: Phaser.Time.TimerEvent;
   private busyFx = false;
+  private poseImg?: Phaser.GameObjects.Image;
+  private poseTimer?: Phaser.Time.TimerEvent;
 
   constructor(scene: Phaser.Scene, x: number, y: number, def: CharacterDef, opts: ActorOpts = {}) {
     super(scene, x, y);
@@ -87,6 +90,12 @@ export class Actor extends Phaser.GameObjects.Container {
       this.parts[role] = im;
       this.base.set(im, { x: spec.x, y: spec.y });
       this.rig.add(im);
+    }
+    if (def.pose) {
+      const ps = def.pose;
+      this.poseImg = img(scene, ps.x, ps.y, ps.key, ps.px, ps.py).setVisible(false);
+      if (this.isShade) this.poseImg.setTint(0x000000);
+      this.fx.add(this.poseImg);
     }
     if (this.isShade) {
       this.rig.setAlpha(0.88);
@@ -119,6 +128,7 @@ export class Actor extends Phaser.GameObjects.Container {
     const b = (im: Phaser.GameObjects.Image) => this.base.get(im)!;
 
     this.rig.scaleX = this.facing;
+    if (this.poseImg?.visible) this.poseImg.scaleX = this.facing / S;
     this.rig.y = moving ? -Math.abs(s) * g.bob * k : Math.sin(this.idleT * 2) * 0.7;
 
     if (P.body) {
@@ -222,11 +232,14 @@ export class Actor extends Phaser.GameObjects.Container {
     const done = (ms: number) => sc.time.delayedCall(ms, () => (this.busyFx = false));
     this.swapHead(1500);
     this.say(this.def.signatureLine, 2400);
+    if (this.poseImg) this.showPose(1700);
     switch (this.def.signature) {
       case 'cane': {
         const cane = this.parts.extra;
         if (cane) {
           sc.tweens.add({ targets: cane, rotation: -1.1, duration: 220, yoyo: true, repeat: 2, hold: 120, onYoyo: () => audio.play('tap') });
+        } else {
+          for (let i = 0; i < 3; i++) sc.time.delayedCall(260 + i * 300, () => audio.play('tap'));
         }
         done(1300);
         break;
@@ -266,6 +279,19 @@ export class Actor extends Phaser.GameObjects.Container {
     }
   }
 
+  /** Muestra la pose de cuerpo completo (si el personaje la tiene) en lugar del rig. */
+  private showPose(ms: number): void {
+    const p = this.poseImg;
+    if (!p) return;
+    this.poseTimer?.remove();
+    this.rig.setVisible(false);
+    p.setVisible(true).setAlpha(1);
+    this.poseTimer = this.scene.time.delayedCall(ms, () => {
+      p.setVisible(false);
+      this.rig.setVisible(true);
+    });
+  }
+
   say(text: string, ms = 2200): void {
     this.bubbleTimer?.remove();
     this.bubble?.destroy();
@@ -279,6 +305,7 @@ export class Actor extends Phaser.GameObjects.Container {
   }
 
   destroy(fromScene?: boolean): void {
+    this.poseTimer?.remove();
     this.bubbleTimer?.remove();
     this.bubble?.destroy();
     super.destroy(fromScene);

@@ -68,6 +68,8 @@ export interface CharacterDef {
   gait: Gait;
   signature: Signature;
   parts: PartSpec[];
+  /** Pose de cuerpo completo que reemplaza al rig durante la reacción característica. */
+  pose?: PartSpec;
   lines: Record<LineKey, string>;
   /** Estilo visual, para el informe y la tarjeta de selección. */
   style: string;

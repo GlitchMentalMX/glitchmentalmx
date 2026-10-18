@@ -1,5 +1,5 @@
 import type { CharId } from '../core/config';
-import { PARTS } from '../art/characters';
+import { PARTS, POSES } from '../art/characters';
 import type { CharacterDef } from '../engine/types';
 
 // Los cinco personajes jugables. Nombres, diseños y diálogos son
@@ -17,11 +17,12 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
     intro: 'He visto morir tres redes sociales y siete contraseñas.',
     signatureLine: '¿Ya lo apagaste y lo volviste a prender?',
     accent: '#d8a066',
-    topY: 118,
-    style: 'Caricatura de trazo imperfecto',
+    topY: 120,
+    style: 'Caricatura de tinta con trazo imperfecto',
     signature: 'cane',
-    gait: { walkHz: 1.5, runHz: 2.4, bob: 2.2, sway: 0.08, squash: 0.02, step: 3, noise: 0.35, breath: 0.012 },
+    gait: { walkHz: 1.4, runHz: 2.3, bob: 1.8, sway: 0.05, squash: 0.02, step: 2, legRot: 0.06, noise: 0.35, breath: 0.012 },
     parts: PARTS.don,
+    pose: POSES.don,
     lines: {
       bot: 'Muchacho, ese aparato me quiere vender algo. Lo huelo.',
       cookies: 'En mis tiempos las galletas se comían. No te seguían a casa.',

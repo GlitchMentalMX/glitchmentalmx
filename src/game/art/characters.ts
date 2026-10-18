@@ -1,5 +1,5 @@
 import { blobPath, fillStroke, ink, pixelGrid, rng, roughPoly, roundRectPath, type Draw } from '../core/gfx';
-import { GLITCHMAN_PIECES, loadedImages } from '../core/images';
+import { IMAGE_SETS, loadedImages } from '../core/images';
 import type { PartSpec } from '../engine/types';
 
 // Arte PROVISIONAL de los cinco personajes, dibujado por código. Cada uno usa
@@ -336,19 +336,32 @@ const heroScarf: Draw = (ctx) => pixelGrid(ctx, ['kkkkkkk.', 'kcccccck', '.kkkkk
 // Glitchman con la ilustración de referencia de Jorge, cortada en piezas que el
 // Actor anima por separado. Escala: 0.18 unidades por píxel de la hoja original.
 const GS = 0.18;
-const sliceDraw = (key: keyof typeof GLITCHMAN_PIECES): Draw => (ctx, w, h) => {
-  const im = loadedImages.get(GLITCHMAN_PIECES[key]);
+const sliceDraw = (url: string): Draw => (ctx, w, h) => {
+  const im = loadedImages.get(url);
   if (im) ctx.drawImage(im, 0, 0, w, h);
 };
 const glitchmanSprite: PartSpec[] = [
-  part('legL', 'glx_legs', 244 * GS, 352 * GS, 0, -(712 - 360) * GS, 0.5, 0, sliceDraw('legs')),
-  part('body', 'glx_torso', 244 * GS, 242 * GS, 0, -(712 - 392) * GS, 0.5, 1, sliceDraw('torso')),
-  part('head', 'glx_head', 160 * GS, 152 * GS, 0, -(712 - 152) * GS, 0.5, 1, sliceDraw('head')),
-  part('headReact', 'glx_head_r', 220 * 0.73 * GS, 250 * 0.73 * GS, 0, -(712 - 152) * GS + 4, 0.5, 1, sliceDraw('headReact')),
+  part('legL', 'glx_legs', 244 * GS, 352 * GS, 0, -(712 - 360) * GS, 0.5, 0, sliceDraw(IMAGE_SETS.glitchman.legs)),
+  part('body', 'glx_torso', 244 * GS, 242 * GS, 0, -(712 - 392) * GS, 0.5, 1, sliceDraw(IMAGE_SETS.glitchman.torso)),
+  part('head', 'glx_head', 160 * GS, 152 * GS, 0, -(712 - 152) * GS, 0.5, 1, sliceDraw(IMAGE_SETS.glitchman.head)),
+  part('headReact', 'glx_head_r', 220 * 0.73 * GS, 250 * 0.73 * GS, 0, -(712 - 152) * GS + 4, 0.5, 1, sliceDraw(IMAGE_SETS.glitchman.headReact)),
 ];
 
+// El Don con la ilustración de la hoja de referencia, cortada en piezas.
+// Escala: 0.17 unidades por píxel de la hoja. Figura: x 99-398, y 24-699
+// (pies en y=699, centro en x=250). Las piernas incluyen el bastón.
+const DS = 0.17;
+const donSprite: PartSpec[] = [
+  part('legL', 'dnx_legs', 300 * DS, 303 * DS, ((99 + 150) - 250) * DS, -(699 - 396) * DS, 0.5, 0, sliceDraw(IMAGE_SETS.don.legs)),
+  part('body', 'dnx_torso', 300 * DS, 330 * DS, ((99 + 150) - 250) * DS, -(699 - 480) * DS, 0.5, 1, sliceDraw(IMAGE_SETS.don.torso)),
+  part('head', 'dnx_head', 200 * DS, 145 * DS, ((140 + 100) - 250) * DS, -(699 - 163) * DS, 0.5, 1, sliceDraw(IMAGE_SETS.don.head)),
+  part('headReact', 'dnx_head_r', 470 * 0.4 * DS, 422 * 0.4 * DS, ((140 + 100) - 250) * DS, -(699 - 163) * DS, 0.5, 1, sliceDraw(IMAGE_SETS.don.headReact)),
+];
+// Pose característica (bastón en alto): 5% más grande en la hoja; ancla en el centro de los pies (531, 1479).
+const donPose: PartSpec = part('extra', 'dnx_pose', 384 * DS * 0.952, 743 * DS * 0.952, 0, 0, (531 - 300) / 384, (1479 - 740) / 743, sliceDraw(IMAGE_SETS.don.pose));
+
 export const PARTS = {
-  don: [
+  donDrawn: [
     part('legL', 'don_leg', 20, 22, -11, -20, 0.5, 0, donLeg),
     part('legR', 'don_leg', 20, 22, 11, -20, 0.5, 0, donLeg),
     part('body', 'don_body', 66, 44, 0, -18, 0.5, 1, donBody),
@@ -380,6 +393,7 @@ export const PARTS = {
     part('headReact', 'gl_head_r', 72, 75, 0, -55, 0.5, 1, glHead(true)),
   ],
   glitchman: glitchmanSprite,
+  don: donSprite,
   heroe: [
     part('legL', 'hero_leg', 4 * PX, 4 * PX, -11, -20, 0.5, 0, heroLeg, true),
     part('legR', 'hero_leg', 4 * PX, 4 * PX, 11, -20, 0.5, 0, heroLeg, true),
@@ -389,3 +403,5 @@ export const PARTS = {
     part('headReact', 'hero_head_r', 12 * PX, 12 * PX, 0, -50, 0.5, 1, heroHead(true), true),
   ],
 } satisfies Record<string, PartSpec[]>;
+
+export const POSES = { don: donPose } as const;

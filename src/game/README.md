@@ -18,7 +18,7 @@ Phaser 3 dentro de Astro, aislado del sitio editorial. **Estado: prototipo, `noi
 ## Cómo ampliar
 - **Escena nueva:** crear `data/<id>.ts` con un `SceneDef` (`build`, `intro`, `restore`, `inspect`) y registrarla en `data/scenes.ts`. Las interacciones son funciones `async (c: ScriptContext) => …` con `await c.say(...)`, `c.ask(...)`, `c.give(...)`, `c.set(...)`.
 - **Personaje nuevo / diferencias de habilidad:** agregar una entrada en `data/characters.ts` (partes, `gait`, `signature`, `lines`). Las habilidades futuras serían un campo más de `CharacterDef`; el movimiento es único.
-- **Reemplazar arte provisional:** sustituir la función `draw` de cada `PartSpec` / textura por una imagen con la misma clave. El resto no cambia.
+- **Reemplazar arte provisional con ilustraciones:** cada personaje ilustrado se corta de su hoja de referencia con un script `scripts/make-<id>-sprite.mjs` (usa `scripts/lib/sprite-cut.mjs`) que deja las piezas en `public/juego/<id>/`; se registran en `core/images.ts` (`IMAGE_SETS`) y en `art/characters.ts`. Hoy: Glitchman y El Don. Si una imagen no carga, el personaje usa su dibujo de respaldo por código (`PARTS.<id>Drawn`). Una pose opcional (`CharacterDef.pose`) reemplaza al rig durante la reacción característica.
 - **Final nuevo:** agregarlo a `ENDING_IDS` (`core/config.ts`) y a `data/endings.ts`.
 
 ## Criterio de contenido
