@@ -3,6 +3,7 @@ import { H, PLAYER_RADIUS, W, type EndingId } from '../core/config';
 import { audio } from '../core/audio';
 import { fitCamera, img, makeTex, txt } from '../core/gfx';
 import { state } from '../core/state';
+import { track } from '../core/track';
 import { CHARACTERS } from '../data/characters';
 import { SCENES } from '../data/scenes';
 import { Actor, buildCommonTextures } from '../engine/Actor';
@@ -228,6 +229,7 @@ export class WorldScene extends Phaser.Scene {
   async finish(id: EndingId): Promise<void> {
     this.scripting = true;
     this.playerMover.stop();
+    track('juego_final', { final: id, personaje: state.characterId ?? '' });
     state.finish(id);
     audio.play(id === 'baja' ? 'win' : 'lose');
     await new Promise<void>((r) => {

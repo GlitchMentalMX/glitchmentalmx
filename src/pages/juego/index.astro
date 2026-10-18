@@ -1,11 +1,12 @@
 ---
 // Ruta independiente del juego. A propósito NO usa Layout.astro: así no hereda
-// header, footer, Lightbox, banner de cookies ni el beacon de analytics, y no
-// hay que tocar ningún componente compartido del sitio editorial. El juego no
-// guarda cookies ni manda datos a ningún lado — su único almacenamiento es el
-// localStorage del propio navegador (ver src/game/core/save.ts).
+// header, footer, Lightbox ni banner de cookies, y no hay que tocar ningún
+// componente compartido del sitio editorial. Solo reusa el beacon de
+// analytics (anónimo, sin cookies, respeta ?gm-optout=1). El progreso del
+// juego vive únicamente en el localStorage del navegador (src/game/core/save.ts).
 // noindex mientras Jorge no autorice lo contrario; también está fuera del
 // sitemap (ver el filtro en astro.config.mjs).
+import Analytics from '../../components/Analytics.astro';
 ---
 
 <!doctype html>
@@ -26,6 +27,7 @@
   <body>
     <div id="stage-bg" aria-hidden="true"></div>
     <div id="game" role="application" aria-label="Videojuego de exploración"></div>
+    <Analytics />
     <noscript>
       <p class="nojs">Este juego necesita JavaScript activado para funcionar.</p>
     </noscript>

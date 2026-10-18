@@ -3,6 +3,7 @@ import { CHAR_IDS, ENDING_IDS, H, W, type CharId } from '../core/config';
 import { audio } from '../core/audio';
 import { fitCamera, hexNum, txt } from '../core/gfx';
 import { state } from '../core/state';
+import { track } from '../core/track';
 import { CHARACTERS } from '../data/characters';
 import { Actor } from '../engine/Actor';
 
@@ -199,6 +200,7 @@ export class SelectScene extends Phaser.Scene {
   private play(): void {
     audio.unlock();
     state.newGame(CHAR_IDS[this.index]);
+    track('juego_inicio', { personaje: CHAR_IDS[this.index] });
     this.go();
   }
 
