@@ -58,18 +58,26 @@ window.visualViewport?.addEventListener('resize', onResize);
 // (mismo criterio que el CSS de #rotate) y el juego se pausa, con su audio.
 const landscapeTouch = window.matchMedia('(hover: none) and (pointer: coarse) and (orientation: landscape)');
 const applyOrientation = () => {
+  // Pestaña en segundo plano (o teléfono bloqueado): el audio se pausa SIEMPRE y
+  // nada lo reanuda hasta que la pestaña vuelva a estar a la vista.
+  if (document.hidden) {
+    audio.suspend();
+    return;
+  }
   if (landscapeTouch.matches) {
     if (game.loop.running) game.loop.sleep();
     audio.suspend();
   } else {
     if (!game.loop.running) {
       game.loop.wake();
-      audio.resume();
       onResize();
     }
+    audio.resume();
   }
 };
 landscapeTouch.addEventListener('change', applyOrientation);
+document.addEventListener('visibilitychange', applyOrientation);
+window.addEventListener('pagehide', () => audio.suspend());
 // El arranque de Phaser es asíncrono y recupera su bucle al volver el foco de
 // la pestaña: en vez de depender de esos eventos, se revisa cada medio segundo.
 window.setInterval(applyOrientation, 500);
