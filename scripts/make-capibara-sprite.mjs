@@ -1,4 +1,4 @@
-// Corta a CapiCaos (capibara) en piezas: cabeza, cabeza de reacción, cuerpo,
+// Corta a CapiCaos (capibara) en piezas: cabeza, ojo de reacción, cuerpo,
 // patas traseras, patas delanteras y pose comiendo. Hoja: cuerpo (arriba
 // izquierda), busto de reacción (arriba derecha), pose (abajo). Fondo ≈ #0e1820.
 // Uso: node scripts/make-capibara-sprite.mjs <hoja.webp>
@@ -14,8 +14,13 @@ const ramp = (v, a, b) => Math.max(0, Math.min(1, (v - a) / (b - a)));
 
 await cut(F, 'head', 495, 10, 325, 295, (x, y) => (y <= 305 ? ramp(x - xcut(y), 0, 18) * ramp(305 - y, 0, 22) : 0));
 // El cuerpo se mete 22 px bajo la cabeza para que no haya hueco al moverse.
-await cut(F, 'body', 150, 95, 610, 318, (x, y) => (y <= 300 && x > xcut(y) + 22 ? 0 : 1));
+// Además incluye una franja de garganta (y 262-300) bajo la cabeza: así el borde
+// inferior difuminado de la cabeza siempre tiene cuerpo detrás (sin hueco ni línea).
+await cut(F, 'body', 150, 95, 610, 318, (x, y) => (y <= 300 && x > xcut(y) + 22 ? (y >= 262 ? 1 : 0) : 1));
 await cut(F, 'legs-back', 150, 392, 275, 102);
 await cut(F, 'legs-front', 425, 392, 280, 102);
-await cut(F, 'head-react', 1060, 20, 440, 450, (x, y) => ramp(x - 1060, 0, 26) * ramp(470 - y, 0, 26));
+// Reacción: en vez de cambiar toda la cabeza (dejaba una cuña oscura en el cuello al
+// moverse la costura), se recorta SOLO el ojo muy abierto del busto, con borde
+// difuminado en círculo. El juego lo pega sobre la cabeza normal.
+await cut(F, 'eye-react', 1170, 170, 110, 110, (x, y) => ramp(52 - Math.hypot(x - 1225, y - 225), 0, 16));
 await cut(F, 'pose', 215, 522, 740, 470);

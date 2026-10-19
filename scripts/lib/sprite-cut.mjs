@@ -87,6 +87,32 @@ export async function openSheet(src, { bg, tol = 14, pocket = 600 }) {
     // keepRatio < 1 conserva también las manchas pequeñas sueltas (p. ej. la moneda flotante).
     const biggest = Math.max(...sizes);
     for (let o = 0; o < cw * ch; o++) out[o * 4 + 3] = lab[o] >= 0 && sizes[lab[o]] >= biggest * (keepRatio < 1 ? keepRatio : 1) ? Math.round(255 * Math.min(1, alpha[o])) : 0;
+    // Sangrado de color: los píxeles transparentes junto al contorno toman el color
+    // del vecino opaco más cercano. Sin esto, el color del fondo original (azul
+    // marino) se cuela al suavizar el borde en pantalla y deja una línea oscura
+    // en los cortes internos (cuello, cintura).
+    const colored = new Uint8Array(cw * ch);
+    for (let o = 0; o < cw * ch; o++) colored[o] = out[o * 4 + 3] > 0 ? 1 : 0;
+    for (let pass = 0; pass < 5; pass++) {
+      const add = [];
+      for (let o = 0; o < cw * ch; o++) {
+        if (colored[o]) continue;
+        const x = o % cw, y = (o / cw) | 0;
+        let r = 0, g = 0, b = 0, n = 0;
+        for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+          const nx = x + dx, ny = y + dy;
+          if (nx < 0 || ny < 0 || nx >= cw || ny >= ch) continue;
+          const q = ny * cw + nx;
+          if (!colored[q]) continue;
+          r += out[q * 4]; g += out[q * 4 + 1]; b += out[q * 4 + 2]; n++;
+        }
+        if (n) add.push([o, Math.round(r / n), Math.round(g / n), Math.round(b / n)]);
+      }
+      for (const [o, r, g, b] of add) {
+        out[o * 4] = r; out[o * 4 + 1] = g; out[o * 4 + 2] = b;
+        colored[o] = 1;
+      }
+    }
     mkdirSync(`public/juego/${folder}`, { recursive: true });
     await sharp(out, { raw: { width: cw, height: ch, channels: 4 } }).webp({ quality: 92, alphaQuality: 95 }).toFile(`public/juego/${folder}/${name}.webp`);
     console.log(`${folder}/${name}`, cw, ch);

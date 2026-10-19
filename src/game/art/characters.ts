@@ -382,6 +382,16 @@ const rigAt = (ax: number, ay: number, s: number) => (sx: number, sy: number): [
 // CapiCaos — hoja 1536x1024, cuerpo en x 155-850, patas en y≈490. Cuerpo, patas
 // traseras y delanteras se mueven aparte; la cabeza gira sobre la punta de la nariz.
 const CS = 0.19;
+const capiHeadSurprised: Draw = (ctx, w, h) => {
+  const head = loadedImages.get(IMAGE_SETS.capibara.head);
+  const eye = loadedImages.get(IMAGE_SETS.capibara.eyeReact);
+  if (head) ctx.drawImage(head, 0, 0, w, h);
+  if (eye) {
+    const k = (w / 325) * 0.56;
+    const ow = 110 * k;
+    ctx.drawImage(eye, (138 / 325) * w - ow / 2, (100 / 295) * h - ow / 2, ow, ow);
+  }
+};
 const CR = rigAt(502, 490, CS);
 const CI = IMAGE_SETS.capibara;
 const capibaraSprite: PartSpec[] = [
@@ -389,7 +399,9 @@ const capibaraSprite: PartSpec[] = [
   slice({ role: 'legR', key: 'cpx_legs_front', url: CI.legsFront, crop: [425, 392, 280, 102], s: CS, pivot: [0.5, 0], at: CR(565, 392) }),
   slice({ role: 'body', key: 'cpx_body', url: CI.body, crop: [150, 95, 610, 318], s: CS, pivot: [0.5, 1], at: CR(455, 413) }),
   slice({ role: 'head', key: 'cpx_head', url: CI.head, crop: [495, 10, 325, 295], s: CS, pivot: [0.9385, 0.39], at: CR(800, 125) }),
-  slice({ role: 'headReact', key: 'cpx_head_r', url: CI.headReact, crop: [1060, 20, 440, 450], s: CS, k: 0.56, pivot: [0.968, 0.511], at: CR(800, 125) }),
+  // Reacción: la misma cabeza con el ojo muy abierto encima. Misma geometría que la cabeza
+  // normal, así cambiar de una a otra nunca deja costuras en el cuello.
+  part('headReact', 'cpx_head_r', 325 * CS, 295 * CS, ...CR(800, 125), 0.9385, 0.39, capiHeadSurprised),
 ];
 const capibaraPose = slice({ role: 'extra', key: 'cpx_pose', url: CI.pose, crop: [215, 522, 740, 470], s: CS, pivot: [0.446, 0.985], at: [0, 0] });
 

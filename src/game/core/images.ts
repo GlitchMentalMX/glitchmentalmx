@@ -16,7 +16,7 @@ export const IMAGE_SETS = {
   },
   capibara: {
     head: '/juego/capibara/head.webp',
-    headReact: '/juego/capibara/head-react.webp',
+    eyeReact: '/juego/capibara/eye-react.webp',
     body: '/juego/capibara/body.webp',
     legsBack: '/juego/capibara/legs-back.webp',
     legsFront: '/juego/capibara/legs-front.webp',

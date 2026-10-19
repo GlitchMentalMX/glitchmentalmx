@@ -98,7 +98,6 @@ export class Actor extends Phaser.GameObjects.Container {
       this.fx.add(this.poseImg);
     }
     if (this.isShade) {
-      this.rig.setAlpha(0.88);
       this.fx.setScale(1, 0.82);
     }
     if (opts.scale) this.setScale(opts.scale);
