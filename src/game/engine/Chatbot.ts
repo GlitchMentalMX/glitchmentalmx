@@ -6,6 +6,7 @@ import { Mover } from './Mover';
 import type { NavGrid, Vec } from './pathfinding';
 
 export type BotState = 'patrol' | 'greet' | 'follow' | 'frozen';
+export type FreezeReason = 'clausulas' | 'reinicio' | 'div0';
 type Face = 'ok' | 'happy' | 'hmm' | 'frozen';
 
 /** Orbe brillante casi 3D con cara: criatura de otro estilo visual (provisional). */
@@ -64,6 +65,21 @@ const BARKS_FOLLOW = [
   '¿Cancelar? Con lo bien que nos hace conocerte.',
   'Acabo de vender tu paso por esta sala a un anunciante. Te fue bien.',
 ];
+const READINGS_BY_REASON: Record<FreezeReason, string[]> = {
+  clausulas: [],
+  reinicio: [
+    'Reiniciando… 12%',
+    'Reiniciando… 12%… ¿12%?',
+    'Instalando actualización {n} de 4,812…',
+    'Apagando y prendiendo. Como en los viejos tiempos.',
+  ],
+  div0: [
+    'Dividiendo entre cero…',
+    'Resultado: ∞. Procesando infinito…',
+    'ERROR: ∞ no cabe en la variable.',
+    'Paso {n} de ∞. Sin novedades.',
+  ],
+};
 const READINGS = [
   'Leyendo cláusula {n} de 4,812…',
   'Cláusula {n}: "el lector renuncia a su tiempo". Qué belleza.',
@@ -93,6 +109,7 @@ export class Chatbot {
   private bubble?: Phaser.GameObjects.Container;
   private bubbleTimer?: Phaser.Time.TimerEvent;
   private readingT = 0;
+  private reason: FreezeReason = 'clausulas';
   private bark = 0;
   facing = 1;
 
@@ -129,7 +146,8 @@ export class Chatbot {
     this.orb.setTexture(`bot_${f}`);
   }
 
-  freeze(): void {
+  freeze(reason: FreezeReason = 'clausulas'): void {
+    this.reason = reason;
     this.state = 'frozen';
     this.mover.stop();
     this.setFace('frozen');
@@ -225,7 +243,8 @@ export class Chatbot {
         this.readingT += dt;
         if (!this.bubble && Math.floor(this.readingT) % 6 === 5) {
           const n = Math.floor(this.readingT / 6) + 1;
-          this.say(READINGS[(n - 1) % READINGS.length].replace('{n}', String(n)));
+          const pool = READINGS_BY_REASON[this.reason].length ? READINGS_BY_REASON[this.reason] : READINGS;
+          this.say(pool[(n - 1) % pool.length].replace('{n}', String(n)));
         }
         break;
       }

@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import type { CharId, EndingId } from './config';
-import { clearProgress, loadMeta, loadProgress, saveMeta, saveProgress, type FlagValue, type Meta } from './save';
+import { clearProgress, loadMeta, loadProgress, saveMeta, saveProgress, type FlagValue, type Meta, type Progress } from './save';
 
 /**
  * Estado único de la partida (personaje, banderas, inventario) más la meta
@@ -16,6 +16,10 @@ class GameState extends Phaser.Events.EventEmitter {
   inventory: string[] = [];
   /** Segundos jugados en esta partida. */
   playSeconds = 0;
+  /** Secretos encontrados en esta partida (para el resumen del final). */
+  runSecrets: string[] = [];
+  /** Checkpoint de Cartucho, si lo guardó en una silla. */
+  checkpoint: Omit<Progress, 'cp'> | null = null;
   meta: Meta = loadMeta();
   /** Tras un final la partida queda cerrada: nada debe volver a escribirla. */
   private closed = false;
@@ -36,6 +40,8 @@ class GameState extends Phaser.Events.EventEmitter {
     this.flags = p.flags ?? {};
     this.inventory = p.inventory ?? [];
     this.playSeconds = p.t ?? 0;
+    this.runSecrets = [];
+    this.checkpoint = p.cp ?? null;
     return true;
   }
 
@@ -48,6 +54,8 @@ class GameState extends Phaser.Events.EventEmitter {
     this.flags = {};
     this.inventory = [];
     this.playSeconds = 0;
+    this.runSecrets = [];
+    this.checkpoint = null;
     this.meta.lastCharacter = characterId;
     saveMeta(this.meta);
     this.persist();
@@ -68,7 +76,55 @@ class GameState extends Phaser.Events.EventEmitter {
       flags: this.flags,
       inventory: this.inventory,
       t: Math.round(this.playSeconds),
+      cp: this.checkpoint ?? undefined,
     });
+  }
+
+  /** Registra un secreto del personaje actual. Devuelve true si es la primera vez que lo descubre. */
+  discover(secretId: string): boolean {
+    const c = this.characterId;
+    if (!c) return false;
+    const list = (this.meta.secrets[c] ??= []);
+    const fresh = !list.includes(secretId);
+    if (fresh) {
+      list.push(secretId);
+      saveMeta(this.meta);
+    }
+    if (!this.runSecrets.includes(secretId)) this.runSecrets.push(secretId);
+    return fresh;
+  }
+
+  secretsOf(c: CharId): string[] {
+    return this.meta.secrets[c] ?? [];
+  }
+
+  saveCheckpoint(): void {
+    this.checkpoint = {
+      v: 1,
+      characterId: this.characterId as CharId,
+      sceneId: this.sceneId,
+      x: Math.round(this.x),
+      y: Math.round(this.y),
+      flags: JSON.parse(JSON.stringify(this.flags)),
+      inventory: [...this.inventory],
+      t: Math.round(this.playSeconds),
+    };
+    this.persist();
+  }
+
+  /** Vuelve al checkpoint guardado (los finales y secretos ya vistos se conservan). */
+  loadCheckpoint(): boolean {
+    const cp = this.checkpoint;
+    if (!cp) return false;
+    this.closed = false;
+    this.sceneId = cp.sceneId;
+    this.x = cp.x;
+    this.y = cp.y;
+    this.flags = JSON.parse(JSON.stringify(cp.flags));
+    this.inventory = [...cp.inventory];
+    this.playSeconds = cp.t ?? this.playSeconds;
+    this.persist();
+    return true;
   }
 
   flag<T extends FlagValue = FlagValue>(key: string): T | undefined {

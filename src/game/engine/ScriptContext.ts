@@ -3,6 +3,7 @@ import { audio, type SfxName } from '../core/audio';
 import { state } from '../core/state';
 import { CHARACTERS } from '../data/characters';
 import { ITEMS } from '../data/items';
+import { SECRETS } from '../data/secrets';
 import type { UIScene, Speaker } from '../scenes/UIScene';
 import type { WorldScene } from '../scenes/WorldScene';
 import type { ReactKind } from './Actor';
@@ -64,6 +65,22 @@ export class ScriptContext {
   /** El jugador comenta algo con la frase propia de su personaje. */
   async sayChar(key: LineKey): Promise<void> {
     await this.ui.say(this.speaker('player'), this.char.lines[key]);
+  }
+
+  /** ¿Juega con este personaje? Las rutas exclusivas se activan con esto. */
+  isChar(id: CharId): boolean {
+    return this.charId === id;
+  }
+
+  /** Marca un secreto del personaje; la primera vez avisa con un aviso en pantalla. */
+  discover(secretId: string): void {
+    const list = SECRETS[this.charId];
+    const idx = list.findIndex((s) => s.id === secretId);
+    if (state.discover(secretId) && idx >= 0) {
+      const n = state.secretsOf(this.charId).length;
+      audio.play('coin');
+      this.ui.toast(`Secreto de ${this.char.name}: ${list[idx].name} (${n}/${list.length})`);
+    }
   }
 
   flag<T extends boolean | number | string = boolean | number | string>(key: string): T | undefined {

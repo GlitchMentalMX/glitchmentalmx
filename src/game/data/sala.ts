@@ -115,6 +115,7 @@ async function botTalk(c: ScriptContext): Promise<void> {
   for (;;) {
     const opts = ['¿Cómo cancelo mi suscripción?', '¿Qué eres exactamente?'];
     if (c.flag('cookies') === 'aceptadas') opts.push('¿Cómo sabes tanto de mí?');
+    if (c.isChar('don') && !c.is('pistaPostit')) opts.push('Muchacho, explícame cómo funciona esto');
     opts.push('Nada, gracias.');
     const i = await c.ask('bot', '¿Algo más? Me encanta cuando hay algo más.', opts);
     const pick = opts[i];
@@ -124,6 +125,12 @@ async function botTalk(c: ScriptContext): Promise<void> {
       c.react('think');
     } else if (pick.startsWith('¿Qué eres')) {
       await c.say('bot', "Soy un asistente de IA entrenado con 40 millones de correos de 'Te extrañamos'. Mi especialidad: que no te vayas.");
+    } else if (pick.startsWith('Muchacho')) {
+      await c.say('bot', 'Soy un menú de opciones con corbata. Mi contraseña de administrador está anotada en un papelito pegado al monitor del mostrador. Pero eso no se lo dije.');
+      await c.say('player', 'Lo sabía. Todos los sistemas terminan con un papelito amarillo.');
+      c.set('pistaPostit');
+      c.discover('don-lucido');
+      c.ui.toast('Pista: el monitor del mostrador');
     } else if (pick.startsWith('¿Cómo sabes')) {
       await c.say('bot', "Las galletas, claro. Ayer escribiste 'cómo cancelar' 47 veces. Una persona romántica.");
       c.react('surprise');
@@ -146,7 +153,13 @@ async function botBlocks(c: ScriptContext): Promise<void> {
   for (;;) {
     const opts = ['Responder la encuesta'];
     if (c.has('hoja')) opts.push('Darle la hoja con los Términos y Condiciones');
-    opts.push('Intentar rodearlo', 'Irme');
+    opts.push('Intentar rodearlo');
+    // Vías exclusivas de cada personaje.
+    if (c.isChar('don')) opts.push('Sugerirle que se apague y se vuelva a prender');
+    if (c.isChar('modo-dios')) opts.push('Buscar el "Saltar encuesta" (casi invisible)');
+    if (c.isChar('glitchman')) opts.push('Pedirle que divida entre cero');
+    if (c.isChar('heroe')) opts.push('Saltar sobre el mini-jefe');
+    opts.push('Irme');
     const i = await c.ask('bot', 'Su opinión es muy importante para nosotros.', opts);
     const pick = opts[i];
     if (pick === 'Responder la encuesta') {
@@ -157,13 +170,56 @@ async function botBlocks(c: ScriptContext): Promise<void> {
       c.sfx('pick');
       bot.setFace('happy');
       await c.say('bot', '¿Términos y Condiciones? ¡Qué lectura! Nadie me había regalado uno entero. Permítame un segundo.');
-      bot.freeze();
+      bot.freeze('clausulas');
       c.set('botCongelado');
+      c.set('botMotivo', 'clausulas');
       c.sfx('glitch');
       c.react('happy');
       await c.say('bot', 'Cláusula 1... qué prosa. Cláusula 2... ¡oh! Cláusula 3...');
       await c.sayChar('botFrozen');
       c.ui.toast('El asistente se quedó leyendo');
+      return;
+    } else if (pick.startsWith('Sugerirle')) {
+      await c.say('player', 'Joven, ¿ya intentó apagarse y volverse a prender?');
+      bot.setFace('hmm');
+      await c.say('bot', 'Eso es... irresponsablemente razonable. Reiniciando...');
+      bot.freeze('reinicio');
+      c.set('botCongelado');
+      c.set('botMotivo', 'reinicio');
+      c.sfx('glitch');
+      c.discover('don-bot');
+      c.ui.toast('El asistente se está reiniciando');
+      return;
+    } else if (pick.startsWith('Pedirle que divida')) {
+      await c.say('player', 'Pregunta 48: ¿cuánto es uno entre cero?');
+      await c.say('bot', 'Eso es... infinito... infinito... infinito...');
+      bot.freeze('div0');
+      c.set('botCongelado');
+      c.set('botMotivo', 'div0');
+      c.sfx('glitch');
+      c.shake(300, 0.006);
+      c.discover('glitch-div0');
+      c.ui.toast('El asistente colapsó');
+      return;
+    } else if (pick.startsWith('Buscar el "Saltar')) {
+      await c.say('player', 'Siempre hay un "Saltar". Siempre. A ver... ahí estás.');
+      c.sfx('pick');
+      await c.say('bot', 'Eso no estaba... ¡NO ESTABA VISIBLE! ¿Cómo lo encontró?');
+      bot.teleport(260, 480);
+      bot.setFace('hmm');
+      c.set('botEsquivado');
+      c.discover('poppy-saltar');
+      c.ui.toast('Encuesta saltada');
+      return;
+    } else if (pick.startsWith('Saltar sobre')) {
+      c.sfx('coin');
+      c.react('happy');
+      await c.say('bot', '¿Salto? Eso no está en las reglas... ¡sí está en las reglas!');
+      bot.teleport(260, 480);
+      bot.setFace('hmm');
+      c.set('botEsquivado');
+      c.discover('cartucho-salto');
+      c.ui.toast('Mini-jefe esquivado');
       return;
     } else if (pick === 'Intentar rodearlo') {
       c.sfx('deny');
@@ -184,12 +240,21 @@ async function finalChoice(c: ScriptContext): Promise<void> {
   for (;;) {
     const opts = ['Cancelar suscripción', 'Aceptar 3 meses gratis y quedarme'];
     if (c.has('postit')) opts.push('Usar la contraseña del post-it');
+    if (c.isChar('heroe')) opts.push('Ingresar el código ↑↑↓↓←→←→BA');
     opts.push('Todavía no');
     const i = await c.ask('Puerta pequeña', 'Hay una palanca y una pantalla táctil. ¿Qué haces?', opts);
     const pick = opts[i];
     if (pick.startsWith('Aceptar')) {
       await c.say('bot', '(por el altavoz) ¡Excelente decisión! Su descuento vale por 3 meses. Después, el mismo precio de siempre. Pero con más cariño.');
       await c.end('retenido');
+      return;
+    }
+    if (pick.startsWith('Ingresar')) {
+      c.set('konami');
+      c.sfx('coin');
+      c.discover('cartucho-konami');
+      await c.say('Terminal de la puerta', 'Código aceptado. +30 vidas. Acceso concedido. Nadie sabe por qué.');
+      await c.end('baja');
       return;
     }
     if (pick.startsWith('Usar')) {
@@ -229,9 +294,9 @@ async function cancelDoor(c: ScriptContext): Promise<void> {
     c.set('puertaVista');
     await c.sayChar('door');
   }
-  if (c.flag('cookies') === 'aceptadas' && !c.is('botCongelado')) {
+  if (c.flag('cookies') === 'aceptadas' && !c.is('botCongelado') && !c.is('botEsquivado') && !c.is('rastreoComido')) {
     await botBlocks(c);
-    if (!c.is('botCongelado')) return;
+    if (!c.is('botCongelado') && !c.is('botEsquivado')) return;
   }
   await finalChoice(c);
 }
@@ -255,13 +320,15 @@ async function cookieMachine(c: ScriptContext): Promise<void> {
   await c.sayChar('cookies');
   let fails = 0;
   for (;;) {
-    type Opt = { label: string; kind: 'accept' | 'config' | 'reject' };
+    type Opt = { label: string; kind: 'accept' | 'config' | 'reject' | 'don' | 'poppy' };
     const opts: Opt[] = [
       { label: 'ACEPTAR TODAS (recomendado)', kind: 'accept' },
       { label: 'Configurar (47 pasos)', kind: 'config' },
       { label: fails ? 'rechazar todas' : 'Rechazar todas', kind: 'reject' },
     ];
     if (fails) opts.reverse();
+    if (c.isChar('don')) opts.push({ label: 'Apagarla y volver a prenderla', kind: 'don' });
+    if (c.isChar('modo-dios')) opts.push({ label: 'Buscar el botón escondido', kind: 'poppy' });
     const i = await c.ask('Cookie-Matic', '¿Acepta el uso de cookies?', opts.map((o) => o.label));
     const kind = opts[i].kind;
     if (kind === 'config') {
@@ -279,6 +346,23 @@ async function cookieMachine(c: ScriptContext): Promise<void> {
         await c.say('Cookie-Matic', 'Preferencias guardadas. Probablemente.');
         return;
       }
+    } else if (kind === 'don') {
+      await c.say('player', 'Un momento, muchacho. ¿Ya intentó apagarla y volverla a prender?');
+      c.sfx('deny');
+      await c.say('Cookie-Matic', '...apagándose... (la pantalla se queda negra)');
+      await c.wait(700);
+      c.sfx('pop');
+      await c.say('Cookie-Matic', 'Reiniciada. Preferencias de fábrica: ninguna cookie. Increíble.');
+      c.set('cookies', 'rechazadas');
+      c.discover('don-reinicio');
+      return;
+    } else if (kind === 'poppy') {
+      await c.say('player', 'Siempre hay un botón que nadie debía tocar. A ver... detrás del logo.');
+      c.sfx('pick');
+      await c.say('Cookie-Matic', 'Detectado: botón oculto "Rechazar sin condiciones". Nadie lo había encontrado en 11 años.');
+      c.set('cookies', 'rechazadas');
+      c.discover('poppy-boton');
+      return;
     } else {
       c.set('cookies', 'aceptadas');
       c.sfx('crunch');
@@ -321,8 +405,30 @@ async function printer(c: ScriptContext): Promise<void> {
   c.give('hoja');
   c.react('surprise');
   await c.wait(400);
+  if (c.isChar('modo-dios')) {
+    await c.say('Hoja 1 de 4,812', 'La letra es tan chiquita que casi no se ve.');
+    const i = await c.ask('Hoja 1 de 4,812', '¿Cómo la lees?', ['Leer solo el primer párrafo', 'Leer TODA la letra chiquita']);
+    if (i === 1) {
+      c.sfx('pick');
+      await c.say('Hoja 1 de 4,812', 'Cláusula 4,811: "Quien lea la 4,812 cede su sombra". Poppy la tacha con un plumón. Nadie lo había hecho.');
+      await c.say('Hoja 1 de 4,812', 'Debajo, en tipo microscópico: "La salida es chiquita y está detrás de algo decorativo."');
+      c.set('pistaPlanta');
+      c.discover('poppy-letra');
+      await c.sayChar('clause');
+      return;
+    }
+  }
   await c.say('Hoja 1 de 4,812', "Cláusula 4,812: Al leer esta cláusula, el Usuario cede a la Empresa su sombra, con fines de ocio. La Empresa se compromete a usarla con moderación.");
   await c.sayChar('clause');
+  if (c.isChar('glitchman')) {
+    c.sfx('glitch');
+    c.shake(400, 0.006);
+    await c.say('Hoja 1 de 4,812', 'Buscando usuario... buscando sombra... ERROR: ninguno de los dos existe. La hoja se corrompe.');
+    await c.say('Hoja 1 de 4,812', 'Entre los fallos aparece una nota: "Salida: detrás de algo decorativo."');
+    c.set('pistaPlanta');
+    c.discover('glitch-hoja');
+    return;
+  }
   await detachShade(c);
   await c.say('shade', 'Hola. Me ofrecieron mejor contrato. Bueno, no. Pero me quedé con ganas de ver qué hay allá afuera.');
   await c.say('shade', 'Por cierto: detrás de la planta de la derecha hay algo que no deberías ver. Ven a hablarme.');
@@ -357,8 +463,29 @@ async function shadeTalk(c: ScriptContext): Promise<void> {
 async function plant(c: ScriptContext): Promise<void> {
   await c.say('Planta', "Tiene una etiqueta: '100% natural*'. *Natural de plástico. Un cable sale de la maceta y se pierde detrás de la pared.");
   await c.sayChar('plant');
-  const i = await c.ask('Planta', 'Pesa menos de lo que parece. ¿Qué haces?', ['Empujarla hacia un lado', 'Dejarla']);
-  if (i === 0) {
+  const opts = ['Empujarla hacia un lado'];
+  if (c.isChar('capibara')) opts.push('Morderla');
+  if (c.isChar('glitchman')) opts.push('Atravesarla (glitch)');
+  opts.push('Dejarla');
+  const pick = opts[await c.ask('Planta', 'Pesa menos de lo que parece. ¿Qué haces?', opts)];
+  if (pick === 'Morderla') {
+    await c.walk({ x: 440, y: 270 });
+    c.sfx('crunch');
+    await c.say('player', 'Plástico. Mmm... no. Pero se movió.');
+    await movePlant(c);
+    c.discover('capi-planta');
+    await c.sayChar('door');
+    c.set('puertaVista');
+  } else if (pick.startsWith('Atravesarla')) {
+    await c.walk({ x: 440, y: 270 });
+    c.sfx('glitch');
+    c.flash(120, 0, 229, 255);
+    await c.say('player', 'Colisión... desactivada. La planta se cae del mapa.');
+    await movePlant(c);
+    c.discover('glitch-planta');
+    await c.sayChar('door');
+    c.set('puertaVista');
+  } else if (pick === 'Empujarla hacia un lado') {
     await c.walk({ x: 440, y: 270 });
     await movePlant(c);
     await c.sayChar('door');
@@ -399,7 +526,39 @@ async function takePostit(c: ScriptContext): Promise<void> {
   await c.sayChar('postit');
 }
 
+async function siesta(c: ScriptContext): Promise<void> {
+  const k = (c.flag<number>('siestas') ?? 0) + 1;
+  c.set('siestas', k);
+  c.react('think');
+  if (k === 1) {
+    await c.say('Silla', 'Zzz... sueñas con hojas verdes. En el letrero, "ATENDIENDO" cambia de 0003 a 0004. Quizá si sigues esperando...');
+  } else if (k === 2) {
+    await c.say('Silla', 'Zzz... el letrero parpadea: ATENDIENDO 0412. La fila avanza, hacia adelante, por primera vez en la historia.');
+  } else {
+    await c.say('Silla', 'Zzz... "TURNO 99,999. PASE A VENTANILLA 1."');
+    c.discover('capi-turno');
+    await c.fade(() => undefined, 500);
+    await c.end('turno');
+  }
+}
+
 async function chairs(c: ScriptContext): Promise<void> {
+  if (c.isChar('capibara')) {
+    const i = await c.ask('Silla', 'Hay sillas. Hay tiempo. ¿Qué haces?', ['Sentarte un rato', 'Echarte una siesta']);
+    if (i === 1) {
+      await siesta(c);
+      return;
+    }
+  } else if (c.isChar('heroe')) {
+    const i = await c.ask('Silla', 'Zona de descanso. ¿Qué haces?', ['Sentarte un rato', 'Guardar checkpoint']);
+    if (i === 1) {
+      c.state.saveCheckpoint();
+      c.sfx('coin');
+      c.ui.toast('Checkpoint guardado');
+      await c.say('player', '¡CHECKPOINT! Si algo sale mal... ¿se puede volver? ¡Se puede!');
+      return;
+    }
+  }
   const n = (c.flag<number>('sillas') ?? 0) + 1;
   c.set('sillas', n);
   c.react('think');
@@ -444,6 +603,13 @@ async function inspect(c: ScriptContext, id: string): Promise<void> {
       await c.wait(900);
       c.set('galletaComida');
       await c.sayChar('eat');
+      if (c.isChar('capibara') && c.flag('cookies') === 'aceptadas' && !c.is('rastreoComido')) {
+        c.set('rastreoComido');
+        c.world.clearTrackers();
+        c.world.bot?.say('¡Mi rastreador! ¡Era propiedad de la empresa!');
+        c.discover('capi-rastreo');
+        c.ui.toast('El rastreador se digirió');
+      }
     }
     return;
   }
@@ -543,8 +709,9 @@ function restore(w: WorldScene): void {
   if (state.is('postitTomado')) img_(w, 'postit').destroy();
   if (state.is('impreso')) img_(w, 'paper').setVisible(true);
   if (state.is('sombraFuera')) createShade(w, SHADE_SPOT.x, SHADE_SPOT.y);
-  if (state.is('botCongelado')) w.bot?.freeze();
-  if (state.flag('cookies') === 'aceptadas') w.addTrackers('mini_cookie', 3);
+  if (state.is('botCongelado')) w.bot?.freeze((state.flag('botMotivo') as 'clausulas' | 'reinicio' | 'div0' | undefined) ?? 'clausulas');
+  if (state.is('botEsquivado')) w.bot?.teleport(260, 480);
+  if (state.flag('cookies') === 'aceptadas' && !state.is('rastreoComido')) w.addTrackers('mini_cookie', 3);
 }
 
 async function intro(c: ScriptContext): Promise<void> {

@@ -18,6 +18,9 @@ Phaser 3 dentro de Astro, aislado del sitio editorial. **Estado: prototipo, `noi
 ## Pantalla
 El escenario de diseño es 9:16 (540x960), pero el canvas se adapta al aspecto real de la pantalla entre 0.42 y 0.75 (ver `core/viewport.ts`) para llenarla: el mundo se extiende a los lados o arriba/abajo y cada escena dibuja decorado ahí (en la sala: baldosas y pared extra). Lo jugable siempre está en los 540x960 centrales; el HUD y los diálogos se pegan a los bordes reales (`viewRect`). Fuera de ese rango (monitores horizontales) queda centrado con barras decorativas.
 
+## Rejugabilidad: secretos por personaje
+Cada personaje tiene 3 secretos propios (`data/secrets.ts`): rutas o acciones que solo él puede hacer (reiniciar al asistente, morder la planta, saltar la encuesta, atravesar la planta, checkpoint...). Se activan en los guiones con `c.isChar('<id>')` y se registran con `c.discover('<secret-id>')`; se guardan en la meta del navegador. La selección muestra los puntos ●●○ y el final muestra cuáles faltan con una pista. Hay además un final secreto (`turno`, solo CapiCaos). Para agregar uno: una entrada en `SECRETS`, la opción en el guion y `c.discover(...)`.
+
 ## Cómo ampliar
 - **Escena nueva:** crear `data/<id>.ts` con un `SceneDef` (`build`, `intro`, `restore`, `inspect`) y registrarla en `data/scenes.ts`. Las interacciones son funciones `async (c: ScriptContext) => …` con `await c.say(...)`, `c.ask(...)`, `c.give(...)`, `c.set(...)`.
 - **Personaje nuevo / diferencias de habilidad:** agregar una entrada en `data/characters.ts` (partes, `gait`, `signature`, `lines`). Las habilidades futuras serían un campo más de `CharacterDef`; el movimiento es único.

@@ -52,7 +52,7 @@ export type Signature = 'cane' | 'chew' | 'pose' | 'glitch' | 'hop';
 export type LineKey =
   | 'bot' | 'cookies' | 'cookiesNo' | 'clause' | 'shadow' | 'plant'
   | 'postit' | 'subscribe' | 'display' | 'door' | 'eat' | 'chairs'
-  | 'botBlock' | 'botFrozen' | 'subEnter' | 'endRetenido' | 'endBaja';
+  | 'botBlock' | 'botFrozen' | 'subEnter' | 'endRetenido' | 'endBaja' | 'endTurno';
 
 export interface CharacterDef {
   id: CharId;

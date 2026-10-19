@@ -2,6 +2,7 @@ import Phaser from 'phaser';
 import { S } from './core/config';
 import { computeStageSize } from './core/viewport';
 import { audio } from './core/audio';
+import { state } from './core/state';
 import { BootScene } from './scenes/BootScene';
 import { EndingScene } from './scenes/EndingScene';
 import { SelectScene } from './scenes/SelectScene';
@@ -74,4 +75,4 @@ landscapeTouch.addEventListener('change', applyOrientation);
 window.setInterval(applyOrientation, 500);
 applyOrientation();
 
-if (import.meta.env.DEV) Object.assign(window, { __game: game, __audio: audio });
+if (import.meta.env.DEV) Object.assign(window, { __game: game, __audio: audio, __state: state });

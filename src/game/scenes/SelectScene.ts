@@ -7,6 +7,7 @@ import { state } from '../core/state';
 import { track } from '../core/track';
 import { CHARACTERS } from '../data/characters';
 import { Actor } from '../engine/Actor';
+import { SECRETS } from '../data/secrets';
 
 const CARD_W = 92;
 const CARD_H = 124;
@@ -24,6 +25,7 @@ export class SelectScene extends Phaser.Scene {
   private halo!: Phaser.GameObjects.Graphics;
   private nameT!: Phaser.GameObjects.Text;
   private titleT!: Phaser.GameObjects.Text;
+  private secretsT!: Phaser.GameObjects.Text;
   private introT!: Phaser.GameObjects.Text;
   private introG!: Phaser.GameObjects.Graphics;
   private playBtn!: Phaser.GameObjects.Container;
@@ -67,6 +69,7 @@ export class SelectScene extends Phaser.Scene {
     this.halo = this.add.graphics();
     this.nameT = txt(this, W / 2, 468, '', 32, '#ffffff', { fontStyle: 'bold' }).setOrigin(0.5);
     this.titleT = txt(this, W / 2, 502, '', 19, '#c9c5d4').setOrigin(0.5);
+    this.secretsT = txt(this, W / 2, 530, '', 14, '#c9c5d4', { fontStyle: 'bold' }).setOrigin(0.5);
     this.introG = this.add.graphics();
     this.introT = txt(this, W / 2, 576, '', 20, '#f6f3ec', { align: 'center', wordWrap: { width: 440 }, fontStyle: 'bold' }).setOrigin(0.5);
 
@@ -135,6 +138,9 @@ export class SelectScene extends Phaser.Scene {
     this.halo.lineStyle(3, col, 0.5).strokeCircle(W / 2, 330, 150);
     this.nameT.setText(def.name).setColor(def.accent);
     this.titleT.setText(def.title);
+    const sec = SECRETS[def.id];
+    const got = state.secretsOf(def.id);
+    this.secretsT.setText(`Secretos: ${sec.map((x) => (got.includes(x.id) ? '●' : '○')).join('')}`).setColor(def.accent);
     this.introT.setText(`“${def.intro}”`);
     this.introG.clear();
     const h = this.introT.height + 26;

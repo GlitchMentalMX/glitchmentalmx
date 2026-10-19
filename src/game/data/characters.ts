@@ -42,6 +42,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
       subEnter: 'Entré por una puerta y salí por la misma. Como en el banco, muchacho.',
       endRetenido: 'Me retuvieron. En mis tiempos eso se llamaba secuestro; ahora le dicen "oferta".',
       endBaja: 'Salí, sí. Pero me llevé el susto y dejé los datos. Mala negociación, muchachos.',
+      endTurno: 'Esperé con dignidad y me atendieron. En mis tiempos eso era normal, muchacho.',
     },
   },
   capibara: {
@@ -76,6 +77,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
       subEnter: 'Entré. Salí. Misma hierba.',
       endRetenido: 'Me quedé. Hay buen wifi y hojas... mmm. Conformes.',
       endBaja: 'Salí. Los correos me siguen. Ñam... qué más da.',
+      endTurno: 'Zzz... ¿ya me tocó? Qué bien. Mmm... ñam.',
     },
   },
   'modo-dios': {
@@ -110,6 +112,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
       subEnter: 'Cruzo la puerta y vuelvo al mismo lugar. Qué trampa más descarada.',
       endRetenido: 'Ni de chiste. Me ganaron con un descuento. Ahora sí me enojé.',
       endBaja: 'Salí. Sin datos, sin sombra y con ganas de reclamar. Esto no se queda así.',
+      endTurno: 'Esperar... y me funcionó. Raro. No me acostumbro.',
     },
   },
   glitchman: {
@@ -143,6 +146,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
       subEnter: 'Entrada → salida → entrada. Un bucle. Lo reconozco: soy de la familia.',
       endRetenido: 'Aceptado. Estado: atrapado. Parche pendiente. Siempre pendiente.',
       endBaja: 'Baja... completada. Datos: NO. Sombra: NO. Yo: existiendo. Creo.',
+      endTurno: 'Turno: 99,999. Existo en la fila. Eso cuenta.',
     },
   },
   heroe: {
@@ -177,6 +181,7 @@ export const CHARACTERS: Record<CharId, CharacterDef> = {
       subEnter: '¡PORTAL AL MISMO LUGAR! Glitch del nivel. Reportado.',
       endRetenido: '¡GAME OVER! Me ganaron con un cupón. ¿Continuar? ...Sí.',
       endBaja: '¡NIVEL COMPLETADO!... pero sin datos ni sombra. Final secreto: "Victoria hueca".',
+      endTurno: '¡FINAL SECRETO DESBLOQUEADO! ¡Ni sabía que existía!',
     },
   },
 };

@@ -17,6 +17,8 @@ export interface Progress {
   inventory: string[];
   /** Segundos de juego acumulados (para el marcador del final). */
   t?: number;
+  /** Checkpoint de Cartucho (instantánea de la partida, sin anidar otro checkpoint). */
+  cp?: Omit<Progress, 'cp'>;
 }
 
 /** Lo que sobrevive a una partida nueva: finales vistos y preferencias de sonido. */
@@ -26,6 +28,8 @@ export interface Meta {
   muted: boolean;
   ambient: boolean;
   lastCharacter: CharId | null;
+  /** Secretos descubiertos por personaje. */
+  secrets: Record<string, string[]>;
 }
 
 const KEY_PROGRESS = 'gm-juego:progreso:v1';
@@ -77,15 +81,16 @@ export function clearProgress(): void {
   remove(KEY_PROGRESS);
 }
 
-const DEFAULT_META: Meta = { v: SAVE_VERSION, endings: [], muted: false, ambient: true, lastCharacter: null };
+const DEFAULT_META: Meta = { v: SAVE_VERSION, endings: [], muted: false, ambient: true, lastCharacter: null, secrets: {} };
 
 export function loadMeta(): Meta {
   const raw = read(KEY_META);
-  if (!raw) return { ...DEFAULT_META };
+  if (!raw) return { ...DEFAULT_META, secrets: {} };
   try {
-    return { ...DEFAULT_META, ...(JSON.parse(raw) as Partial<Meta>) };
+    const m = { ...DEFAULT_META, ...(JSON.parse(raw) as Partial<Meta>) };
+    return { ...m, secrets: m.secrets ?? {} };
   } catch {
-    return { ...DEFAULT_META };
+    return { ...DEFAULT_META, secrets: {} };
   }
 }
 

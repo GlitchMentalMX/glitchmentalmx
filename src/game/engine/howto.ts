@@ -9,6 +9,7 @@ export const HOWTO_LINES = [
   'Toca los puntos blancos para hablar con personajes y usar puertas y objetos.',
   'Elige tus respuestas con las opciones. Cada decisión cambia el final.',
   'Arriba a la izquierda está tu inventario: toca un objeto para verlo o usarlo.',
+  'Cada personaje tiene secretos propios: rejuega con otro y descúbrelos.',
   'Tu progreso se guarda solo.',
 ];
 

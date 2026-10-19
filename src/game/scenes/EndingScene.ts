@@ -5,6 +5,7 @@ import { fitCamera, hexNum, txt, viewRect } from '../core/gfx';
 import { state } from '../core/state';
 import { CHARACTERS } from '../data/characters';
 import { ENDINGS } from '../data/endings';
+import { SECRETS } from '../data/secrets';
 import { Actor } from '../engine/Actor';
 
 /**
@@ -47,11 +48,21 @@ export class EndingScene extends Phaser.Scene {
       this.tweens.add({ targets: this.actor, x: W / 2 + 14, duration: 900, yoyo: true, repeat: -1 });
     } else {
       this.time.delayedCall(500, () => this.actor.react('happy'));
-      this.add.text(W / 2, 372, 'PREMIUM™', { fontFamily: 'system-ui', fontSize: '22px', color: '#2a1650', backgroundColor: '#ffd23f', padding: { x: 14, y: 6 }, resolution: 2 }).setOrigin(0.5).setAngle(-6);
+      if (this.endingId === 'retenido') this.add.text(W / 2, 372, 'PREMIUM™', { fontFamily: 'system-ui', fontSize: '22px', color: '#2a1650', backgroundColor: '#ffd23f', padding: { x: 14, y: 6 }, resolution: 2 }).setOrigin(0.5).setAngle(-6);
     }
 
     // Las consecuencias aparecen una a una.
-    const lines = [...def.lines(), def.closing];
+    // Secretos del personaje: el motivo para volver a jugar con él o con otro.
+    const secrets = SECRETS[char.id];
+    const found = state.secretsOf(char.id);
+    const dots = secrets.map((s) => (found.includes(s.id) ? '●' : '○')).join('');
+    const secretLines = [`Secretos de ${char.name}: ${dots} (${found.length} de ${secrets.length})`];
+    const fresh = secrets.filter((s) => state.runSecrets.includes(s.id)).map((s) => s.name);
+    if (fresh.length) secretLines.push(`Descubriste ahora: ${fresh.join(', ')}.`);
+    const missing = secrets.find((s) => !found.includes(s.id));
+    secretLines.push(missing ? `Pista: ${missing.hint}` : '¡Los descubriste todos! Prueba con otro personaje: cada uno guarda los suyos.');
+    const lines = [...def.lines(), def.closing, '', ...secretLines];
+    const hasCheckpoint = char.id === 'heroe' && !!state.checkpoint;
     const body = txt(this, W / 2, 404, '', 17, fg, { align: 'center', wordWrap: { width: W - 70 }, lineSpacing: 7 }).setOrigin(0.5, 0);
     let shown = 0;
     const showNext = () => {
@@ -63,7 +74,7 @@ export class EndingScene extends Phaser.Scene {
       body.setText(lines.slice(0, shown).join('\n'));
       // Si hay muchas consecuencias, el texto se achica para no pisar los botones.
       body.setFontSize(17);
-      while (body.height > H - 136 - 34 - 404 - 6 && parseInt(String(body.style.fontSize), 10) > 13) {
+      while (body.height > H - 136 - 34 - 404 - 6 - (hasCheckpoint ? 66 : 0) && parseInt(String(body.style.fontSize), 10) > 13) {
         body.setFontSize(parseInt(String(body.style.fontSize), 10) - 1);
       }
       audio.play('tap');
@@ -85,6 +96,13 @@ export class EndingScene extends Phaser.Scene {
       });
     };
     const found = state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length;
+    if (state.characterId === 'heroe' && state.checkpoint) {
+      mk(H - 202, 'Cargar checkpoint (¡Cartucho puede!)', 0xffd23f, () => {
+        state.discover('cartucho-checkpoint');
+        state.loadCheckpoint();
+        this.scene.start('World');
+      });
+    }
     mk(H - 136, 'Jugar de nuevo con el mismo personaje', hexNum(ENDINGS[this.endingId].accent), () => {
       if (state.characterId) state.newGame(state.characterId);
       this.scene.start('World');

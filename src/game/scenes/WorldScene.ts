@@ -110,6 +110,14 @@ export class WorldScene extends Phaser.Scene {
     }
   }
 
+  /** Quita las galletas que siguen al jugador (el capibara se las come). */
+  clearTrackers(): void {
+    for (const t of this.trackers) {
+      this.tweens.add({ targets: t, alpha: 0, scale: 0, duration: 300, onComplete: () => t.destroy() });
+    }
+    this.trackers = [];
+  }
+
   rebuildNav(): void {
     this.nav = new NavGrid(W, H);
     this.nav.blockBorders(26);
@@ -338,7 +346,7 @@ export class WorldScene extends Phaser.Scene {
 
     if (this.bot) {
       const free = !this.scripting && !this.ui.blocking;
-      const following = state.flag('cookies') === 'aceptadas' && !state.is('botCongelado');
+      const following = state.flag('cookies') === 'aceptadas' && !state.is('botCongelado') && !state.is('botEsquivado') && !state.is('rastreoComido');
       this.bot.update(dt, this.player, free, following, !free);
       const d = Math.hypot(this.bot.x - this.player.x, this.bot.y - this.player.y);
       if (d < 38 && d > 0.1) {

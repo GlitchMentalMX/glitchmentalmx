@@ -14,7 +14,7 @@ export const MONO = `ui-monospace, Menlo, Consolas, monospace`;
 export const CHAR_IDS = ['don', 'capibara', 'modo-dios', 'glitchman', 'heroe'] as const;
 export type CharId = (typeof CHAR_IDS)[number];
 
-export const ENDING_IDS = ['retenido', 'baja'] as const;
+export const ENDING_IDS = ['retenido', 'baja', 'turno'] as const;
 export type EndingId = (typeof ENDING_IDS)[number];
 
 export const SAVE_VERSION = 1;
