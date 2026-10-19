@@ -151,6 +151,7 @@ export class WorldScene extends Phaser.Scene {
       ctx.fillStyle = '#111'; ctx.beginPath(); ctx.arc(12, 12, 2.6, 0, Math.PI * 2); ctx.fill();
     });
 
+    audio.playMusic('sala');
     this.def = SCENES[state.sceneId] ?? SCENES['sala-de-espera'];
     this.nav = new NavGrid(W, H);
     this.def.build(this);

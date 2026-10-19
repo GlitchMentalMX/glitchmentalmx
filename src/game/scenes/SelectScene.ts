@@ -44,6 +44,7 @@ export class SelectScene extends Phaser.Scene {
 
   create(): void {
     this.leaving = false;
+    audio.playMusic('menu');
     this.cards = [];
     this.bits = [];
     fitCamera(this);

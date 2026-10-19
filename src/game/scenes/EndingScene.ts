@@ -26,6 +26,7 @@ export class EndingScene extends Phaser.Scene {
 
   create(): void {
     fitCamera(this);
+    audio.playMusic('menu');
     const def = ENDINGS[this.endingId];
     const dark = this.endingId === 'retenido';
     const fg = dark ? '#f6f3ec' : '#14161c';

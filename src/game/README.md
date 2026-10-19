@@ -18,6 +18,9 @@ Phaser 3 dentro de Astro, aislado del sitio editorial. **Estado: prototipo, `noi
 ## Pantalla
 El escenario de diseño es 9:16 (540x960), pero el canvas se adapta al aspecto real de la pantalla entre 0.42 y 0.75 (ver `core/viewport.ts`) para llenarla: el mundo se extiende a los lados o arriba/abajo y cada escena dibuja decorado ahí (en la sala: baldosas y pared extra). Lo jugable siempre está en los 540x960 centrales; el HUD y los diálogos se pegan a los bordes reales (`viewRect`). Fuera de ese rango (monitores horizontales) queda centrado con barras decorativas.
 
+## Música
+Dos pistas propias de Jorge (hechas en Flow), recortadas y vueltas bucle con `scripts/make-music-loops.py` (mono AAC 56 kb/s, ~1 MB c/u) en `public/juego/audio/`: `sala.m4a` (la sala) y `menu.m4a` (selección y finales). Se descargan después del primer toque, una a la vez, con fundido entre escenas; si no cargan suena el zumbido sintético de respaldo. "Sonido: no" baja el volumen maestro a 0 y pausa el contexto de audio (silencio total); "Música" apaga solo la pista. Para otra pista: agregarla a `MUSIC_URL` en `core/audio.ts`.
+
 ## Rejugabilidad: secretos por personaje
 Cada personaje tiene 3 secretos propios (`data/secrets.ts`): rutas o acciones que solo él puede hacer (reiniciar al asistente, morder la planta, saltar la encuesta, atravesar la planta, checkpoint...). Se activan en los guiones con `c.isChar('<id>')` y se registran con `c.discover('<secret-id>')`; se guardan en la meta del navegador. La selección muestra los puntos ●●○ y el final muestra cuáles faltan con una pista. Hay además un final secreto (`turno`, solo CapiCaos). Para agregar uno: una entrada en `SECRETS`, la opción en el guion y `c.discover(...)`.
 

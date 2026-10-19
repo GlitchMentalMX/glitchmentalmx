@@ -380,7 +380,7 @@ export class UIScene extends Phaser.Scene {
       { label: 'Seguir jugando', run: () => this.closeMenu() },
       { label: 'Cómo jugar', run: () => showHowTo(this, this.menuLayer, () => this.renderMenu(), (p) => this.markUi(p)) },
       { label: audio.muted ? 'Sonido: apagado' : 'Sonido: encendido', run: () => { audio.setMuted(!audio.muted); this.renderMenu(); } },
-      { label: state.meta.ambient ? 'Ambiente: encendido' : 'Ambiente: apagado', run: () => { audio.setAmbient(!state.meta.ambient); this.renderMenu(); } },
+      { label: state.meta.ambient ? 'Música: encendida' : 'Música: apagada', run: () => { audio.setAmbient(!state.meta.ambient); this.renderMenu(); } },
     ];
     if (this.scale.fullscreen.available) {
       rows.push({

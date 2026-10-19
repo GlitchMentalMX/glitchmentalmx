@@ -1,15 +1,33 @@
 import { state } from './state';
 
-// Todo el sonido se sintetiza con Web Audio: cero archivos de audio, cero
-// descargas. Los navegadores móviles solo permiten audio tras un gesto del
-// usuario, así que el contexto se crea (o reanuda) en unlock(), que se llama
-// desde el primer toque.
+// Los efectos se sintetizan con Web Audio (cero archivos). La música de fondo
+// son dos pistas propias de Jorge (public/juego/audio/*.m4a, ~1 MB c/u) que se
+// descargan solo cuando hace falta, después del primer toque. Si una no carga,
+// suena el zumbido sintetizado de respaldo. Los navegadores móviles solo
+// permiten audio tras un gesto del usuario, así que el contexto se crea (o
+// reanuda) en unlock(), que se llama desde el primer toque.
 
 export type SfxName =
   | 'tap' | 'step' | 'pick' | 'door' | 'deny' | 'bleep' | 'crunch' | 'print'
   | 'whoosh' | 'surprise' | 'win' | 'lose' | 'glitch' | 'select' | 'pop' | 'coin' | 'type';
 
+export type MusicTrack = 'sala' | 'menu';
+const MUSIC_URL: Record<MusicTrack, string> = {
+  sala: '/juego/audio/sala.m4a',
+  menu: '/juego/audio/menu.m4a',
+};
+/** Volumen de la música respecto al maestro: discreta, siempre por debajo de los efectos. */
+const MUSIC_VOL = 0.4;
+const FADE_S = 1.2;
+
 class AudioEngine {
+  private musicBus: GainNode | null = null;
+  private music: { key: MusicTrack; src: AudioBufferSourceNode; gain: GainNode } | null = null;
+  private buffers = new Map<MusicTrack, AudioBuffer>();
+  private loading = new Map<MusicTrack, Promise<AudioBuffer | null>>();
+  private wanted: MusicTrack | null = null;
+  private failed = new Set<MusicTrack>();
+  private muteTimer = 0;
   private ctx: AudioContext | null = null;
   private master: GainNode | null = null;
   private ambientGain: GainNode | null = null;
@@ -26,9 +44,13 @@ class AudioEngine {
         this.master = this.ctx.createGain();
         this.master.gain.value = state.meta.muted ? 0 : 0.8;
         this.master.connect(this.ctx.destination);
+        this.musicBus = this.ctx.createGain();
+        this.musicBus.gain.value = state.meta.ambient ? MUSIC_VOL : 0;
+        this.musicBus.connect(this.master);
       }
-      if (this.ctx.state === 'suspended') void this.ctx.resume();
+      if (this.ctx.state === 'suspended' && !state.meta.muted) void this.ctx.resume();
       this.startAmbient();
+      void this.applyMusic();
     } catch {
       // Sin audio disponible: el juego sigue en silencio.
     }
@@ -47,14 +69,106 @@ class AudioEngine {
     return state.meta.muted;
   }
 
+  /** Silencio total: el volumen maestro baja a 0 y, además, se pausa el contexto de audio. */
   setMuted(m: boolean): void {
     state.setAudioPrefs({ muted: m });
-    if (this.master && this.ctx) this.master.gain.setTargetAtTime(m ? 0 : 0.8, this.ctx.currentTime, 0.05);
+    window.clearTimeout(this.muteTimer);
+    if (!this.master || !this.ctx) return;
+    const ctx = this.ctx;
+    if (m) {
+      this.master.gain.cancelScheduledValues(ctx.currentTime);
+      this.master.gain.setTargetAtTime(0, ctx.currentTime, 0.04);
+      this.muteTimer = window.setTimeout(() => {
+        if (state.meta.muted) void ctx.suspend();
+      }, 400);
+    } else {
+      void ctx.resume();
+      this.master.gain.cancelScheduledValues(ctx.currentTime);
+      this.master.gain.setTargetAtTime(0.8, ctx.currentTime, 0.05);
+      void this.applyMusic();
+    }
   }
 
+  /** Activa o apaga la música de fondo (el menú la llama "Música"). */
   setAmbient(on: boolean): void {
     state.setAudioPrefs({ ambient: on });
-    if (this.ambientGain && this.ctx) this.ambientGain.gain.setTargetAtTime(on ? 0.05 : 0, this.ctx.currentTime, 0.4);
+    if (this.ctx && this.musicBus) this.musicBus.gain.setTargetAtTime(on ? MUSIC_VOL : 0, this.ctx.currentTime, 0.3);
+    this.updateDrone();
+  }
+
+  /** Pide la pista de fondo de una escena; si ya está sonando, no se reinicia. */
+  playMusic(track: MusicTrack): void {
+    this.wanted = track;
+    void this.applyMusic();
+  }
+
+  private loadTrack(track: MusicTrack): Promise<AudioBuffer | null> {
+    const cached = this.buffers.get(track);
+    if (cached) return Promise.resolve(cached);
+    let p = this.loading.get(track);
+    if (!p) {
+      p = (async () => {
+        try {
+          const res = await fetch(MUSIC_URL[track]);
+          if (!res.ok) throw new Error(String(res.status));
+          const data = await res.arrayBuffer();
+          const ctx = this.ctx!;
+          // Safari antiguo solo soporta decodeAudioData con callbacks.
+          const buf = await new Promise<AudioBuffer>((resolve, reject) => {
+            const r = ctx.decodeAudioData(data, resolve, reject);
+            if (r && typeof r.then === 'function') r.then(resolve, reject);
+          });
+          this.buffers.set(track, buf);
+          return buf;
+        } catch {
+          this.failed.add(track);
+          return null;
+        } finally {
+          this.loading.delete(track);
+        }
+      })();
+      this.loading.set(track, p);
+    }
+    return p;
+  }
+
+  private async applyMusic(): Promise<void> {
+    const track = this.wanted;
+    if (!track || !this.ctx || !this.musicBus || state.meta.muted) return;
+    if (this.music?.key === track) return;
+    const buf = await this.loadTrack(track);
+    // La escena pudo cambiar (o silenciarse) mientras se descargaba.
+    if (!buf || this.wanted !== track || !this.ctx || !this.musicBus || state.meta.muted) {
+      this.updateDrone();
+      return;
+    }
+    if (this.music?.key === track) return;
+    const ctx = this.ctx;
+    const now = ctx.currentTime;
+    const old = this.music;
+    if (old) {
+      old.gain.gain.cancelScheduledValues(now);
+      old.gain.gain.setValueAtTime(old.gain.gain.value, now);
+      old.gain.gain.linearRampToValueAtTime(0, now + FADE_S);
+      old.src.stop(now + FADE_S + 0.05);
+    }
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    src.loop = true;
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(1, now + FADE_S);
+    src.connect(gain).connect(this.musicBus);
+    src.start(now);
+    this.music = { key: track, src, gain };
+    this.updateDrone();
+  }
+
+  /** El zumbido sintetizado solo suena si no hay música (respaldo). */
+  private updateDrone(): void {
+    if (!this.ambientGain || !this.ctx) return;
+    const useDrone = !this.music && state.meta.ambient;
+    this.ambientGain.gain.setTargetAtTime(useDrone ? 0.05 : 0, this.ctx.currentTime, 0.4);
   }
 
   private tone(freq: number, dur: number, type: OscillatorType = 'square', vol = 0.12, slideTo?: number, delay = 0): void {
@@ -129,7 +243,7 @@ class AudioEngine {
     if (this.ambientStarted || !this.ctx || !this.master) return;
     this.ambientStarted = true;
     const g = this.ctx.createGain();
-    g.gain.value = state.meta.ambient ? 0.05 : 0;
+    g.gain.value = 0; // updateDrone() lo sube solo si no hay música
     g.connect(this.master);
     this.ambientGain = g;
     const lfo = this.ctx.createOscillator();
@@ -148,6 +262,7 @@ class AudioEngine {
       o.start();
     });
     lfo.start();
+    this.updateDrone();
   }
 }
 
