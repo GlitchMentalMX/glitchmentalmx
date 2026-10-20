@@ -4,16 +4,17 @@ description: "Ring necesita tu video en su nube para funcionar, sin excepción. 
 herramienta: "Ring"
 herramientaId: "ring"
 empresa: "Amazon"
-sitioOficial: "https://ring.com/privacynotice"
+sitioOficial: "https://ring.com/privacy-notice"
 veredicto: "rojo"
 fraseCorta: "No hay forma de usar Ring sin mandar tu video a la nube — y su IA facial capta a quien pasa, no lo pida o no."
 fuentePolitica: "Aviso de Privacidad de Ring (Amazon)"
 pubDate: 2026-08-23
+updatedDate: 2026-10-20
 heroImage: /images/entrena-ia/ring.png
 heroImageAlt: Ring — Privacidad de IA
 ---
 
-Prácticamente sí, y sin alternativa real. No existe una forma significativa de usar un timbre o cámara Ring sin el servicio en la nube de Amazon, lo que significa que Ring tiene acceso continuo a tu video mientras uses el dispositivo. La función más reciente y más discutida, "Rostros Familiares", usa reconocimiento facial con IA para identificar a quién ve tu cámara — y aunque Amazon dice que el dueño del dispositivo debe activarla explícitamente, esa activación no aplica a las personas que la cámara capta sin saberlo: un repartidor, un vecino, cualquiera que pase frente a tu puerta nunca recibe aviso ni puede dar u objetar su consentimiento. Fuente: Aviso de Privacidad de Ring, verificado el 23 de agosto de 2026.
+Prácticamente sí, y sin alternativa real. No existe una forma significativa de usar un timbre o cámara Ring sin el servicio en la nube de Amazon, lo que significa que Ring tiene acceso continuo a tu video mientras uses el dispositivo. La función más reciente y más discutida, "Rostros Familiares", usa reconocimiento facial con IA para identificar a quién ve tu cámara — y aunque Amazon dice que el dueño del dispositivo debe activarla explícitamente, esa activación no aplica a las personas que la cámara capta sin saberlo: un repartidor, un vecino, cualquiera que pase frente a tu puerta nunca recibe aviso ni puede dar u objetar su consentimiento. Fuente: Aviso de Privacidad de Ring, verificado el 20 de octubre de 2026.
 
 <p class="otros-precios"><a href="/quien-entrena-con-tus-datos/">¿Quieres consultar otra herramienta? →</a></p>
 
@@ -25,6 +26,6 @@ Como dueño del dispositivo, puedes mantener "Rostros Familiares" desactivada �
 
 Desde febrero de 2024, Ring dejó de facilitar solicitudes de la policía a través de su app Neighbors, y en febrero de 2026 terminó su asociación con Flock Safety, una empresa de reconocimiento de placas. Son retrocesos reales en el acceso de terceros a tu video — pero no cambian nada sobre el procesamiento de IA que Amazon hace con ese mismo video dentro de su propia nube.
 
-[Última actualización: 23/08/2026]
+[Última actualización: 20/10/2026]
 
-<a href="https://ring.com/privacynotice" target="_blank" rel="noopener noreferrer">Lee el Aviso de Privacidad oficial de Ring →</a>
+<a href="https://ring.com/privacy-notice" target="_blank" rel="noopener noreferrer">Lee el Aviso de Privacidad oficial de Ring →</a>
