@@ -120,18 +120,22 @@ async function botTalk(c: ScriptContext): Promise<void> {
     const i = await c.ask('bot', '¿Algo más? Me encanta cuando hay algo más.', opts);
     const pick = opts[i];
     if (pick.startsWith('¿Cómo cancelo')) {
+      bot.setFace('hmm');
       await c.say('bot', '¿Cancelar? Pero si apenas empezamos a conocernos. Tenemos una puerta enorme para entrar y ninguna para salir. Es más: es imposible que haya una detrás de alguna planta.');
       c.set('pistaPlanta');
       c.react('think');
     } else if (pick.startsWith('¿Qué eres')) {
+      bot.setFace('happy');
       await c.say('bot', "Soy un asistente de IA entrenado con 40 millones de correos de 'Te extrañamos'. Mi especialidad: que no te vayas.");
     } else if (pick.startsWith('Muchacho')) {
+      bot.setFace('hmm');
       await c.say('bot', 'Soy un menú de opciones con corbata. Mi contraseña de administrador está anotada en un papelito pegado al monitor del mostrador. Pero eso no se lo dije.');
       await c.say('player', 'Lo sabía. Todos los sistemas terminan con un papelito amarillo.');
       c.set('pistaPostit');
       c.discover('don-lucido');
       c.ui.toast('Pista: el monitor del mostrador');
     } else if (pick.startsWith('¿Cómo sabes')) {
+      bot.setFace('happy');
       await c.say('bot', "Las galletas, claro. Ayer escribiste 'cómo cancelar' 47 veces. Una persona romántica.");
       c.react('surprise');
     } else {
@@ -163,6 +167,7 @@ async function botBlocks(c: ScriptContext): Promise<void> {
     const i = await c.ask('bot', 'Su opinión es muy importante para nosotros.', opts);
     const pick = opts[i];
     if (pick === 'Responder la encuesta') {
+      bot.setFace('happy');
       await c.say('bot', 'Gracias. Pregunta 2: ¿recomendaría esta encuesta a un amigo? ... Pregunta 47 de 47. ¡Genial! Ahora una encuesta sobre la encuesta.');
       c.sfx('deny');
     } else if (pick.startsWith('Darle')) {
@@ -222,6 +227,7 @@ async function botBlocks(c: ScriptContext): Promise<void> {
       c.ui.toast('Mini-jefe esquivado');
       return;
     } else if (pick === 'Intentar rodearlo') {
+      bot.setFace('hmm');
       c.sfx('deny');
       await c.say('bot', 'Cada vez que te mueves, yo me muevo. Es una danza. No se puede pasar sin completar la encuesta... a menos que algo muy largo me distraiga.');
       c.set('pistaHoja');

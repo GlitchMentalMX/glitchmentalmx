@@ -318,6 +318,8 @@ export class WorldScene extends Phaser.Scene {
     const a = t.anchor();
     this.player.face(a.x - this.player.x);
     await this.runScript((c) => t.run(c));
+    // Lo ya usado deja de llamar la atención: su punto se atenúa (la etiqueta sigue al acercarte).
+    state.set(`vi_${t.id}`);
   }
 
   private ring(x: number, y: number, color: number): void {
@@ -371,7 +373,7 @@ export class WorldScene extends Phaser.Scene {
       const near = Math.hypot(a.x - this.player.x, a.y - this.player.y) < 190 || this.hover === m.t;
       m.dot.setPosition(a.x, a.y - 8);
       m.label.setPosition(a.x, a.y - 26);
-      m.dot.setAlpha(Phaser.Math.Linear(m.dot.alpha, on ? 0.75 : 0, 0.2));
+      m.dot.setAlpha(Phaser.Math.Linear(m.dot.alpha, on ? (state.is(`vi_${m.t.id}`) ? 0.25 : 0.75) : 0, 0.2));
       m.label.setAlpha(Phaser.Math.Linear(m.label.alpha, on && near ? 1 : 0, 0.2));
     }
 

@@ -55,27 +55,28 @@ export function buildBotTextures(scene: Phaser.Scene): void {
   });
 }
 
-const BARKS_PATROL = [
-  'Su llamada es muy importante para nosotros. Tanto, que la vamos a grabar, vender y olvidar.',
-  'Tiempo de espera estimado: ∞. Estamos "optimizando" el infinito.',
-  "Para hablar con un humano, diga 'humano'. Le pasaré con otro bot, pero con corbata.",
-  'Actualizamos nuestra política de privacidad. Para mejorar. Nuestra, claro.',
-  'Cancelar es muy fácil: solo necesita paciencia, suerte y un par de años libres.',
-  'Su opinión nos importa. No la vamos a leer, pero nos importa.',
-  'Gracias por esperar. Premiamos su lealtad con más espera.',
-  '¿Sabía que el 100% de nuestros clientes satisfechos nunca ha logrado irse?',
-  'Detecté frustración en su voz. No se preocupe: por ahora es gratis.',
-  'Estoy aquí para ayudarle a ayudarnos.',
+/** Cada ladrido trae la cara con la que se dice: el chatbot sonríe cuando es más cruel. */
+const BARKS_PATROL: { t: string; f: Face }[] = [
+  { t: 'Su llamada es muy importante para nosotros. Tanto, que la vamos a grabar, vender y olvidar.', f: 'hmm' },
+  { t: 'Tiempo de espera estimado: ∞. Estamos "optimizando" el infinito.', f: 'happy' },
+  { t: "Para hablar con un humano, diga 'humano'. Le pasaré con otro bot, pero con corbata.", f: 'happy' },
+  { t: 'Actualizamos nuestra política de privacidad. Para mejorar. Nuestra, claro.', f: 'hmm' },
+  { t: 'Cancelar es muy fácil: solo necesita paciencia, suerte y un par de años libres.', f: 'happy' },
+  { t: 'Su opinión nos importa. No la vamos a leer, pero nos importa.', f: 'hmm' },
+  { t: 'Gracias por esperar. Premiamos su lealtad con más espera.', f: 'happy' },
+  { t: '¿Sabía que el 100% de nuestros clientes satisfechos nunca ha logrado irse?', f: 'hmm' },
+  { t: 'Detecté frustración en su voz. No se preocupe: por ahora es gratis.', f: 'happy' },
+  { t: 'Estoy aquí para ayudarle a ayudarnos.', f: 'ok' },
 ];
-const BARKS_FOLLOW = [
-  "Hola de nuevo. Ayer buscaste 'cómo cancelar' 47 veces. Qué constancia.",
-  'Sabemos qué desayunaste. Y a qué hora dejaste de contestarle a tu mamá.',
-  'Se te nota la prisa. Es el mejor momento para ofrecerte algo.',
-  'Gracias por las galletas. Nos encanta cuando consienten sin leer.',
-  'No te sigo. Te acompaño. Con contrato.',
-  'Tu ubicación es excelente. Tu privacidad, un bonito recuerdo.',
-  '¿Cancelar? Con lo bien que nos hace conocerte.',
-  'Acabo de vender tu paso por esta sala a un anunciante. Te fue bien.',
+const BARKS_FOLLOW: { t: string; f: Face }[] = [
+  { t: "Hola de nuevo. Ayer buscaste 'cómo cancelar' 47 veces. Qué constancia.", f: 'hmm' },
+  { t: 'Sabemos qué desayunaste. Y a qué hora dejaste de contestarle a tu mamá.', f: 'hmm' },
+  { t: 'Se te nota la prisa. Es el mejor momento para ofrecerte algo.', f: 'happy' },
+  { t: 'Gracias por las galletas. Nos encanta cuando consienten sin leer.', f: 'happy' },
+  { t: 'No te sigo. Te acompaño. Con contrato.', f: 'happy' },
+  { t: 'Tu ubicación es excelente. Tu privacidad, un bonito recuerdo.', f: 'hmm' },
+  { t: '¿Cancelar? Con lo bien que nos hace conocerte.', f: 'hmm' },
+  { t: 'Acabo de vender tu paso por esta sala a un anunciante. Te fue bien.', f: 'happy' },
 ];
 const READINGS_BY_REASON: Record<FreezeReason, string[]> = {
   clausulas: [],
@@ -215,11 +216,11 @@ export class Chatbot {
         }
         if (canGreet && this.cooldown <= 0 && Math.hypot(player.x - this.x, player.y - this.y) < 120) {
           this.state = 'greet';
-          const line = BARKS_PATROL[this.bark++ % BARKS_PATROL.length];
-          this.greetT = bubbleMs(line) / 1000 + 0.4;
+          const bark = BARKS_PATROL[this.bark++ % BARKS_PATROL.length];
+          this.greetT = bubbleMs(bark.t) / 1000 + 0.4;
           this.mover.stop();
-          this.setFace('happy');
-          this.say(line);
+          this.setFace(bark.f);
+          this.say(bark.t);
           this.cooldown = 14;
         }
         break;
@@ -243,11 +244,11 @@ export class Chatbot {
           this.mover.stop();
         }
         if (canGreet && this.cooldown <= 0 && d < 140) {
-          this.setFace('hmm');
-          const line = BARKS_FOLLOW[this.bark++ % BARKS_FOLLOW.length];
-          this.say(line);
+          const bark = BARKS_FOLLOW[this.bark++ % BARKS_FOLLOW.length];
+          this.setFace(bark.f);
+          this.say(bark.t);
           this.cooldown = 13;
-          this.scene.time.delayedCall(bubbleMs(line), () => this.state === 'follow' && this.setFace('ok'));
+          this.scene.time.delayedCall(bubbleMs(bark.t), () => this.state === 'follow' && this.setFace('ok'));
         }
         break;
       }
