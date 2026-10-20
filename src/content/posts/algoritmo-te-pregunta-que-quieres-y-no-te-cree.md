@@ -41,7 +41,7 @@ La lectura incómoda es esta: **no existe una versión auténtica de ti, sino do
 
 ## En México, un decreto resolvió el dilema por la vía brutal: para un menor, lo que pida no cuenta
 
-El 14 de octubre de 2026, un día después del anuncio de Meta, se publicó en el [DOF](https://sidof.segob.gob.mx/notas/5801237) (Diario oficial de la Federación) el Decreto de entornos digitales seguros para niñas, niños y adolescentes. Su artículo 3 **prohíbe a las plataformas permitir que un menor acceda, se exponga o reciba recomendaciones** de contenido en siete categorías, entre ellas el acoso, el abuso sexual, los discursos de odio, la apología del delito, la pornografía y el suicidio, las autolesiones y los trastornos alimenticios.
+El 14 de octubre de 2026, un día después del anuncio de Meta, se publicó en el [DOF](https://sidof.segob.gob.mx/notas/5801237) (Diario oficial de la Federación), el Decreto de entornos digitales seguros para niñas, niños y adolescentes. Su artículo 3 **prohíbe a las plataformas permitir que un menor acceda, se exponga o reciba recomendaciones** de contenido en siete categorías, entre ellas el acoso, el abuso sexual, los discursos de odio, la apología del delito, la pornografía y el suicidio, las autolesiones y los trastornos alimenticios.
 
 El artículo 4 obliga a las plataformas a verificar la edad con mecanismos que no se limiten a la autodeclaración, y a realizar evaluaciones periódicas de riesgo que incluyen expresamente los sistemas de recomendación. **Hasta la edad que declaras necesita respaldo.** El texto no prevé sanciones directas.
 
