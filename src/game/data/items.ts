@@ -1,4 +1,5 @@
 import { blobPath, ink, rng, roundRectPath, type Draw } from '../core/gfx';
+import { IMAGE_SETS, loadedImages } from '../core/images';
 
 export interface ItemDef {
   id: string;
@@ -40,3 +41,22 @@ export const ITEMS: Record<string, ItemDef> = {
   hoja: { id: 'hoja', name: 'Hoja 1 de 4,812', desc: 'La primera hoja de los Términos y Condiciones. Es infinitamente aburrida.', icon: hoja },
   postit: { id: 'postit', name: 'Post-it', desc: "Dice: 'Contraseña de administrador: contraseña123'. Nadie debía verlo.", icon: postit },
 };
+
+const ITEM_IMAGES: Record<string, string> = {
+  galleta: IMAGE_SETS.sala.itemCookie,
+  hoja: IMAGE_SETS.sala.itemHoja,
+  postit: IMAGE_SETS.sala.itemPostit,
+};
+
+/** Ícono de un objeto: la ilustración (centrada en su caja) o, si no cargó, el dibujo por código. */
+export function itemIconDraw(id: string): Draw {
+  return (ctx, w, h) => {
+    const im = loadedImages.get(ITEM_IMAGES[id]) as HTMLImageElement | undefined;
+    if (!im) {
+      ITEMS[id].icon(ctx, w, h);
+      return;
+    }
+    const k = Math.min(w / im.width, h / im.height);
+    ctx.drawImage(im, (w - im.width * k) / 2, (h - im.height * k) / 2, im.width * k, im.height * k);
+  };
+}

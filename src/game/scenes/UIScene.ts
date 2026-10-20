@@ -3,7 +3,7 @@ import { H, W } from '../core/config';
 import { audio } from '../core/audio';
 import { fitCamera, img, makeTex, txt, viewRect } from '../core/gfx';
 import { state } from '../core/state';
-import { ITEMS } from '../data/items';
+import { ITEMS, itemIconDraw } from '../data/items';
 import { showHowTo } from '../engine/howto';
 
 export interface Speaker {
@@ -61,7 +61,7 @@ export class UIScene extends Phaser.Scene {
     fitCamera(this);
     this.dialogueOpen = false;
     this.menuOpen = false;
-    for (const it of Object.values(ITEMS)) makeTex(this, `item_${it.id}`, 40, 40, it.icon);
+    for (const it of Object.values(ITEMS)) makeTex(this, `item_${it.id}`, 40, 40, itemIconDraw(it.id));
 
     // El HUD se ancla a los bordes REALES de la pantalla (no del escenario de
     // diseño), así sigue pegado arriba aunque el mundo se extienda.

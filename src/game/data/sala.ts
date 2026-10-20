@@ -2,7 +2,8 @@ import Phaser from 'phaser';
 import { H, S, W } from '../core/config';
 import { img } from '../core/gfx';
 import { state } from '../core/state';
-import { buildSalaTextures, plantOriginX } from '../art/sala';
+import { buildSalaTextures, hasProp, plantOriginX } from '../art/sala';
+import { IMAGE_SETS } from '../core/images';
 import { Actor } from '../engine/Actor';
 import { rectHit } from '../engine/hit';
 import { Mover } from '../engine/Mover';
@@ -528,7 +529,7 @@ async function takePostit(c: ScriptContext): Promise<void> {
   const w = c.world;
   c.set('postitTomado');
   c.give('postit');
-  img_(w, 'postit').destroy();
+  (w.objs.postit as Phaser.GameObjects.Image | undefined)?.destroy();
   await c.sayChar('postit');
 }
 
@@ -642,14 +643,23 @@ function build(w: WorldScene): void {
   w.addBlocker('planta', { x: PLANT_FROM - 40, y: 214, w: 80, h: 38 });
 
   img(w, 130, 205, 'sub_frame', 0.5, 1).setDepth(150);
-  w.objs.subL = img(w, 94, 205, 'sub_panel', 0.5, 1).setDepth(151);
-  w.objs.subR = img(w, 166, 205, 'sub_panel', 0.5, 1).setDepth(151);
-  img(w, 272, 80, 'sala_display').setDepth(150);
+  // Con la ilustración, el hueco del marco mide ~79 unidades y se cierra con dos hojas de cristal
+  // (semitransparentes, para que se vea el resplandor); con el dibujo de respaldo, las posiciones de siempre.
+  const glassArt = hasProp(IMAGE_SETS.sala.frame) && hasProp(IMAGE_SETS.sala.glass);
+  w.objs.subL = img(w, glassArt ? 106.5 : 94, glassArt ? 198 : 205, 'sub_panel', 0.5, 1).setDepth(151);
+  w.objs.subR = img(w, glassArt ? 146.5 : 166, glassArt ? 198 : 205, 'sub_panel', 0.5, 1).setDepth(151);
+  if (glassArt) {
+    img_(w, 'subL').setAlpha(0.62);
+    img_(w, 'subR').setAlpha(0.62);
+  }
+  if (hasProp(IMAGE_SETS.sala.display)) img(w, 272, 113, 'sala_display', 0.5, 1).setDepth(150);
+  else img(w, 272, 80, 'sala_display').setDepth(150);
   w.objs.cancel = img(w, 487, 205, 'sala_cancel', 0.5, 1).setDepth(140);
   img(w, 270, 930, 'sala_mat', 0.5, 1).setDepth(1);
   w.objs.paper = img(w, 238, 518, 'sala_paper', 0, 0).setDepth(2).setVisible(false);
   w.objs.desk = img(w, 271, 396, 'sala_desk', 0.5, 1).setDepth(396);
-  w.objs.postit = img(w, 331, 320, 'sala_postit').setDepth(397);
+  // Con la ilustración del mostrador, el bloc de post-its ya viene dibujado (a la izquierda).
+  if (!hasProp(IMAGE_SETS.sala.desk)) w.objs.postit = img(w, 331, 320, 'sala_postit').setDepth(397);
   w.objs.vending = img(w, 69, 456, 'sala_vending', 0.5, 1).setDepth(456);
   w.objs.printer = img(w, 469, 516, 'sala_printer', 0.5, 1).setDepth(516);
   img(w, 117, 774, 'sala_chairs', 0.5, 1).setDepth(774);
@@ -667,15 +677,16 @@ function build(w: WorldScene): void {
   const target = (id: string, label: string, r: Rect, ap: Vec, run: (c: ScriptContext) => Promise<void>, active: () => boolean = always, pad = 10) =>
     w.addTarget({ id, label, hit: rectHit(r, pad), approach: () => ap, anchor: () => ({ x: r.x + r.w / 2, y: r.y + r.h / 2 }), active, run });
 
-  target('sub', 'Suscribirse', { x: 50, y: 60, w: 160, h: 150 }, { x: 130, y: 248 }, subscribeDoor);
-  target('display', 'Pantalla', { x: 222, y: 48, w: 100, h: 64 }, { x: 272, y: 244 }, display);
+  target('sub', 'Suscribirse', { x: 42, y: 60, w: 176, h: 146 }, { x: 130, y: 248 }, subscribeDoor);
+  target('display', 'Pantalla', { x: 218, y: 46, w: 108, h: 70 }, { x: 272, y: 244 }, display);
   target('planta', 'Planta', { x: 420, y: 104, w: 116, h: 150 }, { x: 472, y: 284 }, plant, notFlag('plantaMovida'));
   target('cancel', 'Puerta pequeña', { x: 457, y: 96, w: 60, h: 109 }, { x: 487, y: 244 }, cancelDoor, flag('plantaMovida'));
-  target('postit', 'Post-it', { x: 306, y: 292, w: 52, h: 40 }, { x: 332, y: 430 }, takePostit, notFlag('postitTomado'));
+  if (hasProp(IMAGE_SETS.sala.desk)) target('postit', 'Post-it', { x: 186, y: 324, w: 54, h: 38 }, { x: 214, y: 428 }, takePostit, notFlag('postitTomado'));
+  else target('postit', 'Post-it', { x: 306, y: 292, w: 52, h: 40 }, { x: 332, y: 430 }, takePostit, notFlag('postitTomado'));
   target('vending', 'Cookie-Matic', { x: 22, y: 310, w: 94, h: 146 }, { x: 152, y: 456 }, cookieMachine);
   target('printer', 'Impresora', { x: 413, y: 406, w: 114, h: 110 }, { x: 384, y: 492 }, printer);
-  target('sillasL', 'Sillas', { x: 40, y: 718, w: 154, h: 58 }, { x: 117, y: 808 }, chairs);
-  target('sillasR', 'Sillas', { x: 348, y: 718, w: 154, h: 58 }, { x: 425, y: 808 }, chairs);
+  target('sillasL', 'Sillas', { x: 40, y: 686, w: 154, h: 90 }, { x: 117, y: 808 }, chairs);
+  target('sillasR', 'Sillas', { x: 348, y: 686, w: 154, h: 90 }, { x: 425, y: 808 }, chairs);
   target('entrada', 'Entrada', { x: 190, y: 890, w: 160, h: 60 }, { x: 270, y: 862 }, entrance);
 
   w.addTarget({
@@ -712,7 +723,7 @@ function restore(w: WorldScene): void {
     img_(w, 'plant').x = PLANT_TO;
     setPlantMoved(w);
   }
-  if (state.is('postitTomado')) img_(w, 'postit').destroy();
+  if (state.is('postitTomado')) (w.objs.postit as Phaser.GameObjects.Image | undefined)?.destroy();
   if (state.is('impreso')) img_(w, 'paper').setVisible(true);
   if (state.is('sombraFuera')) createShade(w, SHADE_SPOT.x, SHADE_SPOT.y);
   if (state.is('botCongelado')) w.bot?.freeze((state.flag('botMotivo') as 'clausulas' | 'reinicio' | 'div0' | undefined) ?? 'clausulas');

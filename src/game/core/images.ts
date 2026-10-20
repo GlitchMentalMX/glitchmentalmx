@@ -18,6 +18,15 @@ export const IMAGE_SETS = {
     printer: '/juego/sala/fax.webp',
     plant: '/juego/sala/planta.webp',
     door: '/juego/sala/puerta-cancelar.webp',
+    // Segunda tanda (scripts/make-sala-props-2.mjs)
+    desk: '/juego/sala/mostrador.webp',
+    display: '/juego/sala/pantalla-turnos.webp',
+    chairs: '/juego/sala/sillas.webp',
+    frame: '/juego/sala/marco-suscribete.webp',
+    glass: '/juego/sala/cristal.webp',
+    itemCookie: '/juego/sala/item-galleta.webp',
+    itemHoja: '/juego/sala/item-hoja.webp',
+    itemPostit: '/juego/sala/item-postit.webp',
   },
   glitchman: {
     head: '/juego/glitchman/head.webp',

@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { FONT, H, MONO, W } from '../core/config';
 import { blobPath, fillStroke, ink, makeTex, rng, roughPoly, roundRectPath, type Draw } from '../core/gfx';
 import { IMAGE_SETS, loadedImages } from '../core/images';
-import { ITEMS } from '../data/items';
+import { itemIconDraw } from '../data/items';
 
 // Arte PROVISIONAL de la Sala de Espera, dibujado por código. Cada elemento
 // usa un estilo distinto a propósito: fondo plano de caricatura, máquina casi
@@ -250,24 +250,26 @@ const imageTex = (scene: Phaser.Scene, key: string, url: string, w: number, h: n
 };
 /** Origen horizontal de la planta: el centro de la maceta (la ilustración trae un cable a un lado). */
 export const plantOriginX = (): number => (loadedImages.has(SI.plant) ? 0.474 : 0.5);
+/** ¿Cargó esta ilustración? (el guion de la sala ajusta posiciones según sea imagen o dibujo). */
+export const hasProp = (url: string): boolean => loadedImages.has(url);
 
 export function buildSalaTextures(scene: Phaser.Scene): void {
   makeTex(scene, 'sala_bg', W, H, bg);
-  makeTex(scene, 'sub_frame', 170, 150, subFrame);
-  makeTex(scene, 'sub_panel', 70, 114, subPanel);
+  imageTex(scene, 'sub_frame', SI.frame, 1223 * 0.145, 983 * 0.145, [170, 150, subFrame]);
+  imageTex(scene, 'sub_panel', SI.glass, 40.3, 80.8, [70, 114, subPanel]);
   imageTex(scene, 'sala_cancel', SI.door, 738 * 0.0783, 1392 * 0.0783, [52, 86, cancelDoor]);
   imageTex(scene, 'sala_plant', SI.plant, 1190 * 0.095, 1166 * 0.095, [96, 118, plant]);
-  makeTex(scene, 'sala_desk', 180, 120, desk);
+  imageTex(scene, 'sala_desk', SI.desk, 1515 * 0.12, 912 * 0.12, [180, 120, desk]);
   makeTex(scene, 'sala_postit', 22, 22, postit);
   imageTex(scene, 'sala_vending', SI.vending, 882 * 0.113, 1345 * 0.113, [96, 150, vending]);
   imageTex(scene, 'sala_printer', SI.printer, 1182 * 0.096, 1160 * 0.096, [112, 104, printer]);
-  makeTex(scene, 'sala_chairs', 156, 58, chairs);
-  makeTex(scene, 'sala_display', 100, 64, display);
+  imageTex(scene, 'sala_chairs', SI.chairs, 1475 * 0.107, 838 * 0.107, [156, 58, chairs]);
+  imageTex(scene, 'sala_display', SI.display, 1445 * 0.073, 882 * 0.073, [100, 64, display]);
   makeTex(scene, 'sala_mat', 150, 54, mat);
   makeTex(scene, 'sala_paper', 230, 258, paper);
   makeTex(scene, 'mini_cookie', 16, 16, miniCookie);
   makeTex(scene, 'confetti', 8, 8, confetti);
   makeTex(scene, 'sala_floor_tile', 120, 120, floorTile);
   makeTex(scene, 'sala_wall_ext', 8, 208, wallExt);
-  makeTex(scene, 'cookie_world', 40, 40, ITEMS.galleta.icon);
+  makeTex(scene, 'cookie_world', 40, 40, itemIconDraw('galleta'));
 }
