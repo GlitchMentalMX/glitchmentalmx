@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import { FONT, H, MONO, W } from '../core/config';
 import { blobPath, fillStroke, ink, makeTex, rng, roughPoly, roundRectPath, type Draw } from '../core/gfx';
+import { IMAGE_SETS, loadedImages } from '../core/images';
 import { ITEMS } from '../data/items';
 
 // Arte PROVISIONAL de la Sala de Espera, dibujado por código. Cada elemento
@@ -239,16 +240,27 @@ const wallExt: Draw = (ctx) => {
 };
 const confetti: Draw = (ctx) => { ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, 8, 8); };
 
+// Objetos ilustrados: si la imagen cargó se usa (tamaño en unidades = recorte * escala);
+// si no, vuelve el dibujo por código de arriba.
+const SI = IMAGE_SETS.sala;
+const imageTex = (scene: Phaser.Scene, key: string, url: string, w: number, h: number, fb: [number, number, Draw]): void => {
+  const im = loadedImages.get(url);
+  if (im) makeTex(scene, key, w, h, (ctx, tw, th) => ctx.drawImage(im, 0, 0, tw, th));
+  else makeTex(scene, key, fb[0], fb[1], fb[2]);
+};
+/** Origen horizontal de la planta: el centro de la maceta (la ilustración trae un cable a un lado). */
+export const plantOriginX = (): number => (loadedImages.has(SI.plant) ? 0.474 : 0.5);
+
 export function buildSalaTextures(scene: Phaser.Scene): void {
   makeTex(scene, 'sala_bg', W, H, bg);
   makeTex(scene, 'sub_frame', 170, 150, subFrame);
   makeTex(scene, 'sub_panel', 70, 114, subPanel);
-  makeTex(scene, 'sala_cancel', 52, 86, cancelDoor);
-  makeTex(scene, 'sala_plant', 96, 118, plant);
+  imageTex(scene, 'sala_cancel', SI.door, 738 * 0.0783, 1392 * 0.0783, [52, 86, cancelDoor]);
+  imageTex(scene, 'sala_plant', SI.plant, 1190 * 0.095, 1166 * 0.095, [96, 118, plant]);
   makeTex(scene, 'sala_desk', 180, 120, desk);
   makeTex(scene, 'sala_postit', 22, 22, postit);
-  makeTex(scene, 'sala_vending', 96, 150, vending);
-  makeTex(scene, 'sala_printer', 112, 104, printer);
+  imageTex(scene, 'sala_vending', SI.vending, 882 * 0.113, 1345 * 0.113, [96, 150, vending]);
+  imageTex(scene, 'sala_printer', SI.printer, 1182 * 0.096, 1160 * 0.096, [112, 104, printer]);
   makeTex(scene, 'sala_chairs', 156, 58, chairs);
   makeTex(scene, 'sala_display', 100, 64, display);
   makeTex(scene, 'sala_mat', 150, 54, mat);

@@ -8,6 +8,17 @@ export const loadedImages = new Map<string, CanvasImageSource>();
  * Agregar un personaje ilustrado = agregar su carpeta aquí y su corte en scripts/.
  */
 export const IMAGE_SETS = {
+  /** Objetos ilustrados de la sala (scripts/make-sala-props.mjs). */
+  sala: {
+    botOk: '/juego/sala/bot-ok.webp',
+    botHappy: '/juego/sala/bot-happy.webp',
+    botHmm: '/juego/sala/bot-hmm.webp',
+    botFrozen: '/juego/sala/bot-frozen.webp',
+    vending: '/juego/sala/cookie-matic.webp',
+    printer: '/juego/sala/fax.webp',
+    plant: '/juego/sala/planta.webp',
+    door: '/juego/sala/puerta-cancelar.webp',
+  },
   glitchman: {
     head: '/juego/glitchman/head.webp',
     headReact: '/juego/glitchman/head-react.webp',

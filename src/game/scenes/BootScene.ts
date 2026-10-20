@@ -15,7 +15,7 @@ export class BootScene extends Phaser.Scene {
 
   preload(): void {
     for (const [id, set] of Object.entries(IMAGE_SETS)) {
-      for (const [k, url] of Object.entries(set)) this.load.image(`${id}_${k}`, url);
+      for (const [k, url] of Object.entries(set)) this.load.image(`src:${id}_${k}`, url);
     }
     // Si alguna pieza falla, el personaje usa su dibujo de respaldo por código.
     this.load.on('loaderror', () => undefined);
@@ -29,11 +29,11 @@ export class BootScene extends Phaser.Scene {
     for (const [id, set] of Object.entries(IMAGE_SETS)) {
       let all = true;
       for (const [k, url] of Object.entries(set)) {
-        const key = `${id}_${k}`;
+        const key = `src:${id}_${k}`;
         if (this.textures.exists(key)) loadedImages.set(url, this.textures.get(key).getSourceImage() as HTMLImageElement);
         else all = false;
       }
-      if (!all) {
+      if (!all && id in CHARACTERS) {
         const def = CHARACTERS[id as CharId];
         def.parts = (PARTS as unknown as Record<string, PartSpec[]>)[`${id}Drawn`];
         def.pose = undefined;

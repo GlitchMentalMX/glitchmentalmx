@@ -48,7 +48,7 @@ export async function openSheet(src, { bg, tol = 14, pocket = 600 }) {
 
   // `include(x, y)` devuelve true/false o un número 0-1 (opacidad): sirve para
   // difuminar el borde de corte de una pieza y que no se note la costura.
-  async function cut(folder, name, x, y, cw, ch, include = () => true, keepRatio = 1) {
+  async function cut(folder, name, x, y, cw, ch, include = () => true, keepRatio = 1, erode = 0, outW = 0) {
     const out = Buffer.alloc(cw * ch * 4);
     const fg = new Uint8Array(cw * ch);
     const alpha = new Float32Array(cw * ch);
@@ -87,6 +87,23 @@ export async function openSheet(src, { bg, tol = 14, pocket = 600 }) {
     // keepRatio < 1 conserva también las manchas pequeñas sueltas (p. ej. la moneda flotante).
     const biggest = Math.max(...sizes);
     for (let o = 0; o < cw * ch; o++) out[o * 4 + 3] = lab[o] >= 0 && sizes[lab[o]] >= biggest * (keepRatio < 1 ? keepRatio : 1) ? Math.round(255 * Math.min(1, alpha[o])) : 0;
+    // Borde limpio: los píxeles opacos pegados al fondo son una mezcla del objeto con el
+    // color del fondo (halo rosa/verde/azul). `erode` los quita capa por capa.
+    for (let pass = 0; pass < erode; pass++) {
+      const kill = [];
+      for (let o = 0; o < cw * ch; o++) {
+        if (!out[o * 4 + 3]) continue;
+        const x = o % cw, y = (o / cw) | 0;
+        for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+          const nx = x + dx, ny = y + dy;
+          if (nx < 0 || ny < 0 || nx >= cw || ny >= ch || !out[(ny * cw + nx) * 4 + 3]) {
+            kill.push(o);
+            break;
+          }
+        }
+      }
+      for (const o of kill) out[o * 4 + 3] = 0;
+    }
     // Sangrado de color: los píxeles transparentes junto al contorno toman el color
     // del vecino opaco más cercano. Sin esto, el color del fondo original (azul
     // marino) se cuela al suavizar el borde en pantalla y deja una línea oscura
@@ -114,7 +131,11 @@ export async function openSheet(src, { bg, tol = 14, pocket = 600 }) {
       }
     }
     mkdirSync(`public/juego/${folder}`, { recursive: true });
-    await sharp(out, { raw: { width: cw, height: ch, channels: 4 } }).webp({ quality: 92, alphaQuality: 95 }).toFile(`public/juego/${folder}/${name}.webp`);
+    // `outW` reduce el ancho del archivo (el juego dibuja la imagen a su tamaño en pantalla,
+    // así que el recorte original, de miles de píxeles, solo haría pesar la descarga).
+    let img = sharp(out, { raw: { width: cw, height: ch, channels: 4 } });
+    if (outW) img = img.resize({ width: outW });
+    await img.webp({ quality: 90, alphaQuality: 92 }).toFile(`public/juego/${folder}/${name}.webp`);
     console.log(`${folder}/${name}`, cw, ch);
   }
   return { cut, width: w, height: h };

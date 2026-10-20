@@ -2,7 +2,7 @@ import Phaser from 'phaser';
 import { H, S, W } from '../core/config';
 import { img } from '../core/gfx';
 import { state } from '../core/state';
-import { buildSalaTextures } from '../art/sala';
+import { buildSalaTextures, plantOriginX } from '../art/sala';
 import { Actor } from '../engine/Actor';
 import { rectHit } from '../engine/hit';
 import { Mover } from '../engine/Mover';
@@ -648,7 +648,7 @@ function build(w: WorldScene): void {
   w.objs.printer = img(w, 469, 516, 'sala_printer', 0.5, 1).setDepth(516);
   img(w, 117, 774, 'sala_chairs', 0.5, 1).setDepth(774);
   img(w, 425, 774, 'sala_chairs', 0.5, 1).setDepth(774);
-  w.objs.plant = img(w, PLANT_FROM, 254, 'sala_plant', 0.5, 1).setDepth(254);
+  w.objs.plant = img(w, PLANT_FROM, 254, 'sala_plant', plantOriginX(), 1).setDepth(254);
 
   const bot = w.spawnBot([
     { x: 200, y: 520 }, { x: 360, y: 560 }, { x: 310, y: 650 },
@@ -663,11 +663,11 @@ function build(w: WorldScene): void {
 
   target('sub', 'Suscribirse', { x: 50, y: 60, w: 160, h: 150 }, { x: 130, y: 248 }, subscribeDoor);
   target('display', 'Pantalla', { x: 222, y: 48, w: 100, h: 64 }, { x: 272, y: 244 }, display);
-  target('planta', 'Planta', { x: 432, y: 112, w: 90, h: 142 }, { x: 472, y: 284 }, plant, notFlag('plantaMovida'));
-  target('cancel', 'Puerta pequeña', { x: 462, y: 118, w: 50, h: 88 }, { x: 487, y: 244 }, cancelDoor, flag('plantaMovida'));
+  target('planta', 'Planta', { x: 420, y: 104, w: 116, h: 150 }, { x: 472, y: 284 }, plant, notFlag('plantaMovida'));
+  target('cancel', 'Puerta pequeña', { x: 457, y: 96, w: 60, h: 109 }, { x: 487, y: 244 }, cancelDoor, flag('plantaMovida'));
   target('postit', 'Post-it', { x: 306, y: 292, w: 52, h: 40 }, { x: 332, y: 430 }, takePostit, notFlag('postitTomado'));
   target('vending', 'Cookie-Matic', { x: 22, y: 310, w: 94, h: 146 }, { x: 152, y: 456 }, cookieMachine);
-  target('printer', 'Impresora', { x: 414, y: 420, w: 110, h: 98 }, { x: 384, y: 492 }, printer);
+  target('printer', 'Impresora', { x: 413, y: 406, w: 114, h: 110 }, { x: 384, y: 492 }, printer);
   target('sillasL', 'Sillas', { x: 40, y: 718, w: 154, h: 58 }, { x: 117, y: 808 }, chairs);
   target('sillasR', 'Sillas', { x: 348, y: 718, w: 154, h: 58 }, { x: 425, y: 808 }, chairs);
   target('entrada', 'Entrada', { x: 190, y: 890, w: 160, h: 60 }, { x: 270, y: 862 }, entrance);

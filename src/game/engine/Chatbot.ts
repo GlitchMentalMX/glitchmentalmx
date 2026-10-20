@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import { audio } from '../core/audio';
 import { img, makeTex } from '../core/gfx';
+import { IMAGE_SETS, loadedImages } from '../core/images';
 import { bubbleMs, dismissBubble, makeBubble, placeBubble } from './bubble';
 import { Mover } from './Mover';
 import type { NavGrid, Vec } from './pathfinding';
@@ -40,7 +41,18 @@ export function buildBotTextures(scene: Phaser.Scene): void {
       ctx.beginPath(); ctx.arc(32, 46, 2, 0, Math.PI * 2); ctx.fill();
     }
   };
-  (['ok', 'happy', 'hmm', 'frozen'] as Face[]).forEach((f) => makeTex(scene, `bot_${f}`, 64, 68, draw(f)));
+  const urls: Record<Face, string> = {
+    ok: IMAGE_SETS.sala.botOk,
+    happy: IMAGE_SETS.sala.botHappy,
+    hmm: IMAGE_SETS.sala.botHmm,
+    frozen: IMAGE_SETS.sala.botFrozen,
+  };
+  (['ok', 'happy', 'hmm', 'frozen'] as Face[]).forEach((f) => {
+    const im = loadedImages.get(urls[f]);
+    // Ilustración (cuatro caras con el mismo recorte de 505x515 px a 0.144 unid./px) o dibujo de respaldo.
+    if (im) makeTex(scene, `bot_${f}`, 505 * 0.144, 515 * 0.144, (ctx, w, h) => ctx.drawImage(im, 0, 0, w, h));
+    else makeTex(scene, `bot_${f}`, 64, 68, draw(f));
+  });
 }
 
 const BARKS_PATROL = [
