@@ -283,8 +283,11 @@ export class UIScene extends Phaser.Scene {
     });
   }
 
-  /** Línea con opciones: devuelve el índice elegido. */
-  ask(sp: Speaker, text: string, options: string[]): Promise<number> {
+  /**
+   * Línea con opciones: devuelve el índice elegido. Con `seconds`, muestra una
+   * barra de tiempo y devuelve -1 si se agota antes de que el jugador elija.
+   */
+  ask(sp: Speaker, text: string, options: string[], seconds?: number): Promise<number> {
     return new Promise((resolve) => {
       this.openDialogue();
       this.choiceLayer.removeAll(true);
@@ -295,10 +298,33 @@ export class UIScene extends Phaser.Scene {
       this.panel.setVisible(true);
       this.arrow.setVisible(false);
       this.tapZone.disableInteractive();
+      let countdown: Phaser.Time.TimerEvent | undefined;
       const show = () => {
         this.typing?.remove();
         this.typing = undefined;
         this.body.setText(text);
+        if (seconds) {
+          const barY = stackTop - 10;
+          const back = this.add.rectangle(PANEL_X, barY, PANEL_W, 6, 0x000000, 0.45).setOrigin(0, 0.5);
+          const bar = this.add.rectangle(PANEL_X, barY, PANEL_W, 6, 0xffd23f, 1).setOrigin(0, 0.5);
+          this.choiceLayer.add([back, bar]);
+          const total = seconds * 1000;
+          let left = total;
+          countdown = this.time.addEvent({
+            delay: 100,
+            loop: true,
+            callback: () => {
+              left -= 100;
+              if (bar.active) bar.width = Math.max(0, (PANEL_W * left) / total);
+              if (left <= 0) {
+                countdown?.remove();
+                this.input.keyboard?.off('keydown', keyHandler);
+                this.closeDialogue();
+                resolve(-1);
+              }
+            },
+          });
+        }
         options.forEach((label, i) => {
           const y = stackTop + i * (BTN_H + BTN_GAP);
           const g = this.add.graphics();
@@ -315,6 +341,7 @@ export class UIScene extends Phaser.Scene {
           hit.on('pointerdown', (p: Phaser.Input.Pointer) => {
             this.markUi(p);
             audio.play('select');
+            countdown?.remove();
             this.input.keyboard?.off('keydown', keyHandler);
             this.closeDialogue();
             resolve(i);
@@ -324,6 +351,7 @@ export class UIScene extends Phaser.Scene {
         const keyHandler = (e: KeyboardEvent) => {
           const k = Number(e.key) - 1;
           if (k >= 0 && k < n) {
+            countdown?.remove();
             this.input.keyboard?.off('keydown', keyHandler);
             audio.play('select');
             this.closeDialogue();

@@ -57,9 +57,10 @@ export class ScriptContext {
     await this.ui.say(this.speaker(who), this.resolve(line));
   }
 
-  async ask(who: string, line: Line, options: string[]): Promise<number> {
+  /** Con `seconds` hay cuenta regresiva visible; devuelve -1 si se agota. */
+  async ask(who: string, line: Line, options: string[], seconds?: number): Promise<number> {
     if (who === 'bot') this.world.bot?.hold();
-    return this.ui.ask(this.speaker(who), this.resolve(line), options);
+    return this.ui.ask(this.speaker(who), this.resolve(line), options, seconds);
   }
 
   /** El jugador comenta algo con la frase propia de su personaje. */

@@ -310,6 +310,33 @@ async function cancelDoor(c: ScriptContext): Promise<void> {
 
 // ---------------------------------------------------------------- resto de interacciones
 
+/** Examen de "persona responsable": se contesta bien y el tiempo se acaba igual. Una vez por partida. */
+async function cookieQuiz(c: ScriptContext): Promise<void> {
+  c.set('cookieQuiz');
+  await c.say('Cookie-Matic', 'Antes de gestionar tus preferencias, comprueba que eres un usuario responsable. Son 3 preguntas. Tienes poco tiempo. Muy poco.');
+  const questions: { q: string; opts: string[]; right: number }[] = [
+    { q: '1/3 · ¿Qué es una cookie?', opts: ['Una galleta', 'Un archivo pequeño que un sitio guarda en tu navegador', 'Un virus con buen marketing'], right: 1 },
+    { q: '2/3 · ¿Qué botón debería existir para negarte?', opts: ['Aceptar todas', 'Configurar (47 pasos)', 'Rechazar todas'], right: 2 },
+    { q: '3/3 · ¿Cuántos clics debería costar rechazar, igual que aceptar?', opts: ['47', 'Uno', 'Los que nosotros decidamos'], right: 1 },
+  ];
+  let ok = 0;
+  for (const item of questions) {
+    c.sfx('bleep');
+    const i = await c.ask('Cookie-Matic', item.q, item.opts, 9);
+    if (i === item.right) {
+      ok += 1;
+      c.sfx('pick');
+    } else {
+      c.sfx('deny');
+      if (i === -1) await c.say('Cookie-Matic', 'Tiempo agotado. Qué lento eres. Seguramente tu navegador también.');
+    }
+  }
+  c.sfx('deny');
+  c.shake(180, 0.003);
+  await c.say('Cookie-Matic', ok === 3 ? 'Respuestas correctas: 3 de 3. Impecable.' : `Respuestas correctas: ${ok} de 3.`);
+  await c.say('Cookie-Matic', 'Lo sentimos, excediste el tiempo. Seguiremos aplicando las cookies que tanto odias y que tanto amas.');
+}
+
 async function cookieMachine(c: ScriptContext): Promise<void> {
   const w = c.world;
   const st = c.flag('cookies');
@@ -325,6 +352,7 @@ async function cookieMachine(c: ScriptContext): Promise<void> {
   c.sfx('bleep');
   await c.say('Cookie-Matic', 'Esta máquina utiliza cookies para mejorar su experiencia. Y la nuestra.');
   await c.sayChar('cookies');
+  if (!c.is('cookieQuiz')) await cookieQuiz(c);
   let fails = 0;
   for (;;) {
     type Opt = { label: string; kind: 'accept' | 'config' | 'reject' | 'don' | 'poppy' };
