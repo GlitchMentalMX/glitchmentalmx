@@ -1,12 +1,12 @@
 ---
 title: El algoritmo ahora te pregunta qué quieres (y no te cree)
 category: Tendencias Digitales
-pubDate: 2026-10-19T10:36
+pubDate: 2026-10-20T06:50
 updatedDate: ''
 description: 'Facebook, Instagram y TikTok ya te dejan decirle al feed qué quieres. Lo que no dicen: tu palabra entra al ranking como una señal más.'
 heroImage: /images/uploads/algoritmo-no-cree.webp
 heroImageAlt: 'El algoritmo ahora te pregunta qué quieres: usuario seleccionando preferencias mientras el feed recomienda otro contenido'
-draft: true
+draft: false
 ---
 
 Durante años el algoritmo adivinó lo que querías. Ahora te lo pregunta, y Facebook lo anunció el 13 de octubre de 2026. Que el algoritmo te pregunte no significa que te escuche: **tu respuesta entra al ranking como una señal más**.
