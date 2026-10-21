@@ -60,11 +60,17 @@ const reasons = [
   title="Publicidad"
   description="Tu marca frente a una audiencia que sí le importa la tecnología."
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  alternates={[
+    { hreflang: 'es', href: '/publicidad-en-glitchmentalmx/' },
+    { hreflang: 'en', href: '/advertise-with-glitchmentalmx/' },
+    { hreflang: 'x-default', href: '/publicidad-en-glitchmentalmx/' },
+  ]}
 >
   <Breadcrumbs items={[{ name: 'Publicidad' }]} />
   <section class="container hero">
     <h1>Tu marca frente a una audiencia<br /><span>que sí le importa la tecnología.</span></h1>
     <p class="lead-text">Lectores interesados en Inteligencia Artificial, Cultura Digital, Tendencias Tecnológicas y Gadgets. Formatos editorialmente integrados para mejor impacto — sin publicidad genérica ni intrusiva.</p>
+    <a class="alt-lang" href="/advertise-with-glitchmentalmx/">Read this in English →</a>
   </section>
 
   <section class="container proof-bar">
@@ -126,6 +132,7 @@ const reasons = [
   }
   .hero h1 span { color: var(--accent); }
   .lead-text { color: var(--text-muted); font-size: 1rem; line-height: 1.65; max-width: 60ch; }
+  .alt-lang { display: inline-block; margin-top: 22px; font-size: 0.88rem; color: var(--accent); }
 
   .proof-bar {
     max-width: 800px;

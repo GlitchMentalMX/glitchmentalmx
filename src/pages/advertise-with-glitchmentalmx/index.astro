@@ -1,0 +1,260 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
+
+const proof = [
+  { value: `${postCount}`, label: 'articles published — active audience' },
+  { value: 'Niche', label: 'AI, tech, digital culture and trends' },
+  { value: 'LATAM', label: 'Spanish-speaking focus — Mexico, LATAM + Spain' },
+  { value: 'Sponsored', label: 'with editorial standards — no filler' },
+];
+
+const formats = [
+  {
+    name: 'Sponsored post',
+    price: '$200',
+    period: 'USD',
+    term: 'Permanent',
+    features: [
+      'Writing + SEO + publication',
+      'Up to 2 DoFollow or NoFollow links',
+      'Delivered in 3–5 business days',
+    ],
+  },
+  {
+    name: 'Contextual link',
+    price: '$100',
+    period: 'USD',
+    term: 'Permanent',
+    featured: true,
+    badge: 'Most requested',
+    features: [
+      'Placement in a relevant existing article',
+      'Thematic editorial context',
+    ],
+  },
+  {
+    name: 'Banner ad',
+    price: '$150',
+    period: 'USD/month',
+    term: 'Renewable monthly',
+    features: [
+      'Sidebar / Header / Footer',
+      '728×90, 300×250 or other sizes',
+    ],
+  },
+];
+
+const reasons = [
+  'A niche audience with a genuine interest in technology, AI and digital culture',
+  'Editorially integrated content — more impact than intrusive advertising',
+  'Flexible formats for your goal: SEO, branding or campaigns',
+  'Welcome: startups, SaaS, fintech, digital tools and tech brands',
+];
+---
+
+<Layout
+  title="Advertise"
+  description="Your brand in front of an audience that actually cares about technology."
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  lang="en"
+  locale="en_US"
+  alternates={[
+    { hreflang: 'es', href: '/publicidad-en-glitchmentalmx/' },
+    { hreflang: 'en', href: '/advertise-with-glitchmentalmx/' },
+    { hreflang: 'x-default', href: '/publicidad-en-glitchmentalmx/' },
+  ]}
+>
+  <Breadcrumbs items={[{ name: 'Advertise' }]} />
+  <section class="container hero">
+    <h1>Your brand in front of an audience<br /><span>that actually cares about technology.</span></h1>
+    <p class="lead-text">Readers interested in Artificial Intelligence, Digital Culture, Tech Trends and Gadgets. Editorially integrated formats for stronger impact — no generic or intrusive advertising.</p>
+    <a class="alt-lang" href="/publicidad-en-glitchmentalmx/">Leer esto en español →</a>
+  </section>
+
+  <section class="container proof-bar">
+    {proof.map((p) => (
+      <div class="proof-item">
+        {p.value && <span class="proof-value">{p.value}</span>}
+        <span class="proof-label">{p.label}</span>
+      </div>
+    ))}
+  </section>
+
+  <section class="container block">
+    <p class="section-label">Available formats</p>
+    <div class="formats">
+      {formats.map((f) => (
+        <div class:list={['format', { featured: f.featured }]}>
+          {f.badge && <span class="format-badge">{f.badge}</span>}
+          <p class="format-name">{f.name}</p>
+          <p class="format-price">{f.price}<span>{f.period}</span></p>
+          <p class="format-term">{f.term}</p>
+          <div class="format-features">
+            {f.features.map((feat) => <p class="check-item arrow">{feat}</p>)}
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="format-note">* Sponsored content, labeled as such.</p>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">Why advertise here</p>
+    <div class="quality-list">
+      {reasons.map((r) => <p class="check-item check">{r}</p>)}
+    </div>
+  </section>
+
+  <section class="container block">
+    <p class="section-label">How to get started</p>
+    <div class="callout-box">
+      <p>Email us your goals and estimated budget. We'll reply with a detailed proposal and specific terms for your campaign.</p>
+    </div>
+  </section>
+
+  <section class="container cta">
+    <div class="cta-inner">
+      <a class="cta-site" href="/">glitchmental.com</a>
+      <a class="btn btn-primary" href="mailto:contacto@glitchmental.com">contacto@glitchmental.com</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero { padding: 56px 24px 32px; max-width: 760px; border-bottom: 2px solid var(--text); }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+    line-height: 1.15;
+    margin: 0 0 18px;
+  }
+  .hero h1 span { color: var(--accent); }
+  .lead-text { color: var(--text-muted); font-size: 1rem; line-height: 1.65; max-width: 60ch; }
+  .alt-lang { display: inline-block; margin-top: 22px; font-size: 0.88rem; color: var(--accent); }
+
+  .proof-bar {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+  .proof-item {
+    flex: 1 1 0;
+    min-width: 140px;
+    padding: 20px 22px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .proof-item:last-child { border-right: none; }
+  .proof-value {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .proof-label { display: block; font-size: 0.78rem; color: var(--text-muted); line-height: 1.4; }
+
+  .block { max-width: 800px; padding: 40px 24px 8px; }
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 18px;
+  }
+
+  .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .format-note { margin: 14px 2px 0; font-size: 0.8rem; font-style: italic; color: var(--text-faint); }
+  .format {
+    position: relative;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+  }
+  .format.featured { border: 2px solid var(--accent); background: var(--accent-soft); }
+  .format-badge {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .format-name {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 10px;
+  }
+  .format-price { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; }
+  .format-price span { font-family: var(--font-body); font-size: 0.82rem; font-weight: 400; color: var(--text-faint); margin-left: 2px; }
+  .format-term {
+    color: var(--accent);
+    font-size: 0.86rem;
+    font-weight: 600;
+    padding-bottom: 14px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .format.featured .format-term { border-bottom-color: var(--accent-line); }
+  .format-features { display: flex; flex-direction: column; gap: 8px; }
+  .format-features .check-item { font-size: 0.82rem; padding-left: 20px; }
+
+  .check-item { font-size: 0.95rem; color: var(--text); line-height: 1.55; padding-left: 24px; position: relative; margin: 0; }
+  .check-item::before { position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .check-item.arrow::before { content: '→'; }
+  .check-item.check::before { content: '✓'; }
+  .quality-list .check-item { padding: 12px 0 12px 24px; border-bottom: 1px solid var(--border); }
+  .quality-list .check-item:last-child { border-bottom: none; }
+
+  .callout-box {
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    background: var(--accent-soft);
+    padding: 18px 22px;
+  }
+  .callout-box p { font-size: 0.95rem; line-height: 1.7; color: var(--text); margin: 0; }
+
+  .cta { max-width: 800px; padding: 44px 24px 96px; }
+  .cta-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--text);
+    padding-top: 28px;
+  }
+  .cta-site { color: var(--text-faint); font-size: 0.95rem; }
+
+  @media (max-width: 700px) {
+    .formats { grid-template-columns: 1fr; }
+    .proof-bar { flex-direction: column; }
+    .proof-item { border-right: none; border-bottom: 1px solid var(--border); }
+    .proof-item:last-child { border-bottom: none; }
+    .cta-inner { flex-direction: column; align-items: flex-start; }
+  }
+</style>
