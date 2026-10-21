@@ -4,7 +4,7 @@ resumen: La IA ya puede encadenar tareas, herramientas y decisiones. El problema
 imagen: /images/dato-incomodo/autonomia-sin-testigos.webp
 imagenAlt: Sistema de IA ejecutando tareas automatizadas mientras una ingeniera distraída no detecta un error que se propaga en el flujo de trabajo
 enlace: ''
-date: 2026-10-19T08:00
+date: 2026-10-21T06:13
 draft: true
 categoria: IA Agéntica
 punchline: La autonomía también necesita testigos
