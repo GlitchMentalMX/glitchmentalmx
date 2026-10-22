@@ -9,13 +9,13 @@ heroImageAlt: 'reconocimiento facial en el hogar: pantalla doméstica identifica
 draft: false
 ---
 
-Apple presentó el 13 de octubre de 2026 una pantalla doméstica con **reconocimiento facial para hasta seis personas**. Antes de mostrarte algo, una pantalla compartida tiene que decidir quién eres: ya no funciona como candado, sino como el interruptor que reparte la sala.
+Apple presentó el 13 de octubre de 2026 una pantalla doméstica con [**reconocimiento facial para hasta seis personas**](https://www.apple.com/mx/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/). Antes de mostrarte algo, una pantalla compartida tiene que decidir quién eres: ya no funciona como candado, sino como el interruptor que reparte la sala.
 
 ## Una pantalla compartida tiene que decidir quién eres antes de mostrarte nada
 
 Según el comunicado de Apple, HomeView le da a cada una de esas personas **su propia pantalla de inicio**, con apps y widgets. Apple afirma que el contenido personal se mantiene privado frente a los demás, mientras que los álbumes y la música compartidos quedan abiertos a todo el hogar, invitados incluidos.
 
-Greg Joswiak, vicepresidente senior de Marketing Mundial de Apple, lo resume así (en traducción nuestra): el aparato “reconoce tu rostro para pasar de una pantalla del hogar a tu propia experiencia”. **El reconocimiento facial funciona aquí como un interruptor de contexto, no como una llave de acceso.** Un candado separa a quien puede entrar de quien no; un interruptor decide cuál de las personas que ya están dentro tiene la pantalla enfrente. El reconocimiento facial, para fijar el término, compara el rostro que ve la cámara con los rostros inscritos.
+Greg Joswiak, vicepresidente sénior de Worldwide Marketing de Apple, lo resume así: el aparato reconoce el rostro para “pasar de una pantalla general del hogar a tu propia experiencia”. **El reconocimiento facial funciona aquí como un interruptor de contexto, no como una llave de acceso.** Un candado separa a quien puede entrar de quien no; un interruptor decide cuál de las personas que ya están dentro tiene la pantalla enfrente. El reconocimiento facial, para fijar el término, compara el rostro que ve la cámara con los rostros inscritos.
 
 Hay un contraste útil con [Tu voz ya no es tuya: la biometría que la banca rompió](/articulos/tu-voz-ya-no-es-tuya-biometria-banca-rota/). Allá, un rasgo biométrico cargaba solo con la autenticación y falló. Aquí, el rostro no carga solo con nada: **Apple lo condiciona a un segundo elemento físico**, el iPhone.
 
@@ -23,7 +23,7 @@ Hay un contraste útil con [Tu voz ya no es tuya: la biometría que la banca rom
 
 ## La cara sola no basta: tu casa te reconoce con ayuda de tu iPhone
 
-De acuerdo con la empresa, el contenido personal de apps como Mensajes y Calendario solo aparece cuando se reconoce el rostro del usuario inscrito y, a la vez, su iPhone o iPad emparejado está presente y se desbloqueó hace poco. Es decir, **la condición de acceso es un rostro registrado más un dispositivo cercano**. El comunicado no precisa cuánto dura ese plazo.
+De acuerdo con la empresa, el contenido personal de apps como Mensajes y Calendario solo aparece cuando se reconoce el rostro del usuario inscrito y, a la vez, su iPhone o iPad emparejado está presente y fue desbloqueado de forma reciente. Es decir, **la condición de acceso es un rostro registrado más un dispositivo presente**. El comunicado no define qué cuenta como reciente.
 
 Una nota al pie de Apple matiza el caso sin Wi-Fi: si el dispositivo emparejado pierde la conexión, **la información personal puede seguir accesible** siempre que se reconozca el rostro y el dispositivo cumpla las condiciones que la nota enumera: red Wi-Fi reciente en común, conexión celular activa, misma ubicación y desbloqueo reciente.
 
