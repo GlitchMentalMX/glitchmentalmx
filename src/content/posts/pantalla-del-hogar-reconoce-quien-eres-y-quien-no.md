@@ -45,7 +45,7 @@ Quedan preguntas abiertas que el documento no detalla: **qué ocurre con un meno
 
 ## La casa también clasifica a quien llega: del salón al timbre
 
-Apple extiende la misma lógica hacia afuera. Según su comunicado, y solo con una suscripción compatible a iCloud+ y cámaras compatibles, HomeView ofrece reconocimiento cifrado de extremo a extremo de personas, rostros familiares, mascotas, paquetes y vehículos, y avisa al hogar cuando alguien llega a la puerta. **HomeView distingue entre personas y rostros familiares**, y esa frontera la traza el propio sistema.
+Apple extiende la misma lógica hacia afuera. Según su comunicado, y solo con una suscripción compatible a iCloud+ y cámaras compatibles, HomeView ofrece reconocimiento cifrado de extremo a extremo de personas, rostros familiares, mascotas, paquetes y vehículos, y avisa al hogar cuando alguien llega a la puerta. **HomeView distingue entre personas y rostros conocidos**, y esa frontera la traza el propio sistema.
 
 El inventario de objetos que ya observan la casa está en [La vigilancia en tus objetos cotidianos: el inventario real](/articulos/la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real/). Lo que cambia con esta función es el verbo: **el dispositivo no solo registra lo que pasa en la puerta, también clasifica a quien llega**.
 
@@ -61,7 +61,7 @@ Lectura propia: la pregunta es distinta de la de [Cuánto cuesta espiar](/articu
 
 ## México, o cuando la discusión llega antes que el producto
 
-En su anuncio inicial, del 13 de octubre de 2026, Apple listó como mercados de lanzamiento a Australia, Canadá, India, Nueva Zelanda, el Reino Unido, Estados Unidos, Singapur y Sudáfrica. **México no figuraba entre ellos.** Apple precisó también que HomeView no se vendía en la Unión Europea porque Siri AI, la nueva versión de su asistente, no estaba disponible allá, y que Siri AI en HomeView estaba disponible solo en inglés. Esto describe solo el anuncio inicial.
+En su anuncio inicial, del 13 de octubre de 2026, Apple listó como mercados de lanzamiento a Australia, Canadá, India, Nueva Zelanda, el Reino Unido, Estados Unidos, Singapur y Sudáfrica. **México no figuraba entre ellos.** La versión del comunicado en el sitio de Apple México incluye la misma lista. Apple precisó también que HomeView no se vendía en la Unión Europea porque Siri AI, la nueva versión de su asistente, no estaba disponible allá, y que Siri AI en HomeView estaba disponible solo en inglés. Esto describe solo el anuncio inicial.
 
 Lectura propia: la sala mexicana ya tiene pantallas compartidas, como el televisor o la tablet de la familia. **La pregunta de quién cuenta como “alguien” frente a ellas existe sin reconocimiento facial**: se resuelve con una contraseña que todos conocen, con un perfil abierto o con quien tenga el control remoto.
 
