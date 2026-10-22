@@ -51,7 +51,7 @@ El inventario de objetos que ya observan la casa está en [La vigilancia en tus 
 
 ## Cuando la amenaza vive en tu sala
 
-En seguridad, un modelo de amenaza es el mapa de quién podría atacar un sistema y desde dónde. La investigación académica sobre hogares inteligentes señala una zona poco mirada: **las amenazas internas**, las que vienen de personas que viven en la casa o tienen acceso a ella.
+En seguridad, un modelo de amenaza es el mapa de quién podría atacar un sistema y desde dónde. La investigación académica sobre hogares inteligentes señala una zona poco vista: **las amenazas internas**, las que vienen de personas que viven en la casa o tienen acceso a ella.
 
 Nandita Pattnaik, Shujun Li y Jason Nurse, de la Universidad de Kent, publicaron en 2024 un estudio sobre casas compartidas por personas sin vínculo familiar. Proponen un modelo de actores de amenaza que incluye a los compañeros de casa, actuales y pasados, y piden **más atención de los investigadores y de los diseñadores y fabricantes de dispositivos**. Ahmed Alshehri, Malek Ben Salem y Lei Ding sostienen, en un análisis de 2020, que diseñar con una suposición de seguridad absoluta dentro de casa es problemático, y señalan que estos aparatos pueden darle al dueño poder sobre su pareja en el mismo hogar. Simon Parkin y su equipo, de University College London, analizaron en 2019 la seguridad de ecosistemas compartidos con Amazon Echo y Google Home desde la perspectiva de quien comparte aparatos con otra persona.
 
