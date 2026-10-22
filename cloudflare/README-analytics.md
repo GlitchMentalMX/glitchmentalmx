@@ -132,3 +132,27 @@ Para que quede activo en producción:
   notarse, pero si algún día se siente lento, ahí es donde se optimiza.
 - No toca la Política de Privacidad del sitio — eso lo redactas tú
   aparte cuando quieras mencionar este sistema.
+
+## Actualización: duración, scroll, "Ahora" y "Directo" real (octubre 2026)
+
+Qué agrega: tiempo en página (solo con la pestaña visible), scroll máximo,
+bloque "Ahora mismo" (se refresca solo cada 30 s), tabla de por dónde entra
+el tráfico "Directo", y separa la **navegación interna** (antes se contaba
+como "Directo") y los navegadores dentro de apps (Instagram, Facebook, etc.,
+ahora cuentan como redes sociales).
+
+**El orden importa** — si lo haces al revés se pierden vistas o se guardan
+vistas falsas, sin ningún error visible:
+
+1. **D1 primero**: Console de la base → pega completo
+   `cloudflare/analytics-migration-2026-10.sql` → Execute. (Si repites,
+   "duplicate column name" es inofensivo.)
+2. **Worker segundo**: `Edit code` → borra todo → pega el nuevo
+   `analytics-worker.js` → **Save and Deploy**.
+3. **Sitio al final**: haz push, para que el beacon nuevo salga a producción.
+
+Costo: cada lector manda un latido cada 30 s (máx. 30 min por vista), y cada
+latido es una escritura en D1. El plan gratis de D1 permite 100,000
+escrituras al día; con ~1,000 vistas diarias de 2 min promedio son ~5,000.
+Si algún día te acercas al límite, sube `30000` a `60000` en
+`src/components/Analytics.astro` y la cuenta se reduce a la mitad.

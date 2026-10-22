@@ -40,6 +40,12 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 
       <p id="loading" class="hint">Cargando…</p>
       <div id="content" hidden>
+        <section class="block live-block">
+          <h2>Ahora mismo <span class="live-dot" aria-hidden="true"></span></h2>
+          <p class="hint" id="live-summary">—</p>
+          <div id="table-live"></div>
+        </section>
+
         <section class="cards">
           <div class="card">
             <p class="card-label">Vistas (rango)</p>
@@ -59,6 +65,22 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
           </div>
         </section>
 
+        <section class="cards cards-3">
+          <div class="card">
+            <p class="card-label">Tiempo medio en página</p>
+            <p class="card-value" id="stat-duration">—</p>
+          </div>
+          <div class="card">
+            <p class="card-label">Scroll medio</p>
+            <p class="card-value" id="stat-scroll">—</p>
+          </div>
+          <div class="card">
+            <p class="card-label">Leyeron 30 s o más</p>
+            <p class="card-value" id="stat-read30">—</p>
+          </div>
+        </section>
+        <p class="hint" id="engagement-note"></p>
+
         <section class="block">
           <h2>Vistas por día</h2>
           <div id="table-day"></div>
@@ -67,6 +89,14 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
         <section class="block">
           <h2>Páginas más vistas</h2>
           <div id="table-pages"></div>
+        </section>
+
+        <section class="block">
+          <h2>Tráfico «Directo»: dónde entra</h2>
+          <p class="hint" id="directo-summary"></p>
+          <div id="table-directo-pages"></div>
+          <h3>Dispositivo</h3>
+          <div id="table-directo-devices"></div>
         </section>
 
         <section class="block">
@@ -162,7 +192,64 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     container.appendChild(table);
   }
 
-  const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo' };
+  function fmtDuration(sec) {
+    if (sec === null || sec === undefined) return '—';
+    const s = Math.round(sec);
+    if (s < 60) return s + ' s';
+    return Math.floor(s / 60) + ' min ' + String(s % 60).padStart(2, '0') + ' s';
+  }
+
+  // Tabla de páginas con vistas + tiempo medio + scroll medio.
+  function renderPagesTable(container, rows) {
+    clearChildren(container);
+    if (!rows || rows.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'hint';
+      empty.textContent = 'Sin datos todavía.';
+      container.appendChild(empty);
+      return;
+    }
+    const table = document.createElement('table');
+    table.className = 'stats-table';
+    const thead = document.createElement('thead');
+    const hr = document.createElement('tr');
+    ['Página', 'Vistas', 'Tiempo', 'Scroll'].forEach((h, i) => {
+      const th = document.createElement('th');
+      th.textContent = h;
+      th.className = i === 0 ? 'col-label' : 'col-value';
+      hr.appendChild(th);
+    });
+    thead.appendChild(hr);
+    table.appendChild(thead);
+    const tbody = document.createElement('tbody');
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      const cells = [
+        [r.path || '(desconocido)', 'col-label'],
+        [fmt(r.views), 'col-value'],
+        [fmtDuration(r.avg_duration), 'col-value'],
+        [r.avg_scroll === null || r.avg_scroll === undefined ? '—' : Math.round(r.avg_scroll) + '%', 'col-value'],
+      ];
+      cells.forEach(([text, cls]) => {
+        const td = document.createElement('td');
+        td.className = cls;
+        td.textContent = text;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    container.appendChild(table);
+  }
+
+  function renderLive(live) {
+    const n = live.visitors || 0;
+    document.getElementById('live-summary').textContent =
+      n === 0 ? 'Nadie leyendo en este momento (últimos 90 s).' : n + (n === 1 ? ' persona leyendo' : ' personas leyendo') + ' (últimos 90 s).';
+    renderTable(document.getElementById('table-live'), live.pages, 'path', 'visitors');
+  }
+
+  const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo', interno: 'Navegación interna' };
   const DEVICE_LABELS = { desktop: 'Escritorio', mobile: 'Móvil', tablet: 'Tablet' };
   const PLACEMENT_LABELS = { footer: 'Footer', 'article-end': 'Fin de artículo', 'dato-incomodo': 'Dato Incómodo' };
 
@@ -184,7 +271,22 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     document.getElementById('stat-bots').textContent = fmt(data.bot_views);
 
     renderTable(document.getElementById('table-day'), [...data.by_day].reverse(), 'day', 'views');
-    renderTable(document.getElementById('table-pages'), data.top_pages, 'path', 'views');
+    renderPagesTable(document.getElementById('table-pages'), data.top_pages);
+
+    const eg = data.engagement;
+    document.getElementById('stat-duration').textContent = fmtDuration(eg.avg_duration);
+    document.getElementById('stat-scroll').textContent = eg.avg_scroll === null ? '—' : Math.round(eg.avg_scroll) + '%';
+    document.getElementById('stat-read30').textContent = eg.measured ? Math.round((eg.read_30s / eg.measured) * 100) + '%' : '—';
+    document.getElementById('engagement-note').textContent = eg.measured
+      ? 'Calculado sobre ' + fmt(eg.measured) + ' de ' + fmt(data.totals.views) + ' vistas (solo cuenta el tiempo con la pestaña visible; ' + fmt(eg.under_10s) + ' se fueron en menos de 10 s). Las vistas anteriores a esta medición no entran.'
+      : 'Todavía no hay vistas con tiempo medido en este rango.';
+
+    renderLive(data.live);
+    const d = data.directo;
+    document.getElementById('directo-summary').textContent =
+      fmt(d.views) + ' vistas sin origen identificable (sin contar navegación interna ni apps de redes). Tiempo medio: ' + fmtDuration(d.avg_duration) + '.';
+    renderPagesTable(document.getElementById('table-directo-pages'), d.pages);
+    renderTable(document.getElementById('table-directo-devices'), d.devices, 'device', 'views', (x) => DEVICE_LABELS[x] || x);
     renderTable(document.getElementById('table-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
     renderTable(document.getElementById('table-referrers'), data.referrers, 'referrer_host', 'views');
     renderTable(document.getElementById('table-countries'), data.countries, 'country', 'views', countryLabel);
@@ -227,6 +329,16 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       refreshBtn.disabled = false;
     }
   }
+
+  // Refresca solo el bloque "Ahora" cada 30 s mientras la pestaña esté visible.
+  setInterval(async () => {
+    const token = sessionStorage.getItem(STORAGE_KEY);
+    if (!token || dashboard.hidden || content.hidden || document.visibilityState !== 'visible') return;
+    try {
+      const res = await fetch(`${WORKER_URL}/stats?live=1`, { headers: { Authorization: `Bearer ${token}` } });
+      if (res.ok) renderLive((await res.json()).live);
+    } catch (e) {}
+  }, 30000);
 
   function showGate(message) {
     dashboard.hidden = true;
@@ -273,7 +385,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 </script>
 
 <style is:global>
-  .wrap { padding: 40px 24px 96px; max-width: 720px; }
+  .wrap { padding: 40px 24px 96px; max-width: 780px; }
   .wrap .eyebrow { margin-bottom: 8px; }
   .wrap h1 { font-size: 1.8rem; margin: 0 0 8px; }
   .wrap .hint { color: var(--text-muted); font-size: 0.92rem; }
@@ -313,6 +425,11 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   .wrap .card-label { font-size: 0.78rem; color: var(--text-faint); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.04em; font-family: var(--font-mono); }
   .wrap .card-value { font-size: 1.7rem; font-weight: 700; font-family: var(--font-display); margin: 0; }
 
+  .wrap .cards-3 { grid-template-columns: repeat(3, 1fr); margin-bottom: 12px; }
+  .wrap .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-left: 6px; vertical-align: middle; }
+  .wrap .block h3 { font-size: 0.92rem; margin: 22px 0 8px; color: var(--text-muted); }
+  .wrap .stats-table th { text-align: left; font-weight: 400; font-size: 0.78rem; color: var(--text-faint); padding: 6px 4px; font-family: var(--font-mono); }
+  .wrap .stats-table th.col-value { text-align: right; }
   .wrap .block { margin-bottom: 40px; }
   .wrap .block h2 { font-size: 1.05rem; margin: 0 0 14px; }
 

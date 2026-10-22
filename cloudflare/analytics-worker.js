@@ -75,6 +75,11 @@ function mxMonthStart(date) {
   return new Date(Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), 1)).toISOString().slice(0, 10);
 }
 
+// Reclasifica en SQL las vistas viejas que ya estaban guardadas como
+// 'directo' pero venían de otra página del propio sitio (antes de que el
+// Worker distinguiera 'interno'), para que el historial también quede limpio.
+const SOURCE_SQL = `(CASE WHEN traffic_source = 'directo' AND referrer_host LIKE '%glitchmental.com%' THEN 'interno' ELSE traffic_source END)`;
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -123,6 +128,24 @@ async function handleCollect(request, env, origin, matchedOrigin) {
     const visitorHash = await hashVisitor(env.ANALYTICS_SALT || '', day, ip, ua);
     const bot = isLikelyBot(request, ua, data.width) ? 1 : 0;
 
+    // Latido de una vista ya registrada: actualiza duración/scroll/last_seen
+    // de la fila con ese pid. MAX() para que un latido tardío o repetido
+    // nunca baje un valor. Si el pid no existe (ej. bot filtrado antes), no
+    // hace nada.
+    if (data.ping === true) {
+      const pid = typeof data.pid === 'string' ? data.pid.slice(0, 40) : '';
+      if (pid) {
+        const dur = Math.max(0, Math.min(Math.round(Number(data.dur) || 0), 1800));
+        const scroll = Math.max(0, Math.min(Math.round(Number(data.scroll) || 0), 100));
+        await env.DB.prepare(
+          `UPDATE hits SET duration = MAX(COALESCE(duration, 0), ?), scroll = MAX(COALESCE(scroll, 0), ?), last_seen = ? WHERE pid = ?`
+        )
+          .bind(dur, scroll, ts, pid)
+          .run();
+      }
+      return new Response(null, { status: 204, headers: corsHeaders(matchedOrigin) });
+    }
+
     // Evento custom (ej. clic en el botón "Fuente preferida") en vez de
     // vista de página: mismo endpoint, payload distinto (trae `event`),
     // va a la tabla `events` en vez de `hits`.
@@ -156,15 +179,15 @@ async function handleCollect(request, env, origin, matchedOrigin) {
     } catch (e) {
       referrerHost = '';
     }
-    const trafficSource = classifyTraffic(referrerHost, utmSource, utmMedium);
+    const trafficSource = classifyTraffic(referrerHost, utmSource, utmMedium, ua);
 
     const path = (typeof data.path === 'string' ? data.path : '/').slice(0, 500);
     const width = typeof data.width === 'number' ? Math.round(data.width) : null;
 
     await env.DB.prepare(
       `INSERT INTO hits
-        (ts, day, hour, path, referrer, referrer_host, traffic_source, utm_source, utm_medium, utm_campaign, country, device, os, browser, screen_width, visitor_hash, is_bot)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`
+        (ts, day, hour, path, referrer, referrer_host, traffic_source, utm_source, utm_medium, utm_campaign, country, device, os, browser, screen_width, visitor_hash, is_bot, pid, last_seen)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`
     )
       .bind(
         ts,
@@ -183,7 +206,9 @@ async function handleCollect(request, env, origin, matchedOrigin) {
         browser,
         width,
         visitorHash,
-        bot
+        bot,
+        typeof data.pid === 'string' ? data.pid.slice(0, 40) : null,
+        ts
       )
       .run();
   } catch (e) {
@@ -208,6 +233,29 @@ async function handleStats(request, env, url, matchedOrigin) {
   const rangeParam = url.searchParams.get('range') || 'semana';
   const now = new Date();
   const nowTs = Math.floor(now.getTime() / 1000);
+
+  // Consulta ligera solo para el bloque "Ahora" (el panel la repite cada 30 s
+  // sin recargar el resto de las consultas).
+  if (url.searchParams.get('live') === '1') {
+    try {
+      const [liveNow, livePages] = await Promise.all([
+        env.DB.prepare(
+          'SELECT COUNT(DISTINCT visitor_hash) AS visitors FROM hits WHERE is_bot = 0 AND COALESCE(last_seen, ts) >= ?'
+        )
+          .bind(nowTs - 90)
+          .first(),
+        env.DB.prepare(
+          `SELECT path, COUNT(DISTINCT visitor_hash) AS visitors FROM hits
+           WHERE is_bot = 0 AND COALESCE(last_seen, ts) >= ? GROUP BY path ORDER BY visitors DESC LIMIT 15`
+        )
+          .bind(nowTs - 90)
+          .all(),
+      ]);
+      return json({ live: { visitors: liveNow?.visitors || 0, pages: livePages.results || [] } }, 200, matchedOrigin);
+    } catch (e) {
+      return json({ error: 'Error leyendo la base de datos', detail: String(e) }, 500, matchedOrigin);
+    }
+  }
 
   // "1h" es la única ventana móvil que queda. Todo lo demás es un corte de
   // calendario real en hora de Ciudad de México: "hoy"/"semana"/"mes" van
@@ -254,6 +302,12 @@ async function handleStats(request, env, url, matchedOrigin) {
       browserRows,
       eventTotals,
       preferredSourceByPlacement,
+      engagement,
+      liveNow,
+      livePages,
+      directoPages,
+      directoDevices,
+      directoTotals,
     ] = await Promise.all([
       env.DB.prepare(
         'SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0'
@@ -270,12 +324,15 @@ async function handleStats(request, env, url, matchedOrigin) {
         .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT path, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20'
+        `SELECT path, COUNT(*) AS views,
+           ROUND(AVG(duration)) AS avg_duration, ROUND(AVG(scroll)) AS avg_scroll
+         FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY path ORDER BY views DESC LIMIT 20`
       )
         .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        'SELECT traffic_source, COUNT(*) AS views FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY traffic_source ORDER BY views DESC'
+        `SELECT ${SOURCE_SQL} AS traffic_source, COUNT(*) AS views FROM hits
+         WHERE ts >= ? AND ts < ? AND is_bot = 0 GROUP BY 1 ORDER BY views DESC`
       )
         .bind(sinceTs, untilTs)
         .all(),
@@ -316,6 +373,48 @@ async function handleStats(request, env, url, matchedOrigin) {
       )
         .bind(sinceTs, untilTs)
         .all(),
+      // Duración y scroll: solo filas con latido (las vistas anteriores a esta
+      // función y las que cerraron antes del primer reporte quedan fuera).
+      env.DB.prepare(
+        `SELECT COUNT(duration) AS measured, ROUND(AVG(duration)) AS avg_duration, ROUND(AVG(scroll)) AS avg_scroll,
+                SUM(CASE WHEN duration >= 30 THEN 1 ELSE 0 END) AS read_30s,
+                SUM(CASE WHEN duration < 10 THEN 1 ELSE 0 END) AS under_10s
+         FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 AND duration IS NOT NULL`
+      )
+        .bind(sinceTs, untilTs)
+        .first(),
+      // "Ahora": visitas con actividad en los últimos 90 s (latido cada 30 s).
+      env.DB.prepare(
+        'SELECT COUNT(DISTINCT visitor_hash) AS visitors FROM hits WHERE is_bot = 0 AND COALESCE(last_seen, ts) >= ?'
+      )
+        .bind(nowTs - 90)
+        .first(),
+      env.DB.prepare(
+        `SELECT path, COUNT(DISTINCT visitor_hash) AS visitors FROM hits
+         WHERE is_bot = 0 AND COALESCE(last_seen, ts) >= ? GROUP BY path ORDER BY visitors DESC LIMIT 15`
+      )
+        .bind(nowTs - 90)
+        .all(),
+      // "Directo" real: sin referrer y sin ser navegación interna.
+      env.DB.prepare(
+        `SELECT path, COUNT(*) AS views, ROUND(AVG(duration)) AS avg_duration, ROUND(AVG(scroll)) AS avg_scroll
+         FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${SOURCE_SQL} = 'directo'
+         GROUP BY path ORDER BY views DESC LIMIT 15`
+      )
+        .bind(sinceTs, untilTs)
+        .all(),
+      env.DB.prepare(
+        `SELECT device, COUNT(*) AS views FROM hits
+         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${SOURCE_SQL} = 'directo' GROUP BY device ORDER BY views DESC`
+      )
+        .bind(sinceTs, untilTs)
+        .all(),
+      env.DB.prepare(
+        `SELECT COUNT(*) AS views, ROUND(AVG(duration)) AS avg_duration FROM hits
+         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${SOURCE_SQL} = 'directo'`
+      )
+        .bind(sinceTs, untilTs)
+        .first(),
     ]);
 
     return json(
@@ -334,6 +433,20 @@ async function handleStats(request, env, url, matchedOrigin) {
         browsers: browserRows.results || [],
         events: eventTotals.results || [],
         preferred_source_by_placement: preferredSourceByPlacement.results || [],
+        engagement: {
+          measured: engagement?.measured || 0,
+          avg_duration: engagement?.avg_duration ?? null,
+          avg_scroll: engagement?.avg_scroll ?? null,
+          read_30s: engagement?.read_30s || 0,
+          under_10s: engagement?.under_10s || 0,
+        },
+        live: { visitors: liveNow?.visitors || 0, pages: livePages.results || [] },
+        directo: {
+          views: directoTotals?.views || 0,
+          avg_duration: directoTotals?.avg_duration ?? null,
+          pages: directoPages.results || [],
+          devices: directoDevices.results || [],
+        },
       },
       200,
       matchedOrigin
@@ -380,7 +493,12 @@ function parseUserAgent(ua) {
   return { device, os, browser };
 }
 
-function classifyTraffic(referrerHost, utmSource, utmMedium) {
+// Navegadores dentro de apps (Instagram, Facebook, etc.) casi nunca mandan
+// referrer, pero el User-Agent delata de dónde vienen: sin esto caerían en
+// "directo" cuando en realidad son redes sociales.
+const IN_APP_RE = /FBAN|FBAV|FB_IAB|Instagram|Twitter|LinkedInApp|Snapchat|Pinterest|TikTok|musical_ly|BytedanceWebview/i;
+
+function classifyTraffic(referrerHost, utmSource, utmMedium, ua) {
   if (utmMedium) {
     const m = utmMedium.toLowerCase();
     if (m.indexOf('social') !== -1) return 'social';
@@ -388,8 +506,10 @@ function classifyTraffic(referrerHost, utmSource, utmMedium) {
     if (m.indexOf('email') !== -1) return 'referral';
   }
   if (utmSource) return 'referral';
-  if (!referrerHost) return 'directo';
-  if (referrerHost.indexOf('glitchmental.com') !== -1) return 'directo';
+  if (!referrerHost) return IN_APP_RE.test(ua || '') ? 'social' : 'directo';
+  // Navegación entre páginas del propio sitio: no es "directo" (nadie llegó
+  // escribiendo la URL), es alguien que ya estaba aquí.
+  if (referrerHost.indexOf('glitchmental.com') !== -1) return 'interno';
   if (SEARCH_HOST_RE.test(referrerHost)) return 'busqueda';
   if (SOCIAL_HOST_RE.test(referrerHost)) return 'social';
   return 'referral';

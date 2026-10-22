@@ -20,13 +20,19 @@ CREATE TABLE IF NOT EXISTS hits (
   browser TEXT,
   screen_width INTEGER,
   visitor_hash TEXT NOT NULL,       -- rota cada día, nunca guarda IP
-  is_bot INTEGER NOT NULL DEFAULT 0
+  is_bot INTEGER NOT NULL DEFAULT 0,
+  pid TEXT,                         -- id aleatorio de ESTA vista (no persiste, no es del visitante)
+  duration INTEGER,                 -- segundos con la pestaña visible
+  scroll INTEGER,                   -- % máximo de scroll alcanzado (0-100)
+  last_seen INTEGER                 -- unix ts del último latido (para "ahora")
 );
 
 CREATE INDEX IF NOT EXISTS idx_hits_day ON hits(day);
 CREATE INDEX IF NOT EXISTS idx_hits_ts ON hits(ts);
 CREATE INDEX IF NOT EXISTS idx_hits_bot ON hits(is_bot);
 CREATE INDEX IF NOT EXISTS idx_hits_path ON hits(path);
+CREATE INDEX IF NOT EXISTS idx_hits_pid ON hits(pid);
+CREATE INDEX IF NOT EXISTS idx_hits_last_seen ON hits(last_seen);
 
 -- Eventos custom (clics, no vistas de página) — tabla aparte de `hits` para
 -- no forzar columnas de pageview (referrer, utm, país, etc.) en algo que no

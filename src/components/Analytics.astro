@@ -17,14 +17,69 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev/coll
       var host = location.hostname;
       if (host === 'localhost' || host === '127.0.0.1' || host.indexOf('preview') !== -1) return;
 
+      // Id aleatorio de ESTA vista de página (no del visitante, no persiste):
+      // solo sirve para que los latidos de abajo actualicen la fila correcta.
+      var pid = Math.random().toString(36).slice(2) + Date.now().toString(36);
+
       var payload = JSON.stringify({
+        pid: pid,
         path: location.pathname,
         referrer: document.referrer || '',
         query: location.search || '',
         width: (window.screen && window.screen.width) || 0,
       });
-      var blob = new Blob([payload], { type: 'text/plain' });
-      navigator.sendBeacon(WORKER_URL, blob);
+      navigator.sendBeacon(WORKER_URL, new Blob([payload], { type: 'text/plain' }));
+
+      // Tiempo en pantalla (solo con la pestaña visible) y scroll máximo.
+      // Se reporta cada 30 s mientras se lee y al ocultar/cerrar la pestaña;
+      // el Worker se queda con el valor más alto, así que repetir no duplica.
+      var visibleMs = 0;
+      var since = document.visibilityState === 'visible' ? Date.now() : 0;
+      var maxScroll = 0;
+      var beats = 0;
+
+      function tick() {
+        if (since) {
+          var n = Date.now();
+          visibleMs += n - since;
+          since = n;
+        }
+      }
+      function measureScroll() {
+        var doc = document.documentElement;
+        var total = Math.max(doc.scrollHeight, 1);
+        var pct = Math.round(((window.pageYOffset + window.innerHeight) / total) * 100);
+        if (pct > maxScroll) maxScroll = Math.min(pct, 100);
+      }
+      function report() {
+        tick();
+        measureScroll();
+        var ping = JSON.stringify({
+          ping: true,
+          pid: pid,
+          dur: Math.min(Math.round(visibleMs / 1000), 1800),
+          scroll: maxScroll,
+        });
+        navigator.sendBeacon(WORKER_URL, new Blob([ping], { type: 'text/plain' }));
+      }
+
+      measureScroll();
+      window.addEventListener('scroll', measureScroll, { passive: true });
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') {
+          report();
+          since = 0;
+        } else {
+          since = Date.now();
+        }
+      });
+      window.addEventListener('pagehide', report);
+      // Latido: 30 s, máximo 60 veces (30 min) por vista.
+      var timer = setInterval(function () {
+        if (document.visibilityState !== 'visible') return;
+        if (++beats > 60) return clearInterval(timer);
+        report();
+      }, 30000);
     } catch (e) {
       // silencio a propósito — un error aquí nunca debe verse en el sitio
     }
