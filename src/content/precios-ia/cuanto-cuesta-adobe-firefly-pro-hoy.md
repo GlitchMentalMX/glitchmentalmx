@@ -5,6 +5,7 @@ herramienta: "Adobe Firefly Pro"
 herramientaId: "adobe-firefly-pro"
 sitioOficial: "https://www.adobe.com/products/firefly/plans.html"
 pubDate: 2026-10-04
+updatedDate: 2026-10-22
 heroImage: /images/precios-ia/adobe-firefly-pro.png
 heroImageAlt: Adobe Firefly Pro — Precios de IA
 ---
@@ -13,7 +14,7 @@ heroImageAlt: Adobe Firefly Pro — Precios de IA
 
 Adobe Firefly Pro es el segundo escalón de los planes individuales de Firefly: queda arriba de [Firefly Standard](/articulos/cuanto-cuesta-adobe-firefly-hoy/), que es el plan de entrada, y abajo de Pro Plus y Premium. La página oficial de planes lo muestra a $19.99 USD al mes, con cobro mensual, y aclara que pueden aplicar impuestos. Esta calculadora usa ese precio en dólares, antes de impuestos, convertido al FIX de Banxico del día, así que si tu tarjeta mexicana o Adobe te muestran un monto distinto, parte de la diferencia puede ser el impuesto y el tipo de cambio que aplique tu banco.
 
-Pro Plus ($49.99 USD) y Premium ($199.99 USD) tienen hoy un descuento promocional de 30% durante el primer año, con vigencia hasta el 21 de octubre. Pro no aparece con descuento en esa página: $19.99 es su precio de lista.
+Pro Plus (MXN $1,049 sin IVA) y Premium (MXN $4,199 sin IVA) tuvieron un descuento promocional de 30% durante el primer año, pero esa oferta venció el 21 de octubre de 2026 y, al 22/10/2026, la página oficial ya no la muestra: ambos planes aparecen a su precio de lista. Pro tampoco trae descuento en esa página: $19.99 USD sigue siendo su precio de lista.
 
 ## Qué incluye el plan pagado
 

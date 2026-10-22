@@ -6,17 +6,17 @@ herramientaId: "adobe-firefly"
 empresa: "Adobe"
 sitioOficial: "https://firefly.adobe.com/"
 veredicto: "verde"
-fraseCorta: "No necesitas código: Adobe México tiene hasta el 21 de octubre de 2026 un 30% de descuento automático el primer año en Firefly Pro Plus y Premium (no en Standard ni Pro), y el canal de estudiantes sigue vigente."
-fuenteVerificacion: "Páginas oficiales de Adobe México: adobe.com/mx/products/firefly/plans.html, sus términos de la oferta (adobe.com/mx/offer-terms/ff-full-special-offer.html) y adobe.com/mx/education/students/creativecloud.html, consultadas el 04/10/2026."
+fraseCorta: "No necesitas código: el 30% automático en Firefly Pro Plus y Premium venció el 21 de octubre de 2026 y ya no aparece en adobe.com/mx (planes a precio de lista); el canal real que sigue vigente es el descuento de estudiantes y maestros."
+fuenteVerificacion: "Páginas oficiales de Adobe México: adobe.com/mx/products/firefly/plans.html (sin promoción activa, precios de lista), adobe.com/mx/offer-terms/ff-full-special-offer.html (página de términos ahora vacía) y adobe.com/mx/education/students/creativecloud.html, consultadas el 22/10/2026."
 pubDate: 2026-08-30
-updatedDate: 2026-10-04
+updatedDate: 2026-10-22
 heroImage: /images/codigos-descuento/adobe-firefly.png
 heroImageAlt: Adobe Firefly — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Adobe Firefly?
 
-No como cupón para la suscripción independiente de Firefly. No hay un cupón que teclear: lo que existe es una promoción que Adobe aplica sola al precio. Al 04/10/2026, la página de planes de Firefly en adobe.com/mx anuncia "Ahorra un 30%. Solo el primer año. Hasta el 21 de octubre" en dos planes: Firefly Pro Plus (de MXN $1,049 a MXN $733.88 al mes sin IVA) y Firefly Premium (de MXN $4,199 a MXN $2,937.62 al mes sin IVA). Los términos de la oferta, publicados por Adobe México, la limitan a nuevas suscripciones en México compradas directo en Adobe o con atención a clientes, exigen compromiso de 12 meses, permiten una suscripción por cliente y excluyen a clientes de educación. Al terminar el primer año se renueva automáticamente al precio normal. Firefly Standard y Firefly Pro no traen esa rebaja, y vence el 21 de octubre de 2026: después de esa fecha, revisa la página antes de contar con ella.
+No como cupón para la suscripción independiente de Firefly, y la promoción automática que existía tampoco sigue en pie. Entre el 04/10/2026 y el 21/10/2026, la página de planes de Firefly en adobe.com/mx anunciaba "Ahorra un 30%. Solo el primer año. Hasta el 21 de octubre" en dos planes: Firefly Pro Plus (de MXN $1,049 a MXN $733.88 al mes sin IVA) y Firefly Premium (de MXN $4,199 a MXN $2,937.62 al mes sin IVA). Al 22/10/2026, esa oferta ya no aparece: la página de planes muestra Pro Plus a MXN $1,049 y Premium a MXN $4,199, sus precios de lista sin descuento, y la página de términos de la oferta (adobe.com/mx/offer-terms/ff-full-special-offer.html) quedó vacía. Firefly Standard (MXN $199) y Firefly Pro (MXN $399) nunca tuvieron esa rebaja. Si vuelve a aparecer una promoción similar, revisa la página oficial antes de contar con ella — los porcentajes y fechas cambian sin aviso.
 
 ## El canal real: Creative Cloud Pro para estudiantes y maestros
 
@@ -24,7 +24,7 @@ Adobe confirma en su página oficial de educación que estudiantes y maestros el
 
 ## Por qué desconfiar de los "códigos Firefly" que circulan en sitios de cupones
 
-Existen múltiples sitios agregadores que listan "cupones Adobe Firefly" con descuentos de 30%, 50% o incluso 75%. Ninguno de esos porcentajes aparece confirmado en firefly.adobe.com ni en el centro de ofertas oficiales de Adobe, y el checkout de Firefly no tiene un campo genérico donde canjear un código de ese tipo. Si un sitio te ofrece un "código Firefly" universal, no viene de Adobe — los descuentos reales son el 30% automático de Pro Plus y Premium (hasta el 21 de octubre de 2026) y el plan de estudiantes y maestros, no un texto en una caja.
+Existen múltiples sitios agregadores que listan "cupones Adobe Firefly" con descuentos de 30%, 50% o incluso 75%. Ninguno de esos porcentajes aparece confirmado en firefly.adobe.com ni en el centro de ofertas oficiales de Adobe, y el checkout de Firefly no tiene un campo genérico donde canjear un código de ese tipo. Si un sitio te ofrece un "código Firefly" universal, no viene de Adobe — el único descuento real que sigue vigente es el plan de estudiantes y maestros (el 30% automático de Pro Plus y Premium venció el 21 de octubre de 2026), no un texto en una caja.
 
 ¿Buscas cuánto cuesta Adobe Firefly exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-adobe-firefly-hoy/)
 
@@ -32,4 +32,4 @@ Existen múltiples sitios agregadores que listan "cupones Adobe Firefly" con des
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 22/10/2026]
