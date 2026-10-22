@@ -4,7 +4,7 @@ category: Tecnología de Consumo
 pubDate: 2026-10-22T06:48
 updatedDate: ''
 description: 'HomeView usa reconocimiento facial para repartir la casa en perfiles. El riesgo de privacidad ya no es solo la empresa: es quien comparte tu sala.'
-heroImage: /images/uploads/reconocimiento-facial.webp
+heroImage: /images/uploads/homeview-apple.webp
 heroImageAlt: 'reconocimiento facial en el hogar: pantalla doméstica identificando a una persona para asignarle un perfil'
 draft: false
 ---
@@ -41,7 +41,7 @@ Lectura propia: quien vive en la casa y no tiene un iPhone o iPad compatible sol
 
 Quedan preguntas abiertas que el documento no detalla: **qué ocurre con un menor sin teléfono o con un nuevo compañero de cuarto**.
 
-![Reconocimiento facial en el hogar: pantalla inteligente identifica a cada integrante de la familia y asigna perfiles individuales](/images/uploads/reconocimiento-facial.sec.webp)
+![Reconocimiento facial en el hogar: pantalla inteligente identifica a cada integrante de la familia y asigna perfiles individuales](/images/uploads/homeview-apple-sec.webp)
 
 ## La casa también clasifica a quien llega: del salón al timbre
 
