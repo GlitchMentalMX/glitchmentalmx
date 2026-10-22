@@ -1,12 +1,12 @@
 ---
 title: Tu pantalla del hogar ya reconoce quién eres (y quién no)
 category: Tecnología de Consumo
-pubDate: 2026-10-21T08:49
+pubDate: 2026-10-22T06:48
 updatedDate: ''
 description: 'HomeView usa reconocimiento facial para repartir la casa en perfiles. El riesgo de privacidad ya no es solo la empresa: es quien comparte tu sala.'
 heroImage: /images/uploads/reconocimiento-facial.webp
 heroImageAlt: 'reconocimiento facial en el hogar: pantalla doméstica identificando a una persona para asignarle un perfil'
-draft: true
+draft: false
 ---
 
 Apple presentó el 13 de octubre de 2026 una pantalla doméstica con **reconocimiento facial para hasta seis personas**. Antes de mostrarte algo, una pantalla compartida tiene que decidir quién eres: ya no funciona como candado, sino como el interruptor que reparte la sala.
