@@ -42,6 +42,7 @@ export interface SceneDef {
 interface Marker {
   t: Target;
   dot: Phaser.GameObjects.Image;
+  ring: Phaser.GameObjects.Image;
   label: Phaser.GameObjects.Text;
 }
 
@@ -89,13 +90,24 @@ export class WorldScene extends Phaser.Scene {
   addTarget(t: Target): void {
     this.targets.push(t);
     const dot = img(this, 0, 0, 'hotdot').setDepth(4000).setAlpha(0);
+    // Anillo que se expande: llama la atención sobre lo que todavía no has tocado.
+    const ring = img(this, 0, 0, 'hotring').setDepth(3999).setAlpha(0).setVisible(false);
     const label = txt(this, 0, 0, t.label, 16, '#ffffff', {
       fontStyle: 'bold',
       backgroundColor: '#14121ccc',
       padding: { x: 9, y: 5 },
     }).setOrigin(0.5, 1).setDepth(4001).setAlpha(0);
-    this.markers.push({ t, dot, label });
-    this.tweens.add({ targets: dot, scale: { from: 0.42, to: 0.58 }, duration: 700, yoyo: true, repeat: -1 });
+    this.markers.push({ t, dot, ring, label });
+    this.tweens.add({ targets: dot, scale: { from: 0.45, to: 0.6 }, duration: 700, yoyo: true, repeat: -1 });
+    this.tweens.add({
+      targets: ring,
+      scale: { from: 0.4, to: 1.2 },
+      alpha: { from: 0.75, to: 0 },
+      duration: 1500,
+      delay: (this.markers.length - 1) * 260,
+      repeat: -1,
+      repeatDelay: 500,
+    });
   }
 
   spawnBot(waypoints: Vec[]): Chatbot {
@@ -145,10 +157,17 @@ export class WorldScene extends Phaser.Scene {
     fitCamera(this);
     this.cameras.main.setBackgroundColor('#0b0b10');
     buildCommonTextures(this);
-    makeTex(this, 'hotdot', 24, 24, (ctx) => {
-      ctx.fillStyle = 'rgba(255,255,255,0.9)'; ctx.beginPath(); ctx.arc(12, 12, 8, 0, Math.PI * 2); ctx.fill();
-      ctx.strokeStyle = '#111'; ctx.lineWidth = 2.5; ctx.stroke();
-      ctx.fillStyle = '#111'; ctx.beginPath(); ctx.arc(12, 12, 2.6, 0, Math.PI * 2); ctx.fill();
+    // Punto de interacción: halo amarillo + núcleo blanco con borde oscuro, para que se lea
+    // tanto sobre el piso claro como sobre los objetos oscuros.
+    makeTex(this, 'hotdot', 40, 40, (ctx) => {
+      ctx.fillStyle = 'rgba(255,210,63,0.4)'; ctx.beginPath(); ctx.arc(20, 20, 18, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = '#ffffff'; ctx.beginPath(); ctx.arc(20, 20, 12, 0, Math.PI * 2); ctx.fill();
+      ctx.strokeStyle = '#111'; ctx.lineWidth = 3; ctx.stroke();
+      ctx.fillStyle = '#111'; ctx.beginPath(); ctx.arc(20, 20, 3.6, 0, Math.PI * 2); ctx.fill();
+    });
+    makeTex(this, 'hotring', 48, 48, (ctx) => {
+      ctx.strokeStyle = '#ffd23f'; ctx.lineWidth = 3.5; ctx.beginPath(); ctx.arc(24, 24, 20, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = 'rgba(17,17,17,0.55)'; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.arc(24, 24, 22.2, 0, Math.PI * 2); ctx.stroke();
     });
 
     audio.playMusic('sala');
@@ -204,6 +223,19 @@ export class WorldScene extends Phaser.Scene {
     if (!state.is('intro')) {
       state.set('intro');
       await this.runScript(async (c) => this.def.intro?.(c));
+      this.flashMarkers();
+    }
+  }
+
+  /** Al terminar la introducción: un destello en cada punto sin tocar, para decir "aquí se puede interactuar". */
+  private flashMarkers(): void {
+    let i = 0;
+    for (const m of this.markers) {
+      if (!m.t.active() || state.is(`vi_${m.t.id}`)) continue;
+      const a = m.t.anchor();
+      const pop = img(this, a.x, a.y - 8, 'hotring').setDepth(4002).setAlpha(0.95).setScale(0.4);
+      this.tweens.add({ targets: pop, scale: 2.2, alpha: 0, duration: 850, delay: i * 130, ease: 'Quad.easeOut', onComplete: () => pop.destroy() });
+      i += 1;
     }
   }
 
@@ -372,9 +404,14 @@ export class WorldScene extends Phaser.Scene {
       const on = m.t.active() && !this.scripting && !this.ui.blocking;
       const a = m.t.anchor();
       const near = Math.hypot(a.x - this.player.x, a.y - this.player.y) < 190 || this.hover === m.t;
-      m.dot.setPosition(a.x, a.y - 8);
       m.label.setPosition(a.x, a.y - 26);
-      m.dot.setAlpha(Phaser.Math.Linear(m.dot.alpha, on ? (state.is(`vi_${m.t.id}`) ? 0.25 : 0.75) : 0, 0.2));
+      const seen = state.is(`vi_${m.t.id}`);
+      m.dot.setPosition(a.x, a.y - 8);
+      m.dot.setAlpha(Phaser.Math.Linear(m.dot.alpha, on ? (seen ? 0.5 : 1) : 0, 0.2));
+      // Lo ya usado se apaga y se vuelve gris; lo nuevo conserva color y anillo.
+      if (seen) m.dot.setTint(0x9a9aa8);
+      else m.dot.clearTint();
+      m.ring.setPosition(a.x, a.y - 8).setVisible(on && !seen);
       m.label.setAlpha(Phaser.Math.Linear(m.label.alpha, on && near ? 1 : 0, 0.2));
     }
 

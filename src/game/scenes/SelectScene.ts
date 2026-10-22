@@ -64,7 +64,10 @@ export class SelectScene extends Phaser.Scene {
 
     txt(this, W / 2, 42, 'PULSA PARA EMPEORAR', 22, '#ffd23f', { fontStyle: 'bold' }).setOrigin(0.5);
     txt(this, W / 2, 104, 'ELIGE QUIÉN ERES', 34, '#f6f3ec', { fontStyle: 'bold' }).setOrigin(0.5);
-    txt(this, W / 2, 140, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 17, '#c9c5d4').setOrigin(0.5);
+    txt(this, W / 2, 134, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 17, '#c9c5d4').setOrigin(0.5);
+    // Objetivo fijo: lo primero que debe quedar claro antes de pulsar Jugar.
+    const goal = txt(this, W / 2, 162, 'Escapa de la sala y cancela la suscripción que nunca pediste.', 17, '#ffd23f', { fontStyle: 'bold' }).setOrigin(0.5);
+    while (goal.width > W - 36 && parseInt(String(goal.style.fontSize), 10) > 12) goal.setFontSize(parseInt(String(goal.style.fontSize), 10) - 1);
 
     this.halo = this.add.graphics();
     this.nameT = txt(this, W / 2, 468, '', 32, '#ffffff', { fontStyle: 'bold' }).setOrigin(0.5);
