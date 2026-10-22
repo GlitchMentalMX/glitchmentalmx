@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import type { CharId, EndingId } from './config';
+import { track } from './track';
 import { clearProgress, loadMeta, loadProgress, saveMeta, saveProgress, type FlagValue, type Meta, type Progress } from './save';
 
 /**
@@ -89,6 +90,8 @@ class GameState extends Phaser.Events.EventEmitter {
     if (fresh) {
       list.push(secretId);
       saveMeta(this.meta);
+      // Anónimo: solo el nombre del secreto, la primera vez que ese navegador lo encuentra.
+      track(`juego_secreto_${secretId}`);
     }
     if (!this.runSecrets.includes(secretId)) this.runSecrets.push(secretId);
     return fresh;

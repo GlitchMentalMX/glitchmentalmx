@@ -3,10 +3,18 @@ import { ENDING_IDS, H, W, type EndingId } from '../core/config';
 import { audio } from '../core/audio';
 import { fitCamera, hexNum, txt, viewRect } from '../core/gfx';
 import { state } from '../core/state';
+import { track } from '../core/track';
 import { CHARACTERS } from '../data/characters';
-import { ENDINGS } from '../data/endings';
+import { ENDINGS, formatPlayTime } from '../data/endings';
 import { SECRETS } from '../data/secrets';
 import { Actor } from '../engine/Actor';
+
+/** Botones del desenlace (alto 52, separación 58): Compartir / Jugar de nuevo / Elegir otro. */
+const BTN_H = 52;
+const BTN_STEP = 58;
+const BTN_TOP = H - 64 - 2 * BTN_STEP - BTN_H / 2;
+const CP_EXTRA = BTN_STEP;
+const GAME_URL = 'https://glitchmental.com/juego/';
 
 /**
  * Desenlace: el título del final y una línea por cada decisión que tomaste.
@@ -75,7 +83,7 @@ export class EndingScene extends Phaser.Scene {
       body.setText(lines.slice(0, shown).join('\n'));
       // Si hay muchas consecuencias, el texto se achica para no pisar los botones.
       body.setFontSize(17);
-      while (body.height > H - 136 - 34 - 404 - 6 - (hasCheckpoint ? 66 : 0) && parseInt(String(body.style.fontSize), 10) > 13) {
+      while (body.height > BTN_TOP - (hasCheckpoint ? CP_EXTRA : 0) - 12 - 404 && parseInt(String(body.style.fontSize), 10) > 13) {
         body.setFontSize(parseInt(String(body.style.fontSize), 10) - 1);
       }
       audio.play('tap');
@@ -85,31 +93,89 @@ export class EndingScene extends Phaser.Scene {
   }
 
   private buildButtons(): void {
-    const mk = (y: number, label: string, fill: number, onTap: () => void) => {
+    const mk = (y: number, label: string, fill: number, onTap: () => void, onRelease = false) => {
       const g = this.add.graphics();
-      g.fillStyle(fill, 1).fillRoundedRect(W / 2 - 190, y - 29, 380, 58, 18);
-      g.lineStyle(3, 0x111111, 1).strokeRoundedRect(W / 2 - 190, y - 29, 380, 58, 18);
+      g.fillStyle(fill, 1).fillRoundedRect(W / 2 - 190, y - BTN_H / 2, 380, BTN_H, 18);
+      g.lineStyle(3, 0x111111, 1).strokeRoundedRect(W / 2 - 190, y - BTN_H / 2, 380, BTN_H, 18);
       txt(this, W / 2, y, label, 18, '#111111', { fontStyle: 'bold' }).setOrigin(0.5);
-      const z = this.add.zone(W / 2, y, 380, 58).setInteractive({ useHandCursor: true });
-      z.on('pointerdown', () => {
+      const z = this.add.zone(W / 2, y, 380, BTN_H).setInteractive({ useHandCursor: true });
+      // Compartir va al soltar: el navegador solo permite abrir "compartir" dentro de un gesto completo del usuario.
+      z.on(onRelease ? 'pointerup' : 'pointerdown', () => {
         audio.play('select');
         onTap();
       });
     };
     const found = state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length;
+    const yOther = H - 64;
+    const yAgain = yOther - BTN_STEP;
+    const yShare = yAgain - BTN_STEP;
     if (state.characterId === 'heroe' && state.checkpoint) {
-      mk(H - 202, 'Cargar checkpoint (¡Cartucho puede!)', 0xffd23f, () => {
+      mk(yShare - CP_EXTRA, 'Cargar checkpoint (¡Cartucho puede!)', 0xffd23f, () => {
         state.discover('cartucho-checkpoint');
         state.loadCheckpoint();
         this.scene.start('World');
       });
     }
-    mk(H - 136, 'Jugar de nuevo con el mismo personaje', hexNum(ENDINGS[this.endingId].accent), () => {
+    mk(yShare, 'Compartir mi final', 0xff7ab8, () => void this.share(), true);
+    mk(yAgain, 'Jugar de nuevo con el mismo personaje', hexNum(ENDINGS[this.endingId].accent), () => {
       if (state.characterId) state.newGame(state.characterId);
       this.scene.start('World');
     });
-    mk(H - 70, 'Elegir otro personaje', 0xf6f3ec, () => this.scene.start('Select'));
-    txt(this, W / 2, H - 30, `Finales descubiertos: ${found} de ${ENDING_IDS.length}`, 13, this.endingId === 'baja' ? '#445' : '#c9c5d4').setOrigin(0.5);
+    mk(yOther, 'Elegir otro personaje', 0xf6f3ec, () => this.scene.start('Select'));
+    txt(this, W / 2, H - 22, `Finales descubiertos: ${found} de ${ENDING_IDS.length}`, 13, this.endingId === 'baja' ? '#445' : '#c9c5d4').setOrigin(0.5);
+  }
+
+  /** Texto para compartir: el final, el tiempo real y el personaje. Sin datos personales. */
+  private shareText(): string {
+    const t = formatPlayTime(state.playSeconds);
+    const who = CHARACTERS[state.characterId ?? 'don'].name;
+    const line: Record<EndingId, string> = {
+      retenido: `Intenté cancelar mi suscripción y terminé retenido: ${t} para fracasar. 🫠`,
+      baja: `Logré cancelar mi suscripción* en ${t}. (*Ellos se quedaron con mis datos.)`,
+      turno: 'Esperé tanto que por fin me atendió un humano. 🪑',
+    };
+    return `${line[this.endingId]} Jugué como ${who}.`;
+  }
+
+  private async share(): Promise<void> {
+    const text = this.shareText();
+    track('juego_compartir');
+    track(`juego_compartir_${this.endingId}`);
+    const nav = navigator as Navigator & { share?: (d: { title?: string; text?: string; url?: string }) => Promise<void> };
+    if (typeof nav.share === 'function') {
+      try {
+        await nav.share({ title: 'Pulsa para Empeorar', text, url: GAME_URL });
+        return;
+      } catch (e) {
+        if ((e as Error)?.name === 'AbortError') return; // la persona cerró el menú de compartir
+      }
+    }
+    const full = `${text} Pulsa para Empeorar 👉 ${GAME_URL}`;
+    let copied = false;
+    try {
+      await navigator.clipboard.writeText(full);
+      copied = true;
+    } catch {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = full;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        copied = document.execCommand('copy');
+        ta.remove();
+      } catch {
+        copied = false;
+      }
+    }
+    this.toast(copied ? 'Copiado. Pégalo donde quieras.' : 'No se pudo copiar. Comparte: glitchmental.com/juego');
+  }
+
+  private toast(msg: string): void {
+    const v = viewRect(this);
+    const t = txt(this, W / 2, v.y0 + 44, msg, 17, '#111111', { fontStyle: 'bold', backgroundColor: '#ffd23f', padding: { x: 16, y: 10 } }).setOrigin(0.5).setDepth(100);
+    this.tweens.add({ targets: t, alpha: 0, delay: 1800, duration: 500, onComplete: () => t.destroy() });
   }
 
   update(_t: number, delta: number): void {

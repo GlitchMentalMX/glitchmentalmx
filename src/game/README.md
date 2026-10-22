@@ -40,3 +40,9 @@ Cada escenario debe cumplir al menos una: (1) hacer reír con una situación abs
 
 ## Depuración
 En `astro dev` el juego expone `window.__game` y `window.__audio`.
+
+## Medición (eventos en /stats)
+Anónima, sin cookies, con el mismo Worker del sitio (`core/track.ts`). El /stats solo muestra nombre + conteo, por eso el desglose va en el nombre del evento:
+- `juego_inicio` y `juego_inicio_<personaje>` · `juego_final` y `juego_final_<retenido|baja|turno>` (los dos primeros llevan además `data`, que /stats no desglosa).
+- `juego_secreto_<id>`: la primera vez que ese navegador descubre ese secreto (ids en `data/secrets.ts`).
+- `juego_compartir` y `juego_compartir_<final>`: toque en "Compartir mi final" (pantalla de desenlace). Usa el menú de compartir del sistema y, si no existe, copia el texto al portapapeles.

@@ -233,6 +233,7 @@ export class SelectScene extends Phaser.Scene {
     audio.unlock();
     state.newGame(CHAR_IDS[this.index]);
     track('juego_inicio', { personaje: CHAR_IDS[this.index] });
+    track(`juego_inicio_${CHAR_IDS[this.index]}`);
     this.go();
   }
 

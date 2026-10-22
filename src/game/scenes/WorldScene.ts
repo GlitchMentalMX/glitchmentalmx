@@ -245,6 +245,7 @@ export class WorldScene extends Phaser.Scene {
     this.ending = true;
     this.playerMover.stop();
     track('juego_final', { final: id, personaje: state.characterId ?? '' });
+    track(`juego_final_${id}`);
     state.finish(id);
     audio.play(id === 'baja' ? 'win' : 'lose');
     await new Promise<void>((r) => {
