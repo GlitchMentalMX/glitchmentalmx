@@ -2,8 +2,7 @@ import type { CharId } from '../core/config';
 import { PARTS, POSES } from '../art/characters';
 import type { CharacterDef } from '../engine/types';
 
-// Los cinco personajes jugables. Nombres, diseños y diálogos son
-// PROVISIONALES: están pendientes de la dirección creativa. Todos comparten
+// Los cinco personajes jugables. Todos comparten
 // las mismas mecánicas (movimiento, interacción, inventario); lo que cambia
 // es el arte, los parámetros de animación (`gait`), la reacción característica
 // y las frases. Las futuras diferencias de habilidad o ruta se agregarían

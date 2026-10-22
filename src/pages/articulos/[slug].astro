@@ -147,6 +147,21 @@ const QUE_HACER_SI_TE_PREOCUPA_SLUGS = new Set([
   'jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico',
 ]);
 
+// Enlace al juego "Pulsa para Empeorar" (/juego/) — mismo criterio que los lotes
+// anteriores: lote fijo, curado a mano, no un campo de esquema. Artículos cuyo tema
+// es el terreno del juego (atención al cliente automatizada, chatbots, diseño que
+// empuja decisiones, datos que cedes sin leer). Ninguno está en otro lote de
+// herramienta ni de novela: ningún artículo debe cargar dos tarjetas.
+const JUEGO_SLUGS = new Set([
+  'la-ia-ya-esta-reemplazando-equipos-completos-de-atencion-al-cliente',
+  'tu-privacidad-como-producto-lo-que-cedes-sin-leerlo',
+  'como-los-dispositivos-moldean-lo-que-haces-sin-que-lo-notes',
+  'como-saber-si-la-ia-te-esta-manipulando-emocionalmente',
+  'chatbot-se-equivoco-formato-lo-volvio-inteligencia',
+  'walmart-compro-vizio-por-23-mil-millones-solo-para-obtener-tus-datos-de-tv',
+  'la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno',
+]);
+
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => !data.draft);
   const preciosIA = await getCollection('preciosIA', ({ data }) => !data.draft);
@@ -261,7 +276,14 @@ const toolPromo =
                 'Seis preguntas para separar riesgo real, ruido y próximos pasos. Gratis, sin cuenta, sin diagnóstico ni promesas falsas.',
               href: '/herramientas/que-hacer-si-te-preocupa-la-ia/',
             }
-          : undefined;
+          : kind === 'posts' && JUEGO_SLUGS.has(post.id)
+            ? {
+                title: 'Pulsa para Empeorar: un juego sobre lo difícil que es cancelar',
+                description:
+                  'Una sala de espera, un chatbot que quiere retenerte y una puerta escondida tras una planta. El juego gratis de glitchMentalMX, en tu navegador, sin registro.',
+                href: '/juego/',
+              }
+            : undefined;
 
 const articleImage = heroImage ? new URL(heroImage, Astro.site).toString() : undefined;
 const articleSchema =

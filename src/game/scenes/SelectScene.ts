@@ -63,7 +63,6 @@ export class SelectScene extends Phaser.Scene {
     this.index = Math.max(0, CHAR_IDS.indexOf(saved ?? state.meta.lastCharacter ?? 'don'));
 
     txt(this, W / 2, 42, 'PULSA PARA EMPEORAR', 22, '#ffd23f', { fontStyle: 'bold' }).setOrigin(0.5);
-    txt(this, W / 2, 64, 'título a prueba', 12, '#ffffff', { fontStyle: 'italic' }).setOrigin(0.5).setAlpha(0.35);
     txt(this, W / 2, 104, 'ELIGE QUIÉN ERES', 34, '#f6f3ec', { fontStyle: 'bold' }).setOrigin(0.5);
     txt(this, W / 2, 140, 'Todos ven el mismo mundo. Ninguno lo ve igual.', 17, '#c9c5d4').setOrigin(0.5);
 

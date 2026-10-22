@@ -3,6 +3,7 @@
 Phaser 3 dentro de Astro, aislado del sitio editorial. **Estado: prototipo, `noindex`, fuera del sitemap.**
 
 ## Aislamiento
+- **Indexable desde 2026-10-22** (autorizado por Jorge). El SEO de la página vive en `src/pages/juego/index.astro` (title, description, OG, JSON-LD `VideoGame` + `BreadcrumbList`, bloque `.sr-only` con texto real); la imagen para compartir es `public/juego/og.png` (`scripts/generate-juego-og.mjs <captura.jpg>`); enlaces internos: Footer (`Footer.astro`) y tarjeta en 7 artículos afines (`JUEGO_SLUGS` en `src/pages/articulos/[slug].astro`). Ya no hay filtro de `/juego/` en el sitemap.
 - `src/pages/juego/index.astro` no usa `Layout.astro`: no hereda header, footer, banner de cookies ni analytics. Phaser solo se carga en esa ruta.
 - Todo el código vive en `src/game/`. Fuera de esta carpeta solo cambian `package.json`/`package-lock.json` (dependencia `phaser@3.90.0`, versión exacta) y una línea del filtro del sitemap en `astro.config.mjs`.
 - No hay assets en `public/images/`, así que `prebuild` (watermark + recompresión) no toca nada del juego. Hoy el arte se dibuja por código; cuando haya imágenes finales deben ir en una carpeta propia (p. ej. `public/juego/`), nunca en `public/images/`.
