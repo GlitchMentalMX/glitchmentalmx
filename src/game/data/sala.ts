@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import { H, S, W } from '../core/config';
-import { img } from '../core/gfx';
+import { img, txt } from '../core/gfx';
 import { state } from '../core/state';
 import { buildSalaTextures, hasProp, plantOriginX } from '../art/sala';
 import { IMAGE_SETS } from '../core/images';
@@ -528,6 +528,49 @@ async function plant(c: ScriptContext): Promise<void> {
   }
 }
 
+const CONFETTI = [0xff2e93, 0xffd400, 0x00e0ff, 0x7dff6b];
+
+/** Lluvia de confeti desde arriba del escenario (cada llamada es un chorro). */
+function confettiRain(w: WorldScene, x: number, n: number): void {
+  const em = w.add.particles(x, -20, 'confetti', {
+    speed: { min: 40, max: 150 },
+    angle: { min: 65, max: 115 },
+    gravityY: 240,
+    lifespan: 2800,
+    scale: { start: 0.65, end: 0.4 },
+    rotate: { min: 0, max: 360 },
+    tint: CONFETTI,
+    emitting: false,
+  });
+  em.setDepth(4500);
+  em.explode(n);
+  w.time.delayedCall(3200, () => em.destroy());
+}
+
+/** Al cruzar la puerta: festejo de programa de concursos. La empresa está feliz de que te quedes. */
+async function subscribeCelebration(c: ScriptContext): Promise<void> {
+  const w = c.world;
+  c.sfx('win');
+  c.flash(260, 255, 214, 64);
+  c.shake(420, 0.005);
+  for (let i = 0; i < 7; i++) w.time.delayedCall(i * 170, () => confettiRain(w, 50 + i * 75, 30));
+  w.time.delayedCall(450, () => c.sfx('coin'));
+  w.time.delayedCall(900, () => c.sfx('coin'));
+  burst(w, 130, 210, 'confetti', 50, CONFETTI);
+  const banner = txt(w, W / 2, 360, '¡FELICIDADES!\nERES SUSCRIPTOR', 44, '#ffd23f', { fontStyle: 'bold', align: 'center' })
+    .setOrigin(0.5)
+    .setDepth(4600)
+    .setStroke('#ff2e93', 9)
+    .setShadow(0, 5, '#000000', 0, true, true)
+    .setScale(0.2)
+    .setAlpha(0);
+  w.tweens.add({ targets: banner, scale: 1, alpha: 1, duration: 520, ease: 'Back.easeOut' });
+  w.tweens.add({ targets: banner, angle: { from: -4, to: 4 }, duration: 260, yoyo: true, repeat: 6, ease: 'Sine.easeInOut' });
+  await c.wait(2300);
+  await tween(w, { targets: banner, alpha: 0, scale: 1.25, duration: 450 });
+  banner.destroy();
+}
+
 async function subscribeDoor(c: ScriptContext): Promise<void> {
   const w = c.world;
   await c.sayChar('subscribe');
@@ -546,6 +589,8 @@ async function subscribeDoor(c: ScriptContext): Promise<void> {
       w.player.setPosition(130, 256);
     });
     c.set('suscrito');
+    await subscribeCelebration(c);
+    await c.say('Puerta Suscríbete', '¡FELICIDADES! Es usted nuestro suscriptor número 1,000,000. Su premio: una renovación automática.');
     await c.say('Puerta Suscríbete', 'Cruzas la puerta y apareces otra vez en la sala de espera. Tu suscripción se renovó automáticamente.');
     await c.sayChar('subEnter');
   }
