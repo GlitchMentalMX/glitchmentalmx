@@ -14,6 +14,7 @@ import ToolsWidget from '../../components/ToolsWidget.astro';
 import PreferredSourceButton from '../../components/PreferredSourceButton.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
 import { SIN_ORACULOS_ENLACES } from '../../data/sin-oraculos-enlaces';
+import { PATRON_OSCURO_ARTICULO, PATRON_OSCURO_ENLACES } from '../../data/patron-oscuro-enlaces';
 import { getCollection, render } from 'astro:content';
 import { relatedInsightVisualByPostId } from '../../lib/relatedInsightVisual';
 import {
@@ -229,6 +230,10 @@ const sinOraculosEnlaces =
         .map((id) => allPosts.find((p) => p.id === id))
         .filter((p): p is NonNullable<typeof p> => Boolean(p))
     : [];
+
+// Enlace hacia el artículo dedicado al juego (lote fijo en src/data/patron-oscuro-enlaces.ts).
+const patronOscuroEnlace =
+  kind === 'posts' && PATRON_OSCURO_ENLACES.has(post.id) ? allPosts.find((p) => p.id === PATRON_OSCURO_ARTICULO) : undefined;
 
 // "Sigue leyendo" prioriza la MISMA categoría — antes solo miraba cercanía de
 // fecha de publicación, así que podía recomendar una novela o un smartwatch
@@ -778,6 +783,15 @@ if (toolKinds.includes(kind) && herramienta) {
           {sinOraculosEnlaces.map((p) => (
             <li><a href={`/articulos/${p.id}/`}>{p.data.title} →</a></li>
           ))}
+        </ul>
+      </aside>
+    )}
+
+    {patronOscuroEnlace && (
+      <aside class="sigue-debate container" aria-label="Sigue el tema">
+        <p class="sigue-debate-label">Sigue el tema · patrones oscuros</p>
+        <ul>
+          <li><a href={`/articulos/${patronOscuroEnlace.id}/`}>{patronOscuroEnlace.data.title} →</a></li>
         </ul>
       </aside>
     )}
