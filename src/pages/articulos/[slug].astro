@@ -380,8 +380,8 @@ const precio =
     : kind === 'preciosDigitales'
       ? (preciosDigitalesUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; periodo: string; empresa: string }>)[herramientaId]
       : undefined;
-// Meli+, Rappi Pro y similares venden directo en pesos, sin versión en
-// dólares — su entrada trae `precioMXN` en vez de `precioUSD` (ver nota en
+// Meli+, Rappi Pro, ViX y similares venden en México directo en pesos, sin
+// conversión desde dólares — su entrada trae `precioMXN` en vez de `precioUSD` (ver nota en
 // TipoCambioCalculadora.astro), así que aquí no hay tipo de cambio que aplicar.
 const precioEsMXNDirecto = precio?.precioMXN !== undefined;
 const precioMXN = precio
@@ -746,7 +746,7 @@ if (toolKinds.includes(kind) && herramienta) {
           <>
             <p>
               {precioEsMXNDirecto ? (
-                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México, precio oficial directo — este servicio no vende en dólares, así que no hay tipo de cambio de Banxico que aplicar aquí.</>
+                <>Cuánto cuesta {herramienta} hoy: {precioMXN.toLocaleString('es-MX', { style: 'currency', currency: 'MXN' })} MXN en México, precio oficial directo en pesos — no se convierte desde dólares, así que no hay tipo de cambio de Banxico que aplicar aquí.</>
               ) : precio.precioUSD === 0 ? (
                 <>Cuánto cuesta {herramienta} hoy: nada. No tiene ningún plan de pago para el público general en México — el tipo de cambio de Banxico no aplica porque no hay nada que convertir.</>
               ) : (

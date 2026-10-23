@@ -15,7 +15,7 @@
   "geforce-now": { "nombre": "GeForce NOW Performance", "precioUSD": 9.99, "periodo": "mensual", "empresa": "NVIDIA" },
   "disney-plus": { "nombre": "Disney+ (con anuncios)", "precioUSD": 11.99, "periodo": "mensual", "empresa": "The Walt Disney Company" },
   "hbo-max": { "nombre": "HBO Max Basic con anuncios", "precioUSD": 10.99, "periodo": "mensual", "empresa": "Warner Bros. Discovery" },
-  "vix": { "nombre": "ViX Premium Con Anuncios", "precioUSD": 6.99, "periodo": "mensual", "empresa": "TelevisaUnivision" },
+  "vix": { "nombre": "ViX Premium (México)", "precioMXN": 149, "periodo": "mensual", "empresa": "TelevisaUnivision" },
   "paramount-plus": { "nombre": "Paramount+ Essential", "precioUSD": 8.99, "periodo": "mensual", "empresa": "Paramount Skydance" },
   "apple-tv-plus": { "nombre": "Apple TV+", "precioUSD": 14.99, "periodo": "mensual", "empresa": "Apple" },
   "apple-music": { "nombre": "Apple Music Individual", "precioUSD": 11.99, "periodo": "mensual", "empresa": "Apple" },

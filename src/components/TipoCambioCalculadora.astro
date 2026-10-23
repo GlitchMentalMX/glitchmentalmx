@@ -32,7 +32,7 @@ if (!precio) {
 }
 
 // Caso especial de Precios Digitales: servicios sin ancla en dólares (ej.
-// Meli+, Rappi Pro) — venden directo en pesos mexicanos, país por país, sin
+// Meli+, Rappi Pro, ViX) — para México venden directo en pesos mexicanos, sin
 // versión USD que convertir. Forzar esos precios por el tipo de cambio de
 // Banxico inventaría un dato que no existe, así que la entrada trae
 // `precioMXN` en vez de `precioUSD` y la calculadora muestra el monto
@@ -71,7 +71,7 @@ const esGratis = !tienePrecioMXNDirecto && precio.precioUSD === 0;
     {esGratis
       ? 'No tiene plan de pago para el público general en México — el tipo de cambio no aplica.'
       : tienePrecioMXNDirecto
-        ? 'Precio oficial directo en pesos mexicanos — este servicio no vende en dólares, así que el tipo de cambio de Banxico no aplica aquí.'
+        ? 'Precio oficial directo en pesos mexicanos para el mercado de México — no se convierte desde dólares, así que el tipo de cambio de Banxico no aplica aquí.'
         : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Es el precio oficial en dólares antes de IVA — muchas empresas ya lo incluyen en el precio que cobran directo en pesos en México, así que tu tarjeta puede reflejar un monto más alto. También puede sumarse la comisión de tu banco por ser una transacción en el extranjero.`}
   </p>
   <NotaActualizacionBanxico />
