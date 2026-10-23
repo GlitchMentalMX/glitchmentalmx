@@ -23,7 +23,7 @@ interface Props {
 const { herramientaId, herramienta, fuente = 'ia' } = Astro.props;
 const preciosUSD = fuente === 'digitales' ? preciosDigitalesUSD : preciosIAUSD;
 const archivoFuente = fuente === 'digitales' ? 'precios-digitales-usd.json' : 'precios-ia-usd.json';
-const precio = (preciosUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; periodo: string }>)[
+const precio = (preciosUSD as Record<string, { nombre: string; precioUSD?: number; precioMXN?: number; precioUSDReferencia?: number; periodo: string }>)[
   herramientaId
 ];
 
@@ -45,6 +45,11 @@ const formatMXN = (n: number) =>
   n.toLocaleString('es-MX', { style: 'currency', currency: 'MXN', minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const formatUSD = (n: number) =>
   n.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+// Servicios con precio propio en pesos que además publican un precio en
+// dólares para EE. UU.: ese monto es solo referencia para quien nos lee
+// desde fuera de México y nunca entra al cálculo del precio mostrado.
+const referenciaUSD = tienePrecioMXNDirecto ? precio.precioUSDReferencia : undefined;
+const sufijoPeriodo = precio.periodo === 'anual' ? 'al año' : 'al mes';
 const esGratis = !tienePrecioMXNDirecto && precio.precioUSD === 0;
 ---
 
@@ -74,7 +79,12 @@ const esGratis = !tienePrecioMXNDirecto && precio.precioUSD === 0;
         ? 'Precio oficial directo en pesos mexicanos para el mercado de México — no se convierte desde dólares, así que el tipo de cambio de Banxico no aplica aquí.'
         : `Tipo de cambio FIX de Banxico al ${formatDate(fechaDato)}. Es el precio oficial en dólares antes de IVA — muchas empresas ya lo incluyen en el precio que cobran directo en pesos en México, así que tu tarjeta puede reflejar un monto más alto. También puede sumarse la comisión de tu banco por ser una transacción en el extranjero.`}
   </p>
-  <NotaActualizacionBanxico />
+  {referenciaUSD !== undefined && (
+    <p class="calc-ref">
+      <strong>Para México, el precio es el de pesos de arriba.</strong> Solo como referencia para quien nos lee desde otro país: en Estados Unidos el plan equivalente cuesta {formatUSD(referenciaUSD)} USD {sufijoPeriodo}. Ese monto no aplica en México ni se convierte.
+    </p>
+  )}
+  {!tienePrecioMXNDirecto && <NotaActualizacionBanxico />}
 </div>
 
 <style>
@@ -109,6 +119,15 @@ const esGratis = !tienePrecioMXNDirecto && precio.precioUSD === 0;
     font-weight: 700;
     color: var(--text);
   }
+  .calc-ref {
+    margin: 12px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: var(--text-faint);
+  }
+  .calc-ref strong { color: var(--text-muted); font-weight: 600; }
   .calc-foot {
     margin: 14px 0 0;
     font-size: 0.82rem;

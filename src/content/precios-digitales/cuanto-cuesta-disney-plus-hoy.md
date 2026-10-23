@@ -1,9 +1,9 @@
 ---
 title: "¿Cuánto cuesta Disney+ hoy? Precio en pesos mexicanos actualizado"
-description: "Precio de Disney+ en pesos mexicanos con el tipo de cambio Banxico — sin adivinar cuánto te cobra tu tarjeta."
+description: "Precio oficial de Disney+ en México, directo en pesos mexicanos — sin conversión de dólares ni tipo de cambio de por medio."
 herramienta: "Disney+"
 herramientaId: "disney-plus"
-sitioOficial: "https://www.disneyplus.com/"
+sitioOficial: "https://www.disneyplus.com/es-mx"
 pubDate: 2026-08-31
 heroImage: /images/precios-digitales/disney-plus.png
 heroImageAlt: Disney+ — Precios Digitales
@@ -11,7 +11,7 @@ heroImageAlt: Disney+ — Precios Digitales
 
 ## Qué cambia el precio final
 
-Disney vende dos niveles: el plan con anuncios, en $11.99 USD al mes, y Premium sin anuncios, en $18.99 USD al mes o $189.99 USD al año (un ahorro de más del 16% frente a pagar mensual, poco más de dos meses gratis). Esta calculadora usa el plan con anuncios, el de entrada. Si compras desde México, conviene saber que Disney fija un precio propio en pesos, no un simple reflejo del dólar: el plan con anuncios subió a 139 pesos al mes a partir del 15 de mayo de 2026 (venía de 149), mientras que en Estados Unidos el precio en dólares no se movió en esa fecha — otra señal de que el precio mexicano y el precio en dólares no siempre caminan juntos, por eso esta calculadora usa el oficial de Estados Unidos como ancla, igual que el resto del sitio.
+En México, Disney+ cobra directo en pesos mexicanos. Según su sitio oficial para México, el plan Estándar con anuncios cuesta $159 MXN al mes (es el que muestra la calculadora de arriba), el plan Estándar sin anuncios $259 MXN al mes y Premium $339 MXN al mes. También hay pago anual: $2,169 MXN para Estándar y $2,839 MXN para Premium. Disney publica con frecuencia promociones para suscriptores nuevos, con precio reducido los primeros meses; pasado ese periodo el plan se renueva al precio de lista. El precio en pesos lo fija Disney para México y se mueve por su cuenta, sin seguir al dólar, así que el monto que ves aquí es el oficial de hoy.
 
 ## Qué incluye el plan pagado
 
@@ -21,4 +21,10 @@ El plan con anuncios da acceso al catálogo completo de Disney+ (Marvel, Star Wa
 
 Disney anunció que planea lanzar una app unificada que integre por completo el catálogo de Hulu dentro de Disney+ antes de que termine 2026 — el proceso ya empezó por fases (la app de Hulu dejó de funcionar en Nintendo Switch desde febrero de 2026) pero aún puedes contratar Hulu o Disney+ por separado si prefieres no pagar por ambos catálogos combinados. Vale la pena confirmar, al momento de suscribirte, si el plan que ves incluye ya el catálogo completo de Hulu o solo una parte, porque la transición no es pareja en todos los dispositivos ni todos los mercados a la vez.
 
-<a href="https://www.disneyplus.com/" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Disney+ →</a>
+## Precios en dólares: solo referencia fuera de México
+
+**Si compras en México, aplica el precio en pesos de arriba.** Los montos de esta sección son los de Estados Unidos y se incluyen solo como referencia para quien nos lee desde otro país: no aplican en México ni se convierten a pesos.
+
+Disney vende dos niveles en Estados Unidos: el plan con anuncios, en $11.99 USD al mes, y Premium sin anuncios, en $18.99 USD al mes o $189.99 USD al año.
+
+<a href="https://www.disneyplus.com/es-mx" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Disney+ →</a>

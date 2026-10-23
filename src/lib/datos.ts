@@ -152,7 +152,7 @@ export async function cargarPrecios() {
       const slug = idPorHerramienta.get(id);
       if (!slug) continue; // entrada de precio sin ficha publicada
       const usd = typeof e.precioUSD === 'number' ? e.precioUSD : undefined;
-      const mxn = usd !== undefined ? Math.round(usd * tipoCambio.valor * 100) / 100 : e.precioMXN;
+      const mxn = typeof e.precioMXN === 'number' ? e.precioMXN : usd !== undefined ? Math.round(usd * tipoCambio.valor * 100) / 100 : undefined;
       filas.push({
         serie: g.serie,
         herramienta_id: id,
