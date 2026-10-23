@@ -80,7 +80,9 @@ export class SelectScene extends Phaser.Scene {
     this.buildButtons();
     this.buildTopButtons();
 
-    this.footer = txt(this, W / 2, H - 22, `Finales descubiertos: ${state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length} de ${ENDING_IDS.length}`, 14, '#8d89a0').setOrigin(0.5);
+    // Aclaración honesta y discreta: nada de lo que pasa aquí es real.
+    txt(this, W / 2, H - 37, 'Es solo un juego: aquí no hay suscripciones, cobros ni datos reales.', 13, '#a9a5b8').setOrigin(0.5);
+    this.footer = txt(this, W / 2, H - 18, `Finales descubiertos: ${state.meta.endings.filter((e) => ENDING_IDS.includes(e)).length} de ${ENDING_IDS.length}`, 14, '#8d89a0').setOrigin(0.5);
 
     this.howLayer = this.add.container(0, 0).setDepth(90).setVisible(false);
     this.layoutEdges();

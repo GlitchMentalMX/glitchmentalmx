@@ -11,6 +11,7 @@ export const HOWTO_LINES = [
   'Arriba a la izquierda está tu inventario: toca un objeto para verlo o usarlo.',
   'Cada personaje tiene secretos propios: rejuega con otro y descúbrelos.',
   'Tu progreso se guarda solo.',
+  'Es solo un juego: aquí no hay suscripciones, cobros ni datos reales.',
 ];
 
 /**
