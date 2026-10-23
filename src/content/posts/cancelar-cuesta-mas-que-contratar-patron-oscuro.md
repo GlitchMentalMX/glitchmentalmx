@@ -1,7 +1,7 @@
 ---
 title: 'Cancelar cuesta más que contratar: jugamos al patrón oscuro'
 category: Cultura Digital
-pubDate: 2026-10-22T21:09
+pubDate: 2026-10-23T05:41
 updatedDate: ''
 description: Contratar toma un clic; cancelar puede ser una odisea. Qué dicen la FTC, Profeco y un videojuego sobre el patrón oscuro que te retiene.
 heroImage: /images/uploads/cancelar-cuesta.webp
