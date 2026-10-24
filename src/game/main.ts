@@ -83,4 +83,15 @@ window.addEventListener('pagehide', () => audio.suspend());
 window.setInterval(applyOrientation, 500);
 applyOrientation();
 
+// Audio: la música se descarga y decodifica antes del primer toque, y el primer gesto
+// válido la arranca. Los navegadores aceptan gestos distintos (iOS/Safari solo "suelta"
+// el audio en touchend o click), así que se escuchan todos hasta que el contexto suena.
+window.setTimeout(() => audio.preload(), 600);
+const GESTURES = ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'] as const;
+const unlockAudio = () => {
+  audio.unlock();
+  if (audio.running) GESTURES.forEach((g) => window.removeEventListener(g, unlockAudio, true));
+};
+GESTURES.forEach((g) => window.addEventListener(g, unlockAudio, true));
+
 if (import.meta.env.DEV) Object.assign(window, { __game: game, __audio: audio, __state: state });

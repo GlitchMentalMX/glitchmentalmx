@@ -34,21 +34,47 @@ class AudioEngine {
   private ambientStarted = false;
   private lastStep = 0;
 
-  /** Llamar desde un gesto del usuario (pointerdown / keydown). */
+  /** Crea el contexto de audio y los buses (el navegador lo deja en pausa hasta el primer gesto). */
+  private ensureCtx(): boolean {
+    if (this.ctx) return true;
+    const Ctor = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    if (!Ctor) return false;
+    this.ctx = new Ctor();
+    this.master = this.ctx.createGain();
+    this.master.gain.value = state.meta.muted ? 0 : 0.8;
+    this.master.connect(this.ctx.destination);
+    this.musicBus = this.ctx.createGain();
+    this.musicBus.gain.value = state.meta.ambient ? MUSIC_VOL : 0;
+    this.musicBus.connect(this.master);
+    return true;
+  }
+
+  /**
+   * Prepara la música ANTES del primer toque: el contexto se crea en pausa y las dos
+   * pistas se descargan y decodifican en segundo plano. Así, cuando llega el gesto que
+   * permite sonar, la música arranca al instante en vez de esperar la descarga. Si la
+   * persona tiene el sonido apagado no se baja nada.
+   */
+  preload(): void {
+    if (state.meta.muted) return;
+    try {
+      if (!this.ensureCtx()) return;
+      void this.loadTrack('menu').then(() => this.loadTrack('sala'));
+    } catch {
+      // Sin audio disponible: el juego sigue en silencio.
+    }
+  }
+
+  /** ¿El contexto ya está sonando? (los navegadores lo dejan en pausa hasta un gesto válido). */
+  get running(): boolean {
+    return this.ctx?.state === 'running';
+  }
+
+  /** Llamar desde un gesto del usuario (pointerdown / touchend / click / keydown). */
   unlock(): void {
     try {
-      if (!this.ctx) {
-        const Ctor = window.AudioContext ?? (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-        if (!Ctor) return;
-        this.ctx = new Ctor();
-        this.master = this.ctx.createGain();
-        this.master.gain.value = state.meta.muted ? 0 : 0.8;
-        this.master.connect(this.ctx.destination);
-        this.musicBus = this.ctx.createGain();
-        this.musicBus.gain.value = state.meta.ambient ? MUSIC_VOL : 0;
-        this.musicBus.connect(this.master);
-      }
-      if (this.ctx.state === 'suspended' && !state.meta.muted) void this.ctx.resume();
+      if (!this.ensureCtx() || !this.ctx) return;
+      if (this.ctx.state !== 'running' && !state.meta.muted) void this.ctx.resume();
       this.startAmbient();
       void this.applyMusic();
     } catch {
@@ -156,8 +182,10 @@ class AudioEngine {
     src.buffer = buf;
     src.loop = true;
     const gain = ctx.createGain();
+    // La primera pista entra rápido (0.5 s): un fundido largo se confunde con "no suena".
+    const fadeIn = old ? FADE_S : 0.5;
     gain.gain.setValueAtTime(0, now);
-    gain.gain.linearRampToValueAtTime(1, now + FADE_S);
+    gain.gain.linearRampToValueAtTime(1, now + fadeIn);
     src.connect(gain).connect(this.musicBus);
     src.start(now);
     this.music = { key: track, src, gain };
@@ -207,7 +235,8 @@ class AudioEngine {
   }
 
   play(name: SfxName): void {
-    if (!this.ctx || state.meta.muted) return;
+    // Con el contexto en pausa (antes del primer gesto) los sonidos se acumularían y saldrían todos juntos.
+    if (!this.ctx || state.meta.muted || this.ctx.state !== 'running') return;
     switch (name) {
       case 'tap': this.tone(520, 0.06, 'triangle', 0.08, 700); break;
       case 'select': this.tone(440, 0.08, 'square', 0.07); this.tone(660, 0.1, 'square', 0.07, undefined, 0.07); break;
