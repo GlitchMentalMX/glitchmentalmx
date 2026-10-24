@@ -42,6 +42,11 @@ const RELATED_SLUGS = [
   'despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre',
   'oracle-despide-a-30000-por-ia-el-patron-ya-es-claro',
   'jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico',
+  'atlassian-despide-a-1600-empleados-para-pagar-su-apuesta-por-ia',
+  'meta-recortara-16000-empleos-la-ia-como-argumento',
+  'pinterest-despide-al-15-de-su-plantilla-la-ia-llega-a-cobrar',
+  'meta-graba-empleados-para-la-ia-que-los-sustituira',
+  'gen-z-llega-al-mercado-laboral-y-la-ia-lo-automatiza',
 ];
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
