@@ -4,7 +4,7 @@ description: "Desde 2025, todo lo que le dices a Alexa se procesa en la nube de 
 herramienta: "Alexa"
 herramientaId: "alexa"
 empresa: "Amazon"
-sitioOficial: "https://www.amazon.com/alexa/privacy"
+sitioOficial: "https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011"
 veredicto: "rojo"
 fraseCorta: "Amazon quitó el botón que evitaba mandar tus grabaciones de voz a la nube."
 fuentePolitica: "Centro de Privacidad de Alexa (Amazon) y anuncio oficial del cambio a Alexa+"
@@ -27,4 +27,4 @@ A diferencia de Meta o LinkedIn, este no es un caso donde la Unión Europea teng
 
 [Última actualización: 23/08/2026]
 
-<a href="https://www.amazon.com/alexa/privacy" target="_blank" rel="noopener noreferrer">Lee el Centro de Privacidad oficial de Alexa →</a>
+<a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011" target="_blank" rel="noopener noreferrer">Lee el Centro de Privacidad oficial de Alexa →</a>
