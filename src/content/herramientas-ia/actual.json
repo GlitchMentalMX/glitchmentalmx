@@ -175,6 +175,38 @@
       "disponibleMexico": true,
       "fuenteCapacidades": "Imágenes: fuerte por diseño — Magic Media (motor dual con Leonardo Phoenix) es su función de IA central, con la biblioteca de plantillas/assets más grande de las 11 herramientas de este recomendador; confirmado en canva.com/pricing (visitado en vivo, 10/sep/2026, ya localizado con precios en MX$). Escritura: básico — Magic Write genera primeros borradores de copy (captions, títulos, texto de presentaciones), descrito en varias reseñas como apoyo de diseño, no herramienta de escritura independiente. Video: básico — Magic Media también genera video (motor Runway Gen-3 por debajo, hasta 4K/60s según reseñas), pero sin benchmark independiente que lo compare con especialistas dedicados como Runway. Memoria e integraciones: confirmadas — Canva AI 2.0 (lanzado 16/abr/2026) tiene 'memoria persistente que aprende los gustos y el estilo del usuario' e integraciones reales con Slack, Gmail, Notion, Zoom y Google Drive (wwwhatsnew.com, 17/abr/2026). API: no existe API para automatización de las funciones de IA (solo un SDK de apps/plugins, que es otra cosa) — confirmado por varias reseñas técnicas. Voz: no se encontró evidencia de modo de voz. Código: no se encontró evidencia de una función real de programación (una mención vaga de 'código' en cobertura de prensa parece referirse a orquestación de la suite, no a asistencia de programación) — se deja en 'no' en vez de sobreinterpretar. Español: sin comparativa específica de calidad, básico como valor neutral. Privacidad y precio ya estaban verificados en las series propias del sitio (veredicto amarillo en entrena-ia, precio en pesos mexicanos en precios-ia) — no se reverificaron desde cero, se reutilizó lo ya confirmado ahí porque sigue vigente.",
       "fechaVerificacion": "2026-09-10"
+    },
+    {
+      "herramientaId": "notebooklm",
+      "escritura": "basico",
+      "investigacion": "fuerte",
+      "codigo": "no",
+      "imagenes": "basico",
+      "video": "basico",
+      "espanol": "fuerte",
+      "api": false,
+      "memoria": false,
+      "voz": true,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Google renombró el producto a 'Gemini Notebook' (notebooklm.google redirige a notebook.google), pero el precio y el artículo propio del sitio siguen bajo el nombre NotebookLM. Investigación: fuerte por diseño — su función central es investigación anclada en las fuentes que subes (hasta 300 por cuaderno en el plan de pago), con reportes de investigación profunda; confirmado en el artículo propio de precios y en support.google.com (ayuda oficial de Gemini Notebook). Voz: confirmada — Audio Overviews (formato podcast) incluye un 'modo interactivo' donde puedes unirte a la conversación generada y hacer preguntas en vivo. Video: básico — Video Overviews es una función oficial vigente (confirmado en support.google.com, guía 'Generar Video Overviews en Gemini Notebook'), pero es una presentación narrada a partir de tus fuentes, no generación de video abierta como Runway/Veo. Imágenes: básico — genera infografías y mapas mentales a partir del contenido (confirmado en support.google.com), pero no imágenes libres como Midjourney/Canva. Español: fuerte — Audio y Video Overviews cubren unos 80 idiomas, español incluido explícitamente (cobertura reportada por varios medios especializados, sep-oct 2026). API: no hay API para el producto de consumo (gratis/Pro) — solo existe una API Enterprise dentro de Google Cloud para gestionar cuadernos por código, un producto distinto. Memoria: no se encontró evidencia de memoria de personalización entre sesiones (a diferencia de Gemini/ChatGPT/Claude) — cada cuaderno vive de sus propias fuentes, no de un perfil persistente del usuario. Integraciones: confirmadas con Google Workspace (importar desde Drive, exportar a Docs/Slides). México: Google AI Pro —el plan que desbloquea más capacidad aquí— ya está disponible y confirmado para México en la ficha de Gemini de esta misma serie. Código y privacidad: no hay ficha de 'quién entrena con tus datos' para NotebookLM todavía, así que el recomendador la muestra como 'sin verificar' en vez de asumir un veredicto.",
+      "fechaVerificacion": "2026-10-24"
+    },
+    {
+      "herramientaId": "kimi",
+      "escritura": "basico",
+      "investigacion": "fuerte",
+      "codigo": "fuerte",
+      "imagenes": "no",
+      "video": "no",
+      "espanol": "fuerte",
+      "api": true,
+      "memoria": true,
+      "voz": false,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Código: fuerte — Kimi Code es una herramienta de programación dedicada incluida en todos los planes de pago (confirmado en kimi.com/membership/pricing, visitado en vivo, con los mismos precios en USD del artículo propio de precios), con foco declarado de Moonshot AI en programación agéntica de largo alcance. Investigación: fuerte — Deep Research ('investigación a fondo') es una función listada tanto en el sitio de precios como en el centro de ayuda oficial (kimi.com/en/help/features). Memoria: confirmada — 'Memory Space' es una función documentada en el centro de ayuda oficial de Kimi, con artículos propios sobre qué se recuerda y cómo se activa. Integraciones: confirmadas — 'Plugins & Skills', extensión de navegador y extensión de Office, listadas en el mismo centro de ayuda oficial. Español: fuerte — el modelo K2.6 obtiene 91.00 contra 92.50 de inglés en el benchmark Global-MMLU-Lite (reporte técnico de terceros, con ítems traducidos y revisados por humanos para comparar idiomas de forma justa), una brecha pequeña. API: confirmada, compatible con el formato de OpenAI (Wikipedia, centro de ayuda oficial). Imágenes/video/voz: no se encontró evidencia de generación de imágenes, de video, ni de modo de voz en ningún material oficial o de prensa — se dejan en 'no' en vez de asumir. Escritura: sin comparativa específica de calidad frente a las otras herramientas, básico como valor neutral. México: precios en USD accesibles sin bloqueo geográfico aparente, mismo criterio que el artículo propio de precios ya publicado. Privacidad: veredicto rojo ya verificado en la serie 'Quién entrena con tus datos' (entrena con prompts y archivos por default, sin interruptor en la app) — se reutiliza ese veredicto, no se reverificó desde cero porque sigue vigente.",
+      "fechaVerificacion": "2026-10-24"
     }
   ]
 }
