@@ -67,6 +67,7 @@ const nav = [
   },
   { href: '/indice-glitchmentalmx/', label: 'Índice' },
   { href: '/novelas/', label: 'Novelas' },
+  { href: '/juego/', label: 'Juego' },
   {
     href: '/servicios/',
     label: 'Servicios',
@@ -188,7 +189,7 @@ const current = Astro.url.pathname;
   .bar {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 20px;
     height: 68px;
   }
   .logo {
@@ -207,10 +208,14 @@ const current = Astro.url.pathname;
   .primary-nav > ul {
     list-style: none;
     display: flex;
-    gap: 26px;
+    gap: 16px;
     margin: 0;
     padding: 0;
   }
+  /* Con el ítem "Juego" son 9 entradas en un contenedor de 1180px: se compactan la
+     separación y el tamaño del texto de primer nivel para que el menú quepa sin
+     pisar los íconos de la derecha (el menú móvil toma el relevo a ≤1220px). */
+  .primary-nav > ul > li > a { font-size: 0.88rem; }
   .primary-nav > ul > li { position: relative; }
   .primary-nav a {
     display: inline-flex;

@@ -478,10 +478,16 @@ const signalPools = {
   </section>
 
   <section class="dato-incomodo container">
-    <a href="/dato-incomodo/" class="dato-card">
-      <img src="/images/dato-incomodo/home.webp" alt="Dato Incómodo — lo que no te conviene saber, publicado de todas formas." loading="lazy" width="380" height="214" />
-      <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
-    </a>
+    <div class="promo-pair">
+      <a href="/dato-incomodo/" class="dato-card">
+        <img src="/images/dato-incomodo/home.webp" alt="Dato Incómodo — lo que no te conviene saber, publicado de todas formas." loading="lazy" width="380" height="214" />
+        <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
+      </a>
+      <a href="/juego/" class="dato-card juego-card">
+        <img src="/juego/card-home.webp" alt="Pulsa para Empeorar, el videojuego de glitchMentalMX: cinco personajes en una sala de espera con una máquina de cookies y un asistente robot." loading="lazy" width="960" height="436" />
+        <span class="link-accent dato-cta">Juega bajo tu propio riesgo →</span>
+      </a>
+    </div>
   </section>
 
   <section class="archivo-cta container">
@@ -675,6 +681,17 @@ const signalPools = {
     border-radius: 4px;
   }
   .dato-cta { font-size: 0.88rem; }
+
+  /* Dato Incómodo + el juego, lado a lado en escritorio y apilados en móvil
+     (primero Dato, después el juego). El juego usa el mismo "volante" pegado,
+     girado al otro lado y con el borde de acento fijo para que se note que es nuevo. */
+  .promo-pair { display: flex; flex-direction: column; align-items: center; gap: 28px; }
+  .juego-card { transform: rotate(1.1deg); outline: 2px solid var(--accent); }
+  .juego-card:hover { transform: rotate(0deg); }
+  @container (min-width: 700px) {
+    .promo-pair { flex-direction: row; justify-content: center; align-items: center; gap: 36px; }
+    .promo-pair .dato-card { flex: 1 1 0; min-width: 0; }
+  }
 
   /* Recién publicado — horizontal rail, hero image as background, glitch on hover */
   .recent-rail {
