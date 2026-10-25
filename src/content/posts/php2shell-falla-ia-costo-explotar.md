@@ -1,7 +1,7 @@
 ---
 title: 'PHP2Shell: la falla que la IA volvió barata de explotar'
 category: Inteligencia Artificial
-pubDate: 2026-10-25T14:30
+pubDate: 2026-10-25T14:32
 updatedDate: ''
 description: 'PHP2Shell prueba que la IA abarató explotar fallas viejas: qué se pierde, qué no se sabe y qué deja abierto la divulgación coordinada.'
 heroImage: /images/uploads/php-falla.webp
