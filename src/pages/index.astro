@@ -683,11 +683,10 @@ const signalPools = {
   .dato-cta { font-size: 0.88rem; }
 
   /* Dato Incómodo + el juego, lado a lado en escritorio y apilados en móvil
-     (primero Dato, después el juego). El juego usa el mismo "volante" pegado,
-     girado al otro lado y con el borde de acento fijo para que se note que es nuevo. */
+     (primero Dato, después el juego). Las dos tarjetas comparten exactamente el
+     mismo estilo (.dato-card): mismo volante pegado, misma inclinación y mismo
+     borde solo al pasar el cursor. */
   .promo-pair { display: flex; flex-direction: column; align-items: center; gap: 28px; }
-  .juego-card { transform: rotate(1.1deg); outline: 2px solid var(--accent); }
-  .juego-card:hover { transform: rotate(0deg); }
   @container (min-width: 700px) {
     .promo-pair { flex-direction: row; justify-content: center; align-items: center; gap: 36px; }
     .promo-pair .dato-card { flex: 1 1 0; min-width: 0; }
