@@ -1,7 +1,7 @@
 ---
 title: Si la IA encuentra las fallas, ¿quién las corrige a tiempo?
 category: Inteligencia Artificial
-pubDate: 2026-10-25T14:32
+pubDate: 2026-10-25T14:38
 updatedDate: ''
 description: La IA ya encuentra fallas a escala, pero casi nadie las corrige a tiempo. El problema de seguridad es la velocidad humana, no los modelos.
 heroImage: /images/uploads/ia-encuentra-fallas.webp
