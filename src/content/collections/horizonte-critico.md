@@ -8,9 +8,9 @@ description: >-
   temporal: lo que ya está cambiando, lo que cambiará antes de 2030 y lo que
   reescribirá las reglas después.
 intro: >-
-  Veintidós tecnologías que están redefiniendo el mundo, analizadas por
-  horizonte temporal: lo que ya está cambiando, lo que cambiará antes de
-  2030 y lo que reescribirá las reglas después. Sin fechas inventadas, sin
+  Veintiséis artículos sobre las tecnologías y los debates que están
+  redefiniendo el mundo, analizados por horizonte temporal: lo que ya está cambiando, lo que
+  cambiará antes de 2030 y lo que reescribirá las reglas después. Sin fechas inventadas, sin
   promesas vacías, sin ruido.
 postSlugs:
   - agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio
