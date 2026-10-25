@@ -35,6 +35,10 @@ postSlugs:
   - tres-empresas-controlan-la-nube-eso-deberia-preocuparte
   - los-cables-que-sostienen-internet-y-nadie-protege-bien
   - lo-que-se-pierde-cuando-muere-una-plataforma-digital
+  - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+  - riesgo-existencial-ia-bostrom-ord-russell
+  - largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+  - contrabando-chips-ia-como-se-cuelan-a-china
 sections:
   - title: Corto plazo
     description: '2025–2027 — está ocurriendo ahora.'
@@ -68,11 +72,15 @@ sections:
     posts:
       - slug: agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia
       - slug: gemelos-digitales-cuando-la-fabrica-existe-antes-de-construirse
+      - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+      - slug: riesgo-existencial-ia-bostrom-ord-russell
+      - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
   - title: Infraestructura invisible
     description: Lo que sostiene todo y nadie está cubriendo bien.
     posts:
       - slug: tres-empresas-controlan-la-nube-eso-deberia-preocuparte
       - slug: los-cables-que-sostienen-internet-y-nadie-protege-bien
       - slug: lo-que-se-pierde-cuando-muere-una-plataforma-digital
+      - slug: contrabando-chips-ia-como-se-cuelan-a-china
 order: 5
 ---

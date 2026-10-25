@@ -75,6 +75,17 @@ postSlugs:
   - cuanto-cuesta-espiar-hoy
   - doom-loop-midieron-como-rompian-la-web
   - agente-ia-va-de-compras-quien-pierde-negocio
+  - ia-hackeo-gobierno-pregunta-aburrida
+  - contrabando-chips-ia-como-se-cuelan-a-china
+  - aduana-comercio-ia-quien-decide-quien-entra
+  - pantalla-del-hogar-reconoce-quien-eres-y-quien-no
+  - danos-actuales-ia-crawford-gebru-bender-vallor
+  - anthropic-se-autocalifico-en-ciencia
+  - el-prompt-no-murio-la-industria-aprendio-a-delegar
+  - chatbot-se-equivoco-formato-lo-volvio-inteligencia
+  - que-importa-que-es-marketing-debate-ia
+  - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+  - largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
 sections:
   - title: Geopolítica de la IA
     description: >-
@@ -92,6 +103,8 @@ sections:
       - slug: trump-quiere-una-ley-de-ia-federal-que-pierde-latam
       - slug: ata-como-se-nombra-al-primer-atacante-impulsado-por-ia
       - slug: quien-responde-cuando-ia-hackea-hugging-face
+      - slug: ia-hackeo-gobierno-pregunta-aburrida
+      - slug: contrabando-chips-ia-como-se-cuelan-a-china
   - title: Monopolios e Infraestructura
     description: >-
       Quién controla los cables, los chips, la nube y los modelos — y qué
@@ -108,6 +121,8 @@ sections:
       - slug: el-truco-del-lock-in-te-atrapan-gratis-te-cobran-despues
         tag: serie
       - slug: disney-tiktok-trampa-oficializar-fan-edit
+      - slug: aduana-comercio-ia-quien-decide-quien-entra
+      - slug: contrabando-chips-ia-como-se-cuelan-a-china
   - title: Vigilancia y Control Social
     description: >-
       Cómo la tecnología se convierte en instrumento de poder sobre
@@ -132,6 +147,7 @@ sections:
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
       - slug: idioma-ia-opacidad-auditoria
       - slug: cuanto-cuesta-espiar-hoy
+      - slug: pantalla-del-hogar-reconoce-quien-eres-y-quien-no
   - title: Economía Política de la IA
     description: >-
       Quién gana, quién pierde y cómo se distribuye el valor generado por
@@ -154,6 +170,7 @@ sections:
       - slug: el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas
       - slug: doom-loop-midieron-como-rompian-la-web
       - slug: agente-ia-va-de-compras-quien-pierde-negocio
+      - slug: danos-actuales-ia-crawford-gebru-bender-vallor
   - title: Desinformación como Sistema
     description: >-
       Cómo la mentira se industrializó y por qué es tan difícil
@@ -165,6 +182,10 @@ sections:
         tag: caso
       - slug: los-memes-no-son-chistes-son-el-lenguaje-del-poder
         tag: serie
+      - slug: anthropic-se-autocalifico-en-ciencia
+      - slug: el-prompt-no-murio-la-industria-aprendio-a-delegar
+      - slug: chatbot-se-equivoco-formato-lo-volvio-inteligencia
+      - slug: que-importa-que-es-marketing-debate-ia
   - title: Soberanía Digital y LATAM
     description: >-
       La región frente al poder tecnológico global: dependencia,
@@ -202,6 +223,8 @@ sections:
         tag: serie
       - slug: la-ia-como-nuevo-darwin-quien-define-la-evolucion
         tag: serie
+      - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+      - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
   - title: Cuerpo y Código
     description: >-
       Cuando el genoma se convierte en software — y alguien decide quién

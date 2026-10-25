@@ -78,6 +78,16 @@ postSlugs:
   - quien-responde-cuando-ia-hackea-hugging-face
   - agente-ia-va-de-compras-quien-pierde-negocio
   - idioma-ia-opacidad-auditoria
+  - chatbot-se-equivoco-formato-lo-volvio-inteligencia
+  - el-prompt-no-murio-la-industria-aprendio-a-delegar
+  - anthropic-se-autocalifico-en-ciencia
+  - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+  - que-importa-que-es-marketing-debate-ia
+  - aduana-comercio-ia-quien-decide-quien-entra
+  - ia-hackeo-gobierno-pregunta-aburrida
+  - algoritmo-te-pregunta-que-quieres-y-no-te-cree
+  - pantalla-del-hogar-reconoce-quien-eres-y-quien-no
+  - cancelar-cuesta-mas-que-contratar-patron-oscuro
 sections:
   - title: Cultura Digital
     description: Identidad, atención y vida en internet.
@@ -115,6 +125,7 @@ sections:
       - slug: del-internet-abierto-a-los-nichos-cerrados-la-gran-fragmentacion
       - slug: dead-internet-theory-el-internet-ya-no-es-para-humanos
       - slug: lo-que-se-pierde-cuando-muere-una-plataforma-digital
+      - slug: algoritmo-te-pregunta-que-quieres-y-no-te-cree
   - title: Inteligencia Artificial
     description: Qué es, cómo funciona y por qué importa.
     posts:
@@ -125,6 +136,7 @@ sections:
       - slug: las-habilidades-que-mas-importan-en-la-era-de-la-ia
       - slug: las-limitaciones-reales-de-la-ia-que-nadie-anuncia
       - slug: el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas
+      - slug: chatbot-se-equivoco-formato-lo-volvio-inteligencia
   - title: Modelos y Herramientas
     description: >-
       Qué herramienta usar, cómo usarla y qué puedes hacer realmente con
@@ -138,6 +150,7 @@ sections:
       - slug: microsoft-copilot-para-que-sirve-y-que-planes-existen
       - slug: deepseek-la-guia-practica-para-usarlo-bien
       - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
+      - slug: el-prompt-no-murio-la-industria-aprendio-a-delegar
   - title: Narrativa de la IA
     description: Cómo el lenguaje moldea lo que creemos posible.
     posts:
@@ -148,6 +161,9 @@ sections:
       - slug: ia-que-sustituye-vs-ia-que-amplifica-dos-relatos-un-negocio
       - slug: las-palabras-que-construyen-el-miedo-y-la-fe-en-la-ia
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
+      - slug: anthropic-se-autocalifico-en-ciencia
+      - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+      - slug: que-importa-que-es-marketing-debate-ia
   - title: Sistemas Autónomos
     description: Automatización, autonomía y quién sigue al mando.
     posts:
@@ -162,6 +178,8 @@ sections:
       - slug: quien-responde-cuando-ia-hackea-hugging-face
       - slug: agente-ia-va-de-compras-quien-pierde-negocio
       - slug: idioma-ia-opacidad-auditoria
+      - slug: aduana-comercio-ia-quien-decide-quien-entra
+      - slug: ia-hackeo-gobierno-pregunta-aburrida
   - title: Tendencias Tecnológicas
     description: Cómo distinguir una tendencia pasajera de una transformación de fondo.
     posts:
@@ -185,5 +203,7 @@ sections:
       - slug: data-brokers-el-negocio-que-vive-de-tu-casa-inteligente
       - slug: neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy
       - slug: la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real
+      - slug: pantalla-del-hogar-reconoce-quien-eres-y-quien-no
+      - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
 order: 4
 ---

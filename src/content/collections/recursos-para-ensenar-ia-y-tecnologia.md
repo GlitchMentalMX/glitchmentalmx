@@ -98,6 +98,25 @@ postSlugs:
   - idioma-ia-opacidad-auditoria
   - doom-loop-midieron-como-rompian-la-web
   - quien-responde-cuando-ia-hackea-hugging-face
+  - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+  - danos-actuales-ia-crawford-gebru-bender-vallor
+  - debate-futuro-ia-coincidencias-choques
+  - que-importa-que-es-marketing-debate-ia
+  - entiende-la-ia-searle-dreyfus-bender-simbolos
+  - conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral
+  - condicion-humana-ia-arendt-han-harari-sentido
+  - riesgo-existencial-ia-bostrom-ord-russell
+  - largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+  - escepticos-riesgo-existencial-ia-argumentos
+  - anthropic-se-autocalifico-en-ciencia
+  - el-prompt-no-murio-la-industria-aprendio-a-delegar
+  - aduana-comercio-ia-quien-decide-quien-entra
+  - chatbot-se-equivoco-formato-lo-volvio-inteligencia
+  - ia-hackeo-gobierno-pregunta-aburrida
+  - contrabando-chips-ia-como-se-cuelan-a-china
+  - algoritmo-te-pregunta-que-quieres-y-no-te-cree
+  - pantalla-del-hogar-reconoce-quien-eres-y-quien-no
+  - cancelar-cuesta-mas-que-contratar-patron-oscuro
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -155,6 +174,10 @@ sections:
       - slug: disney-tiktok-trampa-oficializar-fan-edit
       - slug: agente-ia-va-de-compras-quien-pierde-negocio
       - slug: cuanto-cuesta-espiar-hoy
+      - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+      - slug: danos-actuales-ia-crawford-gebru-bender-vallor
+      - slug: debate-futuro-ia-coincidencias-choques
+      - slug: que-importa-que-es-marketing-debate-ia
   - title: Para Posgrado e Investigación
     description: >-
       Mayor profundidad analítica. Para seminarios, marcos teóricos y
@@ -184,6 +207,12 @@ sections:
       - slug: idioma-ia-opacidad-auditoria
       - slug: doom-loop-midieron-como-rompian-la-web
       - slug: quien-responde-cuando-ia-hackea-hugging-face
+      - slug: entiende-la-ia-searle-dreyfus-bender-simbolos
+      - slug: conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral
+      - slug: condicion-humana-ia-arendt-han-harari-sentido
+      - slug: riesgo-existencial-ia-bostrom-ord-russell
+      - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+      - slug: escepticos-riesgo-existencial-ia-argumentos
   - title: Debates para el Aula
     description: >-
       Artículos que generan discusión. Posiciones claras, datos
@@ -226,6 +255,26 @@ sections:
       - slug: quien-responde-fraude-autorizado
         tag: debate
       - slug: disney-tiktok-trampa-oficializar-fan-edit
+        tag: debate
+      - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+        tag: debate
+      - slug: riesgo-existencial-ia-bostrom-ord-russell
+        tag: debate
+      - slug: escepticos-riesgo-existencial-ia-argumentos
+        tag: debate
+      - slug: danos-actuales-ia-crawford-gebru-bender-vallor
+        tag: debate
+      - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+        tag: debate
+      - slug: entiende-la-ia-searle-dreyfus-bender-simbolos
+        tag: debate
+      - slug: conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral
+        tag: debate
+      - slug: condicion-humana-ia-arendt-han-harari-sentido
+        tag: debate
+      - slug: debate-futuro-ia-coincidencias-choques
+        tag: debate
+      - slug: que-importa-que-es-marketing-debate-ia
         tag: debate
   - title: Casos de Estudio
     description: >-
@@ -276,6 +325,24 @@ sections:
         tag: caso
       - slug: cuanto-cuesta-espiar-hoy
         tag: caso
+      - slug: anthropic-se-autocalifico-en-ciencia
+        tag: caso
+      - slug: el-prompt-no-murio-la-industria-aprendio-a-delegar
+        tag: caso
+      - slug: aduana-comercio-ia-quien-decide-quien-entra
+        tag: caso
+      - slug: chatbot-se-equivoco-formato-lo-volvio-inteligencia
+        tag: caso
+      - slug: ia-hackeo-gobierno-pregunta-aburrida
+        tag: caso
+      - slug: contrabando-chips-ia-como-se-cuelan-a-china
+        tag: caso
+      - slug: algoritmo-te-pregunta-que-quieres-y-no-te-cree
+        tag: caso
+      - slug: pantalla-del-hogar-reconoce-quien-eres-y-quien-no
+        tag: caso
+      - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
+        tag: caso
   - title: Perspectiva LATAM
     description: >-
       Para docentes que enseñan tecnología desde América Latina — con
@@ -297,6 +364,7 @@ sections:
       - slug: doom-loop-midieron-como-rompian-la-web
       - slug: quien-responde-cuando-ia-hackea-hugging-face
       - slug: cuanto-cuesta-espiar-hoy
+      - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
   - title: Guías de Uso Práctico
     description: >-
       Para integrar IA en el trabajo docente y en procesos educativos — sin

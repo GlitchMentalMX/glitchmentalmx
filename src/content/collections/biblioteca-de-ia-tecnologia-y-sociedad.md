@@ -9,7 +9,7 @@ description: >-
   está pasando detrás: quién tiene el poder, quién lo pierde y qué queda fuera
   de la conversación pública.
 intro: >-
-  Ciento siete artículos organizados en diez secciones, de fundamentos a
+  Ciento veintisiete artículos organizados en diez secciones, de fundamentos a
   geopolítica. No hace falta leerlos en orden ni todos de un jalón: cada
   sección funciona sola. Si es tu primera visita, empieza por la ruta
   recomendada de abajo — son los textos que dan el contexto que el resto da
@@ -122,6 +122,26 @@ postSlugs:
   - disney-tiktok-trampa-oficializar-fan-edit
   - idioma-ia-opacidad-auditoria
   - quien-responde-cuando-ia-hackea-hugging-face
+  - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+  - riesgo-existencial-ia-bostrom-ord-russell
+  - escepticos-riesgo-existencial-ia-argumentos
+  - largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+  - entiende-la-ia-searle-dreyfus-bender-simbolos
+  - conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral
+  - debate-futuro-ia-coincidencias-choques
+  - danos-actuales-ia-crawford-gebru-bender-vallor
+  - condicion-humana-ia-arendt-han-harari-sentido
+  - que-importa-que-es-marketing-debate-ia
+  - el-prompt-no-murio-la-industria-aprendio-a-delegar
+  - chatbot-se-equivoco-formato-lo-volvio-inteligencia
+  - anthropic-se-autocalifico-en-ciencia
+  - pantalla-del-hogar-reconoce-quien-eres-y-quien-no
+  - deprecado-novela-creadores-inteligencia-artificial
+  - aduana-comercio-ia-quien-decide-quien-entra
+  - algoritmo-te-pregunta-que-quieres-y-no-te-cree
+  - ia-hackeo-gobierno-pregunta-aburrida
+  - contrabando-chips-ia-como-se-cuelan-a-china
+  - cancelar-cuesta-mas-que-contratar-patron-oscuro
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -144,6 +164,22 @@ sections:
         tag: ancla
       - slug: el-problema-del-control-humano-en-ia-autonoma
       - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
+      - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
+        tag: serie
+      - slug: riesgo-existencial-ia-bostrom-ord-russell
+        tag: serie
+      - slug: escepticos-riesgo-existencial-ia-argumentos
+        tag: serie
+      - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+        tag: serie
+      - slug: entiende-la-ia-searle-dreyfus-bender-simbolos
+        tag: serie
+      - slug: conciencia-ia-chalmers-birch-schwitzgebel-estatus-moral
+        tag: serie
+      - slug: debate-futuro-ia-coincidencias-choques
+        tag: serie
+      - slug: el-prompt-no-murio-la-industria-aprendio-a-delegar
+      - slug: chatbot-se-equivoco-formato-lo-volvio-inteligencia
   - title: Crítica e Impacto Social de la IA
     description: >-
       Cómo la IA afecta la cognición, las relaciones y el poder — más allá
@@ -164,6 +200,13 @@ sections:
       - slug: tu-voz-ya-no-es-tuya-biometria-banca-rota
         tag: serie
       - slug: necesitas-detox-de-ia-test-habitos
+      - slug: danos-actuales-ia-crawford-gebru-bender-vallor
+        tag: serie
+      - slug: condicion-humana-ia-arendt-han-harari-sentido
+        tag: serie
+      - slug: que-importa-que-es-marketing-debate-ia
+        tag: serie
+      - slug: anthropic-se-autocalifico-en-ciencia
   - title: Privacidad y Vigilancia
     description: Lo que cedes cuando usas tecnología, quién lo recibe y para qué.
     posts:
@@ -182,6 +225,7 @@ sections:
         tag: serie
       - slug: la-memoria-que-acumulo-la-ia-sobre-ti-no-tiene-dueno
       - slug: cuanto-cuesta-espiar-hoy
+      - slug: pantalla-del-hogar-reconoce-quien-eres-y-quien-no
   - title: Trabajo y Automatización
     description: >-
       Qué empleos cambian, cuáles desaparecen y qué no te va a decir
@@ -210,6 +254,7 @@ sections:
         tag: serie
       - slug: pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado
       - slug: el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas
+      - slug: deprecado-novela-creadores-inteligencia-artificial
   - title: Plataformas y Algoritmos
     description: Cómo funcionan los sistemas que deciden lo que ves, sientes y decides.
     posts:
@@ -233,6 +278,8 @@ sections:
       - slug: doom-loop-midieron-como-rompian-la-web
       - slug: agente-ia-va-de-compras-quien-pierde-negocio
       - slug: disney-tiktok-trampa-oficializar-fan-edit
+      - slug: aduana-comercio-ia-quien-decide-quien-entra
+      - slug: algoritmo-te-pregunta-que-quieres-y-no-te-cree
   - title: Desinformación
     description: >-
       Cómo se fabrica, distribuye y monetiza la información falsa en la era
@@ -276,6 +323,9 @@ sections:
         tag: serie
       - slug: idioma-ia-opacidad-auditoria
       - slug: quien-responde-cuando-ia-hackea-hugging-face
+      - slug: ia-hackeo-gobierno-pregunta-aburrida
+      - slug: contrabando-chips-ia-como-se-cuelan-a-china
+      - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
   - title: Tecnología y Cuerpo
     description: >-
       Cuando la biología deja de ser un límite fijo y se convierte en
@@ -310,6 +360,7 @@ sections:
       - slug: solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando
         tag: serie
       - slug: el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla
+      - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
   - title: Historia y Contexto
     description: >-
       De dónde viene la tecnología que usamos — sin entender el pasado, el
