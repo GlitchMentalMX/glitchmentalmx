@@ -14,7 +14,7 @@ GitHub Desktop. Las herramientas/fichas NUEVAS no se crean solas: se reportan.
 | glitch-rev-nucleo | día 17 de cada mes | NÚCLEO volátil de Precios IA + Precios Digitales (pesos) + Prueba gratis (listas abajo) |
 | glitch-rev-estables | día 14 de ene/abr/jul/oct | Precios IA + Digitales y Prueba gratis, SOLO fichas fuera del núcleo |
 | glitch-rev-entrena | día 20 de ene/abr/jul/oct | /revision-entrena-ia (79 fichas) |
-| glitch-rev-sitio | día 24 de ene/abr/jul/oct | Recomendador, Y ahora qué hago, Detox, chequeo de URLs `sitioOficial` |
+| glitch-rev-sitio | día 24 de ene/abr/jul/oct | Recomendador, Y ahora qué hago, Detox, Calculadora de Riesgo IA, chequeo de URLs `sitioOficial` |
 
 ## NÚCLEO Precios IA (ids de cuanto-cuesta-<id>-hoy.md)
 
