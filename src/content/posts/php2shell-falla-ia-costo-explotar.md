@@ -1,12 +1,12 @@
 ---
 title: 'PHP2Shell: la falla que la IA volvió barata de explotar'
 category: Inteligencia Artificial
-pubDate: 2026-10-25T14:32
+pubDate: 2026-10-27T05:37
 updatedDate: ''
 description: 'PHP2Shell prueba que la IA abarató explotar fallas viejas: qué se pierde, qué no se sabe y qué deja abierto la divulgación coordinada.'
 heroImage: /images/uploads/php-falla.webp
 heroImageAlt: Prueba de explotación de una vulnerabilidad PHP2Shell en software heredado con análisis asistido por IA y un servidor bajo evaluación de seguridad.
-draft: true
+draft: false
 ---
 
 **PHP2Shell** deja una lección incómoda: una vulnerabilidad es una apuesta económica, y la IA bajó el precio de explotarla. Lo escaso nunca fue encontrar la falla, sino armar la cadena de pasos que la convierte en ataque.
