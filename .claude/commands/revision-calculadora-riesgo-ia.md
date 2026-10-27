@@ -7,9 +7,8 @@ description: Revisión trimestral de la Calculadora de Riesgo IA — verifica la
 Página: src/pages/calculadora-de-riesgo-de-reemplazo-por-ia/index.astro
 URL pública: /calculadora-de-riesgo-de-reemplazo-por-ia/ (sin año a propósito: es
 un recurso evergreen; NUNCA le pongas año al slug ni al canonical).
-Fecha de revisión: src/data/calculadora-riesgo-ia.json → lastReviewed
-(alimenta el "Última revisión" visible, la FAQ y el lastmod del sitemap vía
-astro.config.mjs).
+Fechas: src/data/calculadora-riesgo-ia.json → lastReviewed (visible) y
+lastUpdated (sitemap); ver sección "Fechas" más abajo.
 
 Este comando tiene tres niveles de riesgo distintos en un mismo run:
 - Cifra ya citada con fuente primaria verificada, año de edición, enlaces
@@ -90,13 +89,19 @@ el tráfico de la calculadora crezca (revisa /stats/ si Jorge lo menciona).
 3. Huecos de cobertura: áreas profesionales o regiones que falten y que la
    evidencia o el tráfico justifiquen. Propuesta con evidencia, sin implementar.
 
-## Cuándo se toca lastReviewed
+## Fechas (src/data/calculadora-riesgo-ia.json)
 
-Solo si la Parte 1 o la Parte 2 cambiaron algo sustantivo (una cifra, una
-fuente o el año de edición). Entonces actualiza
-src/data/calculadora-riesgo-ia.json → lastReviewed (YYYY-MM-DD de hoy). Si no
-hubo cambios, NO toques la fecha: no se "actualiza" para simular frescura sin
-sustancia. Un cambio solo de Parte 3 (propuesta pendiente) tampoco la mueve.
+Son dos campos con significado distinto; la página muestra al lector solo
+"Revisada en [mes año] · Actualizada en [mes año]" (o "Revisada y actualizada
+en [mes año]" si coinciden):
+- `lastReviewed` (YYYY-MM-DD): se mueve a la fecha de hoy en CADA corrida
+  completa de este comando, haya o no cambios — verificar que todo sigue
+  vigente es información real. Solo si la corrida se interrumpió antes de
+  verificar las fuentes, no se mueve.
+- `lastUpdated` (YYYY-MM-DD): se mueve a hoy SOLO si cambió contenido (una
+  cifra, una fuente, el año de edición). Alimenta el lastmod del sitemap y
+  modifiedTime; no se "actualiza" para simular cambios. Un hallazgo de
+  Parte 3 pendiente de aprobación tampoco la mueve.
 
 ## Reglas
 

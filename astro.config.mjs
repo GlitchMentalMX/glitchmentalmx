@@ -108,7 +108,7 @@ try {
   const calculadora = JSON.parse(
     readFileSync(new URL('./src/data/calculadora-riesgo-ia.json', import.meta.url), 'utf-8')
   );
-  fechaCalculadoraRiesgo = new Date(`${calculadora.lastReviewed}T12:00:00Z`);
+  fechaCalculadoraRiesgo = new Date(`${calculadora.lastUpdated}T12:00:00Z`);
 } catch {
   // Igual que el resto: si falta el archivo, se omite el lastmod.
 }

@@ -4,7 +4,6 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
-import { formatDate } from '../../lib/format';
 import calculadoraData from '../../data/calculadora-riesgo-ia.json';
 
 const title = '¿La IA te va a quitar el trabajo? Calculadora gratis';
@@ -13,14 +12,19 @@ const description =
 const canonicalPath = '/calculadora-de-riesgo-de-reemplazo-por-ia/';
 const toolImage = '/images/herramientas/calculadora-riesgo-reemplazo-ia.png';
 
-// Fecha de última revisión de contenido de esta página (intro, FAQ, enlaces
-// internos) — no del cálculo en sí, que no cambia. Vive en un JSON aparte
-// (src/data/calculadora-riesgo-ia.json) en vez de hardcodeada aquí porque
-// astro.config.mjs también la necesita para el lastmod del sitemap — un
-// solo lugar que actualizar a mano cada vez que se revise el contenido,
-// mismo principio de frescura que la fecha de Banxico en Precios de IA,
-// pero aquí no hay feed diario que la actualice sola.
+// Dos fechas distintas, en src/data/calculadora-riesgo-ia.json (a mano):
+// lastUpdated = último cambio real de contenido (alimenta el lastmod del
+// sitemap vía astro.config.mjs y modifiedTime); lastReviewed = última vez
+// que se verificó contra las fuentes, aunque no haya cambiado nada. Solo
+// lastReviewed se muestra al lector, en mes y año.
+const lastUpdated = new Date(`${calculadoraData.lastUpdated}T12:00:00-06:00`);
 const lastReviewed = new Date(`${calculadoraData.lastReviewed}T12:00:00-06:00`);
+const mesAnio = (d: Date) =>
+  d.toLocaleDateString('es-MX', { month: 'long', year: 'numeric', timeZone: 'America/Mexico_City' });
+const reviewedLabel =
+  mesAnio(lastReviewed) === mesAnio(lastUpdated)
+    ? `Revisada y actualizada en ${mesAnio(lastReviewed)}`
+    : `Revisada en ${mesAnio(lastReviewed)} · Actualizada en ${mesAnio(lastUpdated)}`;
 
 // Mismo lote curado a mano que ya usa /articulos/[slug].astro para decidir
 // qué artículos muestran la tarjeta de la calculadora en su footer — aquí
@@ -74,7 +78,7 @@ const faqs = [
   },
   {
     q: '¿Cada cuánto se actualiza esta calculadora?',
-    a: `Se revisa cuando cambian las tendencias documentadas en las que se basa, no en un ciclo fijo. Última revisión de contenido: ${formatDate(lastReviewed)}.`,
+    a: `Se revisa cada trimestre y, además, cuando se publica un informe importante de la OIT, el FMI o el Foro Económico Mundial. ${reviewedLabel}.`,
   },
 ];
 
@@ -113,7 +117,7 @@ const faqSchema = {
   title={title}
   description={description}
   image={toolImage}
-  modifiedTime={lastReviewed}
+  modifiedTime={lastUpdated}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
   locale="es_MX"
 >
@@ -251,7 +255,7 @@ const faqSchema = {
       <div class="badges-row">
         <span>🔒 100% Anónimo</span><span>•</span><span>⚡ Sin registros</span>
       </div>
-      <p class="last-reviewed">Última revisión: {formatDate(lastReviewed)}.</p>
+      <p class="last-reviewed">{reviewedLabel}.</p>
       <p class="disclaimer">
         Este diagnóstico es orientativo. Los niveles de riesgo se basan en tendencias documentadas por
         investigadores de automatización (Frey &amp; Osborne, McKinsey Global Institute, Foro Económico Mundial),
