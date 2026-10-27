@@ -304,13 +304,27 @@ const faqSchema = {
       El diagnóstico cruza tu país, tu área, tu formación y tus años de experiencia contra
       tendencias documentadas por Frey &amp; Osborne (Oxford), McKinsey Global Institute y el Foro
       Económico Mundial —no es una sentencia, no es un horóscopo—. La velocidad de adopción de IA
-      no es la misma en todos lados, y el resultado ajusta el riesgo según tu región. En México, por
-      ejemplo, el Área de Estudios Económicos de Banamex calcula que cerca del <strong>30% de los
-      empleos formales</strong> enfrenta un riesgo alto de automatización en las próximas dos
-      décadas, con datos del INEGI y la OIT de por medio. Más contexto y fuentes en <a
-        href="/articulos/ia-y-empleos-en-mexico-el-golpe-ya-empezo/">IA y empleos en México: el golpe
-        ya empezó</a>.
+      no es la misma en todos lados, y el resultado ajusta el riesgo según tu región. Tres
+      referencias para ubicarte:
     </p>
+    <ul class="region-facts">
+      <li>
+        <strong>México.</strong> Cerca del 30% de los empleos formales enfrenta un riesgo alto de
+        automatización en las próximas dos décadas (Banamex, con datos del INEGI y la OIT).{' '}
+        <a href="/articulos/ia-y-empleos-en-mexico-el-golpe-ya-empezo/">IA y empleos en México: el golpe ya empezó</a>.
+      </li>
+      <li>
+        <strong>España.</strong> El 32% de los trabajadores ya usa IA en su día a día y el 29% de
+        ellos lo hace sin que su empresa lo sepa (InfoJobs).{' '}
+        <a href="/articulos/1-de-cada-3-trabajadores-ya-usa-ia-en-espana-el-futuro-del-trabajo-esta-aqui/">1 de cada 3 trabajadores ya usa IA en España</a>.
+      </li>
+      <li>
+        <strong>En el mundo.</strong> Casi el 40% del empleo global está expuesto a la IA, y llega a
+        cerca del 60% en economías avanzadas como las de Europa Occidental, EE.UU. y Canadá (FMI).
+        Exposición no es despido: en torno a la mitad de esos empleos podría salir ganando con la
+        IA, y la otra mitad enfrenta presión a la baja.
+      </li>
+    </ul>
   </section>
 
   <section class="container intro">
@@ -682,6 +696,20 @@ const faqSchema = {
   .intro p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.7; margin: 0 0 18px; }
   .intro p:last-child { margin-bottom: 0; }
   .intro strong { color: var(--text); }
+  .intro a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--prose-link-line);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+    transition: text-decoration-color .15s ease;
+  }
+  .intro a:hover { text-decoration-color: var(--accent); }
+  .region-facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .region-facts li {
+    color: var(--text-muted); font-size: 1rem; line-height: 1.65;
+    padding-left: 14px; border-left: 2px solid var(--prose-link-line);
+  }
 
   .related { padding: 16px 24px 56px; max-width: 900px; }
   .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }
