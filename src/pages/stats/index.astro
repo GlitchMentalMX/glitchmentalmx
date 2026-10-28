@@ -40,11 +40,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 
       <p id="loading" class="hint">Cargando…</p>
       <div id="content" hidden>
-        <section class="block live-block">
-          <h2>Ahora mismo <span class="live-dot" aria-hidden="true"></span></h2>
-          <p class="hint" id="live-summary">—</p>
-          <div id="table-live"></div>
-        </section>
 
         <section class="cards">
           <div class="card">
@@ -242,13 +237,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     container.appendChild(table);
   }
 
-  function renderLive(live) {
-    const n = live.visitors || 0;
-    document.getElementById('live-summary').textContent =
-      n === 0 ? 'Nadie leyendo en este momento (últimos 90 s).' : n + (n === 1 ? ' persona leyendo' : ' personas leyendo') + ' (últimos 90 s).';
-    renderTable(document.getElementById('table-live'), live.pages, 'path', 'visitors');
-  }
-
   const SOURCE_LABELS = { busqueda: 'Búsqueda', social: 'Redes sociales', referral: 'Referral', directo: 'Directo', interno: 'Navegación interna' };
   const DEVICE_LABELS = { desktop: 'Escritorio', mobile: 'Móvil', tablet: 'Tablet' };
   const PLACEMENT_LABELS = { footer: 'Footer', 'article-end': 'Fin de artículo', 'dato-incomodo': 'Dato Incómodo' };
@@ -281,7 +269,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       ? 'Calculado sobre ' + fmt(eg.measured) + ' de ' + fmt(data.totals.views) + ' vistas (solo cuenta el tiempo con la pestaña visible; ' + fmt(eg.under_10s) + ' se fueron en menos de 10 s). Las vistas anteriores a esta medición no entran.'
       : 'Todavía no hay vistas con tiempo medido en este rango.';
 
-    renderLive(data.live);
     const d = data.directo;
     document.getElementById('directo-summary').textContent =
       fmt(d.views) + ' vistas sin origen identificable (sin contar navegación interna ni apps de redes). Tiempo medio: ' + fmtDuration(d.avg_duration) + '.';
@@ -329,16 +316,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       refreshBtn.disabled = false;
     }
   }
-
-  // Refresca solo el bloque "Ahora" cada 60 s mientras la pestaña esté visible.
-  setInterval(async () => {
-    const token = sessionStorage.getItem(STORAGE_KEY);
-    if (!token || dashboard.hidden || content.hidden || document.visibilityState !== 'visible') return;
-    try {
-      const res = await fetch(`${WORKER_URL}/stats?live=1`, { headers: { Authorization: `Bearer ${token}` } });
-      if (res.ok) renderLive((await res.json()).live);
-    } catch (e) {}
-  }, 60000);
 
   function showGate(message) {
     dashboard.hidden = true;
@@ -426,7 +403,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   .wrap .card-value { font-size: 1.7rem; font-weight: 700; font-family: var(--font-display); margin: 0; }
 
   .wrap .cards-3 { grid-template-columns: repeat(3, 1fr); margin-bottom: 12px; }
-  .wrap .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-left: 6px; vertical-align: middle; }
   .wrap .block h3 { font-size: 0.92rem; margin: 22px 0 8px; color: var(--text-muted); }
   .wrap .stats-table th { text-align: left; font-weight: 400; font-size: 0.78rem; color: var(--text-faint); padding: 6px 4px; font-family: var(--font-mono); }
   .wrap .stats-table th.col-value { text-align: right; }

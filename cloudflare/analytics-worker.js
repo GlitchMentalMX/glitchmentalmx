@@ -37,11 +37,6 @@ const SOCIAL_HOST_RE =
 // day/hour se guardan en esta hora local, no en UTC, para que "Vistas por
 // día" coincida con el calendario real de Jorge en vez de desfasarse hasta
 // 6 horas cerca de la medianoche.
-// Las consultas "Ahora" filtran primero por ts (indexado) en vez de escanear
-// toda la tabla: la duración se topa en 1800 s, así que una vista activa
-// nunca tiene ts más viejo que ~30 min. Sin esto cada sondeo lee TODAS las filas.
-const LIVE_TS_WINDOW = 2000;
-
 const MX_OFFSET_MS = 6 * 60 * 60 * 1000;
 
 function mxDay(date) {
@@ -239,29 +234,6 @@ async function handleStats(request, env, url, matchedOrigin) {
   const now = new Date();
   const nowTs = Math.floor(now.getTime() / 1000);
 
-  // Consulta ligera solo para el bloque "Ahora" (el panel la repite cada 30 s
-  // sin recargar el resto de las consultas).
-  if (url.searchParams.get('live') === '1') {
-    try {
-      const [liveNow, livePages] = await Promise.all([
-        env.DB.prepare(
-          'SELECT COUNT(DISTINCT visitor_hash) AS visitors FROM hits WHERE is_bot = 0 AND ts >= ? AND COALESCE(last_seen, ts) >= ?'
-        )
-          .bind(nowTs - LIVE_TS_WINDOW, nowTs - 90)
-          .first(),
-        env.DB.prepare(
-          `SELECT path, COUNT(DISTINCT visitor_hash) AS visitors FROM hits
-           WHERE is_bot = 0 AND ts >= ? AND COALESCE(last_seen, ts) >= ? GROUP BY path ORDER BY visitors DESC LIMIT 15`
-        )
-          .bind(nowTs - LIVE_TS_WINDOW, nowTs - 90)
-          .all(),
-      ]);
-      return json({ live: { visitors: liveNow?.visitors || 0, pages: livePages.results || [] } }, 200, matchedOrigin);
-    } catch (e) {
-      return json({ error: 'Error leyendo la base de datos', detail: String(e) }, 500, matchedOrigin);
-    }
-  }
-
   // "1h" es la única ventana móvil que queda. Todo lo demás es un corte de
   // calendario real en hora de Ciudad de México: "hoy"/"semana"/"mes" van
   // desde el inicio del período hasta ahora (siguen sumando y se reinician
@@ -308,8 +280,6 @@ async function handleStats(request, env, url, matchedOrigin) {
       eventTotals,
       preferredSourceByPlacement,
       engagement,
-      liveNow,
-      livePages,
       directoPages,
       directoDevices,
       directoTotals,
@@ -388,18 +358,6 @@ async function handleStats(request, env, url, matchedOrigin) {
       )
         .bind(sinceTs, untilTs)
         .first(),
-      // "Ahora": visitas con actividad en los últimos 90 s (latido cada 30 s).
-      env.DB.prepare(
-        'SELECT COUNT(DISTINCT visitor_hash) AS visitors FROM hits WHERE is_bot = 0 AND ts >= ? AND COALESCE(last_seen, ts) >= ?'
-      )
-        .bind(nowTs - LIVE_TS_WINDOW, nowTs - 90)
-        .first(),
-      env.DB.prepare(
-        `SELECT path, COUNT(DISTINCT visitor_hash) AS visitors FROM hits
-         WHERE is_bot = 0 AND ts >= ? AND COALESCE(last_seen, ts) >= ? GROUP BY path ORDER BY visitors DESC LIMIT 15`
-      )
-        .bind(nowTs - LIVE_TS_WINDOW, nowTs - 90)
-        .all(),
       // "Directo" real: sin referrer y sin ser navegación interna.
       env.DB.prepare(
         `SELECT path, COUNT(*) AS views, ROUND(AVG(duration)) AS avg_duration, ROUND(AVG(scroll)) AS avg_scroll
@@ -445,7 +403,6 @@ async function handleStats(request, env, url, matchedOrigin) {
           read_30s: engagement?.read_30s || 0,
           under_10s: engagement?.under_10s || 0,
         },
-        live: { visitors: liveNow?.visitors || 0, pages: livePages.results || [] },
         directo: {
           views: directoTotals?.views || 0,
           avg_duration: directoTotals?.avg_duration ?? null,
