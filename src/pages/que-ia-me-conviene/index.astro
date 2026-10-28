@@ -13,23 +13,19 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
+import { ALIAS_ENTRENA_IA } from '../../data/alias-entrena-ia';
+import { SUBPREGUNTAS_BASE } from '../../data/subpreguntas-recomendador';
 
-const [tabla, precios, entrena] = await Promise.all([
+const [tabla, precios, entrena, pruebaGratisSerie, estudiantesSerie] = await Promise.all([
   getCollection('herramientasIA'),
   getCollection('preciosIA', ({ data }) => !data.draft),
   getCollection('entrenaIA', ({ data }) => !data.draft),
+  getCollection('pruebaGratis', ({ data }) => !data.draft),
+  getCollection('estudiantes', ({ data }) => !data.draft),
 ]);
 
 const capacidades = tabla[0]?.data.herramientas ?? [];
 
-// La serie "Quién entrena con tus datos" ya cubre Grok y Meta AI, pero bajo
-// un herramientaId propio de esa serie ("x-grok", "meta-ai-app") distinto al
-// que usa precios-ia/esta taxonomía ("grok", "meta-ai") — decisión editorial
-// anterior para distinguir matices (X vs. Grok, la app standalone vs. las
-// integraciones en Facebook/Instagram/WhatsApp/Messenger). Sin este alias,
-// el recomendador mostraría "sin verificar" para dos herramientas que sí
-// tienen artículo — y escribir uno nuevo hubiera sido contenido duplicado.
-const ALIAS_ENTRENA_IA: Record<string, string> = { grok: 'x-grok', 'meta-ai': 'meta-ai-app' };
 
 const TOOLS = capacidades.map((cap) => {
   const precio = precios.find((p) => p.data.herramientaId === cap.herramientaId);
@@ -38,6 +34,9 @@ const TOOLS = capacidades.map((cap) => {
   return {
     id: cap.herramientaId,
     nombre: precio?.data.herramienta ?? priv?.data.herramienta ?? cap.herramientaId,
+    tipo: cap.tipo ?? 'generalista',
+    especialidad: cap.especialidad ?? null,
+    subusos: (cap.subusos ?? {}) as Record<string, 'no' | 'basico' | 'fuerte'>,
     cap: {
       escritura: cap.escritura,
       investigacion: cap.investigacion,
@@ -58,11 +57,21 @@ const TOOLS = capacidades.map((cap) => {
   };
 });
 
-const nombresTools = TOOLS.map((t) => t.nombre);
-const listaTools =
-  nombresTools.length > 1
-    ? `${nombresTools.slice(0, -1).join(', ')} y ${nombresTools[nombresTools.length - 1]}`
-    : nombresTools.join('');
+const totalGeneralistas = TOOLS.filter((t) => t.tipo === 'generalista').length;
+const totalEspecialistas = TOOLS.length - totalGeneralistas;
+
+// Preguntas condicionales: afinan el uso que el usuario eligió para separar
+// a los especialistas de los generalistas sin alargar el quiz para todos.
+// La plantilla vive en src/data/subpreguntas-recomendador.ts (compartida con
+// las fichas), pero SOLO se muestra una opción si al menos
+// una herramienta tiene ese subuso verificado en el JSON (y una pregunta
+// solo si le quedan 2+ opciones) — así la interfaz nunca ofrece algo que
+// los datos no pueden distinguir.
+const SUBPREGUNTAS = SUBPREGUNTAS_BASE.map((s) => ({
+  uso: s.uso,
+  pregunta: s.pregunta,
+  opciones: s.opciones.filter((o) => TOOLS.some((t) => t.subusos[o.valor] !== undefined)),
+})).filter((s) => s.opciones.length >= 2);
 
 const modifiedTime = capacidades.reduce(
   (max, c) => {
@@ -73,15 +82,33 @@ const modifiedTime = capacidades.reduce(
 );
 
 const title = '¿Qué IA me conviene?';
-const description =
-  "Responde unas preguntas y comparamos las herramientas de IA contra lo que tú necesitas — no contra cuál es 'la mejor'. Recomendación personalizada, transparente y con fuente.";
+// Título y descripción con el conteo real (se actualiza solo al crecer el
+// JSON) y con lo que distingue a esta herramienta: no es un top 10, cubre
+// chats generales y especialistas, y dice por qué recomienda cada cosa.
+const tituloPagina = `¿Qué IA me conviene? Compara ${TOOLS.length} herramientas de IA`;
+const description = `Compara ${TOOLS.length} herramientas de IA, de chats generales a especialistas en papers, imágenes y video, con 4 preguntas. Gratis, sin registro y con la razón de cada resultado.`;
 const canonicalPath = '/que-ia-me-conviene/';
 
 // Preguntas frecuentes: mismo criterio que el resto del sitio — solo lo que
 // podemos verificar hoy, citando la fuente. Nada de "la mejor IA es X" sin
-// matiz; cuando la evidencia está pareja (imágenes) o no la encontramos
-// (español entre las 3 grandes), se dice así en vez de inventar un ganador.
-const faqs = [
+// matiz. Las respuestas que dependen de las series del sitio (gratis,
+// estudiantes) se arman desde esas colecciones: así no se desfasan cuando
+// una serie cambia un veredicto.
+const nombreDe = (id: string) => TOOLS.find((t) => t.id === id)?.nombre ?? id;
+const lista = (nombres: string[]) =>
+  nombres.length > 1 ? `${nombres.slice(0, -1).join(', ')} y ${nombres[nombres.length - 1]}` : nombres.join('');
+const porVeredicto = (coleccion: { data: { herramientaId: string; veredicto: string } }[], veredicto: string) =>
+  TOOLS.filter((t) => coleccion.find((p) => p.data.herramientaId === t.id)?.data.veredicto === veredicto).map(
+    (t) => t.nombre
+  );
+
+const sinTarjeta = porVeredicto(pruebaGratisSerie, 'verde');
+const dependenPrueba = porVeredicto(pruebaGratisSerie, 'amarillo');
+const estudiantesVerde = porVeredicto(estudiantesSerie, 'verde');
+const estudiantesAmarillo = porVeredicto(estudiantesSerie, 'amarillo');
+const estudiantesRojo = porVeredicto(estudiantesSerie, 'rojo');
+
+const faqs: { q: string; a: string; fuente?: { texto: string; url: string } }[] = [
   {
     q: '¿Qué IA es mejor para escribir?',
     a: 'No hay una sola "mejor" — depende de la tarea. En una prueba ciega independiente con 134 participantes (no es un estudio académico ni nuestro — tómalo como una señal, no una verdad absoluta), Claude ganó 4 de 8 rondas, incluida la de simplificación (71% de los votos) y una de escritura creativa (62%); ChatGPT ganó la ronda de análisis estratégico de negocio (53%); Gemini ganó 3 de 8 rondas, descrito ahí como "el generalista que nunca es la peor opción" — el artículo no explica por qué ganó esas rondas específicas. Usa el recomendador de arriba para ver tu compatibilidad exacta según lo que vas a escribir.',
@@ -92,11 +119,15 @@ const faqs = [
   },
   {
     q: '¿Qué IA usar para programar?',
-    a: 'Según el leaderboard de SWE-bench Verified, Claude encabeza con modelos por encima del 95% (Opus 5), con GPT-5.6 muy cerca (~96%) y Gemini más abajo (~87% con Grok 4.5 en ese rango). Ojo: existen dos formas de medir esto — el número que reporta cada empresa con su propio scaffold, y el de un tercero independiente (Scale AI, scaffold estandarizado), y pueden diferir 15-30 puntos entre sí, así que trátalo como una referencia de qué tan cerca están, no una cifra exacta. DeepSeek es la sorpresa aparte: su modelo R1 compite arriba en benchmarks de código a una fracción del precio de los otros. Y si programas todos los días dentro de un editor, GitHub Copilot sigue siendo la opción dedicada, integrada directo en VS Code y JetBrains, en vez de un chat de propósito general.',
+    a: 'En el leaderboard de SWE-bench Verified de BenchLM (actualizado el 27 de octubre de 2026, con 112 modelos), los tres primeros lugares son de Claude —Opus 5 con 96%, Mythos 5 con 95.5% y Fable 5 con 95%—, el mejor modelo de OpenAI de esa tabla, GPT-5.3 Codex, queda noveno con 85%, y ningún modelo de Gemini aparece entre los diez primeros. Ojo: la propia página advierte que ese benchmark está "contaminado y saturado" y que los puntajes reportados por cada empresa pueden usar agentes y presupuestos distintos, así que tómalo como una señal de quién está arriba, no como una tabla exacta. Si programas todos los días dentro de un editor, GitHub Copilot y Kimi Code son herramientas de programación dedicadas, no un chat de propósito general.',
+    fuente: {
+      texto: 'Fuente: leaderboard SWE-bench Verified, BenchLM, consultado el 27 de octubre de 2026',
+      url: 'https://benchlm.ai/benchmarks/sweVerified',
+    },
   },
   {
     q: 'ChatGPT o Claude, ¿cuál elegir?',
-    a: 'Depende de para qué. Para código, Claude tiene ventaja medible en los leaderboards públicos de SWE-bench, aunque el margen exacto varía según quién corrió la prueba. Para escribir, en una prueba ciega independiente de 134 participantes, Claude ganó más rondas que ChatGPT —incluida una de escritura creativa—, pero ChatGPT ganó la ronda de análisis estratégico de negocio: no es que uno "escriba mejor" en general, ganan en tareas distintas. Para imágenes, ChatGPT tiende a ganar en realismo según pruebas comparativas. Para privacidad, ninguno gana: ambos entrenan con tus datos por default hoy, según nuestra serie de privacidad verificada. Corre el recomendador de arriba con tu caso específico para un número, no una opinión.',
+    a: 'Depende de para qué. Para código, Claude tiene ventaja medible en los leaderboards públicos de SWE-bench, aunque el margen exacto varía según quién corrió la prueba. Para escribir, en una prueba ciega independiente de 134 participantes, Claude ganó más rondas que ChatGPT —incluida una de escritura creativa—, pero ChatGPT ganó la ronda de análisis estratégico de negocio: no es que uno "escriba mejor" en general, ganan en tareas distintas. Para imágenes, ChatGPT tiende a ganar en realismo según pruebas comparativas, y Claude no genera imágenes. Para privacidad, ninguno gana: ambos entrenan con tus datos por default hoy, según nuestra serie de privacidad verificada. Corre el recomendador de arriba con tu caso específico para un número, no una opinión.',
     fuente: {
       texto: 'Fuente de la prueba de escritura: Product with Attitude, 22 de febrero de 2026',
       url: 'https://aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared',
@@ -104,19 +135,39 @@ const faqs = [
   },
   {
     q: '¿Cuál es la mejor IA gratis?',
-    a: 'Las once que cubrimos aquí tienen alguna versión gratuita, pero con matices grandes: DeepSeek y Meta AI son gratis sin ningún plan de pago para el público general en México, mientras que el resto sí vende un plan de pago y ninguna ofrece un período de prueba de ese plan sin pedir tarjeta — lo verificamos herramienta por herramienta en nuestra serie "Prueba gratis sin tarjeta". Gratis y sin compromiso no son lo mismo.',
+    a: `Depende de qué entiendas por gratis, y casi nunca es lo mismo que "sin tarjeta". Según nuestra serie "Prueba gratis sin tarjeta" (verificada herramienta por herramienta para México), ${lista(sinTarjeta) || 'Ninguna'} se pueden empezar a usar sin tarjeta${
+      dependenPrueba.length ? `; ${lista(dependenPrueba)} dependen del plan, la región o la promoción` : ''
+    }. En las demás, probar el plan de pago pide tarjeta desde el inicio o simplemente no se ofrece, aunque tengan un nivel gratuito limitado. DeepSeek y Meta AI, además, no tienen plan de pago para el público general en México, según nuestra serie de precios.`,
+    fuente: { texto: 'Serie: Prueba gratis sin tarjeta', url: '/prueba-gratis-sin-tarjeta/' },
   },
   {
     q: '¿Cuál es la mejor IA para estudiantes?',
-    a: 'No la medimos como categoría propia porque depende de la materia y la tarea, no de ser estudiante. Sí verificamos programas oficiales de descuento para estudiantes universitarios: Gemini (año gratis o con descuento), Perplexity (plan educativo al 50%) y GitHub Copilot (acceso gratis real para estudiantes verificados). Para elegir cuál conviene académicamente, corre el recomendador según lo que vas a hacer: investigar, escribir o programar.',
+    a: `No la medimos como categoría propia porque la mejor IA para estudiar depende de la tarea —investigar, escribir, programar—, no de ser estudiante: corre el recomendador con lo que vas a hacer. Lo que sí verificamos, para México, es el descuento, en nuestra serie "Descuentos para estudiantes". De las herramientas de este recomendador: aplican en México ${lista(estudiantesVerde) || 'ninguna sin condiciones'}; aplican con condiciones ${lista(estudiantesAmarillo) || 'ninguna'}; y no aplican en México ${lista(estudiantesRojo) || 'ninguna'}. Los detalles y las fechas de vigencia están en cada ficha de la serie.`,
+    fuente: { texto: 'Serie: Descuentos para estudiantes', url: '/descuentos-para-estudiantes-ia/' },
   },
   {
     q: '¿Cuál es la mejor IA para investigación?',
-    a: 'De las once, Perplexity es la especializada: nació como motor de búsqueda con IA y citación de fuentes, no como chatbot de propósito general. Entre las de propósito general, Gemini y Grok tienen ventaja verificada por acceso a búsqueda en vivo con citas automáticas — Gemini vía Google, Grok vía DeepSearch con datos de X.',
+    a: 'Depende del tipo de investigación, y por eso el cuestionario te lo pregunta. Para papers académicos con citas verificables, Consensus es un especialista: busca solo en un corpus científico propio (su blog de presentación habla de más de 200 millones de documentos) y cada respuesta enlaza al paper de origen. Para trabajar solo con tus propios documentos, NotebookLM responde anclado en las fuentes que subes. Para información actual de la web, Perplexity nació como motor de búsqueda con citas; Gemini (vía Google) y Grok (vía DeepSearch, con datos de X) también buscan en vivo, y Claude, ChatGPT y Kimi tienen modos de investigación a fondo. Si no afinas el tipo de investigación, varias herramientas empatan: es un empate real, no un descuido.',
+    fuente: {
+      texto: 'Fuente: "Welcome to Consensus", consensus.app',
+      url: 'https://consensus.app/home/blog/welcome-to-consensus/',
+    },
+  },
+  {
+    q: '¿Qué IA usar para crear imágenes que pueda usar en un proyecto comercial?',
+    a: 'Depende de qué te preocupe. Si quieres un modelo entrenado con material licenciado, Adobe afirma que sus modelos Firefly se entrenaron con contenido licenciado (como Adobe Stock) y de dominio público, y que los diseñó para uso comercial; la indemnización por propiedad intelectual la ofrece solo a clientes empresariales, no a planes individuales. Esa descripción es la de los modelos propios de Adobe, no la de los modelos de socios que Firefly también ofrece. Si necesitas un vector editable (logos, íconos), Recraft exporta SVG y PDF, y Firefly descarga .svg desde texto; un generador de imágenes de píxeles entrega un archivo fijo, no un vector.',
+    fuente: {
+      texto: 'Fuente: "Nuestro enfoque de IA generativa", Adobe',
+      url: 'https://www.adobe.com/ai/overview/firefly/gen-ai-approach.html',
+    },
+  },
+  {
+    q: '¿Qué IA usar para video: generar clips, avatares o recortar un video largo?',
+    a: 'Son tres trabajos distintos, y por eso el cuestionario pregunta cuál necesitas. Para generar clips desde texto o imagen, Runway es la especialista, y Gemini (con Veo) y Grok (con Imagine) también lo hacen dentro del chat. Para un avatar que habla y para doblar un video completo conservando tu voz y sincronizando los labios, HeyGen es la especialista (más de 175 idiomas y dialectos, con el español entre sus ejemplos). Para sacar clips cortos de un video largo que ya grabaste, OpusClip: no genera video desde cero, parte del tuyo. Cada ficha enlaza a su fuente.',
   },
   {
     q: '¿Cómo decide esta herramienta qué IA me conviene?',
-    a: 'No rankeamos "la mejor IA". Calculamos una compatibilidad de 0 a 100 entre tu perfil — para qué la vas a usar, qué tan importante es la privacidad, si necesitas español, qué extras quieres — y los datos verificados de cada herramienta. El desglose exacto de cada resultado está disponible en "¿Por qué me salió esta recomendación?", con el peso y el valor de cada criterio.',
+    a: 'No rankeamos "la mejor IA". Calculamos una compatibilidad de 0 a 100 entre tu perfil — para qué la vas a usar (y, si eliges investigar, imágenes o video, qué tipo exacto), qué tan importante es la privacidad, si necesitas español, qué extras quieres — y los datos verificados de cada herramienta. Si con tus respuestas varias herramientas puntúan igual, te lo decimos como empate en vez de escoger una al azar. El desglose exacto está en "¿Por qué me salió esta recomendación?", con el peso y el valor de cada criterio; lo que no pudimos verificar se marca "sin verificar".',
   },
 ];
 
@@ -152,7 +203,7 @@ const faqSchema = {
 ---
 
 <Layout
-  title={title}
+  title={tituloPagina}
   description={description}
   modifiedTime={modifiedTime}
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
@@ -165,11 +216,14 @@ const faqSchema = {
     <p class="eyebrow">Recomendador</p>
     <h1>¿Qué IA me conviene?</h1>
     <p class="sub">
-      Hay demasiadas. Tú dime qué necesitas y comparamos
-      {' '}{listaTools} contra tu perfil — con la razón detrás de cada
-      número, no un ranking genérico.
+      Hay demasiadas. Tú dime qué necesitas y comparamos {TOOLS.length} herramientas
+      contra tu perfil — con la razón detrás de cada número, no un ranking genérico.
     </p>
-    <p class="nota">Primera versión: cubre estas {TOOLS.length} herramientas. Iremos sumando más conforme las verifiquemos.</p>
+    <p class="nota">
+      {totalEspecialistas > 0
+        ? `Cubre ${TOOLS.length} herramientas: ${totalGeneralistas} chats generales y ${totalEspecialistas} especialistas. Todo verificado en fuentes oficiales; iremos sumando más.`
+        : `Cubre ${TOOLS.length} herramientas verificadas en fuentes oficiales. Iremos sumando más.`}
+    </p>
   </section>
 
   <section class="container quiz" id="quiz">
@@ -185,6 +239,18 @@ const faqSchema = {
         <button type="button" data-value="imagenes">Crear imágenes</button>
         <button type="button" data-value="video">Crear video</button>
       </div>
+
+      {SUBPREGUNTAS.map((s) => (
+        <div class="subpregunta" data-sub-uso={s.uso} hidden>
+          <p class="sub-label">{s.pregunta} <span class="hint">opcional · afina el resultado</span></p>
+          <div class="opciones opciones-radio" data-group={`sub-${s.uso}`} data-opcional="1">
+            {s.opciones.map((o) => (
+              <button type="button" data-value={o.valor}>{o.etiqueta}</button>
+            ))}
+          </div>
+        </div>
+      ))}
+      <p class="sub-nota" id="sub-nota" hidden>Para no alargar el quiz, afinamos solo los dos primeros usos que marcaste.</p>
     </div>
 
     <div class="step">
@@ -233,7 +299,11 @@ const faqSchema = {
           <summary>{f.q}</summary>
           <p>{f.a}</p>
           {f.fuente && (
-            <a class="faq-fuente" href={f.fuente.url} target="_blank" rel="noopener noreferrer nofollow">
+            <a
+              class="faq-fuente"
+              href={f.fuente.url}
+              {...(f.fuente.url.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer nofollow' } : {})}
+            >
               {f.fuente.texto} →
             </a>
           )}
@@ -243,10 +313,14 @@ const faqSchema = {
   </section>
 </Layout>
 
-<script is:inline define:vars={{ TOOLS }}>
+<script is:inline define:vars={{ TOOLS, SUBPREGUNTAS }}>
   (function () {
     var DIMENSIONES_USO = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video'];
     var EXTRAS = ['api', 'memoria', 'voz', 'integraciones', 'disponibleMexico'];
+    var MAX_SUBPREGUNTAS = 2;
+    var PESO_SUBUSO = 8;
+    var MAX_COMPARADOR = 8;
+    var MIN_COMPARADOR = 6;
     var LABELS = {
       escritura: 'Escritura',
       investigacion: 'Investigación',
@@ -265,23 +339,65 @@ const faqSchema = {
     var VEREDICTO_VALOR = { verde: 100, amarillo: 55, rojo: 10 };
     var NIVEL_ICONO = { fuerte: '✓', basico: '~', no: '✕' };
     var NIVEL_CLASE = { fuerte: 'up', basico: 'warn', no: 'down' };
+    var VALOR_NEUTRAL = 55;
+
+    var SUB_CORTA = {};
+    SUBPREGUNTAS.forEach(function (s) {
+      s.opciones.forEach(function (o) { SUB_CORTA[s.uso + ':' + o.valor] = o.corta; });
+    });
 
     document.querySelectorAll('[data-group]').forEach(function (group) {
       var isRadio = group.classList.contains('opciones-radio');
+      var opcional = group.getAttribute('data-opcional') === '1';
       group.querySelectorAll('button').forEach(function (btn) {
         btn.addEventListener('click', function () {
           if (isRadio) {
+            var yaSeleccionado = btn.classList.contains('selected');
             group.querySelectorAll('button').forEach(function (b) { b.classList.remove('selected'); });
-            btn.classList.add('selected');
+            if (!(opcional && yaSeleccionado)) btn.classList.add('selected');
           } else {
             btn.classList.toggle('selected');
           }
+          if (group.getAttribute('data-group') === 'usos') actualizarSubpreguntas();
         });
       });
     });
 
+    // Muestra la pregunta de afinación de cada uso marcado (máximo dos, en el
+    // orden del quiz) y limpia las respuestas de las que se ocultan.
+    function actualizarSubpreguntas() {
+      var usos = Array.from(document.querySelectorAll('[data-group="usos"] .selected')).map(function (b) { return b.dataset.value; });
+      var visibles = 0;
+      var omitidas = false;
+      document.querySelectorAll('.subpregunta').forEach(function (bloque) {
+        var uso = bloque.getAttribute('data-sub-uso');
+        var marcado = usos.indexOf(uso) !== -1;
+        var mostrar = marcado && visibles < MAX_SUBPREGUNTAS;
+        if (marcado && !mostrar) omitidas = true;
+        if (mostrar) visibles++;
+        bloque.hidden = !mostrar;
+        if (!mostrar) {
+          bloque.querySelectorAll('button.selected').forEach(function (b) { b.classList.remove('selected'); });
+        }
+      });
+      var nota = document.getElementById('sub-nota');
+      if (nota) nota.hidden = !omitidas;
+    }
+
+    // Nivel de una herramienta en un subuso. Verificado = hay dato en el JSON,
+    // o la herramienta ni ofrece el uso padre (entonces es "no"). Todo lo
+    // demás es neutral y se etiqueta "sin verificar": no se asume ni a favor
+    // ni en contra.
+    function nivelSubuso(tool, uso, sub) {
+      var explicito = tool.subusos[sub];
+      if (explicito) return { nivel: explicito, valor: NIVEL_VALOR[explicito], verificado: true };
+      if (tool.cap[uso] === 'no') return { nivel: 'no', valor: NIVEL_VALOR.no, verificado: true };
+      return { nivel: null, valor: VALOR_NEUTRAL, verificado: false };
+    }
+
     function calcular(respuestas) {
       var pesos = {};
+      var subs = respuestas.subs || [];
       var usosSeleccionados = respuestas.usos.size ? Array.from(respuestas.usos) : DIMENSIONES_USO;
       var pesoUsoBase = respuestas.usos.size ? 10 : 5;
       DIMENSIONES_USO.forEach(function (d) {
@@ -293,7 +409,7 @@ const faqSchema = {
         pesos[e] = respuestas.extras.has(e) ? 6 : 0;
       });
 
-      var pesoTotal = Object.keys(pesos).reduce(function (acc, k) { return acc + pesos[k]; }, 0) || 1;
+      var pesoTotal = Object.keys(pesos).reduce(function (acc, k) { return acc + pesos[k]; }, 0) + subs.length * PESO_SUBUSO || 1;
 
       var resultados = TOOLS.map(function (tool) {
         var detalle = [];
@@ -302,33 +418,39 @@ const faqSchema = {
           if (pesos[d] > 0) {
             var valor = NIVEL_VALOR[tool.cap[d]];
             acumulado += pesos[d] * valor;
-            detalle.push({ criterio: LABELS[d], peso: pesos[d], valor: valor });
+            detalle.push({ criterio: LABELS[d], peso: pesos[d], valor: valor, verificado: true });
           }
+        });
+        subs.forEach(function (s) {
+          var n = nivelSubuso(tool, s.uso, s.valor);
+          acumulado += PESO_SUBUSO * n.valor;
+          detalle.push({
+            criterio: LABELS[s.uso] + ' · ' + SUB_CORTA[s.uso + ':' + s.valor],
+            peso: PESO_SUBUSO,
+            valor: n.valor,
+            verificado: n.verificado,
+          });
         });
         if (pesos.privacidad > 0) {
           // Sin verificar (aún no hay artículo de "quién entrena con tus
           // datos" para esta herramienta): cuenta neutral en el número para
-          // no penalizarla ni favorecerla, pero el criterio se etiqueta
-          // distinto para que no se vea como un dato verificado que no es.
+          // no penalizarla ni favorecerla, pero se marca para que no se vea
+          // como un dato verificado que no es.
           var privVerificada = tool.privacidad !== null;
-          var valorPriv = privVerificada ? VEREDICTO_VALOR[tool.privacidad] : 55;
+          var valorPriv = privVerificada ? VEREDICTO_VALOR[tool.privacidad] : VALOR_NEUTRAL;
           acumulado += pesos.privacidad * valorPriv;
-          detalle.push({
-            criterio: privVerificada ? 'Privacidad' : 'Privacidad (sin verificar)',
-            peso: pesos.privacidad,
-            valor: valorPriv,
-          });
+          detalle.push({ criterio: 'Privacidad', peso: pesos.privacidad, valor: valorPriv, verificado: privVerificada });
         }
         if (pesos.espanol > 0) {
           var valorEsp = NIVEL_VALOR[tool.cap.espanol];
           acumulado += pesos.espanol * valorEsp;
-          detalle.push({ criterio: 'Español', peso: pesos.espanol, valor: valorEsp });
+          detalle.push({ criterio: 'Español', peso: pesos.espanol, valor: valorEsp, verificado: true });
         }
         EXTRAS.forEach(function (e) {
           if (pesos[e] > 0) {
             var valorExtra = tool.cap[e] ? 100 : 0;
             acumulado += pesos[e] * valorExtra;
-            detalle.push({ criterio: LABELS[e], peso: pesos[e], valor: valorExtra });
+            detalle.push({ criterio: LABELS[e], peso: pesos[e], valor: valorExtra, verificado: true });
           }
         });
         return { tool: tool, score: Math.round(acumulado / pesoTotal), detalle: detalle, pesoTotal: pesoTotal };
@@ -345,10 +467,18 @@ const faqSchema = {
       return 'Compatibilidad baja';
     }
 
-    function tablaComparador(resultados) {
+    function enlaceFicha(tool) {
+      return '<a href="/que-ia-me-conviene/' + tool.id + '/">' + tool.nombre + '</a>';
+    }
+
+    function celdaValor(d) {
+      return d.valor + (d.verificado ? '' : ' <span class="sv">sin verificar</span>');
+    }
+
+    function tablaComparador(lista, respuestas) {
       var ejes = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video', 'espanol'];
       var filas = ejes.map(function (eje) {
-        var celdas = resultados
+        var celdas = lista
           .map(function (r) {
             var nivel = r.tool.cap[eje];
             return '<td class="ico-' + NIVEL_CLASE[nivel] + '">' + NIVEL_ICONO[nivel] + '</td>';
@@ -356,52 +486,129 @@ const faqSchema = {
           .join('');
         return '<tr><td>' + LABELS[eje] + '</td>' + celdas + '</tr>';
       }).join('');
-      var head = resultados.map(function (r) { return '<th><a href="/que-ia-me-conviene/' + r.tool.id + '/">' + r.tool.nombre + '</a></th>'; }).join('');
-      var scoreRow = resultados.map(function (r) { return '<td>' + r.score + '/100</td>'; }).join('');
+      var filasSub = (respuestas.subs || []).map(function (s) {
+        var celdas = lista
+          .map(function (r) {
+            var n = nivelSubuso(r.tool, s.uso, s.valor);
+            if (!n.verificado) return '<td class="ico-nd" title="Sin verificar">–</td>';
+            return '<td class="ico-' + NIVEL_CLASE[n.nivel] + '">' + NIVEL_ICONO[n.nivel] + '</td>';
+          })
+          .join('');
+        return '<tr class="sub-row"><td>' + LABELS[s.uso] + ' · ' + SUB_CORTA[s.uso + ':' + s.valor] + '</td>' + celdas + '</tr>';
+      }).join('');
+      var head = lista.map(function (r) { return '<th>' + enlaceFicha(r.tool) + '</th>'; }).join('');
+      var scoreRow = lista.map(function (r) { return '<td>' + r.score + '/100</td>'; }).join('');
       return (
         '<table class="comp-table"><thead><tr><th></th>' + head + '</tr></thead><tbody>' +
         '<tr class="score-row"><td>Compatibilidad contigo</td>' + scoreRow + '</tr>' +
-        filas + '</tbody></table>'
+        filas + filasSub + '</tbody></table>'
       );
     }
 
-    function render(resultados) {
-      var top = resultados[0];
-      var otras = resultados.slice(1, 3);
+    function especialidadHTML(tool) {
+      if (tool.tipo !== 'especialista' || !tool.especialidad) return '';
+      return '<p class="especialidad">Especialista · ' + tool.especialidad + '</p>';
+    }
+
+    function render(resultados, respuestas) {
       var cont = document.getElementById('resultado');
+      var topScore = resultados[0].score;
+      var empatados = resultados.filter(function (r) { return r.score === topScore; });
+      var cuantos = Math.min(Math.max(MIN_COMPARADOR, empatados.length), MAX_COMPARADOR);
+      var lista = resultados.slice(0, cuantos);
+      var notaComparador = cuantos < resultados.length
+        ? '<p class="comp-nota">Mostramos las ' + cuantos + ' con mejor compatibilidad de ' + resultados.length + '. Todas tienen su ficha.</p>'
+        : '';
+      var comparador =
+        '<div class="comparador"><p class="comp-label">Comparación</p>' + tablaComparador(lista, respuestas) + notaComparador + '</div>';
+      var reset = '<button type="button" id="qic-reset" class="qic-reset-link">Volver a hacer el recomendador</button>';
+      var html;
 
-      var bullets = top.detalle
-        .filter(function (d) { return d.peso > 0; })
-        .map(function (d) {
-          var clase = d.valor >= 80 ? 'up' : d.valor >= 45 ? 'warn' : 'down';
-          var icono = d.valor >= 80 ? '✓' : d.valor >= 45 ? '~' : '✕';
-          return '<li class="' + clase + '">' + icono + ' ' + d.criterio + '</li>';
-        })
-        .join('');
+      if (empatados.length === 1) {
+        var top = resultados[0];
+        // "También podrías considerar": el siguiente grupo de puntaje completo
+        // (en orden alfabético, no por posición en el JSON), hasta 4. Si el
+        // primer grupo trae solo una, se suma el que sigue.
+        var otras = [];
+        var i = 1;
+        while (i < resultados.length && otras.length < 2) {
+          var puntaje = resultados[i].score;
+          var grupo = resultados
+            .filter(function (r) { return r.score === puntaje; })
+            .sort(function (a, b) { return a.tool.nombre.localeCompare(b.tool.nombre, 'es'); });
+          otras = otras.concat(grupo.slice(0, 4 - otras.length));
+          i += grupo.length;
+        }
 
-      var filasTabla = top.detalle
-        .map(function (d) {
-          return '<tr><td>' + d.criterio + '</td><td>' + Math.round((d.peso / top.pesoTotal) * 100) + '%</td><td>' + d.valor + '</td></tr>';
-        })
-        .join('');
+        var bullets = top.detalle
+          .filter(function (d) { return d.peso > 0; })
+          .map(function (d) {
+            var clase = d.valor >= 80 ? 'up' : d.valor >= 45 ? 'warn' : 'down';
+            var icono = d.valor >= 80 ? '✓' : d.valor >= 45 ? '~' : '✕';
+            return '<li class="' + clase + '">' + icono + ' ' + d.criterio + (d.verificado ? '' : ' <span class="sv">sin verificar</span>') + '</li>';
+          })
+          .join('');
 
-      var otrasHTML = otras
-        .map(function (r) {
-          return '<div class="otra-opcion"><p class="otra-nombre"><a href="/que-ia-me-conviene/' + r.tool.id + '/">' + r.tool.nombre + '</a> — ' + r.score + '/100</p></div>';
-        })
-        .join('');
+        var filasTabla = top.detalle
+          .map(function (d) {
+            return '<tr><td>' + d.criterio + '</td><td>' + Math.round((d.peso / top.pesoTotal) * 100) + '%</td><td>' + celdaValor(d) + '</td></tr>';
+          })
+          .join('');
 
-      cont.innerHTML =
-        '<p class="eyebrow">Tu mejor opción</p>' +
-        '<h2><a href="/que-ia-me-conviene/' + top.tool.id + '/">' + top.tool.nombre + '</a></h2>' +
-        '<p class="score">' + top.score + '/100 — ' + compatLabel(top.score) + '</p>' +
-        '<ul class="bullets">' + bullets + '</ul>' +
-        '<details class="por-que"><summary>¿Por qué me salió esta recomendación?</summary>' +
-        '<table><thead><tr><th>Criterio</th><th>Peso</th><th>' + top.tool.nombre + '</th></tr></thead><tbody>' + filasTabla + '</tbody></table></details>' +
-        (otrasHTML ? '<div class="otras-opciones"><p class="otras-label">También podrías considerar</p>' + otrasHTML + '</div>' : '') +
-        '<div class="comparador"><p class="comp-label">Comparación completa</p>' + tablaComparador(resultados) + '</div>' +
-        '<button type="button" id="qic-reset" class="qic-reset-link">Volver a hacer el recomendador</button>';
+        var otrasHTML = otras
+          .map(function (r) {
+            return '<div class="otra-opcion"><p class="otra-nombre">' + enlaceFicha(r.tool) + ' — ' + r.score + '/100</p></div>';
+          })
+          .join('');
 
+        html =
+          '<p class="eyebrow">Tu mejor opción</p>' +
+          '<h2>' + enlaceFicha(top.tool) + '</h2>' +
+          especialidadHTML(top.tool) +
+          '<p class="score">' + top.score + '/100 — ' + compatLabel(top.score) + '</p>' +
+          '<ul class="bullets">' + bullets + '</ul>' +
+          '<details class="por-que"><summary>¿Por qué me salió esta recomendación?</summary>' +
+          '<table><thead><tr><th>Criterio</th><th>Peso</th><th>' + top.tool.nombre + '</th></tr></thead><tbody>' + filasTabla + '</tbody></table></details>' +
+          (otrasHTML ? '<div class="otras-opciones"><p class="otras-label">También podrías considerar</p>' + otrasHTML + '</div>' : '') +
+          comparador + reset;
+      } else {
+        // Empate real: con los datos verificados no hay forma honesta de
+        // preferir una. Se muestran todas (orden alfabético, sin jerarquía).
+        var tied = empatados.slice().sort(function (a, b) { return a.tool.nombre.localeCompare(b.tool.nombre, 'es'); });
+        var tablaTied = tied.slice(0, 5);
+        var base = tablaTied[0];
+        var encabezados = tablaTied.map(function (r) { return '<th>' + r.tool.nombre + '</th>'; }).join('');
+        var filasEmpate = base.detalle
+          .map(function (d, i) {
+            var celdas = tablaTied.map(function (r) { return '<td>' + celdaValor(r.detalle[i]) + '</td>'; }).join('');
+            return '<tr><td>' + d.criterio + '</td><td>' + Math.round((d.peso / base.pesoTotal) * 100) + '%</td>' + celdas + '</tr>';
+          })
+          .join('');
+        var listaTied = tied
+          .map(function (r) {
+            var esp = r.tool.tipo === 'especialista' && r.tool.especialidad ? ' <span class="tipo">· Especialista: ' + r.tool.especialidad + '</span>' : '';
+            return '<li>' + enlaceFicha(r.tool) + esp + '</li>';
+          })
+          .join('');
+        var pista = respuestas.afinarPendiente
+          ? '<p class="empate-dek">Afinar el tipo de uso en el cuestionario suele desempatar. <a href="#quiz">Volver al cuestionario</a></p>'
+          : '';
+
+        html =
+          '<p class="eyebrow">Empate</p>' +
+          '<h2>' + empatados.length + ' herramientas puntúan igual</h2>' +
+          '<p class="score">' + topScore + '/100 — ' + compatLabel(topScore) + '</p>' +
+          '<p class="empate-dek">Con lo que respondiste no hay una diferencia verificada entre ellas, y no vamos a escoger una al azar. Van en orden alfabético, no de preferencia.</p>' +
+          pista +
+          '<ul class="empatados">' + listaTied + '</ul>' +
+          '<details class="por-que"><summary>¿Por qué empatan?</summary>' +
+          '<table><thead><tr><th>Criterio</th><th>Peso</th>' + encabezados + '</tr></thead><tbody>' + filasEmpate + '</tbody></table>' +
+          (tied.length > 5 ? '<p class="comp-nota">Mostramos 5 de las ' + tied.length + ' que empatan.</p>' : '') +
+          '</details>' +
+          comparador + reset;
+      }
+
+      cont.innerHTML = html;
       cont.hidden = false;
       cont.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -412,6 +619,7 @@ const faqSchema = {
         document.querySelectorAll('[data-group] button.selected').forEach(function (b) {
           b.classList.remove('selected');
         });
+        actualizarSubpreguntas();
         cont.hidden = true;
         cont.innerHTML = '';
         document.getElementById('quiz').scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -427,13 +635,23 @@ const faqSchema = {
       );
       var privBtn = document.querySelector('[data-group="privacidad"] .selected');
       var espBtn = document.querySelector('[data-group="espanol"] .selected');
+      var subs = [];
+      var afinarPendiente = false;
+      document.querySelectorAll('.subpregunta').forEach(function (bloque) {
+        if (bloque.hidden) return;
+        var sel = bloque.querySelector('button.selected');
+        if (sel) subs.push({ uso: bloque.getAttribute('data-sub-uso'), valor: sel.dataset.value });
+        else afinarPendiente = true;
+      });
       var respuestas = {
         usos: usos,
         extras: extras,
+        subs: subs,
+        afinarPendiente: afinarPendiente,
         privacidad: privBtn ? privBtn.dataset.value : 'no',
         espanol: espBtn ? espBtn.dataset.value : 'no',
       };
-      render(calcular(respuestas));
+      render(calcular(respuestas), respuestas);
     });
   })();
 </script>
@@ -470,6 +688,11 @@ const faqSchema = {
   }
   .opciones button:hover { border-color: var(--accent); }
   .opciones button.selected { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+
+  /* Preguntas de afinación (condicionales al uso marcado en el paso 1). */
+  .subpregunta { margin-top: 22px; padding-left: 16px; border-left: 2px solid var(--border); }
+  .sub-label { font-family: var(--font-body); font-weight: 600; font-size: 0.95rem; margin: 0 0 12px; }
+  .sub-nota { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-faint); margin: 16px 0 0; }
 
   .cta-primary {
     align-self: flex-start;
@@ -517,6 +740,18 @@ const faqSchema = {
   :global(#resultado .comp-table .ico-up) { color: var(--up-line); }
   :global(#resultado .comp-table .ico-warn) { color: var(--warn-line); }
   :global(#resultado .comp-table .ico-down) { color: var(--down-line); }
+  :global(#resultado .comp-table .ico-nd) { color: var(--text-faint); }
+  :global(#resultado .comp-table .sub-row td:first-child) { color: var(--text-muted); font-size: 0.84rem; }
+  :global(#resultado .comp-nota) { font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-faint); margin: 12px 0 0; }
+
+  :global(#resultado .especialidad) { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin: 0 0 10px; }
+  :global(#resultado .empate-dek) { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0 0 14px; }
+  :global(#resultado .empate-dek a) { color: var(--accent); }
+  :global(#resultado .empatados) { list-style: none; margin: 0 0 22px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  :global(#resultado .empatados li) { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--bg-inset); }
+  :global(#resultado .empatados a) { color: var(--text); font-family: var(--font-display); font-size: 1.05rem; }
+  :global(#resultado .empatados .tipo) { color: var(--text-muted); font-size: 0.84rem; }
+  :global(#resultado .sv) { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-faint); }
 
   :global(#resultado .qic-reset-link) {
     display: block;

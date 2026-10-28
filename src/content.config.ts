@@ -342,6 +342,42 @@ const herramientasIA = defineCollection({
         // de una sola pasada, no una auditoría independiente por campo.
         fuenteCapacidades: z.string(),
         fechaVerificacion: z.coerce.date(),
+        // Generalista (chat de propósito general) o especialista (aporta
+        // datos propios, una modalidad que el chat no resuelve bien, o un
+        // flujo profesional). Solo cambia cómo se presenta; el scoring es
+        // el mismo para todas.
+        // (singleJsonEntryLoader no pasa por parseData, así que los defaults
+        // de Zod no se aplican: las páginas resuelven ausente = generalista.)
+        tipo: z.enum(['generalista', 'especialista']).optional(),
+        // Frase corta de qué es y para qué sirve, solo para especialistas.
+        especialidad: z.string().optional(),
+        // Afinación por subuso (las preguntas condicionales del quiz). Solo
+        // se llena lo VERIFICADO en fuente oficial: un subuso ausente no se
+        // asume — el motor lo cuenta como neutral y lo etiqueta "sin
+        // verificar" (o "no" si la herramienta ni ofrece el uso padre).
+        subusos: z
+          .object({
+            papers: nivelUso,
+            documentos: nivelUso,
+            web: nivelUso,
+            vector: nivelUso,
+            comercial: nivelUso,
+            generar: nivelUso,
+            avatar: nivelUso,
+            clips: nivelUso,
+          })
+          .partial()
+          .optional(),
+        // "Qué hace que un chat generalista no" — solo especialistas, con
+        // fuente primaria enlazada. Es lo que vuelve legible la exactitud
+        // del recomendador (y lo que Google puede citar).
+        queHaceDiferente: z
+          .object({
+            texto: z.string(),
+            fuente: z.string(),
+            url: z.string().url(),
+          })
+          .optional(),
       })
     ),
   }),

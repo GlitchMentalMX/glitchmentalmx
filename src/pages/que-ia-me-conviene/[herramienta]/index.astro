@@ -10,6 +10,8 @@ import VeredictoBadge from '../../../components/VeredictoBadge.astro';
 import PruebaGratisBadge from '../../../components/PruebaGratisBadge.astro';
 import CodigoDescuentoBadge from '../../../components/CodigoDescuentoBadge.astro';
 import { getCollection } from 'astro:content';
+import { ALIAS_ENTRENA_IA } from '../../../data/alias-entrena-ia';
+import { SUBPREGUNTAS_BASE } from '../../../data/subpreguntas-recomendador';
 
 export async function getStaticPaths() {
   const [tabla, precios, entrena, pruebaGratis, codigos] = await Promise.all([
@@ -22,10 +24,6 @@ export async function getStaticPaths() {
 
   const capacidades = tabla[0]?.data.herramientas ?? [];
 
-  // Mismo alias que en /que-ia-me-conviene/: "grok" y "meta-ai" ya tienen
-  // artículo en la serie de privacidad, solo que archivado bajo el
-  // herramientaId propio de esa serie ("x-grok", "meta-ai-app").
-  const ALIAS_ENTRENA_IA: Record<string, string> = { grok: 'x-grok', 'meta-ai': 'meta-ai-app' };
 
   return capacidades.map((cap) => {
     const precio = precios.find((p) => p.data.herramientaId === cap.herramientaId);
@@ -69,6 +67,26 @@ const EXTRAS = [
   { key: 'disponibleMexico', label: 'Disponible en México' },
 ] as const;
 
+const esEspecialista = cap.tipo === 'especialista';
+const especialidad = cap.especialidad;
+
+// Subusos con dato verificado en el JSON (los que no están, no se muestran:
+// "sin verificar" no es un hallazgo que merezca una fila en la ficha).
+const subusosVerificados = SUBPREGUNTAS_BASE.flatMap((s) =>
+  s.opciones
+    .filter((o) => cap.subusos?.[o.valor] !== undefined)
+    .map((o) => ({
+      etiqueta: `${s.etiquetaUso} · ${o.corta}`,
+      nivel: NIVEL_LABEL[cap.subusos![o.valor]!],
+    }))
+);
+
+const tituloPagina = esEspecialista && especialidad ? `${nombre}: ${especialidad}` : `${nombre} — ¿Qué IA me conviene?`;
+const descripcionPagina =
+  esEspecialista && especialidad
+    ? `${nombre}: ${especialidad}. Qué hace distinto a un chat generalista, si entrena con tus datos, si pide tarjeta para probarla y si tiene código de descuento real — con fuente y fecha.`
+    : `Ficha de ${nombre}: para qué sirve, si entrena con tus datos, si pide tarjeta para probarla y si tiene código de descuento real — con fuente y fecha de verificación.`;
+
 // timeZone: 'UTC' a propósito — fechaVerificacion se guarda como fecha pura
 // (sin hora) y Zod la coerciona a medianoche UTC; sin fijar la zona aquí,
 // toLocaleDateString la renderiza en la zona local del server/navegador y
@@ -82,8 +100,8 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
 ---
 
 <Layout
-  title={`${nombre} — ¿Qué IA me conviene?`}
-  description={`Ficha de ${nombre}: para qué sirve, si entrena con tus datos, si pide tarjeta para probarla y si tiene código de descuento real — con fuente y fecha de verificación.`}
+  title={tituloPagina}
+  description={descripcionPagina}
   type="article"
   modifiedTime={new Date(cap.fechaVerificacion)}
 >
@@ -95,14 +113,25 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
   />
 
   <section class="container header">
-    <p class="eyebrow">Ficha verificada</p>
+    <p class="eyebrow">{esEspecialista ? 'Ficha verificada · Especialista' : 'Ficha verificada'}</p>
     <h1>{nombre}</h1>
+    {esEspecialista && especialidad && <p class="especialidad">{especialidad}</p>}
     {sitioOficial && (
       <a class="sitio" href={sitioOficial} target="_blank" rel="noopener noreferrer nofollow">
         Sitio oficial ↗
       </a>
     )}
   </section>
+
+  {cap.queHaceDiferente && (
+    <section class="container block diferente">
+      <h2>Qué hace que un chat generalista no</h2>
+      <p class="diferente-texto">{cap.queHaceDiferente.texto}</p>
+      <a class="diferente-fuente" href={cap.queHaceDiferente.url} target="_blank" rel="noopener noreferrer nofollow">
+        Fuente: {cap.queHaceDiferente.fuente} →
+      </a>
+    </section>
+  )}
 
   <section class="container block">
     <h2>¿Para qué sirve?</h2>
@@ -120,6 +149,22 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
         );
       })}
     </ul>
+    {subusosVerificados.length > 0 && (
+      <>
+        <h3 class="afinacion-titulo">Afinación por uso</h3>
+        <ul class="ejes">
+          {subusosVerificados.map((sub) => (
+            <li class={`eje eje-${sub.nivel.clase}`}>
+              <span class="eje-icon" aria-hidden="true">{sub.nivel.icon}</span>
+              <span class="eje-text">
+                <span class="eje-label">{sub.etiqueta}</span>
+                <span class="eje-dek">{sub.nivel.texto}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
   </section>
 
   <section class="container block">
@@ -177,6 +222,12 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
   .header h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); margin: 8px 0 12px; }
   .eyebrow { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); }
   .sitio { font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); }
+  .especialidad { font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); margin: 0 0 12px; }
+
+  .diferente-texto { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin: 0 0 12px; }
+  .diferente-fuente { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); }
+  .diferente-fuente:hover { color: var(--accent); }
+  .afinacion-titulo { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); font-weight: 400; margin: 26px 0 12px; }
 
   .block { max-width: 700px; padding: 24px 24px 8px; }
   .block h2 { font-family: var(--font-display); font-size: 1.3rem; margin: 0 0 16px; }
