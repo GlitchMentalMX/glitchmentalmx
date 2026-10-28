@@ -13,7 +13,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Código: líder en el leaderboard de SWE-bench Verified (Opus 5 >95%) — el número exacto depende de si se mide con el scaffold del proveedor o uno estandarizado de terceros, que pueden diferir 15-30 puntos entre sí. Escritura: ganó 4 de 8 rondas en una prueba ciega independiente de 134 participantes (no es un estudio académico ni nuestro), incluidas simplificación (71% de los votos) y un ejercicio de escritura creativa (62%). Fuente: \"ChatGPT vs Claude vs Gemini Compared\", Product with Attitude, 22 de febrero de 2026 (aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared). Resto: documentación oficial de Anthropic (Research mode, conector de Google Workspace, voz multilingüe) y artículo propio de precios en pesos mexicanos. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Código: líder en el leaderboard de SWE-bench Verified (Opus 5 >95%) — el número exacto depende de si se mide con el scaffold del proveedor o uno estandarizado de terceros, que pueden diferir 15-30 puntos entre sí. Escritura: ganó 4 de 8 rondas en una prueba ciega independiente de 134 participantes (no es un estudio académico ni nuestro), incluidas simplificación (71% de los votos) y un ejercicio de escritura creativa (62%). Fuente: \"ChatGPT vs Claude vs Gemini Compared\", Product with Attitude, 22 de febrero de 2026 (aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared). Resto: documentación oficial de Anthropic (Research mode, conector de Google Workspace, voz multilingüe) y artículo propio de precios en pesos mexicanos. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Claude no genera audio por sí mismo: la narración y la clonación de voz solo se logran con conectores de terceros (fuentes de terceros; sin anuncio oficial de Anthropic).",
       "fechaVerificacion": "2026-09-09",
       "subusos": {
         "web": "fuerte"
@@ -32,7 +32,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Código: entre los modelos líderes en SWE-bench Verified, cerca o por encima del 95% según el leaderboard — el ranking exacto contra Claude cambia según metodología (scaffold del proveedor vs. uno estandarizado de terceros). Escritura: ganó 1 de 8 rondas en la misma prueba ciega independiente de 134 participantes citada para Claude — la ronda de análisis estratégico de negocio (\"The Strategist\", 53% de los votos); Claude ganó más rondas en esa misma prueba. Fuente: \"ChatGPT vs Claude vs Gemini Compared\", Product with Attitude, 22 de febrero de 2026 (aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared). Imágenes: ChatGPT Images 2.0 gana en realismo y fidelidad a la referencia en pruebas comparativas (TechRadar, abril 2026), aunque Nano Banana Pro (Gemini) es más rápido y con mejor textura. Video: rebajado a básico — la app y API de Sora están siendo descontinuadas (cierre de app en abril 2026, API hasta el 24/sep/2026) y reseñas comparativas (Android Authority, CNET) favorecen consistentemente a Veo sobre Sora en realismo y audio. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Código: entre los modelos líderes en SWE-bench Verified, cerca o por encima del 95% según el leaderboard — el ranking exacto contra Claude cambia según metodología (scaffold del proveedor vs. uno estandarizado de terceros). Escritura: ganó 1 de 8 rondas en la misma prueba ciega independiente de 134 participantes citada para Claude — la ronda de análisis estratégico de negocio (\"The Strategist\", 53% de los votos); Claude ganó más rondas en esa misma prueba. Fuente: \"ChatGPT vs Claude vs Gemini Compared\", Product with Attitude, 22 de febrero de 2026 (aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared). Imágenes: ChatGPT Images 2.0 gana en realismo y fidelidad a la referencia en pruebas comparativas (TechRadar, abril 2026), aunque Nano Banana Pro (Gemini) es más rápido y con mejor textura. Video: rebajado a básico — la app y API de Sora están siendo descontinuadas (cierre de app en abril 2026, API hasta el 24/sep/2026) y reseñas comparativas (Android Authority, CNET) favorecen consistentemente a Veo sobre Sora en realismo y audio. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz: el texto a voz de OpenAI está documentado solo para su API (developers.openai.com) y no cuenta. Música: no encontramos una función nativa en ChatGPT.",
       "fechaVerificacion": "2026-09-09",
       "subusos": {
         "web": "fuerte",
@@ -52,12 +52,13 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Código: rebajado a básico — en los leaderboards de SWE-bench Verified, los modelos Gemini quedan por debajo de Claude y de los modelos GPT más recientes, aunque la distancia exacta varía según metodología. Escritura: rebajado a básico — en una prueba ciega independiente de 134 participantes (\"ChatGPT vs Claude vs Gemini Compared\", Product with Attitude, 22 de febrero de 2026, aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared), Gemini ganó 3 de 8 rondas, descrito ahí solo como \"el generalista que nunca es la peor opción\" — el artículo NO explica la razón de esas victorias; no encontramos ahí evidencia de que su ventaja viniera de grounding/búsqueda en vivo (una afirmación que sí pusimos antes por error, mezclando esta fuente con otra distinta). Investigación: se mantiene fuerte por el grounding en tiempo real con citas automáticas, documentado en la página oficial de Google — esto es una capacidad real e independiente de la prueba ciega de escritura citada arriba. Imágenes: Nano Banana Pro compite de tú a tú con ChatGPT — gana en textura/autenticidad y velocidad (11-24s vs 97-149s), pierde en realismo/fidelidad — se deja como empate honesto, no hay ganador claro. Video: Veo consistentemente mejor reseñado que Sora en realismo y sincronía de audio, con integración nativa (no depende de una app aparte que Google haya descontinuado). Resto: documentación oficial de Google e integración con Workspace, y artículo propio de precios que confirma versión mostrada para México. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Código: rebajado a básico — en los leaderboards de SWE-bench Verified, los modelos Gemini quedan por debajo de Claude y de los modelos GPT más recientes, aunque la distancia exacta varía según metodología. Escritura: rebajado a básico — en una prueba ciega independiente de 134 participantes (\"ChatGPT vs Claude vs Gemini Compared\", Product with Attitude, 22 de febrero de 2026, aiblewmymind.substack.com/p/chatgpt-vs-claude-vs-gemini-compared), Gemini ganó 3 de 8 rondas, descrito ahí solo como \"el generalista que nunca es la peor opción\" — el artículo NO explica la razón de esas victorias; no encontramos ahí evidencia de que su ventaja viniera de grounding/búsqueda en vivo (una afirmación que sí pusimos antes por error, mezclando esta fuente con otra distinta). Investigación: se mantiene fuerte por el grounding en tiempo real con citas automáticas, documentado en la página oficial de Google — esto es una capacidad real e independiente de la prueba ciega de escritura citada arriba. Imágenes: Nano Banana Pro compite de tú a tú con ChatGPT — gana en textura/autenticidad y velocidad (11-24s vs 97-149s), pierde en realismo/fidelidad — se deja como empate honesto, no hay ganador claro. Video: Veo consistentemente mejor reseñado que Sora en realismo y sincronía de audio, con integración nativa (no depende de una app aparte que Google haya descontinuado). Resto: documentación oficial de Google e integración con Workspace, y artículo propio de precios que confirma versión mostrada para México. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Música: básico — la app de Gemini genera pistas de 30 segundos con Lyria 3, con español entre los idiomas soportados (blog.google, 18/feb/2026). Voz: el texto a voz de Gemini está documentado solo para la API y AI Studio (ai.google.dev), sin confirmar en la app, así que no cuenta.",
       "fechaVerificacion": "2026-09-09",
       "subusos": {
         "web": "fuerte",
         "generar": "fuerte"
-      }
+      },
+      "musica": "basico"
     },
     {
       "herramientaId": "perplexity",
@@ -72,7 +73,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Documentación oficial de Perplexity (Search API, memoria de hilos, generación de imagen solo en plan Max) y artículo propio de precios en pesos mexicanos. Investigación es su especialidad declarada (citación de fuentes, no un chatbot de propósito general). Escritura/código: básico por diseño de producto, no por una prueba específica — Perplexity no vende un modo de escritura ni un editor de código como Claude Code/Codex/Copilot; no se encontró evidencia que lo contradiga. Español: no se encontró comparativa específica — Perplexity enruta a modelos de terceros vía \"Model Council\", así que se deja en básico como valor neutral en vez de afirmar una calidad que no se pudo verificar. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Documentación oficial de Perplexity (Search API, memoria de hilos, generación de imagen solo en plan Max) y artículo propio de precios en pesos mexicanos. Investigación es su especialidad declarada (citación de fuentes, no un chatbot de propósito general). Escritura/código: básico por diseño de producto, no por una prueba específica — Perplexity no vende un modo de escritura ni un editor de código como Claude Code/Codex/Copilot; no se encontró evidencia que lo contradiga. Español: no se encontró comparativa específica — Perplexity enruta a modelos de terceros vía \"Model Council\", así que se deja en básico como valor neutral en vez de afirmar una calidad que no se pudo verificar. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-09-09",
       "tipo": "especialista",
       "especialidad": "búsqueda en la web con citas de fuentes",
@@ -93,7 +94,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Investigación: fuerte por DeepSearch, su modo de búsqueda con acceso a datos en tiempo real de X — una diferenciación real, no genérica. Imágenes/Video: fuerte — Grok Imagine (stack Flux para imagen, motor Aurora para imagen-a-video y texto-a-video nativo en 1080p), documentado en release notes oficiales de xAI. Memoria: cross-conversation memory desde Grok 4.3 (mayo 2026, oficial). Voz: Custom Voices y Text-to-Speech API en disponibilidad general desde mayo 2026. Escritura/código/español: no se encontró benchmark ni comparativa específica que lo diferencie — se deja en básico como valor neutral, no como afirmación de debilidad. México: Premium con precio en pesos confirmado en la página de precios de X, y artículo propio de precios. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Investigación: fuerte por DeepSearch, su modo de búsqueda con acceso a datos en tiempo real de X — una diferenciación real, no genérica. Imágenes/Video: fuerte — Grok Imagine (stack Flux para imagen, motor Aurora para imagen-a-video y texto-a-video nativo en 1080p), documentado en release notes oficiales de xAI. Memoria: cross-conversation memory desde Grok 4.3 (mayo 2026, oficial). Voz: Custom Voices y Text-to-Speech API en disponibilidad general desde mayo 2026. Escritura/código/español: no se encontró benchmark ni comparativa específica que lo diferencie — se deja en básico como valor neutral, no como afirmación de debilidad. México: Premium con precio en pesos confirmado en la página de precios de X, y artículo propio de precios. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz: Custom Voices (clonar tu voz) y texto a voz están documentados solo para la API (x.ai/news/grok-custom-voices, 30/abr/2026) y no cuentan. Música: aparece solo como pista de acompañamiento dentro de Imagine, según publicaciones, sin anuncio oficial de un generador de música.",
       "fechaVerificacion": "2026-09-09",
       "subusos": {
         "web": "fuerte",
@@ -113,7 +114,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Imágenes: fuerte — Muse Image, generación y edición de imágenes directo en el chat de WhatsApp (anuncio oficial de Meta, julio 2026). Video: no se encontró evidencia de generación de video dentro del asistente Meta AI (Meta tiene otros productos de video, pero no confirmado como integrado aquí). Memoria: confirmada para conversaciones 1 a 1 en WhatsApp/Messenger, aunque el rollout inicial reportado fue solo EE.UU./Canadá — puede no estar disponible todavía en México pese a existir la función. API: no existe una API pública del asistente Meta AI como producto — Muse Image se lanzó explícitamente como función de consumo sin precio ni API publicados; no confundir con la API de los modelos Llama, que es un producto distinto. Escritura/investigación/código/español: no es un producto posicionado para eso, no se encontró evidencia de fortaleza particular — básico como valor neutral. México: confirmado explícitamente en el anuncio de expansión de Meta AI (incluye México con soporte en español) y artículo propio de precios (gratis, la prueba piloto de pago no aplica a México).",
+      "fuenteCapacidades": "Imágenes: fuerte — Muse Image, generación y edición de imágenes directo en el chat de WhatsApp (anuncio oficial de Meta, julio 2026). Video: no se encontró evidencia de generación de video dentro del asistente Meta AI (Meta tiene otros productos de video, pero no confirmado como integrado aquí). Memoria: confirmada para conversaciones 1 a 1 en WhatsApp/Messenger, aunque el rollout inicial reportado fue solo EE.UU./Canadá — puede no estar disponible todavía en México pese a existir la función. API: no existe una API pública del asistente Meta AI como producto — Muse Image se lanzó explícitamente como función de consumo sin precio ni API publicados; no confundir con la API de los modelos Llama, que es un producto distinto. Escritura/investigación/código/español: no es un producto posicionado para eso, no se encontró evidencia de fortaleza particular — básico como valor neutral. México: confirmado explícitamente en el anuncio de expansión de Meta AI (incluye México con soporte en español) y artículo propio de precios (gratis, la prueba piloto de pago no aplica a México). Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-09-09"
     },
     {
@@ -129,7 +130,7 @@
       "voz": false,
       "integraciones": false,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Código: fuerte — DeepSeek R1 con 2029 Elo en Codeforces y benchmarks independientes que lo ubican por encima de GPT-4 en resolución de race conditions/memory leaks; es la característica por la que DeepSeek es conocido. API: confirmada, compatible con el formato de OpenAI, muy por debajo en precio del resto. Memoria/voz/integraciones: no se encontró evidencia de estas funciones en la app de consumo (el producto está más orientado a modelo+API que a app conversacional con esas capas) — se marcan como ausentes en vez de asumidas. Escritura/investigación/español: no se encontró comparativa específica, básico como valor neutral. México: gratis, sin plan de pago para el público general, según artículo propio de precios.",
+      "fuenteCapacidades": "Código: fuerte — DeepSeek R1 con 2029 Elo en Codeforces y benchmarks independientes que lo ubican por encima de GPT-4 en resolución de race conditions/memory leaks; es la característica por la que DeepSeek es conocido. API: confirmada, compatible con el formato de OpenAI, muy por debajo en precio del resto. Memoria/voz/integraciones: no se encontró evidencia de estas funciones en la app de consumo (el producto está más orientado a modelo+API que a app conversacional con esas capas) — se marcan como ausentes en vez de asumidas. Escritura/investigación/español: no se encontró comparativa específica, básico como valor neutral. México: gratis, sin plan de pago para el público general, según artículo propio de precios. Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-09-09"
     },
     {
@@ -145,10 +146,13 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Código: fuerte por diseño — es un producto exclusivamente de programación, no un chatbot de propósito general (por eso escritura/investigación quedan en 'no', no en 'básico': no existe una versión de este producto para esos usos). Memoria: Copilot Memory en vista previa pública para planes de pago, confirmado (changelog oficial de GitHub). Voz: entrada de voz disponible de forma general en Copilot CLI, con soporte explícito de español, confirmado. API: Copilot SDK en disponibilidad general, confirmado. México: artículo propio de precios en pesos mexicanos.",
+      "fuenteCapacidades": "Código: fuerte por diseño — es un producto exclusivamente de programación, no un chatbot de propósito general (por eso escritura/investigación quedan en 'no', no en 'básico': no existe una versión de este producto para esos usos). Memoria: Copilot Memory en vista previa pública para planes de pago, confirmado (changelog oficial de GitHub). Voz: entrada de voz disponible de forma general en Copilot CLI, con soporte explícito de español, confirmado. API: Copilot SDK en disponibilidad general, confirmado. México: artículo propio de precios en pesos mexicanos. Subuso de código (27/oct/2026): editor fuerte — es una herramienta de programación dedicada que vive dentro del editor, según lo ya verificado arriba. Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-09-09",
       "tipo": "especialista",
-      "especialidad": "asistente de programación dentro del editor"
+      "especialidad": "asistente de programación dentro del editor",
+      "subusos": {
+        "editor": "fuerte"
+      }
     },
     {
       "herramientaId": "midjourney",
@@ -163,7 +167,7 @@
       "voz": false,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Imágenes: fuerte por diseño — es un especialista de imagen, no un chatbot (v8.2 es el modelo por default desde julio 2026). Video: básico — v8.1 añadió generación nativa de imagen-a-video hasta 21 segundos, pero es una función secundaria de un producto que sigue siendo primero de imagen, no un especialista de video como Runway. API: confirmado que NO existe una API oficial pública a agosto de 2026 (múltiples fuentes lo confirman); solo hay APIs no oficiales de terceros, que no se cuentan aquí. Integraciones: cuenta como verdadero por el bot oficial de Discord, que es el canal de acceso además de midjourney.com. Escritura/investigación/código/español/memoria/voz: no aplican o no se encontró evidencia — no es un producto conversacional. México: artículo propio de precios en pesos mexicanos. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Imágenes: fuerte por diseño — es un especialista de imagen, no un chatbot (v8.2 es el modelo por default desde julio 2026). Video: básico — v8.1 añadió generación nativa de imagen-a-video hasta 21 segundos, pero es una función secundaria de un producto que sigue siendo primero de imagen, no un especialista de video como Runway. API: confirmado que NO existe una API oficial pública a agosto de 2026 (múltiples fuentes lo confirman); solo hay APIs no oficiales de terceros, que no se cuentan aquí. Integraciones: cuenta como verdadero por el bot oficial de Discord, que es el canal de acceso además de midjourney.com. Escritura/investigación/código/español/memoria/voz: no aplican o no se encontró evidencia — no es un producto conversacional. México: artículo propio de precios en pesos mexicanos. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-09-09",
       "tipo": "especialista",
       "especialidad": "generación de imágenes con modelo propio",
@@ -184,7 +188,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Video: fuerte por diseño — es su producto principal (Gen-4.5 con audio nativo, secuencias multi-toma, consistencia de personajes hasta 1 minuto). Imágenes: básico — Gen-4 Image existe y es real (vía API), pero es secundario frente a su identidad de video, mismo criterio aplicado a la inversa que en Midjourney. Voz: verdadero por Eleven v3 vía API (habla expresiva) y la función 'Characters' con voz. API: Runway Dev/API documentada y activa. Memoria: no se encontró evidencia de memoria conversacional en el producto de consumo (Characters con 'knowledge bases' es una función de desarrollador, no memoria de chat). Escritura/investigación/código/español: no aplican o no se encontró evidencia — no es un producto conversacional de propósito general. México: artículo propio de precios en pesos mexicanos. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Video: fuerte por diseño — es su producto principal (Gen-4.5 con audio nativo, secuencias multi-toma, consistencia de personajes hasta 1 minuto). Imágenes: básico — Gen-4 Image existe y es real (vía API), pero es secundario frente a su identidad de video, mismo criterio aplicado a la inversa que en Midjourney. Voz: verdadero por Eleven v3 vía API (habla expresiva) y la función 'Characters' con voz. API: Runway Dev/API documentada y activa. Memoria: no se encontró evidencia de memoria conversacional en el producto de consumo (Characters con 'knowledge bases' es una función de desarrollador, no memoria de chat). Escritura/investigación/código/español: no aplican o no se encontró evidencia — no es un producto conversacional de propósito general. México: artículo propio de precios en pesos mexicanos. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz: el texto a voz llega por API (Eleven v3) y la función Characters; no confirmamos una función de narración para el usuario final, así que no cuenta.",
       "fechaVerificacion": "2026-09-09",
       "tipo": "especialista",
       "especialidad": "generación de video desde texto e imagen",
@@ -205,13 +209,14 @@
       "voz": false,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Imágenes: fuerte por diseño — Magic Media (motor dual con Leonardo Phoenix) es su función de IA central, con la biblioteca de plantillas/assets más grande de las 11 herramientas de este recomendador; confirmado en canva.com/pricing (visitado en vivo, 10/sep/2026, ya localizado con precios en MX$). Escritura: básico — Magic Write genera primeros borradores de copy (captions, títulos, texto de presentaciones), descrito en varias reseñas como apoyo de diseño, no herramienta de escritura independiente. Video: básico — Magic Media también genera video (motor Runway Gen-3 por debajo, hasta 4K/60s según reseñas), pero sin benchmark independiente que lo compare con especialistas dedicados como Runway. Memoria e integraciones: confirmadas — Canva AI 2.0 (lanzado 16/abr/2026) tiene 'memoria persistente que aprende los gustos y el estilo del usuario' e integraciones reales con Slack, Gmail, Notion, Zoom y Google Drive (wwwhatsnew.com, 17/abr/2026). API: no existe API para automatización de las funciones de IA (solo un SDK de apps/plugins, que es otra cosa) — confirmado por varias reseñas técnicas. Voz: no se encontró evidencia de modo de voz. Código: no se encontró evidencia de una función real de programación (una mención vaga de 'código' en cobertura de prensa parece referirse a orquestación de la suite, no a asistencia de programación) — se deja en 'no' en vez de sobreinterpretar. Español: sin comparativa específica de calidad, básico como valor neutral. Privacidad y precio ya estaban verificados en las series propias del sitio (veredicto amarillo en entrena-ia, precio en pesos mexicanos en precios-ia) — no se reverificaron desde cero, se reutilizó lo ya confirmado ahí porque sigue vigente. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Imágenes: fuerte por diseño — Magic Media (motor dual con Leonardo Phoenix) es su función de IA central, con la biblioteca de plantillas/assets más grande de las 11 herramientas de este recomendador; confirmado en canva.com/pricing (visitado en vivo, 10/sep/2026, ya localizado con precios en MX$). Escritura: básico — Magic Write genera primeros borradores de copy (captions, títulos, texto de presentaciones), descrito en varias reseñas como apoyo de diseño, no herramienta de escritura independiente. Video: básico — Magic Media también genera video (motor Runway Gen-3 por debajo, hasta 4K/60s según reseñas), pero sin benchmark independiente que lo compare con especialistas dedicados como Runway. Memoria e integraciones: confirmadas — Canva AI 2.0 (lanzado 16/abr/2026) tiene 'memoria persistente que aprende los gustos y el estilo del usuario' e integraciones reales con Slack, Gmail, Notion, Zoom y Google Drive (wwwhatsnew.com, 17/abr/2026). API: no existe API para automatización de las funciones de IA (solo un SDK de apps/plugins, que es otra cosa) — confirmado por varias reseñas técnicas. Voz: no se encontró evidencia de modo de voz. Código: no se encontró evidencia de una función real de programación (una mención vaga de 'código' en cobertura de prensa parece referirse a orquestación de la suite, no a asistencia de programación) — se deja en 'no' en vez de sobreinterpretar. Español: sin comparativa específica de calidad, básico como valor neutral. Privacidad y precio ya estaban verificados en las series propias del sitio (veredicto amarillo en entrena-ia, precio en pesos mexicanos en precios-ia) — no se reverificaron desde cero, se reutilizó lo ya confirmado ahí porque sigue vigente. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz: básico — el generador de voces con IA dentro del editor te deja escribir un guion, elegir una voz, descargar el audio y generar la misma narración en varios idiomas (canva.com/features/ai-voice-generator-characters, visitado el 27/oct/2026).",
       "fechaVerificacion": "2026-09-10",
       "tipo": "especialista",
       "especialidad": "diseño gráfico con IA integrada",
       "subusos": {
         "generar": "basico"
-      }
+      },
+      "audio": "basico"
     },
     {
       "herramientaId": "notebooklm",
@@ -226,14 +231,15 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Google renombró el producto a 'Gemini Notebook' (notebooklm.google redirige a notebook.google), pero el precio y el artículo propio del sitio siguen bajo el nombre NotebookLM. Investigación: fuerte por diseño — su función central es investigación anclada en las fuentes que subes (hasta 300 por cuaderno en el plan de pago), con reportes de investigación profunda; confirmado en el artículo propio de precios y en support.google.com (ayuda oficial de Gemini Notebook). Voz: confirmada — Audio Overviews (formato podcast) incluye un 'modo interactivo' donde puedes unirte a la conversación generada y hacer preguntas en vivo. Video: básico — Video Overviews es una función oficial vigente (confirmado en support.google.com, guía 'Generar Video Overviews en Gemini Notebook'), pero es una presentación narrada a partir de tus fuentes, no generación de video abierta como Runway/Veo. Imágenes: básico — genera infografías y mapas mentales a partir del contenido (confirmado en support.google.com), pero no imágenes libres como Midjourney/Canva. Español: fuerte — Audio y Video Overviews cubren unos 80 idiomas, español incluido explícitamente (cobertura reportada por varios medios especializados, sep-oct 2026). API: no hay API para el producto de consumo (gratis/Pro) — solo existe una API Enterprise dentro de Google Cloud para gestionar cuadernos por código, un producto distinto. Memoria: no se encontró evidencia de memoria de personalización entre sesiones (a diferencia de Gemini/ChatGPT/Claude) — cada cuaderno vive de sus propias fuentes, no de un perfil persistente del usuario. Integraciones: confirmadas con Google Workspace (importar desde Drive, exportar a Docs/Slides). México: Google AI Pro —el plan que desbloquea más capacidad aquí— ya está disponible y confirmado para México en la ficha de Gemini de esta misma serie. Código y privacidad: no hay ficha de 'quién entrena con tus datos' para NotebookLM todavía, así que el recomendador la muestra como 'sin verificar' en vez de asumir un veredicto. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Google renombró el producto a 'Gemini Notebook' (notebooklm.google redirige a notebook.google), pero el precio y el artículo propio del sitio siguen bajo el nombre NotebookLM. Investigación: fuerte por diseño — su función central es investigación anclada en las fuentes que subes (hasta 300 por cuaderno en el plan de pago), con reportes de investigación profunda; confirmado en el artículo propio de precios y en support.google.com (ayuda oficial de Gemini Notebook). Voz: confirmada — Audio Overviews (formato podcast) incluye un 'modo interactivo' donde puedes unirte a la conversación generada y hacer preguntas en vivo. Video: básico — Video Overviews es una función oficial vigente (confirmado en support.google.com, guía 'Generar Video Overviews en Gemini Notebook'), pero es una presentación narrada a partir de tus fuentes, no generación de video abierta como Runway/Veo. Imágenes: básico — genera infografías y mapas mentales a partir del contenido (confirmado en support.google.com), pero no imágenes libres como Midjourney/Canva. Español: fuerte — Audio y Video Overviews cubren unos 80 idiomas, español incluido explícitamente (cobertura reportada por varios medios especializados, sep-oct 2026). API: no hay API para el producto de consumo (gratis/Pro) — solo existe una API Enterprise dentro de Google Cloud para gestionar cuadernos por código, un producto distinto. Memoria: no se encontró evidencia de memoria de personalización entre sesiones (a diferencia de Gemini/ChatGPT/Claude) — cada cuaderno vive de sus propias fuentes, no de un perfil persistente del usuario. Integraciones: confirmadas con Google Workspace (importar desde Drive, exportar a Docs/Slides). México: Google AI Pro —el plan que desbloquea más capacidad aquí— ya está disponible y confirmado para México en la ficha de Gemini de esta misma serie. Código y privacidad: no hay ficha de 'quién entrena con tus datos' para NotebookLM todavía, así que el recomendador la muestra como 'sin verificar' en vez de asumir un veredicto. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz: básico — Audio Overviews genera audio narrado (formato podcast) a partir de tus fuentes; no es narración libre ni clonación de voz.",
       "fechaVerificacion": "2026-10-24",
       "tipo": "especialista",
       "especialidad": "investigar solo con tus propios documentos, con citas a tus fuentes",
       "subusos": {
         "documentos": "fuerte",
         "generar": "no"
-      }
+      },
+      "audio": "basico"
     },
     {
       "herramientaId": "kimi",
@@ -248,10 +254,11 @@
       "voz": false,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Código: fuerte — Kimi Code es una herramienta de programación dedicada incluida en todos los planes de pago (confirmado en kimi.com/membership/pricing, visitado en vivo, con los mismos precios en USD del artículo propio de precios), con foco declarado de Moonshot AI en programación agéntica de largo alcance. Investigación: fuerte — Deep Research ('investigación a fondo') es una función listada tanto en el sitio de precios como en el centro de ayuda oficial (kimi.com/en/help/features). Memoria: confirmada — 'Memory Space' es una función documentada en el centro de ayuda oficial de Kimi, con artículos propios sobre qué se recuerda y cómo se activa. Integraciones: confirmadas — 'Plugins & Skills', extensión de navegador y extensión de Office, listadas en el mismo centro de ayuda oficial. Español: fuerte — el modelo K2.6 obtiene 91.00 contra 92.50 de inglés en el benchmark Global-MMLU-Lite (reporte técnico de terceros, con ítems traducidos y revisados por humanos para comparar idiomas de forma justa), una brecha pequeña. API: confirmada, compatible con el formato de OpenAI (Wikipedia, centro de ayuda oficial). Imágenes/video/voz: no se encontró evidencia de generación de imágenes, de video, ni de modo de voz en ningún material oficial o de prensa — se dejan en 'no' en vez de asumir. Escritura: sin comparativa específica de calidad frente a las otras herramientas, básico como valor neutral. México: precios en USD accesibles sin bloqueo geográfico aparente, mismo criterio que el artículo propio de precios ya publicado. Privacidad: veredicto rojo ya verificado en la serie 'Quién entrena con tus datos' (entrena con prompts y archivos por default, sin interruptor en la app) — se reutiliza ese veredicto, no se reverificó desde cero porque sigue vigente. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\".",
+      "fuenteCapacidades": "Código: fuerte — Kimi Code es una herramienta de programación dedicada incluida en todos los planes de pago (confirmado en kimi.com/membership/pricing, visitado en vivo, con los mismos precios en USD del artículo propio de precios), con foco declarado de Moonshot AI en programación agéntica de largo alcance. Investigación: fuerte — Deep Research ('investigación a fondo') es una función listada tanto en el sitio de precios como en el centro de ayuda oficial (kimi.com/en/help/features). Memoria: confirmada — 'Memory Space' es una función documentada en el centro de ayuda oficial de Kimi, con artículos propios sobre qué se recuerda y cómo se activa. Integraciones: confirmadas — 'Plugins & Skills', extensión de navegador y extensión de Office, listadas en el mismo centro de ayuda oficial. Español: fuerte — el modelo K2.6 obtiene 91.00 contra 92.50 de inglés en el benchmark Global-MMLU-Lite (reporte técnico de terceros, con ítems traducidos y revisados por humanos para comparar idiomas de forma justa), una brecha pequeña. API: confirmada, compatible con el formato de OpenAI (Wikipedia, centro de ayuda oficial). Imágenes/video/voz: no se encontró evidencia de generación de imágenes, de video, ni de modo de voz en ningún material oficial o de prensa — se dejan en 'no' en vez de asumir. Escritura: sin comparativa específica de calidad frente a las otras herramientas, básico como valor neutral. México: precios en USD accesibles sin bloqueo geográfico aparente, mismo criterio que el artículo propio de precios ya publicado. Privacidad: veredicto rojo ya verificado en la serie 'Quién entrena con tus datos' (entrena con prompts y archivos por default, sin interruptor en la app) — se reutiliza ese veredicto, no se reverificó desde cero porque sigue vigente. Afinación por subuso (27/oct/2026): se deriva de lo ya verificado arriba, sin re-evaluar la herramienta; lo no listado cuenta como \"sin verificar\". Subuso de código (27/oct/2026): editor fuerte — es una herramienta de programación dedicada que vive dentro del editor, según lo ya verificado arriba. Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-10-24",
       "subusos": {
-        "web": "fuerte"
+        "web": "fuerte",
+        "editor": "fuerte"
       }
     },
     {
@@ -267,7 +274,7 @@
       "voz": false,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Investigación: fuerte por diseño — buscador de IA para literatura científica con corpus propio: su blog de presentación lo describe como más de 200 millones de documentos científicos, sobre todo artículos con revisión por pares, armado con Semantic Scholar, OpenAlex y un rastreo propio de la web académica (otras páginas de la empresa citan más de 400 millones, así que la cifra exacta no es consistente), y cada respuesta incluye citas que llevan al paper original. Subuso papers: fuerte. Subuso web: no — responde desde su corpus académico, no desde la web abierta. API e integraciones: confirmadas en el changelog oficial (help.consensus.app, consultado el 27/oct/2026) — la API es autoservicio para todos desde el 26/ago/2026, hay servidor MCP, y Consensus funciona dentro de ChatGPT Deep Research y de Claude desde el 13/may/2026. Español: el changelog documenta traducción de sus funciones de IA a 31 idiomas (marzo 2024), pero no evalúa la calidad en español — básico como valor neutral. Escritura, código, imágenes, video, voz y memoria: no se encontró evidencia, se marcan ausentes en vez de asumidas. México: precio y prueba en los artículos propios de la serie IA sin letra chiquita. Privacidad: veredicto ya verificado en la serie \"Quién entrena con tus datos\".",
+      "fuenteCapacidades": "Investigación: fuerte por diseño — buscador de IA para literatura científica con corpus propio: su blog de presentación lo describe como más de 200 millones de documentos científicos, sobre todo artículos con revisión por pares, armado con Semantic Scholar, OpenAlex y un rastreo propio de la web académica (otras páginas de la empresa citan más de 400 millones, así que la cifra exacta no es consistente), y cada respuesta incluye citas que llevan al paper original. Subuso papers: fuerte. Subuso web: no — responde desde su corpus académico, no desde la web abierta. API e integraciones: confirmadas en el changelog oficial (help.consensus.app, consultado el 27/oct/2026) — la API es autoservicio para todos desde el 26/ago/2026, hay servidor MCP, y Consensus funciona dentro de ChatGPT Deep Research y de Claude desde el 13/may/2026. Español: el changelog documenta traducción de sus funciones de IA a 31 idiomas (marzo 2024), pero no evalúa la calidad en español — básico como valor neutral. Escritura, código, imágenes, video, voz y memoria: no se encontró evidencia, se marcan ausentes en vez de asumidas. México: precio y prueba en los artículos propios de la serie IA sin letra chiquita. Privacidad: veredicto ya verificado en la serie \"Quién entrena con tus datos\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-10-27",
       "tipo": "especialista",
       "especialidad": "búsqueda de papers académicos con citas verificables",
@@ -294,7 +301,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Imágenes: fuerte — Firefly es la plataforma de generación de imágenes de Adobe. Adobe afirma que su familia de modelos Firefly se entrenó con \"contenido licenciado, como Adobe Stock, y contenido de dominio público\", que nunca la ha entrenado con contenido de usuarios y que fue diseñada para uso comercial (adobe.com/ai/overview/firefly/gen-ai-approach, 27/oct/2026). La indemnización por propiedad intelectual la ofrece Adobe solo a clientes empresariales, según esa misma página: no aplica a planes individuales. Esa descripción de entrenamiento es la de los modelos propios de Firefly — la misma app incluye modelos de socios (Google, OpenAI, FLUX, Runway, Kling, Luma y ElevenLabs, según adobe.com/products/firefly), de los que no verificamos las mismas condiciones. Subusos: vector fuerte — Text to vector genera vectores desde texto, los descarga en .svg y los abre directo en Illustrator (helpx.adobe.com, página actualizada en oct/2025); comercial fuerte por el entrenamiento con material licenciado ya descrito. Video: básico — la página oficial lista generación de video desde texto o imagen y traducción de video, sin comparativa independiente que la ubique frente a especialistas. Voz: confirmada — texto a voz, traducción y doblaje de audio, música y efectos (página del producto). API: existe, documentada en developer.adobe.com/firefly-services (Quickstart y credenciales de desarrollador); no confirmamos un endpoint de vectores. Integraciones: Illustrator y el ecosistema Creative Cloud. Español, escritura, investigación, código y memoria: sin evidencia o no aplican — español en básico como valor neutral. México: artículo propio de precios. Privacidad: se reutiliza el artículo de Adobe de la serie \"Quién entrena con tus datos\", que trata justo el entrenamiento de Firefly.",
+      "fuenteCapacidades": "Imágenes: fuerte — Firefly es la plataforma de generación de imágenes de Adobe. Adobe afirma que su familia de modelos Firefly se entrenó con \"contenido licenciado, como Adobe Stock, y contenido de dominio público\", que nunca la ha entrenado con contenido de usuarios y que fue diseñada para uso comercial (adobe.com/ai/overview/firefly/gen-ai-approach, 27/oct/2026). La indemnización por propiedad intelectual la ofrece Adobe solo a clientes empresariales, según esa misma página: no aplica a planes individuales. Esa descripción de entrenamiento es la de los modelos propios de Firefly — la misma app incluye modelos de socios (Google, OpenAI, FLUX, Runway, Kling, Luma y ElevenLabs, según adobe.com/products/firefly), de los que no verificamos las mismas condiciones. Subusos: vector fuerte — Text to vector genera vectores desde texto, los descarga en .svg y los abre directo en Illustrator (helpx.adobe.com, página actualizada en oct/2025); comercial fuerte por el entrenamiento con material licenciado ya descrito. Video: básico — la página oficial lista generación de video desde texto o imagen y traducción de video, sin comparativa independiente que la ubique frente a especialistas. Voz: confirmada — texto a voz, traducción y doblaje de audio, música y efectos (página del producto). API: existe, documentada en developer.adobe.com/firefly-services (Quickstart y credenciales de desarrollador); no confirmamos un endpoint de vectores. Integraciones: Illustrator y el ecosistema Creative Cloud. Español, escritura, investigación, código y memoria: sin evidencia o no aplican — español en básico como valor neutral. México: artículo propio de precios. Privacidad: se reutiliza el artículo de Adobe de la serie \"Quién entrena con tus datos\", que trata justo el entrenamiento de Firefly. Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz y música: básico — la página oficial del producto lista texto a voz, traducción y doblaje de audio, y generación de música y efectos de sonido (adobe.com/products/firefly), sin comparativa independiente.",
       "fechaVerificacion": "2026-10-27",
       "tipo": "especialista",
       "especialidad": "imágenes con modelo entrenado en material licenciado, y vectores .svg",
@@ -307,7 +314,9 @@
         "texto": "Adobe afirma que sus modelos Firefly se entrenaron con contenido licenciado (como Adobe Stock) y de dominio público, que nunca los entrenó con contenido de usuarios, y que los diseñó para uso comercial. La indemnización por propiedad intelectual se ofrece solo a clientes empresariales, no a planes individuales. Además genera vectores desde texto y los descarga en .svg para editarlos en Illustrator. Ojo: Firefly también incluye modelos de socios (Google, OpenAI, FLUX, Runway, Kling, Luma y ElevenLabs); esa descripción de entrenamiento es la de los modelos propios de Adobe y no la verificamos para los de socios.",
         "fuente": "Adobe: \"Nuestro enfoque de IA generativa\" (adobe.com)",
         "url": "https://www.adobe.com/ai/overview/firefly/gen-ai-approach.html"
-      }
+      },
+      "audio": "basico",
+      "musica": "basico"
     },
     {
       "herramientaId": "recraft-ai",
@@ -322,7 +331,7 @@
       "voz": false,
       "integraciones": false,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Imágenes: fuerte por diseño — generador de imágenes y plataforma de diseño centrada en fotorrealismo, vectores, estilos propios y mockups (recraft.ai, 27/oct/2026). Subuso vector: fuerte — su documentación de exportación indica que las imágenes vectoriales se exportan como SVG y PDF, y existe un editor vectorial en el lienzo (recraft.ai/docs); la página principal habla de \"gráficos vectoriales editables complejos\" y de un vectorizador de PNG/JPG. Distintivo adicional: estilos personalizados — subes tus propias imágenes y se convierten en un estilo reutilizable sin entrenar un modelo. API: confirmada (documentación oficial: tokens de API, precios por imagen, compatible con la librería de OpenAI para Python). Integraciones: la documentación solo menciona uso con herramientas de IA (llms.txt, una skill para Claude Code); no encontramos plugins oficiales de Figma, Photoshop o Canva — se marca ausente en vez de asumido. Video, voz, memoria, escritura, investigación y código: sin evidencia. Español: sin comparativa — básico como valor neutral. México: precio y prueba en artículos propios de la serie. Privacidad: sin artículo en la serie \"Quién entrena con tus datos\" todavía — el recomendador la muestra como \"sin verificar\".",
+      "fuenteCapacidades": "Imágenes: fuerte por diseño — generador de imágenes y plataforma de diseño centrada en fotorrealismo, vectores, estilos propios y mockups (recraft.ai, 27/oct/2026). Subuso vector: fuerte — su documentación de exportación indica que las imágenes vectoriales se exportan como SVG y PDF, y existe un editor vectorial en el lienzo (recraft.ai/docs); la página principal habla de \"gráficos vectoriales editables complejos\" y de un vectorizador de PNG/JPG. Distintivo adicional: estilos personalizados — subes tus propias imágenes y se convierten en un estilo reutilizable sin entrenar un modelo. API: confirmada (documentación oficial: tokens de API, precios por imagen, compatible con la librería de OpenAI para Python). Integraciones: la documentación solo menciona uso con herramientas de IA (llms.txt, una skill para Claude Code); no encontramos plugins oficiales de Figma, Photoshop o Canva — se marca ausente en vez de asumido. Video, voz, memoria, escritura, investigación y código: sin evidencia. Español: sin comparativa — básico como valor neutral. México: precio y prueba en artículos propios de la serie. Privacidad: sin artículo en la serie \"Quién entrena con tus datos\" todavía — el recomendador la muestra como \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-10-27",
       "tipo": "especialista",
       "especialidad": "gráficos vectoriales editables (SVG)",
@@ -348,7 +357,7 @@
       "voz": true,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Video: fuerte por diseño — plataforma de video con IA centrada en avatares de presentador, traducción/doblaje y sincronía de labios (heygen.com, 27/oct/2026). Subuso avatar: fuerte — Avatar V busca mantener \"una sola identidad coherente\" en cada video, y cada avatar personalizado exige verificación en cámara de la persona representada. Doblaje: traduce un video a más de 175 idiomas y dialectos clonando la voz y sincronizando los labios; el español aparece entre los idiomas de ejemplo de la página, pero no se publica qué variantes incluye. Voz: confirmada (clonación de voz en la traducción). API: v3 documentada, con endpoints de avatares y traducción de video (changelog oficial, developers.heygen.com, entradas hasta oct/2026). Integraciones: la página oficial de integraciones lista Zapier, Slack, Google Drive, Canva, Notion, Make y n8n, entre otras (algunas marcadas \"Coming soon\"). Plan gratuito: cubre creación de video con texto y con IA; las funciones avanzadas son de pago. Imágenes, código, investigación, escritura y memoria: no se encontró evidencia. Español (calidad): sin comparativa — básico como valor neutral. México: artículos propios de precios y prueba. Privacidad: sin artículo en la serie \"Quién entrena con tus datos\" todavía — \"sin verificar\".",
+      "fuenteCapacidades": "Video: fuerte por diseño — plataforma de video con IA centrada en avatares de presentador, traducción/doblaje y sincronía de labios (heygen.com, 27/oct/2026). Subuso avatar: fuerte — Avatar V busca mantener \"una sola identidad coherente\" en cada video, y cada avatar personalizado exige verificación en cámara de la persona representada. Doblaje: traduce un video a más de 175 idiomas y dialectos clonando la voz y sincronizando los labios; el español aparece entre los idiomas de ejemplo de la página, pero no se publica qué variantes incluye. Voz: confirmada (clonación de voz en la traducción). API: v3 documentada, con endpoints de avatares y traducción de video (changelog oficial, developers.heygen.com, entradas hasta oct/2026). Integraciones: la página oficial de integraciones lista Zapier, Slack, Google Drive, Canva, Notion, Make y n8n, entre otras (algunas marcadas \"Coming soon\"). Plan gratuito: cubre creación de video con texto y con IA; las funciones avanzadas son de pago. Imágenes, código, investigación, escritura y memoria: no se encontró evidencia. Español (calidad): sin comparativa — básico como valor neutral. México: artículos propios de precios y prueba. Privacidad: sin artículo en la serie \"Quién entrena con tus datos\" todavía — \"sin verificar\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". Voz: básico — doblaje de video con clonación de voz y sincronía de labios, y voces para avatares; es una función de video, no un estudio de audio.",
       "fechaVerificacion": "2026-10-27",
       "tipo": "especialista",
       "especialidad": "avatares de video y doblaje con sincronía de labios",
@@ -359,7 +368,8 @@
         "texto": "Traduce y dobla un video completo a más de 175 idiomas y dialectos conservando la voz del hablante y sincronizando los labios (el español aparece entre los ejemplos de su página), y crea avatares de presentador con identidad consistente. Los avatares personalizados requieren verificación en cámara de la persona representada.",
         "fuente": "HeyGen: página principal (heygen.com)",
         "url": "https://www.heygen.com/"
-      }
+      },
+      "audio": "basico"
     },
     {
       "herramientaId": "opus-clip",
@@ -374,7 +384,7 @@
       "voz": false,
       "integraciones": true,
       "disponibleMexico": true,
-      "fuenteCapacidades": "Video: fuerte en su flujo — convierte videos largos (podcasts, entrevistas, vlogs) en clips cortos con subtítulos, reencuadre con seguimiento de sujetos y llamada a la acción, y acepta instrucciones en lenguaje natural para extraer un momento concreto (opus.pro, 27/oct/2026). Subuso clips: fuerte. No genera video desde cero — parte de un video tuyo — así que generar y avatar se marcan \"no\" según la descripción del propio producto. Español: aparece sin asterisco (estable, no beta) en la lista de idiomas del centro de ayuda oficial (help.opus.pro) junto con inglés, alemán, francés y portugués; la calidad del resultado no se compara con otras herramientas — básico. API: autoservicio con nivel gratuito, servidor MCP nativo y SDKs en Node, Python, Go, PHP, Ruby y Java (opus.pro/api). Integraciones: el servidor MCP y la publicación a redes sociales con un clic. Plan gratuito permanente de 60 minutos de procesamiento al mes y prueba de 7 días del plan Pro. Escritura, investigación, código, imágenes, voz y memoria: no aplican. México: artículos propios de la serie. Privacidad: veredicto ya verificado en la serie \"Quién entrena con tus datos\".",
+      "fuenteCapacidades": "Video: fuerte en su flujo — convierte videos largos (podcasts, entrevistas, vlogs) en clips cortos con subtítulos, reencuadre con seguimiento de sujetos y llamada a la acción, y acepta instrucciones en lenguaje natural para extraer un momento concreto (opus.pro, 27/oct/2026). Subuso clips: fuerte. No genera video desde cero — parte de un video tuyo — así que generar y avatar se marcan \"no\" según la descripción del propio producto. Español: aparece sin asterisco (estable, no beta) en la lista de idiomas del centro de ayuda oficial (help.opus.pro) junto con inglés, alemán, francés y portugués; la calidad del resultado no se compara con otras herramientas — básico. API: autoservicio con nivel gratuito, servidor MCP nativo y SDKs en Node, Python, Go, PHP, Ruby y Java (opus.pro/api). Integraciones: el servidor MCP y la publicación a redes sociales con un clic. Plan gratuito permanente de 60 minutos de procesamiento al mes y prueba de 7 días del plan Pro. Escritura, investigación, código, imágenes, voz y memoria: no aplican. México: artículos propios de la serie. Privacidad: veredicto ya verificado en la serie \"Quién entrena con tus datos\". Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\". No se encontró función de voz ni de música para el usuario final en la documentación oficial consultada.",
       "fechaVerificacion": "2026-10-27",
       "tipo": "especialista",
       "especialidad": "recortar clips de un video largo",
@@ -387,6 +397,142 @@
         "texto": "Parte de un video largo tuyo (podcast, entrevista, vlog) y entrega clips cortos con subtítulos, reencuadre con seguimiento de sujetos y llamada a la acción; también acepta una instrucción en lenguaje natural para extraer un momento concreto. No genera video desde cero: es la herramienta para reutilizar un video que ya grabaste.",
         "fuente": "OpusClip: página principal (opus.pro)",
         "url": "https://www.opus.pro/"
+      }
+    },
+    {
+      "herramientaId": "elevenlabs",
+      "escritura": "no",
+      "investigacion": "no",
+      "codigo": "no",
+      "imagenes": "basico",
+      "video": "basico",
+      "audio": "fuerte",
+      "musica": "basico",
+      "espanol": "basico",
+      "api": true,
+      "memoria": false,
+      "voz": true,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Voz: fuerte por diseño — plataforma de audio con IA: texto a voz, clonación de voz, voces diseñadas desde una descripción, doblaje (Dubbing v2) y una biblioteca de más de 17,500 voces (elevenlabs.io, 27/oct/2026). Español: aparece (código es) en todos los modelos de texto a voz de la documentación oficial (elevenlabs.io/docs/overview/models); solo Eleven Multilingual v2 menciona variantes, España y México; que el idioma esté soportado no mide la calidad de la voz en español, así que el nivel queda en básico como valor neutral. Los modelos más recientes (v4) cubren más de 90 idiomas. Música, imágenes y video: básico — la página oficial las lista dentro de ElevenCreative (Música, Imagen y video, y una Music API) sin comparativa independiente que las ubique frente a especialistas. API: ElevenAPI documentada, con SDKs. Integraciones: ElevenAgents despliega agentes por voz, chat, correo y WhatsApp. Memoria: no se encontró evidencia de memoria personal entre conversaciones. Escritura, investigación y código: no aplican. México: artículo propio de precios. Privacidad: se escribió el artículo de la serie \"Quién entrena con tus datos\" con la política oficial (amarillo: entrena por default, opt-out en \"Data use\"). Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\".",
+      "fechaVerificacion": "2026-10-27",
+      "tipo": "especialista",
+      "especialidad": "voz sintética, clonación de voz y doblaje",
+      "subusos": {},
+      "queHaceDiferente": {
+        "texto": "Genera voz a partir de texto con modelos que cubren hasta más de 90 idiomas —el español aparece en todos sus modelos de texto a voz, y su documentación menciona variantes de España y México solo en Multilingual v2—, clona tu propia voz, diseña una voz desde una descripción y dobla contenido a otros idiomas. Entre los chats de este recomendador, ninguno ofrece esto como función para el usuario final: lo que tienen de texto a voz está en su API o no existe (según nuestra verificación del 27 de octubre de 2026).",
+        "fuente": "ElevenLabs: página principal y documentación de modelos (elevenlabs.io)",
+        "url": "https://elevenlabs.io/docs/overview/models"
+      }
+    },
+    {
+      "herramientaId": "suno",
+      "escritura": "no",
+      "investigacion": "no",
+      "codigo": "no",
+      "imagenes": "no",
+      "video": "no",
+      "audio": "no",
+      "musica": "fuerte",
+      "espanol": "basico",
+      "api": false,
+      "memoria": false,
+      "voz": false,
+      "integraciones": false,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Música: fuerte por diseño — genera canciones completas, con voz, letra y producción, desde un prompt de texto (suno.com, 27/oct/2026). Planes: el gratuito permite hasta 10 canciones al día sin tarjeta; Pro (500 canciones al mes) y Premier (2,000) añaden derechos comerciales, editor de canciones, separación de stems y subida de audio; según los Términos de Servicio, en el plan gratuito el uso se limita a fines personales y no comerciales, y en Pro o Premier Suno cede sus derechos sobre el resultado que le pertenezca (sin garantizar que surja un derecho de autor). Español: la página no lista los idiomas soportados y no pudimos abrir su centro de ayuda — básico como valor neutral. API: no encontramos una API pública de Suno en fuentes oficiales (varios proveedores terceros la ofrecen por su cuenta, y una fuente indica que Suno explora una con socios selectos) — se marca ausente. Integraciones, memoria y voz: sin evidencia. Escritura, investigación, código, imágenes y video: no aplican. México: artículo propio de precios. Privacidad: se escribió el artículo de la serie \"Quién entrena con tus datos\" con los Términos y la política oficiales (rojo: sin opt-out descrito). Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\".",
+      "fechaVerificacion": "2026-10-27",
+      "tipo": "especialista",
+      "especialidad": "canciones completas con voz a partir de texto",
+      "subusos": {},
+      "queHaceDiferente": {
+        "texto": "Genera canciones completas —voz, letra y producción— a partir de una descripción en texto; en los planes de pago añade editor de canciones, separación de stems y subida de audio. El plan gratuito permite hasta 10 canciones al día sin tarjeta, y los derechos comerciales los da el plan de pago (los Términos limitan lo gratuito a uso personal y no comercial). Entre los chats de este recomendador, solo Gemini genera música en su app, con pistas de 30 segundos.",
+        "fuente": "Suno: página principal y Términos de Servicio (suno.com)",
+        "url": "https://suno.com/"
+      }
+    },
+    {
+      "herramientaId": "lovable",
+      "escritura": "no",
+      "investigacion": "no",
+      "codigo": "fuerte",
+      "imagenes": "basico",
+      "video": "basico",
+      "audio": "no",
+      "musica": "no",
+      "espanol": "basico",
+      "api": true,
+      "memoria": false,
+      "voz": false,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Código: fuerte por diseño — plataforma de desarrollo con IA \"full-stack\" que crea, itera y despliega aplicaciones web desde lenguaje natural, con frontend, backend, base de datos, autenticación e integraciones (docs.lovable.dev, 27/oct/2026). Subuso apps: fuerte. Imágenes y video: básico — la página oficial menciona recursos visuales como imágenes o videos cortos, además de presentaciones y documentos, sin comparativa. Integraciones: sincroniza el código con GitHub, GitLab y Bitbucket, y se usa desde escritorio, móvil, Slack, Telegram, ChatGPT y un servidor MCP. API: pública pero acotada — administra y despliega proyectos existentes (docs.lovable.dev/api-reference); construir con IA se hace por el servidor MCP. Plan gratuito: se puede empezar gratis; los planes se cobran por créditos. Español: sin comparativa — básico neutral. Memoria y voz: sin evidencia. México: artículos propios de precios y prueba. Privacidad: se escribió el artículo de la serie \"Quién entrena con tus datos\" con la política oficial (amarillo: entrena por default, opt-out en cualquier plan). Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\".",
+      "fechaVerificacion": "2026-10-27",
+      "tipo": "especialista",
+      "especialidad": "crear y publicar apps web completas describiéndolas",
+      "subusos": {
+        "apps": "fuerte"
+      },
+      "queHaceDiferente": {
+        "texto": "Genera una aplicación funcional —frontend, backend, base de datos, autenticación e integraciones— a partir de una descripción en lenguaje natural, la publica en una URL en vivo y sincroniza el código con GitHub, GitLab o Bitbucket: entrega una app en marcha, no solo código para copiar. Su API pública es acotada: administra y despliega proyectos existentes, y construir con IA se hace por su servidor MCP.",
+        "fuente": "Lovable: documentación oficial (docs.lovable.dev)",
+        "url": "https://docs.lovable.dev/introduction/welcome"
+      }
+    },
+    {
+      "herramientaId": "bolt-new",
+      "escritura": "no",
+      "investigacion": "no",
+      "codigo": "fuerte",
+      "imagenes": "no",
+      "video": "no",
+      "audio": "no",
+      "musica": "no",
+      "espanol": "basico",
+      "api": false,
+      "memoria": false,
+      "voz": false,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Código: fuerte por diseño — constructor de IA para crear sitios, apps, prototipos y presentaciones conversando con el asistente; Bolt Cloud ofrece hosting, bases de datos, autenticación, analítica y dominios personalizados (bolt.new, 27/oct/2026). Subuso apps: fuerte. Integraciones: Figma y GitHub como puntos de partida. Plan gratuito: la página invita a empezar gratis pero no detalla el plan; el modo Max es solo para usuarios Pro. API: no encontramos una API pública del constructor (fuentes de terceros coinciden; las \"Bolt API\" que aparecen en buscadores son de una empresa de pagos distinta) — se marca ausente. La página no indica exportación de código. Español: sin comparativa — básico neutral. Memoria y voz: sin evidencia. México: artículos propios de precios y prueba. Privacidad: se escribió el artículo de la serie \"Quién entrena con tus datos\" con la política de StackBlitz (amarillo: entrena y puede licenciar datasets por default fuera de la UE, el Reino Unido y Suiza). Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\".",
+      "fechaVerificacion": "2026-10-27",
+      "tipo": "especialista",
+      "especialidad": "crear sitios y apps web conversando con la IA",
+      "subusos": {
+        "apps": "fuerte"
+      },
+      "queHaceDiferente": {
+        "texto": "Crea sitios, apps y prototipos conversando con la IA, y su plataforma Bolt Cloud incluye hosting, bases de datos, autenticación, analítica y dominios personalizados; puedes arrancar desde Figma o GitHub. No encontramos una API pública del constructor.",
+        "fuente": "Bolt: página principal (bolt.new)",
+        "url": "https://bolt.new/"
+      }
+    },
+    {
+      "herramientaId": "v0",
+      "escritura": "no",
+      "investigacion": "no",
+      "codigo": "fuerte",
+      "imagenes": "no",
+      "video": "no",
+      "audio": "no",
+      "musica": "no",
+      "espanol": "basico",
+      "api": true,
+      "memoria": false,
+      "voz": false,
+      "integraciones": true,
+      "disponibleMexico": true,
+      "fuenteCapacidades": "Código: fuerte por diseño — agente de Vercel que genera apps full-stack y pantallas desde descripciones, wireframes o mockups, corrige errores en el código, abre un pull request para revisión y despliega con un clic en la infraestructura de Vercel; trabaja con Next.js, Tailwind y shadcn/ui (v0.app, 27/oct/2026). Subuso apps: fuerte. API: existe una API de plataforma para generar, iterar, previsualizar y desplegar apps de forma programática (v0.app/docs/api/platform/overview); cobertura de prensa de agosto de 2026 la describe como disponible en general. Integraciones: Vercel, pull requests, bases de datos y herramientas externas, según la página. La página no menciona un plan gratuito ni la exportación explícita de código. Español, memoria y voz: sin evidencia — español básico neutral. México: artículos propios de precios y prueba. Privacidad: se escribió el artículo de la serie \"Quién entrena con tus datos\" con los Términos de Vercel y la política de IA de v0 (amarillo: depende del plan). Voz y música (27/oct/2026): solo cuentan funciones de usuario final en el producto, no las que existen únicamente por API; lo no encontrado en documentación oficial se marca \"no\".",
+      "fechaVerificacion": "2026-10-27",
+      "tipo": "especialista",
+      "especialidad": "crear apps y pantallas web desde una descripción o un mockup",
+      "subusos": {
+        "apps": "fuerte"
+      },
+      "queHaceDiferente": {
+        "texto": "Es un agente de Vercel que genera apps full-stack y pantallas web desde descripciones, wireframes o mockups, corrige errores en el código, abre un pull request para revisión y despliega con un clic en la infraestructura de Vercel; trabaja con Next.js, Tailwind y shadcn/ui. Tiene una API de plataforma para generar apps de forma programática.",
+        "fuente": "v0: página principal (v0.app)",
+        "url": "https://v0.app/"
       }
     }
   ]

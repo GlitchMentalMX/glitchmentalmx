@@ -56,6 +56,8 @@ const EJES_USO = [
   { key: 'codigo', label: 'Código' },
   { key: 'imagenes', label: 'Imágenes' },
   { key: 'video', label: 'Video' },
+  { key: 'audio', label: 'Generar voz (narrar, clonar, doblar)' },
+  { key: 'musica', label: 'Crear música' },
   { key: 'espanol', label: 'Calidad en español' },
 ] as const;
 
@@ -137,7 +139,7 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
     <h2>¿Para qué sirve?</h2>
     <ul class="ejes">
       {EJES_USO.map((eje) => {
-        const nivel = NIVEL_LABEL[cap[eje.key] as 'no' | 'basico' | 'fuerte'];
+        const nivel = NIVEL_LABEL[(cap[eje.key] ?? 'no') as 'no' | 'basico' | 'fuerte'];
         return (
           <li class={`eje eje-${nivel.clase}`}>
             <span class="eje-icon" aria-hidden="true">{nivel.icon}</span>

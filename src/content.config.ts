@@ -329,6 +329,11 @@ const herramientasIA = defineCollection({
         codigo: nivelUso,
         imagenes: nivelUso,
         video: nivelUso,
+        // Usos que solo se califican por funciones de un usuario final en el
+        // producto (app o web): lo que existe únicamente por API no cuenta.
+        // Ausente = "no" (no se encontró la función en documentación oficial).
+        audio: nivelUso.optional(),
+        musica: nivelUso.optional(),
         // Mide calidad de la respuesta en español (naturalidad, modismos
         // regionales, sin traducción forzada) — NO disponibilidad de interfaz,
         // que hoy es casi universal y no discrimina entre herramientas.
@@ -365,6 +370,8 @@ const herramientasIA = defineCollection({
             generar: nivelUso,
             avatar: nivelUso,
             clips: nivelUso,
+            editor: nivelUso,
+            apps: nivelUso,
           })
           .partial()
           .optional(),

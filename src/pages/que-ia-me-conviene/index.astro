@@ -43,6 +43,8 @@ const TOOLS = capacidades.map((cap) => {
       codigo: cap.codigo,
       imagenes: cap.imagenes,
       video: cap.video,
+      audio: cap.audio ?? 'no',
+      musica: cap.musica ?? 'no',
       espanol: cap.espanol,
       api: cap.api,
       memoria: cap.memoria,
@@ -86,7 +88,7 @@ const title = '¿Qué IA me conviene?';
 // JSON) y con lo que distingue a esta herramienta: no es un top 10, cubre
 // chats generales y especialistas, y dice por qué recomienda cada cosa.
 const tituloPagina = `¿Qué IA me conviene? Compara ${TOOLS.length} herramientas de IA`;
-const description = `Compara ${TOOLS.length} herramientas de IA, de chats generales a especialistas en papers, imágenes y video, con 4 preguntas. Gratis, sin registro y con la razón de cada resultado.`;
+const description = `Compara ${TOOLS.length} herramientas de IA, de chats generales a especialistas en papers, imágenes, video, voz, música y apps. Gratis, sin registro y con la razón de cada resultado.`;
 const canonicalPath = '/que-ia-me-conviene/';
 
 // Preguntas frecuentes: mismo criterio que el resto del sitio — solo lo que
@@ -119,7 +121,7 @@ const faqs: { q: string; a: string; fuente?: { texto: string; url: string } }[] 
   },
   {
     q: '¿Qué IA usar para programar?',
-    a: 'En el leaderboard de SWE-bench Verified de BenchLM (actualizado el 27 de octubre de 2026, con 112 modelos), los tres primeros lugares son de Claude —Opus 5 con 96%, Mythos 5 con 95.5% y Fable 5 con 95%—, el mejor modelo de OpenAI de esa tabla, GPT-5.3 Codex, queda noveno con 85%, y ningún modelo de Gemini aparece entre los diez primeros. Ojo: la propia página advierte que ese benchmark está "contaminado y saturado" y que los puntajes reportados por cada empresa pueden usar agentes y presupuestos distintos, así que tómalo como una señal de quién está arriba, no como una tabla exacta. Si programas todos los días dentro de un editor, GitHub Copilot y Kimi Code son herramientas de programación dedicadas, no un chat de propósito general.',
+    a: 'En el leaderboard de SWE-bench Verified de BenchLM (actualizado el 27 de octubre de 2026, con 112 modelos), los tres primeros lugares son de Claude —Opus 5 con 96%, Mythos 5 con 95.5% y Fable 5 con 95%—, el mejor modelo de OpenAI de esa tabla, GPT-5.3 Codex, queda noveno con 85%, y ningún modelo de Gemini aparece entre los diez primeros. Ojo: la propia página advierte que ese benchmark está "contaminado y saturado" y que los puntajes reportados por cada empresa pueden usar agentes y presupuestos distintos, así que tómalo como una señal de quién está arriba, no como una tabla exacta. Si programas todos los días dentro de un editor, GitHub Copilot y Kimi Code son herramientas de programación dedicadas, no un chat de propósito general. Y si lo que quieres es una app completa sin programar, Lovable, Bolt y v0 la crean desde una descripción: el cuestionario te pregunta cuál de las dos cosas necesitas.',
     fuente: {
       texto: 'Fuente: leaderboard SWE-bench Verified, BenchLM, consultado el 27 de octubre de 2026',
       url: 'https://benchlm.ai/benchmarks/sweVerified',
@@ -166,8 +168,21 @@ const faqs: { q: string; a: string; fuente?: { texto: string; url: string } }[] 
     a: 'Son tres trabajos distintos, y por eso el cuestionario pregunta cuál necesitas. Para generar clips desde texto o imagen, Runway es la especialista, y Gemini (con Veo) y Grok (con Imagine) también lo hacen dentro del chat. Para un avatar que habla y para doblar un video completo conservando tu voz y sincronizando los labios, HeyGen es la especialista (más de 175 idiomas y dialectos, con el español entre sus ejemplos). Para sacar clips cortos de un video largo que ya grabaste, OpusClip: no genera video desde cero, parte del tuyo. Cada ficha enlaza a su fuente.',
   },
   {
+    q: '¿Qué IA usar para crear una app sin saber programar?',
+    a: 'Lovable, Bolt y v0 son especialistas en eso: describes la app en lenguaje natural y la construyen y la publican. Lovable genera frontend, backend, base de datos y autenticación y sincroniza el código con GitHub, GitLab o Bitbucket; Bolt incluye en Bolt Cloud hosting, base de datos, autenticación y dominios propios; v0 es el agente de Vercel y despliega con un clic en su infraestructura. Antes de elegir, revisa su ficha de privacidad: las tres pueden usar tus prompts y tu código para entrenar — Lovable y Bolt por default y con opt-out, v0 según tu plan.',
+    fuente: { texto: 'Serie: Quién entrena con tus datos', url: '/quien-entrena-con-tus-datos/' },
+  },
+  {
+    q: '¿Qué IA usar para generar voz o crear música?',
+    a: 'Para voz —narrar un texto, clonar tu voz o doblar contenido— ElevenLabs es la especialista: el español aparece en todos sus modelos de texto a voz y los más recientes cubren más de 90 idiomas. Entre los chats generales, ninguno ofrece narración como función para el usuario final: el texto a voz de ChatGPT, Gemini y Grok está en sus API. Para música, Suno genera canciones completas con voz y letra desde un texto (el plan gratuito da hasta 10 al día y los derechos comerciales son del plan de pago), y Gemini genera pistas de 30 segundos dentro de su app. Adobe Firefly y Canva también ofrecen voz, y Firefly música, sin una comparativa independiente: las marcamos como "cumple, pero no es su fuerte".',
+    fuente: {
+      texto: 'Fuente: modelos de texto a voz, ElevenLabs',
+      url: 'https://elevenlabs.io/docs/overview/models',
+    },
+  },
+  {
     q: '¿Cómo decide esta herramienta qué IA me conviene?',
-    a: 'No rankeamos "la mejor IA". Calculamos una compatibilidad de 0 a 100 entre tu perfil — para qué la vas a usar (y, si eliges investigar, imágenes o video, qué tipo exacto), qué tan importante es la privacidad, si necesitas español, qué extras quieres — y los datos verificados de cada herramienta. Si con tus respuestas varias herramientas puntúan igual, te lo decimos como empate en vez de escoger una al azar. El desglose exacto está en "¿Por qué me salió esta recomendación?", con el peso y el valor de cada criterio; lo que no pudimos verificar se marca "sin verificar".',
+    a: 'No rankeamos "la mejor IA". Calculamos una compatibilidad de 0 a 100 entre tu perfil — para qué la vas a usar (y, si eliges investigar, programar, imágenes o video, qué tipo exacto), qué tan importante es la privacidad, si necesitas español, qué extras quieres — y los datos verificados de cada herramienta. Si con tus respuestas varias herramientas puntúan igual, te lo decimos como empate en vez de escoger una al azar. El desglose exacto está en "¿Por qué me salió esta recomendación?", con el peso y el valor de cada criterio; lo que no pudimos verificar se marca "sin verificar".',
   },
 ];
 
@@ -238,6 +253,8 @@ const faqSchema = {
         <button type="button" data-value="codigo">Programar</button>
         <button type="button" data-value="imagenes">Crear imágenes</button>
         <button type="button" data-value="video">Crear video</button>
+        <button type="button" data-value="audio">Generar voz</button>
+        <button type="button" data-value="musica">Crear música</button>
       </div>
 
       {SUBPREGUNTAS.map((s) => (
@@ -315,7 +332,8 @@ const faqSchema = {
 
 <script is:inline define:vars={{ TOOLS, SUBPREGUNTAS }}>
   (function () {
-    var DIMENSIONES_USO = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video'];
+    var DIMENSIONES_USO = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video', 'audio', 'musica'];
+    var USOS_BASE = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video'];
     var EXTRAS = ['api', 'memoria', 'voz', 'integraciones', 'disponibleMexico'];
     var MAX_SUBPREGUNTAS = 2;
     var PESO_SUBUSO = 8;
@@ -327,6 +345,8 @@ const faqSchema = {
       codigo: 'Código',
       imagenes: 'Imágenes',
       video: 'Video',
+      audio: 'Generar voz',
+      musica: 'Música',
       espanol: 'Español',
       privacidad: 'Privacidad',
       api: 'API',
@@ -398,7 +418,7 @@ const faqSchema = {
     function calcular(respuestas) {
       var pesos = {};
       var subs = respuestas.subs || [];
-      var usosSeleccionados = respuestas.usos.size ? Array.from(respuestas.usos) : DIMENSIONES_USO;
+      var usosSeleccionados = respuestas.usos.size ? Array.from(respuestas.usos) : USOS_BASE;
       var pesoUsoBase = respuestas.usos.size ? 10 : 5;
       DIMENSIONES_USO.forEach(function (d) {
         pesos[d] = usosSeleccionados.indexOf(d) !== -1 ? pesoUsoBase : 0;
@@ -477,6 +497,11 @@ const faqSchema = {
 
     function tablaComparador(lista, respuestas) {
       var ejes = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video', 'espanol'];
+      // Voz y música solo salen en la tabla si el usuario las pidió: para el
+      // resto de los perfiles serían dos filas casi vacías.
+      ['musica', 'audio'].forEach(function (u) {
+        if (respuestas.usos.has(u)) ejes.splice(5, 0, u);
+      });
       var filas = ejes.map(function (eje) {
         var celdas = lista
           .map(function (r) {

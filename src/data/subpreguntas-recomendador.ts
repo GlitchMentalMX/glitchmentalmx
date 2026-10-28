@@ -14,6 +14,15 @@ export const SUBPREGUNTAS_BASE = [
     ],
   },
   {
+    uso: 'codigo',
+    etiquetaUso: 'Código',
+    pregunta: '¿Cómo quieres programar?',
+    opciones: [
+      { valor: 'editor', etiqueta: 'Con IA dentro de mi editor de código', corta: 'En tu editor' },
+      { valor: 'apps', etiqueta: 'Crear una app completa describiéndola, sin programar', corta: 'App completa' },
+    ],
+  },
+  {
     uso: 'imagenes',
     etiquetaUso: 'Imágenes',
     pregunta: '¿Qué necesitas de las imágenes?',

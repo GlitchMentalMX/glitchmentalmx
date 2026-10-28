@@ -4,7 +4,7 @@ description: Revisión trimestral de la serie "Quién entrena con tus datos" —
 
 # Revisión Quién entrena con tus datos (trimestral)
 
-Serie: src/content/entrena-ia/*.md (~80 artículos, uno por herramienta).
+Serie: src/content/entrena-ia/*.md (~90 artículos, uno por herramienta).
 Landing: /quien-entrena-con-tus-datos/. El veredicto vive en el frontmatter
 (`veredicto`, `fraseCorta`, `fuentePolitica`):
 
@@ -47,7 +47,7 @@ al trimestre.
 
 ## Cómo ejecutarlo
 
-Con ~80 artículos, usa subagentes en lotes de ~15. Reglas para cada subagente
+Con ~90 artículos, usa subagentes en lotes de ~15. Reglas para cada subagente
 (lecciones aprendidas, no negociables):
 - NO lanza otros subagentes; hace él mismo todo el lote.
 - Edita directo en el archivo antes de terminar. Reportar sin escribir no cuenta.
