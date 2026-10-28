@@ -330,7 +330,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     }
   }
 
-  // Refresca solo el bloque "Ahora" cada 30 s mientras la pestaña esté visible.
+  // Refresca solo el bloque "Ahora" cada 60 s mientras la pestaña esté visible.
   setInterval(async () => {
     const token = sessionStorage.getItem(STORAGE_KEY);
     if (!token || dashboard.hidden || content.hidden || document.visibilityState !== 'visible') return;
@@ -338,7 +338,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       const res = await fetch(`${WORKER_URL}/stats?live=1`, { headers: { Authorization: `Bearer ${token}` } });
       if (res.ok) renderLive((await res.json()).live);
     } catch (e) {}
-  }, 30000);
+  }, 60000);
 
   function showGate(message) {
     dashboard.hidden = true;
