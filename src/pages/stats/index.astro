@@ -40,6 +40,11 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
 
       <p id="loading" class="hint">Cargando…</p>
       <div id="content" hidden>
+        <section class="block live-block">
+          <h2>Ahora mismo <span class="live-dot" aria-hidden="true"></span></h2>
+          <p class="hint" id="live-summary">—</p>
+          <div id="table-live"></div>
+        </section>
 
         <section class="cards">
           <div class="card">
@@ -252,6 +257,109 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     }
   }
 
+  // Referrers con detalle: clic en una fila para ver cada visita (página,
+  // tiempo, scroll). Se pide al Worker solo al abrir, no con cada carga.
+  function renderReferrersTable(container, rows) {
+    clearChildren(container);
+    if (!rows || rows.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'hint';
+      empty.textContent = 'Sin datos todavía.';
+      container.appendChild(empty);
+      return;
+    }
+    const hint = document.createElement('p');
+    hint.className = 'hint';
+    hint.textContent = 'Toca un origen para ver qué visitó cada persona y por cuánto tiempo.';
+    container.appendChild(hint);
+    const table = document.createElement('table');
+    table.className = 'stats-table';
+    const tbody = document.createElement('tbody');
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.className = 'row-click';
+      const tdLabel = document.createElement('td');
+      tdLabel.className = 'col-label';
+      tdLabel.textContent = '▸ ' + (r.referrer_host || '(desconocido)');
+      const tdValue = document.createElement('td');
+      tdValue.className = 'col-value';
+      tdValue.textContent = fmt(r.views);
+      tr.appendChild(tdLabel);
+      tr.appendChild(tdValue);
+      const detailTr = document.createElement('tr');
+      detailTr.hidden = true;
+      const detailTd = document.createElement('td');
+      detailTd.colSpan = 2;
+      detailTr.appendChild(detailTd);
+      let loaded = false;
+      tr.addEventListener('click', async () => {
+        detailTr.hidden = !detailTr.hidden;
+        tdLabel.textContent = (detailTr.hidden ? '▸ ' : '▾ ') + (r.referrer_host || '(desconocido)');
+        if (detailTr.hidden || loaded) return;
+        detailTd.textContent = 'Cargando…';
+        try {
+          const token = sessionStorage.getItem(STORAGE_KEY);
+          const res = await fetch(
+            `${WORKER_URL}/stats?range=${currentRange}&referrer=${encodeURIComponent(r.referrer_host)}`,
+            { headers: { Authorization: `Bearer ${token}` } }
+          );
+          if (!res.ok) throw new Error('bad response');
+          renderVisits(detailTd, (await res.json()).visits);
+          loaded = true;
+        } catch (e) {
+          detailTd.textContent = 'No se pudo cargar el detalle.';
+        }
+      });
+      tbody.appendChild(tr);
+      tbody.appendChild(detailTr);
+    });
+    table.appendChild(tbody);
+    container.appendChild(table);
+  }
+
+  function renderVisits(cell, visits) {
+    clearChildren(cell);
+    if (!visits || visits.length === 0) {
+      cell.textContent = 'Sin visitas.';
+      return;
+    }
+    const table = document.createElement('table');
+    table.className = 'stats-table visits-table';
+    visits.forEach((v) => {
+      const tr = document.createElement('tr');
+      const when = new Date(v.ts * 1000).toLocaleString('es-MX', {
+        timeZone: 'America/Mexico_City',
+        day: '2-digit',
+        month: 'short',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+      const measured = v.duration !== null && v.duration !== undefined;
+      const parts = [
+        [when, 'col-value'],
+        [v.path, 'col-label'],
+        [measured ? fmtDuration(v.duration) : 'sin latido', 'col-value'],
+        [v.scroll !== null && v.scroll !== undefined ? v.scroll + '%' : '—', 'col-value'],
+        [[countryLabel(v.country), DEVICE_LABELS[v.device] || v.device, v.is_bot ? 'bot' : ''].filter(Boolean).join(' · '), 'col-value'],
+      ];
+      parts.forEach(([text, cls]) => {
+        const td = document.createElement('td');
+        td.className = cls;
+        td.textContent = text;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+    cell.appendChild(table);
+  }
+
+  function renderLive(live) {
+    const n = live.visitors || 0;
+    document.getElementById('live-summary').textContent =
+      n === 0 ? 'Nadie leyendo en este momento (últimos 90 s).' : n + (n === 1 ? ' persona leyendo' : ' personas leyendo') + ' (últimos 90 s).';
+    renderTable(document.getElementById('table-live'), live.pages, 'path', 'visitors');
+  }
+
   function renderDashboard(data) {
     document.getElementById('stat-views').textContent = fmt(data.totals.views);
     document.getElementById('stat-uniques').textContent = fmt(data.totals.uniques);
@@ -269,6 +377,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       ? 'Calculado sobre ' + fmt(eg.measured) + ' de ' + fmt(data.totals.views) + ' vistas (solo cuenta el tiempo con la pestaña visible; ' + fmt(eg.under_10s) + ' se fueron en menos de 10 s). Las vistas anteriores a esta medición no entran.'
       : 'Todavía no hay vistas con tiempo medido en este rango.';
 
+    renderLive(data.live);
     const d = data.directo;
     document.getElementById('directo-summary').textContent =
       fmt(d.views) + ' vistas sin origen identificable (sin contar navegación interna ni apps de redes). Tiempo medio: ' + fmtDuration(d.avg_duration) + '.';
@@ -311,11 +420,22 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       loading.hidden = true;
       content.hidden = false;
     } catch (e) {
+      console.error('Error en /stats:', e);
       loading.textContent = 'No se pudo conectar con el Worker. Revisa que esté desplegado y que el token sea correcto.';
     } finally {
       refreshBtn.disabled = false;
     }
   }
+
+  // Refresca solo el bloque "Ahora" cada 30 s mientras la pestaña esté visible.
+  setInterval(async () => {
+    const token = sessionStorage.getItem(STORAGE_KEY);
+    if (!token || dashboard.hidden || content.hidden || document.visibilityState !== 'visible') return;
+    try {
+      const res = await fetch(`${WORKER_URL}/stats?live=1`, { headers: { Authorization: `Bearer ${token}` } });
+      if (res.ok) renderLive((await res.json()).live);
+    } catch (e) {}
+  }, 30000);
 
   function showGate(message) {
     dashboard.hidden = true;
@@ -406,6 +526,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   .wrap .block h3 { font-size: 0.92rem; margin: 22px 0 8px; color: var(--text-muted); }
   .wrap .stats-table th { text-align: left; font-weight: 400; font-size: 0.78rem; color: var(--text-faint); padding: 6px 4px; font-family: var(--font-mono); }
   .wrap .stats-table th.col-value { text-align: right; }
+  .wrap .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-left: 6px; vertical-align: middle; }
   .wrap .row-click { cursor: pointer; }
   .wrap .row-click:hover .col-label { text-decoration: underline; }
   .wrap .visits-table { font-size: 0.8rem; margin: 4px 0 14px; }
