@@ -1,12 +1,12 @@
 ---
 title: Usas IA para trabajar. Si algo sale mal, la culpa será tuya
 category: Inteligencia Artificial
-pubDate: 2026-10-26T10:29
+pubDate: 2026-10-29T06:08
 updatedDate: ''
 description: 'Uno de cada tres usuarios de IA en el trabajo compartió datos sensibles sin aviso. El problema no es solo el empleado: es la regla que falta.'
 heroImage: /images/uploads/ia-falla-trabajo.webp
 heroImageAlt: Empleada frente a su computadora con una tabla de datos abierta en un chat de IA y una carpeta con sello rojo sobre el escritorio
-draft: true
+draft: false
 ---
 
 **Uno de cada tres usuarios de IA en el trabajo** compartió datos sensibles de su empresa sin que su empleador lo supiera, según la National Cybersecurity Alliance. Y el 43% dice que no le explicaron con claridad qué compartir. Antes de culpar al empleado, conviene preguntar quién escribió la regla.
