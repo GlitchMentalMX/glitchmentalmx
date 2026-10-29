@@ -264,6 +264,23 @@ async function handleStats(request, env, url, matchedOrigin) {
     sinceTs = mxMidnightTs(mxMondayOf(now));
   }
 
+  // Detalle de un referrer: una fila por visita (página, tiempo, scroll...).
+  // Incluye las marcadas como bot, con su bandera, para poder revisarlas.
+  const detailHost = url.searchParams.get('referrer');
+  if (detailHost) {
+    try {
+      const rows = await env.DB.prepare(
+        `SELECT ts, path, duration, scroll, country, device, browser, is_bot FROM hits
+         WHERE ts >= ? AND ts < ? AND referrer_host = ? ORDER BY ts DESC LIMIT 50`
+      )
+        .bind(sinceTs, untilTs, detailHost.slice(0, 200))
+        .all();
+      return json({ referrer: detailHost, visits: rows.results || [] }, 200, matchedOrigin);
+    } catch (e) {
+      return json({ error: 'Error leyendo la base de datos', detail: String(e) }, 500, matchedOrigin);
+    }
+  }
+
   try {
     const [
       totals,

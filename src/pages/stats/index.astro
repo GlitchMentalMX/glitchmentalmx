@@ -275,7 +275,7 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
     renderPagesTable(document.getElementById('table-directo-pages'), d.pages);
     renderTable(document.getElementById('table-directo-devices'), d.devices, 'device', 'views', (x) => DEVICE_LABELS[x] || x);
     renderTable(document.getElementById('table-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
-    renderTable(document.getElementById('table-referrers'), data.referrers, 'referrer_host', 'views');
+    renderReferrersTable(document.getElementById('table-referrers'), data.referrers);
     renderTable(document.getElementById('table-countries'), data.countries, 'country', 'views', countryLabel);
     renderTable(document.getElementById('table-devices'), data.devices, 'device', 'views', (d) => DEVICE_LABELS[d] || d);
     renderTable(document.getElementById('table-os'), data.os, 'os', 'views');
@@ -406,6 +406,10 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
   .wrap .block h3 { font-size: 0.92rem; margin: 22px 0 8px; color: var(--text-muted); }
   .wrap .stats-table th { text-align: left; font-weight: 400; font-size: 0.78rem; color: var(--text-faint); padding: 6px 4px; font-family: var(--font-mono); }
   .wrap .stats-table th.col-value { text-align: right; }
+  .wrap .row-click { cursor: pointer; }
+  .wrap .row-click:hover .col-label { text-decoration: underline; }
+  .wrap .visits-table { font-size: 0.8rem; margin: 4px 0 14px; }
+  .wrap .visits-table .col-value { width: auto; padding-left: 12px; }
   .wrap .block { margin-bottom: 40px; }
   .wrap .block h2 { font-size: 1.05rem; margin: 0 0 14px; }
 
