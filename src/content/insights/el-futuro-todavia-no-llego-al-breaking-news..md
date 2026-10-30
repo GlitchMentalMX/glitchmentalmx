@@ -4,8 +4,8 @@ resumen: Ante una noticia urgente, solo 1% de los adultos estadounidenses dice a
 imagen: /images/dato-incomodo/ia-news.webp
 imagenAlt: 'Noticias de última hora: mujer consulta una transmisión televisiva mientras deja sin usar un chatbot de IA en su teléfono'
 enlace: ''
-date: 2026-10-28T11:43
-draft: true
+date: 2026-10-30T05:13
+draft: false
 categoria: Cultura Digital
 punchline: El futuro todavía no llegó al breaking news.
 slug: ''
