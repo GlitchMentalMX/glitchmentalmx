@@ -1,12 +1,12 @@
 ---
 title: ¿Estamos cerca de la singularidad? La evidencia es privada
 category: Inteligencia Artificial
-pubDate: 2026-10-29T10:50
+pubDate: 2026-10-30T05:09
 updatedDate: ''
 description: OpenAI y Anthropic dicen que la IA ya acelera su desarrollo. Lo público es lo que ellas eligen mostrar, y aún no hay auditoría independiente.
 heroImage: /images/uploads/singularidad-cerca.webp
 heroImageAlt: '¿Estamos cerca de la singularidad?: auditora ante monitor con curva de datos tapada y puerta de servidores cerrada'
-draft: true
+draft: false
 ---
 
 Estamos más cerca de algunas condiciones de la singularidad que de **una prueba de que esté cerca**. OpenAI y Anthropic publican métricas de su propia aceleración, pero los datos crudos y los modelos sin lanzar no están al alcance de quien está fuera.
