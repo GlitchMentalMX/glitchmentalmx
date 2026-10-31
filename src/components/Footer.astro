@@ -1,6 +1,5 @@
 ---
 import { categories } from '../data/categories';
-import PreferredSourceButton from './PreferredSourceButton.astro';
 
 const year = new Date().getFullYear();
 
@@ -38,6 +37,7 @@ const columns = [
       { href: '/novelas/', label: 'Novelas' },
       { href: '/juego/', label: 'Juego: Pulsa para Empeorar' },
       { href: '/contacto/', label: 'Contacto' },
+      { href: 'https://www.google.com/preferences/source?q=glitchmental.com', label: 'Fuente preferida en Google', external: true },
       { href: '/publicidad-en-glitchmentalmx/', label: 'Publicidad' },
       { href: '/advertise-with-glitchmentalmx/', label: 'Advertise (EN)' },
       { href: '/servicios-editoriales-glitchmentalmx/', label: 'Servicios editoriales' },
@@ -72,14 +72,6 @@ const columns = [
         <p class="cta-sub">Newsletter + Índice glitchMentalMX. Sin hype. Sin spam.</p>
       </div>
       <a href="/suscribete/" class="btn btn-primary">Suscríbete</a>
-    </div>
-
-    <div class="footer-preferred-source" data-placement="footer">
-      <div class="text">
-        <p>¿Quieres ver más glitchMentalMX en Google?</p>
-        <p>Márcanos como fuente preferida y aparecerá más cerca de tus búsquedas.</p>
-      </div>
-      <PreferredSourceButton variant="compact" />
     </div>
 
     <div class="grid">
@@ -130,18 +122,6 @@ const columns = [
   }
   .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
   .cta-sub { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
-
-  .footer-preferred-source {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin: -24px 0 40px;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-  .footer-preferred-source .text p { margin: 0; }
-  .footer-preferred-source .text p:first-child { margin-bottom: 2px; }
 
   .grid {
     display: grid;
@@ -259,7 +239,6 @@ const columns = [
   @media (max-width: 520px) {
     .grid { grid-template-columns: 1fr; }
     .cta { flex-direction: column; align-items: center; text-align: center; }
-    .footer-preferred-source { flex-direction: column; margin-top: -12px; text-align: center; }
 
     /* real accordion behavior only on mobile */
     .col { border-bottom: 1px solid var(--border); padding-bottom: 4px; }
