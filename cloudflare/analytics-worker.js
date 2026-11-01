@@ -80,6 +80,27 @@ function mxMonthStart(date) {
 // Worker distinguiera 'interno'), para que el historial también quede limpio.
 const SOURCE_SQL = `(CASE WHEN traffic_source = 'directo' AND referrer_host LIKE '%glitchmental.com%' THEN 'interno' ELSE traffic_source END)`;
 
+// Retención: los datos de analítica se conservan hasta 13 meses (lo mismo que
+// dice la Política de Privacidad — si cambias uno, cambia el otro). Sin tarea
+// programada: una fracción de las peticiones a /collect dispara la limpieza
+// en segundo plano, así que no hay nada extra que configurar en Cloudflare.
+const RETENTION_MONTHS = 13;
+const PURGE_PROBABILITY = 0.005; // ~1 de cada 200 peticiones
+
+async function purgeOldData(env) {
+  try {
+    const cutoff = new Date();
+    cutoff.setUTCMonth(cutoff.getUTCMonth() - RETENTION_MONTHS);
+    const cutoffTs = Math.floor(cutoff.getTime() / 1000);
+    await env.DB.batch([
+      env.DB.prepare('DELETE FROM hits WHERE ts < ?').bind(cutoffTs),
+      env.DB.prepare('DELETE FROM events WHERE ts < ?').bind(cutoffTs),
+    ]);
+  } catch (e) {
+    // La limpieza nunca debe afectar al visitante; se reintenta en otra petición.
+  }
+}
+
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
@@ -91,6 +112,7 @@ export default {
     }
 
     if (url.pathname === '/collect' && request.method === 'POST') {
+      if (Math.random() < PURGE_PROBABILITY) ctx.waitUntil(purgeOldData(env));
       return handleCollect(request, env, origin, matchedOrigin);
     }
 

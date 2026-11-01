@@ -124,9 +124,8 @@ Para que quede activo en producción:
 
 ## Qué NO incluye esto (a propósito, por ahora)
 
-- No hay una tarea automática que borre datos viejos — la tabla crece
-  indefinidamente. Si en unos meses quieres limpiar datos antiguos, se
-  puede agregar después.
+- ~~No hay una tarea automática que borre datos viejos~~ — ya la hay desde
+  noviembre de 2026: ver "Actualización: retención de 13 meses" al final.
 - No hay tablas de resumen/rollups — cada consulta del panel cuenta
   filas en vivo. Para el volumen de tráfico de este sitio no debería
   notarse, pero si algún día se siente lento, ahí es donde se optimiza.
@@ -156,3 +155,22 @@ latido es una escritura en D1. El plan gratis de D1 permite 100,000
 escrituras al día; con ~1,000 vistas diarias de 2 min promedio son ~5,000.
 Si algún día te acercas al límite, sube `30000` a `60000` en
 `src/components/Analytics.astro` y la cuenta se reduce a la mitad.
+
+## Actualización: retención de 13 meses (noviembre de 2026)
+
+Los datos de analítica (`hits` y `events`) se borran solos cuando tienen más
+de 13 meses. Es lo que promete la Política de Privacidad, así que **el
+Worker tiene que estar desplegado** para que la política sea cierta.
+
+Cómo funciona: sin tarea programada. Más o menos 1 de cada 200 peticiones a
+`/collect` dispara el borrado en segundo plano. Con el tráfico normal del
+sitio corre varias veces al día; si algún día no hay tráfico, no hay nada
+nuevo que guardar ni que limpiar.
+
+Para activarlo (un solo paso, no toca base de datos, bindings ni secretos):
+
+1. **Worker**: `Edit code` en `glitchmental-analytics` → borra todo → pega
+   el nuevo `analytics-worker.js` → **Save and Deploy**.
+
+Para cambiar el plazo, edita `RETENTION_MONTHS` en el Worker **y** la frase
+de la sección 2 de `src/content/pages/politica-de-privacidad.md`.

@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 
 const GCSE_CX = 'a28d59cfd89f948f4';
-const description = 'Busca en la web con curaduría editorial y veredicto de IA instantáneo. Gratis, privado, sin ads y sin rastreo.';
+const description = 'Busca en la web con curaduría editorial y veredicto de IA instantáneo. Gratis, sin ads y sin guardar tus búsquedas.';
 
 // Mismo patrón que la Calculadora de Riesgo IA — ambas son herramientas
 // reales del sitio, mismo tipo de elegibilidad para resultados enriquecidos.
@@ -51,6 +51,24 @@ const softwareAppSchema = {
       </button>
     </div>
 
+    <div class="consent" id="consent" role="region" aria-label="Aviso de cookies de GlitchSearch">
+      <div id="consentFull">
+        <p>
+          GlitchSearch usa el motor de Google para encontrar resultados; nosotros los curamos y los resumimos con IA (Gemini y Groq).
+          Para eso Google puede poner sus cookies. Nosotros no guardamos tus búsquedas.
+          <a href="/politica-de-privacidad/">Política de privacidad</a>
+        </p>
+        <p id="consentRejectedNote" hidden>Elegiste no usar Google, así que la búsqueda está desactivada. Puedes cambiarlo cuando quieras.</p>
+        <div class="consent-actions">
+          <button type="button" class="btn btn-ghost" id="consentReject">Rechazar</button>
+          <button type="button" class="btn btn-ghost" id="consentAccept">Aceptar</button>
+        </div>
+      </div>
+      <p class="consent-done" id="consentDone" hidden>
+        Búsqueda con el motor de Google. <button type="button" id="consentChange">Cambiar</button>
+      </p>
+    </div>
+
     <p class="results-note" id="resultsNote" style="display: none;">El 90% de la gente nunca pasa de los primeros 10 resultados. ¿Para qué mostrarte más? Sería pura vanidad.</p>
 
     <div id="aiVerdict" class="ai-verdict" style="display:none;">
@@ -73,7 +91,7 @@ const softwareAppSchema = {
     </div>
 
     <div class="badges">
-      <span>✓ Gratis</span><span>•</span><span>🔒 Privado</span><span>•</span><span>🚫 Sin ads</span><span>•</span><span>🎯 Curado</span>
+      <span>✓ Gratis</span><span>•</span><span>🔒 Nosotros no guardamos tus búsquedas</span><span>•</span><span>🚫 Sin ads</span><span>•</span><span>🎯 Curado</span>
     </div>
   </main>
 </Layout>
@@ -96,12 +114,59 @@ const softwareAppSchema = {
     },
   };
 
-  (function () {
-    var s = document.createElement('script');
-    s.src = 'https://cse.google.com/cse.js?cx=' + GCSE_CX;
-    s.async = true;
-    document.head.appendChild(s);
-  })();
+  // Google (cse.js) NO se carga al entrar a la página: solo después de que el
+  // visitante aceptó la leyenda de arriba ('accepted') y lanzó una búsqueda.
+  // Clave propia de GlitchSearch a propósito: el consentimiento del banner
+  // viejo (gm-cookie-consent) era para otra cosa y no vale aquí.
+  var CONSENT_KEY = 'gm-glitchsearch-consent';
+  var memConsent = null; // respaldo si localStorage no está disponible (modo privado)
+  function getConsent() {
+    try { return localStorage.getItem(CONSENT_KEY) || memConsent; } catch (e) { return memConsent; }
+  }
+  function hasConsent() { return getConsent() === 'accepted'; }
+  function setConsent(value) {
+    memConsent = value;
+    try {
+      if (value) localStorage.setItem(CONSENT_KEY, value);
+      else localStorage.removeItem(CONSENT_KEY);
+    } catch (e) {}
+    renderConsent();
+  }
+  function renderConsent() {
+    var c = getConsent();
+    document.getElementById('consentFull').hidden = c === 'accepted';
+    document.getElementById('consentDone').hidden = c !== 'accepted';
+    document.getElementById('consentRejectedNote').hidden = c !== 'rejected';
+  }
+  try { localStorage.removeItem('gm-cookie-consent'); } catch (e) {}
+  document.getElementById('consentAccept').onclick = function () { setConsent('accepted'); };
+  document.getElementById('consentReject').onclick = function () { setConsent('rejected'); };
+  document.getElementById('consentChange').onclick = function () { setConsent(null); };
+  renderConsent();
+
+  var cseLoading = null;
+  function cseReady() {
+    try { return !!google.search.cse.element.getElement('searchresults-only0'); } catch (e) { return false; }
+  }
+  function loadCse() {
+    if (cseLoading) return cseLoading;
+    cseLoading = new Promise(function (resolve, reject) {
+      var s = document.createElement('script');
+      s.src = 'https://cse.google.com/cse.js?cx=' + GCSE_CX;
+      s.async = true;
+      s.onerror = function () { cseLoading = null; reject(); };
+      s.onload = function () {
+        var tries = 0;
+        (function wait() {
+          if (cseReady()) return resolve();
+          if (++tries > 60) { cseLoading = null; return reject(); }
+          setTimeout(wait, 100);
+        })();
+      };
+      document.head.appendChild(s);
+    });
+    return cseLoading;
+  }
 
   var lastResults = [];
   var lastQuery = '';
@@ -350,6 +415,12 @@ const softwareAppSchema = {
     var term = document.getElementById('q').value.trim();
     if (!term) return;
     lastQuery = term;
+
+    if (!hasConsent()) {
+      showConsentGate();
+      return;
+    }
+
     document.getElementById('q').disabled = true;
     document.getElementById('go').disabled = true;
     document.getElementById('q').style.cursor = 'wait';
@@ -357,10 +428,31 @@ const softwareAppSchema = {
     document.getElementById('resultsNote').style.display = 'none';
     document.getElementById('aiVerdict').style.display = 'none';
 
-    try {
-      var el = google.search.cse.element.getElement('searchresults-only0');
-      el.execute(term);
-    } catch (e) {
+    loadCse()
+      .then(function () {
+        google.search.cse.element.getElement('searchresults-only0').execute(term);
+      })
+      .catch(showSearchError);
+  }
+
+  function showConsentGate() {
+    document.getElementById('resultsNote').style.display = 'none';
+    document.getElementById('aiVerdict').style.display = 'none';
+    document.getElementById('results').innerHTML =
+      '<div class="connection-error">' +
+      '<h3>GlitchSearch necesita el motor de Google</h3>' +
+      '<p>Para buscar, tu consulta se procesa con Google, que puede poner sus cookies, y los resultados se resumen con IA (Gemini y Groq). Nosotros no guardamos tus búsquedas.</p>' +
+      '<div class="consent-gate-actions">' +
+      '<button type="button" class="btn btn-primary" id="allowGoogle">Permitir y buscar</button>' +
+      '<a class="btn btn-ghost" href="/buscar/">Buscar solo en glitchMentalMX</a>' +
+      '</div></div>';
+    document.getElementById('allowGoogle').onclick = function () {
+      setConsent('accepted');
+      runSearch();
+    };
+  }
+
+  function showSearchError() {
       document.getElementById('q').disabled = false;
       document.getElementById('go').disabled = false;
       document.getElementById('results').innerHTML =
@@ -369,7 +461,6 @@ const softwareAppSchema = {
         '<h3>No fue posible completar la búsqueda</h3>' +
         '<p>Inténtalo nuevamente en unos segundos.</p>' +
         '</div>';
-    }
   }
 
   window.addEventListener('load', function () {
@@ -496,6 +587,19 @@ const softwareAppSchema = {
   :global(.no-results svg), :global(.connection-error svg) { width: 26px; height: 26px; color: var(--text-faint); margin-bottom: 14px; }
   :global(.no-results h3), :global(.connection-error h3) { margin: 0 0 8px; font-size: 18px; font-weight: 600; color: var(--text); }
   :global(.no-results p), :global(.connection-error p) { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-muted); }
+
+  .consent { margin: 14px 4px 0; font-size: 12.5px; line-height: 1.55; color: var(--text-muted); }
+  .consent p { margin: 0 0 10px; }
+  .consent a { color: var(--text-muted); text-decoration: underline; }
+  .consent-actions { display: flex; gap: 8px; }
+  /* Aceptar y Rechazar con el mismo peso visual a propósito */
+  .consent-actions .btn { padding: 0.45em 1.1em; font-size: 0.8rem; }
+  .consent-done { margin: 0; font-size: 12px; color: var(--text-faint); }
+  .consent-done button {
+    background: none; border: 0; padding: 0; font: inherit; color: var(--text-muted);
+    text-decoration: underline; cursor: pointer;
+  }
+  :global(.consent-gate-actions) { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
 
   .badges {
     display: flex; justify-content: center; align-items: center; gap: 6px;
