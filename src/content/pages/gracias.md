@@ -11,7 +11,8 @@ noIndex: true
 
 _Ensayo mensual sobre tecnología y cultura digital._
 
-* [Octubre 2026 — Muse: el agente de Meta que ya vive en tu WhatsApp **Nuevo**  ↗ ](https://drive.google.com/file/d/1znGnST-dKKcLp8-hAjGQotQZrJK-GqvX/view?usp=sharing)
+* [Noviembre 2026 — Delegación silenciosa **Nuevo**  ↗ ](https://drive.google.com/file/d/1ZjuCF5ZB6u0b_MME4n4_MaCKhvjjshnw/view?usp=sharing)
+* [Octubre 2026 — Muse: el agente de Meta que ya vive en tu WhatsApp ↗ ](https://drive.google.com/file/d/1znGnST-dKKcLp8-hAjGQotQZrJK-GqvX/view?usp=sharing)
 * [Septiembre 2026 — Los Foros y el Vacío: quién está regulando la IA de tus hijos ↗ ](https://drive.google.com/file/d/1qjFD7m4g580mtH8uR5waYPs0Q5hIlpLp/view?usp=sharing)
 * [Agosto 2026 — Los Arquitectos del Apocalipsis piden que alguien los detenga ↗ ](https://drive.google.com/file/d/1C1rXlhhHtJITtsp7laf-fvFvDzocK8Tv/view?usp=sharing)
 * [Julio 2026 — El Fin del Trabajo en Solitario ↗](https://drive.google.com/file/d/16EOOHmBaQ0I_ExpsAxel_5yhAduYscSH/view?usp=sharing)
@@ -27,7 +28,8 @@ _Ensayo mensual sobre tecnología y cultura digital._
 
 _Versión ejecutiva — ranking mensual de tecnologías._
 
-* [Octubre 2026 ↗  · **Nuevo** ](https://drive.google.com/file/d/1VozsMWh96peMc0D5ITEMQa91vyzXNoKd/view?usp=sharing)
+* [Noviembre 2026 ↗  · **Nuevo** ](https://drive.google.com/file/d/1vjgCY1FHdON6o7XrG4rSbZdbrzQFuP5y/view?usp=sharing)
+* [Octubre 2026 ↗](https://drive.google.com/file/d/1VozsMWh96peMc0D5ITEMQa91vyzXNoKd/view?usp=sharing)
 * [Septiembre 2026 ↗](https://drive.google.com/file/d/1IC-j9K-J28KSVTfbOrGOfmTMxYcvaqbc/view?usp=sharing)
 * [Agosto 2026 ↗](https://drive.google.com/file/d/1qJlPltrp1rgbl7FWZpV7zJeVbSVLbT6K/view?usp=sharing)
 * [Julio 2026 ↗](https://drive.google.com/file/d/1ErtgNPHWrne1lOWVuOTiYQoYdhbD5_Tn/view?usp=sharing)
