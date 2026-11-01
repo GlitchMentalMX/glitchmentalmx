@@ -4,6 +4,8 @@ import sitemap from '@astrojs/sitemap';
 import { readFileSync, readdirSync } from 'node:fs';
 import matter from 'gray-matter';
 import { assignPieceSlugs } from './src/lib/pieceSlug.mjs';
+import { satteri } from '@astrojs/markdown-satteri';
+import { enlacesExternos } from './src/lib/enlacesExternos.mjs';
 
 // lastmod real del sitemap — antes no se mandaba ninguno. Se calcula leyendo
 // el frontmatter crudo (no astro:content, que no está disponible en este
@@ -265,6 +267,7 @@ try {
 export default defineConfig({
   site: 'https://glitchmental.com',
   trailingSlash: 'always',
+  markdown: { processor: satteri({ hastPlugins: [enlacesExternos] }) },
   integrations: [
     sitemap({
       // /buscar/ es noIndex (páginas de resultados de búsqueda interna no
