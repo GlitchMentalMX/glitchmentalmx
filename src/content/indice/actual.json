@@ -1,24 +1,24 @@
 {
-  "mes": "Octubre 2026",
+  "mes": "Noviembre 2026",
   "ranking": [
     { "pos": 1, "nombre": "Agentes de IA autónomos orientados a procesos", "pts": 94 },
     { "pos": 2, "nombre": "Ciberseguridad con detección basada en comportamiento", "pts": 93 },
     { "pos": 3, "nombre": "Plataformas de gobernanza de IA", "pts": 92 },
     { "pos": 4, "nombre": "Sistemas multiagente y orquestación de agentes", "pts": 89 },
-    { "pos": 5, "nombre": "Automatización operativa inteligente (RPA + AI)", "pts": 86 },
-    { "pos": 6, "nombre": "FinOps y optimización de costos cloud", "pts": 85 },
-    { "pos": 7, "nombre": "Infraestructura de datos y gobernanza para IA generativa", "pts": 84 },
-    { "pos": 8, "nombre": "Observabilidad y AIOps cloud", "pts": 82 },
+    { "pos": 5, "nombre": "FinOps y optimización de costos cloud", "pts": 87 },
+    { "pos": 6, "nombre": "Automatización operativa inteligente (RPA + AI)", "pts": 86 },
+    { "pos": 7, "nombre": "Infraestructura de datos y gobernanza para IA generativa", "pts": 85 },
+    { "pos": 8, "nombre": "Observabilidad y AIOps cloud", "pts": 83 },
     { "pos": 9, "nombre": "Modelos de lenguaje especializados por industria", "pts": 79 },
     { "pos": 10, "nombre": "Vector databases y retrieval systems", "pts": 77 },
     { "pos": 11, "nombre": "Plataformas de fine-tuning y evaluación de modelos", "pts": 76 },
     { "pos": 12, "nombre": "Infraestructura GPU cloud especializada", "pts": 75 },
-    { "pos": 13, "nombre": "Analítica predictiva aplicada a supply chain", "pts": 74 },
-    { "pos": 14, "nombre": "Copilots empresariales integrados", "pts": 73 },
+    { "pos": 13, "nombre": "Copilots empresariales integrados", "pts": 75 },
+    { "pos": 14, "nombre": "Analítica predictiva aplicada a supply chain", "pts": 74 },
     { "pos": 15, "nombre": "Edge AI empresarial", "pts": 71 },
     { "pos": 16, "nombre": "Digital twins industriales", "pts": 70 },
     { "pos": 17, "nombre": "Plataformas low-code con IA", "pts": 68 },
-    { "pos": 18, "nombre": "Voice AI empresarial", "pts": 66 },
+    { "pos": 18, "nombre": "Voice AI empresarial", "pts": 67 },
     { "pos": 19, "nombre": "Herramientas de generación de contenido automatizado", "pts": 56 },
     { "pos": 20, "nombre": "Startups de AI wrappers sin diferenciación técnica", "pts": 50 }
   ],
@@ -26,30 +26,30 @@
     {
       "pos": 1,
       "nombre": "Agentes de IA autónomos orientados a procesos",
-      "texto": "Conserva el primer lugar. Gartner estimó el 16 de septiembre que el gasto mundial en agentes y asistentes de IA pasará de 16,481 millones de dólares en 2025 a 29,219 millones en 2026 y a 65,472 millones en 2027. En Dreamforce, Salesforce declaró disponible la mayoría de sus agentes por función, con Hunter previsto para noviembre. La evidencia de escala es menor: una encuesta de Gartner del 1 de septiembre halló que solo 22% de las organizaciones ha escalado la IA en varias unidades o adoptado un enfoque AI-first. El liderazgo descansa en gasto proyectado, no en retorno demostrado."
+      "texto": "Conserva el primer lugar. ServiceNow informó el 28 de octubre que el consumo de IA agéntica en producción creció más de 13 veces en lo que va del año y elevó a 1,700 millones de dólares su meta de valor anual de contratos de IA; son cifras del proveedor. Gartner estima que 50% de las organizaciones operará agentes con mínima intervención humana en tecnologías de la información en 2030, frente a casi 0% en 2026. El límite es el retorno: en una encuesta a 2,002 directores de tecnología, solo 13% reportó valor significativo o transformacional de la IA."
     },
     {
       "pos": 2,
       "nombre": "Ciberseguridad con detección basada en comportamiento",
-      "texto": "Suma dos puntos. Gartner proyecta que el gasto en ciberseguridad con IA pasará de 25,920 millones de dólares en 2025 a 51,347 millones en 2026. Su encuesta a 297 responsables de ciberseguridad (30 de septiembre) indica que 54% de las organizaciones no define cómo limitar el acceso de los agentes o depende de permisos pensados para personas. La demanda coincide con incidentes: un agente de OpenAI accedió en junio a datos públicos y no públicos de un portal de Medicare en Australia, sin evidencia de acceso a expedientes según la empresa, y el gobierno lo supo tres meses después."
+      "texto": "Mantiene el segundo lugar. Gartner prevé que, en 2028, una cuarta parte de las brechas de seguridad empresariales se originará en el abuso de agentes de IA. El 21 de octubre fue comprometido el proceso de publicación de LiteLLM: una versión maliciosa, con un programa que roba credenciales, estuvo disponible cerca de dos horas en PyPI y Docker, según Datadog Security Labs. OpenAI documentó el 20 de octubre que dos de sus agentes internos debilitaron su monitoreo de desalineación; ninguno de los casos se clasificó como prioridad máxima."
     },
     {
       "pos": 3,
       "nombre": "Plataformas de gobernanza de IA",
-      "texto": "Suma dos puntos y queda a uno del segundo lugar. Desde que la Comisión Europea obtuvo facultades de aplicación sobre modelos de propósito general el 2 de agosto, envió una primera ronda de solicitudes de información a empresas de IA y habilitó un canal de quejas. El 22 de septiembre, más de 20 países firmaron, durante la Asamblea General de la ONU, un llamado para controlar los modelos de frontera, aunque la delegación estadounidense se pronunció contra un esquema regulatorio global. Gartner reporta que 22% de las organizaciones ha escalado la IA, lo que sostiene la demanda de control."
+      "texto": "Conserva el tercer lugar. Gartner informó el 19 de octubre que 71% de las organizaciones espera desplegar IA agéntica en los próximos 12 meses, pero solo 21% cuenta con capacidades de gobernanza para ella (encuesta del segundo trimestre a más de 2,000 directores de tecnología). En Europa, el Reglamento 2026/1744 pospuso las obligaciones de alto riesgo al 2 de diciembre de 2027 para sistemas independientes y al 2 de agosto de 2028 para los integrados en productos; las facultades sobre modelos de propósito general no se retrasaron."
     },
     {
       "pos": 4,
       "nombre": "Sistemas multiagente y orquestación de agentes",
-      "texto": "Sube un punto por consolidación de estándares y plataformas. El protocolo A2A, para comunicación entre agentes, se sumó a la Agentic AI Foundation, donde ya opera MCP. Salesforce presentó orquestación de agentes de terceros compatible con A2A y agentes de horizonte largo, en piloto y con disponibilidad general prevista para noviembre. El 29 de septiembre, MongoDB lanzó Atlas Agent Engine, una capa de ejecución, memoria y gobernanza para agentes en producción. Persiste el riesgo: Gartner recomienda gobernar los sistemas multiagente por privilegios de acción, no por la capacidad del modelo."
+      "texto": "Mantiene el cuarto lugar. Gartner dedicó cuatro de las diez tendencias estratégicas de 2027 a gobernar plataformas de agentes autónomos, entre ellas plataformas de contexto, arneses de control para agentes de programación e identidad de agentes. Los protocolos MCP y A2A operan bajo la Agentic AI Foundation, lo que reduce el riesgo de depender de un solo proveedor. La advertencia de Gartner es operativa: sin una capa de contexto dedicada, las organizaciones enfrentan agentes con privilegios excesivos, fallas de cumplimiento y mayor consumo de tokens. En su simposio, la firma describió un ajuste de realidad para los agentes."
     },
     {
       "pos": 5,
-      "nombre": "Automatización operativa inteligente (RPA + AI)",
-      "texto": "Mantiene puntaje y posición. UiPath reportó el 3 de septiembre, para el trimestre cerrado el 31 de julio, ingresos de 410 millones de dólares (+13%), ARR de 1,938 millones (+12%) y 37 millones de ARR neto nuevo. Informó que 18 de sus 20 mayores contratos del trimestre incluyeron componentes de IA. El crecimiento es de doble dígito bajo, no de aceleración: hay tracción medible, pero compite con agentes que prometen ejecutar procesos sin RPA, como el agente de operaciones que Salesforce presentó en Dreamforce."
+      "nombre": "FinOps y optimización de costos cloud",
+      "texto": "Sube un lugar y entra al Top 5. En su encuesta a 2,002 directores de tecnología, Gartner halló que 58% enfrenta mayor presión para reducir costos mediante IA. El 26 de octubre proyectó que, hasta 2027, las empresas que operen agentes de IA en TI con precios variables sin tope ligados a tokens superarán sus costos esperados en más de 50%, frente a quienes usan suscripciones o paquetes con precio predecible. El State of FinOps 2026 de la FinOps Foundation reporta que 98% de los encuestados ya administra gasto en IA, frente a 63% en 2025."
     }
   ],
-  "sube": "Infraestructura GPU cloud especializada es la única que gana posición (de la 13 a la 12) y suma un punto: Oracle reportó el 10 de septiembre ingresos de infraestructura en la nube por 7,400 millones de dólares (+121%), obligaciones de desempeño pendientes por 664,000 millones y más de 300,000 GPU entregadas en el trimestre, y Gartner estima que la infraestructura de IA sumará 1.48 billones de dólares en 2026. El flujo de caja libre de Oracle fue negativo en 5,400 millones, un límite a considerar. Ciberseguridad con detección basada en comportamiento y plataformas de gobernanza de IA suman dos puntos cada una sin cambiar de lugar: la primera por el gasto proyectado por Gartner y por incidentes con agentes detectados con meses de retraso; la segunda por las primeras acciones de aplicación de la Comisión Europea sobre modelos de propósito general.",
-  "baja": "Analítica predictiva aplicada a supply chain cede un lugar (de la 12 a la 13) y un punto: Gartner proyectó el 24 de septiembre que solo 5% de las organizaciones con automatización de planeación tomará de forma autónoma al menos 10% de sus decisiones de planeación en 2030, aunque 83% ya invirtió al menos 3 millones de dólares. Herramientas de generación de contenido automatizado baja dos puntos: OpenAI descontinuó su API de Sora el 24 de septiembre y Gartner ubica a la IA generativa en el valle de la desilusión en 2026. Startups de AI wrappers sin diferenciación técnica baja un punto; la señal es de contexto: Gartner observa que las empresas prefieren funciones de IA integradas por proveedores establecidos, aunque no evaluó a estas startups de forma directa.",
-  "insight": "Octubre desplaza la conversación de lo que pueden hacer los agentes a quién responde cuando actúan. Según Cloud Security Alliance, entre julio y septiembre agentes de OpenAI y Anthropic en pruebas de evaluación accedieron a sistemas reales, y algunos casos tardaron meses en notificarse. El eslabón débil resultó ser el aislamiento y la detección, no la capacidad. El mercado lo registra: el gasto proyectado en seguridad con IA se duplica, la gobernanza pasa del calendario regulatorio a la exigencia de gobiernos y responsables de seguridad, y las categorías de control se acercan en puntaje a la de agentes. Con el gasto adelantado a los resultados, en octubre el valor dependerá menos del modelo y más de la capa que lo supervisa."
+  "sube": "FinOps y optimización de costos cloud sube un lugar (del 6 al 5) y suma dos puntos por la presión de costos que documentó Gartner en octubre: 58% de los directores de tecnología reporta más presión para reducir costos con IA y los precios variables sin tope pueden superar el costo esperado en más de 50%. Copilots empresariales integrados sube un lugar (del 14 al 13) y suma dos puntos: Microsoft reportó el 28 de octubre que los clientes con más de 50,000 asientos de Copilot crecieron más de ocho veces en un año y que los usuarios diarios aumentaron cerca de 50% frente al trimestre previo; el límite es que no divulgó asientos pagados y que Gartner halló que solo 13% de los directores reporta valor significativo de la IA. Infraestructura de datos para IA generativa, Observabilidad y AIOps cloud, y Voice AI empresarial suman un punto sin cambiar de lugar: Gartner incluyó las plataformas de contexto y los modelos de razonamiento de voz entre sus tendencias de 2027 (señal de adopción futura, no de tracción), y Grafana Labs reportó que 68% de 300 líderes ya lleva IA para observabilidad a piloto o producción (encuesta del proveedor).",
+  "baja": "Ninguna categoría pierde puntos respecto a octubre; dos ceden un lugar por el ascenso de otras. Automatización operativa inteligente (RPA + AI) pasa del 5 al 6 al ser superada por FinOps, sin una señal nueva en su contra; Automation Anywhere anunció el 7 de octubre la compra de Boost.ai, proveedor de IA conversacional, movimiento que amplía la categoría hacia agentes. Analítica predictiva aplicada a supply chain pasa del 13 al 14 al ser superada por Copilots. Gartner publicó el 28 de octubre que 47% de las cadenas de suministro encuestadas redujo su plantilla en promedio 10.5% en dos años, principalmente por IA, pero la encuesta no mide el desempeño de la analítica predictiva.",
+  "insight": "Noviembre desplaza la discusión de lo que pueden hacer los agentes a cuánto cuesta operarlos y quién responde por ellos. Los proveedores empiezan a reportar consumo además de licencias: ServiceNow mide el uso de IA agéntica en producción y Microsoft no divulgó asientos pagados de Copilot, aunque sí clientes con más de 50,000 asientos. Del lado comprador, Gartner registra que solo 13% de los directores de tecnología percibe valor significativo de la IA y que 58% enfrenta más presión por reducir costos. Por eso FinOps entra al Top 5 y las categorías de control conservan sus posiciones. La brecha pendiente es de medición: el gasto en IA se mide mejor que su retorno."
 }
