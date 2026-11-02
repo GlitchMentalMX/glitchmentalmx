@@ -7,9 +7,9 @@ empresa: "OpenAI"
 sitioOficial: "https://openai.com/codex/"
 veredicto: "amarillo"
 fraseCorta: "No hay cupón universal, pero sí $100 USD en créditos reales para universitarios que estudian y residen en EE.UU. o Canadá, verificados con SheerID; no aplica en México."
-fuenteVerificacion: "Centro de ayuda oficial de OpenAI (help.openai.com), artículo \"Codex credits for Students - Terms of Service\", y chatgpt.com/codex/students/, consultados el 04/10/2026."
+fuenteVerificacion: "Centro de ayuda oficial de OpenAI (help.openai.com), artículo \"Codex credits for Students - Terms of Service\", y chatgpt.com/codex/students/, consultados el 04/10/2026 y reverificados el 02/11/2026: el programa sigue con los mismos USD 100 en créditos, las mismas condiciones (solo EE.UU. y Canadá) y sin fecha límite para reclamarlo."
 pubDate: 2026-08-31
-updatedDate: 2026-10-04
+updatedDate: 2026-11-02
 heroImage: /images/codigos-descuento/codex.png
 heroImageAlt: Codex — Códigos de descuento
 ---
@@ -36,4 +36,4 @@ Sitios agregadores anuncian códigos de "35%" o "40% off" para Codex u OpenAI en
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 02/11/2026]

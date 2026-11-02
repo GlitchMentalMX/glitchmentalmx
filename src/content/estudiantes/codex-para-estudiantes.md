@@ -7,8 +7,9 @@ empresa: "OpenAI"
 sitioOficial: "https://chatgpt.com/codex/students/"
 veredicto: "rojo"
 fraseCorta: "Los USD 100 en créditos de Codex para estudiantes son solo para universitarios que estudian y residen en EE.UU. o Canadá, no en México."
-fuenteVerificacion: "Fuente oficial (chatgpt.com/codex/students, \"Codex para estudiantes universitarios\"; versión en español de Latinoamérica), consultada el 04/10/2026."
+fuenteVerificacion: "Fuente oficial (chatgpt.com/codex/students, \"Codex para estudiantes universitarios\"; versión en español de Latinoamérica, y help.openai.com, artículo «Codex credits for Students - Terms of Service»), consultada el 04/10/2026 y reverificada el 02/11/2026: el programa sigue con los mismos USD 100 en créditos, las mismas condiciones (solo EE.UU. y Canadá) y sin fecha límite para reclamarlo."
 pubDate: 2026-10-04
+updatedDate: 2026-11-02
 heroImage: /images/estudiantes/codex.png
 heroImageAlt: Codex — Descuentos para estudiantes
 ---
@@ -46,4 +47,4 @@ Si algún sitio te ofrece "créditos de Codex para estudiantes de México", no s
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 02/11/2026]
