@@ -4,8 +4,8 @@ resumen: La OMS encontró que el uso problemático de redes entre adolescentes e
 imagen: /images/dato-incomodo/conectado-control.png
 imagenAlt: Adolescente deslizando videos cortos en su celular, sentado en la cama con expresión de aburrimiento y atención absorta
 enlace: ''
-date: 2026-10-30T07:58
-draft: true
+date: 2026-11-02T06:58
+draft: false
 categoria: ''
 punchline: Estar conectado no siempre significa estar en control
 slug: ''
