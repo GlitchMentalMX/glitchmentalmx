@@ -7,7 +7,8 @@ empresa: "Gamma Tech, Inc."
 sitioOficial: "https://gamma.app/pricing"
 veredicto: "rojo"
 fraseCorta: "Gamma no tiene descuento estudiantil, solo una petición abierta en su foro; sí hay plan Free sin tarjeta y ahorro anual de hasta 28%."
-fuenteVerificacion: "Fuente oficial (gamma.app/pricing, página de planes en MXN; gamma.app/solutions/educators; ideas.gamma.app, tablero \"Gamma Love\"; help.gamma.app, Pricing & Plans), consultada el 04/10/2026."
+fuenteVerificacion: "Fuente oficial (gamma.app/solutions/educators; ideas.gamma.app, tablero \"Gamma Love\"; help.gamma.app, artículo \"Can educators get a discount on Gamma?\"), consultada el 03/11/2026."
+updatedDate: 2026-11-03
 pubDate: 2026-10-04
 heroImage: /images/estudiantes/gamma.png
 heroImageAlt: Gamma — Descuentos para estudiantes
@@ -15,11 +16,11 @@ heroImageAlt: Gamma — Descuentos para estudiantes
 
 ## ¿Gamma tiene descuento o plan gratis para estudiantes?
 
-No hay un descuento ni un plan para estudiantes. Gamma tiene una página dedicada a educadores, pero es de funciones y ejemplos de uso: no trae precio especial ni verificación de estudiante. Lo que sí hay es un plan Free para cualquier persona, y es lo más cercano a "gratis para estudiar".
+No hay un descuento ni un plan para estudiantes. Gamma tiene una página dedicada a educadores, pero es de funciones y ejemplos de uso, sin precio especial visible ahí. Aparte, el Centro de ayuda de Gamma sí tiene un artículo sobre descuentos: ofrece un precio reducido, pero solo a educadores verificados (profesores, personal docente) de instituciones acreditadas, y se solicita por correo directo a la empresa, no con verificación automática tipo SheerID. El propio artículo aclara que, por ahora, ese descuento no aplica a estudiantes. Lo que sí hay para cualquiera es un plan Free, y es lo más cercano a "gratis para estudiar".
 
 ## ¿Aplica en México?
 
-No aplica porque no existe la oferta. En el tablero oficial de ideas de Gamma, "Gamma Love", la petición de un descuento para educación, estudiantes u organizaciones sin fines de lucro sigue abierta. Ahí un integrante del equipo de diseño respondió que un precio para organizaciones sin fines de lucro "tiene mucho sentido" y pidió más detalles; no hay anuncio de decisión ni de fecha. El Centro de ayuda tampoco tiene un artículo de descuento educativo.
+No aplica porque no existe la oferta para estudiantes. En el tablero oficial de ideas de Gamma, "Gamma Love", la petición de un descuento para educación, estudiantes u organizaciones sin fines de lucro sigue abierta. Ahí un integrante del equipo de diseño respondió que un precio para organizaciones sin fines de lucro "tiene mucho sentido" y pidió más detalles; no hay anuncio de decisión ni de fecha.
 
 ## Qué sí existe en lugar de eso
 
@@ -44,4 +45,4 @@ Si necesitas armar presentaciones para la escuela, el plan Free alcanza para pro
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 03/11/2026]

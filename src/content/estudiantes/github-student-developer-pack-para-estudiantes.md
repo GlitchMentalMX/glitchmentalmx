@@ -7,7 +7,8 @@ empresa: "GitHub (Microsoft)"
 sitioOficial: "https://education.github.com/pack"
 veredicto: "amarillo"
 fraseCorta: "Es gratis para estudiantes verificados de 13 años o más, pero GitHub no menciona países, y cada beneficio del paquete trae su propia duración y límites."
-fuenteVerificacion: "Fuente oficial (education.github.com/pack; github.com/education/students; docs.github.com: Apply to GitHub Education as a student y About GitHub Education for students), consultada el 11/10/2026."
+fuenteVerificacion: "Fuente oficial (education.github.com/pack; github.com/education/students), consultada el 03/11/2026."
+updatedDate: 2026-11-03
 pubDate: 2026-10-11
 heroImage: /images/estudiantes/github-student-developer-pack.png
 heroImageAlt: GitHub Student Developer Pack — Descuentos para estudiantes
@@ -25,8 +26,8 @@ Ojo con lo que sí tiene fecha de caducidad. El Pack no es un solo beneficio, si
 - Heroku: 13 dólares al mes durante 24 meses.
 - Namecheap: un dominio .me y un certificado SSL, ambos por un año.
 - Datadog: cuenta Pro gratis por 2 años.
-- 1Password: gratis por un año.
-- Cursos como Educative, Codedex o FrontendMasters: 6 meses cada uno.
+- 1Password: gratis por 2 años, incluidas sus herramientas para desarrolladores (antes era un año).
+- Cursos como Educative o FrontendMasters: 6 meses cada uno. Codedex (Codédex Club) cambió desde el 1 de noviembre de 2026 a solo 1 mes gratis (antes eran 6 meses).
 
 La lista completa cambia con el tiempo, así que revisa la página oficial antes de contar con una oferta concreta.
 
@@ -59,4 +60,4 @@ La documentación que consultamos no explica cuánto dura el acceso al Pack comp
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 11/10/2026]
+[Última actualización: 03/11/2026]

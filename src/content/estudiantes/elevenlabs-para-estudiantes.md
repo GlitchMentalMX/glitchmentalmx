@@ -1,21 +1,22 @@
 ---
 title: "¿ElevenLabs es gratis para estudiantes? Qué aplica en México"
-description: "ElevenLabs regala 3 meses de plan Creator a universitarios de EE.UU., Canadá, UE, Australia y Reino Unido, sin México. ElevenReader Ultra: sin confirmar."
+description: "ElevenLabs regala 3 meses de acceso a ElevenCreative, ElevenAgents y ElevenAPI a universitarios de EE.UU., Canadá, UE, Australia y Reino Unido, sin México. ElevenReader Ultra: sin confirmar."
 herramienta: "ElevenLabs"
 herramientaId: "elevenlabs"
 empresa: "ElevenLabs"
 sitioOficial: "https://elevenlabs.io/students"
 veredicto: "amarillo"
-fraseCorta: "El plan gratis para estudiantes de ElevenLabs excluye a México; solo el año de ElevenReader Ultra queda abierto, sin confirmar."
-fuenteVerificacion: "Fuente oficial (elevenlabs.io/students, blog \"Introducing ElevenLabs for Students\", elevenreader.io/students y help.elevenlabs.io), consultada el 04/10/2026."
+fraseCorta: "El plan gratis para estudiantes de ElevenLabs (ElevenCreative, ElevenAgents y ElevenAPI) excluye a México; solo el año de ElevenReader Ultra queda abierto, sin confirmar."
+fuenteVerificacion: "Fuente oficial (elevenlabs.io/students, blog \"Introducing ElevenLabs for Students\", elevenreader.io/students y help.elevenlabs.io), consultada el 04/10/2026 y reverificada el 03/11/2026: la oferta nombra tres productos (ElevenCreative, ElevenAgents, ElevenAPI), no un \"plan Creator\"."
 pubDate: 2026-10-04
+updatedDate: 2026-11-03
 heroImage: /images/estudiantes/elevenlabs.png
 heroImageAlt: ElevenLabs — Descuentos para estudiantes
 ---
 
 ## ¿ElevenLabs tiene descuento o plan gratis para estudiantes?
 
-Sí, con dos ofertas distintas y no igual de abiertas. La primera es el plan Creator de ElevenLabs gratis por 3 meses, para generar voz, música, efectos, imagen y video. La segunda es un año gratis de ElevenReader Ultra, la app de lectura en voz alta, que no es la plataforma de creación. La página oficial de estudiantes lista ambas.
+Sí, con dos ofertas distintas y no igual de abiertas. La primera es acceso gratis por 3 meses a tres productos de ElevenLabs —ElevenCreative, ElevenAgents y ElevenAPI—, para generar voz, música, efectos, imagen, video y agentes de IA. La segunda es un año gratis de ElevenReader Ultra, la app de lectura en voz alta, que no es la plataforma de creación. La página oficial de estudiantes lista ambas.
 
 ## ¿Aplica en México?
 
@@ -35,7 +36,7 @@ El artículo de ayuda de ElevenLabs también menciona descuentos para educadores
 
 ## Qué pasa cuando termina
 
-Al terminar el año gratis de ElevenReader, el plan se renueva solo al precio anual normal del siguiente ciclo escolar, a menos que canceles antes. Sobre los 3 meses del plan Creator, la página no explica qué ocurre después de ese plazo, así que no te prometo nada. Antes de reclamar cualquiera de las dos, ubica en tu cuenta dónde se cancela la renovación.
+Al terminar el año gratis de ElevenReader, el plan se renueva solo al precio anual normal del siguiente ciclo escolar, a menos que canceles antes. Sobre los 3 meses de acceso a ElevenCreative, ElevenAgents y ElevenAPI, la página no explica qué ocurre después de ese plazo, así que no te prometo nada. Antes de reclamar cualquiera de las dos, ubica en tu cuenta dónde se cancela la renovación.
 
 ¿Buscas cuánto cuesta ElevenLabs? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-elevenlabs-hoy/)
 
@@ -47,4 +48,4 @@ Al terminar el año gratis de ElevenReader, el plan se renueva solo al precio an
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 03/11/2026]

@@ -7,9 +7,9 @@ empresa: "OpenAI"
 sitioOficial: "https://chatgpt.com/students/2026/"
 veredicto: "rojo"
 fraseCorta: "La oferta de 4 meses gratis de ChatGPT Plus es solo para estudiantes de universidades de EE.UU.; para México no hay oferta oficial."
-fuenteVerificacion: "Fuente oficial (chatgpt.com/students/2026 y help.openai.com, artículo «ChatGPT Back to School offer for students»), consultada el 04/10/2026 y reverificada el 02/11/2026: el artículo de ayuda sigue publicando el mismo plazo (31/10/2026) y las mismas condiciones (solo EE.UU.), sin aviso de extensión ni de cierre de la oferta."
+fuenteVerificacion: "Fuente oficial (chatgpt.com/students/2026 y help.openai.com, artículo «ChatGPT Back to School offer for students»), consultada el 04/10/2026 y reverificada el 03/11/2026: el artículo de ayuda sigue publicando el mismo plazo (31/10/2026, ya vencido) y las mismas condiciones (solo EE.UU.), sin aviso de extensión."
 pubDate: 2026-10-04
-updatedDate: 2026-11-02
+updatedDate: 2026-11-03
 vigenteHasta: 2026-10-31
 heroImage: /images/estudiantes/chatgpt.png
 heroImageAlt: ChatGPT — Descuentos para estudiantes
@@ -17,7 +17,7 @@ heroImageAlt: ChatGPT — Descuentos para estudiantes
 
 ## ¿ChatGPT tiene descuento o plan gratis para estudiantes?
 
-Sí existe una oferta, pero no es para ti si estudias en México. OpenAI regala cuatro periodos mensuales de facturación de ChatGPT Plus a estudiantes de tiempo completo o parcial, de licenciatura o posgrado, inscritos en instituciones elegibles de Estados Unidos que otorgan títulos. Hay que reclamarla antes del 31 de octubre de 2026.
+Existió una oferta, pero no era para ti si estudias en México. OpenAI regaló cuatro periodos mensuales de facturación de ChatGPT Plus a estudiantes de tiempo completo o parcial, de licenciatura o posgrado, inscritos en instituciones elegibles de Estados Unidos que otorgan títulos. Había que reclamarla antes del 31 de octubre de 2026; esa fecha ya pasó y el artículo de ayuda de OpenAI no reporta extensión ni nueva edición de la oferta.
 
 ## ¿Aplica en México?
 
@@ -49,4 +49,4 @@ Aun donde aplica, la oferta pide método de pago para activarse, y al terminar l
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 02/11/2026]
+[Última actualización: 03/11/2026]
