@@ -44,3 +44,5 @@ Eso no quiere decir que el efecto sea menor a largo plazo; puede significar que 
 La IA no está destruyendo empleos en Europa hoy. Eso es un hecho verificable con datos de esta mañana. Pero tampoco está distribuyendo sus beneficios de forma equitativa: las empresas que pueden invertir en estas herramientas ganan ventaja competitiva sobre las que no pueden, y los trabajadores que tienen acceso a capacitación se adaptan mientras los que no, quedan expuestos.
 
 El dato del BCE es positivo para el corto plazo. La pregunta relevante no es si la IA destruye empleos ahora, sino quién tiene las condiciones para adaptarse cuando el ritmo de automatización se acelere.
+
+Si te interesa el contexto por país, el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/) muestra cada profesión con notas para México, España, Brasil y el resto de LATAM.

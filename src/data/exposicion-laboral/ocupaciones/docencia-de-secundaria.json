@@ -1,0 +1,267 @@
+{
+  "slug": "docencia-de-secundaria",
+  "nombre": {
+    "es": "Docencia de secundaria"
+  },
+  "sector": "Educación e investigación",
+  "codigos": {
+    "onet": "25-2031.00",
+    "isco08": "2330"
+  },
+  "puntuacion": {
+    "E": 54,
+    "A": 44,
+    "C": 84,
+    "valor": 41,
+    "nivel": "Moderada",
+    "rango_sensibilidad": [
+      36,
+      57
+    ],
+    "tope_aplicado": true,
+    "puntuacion_sin_tope": 45
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 29,
+    "eloundou_beta_humana": 34,
+    "eloundou_beta_gpt4": 33
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.515,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Impartir clases y conducir actividades",
+      "tareas_onet": [
+        6640,
+        6649,
+        6654,
+        6665,
+        6652
+      ],
+      "peso": 0.1605,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "3 de 5 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Preparar materiales, planes y objetivos del curso",
+      "tareas_onet": [
+        6643,
+        6641,
+        6657,
+        6653,
+        6662,
+        6661,
+        6644
+      ],
+      "peso": 0.2282,
+      "E": 4,
+      "A": 3,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "3 de 7 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Preparar, aplicar y calificar evaluaciones",
+      "tareas_onet": [
+        6642,
+        6646,
+        6666
+      ],
+      "peso": 0.0933,
+      "E": 4,
+      "A": 3,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 3 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Observar y evaluar el desarrollo del estudiante",
+      "tareas_onet": [
+        6647
+      ],
+      "peso": 0.0333,
+      "E": 2,
+      "A": 2,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Mantener la disciplina y hacer cumplir normas",
+      "tareas_onet": [
+        6639,
+        6648
+      ],
+      "peso": 0.0685,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Orientar y apoyar a estudiantes, incluidos programas remediales",
+      "tareas_onet": [
+        6650,
+        6651,
+        6659,
+        6670,
+        6658
+      ],
+      "peso": 0.1625,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Comunicarse con familias y colegas",
+      "tareas_onet": [
+        6656,
+        6655
+      ],
+      "peso": 0.0614,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Administración, registros e informes",
+      "tareas_onet": [
+        6645,
+        6663,
+        6664,
+        6669,
+        6668
+      ],
+      "peso": 0.137,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Actividades extracurriculares y desarrollo profesional",
+      "tareas_onet": [
+        6667,
+        6660
+      ],
+      "peso": 0.0552,
+      "E": 1,
+      "A": 1,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "Planeación, materiales y retroalimentación inicial se agilizan, devolviendo tiempo al aula y al acompañamiento individual.",
+    "Enseñar a usar herramientas con criterio (y a distinguir cuándo no hacerlo) es un contenido nuevo que solo puede guiar un docente.",
+    "El vínculo, la disciplina y la orientación de adolescentes no se sustituyen con un asistente."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

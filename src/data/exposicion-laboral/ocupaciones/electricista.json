@@ -1,0 +1,216 @@
+{
+  "slug": "electricista",
+  "nombre": {
+    "es": "Electricista"
+  },
+  "sector": "Manufactura y oficios",
+  "codigos": {
+    "onet": "47-2111.00",
+    "isco08": "7411"
+  },
+  "puntuacion": {
+    "E": 26,
+    "A": 18,
+    "C": 92,
+    "valor": 19,
+    "nivel": "Muy baja",
+    "rango_sensibilidad": [
+      8,
+      44
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 19
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 0,
+    "eloundou_beta_humana": 15,
+    "eloundou_beta_gpt4": 15
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Planear la instalación y leer planos",
+      "tareas_onet": [
+        2882,
+        2880,
+        2892
+      ],
+      "peso": 0.1458,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Instalar y conectar cableado y equipos",
+      "tareas_onet": [
+        2888,
+        2873,
+        2875,
+        2884,
+        2890,
+        2886
+      ],
+      "peso": 0.2901,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Trabajar en altura y en tareas de esfuerzo físico",
+      "tareas_onet": [
+        2887,
+        2891
+      ],
+      "peso": 0.0947,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Diagnosticar, probar e inspeccionar sistemas",
+      "tareas_onet": [
+        2874,
+        2878,
+        2876,
+        2877
+      ],
+      "peso": 0.1862,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Dirigir y capacitar personal",
+      "tareas_onet": [
+        2881
+      ],
+      "peso": 0.0478,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Licencias, registros y administración",
+      "tareas_onet": [
+        2879,
+        2885
+      ],
+      "peso": 0.0931,
+      "E": 2,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Fabricar piezas y atender emergencias",
+      "tareas_onet": [
+        20439,
+        2893,
+        2883
+      ],
+      "peso": 0.1424,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La instalación y el diagnóstico en sitio son trabajo físico y de criterio en entornos cambiantes.",
+    "Las herramientas de diagnóstico y cálculo ayudan a cotizar y planear mejor, sin sustituir a quien trabaja con la instalación.",
+    "Demanda creciente ligada a energía solar, electrificación y vehículos eléctricos, donde el oficio se especializa."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

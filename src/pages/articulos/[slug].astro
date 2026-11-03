@@ -78,6 +78,29 @@ const NOVELA_POR_ARTICULO = new Map<string, string>([
 // no se vuelva un enlace que crece solo con cada artículo nuevo. Lote exacto:
 // los 16 artículos de la sección "Trabajo y Automatización" en
 // src/content/collections/biblioteca-de-ia-tecnologia-y-sociedad.md.
+// Artículos de empleo e IA que no tienen el promo de la calculadora: reciben el
+// del Índice de Exposición Laboral a la IA.
+const EXPOSICION_LABORAL_SLUGS = new Set([
+  'la-ia-borra-el-empleo-junior-el-talento-en-riesgo',
+  'la-ia-elimina-los-puestos-de-trabajo-no-los-trabajos',
+  'gen-z-llega-al-mercado-laboral-y-la-ia-lo-automatiza',
+  'nature-avisa-la-ia-util-puede-vaciar-profesiones-enteras',
+  'la-ia-ya-esta-reemplazando-equipos-completos-de-atencion-al-cliente',
+  'estudio-del-mit-la-ia-pasa-el-minimo-laboral-no-mas',
+  'china-convirtio-el-desempleo-juvenil-en-politica-de-ia',
+  'china-necesita-12-millones-de-empleos-y-la-ia-los-complica',
+  'hsbc-y-la-ia-20000-empleos-en-la-balanza',
+  'meta-recortara-16000-empleos-la-ia-como-argumento',
+  'inversionistas-predicen-que-ia-va-a-eliminar-empleos-en-2026-segun-encuesta',
+  'accenture-y-meta-redisenan-el-empleo-con-metricas-de-ia-reales',
+  'expertos-que-entrenan-ia-para-reemplazarse-el-negocio',
+  'el-prompt-engineer-murio-que-reemplazo-al-rol',
+  'ia-agentica-en-2026-que-es-y-como-cambia-tu-trabajo',
+  'agentes-de-ia-en-tu-trabajo-el-salto-del-5-al-40-en-2026',
+  '1-de-cada-3-trabajadores-ya-usa-ia-en-espana-el-futuro-del-trabajo-esta-aqui',
+  'ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo',
+]);
+
 const RISK_CALCULATOR_SLUGS = new Set([
   'los-empleos-que-la-ia-no-puede-tocar-segun-microsoft',
   'que-trabajos-cambia-primero-la-ia-y-por-que-esos',
@@ -262,7 +285,14 @@ const relatedFinal =
 const novelaPromo = kind === 'posts' && NOVELA_POR_ARTICULO.has(post.id) ? getBook(NOVELA_POR_ARTICULO.get(post.id)!) : undefined;
 
 const toolPromo =
-  kind === 'posts' && RISK_CALCULATOR_SLUGS.has(post.id)
+  kind === 'posts' && EXPOSICION_LABORAL_SLUGS.has(post.id) && !RISK_CALCULATOR_SLUGS.has(post.id)
+    ? {
+        title: '¿Qué partes de tu profesión están expuestas a la IA?',
+        description:
+          'El Índice de Exposición Laboral a la IA muestra, por actividad, qué está cambiando y dónde hay oportunidades. Exposición no significa sustitución.',
+        href: '/indice-exposicion-laboral-ia/',
+      }
+    : kind === 'posts' && RISK_CALCULATOR_SLUGS.has(post.id)
     ? {
         title: '¿La IA puede quitarte tu trabajo?',
         description: 'Mide qué tan expuesto está tu trabajo a la automatización. Descúbrelo gratis, en segundos.',

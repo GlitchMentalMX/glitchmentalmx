@@ -5,6 +5,8 @@
 // (con el efecto "scramble" de los títulos, que es exclusivo del home); no
 // se tocó el home para no modificar su layout fuera del alcance de esta tarea.
 import { getCollection } from 'astro:content';
+import { cargarFichas } from '../lib/exposicion';
+const nOcupaciones = cargarFichas().length;
 
 // Igual que en el home: los dos totales se muestran por separado (no
 // sumados) porque varias herramientas viven en ambas colecciones y no hay
@@ -20,6 +22,7 @@ const toolsList = [
   { href: '/indice-glitchmentalmx/', tag: 'Índice mensual', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: '20 tecnologías · mensual', icon: 'chart' as const },
   { href: '/glitchsearch/', tag: 'Herramienta', title: 'GlitchSearch', desc: 'Curamos la web antes que tú la leas. Búsqueda con veredicto de IA incluido.', stat: 'IA + web curada', icon: 'search' as const },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', tag: 'Herramienta', title: 'Calculadora de Riesgo IA', desc: 'Mide qué tan expuesto está tu trabajo a la automatización.', stat: '60 segundos', icon: 'gauge' as const },
+  { href: '/indice-exposicion-laboral-ia/', tag: 'Índice mensual', title: 'Exposición laboral IA', desc: 'Qué partes de cada profesión están expuestas a la IA y dónde hay oportunidades. Sin alarmismo.', stat: `${nOcupaciones} ocupaciones · mensual`, icon: 'chart' as const },
   { href: '/ia-sin-letra-chiquita/', tag: 'Referencia', title: 'IA sin letra chiquita', desc: 'Precios reales, quién entrena su IA con tus datos, si piden tarjeta para probarla si su código de descuento es real y qué ofertas para estudiantes aplican en México — cinco series verificadas, herramienta por herramienta.', stat: `Precios: ${preciosCount} · Privacidad: ${entrenaCount} · Prueba gratis: ${pruebaGratisCount} · Descuentos: ${codigosDescuentoCount} · Estudiantes: ${estudiantesCount}`, icon: 'shield' as const },
 ];
 
@@ -114,6 +117,7 @@ const otrosServicios = {
   .tool-card h3 { font-family: var(--font-display); font-size: 1.1rem; margin: 2px 0 0; }
   .tool-card:hover h3 { color: var(--accent); }
   .tool-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; flex: 1; }
+  .tools-grid:not(.group-grid) .tool-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
   .tool-card .stat {
     font-family: var(--font-mono);
     font-size: 0.75rem;

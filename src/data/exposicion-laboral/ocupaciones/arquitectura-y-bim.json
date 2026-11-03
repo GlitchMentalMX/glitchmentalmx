@@ -1,0 +1,222 @@
+{
+  "slug": "arquitectura-y-bim",
+  "nombre": {
+    "es": "Diseño arquitectónico y modelado BIM"
+  },
+  "sector": "Ingeniería y arquitectura",
+  "codigos": {
+    "onet": "17-1011.00",
+    "isco08": "2161"
+  },
+  "puntuacion": {
+    "E": 62,
+    "A": 43,
+    "C": 80,
+    "valor": 45,
+    "nivel": "Moderada",
+    "rango_sensibilidad": [
+      25,
+      67
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 45
+  },
+  "confianza": "baja",
+  "referencias": {
+    "aei_exposicion_ocupacion": 8,
+    "eloundou_beta_humana": 43,
+    "eloundou_beta_gpt4": 49
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.121,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Diseñar estructuras y planear distribuciones",
+      "tareas_onet": [
+        19596,
+        20486,
+        136,
+        20483
+      ],
+      "peso": 0.1808,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Elaborar planos y modelos tridimensionales",
+      "tareas_onet": [
+        20479,
+        20488
+      ],
+      "peso": 0.0896,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Preparar documentos contractuales y especificaciones",
+      "tareas_onet": [
+        134,
+        130,
+        140
+      ],
+      "peso": 0.1211,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "2 de 3 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Definir requisitos con clientes y gestionar propuestas",
+      "tareas_onet": [
+        20481,
+        131,
+        20482,
+        139
+      ],
+      "peso": 0.1597,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Supervisar obra y administrar contratos",
+      "tareas_onet": [
+        20484,
+        138,
+        24016,
+        20487
+      ],
+      "peso": 0.1577,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Dirigir técnicos y especialistas",
+      "tareas_onet": [
+        20480,
+        20485
+      ],
+      "peso": 0.0821,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Diseño sostenible y análisis energético",
+      "tareas_onet": [
+        19592,
+        19591,
+        19593,
+        19594,
+        19590,
+        19595
+      ],
+      "peso": 0.209,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La generación de alternativas de diseño y la documentación se aceleran; el criterio espacial y el trato con el cliente siguen en manos de la persona.",
+    "Dominar el modelado BIM y la coordinación de especialidades vuelve valioso a quien supervisa lo que producen las herramientas.",
+    "Más tiempo para el concepto y la visita a obra, menos para tareas repetitivas de dibujo."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "slug": "desarrollo-de-software",
+  "nombre": {
+    "es": "Desarrollo de software"
+  },
+  "sector": "Tecnología",
+  "codigos": {
+    "onet": "15-1252.00",
+    "isco08": "2512"
+  },
+  "puntuacion": {
+    "E": 70,
+    "A": 54,
+    "C": 67,
+    "valor": 55,
+    "nivel": "Moderada",
+    "rango_sensibilidad": [
+      49,
+      62
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 55
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 29,
+    "eloundou_beta_humana": 45,
+    "eloundou_beta_gpt4": 87
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.71,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Analizar requisitos y viabilidad",
+      "tareas_onet": [
+        21662,
+        21661,
+        21672,
+        21668
+      ],
+      "peso": 0.2357,
+      "E": 3,
+      "A": 3,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "2 de 4 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Diseñar y modificar software",
+      "tareas_onet": [
+        21667,
+        21670
+      ],
+      "peso": 0.1204,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 2 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Probar, validar y documentar",
+      "tareas_onet": [
+        21669
+      ],
+      "peso": 0.0643,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Manipular y consultar datos del sistema",
+      "tareas_onet": [
+        21676
+      ],
+      "peso": 0.0592,
+      "E": 4,
+      "A": 3,
+      "C": 1,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Preparar reportes y correspondencia técnica",
+      "tareas_onet": [
+        21673
+      ],
+      "peso": 0.0607,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Coordinar con equipos, clientes y gerentes",
+      "tareas_onet": [
+        21664,
+        21663,
+        21665,
+        21666
+      ],
+      "peso": 0.2341,
+      "E": 2,
+      "A": 1,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 4 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Monitorear sistemas en operación",
+      "tareas_onet": [
+        21671
+      ],
+      "peso": 0.068,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Supervisar y asignar trabajo a personal técnico",
+      "tareas_onet": [
+        21678,
+        21677
+      ],
+      "peso": 0.1095,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Capacitar a usuarios",
+      "tareas_onet": [
+        21679
+      ],
+      "peso": 0.048,
+      "E": 2,
+      "A": 1,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "Pasar de escribir código línea por línea a especificar, revisar y validar lo que la IA propone: el criterio de arquitectura y de calidad gana peso.",
+    "Mayor demanda de quien sabe integrar modelos y agentes en productos reales, con pruebas, seguridad y control de costos.",
+    "Más tiempo para el trabajo con usuarios y negocio (requisitos, priorización), que es la parte menos automatizable de la ocupación."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

@@ -126,3 +126,5 @@ La pregunta es: **¿qué vas a hacer tú mientras eso ocurre?**
 No para asustarte. Para ponerte en movimiento.
 
 Porque si algo define a esta nueva etapa del trabajo, es que quienes se adaptan más rápido no solo sobreviven: suben de nivel. Pero el caso de Klarna deja una lección adicional, incómoda también para las empresas: el ahorro inmediato de despedir a un equipo de soporte puede convertirse, dos años después, en el costo de tener que reconstruirlo desde cero — con menos gente dispuesta a confiar en que el puesto es estable.
+
+Puedes ver qué tareas de atención al cliente están más expuestas y cuáles siguen siendo humanas en la [ficha del Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/atencion-al-cliente/) y estimar tu caso con la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/).

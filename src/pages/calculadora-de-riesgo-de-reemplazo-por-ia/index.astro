@@ -5,6 +5,8 @@ import PageHeader from '../../components/PageHeader.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 import calculadoraData from '../../data/calculadora-riesgo-ia.json';
+import mapeoIndice from '../../data/exposicion-laboral/calculadora-mapeo.json';
+import { cargarFichas, RUTA as RUTA_INDICE, NOMBRE as NOMBRE_INDICE } from '../../lib/exposicion';
 
 const title = '¿La IA te va a quitar el trabajo? Calculadora gratis';
 const description =
@@ -43,18 +45,35 @@ const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === s
   (p): p is NonNullable<typeof p> => Boolean(p)
 );
 
+// La cifra de cada área mapeada sale del Índice de Exposición Laboral a la IA
+// (media simple si hay varias ocupaciones): nunca se escribe a mano. Se pasa al
+// script del cliente como JSON; scripts/verificar-calculadora-indice.mjs
+// comprueba que coincida con las fichas.
+const fichasIndice = cargarFichas();
+const areasIndice = Object.fromEntries(
+  Object.entries(mapeoIndice.areas).map(([area, slugs]) => {
+    const fs = slugs.map((slug) => fichasIndice.find((f) => f.slug === slug)!);
+    const risk = Math.round(fs.reduce((t, f) => t + f.puntuacion.valor, 0) / fs.length);
+    return [area, { risk, parcial: (mapeoIndice.parcial as Record<string, string>)?.[area], ocupaciones: fs.map((f) => ({ nombre: f.nombre.es, slug: f.slug, valor: f.puntuacion.valor })) }];
+  })
+);
+const porValor = [...fichasIndice].sort((a, b) => b.puntuacion.valor - a.puntuacion.valor);
+const nombresMin = (fs: typeof porValor) => fs.map((f) => f.nombre.es.replace(/ \(.*\)$/, '').toLowerCase());
+const masExpuestas = nombresMin(porValor.slice(0, 4)).join(', ');
+const menosExpuestas = nombresMin(porValor.slice(-3).reverse()).join(', ');
+
 const faqs = [
   {
     q: '¿Qué tan confiable es esta calculadora de riesgo de IA?',
-    a: 'Es un diagnóstico orientativo, no una encuesta estadística. Cruza tu área, país, nivel de estudios y experiencia contra tendencias documentadas por Frey & Osborne (Oxford), McKinsey Global Institute y el Foro Económico Mundial. No sustituye un estudio actuarial de tu puesto específico, pero te da una lectura honesta de hacia dónde va tu sector.',
+    a: 'Es un diagnóstico orientativo, no una encuesta estadística. La cifra de tu área sale del Índice de Exposición Laboral a la IA de glitchMentalMX cuando tu área ya está en él; si no, es una estimación basada en tendencias documentadas por Frey & Osborne (Oxford), McKinsey Global Institute y el Foro Económico Mundial. Después se ajusta por tu región, estudios y experiencia. No sustituye un estudio de tu puesto específico, pero te da una lectura honesta de hacia dónde va tu sector.',
   },
   {
     q: '¿Qué trabajos son más vulnerables a la inteligencia artificial?',
-    a: 'Los que dependen de tareas repetitivas, basadas en patrones o de bajo juicio contextual: contabilidad y finanzas, transporte, administración, manufactura rutinaria y atención al cliente encabezan la lista en esta calculadora. Los menos expuestos exigen juicio situacional, vínculo humano directo o destreza física en contextos impredecibles, como enfermería, psicología y oficios especializados.',
+    a: `Los más expuestos hoy son los trabajos hechos sobre texto, datos y atención a distancia. En el Índice de Exposición Laboral a la IA, las ocupaciones con mayor exposición son ${masExpuestas}. Las menos expuestas exigen presencia física, juicio situacional o vínculo humano directo: ${menosExpuestas}. Exposición no significa sustitución: mide cuánto del trabajo puede asistir o ejecutar la IA, no cuántos empleos desaparecen.`,
   },
   {
-    q: '¿Qué hago si mi resultado de riesgo es alto o crítico?',
-    a: 'No esperes a que la presión llegue directo a tu puesto. Identifica qué partes de tu rol exigen negociación, criterio ético o relaciones de confianza —eso es lo que la IA no replica todavía— y especialízate ahí. Si tu resultado es crítico, la ventana para reposicionarte se mide en meses, no en años.',
+    q: '¿Qué hago si mi resultado de exposición es alto o muy alto?',
+    a: 'Un resultado alto no es una sentencia: indica que buena parte de tus actividades puede ser asistida por IA. Identifica qué partes de tu rol exigen negociación, criterio ético o relaciones de confianza —eso es lo que la IA no replica todavía— y especialízate ahí. Aprender a dirigir y revisar herramientas de IA en tu área suele ser el primer paso.',
   },
   {
     q: '¿La calculadora guarda mis datos o necesita que me registre?',
@@ -65,8 +84,8 @@ const faqs = [
     a: 'En cuatro factores: tu área profesional, tu país o región, tu nivel de estudios y tus años de experiencia. Cada uno tiene un peso distinto según literatura pública sobre automatización —no son porcentajes inventados, pero tampoco una proyección estadística exacta de tu carrera individual.',
   },
   {
-    q: '¿Qué significan los niveles de riesgo (bajo, moderado, alto, crítico)?',
-    a: 'Bajo: tu rol exige capacidades que los modelos actuales no replican con fiabilidad. Moderado: una parte de tus tareas ya se está automatizando, sin desplazar el rol completo todavía. Alto: presión estructural activa en tu sector, con recortes o pilotos de sustitución en marcha. Crítico: tu perfil está en el centro de una transformación sectorial en curso.',
+    q: '¿Qué significan los niveles de exposición (muy baja, baja, moderada, alta, muy alta)?',
+    a: 'Son los mismos del Índice de Exposición Laboral a la IA. Muy baja y baja: las actividades centrales dependen de presencia física, criterio o vínculo humano. Moderada: una parte de las actividades ya puede ser asistida por IA y otra sigue dependiendo de personas. Alta y muy alta: buena parte de las actividades puede ser hecha o acelerada por IA hoy. Es una medida de lo que la tecnología puede hacer, no una probabilidad de perder el empleo.',
   },
   {
     q: '¿La calculadora aplica solo a México o a cualquier país?',
@@ -257,9 +276,11 @@ const faqSchema = {
       </div>
       <p class="last-reviewed">{reviewedLabel}.</p>
       <p class="disclaimer">
-        Este diagnóstico es orientativo. Los niveles de riesgo se basan en tendencias documentadas por
-        investigadores de automatización (Frey &amp; Osborne, McKinsey Global Institute, Foro Económico Mundial),
-        pero no representan porcentajes estadísticos exactos. Cada trayectoria profesional es única.
+        Este diagnóstico es orientativo y mide exposición, no sustitución: no es una probabilidad de perder el empleo.
+        La cifra de cada área sale del <a href={RUTA_INDICE}>{NOMBRE_INDICE}</a> cuando tu área ya está en él; en las
+        demás es una estimación basada en tendencias documentadas (Frey &amp; Osborne, McKinsey Global Institute,
+        Foro Económico Mundial). Tu región, estudios y experiencia ajustan esa cifra de forma orientativa. Cada
+        trayectoria profesional es única.
       </p>
 
       <div id="gmr-result">
@@ -290,6 +311,8 @@ const faqSchema = {
           <strong>→ Recomendación Glitch</strong>
           <span id="gmr-rec"></span>
         </div>
+
+        <p id="gmr-nota" class="gmr-nota"></p>
 
         <div id="gmr-email-capture">
           <div class="ec-label">Seguimiento mensual</div>
@@ -329,6 +352,14 @@ const faqSchema = {
         IA, y la otra mitad enfrenta presión a la baja.
       </li>
     </ul>
+  </section>
+
+  <section class="container intro">
+    <p>
+      ¿Quieres ver qué actividades concretas de tu profesión están expuestas, con fuentes y por qué?
+      Consulta el <a href={RUTA_INDICE}>{NOMBRE_INDICE}</a>: el índice mide la ocupación y esta calculadora
+      ajusta ese resultado a tu perfil.
+    </p>
   </section>
 
   <section class="container intro">
@@ -380,6 +411,8 @@ const faqSchema = {
   </section>
 </Layout>
 
+<script type="application/json" id="gmr-indice" set:html={JSON.stringify({ ruta: RUTA_INDICE, nombre: NOMBRE_INDICE, areas: areasIndice })} />
+
 <script>
   var GMR_AREA = {
     dev_sw: { risk: 52, label: 'Desarrollo de Software' },
@@ -411,6 +444,16 @@ const faqSchema = {
     agriculture: { risk: 55, label: 'Agricultura' },
     transport: { risk: 80, label: 'Transporte / Conducción' },
   };
+
+  // Las áreas mapeadas toman su cifra del Índice de Exposición Laboral a la IA
+  // (JSON de arriba, generado en el build). Las demás conservan la estimación
+  // heurística de esta tabla.
+  var GMR_INDICE = JSON.parse(document.getElementById('gmr-indice').textContent);
+  Object.keys(GMR_INDICE.areas).forEach(function (k) {
+    GMR_AREA[k].risk = GMR_INDICE.areas[k].risk;
+    GMR_AREA[k].indice = GMR_INDICE.areas[k].ocupaciones;
+    GMR_AREA[k].parcial = GMR_INDICE.areas[k].parcial;
+  });
 
   var GMR_COUNTRY = {
     mx_latam: { mod: 8, label: 'México / LATAM', speed: 'moderada' },
@@ -448,59 +491,89 @@ const faqSchema = {
     expert: { mod: -10, qual: 'Muy bajo' },
   };
 
+  var GMR_AJUSTE = 0.5;
+
   var FACTOR_LABELS = { area: 'Área laboral', country: 'Región', edu: 'Formación', exp: 'Experiencia' };
   document.querySelectorAll('.factor-name').forEach(function (el) {
     el.textContent = FACTOR_LABELS[el.dataset.key];
   });
 
+  // Mismos niveles y misma escala de un solo matiz que el Índice de Exposición
+  // Laboral a la IA: sin rojo ni semáforo.
+  // El widget es siempre oscuro, así que la escala usa azules fijos (más opaco = más exposición).
+  var GMR_TONOS = [0.35, 0.5, 0.65, 0.82, 1];
+  function gmrIdx(score) {
+    return score < 20 ? 0 : score < 40 ? 1 : score < 60 ? 2 : score < 80 ? 3 : 4;
+  }
   function gmrLevel(score) {
-    if (score < 25) return { word: 'Bajo', color: '#4D94FF', fill: 20 };
-    if (score < 50) return { word: 'Moderado', color: '#FFD700', fill: 45 };
-    if (score < 72) return { word: 'Alto', color: '#FF8C00', fill: 70 };
-    return { word: 'Crítico', color: '#FF4B4B', fill: 92 };
+    var i = gmrIdx(score);
+    return {
+      word: ['Muy baja', 'Baja', 'Moderada', 'Alta', 'Muy alta'][i],
+      color: 'rgba(77, 148, 255, ' + GMR_TONOS[i] + ')',
+      fill: [12, 30, 50, 70, 90][i],
+    };
   }
 
   function gmrQual(val) {
-    if (val < 25) return 'Bajo';
-    if (val < 50) return 'Medio';
-    if (val < 72) return 'Alto';
-    return 'Crítico';
+    return ['Muy bajo', 'Bajo', 'Medio', 'Alto', 'Muy alto'][gmrIdx(val)];
   }
 
   function gmrContent(score, areaKey, countryKey) {
     var area = GMR_AREA[areaKey];
     var country = GMR_COUNTRY[countryKey];
     var speed = country.speed;
+    var i = gmrIdx(score);
 
-    if (score < 25) {
-      return {
-        headline: 'Exposición Baja — Perfil resiliente',
-        desc: 'Tu combinación de habilidades ubica tu rol en la zona de mayor resiliencia frente a la automatización. Las funciones que desempeñas exigen juicio situacional, vínculo humano directo o destreza física contextualizada —capacidades que los modelos actuales no replican con fiabilidad—. En mercados con velocidad de adopción ' + speed + ', perfiles como el tuyo suelen ser redirigidos hacia funciones de mayor valor estratégico antes de verse desplazados.',
-        rec: 'Capitaliza tu posición de baja exposición adoptando IA como multiplicador de productividad: úsala para automatizar las tareas administrativas de tu rol y dedica ese tiempo recuperado a desarrollar criterio experto, relaciones profesionales y habilidades de liderazgo.',
+    var content = [
+      {
+        headline: 'Exposición muy baja — Trabajo difícil de asistir con IA',
+        desc: 'Las actividades centrales de tu área dependen de presencia física, criterio situacional o vínculo directo con personas —capacidades que los modelos actuales no replican con fiabilidad—. Eso no significa que la IA no llegue: suele entrar como herramienta de apoyo (cálculos, documentación, diagnóstico) sin tocar el núcleo del oficio. Velocidad de adopción en ' + country.label + ': ' + speed + '.',
+        rec: 'Aprovecha las herramientas que ya ayudan a cotizar, documentar o diagnosticar y deja que te ahorren tiempo en lo administrativo: el centro de tu trabajo sigue siendo tuyo.',
+        tags: ['Exposición muy baja', 'Alta demanda humana', 'Mercado: ' + country.label, area.label],
+      },
+      {
+        headline: 'Exposición baja — Perfil resiliente',
+        desc: 'Tu combinación de habilidades ubica tu rol en una zona de mayor resiliencia. Las funciones que desempeñas exigen juicio situacional, vínculo humano directo o destreza física contextualizada —capacidades que los modelos actuales no replican con fiabilidad—. En mercados con velocidad de adopción ' + speed + ', perfiles como el tuyo suelen ser redirigidos hacia funciones de mayor valor antes de verse desplazados.',
+        rec: 'Capitaliza tu posición adoptando IA como multiplicador de productividad: úsala para las tareas administrativas de tu rol y dedica ese tiempo a desarrollar criterio experto, relaciones profesionales y liderazgo.',
         tags: ['Exposición baja', 'Alta demanda humana', 'Mercado: ' + country.label, area.label],
-      };
-    } else if (score < 50) {
-      return {
-        headline: 'Exposición Moderada — Zona de transición',
-        desc: 'Tu perfil se encuentra en una fase de reestructuración activa. Un segmento de las tareas que ejecutas —especialmente las repetitivas, basadas en patrones o de bajo juicio contextual— ya está siendo absorbido por sistemas de automatización y agentes LLM. En regiones con adopción ' + speed + ' como ' + country.label + ', este proceso es observable en los ciclos actuales de contratación y reorganización empresarial.',
-        rec: 'El movimiento estratégico clave es evolucionar de ejecutor a orquestador: aprende a dirigir, evaluar y corregir los outputs de sistemas de IA en tu dominio. Certifícate en herramientas especializadas de tu área y construye una propuesta de valor centrada en decisiones de alto impacto.',
+      },
+      {
+        headline: 'Exposición moderada — Zona de transición',
+        desc: 'Una parte de las actividades de tu área ya puede ser asistida por IA, mientras que otras siguen dependiendo de criterio y de personas. La exposición describe cuánto del trabajo puede asistir o ejecutar la tecnología, no cuántos empleos desaparecen. En regiones con adopción ' + speed + ' como ' + country.label + ', el cambio se nota más en cómo se hace el trabajo que en si existe.',
+        rec: 'El movimiento estratégico clave es evolucionar de ejecutor a orquestador: aprende a dirigir, evaluar y corregir los resultados de sistemas de IA en tu dominio. Certifícate en herramientas especializadas de tu área y construye una propuesta de valor centrada en decisiones de alto impacto.',
         tags: ['Exposición moderada', 'Reposicionamiento recomendado', 'Adopción ' + speed, area.label],
-      };
-    } else if (score < 72) {
-      return {
-        headline: 'Exposición Alta — Presión estructural detectada',
-        desc: 'Tu sector está experimentando una compresión salarial y reducción de plantillas vinculada directamente a la adopción de IA generativa y automatización de procesos. En economías con velocidad de adopción ' + speed + ', las empresas de tu industria ya están reduciendo headcount en funciones similares a la tuya o han iniciado pilotos de sustitución.',
-        rec: 'No esperes a que la presión llegue directamente a tu posición. Identifica las dos o tres funciones de tu rol que la IA no puede replicar —las que involucran negociación, criterio ético, relaciones de confianza o liderazgo— y especialízate en ellas.',
-        tags: ['Exposición alta', 'Mercado en compresión', 'Adopción ' + speed, area.label],
-      };
-    } else {
-      return {
-        headline: 'Exposición Crítica — Transformación sectorial en curso',
-        desc: 'Tu área se encuentra en el epicentro de la disrupción por automatización. Investigadores como Frey & Osborne (Oxford), McKinsey Global Institute y el Foro Económico Mundial ubican roles con tu perfil entre los de mayor probabilidad de transformación profunda en el corto y mediano plazo.',
-        rec: "Tu experiencia sectorial tiene valor, pero el 'cómo' la aplicas debe cambiar. Tres rutas posibles: supervisar y auditar los sistemas de IA que transforman tu área, migrar hacia roles de gestión o estrategia dentro de tu industria, o emprender usando tu conocimiento como ventaja. Empieza en los próximos 6 meses.",
-        tags: ['Exposición crítica', 'Pivot estratégico recomendado', 'Adopción ' + speed, area.label],
-      };
+      },
+      {
+        headline: 'Exposición alta — Buena parte del trabajo ya es asistible',
+        desc: 'Buena parte de las actividades de tu área puede ser hecha o acelerada hoy por herramientas de IA, sobre todo las repetitivas, basadas en patrones o de bajo juicio contextual. Exposición no es sustitución: el efecto depende de cómo se adopte en tu empresa y de cuánto de tu rol requiere criterio, relaciones o responsabilidad. En economías con adopción ' + speed + ', conviene ir moviéndose hacia esas partes.',
+        rec: 'Identifica las dos o tres funciones de tu rol que la IA no puede replicar —las que involucran negociación, criterio ético, relaciones de confianza o liderazgo— y especialízate en ellas, sin esperar a que el cambio llegue a tu puesto.',
+        tags: ['Exposición alta', 'Rol en transformación', 'Adopción ' + speed, area.label],
+      },
+      {
+        headline: 'Exposición muy alta — Mucho del trabajo es asistible hoy',
+        desc: 'La mayor parte de las actividades de tu área puede ser asistida o ejecutada por IA con las capacidades actuales. Es una medida de lo que la tecnología puede hacer, no una predicción de despidos: la adopción real depende de costos, regulación y de las decisiones de cada organización.',
+        rec: 'Tu experiencia sectorial tiene valor, pero el cómo la aplicas puede cambiar. Tres rutas posibles: supervisar y auditar los sistemas de IA que transforman tu área, moverte hacia gestión o estrategia dentro de tu industria, o emprender usando tu conocimiento como ventaja.',
+        tags: ['Exposición muy alta', 'Reposicionamiento recomendado', 'Adopción ' + speed, area.label],
+      },
+    ];
+    return content[i];
+  }
+
+  // Nota de origen de la cifra del área: coincide con el índice, o dice que es heurística.
+  function gmrNota(areaKey) {
+    var area = GMR_AREA[areaKey];
+    if (area.indice) {
+      var corto = function (n) { return n.replace(/ \(.*\)$/, ''); };
+      var nombres = area.indice.map(function (o) { return corto(o.nombre) + ' (' + o.valor + ')'; }).join(' y ');
+      var media = area.indice.length > 1 ? ' La cifra del área es la media de ambas.' : '';
+      var enlaces = area.indice.map(function (o) {
+        return '<a href="' + GMR_INDICE.ruta + o.slug + '/">' + corto(o.nombre) + '</a>';
+      }).join(' · ');
+      return 'La cifra del área (' + area.risk + ') viene del ' + GMR_INDICE.nombre + ': ' + nombres + '.' + media +
+        (area.parcial ? ' ' + area.parcial : '') + ' El índice mide la ocupación; tu resultado la ajusta por región, estudios y experiencia, de forma orientativa. Ver ficha: ' + enlaces + '.';
     }
+    return 'Esta área aún no está en el <a href="' + GMR_INDICE.ruta + '">' + GMR_INDICE.nombre + '</a>: su cifra (' + area.risk +
+      ') es una estimación orientativa y se irá reemplazando por datos del índice cuando se agregue. Tu resultado la ajusta por región, estudios y experiencia.';
   }
 
   function gmrCalculate() {
@@ -514,20 +587,22 @@ const faqSchema = {
     var eduMod = GMR_EDU[eduKey].mod;
     var expMod = GMR_EXP[expKey].mod;
 
-    var total = Math.min(Math.max(areaRisk + countryMod + eduMod + expMod, 5), 97);
+    // Los ajustes personales pesan la mitad: la ocupación (índice) manda y el perfil la matiza.
+    var total = Math.min(Math.max(Math.round(areaRisk + (countryMod + eduMod + expMod) * GMR_AJUSTE), 5), 97);
     var level = gmrLevel(total);
     var content = gmrContent(total, areaKey, countryKey);
 
     var lw = document.getElementById('gmr-level-word');
     var lf = document.getElementById('gmr-level-fill');
     lw.innerText = level.word;
-    lw.style.color = level.color;
+    lw.style.color = '#4D94FF';
     lf.style.background = level.color;
     lf.style.width = '0%';
     setTimeout(function () { lf.style.width = level.fill + '%'; }, 100);
 
     document.getElementById('gmr-headline').innerText = content.headline;
-    document.getElementById('gmr-headline').style.color = level.color;
+    document.getElementById('gmr-headline').style.color = 'rgba(255, 255, 255, 0.95)';
+    document.getElementById('gmr-nota').innerHTML = gmrNota(areaKey);
     document.getElementById('gmr-desc').innerText = content.desc;
     document.getElementById('gmr-rec').innerText = content.rec;
 
@@ -666,6 +741,9 @@ const faqSchema = {
   .rec-box { background: rgba(0, 102, 255, 0.07); border-radius: 8px; padding: 16px; }
   .rec-box strong { color: rgba(0, 102, 255, 0.8); display: block; font-size: 0.7em; letter-spacing: 1.4px; margin-bottom: 8px; text-transform: uppercase; }
   .rec-box span { color: rgba(255, 255, 255, 0.85); font-size: 0.87em; line-height: 1.75; }
+
+  .gmr-nota { color: rgba(255, 255, 255, 0.6); font-size: 0.78em; line-height: 1.65; margin: 16px 0 0; }
+  .gmr-nota :global(a) { color: #4D94FF; text-decoration: underline; text-underline-offset: 2px; }
 
   #gmr-email-capture { display: none; background: rgba(0, 102, 255, 0.06); border-radius: 8px; border: 1px solid rgba(0, 102, 255, 0.15); margin-top: 20px; padding: 18px; }
   .ec-label { color: rgba(0, 102, 255, 0.75); font-size: 0.76em; font-weight: 700; letter-spacing: 1.4px; margin-bottom: 6px; text-transform: uppercase; }

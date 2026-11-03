@@ -1,0 +1,240 @@
+{
+  "slug": "conduccion-de-carga",
+  "nombre": {
+    "es": "Conducción de transporte de carga"
+  },
+  "sector": "Transporte y logística",
+  "codigos": {
+    "onet": "53-3032.00",
+    "isco08": "8332"
+  },
+  "puntuacion": {
+    "E": 32,
+    "A": 27,
+    "C": 84,
+    "valor": 26,
+    "nivel": "Baja",
+    "rango_sensibilidad": [
+      12,
+      51
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 26
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 0,
+    "eloundou_beta_humana": 17,
+    "eloundou_beta_gpt4": 28
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Conducir el camión y maniobrar",
+      "tareas_onet": [
+        10641,
+        20694,
+        10640
+      ],
+      "peso": 0.1054,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Planear rutas y recibir instrucciones de entrega",
+      "tareas_onet": [
+        10645,
+        19923,
+        10647
+      ],
+      "peso": 0.1034,
+      "E": 3,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Revisar documentación y registros de la carga",
+      "tareas_onet": [
+        20693,
+        10643,
+        10638,
+        10644,
+        10637
+      ],
+      "peso": 0.182,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Asegurar, cargar y descargar la carga",
+      "tareas_onet": [
+        10642,
+        20692,
+        20696,
+        20697,
+        10656,
+        10659,
+        10655,
+        10650
+      ],
+      "peso": 0.2658,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Inspeccionar y mantener el vehículo",
+      "tareas_onet": [
+        10636,
+        10653,
+        10662,
+        10660,
+        19922
+      ],
+      "peso": 0.1671,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Acoplar y desacoplar remolques",
+      "tareas_onet": [
+        10651,
+        10646
+      ],
+      "peso": 0.0725,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Seguridad, mercancías peligrosas y cargas especiales",
+      "tareas_onet": [
+        10635,
+        10658
+      ],
+      "peso": 0.0696,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Operar equipos de comunicación y navegación",
+      "tareas_onet": [
+        20695
+      ],
+      "peso": 0.0342,
+      "E": 2,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La conducción, la carga y descarga y la inspección física no están hoy cerca de automatizarse en condiciones reales.",
+    "La planeación de rutas y la documentación se apoyan en herramientas que ahorran tiempo al operador.",
+    "Quien suma tecnología (telemática, seguridad, mantenimiento predictivo) tiene opciones de crecimiento en flotas."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

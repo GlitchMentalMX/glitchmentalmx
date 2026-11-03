@@ -1,0 +1,200 @@
+{
+  "slug": "marketing-digital",
+  "nombre": {
+    "es": "Marketing digital e investigación de mercado"
+  },
+  "sector": "Comercio y marketing",
+  "codigos": {
+    "onet": "13-1161.00",
+    "isco08": "2431"
+  },
+  "puntuacion": {
+    "E": 74,
+    "A": 66,
+    "C": 63,
+    "valor": 62,
+    "nivel": "Alta",
+    "rango_sensibilidad": [
+      62,
+      72
+    ],
+    "tope_aplicado": true,
+    "puntuacion_sin_tope": 67
+  },
+  "confianza": "alta",
+  "referencias": {
+    "aei_exposicion_ocupacion": 65,
+    "eloundou_beta_humana": 58,
+    "eloundou_beta_gpt4": 50
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.789,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Recopilar y analizar datos de consumidores y competencia",
+      "tareas_onet": [
+        5433,
+        5441,
+        5437,
+        5436
+      ],
+      "peso": 0.3147,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "4 de 4 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Diseñar métodos de recolección y conducir encuestas",
+      "tareas_onet": [
+        5443,
+        5439,
+        5445
+      ],
+      "peso": 0.2386,
+      "E": 3,
+      "A": 3,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "2 de 3 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Medir efectividad de campañas y satisfacción",
+      "tareas_onet": [
+        5438,
+        5435
+      ],
+      "peso": 0.1493,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 2 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Elaborar informes y visualizaciones",
+      "tareas_onet": [
+        5434
+      ],
+      "peso": 0.0869,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Seguir tendencias del sector",
+      "tareas_onet": [
+        5442
+      ],
+      "peso": 0.0755,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Asesorar a la dirección sobre posicionamiento y publicidad",
+      "tareas_onet": [
+        5440,
+        5444
+      ],
+      "peso": 0.135,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "El análisis de datos de consumidores y la producción de variantes de contenido se aceleran; la estrategia y el criterio de marca ganan peso.",
+    "Quien combina análisis cuantitativo con comprensión del consumidor puede dirigir equipos más pequeños con más herramientas.",
+    "Medir con rigor qué funciona (experimentación, atribución) es un hueco donde la IA ayuda pero no decide."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

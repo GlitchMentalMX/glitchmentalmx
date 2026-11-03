@@ -5,6 +5,8 @@ import PreciosTicker from '../components/PreciosTicker.astro';
 import { books } from '../data/books';
 import BookActions from '../components/BookActions.astro';
 import { getCollection, getEntry } from 'astro:content';
+import { cargarFichas } from '../lib/exposicion';
+const nOcupaciones = cargarFichas().length;
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -128,6 +130,7 @@ const panelRows: PanelRow[] = [
     },
   },
   { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', title: 'Calculadora de Riesgo IA', desc: 'Qué tan expuesto está tu trabajo a la automatización.', stat: '60 segundos', icon: 'gauge' },
+  { href: '/indice-exposicion-laboral-ia/', title: 'Exposición laboral IA', desc: 'Qué partes de cada profesión están expuestas a la IA, y dónde hay oportunidades. Sin alarmismo.', stat: `${nOcupaciones} ocupaciones`, icon: 'chart' },
   { href: '/detox-de-ia/', title: 'Detox de IA', desc: 'Identifica tus patrones de uso con un test breve. Sin diagnósticos, con fuentes citadas.', stat: '7 preguntas', icon: 'checklist' },
   { href: '/herramientas/que-hacer-si-te-preocupa-la-ia/', title: '¿Te preocupa la IA?', desc: 'Seis preguntas para separar riesgo real, ruido y próximos pasos. Sin diagnóstico ni promesas falsas.', stat: '6 preguntas', icon: 'compass' },
   { href: '/indice-glitchmentalmx/', title: 'Índice glitchMentalMX', desc: '20 tecnologías B2B rankeadas por adopción real. Sin patrocinadores.', stat: 'mensual', icon: 'chart' },

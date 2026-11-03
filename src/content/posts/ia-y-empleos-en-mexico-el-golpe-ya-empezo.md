@@ -40,3 +40,5 @@ Fast Company México reportó en noviembre de 2025, citando datos de Indeed, que
 La OIT proyecta que la IA generativa podría transformar hasta el 38% de los empleos en México para 2030, pero estima que solo entre el 2% y el 5% serían automatizados de forma completa. La distinción importa: transformar no es lo mismo que eliminar, pero exige adaptación activa. Y la adaptación activa requiere tiempo, recursos y políticas públicas que México todavía no tiene consolidadas.
 
 **El mercado laboral mexicano de 2026 no está en colapso por la IA. Está en transición.** La diferencia entre una transición manejable y una crisis depende de quién tiene acceso a la reconversión — y en un país donde más de la mitad de los trabajadores están en la informalidad, esa pregunta no tiene una respuesta tranquilizadora todavía.
+
+Si quieres ver qué partes de tu profesión están más expuestas, consulta el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/), que incluye contexto de México, o estima tu caso con la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/).

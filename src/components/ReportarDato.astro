@@ -7,28 +7,44 @@
 interface Props {
   titulo: string;
   pagina: string;
+  // Variante opcional (p. ej. buzón de sugerencias). Los valores por defecto
+  // son los del aviso de dato desactualizado.
+  resumen?: string;
+  intro?: string;
+  etiqueta?: string;
+  placeholder?: string;
+  legal?: string;
+  boton?: string;
+  gracias?: string;
 }
 
-const { titulo, pagina } = Astro.props;
+const {
+  titulo,
+  pagina,
+  resumen = '¿Ves un dato desactualizado? Avísanos',
+  intro = 'Si un precio, una promo o una política ya no coincide con lo que ves en el sitio oficial, dinos cuál y dónde lo viste. Lo revisamos y corregimos.',
+  etiqueta = '¿Qué cambió?',
+  placeholder = 'Ej.: Ahora cuesta $X al mes en la página oficial, o la promo ya no existe.',
+  legal = 'Solo usamos el mensaje (y tu correo, si lo dejas) para revisar el dato y, si hace falta, responderte.',
+  boton = 'Enviar aviso',
+  gracias = 'Gracias. Lo revisamos pronto.',
+} = Astro.props;
 ---
 
 <details class="reportar" data-reportar-pagina={pagina} data-reportar-titulo={titulo}>
-  <summary>¿Ves un dato desactualizado? Avísanos</summary>
+  <summary>{resumen}</summary>
   <form class="reportar-form" novalidate>
-    <p class="reportar-intro">
-      Si un precio, una promo o una política ya no coincide con lo que ves en el sitio oficial, dinos
-      cuál y dónde lo viste. Lo revisamos y corregimos.
-    </p>
+    <p class="reportar-intro">{intro}</p>
 
     <div class="form-field">
-      <label for="reportar-mensaje">¿Qué cambió?</label>
+      <label for="reportar-mensaje">{etiqueta}</label>
       <textarea
         id="reportar-mensaje"
         name="message"
         required
         minlength="10"
         maxlength="1500"
-        placeholder="Ej.: Ahora cuesta $X al mes en la página oficial, o la promo ya no existe."
+        placeholder={placeholder}
       ></textarea>
     </div>
 
@@ -43,11 +59,9 @@ const { titulo, pagina } = Astro.props;
       <input id="reportar-website" name="website" type="text" tabindex="-1" autocomplete="off" />
     </div>
 
-    <p class="reportar-legal">
-      Solo usamos el mensaje (y tu correo, si lo dejas) para revisar el dato y, si hace falta, responderte.
-    </p>
+    <p class="reportar-legal">{legal}</p>
 
-    <button type="submit" class="btn btn-ghost">Enviar aviso</button>
+    <button type="submit" class="btn btn-ghost" data-label={boton} data-gracias={gracias}>{boton}</button>
     <p class="form-status" role="status" aria-live="polite"></p>
   </form>
 </details>
@@ -115,7 +129,7 @@ const { titulo, pagina } = Astro.props;
         const data = await res.json();
 
         if (res.ok && data.ok) {
-          setStatus('Gracias. Lo revisamos pronto.', 'ok');
+          setStatus(submitBtn.dataset.gracias || 'Gracias. Lo revisamos pronto.', 'ok');
           form.reset();
         } else {
           setStatus(data.error || FALLBACK, 'error');
@@ -124,7 +138,7 @@ const { titulo, pagina } = Astro.props;
         setStatus(FALLBACK, 'error');
       } finally {
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar aviso';
+        submitBtn.textContent = submitBtn.dataset.label || 'Enviar aviso';
       }
     });
   }

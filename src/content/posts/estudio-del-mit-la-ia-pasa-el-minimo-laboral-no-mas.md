@@ -34,3 +34,5 @@ El mismo medio documenta varios casos recientes que ilustran exactamente ese lí
 El 65% de tareas aprobadas con calificación mínima no es un techo: es una fotografía de finales de 2025. Según Fortune, los investigadores del MIT estiman que **la tasa de éxito aumenta hasta 11 puntos porcentuales por año** conforme los modelos mejoran. Para 2029, los autores proyectan que la mayoría de los modelos alcanzará entre el 80% y el 95% de las tareas con calificación mínima. Lo que hoy es rendimiento mediocre puede ser rendimiento sólido en tres años. El estudio no cierra el debate sobre el futuro del trabajo; establece dónde estamos hoy, con una metodología que usó evaluadores humanos reales en lugar de benchmarks automáticos.
 
 Como escribieron los propios investigadores: la automatización masiva en sectores con baja tolerancia al error todavía está lejos. Esa distancia no es para siempre.
+
+Para ver cómo se compara esa capacidad con cada profesión, consulta el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/), que combina capacidad, uso observado y componente humano.

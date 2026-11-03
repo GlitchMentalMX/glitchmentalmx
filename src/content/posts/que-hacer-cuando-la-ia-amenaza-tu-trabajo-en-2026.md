@@ -60,3 +60,5 @@ Eso no hace el riesgo menos real. Hace el panorama más honesto. La IA ya está 
 El [Foro Económico Mundial](https://www.weforum.org/) proyecta un crecimiento neto del 8% en los puestos de trabajo globales hacia 2030, incluso considerando la automatización. Ese número no promete que tu trabajo específico estará ahí. Promete que habrá trabajo. La pregunta es si estarás preparado para el que exista.
 
 Dorsey predijo que la mayoría de las empresas llegarán a la misma conclusión que Block en el próximo año. Puede que tenga razón. Lo que no dijo es que ninguna de esas empresas le va a avisar con antelación.
+
+Antes de decidir nada, mira qué partes de tu profesión están realmente expuestas en el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/) y estima tu caso en la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/).

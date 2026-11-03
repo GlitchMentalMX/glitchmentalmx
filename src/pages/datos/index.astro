@@ -3,6 +3,10 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import { SITE, cargarVeredictos, cargarPrecios, type Veredicto } from '../../lib/datos';
+import { cargarFichas, edicion as edicionExp, RUTA as RUTA_EXP, AVISO as AVISO_EXP } from '../../lib/exposicion';
+
+const fichasExp = cargarFichas();
+const conteoNivel = (n: string) => fichasExp.filter((f) => f.puntuacion.nivel === n).length;
 
 const { filas, resumen, ultimaActualizacion, primeraPublicacion } = await cargarVeredictos();
 const precios = await cargarPrecios();
@@ -141,6 +145,11 @@ const datasetSchema = {
   </section>
 
   <section class="container texto">
+    <h2>Exposición laboral a la IA</h2>
+    <p>El <a href={RUTA_EXP}>Índice de Exposición Laboral a la IA</a> califica {fichasExp.length} ocupaciones en una escala de 0 a 100 (edición {edicionExp.numero}, {edicionExp.etiquetaFecha}): {conteoNivel('Alta')} en exposición alta, {conteoNivel('Moderada')} moderada, {conteoNivel('Baja')} baja y {conteoNivel('Muy baja')} muy baja. {AVISO_EXP} Es una medición editorial de glitchMentalMX con fuentes públicas (O*NET, Anthropic Economic Index y Eloundou et al.), no una estadística oficial.</p>
+  </section>
+
+  <section class="container texto">
     <h2>Cómo se verifica</h2>
     <ul>
       <li>Cada dato sale de la fuente oficial de la herramienta (su página de precios, su política de privacidad, su centro de ayuda), consultada por nosotros. Lo que no se puede confirmar ahí no se publica.</li>
@@ -152,13 +161,16 @@ const datasetSchema = {
 
   <section class="container texto">
     <h2>Descargas</h2>
-    <p>Dos archivos CSV (se abren en Excel, Google Sheets o cualquier herramienta de datos), generados con las mismas fichas que ves en el sitio:</p>
+    <p>Tres archivos CSV (se abren en Excel, Google Sheets o cualquier herramienta de datos), generados con las mismas fichas que ves en el sitio:</p>
     <ul class="descargas">
       <li>
         <a href="/datos/veredictos.csv" download>veredictos.csv</a> — {filas.length} filas, una por herramienta y serie. Columnas: serie, herramienta, herramienta_id, veredicto, veredicto_significado, frase_corta, fuente_verificada, publicada, actualizada, url.
       </li>
       <li>
         <a href="/datos/precios.csv" download>precios.csv</a> — {precios.length} filas, una por ficha de precios. Columnas: serie, herramienta_id, plan, empresa, precio_usd, precio_mxn_hoy, periodo, tipo_cambio_fix, fecha_tipo_cambio, url.
+      </li>
+      <li>
+        <a href="/datos/indice-exposicion.csv" download>indice-exposicion.csv</a> — {fichasExp.length} filas, una por ocupación (sin el detalle de actividades). Columnas: edicion, ocupacion, ocupacion_id, sector, puntuacion, nivel, rango_min, rango_max, exposicion_E, automatizacion_A, complementariedad_C, tope_aplicado, confianza, onet, isco08, revision, url.
       </li>
     </ul>
   </section>

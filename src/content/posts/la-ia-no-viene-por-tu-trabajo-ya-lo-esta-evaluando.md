@@ -98,4 +98,4 @@ No prometen tranquilidad. Prometen claridad.
 
 **¿Listo para llevar esta conversación al siguiente nivel?**
 
-[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia/) · [Índice glitchMentalMX →](/indice-glitchmentalmx/)
+[Calculadora de Riesgo →](/calculadora-de-riesgo-de-reemplazo-por-ia/) · [Índice glitchMentalMX →](/indice-glitchmentalmx/) · [Exposición laboral IA →](/indice-exposicion-laboral-ia/)

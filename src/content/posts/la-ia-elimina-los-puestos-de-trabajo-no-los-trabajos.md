@@ -34,3 +34,5 @@ El análisis de Forética coincide con lo que investigadores del trabajo llevan 
 La IA es extraordinariamente buena en tareas repetitivas, en procesar grandes volúmenes de información, en generar borradores y en optimizar procesos definidos. Pero cuando el problema no está bien definido, cuando la solución requiere navegar dinámicas humanas complejas, o cuando el error tiene consecuencias graves y necesita criterio real, la IA sigue siendo una herramienta de apoyo, no un sustituto.
 
 La verdad incómoda es que las empresas que no empiecen este proceso de mapeo de competencias en 2026 van a enfrentar una crisis de talento severa en los próximos dos años: no por falta de personas, sino porque las personas que tienen no van a tener las habilidades que el mercado va a demandar.
+
+Esa diferencia entre puesto y tareas es justo lo que mide el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/): qué actividades de cada profesión están expuestas, no si el trabajo desaparece. Para tu caso, usa la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/).

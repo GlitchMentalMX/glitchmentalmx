@@ -35,3 +35,5 @@ La revista señala un caso de medicina que hace el argumento imposible de ignora
 La discusión habitual sobre IA y trabajo se centra en desplazamiento: ¿cuántos empleos desaparece? El argumento de Delacroix es más sutil y, por eso, más difícil de contrarrestar con políticas convencionales. **No habla de puestos eliminados, sino de conocimiento colectivo que se evapora sin que nadie lo note**, porque cada individuo en el proceso está, técnicamente, funcionando mejor. Es el tipo de degradación que no aparece en ninguna estadística de empleo hasta que ya es irreversible.
 
 La pregunta que deja el artículo no es si usar o no usar IA. Es quién diseña las condiciones en las que se usa, y con qué intención.
+
+Para ver cómo se reparte la exposición dentro de cada profesión, consulta el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/): exposición no significa sustitución. También puedes probar la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/).

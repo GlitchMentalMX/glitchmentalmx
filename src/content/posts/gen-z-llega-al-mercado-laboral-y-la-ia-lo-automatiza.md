@@ -42,3 +42,5 @@ La investigación de UC Berkeley y Yale divulgada por Harvard Business Review en
 Lo que marca la diferencia en este entorno no es el acceso a la herramienta —que es cada vez más democrático— sino el criterio para usarla en contextos ambiguos, la capacidad de supervisar sus resultados y la habilidad de hacer preguntas que el algoritmo no puede formular por sí solo. Esas competencias no se adquieren con un curso de 10 horas. Se construyen con experiencia práctica, con errores reales y con acceso a problemas complejos. El mismo acceso que los empleos de entrada solían ofrecer.
 
 Gen Z no necesita que alguien le explique cómo usar Claude o ChatGPT. Lo que necesita es que alguien le dé la oportunidad de equivocarse en proyectos que importen. El mercado laboral de 2026 todavía no ha resuelto cómo ofrecer eso.
+
+Si estás por elegir o cambiar de carrera, el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/) te muestra dónde hay exposición y dónde oportunidades en distintas profesiones; la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/) ajusta según tu perfil.

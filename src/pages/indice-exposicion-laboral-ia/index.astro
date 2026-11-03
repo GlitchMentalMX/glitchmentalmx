@@ -1,0 +1,271 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ReportarDato from '../../components/ReportarDato.astro';
+import ExposicionEscala from '../../components/ExposicionEscala.astro';
+import { cargarFichas, edicion, GEOGRAFIAS, NIVELES, AVISO, NOMBRE, RUTA, PESOS, ETIQUETA_EVIDENCIA } from '../../lib/exposicion';
+
+const fichas = cargarFichas();
+const sectores = [...new Set(fichas.map((f) => f.sector))].sort((a, b) => a.localeCompare(b, 'es'));
+const conteo = NIVELES.map((n) => ({ ...n, n: fichas.filter((f) => f.puntuacion.nivel === n.nivel).length })).reverse();
+const sinMuyAlta = conteo.find((c) => c.nivel === 'Muy alta')!.n === 0;
+const masAlta = [...fichas].sort((a, b) => b.puntuacion.valor - a.puntuacion.valor)[0];
+const masBaja = [...fichas].sort((a, b) => a.puntuacion.valor - b.puntuacion.valor)[0];
+const conMx = fichas.filter((f) => f.contexto.mx.nivel === 'nacional').length;
+
+const title = NOMBRE;
+const description = `Qué partes de ${fichas.length} profesiones están expuestas a la IA, qué está cambiando y dónde hay oportunidades. Exposición no es sustitución.`;
+const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: NOMBRE + ' · glitchMentalMX',
+  description,
+  dateModified: edicion.fecha,
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: fichas.map((f, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: new URL(`${RUTA}${f.slug}/`, Astro.site).toString(),
+      name: f.nombre.es,
+    })),
+  },
+};
+---
+
+<Layout title={title} description={description} noIndex={!edicion.publicado}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <Breadcrumbs items={[{ name: NOMBRE }]} />
+
+  <header class="container hero">
+    <p class="eyebrow">Observatorio · Edición {edicion.numero} · {edicion.etiquetaFecha}</p>
+    <h1>{NOMBRE}</h1>
+    <p class="slogan">Una herramienta para entender la transformación del trabajo sin alimentar el miedo.</p>
+    <p class="mensaje">
+      No te vamos a decir si la IA te quitará el trabajo. Vamos a mostrarte qué partes de tu profesión están
+      expuestas, qué está cambiando y dónde puedes encontrar oportunidades.
+    </p>
+    <p class="aviso">{AVISO}</p>
+  </header>
+
+  <section class="container controles" aria-label="Buscar una profesión">
+    <div class="busca">
+      <label for="q">Busca tu profesión</label>
+      <input id="q" type="search" placeholder="Ej.: contabilidad, enfermería, soldadura" autocomplete="off" />
+    </div>
+    <fieldset class="geo">
+      <legend>Contexto geográfico</legend>
+      {GEOGRAFIAS.map((g, i) => (
+        <label class="geo-op">
+          <input type="radio" name="geo" value={g.id} checked={i === 0} />
+          <span>{g.nombre}</span>
+        </label>
+      ))}
+    </fieldset>
+    <div class="cats" role="group" aria-label="Categorías">
+      <button type="button" class="cat activo" data-sector="">Todas</button>
+      {sectores.map((s) => <button type="button" class="cat" data-sector={s}>{s}</button>)}
+    </div>
+    <div class="geo-nota" id="geo-nota" aria-live="polite">
+      <p data-geo="mx">
+        <strong>México.</strong> La puntuación es común a todos los países. El contexto nacional (ENOE) está disponible para
+        {conMx} de {fichas.length} ocupaciones; en el resto, aún no hay datos verificables por ocupación.
+      </p>
+      <p data-geo="es" hidden>
+        <strong>España.</strong> Cobertura pendiente. La puntuación base aplica, pero todavía no verificamos datos de mercado ni regulación españoles por ocupación, y preferimos no inventarlos.
+      </p>
+      <p data-geo="br" hidden>
+        <strong>Brasil.</strong> Cobertura pendiente. La puntuación base aplica, pero todavía no verificamos datos de mercado ni regulación brasileños por ocupación, y preferimos no inventarlos.
+      </p>
+      <p data-geo="latam" hidden>
+        <strong>Resto de LATAM.</strong> Cobertura pendiente. La puntuación base aplica; el contexto de cada país se irá sumando cuando haya evidencia suficiente.
+      </p>
+    </div>
+  </section>
+
+  <section class="container resultados" aria-label="Profesiones">
+    <p class="cuenta" id="cuenta" aria-live="polite">{fichas.length} profesiones</p>
+    <ul class="grid" id="grid">
+      {fichas.map((f) => (
+        <li class="card" data-nombre={norm(`${f.nombre.es} ${f.sector}`)} data-sector={f.sector} data-mx={f.contexto.mx.nivel}>
+          <a href={`${RUTA}${f.slug}/`}>
+            <span class="sector">{f.sector}</span>
+            <span class="nombre">{f.nombre.es}</span>
+            <span class="score"><strong>{f.puntuacion.valor}</strong><span class="nivel">Exposición {f.puntuacion.nivel.toLowerCase()}</span></span>
+            <ExposicionEscala valor={f.puntuacion.valor} compact />
+            <span class="ctx" data-ctx>Contexto de México disponible</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="vacio" id="vacio" hidden>
+      No hay una ficha con ese nombre todavía. Puede que esté en una edición futura: sugiérela abajo.
+    </p>
+  </section>
+
+  <ReportarDato
+    titulo={`Sugerencia de profesión · ${NOMBRE}`}
+    pagina={RUTA}
+    resumen="¿No encontraste tu profesión? Sugiérela para que pronto la veas incluida en nuestra próxima edición."
+    intro="Dinos qué profesión te gustaría ver y qué parte de tu trabajo te interesa entender. No pedimos registro. Tu correo es opcional, solo si quieres que te avisemos cuando esté."
+    etiqueta="¿Qué profesión sugieres?"
+    placeholder="Ej.: Odontología. Me interesa saber qué tareas de la consulta cambian primero."
+    legal="Solo usamos el mensaje (y tu correo, si lo dejas) para evaluar la sugerencia y, si lo pediste, avisarte."
+    boton="Enviar sugerencia"
+    gracias="Gracias. La tomamos en cuenta para la próxima edición."
+  />
+
+  <section class="container bloque insight" aria-labelledby="h-insight">
+    <p class="eyebrow">Lo que muestra la edición {edicion.numero}</p>
+    <h2 id="h-insight">Qué muestra esta edición</h2>
+    <p>
+      De las {fichas.length} ocupaciones, {conteo.filter((c) => c.n > 0).map((c) => `${c.n} en exposición ${c.nivel.toLowerCase()}`).join(', ')}.{' '}
+      {sinMuyAlta && 'Ninguna llega a "muy alta": incluso donde la IA ya hace parte del trabajo, quedan actividades que dependen de personas. '}
+      La más expuesta es {masAlta.nombre.es.toLowerCase()} ({masAlta.puntuacion.valor}) y la menos expuesta, {masBaja.nombre.es.toLowerCase()} ({masBaja.puntuacion.valor}).
+      Una puntuación alta describe cuánto del trabajo puede asistir o ejecutar la IA hoy, no cuántos empleos desaparecen.
+    </p>
+  </section>
+
+  <section class="container bloque" id="metodologia" aria-labelledby="h-met">
+    <p class="eyebrow">Metodología</p>
+    <h2 id="h-met">Cómo se calcula, y qué no significa</h2>
+    <p>
+      Cada ocupación se descompone en actividades a partir de sus tareas en O*NET. A cada actividad se le asignan tres
+      calificaciones de 0 a 4: <strong>exposición (E)</strong>, qué tan capaz es hoy la IA de hacerla o asistirla;
+      <strong>automatización (A)</strong>, cuánto se observa ya en uso real; y <strong>complementariedad humana (C)</strong>,
+      cuánto depende de criterio, presencia o responsabilidad de una persona. Las actividades pesan según su importancia en O*NET.
+    </p>
+    <p class="formula"><code>Puntuación = {PESOS.E}·E + {PESOS.A}·A + {PESOS.C}·(100 − C)</code></p>
+    <ul class="niveles">
+      {NIVELES.slice().reverse().map((n) => <li><strong>{n.nivel}</strong> {n.min}–{n.max}</li>)}
+    </ul>
+    <h3>Evidencia por actividad</h3>
+    <p>Cada actividad lleva una insignia que dice de dónde sale su calificación, sin interpretarla:</p>
+    <ul>
+      <li><strong>{ETIQUETA_EVIDENCIA.capacidad_demostrada}:</strong> benchmarks o estudios técnicos. Mide lo que la IA puede hacer, no lo que se hace.</li>
+      <li><strong>{ETIQUETA_EVIDENCIA.uso_observado}:</strong> datos de uso real, como el Anthropic Economic Index (solo uso de Claude).</li>
+      <li><strong>{ETIQUETA_EVIDENCIA.adopcion_empresarial}:</strong> estudios de implementación o datos laborales verificables.</li>
+      <li><strong>{ETIQUETA_EVIDENCIA.sin_evidencia_directa}:</strong> juicio editorial fundado en tareas análogas. Se marca y baja la confianza.</li>
+    </ul>
+    <h3>Límites</h3>
+    <ul>
+      <li>Es un índice compuesto, no una probabilidad de desempleo. Exposición no significa sustitución.</li>
+      <li>La capacidad por ocupación se compara con Eloundou et al. (2023) y se limita a ese promedio más 20 puntos, para no sobrestimar.</li>
+      <li>La complementariedad humana es juicio editorial: no existe una fuente que la mida.</li>
+      <li>Las tareas vienen de O*NET (Estados Unidos). La adaptación a cada país se hace solo cuando hay evidencia local.</li>
+      <li>Cada ficha muestra un rango de sensibilidad y una confianza. Una puntuación con poca evidencia directa no es una cifra firme.</li>
+    </ul>
+    <h3>Fuentes</h3>
+    <ul>
+      <li><a href="https://www.onetcenter.org/database.html" rel="noopener">O*NET 31.0</a> (CC BY 4.0): tareas e importancia.</li>
+      <li><a href="https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts" rel="noopener">Anthropic Economic Index</a>: uso observado.</li>
+      <li><a href="https://arxiv.org/abs/2303.10130" rel="noopener">Eloundou et al., <em>GPTs are GPTs</em> (2023)</a>: capacidad por ocupación.</li>
+    </ul>
+    <p class="actualiza">Actualización {edicion.periodicidad}. Última edición: {edicion.etiquetaFecha}. Sin registro, sin rastreo y sin cobro.</p>
+  </section>
+
+  <section class="container bloque puente">
+    <p>
+      ¿Quieres personalizarlo con tu región, estudios y experiencia?
+      <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Prueba la Calculadora de Riesgo IA →</a>
+    </p>
+  </section>
+</Layout>
+
+<script>
+  const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const q = document.getElementById('q') as HTMLInputElement;
+  const cards = [...document.querySelectorAll<HTMLElement>('#grid .card')];
+  const cats = [...document.querySelectorAll<HTMLButtonElement>('.cat')];
+  const geos = [...document.querySelectorAll<HTMLInputElement>('input[name="geo"]')];
+  const notas = [...document.querySelectorAll<HTMLElement>('#geo-nota [data-geo]')];
+  const cuenta = document.getElementById('cuenta')!;
+  const vacio = document.getElementById('vacio')!;
+  let sector = '';
+
+  function render() {
+    const term = norm(q.value.trim());
+    const geo = geos.find((g) => g.checked)!.value;
+    let n = 0;
+    for (const c of cards) {
+      const ok = (!term || c.dataset.nombre!.includes(term)) && (!sector || c.dataset.sector === sector);
+      c.hidden = !ok;
+      if (ok) n++;
+      const ctx = c.querySelector<HTMLElement>('[data-ctx]')!;
+      if (geo === 'mx') {
+        const hay = c.dataset.mx === 'nacional';
+        ctx.hidden = !hay;
+        ctx.textContent = 'Contexto de México disponible';
+      } else {
+        ctx.hidden = false;
+        ctx.textContent = 'Contexto nacional pendiente';
+      }
+    }
+    for (const p of notas) p.hidden = p.dataset.geo !== geo;
+    cuenta.textContent = n === 1 ? '1 profesión' : `${n} profesiones`;
+    vacio.hidden = n !== 0;
+  }
+
+  q.addEventListener('input', render);
+  geos.forEach((g) => g.addEventListener('change', render));
+  cats.forEach((b) =>
+    b.addEventListener('click', () => {
+      sector = b.dataset.sector || '';
+      cats.forEach((x) => x.classList.toggle('activo', x === b));
+      render();
+    })
+  );
+  render();
+</script>
+
+<style>
+  .hero { padding: 56px 24px 24px; max-width: 820px; }
+  .eyebrow { font: 0.78rem var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 12px; }
+  h1 { font-size: clamp(2rem, 4.6vw, 3rem); margin: 0 0 16px; }
+  .slogan { font-family: var(--font-display); font-size: 1.3rem; line-height: 1.4; margin: 0 0 14px; }
+  .mensaje { color: var(--text-muted); line-height: 1.6; margin: 0 0 18px; max-width: var(--measure); }
+  .aviso { display: inline-block; font-size: 0.9rem; background: var(--accent-soft); border: 1px solid var(--accent-line); border-radius: var(--radius-sm); padding: 8px 12px; margin: 0; }
+
+  .controles { padding: 16px 24px; display: grid; gap: 18px; }
+  .busca label, .geo legend { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+  .busca input { width: 100%; max-width: 520px; padding: 12px 14px; font: inherit; color: var(--text); background: var(--bg-elevated); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); }
+  .geo { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px 10px; }
+  .geo legend { padding: 0; width: 100%; }
+  .geo-op { cursor: pointer; }
+  .geo-op input { position: absolute; opacity: 0; pointer-events: none; }
+  .geo-op span { display: inline-block; padding: 7px 14px; border: 1px solid var(--border-strong); border-radius: 99px; font-size: 0.9rem; }
+  .geo-op input:checked + span { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .geo-op input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .cats { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cat { font: inherit; font-size: 0.82rem; padding: 6px 12px; border-radius: 99px; border: 1px solid var(--border); background: transparent; color: var(--text-muted); cursor: pointer; }
+  .cat.activo { background: var(--bg-inset); color: var(--text); border-color: var(--border-strong); font-weight: 600; }
+  .geo-nota p { margin: 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; max-width: var(--measure); }
+
+  .resultados { padding: 8px 24px 24px; }
+  .cuenta { font: 0.8rem var(--font-mono); color: var(--text-faint); margin: 0 0 12px; }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+  .card[hidden] { display: none; }
+  .card a { display: flex; flex-direction: column; gap: 10px; height: 100%; padding: 18px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); color: inherit; text-decoration: none; box-shadow: var(--shadow); }
+  .card a:hover { border-color: var(--accent-line); }
+  .sector { font: 0.72rem var(--font-mono); letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-faint); }
+  .nombre { font-family: var(--font-display); font-size: 1.2rem; line-height: 1.25; }
+  .score { display: flex; align-items: baseline; gap: 10px; }
+  .score strong { font-size: 1.9rem; font-family: var(--font-display); }
+  .nivel { font-size: 0.85rem; color: var(--text-muted); }
+  .ctx { margin-top: auto; font-size: 0.78rem; color: var(--text-faint); }
+  .vacio { color: var(--text-muted); }
+
+  .bloque { max-width: 820px; padding: 32px 24px; }
+  .bloque h2 { margin: 0 0 12px; font-size: 1.6rem; }
+  .bloque h3 { margin: 24px 0 8px; font-size: 1.1rem; }
+  .bloque p, .bloque li { line-height: 1.65; color: var(--text-muted); }
+  .bloque li { margin-bottom: 6px; }
+  .bloque strong { color: var(--text); }
+  .formula code { display: block; padding: 12px 14px; background: var(--bg-inset); border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.9rem; overflow-x: auto; color: var(--text); }
+  .niveles { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; padding: 0; }
+  .actualiza { font-size: 0.85rem; }
+  .puente a { font-weight: 600; }
+  @media (max-width: 560px) { .hero { padding-top: 36px; } }
+</style>

@@ -49,3 +49,5 @@ El horizonte no es el colapso del empleo profesional. Es su reorganización prof
 Sigue leyendo:
 
 [→ Computación cuántica: el poder que rompe el cifrado moderno](/articulos/computacion-cuantica-el-poder-que-rompe-el-cifrado-moderno/) [→ Fusión nuclear: la energía que siempre fue para después](/articulos/fusion-nuclear-la-energia-que-siempre-fue-para-despues/) [→ Interfaces cerebro-computadora: leer la mente tiene un precio](/articulos/interfaces-cerebro-computadora-leer-la-mente-tiene-un-precio/) [→ Solar + baterías: la revolución energética que México no está aprovechando](/articulos/solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando/) [→ Biología sintética: el código genético como lenguaje de programación](/articulos/biologia-sintetica-el-codigo-genetico-como-lenguaje-de-programacion/)
+
+Para ver qué actividades de contabilidad, redacción, marketing, derecho y software están más expuestas, consulta el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/).

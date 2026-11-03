@@ -60,3 +60,5 @@ El diagnóstico es claro. Las soluciones son más complicadas, pero existen ruta
 La tercera, y quizás la más difícil, es que las empresas reconozcan que la eficiencia inmediata tiene un precio diferido. Automatizar sin replantear la formación es como comer el capital semilla: el resultado de hoy es el desastre de mañana.
 
 **El verdadero reto de 2026 no es si la IA puede hacer el trabajo. Es si las organizaciones son lo suficientemente inteligentes para no dejar que lo haga todo.**
+
+Para ver qué tareas de cada profesión están cambiando, consulta el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/); la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/) ajusta el resultado según tu experiencia.

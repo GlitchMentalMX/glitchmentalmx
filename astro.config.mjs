@@ -7,6 +7,10 @@ import { assignPieceSlugs } from './src/lib/pieceSlug.mjs';
 import { satteri } from '@astrojs/markdown-satteri';
 import { enlacesExternos } from './src/lib/enlacesExternos.mjs';
 
+const indiceExposicionPublicado = JSON.parse(
+  readFileSync(new URL('./src/data/exposicion-laboral/edicion.json', import.meta.url), 'utf-8'),
+).publicado === true;
+
 // lastmod real del sitemap — antes no se mandaba ninguno. Se calcula leyendo
 // el frontmatter crudo (no astro:content, que no está disponible en este
 // contexto) una sola vez al arrancar el build. Alcance a propósito acotado a
@@ -278,7 +282,11 @@ export default defineConfig({
       // sitemap, igual que las páginas migradas de Blogger.
       // /umbral20/, /ceroorganico/, /entrenadoencorpus/ y /deprecado/ son enlaces cortos de
       // campaña que redirigen a Amazon: noindex y fuera del sitemap por lo mismo.
+      // /indice-exposicion-laboral-ia/ queda fuera del sitemap mientras
+      // src/data/exposicion-laboral/edicion.json tenga publicado: false
+      // (las páginas también salen con noindex).
       filter: (page) =>
+        (indiceExposicionPublicado || !page.includes('/indice-exposicion-laboral-ia/')) &&
         !page.includes('/stats/') &&
         !page.includes('/buscar/') &&
         !page.includes('/umbral20/') &&

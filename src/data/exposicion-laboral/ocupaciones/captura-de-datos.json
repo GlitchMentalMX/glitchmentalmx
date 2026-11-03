@@ -1,0 +1,168 @@
+{
+  "slug": "captura-de-datos",
+  "nombre": {
+    "es": "Captura de datos"
+  },
+  "sector": "Administración y finanzas",
+  "codigos": {
+    "onet": "43-9021.00",
+    "isco08": "4132"
+  },
+  "puntuacion": {
+    "E": 74,
+    "A": 61,
+    "C": 42,
+    "valor": 65,
+    "nivel": "Alta",
+    "rango_sensibilidad": [
+      43,
+      84
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 65
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 67,
+    "eloundou_beta_humana": 50,
+    "eloundou_beta_gpt4": 89
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.117,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Leer documentos fuente e ingresar datos",
+      "tareas_onet": [
+        11401
+      ],
+      "peso": 0.1175,
+      "E": 4,
+      "A": 4,
+      "C": 1,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Verificar y corregir errores de captura",
+      "tareas_onet": [
+        11405,
+        11402,
+        11403
+      ],
+      "peso": 0.3659,
+      "E": 4,
+      "A": 3,
+      "C": 1,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Archivar, llevar registros y preparar materiales",
+      "tareas_onet": [
+        11404,
+        11407,
+        11406
+      ],
+      "peso": 0.3373,
+      "E": 2,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Operar equipo y resolver mensajes ilegibles",
+      "tareas_onet": [
+        11408,
+        11409
+      ],
+      "peso": 0.1793,
+      "E": 2,
+      "A": 1,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La lectura y el ingreso de documentos se automatizan con rapidez; la puerta está en el control de calidad de esos flujos.",
+    "Pasar a supervisar excepciones, validar contra la fuente y mantener las reglas de los procesos automatizados.",
+    "Ruta natural hacia operaciones, análisis de procesos o atención a cuentas, apoyándose en el conocimiento del documento y del cliente."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "nacional",
+      "texto": "Análisis preliminar de México, ¿cómo vamos? (agosto de 2026), con microdatos de la ENOE del primer trimestre de 2026 y el índice OIT-NASK de exposición a la IA generativa. Estima unos 202,000 trabajadores en captura de datos, una de las ocupaciones con exposición media o alta. Es una medida distinta a la de este índice (cuenta personas en ocupaciones expuestas) y no indica pérdida de empleos.",
+      "verificacion": "Cifra reportada por prensa (Expansión, EFE); el informe original de México, ¿cómo vamos? no se localizó en línea al 2026-11-03.",
+      "fuentes": [
+        {
+          "fuente": "Expansión, 11 de agosto de 2026",
+          "url": "https://expansion.mx/economia/2026/08/11/ia-amenaza-primer-empleo-formal-jovenes-mexico"
+        },
+        {
+          "fuente": "EFE vía Swissinfo, 3 de agosto de 2026",
+          "url": "https://www.swissinfo.ch/spa/cerca-de-tres-millones-de-empleos-en-m%c3%a9xico-tienen-una-exposici%c3%b3n-media-o-alta-a-la-ia/91841077"
+        }
+      ]
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

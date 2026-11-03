@@ -1,0 +1,229 @@
+{
+  "slug": "analisis-de-datos",
+  "nombre": {
+    "es": "Análisis de datos"
+  },
+  "sector": "Tecnología",
+  "codigos": {
+    "onet": "15-2051.00",
+    "isco08": "sin equivalencia verificada"
+  },
+  "puntuacion": {
+    "E": 74,
+    "A": 47,
+    "C": 69,
+    "valor": 54,
+    "nivel": "Moderada",
+    "rango_sensibilidad": [
+      32,
+      75
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 54
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 46,
+    "eloundou_beta_humana": 59,
+    "eloundou_beta_gpt4": 75
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.06,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Limpiar y procesar grandes conjuntos de datos",
+      "tareas_onet": [
+        21826,
+        21823
+      ],
+      "peso": 0.1376,
+      "E": 4,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Construir, comparar y validar modelos",
+      "tareas_onet": [
+        21824,
+        21827,
+        21837
+      ],
+      "peso": 0.198,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Programar funciones y aplicaciones de análisis",
+      "tareas_onet": [
+        21838
+      ],
+      "peso": 0.0594,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Visualizar y presentar resultados",
+      "tareas_onet": [
+        21828,
+        21829
+      ],
+      "peso": 0.1404,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Definir problemas de negocio y recomendar soluciones",
+      "tareas_onet": [
+        21831,
+        21833,
+        21836,
+        21834
+      ],
+      "peso": 0.2509,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Identificar relaciones y tendencias",
+      "tareas_onet": [
+        21832
+      ],
+      "peso": 0.0603,
+      "E": 3,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Diseñar encuestas y muestreo",
+      "tareas_onet": [
+        21830,
+        21825
+      ],
+      "peso": 0.0978,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Mantenerse al día con la investigación",
+      "tareas_onet": [
+        21835
+      ],
+      "peso": 0.0556,
+      "E": 3,
+      "A": 2,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La limpieza y la exploración inicial se aceleran; el valor se mueve a plantear la pregunta correcta y a validar que el resultado no sea un espejismo.",
+    "Comunicar hallazgos a quien decide (narrativa, contexto, riesgos) se vuelve el diferenciador frente a herramientas que ya generan gráficas.",
+    "Oportunidad en datos propios de una organización: gobernanza, calidad y documentación, donde el conocimiento del contexto pesa más que el modelo."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

@@ -1,0 +1,209 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ReportarDato from '../../components/ReportarDato.astro';
+import ExposicionEscala from '../../components/ExposicionEscala.astro';
+import { cargarFichas, edicion, GEOGRAFIAS, AVISO, NOMBRE, RUTA, ETIQUETA_EVIDENCIA, PESOS } from '../../lib/exposicion';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async () => {
+  return cargarFichas().map((ficha) => ({ params: { slug: ficha.slug }, props: { ficha } }));
+}) satisfies GetStaticPaths;
+
+const { ficha } = Astro.props;
+const { puntuacion: p } = ficha;
+const nombre = ficha.nombre.es;
+const title = `Exposición a la IA: ${nombre}`;
+const description = `${nombre}: exposición ${p.nivel.toLowerCase()} a la IA (${p.valor}/100). Qué actividades puede asistir la IA, cuáles requieren personas y dónde hay oportunidades.`;
+const pct = (x: number) => `${Math.round(x * 100)}%`;
+
+const asiste = ficha.actividades.filter((a) => a.E >= 3).sort((a, b) => b.peso - a.peso);
+const humano = ficha.actividades.filter((a) => a.E <= 2 && a.C >= 3).sort((a, b) => b.peso - a.peso);
+const actividades = [...ficha.actividades].sort((a, b) => b.peso - a.peso);
+const nivelBajoConfianza = ficha.confianza.startsWith('baja');
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  dateModified: ficha.revision.fecha,
+  about: { '@type': 'Occupation', name: nombre },
+  isPartOf: { '@type': 'CollectionPage', name: NOMBRE, url: new URL(RUTA, Astro.site).toString() },
+  author: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
+};
+---
+
+<Layout title={title} description={description} type="article" noIndex={!edicion.publicado || ficha.revision.estado === 'borrador'}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <Breadcrumbs items={[{ name: NOMBRE, url: RUTA }, { name: nombre }]} />
+
+  <article class="container ficha">
+    <header>
+      <p class="eyebrow">{ficha.sector} · Edición {edicion.numero}</p>
+      <h1>{nombre}</h1>
+
+      <div class="resumen">
+        <div class="valor">
+          <strong>{p.valor}</strong><span>/ 100</span>
+        </div>
+        <div class="lectura">
+          <p class="nivel">Exposición {p.nivel.toLowerCase()}</p>
+          <ExposicionEscala valor={p.valor} rango={p.rango_sensibilidad} />
+          <p class="detalle">
+            Rango de sensibilidad {p.rango_sensibilidad[0]}–{p.rango_sensibilidad[1]} · Confianza {ficha.confianza}
+          </p>
+        </div>
+      </div>
+      <p class="aviso">{AVISO}</p>
+      {nivelBajoConfianza && (
+        <p class="cautela">La evidencia directa para esta ocupación es limitada: la mayoría de las calificaciones son juicio editorial. Léela como una orientación, no como una cifra firme.</p>
+      )}
+    </header>
+
+    {asiste.length > 0 && (
+      <section>
+        <h2>Dónde la IA ya puede asistir</h2>
+        <p class="sub">Actividades con exposición alta: la tecnología puede hacerlas o acelerarlas hoy.</p>
+        <ul class="lista">
+          {asiste.map((a) => <li><span>{a.actividad}</span><em>{pct(a.peso)} del trabajo</em></li>)}
+        </ul>
+      </section>
+    )}
+
+    {humano.length > 0 && (
+      <section>
+        <h2>Dónde pesa lo humano</h2>
+        <p class="sub">Actividades que dependen de criterio, presencia o responsabilidad de una persona.</p>
+        <ul class="lista">
+          {humano.map((a) => <li><span>{a.actividad}</span><em>{pct(a.peso)} del trabajo</em></li>)}
+        </ul>
+      </section>
+    )}
+
+    <section>
+      <h2>Oportunidades de transformación</h2>
+      <ul class="oport">
+        {ficha.oportunidades.map((o) => <li>{o}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contexto geográfico</h2>
+      <div class="geos">
+        {GEOGRAFIAS.map((g) => {
+          const c = ficha.contexto[g.id];
+          return (
+            <div class="geo">
+              <h3>{g.nombre}</h3>
+              {c.nivel === 'pendiente' ? (
+                <p>Cobertura pendiente. La puntuación base aplica, pero aún no hay evidencia local suficiente por ocupación; preferimos no inventarla.</p>
+              ) : (
+                <>
+                  <p>{c.texto}</p>
+                  {c.verificacion && <p class="nota">{c.verificacion}</p>}
+                  {c.fuentes && c.fuentes.length > 0 && (
+                    <p class="nota">Fuentes: {c.fuentes.map((f, i) => <><a href={f.url} rel="noopener">{f.fuente}</a>{i < c.fuentes!.length - 1 ? ' · ' : ''}</>)}</p>
+                  )}
+                </>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+
+    <section>
+      <h2>Cómo sale esta puntuación</h2>
+      <p class="sub">
+        {PESOS.E}·E + {PESOS.A}·A + {PESOS.C}·(100 − C), con E {p.E}, A {p.A} y C {p.C}.
+        {p.tope_aplicado && ` La capacidad se limitó al tope de la fuente de referencia (sin tope, ${p.puntuacion_sin_tope}).`}
+        {' '}Cobertura de evidencia: {pct(ficha.cobertura_evidencia.A.peso_con_uso_observado)} del peso tiene uso observado; la complementariedad humana es juicio editorial.
+      </p>
+      <div class="tabla-wrap">
+        <table>
+          <thead>
+            <tr><th>Actividad</th><th>Peso</th><th title="Exposición">E</th><th title="Automatización">A</th><th title="Complementariedad humana">C</th><th>Evidencia</th></tr>
+          </thead>
+          <tbody>
+            {actividades.map((a) => (
+              <tr>
+                <td>{a.actividad}</td>
+                <td>{pct(a.peso)}</td>
+                <td>{a.E}</td><td>{a.A}</td><td>{a.C}</td>
+                <td>
+                  {a.evidencia.map((e) => (
+                    <span class:list={['badge', e.tipo]} title={e.nota}>{ETIQUETA_EVIDENCIA[e.tipo]}{e.tipo === 'uso_observado' && e.nota ? ` · ${e.nota.split(' tareas')[0].replace(' de ', '/')} tareas` : ''}</span>
+                  ))}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="nota">
+        Referencias: la capacidad por ocupación según Eloundou et al. (2023) es {ficha.referencias.eloundou_beta_humana} (anotadores) y {ficha.referencias.eloundou_beta_gpt4} (GPT-4); la exposición observada por Anthropic es {ficha.referencias.aei_exposicion_ocupacion}. Son escalas distintas a este índice.
+      </p>
+    </section>
+
+    <section>
+      <h2>Fuentes</h2>
+      <ul class="fuentes">
+        {ficha.fuentes.map((f) => <li><a href={f.url} rel="noopener">{f.fuente}</a></li>)}
+      </ul>
+      <p class="nota">Códigos: O*NET {ficha.codigos.onet} · CIUO/ISCO-08 {ficha.codigos.isco08}. Revisión: {ficha.revision.fecha}.</p>
+    </section>
+
+    <section class="puente">
+      <a class="btn btn-ghost" href={RUTA}>← Ver todas las profesiones</a>
+      <a class="btn btn-ghost" href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Personalizar con la Calculadora de Riesgo IA →</a>
+    </section>
+  </article>
+
+  <ReportarDato
+    titulo={`Corrección o sugerencia · ${nombre}`}
+    pagina={Astro.url.pathname}
+    resumen="¿Algo no coincide con tu experiencia? Cuéntanos"
+    intro="Si una actividad está mal calificada o falta algo de tu trabajo, dinos cuál. Lo revisamos para la próxima edición."
+    etiqueta="¿Qué ajustarías?"
+    placeholder="Ej.: En mi día a día esta actividad ya se hace con IA, o falta una tarea importante."
+    legal="Solo usamos el mensaje (y tu correo, si lo dejas) para revisar la ficha y, si hace falta, responderte."
+    boton="Enviar comentario"
+    gracias="Gracias. Lo tomamos en cuenta."
+  />
+</Layout>
+
+<style>
+  .ficha { max-width: 860px; padding: 24px 24px 56px; }
+  .eyebrow { font: 0.78rem var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin: 16px 0 10px; }
+  h1 { font-size: clamp(1.9rem, 4.4vw, 2.7rem); margin: 0 0 24px; }
+  .resumen { display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; padding: 22px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .valor { display: flex; align-items: baseline; gap: 6px; }
+  .valor strong { font: 3.4rem var(--font-display); line-height: 1; }
+  .valor span { color: var(--text-faint); }
+  .nivel { font-size: 1.1rem; font-weight: 600; margin: 0 0 14px; }
+  .detalle { font-size: 0.82rem; color: var(--text-muted); margin: 12px 0 0; }
+  .aviso { margin: 14px 0 0; font-size: 0.9rem; background: var(--accent-soft); border: 1px solid var(--accent-line); border-radius: var(--radius-sm); padding: 8px 12px; }
+  .cautela { margin: 10px 0 0; font-size: 0.9rem; background: var(--bg-inset); border-radius: var(--radius-sm); padding: 8px 12px; color: var(--text-muted); }
+  section { margin-top: 40px; }
+  h2 { font-size: 1.4rem; margin: 0 0 6px; }
+  h3 { font-size: 1rem; margin: 0 0 6px; }
+  .sub, .nota { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+  .lista, .oport, .fuentes { padding-left: 20px; }
+  .lista { list-style: none; padding: 0; margin: 12px 0 0; }
+  .lista li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .lista em { font-style: normal; color: var(--text-faint); font-size: 0.85rem; white-space: nowrap; }
+  .oport li, .fuentes li { line-height: 1.6; margin-bottom: 8px; }
+  .geos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 12px; }
+  .geo { padding: 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+  .geo p { margin: 0 0 8px; font-size: 0.88rem; line-height: 1.55; color: var(--text-muted); }
+  .tabla-wrap { overflow-x: auto; margin-top: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.86rem; min-width: 620px; }
+  th, td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; color: var(--text-muted); }
+  .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border-strong); color: var(--text-muted); white-space: nowrap; }
+  .badge.uso_observado { background: var(--accent-soft); border-color: var(--accent-line); color: var(--text); }
+  .badge.sin_evidencia_directa { border-style: dashed; }
+  .puente { display: flex; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 560px) { .resumen { grid-template-columns: 1fr; gap: 16px; } }
+</style>

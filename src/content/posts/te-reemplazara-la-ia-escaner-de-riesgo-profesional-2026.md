@@ -50,3 +50,5 @@ Enfócate en desarrollar la _inteligencia social_ y el pensamiento crítico. Est
 Al final del día, la tecnología no es una fuerza de la naturaleza, sino una herramienta creada por nosotros. El riesgo de reemplazo es real para los que deciden ignorar el cambio, pero es una oportunidad masiva para quienes deciden adoptar la cultura del _Glitch_: encontrar las fallas en el sistema antiguo para construir algo nuevo y más potente.
 
 No te quedes con la duda. La conversación sobre el futuro del trabajo es la más importante que tendremos en esta década, y es mejor estar informado que sorprendido por un despido automatizado. El escáner no predice tu futuro — solo te dice en qué dirección está empujando el viento, para que decidas si quieres caminar con él o contra él.
+
+Además de la calculadora, el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/) muestra por actividad qué está expuesto en cada profesión y dónde hay oportunidades.

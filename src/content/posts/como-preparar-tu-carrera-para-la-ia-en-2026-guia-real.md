@@ -66,3 +66,5 @@ Sam Altman dijo esta semana que los próximos años serán un ajuste doloroso. N
 Eso suena lejano hasta que ves que ya en 2026 hay startups en India construyendo con cero empleados, usando agentes de IA para el desarrollo de software, el soporte legal y la atención al cliente. El modelo no es universal todavía, pero la dirección es inequívoca.
 
 Prepararse no significa entrar en pánico ni hacer un giro de 180 grados en tu carrera. Significa entender con claridad qué parte de lo que haces es difícil de automatizar y construir deliberadamente sobre eso. La IA es muy buena en muchas cosas; tú eres insustituible en las que requieren confianza, contexto y criterio humano. La tarea es saber exactamente cuáles son esas cosas.
+
+Para saber por dónde empezar, el [Índice de Exposición Laboral a la IA](/indice-exposicion-laboral-ia/) muestra qué actividades de cada profesión están cambiando y dónde hay oportunidades; la [Calculadora de Riesgo](/calculadora-de-riesgo-de-reemplazo-por-ia/) te da una lectura rápida de tu perfil.

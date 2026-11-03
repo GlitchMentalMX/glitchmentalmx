@@ -1,0 +1,232 @@
+{
+  "slug": "traduccion-e-interpretacion",
+  "nombre": {
+    "es": "Traducción e interpretación"
+  },
+  "sector": "Comunicación",
+  "codigos": {
+    "onet": "27-3091.00",
+    "isco08": "2643"
+  },
+  "puntuacion": {
+    "E": 74,
+    "A": 54,
+    "C": 69,
+    "valor": 56,
+    "nivel": "Moderada",
+    "rango_sensibilidad": [
+      45,
+      68
+    ],
+    "tope_aplicado": false,
+    "puntuacion_sin_tope": 56
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 43,
+    "eloundou_beta_humana": 84,
+    "eloundou_beta_gpt4": 88
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.419,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Traducir y revisar textos escritos",
+      "tareas_onet": [
+        9331,
+        9329,
+        9334,
+        9339,
+        9336
+      ],
+      "peso": 0.2892,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "3 de 5 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Interpretar de forma simultánea o consecutiva",
+      "tareas_onet": [
+        9328,
+        9335
+      ],
+      "peso": 0.1294,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 2 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Compilar terminología y consultar referencias",
+      "tareas_onet": [
+        9333,
+        9332,
+        9330,
+        9337
+      ],
+      "peso": 0.2451,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Resolver ambigüedades de sentido y cultura",
+      "tareas_onet": [
+        9327
+      ],
+      "peso": 0.0604,
+      "E": 3,
+      "A": 2,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Cumplir códigos éticos y de confidencialidad",
+      "tareas_onet": [
+        9326
+      ],
+      "peso": 0.0683,
+      "E": 0,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Capacitar, supervisar y educar sobre el rol",
+      "tareas_onet": [
+        9341,
+        9340
+      ],
+      "peso": 0.109,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Atender clientes y fijar tarifas",
+      "tareas_onet": [
+        9338
+      ],
+      "peso": 0.0492,
+      "E": 2,
+      "A": 1,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Acompañar y guiar a personas en otro idioma",
+      "tareas_onet": [
+        9342
+      ],
+      "peso": 0.0494,
+      "E": 1,
+      "A": 0,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La traducción en bruto es casi un commodity; el valor se mueve a revisión experta, localización, terminología de sector y textos de alto riesgo (legal, médico).",
+    "La interpretación en vivo, donde importan el contexto y la confianza entre personas, resiste mejor.",
+    "Especializarse en un sector y ofrecer revisión y control de calidad de traducción automática como servicio."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "pendiente",
+      "texto": null,
+      "fuentes": []
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}

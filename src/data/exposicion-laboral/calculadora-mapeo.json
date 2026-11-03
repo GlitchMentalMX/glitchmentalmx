@@ -1,0 +1,55 @@
+{
+  "nota": "Áreas de la calculadora cuya cifra sale del Índice de Exposición Laboral a la IA. Con varias ocupaciones, la cifra es la media simple de sus puntuaciones. Las áreas que no están aquí conservan una estimación heurística propia.",
+  "areas": {
+    "dev_sw": [
+      "desarrollo-de-software"
+    ],
+    "data_ai": [
+      "analisis-de-datos"
+    ],
+    "admin": [
+      "captura-de-datos"
+    ],
+    "accounting": [
+      "contabilidad"
+    ],
+    "legal": [
+      "abogacia"
+    ],
+    "sales": [
+      "atencion-al-cliente"
+    ],
+    "logistics": [
+      "planeacion-logistica"
+    ],
+    "content": [
+      "redaccion",
+      "periodismo"
+    ],
+    "marketing": [
+      "marketing-digital"
+    ],
+    "nursing_care": [
+      "enfermeria"
+    ],
+    "psychology": [
+      "psicologia-clinica"
+    ],
+    "teaching": [
+      "docencia-de-secundaria"
+    ],
+    "trades": [
+      "electricista",
+      "soldadura"
+    ],
+    "transport": [
+      "conduccion-de-carga"
+    ],
+    "manufacturing": [
+      "operacion-de-maquinas-cnc"
+    ]
+  },
+  "parcial": {
+    "manufacturing": "Hoy el índice cubre solo operación de máquinas CNC dentro de esta área; el ensamble y otras líneas de producción aún no están calificados."
+  }
+}

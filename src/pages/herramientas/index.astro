@@ -8,6 +8,8 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
+import { cargarFichas } from '../../lib/exposicion';
+const nOcupaciones = cargarFichas().length;
 
 const queIATabla = await getCollection('herramientasIA');
 const queIACount = queIATabla[0]?.data.herramientas.length ?? 0;
@@ -30,6 +32,12 @@ const cards = [
     eyebrow: 'Herramienta',
     title: 'Calculadora de Riesgo IA',
     dek: 'Mide qué tan expuesto está tu trabajo a la automatización.',
+  },
+  {
+    href: '/indice-exposicion-laboral-ia/',
+    eyebrow: `Índice mensual · ${nOcupaciones} ocupaciones`,
+    title: 'Exposición laboral IA',
+    dek: 'Qué partes de cada profesión están expuestas a la IA, qué está cambiando y dónde hay oportunidades. Exposición no significa sustitución.',
   },
   {
     href: '/detox-de-ia/',

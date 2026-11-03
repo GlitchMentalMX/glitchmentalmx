@@ -1,0 +1,259 @@
+{
+  "slug": "contabilidad",
+  "nombre": {
+    "es": "Contabilidad"
+  },
+  "sector": "Administración y finanzas",
+  "codigos": {
+    "onet": "13-2011.00",
+    "isco08": "2411"
+  },
+  "puntuacion": {
+    "E": 74,
+    "A": 55,
+    "C": 67,
+    "valor": 57,
+    "nivel": "Moderada",
+    "rango_sensibilidad": [
+      50,
+      67
+    ],
+    "tope_aplicado": true,
+    "puntuacion_sin_tope": 59
+  },
+  "confianza": "media",
+  "referencias": {
+    "aei_exposicion_ocupacion": 35,
+    "eloundou_beta_humana": 52,
+    "eloundou_beta_gpt4": 56
+  },
+  "cobertura_evidencia": {
+    "E": "anclada a capacidad por ocupación (Eloundou et al., 2023) con tope",
+    "A": {
+      "peso_con_uso_observado": 0.599,
+      "fuente": "Anthropic Economic Index"
+    },
+    "C": "juicio editorial (no existe fuente que la mida)"
+  },
+  "actividades": [
+    {
+      "actividad": "Preparar y analizar registros y estados financieros",
+      "tareas_onet": [
+        21514,
+        21532,
+        21534,
+        21515,
+        21517
+      ],
+      "peso": 0.1808,
+      "E": 4,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "2 de 5 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Conciliar cuentas y procesar facturas",
+      "tareas_onet": [
+        21516,
+        21533,
+        21518,
+        21512
+      ],
+      "peso": 0.1394,
+      "E": 4,
+      "A": 3,
+      "C": 1,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Calcular impuestos y preparar declaraciones",
+      "tareas_onet": [
+        21526,
+        21522,
+        21525
+      ],
+      "peso": 0.1045,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Auditar controles, detectar fraude e informar hallazgos",
+      "tareas_onet": [
+        21508,
+        21507,
+        21505,
+        21511,
+        21513,
+        21530,
+        21523,
+        21524,
+        21506
+      ],
+      "peso": 0.2861,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "3 de 9 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Elaborar presupuestos, proyecciones y reportes a gerencia",
+      "tareas_onet": [
+        21531,
+        21519,
+        21520
+      ],
+      "peso": 0.0982,
+      "E": 3,
+      "A": 2,
+      "C": 3,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 3 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Desarrollar y documentar sistemas contables",
+      "tareas_onet": [
+        21521
+      ],
+      "peso": 0.0338,
+      "E": 3,
+      "A": 3,
+      "C": 2,
+      "evidencia": [
+        {
+          "tipo": "uso_observado",
+          "fuente": "Anthropic Economic Index (labor_market_impacts)",
+          "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts",
+          "fecha": "2026-11-03",
+          "nota": "1 de 1 tareas con uso observado de Claude"
+        }
+      ]
+    },
+    {
+      "actividad": "Asesorar, representar y consultar con clientes y autoridades",
+      "tareas_onet": [
+        21510,
+        21528,
+        21527
+      ],
+      "peso": 0.0931,
+      "E": 2,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    },
+    {
+      "actividad": "Dirigir personal y supervisar auditorías",
+      "tareas_onet": [
+        21529,
+        21509
+      ],
+      "peso": 0.0642,
+      "E": 1,
+      "A": 1,
+      "C": 4,
+      "evidencia": [
+        {
+          "tipo": "sin_evidencia_directa",
+          "fuente": "Juicio editorial",
+          "nota": "Calificación editorial fundada en tareas análogas; sin uso observado en los datos disponibles"
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    "La conciliación y la captura rutinaria se automatizan; el contador puede mover su tiempo hacia análisis, planeación fiscal y asesoría.",
+    "Revisar y responder por lo que produce un sistema (criterio, firma, responsabilidad ante la autoridad) sigue siendo una función humana.",
+    "Mayor cercanía con la dirección de negocios pequeños y medianos que antes no podían pagar un análisis financiero."
+  ],
+  "contexto": {
+    "mx": {
+      "nivel": "nacional",
+      "texto": "Análisis preliminar de México, ¿cómo vamos? (agosto de 2026), con microdatos de la ENOE del primer trimestre de 2026 y el índice OIT-NASK de exposición a la IA generativa. Estima unos 470,000 contadores y auditores entre las ocupaciones con exposición media o alta. Es una medida distinta a la de este índice (cuenta personas en ocupaciones expuestas) y no indica pérdida de empleos.",
+      "verificacion": "Cifra reportada por prensa (Expansión, EFE); el informe original de México, ¿cómo vamos? no se localizó en línea al 2026-11-03.",
+      "fuentes": [
+        {
+          "fuente": "Expansión, 11 de agosto de 2026",
+          "url": "https://expansion.mx/economia/2026/08/11/ia-amenaza-primer-empleo-formal-jovenes-mexico"
+        },
+        {
+          "fuente": "EFE vía Swissinfo, 3 de agosto de 2026",
+          "url": "https://www.swissinfo.ch/spa/cerca-de-tres-millones-de-empleos-en-m%c3%a9xico-tienen-una-exposici%c3%b3n-media-o-alta-a-la-ia/91841077"
+        }
+      ]
+    },
+    "es": {
+      "nivel": "pendiente"
+    },
+    "br": {
+      "nivel": "pendiente"
+    },
+    "latam": {
+      "nivel": "pendiente"
+    }
+  },
+  "fuentes": [
+    {
+      "tipo": "tareas",
+      "fuente": "O*NET 31.0 (CC BY 4.0)",
+      "url": "https://www.onetcenter.org/database.html"
+    },
+    {
+      "tipo": "capacidad_demostrada",
+      "fuente": "Eloundou et al., GPTs are GPTs (2023)",
+      "url": "https://arxiv.org/abs/2303.10130"
+    },
+    {
+      "tipo": "uso_observado",
+      "fuente": "Anthropic Economic Index",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts"
+    }
+  ],
+  "revision": {
+    "fecha": "2026-11-03",
+    "estado": "revisada",
+    "revisado_por": "Jorge A. Diaz Elizondo"
+  }
+}
