@@ -1,12 +1,12 @@
 ---
 title: Casi todos dicen que la IA da valor. Casi nadie lo mide
 category: Inteligencia Artificial
-pubDate: 2026-11-02T10:11
+pubDate: 2026-11-03T05:07
 updatedDate: ''
 description: A nivel global, el 89% dice obtener valor medible de la IA y solo el 12% puede evaluarlo de forma consistente, según KPMG. Esa es la historia.
 heroImage: /images/uploads/medir-valor-ia.webp
 heroImageAlt: 'IA da valor medible: mujer toca la barra al 12% junto a la barra al 89% en un panel de pared'
-draft: true
+draft: false
 ---
 
 Según KPMG, el 89% de las empresas encuestadas en el mundo dice obtener valor medible de la IA; **solo el 12% tiene mecanismos consistentes para evaluarlo**. Nuestra lectura: esa distancia es el hallazgo. Una tecnología puede expandirse sin que casi nadie pueda demostrar si funciona.
