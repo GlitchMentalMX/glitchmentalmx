@@ -216,8 +216,9 @@ const schema = {
     </section>
 
     <section class="puente">
-      <a class="btn btn-ghost" href={RUTA}>← Ver todas las profesiones</a>
-      <a class="btn btn-ghost" href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Calcula tu resultado según tu región, estudios y experiencia →</a>
+      <p>¿Quieres personalizarlo con tu región, estudios y experiencia?</p>
+      <a class="btn btn-ghost" href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Abrir la Calculadora de Riesgo IA →</a>
+      <a class="enlace-vuelta" href={RUTA}>← Ver todas las profesiones</a>
     </section>
   </article>
 
@@ -272,6 +273,8 @@ const schema = {
   .badge { display: inline-block; font-size: 0.72rem; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--border-strong); color: var(--text-muted); white-space: nowrap; }
   .badge.uso_observado { background: var(--accent-soft); border-color: var(--accent-line); color: var(--text); }
   .badge.sin_evidencia_directa { border-style: dashed; }
-  .puente { display: flex; flex-wrap: wrap; gap: 12px; }
+  .puente { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+  .puente p { margin: 0; font-weight: 600; }
+  .enlace-vuelta { color: var(--text-muted); font-size: 0.9rem; }
   @media (max-width: 560px) { .resumen { grid-template-columns: 1fr; gap: 16px; } }
 </style>
