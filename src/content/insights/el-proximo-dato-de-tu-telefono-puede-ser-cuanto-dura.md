@@ -5,7 +5,7 @@ imagen: /images/dato-incomodo/dato-telefono.webp
 imagenAlt: Mujer revisa etiqueta de reparabilidad al comprar un smartphone en tienda; un teléfono roto asoma de su bolsillo.
 enlace: ''
 date: 2026-11-02T18:33
-draft: true
+draft: false
 categoria: Tecnología de Consumo
 punchline: El próximo dato de tu teléfono puede ser cuánto dura
 slug: ''
