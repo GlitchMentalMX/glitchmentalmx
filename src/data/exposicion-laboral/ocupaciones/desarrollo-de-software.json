@@ -260,5 +260,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "La IA puede asistir en diseñar y modificar software, probar, documentar, consultar datos y analizar requisitos. Coordinar con equipos y clientes, supervisar personal técnico y capacitar usuarios tienen el mayor peso humano.",
+    "entender": "Exposición moderada con un rango relativamente estrecho (49–62). Describe cuánto del trabajo puede asistir la IA hoy; no cuántos puestos de desarrollo habrá.",
+    "oportunidades": "Especificar, revisar y validar lo que la IA propone, y dedicar más tiempo a requisitos, usuarios y negocio, la parte más humana de la ficha."
   }
 }

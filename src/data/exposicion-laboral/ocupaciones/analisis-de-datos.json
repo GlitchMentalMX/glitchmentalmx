@@ -225,5 +225,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Casi todas las actividades técnicas (limpiar datos, construir y validar modelos, programar análisis, visualizar) pueden ser asistidas por IA. La parte con más peso humano es definir el problema de negocio y recomendar soluciones, una cuarta parte del peso.",
+    "entender": "Una exposición moderada describe un trabajo donde la herramienta acelera lo técnico; no que la ocupación desaparezca. El rango es amplio (32–75): depende de cuánto de tu trabajo sea técnico y cuánto consultivo.",
+    "oportunidades": "Plantear la pregunta correcta, validar resultados y explicarlos a quien decide: son las actividades de la ficha donde el contexto del negocio pesa más que la herramienta."
   }
 }

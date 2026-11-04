@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
 import ExposicionEscala from '../../components/ExposicionEscala.astro';
-import { cargarFichas, edicion, AVISO, NOMBRE, RUTA, ETIQUETA_EVIDENCIA, PESOS } from '../../lib/exposicion';
+import { cargarFichas, edicion, AVISO, NOMBRE, RUTA, ETIQUETA_EVIDENCIA, PESOS, ACLARACION_PUNTUACION, ACLARACION_PAIS } from '../../lib/exposicion';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async () => {
@@ -14,12 +14,35 @@ const { ficha } = Astro.props;
 const { puntuacion: p } = ficha;
 const nombre = ficha.nombre.es;
 const title = `Exposición a la IA: ${nombre}`;
-const description = `${nombre}: exposición ${p.nivel.toLowerCase()} a la IA (${p.valor}/100). Qué actividades puede asistir la IA, cuáles requieren personas y dónde hay oportunidades.`;
+const description = `${nombre}: exposición ${p.nivel.toLowerCase()} a la IA (${p.valor}/100). Dónde la IA puede ayudar, qué actividades requieren personas y dónde hay oportunidades.`;
 const pct = (x: number) => `${Math.round(x * 100)}%`;
 
-const asiste = ficha.actividades.filter((a) => a.E >= 3).sort((a, b) => b.peso - a.peso);
-const humano = ficha.actividades.filter((a) => a.E <= 2 && a.C >= 3).sort((a, b) => b.peso - a.peso);
-const actividades = [...ficha.actividades].sort((a, b) => b.peso - a.peso);
+const porPeso = (xs: typeof ficha.actividades) => [...xs].sort((a, b) => b.peso - a.peso);
+const asiste = porPeso(ficha.actividades.filter((a) => a.E >= 3 && a.C <= 3));
+const asisteYDecide = porPeso(ficha.actividades.filter((a) => a.E >= 3 && a.C >= 4));
+const humano = porPeso(ficha.actividades.filter((a) => a.E <= 2 && a.C >= 3));
+const otras = porPeso(ficha.actividades.filter((a) => a.E <= 2 && a.C <= 2));
+const actividades = porPeso(ficha.actividades);
+const evidenciaDe = (a: (typeof ficha.actividades)[number]) =>
+  a.evidencia
+    .map((e) => ETIQUETA_EVIDENCIA[e.tipo] + (e.tipo === 'uso_observado' && e.nota ? ` · ${e.nota.split(' tareas')[0].replace(' de ', '/')} tareas` : ''))
+    .join(' · ');
+const usoObservado = pct(ficha.cobertura_evidencia.A.peso_con_uso_observado);
+const cobUso = ficha.cobertura_evidencia.A.peso_con_uso_observado;
+const explicacionConfianza = ficha.confianza.startsWith('baja')
+  ? `Pocas actividades tienen evidencia directa (${usoObservado} del peso con uso observado) y el resto es inferencia editorial.`
+  : cobUso === 0
+    ? 'No hay uso observado en estas actividades. Eso no prueba que la IA no pueda hacerlas, solo que esos datos no lo registran; la confianza se apoya en que las referencias independientes (Eloundou y Anthropic) coinciden.'
+    : ficha.confianza.startsWith('media-baja') || cobUso < 0.15
+      ? `La evidencia directa es limitada (${usoObservado} del peso con uso observado); el resto es inferencia editorial.`
+      : ficha.confianza.startsWith('alta') || ficha.confianza === 'media-alta'
+        ? `Buena parte de las actividades tiene uso real observado (${usoObservado} del peso); aun así es una estimación.`
+        : `Hay evidencia directa para parte de las actividades (${usoObservado} del peso con uso observado); el resto es inferencia editorial.`;
+const alcanceFuente: Record<string, string> = {
+  tareas: 'Define las tareas de la ocupación y su importancia. Describe ocupaciones de Estados Unidos.',
+  capacidad_demostrada: 'Mide lo que modelos de lenguaje de 2023 podían hacer, por ocupación. No mide adopción ni sustitución.',
+  uso_observado: 'Observa solo el uso de Claude, no el uso total de IA. Un cero significa «no observado», no «no puede».',
+};
 const nivelBajoConfianza = ficha.confianza.startsWith('baja');
 
 const schema = {
@@ -51,32 +74,79 @@ const schema = {
           <p class="nivel">Exposición {p.nivel.toLowerCase()}</p>
           <ExposicionEscala valor={p.valor} rango={p.rango_sensibilidad} />
           <p class="detalle">
-            Rango de sensibilidad {p.rango_sensibilidad[0]}–{p.rango_sensibilidad[1]} · Confianza {ficha.confianza}
+            <strong>Rango de sensibilidad {p.rango_sensibilidad[0]}–{p.rango_sensibilidad[1]}.</strong> El rango muestra cuánto podría variar la estimación según los supuestos y la evidencia disponible. No es un intervalo de probabilidad.
+          </p>
+          <p class="detalle">
+            <strong>Confianza {ficha.confianza}.</strong> {explicacionConfianza}
           </p>
         </div>
       </div>
-      <p class="aviso">{AVISO}</p>
+      <p class="aclara">{ACLARACION_PUNTUACION}</p>
+
+      <div class="interpreta">
+        <div>
+          <h2>¿Qué significa este resultado?</h2>
+          <p>{ficha.interpretacion.significa}</p>
+        </div>
+        <div>
+          <h2>¿Qué debes entender?</h2>
+          <p>{ficha.interpretacion.entender}</p>
+        </div>
+        <div>
+          <h2>¿Dónde están las oportunidades?</h2>
+          <p>{ficha.interpretacion.oportunidades}</p>
+        </div>
+      </div>
+
+      <p class="aviso">{AVISO} {ACLARACION_PAIS}</p>
       {nivelBajoConfianza && (
         <p class="cautela">La evidencia directa para esta ocupación es limitada: la mayoría de las calificaciones son juicio editorial. Léela como una orientación, no como una cifra firme.</p>
       )}
     </header>
 
+    <section>
+      <h2>Las actividades de la ocupación</h2>
+      <p class="sub">
+        El porcentaje es el peso de cada actividad dentro de la ocupación, según O*NET. No es el porcentaje de empleos ni de trabajo que pueda sustituirse. Las actividades se agrupan según cuánto puede ayudar la IA y cuánto pesa lo humano.
+      </p>
+    </section>
+
     {asiste.length > 0 && (
-      <section>
-        <h2>Dónde la IA ya puede asistir</h2>
-        <p class="sub">Actividades con exposición alta: la tecnología puede hacerlas o acelerarlas hoy.</p>
+      <section class="grupo">
+        <h2>Dónde la IA puede ayudar</h2>
+        <p class="sub">Actividades en las que la capacidad de la IA es alta. Que pueda asistirlas no significa que ya se hagan así: la etiqueta de cada una dice si hay uso observado o es inferencia editorial. La capacidad demostrada de referencia (Eloundou et al., 2023) se mide por ocupación, no por actividad.</p>
         <ul class="lista">
-          {asiste.map((a) => <li><span>{a.actividad}</span><em>{pct(a.peso)} del trabajo</em></li>)}
+          {asiste.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
+        </ul>
+      </section>
+    )}
+
+    {asisteYDecide.length > 0 && (
+      <section class="grupo">
+        <h2>Dónde la IA ayuda y la persona decide</h2>
+        <p class="sub">Actividades que la IA puede asistir, pero cuyo resultado depende del criterio o la responsabilidad de una persona.</p>
+        <ul class="lista">
+          {asisteYDecide.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
         </ul>
       </section>
     )}
 
     {humano.length > 0 && (
-      <section>
+      <section class="grupo">
         <h2>Dónde pesa lo humano</h2>
         <p class="sub">Actividades que dependen de criterio, presencia o responsabilidad de una persona.</p>
         <ul class="lista">
-          {humano.map((a) => <li><span>{a.actividad}</span><em>{pct(a.peso)} del trabajo</em></li>)}
+          {humano.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
+        </ul>
+      </section>
+    )}
+
+    {otras.length > 0 && (
+      <section class="grupo">
+        <h2>Otras actividades</h2>
+        <p class="sub">Actividades administrativas o de apoyo que no encajan en los grupos anteriores: la IA las asiste poco y tampoco dependen especialmente de criterio humano.</p>
+        <ul class="lista">
+          {otras.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
         </ul>
       </section>
     )}
@@ -91,6 +161,7 @@ const schema = {
     {ficha.contexto.mx.nivel !== 'pendiente' && (
       <section>
         <h2>Contexto de empleo en México</h2>
+        <p class="sub">Estas cifras describen el empleo en México. Son independientes de la puntuación de exposición, que no cambia por país.</p>
         <div class="geos">
           <div class="geo">
             <p>{ficha.contexto.mx.texto}</p>
@@ -139,7 +210,7 @@ const schema = {
     <section>
       <h2>Fuentes</h2>
       <ul class="fuentes">
-        {ficha.fuentes.map((f) => <li><a href={f.url} rel="noopener">{f.fuente}</a></li>)}
+        {ficha.fuentes.map((f) => <li><a href={f.url} rel="noopener">{f.fuente}</a>{alcanceFuente[f.tipo] && <small class="ev">{alcanceFuente[f.tipo]}</small>}</li>)}
       </ul>
       <p class="nota">Códigos: O*NET {ficha.codigos.onet} · CIUO/ISCO-08 {ficha.codigos.isco08}. Revisión: {ficha.revision.fecha}.</p>
     </section>
@@ -172,10 +243,17 @@ const schema = {
   .valor strong { font: 3.4rem var(--font-display); line-height: 1; }
   .valor span { color: var(--text-faint); }
   .nivel { font-size: 1.1rem; font-weight: 600; margin: 0 0 14px; }
-  .detalle { font-size: 0.82rem; color: var(--text-muted); margin: 12px 0 0; }
+  .detalle { font-size: 0.82rem; color: var(--text-muted); margin: 10px 0 0; line-height: 1.5; }
+  .detalle strong { color: var(--text); font-weight: 600; }
   .aviso { margin: 14px 0 0; font-size: 0.9rem; background: var(--accent-soft); border: 1px solid var(--accent-line); border-radius: var(--radius-sm); padding: 8px 12px; }
   .cautela { margin: 10px 0 0; font-size: 0.9rem; background: var(--bg-inset); border-radius: var(--radius-sm); padding: 8px 12px; color: var(--text-muted); }
   section { margin-top: 40px; }
+  section.grupo { margin-top: 28px; }
+  .aclara { margin: 12px 0 0; font-size: 0.88rem; color: var(--text-muted); }
+  .interpreta { margin-top: 22px; display: grid; gap: 14px; padding: 18px 20px; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius); }
+  .interpreta h2 { font-size: 1rem; margin: 0 0 4px; }
+  .interpreta p { margin: 0; line-height: 1.6; }
+  .ev { display: block; font-size: 0.78rem; color: var(--text-faint); margin-top: 2px; font-weight: 400; }
   h2 { font-size: 1.4rem; margin: 0 0 6px; }
   h3 { font-size: 1rem; margin: 0 0 6px; }
   .sub, .nota { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }

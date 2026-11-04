@@ -259,5 +259,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Las partes del oficio que más puede asistir la IA son interpretar normas, analizar casos y redactar escritos. Litigar, negociar, representar ante tribunales y llevar testamentos o fideicomisos pesan más y dependen de una persona.",
+    "entender": "Una exposición baja no significa que la IA no entre al despacho: significa que la mayor parte del peso está en actividades de criterio y responsabilidad. El rango llega a 57 y la evidencia directa es limitada, así que es una orientación, no una cifra firme.",
+    "oportunidades": "Dedicar el tiempo que liberan la investigación y los borradores a la estrategia del caso, la negociación y la atención al cliente, que son las actividades con más peso humano en esta ficha."
   }
 }

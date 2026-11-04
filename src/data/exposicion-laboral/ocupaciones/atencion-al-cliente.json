@@ -240,5 +240,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Casi todas sus actividades (atender consultas, resolver quejas, registrar interacciones, gestionar cobros) tienen una capacidad alta de la IA, y en varias ya se observa uso real. Es de las ocupaciones más expuestas del índice.",
+    "entender": "Exposición alta significa que gran parte de las actividades puede hacerse con apoyo de IA; no que ese porcentaje de puestos vaya a desaparecer. Lo que cambia es el reparto: lo repetitivo se asiste y a la persona le llegan los casos de conflicto, emoción o excepción.",
+    "oportunidades": "Atender los casos complejos y el escalamiento con empatía, y asumir roles de calidad como entrenar y auditar las respuestas del asistente."
   }
 }

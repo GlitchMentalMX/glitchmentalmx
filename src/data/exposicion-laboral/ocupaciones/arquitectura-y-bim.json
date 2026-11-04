@@ -228,5 +228,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "La IA puede asistir en generar alternativas de distribución, hacer análisis energético, preparar documentos contractuales y elaborar modelos 3D. Definir requisitos con el cliente, supervisar obra y dirigir especialistas dependen de presencia y criterio.",
+    "entender": "La exposición es moderada y la evidencia, limitada: la mayoría de las calificaciones es juicio editorial y el rango (25–67) es amplio. Léela como orientación sobre qué tareas cambian primero, no como una medida precisa.",
+    "oportunidades": "Dedicar más tiempo al concepto, al trato con el cliente y a la visita a obra, y apoyarse en el modelado BIM y la coordinación de especialidades para revisar lo que producen las herramientas."
   }
 }

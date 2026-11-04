@@ -273,5 +273,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "La IA puede asistir en preparar materiales, planes y evaluaciones, y en la administración. Impartir clases, orientar a estudiantes, mantener la disciplina y comunicarse con las familias, más de la mitad del peso, dependen de la presencia y del vínculo.",
+    "entender": "Moderada no quiere decir que un asistente pueda dar la clase: la exposición está en la preparación y la gestión, no en el aula. El rango (36–57) muestra que la estimación varía según los supuestos.",
+    "oportunidades": "Usar el tiempo que liberan la planeación y la retroalimentación inicial para el acompañamiento individual, y enseñar a usar estas herramientas con criterio."
   }
 }

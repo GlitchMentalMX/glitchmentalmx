@@ -249,5 +249,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "La IA puede asistir en documentar sesiones, reunir la historia del paciente y mantenerse al día con la investigación. La psicoterapia, la evaluación de riesgo y el diagnóstico, y la coordinación con otros profesionales dependen del vínculo y del juicio clínico.",
+    "entender": "Exposición baja con confianza baja: poca evidencia directa y un rango amplio (17–58). La puntuación describe qué partes del trabajo son más asistibles, sobre todo las administrativas; no dice que una herramienta pueda dar terapia.",
+    "oportunidades": "Dedicar el tiempo ahorrado en notas e informes a la relación terapéutica y al seguimiento, cuidando especialmente la privacidad del paciente."
   }
 }

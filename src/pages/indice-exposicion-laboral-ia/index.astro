@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
 import ExposicionEscala from '../../components/ExposicionEscala.astro';
-import { cargarFichas, edicion, NIVELES, AVISO, NOMBRE, RUTA, PESOS, ETIQUETA_EVIDENCIA } from '../../lib/exposicion';
+import { cargarFichas, edicion, NIVELES, AVISO, NOMBRE, RUTA, PESOS, ETIQUETA_EVIDENCIA, ACLARACION_PAIS } from '../../lib/exposicion';
 
 const fichas = cargarFichas();
 const sectores = [...new Set(fichas.map((f) => f.sector))].sort((a, b) => a.localeCompare(b, 'es'));
@@ -48,6 +48,15 @@ const schema = {
     </p>
     <p class="aviso">{AVISO}</p>
   </header>
+
+  <section class="container que-descubres" aria-labelledby="h-descubres">
+    <h2 id="h-descubres">¿Qué descubrirás sobre tu profesión?</h2>
+    <ul>
+      <li><strong>Su nivel de exposición.</strong> Qué significa la puntuación y cómo interpretarla.</li>
+      <li><strong>Las actividades que están cambiando.</strong> Dónde puede intervenir la IA y dónde sigue pesando lo humano.</li>
+      <li><strong>Las oportunidades.</strong> Qué capacidades pueden ayudarte a adaptarte a la transformación.</li>
+    </ul>
+  </section>
 
   <section class="container controles" aria-label="Buscar una profesión">
     <div class="busca">
@@ -132,7 +141,7 @@ const schema = {
       <li>Es un índice compuesto, no una probabilidad de desempleo. Exposición no significa sustitución.</li>
       <li>La capacidad por ocupación se compara con Eloundou et al. (2023) y se limita a ese promedio más 20 puntos, para no sobrestimar.</li>
       <li>La complementariedad humana es juicio editorial: no existe una fuente que la mida.</li>
-      <li>Las tareas vienen de O*NET (Estados Unidos) y la puntuación se calcula por tareas, así que aplica a cualquier país. No usa datos laborales locales: algunas fichas añaden, aparte, contexto de empleo de México (ENOE del INEGI), que no entra en la puntuación.</li>
+      <li>Las tareas vienen de O*NET (Estados Unidos). {ACLARACION_PAIS} Algunas fichas añaden, aparte, contexto de empleo de México (ENOE del INEGI), que no entra en la puntuación.</li>
       <li>Cada ficha muestra un rango de sensibilidad y una confianza. Una puntuación con poca evidencia directa no es una cifra firme.</li>
     </ul>
     <h3>Fuentes</h3>
@@ -201,6 +210,12 @@ const schema = {
   .mensaje { color: var(--text-muted); line-height: 1.6; margin: 0 0 18px; max-width: var(--measure); }
   .aviso { display: inline-block; font-size: 0.9rem; background: var(--accent-soft); border: 1px solid var(--accent-line); border-radius: var(--radius-sm); padding: 8px 12px; margin: 0; }
 
+  .que-descubres { padding: 8px 24px 0; max-width: 820px; }
+  .que-descubres h2 { font-size: 1.05rem; margin: 0 0 8px; }
+  .que-descubres ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .que-descubres li { font-size: 0.88rem; line-height: 1.5; color: var(--text-muted); padding: 12px 14px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+  .que-descubres strong { display: block; color: var(--text); margin-bottom: 2px; }
+  @media (max-width: 700px) { .que-descubres ul { grid-template-columns: 1fr; } }
   .controles { padding: 16px 24px; display: grid; gap: 18px; }
   .busca label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
   .busca input { width: 100%; max-width: 520px; padding: 12px 14px; font: inherit; color: var(--text); background: var(--bg-elevated); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); }

@@ -222,5 +222,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Instalar y conectar, diagnosticar, trabajar en altura y atender emergencias son trabajo físico y de criterio en sitio, con exposición casi nula. La IA puede ayudar sobre todo en planear la instalación y leer planos.",
+    "entender": "Una exposición muy baja describe actividades que hoy la IA casi no puede hacer ni se observa haciendo. El rango (8–44) es proporcionalmente amplio porque los valores están cerca de cero y un punto de diferencia pesa mucho.",
+    "oportunidades": "Apoyarse en herramientas de planeación y diagnóstico para cotizar y planear mejor, y dirigir y capacitar personal, otra actividad de la ficha."
   }
 }

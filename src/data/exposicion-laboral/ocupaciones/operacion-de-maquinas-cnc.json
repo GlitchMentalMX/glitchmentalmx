@@ -262,5 +262,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Montar y alinear piezas, operar la máquina, mantenerla y ajustar ante fallas son trabajo manual y de oído con exposición mínima. La IA puede asistir sobre todo en revisar planos, calcular y programar la máquina.",
+    "entender": "Exposición baja: la parte programable del oficio es la más asistible, pero el mayor peso está en el trabajo en el taller. El rango (15–49) refleja la incertidumbre de la estimación.",
+    "oportunidades": "Aprender programación de piezas y supervisión de celda, apoyándose en software asistido y validando lo que propone con conocimiento del proceso de corte."
   }
 }

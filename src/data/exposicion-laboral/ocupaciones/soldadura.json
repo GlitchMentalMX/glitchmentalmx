@@ -231,5 +231,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Soldar, cortar, preparar y posicionar piezas y operar el equipo son trabajo manual con exposición casi nula. La IA puede ayudar sobre todo a interpretar planos y definir métodos de soldadura, una décima parte del peso de la ocupación.",
+    "entender": "Exposición muy baja: describe actividades que hoy la IA casi no puede hacer ni se observa haciendo. El rango (4–40) es relativamente amplio porque los valores están cerca de cero.",
+    "oportunidades": "Reforzar la inspección y la certificación de calidad y apoyarse en herramientas para interpretar planos y elegir métodos de soldadura."
   }
 }

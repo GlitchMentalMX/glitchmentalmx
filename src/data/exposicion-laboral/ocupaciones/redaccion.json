@@ -201,5 +201,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Redactar, revisar y editar, y planear esquemas son actividades con capacidad alta de la IA. Presentar ideas, trabajar con clientes y gestionar derechos de autor dependen de personas.",
+    "entender": "Exposición alta: el borrador es la parte más asistible; la voz propia y el criterio editorial, la menos. No mide cuántos redactores hacen falta, y el rango es 53–73.",
+    "oportunidades": "Investigación original, entrevistas y fuentes propias, y trabajar como editor de lo que producen las herramientas, con control de hechos y de estilo."
   }
 }

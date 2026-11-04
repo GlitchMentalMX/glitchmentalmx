@@ -233,5 +233,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Elaborar reportes y propuestas, planear el movimiento de bienes, atender clientes y aplicar tecnología son actividades que la IA puede asistir. Dirigir equipos, colaborar entre áreas y gestionar proveedores dependen de relaciones.",
+    "entender": "Exposición moderada con confianza media-baja: la evidencia directa es limitada y el rango (38–67) es amplio. Léela como orientación sobre qué tareas cambian primero.",
+    "oportunidades": "Coordinar proveedores y clientes y decidir ante imprevistos, apoyándose en herramientas de reporte, estimación y trazabilidad de la cadena."
   }
 }

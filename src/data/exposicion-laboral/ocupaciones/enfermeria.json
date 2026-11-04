@@ -246,5 +246,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "La IA puede asistir en el registro de información médica, la educación para la salud y la investigación. Administrar medicamentos, dar cuidados directos, evaluar y monitorear al paciente y coordinar al equipo, la mayor parte del peso, dependen de la presencia.",
+    "entender": "Exposición baja con confianza baja: hay poca evidencia directa para esta ocupación y el rango (16–53) es amplio. Sirve para ver qué tareas cambian primero, como la documentación, no como una cifra firme.",
+    "oportunidades": "Liberar tiempo de documentación para el cuidado directo y reforzar la educación al paciente, una actividad donde la IA asiste pero la persona orienta."
   }
 }

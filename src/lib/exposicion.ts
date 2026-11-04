@@ -19,7 +19,7 @@ export const ETIQUETA_EVIDENCIA: Record<TipoEvidencia, string> = {
   capacidad_demostrada: 'Capacidad demostrada',
   uso_observado: 'Uso observado',
   adopcion_empresarial: 'Adopción empresarial',
-  sin_evidencia_directa: 'Sin evidencia directa',
+  sin_evidencia_directa: 'Inferencia editorial',
 };
 
 export interface Actividad {
@@ -60,6 +60,7 @@ export interface Ficha {
   actividades: Actividad[];
   oportunidades: string[];
   contexto: { mx: ContextoPais; es: ContextoPais; br: ContextoPais; latam: ContextoPais };
+  interpretacion: { significa: string; entender: string; oportunidades: string };
   fuentes: { tipo: string; fuente: string; url: string }[];
   revision: { fecha: string; estado: string; revisado_por: string | null };
 }
@@ -85,3 +86,8 @@ export const RUTA = '/indice-exposicion-laboral-ia/';
 export const NOMBRE = 'Índice de Exposición Laboral a la IA';
 export const AVISO = 'Exposición no significa sustitución. Esto es un índice compuesto, no una probabilidad de desempleo.';
 export { edicion };
+
+export const ACLARACION_PUNTUACION =
+  'La puntuación expresa el nivel de exposición compuesto de las actividades analizadas. No significa que ese porcentaje de tu trabajo pueda ser sustituido.';
+export const ACLARACION_PAIS =
+  'La puntuación evalúa la exposición tecnológica de las actividades profesionales. No es un diagnóstico específico del mercado laboral de cada país.';

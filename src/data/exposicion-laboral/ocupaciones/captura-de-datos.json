@@ -164,5 +164,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Leer documentos fuente, ingresar datos y verificar errores de captura son las actividades con mayor capacidad y uso de la IA. Operar equipo y resolver mensajes ilegibles es la parte que sigue dependiendo de una persona.",
+    "entender": "Exposición alta indica que gran parte del peso son tareas muy asistibles. No predice cuántos puestos cambian, y el rango (43–84) muestra que la estimación es amplia.",
+    "oportunidades": "Pasar de capturar a supervisar excepciones, validar contra la fuente y mantener las reglas de los procesos automatizados."
   }
 }

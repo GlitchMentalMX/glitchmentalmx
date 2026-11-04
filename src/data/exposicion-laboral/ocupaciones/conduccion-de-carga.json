@@ -236,5 +236,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Conducir, asegurar y descargar la carga, acoplar remolques e inspeccionar el vehículo son actividades físicas y de seguridad con muy poca exposición. La IA puede asistir sobre todo en revisar documentación y planear rutas.",
+    "entender": "Exposición baja describe qué partes del trabajo puede asistir hoy la IA; no es un pronóstico sobre el empleo en transporte. El rango (12–51) muestra la incertidumbre de la estimación.",
+    "oportunidades": "Apoyarse en herramientas de documentación y de planeación de rutas, y sumar conocimiento de seguridad e inspección del vehículo, actividades que ya forman parte de la ocupación."
   }
 }

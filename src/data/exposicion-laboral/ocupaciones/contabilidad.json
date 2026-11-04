@@ -259,5 +259,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "La IA puede asistir en conciliar cuentas, procesar facturas, preparar estados financieros, calcular impuestos y auditar. Asesorar y representar ante clientes y autoridades, y dirigir auditorías, dependen de una persona responsable.",
+    "entender": "57 está en el tramo alto de «moderada»: gran parte del peso son actividades asistibles, pero la responsabilidad profesional (criterio, firma, respuesta ante la autoridad) no la asume una herramienta. El rango es relativamente estrecho (50–67).",
+    "oportunidades": "Mover tiempo de la captura y la conciliación hacia el análisis, la planeación fiscal y la asesoría."
   }
 }

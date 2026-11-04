@@ -242,5 +242,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Interpretar estudios de imagen, revisar y transmitir imágenes y el control de calidad son actividades que la IA puede asistir. Los procedimientos intervencionistas, comunicar resultados al médico y al paciente y coordinar servicios dependen de una persona.",
+    "entender": "Exposición moderada y confianza baja, con un rango amplio (28–64): sirve para ubicar qué actividades se apoyan más en herramientas, como la lectura de imágenes; no para estimar cuántos radiólogos hacen falta.",
+    "oportunidades": "Más tiempo para casos complejos, procedimientos y comunicación con el médico tratante, y funciones de validación y supervisión de las herramientas dentro del hospital."
   }
 }

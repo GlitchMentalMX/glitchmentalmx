@@ -217,5 +217,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Calcular cargas y esfuerzos, estimar costos, preparar informes y analizar planos son actividades que la IA puede asistir. Inspeccionar obras, dirigir en sitio, probar suelos y materiales y asegurar el cumplimiento son trabajo de campo o de responsabilidad profesional.",
+    "entender": "Exposición moderada con confianza baja y un rango muy amplio (21–67): muestra qué actividades cambian primero, no un valor preciso. Las partes de campo y de firma tienen un peso humano alto.",
+    "oportunidades": "Integrar los datos de obra con criterio de campo y apoyarse en las herramientas de cálculo y reportes, mientras la supervisión y la responsabilidad quedan en la persona."
   }
 }

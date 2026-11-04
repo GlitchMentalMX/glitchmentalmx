@@ -237,5 +237,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Redactar, editar, investigar antecedentes y verificar datos son actividades que la IA puede asistir. Entrevistar, cubrir eventos en el lugar, conducir transmisiones y coordinar con editores y audiencias dependen de la presencia y de las relaciones.",
+    "entender": "Exposición moderada: el peso se reparte a partes iguales entre el trabajo con texto, más asistible, y el trabajo de campo. Que la IA pueda ayudar a redactar no equivale a sustituir el reporteo. El rango es 37–59.",
+    "oportunidades": "El reporteo en campo, las fuentes propias y la verificación; y usar herramientas para transcribir, buscar en documentos y analizar datos públicos para liberar tiempo de investigación."
   }
 }

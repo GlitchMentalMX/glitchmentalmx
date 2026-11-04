@@ -238,5 +238,10 @@
     "fecha": "2026-11-03",
     "estado": "revisada",
     "revisado_por": "Jorge A. Diaz Elizondo"
+  },
+  "interpretacion": {
+    "significa": "Traducir textos escritos y compilar terminología son las actividades más asistibles. Interpretar en vivo, resolver ambigüedades de sentido y cultura y cumplir códigos de confidencialidad dependen más de las personas.",
+    "entender": "Exposición moderada: la traducción escrita y la interpretación en vivo no se comportan igual y el promedio las mezcla. El rango es 45–68.",
+    "oportunidades": "Revisión experta y control de calidad de textos asistidos por herramientas, y especialización en la terminología de un sector."
   }
 }
