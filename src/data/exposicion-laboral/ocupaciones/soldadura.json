@@ -186,9 +186,19 @@
   ],
   "contexto": {
     "mx": {
-      "nivel": "pendiente",
-      "texto": null,
-      "fuentes": []
+      "nivel": "nacional",
+      "texto": "En el primer trimestre de 2026, DataMéxico (Secretaría de Economía), con datos de la ENOE del INEGI, registra 140 mil personas ocupadas en el grupo «Soldadores y Oxicortadores» (SINCO 7212). Su informalidad laboral es de 46.3%, frente a 54.8% del promedio nacional. Mide el tamaño y las condiciones de empleo del grupo; no mide exposición a la IA ni pérdida de empleos.",
+      "verificacion": "Cifras leídas directamente en el perfil del grupo en DataMéxico el 2026-11-03. No se usan los datos de salarios de esa fuente, que advierte baja precisión estadística.",
+      "fuentes": [
+        {
+          "fuente": "DataMéxico: Soldadores y Oxicortadores, 2026-T1",
+          "url": "https://www.economia.gob.mx/datamexico/es/profile/occupation/soldadores-y-oxicortadores"
+        },
+        {
+          "fuente": "INEGI: Encuesta Nacional de Ocupación y Empleo (ENOE)",
+          "url": "https://www.inegi.org.mx/programas/enoe/15ymas/"
+        }
+      ]
     },
     "es": {
       "nivel": "pendiente"

@@ -161,9 +161,19 @@
   ],
   "contexto": {
     "mx": {
-      "nivel": "pendiente",
-      "texto": null,
-      "fuentes": []
+      "nivel": "nacional",
+      "texto": "En el primer trimestre de 2026, DataMéxico (Secretaría de Economía), con datos de la ENOE del INEGI, registra 124 mil personas ocupadas en el grupo «Especialistas y Consultores en Mercadotecnia, Publicidad, Comunicación y Comercio Exterior» (SINCO 2112). Su informalidad laboral es de 22.5%, frente a 54.8% del promedio nacional. Mide el tamaño y las condiciones de empleo del grupo; no mide exposición a la IA ni pérdida de empleos. Es un grupo más amplio que el de esta ficha: incluye publicidad, comunicación y comercio exterior.",
+      "verificacion": "Cifras leídas directamente en el perfil del grupo en DataMéxico el 2026-11-03. No se usan los datos de salarios de esa fuente, que advierte baja precisión estadística.",
+      "fuentes": [
+        {
+          "fuente": "DataMéxico: Especialistas y Consultores en Mercadotecnia, Publicidad, Comunicación y Comercio Exterior, 2026-T1",
+          "url": "https://www.economia.gob.mx/datamexico/es/profile/occupation/especialistas-y-consultores-en-mercadotecnia-publicidad-comunicacion-y-comercio-exterior"
+        },
+        {
+          "fuente": "INEGI: Encuesta Nacional de Ocupación y Empleo (ENOE)",
+          "url": "https://www.inegi.org.mx/programas/enoe/15ymas/"
+        }
+      ]
     },
     "es": {
       "nivel": "pendiente"

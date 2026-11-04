@@ -212,7 +212,7 @@
     "mx": {
       "nivel": "nacional",
       "texto": "Análisis preliminar de México, ¿cómo vamos? (agosto de 2026), con microdatos de la ENOE del primer trimestre de 2026 y el índice OIT-NASK de exposición a la IA generativa. Estima unos 470,000 contadores y auditores entre las ocupaciones con exposición media o alta. Es una medida distinta a la de este índice (cuenta personas en ocupaciones expuestas) y no indica pérdida de empleos.",
-      "verificacion": "Cifra reportada por prensa (Expansión, EFE); el informe original de México, ¿cómo vamos? no se localizó en línea al 2026-11-03.",
+      "verificacion": "La cifra de prensa coincide con la que publica DataMéxico (Secretaría de Economía, con datos de la ENOE) para el grupo «Contadores y Auditores» en el primer trimestre de 2026: 470 mil personas ocupadas (SINCO 2121, leído el 2026-11-03). El informe original de México, ¿cómo vamos? no se localizó en línea.",
       "fuentes": [
         {
           "fuente": "Expansión, 11 de agosto de 2026",
@@ -221,6 +221,10 @@
         {
           "fuente": "EFE vía Swissinfo, 3 de agosto de 2026",
           "url": "https://www.swissinfo.ch/spa/cerca-de-tres-millones-de-empleos-en-m%c3%a9xico-tienen-una-exposici%c3%b3n-media-o-alta-a-la-ia/91841077"
+        },
+        {
+          "fuente": "DataMéxico: Contadores y Auditores, 2026-T1",
+          "url": "https://www.economia.gob.mx/datamexico/es/profile/occupation/contadores-y-auditores"
         }
       ]
     },

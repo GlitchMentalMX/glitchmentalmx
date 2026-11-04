@@ -56,7 +56,7 @@ const schema = {
       <input id="q" type="search" placeholder="Ej.: contabilidad, enfermería, soldadura" autocomplete="off" />
     </div>
     <fieldset class="geo">
-      <legend>Contexto geográfico</legend>
+      <legend>Contexto geográfico <span class="geo-aviso">(la puntuación no cambia con el país)</span></legend>
       {GEOGRAFIAS.map((g, i) => (
         <label class="geo-op">
           <input type="radio" name="geo" value={g.id} checked={i === 0} />
@@ -70,7 +70,7 @@ const schema = {
     </div>
     <div class="geo-nota" id="geo-nota" aria-live="polite">
       <p data-geo="mx">
-        <strong>México.</strong> La puntuación es común a todos los países. El contexto nacional (ENOE) está disponible para
+        <strong>México.</strong> La puntuación es común a todos los países. El contexto nacional (ENOE) está disponible para{' '}
         {conMx} de {fichas.length} ocupaciones; en el resto, aún no hay datos verificables por ocupación.
       </p>
       <p data-geo="es" hidden>
@@ -86,7 +86,11 @@ const schema = {
   </section>
 
   <section class="container resultados" aria-label="Profesiones">
-    <p class="cuenta" id="cuenta" aria-live="polite">{fichas.length} profesiones</p>
+    <div class="barra">
+      <p class="cuenta" id="cuenta" aria-live="polite">{fichas.length} profesiones</p>
+      <button type="button" class="limpiar" id="limpiar" hidden>Restablecer filtros</button>
+    </div>
+    <p class="pista">Haz clic en una tarjeta o en el nombre de la profesión para ver el desglose completo: qué actividades están expuestas, dónde pesa lo humano y las oportunidades.</p>
     <ul class="grid" id="grid">
       {fichas.map((f) => (
         <li class="card" data-nombre={norm(`${f.nombre.es} ${f.sector}`)} data-sector={f.sector} data-mx={f.contexto.mx.nivel}>
@@ -168,7 +172,7 @@ const schema = {
 
   <section class="container bloque puente">
     <p>
-      ¿Quieres personalizarlo con tu región, estudios y experiencia?
+      ¿Quieres personalizarlo con tu región, estudios y experiencia?{' '}
       <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Prueba la Calculadora de Riesgo IA →</a>
     </p>
   </section>
@@ -183,6 +187,7 @@ const schema = {
   const notas = [...document.querySelectorAll<HTMLElement>('#geo-nota [data-geo]')];
   const cuenta = document.getElementById('cuenta')!;
   const vacio = document.getElementById('vacio')!;
+  const limpiar = document.getElementById('limpiar') as HTMLButtonElement;
   let sector = '';
 
   function render() {
@@ -196,18 +201,29 @@ const schema = {
       const ctx = c.querySelector<HTMLElement>('[data-ctx]')!;
       if (geo === 'mx') {
         const hay = c.dataset.mx === 'nacional';
-        ctx.hidden = !hay;
-        ctx.textContent = 'Contexto de México disponible';
+        ctx.hidden = false;
+        ctx.classList.toggle('sin', !hay);
+        ctx.textContent = hay ? 'Contexto de México disponible' : 'Contexto de México pendiente';
       } else {
         ctx.hidden = false;
+        ctx.classList.add('sin');
         ctx.textContent = 'Contexto nacional pendiente';
       }
     }
     for (const p of notas) p.hidden = p.dataset.geo !== geo;
     cuenta.textContent = n === 1 ? '1 profesión' : `${n} profesiones`;
     vacio.hidden = n !== 0;
+    limpiar.hidden = !(term || sector || geo !== geos[0].value);
   }
 
+  limpiar.addEventListener('click', () => {
+    q.value = '';
+    sector = '';
+    cats.forEach((x) => x.classList.toggle('activo', x.dataset.sector === ''));
+    geos[0].checked = true;
+    render();
+    q.focus();
+  });
   q.addEventListener('input', render);
   geos.forEach((g) => g.addEventListener('change', render));
   cats.forEach((b) =>
@@ -233,6 +249,11 @@ const schema = {
   .busca input { width: 100%; max-width: 520px; padding: 12px 14px; font: inherit; color: var(--text); background: var(--bg-elevated); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); }
   .geo { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px 10px; }
   .geo legend { padding: 0; width: 100%; }
+  .geo-aviso { font-weight: 400; color: var(--text-muted); }
+  .barra { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .limpiar { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; font-size: 0.9rem; text-decoration: underline; cursor: pointer; }
+  .pista { color: var(--text-muted); font-size: 0.9rem; margin: 4px 0 16px; max-width: var(--measure); }
+  .ctx.sin { opacity: 0.6; }
   .geo-op { cursor: pointer; }
   .geo-op input { position: absolute; opacity: 0; pointer-events: none; }
   .geo-op span { display: inline-block; padding: 7px 14px; border: 1px solid var(--border-strong); border-radius: 99px; font-size: 0.9rem; }
