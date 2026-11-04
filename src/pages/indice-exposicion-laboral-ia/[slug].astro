@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
 import ExposicionEscala from '../../components/ExposicionEscala.astro';
-import { cargarFichas, edicion, GEOGRAFIAS, AVISO, NOMBRE, RUTA, ETIQUETA_EVIDENCIA, PESOS } from '../../lib/exposicion';
+import { cargarFichas, edicion, AVISO, NOMBRE, RUTA, ETIQUETA_EVIDENCIA, PESOS } from '../../lib/exposicion';
 import type { GetStaticPaths } from 'astro';
 
 export const getStaticPaths = (async () => {
@@ -88,30 +88,20 @@ const schema = {
       </ul>
     </section>
 
-    <section>
-      <h2>Contexto geográfico</h2>
-      <div class="geos">
-        {GEOGRAFIAS.map((g) => {
-          const c = ficha.contexto[g.id];
-          return (
-            <div class="geo">
-              <h3>{g.nombre}</h3>
-              {c.nivel === 'pendiente' ? (
-                <p>Cobertura pendiente. La puntuación base aplica, pero aún no hay evidencia local suficiente por ocupación; preferimos no inventarla.</p>
-              ) : (
-                <>
-                  <p>{c.texto}</p>
-                  {c.verificacion && <p class="nota">{c.verificacion}</p>}
-                  {c.fuentes && c.fuentes.length > 0 && (
-                    <p class="nota">Fuentes: {c.fuentes.map((f, i) => <><a href={f.url} rel="noopener">{f.fuente}</a>{i < c.fuentes!.length - 1 ? ' · ' : ''}</>)}</p>
-                  )}
-                </>
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </section>
+    {ficha.contexto.mx.nivel !== 'pendiente' && (
+      <section>
+        <h2>Contexto de empleo en México</h2>
+        <div class="geos">
+          <div class="geo">
+            <p>{ficha.contexto.mx.texto}</p>
+            {ficha.contexto.mx.verificacion && <p class="nota">{ficha.contexto.mx.verificacion}</p>}
+            {ficha.contexto.mx.fuentes && ficha.contexto.mx.fuentes.length > 0 && (
+              <p class="nota">Fuentes: {ficha.contexto.mx.fuentes.map((f, i) => <><a href={f.url} rel="noopener">{f.fuente}</a>{i < ficha.contexto.mx.fuentes!.length - 1 ? ' · ' : ''}</>)}</p>
+            )}
+          </div>
+        </div>
+      </section>
+    )}
 
     <section>
       <h2>Cómo sale esta puntuación</h2>
