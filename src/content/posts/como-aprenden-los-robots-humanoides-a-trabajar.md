@@ -6,7 +6,7 @@ updatedDate: ''
 description: Los humanoides ya existen en cantidad. Lo escaso son los datos de cómo se hace un trabajo, y detrás hay oficios humanos que casi no se ven.
 heroImage: /images/uploads/robots-ensenar-trabajo.webp
 heroImageAlt: 'Robots humanoides y datos de trabajo: mujer guía las manos de un robot humanoide al cepillar una tabla de roble'
-draft: true
+draft: false
 ---
 
 China fabricó más de 40,000 robots humanoides en el primer semestre de 2026, según cifras del Ministerio de Industria y Tecnología Informática citadas por Xinhua. **El cuerpo ya existe en cantidad.** Lo que falta es enseñarle un oficio, y ese trabajo lo hacen personas.
