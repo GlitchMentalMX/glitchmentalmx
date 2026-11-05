@@ -86,6 +86,9 @@ postSlugs:
   - que-importa-que-es-marketing-debate-ia
   - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
   - largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+  - como-aprenden-los-robots-humanoides-a-trabajar
+  - estamos-cerca-de-la-singularidad-evidencia-privada
+  - ia-encuentra-fallas-quien-las-corrige
 sections:
   - title: Geopolítica de la IA
     description: >-
@@ -123,6 +126,7 @@ sections:
       - slug: disney-tiktok-trampa-oficializar-fan-edit
       - slug: aduana-comercio-ia-quien-decide-quien-entra
       - slug: contrabando-chips-ia-como-se-cuelan-a-china
+      - slug: ia-encuentra-fallas-quien-las-corrige
   - title: Vigilancia y Control Social
     description: >-
       Cómo la tecnología se convierte en instrumento de poder sobre
@@ -171,6 +175,7 @@ sections:
       - slug: doom-loop-midieron-como-rompian-la-web
       - slug: agente-ia-va-de-compras-quien-pierde-negocio
       - slug: danos-actuales-ia-crawford-gebru-bender-vallor
+      - slug: como-aprenden-los-robots-humanoides-a-trabajar
   - title: Desinformación como Sistema
     description: >-
       Cómo la mentira se industrializó y por qué es tan difícil
@@ -225,6 +230,7 @@ sections:
         tag: serie
       - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
       - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+      - slug: estamos-cerca-de-la-singularidad-evidencia-privada
   - title: Cuerpo y Código
     description: >-
       Cuando el genoma se convierte en software — y alguien decide quién

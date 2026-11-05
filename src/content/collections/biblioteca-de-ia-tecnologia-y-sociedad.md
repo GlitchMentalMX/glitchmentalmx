@@ -9,7 +9,7 @@ description: >-
   está pasando detrás: quién tiene el poder, quién lo pierde y qué queda fuera
   de la conversación pública.
 intro: >-
-  Ciento veintisiete artículos organizados en diez secciones, de fundamentos a
+  Ciento treinta y tres artículos organizados en diez secciones, de fundamentos a
   geopolítica. No hace falta leerlos en orden ni todos de un jalón: cada
   sección funciona sola. Si es tu primera visita, empieza por la ruta
   recomendada de abajo — son los textos que dan el contexto que el resto da
@@ -142,6 +142,12 @@ postSlugs:
   - ia-hackeo-gobierno-pregunta-aburrida
   - contrabando-chips-ia-como-se-cuelan-a-china
   - cancelar-cuesta-mas-que-contratar-patron-oscuro
+  - php2shell-falla-ia-costo-explotar
+  - ia-encuentra-fallas-quien-las-corrige
+  - ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
+  - como-aprenden-los-robots-humanoides-a-trabajar
+  - estamos-cerca-de-la-singularidad-evidencia-privada
+  - valor-medible-de-la-ia-kpmg
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -180,6 +186,7 @@ sections:
         tag: serie
       - slug: el-prompt-no-murio-la-industria-aprendio-a-delegar
       - slug: chatbot-se-equivoco-formato-lo-volvio-inteligencia
+      - slug: estamos-cerca-de-la-singularidad-evidencia-privada
   - title: Crítica e Impacto Social de la IA
     description: >-
       Cómo la IA afecta la cognición, las relaciones y el poder — más allá
@@ -207,6 +214,7 @@ sections:
       - slug: que-importa-que-es-marketing-debate-ia
         tag: serie
       - slug: anthropic-se-autocalifico-en-ciencia
+      - slug: valor-medible-de-la-ia-kpmg
   - title: Privacidad y Vigilancia
     description: Lo que cedes cuando usas tecnología, quién lo recibe y para qué.
     posts:
@@ -255,6 +263,8 @@ sections:
       - slug: pagas-por-la-ia-que-te-convierte-en-su-empleado-no-remunerado
       - slug: el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas
       - slug: deprecado-novela-creadores-inteligencia-artificial
+      - slug: ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
+      - slug: como-aprenden-los-robots-humanoides-a-trabajar
   - title: Plataformas y Algoritmos
     description: Cómo funcionan los sistemas que deciden lo que ves, sientes y decides.
     posts:
@@ -326,6 +336,8 @@ sections:
       - slug: ia-hackeo-gobierno-pregunta-aburrida
       - slug: contrabando-chips-ia-como-se-cuelan-a-china
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
+      - slug: php2shell-falla-ia-costo-explotar
+      - slug: ia-encuentra-fallas-quien-las-corrige
   - title: Tecnología y Cuerpo
     description: >-
       Cuando la biología deja de ser un límite fijo y se convierte en

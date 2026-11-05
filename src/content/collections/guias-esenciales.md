@@ -88,6 +88,11 @@ postSlugs:
   - algoritmo-te-pregunta-que-quieres-y-no-te-cree
   - pantalla-del-hogar-reconoce-quien-eres-y-quien-no
   - cancelar-cuesta-mas-que-contratar-patron-oscuro
+  - php2shell-falla-ia-costo-explotar
+  - ia-encuentra-fallas-quien-las-corrige
+  - como-aprenden-los-robots-humanoides-a-trabajar
+  - estamos-cerca-de-la-singularidad-evidencia-privada
+  - valor-medible-de-la-ia-kpmg
 sections:
   - title: Cultura Digital
     description: Identidad, atención y vida en internet.
@@ -164,6 +169,8 @@ sections:
       - slug: anthropic-se-autocalifico-en-ciencia
       - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
       - slug: que-importa-que-es-marketing-debate-ia
+      - slug: estamos-cerca-de-la-singularidad-evidencia-privada
+      - slug: valor-medible-de-la-ia-kpmg
   - title: Sistemas Autónomos
     description: Automatización, autonomía y quién sigue al mando.
     posts:
@@ -180,6 +187,9 @@ sections:
       - slug: idioma-ia-opacidad-auditoria
       - slug: aduana-comercio-ia-quien-decide-quien-entra
       - slug: ia-hackeo-gobierno-pregunta-aburrida
+      - slug: php2shell-falla-ia-costo-explotar
+      - slug: ia-encuentra-fallas-quien-las-corrige
+      - slug: como-aprenden-los-robots-humanoides-a-trabajar
   - title: Tendencias Tecnológicas
     description: Cómo distinguir una tendencia pasajera de una transformación de fondo.
     posts:

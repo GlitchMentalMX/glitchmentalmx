@@ -8,7 +8,7 @@ description: >-
   temporal: lo que ya está cambiando, lo que cambiará antes de 2030 y lo que
   reescribirá las reglas después.
 intro: >-
-  Veintiséis artículos sobre las tecnologías y los debates que están
+  Veintinueve artículos sobre las tecnologías y los debates que están
   redefiniendo el mundo, analizados por horizonte temporal: lo que ya está cambiando, lo que
   cambiará antes de 2030 y lo que reescribirá las reglas después. Sin fechas inventadas, sin
   promesas vacías, sin ruido.
@@ -39,6 +39,9 @@ postSlugs:
   - riesgo-existencial-ia-bostrom-ord-russell
   - largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
   - contrabando-chips-ia-como-se-cuelan-a-china
+  - como-aprenden-los-robots-humanoides-a-trabajar
+  - estamos-cerca-de-la-singularidad-evidencia-privada
+  - ia-encuentra-fallas-quien-las-corrige
 sections:
   - title: Corto plazo
     description: '2025–2027 — está ocurriendo ahora.'
@@ -55,6 +58,7 @@ sections:
       - slug: robots-humanoides-en-logistica-china-ya-son-operativos
       - slug: ia-autonoma-en-espacio-profundo-que-cambia-en-artemis
       - slug: japon-y-la-ia-fisica-robots-para-empleos-sin-candidatos
+      - slug: como-aprenden-los-robots-humanoides-a-trabajar
   - title: Mediano plazo
     description: '2027–2030 — la dirección ya es visible.'
     posts:
@@ -75,6 +79,7 @@ sections:
       - slug: futuro-de-la-humanidad-con-la-ia-mapa-del-debate
       - slug: riesgo-existencial-ia-bostrom-ord-russell
       - slug: largoplacismo-abundancia-ia-kurzweil-tegmark-bostrom
+      - slug: estamos-cerca-de-la-singularidad-evidencia-privada
   - title: Infraestructura invisible
     description: Lo que sostiene todo y nadie está cubriendo bien.
     posts:
@@ -82,5 +87,6 @@ sections:
       - slug: los-cables-que-sostienen-internet-y-nadie-protege-bien
       - slug: lo-que-se-pierde-cuando-muere-una-plataforma-digital
       - slug: contrabando-chips-ia-como-se-cuelan-a-china
+      - slug: ia-encuentra-fallas-quien-las-corrige
 order: 5
 ---

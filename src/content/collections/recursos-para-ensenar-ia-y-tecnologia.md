@@ -117,6 +117,12 @@ postSlugs:
   - algoritmo-te-pregunta-que-quieres-y-no-te-cree
   - pantalla-del-hogar-reconoce-quien-eres-y-quien-no
   - cancelar-cuesta-mas-que-contratar-patron-oscuro
+  - como-aprenden-los-robots-humanoides-a-trabajar
+  - estamos-cerca-de-la-singularidad-evidencia-privada
+  - php2shell-falla-ia-costo-explotar
+  - ia-encuentra-fallas-quien-las-corrige
+  - ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
+  - valor-medible-de-la-ia-kpmg
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -178,6 +184,7 @@ sections:
       - slug: danos-actuales-ia-crawford-gebru-bender-vallor
       - slug: debate-futuro-ia-coincidencias-choques
       - slug: que-importa-que-es-marketing-debate-ia
+      - slug: como-aprenden-los-robots-humanoides-a-trabajar
   - title: Para Posgrado e Investigación
     description: >-
       Mayor profundidad analítica. Para seminarios, marcos teóricos y
@@ -276,6 +283,8 @@ sections:
         tag: debate
       - slug: que-importa-que-es-marketing-debate-ia
         tag: debate
+      - slug: estamos-cerca-de-la-singularidad-evidencia-privada
+        tag: debate
   - title: Casos de Estudio
     description: >-
       Situaciones reales documentadas para análisis estructurado, trabajos
@@ -343,6 +352,14 @@ sections:
         tag: caso
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
         tag: caso
+      - slug: php2shell-falla-ia-costo-explotar
+        tag: caso
+      - slug: ia-encuentra-fallas-quien-las-corrige
+        tag: caso
+      - slug: ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
+        tag: caso
+      - slug: valor-medible-de-la-ia-kpmg
+        tag: caso
   - title: Perspectiva LATAM
     description: >-
       Para docentes que enseñan tecnología desde América Latina — con
@@ -365,6 +382,9 @@ sections:
       - slug: quien-responde-cuando-ia-hackea-hugging-face
       - slug: cuanto-cuesta-espiar-hoy
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
+      - slug: ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
+      - slug: valor-medible-de-la-ia-kpmg
+      - slug: como-aprenden-los-robots-humanoides-a-trabajar
   - title: Guías de Uso Práctico
     description: >-
       Para integrar IA en el trabajo docente y en procesos educativos — sin
