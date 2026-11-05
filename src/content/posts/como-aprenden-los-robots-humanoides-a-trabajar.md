@@ -1,7 +1,7 @@
 ---
 title: Los robots ya caminan. Lo difícil es enseñarles a trabajar
 category: Inteligencia Artificial
-pubDate: 2026-11-02T11:11
+pubDate: 2026-11-05T05:05
 updatedDate: ''
 description: Los humanoides ya existen en cantidad. Lo escaso son los datos de cómo se hace un trabajo, y detrás hay oficios humanos que casi no se ven.
 heroImage: /images/uploads/robots-ensenar-trabajo.webp
