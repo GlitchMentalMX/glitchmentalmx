@@ -53,16 +53,37 @@ const latestInsight = insights[0];
 // más antigua); el resto vive en /novelas/ ("Ver catálogo completo").
 const novelasPublicadas = books.slice(0, 3);
 
-// Explora — cada columna es una lista real de contenido, con una barra
-// proporcional al número de artículos de cada serie/colección (dato real,
-// no decoración) escalada contra el máximo de su propia columna.
+// Explora — cada columna es una lista real de contenido. Los números salen
+// de postSlugs (nunca a mano); las descripciones temáticas viven aquí porque
+// el esquema de la colección no tiene un campo corto para ellas.
+const exploraDesc: Record<string, string> = {
+  'el-negocio-de-la-virtud': 'Ética corporativa convertida en estrategia por la IA.',
+  'panoptico-digital': 'Plataformas, algoritmos y poder sobre tu atención.',
+  'manos-libres': 'IA, trabajo creativo, derechos y apropiación de la voz.',
+  'protocolo-kernel': 'Biología convertida en código y quién accede a ella.',
+  'humanos-en-beta': 'Identidad humana frente a algoritmos y plataformas.',
+  'el-espia-que-compraste': 'Dispositivos propios que recopilan y monetizan tus datos.',
+  'futuro-humanidad-ia-filosofos': 'Posturas filosóficas sobre el futuro humano con IA.',
+  'ingenieria-de-la-confianza': 'Fraude digital y cómo se fabrica la confianza.',
+  'detras-del-prompt': 'Agua, energía y territorio detrás de la IA en México.',
+  'guias-esenciales': 'Ideas clave de cultura digital e inteligencia artificial.',
+  'horizonte-critico': 'Tecnologías emergentes analizadas por horizonte temporal.',
+  'biblioteca-de-ia-tecnologia-y-sociedad': 'Artículos de fondo sobre poder, IA y sociedad.',
+  'mapa-de-poder-tech': 'Quién controla la infraestructura digital, con mirada LATAM.',
+  'recursos-para-ensenar-ia-y-tecnologia': 'Material por nivel para llevar la tecnología al aula.',
+};
+
 const exploraColumns = [
   {
     eyebrow: 'Series editoriales (audio)',
+    summary: 'Análisis por entregas sobre un mismo tema, con resumen en audio.',
     href: '/series/',
+    unit: 'entregas',
+    allLabel: 'Ver todas las series',
     items: series.map((s) => ({
       href: `/series/${s.id}/`,
       label: s.data.title,
+      desc: exploraDesc[s.id],
       count: s.data.postSlugs.length,
       soon: s.data.status === 'coming-soon',
       audioSrc: s.data.audio?.src,
@@ -71,26 +92,33 @@ const exploraColumns = [
   {
     eyebrow: 'Colecciones',
     subtitle: 'Guías por tema',
+    summary: 'Artículos reunidos por tema y ordenados para recorrerlos.',
     href: '/colecciones/',
+    unit: 'artículos',
+    allLabel: 'Ver todas las colecciones',
     items: standaloneHubs.map((h) => ({
       href: `/colecciones/${h.id}/`,
       label: h.data.title,
+      desc: exploraDesc[h.id],
       count: h.data.postSlugs.length,
     })),
   },
   {
     eyebrow: groupName,
     subtitle: 'Para profundizar',
+    summary: 'Bibliotecas de consulta para estudiar y enseñar tecnología.',
     href: '/colecciones/',
+    unit: 'artículos',
+    allLabel: 'Ver todos los recursos',
     items: groupedHubs.map((h) => ({
       href: `/colecciones/${h.id}/`,
       label: h.data.title,
+      desc: exploraDesc[h.id],
       count: h.data.postSlugs.length,
     })),
   },
 ].map((col) => ({
   ...col,
-  maxCount: Math.max(...col.items.map((i) => i.count), 1),
   // Si alguna fila de la columna lleva play, las que no lo tienen reservan su ancho
   // para que todos los nombres queden alineados.
   hasAudio: col.items.some((i) => 'audioSrc' in i && Boolean(i.audioSrc)),
@@ -283,34 +311,6 @@ const signalPools = {
     </section>
   )}
 
-  <section class="novelas container">
-    <div class="section-head novelas-head">
-      <div>
-        <h2>Además de análisis, ficción</h2>
-        <p class="section-sub">Tecnothriller de credibilidad periodística — investigación real, convertida en novela.</p>
-      </div>
-      <a href="/novelas/" class="link-accent">Ver catálogo completo →</a>
-    </div>
-    <div class="novelas-grid" role="region" aria-label="Novelas más recientes" tabindex="0">
-      {novelasPublicadas.map((n) => (
-        <article class="novela-card">
-          <a href={`/novelas/${n.id}/`} class="novela-cover-link" tabindex="-1" aria-hidden="true">
-            <img src={n.cover} alt={`Portada de la novela ${n.title}`} loading="lazy" width="400" height="640" />
-          </a>
-          <div class="novela-body">
-            <span class="tag">{n.genre}</span>
-            <div class="novela-title-row">
-              <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
-              <a class="title-more link-accent" href={`/novelas/${n.id}/`}>Ver novela →</a>
-            </div>
-            <p>{n.homeDesc ?? n.desc}</p>
-            <BookActions book={n} block />
-          </div>
-        </article>
-      ))}
-    </div>
-  </section>
-
   {recentThree.length > 0 && (
     <section class="recent container">
       <div class="section-head">
@@ -337,8 +337,8 @@ const signalPools = {
 
   <section class="explora container">
     <div class="section-head explora-head">
-      <h2>Explora</h2>
-      <p class="section-sub">No son cards bonitas. Son datos: cuánto contenido hay detrás de cada colección.</p>
+      <h2>Explora el archivo editorial</h2>
+      <p class="section-sub">Investigaciones, guías y recursos para entender la tecnología más allá del titular.</p>
     </div>
     <div class="explora-grid">
       {exploraColumns.map((col) => (
@@ -347,9 +347,10 @@ const signalPools = {
             <p class="eyebrow">{col.eyebrow}</p>
             {col.subtitle && <h3>{col.subtitle}</h3>}
           </a>
+          <p class="panel-summary">{col.summary}</p>
           <ul class="signal-list">
-            {col.items.map((item) => (
-              <li>
+            {col.items.map((item, i) => (
+              <li class:list={{ extra: i >= 3 }}>
                 {item.audioSrc && (
                   <button type="button" class="mini-play" data-mini-play={item.audioSrc} aria-label="Reproducir resumen en audio">
                     <svg data-icon="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5-9-5.5z" /></svg>
@@ -364,16 +365,43 @@ const signalPools = {
                   {item.soon ? (
                     <span class="soon-tag">Pronto</span>
                   ) : (
-                    <>
-                      <span class="bar-track"><span class="bar-fill" style={`width:${(item.count / col.maxCount) * 100}%`}></span></span>
-                      <span class="count">{item.count}</span>
-                    </>
+                    <span class="count">{item.count} {col.unit}</span>
                   )}
+                  {item.desc && <span class="desc">{item.desc}</span>}
                 </a>
               </li>
             ))}
           </ul>
+          <a href={col.href} class="panel-all link-accent">{col.allLabel} →</a>
         </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="novelas container">
+    <div class="section-head novelas-head">
+      <div>
+        <h2>Además de análisis, ficción</h2>
+        <p class="section-sub">Tecnothriller de credibilidad periodística — investigación real, convertida en novela.</p>
+      </div>
+      <a href="/novelas/" class="link-accent">Ver catálogo completo →</a>
+    </div>
+    <div class="novelas-grid" role="region" aria-label="Novelas más recientes" tabindex="0">
+      {novelasPublicadas.map((n) => (
+        <article class="novela-card">
+          <a href={`/novelas/${n.id}/`} class="novela-cover-link" tabindex="-1" aria-hidden="true">
+            <img src={n.cover} alt={`Portada de la novela ${n.title}`} loading="lazy" width="400" height="640" />
+          </a>
+          <div class="novela-body">
+            <span class="tag">{n.genre}</span>
+            <div class="novela-title-row">
+              <h3><a href={`/novelas/${n.id}/`}>{n.title}</a></h3>
+              <a class="title-more link-accent" href={`/novelas/${n.id}/`}>Ver novela →</a>
+            </div>
+            <p>{n.homeDesc ?? n.desc}</p>
+            <BookActions book={n} block />
+          </div>
+        </article>
       ))}
     </div>
   </section>
@@ -809,9 +837,10 @@ const signalPools = {
     flex: 1;
     min-width: 0;
     display: grid;
-    grid-template-columns: 1fr 56px 22px;
-    align-items: center;
-    gap: 10px;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    column-gap: 12px;
+    row-gap: 2px;
     font-size: 0.86rem;
     color: var(--text);
   }
@@ -860,16 +889,11 @@ const signalPools = {
   .signal-list li a:hover .label { color: var(--accent); }
   .signal-list li a.muted { color: var(--text-muted); }
   .signal-list .label { line-height: 1.3; }
-  .signal-list .bar-track {
-    height: 3px;
-    border-radius: 2px;
-    background: var(--border);
-    overflow: hidden;
-  }
-  .signal-list .bar-fill { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
-  .signal-list .count { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); text-align: right; }
+  .signal-list .count { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
+  .signal-list .desc { grid-column: 1 / -1; font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); }
+  .panel-summary { margin: 10px 0 0; font-size: 0.82rem; line-height: 1.45; color: var(--text-muted); }
+  .panel-all { display: none; margin-top: 16px; font-size: 0.86rem; }
   .signal-list .soon-tag {
-    grid-column: 2 / 4;
     font-family: var(--font-mono);
     font-size: 0.65rem;
     text-transform: uppercase;
@@ -1274,6 +1298,8 @@ const signalPools = {
 
   @media (max-width: 900px) {
     .explora-grid { grid-template-columns: 1fr; }
+    .signal-list li.extra { display: none; }
+    .panel-all { display: inline-block; }
   }
 </style>
 
