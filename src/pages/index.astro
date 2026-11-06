@@ -60,14 +60,14 @@ const exploraDesc: Record<string, string> = {
   'el-negocio-de-la-virtud': 'Ética corporativa convertida en estrategia por la IA.',
   'panoptico-digital': 'Plataformas, algoritmos y poder sobre tu atención.',
   'manos-libres': 'IA, trabajo creativo, derechos y apropiación de la voz.',
-  'protocolo-kernel': 'Biología convertida en código y quién accede a ella.',
+  'protocolo-kernel': 'Biotecnología, datos biológicos y sus implicaciones.',
   'humanos-en-beta': 'Identidad humana frente a algoritmos y plataformas.',
   'el-espia-que-compraste': 'Dispositivos propios que recopilan y monetizan tus datos.',
   'futuro-humanidad-ia-filosofos': 'Posturas filosóficas sobre el futuro humano con IA.',
   'ingenieria-de-la-confianza': 'Fraude digital y cómo se fabrica la confianza.',
   'detras-del-prompt': 'Agua, energía y territorio detrás de la IA en México.',
   'guias-esenciales': 'Ideas clave de cultura digital e inteligencia artificial.',
-  'horizonte-critico': 'Tecnologías emergentes analizadas por horizonte temporal.',
+  'horizonte-critico': 'Tecnologías emergentes y sus posibles impactos.',
   'biblioteca-de-ia-tecnologia-y-sociedad': 'Artículos de fondo sobre poder, IA y sociedad.',
   'mapa-de-poder-tech': 'Quién controla la infraestructura digital, con mirada LATAM.',
   'recursos-para-ensenar-ia-y-tecnologia': 'Material por nivel para llevar la tecnología al aula.',
@@ -91,7 +91,7 @@ const exploraColumns = [
   },
   {
     eyebrow: 'Colecciones',
-    subtitle: 'Conocimiento organizado para explorar.',
+    subtitle: 'Guías para entender temas complejos.',
     summary: 'Guías y artículos agrupados por tema para consultar y recorrer.',
     href: '/colecciones/',
     unit: 'artículos',
@@ -333,7 +333,7 @@ const signalPools = {
   <section class="explora container">
     <div class="section-head explora-head">
       <h2>Explora el archivo editorial</h2>
-      <p class="section-sub">Investigaciones, guías y recursos para entender la tecnología más allá del titular.</p>
+      <p class="section-sub">Análisis, guías y recursos para leer la tecnología sin el filtro del entusiasmo corporativo</p>
     </div>
     <div class="explora-grid">
       {exploraColumns.map((col) => (
@@ -835,6 +835,14 @@ const signalPools = {
   .signal-list .count { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
   .signal-list .desc { grid-column: 1 / -1; font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); }
   .panel-summary { margin: 10px 0 0; font-size: 0.82rem; line-height: 1.45; color: var(--text-muted); }
+  /* Escritorio: Colecciones y Recursos tienen 3 filas contra 8 de Series;
+     se les da más aire (y un separador sutil) para que el vacío inferior no
+     se vea tan desproporcionado, sin apretar la columna de Series. */
+  @media (min-width: 901px) {
+    .explora-panel:not(:first-child) .signal-list { gap: 0; margin-top: 18px; }
+    .explora-panel:not(:first-child) .signal-list li { padding: 24px 0; border-top: 1px solid var(--border); }
+    .explora-panel:not(:first-child) .signal-list li:first-child { padding-top: 0; border-top: 0; }
+  }
   .panel-all { display: none; margin-top: 16px; font-size: 0.86rem; }
   .signal-list .soon-tag {
     font-family: var(--font-mono);
