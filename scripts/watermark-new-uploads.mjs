@@ -1,5 +1,5 @@
 // Corre antes de cada build (ver "prebuild" en package.json), antes de
-// optimize-images.mjs. Le agrega el texto "glitchmental.com" — chico,
+// optimize-images.mjs. Le agrega el texto "glitchMentalMX" — chico,
 // discreto, esquina superior derecha — a cualquier imagen NUEVA subida vía
 // Sveltia CMS a public/images/uploads/, que es la única carpeta a la que
 // suben imágenes todas las colecciones (posts, insights, dato incómodo...).
@@ -26,7 +26,7 @@ const SOURCES = [
 ];
 const MANIFEST_PATH = path.join(ROOT, 'scripts', 'watermark-manifest.json');
 const EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp']);
-const WATERMARK_TEXT = 'glitchmental.com';
+const WATERMARK_TEXT = 'glitchMentalMX';
 
 function loadManifest() {
   if (!existsSync(MANIFEST_PATH)) return new Set();
@@ -41,8 +41,8 @@ function saveManifest(set) {
 function buildWatermarkSvg(width, height, corner) {
   const fontSize =
     corner === 'bottom'
-      ? Math.round(Math.max(18, width / 48))
-      : Math.round(Math.min(26, Math.max(14, width / 42)));
+      ? Math.round(Math.max(18, width / 48)) - 3
+      : Math.round(Math.min(26, Math.max(14, width / 42))) - 3;
   const margin = Math.round(fontSize * 0.9);
   const strokeWidth = Math.max(1, Math.round(fontSize * (corner === 'bottom' ? 0.14 : 0.06)));
   const y = corner === 'bottom' ? height - margin : margin + fontSize * 0.8;
@@ -56,9 +56,9 @@ function buildWatermarkSvg(width, height, corner) {
         font-weight="600"
         font-size="${fontSize}"
         fill="#ffffff"
-        fill-opacity="${corner === 'bottom' ? 1 : 0.55}"
+        fill-opacity="${corner === 'bottom' ? 0.9 : 0.45}"
         stroke="#000000"
-        stroke-opacity="${corner === 'bottom' ? 0.6 : 0.25}"
+        stroke-opacity="${corner === 'bottom' ? 0.5 : 0.2}"
         stroke-width="${strokeWidth}"
         paint-order="stroke"
       >${WATERMARK_TEXT}</text>

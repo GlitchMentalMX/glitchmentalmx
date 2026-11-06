@@ -67,6 +67,18 @@ const minutes = readingTime(body || description);
   .card.featured .title { font-family: var(--font-display); font-size: 2rem; }
   .card.featured .dek { font-size: 1.05rem; max-width: 60ch; }
 
+  /* Escritorio: imagen 60% a la izquierda, texto 40% a la derecha, centrado
+     en vertical. Móvil y tablet pequeña siguen apilados (imagen arriba). */
+  @media (min-width: 1024px) {
+    .card.featured {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      column-gap: 2.5rem;
+      align-items: center;
+    }
+    .card.featured .thumb { margin-bottom: 0; }
+  }
+
   .card.grid { border-radius: var(--radius); overflow: hidden; background: var(--bg-inset); }
   .card.grid .thumb { aspect-ratio: 16/9; margin-bottom: 0; border-radius: 0; }
   .card.grid .body { padding: 18px 20px 22px; }
