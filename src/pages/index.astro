@@ -494,7 +494,9 @@ const signalPools = {
   <section class="dato-incomodo container">
     <div class="promo-pair">
       <a href="/dato-incomodo/" class="dato-card">
-        <img src="/images/dato-incomodo/home.webp" alt="Dato Incómodo — lo que no te conviene saber, publicado de todas formas." loading="lazy" width="380" height="214" />
+        <img src="/images/dato-incomodo/home.webp" alt="Ilustración de Dato Incómodo: un personaje de espaldas frente a un escritorio lleno de dispositivos rotos y notas manchadas de tinta." loading="lazy" width="380" height="214" />
+        <h3 class="dato-title">Dato Incómodo</h3>
+        <p class="dato-desc">Lo que no te conviene saber… publicado de todas formas.</p>
         <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
       </a>
       <a href="/juego/" class="dato-card juego-card">
@@ -682,6 +684,10 @@ const signalPools = {
     height: auto;
     border-radius: 4px;
   }
+  /* Texto de la tarjeta Dato Incómodo: va sobre el fondo oscuro de la tarjeta,
+     no dentro de la imagen (la ilustración queda limpia). */
+  .dato-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; line-height: 1.25; margin: 0; color: var(--text); }
+  .dato-desc { margin: -6px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text-muted); }
   .dato-cta { font-size: 0.88rem; }
 
   /* Dato Incómodo + el juego, lado a lado en escritorio y apilados en móvil
