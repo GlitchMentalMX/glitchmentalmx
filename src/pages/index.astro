@@ -363,7 +363,7 @@ const signalPools = {
           </ul>
           {extras > 0 ? (
             <label for={`explora-more-${ci}`} class="panel-more">
-              <span class="more-open">Ver {extras} más +</span>
+              <span class="more-open">Ver las {extras} series restantes</span>
               <span class="more-close">Ver menos −</span>
             </label>
           ) : (
@@ -847,16 +847,6 @@ const signalPools = {
   .signal-list .count { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
   .signal-list .desc { grid-column: 1 / -1; font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); }
   .panel-summary { margin: 10px 0 0; font-size: 0.82rem; line-height: 1.45; color: var(--text-muted); }
-  /* Escritorio: Colecciones y Recursos tienen 3 filas contra 8 de Series;
-     se les da más aire (y un separador sutil) para que el vacío inferior no
-     se vea tan desproporcionado, sin apretar la columna de Series. */
-  @media (min-width: 901px) {
-    .explora-panel:not(:first-child) .signal-list { gap: 0; margin-top: 0; }
-    .explora-panel:not(:first-child) .signal-list li { padding: 24px 0; border-top: 1px solid var(--border); }
-    .explora-panel:not(:first-child) .signal-list li:first-child { border-top: 0; }
-  }
-  .explora-toggle { position: absolute; opacity: 0; pointer-events: none; }
-  .panel-more { display: none; }
   .panel-all { display: none; margin-top: 16px; font-size: 0.86rem; }
   .signal-list .soon-tag {
     font-family: var(--font-mono);
