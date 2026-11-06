@@ -923,6 +923,15 @@ const signalPools = {
   }
   .novela-body :global(.book-actions) { margin-top: auto; }
   .novela-body :global(.book-actions .more) { display: none; }
+  /* Botón de capítulo gratis más compacto en la portada: se ajusta a su texto
+     (no ocupa todo el ancho de la tarjeta) y es más bajo. */
+  .novela-card .novela-body :global(.book-actions.block .main) {
+    width: auto;
+    flex: 0 0 auto;
+    min-height: 36px;
+    padding: 0.5em 1.1em;
+    font-size: 0.88rem;
+  }
   @media (min-width: 901px) {
     .novela-body :global(.book-actions) { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 10px; }
     .novela-body :global(.book-actions.block .main) { width: auto; flex: 1 1 auto; }
