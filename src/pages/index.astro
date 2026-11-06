@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import PreciosTicker from '../components/PreciosTicker.astro';
 import { books } from '../data/books';
 import BookActions from '../components/BookActions.astro';
 import { getCollection, getEntry } from 'astro:content';
@@ -222,7 +221,7 @@ const signalPools = {
     : [],
   serie: seriesPool.map((s) => ({
     tag: 'Serie',
-    text: s.data.audio ? `🎧 ${s.data.title}` : s.data.title,
+    text: s.data.title,
     href: `/series/${s.id}/`,
   })),
   coleccion: hubPool.map((h) => ({
@@ -249,8 +248,8 @@ const signalPools = {
   // Todas las novelas, no solo las 3 de la tarjeta: aquí no ocupan espacio.
   novela: books.map((n) => ({
     tag: 'Novela',
-    text: `${n.title} — adquiérela en Amazon`,
-    href: n.buy,
+    text: `${n.title} — conoce la novela`,
+    href: `/novelas/${n.id}/`,
   })),
 };
 ---
@@ -278,7 +277,7 @@ const signalPools = {
       data-pools={JSON.stringify(signalPools)}
     >
       <span class="signal-meta">
-        <span class="signal-live"><span class="dot"></span>Señal<span class="signal-live-full"> en vivo</span></span>
+        <span class="signal-live">Señal de hoy</span>
         <span class="signal-tag" id="signal-tag">{signalPools.destacado[0]?.tag ?? 'Archivo'}</span>
       </span>
       <span class="signal-body">
@@ -287,8 +286,6 @@ const signalPools = {
       <span class="signal-arrow" aria-hidden="true">→</span>
     </a>
   </section>
-
-  <PreciosTicker />
 
   {featured && (
     <section class="featured container">
@@ -611,19 +608,9 @@ const signalPools = {
     text-transform: uppercase;
     color: var(--text-faint);
   }
-  .signal-live .dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 999px;
-    background: var(--up-line);
-    animation: signalPulse 1.8s ease-in-out infinite;
-  }
   @keyframes signalPulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.35; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .signal-live .dot { animation: none; }
   }
   .signal-tag {
     flex-shrink: 0;
@@ -655,7 +642,6 @@ const signalPools = {
   .signal-tag.is-fading, .signal-text.is-fading { opacity: 0; }
   @media (max-width: 640px) {
     .signal-card { flex-direction: column; align-items: flex-start; gap: 10px; padding: 14px 40px 14px 16px; }
-    .signal-live-full { display: none; }
     .signal-tag { padding-right: 0; border-right: none; }
     .signal-body { flex: none; width: 100%; height: 2.6em; }
     .signal-arrow { top: 16px; transform: none; }
