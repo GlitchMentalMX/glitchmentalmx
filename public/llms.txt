@@ -1,0 +1,46 @@
+# glitchMentalMX
+
+> Análisis crítico de inteligencia artificial, tecnología y cultura digital, en español y con enfoque en México. Sin hype. Datos verificados en la fuente oficial, con fechas de revisión visibles. Autor y editor: Jorge A. Diaz Elizondo.
+
+Sitio editorial independiente. Los precios están en pesos mexicanos con el tipo de cambio oficial de Banxico. Las páginas de datos se revisan de forma periódica y muestran la fecha de su última verificación. Se puede citar cualquier página con enlace a su URL.
+
+## Datos citables y verificados
+
+- [Precios de IA](https://glitchmental.com/precios-ia/): cuánto cuesta cada herramienta de IA hoy en México, en pesos, con tipo de cambio de Banxico actualizado a diario.
+- [Precios Digitales](https://glitchmental.com/precios-digitales/): VPNs, antivirus, gestores de contraseñas, streaming, gaming y otras suscripciones, en pesos mexicanos.
+- [Quién entrena su IA con tus datos](https://glitchmental.com/quien-entrena-con-tus-datos/): verificado en cada política de privacidad, con el camino para desactivar el entrenamiento si existe.
+- [Prueba antes de pagar](https://glitchmental.com/prueba-gratis-sin-tarjeta/): qué herramientas de IA piden tarjeta para probar el plan de pago y cuáles no.
+- [Descuentos para estudiantes](https://glitchmental.com/descuentos-para-estudiantes-ia/): qué ofertas estudiantiles de IA y apps aplican de verdad en México.
+- [Códigos de descuento de IA](https://glitchmental.com/codigos-descuento-ia/): qué canales de descuento son reales y cuáles son falsos o caducados.
+- [Datos abiertos](https://glitchmental.com/datos/): cifras agregadas de las series anteriores, verificadas en fuente oficial.
+- [Índice de Exposición Laboral a la IA](https://glitchmental.com/indice-exposicion-laboral-ia/): qué partes de 21 profesiones están expuestas a la IA. Exposición no es sustitución.
+- [Índice glitchMentalMX](https://glitchmental.com/indice-glitchmentalmx/): ranking de adopción real de 20 tecnologías de IA B2B, con fuentes verificables.
+
+## Series y colecciones editoriales
+
+- [IA sin letra chiquita](https://glitchmental.com/ia-sin-letra-chiquita/): lo que las herramientas de IA no dicen en el primer párrafo (precios, datos, pruebas, descuentos).
+- [Series editoriales](https://glitchmental.com/series/): investigaciones de varias entregas sobre IA, poder y cultura digital.
+- [Colecciones](https://glitchmental.com/colecciones/): selecciones temáticas de artículos.
+- [Archivo de artículos](https://glitchmental.com/archivo/): todos los artículos publicados.
+- [Dato Incómodo](https://glitchmental.com/dato-incomodo/): un dato duro por pieza, cada una con su propia URL y fuentes.
+- [Insights Visuales](https://glitchmental.com/insights-visuales/): una imagen y una idea por pieza.
+
+## Herramientas interactivas
+
+- [¿Qué IA me conviene?](https://glitchmental.com/que-ia-me-conviene/): compara 23 herramientas de IA según el uso, gratis y sin registro.
+- [GlitchSearch](https://glitchmental.com/glitchsearch/): búsqueda web con curaduría editorial y veredicto de IA.
+- [Detox de IA](https://glitchmental.com/detox-de-ia/): test breve de autoevaluación sobre hábitos de uso de IA, con fuentes citadas.
+- [Todas las herramientas](https://glitchmental.com/herramientas/)
+
+## Ficción y juego
+
+- [Novelas](https://glitchmental.com/novelas/): tecnothrillers en español sobre IA, vigilancia algorítmica y edición genética, de Jorge A. Diaz Elizondo.
+- [Pulsa para Empeorar](https://glitchmental.com/juego/): juego web gratis de humor absurdo sobre intentar cancelar una suscripción.
+
+## Sobre el sitio
+
+- [Acerca de](https://glitchmental.com/acerca-de/)
+- [Política de privacidad](https://glitchmental.com/politica-de-privacidad/)
+- [Contacto](https://glitchmental.com/contacto/)
+- [Sitemap](https://glitchmental.com/sitemap-index.xml)
+- [RSS](https://glitchmental.com/rss.xml)

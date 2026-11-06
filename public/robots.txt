@@ -1,3 +1,57 @@
+# glitchMentalMX: contenido abierto a buscadores y a asistentes de IA.
+# Se permite explícitamente a cada rastreador para que ninguna regla futura
+# del bloque general los deje fuera por error. Excepción única: /stats/.
+# Nota: un bloque con nombre propio ignora el bloque "*", por eso
+# "Disallow: /stats/" se repite en cada grupo.
+
+# Buscadores
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /stats/
+
+# OpenAI (entrenamiento, búsqueda y navegación a pedido del usuario)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /stats/
+
+# Anthropic
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: anthropic-ai
+Allow: /
+Disallow: /stats/
+
+# Google (IA: Gemini y AI Overviews) y Apple (IA)
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /stats/
+
+# Perplexity, Microsoft, Meta, Amazon, DuckDuckGo IA, Mistral, Cohere
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: Amazonbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: cohere-ai
+Allow: /
+Disallow: /stats/
+
+# ByteDance y Common Crawl (base de datos que usan muchos modelos)
+User-agent: Bytespider
+User-agent: CCBot
+Allow: /
+Disallow: /stats/
+
+# Todos los demás
 User-agent: *
 Allow: /
 Disallow: /stats/
