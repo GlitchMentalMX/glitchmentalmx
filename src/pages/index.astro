@@ -336,13 +336,16 @@ const signalPools = {
       <p class="section-sub">Análisis, guías y recursos para leer la tecnología sin el filtro del entusiasmo corporativo</p>
     </div>
     <div class="explora-grid">
-      {exploraColumns.map((col) => (
+      {exploraColumns.map((col, ci) => {
+        const extras = Math.max(col.items.length - 3, 0);
+        return (
         <div class="explora-panel">
           <a href={col.href} class="panel-head">
             <span class="tag">{col.eyebrow}</span>
             {col.subtitle && <h3>{col.subtitle}</h3>}
           </a>
           <p class="panel-summary">{col.summary}</p>
+          {extras > 0 && <input type="checkbox" id={`explora-more-${ci}`} class="explora-toggle" />}
           <ul class="signal-list">
             {col.items.map((item, i) => (
               <li class:list={{ extra: i >= 3 }}>
@@ -358,9 +361,17 @@ const signalPools = {
               </li>
             ))}
           </ul>
-          <a href={col.href} class="panel-all link-accent">{col.allLabel} →</a>
+          {extras > 0 ? (
+            <label for={`explora-more-${ci}`} class="panel-more">
+              <span class="more-open">Ver {extras} más +</span>
+              <span class="more-close">Ver menos −</span>
+            </label>
+          ) : (
+            <a href={col.href} class="panel-all link-accent">{col.allLabel} →</a>
+          )}
         </div>
-      ))}
+        );
+      })}
     </div>
   </section>
 
@@ -801,6 +812,7 @@ const signalPools = {
     border-top: 2px solid var(--accent);
     padding: 22px 24px 24px;
     background: var(--bg-inset);
+    position: relative;
   }
   .panel-head { display: block; }
   .panel-head:hover h3 { text-decoration: underline; }
@@ -839,10 +851,12 @@ const signalPools = {
      se les da más aire (y un separador sutil) para que el vacío inferior no
      se vea tan desproporcionado, sin apretar la columna de Series. */
   @media (min-width: 901px) {
-    .explora-panel:not(:first-child) .signal-list { gap: 0; margin-top: 18px; }
+    .explora-panel:not(:first-child) .signal-list { gap: 0; margin-top: 0; }
     .explora-panel:not(:first-child) .signal-list li { padding: 24px 0; border-top: 1px solid var(--border); }
-    .explora-panel:not(:first-child) .signal-list li:first-child { padding-top: 0; border-top: 0; }
+    .explora-panel:not(:first-child) .signal-list li:first-child { border-top: 0; }
   }
+  .explora-toggle { position: absolute; opacity: 0; pointer-events: none; }
+  .panel-more { display: none; }
   .panel-all { display: none; margin-top: 16px; font-size: 0.86rem; }
   .signal-list .soon-tag {
     font-family: var(--font-mono);
@@ -1250,7 +1264,21 @@ const signalPools = {
   @media (max-width: 900px) {
     .explora-grid { grid-template-columns: 1fr; }
     .signal-list li.extra { display: none; }
+    .explora-toggle:checked ~ .signal-list li.extra { display: flex; }
     .panel-all { display: inline-block; }
+    .panel-more {
+      display: inline-block;
+      margin-top: 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      cursor: pointer;
+    }
+    :root[data-theme='dark'] .panel-more { color: #5b93ff; }
+    .panel-more .more-close { display: none; }
+    .explora-toggle:checked ~ .panel-more .more-open { display: none; }
+    .explora-toggle:checked ~ .panel-more .more-close { display: inline; }
+    .explora-toggle:focus-visible ~ .panel-more { outline: 2px solid var(--accent); outline-offset: 3px; }
   }
 </style>
 
