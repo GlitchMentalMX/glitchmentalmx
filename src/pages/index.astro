@@ -75,8 +75,9 @@ const exploraDesc: Record<string, string> = {
 
 const exploraColumns = [
   {
-    eyebrow: 'Series editoriales (audio)',
-    summary: 'Análisis por entregas sobre un mismo tema, con resumen en audio.',
+    eyebrow: 'Series editoriales',
+    subtitle: 'Investigaciones que van más allá del titular.',
+    summary: 'Análisis por entregas sobre un mismo tema, con resúmenes en audio.',
     href: '/series/',
     unit: 'entregas',
     allLabel: 'Ver todas las series',
@@ -86,13 +87,12 @@ const exploraColumns = [
       desc: exploraDesc[s.id],
       count: s.data.postSlugs.length,
       soon: s.data.status === 'coming-soon',
-      audioSrc: s.data.audio?.src,
     })),
   },
   {
     eyebrow: 'Colecciones',
-    subtitle: 'Guías por tema',
-    summary: 'Artículos reunidos por tema y ordenados para recorrerlos.',
+    subtitle: 'Conocimiento organizado para explorar.',
+    summary: 'Guías y artículos agrupados por tema para consultar y recorrer.',
     href: '/colecciones/',
     unit: 'artículos',
     allLabel: 'Ver todas las colecciones',
@@ -105,8 +105,8 @@ const exploraColumns = [
   },
   {
     eyebrow: groupName,
-    subtitle: 'Para profundizar',
-    summary: 'Bibliotecas de consulta para estudiar y enseñar tecnología.',
+    subtitle: 'Materiales para aprender y enseñar.',
+    summary: 'Bibliotecas, referencias y herramientas para estudiar y enseñar tecnología.',
     href: '/colecciones/',
     unit: 'artículos',
     allLabel: 'Ver todos los recursos',
@@ -117,12 +117,7 @@ const exploraColumns = [
       count: h.data.postSlugs.length,
     })),
   },
-].map((col) => ({
-  ...col,
-  // Si alguna fila de la columna lleva play, las que no lo tienen reservan su ancho
-  // para que todos los nombres queden alineados.
-  hasAudio: col.items.some((i) => 'audioSrc' in i && Boolean(i.audioSrc)),
-}));
+];
 
 // Panel de Señales — reemplaza el grid de cards de "Recursos" por una lista
 // de filas más compacta. El orden y el copy siguen el mockup de Jorge; los
@@ -344,22 +339,13 @@ const signalPools = {
       {exploraColumns.map((col) => (
         <div class="explora-panel">
           <a href={col.href} class="panel-head">
-            <p class="eyebrow">{col.eyebrow}</p>
+            <span class="tag">{col.eyebrow}</span>
             {col.subtitle && <h3>{col.subtitle}</h3>}
           </a>
           <p class="panel-summary">{col.summary}</p>
           <ul class="signal-list">
             {col.items.map((item, i) => (
               <li class:list={{ extra: i >= 3 }}>
-                {item.audioSrc && (
-                  <button type="button" class="mini-play" data-mini-play={item.audioSrc} aria-label="Reproducir resumen en audio">
-                    <svg data-icon="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5-9-5.5z" /></svg>
-                    <span class="eq" data-icon="eq" aria-hidden="true" hidden>
-                      <span></span><span></span><span></span>
-                    </span>
-                  </button>
-                )}
-                {col.hasAudio && !item.audioSrc && <span class="mini-play-spacer" aria-hidden="true"></span>}
                 <a href={item.href} class:list={{ muted: item.soon }}>
                   <span class="label">{item.label}</span>
                   {item.soon ? (
@@ -818,8 +804,7 @@ const signalPools = {
   }
   .panel-head { display: block; }
   .panel-head:hover h3 { text-decoration: underline; }
-  .panel-head .eyebrow { color: var(--text-muted); margin: 0; }
-  .panel-head h3 { font-size: 1.05rem; margin: 6px 0 0; }
+  .panel-head h3 { font-size: 1.15rem; line-height: 1.3; margin: 10px 0 0; }
   .signal-list {
     list-style: none;
     margin: 16px 0 0;
@@ -843,48 +828,6 @@ const signalPools = {
     row-gap: 2px;
     font-size: 0.86rem;
     color: var(--text);
-  }
-  .mini-play {
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-  .mini-play-spacer { flex-shrink: 0; width: 20px; height: 20px; }
-  .mini-play svg { width: 13px; height: 13px; }
-  .mini-play svg[hidden] { display: none; }
-  .mini-play svg[data-icon='play'] { transform: translateX(1px); }
-  .mini-play .eq {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 2px;
-    width: 13px;
-    height: 13px;
-  }
-  .mini-play .eq[hidden] { display: none; }
-  .mini-play .eq span {
-    width: 2px;
-    height: 30%;
-    background: currentColor;
-    border-radius: 1px;
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    .mini-play .eq span { animation: mini-play-eq 0.9s ease-in-out infinite; }
-    .mini-play .eq span:nth-child(1) { animation-delay: 0s; }
-    .mini-play .eq span:nth-child(2) { animation-delay: 0.2s; }
-    .mini-play .eq span:nth-child(3) { animation-delay: 0.4s; }
-  }
-  @keyframes mini-play-eq {
-    0%, 100% { height: 30%; }
-    50% { height: 100%; }
   }
   .signal-list li a:hover .label { color: var(--accent); }
   .signal-list li a.muted { color: var(--text-muted); }
@@ -1494,46 +1437,5 @@ const signalPools = {
         signalCard.addEventListener('mouseleave', startCycle);
       }
     }
-  }
-</script>
-
-<script>
-  // Play/pausa de los resúmenes en audio dentro de Explora — un solo Audio()
-  // compartido (no uno por fila) porque solo puede sonar uno a la vez; al
-  // arrancar uno se pausa el anterior y su ícono vuelve a "play".
-  if (!window.__exploraAudioWired) {
-    window.__exploraAudioWired = true;
-
-    const audio = new Audio();
-    audio.preload = 'none';
-    let activeBtn: HTMLButtonElement | null = null;
-
-    const setPlaying = (btn: HTMLButtonElement, playing: boolean) => {
-      btn.querySelector('[data-icon="play"]')?.toggleAttribute('hidden', playing);
-      btn.querySelector('[data-icon="eq"]')?.toggleAttribute('hidden', !playing);
-      btn.setAttribute('aria-label', playing ? 'Pausar' : 'Reproducir resumen en audio');
-    };
-
-    document.querySelectorAll<HTMLButtonElement>('[data-mini-play]').forEach((btn) => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-
-        if (activeBtn === btn) {
-          if (audio.paused) audio.play();
-          else audio.pause();
-          return;
-        }
-
-        if (activeBtn) setPlaying(activeBtn, false);
-        audio.src = btn.dataset.miniPlay || '';
-        audio.play();
-        activeBtn = btn;
-      });
-    });
-
-    audio.addEventListener('play', () => activeBtn && setPlaying(activeBtn, true));
-    audio.addEventListener('pause', () => activeBtn && setPlaying(activeBtn, false));
-    audio.addEventListener('ended', () => activeBtn && setPlaying(activeBtn, false));
   }
 </script>
