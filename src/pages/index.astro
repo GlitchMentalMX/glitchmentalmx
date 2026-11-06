@@ -315,9 +315,8 @@ const signalPools = {
           // espacio y no carga la imagen.
           const bg = `background-image: url('${encodeURI(post.data.heroImage)}')`;
           return (
-            <a class="recent-card" href={`/articulos/${post.id}/`} style={bg}>
-              <span class="glitch-r" style={bg}></span>
-              <span class="glitch-b" style={bg}></span>
+            <a class="recent-card" href={`/articulos/${post.id}/`}>
+              <span class="thumb" style={bg}></span>
               <span class="title">{post.data.title}</span>
             </a>
           );
@@ -704,7 +703,9 @@ const signalPools = {
     .promo-pair .dato-card { flex: 1 1 0; min-width: 0; }
   }
 
-  /* Recién publicado — horizontal rail, hero image as background, glitch on hover */
+  /* Coordenadas — la imagen va limpia (sin degradados) y el titular debajo,
+     sobre el fondo de la página. Hover "de terminal": la foto se enciende de
+     golpe y el titular se desplaza con un borde azul que aparece de un snap. */
   .recent-rail {
     display: flex;
     gap: 14px;
@@ -715,58 +716,38 @@ const signalPools = {
   }
   .recent-rail::-webkit-scrollbar { display: none; }
   .recent-card {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     flex: 0 0 78%;
+    scroll-snap-align: start;
+    color: var(--text);
+  }
+  .recent-card .thumb {
+    display: block;
     height: 150px;
     border-radius: var(--radius);
-    overflow: hidden;
-    scroll-snap-align: start;
     background-size: cover;
     background-position: center;
-    isolation: isolate;
-    color: #fff;
+    filter: grayscale(60%) contrast(1.1);
+    transition: filter 0.15s cubic-bezier(0, 0, 0.2, 1);
   }
-  .recent-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(10, 11, 15, 0) 35%, rgba(10, 11, 15, 0.92) 100%);
-    z-index: 1;
-  }
+  .recent-card:hover .thumb { filter: grayscale(0%) contrast(1); }
   .recent-card .title {
-    position: absolute;
-    bottom: 14px;
-    left: 14px;
-    right: 14px;
-    z-index: 2;
+    display: block;
+    margin: 12px 8px 0 0;
+    border-left: 3px solid transparent;
     font-family: var(--font-display);
     font-size: 1.02rem;
     font-weight: 600;
     line-height: 1.25;
-    color: #fff;
+    color: var(--text);
+    transition: transform 0.15s cubic-bezier(0, 0, 0.2, 1);
   }
-  .recent-card .glitch-r,
-  .recent-card .glitch-b {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    z-index: 0;
-    mix-blend-mode: screen;
-    transition: opacity 0.15s ease, transform 0.15s ease;
+  .recent-card:hover .title {
+    transform: translateX(6px);
+    border-left-color: var(--accent);
+    padding-left: 8px;
   }
-  .recent-card:hover .glitch-r {
-    opacity: 0.55;
-    transform: translate(3px, 0);
-    filter: saturate(3) hue-rotate(180deg);
-  }
-  .recent-card:hover .glitch-b {
-    opacity: 0.4;
-    transform: translate(-3px, 1px);
-    filter: saturate(3) hue-rotate(-60deg);
-  }
-  .recent-card:hover .title { text-decoration: underline; }
 
   @media (min-width: 700px) {
     .recent-rail { overflow-x: visible; }
@@ -831,6 +812,8 @@ const signalPools = {
   .signal-list .count { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
   .signal-list .desc { grid-column: 1 / -1; font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); }
   .panel-summary { margin: 10px 0 0; font-size: 0.82rem; line-height: 1.45; color: var(--text-muted); }
+  .explora-toggle { position: absolute; opacity: 0; pointer-events: none; }
+  .panel-more { display: none; }
   .panel-all { display: none; margin-top: 16px; font-size: 0.86rem; }
   .signal-list .soon-tag {
     font-family: var(--font-mono);
