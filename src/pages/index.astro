@@ -402,13 +402,16 @@ const signalPools = {
         <h2>Insights Visuales</h2>
         <p class="tagline">Una imagen. Una idea. Un momento para pensar.</p>
       </div>
-      <a href="/insights-visuales/" class="insight-hero">
-        <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
-        {latestInsight.data.punchline && (
-          <span class="insight-punchline">{latestInsight.data.punchline}</span>
-        )}
-      </a>
-      <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
+      <div class="insight-layout">
+        <a href="/insights-visuales/" class="insight-hero">
+          <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
+        </a>
+        <div class="insight-text">
+          <h3 class="insight-title">{latestInsight.data.punchline ?? latestInsight.data.titulo}</h3>
+          <p class="insight-excerpt">{latestInsight.data.resumen}</p>
+          <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
+        </div>
+      </div>
     </section>
   )}
 
@@ -824,52 +827,48 @@ const signalPools = {
   /* Insights Visuales — single hero image */
   .insights-head { flex-direction: column; align-items: flex-start; gap: 6px; }
   .tagline { color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; margin: 0; }
-  .insight-hero {
-    position: relative;
-    display: block;
-    max-width: 900px;
-    margin: 0 auto;
-    isolation: isolate;
-  }
+  /* Imagen limpia (sin degradado ni texto encima). Móvil: imagen, titular,
+     fragmento y enlace en una columna. Escritorio: texto 40% a la izquierda,
+     foto 60% a la derecha, el bloque de texto centrado en vertical. */
+  .insight-layout { display: flex; flex-direction: column; gap: 18px; }
+  .insight-hero { display: block; }
   .insight-hero img {
+    display: block;
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: var(--radius);
   }
-  /* Punchline superpuesto — mismo patrón de gradiente + texto absoluto que
-     .recent-card, reutilizado aquí porque la imagen del home ya tiene el
-     tamaño para sostenerlo. Se degrada solo: si el insight no trae punchline,
-     el ::before no se pinta (scoped al :has) y queda la imagen sola de siempre. */
-  .insight-hero:has(.insight-punchline)::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: var(--radius);
-    background: linear-gradient(180deg, rgba(10, 11, 15, 0) 40%, rgba(10, 11, 15, 0.85) 100%);
-    z-index: 1;
+  .insight-title {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
   }
-  .insight-punchline {
-    position: absolute;
-    left: 24px;
-    right: 24px;
-    bottom: 20px;
-    z-index: 2;
+  .insight-excerpt {
+    color: var(--text-muted);
+    font-size: 0.94rem;
+    line-height: 1.55;
+    margin: 10px 0 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(1.15rem, 2.6vw, 1.7rem);
-    line-height: 1.3;
-    color: #fff;
   }
-  @media (max-width: 640px) {
-    .insight-punchline { left: 16px; right: 16px; bottom: 14px; font-size: 1.05rem; -webkit-line-clamp: 2; }
+  .insight-cta { margin: 16px 0 0; }
+  @media (min-width: 1024px) {
+    .insight-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+      column-gap: 2.5rem;
+      align-items: center;
+    }
+    .insight-hero { grid-column: 2; grid-row: 1; }
+    .insight-text { grid-column: 1; grid-row: 1; }
+    .insight-title { font-size: 1.7rem; }
   }
-  .insight-cta { max-width: 900px; margin: 14px auto 0; text-align: right; }
 
   /* Novelas — 3 más recientes: portada + sinopsis + CTA. En escritorio, grid
      de 3; en móvil, carrusel con snap y la siguiente tarjeta asomando (así no
