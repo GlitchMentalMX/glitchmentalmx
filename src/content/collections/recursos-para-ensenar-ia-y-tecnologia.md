@@ -119,6 +119,7 @@ postSlugs:
   - ia-encuentra-fallas-quien-las-corrige
   - ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
   - valor-medible-de-la-ia-kpmg
+  - medicion-agua-centros-de-datos-queretaro
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -299,6 +300,8 @@ sections:
       - slug: la-fotografia-de-stock-murio-y-nadie-fue-al-velorio
         tag: caso
       - slug: ia-en-queretaro-el-agua-que-cuesta-cada-prompt
+        tag: caso
+      - slug: medicion-agua-centros-de-datos-queretaro
         tag: caso
       - slug: identidad-digital-quien-decides-ser-cuando-nadie-te-ve
         tag: caso

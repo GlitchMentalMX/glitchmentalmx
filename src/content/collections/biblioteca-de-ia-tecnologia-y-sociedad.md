@@ -8,7 +8,7 @@ description: >-
   tiene el poder, quién lo pierde y qué queda fuera de la conversación
   pública.
 intro: >-
-  133 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
+  134 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
   funciona sola: no hay orden obligatorio. ¿Primera visita? Empieza por la
   ruta recomendada.
 postSlugs:
@@ -145,6 +145,7 @@ postSlugs:
   - como-aprenden-los-robots-humanoides-a-trabajar
   - estamos-cerca-de-la-singularidad-evidencia-privada
   - valor-medible-de-la-ia-kpmg
+  - medicion-agua-centros-de-datos-queretaro
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -366,6 +367,7 @@ sections:
       - slug: clonacion-de-voz-por-ia-se-incrementa-en-mexico
         tag: caso
       - slug: ia-en-queretaro-el-agua-que-cuesta-cada-prompt
+      - slug: medicion-agua-centros-de-datos-queretaro
       - slug: solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando
         tag: serie
       - slug: el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla

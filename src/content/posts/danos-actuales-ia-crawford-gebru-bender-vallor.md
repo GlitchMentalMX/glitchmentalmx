@@ -79,7 +79,7 @@ Los **daños actuales de la IA** no son el opuesto del riesgo futuro: lo que se 
 
 > Señal fuerte en lo medible (energía, trabajo, sesgo); más débil donde se infieren motivos o linajes ideológicos. El debate «presente contra futuro» está menos partido de lo que se vende.
 
-**La versión local de estos costos está documentada en la colección** [**Detrás del Prompt**](https://glitchmental.com/colecciones/detras-del-prompt/), 10 artículos que auditan el costo hídrico y eléctrico de la infraestructura de IA en México, estado por estado. El caso de Querétaro, el primero, es [IA en Querétaro: el agua que cuesta cada prompt](https://glitchmental.com/articulos/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/).
+**La versión local de estos costos está documentada en la colección** [**Detrás del Prompt**](https://glitchmental.com/colecciones/detras-del-prompt/), 13 artículos que auditan el costo hídrico y eléctrico de la infraestructura de IA en México, estado por estado. El caso de Querétaro, el primero, es [IA en Querétaro: el agua que cuesta cada prompt](https://glitchmental.com/articulos/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/).
 
 ## La pregunta abierta: ¿se excluyen o se complementan?
 

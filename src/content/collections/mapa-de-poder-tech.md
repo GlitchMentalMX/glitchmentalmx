@@ -84,6 +84,7 @@ postSlugs:
   - como-aprenden-los-robots-humanoides-a-trabajar
   - estamos-cerca-de-la-singularidad-evidencia-privada
   - ia-encuentra-fallas-quien-las-corrige
+  - medicion-agua-centros-de-datos-queretaro
 sections:
   - title: Geopolítica de la IA
     description: >-
@@ -197,6 +198,7 @@ sections:
       - slug: clonacion-de-voz-por-ia-se-incrementa-en-mexico
         tag: caso
       - slug: ia-en-queretaro-el-agua-que-cuesta-cada-prompt
+      - slug: medicion-agua-centros-de-datos-queretaro
       - slug: solar-baterias-la-revolucion-energetica-que-mexico-no-esta-aprovechando
         tag: serie
       - slug: datos-abiertos-el-poder-publico-que-nadie-te-explica
