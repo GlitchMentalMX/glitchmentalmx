@@ -1,7 +1,7 @@
 ---
 title: El gas de Estados Unidos detrás de cada prompt en México
 category: Inteligencia Artificial
-pubDate: 2026-11-07T10:48
+pubDate: 2026-11-07T10:51
 updatedDate: ''
 description: Cerca de tres cuartas partes del gas de México vienen de EE.UU. y alrededor de 60% de su electricidad depende de él. La IA hereda esa dependencia.
 heroImage: /images/uploads/gas-usa.webp
