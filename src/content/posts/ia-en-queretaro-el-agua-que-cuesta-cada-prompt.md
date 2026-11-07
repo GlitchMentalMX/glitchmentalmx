@@ -1,16 +1,13 @@
 ---
 title: 'IA en Querétaro: el agua que cuesta cada prompt'
 category: Inteligencia Artificial
-pubDate: 2026-03-20T12:49:00.004Z
-updatedDate: 2026-07-07T19:29:04.220Z
-description: >-
-  Los data centers de IA en Querétaro consumen agua en un estado en sequía. El
-  costo hídrico real de la infraestructura digital en México.
+pubDate: 2026-03-20T06:49
+updatedDate: 2026-11-07T06:54
+description: Los data centers de IA en Querétaro consumen agua en un estado en sequía. El costo hídrico real de la infraestructura digital en México.
 heroImage: /images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/hero.jpg
-heroImageAlt: >-
-  Torres de enfriamiento de un centro de datos junto a un canal de riego seco en
-  Querétaro, evidencia del estrés hídrico de la infraestructura de IA
+heroImageAlt: Torres de enfriamiento de un centro de datos junto a un canal de riego seco en Querétaro, evidencia del estrés hídrico de la infraestructura de IA
 ---
+
 Querétaro es, hoy, uno de los estados con mayor inversión tecnológica de América Latina y uno de los más afectados por sequía extrema. Ambas cosas son simultáneas, no contradictorias. Y esa simultaneidad es exactamente el problema que nadie en el gobierno ni en las empresas quiere nombrar con precisión.
 
 ## El valle de los datos, en un desierto que se hace solo
@@ -33,13 +30,11 @@ La mayor parte de los centros de datos en Querétaro operan dentro de parques in
 
 ![Válvula industrial oxidada con goteo residual, símbolo técnico del consumo de agua en centros de datos mexicanos](/images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/1.jpg)
 
-  
-
 ## El argumento del gobierno y sus contradicciones
 
 La presidenta Claudia Sheinbaum ha recibido la llegada de los centros de datos como señal de confianza económica en México y los ha descrito como necesarios para avanzar en inteligencia artificial. El gobierno de Querétaro, por su parte, sostiene que culpar a los _data centers_ de la escasez de agua es "simplificar" un problema que precede a su llegada.
 
-Eso es parcialmente cierto: la crisis hídrica en Querétaro viene de décadas de sobreexplotación agrícola e industrial. Pero no resuelve la pregunta central: ¿por qué se siguen otorgando concesiones de agua para industrias de alto consumo en un acuífero ya declarado en déficit desde 2015? Desde 2022, además, una reforma impulsada por el gobernador Mauricio Kuri permite la venta de concesiones de agua entre empresas privadas, convirtiendo el agua en un activo comerciable en lugar de un derecho. Esa reforma no ha sido revertida.
+Eso es parcialmente cierto: la crisis hídrica en Querétaro viene de décadas de sobreexplotación agrícola e industrial. Pero no resuelve la pregunta central: ¿por qué se siguen otorgando concesiones de agua para industrias de alto consumo en un acuífero ya declarado en déficit desde 2015? Desde 2022, además, la llamada Ley Kuri, impulsada por el gobernador Mauricio Kuri, permite a los municipios y a la Comisión Estatal de Aguas otorgar concesiones del servicio de agua potable a operadores privados.
 
 ## Lo que esto significa para el usuario digital
 
@@ -51,6 +46,8 @@ La industria de los datos necesita ubicarse en algún lugar. Y Querétaro ofrece
 
 ## El camino que falta
 
-Organizaciones como Voceras de la Madre Tierra y la asociación Bajo de Tierra Museo han exigido tres cosas concretas: que todos los centros de datos presenten evaluación de impacto ambiental sin excepción, que las concesiones de agua se publiquen de forma abierta y que CONAGUA tenga facultades reales para auditar el consumo. Ninguna de esas tres demandas ha sido atendida por el gobierno federal ni el estatal hasta hoy.
+Organizaciones como Voceras de la Madre Tierra y la asociación Bajo Tierra Museo del Agua han exigido tres cosas concretas: que todos los centros de datos presenten evaluación de impacto ambiental sin excepción, que las concesiones de agua se publiquen de forma abierta y que CONAGUA tenga facultades reales para auditar el consumo. En octubre de 2026, la Secretaría de Desarrollo Sustentable del estado anunció que medirá el consumo de agua de los centros de datos en una fase de prueba durante 2026 y que publicará reportes a partir de 2027, con una obligación que se volverá exigible de forma gradual. El propio secretario reconoció que hoy no están obligados a reportarlo porque están clasificados como empresas de servicios, y que la asignación de volúmenes sigue en manos de Conagua.
 
 La paradoja no es exclusiva de México. En Texas, comunidades rurales han rechazado la instalación de centros de datos por sus impactos en el ruido, el suelo y el agua. En Europa, reguladores han comenzado a exigir métricas de consumo hídrico como condición para operar. En Querétaro, el debate todavía está en la etapa de pedir que alguien, al menos, lleve las cuentas.
+
+_Última revisión/corrección: 07/11/2026._
