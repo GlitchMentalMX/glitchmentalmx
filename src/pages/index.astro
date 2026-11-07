@@ -500,7 +500,11 @@ const signalPools = {
         <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
       </a>
       <a href="/juego/" class="dato-card juego-card">
-        <img src="/juego/card-home.webp" alt="Pulsa para Empeorar, el videojuego de glitchMentalMX: cinco personajes en una sala de espera con una máquina de cookies y un asistente robot." loading="lazy" width="960" height="436" />
+        <span class="dato-media">
+          <img src="/juego/card-home.webp" alt="Pulsa para Empeorar, el videojuego de glitchMentalMX: cinco personajes en una sala de espera con una máquina de cookies y un asistente robot." loading="lazy" width="960" height="436" />
+        </span>
+        <h3 class="dato-title">El juego donde ganar es perder</h3>
+        <p class="dato-desc">Aunque no te guste.</p>
         <span class="link-accent dato-cta">Juega bajo tu propio riesgo →</span>
       </a>
     </div>
@@ -688,7 +692,8 @@ const signalPools = {
      no dentro de la imagen (la ilustración queda limpia). */
   .dato-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; line-height: 1.25; margin: 0; color: var(--text); }
   .dato-desc { margin: -6px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text-muted); }
-  .dato-cta { font-size: 0.88rem; }
+  .dato-cta { font-size: 0.88rem; margin-top: auto; }
+  .dato-media { display: block; width: 100%; }
 
   /* Dato Incómodo + el juego, lado a lado en escritorio y apilados en móvil
      (primero Dato, después el juego). Las dos tarjetas comparten exactamente el
@@ -696,8 +701,11 @@ const signalPools = {
      borde solo al pasar el cursor. */
   .promo-pair { display: flex; flex-direction: column; align-items: center; gap: 28px; }
   @container (min-width: 700px) {
-    .promo-pair { flex-direction: row; justify-content: center; align-items: center; gap: 36px; }
+    .promo-pair { flex-direction: row; justify-content: center; align-items: stretch; gap: 36px; }
     .promo-pair .dato-card { flex: 1 1 0; min-width: 0; }
+    /* La ilustración del juego es más panorámica que la de Dato Incómodo: se
+       centra en un espacio 16:9 para que las dos tarjetas midan lo mismo. */
+    .juego-card .dato-media { display: flex; align-items: center; aspect-ratio: 16 / 9; }
   }
 
   /* Coordenadas — la imagen va limpia (sin degradados) y el titular debajo,
