@@ -33,10 +33,10 @@ collections:
     sortable_fields: ["pubDate", "title"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - label: "URL del artículo (slug) — llénalo SOLO al crear un artículo nuevo, antes del primer guardado. Minúsculas y guiones, sin acentos ni espacios. Ejemplo: subestacion-centros-de-datos-mexico. En artículos ya publicados déjalo vacío."
+      - label: "URL del artículo (slug), obligatorio. En un artículo NUEVO escribe la URL que quieres, antes del primer guardado (minúsculas y guiones, sin acentos ni espacios; ejemplo: subestacion-centros-de-datos-mexico). En un artículo YA PUBLICADO escribe exactamente su URL actual: si la cambias, cambia la URL del artículo."
         name: "slug"
         widget: "string"
-        required: false
+        required: true
         pattern: ["^[a-z0-9]+(-[a-z0-9]+)*$", "Solo minúsculas, números y guiones; sin acentos, espacios ni guiones al inicio o al final."]
       - label: "Categoría"
         name: "category"
