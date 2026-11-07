@@ -28,11 +28,16 @@ collections:
     media_folder: "/public/images/uploads"
     public_folder: "/images/uploads"
     create: true
-    slug: "{{title}}"
+    slug: "{{fields.slug}}"
     identifier_field: title
     sortable_fields: ["pubDate", "title"]
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - label: "URL del artículo (slug) — llénalo SOLO al crear un artículo nuevo, antes del primer guardado. Minúsculas y guiones, sin acentos ni espacios. Ejemplo: subestacion-centros-de-datos-mexico. En artículos ya publicados déjalo vacío."
+        name: "slug"
+        widget: "string"
+        required: false
+        pattern: ["^[a-z0-9]+(-[a-z0-9]+)*$", "Solo minúsculas, números y guiones; sin acentos, espacios ni guiones al inicio o al final."]
       - label: "Categoría"
         name: "category"
         widget: "select"
