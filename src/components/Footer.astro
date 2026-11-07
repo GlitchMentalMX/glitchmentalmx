@@ -9,11 +9,8 @@ const columns = [
     links: [
       ...categories.map((c) => ({ href: `/categoria/${c.slug}/`, label: c.name })),
       { href: '/archivo/', label: 'Archivo' },
-      { href: '/ia-sin-letra-chiquita/', label: 'IA sin letra chiquita' },
-      { href: '/datos/', label: 'Datos abiertos' },
       { href: '/series/', label: 'Series' },
       { href: '/colecciones/', label: 'Colecciones' },
-      { href: '/indice-glitchmentalmx/', label: 'Índice glitchMentalMX' },
       { href: '/insights-visuales/', label: 'Insights Visuales' },
       { href: '/dato-incomodo/', label: 'Dato Incómodo' },
     ],
@@ -27,7 +24,6 @@ const columns = [
       { href: '/calculadora-de-riesgo-de-reemplazo-por-ia/', label: 'Calculadora de Riesgo IA' },
       { href: '/detox-de-ia/', label: 'Detox de IA' },
       { href: '/herramientas/que-hacer-si-te-preocupa-la-ia/', label: '¿Te preocupa la IA?' },
-      { href: '/buscar/', label: 'Buscar en el sitio' },
     ],
   },
   {
@@ -39,17 +35,9 @@ const columns = [
       { href: '/juego/', label: 'Juego: Pulsa para Empeorar' },
       { href: '/contacto/', label: 'Contacto' },
       { href: 'https://www.google.com/preferences/source?q=glitchmental.com', label: 'Fuente preferida en Google', external: true },
-      { href: '/publicidad-en-glitchmentalmx/', label: 'Publicidad' },
-      { href: '/advertise-with-glitchmentalmx/', label: 'Advertise (EN)' },
-      { href: '/servicios-editoriales-glitchmentalmx/', label: 'Servicios editoriales' },
-      { href: '/editorial-services-glitchmentalmx/', label: 'Editorial Services (EN)' },
-    ],
-  },
-  {
-    title: 'Legal',
-    links: [
-      { href: '/politica-de-privacidad/', label: 'Política de privacidad' },
-      { href: '/aviso-legal-y-condiciones-de-uso/', label: 'Aviso legal' },
+      { href: '/publicidad-en-glitchmentalmx/', label: 'Publicidad / Advertise' },
+      { href: '/servicios-editoriales-glitchmentalmx/', label: 'Servicios / Editorial Services' },
+      { href: '/buscar/', label: 'Buscar en el sitio' },
     ],
   },
   {
@@ -99,7 +87,13 @@ const columns = [
     </a>
 
     <div class="bottom">
-      <p>© {year} glitchMentalMX. Todos los derechos reservados.</p>
+      <p>
+        <span>© {year} glitchMentalMX</span>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="/politica-de-privacidad/">Política de privacidad</a>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="/aviso-legal-y-condiciones-de-uso/">Aviso legal</a>
+      </p>
     </div>
   </div>
 </footer>
@@ -126,8 +120,8 @@ const columns = [
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
     gap: 32px;
   }
 
@@ -231,8 +225,12 @@ const columns = [
     margin-top: 28px;
     padding-top: 20px;
     color: var(--text-faint);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
+  .bottom p { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .bottom a { color: inherit; }
+  .bottom a:hover { color: var(--text-muted); }
+  .bottom .sep { opacity: 0.6; }
 
   @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr 1fr; }
