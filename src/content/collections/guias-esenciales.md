@@ -3,14 +3,11 @@ title: Guías Esenciales
 kind: hub
 status: published
 description: >-
-  Las ideas clave detrás de la cultura digital, los comportamientos online, la
-  inteligencia artificial y el impacto real de la tecnología en la vida
-  cotidiana. El punto de entrada si es tu primera vez en glitchMentalMX.
+  Las ideas clave de la cultura digital, la IA y el impacto real de la
+  tecnología en la vida cotidiana. El punto de entrada a glitchMentalMX.
 intro: >-
-  Esta colección reúne las ideas clave detrás de la cultura digital, los
-  comportamientos online, la inteligencia artificial y el impacto real de la
-  tecnología en la vida cotidiana. Nueve temas, cada uno con un artículo
-  esencial al inicio como punto de entrada.
+  Nueve temas, nueve puntos de entrada: cada uno abre con un artículo
+  esencial. Léelo primero; el resto profundiza.
 postSlugs:
   - generaciones-y-algoritmos-de-boomers-a-gen-alpha
   - cada-generacion-tiene-su-propio-internet-y-no-lo-saben

@@ -3,17 +3,12 @@ title: Mapa de Poder Tech
 kind: hub
 status: published
 description: >-
-  Quién controla la infraestructura digital global, cómo se distribuye el poder
-  tecnológico y qué le toca a LATAM en ese tablero. El poder tecnológico no se
-  distribuye de forma neutral: hay empresas que controlan la infraestructura,
-  gobiernos que escriben las reglas y regiones enteras que las reciben sin
-  negociarlas.
+  Quién controla la infraestructura digital, quién escribe las reglas y quién
+  las recibe sin negociarlas. El poder tecnológico no se reparte de forma
+  neutral; aquí se mapea, y qué le toca a LATAM.
 intro: >-
-  Hay empresas que controlan la infraestructura, gobiernos que escriben las
-  reglas y regiones enteras que las reciben sin negociarlas. Esta colección
-  mapea esas estructuras: quién controla los cables, los modelos, los genomas
-  y los algoritmos que deciden lo que ves, lo que consumes y lo que puedes
-  ser — con perspectiva explícita desde LATAM en cada sección donde aplica.
+  Ocho secciones, de la geopolítica de la IA a la soberanía digital y LATAM.
+  Cada una funciona sola; donde aplica, marca la perspectiva de LATAM.
 postSlugs:
   - deepseek-r1-sacude-silicon-valley-la-ia-china-que-costo-6-millones-y-tumbo-acciones
   - agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia

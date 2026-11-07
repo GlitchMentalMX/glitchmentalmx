@@ -3,15 +3,12 @@ title: Horizonte Crítico
 kind: hub
 status: published
 description: >-
-  Las tecnologías que van a cambiar todo, analizadas sin el entusiasmo que vende
-  portadas ni el cinismo que evita compromisos — organizadas por horizonte
-  temporal: lo que ya está cambiando, lo que cambiará antes de 2030 y lo que
-  reescribirá las reglas después.
+  Las tecnologías que van a cambiar todo, analizadas sin el entusiasmo que
+  vende portadas ni el cinismo que evita compromisos.
 intro: >-
-  Veintinueve artículos sobre las tecnologías y los debates que están
-  redefiniendo el mundo, analizados por horizonte temporal: lo que ya está cambiando, lo que
-  cambiará antes de 2030 y lo que reescribirá las reglas después. Sin fechas inventadas, sin
-  promesas vacías, sin ruido.
+  Veintinueve artículos en cuatro bloques: lo que ocurre hoy (2025–2027), lo
+  que se define entre 2027 y 2030, las apuestas de 2030–2035+ y la
+  infraestructura que sostiene todo. Lee por plazo, en el orden que prefieras.
 postSlugs:
   - agentes-de-ia-la-empresa-sin-jefes-que-nadie-pidio
   - la-ia-que-no-necesita-internet-soberania-en-tu-bolsillo

@@ -3,17 +3,13 @@ title: Recursos para Enseñar IA y Tecnología
 kind: hub
 status: published
 description: >-
-  Material curado por nivel y tipo de uso para llevar tecnología, inteligencia
-  artificial y cultura digital al aula. Para docentes, capacitadores,
-  bibliotecarios y divulgadores que necesitan rigor sin tecnicismos y sin
-  depender de recursos en inglés.
+  Material curado para llevar tecnología, IA y cultura digital al aula, en
+  español, con rigor y sin tecnicismos. Para docentes, capacitadores,
+  bibliotecarios y divulgadores.
 intro: >-
-  No hay suficiente material en español para llevar IA y cultura digital al
-  aula con rigor y sin tecnicismos. Esta colección organiza los artículos por
-  nivel — de bachillerato a posgrado — y por tipo de uso: lecturas de
-  introducción, debates sin respuesta única, casos documentados y guías
-  prácticas. El mismo artículo puede aparecer en más de una sección cuando
-  sirve para más de un propósito docente.
+  Ocho secciones: por nivel (bachillerato, universidad, posgrado) y por tipo
+  de uso (lecturas introductorias, debates, casos, guías prácticas). Un mismo
+  artículo puede aparecer en más de una sección. Elige primero tu nivel.
 postSlugs:
   - redes-neuronales-explicadas-sin-matematicas-ni-hype
   - que-es-realmente-la-inteligencia-artificial-y-que-no-es

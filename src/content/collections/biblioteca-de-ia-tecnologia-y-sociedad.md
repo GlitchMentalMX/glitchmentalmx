@@ -3,17 +3,14 @@ title: 'Biblioteca de IA, Tecnología y Sociedad'
 kind: hub
 status: published
 description: >-
-  Artículos de fondo en español para entender qué le está haciendo la tecnología
-  al mundo y a las personas. Sin hype, sin agenda. La mayoría de los artículos
-  sobre IA explican cómo usar las herramientas — esta biblioteca explica qué
-  está pasando detrás: quién tiene el poder, quién lo pierde y qué queda fuera
-  de la conversación pública.
+  Artículos de fondo en español sobre lo que la tecnología le hace al mundo y
+  a las personas. La mayoría explica cómo usar las herramientas; aquí: quién
+  tiene el poder, quién lo pierde y qué queda fuera de la conversación
+  pública.
 intro: >-
-  Ciento treinta y tres artículos organizados en diez secciones, de fundamentos a
-  geopolítica. No hace falta leerlos en orden ni todos de un jalón: cada
-  sección funciona sola. Si es tu primera visita, empieza por la ruta
-  recomendada de abajo — son los textos que dan el contexto que el resto da
-  por hecho.
+  133 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
+  funciona sola: no hay orden obligatorio. ¿Primera visita? Empieza por la
+  ruta recomendada.
 postSlugs:
   - redes-neuronales-explicadas-sin-matematicas-ni-hype
   - como-funcionan-los-llms-realmente-guia-sin-rodeos

@@ -3,14 +3,13 @@ title: Detrás del Prompt
 kind: hub
 status: published
 description: >-
-  Cada prompt tiene un costo físico: agua, electricidad, concreto y territorio.
-  Esta serie audita ese costo, estado por estado, en la infraestructura de IA
-  que se está construyendo en México.
+  Cada prompt cuesta agua, electricidad, concreto y territorio. Esta colección
+  audita ese costo en la infraestructura de IA que se construye en México.
 intro: >-
-  La infraestructura de IA no vive en la nube. Vive en Querétaro, en
-  Monterrey, en Guadalajara — consumiendo agua de acuíferos en estrés y
-  electricidad de una red que ya opera cerca del límite. **Esta serie
-  documenta, estado por estado, el costo material de un prompt.**
+  Seis estudios estatales (Querétaro, Nuevo León, Jalisco, Estado de México,
+  Sonora y Yucatán), tres análisis nacionales —agua, electricidad y política
+  fiscal— y un mapa de cierre. Empieza por tu estado o por el análisis que te
+  interese.
 postSlugs:
   - ia-en-queretaro-el-agua-que-cuesta-cada-prompt
   - nuevo-leon-no-necesito-una-ley-para-que-la-ia-usara-su-agua
