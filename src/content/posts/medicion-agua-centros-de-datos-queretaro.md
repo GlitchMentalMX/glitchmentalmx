@@ -1,7 +1,7 @@
 ---
 title: Quién mide el agua de los data centers de Querétaro
 category: Inteligencia Artificial
-pubDate: 2026-11-07T10:45
+pubDate: 2026-11-07T10:48
 updatedDate: ''
 description: Conagua asigna, la CEA da factibilidades y Sedesu medirá desde 2027. Ninguna publica cuánta agua consume un centro de datos en Querétaro.
 heroImage: /images/uploads/data-centers-qro.webp
