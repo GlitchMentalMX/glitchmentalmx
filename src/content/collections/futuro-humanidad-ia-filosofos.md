@@ -4,6 +4,13 @@ kind: series
 status: published
 description: >-
   Siete posturas sobre el futuro de la humanidad con la IA: qué dicen, dónde coinciden y chocan, y qué es hecho, inferencia o hipótesis.
+intro: >-
+  El debate sobre el futuro de la humanidad con la IA mezcla hechos medidos,
+  deducciones y especulación como si pesaran lo mismo. Esta serie los
+  separa: recorre siete posturas de filósofos, científicos y otros
+  especialistas, y etiqueta cada afirmación como hecho, inferencia o
+  hipótesis. **No dice quién tiene razón: dice qué clase de prueba exige cada
+  postura.**
 postSlugs:
   - futuro-de-la-humanidad-con-la-ia-mapa-del-debate
   - riesgo-existencial-ia-bostrom-ord-russell
