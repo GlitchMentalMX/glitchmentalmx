@@ -7,9 +7,9 @@ empresa: "Higgsfield"
 sitioOficial: "https://higgsfield.ai/pricing"
 veredicto: "amarillo"
 fraseCorta: "No hay cupones públicos confirmados, pero sí descuento oficial por pagar anual (20% en Plus, 23% en Ultra) y una promoción de registro cuyas condiciones solo se ven al registrarte."
-fuenteVerificacion: "Página oficial de precios de Higgsfield (higgsfield.ai/pricing), consultada el 04/10/2026."
+fuenteVerificacion: "Página oficial de precios de Higgsfield (higgsfield.ai/pricing), consultada el 06/11/2026."
 pubDate: 2026-08-31
-updatedDate: 2026-10-04
+updatedDate: 2026-11-06
 heroImage: /images/codigos-descuento/higgsfield-ai.png
 heroImageAlt: Higgsfield — Códigos de descuento
 ---
@@ -20,7 +20,7 @@ No como cupón público confirmado. La página oficial de precios de Higgsfield 
 
 ## Lo que sí cambió: una promoción de registro con "30% de descuento"
 
-La página de precios de hoy trae un banner de "descuento extra" con el texto "Regístrate y consigue tu descuento adicional", que ofrece Nano Banana 2, Nano Banana Pro y Kling 3.0 en modo ilimitado en el plan Ultra por 7 días "con un descuento especial del 30%". Es una promoción oficial, publicada por Higgsfield en su propia página, pero las condiciones completas (a quién aplica, qué cubre exactamente, hasta cuándo) no se ven sin registrarte, así que no la contamos como un código ni como un descuento permanente. Tampoco hay que confundirla con la etiqueta de "-30%" junto al selector de facturación anual: es el máximo ahorro que presume la página, no el de todos los planes.
+La página de precios de hoy trae un banner de "descuento extra" con el texto "Regístrate y consigue tu descuento adicional", que ofrece GPT Image 2.6, Seedream 5.0 Pro y Nano Banana Pro en modo ilimitado en el plan Ultra por 7 días "con un descuento especial del 30%" (los modelos concretos rotan — en la verificación anterior eran Nano Banana 2, Nano Banana Pro y Kling 3.0). Es una promoción oficial, publicada por Higgsfield en su propia página, pero las condiciones completas (a quién aplica, qué cubre exactamente, hasta cuándo) no se ven sin registrarte, así que no la contamos como un código ni como un descuento permanente. Tampoco hay que confundirla con la etiqueta de "-30%" junto al selector de facturación anual: es el máximo ahorro que presume la página, no el de todos los planes. No encontramos ninguna promoción adicional de Buen Fin, Black Friday o Cyber Monday en la página oficial.
 
 ## Por qué desconfiar de los "códigos Higgsfield" que circulan en sitios de cupones
 
@@ -36,4 +36,4 @@ Hay una cantidad inusualmente alta de sitios que listan supuestos "códigos veri
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 06/11/2026]

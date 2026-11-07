@@ -7,16 +7,16 @@ empresa: "ElevenLabs"
 sitioOficial: "https://elevenlabs.io/pricing"
 veredicto: "verde"
 fraseCorta: "No necesitas ningún código: ElevenLabs tiene hoy un 50% de descuento automático en el primer mes del plan Creator (facturación mensual), visible en su propia página de precios."
-fuenteVerificacion: "Página oficial de precios de ElevenLabs (elevenlabs.io/pricing), elevenlabs.io/students y elevenlabs.io/impact, consultadas el 04/10/2026."
+fuenteVerificacion: "Página oficial de precios de ElevenLabs (elevenlabs.io/pricing), elevenlabs.io/students y elevenlabs.io/impact, consultadas el 04/10/2026 y reverificadas el 06/11/2026: las mismas promociones ($11 Creator, $1 Starter) siguen activas pese a que la fecha límite citada antes (18 de octubre) ya pasó."
 pubDate: 2026-08-30
-updatedDate: 2026-10-04
+updatedDate: 2026-11-06
 heroImage: /images/codigos-descuento/elevenlabs.png
 heroImageAlt: ElevenLabs — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ElevenLabs?
 
-No como cupón que tengas que ingresar — pero sí hay algo mejor, y es poco común en esta serie: al momento de esta verificación, la propia página oficial de precios de ElevenLabs muestra una promoción activa en el plan Creator: 50% de descuento en el primer mes, con el precio bajando de $22 USD a $11 USD (se ve al elegir facturación mensual; en la vista de facturación anual no aparece esa etiqueta). Hoy también muestra el plan Starter con 83% de descuento el primer mes ($6 a $1 USD), con la leyenda "Until Oct 18" (18 de octubre): es una promoción con fecha de cierre, así que revisa la página antes de contar con ella. No es un código de terceros ni una oferta que necesites buscar en sitios de cupones — aparece directamente en elevenlabs.io/pricing y se aplica de forma automática al suscribirte, sin campo de "código promocional" de por medio.
+No como cupón que tengas que ingresar — pero sí hay algo mejor, y es poco común en esta serie: al momento de esta verificación, la propia página oficial de precios de ElevenLabs sigue mostrando una promoción activa en el plan Creator: 50% de descuento en el primer mes, con el precio bajando de $22 USD a $11 USD (se ve al elegir facturación mensual; en la vista de facturación anual no aparece esa etiqueta). También sigue el plan Starter con 83% de descuento el primer mes ($6 a $1 USD). Ojo con la fecha: en una revisión anterior la página marcaba "Until Oct 18" (18 de octubre) como cierre, pero esa fecha ya pasó y, al revisar hoy, 06/11/2026, el mismo descuento sigue activo con un contador que no parece corresponder a un cierre real — así que no confíes en la fecha que muestre la página, solo en si el precio con descuento sigue apareciendo. No es un código de terceros ni una oferta que necesites buscar en sitios de cupones — aparece directamente en elevenlabs.io/pricing y se aplica de forma automática al suscribirte, sin campo de "código promocional" de por medio.
 
 ## Los otros descuentos oficiales confirmados
 
@@ -34,4 +34,4 @@ A pesar de que sí hay una promoción real y activa hoy, sitios agregadores de c
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 06/11/2026]

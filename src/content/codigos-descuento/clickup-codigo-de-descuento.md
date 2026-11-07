@@ -6,17 +6,17 @@ herramientaId: "clickup"
 empresa: "ClickUp"
 sitioOficial: "https://clickup.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "No hay cupón público, pero ClickUp ahorra hasta 30% por pagar anual y su programa oficial ClickUp for Startups da $3,000 USD en crédito real a startups que califican."
-fuenteVerificacion: "Páginas oficiales de ClickUp for Startups (clickup.com/startup-program) y de precios (clickup.com/pricing), consultadas el 04/10/2026."
+fraseCorta: "No hay cupón público, pero ClickUp ahorra hasta 33% por pagar anual y su programa oficial ClickUp for Startups da crédito real a startups que califican."
+fuenteVerificacion: "Páginas oficiales de ClickUp for Startups (clickup.com/startup-program) y de precios (clickup.com/pricing), consultadas el 06/11/2026: sin cupón ni promoción de Buen Fin/Black Friday visible, y el ahorro anual subió de 'hasta 30%' a 'hasta 33%'."
 pubDate: 2026-08-31
-updatedDate: 2026-10-04
+updatedDate: 2026-11-06
 heroImage: /images/codigos-descuento/clickup.png
 heroImageAlt: ClickUp — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para ClickUp?
 
-No como cupón genérico que cualquiera pueda teclear en el checkout de Unlimited o Business. ClickUp no publica un campo de "código promocional" abierto al público en su página de precios, y la empresa tampoco confirma ningún cupón ni porcentaje de descuento para el público general, más allá de lo que su propia página de precios anuncia como "ahorra hasta 30% con facturación anual" (consultada el 04/10/2026), que se aplica al elegir el ciclo anual, sin código. Lo que sí existe, documentado directamente en el sitio oficial de ClickUp, es un programa con reglas de elegibilidad concretas: ClickUp for Startups.
+No como cupón genérico que cualquiera pueda teclear en el checkout de Unlimited o Business. ClickUp no publica un campo de "código promocional" abierto al público en su página de precios, y la empresa tampoco confirma ningún cupón ni porcentaje de descuento para el público general, más allá de lo que su propia página de precios anuncia como "ahorra hasta 33% con facturación anual" (consultada el 06/11/2026), que se aplica al elegir el ciclo anual, sin código. Tampoco hay, al revisar en plena temporada de Buen Fin/Black Friday, ninguna promoción de temporada visible en esa página. Lo que sí existe, documentado directamente en el sitio oficial de ClickUp, es un programa con reglas de elegibilidad concretas: ClickUp for Startups.
 
 ## El programa real: ClickUp for Startups, $3,000 USD en crédito
 
@@ -36,4 +36,4 @@ Existen decenas de sitios agregadores que anuncian "cupones ClickUp" de 20%, 40%
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 04/10/2026]
+[Última actualización: 06/11/2026]

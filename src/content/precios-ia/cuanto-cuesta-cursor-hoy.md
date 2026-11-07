@@ -5,14 +5,14 @@ herramienta: "Cursor"
 herramientaId: "cursor"
 sitioOficial: "https://cursor.com/pricing"
 pubDate: 2026-08-21
-updatedDate: 2026-10-17
+updatedDate: 2026-11-06
 heroImage: /images/precios-ia/cursor.png
 heroImageAlt: Cursor — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Esto cambió de fondo: SpaceX cerró la compra de Cursor el 14 de agosto de 2026 y la integró a SpaceXAI, el mismo grupo detrás de Grok. Desde entonces, Cursor sustituyó sus planes individuales (Pro, Pro+, Ultra) por "The X Subscription", una sola suscripción que junta Grok, Cursor y X Premium en un solo pool de uso semanal. Quien ya tenía Cursor Pro a $20 USD al mes puede conservarlo hasta que decida migrar, pero cualquiera que se suscriba hoy ya no puede elegir ese plan: arranca directo en The X Subscription. Ahí, el plan de entrada que de verdad sirve para programar es Premium, a $30 USD al mes, antes de impuestos (la página aclara que los precios no incluyen impuestos aplicables). Debajo existe Plus, a $8 USD al mes, pero Plus no incluye Cloud Agents, Bugbot ni modelos de terceros — solo un acceso limitado al agente de Cursor y a los modelos de Grok — así que no reemplaza lo que hacía Pro. Arriba de Premium siguen [Cursor Super, antes Pro+](/articulos/cuanto-cuesta-cursor-pro-plus-hoy/) ($100 USD/mes) y Ultra ($200 USD/mes). La página sigue sin publicar un precio anual: todos los planes se facturan solo por mes.
+Esto cambió de fondo: SpaceX cerró la compra de Cursor el 14 de agosto de 2026 y la integró a SpaceXAI, el mismo grupo detrás de Grok. Desde entonces, Cursor sustituyó sus planes individuales (Pro, Pro+, Ultra) por "The X Subscription", una sola suscripción que junta Grok, Cursor y X Premium en un solo pool de uso semanal. Quien ya tenía Cursor Pro a $20 USD al mes puede conservarlo hasta que decida migrar, pero cualquiera que se suscriba hoy ya no puede elegir ese plan: arranca directo en The X Subscription. Ahí, el plan de entrada que de verdad sirve para programar es Premium, a $30 USD al mes, antes de impuestos (la página aclara que los precios no incluyen impuestos aplicables). Debajo existe Plus, a $8 USD al mes, pero Plus no incluye Cloud Agents, Bugbot ni modelos de terceros — solo un acceso limitado al agente de Cursor y a los modelos de Grok — así que no reemplaza lo que hacía Pro. Arriba de Premium siguen [Cursor Super, antes Pro+](/articulos/cuanto-cuesta-cursor-pro-plus-hoy/) ($100 USD/mes) y Ultra ($200 USD/mes). La página de precios no muestra cifras anuales, pero la documentación oficial de facturación sí publica el precio por año: Plus $80 USD/año, Premium $300 USD/año, Super $1,000 USD/año y Ultra $2,000 USD/año — un ahorro de alrededor del 17% frente a pagar mes a mes en los cuatro planes, aunque Cursor no publica ese porcentaje como tal.
 
 ## Qué incluye el plan pagado
 

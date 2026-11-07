@@ -5,7 +5,7 @@ herramienta: "GitHub Copilot"
 herramientaId: "github-copilot"
 sitioOficial: "https://github.com/features/copilot/plans"
 pubDate: 2026-08-20
-updatedDate: 2026-10-04
+updatedDate: 2026-11-06
 heroImage: /images/precios-ia/github-copilot.png
 heroImageAlt: GitHub Copilot — Precios de IA
 ---
@@ -16,7 +16,7 @@ Ojo con esto: "GitHub Copilot" y "Microsoft Copilot" son dos productos distintos
 
 ## Qué incluye el plan pagado
 
-Pro da autocompletado de código y sugerencias de edición ilimitadas (el plan gratuito tiene un tope de 2,000 autocompletados al mes), acceso a Cloud Agent y revisión de código, acceso a agentes de terceros como Claude Code y Codex dentro del ecosistema de GitHub, selección de modelo, y 1,000 créditos base más 500 créditos flexibles al mes para funciones premium (Pro+ sube a 3,900 base más 3,100 flexibles). El plan gratuito ya incluye autocompletado limitado y acceso a un par de modelos básicos — funcional para probarlo, insuficiente para uso diario intensivo.
+Pro da autocompletado de código y sugerencias de edición ilimitadas (el plan gratuito tiene un tope de 2,000 autocompletados al mes), acceso a Cloud Agent y revisión de código, acceso a agentes de terceros como Claude Code y Codex dentro del ecosistema de GitHub, y selección de modelo. GitHub cambió el sistema de créditos: ya no se mide en número de solicitudes ("premium requests"), sino en dólares (1 crédito = $0.01 USD). El chat y los agentes consumen créditos; el autocompletado y las sugerencias de edición, no. Pro incluye $15 USD de créditos al mes ($10 de base más $5 de uso flexible adicional), Pro+ sube a $70 USD ($39 base + $31 flex) y Max a $200 USD ($100 base + $100 flex) — el monto de flex puede cambiar con el tiempo, según la propia documentación. El plan gratuito ya incluye autocompletado limitado y acceso a un par de modelos básicos — funcional para probarlo, insuficiente para uso diario intensivo.
 
 ## El nombre "Copilot" es el punto de confusión más común de toda esta serie
 

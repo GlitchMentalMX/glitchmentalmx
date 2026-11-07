@@ -6,24 +6,25 @@ herramientaId: "consensus-app"
 empresa: "Consensus NLP"
 sitioOficial: "https://consensus.app/pricing"
 veredicto: "verde"
-fraseCorta: "No hay cupón genérico, pero el descuento oficial de 40% para estudiantes y profesores (25% para clínicos) es real y se reclama directo en consensus.app/pricing."
-fuenteVerificacion: "Centro de Ayuda de Consensus: 'How to Get a Student or Clinician Discount' (help.consensus.app) y consensus.app/pricing, consultados el 31/08/2026."
+fraseCorta: "No hay cupón genérico, pero el descuento oficial de 40% en el plan Pro para estudiantes verificados con correo .edu es real; no se pudo reconfirmar el descuento aparte para profesores ni para personal clínico."
+fuenteVerificacion: "consensus.app/pricing y consensus.app/.well-known/pricing.md (fuente oficial de precios de Consensus), consultados el 06/11/2026. El centro de ayuda citado antes (help.consensus.app) ya no es accesible para verificar; ni la página de precios ni la ficha oficial de precios mencionan ya un descuento específico para profesores ni para personal clínico con NPI."
 pubDate: 2026-08-31
+updatedDate: 2026-11-06
 heroImage: /images/codigos-descuento/consensus-app.png
 heroImageAlt: Consensus — Códigos de descuento
 ---
 
 ## ¿Existe un código de descuento real para Consensus?
 
-No como cupón universal que cualquiera pueda escribir en el checkout. Consensus no tiene un campo de "código promocional" abierto al público general en su plan Pro. Lo que sí existe, confirmado en un artículo oficial de su propio centro de ayuda, es un descuento real para dos grupos específicos: estudiantes/profesores y personal clínico.
+No como cupón universal que cualquiera pueda escribir en el checkout. Consensus no tiene un campo de "código promocional" abierto al público general en su plan Pro. Lo que sí existe, confirmado directamente en la ficha oficial de precios de Consensus, es un descuento real para estudiantes verificados.
 
-## El descuento real: 40% para estudiantes y profesores, 25% para personal clínico
+## El descuento real: 40% en Pro para estudiantes, por 12 meses
 
-El centro de ayuda de Consensus detalla el proceso exacto: en consensus.app/pricing existe un botón "Claim" donde seleccionas tu perfil y lo verificas — estudiantes y profesores con correo .edu o .ac obtienen 40% de descuento, y personal clínico con su número NPI obtiene 25%. Si no tienes correo institucional pero sí eres estudiante, Consensus ofrece una vía alterna: escribir a student@consensus.app con prueba de inscripción y año de graduación. No es un código que se comparta entre personas — es una cuenta verificada la que recibe el descuento.
+La ficha oficial de precios de Consensus (consensus.app/.well-known/pricing.md) confirma un descuento de 40% en el plan Pro durante 12 meses para quien verifique un correo .edu o de estudiante. No es un código que se comparta entre personas — es una cuenta verificada la que recibe el descuento. Al revisar hoy la página pública consensus.app/pricing no encontramos ya el botón "Claim" ni mención a un descuento aparte para profesores o para personal clínico con número NPI que citábamos antes: no pudimos reconfirmar esa parte, así que no la reportamos como vigente.
 
 ## Por qué desconfiar de los "códigos Consensus" que circulan en sitios de cupones
 
-Hay sitios de cupones que anuncian códigos como "SCIGRAD" o "ANKING40" prometiendo el mismo 40% sin pedir verificación .edu, cuando el propio centro de ayuda de Consensus es explícito en que ese porcentaje exige verificar perfil de estudiante o profesor. Si un código te da ese descuento sin pasar por el botón "Claim" y la verificación oficial, no hay forma de confirmar que venga de Consensus.
+Hay sitios de cupones que anuncian códigos como "SCIGRAD" o "ANKING40" prometiendo el mismo 40% sin pedir verificación .edu. La fuente oficial de Consensus es explícita en que ese porcentaje exige un correo .edu verificado, por 12 meses. Si un código te da ese descuento sin verificación de correo institucional, no hay forma de confirmar que venga de Consensus.
 
 ¿Buscas cuánto cuesta Consensus exactamente en pesos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-consensus-app-hoy/)
 
@@ -35,4 +36,4 @@ Hay sitios de cupones que anuncian códigos como "SCIGRAD" o "ANKING40" prometie
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 06/11/2026]
