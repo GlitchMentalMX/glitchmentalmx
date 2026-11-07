@@ -36,7 +36,7 @@ En Phoenix, Arizona, ciudad que ya enfrenta escasez de agua por sequía, nuevos 
 
 México no es la excepción. [Querétaro](/articulos/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/), uno de los estados con mayor concentración de centros de datos en América Latina, enfrenta una contradicción idéntica: una región con estrés hídrico documentado que se convirtió en hub de infraestructura digital precisamente porque tiene energía barata y conectividad. 
 
-El agua que consumen esos centros de datos compite directamente con la agricultura y el uso doméstico de una población que ya tiene suministro irregular. Es el mismo patrón de Virginia o Phoenix, pero sin la conversación pública que al menos existe en Estados Unidos.
+El agua que consumen esos centros de datos compite directamente con la agricultura y el uso doméstico de una población que ya tiene suministro irregular. Es el mismo patrón de Virginia o Phoenix, pero sin la conversación pública que al menos existe en Estados Unidos. Quién mide ese consumo, y por qué ninguna cifra publicada es consumo real, se detalla en [quién mide el agua de los data centers de Querétaro](/articulos/medicion-agua-centros-de-datos-queretaro/).
 
 ## El problema se va a intensificar masivamente
 

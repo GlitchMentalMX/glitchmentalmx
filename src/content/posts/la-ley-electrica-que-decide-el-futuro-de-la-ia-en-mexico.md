@@ -52,7 +52,7 @@ Son dos mensajes que conviven sin mirarse. **Uno le dice al capital privado "inv
 
 ## Lo que esto cambia para los tres estados ya cubiertos
 
-Si la restricción de fondo no es solo la subestación de Jalisco, la red del Estado de México o la interconexión de Yucatán, sino **quién tiene permitido generar electricidad y bajo qué condiciones venderla**, entonces la promesa que repite cada gobierno estatal —"vamos a construir más plantas"— cuelga de una ley federal que ninguno de esos estados controla.
+Si la restricción de fondo no es solo la subestación de Jalisco, la red del Estado de México o la interconexión de Yucatán, sino **quién tiene permitido generar electricidad y bajo qué condiciones venderla**, entonces la promesa que repite cada gobierno estatal —"vamos a construir más plantas"— cuelga de una ley federal que ninguno de esos estados controla. El reglamento de esa ley también fija [quién paga la subestación que conecta un centro de datos](/articulos/subestacion-centros-de-datos-mexico/), y buena parte de la electricidad que regula se genera con [gas importado](/articulos/gas-natural-ia-mexico/).
 
 Un gobernador puede acelerar permisos, ofrecer terreno y presumir agua. **Lo que no puede es cambiar el porcentaje que la Constitución y la LSE reservan a CFE, ni ampliar por decreto local el alcance del autoconsumo**. La competencia entre estados por atraer cómputo se juega, en buena parte, sobre una cancha cuyas reglas se escriben en la Ciudad de México y se recalculan cada año calendario.
 

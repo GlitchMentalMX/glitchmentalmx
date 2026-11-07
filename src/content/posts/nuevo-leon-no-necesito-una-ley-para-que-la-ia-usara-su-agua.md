@@ -48,7 +48,7 @@ heroImageAlt: >-
 
 ## La energía como segunda fuga
 
-**Lo que sí distingue a Oroma de la crisis de 2022 es que no se limita a pedir agua del sistema existente: busca generar su propia electricidad al margen de la red pública de CFE.** Esa capacidad de autosuficiencia energética —gas natural, mercado eléctrico mayorista, generación privada— convierte al parque en algo más que un consumidor industrial más. Lo vuelve, en la práctica, un sistema paralelo.
+**Lo que sí distingue a Oroma de la crisis de 2022 es que no se limita a pedir agua del sistema existente: busca generar su propia electricidad al margen de la red pública de CFE.** Esa capacidad de autosuficiencia energética —gas natural, mercado eléctrico mayorista, generación privada— convierte al parque en algo más que un consumidor industrial más. Lo vuelve, en la práctica, un sistema paralelo. De dónde viene ese gas importa: [entre 70% y 75% del que consume México se importa](/articulos/gas-natural-ia-mexico/).
 
 **La infraestructura eléctrica de Linares ya venía quedándose corta antes de que llegara Oroma.** Hace más de una década, el gobierno estatal, a través de la entonces Secretaría de Desarrollo Económico de Nuevo León, coordinó con CFE una ampliación de la capacidad de media tensión del municipio de 30 a 45 megawatts —una cifra pensada para las siderúrgicas y las empacadoras de alimentos que ya operaban ahí, no para una industria que hoy planea 1,500 megawatts en el mismo corredor. La brecha entre esa infraestructura heredada y la escala del proyecto actual es, en sí misma, la razón por la que Oroma necesita generar su propia electricidad: no es solo una preferencia de autosuficiencia, es una respuesta a que la red pública local no fue diseñada para esta demanda.
 
