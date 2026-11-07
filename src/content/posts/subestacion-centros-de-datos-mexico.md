@@ -1,7 +1,7 @@
 ---
 title: Quién paga la subestación que conecta un centro de datos
 category: Inteligencia Artificial
-pubDate: 2026-11-07T11:21
+pubDate: 2026-11-07T11:45
 updatedDate: ''
 description: La ley mexicana le cobra la entrada a la red a quien quiere conectarse. Lo que sigue abierto es qué compra, exactamente, ese pago.
 heroImage: /images/uploads/subestacion-centros-datos.webp
