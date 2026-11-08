@@ -6,7 +6,7 @@ imagenAlt: 'Automatización con IA: especialista revisando errores y corrigiendo
 enlace: ''
 date: 2026-10-26T06:58
 draft: false
-categoria: ''
+categoria: IA Agéntica
 punchline: A veces automatizas y contratas al vigilante
 slug: ''
 keywords: []

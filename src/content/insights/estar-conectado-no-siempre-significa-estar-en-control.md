@@ -6,7 +6,7 @@ imagenAlt: Adolescente deslizando videos cortos en su celular, sentado en la cam
 enlace: ''
 date: 2026-11-02T06:58
 draft: false
-categoria: ''
+categoria: Psicología Digital
 punchline: Estar conectado no siempre significa estar en control
 slug: ''
 keywords: []
