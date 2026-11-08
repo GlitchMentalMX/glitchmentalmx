@@ -6,7 +6,7 @@ imagenAlt: 'Resolver el examen no es hacer ciencia: experimento químico fallido
 enlace: ''
 date: 2026-10-07T06:58
 draft: false
-categoria: ''
+categoria: Narrativa de la IA
 punchline: Resolver el examen no es hacer ciencia
 slug: ''
 keywords: []
