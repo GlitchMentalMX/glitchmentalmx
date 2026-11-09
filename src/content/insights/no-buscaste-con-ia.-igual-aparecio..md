@@ -4,8 +4,8 @@ resumen: 58% de los adultos estudiados por Pew encontró al menos un resumen gen
 imagen: /images/dato-incomodo/ia-aparece.webp
 imagenAlt: 'Resumen generado por IA: mujer descubre una respuesta automática entre los resultados de búsqueda'
 enlace: ''
-date: 2026-11-07T13:39
-draft: true
+date: 2026-11-09T06:37
+draft: false
 categoria: Tendencias Digitales
 punchline: ''
 slug: ''
