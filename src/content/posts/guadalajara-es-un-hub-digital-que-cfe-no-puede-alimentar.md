@@ -11,6 +11,10 @@ heroImage: >-
 heroImageAlt: >-
   Torres de transmisión eléctrica y subestación en Guadalajara, evidencia de la
   tensión de la red frente al crecimiento de centros de datos
+is_impacto: true
+impacto_quien_paga: "Los proyectos que apostaron a la promesa de la CFE de 2024 (40% de margen eléctrico por cinco años) cuando en 2025 se canceló la planta que la sostenía."
+impacto_quien_gana: "El relato de hub digital: Jalisco corteja inversión mientras la zona metropolitana cubre un déficit cercano a 35% con electricidad importada de otras regiones."
+impacto_riesgo: "Si otro estado compite por los mismos megawatts importados, cada anuncio de inversión se apoya en una promesa que ya se rompió una vez. Nadie ha respondido esa pregunta."
 ---
 **Jalisco se vende como el hub digital de México, pero la CFE no tiene cómo alimentarlo.** En 2024 prometió 40% de margen eléctrico para cinco años; en 2025 canceló la planta que necesitaba para cumplirla. Esa contradicción, no una ley ni el agua, es el verdadero cuello de botella.
 

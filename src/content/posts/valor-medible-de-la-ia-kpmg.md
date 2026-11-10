@@ -7,6 +7,10 @@ description: A nivel global, el 89% dice obtener valor medible de la IA y solo e
 heroImage: /images/uploads/medir-valor-ia.webp
 heroImageAlt: 'IA da valor medible: mujer toca la barra al 12% junto a la barra al 89% en un panel de pared'
 draft: false
+is_impacto: true
+impacto_quien_paga: "Las empresas que invierten sin poder demostrar retorno: 89% dice obtener valor medible de la IA y solo 12% tiene mecanismos consistentes para evaluarlo (KPMG, global)."
+impacto_quien_gana: "Quien vende el diagnóstico: KPMG, que publica el estudio, incluye la medición del valor entre las condiciones de la ventaja competitiva (cifras de su comunicado, no del informe completo)."
+impacto_riesgo: "La IA ya opera como infraestructura dentro de las empresas sin que casi nadie pueda demostrar si funciona."
 ---
 
 Según KPMG, el 89% de las empresas encuestadas en el mundo dice obtener valor medible de la IA; **solo el 12% tiene mecanismos consistentes para evaluarlo**. Nuestra lectura: esa distancia es el hallazgo. Una tecnología puede expandirse sin que casi nadie pueda demostrar si funciona.

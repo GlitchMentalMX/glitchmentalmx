@@ -10,6 +10,10 @@ heroImage: /images/posts/mapa-nacional-del-costo-ambiental-de-la-ia/hero.jpg
 heroImageAlt: >-
   Vista satelital nocturna de México con nodos de centros de datos conectados
   por una red eléctrica, mapa del costo ambiental nacional de la IA.
+is_impacto: true
+impacto_quien_paga: "Quien vive donde se instalan los centros de datos: once mecanismos de jurisdicciones distintas registran el costo ambiental por partes y ningún cruce oficial lo suma."
+impacto_quien_gana: "Los operadores: ninguna oficina tiene el mandato de juntar los datos, así que nadie compara lo autorizado con lo consumido."
+impacto_riesgo: "El primer documento que integró los once mecanismos lo hizo un medio digital, no una dependencia: nadie en el gobierno tiene el mandato de vigilar el costo físico de la industria."
 ---
 Once mecanismos, jurisdicciones distintas y ningún cruce oficial entre ellos: así se sostiene, sin auditoría real, **el costo ambiental de la infraestructura de IA en México**. El problema no es la falta de transparencia — es la ausencia de una oficina con el mandato de juntar los datos.
 

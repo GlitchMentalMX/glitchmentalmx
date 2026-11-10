@@ -7,6 +7,10 @@ description: Cerca de tres cuartas partes del gas de México vienen de EE.UU. y 
 heroImage: /images/uploads/gas-usa.webp
 heroImageAlt: 'Gas de Estados Unidos: centro de datos mexicano junto a una central eléctrica de gas natural'
 draft: false
+is_impacto: true
+impacto_quien_paga: "Cada centro de datos nuevo hereda la dependencia del gas: entre 60% y 62% de la generación eléctrica lo usa y entre 70% y 75% del gas que consume México se importa."
+impacto_quien_gana: "Quien se conecta hoy: Banamex plantea pasar de 279 MW a unos 1,730 MW de centros de datos en 2031, sin que nadie contabilice el gas que eso implica."
+impacto_riesgo: "México no almacena gas: el director de Cenagas habla de hasta tres días de margen operativo si Estados Unidos cortara el suministro."
 ---
 
 El costo físico de un prompt en México pasa, en buena medida, por un **gasoducto que cruza la frontera**. La IA opera con la electricidad del sistema eléctrico nacional, y ese sistema depende en buena parte del gas natural de Estados Unidos. Ninguno de los nueve mecanismos de esta serie mide ese combustible.

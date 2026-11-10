@@ -10,6 +10,10 @@ heroImage: /images/posts/google-admite-los-anuncios-en-gemini-son-inevitables/he
 heroImageAlt: >-
   Google anuncios Gemini: interfaz con paneles flotantes de productos
   patrocinados rodeando a usuaria interactuando con IA
+is_impacto: true
+impacto_quien_paga: "Anunciantes y equipos de marketing: sus presupuestos deberán contemplar formatos conversacionales que todavía no tienen especificaciones públicas."
+impacto_quien_gana: "Google: Nick Fox dijo a WIRED que lo aprendido con anuncios en AI Mode \"probablemente se transferirá\" a Gemini, que hoy no tiene anuncios."
+impacto_riesgo: "Google pasó de \"no tenemos planes\" en enero a \"no los descartamos\" en menos de dos meses: la IA conversacional gratuita sin anuncios tiene fecha de caducidad."
 ---
 **Google pasó de "no tenemos planes" a "no los descartamos" en menos de dos meses.** Nick Fox, vicepresidente senior de Google responsable de Búsqueda, Publicidad y Comercio, confirmó a WIRED que los aprendizajes de los anuncios en AI Mode "probablemente se transferirán" a Gemini. Hoy mismo, 23 de marzo, Google presenta su estrategia publicitaria ante anunciantes en el Google NewFront 2026.
 

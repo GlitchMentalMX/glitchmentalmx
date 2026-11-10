@@ -1,0 +1,166 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ImpactoCard from '../../components/ImpactoCard.astro';
+import { getImpactoPosts, IMPACTO_MANIFIESTO } from '../../lib/impacto';
+import { formatDateShort } from '../../lib/format';
+
+const posts = await getImpactoPosts();
+const ultimo = posts[0];
+
+// Agrupa por mes de publicación (los más recientes primero), como en un
+// registro: "noviembre 2026", "octubre 2026"…
+const mesFmt = new Intl.DateTimeFormat('es-MX', { month: 'long', year: 'numeric' });
+const grupos: { mes: string; items: typeof posts }[] = [];
+for (const p of posts) {
+  const mes = mesFmt.format(p.data.pubDate);
+  const actual = grupos[grupos.length - 1];
+  if (actual && actual.mes === mes) actual.items.push(p);
+  else grupos.push({ mes, items: [p] });
+}
+
+const title = 'Impacto y Negocios';
+const description = IMPACTO_MANIFIESTO;
+
+const pageURL = new URL('/impacto-y-negocios/', Astro.site).toString();
+const collectionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description,
+  url: pageURL,
+  inLanguage: 'es',
+  isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: posts.length,
+    itemListElement: posts.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: new URL(`/articulos/${p.id}/`, Astro.site).toString(),
+      name: p.data.title,
+    })),
+  },
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <link slot="head" rel="alternate" type="application/rss+xml" title="glitchMentalMX · Impacto y Negocios" href="/impacto-y-negocios/rss.xml" />
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+  <Breadcrumbs items={[{ name: title }]} />
+
+  <div class="dossier">
+    <header class="hero container">
+      <p class="status">
+        Radar
+        <span aria-hidden="true">/</span>
+        {posts.length} análisis
+        {ultimo && (
+          <>
+            <span aria-hidden="true">/</span>
+            Último: {formatDateShort(ultimo.data.pubDate)}
+          </>
+        )}
+      </p>
+      <h1>Impacto y Negocios</h1>
+      <p class="manifesto">{IMPACTO_MANIFIESTO}</p>
+    </header>
+
+    <div class="list container">
+      {grupos.map((g) => (
+        <section class="group" aria-label={g.mes}>
+          <h2 class="month">{g.mes}</h2>
+          <div class="entries">
+            {g.items.map((p) => (
+              <div class="entry"><ImpactoCard post={p} variant="row" headingLevel="h3" /></div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <section class="criterio container">
+    <h2>Qué entra en este radar</h2>
+    <p>
+      No es un feed cronológico. Un análisis entra solo si desmonta un modelo de negocio, un cuello de botella de infraestructura, una fricción regulatoria o un movimiento de capital en tecnología, con consecuencias reales para empresas, mercados o reguladores de México, Latinoamérica, España o el resto del mundo, y si responde con claridad quién paga, quién se beneficia o cuál es el riesgo sistémico. Se quedan fuera las piezas filosóficas, los tutoriales y las noticias de lanzamientos sin consecuencias económicas.
+    </p>
+    <p class="feed">
+      Sigue el radar sin newsletter: <a href="/impacto-y-negocios/rss.xml">suscríbete por RSS</a>.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  .dossier {
+    background: var(--impacto-bg);
+    color: var(--impacto-text);
+    border-top: 1px solid var(--impacto-line);
+    border-bottom: 1px solid var(--impacto-line);
+  }
+  .hero { padding: 64px 24px 44px; }
+  .status {
+    margin: 0 0 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--impacto-accent);
+  }
+  .status span { color: var(--impacto-muted); }
+  .hero h1 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    font-size: clamp(2.6rem, 8vw, 5.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    color: var(--impacto-text);
+  }
+  .manifesto {
+    margin: 26px 0 0;
+    max-width: 62ch;
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--impacto-muted);
+  }
+
+  .list { padding: 0 24px 24px; }
+  .group { border-top: 1px solid var(--impacto-line); padding: 28px 0 8px; }
+  .month {
+    margin: 0 0 8px;
+    padding: 0;
+    background: none;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--impacto-muted);
+  }
+  .entries { display: flex; flex-direction: column; }
+  .entry {
+    max-width: 880px;
+    padding: 28px 0 32px;
+    border-top: 1px solid var(--impacto-line);
+  }
+  .entry:first-child { border-top: none; }
+
+  .criterio { padding: 56px 24px 72px; max-width: 760px; }
+  .criterio h2 { font-size: 1.3rem; margin: 0 0 14px; }
+  .criterio p { color: var(--text-muted); line-height: 1.7; margin: 0 0 14px; }
+  .criterio a { color: var(--accent); font-weight: 600; }
+  .criterio a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 44px 24px 32px; }
+  }
+</style>

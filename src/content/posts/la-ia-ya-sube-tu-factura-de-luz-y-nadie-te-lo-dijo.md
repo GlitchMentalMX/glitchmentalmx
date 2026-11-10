@@ -10,6 +10,10 @@ heroImage: /images/posts/la-ia-ya-sube-tu-factura-de-luz-y-nadie-te-lo-dijo/hero
 heroImageAlt: >-
   La IA ya sube tu factura de luz: mujer observa medidor eléctrico con planta
   energética al fondo
+is_impacto: true
+impacto_quien_paga: "Los hogares: las eléctricas de EE.UU. pidieron más de $30,000 millones en aumentos tarifarios en 2025 y las facturas suben 40% desde 2021 (PowerLines)."
+impacto_quien_gana: "La industria de IA: sus centros de datos explican cerca de 50% del crecimiento de la demanda eléctrica de EE.UU. en 2025 (IEA), con costos que recaen en quienes no decidieron construirlos."
+impacto_riesgo: "Maine estuvo a una cláusula de la primera moratoria estatal y la oposición ya frenó o retrasó al menos 16 centros de datos por $64,000 millones (Fortune). México y LATAM no tienen un marco equivalente."
 ---
 Los data centers representaron alrededor del 50% de todo el crecimiento en demanda eléctrica de EE.UU. en 2025, según la Agencia Internacional de Energía (IEA). **No es una proyección futura: es lo que ya sucedió el año pasado, mientras la industria tecnológica construía la infraestructura que hace funcionar la IA que usas todos los días.** Alguien tiene que pagar ese costo — y en gran medida ese alguien eres tú.
 

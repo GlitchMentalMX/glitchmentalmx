@@ -1,0 +1,91 @@
+---
+// Tarjeta B2B de "Impacto y Negocios": sin imagen, tipografía primero. Se usa
+// en la banda del home (variant="band") y en la landing (variant="row").
+import ImpactoBullets from './ImpactoBullets.astro';
+import { impactoLineas, impactoTextoCopia, type ImpactoPost } from '../lib/impacto';
+import { formatDateShort, readingTime } from '../lib/format';
+
+interface Props {
+  post: ImpactoPost;
+  variant?: 'band' | 'row';
+  headingLevel?: 'h2' | 'h3';
+}
+
+const { post, variant = 'row', headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+const href = `/articulos/${post.id}/`;
+const minutes = readingTime(post.body || post.data.description);
+const lineas = impactoLineas(post);
+const copiar = impactoTextoCopia(post, Astro.site!);
+const { pubDate, updatedDate } = post.data;
+---
+
+<article class:list={['ic', variant]}>
+  <p class="ic-meta">
+    <time datetime={pubDate.toISOString()}>{formatDateShort(pubDate)}</time>
+    {updatedDate && (
+      <>
+        <span aria-hidden="true">·</span>
+        <span>Actualizado <time datetime={updatedDate.toISOString()}>{formatDateShort(updatedDate)}</time></span>
+      </>
+    )}
+    <span aria-hidden="true">·</span>
+    <span>{minutes} min</span>
+  </p>
+  <Heading class="ic-title"><a href={href}>{post.data.title}</a></Heading>
+  <ImpactoBullets lineas={lineas} copiar={copiar} />
+  <a class="ic-read" href={href}>Leer análisis completo <span aria-hidden="true">→</span></a>
+</article>
+
+<style>
+  .ic {
+    --ib-text: var(--impacto-text);
+    --ib-muted: var(--impacto-muted);
+    --ib-accent: var(--impacto-accent);
+    display: flex;
+    flex-direction: column;
+    color: var(--impacto-text);
+  }
+  .ic-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 8px;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--impacto-muted);
+  }
+  /* Los títulos globales (h1–h4) llevan fondo de "inset" — aquí no. */
+  .ic-title {
+    margin: 0 0 16px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--impacto-text);
+  }
+  .ic-title a { color: inherit; }
+  .ic-title a:hover { color: var(--impacto-accent); }
+  .ic-read {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.7em 1.2em;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #fff;
+    transition: background-color 0.15s ease;
+  }
+  .ic-read:hover { background: #0052cc; }
+  .ic :global(.ib) { margin-bottom: 18px; }
+
+  /* En la banda del home las tarjetas son angostas: la etiqueta va arriba de
+     cada línea en vez de a la izquierda. */
+  .band { --ib-cols: 1fr; --ib-gap: 2px; }
+  .band .ic-title { font-size: 1.2rem; }
+  .row .ic-title { font-size: clamp(1.3rem, 2.4vw, 1.65rem); }
+</style>

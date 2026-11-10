@@ -10,6 +10,10 @@ heroImage: /images/posts/estado-de-mexico-la-fila-invisible-que-decide-la-nube/h
 heroImageAlt: >-
   Centro de datos con líneas de energía y tuberías de agua convergiendo hacia la
   instalación, con el perfil de la Ciudad de México al fondo
+is_impacto: true
+impacto_quien_paga: "Quien necesita conectarse: puede adelantar su lugar en la fila pagando la obra eléctrica; quien no puede, espera su turno en el estudio de interconexión."
+impacto_quien_gana: "Quien financie la obra: el corredor Cuautitlán–Tultitlán–Tepotzotlán ya tiene suelo, naves y conectividad (228 desarrollos industriales en el estado)."
+impacto_riesgo: "El orden de conexión de la próxima infraestructura de cómputo lo define un estudio técnico que nadie fuera de CFE audita; el plan nacional prevé 97 subestaciones nuevas hacia 2030."
 ---
 En el corredor al norte del Edomex —Tultitlán, Cuautitlán Izcalli, Tepotzotlán— la tierra ya existía antes de la nube. **Lo que decide qué centro de datos se construye no es una ley ni una concesión de agua: es un estudio de interconexión que nadie fuera de CFE audita.**
 

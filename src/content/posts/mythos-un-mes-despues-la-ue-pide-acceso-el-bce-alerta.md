@@ -10,6 +10,10 @@ heroImage: /images/posts/mythos-un-mes-despues-la-ue-pide-acceso-el-bce-alerta/h
 heroImageAlt: >-
   Mythos IA regulación: mujer con documento impreso frente a ventana
   institucional con skyline financiero al fondo
+is_impacto: true
+impacto_quien_paga: "Anthropic: comprometió hasta 100 millones de dólares en créditos de uso y 4 millones en donaciones a seguridad open-source para su consorcio Project Glasswing."
+impacto_quien_gana: "Los socios del consorcio (AWS, Apple, Microsoft, Google, JPMorgan y más de 30), casi todos estadounidenses, que acceden primero. La Comisión Europea lleva tres reuniones sin obtener acceso."
+impacto_riesgo: "Una empresa privada decide qué países y bancos se protegen primero; el BCE alertó a la banca. En junio el consorcio sumó unas 150 organizaciones en más de 15 países."
 ---
 Hace un mes [contábamos cómo el mundo se enteró de Mythos por un CMS mal configurado](/articulos/claude-mythos-anthropic-filtro-su-modelo-mas-peligroso/). **Hoy el modelo "demasiado peligroso para liberar" tiene a Bruselas pidiendo acceso, al BCE alertando a la banca, y a un modelo open-source de 11 centavos haciendo lo mismo.**
 

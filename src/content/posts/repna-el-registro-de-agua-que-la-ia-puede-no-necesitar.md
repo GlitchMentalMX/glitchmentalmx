@@ -10,6 +10,10 @@ heroImage: /images/posts/repna-el-registro-de-agua-que-la-ia-puede-no-necesitar/
 heroImageAlt: >-
   Vista aérea de embalses y acueductos mexicanos con overlay técnico,
   representando el consumo nacional de agua por centros de datos.
+is_impacto: true
+impacto_quien_paga: "Quien extrae agua directamente: el nuevo registro revisará más de 500 mil concesiones (agricultura, industria tradicional, pipas)."
+impacto_quien_gana: "Los centros de datos: compran el agua a la red municipal y ese contrato queda fuera de lo que el registro audita."
+impacto_riesgo: "La auditoría hídrica más ambiciosa en tres décadas puede capturar casi todo menos el sector que motivó la pregunta, porque mide extracción y no consumo contractual."
 ---
 México va a revisar **más de 500 mil concesiones de agua**. El nuevo registro promete transparencia total sobre quién extrae qué. El problema: un centro de datos casi nunca extrae agua directamente, la compra a la red municipal, y ese contrato queda fuera de lo que este instrumento audita.
 

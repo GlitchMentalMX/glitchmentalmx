@@ -12,6 +12,8 @@ import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
 import EstudiantesBadge from '../../components/EstudiantesBadge.astro';
 import ToolsWidget from '../../components/ToolsWidget.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
+import ImpactoBullets from '../../components/ImpactoBullets.astro';
+import { impactoLineas, impactoTextoCopia } from '../../lib/impacto';
 import { SIN_ORACULOS_ENLACES } from '../../data/sin-oraculos-enlaces';
 import { PATRON_OSCURO_ARTICULO, PATRON_OSCURO_ENLACES } from '../../data/patron-oscuro-enlaces';
 import { getCollection, render } from 'astro:content';
@@ -215,6 +217,13 @@ export async function getStaticPaths() {
 
 const { kind, post } = Astro.props;
 const { Content } = await render(post);
+
+// Impacto y Negocios: si el artículo forma parte de la sección, arriba del
+// texto va el resumen Paga / Gana / Riesgo con su botón "Copiar resumen".
+const impactoPost = kind === 'posts' && (post.data as any).is_impacto ? (post as any) : undefined;
+const impactoResumen = impactoPost
+  ? { lineas: impactoLineas(impactoPost), copiar: impactoTextoCopia(impactoPost, Astro.site!) }
+  : undefined;
 const minutes = readingTime(post.body || '');
 const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
 
@@ -765,6 +774,17 @@ if (toolKinds.includes(kind) && herramienta) {
       </div>
     )}
 
+    {impactoResumen && (
+      <aside class="impacto-resumen container" aria-label="Resumen ejecutivo">
+        <div class="impacto-resumen-box">
+          <p class="impacto-resumen-label">
+            Impacto y Negocios <span aria-hidden="true">/</span> <a href="/impacto-y-negocios/">Ver el radar →</a>
+          </p>
+          <ImpactoBullets lineas={impactoResumen.lineas} copiar={impactoResumen.copiar} />
+        </div>
+      </aside>
+    )}
+
     <div class="content container">
       <div class="prose">
         {kind === 'preciosIA' && precio && precioMXN !== undefined && (
@@ -1075,6 +1095,30 @@ if (toolKinds.includes(kind) && herramienta) {
     border-radius: var(--radius);
   }
 
+  .impacto-resumen { max-width: var(--measure); padding: 0 24px; margin: 0 auto 28px; }
+  .impacto-resumen-box {
+    padding: 20px 22px 14px;
+    border-radius: var(--radius);
+    border: 1px solid var(--impacto-line);
+    background: var(--impacto-bg);
+    color: var(--impacto-text);
+    --ib-text: var(--impacto-text);
+    --ib-muted: var(--impacto-muted);
+    --ib-accent: var(--impacto-accent);
+  }
+  .impacto-resumen-label {
+    margin: 0 0 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--impacto-accent);
+  }
+  .impacto-resumen-label span { color: var(--impacto-muted); }
+  .impacto-resumen-label a:hover { text-decoration: underline; }
   .content { padding: 0 24px 20px; display: flex; flex-direction: column; align-items: center; }
 
   .book-section { max-width: 720px; padding: 32px 24px 96px; }

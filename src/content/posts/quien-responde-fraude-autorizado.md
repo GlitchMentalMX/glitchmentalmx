@@ -7,6 +7,10 @@ description: 'El fraude no rompió la protección bancaria: cumplió su definici
 heroImage: /images/uploads/fraude-bancario-autorizado.webp
 heroImageAlt: 'Fraude bancario autorizado: mujer confirma con su mano el pago mientras la cláusula de exclusión se repliega frente a ella'
 draft: false
+is_impacto: true
+impacto_quien_paga: "El usuario: en el fraude por pago autorizado la operación cuenta como tuya y, en el sistema de protección bancaria, responde el usuario antes de que alguien investigue."
+impacto_quien_gana: "Los bancos: la clasificación binaria deja la pérdida fuera de su responsabilidad cuando el engaño ocurrió aguas arriba de la institución."
+impacto_riesgo: "México ya publica cifras trimestrales (CONDUSEF, Buró de Entidades Financieras) pero nadie debate quién debe absorber la pérdida; otras jurisdicciones sí movieron ese default."
 ---
 
 ## La operación fue tuya

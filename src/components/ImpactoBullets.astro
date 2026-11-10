@@ -1,0 +1,129 @@
+---
+// Las tres líneas "Paga / Gana / Riesgo" + el botón discreto "Copiar resumen".
+// Se reutiliza en la tarjeta (landing y home) y en el cuadro de resumen de la
+// página del artículo. El botón copia título + las tres líneas + el enlace.
+interface Props {
+  lineas: { etiqueta: string; texto: string }[];
+  copiar: string;
+}
+const { lineas, copiar } = Astro.props;
+---
+
+<div class="ib">
+  <ul class="ib-list">
+    {lineas.map((l) => (
+      <li>
+        <span class="ib-tag">{l.etiqueta}</span>
+        <span class="ib-text">{l.texto}</span>
+      </li>
+    ))}
+  </ul>
+  <button type="button" class="ib-copy" data-copy-resumen={copiar} aria-label="Copiar resumen y enlace al portapapeles">
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+      <rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8" />
+      <path d="M5 15V6a2 2 0 0 1 2-2h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+    </svg>
+    <span>Copiar resumen</span>
+  </button>
+</div>
+
+<style>
+  .ib-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ib-list li {
+    display: grid;
+    grid-template-columns: var(--ib-cols, 4.2em 1fr);
+    gap: var(--ib-gap, 10px);
+    align-items: baseline;
+    line-height: 1.5;
+  }
+  .ib-tag {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ib-accent, var(--accent));
+  }
+  .ib-text { font-size: 0.95rem; color: var(--ib-text, var(--text)); }
+  .ib-copy {
+    margin-top: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 0;
+    background: none;
+    border: none;
+    font: inherit;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--ib-muted, var(--text-muted));
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+  .ib-copy:hover, .ib-copy:focus-visible { color: var(--ib-accent, var(--accent)); }
+  .ib-copy.copied { color: var(--up-line); }
+</style>
+
+<script>
+  // Copia el resumen (título, tres líneas y enlace) al portapapeles. Un solo
+  // listener delegado sirve a todos los botones de la página.
+  function copiarConTextarea(texto: string): boolean {
+    const ta = document.createElement('textarea');
+    ta.value = texto;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      return document.execCommand('copy');
+    } catch {
+      return false;
+    } finally {
+      ta.remove();
+    }
+  }
+
+  // API moderna primero; si el navegador la rechaza (permisos, contexto no
+  // seguro, webviews), cae a un textarea temporal.
+  async function copiarTexto(texto: string): Promise<void> {
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(texto);
+        return;
+      }
+    } catch {
+      // se intenta el respaldo
+    }
+    if (!copiarConTextarea(texto)) throw new Error('copy failed');
+  }
+
+  document.addEventListener('click', (ev) => {
+    const btn = (ev.target as Element).closest<HTMLButtonElement>('[data-copy-resumen]');
+    if (!btn) return;
+    const label = btn.querySelector('span');
+    if (!label || btn.classList.contains('copied')) return;
+    const original = label.textContent;
+    copiarTexto(btn.dataset.copyResumen ?? '').then(
+      () => {
+        btn.classList.add('copied');
+        label.textContent = 'Copiado';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          label.textContent = original;
+        }, 2000);
+      },
+      () => {
+        label.textContent = 'No se pudo copiar';
+        setTimeout(() => { label.textContent = original; }, 2000);
+      },
+    );
+  });
+</script>

@@ -10,6 +10,10 @@ heroImage: /images/posts/recinto-fiscalizado-estrategico-la-aduana-que-decide/he
 heroImageAlt: >-
   Múltiples sitios de construcción de centros de datos en distintos estados
   mexicanos, evidencia de la competencia fiscal interestatal.
+is_impacto: true
+impacto_quien_paga: "Los gobiernos estatales: desde enero de 2025 el Decreto Plan México da la misma deducción inmediata (41% a 91% de la inversión nueva en activo fijo) en los 32 estados, y ya no pueden competir con eso."
+impacto_quien_gana: "Quien obtiene el trámite del Recinto Fiscalizado Estratégico: permite mover equipo de cómputo bajo diferimiento aduanero y se decide en la ANAM, no en un palacio de gobierno."
+impacto_riesgo: "La ventaja real para un centro de datos se decide meses o años antes del anuncio, en una aduana federal y fuera de los comunicados de prensa: los estados pierden la última palabra."
 ---
 Desde enero de 2025, el Decreto Plan México da la misma deducción —41% a 91%— a cualquier estado, sector o nacionalidad. **La ventaja real para atraer un data center para entrenar o correr modelos de IA ya no la decide un gobernador**: la decide una aduana federal, el Recinto Fiscalizado Estratégico.
 

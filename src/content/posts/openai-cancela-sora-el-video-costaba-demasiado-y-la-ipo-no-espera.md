@@ -11,6 +11,10 @@ heroImage: >-
 heroImageAlt: >-
   OpenAI mata Sora: máquina industrial imprime tiras de video continuo mostrando
   alto costo de generación audiovisual
+is_impacto: true
+impacto_quien_paga: "OpenAI: cerró Sora seis meses después de lanzarla por el costo del cómputo, y el acuerdo de mil millones de dólares con Disney nunca se cerró."
+impacto_quien_gana: "Runway, Kling y otros generadores de video, que recogen un mercado sin su jugador más visible. OpenAI redirige recursos a código y clientes corporativos, con márgenes más claros."
+impacto_riesgo: "OpenAI necesita demostrar rentabilidad antes de salir a bolsa: una app número uno en descargas era una sangría de cómputo. El problema central era el costo, no los deepfakes."
 ---
 OpenAI acaba de cerrar Sora, su app de generación de video, apenas seis meses después de lanzarla. **No es una historia sobre deepfakes: es una historia sobre costos computacionales, una IPO en el horizonte y un acuerdo de mil millones de dólares que nunca se cerró.**
 

@@ -87,6 +87,30 @@
   }
 }
 
+/* Impacto y Negocios — bandas "dossier". Siempre texto claro sobre fondo oscuro:
+   en tema claro es un bloque casi negro que contrasta con la página; en tema
+   oscuro sube a un gris industrial para no fundirse con el fondo. */
+:root {
+  --impacto-bg: #10131a;
+  --impacto-card: #171b25;
+  --impacto-line: #2a2f3d;
+  --impacto-text: #eef0f4;
+  --impacto-muted: #9aa1b1;
+  --impacto-accent: #6ba3ff;
+}
+:root[data-theme='dark'] {
+  --impacto-bg: #1b1f2a;
+  --impacto-card: #232836;
+  --impacto-line: #343a4b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --impacto-bg: #1b1f2a;
+    --impacto-card: #232836;
+    --impacto-line: #343a4b;
+  }
+}
+
 /* blue accent span for headline copy on landing pages — one impactful word
    or phrase per title, not a full-sentence highlight */
 .accent { color: var(--accent); }

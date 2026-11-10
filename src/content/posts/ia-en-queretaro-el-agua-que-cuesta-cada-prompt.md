@@ -6,6 +6,10 @@ updatedDate: 2026-11-07T06:54
 description: Los data centers de IA en Querétaro consumen agua en un estado en sequía. El costo hídrico real de la infraestructura digital en México.
 heroImage: /images/posts/ia-en-queretaro-el-agua-que-cuesta-cada-prompt/hero.jpg
 heroImageAlt: Torres de enfriamiento de un centro de datos junto a un canal de riego seco en Querétaro, evidencia del estrés hídrico de la infraestructura de IA
+is_impacto: true
+impacto_quien_paga: "El agua de Querétaro, uno de los estados más golpeados por la sequía extrema, que ya alberga 15 centros de datos en operación, 16 en construcción y 6 anunciados."
+impacto_quien_gana: "Operadores e inversionistas: más de 12 mil millones de dólares acumulados y una industria que, según MEXDC, pesaría más de 5% del PIB nacional en 2029."
+impacto_riesgo: "Los centros de datos están clasificados como empresas de servicios y no están obligados a reportar su consumo de agua; Sedesu publicaría reportes desde 2027."
 ---
 
 Querétaro es, hoy, uno de los estados con mayor inversión tecnológica de América Latina y uno de los más afectados por sequía extrema. Ambas cosas son simultáneas, no contradictorias. Y esa simultaneidad es exactamente el problema que nadie en el gobierno ni en las empresas quiere nombrar con precisión.

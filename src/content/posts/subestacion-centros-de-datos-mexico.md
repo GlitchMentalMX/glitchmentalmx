@@ -7,6 +7,10 @@ description: La ley mexicana le cobra la entrada a la red a quien quiere conecta
 heroImage: /images/uploads/subestacion-centros-datos.webp
 heroImageAlt: 'Subestación eléctrica: ejecutiva firma un acuerdo de conexión a la red eléctrica'
 draft: false
+is_impacto: true
+impacto_quien_paga: "Quien solicita la conexión: aporta en efectivo o en especie lo que las tarifas no recuperan, o construye las obras por su cuenta."
+impacto_quien_gana: "CFE (como transportista o distribuidora): las obras construidas hasta la red pública se le ceden a título gratuito y pasan al Sistema Eléctrico Nacional."
+impacto_riesgo: "Ni la regla ni los casos conocidos aclaran qué compra exactamente ese pago, ni quién decide qué otros usuarios se conectan a la capacidad que financió un privado."
 ---
 
 **Conectar un centro de datos a la red eléctrica mexicana tiene un costo inicial que la ley le pone al solicitante:** aportar, en efectivo o en especie, por las obras que la tarifa no recupera, o construirlas por su cuenta. Las reglas dicen de quién queda la obra; los casos conocidos no dicen qué compra, exactamente, ese pago.

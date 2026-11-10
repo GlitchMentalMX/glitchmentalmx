@@ -11,6 +11,10 @@ heroImage: >-
 heroImageAlt: >-
   Deuda IA $121 mil millones: ejecutivo observa centro de datos a través de
   cristal en sala de juntas
+is_impacto: true
+impacto_quien_paga: "Los propios gigantes, con deuda: Meta ($28 mil M), Alphabet ($32 mil M), Amazon ($31 mil M) y Microsoft ($30 mil M) emitieron $121 mil millones en 2025, más de cuatro veces su promedio histórico."
+impacto_quien_gana: "Quien ya tiene escala: los gigantes compran capacidad que los pequeños no pueden igualar, mientras startups y pymes enfrentan menos cómputo, precios más altos y mayor barrera de entrada."
+impacto_riesgo: "Los centros de datos estarán operativos en 18 a 24 meses: en 2027–2028 se verá si los retornos justifican la deuda o si fue una burbuja, y el costo podría trasladarse a los servicios de IA empresarial."
 ---
 [Las cuatro compañías tecnológicas más grandes](https://es.wikipedia.org/wiki/Gigantes_tecnológicos) están apostando todo a infraestructura de IA. **Meta, Alphabet (Google), Amazon, y Microsoft emitieron colectivamente $121 mil millones en deuda corporativa durante 2025 para financiar construcción de centros de datos de IA**, según análisis de Bank of America. Es más de cuatro veces el promedio histórico de endeudamiento de estas compañías.
 

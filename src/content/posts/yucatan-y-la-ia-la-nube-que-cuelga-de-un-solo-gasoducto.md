@@ -10,6 +10,10 @@ heroImage: /images/posts/yucatan-y-la-ia-la-nube-que-cuelga-de-un-solo-gasoducto
 heroImageAlt: >-
   Subestación eléctrica y torres de transmisión en el paisaje calizo de Yucatán,
   donde el límite de infraestructura es eléctrico y no hídrico.
+is_impacto: true
+impacto_quien_paga: "La península: tres estados con un solo corredor de transmisión al resto del sistema y casi toda su generación colgada de un gasoducto de 796 km."
+impacto_quien_gana: "Engie, dueña del único ducto (Energía Mayakan): su capacidad de 250 MMcf/d está contratada al 97% por CFE y la ampliación se espera en 2027 si el calendario se sostiene."
+impacto_riesgo: "No falta demanda ni fila, falta redundancia: un solo ducto y un solo corredor tendrían que sostener centros de datos, dos plantas de ciclo combinado y el crecimiento de tres estados."
 ---
 Un **data center en Mérida** no compite por más energía: compite por un tubo fijo. La península de Yucatán es un subsistema eléctrico casi aislado, y ese dato cambia por completo la conversación sobre su futuro digital.
 

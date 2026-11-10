@@ -30,6 +30,26 @@ const posts = defineCollection({
     heroImage: z.string(),
     heroImageAlt: z.string(),
     draft: z.boolean().default(false),
+    // Impacto y Negocios — sección B2B. Estos campos NO se editan en Sveltia
+    // (ahí son widgets ocultos que solo preservan el valor): se redactan en
+    // la revisión periódica (skill revision-impacto). Un artículo con
+    // is_impacto: true sin los tres textos rompe el build a propósito, para
+    // no publicar nunca una tarjeta incompleta.
+    is_impacto: z.boolean().default(false),
+    impacto_quien_paga: z.string().optional(),
+    impacto_quien_gana: z.string().optional(),
+    impacto_riesgo: z.string().optional(),
+  }).superRefine((data, ctx) => {
+    if (!data.is_impacto) return;
+    for (const campo of ['impacto_quien_paga', 'impacto_quien_gana', 'impacto_riesgo'] as const) {
+      if (!data[campo]?.trim()) {
+        ctx.addIssue({
+          code: 'custom',
+          path: [campo],
+          message: `is_impacto: true exige que ${campo} tenga texto (Impacto y Negocios nunca muestra tarjetas incompletas).`,
+        });
+      }
+    }
   }),
 });
 

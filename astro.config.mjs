@@ -51,6 +51,9 @@ const postsDir = new URL('./src/content/posts/', import.meta.url);
 const fechaPorSlugPost = new Map();
 const categoriaPorSlugPost = new Map();
 let fechaMaxPosts;
+// Fecha más reciente entre los artículos de "Impacto y Negocios" (is_impacto:
+// true) — lastmod de /impacto-y-negocios/.
+let fechaMaxImpacto;
 for (const archivo of readdirSync(postsDir)) {
   if (!archivo.endsWith('.md')) continue;
   const slug = archivo.replace(/\.md$/, '');
@@ -59,6 +62,9 @@ for (const archivo of readdirSync(postsDir)) {
   if (fecha) {
     fechaPorSlugPost.set(slug, fecha);
     if (!fechaMaxPosts || fecha > fechaMaxPosts) fechaMaxPosts = fecha;
+    if (/^is_impacto:\s*true/m.test(readFileSync(url, 'utf-8')) && (!fechaMaxImpacto || fecha > fechaMaxImpacto)) {
+      fechaMaxImpacto = fecha;
+    }
   }
   const categoria = leerCategoria(url);
   if (categoria) categoriaPorSlugPost.set(slug, categoria);
@@ -336,6 +342,7 @@ export default defineConfig({
           return conFecha(fechas.length ? new Date(Math.max(...fechas.map((f) => f.getTime()))) : undefined);
         }
         if (pathname === '/archivo/') return conFecha(fechaMaxPosts);
+        if (pathname === '/impacto-y-negocios/') return conFecha(fechaMaxImpacto);
         if (pathname === '/dato-incomodo/') return conFecha(fechaDatoIncomodo);
         if (pathname === '/insights-visuales/') return conFecha(fechaInsights);
 

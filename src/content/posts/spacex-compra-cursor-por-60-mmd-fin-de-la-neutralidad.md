@@ -10,6 +10,10 @@ heroImage: /images/posts/spacex-compra-cursor-por-60-mmd-fin-de-la-neutralidad/h
 heroImageAlt: >-
   SpaceX compra Cursor: desarrollador sostiene credencial de acceso suspendida
   frente a monitores con entorno de código
+is_impacto: true
+impacto_quien_paga: "SpaceX: $10 mil millones por el trabajo conjunto o $60 mil millones si ejerce la opción de comprar Cursor a finales de 2026, financiada con acciones tras su IPO."
+impacto_quien_gana: "Cursor, valuada en 29,300 millones en su Serie D de noviembre, y SpaceX, que obtiene su base de usuarios. Ni xAI ni Cursor tienen modelos propios que igualen a los de Anthropic y OpenAI."
+impacto_riesgo: "Si el editor deja de ser neutral entre modelos, los desarrolladores con su flujo de trabajo construido sobre Cursor quedan expuestos. La adquisición es una opción, no una certeza."
 ---
 **SpaceX anunció el 21 de abril un acuerdo con Cursor, el editor de código más popular entre desarrolladores que usan IA, que incluye una opción para adquirir la startup por 60 mil millones de dólares a finales de 2026.** El movimiento no es solo sobre código. Es sobre quién controla las herramientas que los programadores usan todos los días — y sobre el IPO de SpaceX.
 

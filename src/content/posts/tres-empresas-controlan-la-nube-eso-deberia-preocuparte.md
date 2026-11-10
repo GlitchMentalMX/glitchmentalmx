@@ -10,6 +10,10 @@ heroImage: /images/posts/tres-empresas-controlan-la-nube-eso-deberia-preocuparte
 heroImageAlt: >-
   Tres empresas controlan la nube: tres centros de datos sobre mapa
   interconectado supervisado por operadora
+is_impacto: true
+impacto_quien_paga: "Gobiernos y empresas de LATAM: rentan su cómputo a tres empresas estadounidenses, sujetas a la jurisdicción de EE.UU., y ningún país de la región tiene una estrategia coherente y financiada de soberanía digital."
+impacto_quien_gana: "Amazon Web Services, Microsoft Azure y Google Cloud: concentran la infraestructura sobre la que opera la mayoría de las aplicaciones y los datos del planeta."
+impacto_riesgo: "Si esa infraestructura falla, cambia sus precios o un gobierno quiere esos datos, la región no controla la respuesta: su soberanía digital es parcial, según el artículo."
 ---
 Amazon Web Services, Microsoft Azure y Google Cloud Platform. Tres empresas, las tres con sede en Estados Unidos, las tres sujetas a la jurisdicción legal estadounidense, controlan la infraestructura de computación sobre la que opera la mayoría de las aplicaciones, datos y servicios digitales del planeta. No es una tendencia hacia la concentración. Es la concentración ya consumada. **Y la pregunta que pocos están formulando con suficiente claridad es qué ocurre cuando esa infraestructura falla, cuando cambia sus precios, o cuando un gobierno decide que esos datos le interesan.**
 

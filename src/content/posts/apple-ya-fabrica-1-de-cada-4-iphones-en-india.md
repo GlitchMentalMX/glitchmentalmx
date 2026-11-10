@@ -10,6 +10,10 @@ heroImage: /images/posts/apple-ya-fabrica-1-de-cada-4-iphones-en-india/hero.webp
 heroImageAlt: >-
   Apple fabrica 1 de cada 4 iPhone en India: línea de ensamblaje de smartphones
   en fábrica con flujo luminoso de producción
+is_impacto: true
+impacto_quien_paga: "Apple: los aranceles entre EE.UU. y China encarecieron exportar iPhones desde China. Ensambló unos 55 millones en India en 2025, 53% más, y ya es 25% de su producción."
+impacto_quien_gana: "India: su programa de incentivos Production Linked Incentive ofreció costos subsidiados, y las ventas de iPhone en el país ya superan los $9,000 millones."
+impacto_riesgo: "La lógica empresarial de Apple y la política exterior de EE.UU. no siempre coinciden: siguió su plan pese a una advertencia de no expandir más la producción en India."
 ---
 Bloomberg publicó esta mañana una cifra que hace unos años hubiera parecido improbable: Apple ensambló aproximadamente 55 millones de iPhones en India durante 2025, un incremento del 53% respecto a los 36 millones del año anterior. Considerando que la producción global de la empresa ronda los 220 a 230 millones de unidades anuales, eso representa ya el 25% del total. Uno de cada cuatro iPhones del mundo se fabrica ahora en India.
 

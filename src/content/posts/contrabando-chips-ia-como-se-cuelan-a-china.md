@@ -7,6 +7,10 @@ description: 'Cómo se contrabandea una GPU: transbordo por Malasia, comprador p
 heroImage: /images/uploads/contrabando-chips-ia.webp
 heroImageAlt: 'AI CHIP SMUGGLING: GPU de tres ventiladores extraída de un servidor durante una inspección logística'
 draft: false
+is_impacto: true
+impacto_quien_paga: "Los exportadores: necesitan licencia del Departamento de Comercio para enviar chips avanzados a China. El DOJ acusa a Greg Lui por 27 servidores con GPU (unos $7.6 millones) transbordados vía Kuala Lumpur."
+impacto_quien_gana: "Los compradores en China que reciben chips controlados y los países de tránsito que ganan dinero con el tránsito."
+impacto_riesgo: "El control depende de que cada país de tránsito vigile lo que cruza su territorio, sin incentivo claro para hacerlo. Todo lo que no sea una declaración de culpabilidad sigue siendo una acusación."
 ---
 
 El **contrabando de chips de IA** no se comete en la frontera con China, sino en el papeleo de los países de tránsito. El caso de Greg Lui, arrestado el 1 de octubre de 2026, lo muestra: facturas falsas, un envío a Kuala Lumpur y un comprador en China.

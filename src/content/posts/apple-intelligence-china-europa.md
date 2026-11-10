@@ -8,6 +8,10 @@ description: Apple Intelligence llega a China en diciembre con Qwen, y Siri AI n
 heroImage: /images/uploads/ia-por-pais.webp
 heroImageAlt: 'Apple Intelligence en China y la UE: mujer con dos teléfonos, uno con asistente de IA activo y otro sin asistente'
 draft: true
+is_impacto: true
+impacto_quien_paga: "Los usuarios de la UE: la Siri AI de iOS 27 sigue sin llegar a iPhone y iPad, según Apple, y tampoco llega a China continental."
+impacto_quien_gana: "Los reguladores con peso de mercado suficiente para negociar: China exige registrar los modelos de IA generativa y Apple lo obtuvo para iPhone en julio y para tablets y laptops el 9 de noviembre."
+impacto_riesgo: "La IA de un mismo iPhone ya se negocia país por país: ¿quién representa a los usuarios de los países que no se sentaron a la mesa?"
 ---
 
 Apple Intelligence quedó registrada en China para tablets y laptops (9 de noviembre); en la UE, la Siri AI de iOS 27 sigue sin llegar a iPhone y iPad. Misma marca, mismo aparato, IA distinta: **la frontera ya no pasa por el hardware, sino por el modelo**.
