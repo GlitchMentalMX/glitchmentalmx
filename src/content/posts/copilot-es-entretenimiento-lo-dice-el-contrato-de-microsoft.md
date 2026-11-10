@@ -11,6 +11,11 @@ heroImage: >-
 heroImageAlt: >-
   Copilot es entretenimiento: persona leyendo libro frente a dashboard digital
   con métricas en pantalla
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Las empresas que contratan Copilot: sus términos vigentes lo llaman \"solo para entretenimiento\", piden no confiar en él para consejos importantes y lo dejan \"bajo tu propio riesgo\"."
+impacto_quien_gana: "Microsoft: vende Copilot a empresas como herramienta de productividad mientras su texto legal limita su responsabilidad. Lo llamó \"lenguaje heredado\" y dijo que lo actualizará."
+impacto_riesgo: "OpenAI y xAI incluyen advertencias similares: hay una distancia entre la promesa comercial de la IA y lo que sus propios contratos garantizan."
 ---
 Los **términos de uso de Microsoft Copilot** contienen una frase que contradice cada anuncio de la compañía: "Copilot is for entertainment purposes only." La misma empresa que lleva meses presionando a clientes corporativos para que paguen por su asistente de IA, en el texto legal vigente, lo clasifica como entretenimiento.
 

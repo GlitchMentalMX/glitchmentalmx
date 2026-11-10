@@ -8,6 +8,7 @@ heroImage: /images/uploads/subestacion-centros-datos.webp
 heroImageAlt: 'Subestación eléctrica: ejecutiva firma un acuerdo de conexión a la red eléctrica'
 draft: false
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Quien solicita la conexión: aporta en efectivo o en especie lo que las tarifas no recuperan, o construye las obras por su cuenta."
 impacto_quien_gana: "CFE (como transportista o distribuidora): las obras construidas hasta la red pública se le ceden a título gratuito y pasan al Sistema Eléctrico Nacional."
 impacto_riesgo: "Ni la regla ni los casos conocidos aclaran qué compra exactamente ese pago, ni quién decide qué otros usuarios se conectan a la capacidad que financió un privado."

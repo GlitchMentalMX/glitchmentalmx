@@ -11,6 +11,7 @@ heroImageAlt: >-
   OpenAI no llegó al billón: mujer toca grieta profunda en muro corporativo
   urbano
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "OpenAI y sus socios: tiene comprometidos unos $600,000 millones en data centers y, según el WSJ, su CFO advirtió que podría no financiarlos si los ingresos no aceleran."
 impacto_quien_gana: "Anthropic, que según varias fuentes capturó una parte de los mercados de codificación y empresarial, incluso dentro de productos de Microsoft."
 impacto_riesgo: "OpenAI no llegó a mil millones de usuarios semanales a finales de 2025 y falló metas de ingresos de 2026 cerca de su posible salida a bolsa. Altman y Friar calificaron el reporte de \"ridículo\"."

@@ -18,6 +18,8 @@ export async function getImpactoPosts(): Promise<ImpactoPost[]> {
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 }
 
+export const esLatam = (post: ImpactoPost) => post.data.impacto_ambito === 'latam';
+
 export type ImpactoLinea = { etiqueta: string; texto: string };
 
 // Las tres líneas del resumen, siempre en el mismo orden.

@@ -10,6 +10,11 @@ heroImage: /images/posts/neurodatos-el-mercado-de-tu-cerebro-ya-existe-hoy/hero.
 heroImageAlt: >-
   Neurodatos: mujer con diadema de bienestar conectada a red de hilos de luz
   dispersos, mercado de datos cerebrales sin regulación
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Quien compra una diadema EEG de \"bienestar\": su actividad cerebral se trata como un dato comercial más y se sube a la nube de la empresa."
+impacto_quien_gana: "Los fabricantes: al no presentarse como dispositivo médico esquivan a la FDA y a HIPAA, que solo intervienen con fines diagnósticos o terapéuticos."
+impacto_riesgo: "México tiene una autoridad de datos dependiente del Ejecutivo y leyes que no definen el dato biométrico. La recomendación de la UNESCO de noviembre de 2025 no es vinculante."
 ---
 **No hace falta un implante quirúrgico para que alguien comercie con tu actividad cerebral.** Basta una diadema EEG (electroencefalografía, la técnica que registra la actividad eléctrica del cerebro mediante electrodos en el cuero cabelludo) comprada por internet y etiquetada como "bienestar". Esa etiqueta es la maniobra: esquiva a la autoridad sanitaria y mete tu cerebro en el mercado de datos.
 

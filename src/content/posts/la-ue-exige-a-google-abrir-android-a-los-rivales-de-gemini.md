@@ -12,6 +12,7 @@ heroImageAlt: >-
   La UE exige a Google: bóveda metálica con logo Android atravesada por
   mecanismo industrial abierto
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Google: la Comisión Europea concluyó de forma preliminar (DMA, 27 de abril) que debe dar a asistentes rivales como ChatGPT y Claude las capacidades de Android que hoy solo tiene Gemini."
 impacto_quien_gana: "Los asistentes de IA rivales de Gemini y los usuarios de Android fuera de la UE, como los de México, Brasil y Argentina, que se beneficiarían de forma indirecta."
 impacto_riesgo: "Por primera vez un regulador trata el control del sistema operativo como ventaja anticompetitiva en IA. La decisión vinculante de julio fijaría el precedente para cualquier plataforma con poder de gatekeeper."

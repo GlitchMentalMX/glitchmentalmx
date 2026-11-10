@@ -8,6 +8,7 @@ heroImage: /images/uploads/aduana-ia.webp
 heroImageAlt: 'aduana del comercio de IA: mujer observa panel de autorización con carril bloqueado y carril activo en checkout'
 draft: false
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Meta y los usuarios de su agente Muse: Amazon lo bloqueó por considerar que viola sus Condiciones de Uso, el mismo día que Shopify y PayPal lo integraron."
 impacto_quien_gana: "Las plataformas que controlan el checkout: cada tienda decide a qué agente deja pasar según el modelo de negocio del que depende."
 impacto_riesgo: "MercadoLibre y otras plataformas de la región aún no han decidido públicamente si abren o cierran la puerta; las búsquedas por agentes pasaron de 0.3% a 2.5% del tráfico de John Lewis en un año."

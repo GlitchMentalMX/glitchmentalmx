@@ -11,6 +11,7 @@ heroImageAlt: >-
   Granja solar junto a infraestructura de centros de datos en el desierto de
   Sonora, con terreno agrietado por la sequía
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Los acuíferos: Sonora es segundo lugar nacional en acuíferos sobreexplotados y su oferta para centros de datos no menciona el agua."
 impacto_quien_gana: "Los centros de datos que busquen energía solar: la central Puerto Peñasco llegará a 1,000 MW y hoy opera con 420 MW."
 impacto_riesgo: "Un centro de datos necesita energía y agua. Brasil ya ofrece operadores con matriz de unos 90% renovable y, según Ascenty, sin agua para refrigeración."

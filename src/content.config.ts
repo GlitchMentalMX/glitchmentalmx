@@ -36,11 +36,21 @@ const posts = defineCollection({
     // is_impacto: true sin los tres textos rompe el build a propósito, para
     // no publicar nunca una tarjeta incompleta.
     is_impacto: z.boolean().default(false),
+    // 'latam' = el artículo se centra en México/LATAM (va arriba en la landing);
+    // 'global' = enfoque global o europeo (va abajo).
+    impacto_ambito: z.enum(['latam', 'global']).optional(),
     impacto_quien_paga: z.string().optional(),
     impacto_quien_gana: z.string().optional(),
     impacto_riesgo: z.string().optional(),
   }).superRefine((data, ctx) => {
     if (!data.is_impacto) return;
+    if (!data.impacto_ambito) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['impacto_ambito'],
+        message: "is_impacto: true exige impacto_ambito: 'latam' o 'global'.",
+      });
+    }
     for (const campo of ['impacto_quien_paga', 'impacto_quien_gana', 'impacto_riesgo'] as const) {
       if (!data[campo]?.trim()) {
         ctx.addIssue({

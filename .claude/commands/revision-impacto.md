@@ -49,10 +49,16 @@ Frontmatter (después de `draft:`):
 
 ```yaml
 is_impacto: true
+impacto_ambito: latam   # o global
 impacto_quien_paga: "..."
 impacto_quien_gana: "..."
 impacto_riesgo: "..."
 ```
+
+Ámbito (`impacto_ambito`, obligatorio): `latam` si el artículo se centra en
+México/Latinoamérica (va ARRIBA en la landing); `global` si el enfoque es
+global o europeo, aunque mencione LATAM de pasada (va ABAJO). El build falla
+si falta.
 
 Reglas de redacción (son frases que un directivo copiará a Slack/Teams):
 - Una sola frase por campo, ≤ ~220 caracteres, sin etiqueta ("Paga:" ya la pone el componente).

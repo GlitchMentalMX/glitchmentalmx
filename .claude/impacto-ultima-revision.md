@@ -18,3 +18,7 @@ Entraron 35: serie "Detrás del Prompt" (infraestructura eléctrica y agua de ce
 ## Pendiente de evaluar (solo por título)
 
 Piezas de capital o regulación aún no leídas que podrían encajar: ami-labs-recauda-1030-millones-para-matar-a-los-llms, modelos-del-mundo-en-ia-la-apuesta-de-5-mil-millones, nvidia-gtc-2026-1-billon-y-la-era-de-la-ia-agentica, anthropic-demanda-al-pentagono-el-caso-que-sacude-la-ia, musk-vs-altman-el-juicio-que-puede-partir-a-openai, meta-pagara-375m-por-danar-ninos-la-bolsa-festejo-igual, la-ue-prohibe-las-apps-que-desnudan-con-ia-llego-tarde, atlassian/oracle/meta/pinterest (despidos financiando la apuesta por IA), stanford-ai-index-2026-la-paridad-que-eeuu-no-quiere-ver.
+
+## Segunda pasada (2026-11-09, por descripción; NO leídos completos)
+
+Se incluyó editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo (ya marcado, ámbito global). Jorge pidió solo los fuertes: se marcaron 11 (openclaw, manus, copilot, data brokers, 74/20, copyright, escritores, neurodatos, UE desnudan, influencers, cancelar). Quedan como dudosos (no marcados): sigue-tilly-tax (obsoleto, contrato vencía jun-2026), alcance-organico (casual), ia-en-el-trabajo-sin-capacitacion (sin 'gana' real) y el resto de dudosos por título. Landing: arriba `latam` (17), abajo `global` (18 + ADN).

@@ -10,6 +10,11 @@ heroImage: /images/posts/data-brokers-el-negocio-que-vive-de-tu-casa-inteligente
 heroImageAlt: >-
   Data brokers casa inteligente: mujer revisa dispositivo doméstico mientras
   líneas de red escapan hacia el exterior
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Los dueños de dispositivos conectados: su comportamiento dentro del hogar se compra y se revende sin que sepan con claridad quién está del otro lado."
+impacto_quien_gana: "Los data brokers: un mercado estimado entre 315 mil y 464 mil millones de dólares en 2026 (Mordor Intelligence y Knowledge Sourcing), con crecimiento de 7% a 10% anual."
+impacto_riesgo: "En México el órgano de protección de datos pasó a depender del Ejecutivo y, hasta mayo de 2026, no había sanciones formalizadas bajo la nueva ley: el árbitro no es independiente de quien más usa los datos."
 ---
 **Tu aspiradora no te espía gratis**. Existe un mercado de cientos de miles de millones de dólares que vive de comprar y revender los datos de tus dispositivos conectados. La pregunta ya no es qué tan invasivo es el sensor, sino quién compra del otro lado.
 

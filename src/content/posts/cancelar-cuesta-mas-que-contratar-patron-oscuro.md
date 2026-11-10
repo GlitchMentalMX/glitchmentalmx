@@ -7,6 +7,11 @@ description: Contratar toma un clic; cancelar puede ser una odisea. Qué dicen l
 heroImage: /images/uploads/cancelar-cuesta.webp
 heroImageAlt: Persona frustrada frente a un videojuego que representa los obstáculos para cancelar una suscripción digital
 draft: false
+is_impacto: true
+impacto_ambito: latam
+impacto_quien_paga: "Los usuarios: en México se registraron en 2024 más de 20 mil quejas por servicios digitales y suscripciones automáticas, según Profeco citada por Expansión."
+impacto_quien_gana: "Las plataformas: cuando salir cuesta, la cancelación es donde se cobra. La queja de la FTC contra Amazon Prime (2023) describe una cancelación pensada para frenar a quien quería irse."
+impacto_riesgo: "El decreto mexicano pide cancelación inmediata pero no define \"un clic\" ni mide la simetría entre entrar y salir: ningún instrumento mide la fricción cuando está en la conversación."
 ---
 
 Contratar toma un clic; **cancelar una suscripción** puede tomar una sala de espera. Esa asimetría no siempre es torpeza: cuando la salida está diseñada para costar, el patrón oscuro deja de ser un fallo y se vuelve el lugar donde se cobra.

@@ -12,6 +12,7 @@ heroImageAlt: >-
   Deuda IA $121 mil millones: ejecutivo observa centro de datos a través de
   cristal en sala de juntas
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Los propios gigantes, con deuda: Meta ($28 mil M), Alphabet ($32 mil M), Amazon ($31 mil M) y Microsoft ($30 mil M) emitieron $121 mil millones en 2025, más de cuatro veces su promedio histórico."
 impacto_quien_gana: "Quien ya tiene escala: los gigantes compran capacidad que los pequeños no pueden igualar, mientras startups y pymes enfrentan menos cómputo, precios más altos y mayor barrera de entrada."
 impacto_riesgo: "Los centros de datos estarán operativos en 18 a 24 meses: en 2027–2028 se verá si los retornos justifican la deuda o si fue una burbuja, y el costo podría trasladarse a los servicios de IA empresarial."

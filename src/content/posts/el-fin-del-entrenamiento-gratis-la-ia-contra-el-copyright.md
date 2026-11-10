@@ -11,6 +11,11 @@ heroImage: >-
 heroImageAlt: >-
   IA contra el copyright: robot escanea y procesa libros físicos en sistema
   automatizado de digitalización
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Las empresas de IA: un tribunal alemán falló contra OpenAI en el caso de GEMA; ni entrenar con nueve letras ni reproducirlas quedó cubierto por las excepciones europeas."
+impacto_quien_gana: "Las sociedades de derechos y las editoriales: GEMA ya propone modelos de licencia y las empresas de IA firman más acuerdos con editoriales, medios y bancos de imágenes."
+impacto_riesgo: "El \"entrenamiento gratis\" muere demanda por demanda: en EE.UU. el panorama es más fragmentado (Anthropic llegó a un acuerdo con autores en 2025) y litigar país por país sale más caro que negociar."
 ---
 Durante años, las empresas de IA entrenaron sus modelos con lo que encontraron en internet y respondieron a cualquier reclamo con la misma palabra: **fair use**. Esa defensa ya no funciona igual en todos lados — y dos sentencias recientes, en lados opuestos del Atlántico, muestran exactamente dónde se está rompiendo.
 

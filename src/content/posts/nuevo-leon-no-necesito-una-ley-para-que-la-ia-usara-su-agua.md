@@ -12,6 +12,7 @@ heroImageAlt: >-
   Presa con nivel de agua visiblemente bajo en Nuevo León, con tubería
   industrial hacia infraestructura de centros de datos
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "El agua de la ciudad: la sequía de 2022 mostró que cederla bajo el régimen de concesiones es voluntario, nunca obligatorio."
 impacto_quien_gana: "Oroma Technology Park (Linares, 208 hectáreas, 1,500 MW planeados según la propia empresa): tiene gas natural para generar electricidad propia y un esquema de concesiones vigente desde 1992."
 impacto_riesgo: "Si el parque construye su propio suministro de agua y energía, podría dejar de aparecer en los registros oficiales. Hoy las únicas cifras de capacidad vienen de la empresa."

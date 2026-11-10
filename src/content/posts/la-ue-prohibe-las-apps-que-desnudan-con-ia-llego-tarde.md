@@ -10,6 +10,11 @@ heroImage: /images/posts/la-ue-prohibe-las-apps-que-desnudan-con-ia-llego-tarde/
 heroImageAlt: >-
   deepfakes sexuales IA UE: mujer rodeada de versiones digitales fragmentadas de
   su cuerpo conectadas en red
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "xAI y X: la Comisión Europea abrió una investigación formal bajo la DSA, que permite multas de hasta 6% de los ingresos globales, tras una multa de 120 millones de euros a X en diciembre de 2025."
+impacto_quien_gana: "Las personas cuyas imágenes se manipulan: la UE acordó el 11 de marzo prohibir los sistemas de IA que generen imágenes sexuales de personas reales sin consentimiento, aunque el texto aún pasa por el Parlamento y el Consejo."
+impacto_riesgo: "El AI Act no prohibía esos sistemas antes del escándalo de Grok. En México y LATAM no existe un marco equivalente y las herramientas operan en un vacío legal."
 ---
 La Unión Europea acordó el 11 de marzo prohibir los sistemas de IA capaces de generar imágenes sexuales de personas reales sin su consentimiento. **El detonador fue el escándalo de Grok: en apenas dos días de enero de 2026, usuarios generaron al menos 6,700 imágenes sexuales de mujeres reales y menores a través de la herramienta de xAI.** La regulación llegó, pero la pregunta incómoda ya está sobre la mesa: ¿por qué no existía antes?
 

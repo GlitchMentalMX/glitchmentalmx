@@ -11,6 +11,7 @@ heroImageAlt: >-
   OpenAI necesita hardware: mujer analiza dispositivo en almacén lleno de
   unidades alineadas
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "OpenAI: desarrollaría un smartphone con Qualcomm, MediaTek y Luxshare, con producción masiva hacia 2028, según un reporte de Ming-Chi Kuo que ninguna de las empresas confirmó."
 impacto_quien_gana: "Qualcomm: sus acciones subieron hasta 13% en premercado solo por el reporte."
 impacto_riesgo: "Si el dueño del modelo más usado necesita fabricar su propio hardware, la economía de la IA conversacional no funciona como se prometió. Para 2028 la IA en dispositivo ya será estándar."

@@ -2,22 +2,19 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ImpactoCard from '../../components/ImpactoCard.astro';
-import { getImpactoPosts, IMPACTO_MANIFIESTO } from '../../lib/impacto';
+import { getImpactoPosts, esLatam, IMPACTO_MANIFIESTO } from '../../lib/impacto';
 import { formatDateShort } from '../../lib/format';
 
 const posts = await getImpactoPosts();
 const ultimo = posts[0];
 
-// Agrupa por mes de publicación (los más recientes primero), como en un
-// registro: "noviembre 2026", "octubre 2026"…
-const mesFmt = new Intl.DateTimeFormat('es-MX', { month: 'long', year: 'numeric' });
-const grupos: { mes: string; items: typeof posts }[] = [];
-for (const p of posts) {
-  const mes = mesFmt.format(p.data.pubDate);
-  const actual = grupos[grupos.length - 1];
-  if (actual && actual.mes === mes) actual.items.push(p);
-  else grupos.push({ mes, items: [p] });
-}
+// Dos bloques: primero lo que se centra en México y Latinoamérica, después el
+// enfoque global y europeo. Dentro de cada bloque, lo más reciente primero.
+const grupos = [
+  { id: 'latam', titulo: 'México y Latinoamérica', items: posts.filter(esLatam) },
+  { id: 'global', titulo: 'Panorama global y Europa', items: posts.filter((p) => !esLatam(p)) },
+].filter((g) => g.items.length > 0);
+const ordenados = grupos.flatMap((g) => g.items);
 
 const title = 'Impacto y Negocios';
 const description = IMPACTO_MANIFIESTO;
@@ -33,8 +30,8 @@ const collectionSchema = {
   isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: posts.length,
-    itemListElement: posts.map((p, i) => ({
+    numberOfItems: ordenados.length,
+    itemListElement: ordenados.map((p, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       url: new URL(`/articulos/${p.id}/`, Astro.site).toString(),
@@ -72,8 +69,8 @@ const collectionSchema = {
 
     <div class="list container">
       {grupos.map((g) => (
-        <section class="group" aria-label={g.mes}>
-          <h2 class="month">{g.mes}</h2>
+        <section class="group" aria-label={g.titulo}>
+          <h2 class="month">{g.titulo} <span class="count">· {g.items.length}</span></h2>
           <div class="entries">
             {g.items.map((p) => (
               <div class="entry"><ImpactoCard post={p} variant="row" headingLevel="h3" /></div>
@@ -149,6 +146,7 @@ const collectionSchema = {
     text-transform: uppercase;
     color: var(--impacto-muted);
   }
+  .month .count { color: var(--impacto-muted); font-weight: 400; }
   .entries { display: flex; flex-direction: column; }
   .entry {
     max-width: 880px;

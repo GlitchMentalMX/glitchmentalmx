@@ -11,6 +11,7 @@ heroImageAlt: >-
   Trump quiere una ley de IA: hombre traza línea en mapa de América separando
   EE.UU. y LATAM
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Los usuarios y organizaciones de LATAM: las herramientas que usan millones de personas en México, Colombia y Argentina se diseñarían para el piso más bajo de obligaciones de transparencia y riesgo."
 impacto_quien_gana: "Las empresas de IA de EE.UU.: el marco de la Casa Blanca (20 de marzo de 2026) busca sustituir las leyes estatales por un estándar federal \"mínimamente oneroso\"."
 impacto_riesgo: "México no tiene ley específica de IA: los sistemas que operan ahí se rigen por las políticas del país de origen, así que importaría también la protección reducida."

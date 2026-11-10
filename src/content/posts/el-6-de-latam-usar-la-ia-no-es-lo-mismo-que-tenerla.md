@@ -9,6 +9,7 @@ description: >-
 heroImage: /images/posts/el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla/hero.jpg
 heroImageAlt: 'IA en LATAM: mujer en workstation con cable hacia rack sellado con candado.'
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Las pymes, 99.5% del tejido empresarial de la región: seis de cada diez no capturan ningún valor medible de la IA, según el FEM y McKinsey."
 impacto_quien_gana: "Los proveedores de nube y modelos, casi todos fuera de la región: en LATAM se renta la capacidad de IA, no se construye."
 impacto_riesgo: "Solo 6% de las organizaciones de LATAM reporta valor económico significativo con IA; la proyección de 1.1 a 1.7 billones de dólares anuales es un modelo, no una medición."

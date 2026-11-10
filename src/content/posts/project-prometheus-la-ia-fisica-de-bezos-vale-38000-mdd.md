@@ -11,6 +11,7 @@ heroImageAlt: >-
   Project Prometheus: mujer instalando cámaras en almacén automatizado con
   robots y sensores
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Inversionistas como BlackRock y JPMorgan: la ronda de $10,000 millones valuaría a Prometheus en $38,000 millones y, según el Financial Times, aún no había cerrado."
 impacto_quien_gana: "Manufactura, aeroespacial, robótica, fármacos y logística, sectores donde los LLMs han tenido un impacto superficial. El modelo se construiría sobre alianzas con quienes fabrican y mueven cosas."
 impacto_riesgo: "Prometheus no ha mostrado un producto ni despliegues comerciales: si la apuesta falla, sería la burbuja más cara de la historia reciente de la IA."

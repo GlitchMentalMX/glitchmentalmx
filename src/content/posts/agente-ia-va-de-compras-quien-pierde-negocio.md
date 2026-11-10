@@ -8,6 +8,7 @@ heroImage: /images/uploads/ia-compras.webp
 heroImageAlt: 'agente de IA de compras: sistema autónomo completa una compra mientras la compradora queda fuera del proceso.'
 draft: false
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Las marcas y tiendas que dependen de que el cliente navegue: las búsquedas de producto vía agentes de IA pasaron de 0.3% a 2.5% en un año en John Lewis."
 impacto_quien_gana: "Quien fije el estándar técnico del punto de venta y cobre la publicidad cuando la búsqueda deja de ser una lista: OpenAI ya activó publicidad por clic en ChatGPT."
 impacto_riesgo: "Los estándares de compra por agentes no tienen despliegue documentado en LATAM: podría fijarlos quien no opera comercialmente en la región, y las marcas mexicanas quedarían como tomadoras de reglas."

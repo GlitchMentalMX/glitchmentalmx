@@ -10,6 +10,11 @@ heroImage: /images/posts/la-ia-no-liquido-escritores-liquido-a-quien-los-pagaba/
 heroImageAlt: >-
   La IA no liquidó escritores: mujer revisa documentos en oficina vacía tras
   recorte editorial
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Los redactores freelance: los proyectos de escritura en Upwork cayeron 32% en 2025 (Vollna) y la demanda bajó 30% tras el lanzamiento de ChatGPT, según Imperial College y Harvard."
+impacto_quien_gana: "Quien compra contenido: una herramienta de veinte dólares al mes produce el mismo volumen en minutos. Fiverr recortó 30% de su plantilla en septiembre de 2025."
+impacto_riesgo: "El mercado masivo de escritura de ejecución desapareció. En LATAM, con mercados laborales más frágiles, el desplazamiento se registra menos como crisis."
 ---
 La pregunta equivocada domina el debate: **¿puede la IA escribir tan bien como un humano?** La pregunta correcta es otra: ¿quién va a pagar por la escritura humana cuando el mecanismo que distribuía ese pago ya no funciona? Ese mecanismo ya está roto, y los datos lo confirman.
 

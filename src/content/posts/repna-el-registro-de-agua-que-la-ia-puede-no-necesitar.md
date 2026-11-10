@@ -11,6 +11,7 @@ heroImageAlt: >-
   Vista aérea de embalses y acueductos mexicanos con overlay técnico,
   representando el consumo nacional de agua por centros de datos.
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Quien extrae agua directamente: el nuevo registro revisará más de 500 mil concesiones (agricultura, industria tradicional, pipas)."
 impacto_quien_gana: "Los centros de datos: compran el agua a la red municipal y ese contrato queda fuera de lo que el registro audita."
 impacto_riesgo: "La auditoría hídrica más ambiciosa en tres décadas puede capturar casi todo menos el sector que motivó la pregunta, porque mide extracción y no consumo contractual."

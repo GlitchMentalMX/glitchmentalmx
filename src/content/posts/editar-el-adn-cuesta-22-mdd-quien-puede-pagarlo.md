@@ -10,6 +10,11 @@ heroImage: /images/posts/editar-el-adn-cuesta-22-mdd-quien-puede-pagarlo/hero.jp
 heroImageAlt: >-
   laboratorio de edición genética observado detrás de un cristal por una figura
   femenina
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Pacientes y sistemas de salud: Casgevy cuesta 2.2 millones de dólares por paciente, Lyfgenia 3.1 y Lenmeldy 4.25; cerca del 80% de los casos de anemia falciforme está en África subsahariana."
+impacto_quien_gana: "Vertex y CRISPR Therapeutics: la industria defiende el precio porque tratar la enfermedad toda la vida cuesta entre 4 y 6 millones de dólares en EE.UU., según Vertex."
+impacto_riesgo: "Ninguno de los 50 centros de tratamiento activos a finales de 2024 estaba en América Latina y ninguna agencia de la región lo ha aprobado: el acceso queda cerrado por propiedad intelectual, infraestructura y precio."
 ---
 En diciembre de 2023, la FDA aprobó **Casgevy, el primer tratamiento basado en CRISPR de la historia**. Trata una enfermedad con el 80% de sus casos en África subsahariana. El precio: 2.2 millones de dólares por paciente. No es una paradoja — es el modelo funcionando como fue diseñado.
 

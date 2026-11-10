@@ -12,6 +12,7 @@ heroImageAlt: >-
   Walmart compró Vizio por datos de TV: usuaria frente a pantalla conectada a
   mapa de datos de visualización
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Los dueños de televisores Vizio: el ACR registra lo que ven cada 1 o 2 segundos, incluido streaming, cable, consolas y USB, para dirigir publicidad."
 impacto_quien_gana: "Walmart: pagó $2.3 mil millones por Vizio principalmente \"para obtener acceso a datos ACR\", no para vender televisores, según un ejecutivo en CES 2026."
 impacto_riesgo: "Cada pantalla se vuelve plataforma de publicidad dirigida: Google TV expande la recolección de datos y Apple enfrenta presión para monetizar Apple TV."

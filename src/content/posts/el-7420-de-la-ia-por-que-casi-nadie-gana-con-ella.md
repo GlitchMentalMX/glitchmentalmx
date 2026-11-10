@@ -10,6 +10,11 @@ heroImage: /images/posts/el-7420-de-la-ia-por-que-casi-nadie-gana-con-ella/hero.
 heroImageAlt: >-
   valor IA empresas: ejecutivo solo en auditorio corporativo vacío frente a
   proyección de gráfica de concentración extrema
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Las empresas rezagadas: el 74% del valor económico de la IA lo captura el 20% de las organizaciones y el resto sigue en piloto (PwC, 1,217 ejecutivos en 25 sectores)."
+impacto_quien_gana: "Los líderes: apuntan la IA al crecimiento y a reinventar su modelo de negocio, no solo a recortar costos, y son 1.9 veces más propensos a operarla en modo autónomo."
+impacto_riesgo: "La brecha seguirá ampliándose con sistemas más capaces. Según el artículo, la mayoría de las empresas de LATAM adoptó IA como productividad, que no genera ventaja sostenida."
 ---
 El AI Performance Study 2026 de [PwC](https://www.pwc.com/) entrevistó a **1,217 ejecutivos senior de grandes empresas en 25 sectores a nivel global**, y su hallazgo central es incómodo: el 74% del valor económico generado por la IA lo captura solo el 20% de las organizaciones. El resto sigue en modo piloto.
 

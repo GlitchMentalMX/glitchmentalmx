@@ -4,7 +4,7 @@ import ArticleCard from '../components/ArticleCard.astro';
 import { books } from '../data/books';
 import BookActions from '../components/BookActions.astro';
 import ImpactoCard from '../components/ImpactoCard.astro';
-import { getImpactoPosts, IMPACTO_MANIFIESTO } from '../lib/impacto';
+import { getImpactoPosts, esLatam, IMPACTO_MANIFIESTO } from '../lib/impacto';
 import { formatDateShort } from '../lib/format';
 import { getCollection, getEntry } from 'astro:content';
 import { cargarFichas } from '../lib/exposicion';
@@ -37,7 +37,9 @@ const queIACount = queIATabla[0]?.data.herramientas.length ?? 0;
 // Banda "Impacto y Negocios": las 2 más recientes; el total y la fecha del
 // último salen del conteo real, nunca a mano. Con menos de 2 se oculta.
 const impactoPosts = await getImpactoPosts();
-const impactoBanda = impactoPosts.slice(0, 2);
+// Prioriza el ángulo México/LATAM: primero las más recientes de ese ámbito y,
+// si faltaran, las globales más recientes.
+const impactoBanda = [...impactoPosts.filter(esLatam), ...impactoPosts.filter((p) => !esLatam(p))].slice(0, 2);
 
 const [featured] = allPosts;
 const recentThree = allPosts.slice(1, 4);
@@ -353,7 +355,7 @@ const signalPools = {
       <div class="impacto-inner container">
         <div class="impacto-intro">
           <p class="impacto-status">
-            Radar <span aria-hidden="true">/</span> {impactoPosts.length} análisis <span aria-hidden="true">/</span> Último: {formatDateShort(impactoBanda[0].data.pubDate)}
+            Radar <span aria-hidden="true">/</span> {impactoPosts.length} análisis <span aria-hidden="true">/</span> Último: {formatDateShort(impactoPosts[0].data.pubDate)}
           </p>
           <h2 id="impacto-h">Impacto y Negocios</h2>
           <p class="impacto-copy">{IMPACTO_MANIFIESTO}</p>

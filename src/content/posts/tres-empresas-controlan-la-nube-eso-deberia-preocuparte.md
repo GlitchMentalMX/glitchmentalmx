@@ -11,6 +11,7 @@ heroImageAlt: >-
   Tres empresas controlan la nube: tres centros de datos sobre mapa
   interconectado supervisado por operadora
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Gobiernos y empresas de LATAM: rentan su cómputo a tres empresas estadounidenses, sujetas a la jurisdicción de EE.UU., y ningún país de la región tiene una estrategia coherente y financiada de soberanía digital."
 impacto_quien_gana: "Amazon Web Services, Microsoft Azure y Google Cloud: concentran la infraestructura sobre la que opera la mayoría de las aplicaciones y los datos del planeta."
 impacto_riesgo: "Si esa infraestructura falla, cambia sus precios o un gobierno quiere esos datos, la región no controla la respuesta: su soberanía digital es parcial, según el artículo."

@@ -11,6 +11,7 @@ heroImageAlt: >-
   Apple fabrica 1 de cada 4 iPhone en India: línea de ensamblaje de smartphones
   en fábrica con flujo luminoso de producción
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Apple: los aranceles entre EE.UU. y China encarecieron exportar iPhones desde China. Ensambló unos 55 millones en India en 2025, 53% más, y ya es 25% de su producción."
 impacto_quien_gana: "India: su programa de incentivos Production Linked Incentive ofreció costos subsidiados, y las ventas de iPhone en el país ya superan los $9,000 millones."
 impacto_riesgo: "La lógica empresarial de Apple y la política exterior de EE.UU. no siempre coinciden: siguió su plan pese a una advertencia de no expandir más la producción en India."

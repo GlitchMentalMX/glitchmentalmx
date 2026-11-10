@@ -10,6 +10,11 @@ heroImage: /images/posts/anthropic-bloquea-openclaw-el-negocio-de-la-ia-cambia/h
 heroImageAlt: >-
   Anthropic bloquea OpenClaw: puerta metálica cerrada en pasillo técnico con
   cableado de red
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Los usuarios de agentes de terceros: desde el 4 de abril de 2026 sus suscripciones de Claude Pro y Max dejaron de valer para OpenClaw, sin aviso de 24 horas, y la política se extenderá a otras herramientas."
+impacto_quien_gana: "Anthropic: una cuenta Max de 200 dólares al mes manejada por un agente podía costarle entre 1,000 y 5,000 dólares mensuales en infraestructura."
+impacto_riesgo: "Las grandes empresas de IA dejan de tolerar el arbitraje de tokens: quien construye sobre infraestructura de terceros depende de reglas que el proveedor cambia solo. Modelos chinos como MiMo-V2-Pro ya promueven compatibilidad con OpenClaw."
 ---
 Anthropic cerró el acceso de sus suscripciones a OpenClaw el 4 de abril de 2026, sin previo aviso de 24 horas y sin negociación posible. **El modelo de "tarifa plana para todo" en la IA agentica acaba de morir.** Lo que sigue revela exactamente a quién le conviene que así sea.
 

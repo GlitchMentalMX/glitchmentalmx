@@ -12,6 +12,7 @@ heroImageAlt: >-
   Subestación eléctrica de gran escala con múltiples líneas de transmisión,
   representando la demanda nacional de electricidad para IA.
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "Los proyectos de centros de datos concebidos bajo la ley de 2014 que operarán bajo la de 2025, que volvió a acotar la generación privada."
 impacto_quien_gana: "La CFE: la Ley del Sector Eléctrico de 2025 le reserva al menos 54% de la energía inyectada a la red en cada año calendario."
 impacto_riesgo: "Un centro de datos de IA puede demandar de 50 a 100 MW y no existe cifra pública de cuánta generación privada nueva se destina a cómputo: los estados negocian a ciegas."

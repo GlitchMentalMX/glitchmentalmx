@@ -10,6 +10,11 @@ heroImage: /images/posts/influencers-sin-titulo-la-regulacion-que-ya-llego/hero.
 heroImageAlt: >-
   regulación influencers: hombre colocando etiquetas engañosas en productos de
   estantería tipo farmacia
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Las plataformas chinas: desde el 25 de octubre de 2025 deben verificar las credenciales de quien publique sobre medicina, finanzas, derecho o educación, con multas de hasta 100,000 yuanes (unos 14,000 dólares)."
+impacto_quien_gana: "Los creadores sin credenciales de LATAM y las plataformas que optimizan su alcance porque les funciona comercialmente: ahí el vacío legal sigue siendo modelo de negocio."
+impacto_riesgo: "China ya lo reguló y Europa lo está haciendo. En México y el resto de LATAM el coach sin credenciales es el estándar y todavía no tiene consecuencias."
 ---
 El coach de finanzas personales que sigues en TikTok nunca ha tenido un cliente real. El creador de contenido que te explica cómo invertir nunca ha pasado por un examen de certificación. **China ya lo reguló. Europa lo está haciendo. En LATAM, ese vacío legal sigue siendo modelo de negocio.**
 

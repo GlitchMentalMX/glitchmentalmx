@@ -11,6 +11,7 @@ heroImageAlt: >-
   SpaceX compra Cursor: desarrollador sostiene credencial de acceso suspendida
   frente a monitores con entorno de código
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "SpaceX: $10 mil millones por el trabajo conjunto o $60 mil millones si ejerce la opción de comprar Cursor a finales de 2026, financiada con acciones tras su IPO."
 impacto_quien_gana: "Cursor, valuada en 29,300 millones en su Serie D de noviembre, y SpaceX, que obtiene su base de usuarios. Ni xAI ni Cursor tienen modelos propios que igualen a los de Anthropic y OpenAI."
 impacto_riesgo: "Si el editor deja de ser neutral entre modelos, los desarrolladores con su flujo de trabajo construido sobre Cursor quedan expuestos. La adquisición es una opción, no una certeza."

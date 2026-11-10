@@ -10,6 +10,11 @@ heroImage: /images/posts/china-veto-a-manus-soberania-tecnologica-como-trampa/he
 heroImageAlt: >-
   China vetó a Manus: mujer entre dos puertas industriales enfrentadas en
   pasillo metálico
+is_impacto: true
+impacto_ambito: global
+impacto_quien_paga: "Manus y sus cofundadores: Pekín exigió anular la compra de Meta, valuada en más de 2,000 millones de dólares, y a los fundadores se les prohibió salir de China durante la revisión, según el Financial Times."
+impacto_quien_gana: "El Estado chino: muestra que puede bloquear y deshacer una operación ya dada por cerrada y trata la IA como activo de seguridad nacional."
+impacto_riesgo: "Precedente para cualquier startup de IA de origen chino que busque salida con un comprador occidental: el veto puede llegar incluso con el trato cerrado."
 ---
 China bloqueó hoy la adquisición de Manus por parte de Meta, una operación valuada en más de 2,000 millones de dólares. **El veto no protege a la startup — la deja atrapada entre dos bloques que la usan como ficha en una disputa que no es sobre ella.**
 

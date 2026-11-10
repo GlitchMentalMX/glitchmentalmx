@@ -11,6 +11,7 @@ heroImageAlt: >-
   publicidad CPC ChatGPT: mujer organiza fotos en panel con flecha de selección
   de contenido
 is_impacto: true
+impacto_ambito: global
 impacto_quien_paga: "Los anunciantes: pagan por clic desde el 21 de abril de 2026. El modelo por impresiones de febrero cayó de 60 a 25 dólares por mil en diez semanas."
 impacto_quien_gana: "OpenAI: proyecta $2,400 millones en ingresos publicitarios en 2026 y 100,000 millones en 2030."
 impacto_riesgo: "La publicidad aplica a los planes gratuito y Go, los más numerosos en LATAM. Si ChatGPT se vuelve canal de anuncios, enfrenta los problemas de Google: usuarios que ignoran anuncios, anunciantes que piden más datos y reguladores."

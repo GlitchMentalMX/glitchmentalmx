@@ -8,6 +8,7 @@ heroImage: /images/uploads/data-centers-qro.webp
 heroImageAlt: 'Consumo de agua de data centers en Querétaro: infraestructura de medición junto a un centro de datos'
 draft: false
 is_impacto: true
+impacto_ambito: latam
 impacto_quien_paga: "El acuífero de un estado en zona de estrés hídrico: ninguna institución publica cuánta agua consume realmente cada centro de datos."
 impacto_quien_gana: "Los operadores: el reporte de consumo no existe hoy como obligación y los primeros reportes llegarían en 2027."
 impacto_riesgo: "Conagua asigna, la CEA da factibilidades y Sedesu medirá, pero ninguna está obligada a comparar lo autorizado con lo consumido."

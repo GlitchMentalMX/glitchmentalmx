@@ -51,6 +51,7 @@ collections:
       # Impacto y Negocios: ocultos a propósito. Los redacta Claude en la revisión
       # periódica; "hidden" evita que Sveltia los borre al guardar un artículo.
       - { name: "is_impacto", widget: "hidden", required: false }
+      - { name: "impacto_ambito", widget: "hidden", required: false }
       - { name: "impacto_quien_paga", widget: "hidden", required: false }
       - { name: "impacto_quien_gana", widget: "hidden", required: false }
       - { name: "impacto_riesgo", widget: "hidden", required: false }
