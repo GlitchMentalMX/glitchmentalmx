@@ -3,6 +3,10 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 // Textos fijos de la sección: una sola fuente para landing, banda del home,
 // RSS y metadatos. Alcance deliberadamente global (México, LATAM, España y el
 // resto del mundo): el ángulo regional suma, pero no es requisito de entrada.
+// Versión de una línea para la banda del home.
+export const IMPACTO_LINEA_HOME =
+  'Quién paga, quién gana y dónde está el riesgo de la tecnología que cambia mercados e infraestructura. Análisis, no comunicados.';
+
 export const IMPACTO_MANIFIESTO =
   'Quién paga, quién se beneficia y dónde está el riesgo sistémico de la tecnología que está cambiando la infraestructura y los mercados. Escrito desde México, con alcance global. Análisis, no comunicados.';
 
