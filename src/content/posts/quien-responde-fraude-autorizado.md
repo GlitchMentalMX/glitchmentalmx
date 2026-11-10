@@ -10,7 +10,7 @@ draft: false
 is_impacto: true
 impacto_ambito: latam
 impacto_quien_paga: "El usuario: en el fraude por pago autorizado la operación cuenta como tuya y, en el sistema de protección bancaria, responde el usuario antes de que alguien investigue."
-impacto_quien_gana: "Los bancos: la clasificación binaria deja la pérdida fuera de su responsabilidad cuando el engaño ocurrió aguas arriba de la institución."
+impacto_quien_gana: "Los bancos: la clasificación binaria deja la pérdida fuera de su responsabilidad cuando el engaño ocurrió fuera del perímetro del banco."
 impacto_riesgo: "México ya publica cifras trimestrales (CONDUSEF, Buró de Entidades Financieras) pero nadie debate quién debe absorber la pérdida; otras jurisdicciones sí movieron ese default."
 ---
 
@@ -64,7 +64,7 @@ Los cinco artículos anteriores describieron arquitecturas incompatibles entre s
 
 ## México: nadie está discutiendo el default
 
-El vacío mexicano no es de instituciones. La CONDUSEF existe, el procedimiento existe, los plazos existen y el Buró de Entidades Financieras publica los números trimestre a trimestre. **Lo que no existe es la discusión sobre quién debe absorber la pérdida cuando el engaño ocurrió aguas arriba del banco.**
+El vacío mexicano no es de instituciones. La CONDUSEF existe, el procedimiento existe, los plazos existen y el Buró de Entidades Financieras publica los números trimestre a trimestre. **Lo que no existe es la discusión sobre quién debe absorber la pérdida cuando el engaño ocurrió fuera del perímetro del banco.**
 
 Ese es el orden que siguieron las jurisdicciones que sí movieron el default: primero obligaron a publicar quién reembolsa y cuánto, y solo después redistribuyeron el costo. **México ya completó la primera parte sin haber abierto la segunda.** La cifra se publica; el reparto no se debate.
 
