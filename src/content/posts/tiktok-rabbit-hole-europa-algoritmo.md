@@ -2,12 +2,12 @@
 title: 'TikTok y el rabbit hole: Europa va contra la repetición'
 slug: tiktok-rabbit-hole-europa-algoritmo
 category: Cultura Digital
-pubDate: 2026-11-09T11:00
+pubDate: 2026-11-10T05:59
 updatedDate: ''
 description: 'Bruselas concluye, de forma preliminar, que TikTok no midió el riesgo del rabbit hole. El problema no es un video: es la repetición.'
 heroImage: /images/uploads/tiktok-rabbit-hole.webp
 heroImageAlt: 'TikTok y el rabbit hole: mujer sentada frente a un muro de paneles verticales, con el celular en las manos'
-draft: true
+draft: false
 ---
 
 El _rabbit hole_ de TikTok ya es un asunto regulatorio: la Comisión Europea no señaló un video, sino lo que pasa cuando el siguiente se parece al anterior. **El objeto del reclamo no es el contenido, sino el bucle.**
