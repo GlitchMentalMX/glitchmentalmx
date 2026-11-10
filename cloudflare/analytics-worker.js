@@ -240,6 +240,9 @@ async function handleCollect(request, env, origin, matchedOrigin) {
   return new Response(null, { status: 204, headers: corsHeaders(matchedOrigin) });
 }
 
+const STATS_CACHE = new Map();
+const STATS_CACHE_MS = 60 * 1000;
+
 async function handleStats(request, env, url, matchedOrigin) {
   const auth = request.headers.get('Authorization') || '';
   const token = auth.replace(/^Bearer\s+/i, '').trim();
@@ -303,6 +306,18 @@ async function handleStats(request, env, url, matchedOrigin) {
     }
   }
 
+  // Caché en memoria de 60 s por rango: cada carga del panel dispara ~14
+  // consultas, varias recorren muchas filas de D1 (el plan gratis tiene tope
+  // diario de lecturas). Dentro de ese minuto, refrescar no vuelve a consultar
+  // la base. Es de mejor esfuerzo (vive mientras el worker siga caliente); no se
+  // usa la Cache API porque no funciona en dominios workers.dev. La
+  // autenticación ya ocurrió arriba, así que solo se sirve a quien trae token.
+  const cacheKey = rangeParam + '|' + (matchedOrigin || '');
+  const hit = STATS_CACHE.get(cacheKey);
+  if (hit && Date.now() - hit.at < STATS_CACHE_MS) {
+    return json(hit.body, 200, matchedOrigin);
+  }
+
   try {
     const [
       totals,
@@ -319,9 +334,6 @@ async function handleStats(request, env, url, matchedOrigin) {
       eventTotals,
       preferredSourceByPlacement,
       engagement,
-      directoPages,
-      directoDevices,
-      directoTotals,
     ] = await Promise.all([
       env.DB.prepare(
         'SELECT COUNT(*) AS views, COUNT(DISTINCT visitor_hash) AS uniques FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0'
@@ -397,30 +409,9 @@ async function handleStats(request, env, url, matchedOrigin) {
       )
         .bind(sinceTs, untilTs)
         .first(),
-      // "Directo" real: sin referrer y sin ser navegación interna.
-      env.DB.prepare(
-        `SELECT path, COUNT(*) AS views, ROUND(AVG(duration)) AS avg_duration, ROUND(AVG(scroll)) AS avg_scroll
-         FROM hits WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${SOURCE_SQL} = 'directo'
-         GROUP BY path ORDER BY views DESC LIMIT 15`
-      )
-        .bind(sinceTs, untilTs)
-        .all(),
-      env.DB.prepare(
-        `SELECT device, COUNT(*) AS views FROM hits
-         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${SOURCE_SQL} = 'directo' GROUP BY device ORDER BY views DESC`
-      )
-        .bind(sinceTs, untilTs)
-        .all(),
-      env.DB.prepare(
-        `SELECT COUNT(*) AS views, ROUND(AVG(duration)) AS avg_duration FROM hits
-         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${SOURCE_SQL} = 'directo'`
-      )
-        .bind(sinceTs, untilTs)
-        .first(),
     ]);
 
-    return json(
-      {
+    const body = {
         range: rangeParam,
         totals: { views: totals?.views || 0, uniques: totals?.uniques || 0 },
         bot_views: botTotals?.views || 0,
@@ -442,16 +433,9 @@ async function handleStats(request, env, url, matchedOrigin) {
           read_30s: engagement?.read_30s || 0,
           under_10s: engagement?.under_10s || 0,
         },
-        directo: {
-          views: directoTotals?.views || 0,
-          avg_duration: directoTotals?.avg_duration ?? null,
-          pages: directoPages.results || [],
-          devices: directoDevices.results || [],
-        },
-      },
-      200,
-      matchedOrigin
-    );
+    };
+    STATS_CACHE.set(cacheKey, { at: Date.now(), body });
+    return json(body, 200, matchedOrigin);
   } catch (e) {
     return json({ error: 'Error leyendo la base de datos', detail: String(e) }, 500, matchedOrigin);
   }

@@ -86,14 +86,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
         </section>
 
         <section class="block">
-          <h2>Tráfico «Directo»: dónde entra</h2>
-          <p class="hint" id="directo-summary"></p>
-          <div id="table-directo-pages"></div>
-          <h3>Dispositivo</h3>
-          <div id="table-directo-devices"></div>
-        </section>
-
-        <section class="block">
           <h2>Origen del tráfico</h2>
           <div id="table-sources"></div>
         </section>
@@ -367,11 +359,6 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev';
       ? 'Calculado sobre ' + fmt(eg.measured) + ' de ' + fmt(data.totals.views) + ' vistas (solo cuenta el tiempo con la pestaña visible; ' + fmt(eg.under_10s) + ' se fueron en menos de 10 s). Las vistas anteriores a esta medición no entran.'
       : 'Todavía no hay vistas con tiempo medido en este rango.';
 
-    const d = data.directo;
-    document.getElementById('directo-summary').textContent =
-      fmt(d.views) + ' vistas sin origen identificable (sin contar navegación interna ni apps de redes). Tiempo medio: ' + fmtDuration(d.avg_duration) + '.';
-    renderPagesTable(document.getElementById('table-directo-pages'), d.pages);
-    renderTable(document.getElementById('table-directo-devices'), d.devices, 'device', 'views', (x) => DEVICE_LABELS[x] || x);
     renderTable(document.getElementById('table-sources'), data.sources, 'traffic_source', 'views', (s) => SOURCE_LABELS[s] || s);
     renderReferrersTable(document.getElementById('table-referrers'), data.referrers);
     renderTable(document.getElementById('table-countries'), data.countries, 'country', 'views', countryLabel);
