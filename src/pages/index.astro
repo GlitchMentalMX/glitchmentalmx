@@ -725,12 +725,30 @@ const signalPools = {
     background: var(--impacto-card);
   }
   .impacto-card > :global(.ic) { flex: 1; }
+  @media (min-width: 701px) {
+    .impacto-inner { padding: 46px 24px; gap: 40px; }
+    .impacto-card { padding: 20px; }
+  }
   @media (max-width: 960px) {
     .impacto-inner { grid-template-columns: 1fr; gap: 32px; }
   }
+  /* Móvil: las dos tarjetas van en un carrusel horizontal con snap (mismo
+     patrón que Coordenadas); la segunda asoma a la derecha para invitar a
+     deslizar. Así la banda cabe en ~una pantalla en vez de dos. */
   @media (max-width: 700px) {
-    .impacto-cards { grid-template-columns: 1fr; }
-    .impacto-inner { padding: 44px 24px; }
+    .impacto-inner { padding: 36px 24px; gap: 24px; }
+    .impacto-cards {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      margin: 0 -24px;
+      padding: 0 24px 4px;
+      scroll-padding-left: 24px;
+    }
+    .impacto-cards::-webkit-scrollbar { display: none; }
+    .impacto-card { flex: 0 0 84%; scroll-snap-align: start; }
   }
 
   .featured { padding: 40px 24px 56px; }

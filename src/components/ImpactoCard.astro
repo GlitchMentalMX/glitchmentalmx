@@ -33,7 +33,7 @@ const { pubDate, updatedDate } = post.data;
     <span>{minutes} min</span>
   </p>
   <Heading class="ic-title"><a href={href}>{post.data.title}</a></Heading>
-  <ImpactoBullets lineas={lineas} copiar={copiar} />
+  <ImpactoBullets lineas={lineas} copiar={copiar} articulo={post.id} />
   <a class="ic-read" href={href}>Leer análisis completo <span aria-hidden="true">→</span></a>
 </article>
 
@@ -86,6 +86,12 @@ const { pubDate, updatedDate } = post.data;
   /* En la banda del home las tarjetas son angostas: la etiqueta va arriba de
      cada línea en vez de a la izquierda. */
   .band { --ib-cols: 1fr; --ib-gap: 2px; }
-  .band .ic-title { font-size: 1.2rem; }
   .row .ic-title { font-size: clamp(1.3rem, 2.4vw, 1.65rem); }
+
+  /* Banda del home: letra y espacios ~15% más compactos para que el bloque
+     pese menos frente a Explora, en escritorio y en móvil. */
+  .band { --ib-fs: 0.9rem; --ib-list-gap: 8px; }
+  .band .ic-title { font-size: 1.12rem; margin-bottom: 13px; }
+  .band .ic-meta { margin-bottom: 6px; }
+  .band :global(.ib) { margin-bottom: 14px; }
 </style>

@@ -5,8 +5,10 @@
 interface Props {
   lineas: { etiqueta: string; texto: string }[];
   copiar: string;
+  // slug del artículo: solo para contar copias por pieza en la analítica propia
+  articulo: string;
 }
-const { lineas, copiar } = Astro.props;
+const { lineas, copiar, articulo } = Astro.props;
 ---
 
 <div class="ib">
@@ -18,7 +20,7 @@ const { lineas, copiar } = Astro.props;
       </li>
     ))}
   </ul>
-  <button type="button" class="ib-copy" data-copy-resumen={copiar} aria-label="Copiar resumen y enlace al portapapeles">
+  <button type="button" class="ib-copy" data-copy-resumen={copiar} data-articulo={articulo} aria-label="Copiar resumen y enlace al portapapeles">
     <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
       <rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.8" />
       <path d="M5 15V6a2 2 0 0 1 2-2h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
@@ -34,7 +36,7 @@ const { lineas, copiar } = Astro.props;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--ib-list-gap, 10px);
   }
   .ib-list li {
     display: grid;
@@ -51,7 +53,7 @@ const { lineas, copiar } = Astro.props;
     text-transform: uppercase;
     color: var(--ib-accent, var(--accent));
   }
-  .ib-text { font-size: 0.95rem; color: var(--ib-text, var(--text)); }
+  .ib-text { font-size: var(--ib-fs, 0.95rem); color: var(--ib-text, var(--text)); }
   .ib-copy {
     margin-top: 14px;
     display: inline-flex;
@@ -105,6 +107,28 @@ const { lineas, copiar } = Astro.props;
     if (!copiarConTextarea(texto)) throw new Error('copy failed');
   }
 
+  // Evento anónimo a la analítica propia (mismas reglas que Analytics.astro:
+  // sin cookies, respeta gm-no-analytics, no corre en localhost ni previews).
+  // Solo guarda qué artículo se copió y desde qué parte del sitio.
+  const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev/collect';
+  function registrarCopia(articulo: string) {
+    try {
+      if (localStorage.getItem('gm-no-analytics')) return;
+      const host = location.hostname;
+      if (host === 'localhost' || host === '127.0.0.1' || host.indexOf('preview') !== -1) return;
+      const lugar = location.pathname === '/' ? 'home' : location.pathname.startsWith('/impacto-y-negocios') ? 'landing' : 'articulo';
+      const payload = JSON.stringify({
+        event: 'impacto-copiar-resumen',
+        path: location.pathname,
+        width: (window.screen && window.screen.width) || 0,
+        data: { articulo, lugar },
+      });
+      navigator.sendBeacon(WORKER_URL, new Blob([payload], { type: 'text/plain' }));
+    } catch {
+      // la analítica nunca debe romper el botón
+    }
+  }
+
   document.addEventListener('click', (ev) => {
     const btn = (ev.target as Element).closest<HTMLButtonElement>('[data-copy-resumen]');
     if (!btn) return;
@@ -113,6 +137,7 @@ const { lineas, copiar } = Astro.props;
     const original = label.textContent;
     copiarTexto(btn.dataset.copyResumen ?? '').then(
       () => {
+        registrarCopia(btn.dataset.articulo ?? '');
         btn.classList.add('copied');
         label.textContent = 'Copiado';
         setTimeout(() => {
