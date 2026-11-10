@@ -701,6 +701,11 @@ const signalPools = {
     text-underline-offset: 3px;
   }
   .impacto-row .impacto-links a:hover { color: var(--accent); background: none; }
+  /* Escritorio: los enlaces arrancan en la misma columna que el manifiesto
+     (ancho del título 220px + separación 28px), no bajo el título. */
+  @media (min-width: 641px) {
+    .impacto-row .impacto-links { margin-left: 248px; }
+  }
 
   .featured { padding: 40px 24px 56px; }
 
