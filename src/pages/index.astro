@@ -456,7 +456,7 @@ const signalPools = {
           <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
         </a>
         <div class="insight-text">
-          <h3 class="insight-title">{latestInsight.data.punchline ?? latestInsight.data.titulo}</h3>
+          <h3 class="insight-title">{latestInsight.data.punchline?.trim() || latestInsight.data.titulo}</h3>
           <p class="insight-excerpt">{latestInsight.data.resumen}</p>
           <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
         </div>

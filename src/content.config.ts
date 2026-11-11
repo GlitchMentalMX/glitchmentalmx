@@ -160,7 +160,9 @@ const visualInsights = defineCollection({
     draft: z.boolean().default(false),
     categoria: z.preprocess((val) => (val === '' ? undefined : val), z.enum(CATEGORIAS_INSIGHTS).optional()),
     // Solo para el home y material de RS — nunca se muestra en los cards de /insights-visuales/.
-    punchline: z.string().optional(),
+    // El CMS guarda '' cuando el campo se deja vacío: se normaliza a undefined
+    // para que el home caiga al título y nunca muestre un titular en blanco.
+    punchline: z.preprocess((val) => (typeof val === 'string' && val.trim() === '' ? undefined : val), z.string().optional()),
     ...pieceSeoFields,
   }),
 });
