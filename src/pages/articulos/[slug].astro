@@ -860,7 +860,7 @@ if (toolKinds.includes(kind) && herramienta) {
         class="btn btn-ghost"
         target="_blank"
         rel="noopener"
-        href={`https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent('https://glitchmental.com/articulos/' + post.id + '/')}`}
+        href={`https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent('https://glitchmental.com/articulos/' + post.id + '/?utm_source=compartir-whatsapp&utm_medium=social')}`}
       >WhatsApp</a>
       <button id="share-copy" class="btn btn-ghost" type="button"><span>Copiar enlace</span></button>
     </div>
@@ -1233,7 +1233,11 @@ if (toolKinds.includes(kind) && herramienta) {
   const copyLabel = copyBtn?.querySelector('span');
 
   copyBtn?.addEventListener('click', () => {
-    navigator.clipboard.writeText(window.location.href).then(() => {
+    const shareUrl = new URL(window.location.href);
+    ['utm_source', 'utm_medium', 'utm_campaign'].forEach((k) => shareUrl.searchParams.delete(k));
+    shareUrl.searchParams.set('utm_source', 'compartir-enlace');
+    shareUrl.searchParams.set('utm_medium', 'compartir');
+    navigator.clipboard.writeText(shareUrl.toString()).then(() => {
       if (!copyLabel) return;
       const original = copyLabel.textContent;
       copyBtn.classList.add('copied');

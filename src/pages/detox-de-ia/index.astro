@@ -394,10 +394,18 @@ const faqSchema = {
     }, 150);
   });
 
+  function gmShareUrl(source, medium) {
+    var u = new URL(window.location.href);
+    ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) { u.searchParams.delete(k); });
+    u.searchParams.set('utm_source', source);
+    u.searchParams.set('utm_medium', medium);
+    return u.toString();
+  }
+
   var shareWaBtn = document.getElementById('dia-share-wa');
   if (shareWaBtn) {
     shareWaBtn.addEventListener('click', function () {
-      var url = encodeURIComponent(window.location.href);
+      var url = encodeURIComponent(gmShareUrl('compartir-whatsapp', 'social'));
       var text = encodeURIComponent(document.title);
       window.open('https://wa.me/?text=' + text + '%20' + url, '_blank');
     });
@@ -407,7 +415,7 @@ const faqSchema = {
   if (copyBtn) {
     copyBtn.addEventListener('click', function () {
       var btn = this;
-      navigator.clipboard.writeText(window.location.href).then(function () {
+      navigator.clipboard.writeText(gmShareUrl('compartir-enlace', 'compartir')).then(function () {
         btn.classList.add('copied');
         btn.querySelector('span').textContent = 'Copiado';
         setTimeout(function () {
