@@ -29,6 +29,10 @@ function isLikelyBot(request, ua, width) {
   return false;
 }
 
+// Asistentes de IA. Se evalúa ANTES que buscadores: gemini.google.com
+// también coincidiría con "google.". ChatGPT manda utm_source=chatgpt.com.
+const AI_RE =
+  /chatgpt\.com|chat\.openai\.com|openai\.com|perplexity\.ai|claude\.ai|gemini\.google\.com|copilot\.microsoft\.com|copilot\.cloud\.microsoft|meta\.ai|grok\.com|chat\.mistral\.ai|poe\.com|deepseek\.com|phind\.com|you\.com/i;
 const SEARCH_HOST_RE = /google\.|bing\.|yahoo\.|duckduckgo\.|baidu\.|yandex\./i;
 const SOCIAL_HOST_RE =
   /facebook\.|instagram\.|twitter\.|x\.com|t\.co|linkedin\.|tiktok\.|reddit\.|pinterest\.|threads\.net|bsky\.app|mastodon\.|whatsapp\.|wa\.me|telegram\.|discord\./i;
@@ -78,7 +82,14 @@ function mxMonthStart(date) {
 // Reclasifica en SQL las vistas viejas que ya estaban guardadas como
 // 'directo' pero venían de otra página del propio sitio (antes de que el
 // Worker distinguiera 'interno'), para que el historial también quede limpio.
-const SOURCE_SQL = `(CASE WHEN traffic_source = 'directo' AND referrer_host LIKE '%glitchmental.com%' THEN 'interno' ELSE traffic_source END)`;
+// Igual con 'ia': visitas viejas guardadas como referral/búsqueda/directo cuyo
+// referrer o utm_source es un asistente de IA (ChatGPT, Perplexity, Claude...).
+const AI_SQL_LIKES = ['chatgpt.com','openai.com','perplexity.ai','claude.ai','gemini.google.com','copilot.microsoft.com','meta.ai','grok.com','chat.mistral.ai','poe.com','deepseek.com','phind.com','you.com']
+  .map((h) => `referrer_host LIKE '%${h}%' OR utm_source LIKE '%${h}%'`).join(' OR ');
+const SOURCE_SQL = `(CASE
+  WHEN traffic_source IN ('referral','busqueda','directo') AND (${AI_SQL_LIKES}) THEN 'ia'
+  WHEN traffic_source = 'directo' AND referrer_host LIKE '%glitchmental.com%' THEN 'interno'
+  ELSE traffic_source END)`;
 
 // Retención: los datos de analítica se conservan hasta 13 meses (lo mismo que
 // dice la Política de Privacidad — si cambias uno, cambia el otro). Sin tarea
@@ -484,6 +495,7 @@ function parseUserAgent(ua) {
 const IN_APP_RE = /FBAN|FBAV|FB_IAB|Instagram|Twitter|LinkedInApp|Snapchat|Pinterest|TikTok|musical_ly|BytedanceWebview/i;
 
 function classifyTraffic(referrerHost, utmSource, utmMedium, ua) {
+  if (AI_RE.test(referrerHost || '') || AI_RE.test(utmSource || '')) return 'ia';
   if (utmMedium) {
     const m = utmMedium.toLowerCase();
     if (m.indexOf('social') !== -1) return 'social';

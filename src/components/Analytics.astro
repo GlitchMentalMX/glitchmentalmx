@@ -21,10 +21,23 @@ const WORKER_URL = 'https://glitchmental-analytics.contacto-fbf.workers.dev/coll
       // solo sirve para que los latidos de abajo actualicen la fila correcta.
       var pid = Math.random().toString(36).slice(2) + Date.now().toString(36);
 
+      // Visitas que llegaron por una URL vieja de Blogger: el stub guardó aquí
+      // el referrer original (el redirect lo borra). Solo se usa si es reciente
+      // y si el referrer actual está vacío o es del propio sitio; se consume una vez.
+      var ref = document.referrer || '';
+      try {
+        var legacy = JSON.parse(sessionStorage.getItem('gm-legacy-ref') || 'null');
+        sessionStorage.removeItem('gm-legacy-ref');
+        if (legacy && legacy.r && Date.now() - legacy.t < 30000 &&
+            (!ref || ref.indexOf(location.host) !== -1)) {
+          ref = legacy.r;
+        }
+      } catch (e) {}
+
       var payload = JSON.stringify({
         pid: pid,
         path: location.pathname,
-        referrer: document.referrer || '',
+        referrer: ref,
         query: location.search || '',
         width: (window.screen && window.screen.width) || 0,
       });

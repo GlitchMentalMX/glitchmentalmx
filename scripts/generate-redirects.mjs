@@ -24,9 +24,21 @@ for (const entry of entries) {
 <head>
 <meta charset="utf-8">
 <title>Redirigiendo…</title>
-<meta http-equiv="refresh" content="0; url=${target}">
+<noscript><meta http-equiv="refresh" content="0; url=${target}"></noscript>
 <link rel="canonical" href="${target}">
 <meta name="robots" content="noindex">
+<script>
+(function () {
+  var target = "${target}";
+  try {
+    var r = document.referrer || '';
+    if (r && r.indexOf(location.host) === -1) {
+      sessionStorage.setItem('gm-legacy-ref', JSON.stringify({ r: r, t: Date.now() }));
+    }
+  } catch (e) {}
+  location.replace(target + location.search + location.hash);
+})();
+</script>
 </head>
 <body>
 <p>Este contenido se movió. Si no eres redirigido automáticamente, <a href="${target}">haz clic aquí</a>.</p>

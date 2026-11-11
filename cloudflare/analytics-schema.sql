@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS hits (
   path TEXT NOT NULL,
   referrer TEXT,
   referrer_host TEXT,
-  traffic_source TEXT NOT NULL,     -- busqueda | social | referral | directo
+  traffic_source TEXT NOT NULL,     -- busqueda | social | referral | directo | ia | interno
   utm_source TEXT,
   utm_medium TEXT,
   utm_campaign TEXT,
