@@ -1,18 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import { getCollection } from 'astro:content';
-
-const postCount = (await getCollection('posts', ({ data }) => !data.draft)).length;
 
 const proof = [
-  { value: `${postCount}`, label: 'articles published — active audience' },
-  { value: 'Niche', label: 'AI, tech, digital culture and trends' },
-  { value: 'LATAM', label: 'Spanish-speaking focus — Mexico, LATAM + Spain' },
-  { value: 'Sponsored', label: 'with editorial standards — no filler' },
+  { value: 'Spanish', label: 'Spanish-speaking focus — Mexico, LATAM and Spain' },
+  { value: 'AI & tech', label: 'artificial intelligence, digital culture and trends' },
+  { value: 'Editorial', label: 'integrated content — no intrusive banners or pop-ups' },
+  { value: 'Labeled', label: 'all sponsored content is clearly labeled' },
 ];
 
 const formats = [
+  {
+    name: 'Manual del Caos Digital',
+    price: '$70',
+    period: 'USD/issue',
+    term: 'Monthly send to subscribers',
+    features: [
+      '"Presented by" + native block inside the issue',
+      'Read by subscribers who opted in with consent',
+    ],
+  },
   {
     name: 'Sponsored post',
     price: '$200',
@@ -50,6 +57,8 @@ const formats = [
 
 const reasons = [
   'A niche audience with a genuine interest in technology, AI and digital culture',
+  'No intrusive banners or pop-ups: your message does not compete with noise',
+  'We do not sell or share reader data with advertisers',
   'Editorially integrated content — more impact than intrusive advertising',
   'Flexible formats for your goal: SEO, branding or campaigns',
   'Welcome: startups, SaaS, fintech, digital tools and tech brands',
@@ -111,9 +120,11 @@ const reasons = [
 
   <section class="container block">
     <p class="section-label">How to get started</p>
-    <div class="callout-box">
-      <p>Email us your goals and estimated budget. We'll reply with a detailed proposal and specific terms for your campaign.</p>
-    </div>
+    <ol class="steps">
+      <li><strong>Email us</strong> your brand, your goal (SEO, awareness or launch) and an approximate budget.</li>
+      <li><strong>We reply within 1–2 business days</strong> with a proposal: recommended format, dates and final price.</li>
+      <li><strong>We approve the content together</strong> before publishing. All sponsored content is labeled as such.</li>
+    </ol>
   </section>
 
   <section class="container cta">
@@ -175,7 +186,7 @@ const reasons = [
     margin-bottom: 18px;
   }
 
-  .formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .formats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .format-note { margin: 14px 2px 0; font-size: 0.8rem; font-style: italic; color: var(--text-faint); }
   .format {
     position: relative;
@@ -229,6 +240,17 @@ const reasons = [
   .check-item.check::before { content: '✓'; }
   .quality-list .check-item { padding: 12px 0 12px 24px; border-bottom: 1px solid var(--border); }
   .quality-list .check-item:last-child { border-bottom: none; }
+
+  .steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .steps li { counter-increment: step; position: relative; padding-left: 40px; font-size: 0.95rem; line-height: 1.6; color: var(--text); }
+  .steps li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 1px;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
 
   .callout-box {
     border-left: 4px solid var(--accent);
