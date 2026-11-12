@@ -9,17 +9,19 @@ import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import VeredictoBadge from '../../../components/VeredictoBadge.astro';
 import PruebaGratisBadge from '../../../components/PruebaGratisBadge.astro';
 import CodigoDescuentoBadge from '../../../components/CodigoDescuentoBadge.astro';
+import EstudiantesBadge from '../../../components/EstudiantesBadge.astro';
 import { getCollection } from 'astro:content';
 import { ALIAS_ENTRENA_IA } from '../../../data/alias-entrena-ia';
 import { SUBPREGUNTAS_BASE } from '../../../data/subpreguntas-recomendador';
 
 export async function getStaticPaths() {
-  const [tabla, precios, entrena, pruebaGratis, codigos] = await Promise.all([
+  const [tabla, precios, entrena, pruebaGratis, codigos, estudiantes] = await Promise.all([
     getCollection('herramientasIA'),
     getCollection('preciosIA', ({ data }) => !data.draft),
     getCollection('entrenaIA', ({ data }) => !data.draft),
     getCollection('pruebaGratis', ({ data }) => !data.draft),
     getCollection('codigosDescuento', ({ data }) => !data.draft),
+    getCollection('estudiantes', ({ data }) => !data.draft),
   ]);
 
   const capacidades = tabla[0]?.data.herramientas ?? [];
@@ -31,15 +33,16 @@ export async function getStaticPaths() {
     const priv = entrena.find((p) => p.data.herramientaId === privId);
     const gratis = pruebaGratis.find((p) => p.data.herramientaId === cap.herramientaId);
     const descuento = codigos.find((p) => p.data.herramientaId === cap.herramientaId);
+    const estudiante = estudiantes.find((p) => p.data.herramientaId === cap.herramientaId);
 
     return {
       params: { herramienta: cap.herramientaId },
-      props: { cap, precio, priv, gratis, descuento },
+      props: { cap, precio, priv, gratis, descuento, estudiante },
     };
   });
 }
 
-const { cap, precio, priv, gratis, descuento } = Astro.props;
+const { cap, precio, priv, gratis, descuento, estudiante } = Astro.props;
 
 const nombre = precio?.data.herramienta ?? priv?.data.herramienta ?? cap.herramientaId;
 const sitioOficial = precio?.data.sitioOficial ?? priv?.data.sitioOficial;
@@ -208,6 +211,13 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
           <p class="ref-label">¿Código de descuento real?</p>
           <CodigoDescuentoBadge veredicto={descuento.data.veredicto} size="sm" />
           <p class="ref-dek">{descuento.data.fraseCorta}</p>
+        </a>
+      )}
+      {estudiante && (
+        <a class="ref-card" href={`/articulos/${estudiante.id}/`}>
+          <p class="ref-label">¿Descuento para estudiantes?</p>
+          <EstudiantesBadge veredicto={estudiante.data.veredicto} size="sm" />
+          <p class="ref-dek">{estudiante.data.fraseCorta}</p>
         </a>
       )}
     </div>
