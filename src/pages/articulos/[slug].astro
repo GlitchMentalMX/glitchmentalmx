@@ -17,6 +17,7 @@ import { impactoLineas, impactoTextoCopia } from '../../lib/impacto';
 import { SIN_ORACULOS_ENLACES } from '../../data/sin-oraculos-enlaces';
 import { PATRON_OSCURO_ARTICULO, PATRON_OSCURO_ENLACES } from '../../data/patron-oscuro-enlaces';
 import { getCollection, render } from 'astro:content';
+import { ALIAS_ENTRENA_IA } from '../../data/alias-entrena-ia';
 import { relatedInsightVisualByPostId } from '../../lib/relatedInsightVisual';
 import {
   formatDate,
@@ -590,6 +591,27 @@ const otrosEstudiantes =
       ).slice(0, 3)
     : [];
 
+// Enlace automático artículo → ficha "Todo sobre X en México" del recomendador
+// (/que-ia-me-conviene/<herramienta>/). Se resuelve por herramientaId contra
+// la tabla de capacidades (23 herramientas), así que cada artículo de serie
+// y cada post que nombra una herramienta con ficha queda enlazado sin editar
+// una sola línea de markdown. Es un bloque de cierre aparte, NO un enlace en
+// la prosa: el artículo sigue siendo la página que compite por "X precio",
+// "X código", etc., y la ficha es el siguiente paso, no un sustituto.
+// ALIAS_ENTRENA_IA invertido para series cuyo id difiere del de la ficha
+// (grok → x-grok); 'adobe' se excluye a propósito: es Creative Cloud, no Firefly.
+const fichasCaps = (await getCollection('herramientasIA'))[0]?.data.herramientas ?? [];
+const aliasInverso: Record<string, string> = {};
+for (const [fichaId, serieId] of Object.entries(ALIAS_ENTRENA_IA)) {
+  if (serieId !== 'adobe') aliasInverso[serieId] = fichaId;
+}
+function fichaHref(hid?: string): string | undefined {
+  if (!hid) return undefined;
+  const id = aliasInverso[hid] ?? hid;
+  return fichasCaps.some((c) => c.herramientaId === id) ? `/que-ia-me-conviene/${id}/` : undefined;
+}
+const fichaDeEstaHerramienta = fichaHref(herramientaId);
+
 // Enlace automático ficha → página de estudiantes de la MISMA herramienta
 // (por herramientaId). Las fichas de las otras series se escriben a mano en
 // markdown y nunca iban a enterarse de que esta serie existe; así, cualquier
@@ -618,7 +640,7 @@ function escapeRegex(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-type ToolEntry = { precio?: string; codigo?: string; prueba?: string; entrena?: string; estudiantes?: string };
+type ToolEntry = { hid?: string; precio?: string; codigo?: string; prueba?: string; entrena?: string; estudiantes?: string };
 
 const relatedToolLinks: { herramienta: string; variants: { label: string; href: string }[] }[] = [];
 
@@ -632,11 +654,11 @@ if (kind === 'posts') {
   ]);
 
   const byHerramienta = new Map<string, ToolEntry>();
-  for (const p of preciosIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), precio: p.id });
-  for (const p of codigosDescuentoAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), codigo: p.id });
-  for (const p of pruebaGratisAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), prueba: p.id });
-  for (const p of entrenaIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), entrena: p.id });
-  for (const p of estudiantesAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), estudiantes: p.id });
+  for (const p of preciosIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), hid: byHerramienta.get((p.data as any).herramienta)?.hid ?? (p.data as any).herramientaId, precio: p.id });
+  for (const p of codigosDescuentoAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), hid: byHerramienta.get((p.data as any).herramienta)?.hid ?? (p.data as any).herramientaId, codigo: p.id });
+  for (const p of pruebaGratisAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), hid: byHerramienta.get((p.data as any).herramienta)?.hid ?? (p.data as any).herramientaId, prueba: p.id });
+  for (const p of entrenaIAAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), hid: byHerramienta.get((p.data as any).herramienta)?.hid ?? (p.data as any).herramientaId, entrena: p.id });
+  for (const p of estudiantesAll) byHerramienta.set((p.data as any).herramienta, { ...byHerramienta.get((p.data as any).herramienta), hid: byHerramienta.get((p.data as any).herramienta)?.hid ?? (p.data as any).herramientaId, estudiantes: p.id });
 
   const normTitle = normalizeText(title);
   const matches: { herramienta: string; entry: ToolEntry }[] = [];
@@ -650,6 +672,7 @@ if (kind === 'posts') {
 
   for (const { herramienta, entry } of matches.slice(0, 2)) {
     const variants = [
+      fichaHref(entry.hid) && { label: `Todo sobre ${herramienta} en México`, href: fichaHref(entry.hid)! },
       entry.precio && { label: `¿Cuánto cuesta ${herramienta} hoy?`, href: `/articulos/${entry.precio}/` },
       entry.codigo && { label: '¿Tiene código de descuento real?', href: `/articulos/${entry.codigo}/` },
       entry.prueba && { label: '¿Tiene prueba gratis sin pedir tarjeta?', href: `/articulos/${entry.prueba}/` },
@@ -901,6 +924,12 @@ if (toolKinds.includes(kind) && herramienta) {
     </section>
   )}
 
+  {fichaDeEstaHerramienta && (
+    <section class="container ficha-cta">
+      <a href={fichaDeEstaHerramienta}>Todo sobre {herramienta} en México →</a>
+    </section>
+  )}
+
   {articulosSobreHerramienta.length > 0 && (
     <section class="container tool-articles">
       <p class="tool-articles-label">Lo que hemos escrito sobre {herramienta}</p>
@@ -1123,6 +1152,13 @@ if (toolKinds.includes(kind) && herramienta) {
 
   .book-section { max-width: 720px; padding: 32px 24px 96px; }
 
+  .ficha-cta { max-width: 720px; padding: 8px 24px 24px; }
+  .ficha-cta a {
+    display: block; padding: 16px 18px; border-radius: var(--radius-sm);
+    border: 1px solid var(--border); background: var(--bg-elevated);
+    font-family: var(--font-display); font-size: 1.05rem; color: var(--text); text-decoration: none;
+  }
+  .ficha-cta a:hover { border-color: var(--accent); color: var(--accent); }
   .tool-articles { max-width: 720px; padding: 8px 24px 40px; }
   .tool-articles-label {
     font-family: var(--font-mono);

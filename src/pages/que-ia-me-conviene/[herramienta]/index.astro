@@ -26,6 +26,38 @@ export async function getStaticPaths() {
 
   const capacidades = tabla[0]?.data.herramientas ?? [];
 
+  // Alternativas: se derivan de la tabla de capacidades (ejes en "fuerte"),
+  // sin redactar nada. Puntaje = ejes fuertes en común (+1 si ambas son del
+  // mismo tipo); solo entran las que comparten al menos un eje fuerte, tope
+  // de 3. Si no hay ninguna, la sección no se muestra.
+  const EJES = ['escritura', 'investigacion', 'codigo', 'imagenes', 'video', 'audio', 'musica'] as const;
+  const nombreDe = (id: string) => {
+    const pr = precios.find((p) => p.data.herramientaId === id);
+    const privId = ALIAS_ENTRENA_IA[id] ?? id;
+    const pv = entrena.find((p) => p.data.herramientaId === privId);
+    return pr?.data.herramienta ?? pv?.data.herramienta ?? id;
+  };
+  const fuertes = (c: (typeof capacidades)[number]) => EJES.filter((e) => c[e] === 'fuerte');
+  const alternativasDe = (cap: (typeof capacidades)[number]) => {
+    const mios = fuertes(cap);
+    return capacidades
+      .filter((o) => o.herramientaId !== cap.herramientaId)
+      .map((o) => {
+        const comunes = fuertes(o).filter((e) => mios.includes(e));
+        const mismoTipo = (o.tipo ?? 'generalista') === (cap.tipo ?? 'generalista');
+        return { o, comunes, score: comunes.length * 2 + (comunes.length > 0 && mismoTipo ? 1 : 0) };
+      })
+      .filter((x) => x.comunes.length > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+      .map((x) => ({
+        id: x.o.herramientaId,
+        nombre: nombreDe(x.o.herramientaId),
+        comunes: x.comunes as string[],
+        especialidad: x.o.tipo === 'especialista' ? x.o.especialidad : undefined,
+      }));
+  };
+
 
   return capacidades.map((cap) => {
     const precio = precios.find((p) => p.data.herramientaId === cap.herramientaId);
@@ -37,12 +69,12 @@ export async function getStaticPaths() {
 
     return {
       params: { herramienta: cap.herramientaId },
-      props: { cap, precio, priv, gratis, descuento, estudiante },
+      props: { cap, precio, priv, gratis, descuento, estudiante, alternativas: alternativasDe(cap) },
     };
   });
 }
 
-const { cap, precio, priv, gratis, descuento, estudiante } = Astro.props;
+const { cap, precio, priv, gratis, descuento, estudiante, alternativas } = Astro.props;
 
 const nombre = precio?.data.herramienta ?? priv?.data.herramienta ?? cap.herramientaId;
 const sitioOficial = precio?.data.sitioOficial ?? priv?.data.sitioOficial;
@@ -86,7 +118,29 @@ const subusosVerificados = SUBPREGUNTAS_BASE.flatMap((s) =>
     }))
 );
 
-const tituloPagina = esEspecialista && especialidad ? `${nombre}: ${especialidad}` : `${nombre} — ¿Qué IA me conviene?`;
+// Título con la búsqueda real ("<herramienta> en México" + lo que sí verifica
+// esta ficha). Los temas salen de las tarjetas que la ficha efectivamente
+// muestra — nunca prometemos "descuentos" si no hay tarjeta de código. Si
+// pasa de ~65 caracteres (Google trunca por píxeles), se sueltan temas de
+// menor a mayor prioridad: primero privacidad, luego precio.
+const temas: Record<string, string | undefined> = {
+  precio: precio ? 'precio' : undefined,
+  descuentos: descuento ? 'descuentos' : undefined,
+  gratis: gratis ? 'prueba gratis' : undefined,
+  privacidad: priv ? 'privacidad' : undefined,
+};
+const unir = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(', ')} y ${xs[xs.length - 1]}` : xs[0] ?? '');
+function construirTitulo(): string {
+  const orden = ['precio', 'descuentos', 'gratis', 'privacidad'];
+  for (const soltar of [[], ['privacidad'], ['privacidad', 'precio']]) {
+    const lista = orden.filter((k) => !soltar.includes(k)).map((k) => temas[k]).filter((x): x is string => Boolean(x));
+    if (lista.length < 2) continue;
+    const t = `${nombre} en México: ${unir(lista)}`;
+    if (t.length <= 65) return t;
+  }
+  return `${nombre} en México: ficha verificada`;
+}
+const tituloPagina = construirTitulo();
 const descripcionPagina =
   esEspecialista && especialidad
     ? `${nombre}: ${especialidad}. Qué hace distinto a un chat generalista, si entrena con tus datos, si pide tarjeta para probarla y si tiene código de descuento real — con fuente y fecha.`
@@ -223,6 +277,24 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
     </div>
   </section>
 
+  {alternativas.length > 0 && (
+    <section class="container block">
+      <h2>Alternativas a {nombre}</h2>
+      <ul class="alternativas">
+        {alternativas.map((a) => (
+          <li>
+            <a href={`/que-ia-me-conviene/${a.id}/`}>
+              <span class="alt-nombre">{a.nombre} →</span>
+              <span class="alt-dek">
+                {a.especialidad ? `${a.especialidad}. ` : ''}También fuerte en {unir(a.comunes.map((e) => EJES_USO.find((x) => x.key === e)?.label.split(' (')[0].toLowerCase() ?? e))}.
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
   <section class="container footer-cta">
     <p class="verificado">Capacidades verificadas el {fechaVerificacion} · {cap.fuenteCapacidades}</p>
     <a class="cta-quiz" href="/que-ia-me-conviene/">← Volver al recomendador</a>
@@ -286,6 +358,16 @@ const fechaVerificacion = new Date(cap.fechaVerificacion).toLocaleDateString('es
   .ref-label { font-family: var(--font-display); font-size: 1rem; margin: 0; }
   .ref-cta { font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent); margin: 0; }
   .ref-dek { color: var(--text-muted); font-size: 0.85rem; margin: 0; }
+
+  .alternativas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .alternativas a {
+    display: flex; flex-direction: column; gap: 4px; padding: 14px 16px;
+    border-radius: var(--radius-sm); border: 1px solid var(--border);
+    background: var(--bg-elevated); color: var(--text);
+  }
+  .alternativas a:hover { border-color: var(--accent); }
+  .alt-nombre { font-family: var(--font-display); font-size: 1.02rem; }
+  .alt-dek { color: var(--text-muted); font-size: 0.85rem; }
 
   .footer-cta { max-width: 700px; padding: 32px 24px 72px; border-top: 1px solid var(--border); margin-top: 24px; }
   .verificado { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-faint); margin: 0 0 16px; }
