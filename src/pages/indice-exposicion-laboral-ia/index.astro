@@ -32,10 +32,45 @@ const schema = {
     })),
   },
 };
+
+// Dataset propio (no parte de /datos/): es otra tabla, con su propia edición y
+// periodicidad, y el marcado debe describir lo que ESTA página muestra. Sirve
+// para Google Dataset Search; no garantiza ningún formato en la búsqueda normal.
+const csvUrl = new URL('/datos/indice-exposicion.csv', Astro.site).toString();
+const datasetSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  name: `${NOMBRE} (edición ${edicion.numero})`,
+  description: `Puntuación de exposición a la IA de ${fichas.length} ocupaciones, de 0 a 100, con su nivel, rango de sensibilidad, componentes (exposición, automatización y complementariedad humana), confianza y códigos O*NET e ISCO-08. Es un índice compuesto, no una probabilidad de desempleo: exposición no significa sustitución. Basado en tareas de O*NET, el Anthropic Economic Index y Eloundou et al. (2023).`,
+  url: new URL(RUTA, Astro.site).toString(),
+  version: String(edicion.numero),
+  inLanguage: 'es',
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  isAccessibleForFree: true,
+  keywords: ['inteligencia artificial', 'empleo', 'exposición laboral', 'automatización', 'ocupaciones', 'O*NET'],
+  dateModified: edicion.fecha,
+  variableMeasured: ['puntuacion', 'nivel', 'rango_min', 'rango_max', 'exposicion_E', 'automatizacion_A', 'complementariedad_C', 'confianza'],
+  isBasedOn: [
+    'https://www.onetcenter.org/database.html',
+    'https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts',
+    'https://arxiv.org/abs/2303.10130',
+  ],
+  creator: { '@type': 'Person', name: 'Jorge A. Diaz Elizondo', url: new URL('/acerca-de/', Astro.site).toString() },
+  publisher: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
+  distribution: [
+    {
+      '@type': 'DataDownload',
+      encodingFormat: 'text/csv',
+      name: `${NOMBRE}: una fila por ocupación (CSV)`,
+      contentUrl: csvUrl,
+    },
+  ],
+};
 ---
 
 <Layout title={title} description={description} noIndex={!edicion.publicado}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  {edicion.publicado && <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />}
   <Breadcrumbs items={[{ name: NOMBRE }]} />
 
   <header class="container hero">
@@ -151,6 +186,7 @@ const schema = {
       <li><a href="https://arxiv.org/abs/2303.10130" rel="noopener">Eloundou et al., <em>GPTs are GPTs</em> (2023)</a>: capacidad por ocupación.</li>
     </ul>
     <p class="actualiza">Actualización {edicion.periodicidad}. Última edición: {edicion.etiquetaFecha}. Sin registro, sin rastreo y sin cobro.</p>
+    <p class="actualiza">Datos abiertos (CC BY 4.0): <a href="/datos/indice-exposicion.csv" download>CSV con las {fichas.length} ocupaciones</a> · <a href="/datos/">más datos abiertos y cómo citarlos</a>.</p>
   </section>
 
   <section class="container bloque puente">
