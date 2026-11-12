@@ -6,11 +6,11 @@ herramientaId: "scispace"
 empresa: "SciSpace (PubGenius Inc.)"
 sitioOficial: "https://scispace.com/pricing"
 veredicto: "amarillo"
-fraseCorta: "30% en planes anuales con el código SCI30, abierto a cualquiera (no exclusivo de estudiantes); la oferta relámpago se extendió por tercera vez, ahora con corte el 03/11/2026."
-fuenteVerificacion: "Fuente oficial (scispace.com: página de precios, banner \"Flash sale till 03 November 2026\" y FAQ \"Do you offer discounts?\"; scispace.com/help, artículo \"Discounts on SciSpace Plans\"), reverificada el 03/11/2026: el código SCI30 al 30% sigue activo y abierto a cualquiera; el banner movió su corte de 12/10/2026 a 03/11/2026, la tercera extensión seguida."
-vigenteHasta: 2026-11-03
+fraseCorta: "30% en planes anuales con el código SCI30, abierto a cualquiera (no exclusivo de estudiantes); la oferta relámpago se extendió por cuarta vez, ahora con corte el 12/11/2026."
+fuenteVerificacion: "Fuente oficial (scispace.com: página de precios, banner \"Flash sale till 12 November 2026. Extra 30% discount on all Yearly plans with SCI30\" y FAQ \"Do you offer discounts?\"; scispace.com/help, artículo \"Discounts on SciSpace Plans\", fechado 20/04/2026), reverificada el 12/11/2026: el código SCI30 al 30% sigue activo y abierto a cualquiera; el banner movió su corte de 03/11/2026 a 12/11/2026, la cuarta extensión seguida."
+vigenteHasta: 2026-11-12
 pubDate: 2026-10-04
-updatedDate: 2026-11-03
+updatedDate: 2026-11-12
 heroImage: /images/estudiantes/scispace.png
 heroImageAlt: SciSpace — Descuentos para estudiantes
 ---
@@ -33,7 +33,7 @@ La empresa no especifica países para ninguna de las dos ofertas. El Help Center
 
 Para la beca, aplicas desde education.scispace.com con tu correo universitario y SciSpace confirma tus credenciales. La página no aclara qué correos o instituciones aceptan, ni cuánto tarda la respuesta.
 
-Cuidado con la fecha: el 04 de octubre de 2026 la página marcaba el código como "venta relámpago"; ese aviso se extendió al 11 de octubre, luego al 12 de octubre, y ahora, reverificado el 03 de noviembre de 2026, el banner sigue ahí con el corte movido de nuevo: "Flash sale till 03 November 2026". Es la tercera vez que la oferta se extiende justo el día en que iba a vencer. El FAQ de precios y el Help Center (artículo "Discounts on SciSpace Plans") siguen diciendo, por separado, que el descuento del 30% "está disponible" para planes anuales, sin poner fecha ahí. Con este patrón de extensiones de último momento, no hay forma de asegurar que el código siga funcionando después de hoy: si el cupón falla en el checkout, es la explicación más probable.
+Cuidado con la fecha: el 04 de octubre de 2026 la página marcaba el código como "venta relámpago"; ese aviso se extendió al 11 de octubre, luego al 12 de octubre, después al 03 de noviembre y, reverificado el 12 de noviembre de 2026, el banner sigue ahí con el corte movido otra vez: "Flash sale till 12 November 2026. Extra 30% discount on all Yearly plans with SCI30". Es la cuarta extensión seguida, y esta vez el corte coincide con la fecha de la verificación. El FAQ de precios y el Help Center (artículo "Discounts on SciSpace Plans", fechado el 20 de abril de 2026) siguen diciendo, por separado, que el descuento del 30% está disponible para planes anuales, sin poner fecha ahí. Con este patrón de extensiones, no hay forma de asegurar que el código siga funcionando después de hoy: si el cupón falla en el checkout, es la explicación más probable.
 
 ## Qué pasa cuando termina
 
@@ -53,4 +53,4 @@ De la beca: dura un mes, y la página no dice qué pasa después.
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 03/11/2026]
+[Última actualización: 12/11/2026]

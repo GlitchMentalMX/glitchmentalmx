@@ -7,10 +7,9 @@ empresa: "OpenAI"
 sitioOficial: "https://chatgpt.com/students/2026/"
 veredicto: "rojo"
 fraseCorta: "La oferta de 4 meses gratis de ChatGPT Plus es solo para estudiantes de universidades de EE.UU.; para México no hay oferta oficial."
-fuenteVerificacion: "Fuente oficial (chatgpt.com/students/2026 y help.openai.com, artículo «ChatGPT Back to School offer for students»), consultada el 04/10/2026 y reverificada el 03/11/2026: el artículo de ayuda sigue publicando el mismo plazo (31/10/2026, ya vencido) y las mismas condiciones (solo EE.UU.), sin aviso de extensión."
+fuenteVerificacion: "Fuente oficial (chatgpt.com/students/2026 y help.openai.com, artículo «ChatGPT Back to School offer for students»), consultada el 04/10/2026 y reverificada el 12/11/2026: el artículo de ayuda (actualizado el 04/11/2026) sigue publicando el mismo plazo (31/10/2026, ya vencido) y las mismas condiciones (solo EE.UU.), sin aviso de extensión."
 pubDate: 2026-10-04
-updatedDate: 2026-11-03
-vigenteHasta: 2026-10-31
+updatedDate: 2026-11-12
 heroImage: /images/estudiantes/chatgpt.png
 heroImageAlt: ChatGPT — Descuentos para estudiantes
 ---
@@ -49,4 +48,4 @@ Aun donde aplica, la oferta pide método de pago para activarse, y al terminar l
 
 <p class="otros-precios"><a href="/descuentos-para-estudiantes-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 03/11/2026]
+[Última actualización: 12/11/2026]
