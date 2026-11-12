@@ -7,9 +7,9 @@ empresa: "SciSpace"
 sitioOficial: "https://scispace.com/pricing"
 veredicto: "verde"
 fraseCorta: "Sí existe: la propia página de precios de SciSpace publica el código SCI30, con 30% de descuento sobre los planes anuales."
-fuenteVerificacion: "Página oficial de precios de SciSpace (scispace.com/pricing), consultada el 06/11/2026: el banner de venta relámpago sigue ahí, ahora con el corte movido a 'till 30 October 2026' (fecha ya vencida al momento de la consulta). El FAQ de esa misma página sigue listando el cupón SCI30 sin fecha de fin."
+fuenteVerificacion: "Página oficial de precios de SciSpace (scispace.com/pricing), consultada el 12/11/2026: el banner de venta relámpago sigue activo con el corte 'till 12 November 2026' (extra 30% en planes anuales con SCI30), y el FAQ de esa misma página sigue listando el cupón SCI30 sin fecha de fin; el artículo de ayuda 'Discounts on SciSpace Plans' (fechado 20/04/2026) también lo confirma."
 pubDate: 2026-08-31
-updatedDate: 2026-11-06
+updatedDate: 2026-11-12
 heroImage: /images/codigos-descuento/scispace.png
 heroImageAlt: SciSpace — Códigos de descuento
 ---
@@ -20,7 +20,7 @@ Sí, y viene confirmado directamente por la empresa, no por un sitio externo. En
 
 ## Cómo funciona: 30% extra sobre un plan anual que ya cuesta menos por mes
 
-El plan Premium anual de SciSpace ya está marcado como "Save 40%" frente al plan mensual en la página de precios ($12 al mes facturado anual contra $20 al mes; la página muestra el símbolo "$" sin aclarar la moneda); el código SCI30 se aplica encima de ese precio anual, en el campo de cupón del checkout. A diferencia de descuentos que exigen verificar que eres estudiante o parte de una institución, SCI30 no pide ninguna credencial — cualquier persona que pague el plan anual puede usarlo. Ojo con la fecha: el banner de «Flash sale» con este mismo código ha aparecido y desaparecido varias veces — estuvo ausente el 4 de octubre de 2026, volvió el 11 de octubre con corte anunciado ese mismo día, siguió el 12 de octubre con el corte movido un día más, y al revisar de nuevo el 6 de noviembre de 2026 el banner seguía activo, con el corte anunciado como "Flash sale till 30 October 2026" — una fecha que para entonces ya había pasado. El banner nunca se queda vencido: simplemente sigue mostrando un corte atrasado. La sección de preguntas frecuentes sigue ofreciendo el cupón sin fecha de fin. No hay promesa de que sea permanente: si el código no funciona en el checkout, ese es el motivo.
+El plan Premium anual de SciSpace ya está marcado como "Save 40%" frente al plan mensual en la página de precios ($12 al mes facturado anual contra $20 al mes; la página muestra el símbolo "$" sin aclarar la moneda); el código SCI30 se aplica encima de ese precio anual, en el campo de cupón del checkout. A diferencia de descuentos que exigen verificar que eres estudiante o parte de una institución, SCI30 no pide ninguna credencial — cualquier persona que pague el plan anual puede usarlo. Ojo con la fecha: el banner de «Flash sale» con este mismo código ha aparecido y desaparecido varias veces — estuvo ausente el 4 de octubre de 2026, volvió el 11 de octubre con corte anunciado ese mismo día, siguió el 12 de octubre con el corte movido un día más, y al revisar de nuevo el 12 de noviembre de 2026 el banner seguía activo, con el corte anunciado como "Flash sale till 12 November 2026", el mismo día de la revisión; en una revisión intermedia el corte era otro, así que la fecha se ha ido moviendo. La sección de preguntas frecuentes sigue ofreciendo el cupón sin fecha de fin. No hay promesa de que sea permanente: si el código no funciona en el checkout, ese es el motivo.
 
 ## Por qué sí puedes confiar en este código, a diferencia de otros que circulan por ahí
 
@@ -36,4 +36,4 @@ Varios sitios de cupones ofrecen códigos alternativos para SciSpace (AIMOJO40, 
 
 <p class="otros-precios"><a href="/codigos-descuento-ia/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 06/11/2026]
+[Última actualización: 12/11/2026]
