@@ -51,7 +51,7 @@ La lectura propia es que Apple respondió con dos tácticas distintas: **retener
 
 En China, la aprobación avanza por pedazos. El servicio quedó registrado para iPhone en julio y, meses después, para tablets y laptops. **Registrado no significa lanzado**: Apple comunicó, según TNW, que sus primeras funciones llegarán a los usuarios en China en diciembre con iOS 27.3, después de una beta para desarrolladores disponible desde el 4 de noviembre, solo en iPhone y sin Siri AI. La nota de Reuters no da fecha de lanzamiento para tablets y laptops.
 
-La lectura propia es que **la aprobación se otorga por dispositivo y por función**, y que la IA se trata como un servicio que se licencia, no como una característica del aparato.
+**La aprobación se otorga por dispositivo y por función**, y que la IA se trata como un servicio que se licencia, no como una característica del aparato.
 
 ## Lo que se fragmenta no es el teléfono: es la promesa de que todos reciben el mismo cerebro
 
@@ -67,6 +67,6 @@ Para los desarrolladores, según The New Stack, el efecto es práctico: la misma
 
 Apple añadió el español a Siri AI el 26 de octubre con iOS 27.2, según MacRumors. La documentación consultada no distingue variantes regionales del español, así que con lo publicado no se puede confirmar cómo se comporta en cada país hispanohablante. Según Apple, **Siri AI sigue sin estar disponible en iPhone y iPad en la UE**, y TNW reporta que tampoco llega a China continental.
 
-La lectura propia es que **las bifurcaciones aparecen donde hay un regulador con suficiente peso de mercado como para forzar una negociación**. Las fuentes revisadas solo documentan versiones distintas para la UE y China. El sitio ya revisó cómo [América Latina importa el piso regulatorio del país de origen](/articulos/trump-quiere-una-ley-de-ia-federal-que-pierde-latam/) de los sistemas de IA que usa.
+**Las bifurcaciones aparecen donde hay un regulador con suficiente peso de mercado como para forzar una negociación**. Las fuentes revisadas solo documentan versiones distintas para la UE y China. El sitio ya revisó cómo [América Latina importa el piso regulatorio del país de origen](/articulos/trump-quiere-una-ley-de-ia-federal-que-pierde-latam/) de los sistemas de IA que usa.
 
 Si la IA del iPhone ya se negocia país por país, **¿quién representa a los usuarios de los países que no se sentaron a la mesa?**
