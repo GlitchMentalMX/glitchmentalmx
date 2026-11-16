@@ -4,8 +4,8 @@ resumen: 'Un sistema de IA logró generar un artículo científico aceptado en u
 imagen: /images/dato-incomodo/revision-pares.webp
 imagenAlt: 'La máquina ya puede entregar el paper: investigadora con manuscrito sellado como aprobado junto a un rack'
 enlace: ''
-date: 2026-11-15T08:17
-draft: true
+date: 2026-11-16T06:36
+draft: false
 categoria: Narrativa de la IA
 punchline: La máquina ya puede entregar el paper.
 slug: ''
