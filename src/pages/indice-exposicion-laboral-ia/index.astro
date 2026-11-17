@@ -155,10 +155,9 @@ const datasetSchema = {
     <h2 id="h-met">Cómo se calcula, y qué no significa</h2>
     <p>
       Cada ocupación se descompone en actividades a partir de sus tareas en O*NET. A cada actividad se le asignan tres
-      calificaciones de 0 a 4: <strong>exposición (E)</strong>, qué tan capaz es hoy la IA de hacerla o asistirla;
-      <strong>automatización (A)</strong>, cuánto se observa ya en uso real; y <strong>complementariedad humana (C)</strong>,
+      calificaciones de 0 a 4: <strong>exposición (E)</strong>, qué tan capaz es hoy la IA de hacerla o asistirla; <strong>automatización (A)</strong>, cuánto se observa ya en uso real; y <strong>complementariedad humana (C)</strong>,
       cuánto depende de criterio, presencia o responsabilidad de una persona. Las actividades pesan según su importancia en O*NET.
-      Para cada componente se calcula el promedio ponderado de las calificaciones de 0 a 4 y se multiplica por 25, de modo que E, A y C quedan en escala de 0 a 100 antes de aplicar la fórmula.
+      El promedio ponderado de cada dimensión se multiplica por 25 para llevarlo a una escala de 0 a 100.
     </p>
     <p class="formula"><code>Puntuación = {PESOS.E}·E + {PESOS.A}·A + {PESOS.C}·(100 − C)</code></p>
     <ul class="niveles">
