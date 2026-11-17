@@ -1,6 +1,7 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { readFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 
 // Lee un único archivo JSON plano (sin envolver en lista, sin campo id) y lo
 // expone como una sola entrada de la colección — necesario porque Decap CMS
@@ -462,6 +463,48 @@ const novelaChapters = defineCollection({
   }),
 });
 
+// Laboratorio: experimentos con datos propios de glitchMentalMX (ver
+// "Glitch Mental/laboratorio/MANIFIESTO_Y_REGLAS.md"). Colección aparte de
+// `posts` a propósito: tiene anatomía fija (resumen, protocolo, evidencia en
+// HTML, lectura, datos abiertos), URL propia /laboratorio/[slug]/ y no debe
+// aparecer en RSS/archivo/home/categorías, que solo leen `posts`.
+// Una pieza con draft: true NO se genera en producción; para previsualizarla
+// en build, LABORATORIO_PREVIEW=1 (ver src/lib/laboratorio.ts).
+// heroImage es opcional solo mientras draft sea true: al publicar exige la
+// imagen editorial 16:9 y que el archivo exista en /public.
+const laboratorio = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/laboratorio' }),
+  schema: z
+    .object({
+      title: z.string(),
+      description: z.string(),
+      kicker: z.string(),
+      experimento: z.number().int().positive(),
+      pubDate: z.coerce.date(),
+      updatedDate: z.preprocess((val) => (val === '' ? undefined : val), z.coerce.date().optional()),
+      heroImage: z.string().optional(),
+      heroImageAlt: z.string().optional(),
+      csv: z.string().optional(),
+      draft: z.boolean().default(true),
+    })
+    .superRefine((data, ctx) => {
+      if (data.draft) return;
+      if (!data.heroImage || !data.heroImageAlt?.trim()) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['heroImage'],
+          message: 'Una pieza del Laboratorio publicada (draft: false) exige heroImage y heroImageAlt.',
+        });
+      } else if (!existsSync(new URL(`../public${data.heroImage}`, import.meta.url))) {
+        ctx.addIssue({
+          code: 'custom',
+          path: ['heroImage'],
+          message: `heroImage apunta a ${data.heroImage}, que no existe en /public.`,
+        });
+      }
+    }),
+});
+
 export const collections = {
   posts,
   editorialCollections,
@@ -477,4 +520,5 @@ export const collections = {
   preciosDigitales,
   herramientasIA,
   novelaChapters,
+  laboratorio,
 };

@@ -1,0 +1,67 @@
+sector,ocupacion,slug,puntuacion_ocupacion,actividad,peso_onet,E_0_4,A_0_4,C_0_4,evidencia
+Comunicación,Redacción (escritores y autores),redaccion,63,RESUMEN_OCUPACION,1.0,3.3399,2.3399,2.6182,Promedio ponderado 0-4; x25 = E 83.50 / A 58.50 / C 65.46; publicado E 84 / A 59 / C 65
+Comunicación,Redacción (escritores y autores),redaccion,63,"Redactar prosa, artículos y textos de mercadotecnia",0.352,4,3,2,Uso observado
+Comunicación,Redacción (escritores y autores),redaccion,63,"Revisar, editar y preparar para publicación",0.171,4,3,2,Uso observado
+Comunicación,Redacción (escritores y autores),redaccion,63,Planear esquemas y organizar el material,0.0513,4,3,2,Uso observado
+Comunicación,Redacción (escritores y autores),redaccion,63,"Investigar, entrevistar y consultar a especialistas",0.1913,3,2,3,Inferencia editorial
+Comunicación,Redacción (escritores y autores),redaccion,63,"Presentar ideas, discutir con clientes y colaborar",0.1925,2,1,4,Inferencia editorial
+Comunicación,Redacción (escritores y autores),redaccion,63,Gestionar derechos de autor,0.0419,2,1,3,Inferencia editorial
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,RESUMEN_OCUPACION,1.0,2.5286,2.0090,3.4028,Promedio ponderado 0-4; x25 = E 63.21 / A 50.22 / C 85.07; publicado E 63 / A 50 / C 85
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,"Redactar noticias, columnas y notas",0.2321,4,3,3,Uso observado
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,Investigar antecedentes y verificar datos,0.1719,3,3,3,Uso observado
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,Entrevistar y cultivar fuentes,0.1758,1,1,4,Inferencia editorial
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,Cubrir eventos en el lugar de los hechos,0.1327,1,1,4,Inferencia editorial
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,Editar y revisar el material,0.1005,4,3,3,Uso observado
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,Presentar y conducir transmisiones,0.0943,2,1,4,Inferencia editorial
+Comunicación,Periodismo (reporteros y analistas de noticias),periodismo,47,Coordinar con editores y audiencias,0.0927,2,1,3,Inferencia editorial
+Salud,Radiología,radiologia,43,RESUMEN_OCUPACION,0.9999,2.4790,1.6612,3.3519,Promedio ponderado 0-4; x25 = E 61.98 / A 41.53 / C 83.80; publicado E 62 / A 42 / C 84
+Salud,Radiología,radiologia,43,Interpretar estudios de imagen y elaborar informes,0.1877,4,3,3,Uso observado
+Salud,Radiología,radiologia,43,Revisar y transmitir imágenes en el sistema de archivo,0.0615,3,3,2,Inferencia editorial
+Salud,Radiología,radiologia,43,Obtener historia clínica del paciente,0.0615,3,2,3,Inferencia editorial
+Salud,Radiología,radiologia,43,Comunicar resultados a médicos y pacientes,0.1225,2,1,4,Inferencia editorial
+Salud,Radiología,radiologia,43,Realizar procedimientos intervencionistas y atender complicaciones,0.1206,0,0,4,Inferencia editorial
+Salud,Radiología,radiologia,43,Orientar al paciente sobre procesos y riesgos,0.0573,2,1,4,Inferencia editorial
+Salud,Radiología,radiologia,43,Control de calidad y protección radiológica,0.1678,3,2,3,Inferencia editorial
+Salud,Radiología,radiologia,43,"Coordinar servicios, enseñar al personal y definir planes",0.167,2,1,4,Inferencia editorial
+Salud,Radiología,radiologia,43,Formación continua,0.054,3,2,2,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,RESUMEN_OCUPACION,0.9999,1.8760,1.2190,3.7768,Promedio ponderado 0-4; x25 = E 46.90 / A 30.48 / C 94.42; publicado E 47 / A 30 / C 94
+Salud,Enfermería general,enfermeria,31,Registrar información médica y mantener reportes,0.0819,3,2,2,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,Monitorear síntomas y cambios en el paciente,0.1153,2,2,4,Uso observado
+Salud,Enfermería general,enfermeria,31,Administrar medicamentos y dar cuidados directos,0.1519,0,0,4,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,Coordinar con el equipo y supervisar personal,0.2153,2,1,4,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,"Evaluar, ordenar pruebas y ajustar tratamientos",0.186,2,1,4,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,Educación para la salud y programas comunitarios,0.144,3,2,4,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,Control de infecciones y preparación del entorno,0.0758,1,1,4,Inferencia editorial
+Salud,Enfermería general,enfermeria,31,Investigación en enfermería,0.0297,3,2,2,Inferencia editorial
+Administración y finanzas,Captura de datos,captura-de-datos,65,RESUMEN_OCUPACION,1.0,2.9668,2.4216,1.6959,Promedio ponderado 0-4; x25 = E 74.17 / A 60.54 / C 42.40; publicado E 74 / A 61 / C 42
+Administración y finanzas,Captura de datos,captura-de-datos,65,Leer documentos fuente e ingresar datos,0.1175,4,4,1,Uso observado
+Administración y finanzas,Captura de datos,captura-de-datos,65,Verificar y corregir errores de captura,0.3659,4,3,1,Inferencia editorial
+Administración y finanzas,Captura de datos,captura-de-datos,65,"Archivar, llevar registros y preparar materiales",0.3373,2,2,2,Inferencia editorial
+Administración y finanzas,Captura de datos,captura-de-datos,65,Operar equipo y resolver mensajes ilegibles,0.1793,2,1,3,Inferencia editorial
+Administración y finanzas,Contabilidad,contabilidad,57,RESUMEN_OCUPACION,1.0001,3.0987,2.1967,2.6639,Promedio ponderado 0-4; x25 = E 77.47 / A 54.92 / C 66.60; publicado E 74 / A 55 / C 67; TOPE APLICADO a E (sin tope 59)
+Administración y finanzas,Contabilidad,contabilidad,57,Preparar y analizar registros y estados financieros,0.1808,4,3,2,Uso observado
+Administración y finanzas,Contabilidad,contabilidad,57,Conciliar cuentas y procesar facturas,0.1394,4,3,1,Inferencia editorial
+Administración y finanzas,Contabilidad,contabilidad,57,Calcular impuestos y preparar declaraciones,0.1045,3,2,3,Inferencia editorial
+Administración y finanzas,Contabilidad,contabilidad,57,"Auditar controles, detectar fraude e informar hallazgos",0.2861,3,2,3,Uso observado
+Administración y finanzas,Contabilidad,contabilidad,57,"Elaborar presupuestos, proyecciones y reportes a gerencia",0.0982,3,2,3,Uso observado
+Administración y finanzas,Contabilidad,contabilidad,57,Desarrollar y documentar sistemas contables,0.0338,3,3,2,Uso observado
+Administración y finanzas,Contabilidad,contabilidad,57,"Asesorar, representar y consultar con clientes y autoridades",0.0931,2,1,4,Inferencia editorial
+Administración y finanzas,Contabilidad,contabilidad,57,Dirigir personal y supervisar auditorías,0.0642,1,1,4,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,RESUMEN_OCUPACION,1.0001,1.3917,1.1259,3.2994,Promedio ponderado 0-4; x25 = E 34.79 / A 28.15 / C 82.48; publicado E 35 / A 28 / C 82
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,"Revisar planos, calcular y programar la máquina",0.1928,3,2,3,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Cargar comandos y datos en el controlador,0.1494,2,2,2,Uso observado
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,"Montar, alinear y cambiar herramientas y piezas",0.2247,0,0,4,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Operar la máquina y ajustar ante fallas,0.1911,1,1,4,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Monitorear el panel y detectar fallas,0.0382,3,2,2,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Medir e inspeccionar piezas terminadas,0.0414,2,2,3,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Mantener y limpiar la máquina,0.0712,0,0,4,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Coordinar con supervisores y programadores,0.0348,2,1,3,Inferencia editorial
+Manufactura y oficios,Operación de máquinas CNC,operacion-de-maquinas-cnc,28,Marcado y examen especializado de piezas,0.0565,1,1,3,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,RESUMEN_OCUPACION,1.0001,0.4421,0.9676,3.7227,Promedio ponderado 0-4; x25 = E 11.05 / A 24.19 / C 93.07; publicado E 11 / A 24 / C 93
+Manufactura y oficios,Soldadura,soldadura,15,"Soldar, cortar y unir piezas",0.2962,0,1,4,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,"Preparar, limpiar y dar acabado a piezas",0.2219,0,1,4,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,Posicionar piezas y operar equipo y herramientas,0.1683,0,0,4,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,Inspeccionar y medir piezas,0.1074,1,2,3,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,Interpretar planos y determinar métodos de soldadura,0.0999,3,2,3,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,Operar con seguridad y atender emergencias,0.0714,0,0,4,Inferencia editorial
+Manufactura y oficios,Soldadura,soldadura,15,Marcar y etiquetar material,0.035,1,1,2,Inferencia editorial
