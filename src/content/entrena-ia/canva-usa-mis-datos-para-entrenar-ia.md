@@ -9,7 +9,7 @@ veredicto: "amarillo"
 fraseCorta: "Entrena con tu contenido por default en cuentas Free y Pro — en Teams y Enterprise no puede activarse."
 fuentePolitica: "Política de Privacidad de Canva"
 pubDate: 2026-08-24
-updatedDate: 2026-10-20
+updatedDate: 2026-11-17
 heroImage: /images/entrena-ia/canva.png
 heroImageAlt: Canva — Privacidad de IA
 ---
@@ -24,7 +24,7 @@ Entra a Configuración de cuenta → Privacidad, y desactiva el permiso que auto
 
 ## Plan personal vs. plan empresarial
 
-Esta distinción se volvió menos limpia de lo que parecía: la Política de Privacidad de Canva, revisada el 20 de octubre de 2026, solo excluye por escrito a Canva Education del entrenamiento de IA — "We will not use User Content of Canva Education for AI training." Para Teams, Business y Enterprise no hay una cláusula equivalente: la política no los menciona en el contexto de entrenamiento de IA en ningún punto del documento. Si usas Canva a través de tu trabajo con una de esas licencias, no asumas que el tipo de plan ya te protege — esa garantía pública solo cubre a Education; para Teams, Business o Enterprise confírmalo con quien administra el contrato o el DPA de tu organización.
+Canva lo dice en dos lugares distintos. Su Política de Privacidad (actualizada el 2 de noviembre de 2026) solo excluye por escrito a Canva Education del entrenamiento de IA — "We will not use User Content of Canva Education for AI training." — y no menciona a Teams, Business ni Enterprise en ese contexto. Pero la nota oficial de Canva sobre Canva Shield sí lo afirma: "Content from Canva Teams, Business, Enterprise, and Education users is not used to improve AI-powered features, and this cannot be turned on" (el contenido de esos planes no se usa para mejorar funciones de IA y la opción no se puede activar). Es una declaración de la empresa, no una cláusula de la política, así que la garantía contractual depende de tu acuerdo: si usas Canva con una licencia de trabajo, confírmalo con quien administra el contrato o el DPA de tu organización.
 
 ## El caso aparte de quien vende plantillas
 
@@ -32,7 +32,7 @@ Si formas parte del programa Canva Creators y subes plantillas o elementos para 
 
 ¿Buscas cuánto cuesta Canva, no si entrena con tus datos? [Revisa el precio actualizado →](/articulos/cuanto-cuesta-canva-hoy/)
 
-[Última actualización: 20/10/2026]
+[Última actualización: 17/11/2026]
 
 ¿Canva tiene un código de descuento real? [Verifícalo aquí →](/articulos/canva-codigo-de-descuento/)
 
