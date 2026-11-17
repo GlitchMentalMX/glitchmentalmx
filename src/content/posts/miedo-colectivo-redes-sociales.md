@@ -2,12 +2,12 @@
 title: 'Miedo colectivo en redes: por qué todo parece colapsar'
 slug: miedo-colectivo-redes-sociales
 category: Cultura Digital
-pubDate: 2026-11-13T20:30
+pubDate: 2026-11-17T06:24
 updatedDate: ''
 description: Los hechos pueden ser reales y el patrón que los une, no. Cómo el cerebro y el feed fabrican el miedo colectivo, con evidencia científica.
 heroImage: /images/uploads/ansiedad-rs.webp
 heroImageAlt: 'Miedo colectivo en redes: mujer experimentando ansiedad al consultar su teléfono'
-draft: true
+draft: false
 ---
 
 El miedo colectivo empieza cuando tres cosas raras ocurren el mismo día y el cerebro las lee como un solo evento. No lo dispara cada hecho por separado, sino **la conexión que nadie ha demostrado**. Las redes no inventaron ese sesgo: lo volvieron rentable.
