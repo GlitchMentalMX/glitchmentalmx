@@ -16,6 +16,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 import { ALIAS_ENTRENA_IA } from '../../data/alias-entrena-ia';
 import { SUBPREGUNTAS_BASE } from '../../data/subpreguntas-recomendador';
+import { formatDate } from '../../lib/format';
 
 const [tabla, precios, entrena, pruebaGratisSerie, estudiantesSerie] = await Promise.all([
   getCollection('herramientasIA'),
@@ -26,6 +27,16 @@ const [tabla, precios, entrena, pruebaGratisSerie, estudiantesSerie] = await Pro
 ]);
 
 const capacidades = tabla[0]?.data.herramientas ?? [];
+
+// Fecha más reciente de verificación de capacidades, calculada de los datos
+// (no escrita a mano): se mueve sola cuando se actualiza actual.json.
+// El loader de este JSON no pasa por Zod, así que la fecha llega como texto ISO.
+const ultimaVerificacionISO = capacidades
+  .map((c) => String(c.fechaVerificacion).slice(0, 10))
+  .filter((f) => /^\d{4}-\d{2}-\d{2}$/.test(f))
+  .sort()
+  .at(-1);
+const ultimaVerificacion = ultimaVerificacionISO ? new Date(`${ultimaVerificacionISO}T12:00:00-06:00`) : null;
 
 
 const TOOLS = capacidades.map((cap) => {
@@ -311,6 +322,27 @@ const faqSchema = {
 
   <section class="container" style="max-width: 760px; padding: 0 24px 40px;">
     <NewsletterCta />
+  </section>
+
+  <section class="container metodologia" id="metodologia" aria-labelledby="h-met">
+    <p class="eyebrow">Metodología</p>
+    <h2 id="h-met">Cómo se calcula la compatibilidad</h2>
+    <p>
+      Cada herramienta recibe una compatibilidad de 0 a 100: el promedio, ponderado por la importancia de cada criterio,
+      de qué tan bien cumple lo que pediste. No es un ranking de calidad ni una recomendación universal.
+    </p>
+    <ul class="met-lista">
+      <li><strong>Uso principal:</strong> cada uso que eliges pesa 10 (si no eliges ninguno, todos pesan 5). Una herramienta vale 100 si es fuerte en ese uso, 55 si es básica y 10 si no lo hace.</li>
+      <li><strong>Tipo exacto de uso</strong> (por ejemplo, qué tipo de código o de imagen): pesa 8 y se valora con la misma escala.</li>
+      <li><strong>Privacidad:</strong> pesa 10 si es muy importante, 5 si te importa algo y 0 si no. Usa el veredicto de la serie «Quién entrena con tus datos»: verde 100, amarillo 55, rojo 10.</li>
+      <li><strong>Español:</strong> pesa 10 si lo necesitas, 5 si es deseable y 0 si no. Se valora como el uso principal.</li>
+      <li><strong>Extras</strong> (memoria, voz, API, integraciones y similares): cada uno que marques pesa 6; vale 100 si la herramienta lo ofrece y 0 si no.</li>
+    </ul>
+    <p>
+      Cuando no pudimos verificar un dato, cuenta como neutral (55) y se marca «sin verificar» en el desglose para que no parezca un dato confirmado.
+      El precio no entra en el cálculo: se enlaza como referencia porque no es un dato estructurado.
+      {ultimaVerificacion && <>{' '}Capacidades verificadas por última vez: {formatDate(ultimaVerificacion)}.</>}
+    </p>
   </section>
 
   <section class="container faq">
@@ -799,6 +831,10 @@ const faqSchema = {
   }
   :global(#resultado .qic-reset-link:hover) { color: var(--text-muted); }
 
+  .metodologia { padding: 16px 24px 24px; max-width: 760px; }
+  .metodologia h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 16px; }
+  .metodologia p, .metodologia li { color: var(--text-secondary); line-height: 1.65; }
+  .met-lista { margin: 12px 0 16px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
   .faq { padding: 16px 24px 96px; max-width: 760px; }
   .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
   .faq-list { display: flex; flex-direction: column; gap: 10px; }

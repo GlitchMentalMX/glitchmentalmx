@@ -35,19 +35,22 @@ const ejeOrden = [
 // enlazados aquí en ambas direcciones. Ninguno pertenece a otro lote de
 // herramienta: un artículo no carga dos tarjetas.
 const RELATED_SLUGS = [
+  // Criterio y análisis de fondo primero: son lo que baja el ruido.
   'ia-y-salud-mental-lo-que-nadie-te-dice-en-2026',
   'las-palabras-que-construyen-el-miedo-y-la-fe-en-la-ia',
   'el-hype-de-la-ia-no-es-accidental-asi-lo-disenaron',
   'como-distinguir-una-tendencia-real-de-puro-hype',
+  // Empleo, en clave estructural.
   'la-ia-borra-el-empleo-junior-el-talento-en-riesgo',
+  'gen-z-llega-al-mercado-laboral-y-la-ia-lo-automatiza',
+  'jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico',
+  'meta-graba-empleados-para-la-ia-que-los-sustituira',
+  // Notas de despidos puntuales al final.
   'despidos-por-ia-en-2026-el-ranking-que-incluye-a-mercadolibre',
   'oracle-despide-a-30000-por-ia-el-patron-ya-es-claro',
-  'jefe-ia-como-los-algoritmos-ya-contratan-evaluan-y-despiden-en-mexico',
   'atlassian-despide-a-1600-empleados-para-pagar-su-apuesta-por-ia',
   'meta-recortara-16000-empleos-la-ia-como-argumento',
   'pinterest-despide-al-15-de-su-plantilla-la-ia-llega-a-cobrar',
-  'meta-graba-empleados-para-la-ia-que-los-sustituira',
-  'gen-z-llega-al-mercado-laboral-y-la-ia-lo-automatiza',
 ];
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const relatedPosts = RELATED_SLUGS.map((slug) => allPosts.find((p) => p.id === slug)).filter(
@@ -242,6 +245,9 @@ const clientData = {
                 <label class="yq-opt"><input type="radio" name={`q${e.num}`} value={o.id} /><span>{o.label}</span></label>
               ))}
             </div>
+            {e.key === 'exposicion' && (
+              <p class="yq-help-link">¿No estás seguro? <a href="/calculadora-de-riesgo-de-reemplazo-por-ia/">Mídelo en la Calculadora de Riesgo IA</a>.</p>
+            )}
             {e.key === 'capacidad' && (
               <p id="yq-help-inline" class="yq-help-inline" hidden>
                 Gracias por decirlo. <a href={alertPath}>Aquí hay dos líneas de ayuda gratuitas, de atención las 24 horas</a>.
@@ -670,6 +676,8 @@ const clientData = {
   .yq-noscript a, .yq-help-inline a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
   .yq-q { border: none; padding: 0; margin: 0 0 22px; min-width: 0; }
+  .yq-help-link { margin: 10px 0 0; font-size: 0.85rem; color: var(--text-muted, var(--text-secondary)); }
+  .yq-help-link a { color: inherit; text-decoration: underline; }
   .yq-q legend { display: block; padding: 0; margin-bottom: 10px; width: 100%; }
   .yq-q-num {
     display: block; font-family: var(--font-mono); font-size: 0.68em; letter-spacing: 1.2px;
