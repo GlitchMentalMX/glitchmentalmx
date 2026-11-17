@@ -927,6 +927,9 @@ const signalPools = {
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  /* La fuente trae un margen superior negativo pensado para las tarjetas del
+     listado; aquí el resumen no tiene margen inferior, así que se le da aire. */
+  .insight-text :global(.insight-fuente) { margin: 10px 0 0; }
   .insight-cta { margin: 16px 0 0; }
   @media (min-width: 1024px) {
     .insight-layout {
