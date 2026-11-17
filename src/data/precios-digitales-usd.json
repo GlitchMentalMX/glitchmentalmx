@@ -13,7 +13,7 @@
   "ps-plus": { "nombre": "PlayStation Plus Essential", "precioMXN": 149, "precioUSDReferencia": 10.99, "periodo": "mensual", "empresa": "Sony Interactive Entertainment" },
   "nintendo-switch-online": { "nombre": "Nintendo Switch Online (Individual)", "precioUSD": 19.99, "periodo": "anual", "empresa": "Nintendo" },
   "geforce-now": { "nombre": "GeForce NOW Performance", "precioUSD": 9.99, "periodo": "mensual", "empresa": "NVIDIA" },
-  "disney-plus": { "nombre": "Disney+ Estándar con anuncios", "precioMXN": 159, "precioUSDReferencia": 11.99, "periodo": "mensual", "empresa": "The Walt Disney Company" },
+  "disney-plus": { "nombre": "Disney+ Estándar con anuncios", "precioMXN": 159, "precioUSDReferencia": 12.49, "periodo": "mensual", "empresa": "The Walt Disney Company" },
   "hbo-max": { "nombre": "HBO Max Básico con anuncios", "precioMXN": 149, "precioUSDReferencia": 10.99, "periodo": "mensual", "empresa": "Warner Bros. Discovery" },
   "vix": { "nombre": "ViX Premium (México)", "precioMXN": 149, "periodo": "mensual", "empresa": "TelevisaUnivision" },
   "paramount-plus": { "nombre": "Paramount+ (plan de entrada, México)", "precioMXN": 149, "precioUSDReferencia": 8.99, "periodo": "mensual", "empresa": "Paramount Skydance" },

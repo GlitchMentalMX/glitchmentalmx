@@ -5,6 +5,7 @@ herramienta: "Manus"
 herramientaId: "manus-ai"
 sitioOficial: "https://manus.im/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-11-17
 heroImage: /images/precios-ia/manus-ai.png
 heroImageAlt: Manus — Precios de IA
 ---
@@ -15,7 +16,7 @@ El primer plan de pago de Manus cuesta $20 USD al mes facturado mensual, con un 
 
 ## Qué incluye el plan pagado
 
-El plan de $20 USD da 4,000 créditos mensuales, investigación a fondo para tareas cotidianas, generación de sitios web y presentaciones, escalado de tareas con Wide Research, acceso temprano a funciones beta y hasta 20 tareas simultáneas y programadas. El plan de $200 USD suma Cloud Computer gratuito — un entorno de cómputo dedicado que en los niveles inferiores se paga aparte — además de 40,000 créditos y análisis de datos más profundo en los sitios que genera.
+El plan de $20 USD da 4,000 créditos mensuales, investigación a fondo para tareas cotidianas, generación de sitios web y presentaciones, escalado de tareas con Wide Research, acceso temprano a funciones beta y hasta 20 tareas simultáneas y programadas. El plan de $200 USD suma 40,000 créditos mensuales, investigación más detallada para tareas a gran escala, análisis de datos más profundo en los sitios que genera y soporte para producción de presentaciones en lotes — pensado para uso intensivo y sostenido, no para tareas puntuales.
 
 ## Aquí no pagas por video ni por imagen, pagas por tarea completada
 

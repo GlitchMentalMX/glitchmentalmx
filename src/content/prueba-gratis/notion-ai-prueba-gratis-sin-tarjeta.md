@@ -5,19 +5,20 @@ herramienta: "Notion AI"
 herramientaId: "notion-ai"
 empresa: "Notion Labs, Inc."
 sitioOficial: "https://www.notion.com/pricing"
-veredicto: "verde"
-fraseCorta: "La prueba de Business no pide tarjeta; solo te la piden si decides quedarte al terminar."
-fuenteVerificacion: "Centro de Ayuda oficial de Notion, artículo 'Notion paid plan trials' (notion.com/help), consultada el 25/08/2026."
+veredicto: "amarillo"
+fraseCorta: "La ayuda oficial cambió: ahora dice que 'usualmente' te van a pedir tarjeta para iniciar la prueba de Business."
+fuenteVerificacion: "Centro de Ayuda oficial de Notion, artículo 'Paid plan trials' (notion.com/help/paid-plan-trials), consultada el 17/11/2026."
 pubDate: 2026-08-25
+updatedDate: 2026-11-17
 heroImage: /images/prueba-gratis/notion-ai.png
 heroImageAlt: Notion AI — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Notion AI?
 
-Notion AI no se vende como suscripción aparte, así que la prueba real que hay que evaluar es la del plan Business, el nivel que desbloquea el Agente de Notion y las funciones de IA más avanzadas. Según el Centro de Ayuda oficial de Notion, no necesitas dar tu método de pago para arrancar esa prueba: si no ingresaste tarjeta al iniciarla, al final del periodo simplemente te van a pedir que confirmes si quieres pasar al plan de pago, en vez de cobrarte de forma automática. Si sí ingresaste tarjeta desde el inicio, entonces la suscripción se renueva sola quando termina la prueba.
+Notion AI no se vende como suscripción aparte, así que la prueba real que hay que evaluar es la del plan Business, el nivel que desbloquea el Agente de Notion y las funciones de IA más avanzadas. El Centro de Ayuda oficial de Notion cambió su redacción desde la última revisión: ahora dice textualmente que "cuando inicias una prueba desde el Plan Free, usualmente te van a pedir que agregues un método de pago" ("you'll usually be asked to add a payment method"). Ya no es una afirmación sin matices de que la tarjeta nunca se pide — el propio sitio reconoce que en la mayoría de los casos sí te la van a solicitar desde el arranque de la prueba.
 
-Es decir, dar tarjeta es opcional en Notion, no un requisito para empezar — la diferencia está en qué pasa al final: con tarjeta, cobro automático si no cancelas; sin tarjeta, te preguntan antes de cobrarte cualquier cosa.
+Lo que no cambió: si terminas la prueba sin tener un método de pago registrado, Notion te pide confirmar la actualización al plan Business antes de cobrarte, en vez de cobrarte de forma automática. Pero como la tarjeta ahora se pide "usualmente" al inicio, no se puede decir que la prueba sea limpiamente verde — depende de si tu flujo de registro específico te la pide o no, así que el veredicto pasa a amarillo.
 
 Vale aclarar algo de nombres: el artículo hermano de esta serie sobre entrenamiento de datos cubre "Notion" en general (todo el workspace), no un producto separado llamado "Notion AI" — la política de datos que ahí se describe aplica igual a las funciones de IA integradas en el plan Business.
 
@@ -31,4 +32,4 @@ Vale aclarar algo de nombres: el artículo hermano de esta serie sobre entrenami
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 25/08/2026]
+[Última actualización: 17/11/2026]

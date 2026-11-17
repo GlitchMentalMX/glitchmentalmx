@@ -5,7 +5,7 @@ herramienta: "Adobe Firefly Pro"
 herramientaId: "adobe-firefly-pro"
 sitioOficial: "https://www.adobe.com/products/firefly/plans.html"
 pubDate: 2026-10-04
-updatedDate: 2026-10-22
+updatedDate: 2026-11-17
 heroImage: /images/precios-ia/adobe-firefly-pro.png
 heroImageAlt: Adobe Firefly Pro — Precios de IA
 ---
@@ -14,7 +14,7 @@ heroImageAlt: Adobe Firefly Pro — Precios de IA
 
 Adobe Firefly Pro es el segundo escalón de los planes individuales de Firefly: queda arriba de [Firefly Standard](/articulos/cuanto-cuesta-adobe-firefly-hoy/), que es el plan de entrada, y abajo de Pro Plus y Premium. La página oficial de planes lo muestra a $19.99 USD al mes, con cobro mensual, y aclara que pueden aplicar impuestos. Esta calculadora usa ese precio en dólares, antes de impuestos, convertido al FIX de Banxico del día, así que si tu tarjeta mexicana o Adobe te muestran un monto distinto, parte de la diferencia puede ser el impuesto y el tipo de cambio que aplique tu banco.
 
-Pro Plus (MXN $1,049 sin IVA) y Premium (MXN $4,199 sin IVA) tuvieron un descuento promocional de 30% durante el primer año, pero esa oferta venció el 21 de octubre de 2026 y, al 22/10/2026, la página oficial ya no la muestra: ambos planes aparecen a su precio de lista. Pro tampoco trae descuento en esa página: $19.99 USD sigue siendo su precio de lista.
+Esa promoción de 30% al año para Pro Plus y Premium venció el 21 de octubre de 2026, pero Adobe no se quedó sin oferta: al 17 de noviembre de 2026, la página oficial muestra una promoción distinta y con fecha límite propia (termina el 6 de diciembre de 2026). Pro, que hasta el 22 de octubre no tenía descuento, ahora sí: 50% de descuento durante los primeros 6 meses, es decir $9.99 USD al mes en vez de $19.99 USD — el precio de lista sigue siendo $19.99 USD, que es el que usa esta calculadora, y al séptimo mes el cargo regresa a ese precio completo. Pro Plus (MXN $1,049 sin IVA, US$49.99 de precio de lista) trae 60% de descuento por los mismos 6 meses.
 
 ## Qué incluye el plan pagado
 

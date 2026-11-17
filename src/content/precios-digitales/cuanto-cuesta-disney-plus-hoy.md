@@ -5,6 +5,7 @@ herramienta: "Disney+"
 herramientaId: "disney-plus"
 sitioOficial: "https://www.disneyplus.com/es-mx"
 pubDate: 2026-08-31
+updatedDate: 2026-11-17
 heroImage: /images/precios-digitales/disney-plus.png
 heroImageAlt: Disney+ — Precios Digitales
 ---
@@ -25,6 +26,6 @@ Disney anunció que planea lanzar una app unificada que integre por completo el 
 
 **Si compras en México, aplica el precio en pesos de arriba.** Los montos de esta sección son los de Estados Unidos y se incluyen solo como referencia para quien nos lee desde otro país: no aplican en México ni se convierten a pesos.
 
-Disney vende dos niveles en Estados Unidos: el plan con anuncios, en $11.99 USD al mes, y Premium sin anuncios, en $18.99 USD al mes o $189.99 USD al año.
+Disney vende dos niveles en Estados Unidos: el plan con anuncios, en $12.49 USD al mes, y Premium sin anuncios, en $21.49 USD al mes o $214.99 USD al año. Ambos subieron el 23 de septiembre de 2026 (el plan con anuncios venía de $11.99 USD y Premium de $18.99 USD).
 
 <a href="https://www.disneyplus.com/es-mx" target="_blank" rel="noopener noreferrer">Suscríbete en el sitio oficial de Disney+ →</a>

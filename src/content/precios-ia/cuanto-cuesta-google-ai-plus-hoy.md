@@ -5,6 +5,7 @@ herramienta: "Google AI Plus"
 herramientaId: "google-ai-plus"
 sitioOficial: "https://one.google.com/about/google-ai-plans/"
 pubDate: 2026-09-15
+updatedDate: 2026-11-17
 heroImage: /images/precios-ia/google-ai-plus.png
 heroImageAlt: Google AI Plus — Precios de IA
 ---
@@ -17,7 +18,7 @@ En México, Google anuncia Google AI Plus directamente en pesos: $99 al mes. Esa
 
 ## Qué incluye el plan pagado
 
-Google AI Plus da el doble de acceso a Gemini que la versión gratuita (Google AI Pro da cuatro veces más), junto con 400 GB de almacenamiento compartido entre Gmail, Drive y Fotos, acceso ampliado a Gemini 3.1 Pro y a Deep Research, y más generación de imagen, video y música dentro de Gemini y la Búsqueda. Lo que NO incluye, a diferencia de Pro: Gemini Spark (el agente personal de Google), Google Home Premium ni Google Health Premium sin costo adicional, y los límites de AI Studio, Antigravity y Jules se quedan en el nivel básico, no en el ampliado.
+Google AI Plus da el doble de acceso a Gemini que la versión gratuita (Google AI Pro da cuatro veces más), junto con 400 GB de almacenamiento compartido entre Gmail, Drive y Fotos, acceso a **Gemini 4 Hydrogen** y a Deep Research, y más generación de imagen, video y música dentro de Gemini y la Búsqueda. Lo que NO incluye, a diferencia de Pro: acceso a Gemini 4 Argon ni al acceso ampliado de Gemini 3.1 Pro, Google Home Premium ni Google Health Premium sin costo adicional, y los límites de AI Studio y Antigravity se quedan en el nivel básico, no en el ampliado. Una corrección a una versión anterior de esta ficha: Gemini Spark, el agente personal de Google, no es un beneficio de Pro — por ahora está en beta solo para quienes tienen Google AI Ultra, así que tampoco Plus ni Pro lo incluyen. Y Jules, la otra herramienta que esta ficha mencionaba, dejó de aceptar trabajo nuevo el 11 de noviembre de 2026 y cierra por completo el 31 de diciembre de 2026 — Google dice que sus aprendizajes pasan a Antigravity.
 
 ## Para quién sí alcanza este plan, y para quién se queda corto
 

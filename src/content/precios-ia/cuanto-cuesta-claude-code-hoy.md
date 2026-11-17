@@ -5,17 +5,18 @@ herramienta: "Claude Code"
 herramientaId: "claude-code"
 sitioOficial: "https://claude.com/pricing"
 pubDate: 2026-08-31
+updatedDate: 2026-11-17
 heroImage: /images/precios-ia/claude-code.png
 heroImageAlt: Claude Code — Precios de IA
 ---
 
 ## Qué cambia el precio final
 
-Claude Code no se vende como suscripción aparte con precio propio: es una herramienta incluida dentro de los planes de chat de Anthropic. El plan Pro cuesta $20 USD al mes facturado mensual, o $17 USD al mes si pagas anual, e incluye acceso a Claude Code sin cargo adicional. Arriba está Max, desde $100 USD al mes, con 5 o 20 veces más uso que Pro según el nivel — el que más sentido tiene si programas con Claude Code varias horas al día. También existe la opción de pagar por consumo directo vía la API o la consola de desarrollador de Anthropic, sin suscripción fija, donde el costo depende del modelo que uses y de cuánto lo uses.
+Claude Code no se vende como suscripción aparte con precio propio: es una herramienta incluida dentro de los planes de chat de Anthropic. El plan Pro cuesta $20 USD al mes facturado mensual, o $17 USD al mes si pagas anual, e incluye acceso a Claude Code sin cargo adicional. Arriba está Max, a $100 USD al mes, con 5 veces más uso que Pro — Anthropic ya no vende un "Max 20x": ese nivel se independizó como un plan propio llamado Ultra, a $200 USD al mes, con 10 veces el uso semanal de Pro y, para cuentas verificadas, sin el tope de uso cada 5 horas que sí tienen Pro y Max. Max y Ultra son los niveles que más sentido tienen si programas con Claude Code varias horas al día. También existe la opción de pagar por consumo directo vía la API o la consola de desarrollador de Anthropic, sin suscripción fija, donde el costo depende del modelo que uses y de cuánto lo uses.
 
 ## Qué incluye el plan pagado
 
-Pro da más uso que el plan gratuito en todos los productos de Anthropic, incluyendo Claude Code para programar desde la terminal, además de Claude Cowork, Claude Design y Claude Science. Max multiplica esos límites de uso y agrega límites de salida más altos y acceso anticipado a funciones nuevas. Ninguno de los dos plantea un precio "por proyecto" ni "por línea de código" — el límite es de uso agregado sobre todos los productos de tu cuenta, no exclusivo de Claude Code.
+Pro da más uso que el plan gratuito en todos los productos de Anthropic, incluyendo Claude Code para programar desde la terminal, además de Claude Cowork, Claude Design y Claude Science. Max multiplica esos límites de uso (5 veces Pro) y agrega límites de salida más altos, créditos de API incluidos y acceso anticipado a funciones nuevas; Ultra, el nivel que reemplazó al antiguo "Max 20x", suma el doble de esos créditos de API y quita el tope de uso cada 5 horas para cuentas verificadas. Ninguno de los tres plantea un precio "por proyecto" ni "por línea de código" — el límite es de uso agregado sobre todos los productos de tu cuenta, no exclusivo de Claude Code.
 
 ## Si programas mucho, la API puede salir más barata que el plan
 

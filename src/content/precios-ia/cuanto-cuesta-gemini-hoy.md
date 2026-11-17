@@ -5,6 +5,7 @@ herramienta: "Gemini"
 herramientaId: "gemini"
 sitioOficial: "https://one.google.com/about/google-ai-plans/"
 pubDate: 2026-08-19
+updatedDate: 2026-11-17
 heroImage: /images/precios-ia/gemini.png
 heroImageAlt: Gemini — Precios de IA
 ---
@@ -17,7 +18,7 @@ El sitio oficial de Google detecta tu ubicación y, si entras desde México, te 
 
 ## Qué incluye el plan pagado
 
-Google AI Pro da 4 veces más acceso a Gemini que la versión gratuita, además del modelo Gemini 3.1 Pro con función de investigación profunda, 5 TB de almacenamiento compartido entre Gmail, Drive y Fotos, generación ampliada de imagen, video y música, y límites mucho más altos dentro de Gemini Notebook (antes NotebookLM). La versión gratuita de Gemini sigue siendo funcional para preguntas del día a día, pero se queda corta rápido si generas imágenes o video con frecuencia, o si necesitas el modelo más capaz para tareas de análisis largo.
+Google AI Pro da 4 veces más acceso a Gemini que la versión gratuita. La página oficial ya describe ese acceso como a **Gemini 4 Argon** —el modelo que Google posiciona para "flujos de trabajo complejos"— sumado al acceso ampliado que ya traía a Gemini 3.1 Pro y a Deep Research. El plan sigue dando 5 TB de almacenamiento compartido entre Gmail, Drive y Fotos, generación ampliada de imagen, video y música, y límites mucho más altos dentro de Gemini Notebook (antes NotebookLM). La versión gratuita de Gemini sigue siendo funcional para preguntas del día a día, pero se queda corta rápido si generas imágenes o video con frecuencia, o si necesitas el modelo más capaz para tareas de análisis largo.
 
 ## El plan trae más que el chat, y eso es justo lo que se le olvida a la gente
 

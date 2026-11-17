@@ -5,6 +5,7 @@ herramienta: "Google AI Ultra"
 herramientaId: "google-ai-ultra"
 sitioOficial: "https://one.google.com/about/google-ai-plans/"
 pubDate: 2026-10-04
+updatedDate: 2026-11-17
 heroImage: /images/precios-ia/google-ai-ultra.png
 heroImageAlt: Google AI Ultra — Precios de IA
 ---
@@ -17,9 +18,9 @@ La página de Google México muestra los precios directo en pesos: $1,999 MXN al
 
 ## Qué incluye el plan pagado
 
-Ultra incluye todo lo de Pro y sube los límites. Según Google, ambas variantes dan 20 TB o más de almacenamiento compartido entre Gmail, Drive y Fotos (20 TB en Ultra 5x y 30 TB en Ultra 20x, según la tabla de México), YouTube Premium individual en lugar de la versión Lite, Google Home Premium Advanced sin costo, Project Genie y primer acceso a funciones como Deep Think.
+Ultra incluye todo lo de Pro y sube los límites. Según Google, ambas variantes dan 20 TB o más de almacenamiento compartido entre Gmail, Drive y Fotos (20 TB en Ultra 5x y 30 TB en Ultra 20x, según la tabla de México), YouTube Premium individual en lugar de la versión Lite, Google Home Premium Advanced sin costo, Project Genie y acceso a **Gemini 4 Carbon**, el modelo que Google reserva para Ultra y describe como su mejor desempeño en programación, ciberseguridad y trabajos de conocimiento largo — la página oficial ya no habla de "Deep Think" como el diferenciador de este plan.
 
-La diferencia entre las dos variantes está en las cantidades. Los créditos de Google Flow suben de 10,000 al mes en Ultra 5x a 25,000 en Ultra 20x, los créditos mensuales de Google Cloud pasan de USD 40 a USD 100, y los límites de Gemini, Antigravity, AI Studio y Jules pasan de "superiores" a "máximos".
+La diferencia entre las dos variantes está en las cantidades. Los créditos de Google Flow suben de 10,000 al mes en Ultra 5x a 25,000 en Ultra 20x, los créditos mensuales de Google Cloud pasan de USD 40 a USD 100, y los límites de Gemini, Antigravity y AI Studio pasan de "superiores" a "máximos". (Jules, la herramienta de programación que esta ficha mencionaba antes en esa misma comparación, dejó de aceptar trabajo nuevo el 11 de noviembre de 2026 y cierra por completo el 31 de diciembre; Google dice que sus aprendizajes pasan a Antigravity.)
 
 ## Para quién sí alcanza este plan, y para quién se queda corto
 
