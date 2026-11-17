@@ -10,4 +10,5 @@ categoria: Tendencias Digitales
 punchline: No buscaste con IA. Igual apareció.
 slug: ''
 keywords: []
+fuente: "Pew Research Center, What Americans See About AI Online"
 ---

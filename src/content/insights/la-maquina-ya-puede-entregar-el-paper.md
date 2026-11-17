@@ -10,4 +10,5 @@ categoria: Narrativa de la IA
 punchline: La máquina ya puede entregar el paper.
 slug: ''
 keywords: []
+fuente: "Stanford HAI, The 2026 AI Index Report — Science"
 ---

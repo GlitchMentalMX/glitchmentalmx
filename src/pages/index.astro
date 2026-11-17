@@ -1,4 +1,5 @@
 ---
+import InsightFuente from '../components/InsightFuente.astro';
 import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { books } from '../data/books';
@@ -458,6 +459,7 @@ const signalPools = {
         <div class="insight-text">
           <h3 class="insight-title">{latestInsight.data.punchline?.trim() || latestInsight.data.titulo}</h3>
           <p class="insight-excerpt">{latestInsight.data.resumen}</p>
+          <InsightFuente fuente={latestInsight.data.fuente} fuenteUrl={latestInsight.data.fuenteUrl} />
           <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
         </div>
       </div>

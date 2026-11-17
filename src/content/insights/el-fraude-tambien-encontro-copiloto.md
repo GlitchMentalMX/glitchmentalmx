@@ -10,4 +10,5 @@ categoria: Sistemas Autónomos
 punchline: El fraude también encontró copiloto
 slug: ''
 keywords: []
+fuente: "FBI Internet Crime Complaint Center, 2025 IC3 Annual Report"
 ---

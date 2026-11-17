@@ -10,4 +10,5 @@ categoria: Inteligencia Artificial
 punchline: Más grande no siempre significa más inteligente
 slug: ''
 keywords: []
+fuente: "Stanford HAI, The 2026 AI Index Report — Medicine"
 ---

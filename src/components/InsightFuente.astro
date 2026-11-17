@@ -1,0 +1,31 @@
+---
+// Fuente de la microcolumna de un Insight visual: letra pequeña, cursiva y
+// color atenuado, como una cita tradicional. No pinta nada si no hay fuente.
+interface Props {
+  fuente?: string;
+  fuenteUrl?: string;
+}
+const { fuente, fuenteUrl } = Astro.props;
+---
+
+{fuente && (
+  <p class="insight-fuente">
+    Fuente:{' '}
+    {fuenteUrl ? <a href={fuenteUrl} target="_blank" rel="noopener">{fuente}</a> : fuente}
+  </p>
+)}
+
+<style>
+  .insight-fuente {
+    font-size: 0.78rem;
+    font-style: italic;
+    line-height: 1.45;
+    color: var(--text-faint);
+    margin: -4px 0 12px;
+  }
+  .insight-fuente a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>

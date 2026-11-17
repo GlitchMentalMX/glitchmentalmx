@@ -10,4 +10,5 @@ categoria: IA Agéntica
 punchline: A veces automatizas y contratas al vigilante
 slug: ''
 keywords: []
+fuente: "Microsoft, 2026 Work Trend Index"
 ---

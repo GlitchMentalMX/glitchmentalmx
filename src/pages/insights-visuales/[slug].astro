@@ -7,6 +7,7 @@
 // sí se usa más abajo, pero solo como señal de entrada para la sección
 // "Sigue leyendo" (ver relatedPostsForPiece) — un uso nuevo y separado, no
 // una reversión de esa decisión.
+import InsightFuente from '../../components/InsightFuente.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
@@ -27,7 +28,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { item } = Astro.props;
-const { titulo, resumen, imagen, imagenAlt, date, categoria, keywords, enlace } = item.data;
+const { titulo, resumen, imagen, imagenAlt, date, categoria, keywords, enlace, fuente, fuenteUrl } = item.data;
 
 // Ver la misma nota en src/pages/dato-incomodo/[slug].astro — 70 en vez de
 // 60 para no cortar la última palabra de los títulos que ya vienen cortos.
@@ -45,6 +46,7 @@ const imageSchema = {
   thumbnailUrl: imageURL,
   name: title,
   description: resumen,
+  ...(fuente ? { citation: fuenteUrl ? { '@type': 'CreativeWork', name: fuente, url: fuenteUrl } : fuente } : {}),
   ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),
   datePublished: date.toISOString(),
   creator: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
@@ -81,6 +83,7 @@ const imageSchema = {
     </div>
     <h1>{titulo}</h1>
     <p class="text">{resumen}</p>
+    <InsightFuente fuente={fuente} fuenteUrl={fuenteUrl} />
     <div class="links">
       {categoryHref && <a class="btn btn-ghost" href={categoryHref}>Explorar {categoria} →</a>}
       <a class="btn btn-ghost" href="/insights-visuales/">Ver todos los Insights Visuales →</a>

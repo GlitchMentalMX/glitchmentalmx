@@ -10,4 +10,5 @@ categoria: IA Agéntica
 punchline: La autonomía también necesita testigos
 slug: ''
 keywords: []
+fuente: "OpenAI, Practices for Governing Agentic AI Systems"
 ---

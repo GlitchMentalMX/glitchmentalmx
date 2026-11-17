@@ -10,4 +10,5 @@ categoria: Narrativa de la IA
 punchline: Resolver el examen no es hacer ciencia
 slug: ''
 keywords: []
+fuente: "Stanford HAI, The 2026 AI Index Report — Science"
 ---

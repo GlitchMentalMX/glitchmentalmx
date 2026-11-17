@@ -1,4 +1,5 @@
 ---
+import InsightFuente from '../../components/InsightFuente.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
@@ -79,6 +80,7 @@ const modifiedTime = page.data.reduce(
         <div class="body">
           <h3>{item.titulo}</h3>
           <p>{item.resumen}</p>
+          <InsightFuente fuente={item.fuente} fuenteUrl={item.fuenteUrl} />
           {item.categoria ? (
             <a class="category-link" href={insightCategoryLinks[item.categoria]}>{item.categoria} →</a>
           ) : (

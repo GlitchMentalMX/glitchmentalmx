@@ -123,6 +123,14 @@ collections:
         name: "punchline"
         widget: "string"
         required: false
+      - label: "Fuente del dato (ej. Stanford HAI, The 2026 AI Index Report — Medicine). Sale debajo de la microcolumna, en letra pequeña y cursiva"
+        name: "fuente"
+        widget: "string"
+        required: false
+      - label: "Enlace a la fuente (opcional — si lo llenas, el nombre de la fuente se vuelve link; debe empezar con https://)"
+        name: "fuenteUrl"
+        widget: "string"
+        required: false
       - label: "URL de la página individual (opcional — se genera sola del título; solo llena esto si quieres cambiarla a mano)"
         name: "slug"
         widget: "string"

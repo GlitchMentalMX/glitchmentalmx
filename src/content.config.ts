@@ -163,6 +163,9 @@ const visualInsights = defineCollection({
     // El CMS guarda '' cuando el campo se deja vacío: se normaliza a undefined
     // para que el home caiga al título y nunca muestre un titular en blanco.
     punchline: z.preprocess((val) => (typeof val === 'string' && val.trim() === '' ? undefined : val), z.string().optional()),
+    // Fuente del dato de la microcolumna. Opcional: las piezas viejas no la tienen.
+    fuente: z.preprocess((val) => (typeof val === 'string' && val.trim() === '' ? undefined : val), z.string().optional()),
+    fuenteUrl: z.preprocess((val) => (typeof val === 'string' && val.trim() === '' ? undefined : val), z.string().url().optional()),
     ...pieceSeoFields,
   }),
 });
