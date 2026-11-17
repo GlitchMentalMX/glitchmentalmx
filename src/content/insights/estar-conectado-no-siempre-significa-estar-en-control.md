@@ -11,4 +11,5 @@ punchline: Estar conectado no siempre significa estar en control
 slug: ''
 keywords: []
 fuente: "WHO Europe, Teens, screens and mental health"
+fuenteUrl: https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health
 ---

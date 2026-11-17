@@ -11,4 +11,5 @@ punchline: El próximo dato de tu teléfono puede ser cuánto dura
 slug: ''
 keywords: []
 fuente: "European Commission, Smartphones and Tablets — Ecodesign and Energy Labelling"
+fuenteUrl: https://energy-efficient-products.ec.europa.eu/product-list/smartphones-and-tablets_en
 ---

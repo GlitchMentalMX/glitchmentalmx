@@ -11,4 +11,5 @@ punchline: La autonomía también necesita testigos
 slug: ''
 keywords: []
 fuente: "OpenAI, Practices for Governing Agentic AI Systems"
+fuenteUrl: https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf
 ---

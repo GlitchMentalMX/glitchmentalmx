@@ -11,4 +11,5 @@ punchline: El fraude también encontró copiloto
 slug: ''
 keywords: []
 fuente: "FBI Internet Crime Complaint Center, 2025 IC3 Annual Report"
+fuenteUrl: https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf
 ---

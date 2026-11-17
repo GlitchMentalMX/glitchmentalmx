@@ -11,4 +11,5 @@ punchline: Resolver el examen no es hacer ciencia
 slug: ''
 keywords: []
 fuente: "Stanford HAI, The 2026 AI Index Report — Science"
+fuenteUrl: https://hai.stanford.edu/ai-index/2026-ai-index-report/science
 ---

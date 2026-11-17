@@ -11,4 +11,5 @@ punchline: La IA ya tiene bata.
 slug: ''
 keywords: []
 fuente: "Stanford HAI, The 2026 AI Index Report — Medicine"
+fuenteUrl: https://hai.stanford.edu/ai-index/2026-ai-index-report/medicine
 ---

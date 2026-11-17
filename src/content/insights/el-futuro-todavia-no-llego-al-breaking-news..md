@@ -10,5 +10,6 @@ categoria: Cultura Digital
 punchline: El futuro todavía no llegó al breaking news
 slug: ''
 keywords: []
-fuente: "Pew Research Center, Where do Americans turn first for information about breaking news?, 2026"
+fuente: "Pew Research Center, Where do Americans turn first for information about breaking news?, 2026 (encuesta de diciembre de 2025)"
+fuenteUrl: https://www.pewresearch.org/short-reads/2026/03/24/where-do-americans-turn-first-for-information-about-breaking-news/
 ---
