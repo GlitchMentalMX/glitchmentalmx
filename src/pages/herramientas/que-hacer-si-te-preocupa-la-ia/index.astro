@@ -1,4 +1,5 @@
 ---
+import NewsletterCta from '../../../components/NewsletterCta.astro';
 import Layout from '../../../layouts/Layout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import PageHeader from '../../../components/PageHeader.astro';
@@ -171,6 +172,7 @@ const clientData = {
 ---
 
 <Layout
+  hideFooterCta
   title={title}
   description={description}
   image={toolImage}
@@ -386,6 +388,10 @@ const clientData = {
         />
       ))}
     </div>
+  </section>
+
+  <section class="container" style="max-width: 760px; padding: 0 24px 40px; margin: 0 auto;">
+    <NewsletterCta />
   </section>
 
   <section class="container faq">

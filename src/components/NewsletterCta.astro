@@ -2,25 +2,40 @@
 // Banner de suscripción con formulario inline. Solo debe haber UNA instancia
 // por página (el id es fijo): el botón "Suscríbete" del header hace scroll
 // hasta #newsletter-cta y enfoca el input de correo.
+// Los props permiten variar el copy sin duplicar la lógica (p. ej. el Índice).
+interface Props {
+  title?: string;
+  sub?: string;
+  buttonLabel?: string;
+  note?: string;
+  accentTop?: boolean;
+}
+const {
+  title = 'El despacho mensual de glitchMentalMX: un análisis inédito, datos del Índice y recursos clave. Cero relleno.',
+  sub = 'Sin hype. Sin spam.',
+  buttonLabel = 'Suscribirme',
+  note = 'Al suscribirte aceptas recibir el despacho mensual. Cancela cuando quieras.',
+  accentTop = false,
+} = Astro.props;
 ---
 
-<section class="newsletter-cta" id="newsletter-cta" aria-labelledby="newsletter-cta-title">
+<section class:list={['newsletter-cta', { 'accent-top': accentTop }]} id="newsletter-cta" aria-labelledby="newsletter-cta-title">
   <div class="copy">
-    <p class="cta-title" id="newsletter-cta-title">El despacho mensual de glitchMentalMX: un análisis inédito, datos del Índice y recursos clave. Cero relleno.</p>
-    <p class="cta-sub">Sin hype. Sin spam.</p>
+    <p class="cta-title" id="newsletter-cta-title">{title}</p>
+    <p class="cta-sub">{sub}</p>
   </div>
 
   <form class="nl-form" novalidate>
     <div class="nl-row">
       <label class="sr-only" for="nl-email">Correo electrónico</label>
       <input id="nl-email" name="email" type="email" placeholder="tu@correo.com" autocomplete="email" required maxlength="320" />
-      <button type="submit" class="btn btn-primary">Suscribirme</button>
+      <button type="submit" class="btn btn-primary" data-label={buttonLabel}>{buttonLabel}</button>
     </div>
     <div class="form-honeypot" aria-hidden="true">
       <label for="nl-website">Website</label>
       <input id="nl-website" name="website" type="text" tabindex="-1" autocomplete="off" />
     </div>
-    <p class="nl-note">Al suscribirte aceptas recibir el despacho mensual. Cancela cuando quieras.</p>
+    <p class="nl-note">{note}</p>
     <p class="nl-status" role="status" aria-live="polite"></p>
   </form>
 </section>
@@ -37,6 +52,7 @@
     padding: 28px 32px;
     scroll-margin-top: 96px;
   }
+  .newsletter-cta.accent-top { border-top: 2px solid var(--accent); }
   .copy { flex: 1 1 320px; }
   .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
   .cta-sub { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
@@ -135,7 +151,7 @@
         setStatus('No se pudo conectar. Intenta de nuevo en unos minutos.', 'error');
       } finally {
         btn.disabled = false;
-        btn.textContent = 'Suscribirme';
+        btn.textContent = btn.dataset.label || 'Suscribirme';
       }
     });
 

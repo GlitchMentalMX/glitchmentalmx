@@ -3,6 +3,7 @@ import InsightFuente from '../../components/InsightFuente.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
+import NewsletterCta from '../../components/NewsletterCta.astro';
 import { getCollection } from 'astro:content';
 import { insightCategoryLinks } from '../../data/insightCategoryLinks';
 import { assignPieceSlugs } from '../../lib/pieceSlug.mjs';
@@ -41,6 +42,7 @@ const modifiedTime = page.data.reduce(
 ---
 
 <Layout
+  hideFooterCta
   title={title}
   description={description}
   modifiedTime={modifiedTime}
@@ -62,9 +64,10 @@ const modifiedTime = page.data.reduce(
   <p class="container hint">Haz clic en la imagen para agrandarla.</p>
 
   <section class="container grid">
-    {page.data.map((entry) => {
+    {page.data.map((entry, i) => {
       const item = entry.data;
       return (
+      <>
       <div class="card">
         <img
           src={item.imagen}
@@ -97,6 +100,8 @@ const modifiedTime = page.data.reduce(
           )}
         </div>
       </div>
+      {i === Math.min(5, page.data.length - 1) && <div class="nl-span"><NewsletterCta /></div>}
+      </>
       );
     })}
   </section>
@@ -126,6 +131,7 @@ const modifiedTime = page.data.reduce(
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
+  .nl-span { grid-column: 1 / -1; }
   .card {
     border-radius: var(--radius);
     overflow: hidden;

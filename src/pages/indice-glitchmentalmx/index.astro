@@ -1,4 +1,5 @@
 ---
+import NewsletterCta from '../../components/NewsletterCta.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
@@ -50,6 +51,7 @@ const itemListSchema = {
 ---
 
 <Layout
+  hideFooterCta
   title={title}
   description={description}
   image={toolImage}
@@ -104,12 +106,14 @@ const itemListSchema = {
     </div>
   </section>
 
-  <section class="container cta">
-    <div>
-      <p class="cta-title">La versión ejecutiva en PDF, cada mes, por correo.</p>
-      <p class="cta-sub">El ranking a fondo y el análisis detrás de los movimientos del mes — exclusivo para suscriptores. El historial completo, con todos los meses anteriores, también vive ahí.</p>
-    </div>
-    <a class="btn btn-primary" href="/suscribete/">Quiero la versión ejecutiva</a>
+  <section class="container" style="max-width: 820px; margin: 40px auto 48px; padding: 0 24px;">
+    <NewsletterCta
+      accentTop
+      title="La versión ejecutiva en PDF, cada mes, por correo."
+      sub="El ranking a fondo y el análisis detrás de los movimientos del mes — exclusivo para suscriptores. El historial completo, con todos los meses anteriores, también vive ahí."
+      buttonLabel="Quiero la versión ejecutiva"
+      note="Al suscribirte aceptas recibir la versión ejecutiva del Índice y el despacho mensual. Cancela cuando quieras."
+    />
   </section>
 
   <section class="container">
@@ -301,21 +305,6 @@ const itemListSchema = {
 
   .archive-note { max-width: 820px; color: var(--text-faint); font-size: 0.84rem; margin: 32px auto 0; }
 
-  .cta {
-    margin: 40px auto 48px;
-    max-width: 820px;
-    padding: 28px 32px;
-    background: var(--bg-inset);
-    border-radius: var(--radius);
-    border-top: 2px solid var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
-  .cta-sub { color: var(--text-muted); font-size: 0.9rem; margin: 0; max-width: 46ch; }
 
   .related { padding: 24px 24px 72px; max-width: 900px; margin: 0 auto; }
   .related h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 28px; }

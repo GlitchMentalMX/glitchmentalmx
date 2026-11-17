@@ -1,4 +1,5 @@
 ---
+import NewsletterCta from '../../components/NewsletterCta.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
@@ -133,6 +134,7 @@ const faqSchema = {
 ---
 
 <Layout
+  hideFooterCta
   title={title}
   description={description}
   image={toolImage}
@@ -376,6 +378,10 @@ const faqSchema = {
       <button id="gm-share-wa" class="chip-btn wa">WhatsApp</button>
       <button id="gm-copy-link" class="chip-btn"><span>Copiar enlace</span></button>
     </div>
+  </section>
+
+  <section class="container" style="max-width: 720px; padding: 0 24px 40px;">
+    <NewsletterCta />
   </section>
 
   <section class="container related">

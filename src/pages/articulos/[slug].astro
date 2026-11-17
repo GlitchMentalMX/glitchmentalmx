@@ -705,7 +705,7 @@ if (toolKinds.includes(kind) && herramienta) {
 }
 ---
 
-<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'} hideFooterCta={kind === 'posts'} robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'} hideFooterCta robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
 
@@ -898,11 +898,9 @@ if (toolKinds.includes(kind) && herramienta) {
     )}
   </article>
 
-  {kind === 'posts' && (
-    <section class="container newsletter-section">
-      <NewsletterCta />
-    </section>
-  )}
+  <section class="container newsletter-section">
+    <NewsletterCta />
+  </section>
 
   {kind === 'posts' && novelaPromo && (
     <section class="container book-section">

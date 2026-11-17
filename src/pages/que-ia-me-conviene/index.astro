@@ -10,6 +10,7 @@
 // (src/content/herramientas-ia/actual.json). Se amplía llenando ese
 // archivo, sin tocar esta página — la ficha y el quiz leen la colección
 // dinámicamente.
+import NewsletterCta from '../../components/NewsletterCta.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
@@ -218,6 +219,7 @@ const faqSchema = {
 ---
 
 <Layout
+  hideFooterCta
   title={tituloPagina}
   description={description}
   modifiedTime={modifiedTime}
@@ -306,6 +308,10 @@ const faqSchema = {
   </section>
 
   <section class="container resultado" id="resultado" hidden></section>
+
+  <section class="container" style="max-width: 760px; padding: 0 24px 40px;">
+    <NewsletterCta />
+  </section>
 
   <section class="container faq">
     <p class="eyebrow">Preguntas frecuentes</p>
