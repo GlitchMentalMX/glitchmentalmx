@@ -9,13 +9,14 @@ veredicto: "rojo"
 fraseCorta: "Firefly sí ofrece 7 días de prueba en sus planes de pago, pero el checkout oficial pide tarjeta desde el inicio y cobra automáticamente en cuanto termina la prueba."
 fuenteVerificacion: "Flujo oficial de compra en firefly.adobe.com (planes Standard, Pro y Pro Plus), consultado el 31/08/2026."
 pubDate: 2026-08-31
+updatedDate: 2026-11-17
 heroImage: /images/prueba-gratis/adobe-firefly.png
 heroImageAlt: Adobe Firefly — Prueba gratis sin tarjeta
 ---
 
 ## ¿Qué tan gratis es la prueba de Adobe Firefly?
 
-El plan gratuito de Firefly (25 créditos generativos al mes) no pide tarjeta — cualquiera con una cuenta de Adobe puede generar sin dar datos de pago. Pero eso no es una "prueba" de los planes de pago (Standard, Pro, Pro Plus), que tienen su propio botón separado de "Prueba gratuita". Verificamos ese flujo directamente en el checkout oficial de firefly.adobe.com: al elegir "Prueba gratuita" en el plan Standard, el propio carrito de compra muestra "7 días de prueba gratis" junto con las condiciones exactas, bajo el encabezado "Condiciones de la versión de prueba gratuita": "La facturación comienza automáticamente después de que finalice la versión de prueba gratuita" y "Cancela antes del [fecha] para evitar la facturación". El primer paso del formulario solo pide un correo electrónico, pero esas condiciones dejan claro que hace falta un método de pago antes de poder activar la prueba — de otra forma Adobe no podría cobrar automáticamente al octavo día.
+El plan gratuito de Firefly (generaciones diarias gratis de imagen, video y audio, ya no un tope mensual de créditos) no pide tarjeta — cualquiera con una cuenta de Adobe puede generar sin dar datos de pago. Pero eso no es una "prueba" de los planes de pago (Standard, Pro, Pro Plus), que tienen su propio botón separado de "Prueba gratuita". Verificamos ese flujo directamente en el checkout oficial de firefly.adobe.com: al elegir "Prueba gratuita" en el plan Standard, el propio carrito de compra muestra "7 días de prueba gratis" junto con las condiciones exactas, bajo el encabezado "Condiciones de la versión de prueba gratuita": "La facturación comienza automáticamente después de que finalice la versión de prueba gratuita" y "Cancela antes del [fecha] para evitar la facturación". El primer paso del formulario solo pide un correo electrónico, pero esas condiciones dejan claro que hace falta un método de pago antes de poder activar la prueba — de otra forma Adobe no podría cobrar automáticamente al octavo día.
 
 ## Firefly Premium ni siquiera tiene botón de prueba
 
@@ -29,4 +30,4 @@ Vale la pena un matiz adicional encontrado en el mismo checkout: de los cuatro p
 
 <p class="otros-precios"><a href="/prueba-gratis-sin-tarjeta/">¿Quieres consultar otra herramienta? →</a></p>
 
-[Última actualización: 31/08/2026]
+[Última actualización: 17/11/2026]

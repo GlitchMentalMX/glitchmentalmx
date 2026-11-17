@@ -15,7 +15,7 @@ No hay nada que cambie, porque no hay un cargo del que partir: DeepSeek, tanto e
 
 ## Qué incluye la versión gratuita
 
-Todo. La versión gratuita de DeepSeek no es una versión recortada de un producto de paga — es el producto completo. Incluye el modelo más reciente de la empresa, sin un segundo nivel de capacidad reservado para quien pague más. Esto la vuelve una excepción real dentro de esta lista de 14 herramientas, donde la norma es que el plan gratuito sea una probada limitada del plan de pago.
+Todo. La versión gratuita de DeepSeek no es una versión recortada de un producto de paga — es el producto completo. Incluye el modelo más reciente de la empresa, sin un segundo nivel de capacidad reservado para quien pague más. Esto la vuelve una excepción real dentro de la serie Precios de IA, donde la norma es que el plan gratuito sea una probada limitada del plan de pago.
 
 ## Que sea gratis no significa que no tenga costo — solo que no lo pagas tú directamente
 
