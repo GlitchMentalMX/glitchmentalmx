@@ -324,27 +324,6 @@ const faqSchema = {
     <NewsletterCta />
   </section>
 
-  <section class="container metodologia" id="metodologia" aria-labelledby="h-met">
-    <p class="eyebrow">Metodología</p>
-    <h2 id="h-met">Cómo se calcula la compatibilidad</h2>
-    <p>
-      Cada herramienta recibe una compatibilidad de 0 a 100: el promedio, ponderado por la importancia de cada criterio,
-      de qué tan bien cumple lo que pediste. No es un ranking de calidad ni una recomendación universal.
-    </p>
-    <ul class="met-lista">
-      <li><strong>Uso principal:</strong> cada uso que eliges pesa 10 (si no eliges ninguno, todos pesan 5). Una herramienta vale 100 si es fuerte en ese uso, 55 si es básica y 10 si no lo hace.</li>
-      <li><strong>Tipo exacto de uso</strong> (por ejemplo, qué tipo de código o de imagen): pesa 8 y se valora con la misma escala.</li>
-      <li><strong>Privacidad:</strong> pesa 10 si es muy importante, 5 si te importa algo y 0 si no. Usa el veredicto de la serie «Quién entrena con tus datos»: verde 100, amarillo 55, rojo 10.</li>
-      <li><strong>Español:</strong> pesa 10 si lo necesitas, 5 si es deseable y 0 si no. Se valora como el uso principal.</li>
-      <li><strong>Extras</strong> (memoria, voz, API, integraciones y similares): cada uno que marques pesa 6; vale 100 si la herramienta lo ofrece y 0 si no.</li>
-    </ul>
-    <p>
-      Cuando no pudimos verificar un dato, cuenta como neutral (55) y se marca «sin verificar» en el desglose para que no parezca un dato confirmado.
-      El precio no entra en el cálculo: se enlaza como referencia porque no es un dato estructurado.
-      {ultimaVerificacion && <>{' '}Capacidades verificadas por última vez: {formatDate(ultimaVerificacion)}.</>}
-    </p>
-  </section>
-
   <section class="container faq">
     <p class="eyebrow">Preguntas frecuentes</p>
     <h2>Antes de que preguntes</h2>
@@ -365,6 +344,27 @@ const faqSchema = {
         </details>
       ))}
     </div>
+  </section>
+
+  <section class="container methodology" id="metodologia" aria-labelledby="h-met">
+    <p class="eyebrow">Metodología</p>
+    <h2 id="h-met">Cómo se calcula la compatibilidad</h2>
+    {ultimaVerificacion && <p class="method-updated">Capacidades verificadas por última vez: {formatDate(ultimaVerificacion)}.</p>}
+    <p>
+      Cada herramienta recibe una compatibilidad de 0 a 100: el promedio, ponderado por la importancia de cada criterio,
+      de qué tan bien cumple lo que pediste. No es un ranking de calidad ni una recomendación universal.
+    </p>
+    <ul class="met-lista">
+      <li><strong>Uso principal:</strong> cada uso que eliges pesa 10 (si no eliges ninguno, todos pesan 5). Una herramienta vale 100 si es fuerte en ese uso, 55 si es básica y 10 si no lo hace.</li>
+      <li><strong>Tipo exacto de uso</strong> (por ejemplo, qué tipo de código o de imagen): pesa 8 y se valora con la misma escala.</li>
+      <li><strong>Privacidad:</strong> pesa 10 si es muy importante, 5 si te importa algo y 0 si no. Usa el veredicto de la serie «Quién entrena con tus datos»: verde 100, amarillo 55, rojo 10.</li>
+      <li><strong>Español:</strong> pesa 10 si lo necesitas, 5 si es deseable y 0 si no. Se valora como el uso principal.</li>
+      <li><strong>Extras</strong> (memoria, voz, API, integraciones y similares): cada uno que marques pesa 6; vale 100 si la herramienta lo ofrece y 0 si no.</li>
+    </ul>
+    <p>
+      Cuando no pudimos verificar un dato, cuenta como neutral (55) y se marca «sin verificar» en el desglose para que no parezca un dato confirmado.
+      El precio no entra en el cálculo: se enlaza como referencia porque no es un dato estructurado.
+    </p>
   </section>
 </Layout>
 
@@ -831,11 +831,15 @@ const faqSchema = {
   }
   :global(#resultado .qic-reset-link:hover) { color: var(--text-muted); }
 
-  .metodologia { padding: 16px 24px 24px; max-width: 760px; }
-  .metodologia h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 16px; }
-  .metodologia p, .metodologia li { color: var(--text-secondary); line-height: 1.65; }
+  .methodology { padding: 16px 24px 96px; max-width: 760px; margin: 0 auto; }
+  .methodology h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 8px; }
+  .method-updated {
+    font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);
+    letter-spacing: 0.02em; margin: 6px 0 20px;
+  }
+  .methodology > p, .methodology li { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
   .met-lista { margin: 12px 0 16px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
-  .faq { padding: 16px 24px 96px; max-width: 760px; }
+  .faq { padding: 16px 24px 32px; max-width: 760px; }
   .faq h2 { font-family: var(--font-display); font-size: 1.7rem; margin: 8px 0 24px; }
   .faq-list { display: flex; flex-direction: column; gap: 10px; }
   .faq-item {
