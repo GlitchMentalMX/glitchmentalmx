@@ -18,9 +18,10 @@ interface Props {
   locale?: string;
   lang?: string;
   alternates?: Array<{ hreflang: string; href: string }>;
+  hideFooterCta?: boolean;
 }
 
-const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime, titleSuffix = true, robots, locale, lang = 'es', alternates = [] } = Astro.props;
+const { title, description, image, noIndex = false, type = 'website', publishedTime, modifiedTime, titleSuffix = true, robots, locale, lang = 'es', alternates = [], hideFooterCta = false } = Astro.props;
 
 const siteName = 'glitchMentalMX';
 const suffix = ` · ${siteName}`;
@@ -162,7 +163,7 @@ const personSchema = {
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    <Footer showCta={!hideFooterCta} />
     <Lightbox />
     <Analytics />
     <style>

@@ -1,0 +1,153 @@
+---
+// Banner de suscripción con formulario inline. Solo debe haber UNA instancia
+// por página (el id es fijo): el botón "Suscríbete" del header hace scroll
+// hasta #newsletter-cta y enfoca el input de correo.
+---
+
+<section class="newsletter-cta" id="newsletter-cta" aria-labelledby="newsletter-cta-title">
+  <div class="copy">
+    <p class="cta-title" id="newsletter-cta-title">El despacho mensual de glitchMentalMX: un análisis inédito, datos del Índice y recursos clave. Cero relleno.</p>
+    <p class="cta-sub">Sin hype. Sin spam.</p>
+  </div>
+
+  <form class="nl-form" novalidate>
+    <div class="nl-row">
+      <label class="sr-only" for="nl-email">Correo electrónico</label>
+      <input id="nl-email" name="email" type="email" placeholder="tu@correo.com" autocomplete="email" required maxlength="320" />
+      <button type="submit" class="btn btn-primary">Suscribirme</button>
+    </div>
+    <div class="form-honeypot" aria-hidden="true">
+      <label for="nl-website">Website</label>
+      <input id="nl-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+    </div>
+    <p class="nl-note">Al suscribirte aceptas recibir el despacho mensual. Cancela cuando quieras.</p>
+    <p class="nl-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<style>
+  .newsletter-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+    background: var(--bg-inset);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    scroll-margin-top: 96px;
+  }
+  .copy { flex: 1 1 320px; }
+  .cta-title { font-weight: 700; font-size: 1.05rem; margin: 0 0 4px; }
+  .cta-sub { color: var(--text-muted); font-size: 0.88rem; margin: 0; }
+
+  .nl-form { flex: 1 1 340px; max-width: 460px; }
+  .nl-row { display: flex; gap: 10px; }
+  .nl-row input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0.65em 0.9em;
+    font: inherit;
+    font-size: 0.92rem;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+  }
+  .nl-row input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .nl-row .btn { flex-shrink: 0; justify-content: center; }
+  .nl-note { color: var(--text-faint); font-size: 0.76rem; margin: 10px 0 0; }
+  .nl-status { font-size: 0.86rem; margin: 6px 0 0; min-height: 1.2em; color: var(--text-muted); }
+  .nl-status.ok { color: var(--accent); }
+  .nl-status.error { color: var(--down-line, #e5484d); }
+
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .form-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+  @media (max-width: 640px) {
+    .newsletter-cta { padding: 24px 20px; }
+    .nl-form { flex-basis: 100%; max-width: none; }
+    .nl-row { flex-direction: column; }
+    .nl-row .btn { width: 100%; }
+  }
+</style>
+
+<script>
+  const WORKER_URL = 'https://glitchmental-subscribe.glitchmental-web.workers.dev/';
+  const loadedAt = Date.now();
+
+  const root = document.getElementById('newsletter-cta');
+  const form = root?.querySelector('form') as HTMLFormElement | null;
+
+  if (root && form) {
+    const emailInput = form.querySelector('#nl-email') as HTMLInputElement;
+    const websiteInput = form.querySelector('#nl-website') as HTMLInputElement;
+    const btn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+    const statusEl = form.querySelector('.nl-status') as HTMLParagraphElement;
+
+    const setStatus = (msg: string, kind: 'ok' | 'error' | '') => {
+      statusEl.textContent = msg;
+      statusEl.className = 'nl-status' + (kind ? ` ${kind}` : '');
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      setStatus('', '');
+      const email = emailInput.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setStatus('Escribe un correo válido.', 'error');
+        emailInput.focus();
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Enviando…';
+      setStatus('Enviando…', '');
+
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            // El endpoint exige "name"; este formulario solo pide correo,
+            // así que se usa la parte local del correo como nombre.
+            name: email.split('@')[0].slice(0, 200).padEnd(2, '_'),
+            email,
+            consent: true, // la leyenda visible bajo el botón es el aviso
+            website: websiteInput.value,
+            formLoadedAt: loadedAt,
+          }),
+        });
+        const data = await res.json();
+        if (res.ok && data.ok) {
+          setStatus('Listo — ya estás suscrito.', 'ok');
+          form.reset();
+        } else {
+          setStatus(data.error || 'Algo salió mal, intenta de nuevo.', 'error');
+        }
+      } catch {
+        setStatus('No se pudo conectar. Intenta de nuevo en unos minutos.', 'error');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Suscribirme';
+      }
+    });
+
+    // Botones "Suscríbete" del header: si la página tiene el banner, scroll
+    // suave + foco al input; si no, siguen su enlace normal a /suscribete/.
+    document.querySelectorAll<HTMLAnchorElement>('[data-subscribe-link]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        root.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+        emailInput.focus({ preventScroll: true });
+      });
+    });
+  }
+</script>
