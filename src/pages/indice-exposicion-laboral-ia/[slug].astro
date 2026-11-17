@@ -51,7 +51,11 @@ const schema = {
   name: title,
   description,
   dateModified: ficha.revision.fecha,
-  about: { '@type': 'Occupation', name: nombre },
+  about: {
+    '@type': 'Occupation',
+    name: nombre,
+    occupationalCategory: [`O*NET ${ficha.codigos.onet}`, `ISCO-08 ${ficha.codigos.isco08}`],
+  },
   isPartOf: { '@type': 'CollectionPage', name: NOMBRE, url: new URL(RUTA, Astro.site).toString() },
   author: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
 };
@@ -177,7 +181,7 @@ const schema = {
     <section>
       <h2>Cómo sale esta puntuación</h2>
       <p class="sub">
-        {PESOS.E}·E + {PESOS.A}·A + {PESOS.C}·(100 − C), con E {p.E}, A {p.A} y C {p.C}.
+        Cada actividad se califica de 0 a 4 en E, A y C; se promedian según su peso en O*NET y el resultado se multiplica por 25 para llevarlo a 0–100. Luego: {PESOS.E}·E + {PESOS.A}·A + {PESOS.C}·(100 − C), con E {p.E}, A {p.A} y C {p.C}.
         {p.tope_aplicado && ` La capacidad se limitó al tope de la fuente de referencia (sin tope, ${p.puntuacion_sin_tope}).`}
         {' '}Cobertura de evidencia: {pct(ficha.cobertura_evidencia.A.peso_con_uso_observado)} del peso tiene uso observado; la complementariedad humana es juicio editorial.
       </p>
@@ -213,6 +217,7 @@ const schema = {
         {ficha.fuentes.map((f) => <li><a href={f.url} rel="noopener">{f.fuente}</a>{alcanceFuente[f.tipo] && <small class="ev">{alcanceFuente[f.tipo]}</small>}</li>)}
       </ul>
       <p class="nota">Códigos: O*NET {ficha.codigos.onet} · CIUO/ISCO-08 {ficha.codigos.isco08}. Revisión: {ficha.revision.fecha}.</p>
+      <p class="nota">Datos abiertos (CC BY 4.0): <a href="/datos/indice-exposicion.csv" download>CSV con todas las ocupaciones</a> · <a href="/datos/">cómo citarlos</a>.</p>
     </section>
 
     <section class="puente">
