@@ -4,7 +4,8 @@ description: "En seis casos de citas y enlaces verificables de 2025 y 2026, los 
 kicker: "Laboratorio · Experimento 07"
 experimento: 7
 pubDate: 2026-11-17
-heroImage: /images/laboratorio/laboratorio-07-citas-enlaces-inventados-2026/hero.jpg
+heroImage: /images/laboratorio/laboratorio-07-citas-enlaces-inventados-2026/hero.webp
+heroImageAlt: "Citas y enlaces inventados por IA en 2026: investigadora verifica fuentes y documentos primarios en biblioteca."
 csv: /datos/laboratorio-07-citas-enlaces-inventados-2026.csv
 draft: true
 ---

@@ -4,7 +4,8 @@ description: "En las 21 ocupaciones del Índice de Exposición Laboral a la IA, 
 kicker: "Laboratorio · Experimento 04"
 experimento: 4
 pubDate: 2026-11-17
-heroImage: /images/laboratorio/laboratorio-04-actividades-intocables/hero.jpg
+heroImage: /images/laboratorio/laboratorio-04-actividades-intocables/hero.webp
+heroImageAlt: "Actividades humanas intocables en 2026: analista evalúa tareas con exposición cero a la IA y matriz de 21 ocupaciones en estudio."
 csv: /datos/laboratorio-04-actividades-intocables.csv
 draft: true
 ---

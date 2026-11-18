@@ -4,7 +4,8 @@ description: "La mediana del primer escalón es de 16.50 USD en los 16 especiali
 kicker: "Laboratorio · Experimento 05"
 experimento: 5
 pubDate: 2026-11-17
-heroImage: /images/laboratorio/laboratorio-05-especialista-vs-generalista/hero.jpg
+heroImage: /images/laboratorio/laboratorio-05-especialista-vs-generalista/hero.webp
+heroImageAlt: "Especialista vs. chat generalista: analista compara instrumentos dedicados frente a un sistema unificado en sala de pruebas."
 csv: /datos/laboratorio-05-especialista-vs-generalista.csv
 draft: true
 ---

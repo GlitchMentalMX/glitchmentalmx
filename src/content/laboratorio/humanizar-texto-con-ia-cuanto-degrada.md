@@ -4,7 +4,8 @@ description: "Pedimos a Claude, ChatGPT y Gemini que volvieran más humanos cinc
 kicker: "Laboratorio · Experimento 09"
 experimento: 9
 pubDate: 2026-11-18
-heroImage: /images/laboratorio/laboratorio-09-humanizar-texto-ia/hero.jpg
+heroImage: /images/laboratorio/laboratorio-09-humanizar-texto-ia/hero.webp
+heroImageAlt: "Humanizar textos con IA: cuánto degrada la prosa: editora revisa manuscrito y métricas léxicas en taller de redacción."
 csv: /datos/laboratorio-09-humanizar-texto-ia.csv
 draft: true
 ---

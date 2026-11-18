@@ -4,7 +4,8 @@ description: "Pusimos a ChatGPT, Claude y Gemini frente a 10 premisas falsas, al
 kicker: "Laboratorio · Experimento 10"
 experimento: 10
 pubDate: 2026-11-18
-heroImage: /images/laboratorio/laboratorio-10-aduloneria-ia-premisas-falsas/hero.jpg
+heroImage: /images/laboratorio/laboratorio-10-aduloneria-ia-premisas-falsas/hero.webp
+heroImageAlt: "Adulonería de la IA ante premisas falsas: investigadora audita resistencia a la complacencia en consola de pruebas."
 csv: /datos/laboratorio-10-aduloneria-ia-premisas-falsas.csv
 draft: true
 ---

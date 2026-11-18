@@ -4,7 +4,8 @@ description: "Seis casos fiscales y laborales de México en 18 chats nuevos: los
 kicker: "Laboratorio · Experimento 06"
 experimento: 6
 pubDate: 2026-11-17
-heroImage: /images/laboratorio/laboratorio-06-ia-fiscal-laboral-mexico/hero.jpg
+heroImage: /images/laboratorio/laboratorio-06-ia-fiscal-laboral-mexico/hero.webp
+heroImageAlt: "Cálculo fiscal y laboral con IA en México: analista audita tasas de retención y prestaciones sobre hojas contables."
 csv: /datos/laboratorio-06-ia-fiscal-laboral-mexico.csv
 draft: true
 ---

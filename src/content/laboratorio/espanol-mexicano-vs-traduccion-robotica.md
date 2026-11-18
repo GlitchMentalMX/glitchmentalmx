@@ -4,7 +4,8 @@ description: "Probamos a ChatGPT, Claude y Gemini en 15 tareas de español de M�
 kicker: "Laboratorio · Experimento 11"
 experimento: 11
 pubDate: 2026-11-18
-heroImage: /images/laboratorio/laboratorio-11-espanol-mexicano-vs-traduccion-robotica/hero.jpg
+heroImage: /images/laboratorio/laboratorio-11-espanol-mexicano-vs-traduccion-robotica/hero.webp
+heroImageAlt: "Español mexicano real vs. traducción robótica: analista compara borradores y matrices de puntaje en estudio tipográfico."
 csv: /datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv
 draft: true
 ---

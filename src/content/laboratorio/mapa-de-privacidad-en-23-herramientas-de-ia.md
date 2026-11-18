@@ -4,7 +4,8 @@ description: "De 23 herramientas de IA del Recomendador de glitchMentalMX, 19 en
 kicker: "Laboratorio · Experimento 02"
 experimento: 2
 pubDate: 2026-11-17
-heroImage: /images/laboratorio/laboratorio-02-mapa-privacidad/hero.jpg
+heroImage: /images/laboratorio/laboratorio-02-mapa-privacidad/hero.webp
+heroImageAlt: "Mapa de privacidad en 23 herramientas de IA: analista audita políticas de retención de datos con lupa en estudio."
 csv: /datos/laboratorio-02-mapa-privacidad.csv
 draft: true
 ---

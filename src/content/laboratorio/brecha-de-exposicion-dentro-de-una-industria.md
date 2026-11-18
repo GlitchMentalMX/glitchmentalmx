@@ -4,7 +4,8 @@ description: "Cuatro pares de ocupaciones del mismo sector difieren entre 8 y 16
 kicker: "Laboratorio · Experimento 01"
 experimento: 1
 pubDate: 2026-11-17
-heroImage: /images/laboratorio/laboratorio-01-brecha-exposicion/hero.jpg
+heroImage: /images/laboratorio/laboratorio-01-brecha-exposicion/hero.webp
+heroImageAlt: "Brecha de exposición a la IA: analista compara matrices de trabajo y porcentajes de automatización en estudio."
 csv: /datos/laboratorio-01-brecha-exposicion.csv
 draft: true
 ---
