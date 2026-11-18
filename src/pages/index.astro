@@ -7,6 +7,7 @@ import BookActions from '../components/BookActions.astro';
 import { getImpactoPosts, esLatam, IMPACTO_LINEA_HOME } from '../lib/impacto';
 import { getCollection, getEntry } from 'astro:content';
 import { cargarFichas } from '../lib/exposicion';
+import { cargarLaboratorio, RUTA_LABORATORIO } from '../lib/laboratorio';
 const nOcupaciones = cargarFichas().length;
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -39,6 +40,11 @@ const impactoPosts = await getImpactoPosts();
 // Prioriza el ángulo México/LATAM: primero las más recientes de ese ámbito y,
 // si faltaran, las globales más recientes.
 const impactoBanda = [...impactoPosts.filter(esLatam), ...impactoPosts.filter((p) => !esLatam(p))].slice(0, 2);
+
+// Card del Laboratorio: el total y la pieza más reciente salen de la colección
+// real (nunca a mano). Sin piezas publicadas, la card no se pinta.
+const labPiezas = await cargarLaboratorio();
+const labUltima = labPiezas[labPiezas.length - 1];
 
 const [featured] = allPosts;
 const recentThree = allPosts.slice(1, 4);
@@ -461,6 +467,25 @@ const signalPools = {
           <p class="insight-excerpt">{latestInsight.data.resumen}</p>
           <InsightFuente fuente={latestInsight.data.fuente} fuenteUrl={latestInsight.data.fuenteUrl} />
           <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
+        </div>
+      </div>
+    </section>
+  )}
+
+  {labUltima && (
+    <section class="laboratorio-band container" aria-labelledby="lab-h">
+      <div class="lab-layout">
+        <a href={RUTA_LABORATORIO} class="lab-hero" aria-label="Ver el Laboratorio">
+          {labUltima.data.heroImage && (
+            <img src={labUltima.data.heroImage} alt={labUltima.data.heroImageAlt ?? ''} loading="lazy" width="1672" height="941" />
+          )}
+        </a>
+        <div class="lab-text">
+          <p class="lab-eyebrow">Datos abiertos · CC BY 4.0</p>
+          <h2 id="lab-h" class="lab-title">Laboratorio</h2>
+          <p class="lab-desc">Le hacemos pruebas a la IA y publicamos la cuenta completa: muestra, límites y el CSV para que repitas el experimento.</p>
+          <p class="lab-stat">{labPiezas.length} experimentos publicados</p>
+          <p class="lab-cta"><a href={RUTA_LABORATORIO} class="link-accent">Entra al laboratorio →</a></p>
         </div>
       </div>
     </section>
@@ -941,6 +966,25 @@ const signalPools = {
     .insight-hero { grid-column: 2; grid-row: 1; }
     .insight-text { grid-column: 1; grid-row: 1; }
     .insight-title { font-size: 1.7rem; }
+  }
+
+  /* Laboratorio — banda con la portada del experimento más reciente. Misma
+     lógica de Insights (texto a la izquierda, imagen a la derecha en
+     escritorio; una columna en móvil), con el aire de "ficha de laboratorio". */
+  section.laboratorio-band { padding: 44px 24px; border-top: 1px solid var(--border); }
+  .lab-layout { display: flex; flex-direction: column; gap: 18px; }
+  .lab-hero { display: block; }
+  .lab-hero img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: var(--radius); }
+  .lab-eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
+  .lab-title { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; line-height: 1.2; margin: 0; }
+  .lab-desc { color: var(--text-muted); font-size: 0.98rem; line-height: 1.55; margin: 10px 0 0; }
+  .lab-stat { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-faint); margin: 12px 0 0; }
+  .lab-cta { margin: 16px 0 0; }
+  @media (min-width: 1024px) {
+    .lab-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 2.5rem; align-items: center; }
+    .lab-hero { grid-column: 2; grid-row: 1; }
+    .lab-text { grid-column: 1; grid-row: 1; }
+    .lab-title { font-size: 2rem; }
   }
 
   /* Novelas — 3 más recientes: portada + sinopsis + CTA. En escritorio, grid

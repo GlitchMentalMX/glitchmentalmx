@@ -7,7 +7,7 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-08-letra-chiquita-contratos-mexico/hero.webp
 heroImageAlt: "Microscopio con un contrato bajo el objetivo y un círculo ampliado que revela líneas rojas sobre la letra pequeña."
 csv: /datos/laboratorio-08-letra-chiquita-contratos-mexico.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

@@ -7,7 +7,7 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-06-ia-fiscal-laboral-mexico/hero.webp
 heroImageAlt: "Sumadora mecánica de latón que imprime una larga cinta de papel, junto a dos libros de leyes: uno antiguo y gastado, otro nuevo, unidos por un hilo de luz turquesa."
 csv: /datos/laboratorio-06-ia-fiscal-laboral-mexico.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

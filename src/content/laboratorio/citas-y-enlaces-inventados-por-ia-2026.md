@@ -7,7 +7,7 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-07-citas-enlaces-inventados-2026/hero.webp
 heroImageAlt: "Cajón de un fichero de biblioteca con una ficha traslúcida luminosa entre las demás, inspeccionada con una lupa de latón."
 csv: /datos/laboratorio-07-citas-enlaces-inventados-2026.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

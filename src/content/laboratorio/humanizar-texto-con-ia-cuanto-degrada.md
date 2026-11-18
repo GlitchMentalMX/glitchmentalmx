@@ -7,7 +7,7 @@ pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-09-humanizar-texto-ia/hero.webp
 heroImageAlt: "Matraz pequeño con tinta oscura conectado por un tubo de vidrio a otro enorme que se desborda de espuma, junto a una hoja manuscrita."
 csv: /datos/laboratorio-09-humanizar-texto-ia.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

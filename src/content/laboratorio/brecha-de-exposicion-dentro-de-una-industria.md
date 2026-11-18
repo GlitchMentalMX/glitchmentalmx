@@ -7,7 +7,7 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-01-brecha-exposicion/hero.webp
 heroImageAlt: "Dos cilindros graduados de cristal con líquido ámbar a distinto nivel, con un calibrador de latón sobre ellos, en un banco de laboratorio."
 csv: /datos/laboratorio-01-brecha-exposicion.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

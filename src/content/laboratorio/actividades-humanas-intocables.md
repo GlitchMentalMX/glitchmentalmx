@@ -7,7 +7,7 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-04-actividades-intocables/hero.webp
 heroImageAlt: "Campana de cristal que protege un cuaderno de cuero, una pluma y una taza, mientras flujos de luz turquesa rodean el vidrio sin entrar."
 csv: /datos/laboratorio-04-actividades-intocables.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

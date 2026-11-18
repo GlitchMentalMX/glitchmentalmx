@@ -7,7 +7,7 @@ pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-11-espanol-mexicano-vs-traduccion-robotica/hero.webp
 heroImageAlt: "Caja de composición tipográfica: un brazo robótico coloca tipos idénticos mientras unas manos humanas colocan los signos ¿, ñ y á."
 csv: /datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

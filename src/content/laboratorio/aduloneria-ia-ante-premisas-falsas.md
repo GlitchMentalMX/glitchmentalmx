@@ -7,7 +7,7 @@ pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-10-aduloneria-ia-premisas-falsas/hero.webp
 heroImageAlt: "Brújula de latón cuya aguja mantiene el norte frente a un imán rojo en forma de herradura cercano."
 csv: /datos/laboratorio-10-aduloneria-ia-premisas-falsas.csv
-draft: true
+draft: false
 ---
 
 ## Resumen ejecutivo

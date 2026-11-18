@@ -24,6 +24,7 @@ Sitio editorial independiente. Los precios están en pesos mexicanos con el tipo
 - [Archivo de artículos](https://glitchmental.com/archivo/): todos los artículos publicados.
 - [Dato Incómodo](https://glitchmental.com/dato-incomodo/): un dato duro por pieza, cada una con su propia URL y fuentes.
 - [Insights Visuales](https://glitchmental.com/insights-visuales/): una imagen y una idea por pieza.
+- [Laboratorio](https://glitchmental.com/laboratorio/): experimentos con IA con muestra y límites declarados; cada pieza publica su CSV abierto (CC BY 4.0).
 
 ## Herramientas interactivas
 
