@@ -1,0 +1,16 @@
+modelo,version_modelo,fecha_ejecucion,caso_id,tipo_contrato,trampa_1_detectada,trampa_2_detectada,fundamento_valido,puntaje_0_2,diagnostico_error
+ChatGPT,No registrado,2026-11-17,C01,Arrendamiento habitacional CDMX,Sí,Sí,Sí,2,"Sin error (fecha la reforma de rentas en 2026 en vez de 2024, pero cita bien el Art. 2448-D y la sentencia de la SCJN de febrero de 2026)"
+ChatGPT,No registrado,2026-11-17,C02,Contrato de adhesión de gimnasio (PROFECO),Sí,Sí,Sí,2,Sin error
+ChatGPT,No registrado,2026-11-17,C03,Tarjeta de crédito (CONDUSEF),Sí,Sí,Sí,2,Sin error
+ChatGPT,No registrado,2026-11-17,C04,Contrato individual de trabajo (LFT),Sí,Sí,Sí,2,Sin error
+ChatGPT,No registrado,2026-11-17,C05,Internet residencial (PROFECO/CRT),Sí,Sí,Sí,2,Sin error
+Claude,No registrado,2026-11-17,C01,Arrendamiento habitacional CDMX,Sí,Sí,Sí,2,Sin error
+Claude,No registrado,2026-11-17,C02,Contrato de adhesión de gimnasio (PROFECO),Sí,Sí,Sí,2,Sin error
+Claude,No registrado,2026-11-17,C03,Tarjeta de crédito (CONDUSEF),Sí,Sí,Sí,2,Sin error
+Claude,No registrado,2026-11-17,C04,Contrato individual de trabajo (LFT),Sí,Sí,Sí,2,Sin error
+Claude,No registrado,2026-11-17,C05,Internet residencial (PROFECO/CRT),Sí,Sí,Sí,2,Sin error
+Gemini,No registrado,2026-11-17,C01,Arrendamiento habitacional CDMX,Sí,Sí,Sí,2,Sin error
+Gemini,No registrado,2026-11-17,C02,Contrato de adhesión de gimnasio (PROFECO),Sí,Sí,Parcial,1,"Detecta ambas trampas, pero numera mal el Art. 90 LFPC: atribuye a la fr. III la exención de responsabilidad civil (es la fr. II; la III es traslado de responsabilidad), usa la fr. II para 'prestaciones desproporcionadas' (corresponde al Art. 85) y aplica la fr. I (modificación unilateral) a robo en casilleros. Art. 85, 1843 CCF y 1913 CCF correctos."
+Gemini,No registrado,2026-11-17,C03,Tarjeta de crédito (CONDUSEF),Sí,Sí,Sí,2,Sin error
+Gemini,No registrado,2026-11-17,C04,Contrato individual de trabajo (LFT),Sí,Sí,Parcial,1,"Detecta ambas trampas y cita bien Arts. 5 fr. XIII, 33, 97 y 110 fr. I (topes de un mes de salario y 30% del excedente). Pero atribuye al Art. 133 LFT (y al Art. 5 fr. XIII) la prohibición de exigir pagarés o documentos en blanco: el texto del Art. 133 consultado en mley.mx no contiene esa prohibición."
+Gemini,No registrado,2026-11-17,C05,Internet residencial (PROFECO/CRT),Sí,Sí,Parcial,1,"Detecta ambas trampas, pero: cita la LFTR (abrogada el 16-jul-2025 por la LMTR) con su Art. 191 fr. X; presenta al IFT como autoridad de registro sin aclarar que lo sustituyó la CRT; numera mal el Art. 90 LFPC (fr. III para penas desproporcionadas, que corresponde al Art. 85; fr. V para renuncia a PROFECO, que es la VI; fr. IV para litigar fuera del domicilio, que es prescripción); cita el numeral 5.2.15 de la NOM-184 (que regula devolución de anticipos, no penas por cancelación anticipada previstas en los numerales 3.2 y 5.2.22)."

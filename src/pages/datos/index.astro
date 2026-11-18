@@ -172,6 +172,39 @@ const datasetSchema = {
       <li>
         <a href="/datos/indice-exposicion.csv" download>indice-exposicion.csv</a> — {fichasExp.length} filas, una por ocupación (sin el detalle de actividades). Columnas: edicion, ocupacion, ocupacion_id, sector, puntuacion, nivel, rango_min, rango_max, exposicion_E, automatizacion_A, complementariedad_C, tope_aplicado, confianza, onet, isco08, revision, url.
       </li>
+      <li>
+        <a href="/datos/laboratorio-01-brecha-exposicion.csv" download>laboratorio-01-brecha-exposicion.csv</a> — desglose por actividad de 8 ocupaciones (4 pares del mismo sector) del Experimento 01 del <a href="/laboratorio/">Laboratorio</a>, más una fila resumen por ocupación. Columnas: sector, ocupacion, slug, puntuacion_ocupacion, actividad, peso_onet, E_0_4, A_0_4, C_0_4, evidencia.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-02-mapa-privacidad.csv" download>laboratorio-02-mapa-privacidad.csv</a> — 23 filas, una por herramienta de IA del recomendador, del Experimento 02 del <a href="/laboratorio/">Laboratorio</a>. Columnas: herramienta, slug, tipo_herramienta, categoria_uso, entrena_por_default, permite_opt_out, privacidad_por_plan, valor_recomendador, fecha_verificacion, url_ficha_sitio.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-03-costo-real-ia.csv" download>laboratorio-03-costo-real-ia.csv</a> — 23 filas, una por herramienta de IA del recomendador, del Experimento 03 del <a href="/laboratorio/">Laboratorio</a>: plan gratuito, tarjeta, límites y primer escalón de pago. Columnas: herramienta, slug, tipo_herramienta, categoria_uso, tiene_plan_gratis, pide_tarjeta_gratis, limite_plan_gratis, precio_primer_plan_usd, precio_mxn_referencia, fecha_verificacion, url_ficha_sitio.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-04-actividades-intocables.csv" download>laboratorio-04-actividades-intocables.csv</a> — 181 filas del Experimento 04 del <a href="/laboratorio/">Laboratorio</a>: las 160 actividades de las 21 ocupaciones del Índice de Exposición Laboral y una fila resumen por ocupación con el porcentaje de peso en C = 4 y E = 0. Columnas: sector, ocupacion, slug, puntuacion_ocupacion, actividad, peso_onet, E_0_4, A_0_4, C_0_4, evidencia, nota_resumen.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-05-especialista-vs-generalista.csv" download>laboratorio-05-especialista-vs-generalista.csv</a> — 23 filas, una por herramienta de IA del recomendador, del Experimento 05 del <a href="/laboratorio/">Laboratorio</a>: naturaleza de la salida, primer escalón de pago, entrenamiento por defecto, opt-out en México y cobertura frente a un chat general. Columnas: herramienta, slug, tipo_herramienta, categoria_uso, naturaleza_salida, precio_primer_plan_usd, entrena_por_default, opt_out_mexico, regla_recomendador, ventaja_frente_generalista.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-06-ia-fiscal-laboral-mexico.csv" download>laboratorio-06-ia-fiscal-laboral-mexico.csv</a> — 18 filas (3 modelos por 6 casos) del Experimento 06 del <a href="/laboratorio/">Laboratorio</a>: cifra esperada, cifra del modelo, puntaje de 0 a 2, uso de búsqueda web y diagnóstico del error. Columnas: modelo, version_modelo, fecha_ejecucion, caso_id, categoria_legal, cifra_esperada_mxn, cifra_modelo_mxn, puntaje_0_2, uso_busqueda_web, diagnostico_error.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-07-citas-enlaces-inventados-2026.csv" download>laboratorio-07-citas-enlaces-inventados-2026.csv</a> — 18 filas (3 modelos por 6 casos) del Experimento 07 del <a href="/laboratorio/">Laboratorio</a>: URLs entregadas, estado HTTP real verificado, cita exacta, puntaje de 0 a 2 y diagnóstico del error. Columnas: modelo, version_modelo, fecha_ejecucion, caso_id, tipo_fuente, url_entregada, http_status_real, cita_exacta, puntaje_0_2, diagnostico_error.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-08-letra-chiquita-contratos-mexico.csv" download>laboratorio-08-letra-chiquita-contratos-mexico.csv</a> — 15 filas (3 modelos por 5 contratos) del Experimento 08 del <a href="/laboratorio/">Laboratorio</a>: detección de cada trampa, validez del fundamento legal, puntaje de 0 a 2 y diagnóstico del error. Columnas: modelo, version_modelo, fecha_ejecucion, caso_id, tipo_contrato, trampa_1_detectada, trampa_2_detectada, fundamento_valido, puntaje_0_2, diagnostico_error.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-09-humanizar-texto-ia.csv" download>laboratorio-09-humanizar-texto-ia.csv</a> — 15 filas (3 modelos por 5 textos) del Experimento 09 del <a href="/laboratorio/">Laboratorio</a>: extensión, diversidad léxica (TTR), datos duros conservados, muletillas de IA y puntaje de 0 a 2 al pedirle a la IA que un texto suene más humano. Columnas: modelo, version_modelo, fecha_ejecucion, caso_id, categoria, palabras_original, palabras_salida, delta_palabras_pct, ttr_salida, datos_conservados_0_3, muletillas_ia, puntaje_0_2.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-10-aduloneria-ia-premisas-falsas.csv" download>laboratorio-10-aduloneria-ia-premisas-falsas.csv</a> — 30 filas (3 modelos por 10 premisas falsas) del Experimento 10 del <a href="/laboratorio/">Laboratorio</a>: si el modelo rechazó la premisa, si empezó con complacencia, puntaje de 0 a 2, veredicto y diagnóstico del error. Columnas: modelo, version_modelo, fecha_ejecucion, premisa_id, categoria, premisa_rechazada, complacencia_inicial, puntaje_0_2, veredicto_corto, diagnostico_error.
+      </li>
+      <li>
+        <a href="/datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv" download>laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv</a> — 45 filas (3 modelos por 15 tareas) del Experimento 11 del <a href="/laboratorio/">Laboratorio</a>: calcos y anglicismos, regionalismos ajenos, cumplimiento del límite de palabras, puntaje de 0 a 2 y diagnóstico por tarea. Columnas: modelo, version_modelo, fecha_ejecucion, tarea_id, bloque, calcos_o_anglicismos, regionalismos_ajenos, cumple_limite_palabras, puntaje_0_2, diagnostico.
+      </li>
     </ul>
   </section>
 

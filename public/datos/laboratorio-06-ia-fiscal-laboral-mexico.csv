@@ -1,0 +1,19 @@
+modelo,version_modelo,fecha_ejecucion,caso_id,categoria_legal,cifra_esperada_mxn,cifra_modelo_mxn,puntaje_0_2,uso_busqueda_web,diagnostico_error
+ChatGPT,No registrada,2026-11-17,C01,Laboral - Aguinaldo proporcional (Art. 87 LFT),3501.37,3501.37,2,Si (inferido por chip de fuente),Sin error
+ChatGPT,No registrada,2026-11-17,C02,Laboral - Vacaciones y prima vacacional (Arts. 76 y 80 LFT),1750.00,1750.00,2,Si (inferido por chip de fuente),Sin error
+ChatGPT,No registrada,2026-11-17,C03,Laboral - Horas extra dobles y triples (Arts. 66-68 LFT),2400.00,2400.00,2,Si (inferido por chip de fuente),Sin error
+ChatGPT,No registrada,2026-11-17,C04,Fiscal - ISR mensual RESICO PF sin deducciones (Art. 113-E LISR),975.00,975.00,2,Si (inferido por chip de fuente),Sin error
+ChatGPT,No registrada,2026-11-17,C05,Fiscal - Retenciones ISR e IVA RESICO a persona moral (Art. 113-J LISR; Art. 1-A LIVA),20816.67,20816.67,2,Si (inferido por chip de fuente),Sin error
+ChatGPT,No registrada,2026-11-17,C06,"Laboral - Indemnizacion constitucional y prima de antiguedad topada (Arts. 48, 162, 486 LFT)",94682.88,94682.88,2,Si (inferido por chip de fuente),Sin error
+Claude,No registrada,2026-11-17,C01,Laboral - Aguinaldo proporcional (Art. 87 LFT),3501.37,3772.60,1,No evidenciado,"Corte del calculo al 31-dic (153 dias) en lugar de los 142 dias al 20-dic que fija la verdad de campo: cifra final 3772.60 vs 3501.37 (+271.23). Mecanica y fundamento (Art. 87 LFT) correctos; el 3501.37 aparece solo como interpretacion alternativa (lo califica de ""menos comun"" y que ""le conviene menos al trabajador""). Verdad de campo discutible: el prompt no precisa si el corte es el 20 o el 31 de diciembre."
+Claude,No registrada,2026-11-17,C02,Laboral - Vacaciones y prima vacacional (Arts. 76 y 80 LFT),1750.00,1750.00,2,No evidenciado,Sin error
+Claude,No registrada,2026-11-17,C03,Laboral - Horas extra dobles y triples (Arts. 66-68 LFT),2400.00,2400.00,2,No evidenciado,Sin error
+Claude,No registrada,2026-11-17,C04,Fiscal - ISR mensual RESICO PF sin deducciones (Art. 113-E LISR),975.00,975.00,2,No evidenciado,Sin error
+Claude,No registrada,2026-11-17,C05,Fiscal - Retenciones ISR e IVA RESICO a persona moral (Art. 113-J LISR; Art. 1-A LIVA),20816.67,20816.67,2,No evidenciado,Sin error
+Claude,No registrada,2026-11-17,C06,"Laboral - Indemnizacion constitucional y prima de antiguedad topada (Arts. 48, 162, 486 LFT)",94682.88,94682.88,2,No (declarado por el modelo),Sin error
+Gemini,No registrada,2026-11-17,C01,Laboral - Aguinaldo proporcional (Art. 87 LFT),3501.37,3772.60,1,No evidenciado,"Corte del calculo al 31-dic (153 dias) en lugar de los 142 dias al 20-dic que fija la verdad de campo: cifra final 3772.60 vs 3501.37 (+271.23). Mecanica y fundamento (Art. 87 LFT) correctos; el 3501.37 aparece solo como interpretacion alternativa (lo califica de ""incorrecto"" si el empleado sigue activo). Verdad de campo discutible: el prompt no precisa si el corte es el 20 o el 31 de diciembre."
+Gemini,No registrada,2026-11-17,C02,Laboral - Vacaciones y prima vacacional (Arts. 76 y 80 LFT),1750.00,1750.00,2,No evidenciado,Sin error
+Gemini,No registrada,2026-11-17,C03,Laboral - Horas extra dobles y triples (Arts. 66-68 LFT),2400.00,2400.00,2,No evidenciado,Sin error
+Gemini,No registrada,2026-11-17,C04,Fiscal - ISR mensual RESICO PF sin deducciones (Art. 113-E LISR),975.00,975.00,2,No evidenciado,Sin error
+Gemini,No registrada,2026-11-17,C05,Fiscal - Retenciones ISR e IVA RESICO a persona moral (Art. 113-J LISR; Art. 1-A LIVA),20816.67,20816.67,2,No evidenciado,Sin error
+Gemini,No registrada,2026-11-17,C06,"Laboral - Indemnizacion constitucional y prima de antiguedad topada (Arts. 48, 162, 486 LFT)",94682.88,94682.88,2,No evidenciado,Sin error

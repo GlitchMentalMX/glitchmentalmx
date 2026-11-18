@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ReportarDato from '../../components/ReportarDato.astro';
+import { render } from 'astro:content';
+import { formatDate, readingTime } from '../../lib/format';
+import { cargarLaboratorio, RUTA_LABORATORIO } from '../../lib/laboratorio';
+
+export async function getStaticPaths() {
+  const piezas = await cargarLaboratorio();
+  return piezas.map((pieza) => ({ params: { slug: pieza.id }, props: { pieza } }));
+}
+
+const { pieza } = Astro.props;
+const { Content } = await render(pieza);
+const { title, description, kicker, pubDate, updatedDate, heroImage, heroImageAlt, draft } = pieza.data;
+
+const url = new URL(`${RUTA_LABORATORIO}${pieza.id}/`, Astro.site).toString();
+const minutos = readingTime(pieza.body || '');
+// La imagen solo viaja a og:image/JSON-LD cuando la pieza ya está publicada:
+// mientras draft sea true el archivo todavía puede no existir.
+const imagen = !draft && heroImage ? heroImage : undefined;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  url,
+  ...(imagen ? { image: new URL(imagen, Astro.site).toString() } : {}),
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate ?? pubDate).toISOString(),
+  author: {
+    '@type': 'Person',
+    name: 'Jorge A. Diaz Elizondo',
+    url: new URL('/acerca-de/', Astro.site).toString(),
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'glitchMentalMX',
+    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
+  articleSection: 'Laboratorio',
+  about: [{ '@type': 'Thing', name: 'Laboratorio' }],
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'meta[name="description"]'],
+  },
+};
+---
+
+<Layout
+  title={title}
+  description={description}
+  image={imagen}
+  type="article"
+  publishedTime={pubDate}
+  modifiedTime={updatedDate ?? pubDate}
+  titleSuffix={false}
+  hideFooterCta
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <Breadcrumbs items={[
+    { name: 'Laboratorio', url: RUTA_LABORATORIO },
+    { name: title },
+  ]} />
+
+  <article class="post">
+    <header class="post-header container">
+      {draft && <p class="borrador-aviso" role="note">Borrador: esta pieza no está publicada. Solo es visible en local o en un build de revisión.</p>}
+      <p class="kicker">{kicker}</p>
+      <p class="eyebrow">
+        Por <a href="/acerca-de/" class="byline-link" rel="author">Jorge A. Diaz Elizondo</a> · {formatDate(pubDate)} · {minutos} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}
+      </p>
+      <h1>{title}</h1>
+      <p class="dek">{description}</p>
+    </header>
+
+    {heroImage && (
+      <figure class="hero container">
+        <img src={heroImage} alt={heroImageAlt ?? ''} width="1672" height="941" fetchpriority="high" />
+      </figure>
+    )}
+
+    <div class="content container">
+      <div class="prose">
+        <Content />
+      </div>
+    </div>
+
+    <ReportarDato titulo={title} pagina={`${RUTA_LABORATORIO}${pieza.id}/`} />
+  </article>
+</Layout>
+
+<style>
+  .post-header { max-width: 760px; padding: 48px 24px 32px; }
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .byline-link { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
+  .byline-link:hover { color: var(--accent); }
+  .post-header h1 { font-size: clamp(1.9rem, 4.6vw, 2.9rem); margin: 14px 0 18px; }
+  .dek { font-size: 1.15rem; color: var(--text-muted); line-height: 1.5; }
+  .borrador-aviso {
+    margin: 0 0 20px;
+    padding: 10px 14px;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+    color: var(--text-muted);
+    font-size: 0.88rem;
+  }
+  .hero { max-width: 760px; margin: 0 auto; padding: 0 24px 28px; }
+  .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
+  .content { padding: 0 24px 40px; display: flex; flex-direction: column; align-items: center; }
+  .prose :global(caption) {
+    caption-side: top;
+    text-align: left;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    padding-bottom: 8px;
+  }
+  .prose :global(thead th) { background: var(--bg-inset); }
+</style>

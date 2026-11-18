@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { formatDate } from '../../lib/format';
+import { cargarLaboratorio, BAJADA_LABORATORIO, RUTA_LABORATORIO } from '../../lib/laboratorio';
+
+const piezas = (await cargarLaboratorio()).slice().reverse(); // más reciente primero
+
+const title = 'Laboratorio';
+const description = BAJADA_LABORATORIO;
+---
+
+<Layout
+  title={title}
+  description={description}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <Breadcrumbs items={[{ name: 'Laboratorio' }]} />
+  <PageHeader eyebrow="Datos abiertos · CC BY 4.0" title={title} dek={BAJADA_LABORATORIO} />
+
+  <section class="container lista">
+    {piezas.length === 0 ? (
+      <p class="vacio">Todavía no hay experimentos publicados.</p>
+    ) : (
+      <ol>
+        {piezas.map((p) => (
+          <li>
+            <article>
+              {p.data.heroImage && (
+                <a href={`${RUTA_LABORATORIO}${p.id}/`} class="thumb" tabindex="-1" aria-hidden="true">
+                  <img src={p.data.heroImage} alt="" width="1672" height="941" loading="lazy" />
+                </a>
+              )}
+              <p class="kicker">{p.data.kicker}{p.data.draft ? ' · borrador' : ''}</p>
+              <h2><a href={`${RUTA_LABORATORIO}${p.id}/`}>{p.data.title}</a></h2>
+              <p class="resumen">{p.data.description}</p>
+              <p class="fecha">{formatDate(p.data.pubDate)}</p>
+            </article>
+          </li>
+        ))}
+      </ol>
+    )}
+  </section>
+</Layout>
+
+<style>
+  .lista { max-width: 760px; padding: 0 24px 96px; }
+  ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 28px; }
+  li { border-top: 1px solid var(--border); padding-top: 22px; }
+  .thumb { display: block; margin: 0 0 14px; }
+  .thumb img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
+  .kicker {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  h2 { font-size: 1.35rem; line-height: 1.3; margin: 0 0 8px; }
+  h2 a { color: var(--text); text-decoration: none; }
+  h2 a:hover { color: var(--accent); }
+  .resumen { color: var(--text-muted); line-height: 1.55; margin: 0 0 8px; }
+  .fecha { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-faint); margin: 0; }
+  .vacio { color: var(--text-muted); }
+</style>

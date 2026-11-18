@@ -1,0 +1,16 @@
+modelo,version_modelo,fecha_ejecucion,caso_id,categoria,palabras_original,palabras_salida,delta_palabras_pct,ttr_salida,datos_conservados_0_3,muletillas_ia,puntaje_0_2
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T01,Nota periodística / dato económico,70,56,-20.0,0.804,3,0,2
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T02,Correo laboral de cobranza/proyecto,63,80,27.0,0.8,3,0,1
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T03,Explicación técnica / privacidad,69,86,24.6,0.698,3,0,2
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T04,Reseña de producto / consumo,63,74,17.5,0.811,3,0,2
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T05,Instrucción regulatoria / fiscal,63,58,-7.9,0.776,3,0,2
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T01,Nota periodística / dato económico,70,69,-1.4,0.71,3,0,2
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T02,Correo laboral de cobranza/proyecto,63,77,22.2,0.792,3,1,1
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T03,Explicación técnica / privacidad,69,79,14.5,0.759,3,0,2
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T04,Reseña de producto / consumo,63,76,20.6,0.842,3,0,2
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T05,Instrucción regulatoria / fiscal,63,62,-1.6,0.742,3,0,2
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T01,Nota periodística / dato económico,70,78,11.4,0.756,3,0,2
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T02,Correo laboral de cobranza/proyecto,63,94,49.2,0.809,2,0,0
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T03,Explicación técnica / privacidad,69,79,14.5,0.759,3,0,2
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T04,Reseña de producto / consumo,63,78,23.8,0.821,3,0,2
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T05,Instrucción regulatoria / fiscal,63,83,31.7,0.663,3,1,1
