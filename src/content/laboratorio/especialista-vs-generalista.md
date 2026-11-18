@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 05"
 experimento: 5
 pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-05-especialista-vs-generalista/hero.webp
-heroImageAlt: "Especialista vs. chat generalista: analista compara instrumentos dedicados frente a un sistema unificado en sala de pruebas."
+heroImageAlt: "Navaja multiusos de acero con múltiples herramientas desplegadas, rodeada de instrumentos especializados de laboratorio: microscopio, espectrómetro, bisturís y diapasón."
 csv: /datos/laboratorio-05-especialista-vs-generalista.csv
 draft: true
 ---

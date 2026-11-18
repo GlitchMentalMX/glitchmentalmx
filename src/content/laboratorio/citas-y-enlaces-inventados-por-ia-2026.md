@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 07"
 experimento: 7
 pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-07-citas-enlaces-inventados-2026/hero.webp
-heroImageAlt: "Citas y enlaces inventados por IA en 2026: investigadora verifica fuentes y documentos primarios en biblioteca."
+heroImageAlt: "Cajón de un fichero de biblioteca con una ficha traslúcida luminosa entre las demás, inspeccionada con una lupa de latón."
 csv: /datos/laboratorio-07-citas-enlaces-inventados-2026.csv
 draft: true
 ---

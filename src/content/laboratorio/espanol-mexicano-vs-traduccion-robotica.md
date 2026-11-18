@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 11"
 experimento: 11
 pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-11-espanol-mexicano-vs-traduccion-robotica/hero.webp
-heroImageAlt: "Español mexicano real vs. traducción robótica: analista compara borradores y matrices de puntaje en estudio tipográfico."
+heroImageAlt: "Caja de composición tipográfica: un brazo robótico coloca tipos idénticos mientras unas manos humanas colocan los signos ¿, ñ y á."
 csv: /datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv
 draft: true
 ---

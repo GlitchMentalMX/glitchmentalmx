@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 09"
 experimento: 9
 pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-09-humanizar-texto-ia/hero.webp
-heroImageAlt: "Humanizar textos con IA: cuánto degrada la prosa: editora revisa manuscrito y métricas léxicas en taller de redacción."
+heroImageAlt: "Matraz pequeño con tinta oscura conectado por un tubo de vidrio a otro enorme que se desborda de espuma, junto a una hoja manuscrita."
 csv: /datos/laboratorio-09-humanizar-texto-ia.csv
 draft: true
 ---

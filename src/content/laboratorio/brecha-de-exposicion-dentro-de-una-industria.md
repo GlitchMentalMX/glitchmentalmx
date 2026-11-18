@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 01"
 experimento: 1
 pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-01-brecha-exposicion/hero.webp
-heroImageAlt: "Brecha de exposición a la IA: analista compara matrices de trabajo y porcentajes de automatización en estudio."
+heroImageAlt: "Dos cilindros graduados de cristal con líquido ámbar a distinto nivel, con un calibrador de latón sobre ellos, en un banco de laboratorio."
 csv: /datos/laboratorio-01-brecha-exposicion.csv
 draft: true
 ---

@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 03"
 experimento: 3
 pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-03-costo-real-ia/hero.webp
-heroImageAlt: "Costo real de la IA en México: analista compara límites de planes gratuitos y tarifas de suscripción en estudio."
+heroImageAlt: "Balanza de precisión en equilibrio: una pila de monedas en un platillo y un cubo de cristal luminoso en el otro."
 csv: /datos/laboratorio-03-costo-real-ia.csv
 draft: true
 ---

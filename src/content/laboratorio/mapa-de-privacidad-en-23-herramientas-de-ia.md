@@ -5,7 +5,7 @@ kicker: "Laboratorio · Experimento 02"
 experimento: 2
 pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-02-mapa-privacidad/hero.webp
-heroImageAlt: "Mapa de privacidad en 23 herramientas de IA: analista audita políticas de retención de datos con lupa en estudio."
+heroImageAlt: "Gradilla de acero con viales que brillan en ámbar y liberan humo dorado, salvo unos pocos oscuros y sellados, y una mano enguantada sosteniendo uno de ellos."
 csv: /datos/laboratorio-02-mapa-privacidad.csv
 draft: true
 ---
