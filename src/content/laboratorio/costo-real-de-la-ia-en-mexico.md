@@ -1,6 +1,6 @@
 ---
-title: "21 de 23 herramientas de IA ofrecen gratis recurrente; la mediana del primer plan de pago es de 15 USD (8 USD en chats generales)"
-description: "De 23 herramientas de IA del Recomendador de glitchMentalMX, 21 tienen nivel gratis recurrente y 20 no piden tarjeta. El primer escalón de pago tiene una mediana de 15 USD, no 20."
+title: "21 de 23 herramientas de IA ofrecen gratis recurrente; el primer plan de pago típico cuesta 15 USD (8 USD en chats generales)"
+description: "De 23 herramientas de IA del Recomendador de glitchMentalMX, 21 tienen nivel gratis recurrente y 20 no piden tarjeta. El primer escalón de pago típico cuesta 15 USD, no 20."
 kicker: "Laboratorio · Experimento 03"
 experimento: 3
 pubDate: 2026-11-17
@@ -13,7 +13,7 @@ draft: false
 ## Resumen ejecutivo
 
 - **Qué probamos:** si el nivel gratis de las 23 herramientas del Recomendador sirve para trabajar y cuánto cuesta, en México, el primer escalón individual de pago.
-- **Qué encontramos:** 21 de 23 tienen nivel gratis recurrente y 20 no piden tarjeta. El primer escalón de pago tiene una mediana de 15 USD (8 USD en chats generales), no 20. Pero el gratis trae candados: uso comercial prohibido, marcas de agua y topes sin cifra.
+- **Qué encontramos:** 21 de 23 tienen nivel gratis recurrente y 20 no piden tarjeta. El primer escalón de pago típico cuesta 15 USD (8 USD en chats generales), no 20. Pero el gratis trae candados: uso comercial prohibido, marcas de agua y topes sin cifra.
 - **Qué significa:** probar casi siempre es gratis y entrar al pago es más barato de lo que se repite. Trabajar sin restricciones comerciales ni marcas de agua sigue costando más.
 
 ## Protocolo y límites
@@ -25,13 +25,13 @@ Tomamos las 23 herramientas del [Recomendador](/que-ia-me-conviene/): 7 chats ge
 - Es revisión documental de páginas oficiales. No hicimos compras con tarjeta.
 - Todos los precios son de suscripción mensual individual, sin descuentos anuales.
 - Los montos en pesos (ChatGPT, $110; Google AI Plus, $99) son tarifas regionales anunciadas en México, con IVA, no conversiones cambiarias. El resto se cobra en dólares y su costo final depende del tipo de cambio y de impuestos.
-- Meta AI y DeepSeek quedan fuera de la mediana y el promedio porque no tienen plan de pago en México. El cálculo usa 21 herramientas.
+- Meta AI y DeepSeek quedan fuera del cálculo de precios porque no tienen plan de pago en México. El cálculo usa 21 herramientas.
 - Sin planes empresariales. ElevenLabs refleja el plan Creator de su ficha; si existe un escalón más barato no documentado, no está aquí.
 - Son 23 herramientas, no el mercado completo.
 
 ## Evidencia
 
-Con las 21 herramientas que sí tienen plan de pago, el rango va de 4.99 a 30 USD y la mediana es de 15 USD. En los 5 chats generales con plan de pago la mediana baja a 8 USD; en los 16 especialistas sube a 16.5 USD. En 13 herramientas el primer escalón cuesta menos de 20 USD y en 8 cuesta 20 o más. Sobre tarjeta: 20 no la piden, Midjourney no tiene gratis y en Canva y Consensus no se pudo verificar.
+Con las 21 herramientas que sí tienen plan de pago, el rango va de 4.99 a 30 USD y el precio típico es de 15 USD (la mediana: la mitad de las herramientas cuesta menos y la otra mitad más). En los 5 chats generales con plan de pago el precio típico baja a 8 USD; en los 16 especialistas sube a 16.5 USD. En 13 herramientas el primer escalón cuesta menos de 20 USD y en 8 cuesta 20 o más. Sobre tarjeta: 20 no la piden, Midjourney no tiene gratis y en Canva y Consensus no se pudo verificar.
 
 <table>
 <thead><tr><th>Herramienta</th><th>Tipo</th><th>Gratis</th><th>Tarjeta</th><th>Primer escalón (USD)</th><th>Primer escalón (MXN)</th><th>Freno clave del gratis</th></tr></thead>

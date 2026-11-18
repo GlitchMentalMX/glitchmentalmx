@@ -1,6 +1,6 @@
 ---
 title: "Los 16 especialistas de IA cuestan más del doble de entrada (16.50 USD frente a 8.00 USD en chats generales), pero cubren en exclusiva solo 2 de 7 usos y 7 de 10 subusos"
-description: "La mediana del primer escalón es de 16.50 USD en los 16 especialistas de IA y de 8.00 USD en los chats generales con precio documentado. Solo la voz y la música, y 7 de 10 subusos, carecen de un chat general fuerte."
+description: "El primer escalón típico cuesta 16.50 USD en los 16 especialistas de IA y 8.00 USD en los chats generales con precio documentado. Solo la voz y la música, y 7 de 10 subusos, carecen de un chat general fuerte."
 kicker: "Laboratorio · Experimento 05"
 experimento: 5
 pubDate: 2026-11-17
@@ -13,8 +13,8 @@ draft: false
 ## Resumen ejecutivo
 
 - **Qué probamos:** si los especialistas del Recomendador justifican su precio frente a un chat general, según las reglas del motor y la matriz de 23 herramientas de `actual.json`.
-- **Qué encontramos:** la mediana del primer escalón es de 16.50 USD en los 16 especialistas y de 8.00 USD en los 5 chats generales con precio documentado. Solo la voz y la música (2 de 7 usos) carecen de un chat general fuerte, y 7 de 10 subusos no los cubre ninguno.
-- **Qué significa:** pagar un especialista se justifica en la matriz cuando necesitas uno de esos subusos sin cobertura fuerte en chats generales o no entrenar por defecto; en el resto de categorías, un chat general ofrece cobertura declarada equivalente con menor mediana de entrada.
+- **Qué encontramos:** el primer escalón típico cuesta 16.50 USD en los 16 especialistas y 8.00 USD en los 5 chats generales con precio documentado. Solo la voz y la música (2 de 7 usos) carecen de un chat general fuerte, y 7 de 10 subusos no los cubre ninguno.
+- **Qué significa:** pagar un especialista se justifica en la matriz cuando necesitas uno de esos subusos sin cobertura fuerte en chats generales o no entrenar por defecto; en el resto de categorías, un chat general ofrece cobertura declarada equivalente con menor precio típico de entrada.
 
 ## Protocolo y límites
 
@@ -23,7 +23,7 @@ Con corte al 17 de noviembre de 2026 auditamos las reglas del motor de [/que-ia-
 - **No son pruebas ciegas de calidad.** El Recomendador evalúa cobertura funcional declarada (niveles fuerte, básico o no). "Compite directo" significa que el mapa no distingue al especialista de un chat general, no que den la misma salida.
 - **El precio no entra en la fórmula del Recomendador.** El cruce con el costo es nuestro.
 - **"Exclusivo": ningún chat general es fuerte en ese uso.** Gemini marca música en nivel básico; la voz no la ofrece ninguno.
-- **Sin precio documentado:** Meta AI y DeepSeek, por eso la mediana de chats generales usa 5 de 7.
+- **Sin precio documentado:** Meta AI y DeepSeek, por eso el precio típico de los chats generales (la mediana, el valor central) usa 5 de 7.
 - **Opt-out:** 7 de los 12 especialistas que entrenan por defecto lo ofrecen, 4 no y Perplexity quedó sin verificar; v0 va aparte (depende del plan). En chats generales, 5 de 7.
 - **Inferencia editorial:** la naturaleza de salida y la etiqueta frente al chat generalista. *Formato nativo imposible en chat*: algún uso fuerte del especialista no lo ofrece ningún chat. *Flujo especializado con mejor integración*: todos sus usos fuertes los ofrece algún chat, pero en alguno ninguno es fuerte, o tiene un subuso fuerte exclusivo. *Compite directo con chat generalista*: cada uso fuerte tiene un chat fuerte y ningún subuso exclusivo.
 
@@ -72,7 +72,7 @@ Con corte al 17 de noviembre de 2026 auditamos las reglas del motor de [/que-ia-
 
 En investigación documental la hipótesis falló al revés. NotebookLM (4.99 USD) y Consensus (20 USD) aportan algo que ningún chat general da: no entrenar por defecto. Con Adobe Firefly (9.99 USD) son los tres especialistas que no entrenan por defecto, frente a los 7 chats generales, que entrenan todos.
 
-**3. Cuándo conviene pagar la diferencia.** La mediana de un especialista es 8.50 USD más alta que la de un chat general. Se justifica si necesitas alguno de los 7 subusos específicos del Recomendador donde ningún chat general tiene cobertura fuerte (frente a los 3 compartidos: búsqueda web, generación y editor):
+**3. Cuándo conviene pagar la diferencia.** El precio típico de un especialista es 8.50 USD más alto que el de un chat general. Se justifica si necesitas alguno de los 7 subusos específicos del Recomendador donde ningún chat general tiene cobertura fuerte (frente a los 3 compartidos: búsqueda web, generación y editor):
 
 - **Papers con citas verificables:** Consensus.
 - **Investigar solo con tus documentos:** NotebookLM.
