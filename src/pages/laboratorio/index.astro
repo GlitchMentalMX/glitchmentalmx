@@ -45,9 +45,16 @@ const description = BAJADA_LABORATORIO;
 </Layout>
 
 <style>
-  .lista { max-width: 760px; padding: 0 24px 96px; }
-  ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 28px; }
-  li { border-top: 1px solid var(--border); padding-top: 22px; }
+  /* Contenedor editorial del sitio (--container); el grid se ajusta solo. */
+  .lista { padding: 0 24px 96px; }
+  ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 40px; }
+  @media (min-width: 768px) {
+    ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 36px; }
+  }
+  li { display: flex; border-top: 1px solid var(--border); padding-top: 22px; }
+  /* La tarjeta ocupa toda la celda: la fecha baja al pie para que las filas
+     queden alineadas aunque los titulares tengan distinta longitud. */
+  article { display: flex; flex-direction: column; width: 100%; }
   .thumb { display: block; margin: 0 0 14px; }
   .thumb img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
   .kicker {
@@ -58,10 +65,19 @@ const description = BAJADA_LABORATORIO;
     color: var(--accent);
     margin: 0 0 8px;
   }
-  h2 { font-size: 1.35rem; line-height: 1.3; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; line-height: 1.3; margin: 0 0 8px; }
   h2 a { color: var(--text); text-decoration: none; }
   h2 a:hover { color: var(--accent); }
-  .resumen { color: var(--text-muted); line-height: 1.55; margin: 0 0 8px; }
-  .fecha { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-faint); margin: 0; }
+  .resumen {
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0 0 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .fecha { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-faint); margin: auto 0 0; }
   .vacio { color: var(--text-muted); }
 </style>
