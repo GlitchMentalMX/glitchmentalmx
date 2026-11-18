@@ -2,12 +2,12 @@
 title: 'China no prohíbe la IA compañera: prohíbe retenerte'
 slug: china-ia-de-compania-retencion
 category: Cultura Digital
-pubDate: 2026-11-16T19:52
+pubDate: 2026-11-18T06:25
 updatedDate: ''
 description: 'La norma china sobre IA antropomórfica no prohíbe la compañía a los adultos. Regula tres cosas: cómo sales, para qué existe el servicio y cuánto te halaga.'
 heroImage: /images/uploads/ia-companera.webp
 heroImageAlt: Mujer joven sostiene su celular junto a la puerta de casa, con gesto de desconcierto ante una conversación con una IA compañera.
-draft: true
+draft: false
 ---
 
 Algunos medios resumieron la norma china como una prohibición de la IA de compañía. El texto oficial no se la prohíbe a los adultos: **regula el negocio de retenerte**, empezando por el momento en que intentas despedirte. La pregunta incómoda es qué pasa donde retener sigue siendo legal.
