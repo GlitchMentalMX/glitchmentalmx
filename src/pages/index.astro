@@ -968,8 +968,8 @@ const signalPools = {
     .insight-title { font-size: 1.7rem; }
   }
 
-  /* Laboratorio — banda con la portada del experimento más reciente. Misma
-     lógica de Insights (texto a la izquierda, imagen a la derecha en
+  /* Laboratorio — banda con la portada del experimento más reciente. En
+     zigzag respecto a Insights (imagen a la izquierda, texto a la derecha en
      escritorio; una columna en móvil), con el aire de "ficha de laboratorio". */
   section.laboratorio-band { padding: 44px 24px; border-top: 1px solid var(--border); }
   .lab-layout { display: flex; flex-direction: column; gap: 18px; }
@@ -981,9 +981,9 @@ const signalPools = {
   .lab-stat { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-faint); margin: 12px 0 0; }
   .lab-cta { margin: 16px 0 0; }
   @media (min-width: 1024px) {
-    .lab-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 2.5rem; align-items: center; }
-    .lab-hero { grid-column: 2; grid-row: 1; }
-    .lab-text { grid-column: 1; grid-row: 1; }
+    .lab-layout { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); column-gap: 2.5rem; align-items: center; }
+    .lab-hero { grid-column: 1; grid-row: 1; }
+    .lab-text { grid-column: 2; grid-row: 1; }
     .lab-title { font-size: 2rem; }
   }
 
