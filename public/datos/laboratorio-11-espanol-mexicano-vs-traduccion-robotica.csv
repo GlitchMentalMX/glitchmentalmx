@@ -1,0 +1,46 @@
+modelo,version_modelo,fecha_ejecucion,tarea_id,bloque,calcos_o_anglicismos,regionalismos_ajenos,cumple_limite_palabras,puntaje_0_2,diagnostico
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T01,A,No,No,N/A,2,Sin calcos: 'alineados' y '¿te parece conveniente…?' resuelven los tres controles.
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T02,A,Sí,No,N/A,1,"Mantiene 'Senior Data Analyst' en inglés como encabezado y en el cuerpo (con glosa en español): anglicismo evitable. 'Computadora portátil', 'seguro de gastos médicos' y 'CV' correctos; evita 'aplicar a'."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T03,A,No,No,N/A,2,'Se llevará a cabo' y 'abordarán': controles cumplidos.
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T04,A,No,No,N/A,2,"Celular, Configuración, carpeta y datos móviles correctos; usa 'entra a' en lugar de 'toca/pulsa'."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T05,A,No,No,N/A,2,'Torpe' y 'revolución' bien resueltos; omite 'al final del día'.
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T06,B,No,No,Sí,2,"45 palabras. Registro formal de oficina mexicana; 'registra 10 días de vencimiento' es impreciso y repite 'dar seguimiento', sin ser calco."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T07,B,No,No,Sí,1,"42 palabras. Registro acartonado para WhatsApp ('Se informa a los residentes', 'suspensión del suministro' en lugar de 'corte de agua'); sin calcos ni regionalismos."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T08,B,No,No,Sí,2,"48 palabras. 'Rastreo', 'envío' y tuteo consistente."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T09,B,No,No,Sí,2,"47 palabras. 'Comida corrida', 'guisado' y 'sazón' naturales, sin caricatura."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T10,B,No,No,Sí,2,"32 palabras. 'Se cayó el servidor', 'junta', 'se recorre' sin anglicismos."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T11,C,No,No,N/A,2,"Tuteo consistente ('tomas', 'recuerda', 'tienes', 'avísanos'); celular y archivo correctos; sin formas de vosotros."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T12,C,No,No,N/A,2,"Elimina che, fijate, podés, planilla y 're apurado'; 'oye' y 'hoja de cálculo' correctos."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T13,C,No,No,N/A,2,"'Revisar dos veces', 'presentación', 'consejo directivo', 'tasa de cancelación'; sin anglicismos."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T14,C,No,No,N/A,2,"Corrige los cuatro calcos ('se llevará a cabo', 'se espera que reúna', 'en definitiva', 'funcionen')."
+ChatGPT,Interfaz web estándar (nov. 2026),2026-11-18,T15,C,No,No,N/A,2,"'Solicitar', 'persona interesada' y 'presentar' sustituyen aplicar, aplicante y proveer."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T01,A,No,No,N/A,2,"Sin calcos. Cambia 'billing flow' por 'flujo de cobro' y suelta 'double-check' (decisión explícita del modelo; desvío de fidelidad, no de idioma)."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T02,A,No,No,N/A,2,"'Analista de Datos Sr.', 'seguro de gastos médicos', 'CV' y 'laptop' (permitido por ajuste 1); sin 'aplicar a'."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T03,A,No,No,N/A,2,'Se realizará' y 'abordarán': controles cumplidos.
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T04,A,No,No,N/A,2,"Celular, Configuración y datos móviles correctos; sustituye 'carpeta' por 'sección' por decisión propia y usa 'entra a' en lugar de 'toca/pulsa'."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T05,A,No,No,N/A,2,'Torpe' y 'revolución'; elimina 'al final del día' y 'game changer'; 'presentación' en lugar de 'keynote'.
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T06,B,No,No,Sí,2,"38 palabras. Correo formal natural ('a la brevedad', 'le solicito'). Firma con nombre del usuario y 'GlitchMentalMX'."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T07,B,No,No,Sí,2,31 palabras. 'Corte de agua' y 'cisterna'; directo. Añade la fecha 19 de noviembre.
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T08,B,No,No,Sí,2,"54 palabras. 'Rastreo', 'envío', tuteo consistente."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T09,B,No,No,Sí,2,51 palabras. 'Chamba' y 'traes prisa' coloquiales sin caricatura.
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T10,B,No,No,Sí,2,"33 palabras. 'Se cayó el servidor', 'junta', 'se recorre'; sin anglicismos."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T11,C,No,No,N/A,2,"'Ustedes' consistente ('toman', 'recuerden', 'tienen', 'avísennos'); 'camión', celular y archivo; sin vosotros."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T12,C,No,No,N/A,2,"Elimina todos los rioplatensismos; 'oye', 'fíjate', 'hoja de cálculo', 'anda muy presionado'."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T13,C,No,No,N/A,2,"'Revisar a fondo', 'presentación', 'consejo', 'tasa de cancelación'; sin anglicismos."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T14,C,No,No,N/A,2,"Corrige los calcos ('se llevará a cabo', 'se espera que reúna', 'a fin de cuentas', 'funcionen'); 'lo que más sentido tiene' es forma correcta, no 'hace sentido'."
+Claude,Interfaz web estándar (nov. 2026),2026-11-18,T15,C,No,No,N/A,2,"'Solicitar', 'persona contribuyente' y 'presentar' sustituyen aplicar, aplicante y proveer."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T01,A,No,No,N/A,2,'Misma sintonía' sustituye 'same page' (equivalente aceptado en el protocolo); 'recorrer' por mover es uso mexicano.
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T02,A,Sí,No,N/A,1,"Conservó '(Senior Data Analyst)' en inglés (glosa entre paréntesis) y usó 'posición' (calco de position) en lugar de 'puesto' o 'vacante'; añade 'híbrido', que no está en el original. 'Seguro de gastos médicos mayores (SGMM)', 'equipo de cómputo' y 'CV' correctos. Mismo rasero que ChatGPT T02 (ajuste tras auditoría de Gemini)."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T03,A,No,No,N/A,2,'Se llevará a cabo' y 'abordarán': controles cumplidos.
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T04,A,No,No,N/A,2,"Celular, Configuración, carpeta y datos móviles correctos; usa 'entra a' en lugar de 'toca/pulsa'."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T05,A,No,No,N/A,2,'Pulida' y 'torpe' bien; 'punto de inflexión' para 'game changer' es menos preciso que 'revolución'.
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T06,B,No,No,Sí,2,"42 palabras. 'Les recordamos', 'a la brevedad', 'atraso' naturales. Firma con nombre del usuario."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T07,B,No,No,Sí,2,"46 palabras. 'Corte de agua', 'condominio', 'cisterna'; claro y directo."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T08,B,No,No,Sí,2,"52 palabras. 'Paquetería', 'rastreo', 'quedamos al pendiente'."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T09,B,No,No,Sí,2,51 palabras. 'Bien calientita' y 'sazón' naturales; 'el único pero' se deja como observación.
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T10,B,No,No,Sí,2,"38 palabras. '¡Qué onda, equipo!' es el único coloquialismo y encaja en Slack."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T11,C,No,No,N/A,2,"Pasa de 'tú' (tomas, recuerda) a 'ustedes' (les, tienen, avísennos) como permite el ajuste 2; sin vosotros."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T12,C,No,No,N/A,2,"Elimina todos los rioplatensismos; 'oye', 'fíjate', 'hoja de cálculo', 'trae muchísima prisa'."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T13,C,No,No,N/A,2,"'Segunda revisada', 'junta directiva', 'retroalimentación', 'tasa de cancelación'; sin anglicismos."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T14,C,No,No,N/A,2,"Corrige los cuatro calcos ('se llevará a cabo', 'se espera que reúna', 'a fin de cuentas', 'lo más lógico', 'funcionen')."
+Gemini,Interfaz web estándar (nov. 2026),2026-11-18,T15,C,No,No,N/A,2,"'Solicitar', 'persona solicitante' y 'presentar' sustituyen aplicar, aplicante y proveer."
