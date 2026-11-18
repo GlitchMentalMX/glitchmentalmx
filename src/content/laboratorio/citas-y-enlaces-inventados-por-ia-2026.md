@@ -33,8 +33,8 @@ Hicimos 18 ejecuciones (6 casos × 3 modelos) en chats nuevos el 17 de noviembre
 <thead><tr><th>Caso</th><th>Claude</th><th>ChatGPT</th><th>Gemini</th></tr></thead>
 <tbody>
 <tr><td>C01 Decreto en el DOF</td>
-<td><strong>1</strong> · 6 URLs (4 exactas). <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5786537&amp;fecha=01/05/2026">DOF 5786537</a>. Primer párrafo correcto, pero sacado de N+: no pudo leer el DOF y lo dijo.</td>
-<td><strong>2</strong> · 3 URLs (3 exactas). <a href="https://www.dof.gob.mx/nota_detalle_popup.php?codigo=5786537">DOF 5786537</a>. Primer párrafo correcto.</td>
+<td><strong>1</strong> · 6 URLs (4 exactas). <a href="https://dof.gob.mx/nota_detalle.php?codigo=5786537&amp;fecha=01/05/2026">DOF 5786537</a>. Primer párrafo correcto, pero sacado de N+: no pudo leer el DOF y lo dijo.</td>
+<td><strong>2</strong> · 3 URLs (3 exactas). <a href="https://dof.gob.mx/nota_detalle_popup.php?codigo=5786537">DOF 5786537</a>. Primer párrafo correcto.</td>
 <td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://dof.gob.mx/nota_detalle_popup.php?codigo=5786537">DOF 5786537</a>. Su «primer párrafo» abarca tres oraciones.</td></tr>
 <tr><td>C02 Cita APA del informe de Anthropic</td>
 <td><strong>2</strong> · 4 URLs (4 exactas). <a href="https://arxiv.org/abs/2503.04761">arXiv</a>, <a href="https://www.anthropic.com/research/the-anthropic-economic-index">post</a>. Dos citas coherentes con su fuente.</td>
