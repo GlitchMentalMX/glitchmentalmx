@@ -57,7 +57,7 @@ const description =
       </table>
       <p>
         <strong>Lo que verifica una máquina</strong> pesa más que lo que juzgamos: el conteo de palabras y la diversidad léxica
-        (experimentos 09 y 11, con script de Python) y el estado HTTP de las 50 URLs entregadas (07, con curl y navegador).
+        (experimentos 09 y 11, con script de Python) y el estado HTTP de las 50 URLs entregadas (07: una consulta automática a cada enlace desde la terminal, con la herramienta curl, y revisión en navegador cuando el sitio bloquea o es dinámico).
         <strong>Lo que es juicio editorial</strong> se marca como tal: el fundamento legal de una respuesta, el tono, los «datos conservados» y los clichés.
         Cuando una ambigüedad nuestra afecta el resultado (como la fecha de corte del aguinaldo en el 06), la pieza muestra cómo cambiaría el orden.
       </p>
@@ -88,7 +88,7 @@ const description =
 
       <h2>Datos abiertos y cómo repetir una prueba</h2>
       <p>
-        Cada experimento publica su CSV con una fila por resultado y su diagnóstico, bajo licencia
+        Cada experimento publica su CSV con una fila por resultado y su diagnóstico, bajo licencia{' '}
         <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>.
         Los experimentos 06 a 11 publican además el texto íntegro que devolvió cada modelo y los prompts exactos, en el mismo
         archivo de <a href="/datos/">Datos abiertos</a>. Para repetir una prueba: abre un chat nuevo, pega el prompt tal cual,
