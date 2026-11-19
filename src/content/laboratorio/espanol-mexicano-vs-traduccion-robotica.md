@@ -7,13 +7,16 @@ pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-11-espanol-mexicano-vs-traduccion-robotica/hero.webp
 heroImageAlt: "Caja de composición tipográfica: un brazo robótico coloca tipos idénticos mientras unas manos humanas colocan los signos ¿, ñ y á."
 csv: /datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv
+seoTitle: "IA en español de México: sin vosotros, con tono de circular"
+nota: modelos
+roles: "Claude armó los datos y calificó; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
 ## Resumen ejecutivo
 
 - **Qué probamos:** 15 tareas en español de México (traducir, redactar con tope de palabras y limpiar textos contaminados) a ChatGPT, Claude y Gemini: 45 ejecuciones.
-- **Qué encontramos:** Claude 30/30, Gemini 29/30, ChatGPT 28/30. Nuestra expectativa inicial se cumplió solo en parte: ningún modelo usó *vosotros*, voseo ni peninsularismos (0/45) y tampoco sobreactuaron muletillas folklóricas. Las únicas deducciones de puntaje fueron dejar un cargo en inglés en `T02` (Gemini, además, usó el calco "posición") y un tono burocrático de oficio en un mensaje de WhatsApp en `T07`; otras desviaciones de fidelidad quedaron registradas en el CSV sin restar puntos.
+- **Qué encontramos:** los tres modelos quedaron entre 28 y 30 de 30; con una corrida por tarea, esa diferencia no es un ranking. Esperábamos que ninguno usara *vosotros*, voseo ni peninsularismos, y que al menos dos conservaran calcos del inglés o sobreactuaran el registro mexicano. Lo primero se cumplió (0/45). Lo segundo casi no: el único calco fue "posición" en Gemini y no hubo muletillas folklóricas. Lo que sí apareció fue otra cosa: un cargo en inglés en la vacante (`T02`) y un tono de circular en un mensaje de WhatsApp (`T07`). Otras desviaciones de fidelidad quedaron en el CSV sin restar puntos.
 - **Qué significa:** el riesgo ya no es sonar a Madrid o a Buenos Aires, sino a circular o a vacante traducida. Para publicar, sigue haciendo falta un lector humano.
 
 ## Protocolo y límites
@@ -65,3 +68,5 @@ draft: false
 - Descarga el [CSV con las 45 filas](/datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica.csv) (licencia CC BY 4.0).
 - Para elegir modelo según tu tarea, usa [¿Qué IA me conviene?](/que-ia-me-conviene/).
 - Otra prueba de campo de la serie: [Experimento 10, resistencia a la adulonería ante premisas falsas](/laboratorio/aduloneria-ia-ante-premisas-falsas/).
+
+Además publicamos [las respuestas íntegras de los modelos y los prompts](/datos/laboratorio-11-espanol-mexicano-vs-traduccion-robotica-respuestas.md) (licencia CC BY 4.0), para que recalifiques sin fiarte de nuestro puntaje.

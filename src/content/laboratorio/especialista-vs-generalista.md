@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-05-especialista-vs-generalista/hero.webp
 heroImageAlt: "Navaja multiusos de acero con múltiples herramientas desplegadas, rodeada de instrumentos especializados de laboratorio: microscopio, espectrómetro, bisturís y diapasón."
 csv: /datos/laboratorio-05-especialista-vs-generalista.csv
+seoTitle: "Especialistas de IA cuestan el doble de entrada que un chat"
+nota: datos
+roles: "Claude Code extrajo los datos de las fichas y los índices del propio sitio y Claude armó el expediente; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 

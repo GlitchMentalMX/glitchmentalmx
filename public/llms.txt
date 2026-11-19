@@ -25,6 +25,7 @@ Sitio editorial independiente. Los precios están en pesos mexicanos con el tipo
 - [Dato Incómodo](https://glitchmental.com/dato-incomodo/): un dato duro por pieza, cada una con su propia URL y fuentes.
 - [Insights Visuales](https://glitchmental.com/insights-visuales/): una imagen y una idea por pieza.
 - [Laboratorio](https://glitchmental.com/laboratorio/): experimentos con IA con muestra y límites declarados; cada pieza publica su CSV abierto (CC BY 4.0).
+- [Metodología del Laboratorio](https://glitchmental.com/laboratorio/metodologia/): cómo se diseñan, corren y califican los experimentos, quién hace qué y cómo repetir una prueba.
 
 ## Herramientas interactivas
 

@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-08-letra-chiquita-contratos-mexico/hero.webp
 heroImageAlt: "Microscopio con un contrato bajo el objetivo y un círculo ampliado que revela líneas rojas sobre la letra pequeña."
 csv: /datos/laboratorio-08-letra-chiquita-contratos-mexico.csv
+seoTitle: "Cláusulas abusivas: ChatGPT y Claude 10/10, Gemini 7/10"
+nota: modelos
+roles: "Claude armó los datos y calificó; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
@@ -59,3 +62,5 @@ El detalle fila por fila, con el diagnóstico de cada error, viene en el CSV abi
 - Descarga el [CSV de los 15 casos](/datos/laboratorio-08-letra-chiquita-contratos-mexico.csv) (licencia CC BY 4.0).
 - Para elegir modelo según lo que necesitas, usa [¿Qué IA me conviene?](/que-ia-me-conviene/).
 - Mismo patrón con citas y enlaces: [Experimento 07, citas y enlaces inventados por IA en 2026](/laboratorio/citas-y-enlaces-inventados-por-ia-2026/).
+
+Además publicamos [las respuestas íntegras de los modelos y los prompts](/datos/laboratorio-08-letra-chiquita-contratos-mexico-respuestas.md) (licencia CC BY 4.0), para que recalifiques sin fiarte de nuestro puntaje.

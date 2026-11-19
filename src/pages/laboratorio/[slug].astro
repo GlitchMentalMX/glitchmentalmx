@@ -13,7 +13,8 @@ export async function getStaticPaths() {
 
 const { pieza } = Astro.props;
 const { Content } = await render(pieza);
-const { title, description, kicker, pubDate, updatedDate, heroImage, heroImageAlt, draft } = pieza.data;
+const { title, seoTitle, description, kicker, pubDate, updatedDate, heroImage, heroImageAlt, draft, nota, roles } = pieza.data;
+const tituloCorto = seoTitle ?? title;
 
 const url = new URL(`${RUTA_LABORATORIO}${pieza.id}/`, Astro.site).toString();
 const minutos = readingTime(pieza.body || '');
@@ -24,7 +25,8 @@ const imagen = !draft && heroImage ? heroImage : undefined;
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: title,
+  headline: tituloCorto,
+  ...(seoTitle ? { alternativeHeadline: title } : {}),
   description,
   url,
   ...(imagen ? { image: new URL(imagen, Astro.site).toString() } : {}),
@@ -52,13 +54,12 @@ const articleSchema = {
 ---
 
 <Layout
-  title={title}
+  title={tituloCorto}
   description={description}
   image={imagen}
   type="article"
   publishedTime={pubDate}
   modifiedTime={updatedDate ?? pubDate}
-  titleSuffix={false}
   hideFooterCta
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
@@ -83,6 +84,23 @@ const articleSchema = {
       <figure class="hero container">
         <img src={heroImage} alt={heroImageAlt ?? ''} width="1672" height="941" fetchpriority="high" />
       </figure>
+    )}
+
+
+    {nota && (
+      <aside class="transparencia container" aria-label="Nota de transparencia">
+        <p>
+          <strong>Nota de transparencia:</strong>{' '}
+          {nota === 'modelos'
+            ? 'los tres modelos probados también participaron en este experimento.'
+            : 'este experimento no prueba modelos: parte de datos del propio sitio, compilados con ayuda de modelos de IA.'}
+          {roles ? ` ${roles}` : ''} No hubo evaluador humano independiente.{' '}
+          {nota === 'modelos'
+            ? 'Por eso los puntajes describen esta muestra y no son un ranking general de los modelos. El CSV trae cada fila y su diagnóstico para que rehagas la cuenta.'
+            : 'Por eso las cifras describen esta muestra, no el mercado ni el empleo nacional. El CSV trae cada fila para que rehagas la cuenta.'}{' '}
+          <a href="/laboratorio/metodologia/">Cómo hacemos todos los experimentos →</a>
+        </p>
+      </aside>
     )}
 
     <div class="content container">
@@ -120,6 +138,20 @@ const articleSchema = {
   }
   .hero { max-width: 760px; margin: 0 auto; padding: 0 24px 28px; }
   .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
+  .transparencia { max-width: 760px; margin: 0 auto; padding: 0 24px 28px; }
+  .transparencia p {
+    margin: 0;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius-sm);
+    background: var(--bg-inset);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+  .transparencia strong { color: var(--text); }
+  .transparencia a { color: var(--accent); }
   .content { padding: 0 24px 40px; display: flex; flex-direction: column; align-items: center; }
   .prose :global(caption) {
     caption-side: top;

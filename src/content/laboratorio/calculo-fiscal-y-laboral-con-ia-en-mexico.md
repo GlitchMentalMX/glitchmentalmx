@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-06-ia-fiscal-laboral-mexico/hero.webp
 heroImageAlt: "Sumadora mecánica de latón que imprime una larga cinta de papel, junto a dos libros de leyes: uno antiguo y gastado, otro nuevo, unidos por un hilo de luz turquesa."
 csv: /datos/laboratorio-06-ia-fiscal-laboral-mexico.csv
+seoTitle: "Cálculos fiscales con IA: cifras bien, dos citan ley vieja"
+nota: modelos
+roles: "Claude armó los datos y calificó; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
@@ -57,3 +60,5 @@ Ejecutamos 6 supuestos deterministas en 18 chats nuevos y limpios (3 modelos × 
 ## Datos abiertos y conexión interna
 
 [CSV abierto](/datos/laboratorio-06-ia-fiscal-laboral-mexico.csv) (licencia CC BY 4.0), con las 18 calificaciones y el diagnóstico de cada una. Para elegir herramienta según lo que necesitas, usa el [Recomendador](/que-ia-me-conviene/). Otra prueba del Laboratorio: [el mito del especialista frente al chat generalista](/laboratorio/especialista-vs-generalista/).
+
+Además publicamos [las respuestas íntegras de los modelos y los prompts](/datos/laboratorio-06-ia-fiscal-laboral-mexico-respuestas.md) (licencia CC BY 4.0), para que recalifiques sin fiarte de nuestro puntaje.

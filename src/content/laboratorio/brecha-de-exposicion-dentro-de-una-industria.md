@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-01-brecha-exposicion/hero.webp
 heroImageAlt: "Dos cilindros graduados de cristal con líquido ámbar a distinto nivel, con un calibrador de latón sobre ellos, en un banco de laboratorio."
 csv: /datos/laboratorio-01-brecha-exposicion.csv
+seoTitle: "Brecha de exposición a la IA: Redacción 63, Periodismo 47"
+nota: datos
+roles: "Claude Code extrajo los datos de las fichas y los índices del propio sitio y Claude armó el expediente; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 

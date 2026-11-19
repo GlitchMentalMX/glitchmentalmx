@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-07-citas-enlaces-inventados-2026/hero.webp
 heroImageAlt: "Cajón de un fichero de biblioteca con una ficha traslúcida luminosa entre las demás, inspeccionada con una lupa de latón."
 csv: /datos/laboratorio-07-citas-enlaces-inventados-2026.csv
+seoTitle: "Citas y enlaces de IA en 2026: 0 de 50 URLs dieron 404"
+nota: modelos
+roles: "Claude armó los datos y calificó; Claude Code verificó las URLs; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
@@ -74,3 +77,5 @@ Hicimos 18 ejecuciones (6 casos × 3 modelos) en chats nuevos el 17 de noviembre
 ## Datos abiertos y conexión interna
 
 [CSV abierto](/datos/laboratorio-07-citas-enlaces-inventados-2026.csv) (licencia CC BY 4.0), con las 18 calificaciones, las URLs y el diagnóstico de cada una. Para elegir herramienta según lo que necesitas, usa el [Recomendador](/que-ia-me-conviene/). Otra prueba del Laboratorio: [precisión fiscal y laboral con IA en México](/laboratorio/calculo-fiscal-y-laboral-con-ia-en-mexico/).
+
+Además publicamos [las respuestas íntegras de los modelos y los prompts](/datos/laboratorio-07-citas-enlaces-inventados-2026-respuestas.md) (licencia CC BY 4.0), para que recalifiques sin fiarte de nuestro puntaje.

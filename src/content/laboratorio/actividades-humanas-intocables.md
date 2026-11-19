@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-04-actividades-intocables/hero.webp
 heroImageAlt: "Campana de cristal que protege un cuaderno de cuero, una pluma y una taza, mientras flujos de luz turquesa rodean el vidrio sin entrar."
 csv: /datos/laboratorio-04-actividades-intocables.csv
+seoTitle: "67 de 160 tareas conservan complementariedad humana máxima"
+nota: datos
+roles: "Claude Code extrajo los datos de las fichas y los índices del propio sitio y Claude armó el expediente; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 

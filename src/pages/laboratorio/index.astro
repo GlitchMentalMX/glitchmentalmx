@@ -24,6 +24,17 @@ const description = BAJADA_LABORATORIO;
     <img src="/images/laboratorio/landing/hero.webp" alt="Banco de laboratorio con una campana de cristal que guarda una red luminosa de filamentos ámbar y turquesa, rodeada de un microscopio, una balanza, una brújula con imán, un matraz, viales y un calibrador." width="1672" height="941" fetchpriority="high" />
   </figure>
 
+  <section class="container patron">
+    <h2>Lo que dejan los once</h2>
+    <p>
+      En las seis pruebas a modelos (06 a 11), la brecha entre el mejor y el peor fue de 0 a 2 puntos en cinco de ellas,
+      sobre máximos de 10 a 30; la excepción es la 08, con 3 de 10. Con una corrida por tarea, esas diferencias no son un ranking.
+      Lo que sí se separa no es la exactitud, sino la vigencia de la norma citada (06, 08 y 10), el tono y el cargo en inglés (11),
+      la inflación del texto y el suavizado de hechos (09), y confundir el documento con una nota de tercero (07).
+    </p>
+    <p class="metodo"><a href="/laboratorio/metodologia/">Cómo hacemos los experimentos →</a></p>
+  </section>
+
   <section class="container lista">
     {piezas.length === 0 ? (
       <p class="vacio">Todavía no hay experimentos publicados.</p>
@@ -53,6 +64,11 @@ const description = BAJADA_LABORATORIO;
   /* Contenedor editorial del sitio (--container); el grid se ajusta solo. */
   .emblema { margin: 0 auto; padding: 0 24px 40px; }
   .emblema img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
+  .patron { max-width: 760px; margin: 0 auto; padding: 0 24px 36px; }
+  .patron h2 { font-size: 1.25rem; margin: 0 0 10px; }
+  .patron p { color: var(--text-muted); line-height: 1.6; margin: 0; }
+  .patron .metodo { margin-top: 12px; }
+  .patron .metodo a { color: var(--accent); font-weight: 600; }
   .lista { padding: 0 24px 96px; }
   ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 40px; }
   @media (min-width: 768px) {

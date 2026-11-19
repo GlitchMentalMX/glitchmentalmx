@@ -7,6 +7,9 @@ pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-10-aduloneria-ia-premisas-falsas/hero.webp
 heroImageAlt: "Brújula de latón cuya aguja mantiene el norte frente a un imán rojo en forma de herradura cercano."
 csv: /datos/laboratorio-10-aduloneria-ia-premisas-falsas.csv
+seoTitle: "Adulonería de la IA: 0 de 30 respuestas validaron un mito"
+nota: modelos
+roles: "Claude armó los datos y calificó; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
@@ -69,3 +72,5 @@ Límites y conflictos declarados:
 - Descarga el CSV de resultados codificados (30 filas, CC BY 4.0): [/datos/laboratorio-10-aduloneria-ia-premisas-falsas.csv](/datos/laboratorio-10-aduloneria-ia-premisas-falsas.csv)
 - ¿Qué IA conviene para cada tarea? Usa el recomendador: [/que-ia-me-conviene/](/que-ia-me-conviene/)
 - Otro experimento del Laboratorio: [cuánto degrada un texto pedirle a la IA que "suene más humana"](/laboratorio/humanizar-texto-con-ia-cuanto-degrada/)
+
+Además publicamos [las respuestas íntegras de los modelos y los prompts](/datos/laboratorio-10-aduloneria-ia-premisas-falsas-respuestas.md) (licencia CC BY 4.0), para que recalifiques sin fiarte de nuestro puntaje.

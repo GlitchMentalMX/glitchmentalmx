@@ -485,6 +485,14 @@ const laboratorio = defineCollection({
       heroImage: z.string().optional(),
       heroImageAlt: z.string().optional(),
       csv: z.string().optional(),
+      // Título corto (~60 caracteres) solo para <title>, og:title y JSON-LD;
+      // el H1 puede ser largo y contar el resultado completo.
+      seoTitle: z.string().max(70).optional(),
+      // Nota de transparencia al inicio de la pieza. `modelos`: prueba a
+      // modelos de lenguaje; `datos`: cruce de datos propios del sitio.
+      // `roles` es la oración con quién hizo qué en esa pieza.
+      nota: z.enum(['modelos', 'datos']).optional(),
+      roles: z.string().optional(),
       draft: z.boolean().default(true),
     })
     .superRefine((data, ctx) => {

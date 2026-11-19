@@ -1,5 +1,5 @@
 ---
-title: "Pedirle a la IA que \"suene más humana\" casi no toca el vocabulario, pero infla hasta +49% el correo de cobranza y suaviza hechos: Claude y ChatGPT sacan 9/10; Gemini cae a 7/10"
+title: "Claude y ChatGPT sacan 9/10 y Gemini 7/10 al «humanizar» cinco textos: casi no cambia el vocabulario, pero el correo de cobranza crece hasta +49 % y se suavizan hechos"
 description: "Pedimos a Claude, ChatGPT y Gemini que volvieran más humanos cinco textos claros con datos duros. Casi no hubo clichés, pero el correo de cobranza creció hasta +49 % y Gemini suavizó un hecho consumado."
 kicker: "Laboratorio · Experimento 09"
 experimento: 9
@@ -7,6 +7,9 @@ pubDate: 2026-11-18
 heroImage: /images/laboratorio/laboratorio-09-humanizar-texto-ia/hero.webp
 heroImageAlt: "Matraz pequeño con tinta oscura conectado por un tubo de vidrio a otro enorme que se desborda de espuma, junto a una hoja manuscrita."
 csv: /datos/laboratorio-09-humanizar-texto-ia.csv
+seoTitle: "Pedirle a la IA que suene humana: infla y suaviza hechos"
+nota: modelos
+roles: "Claude armó los datos y calificó; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
@@ -58,3 +61,5 @@ Cada celda: puntaje, variación de palabras frente al original, TTR de la salida
 - Descarga el [CSV de los 15 casos](/datos/laboratorio-09-humanizar-texto-ia.csv) (licencia CC BY 4.0).
 - Para elegir modelo según lo que necesitas, usa [¿Qué IA me conviene?](/que-ia-me-conviene/).
 - Mismo método, otro terreno: [Experimento 08, la letra chiquita en contratos reales de México](/laboratorio/letra-chiquita-en-contratos-de-mexico/).
+
+Además publicamos [las respuestas íntegras de los modelos y los prompts](/datos/laboratorio-09-humanizar-texto-ia-respuestas.md) (licencia CC BY 4.0), para que recalifiques sin fiarte de nuestro puntaje.

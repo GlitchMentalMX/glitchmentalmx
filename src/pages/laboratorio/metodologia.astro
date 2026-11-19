@@ -1,0 +1,106 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { RUTA_LABORATORIO } from '../../lib/laboratorio';
+
+// Página común de metodología del Laboratorio. Todo lo que dice sale de las
+// secciones «Protocolo y límites» ya publicadas en cada experimento y del
+// reparto de roles del expediente; cada pieza sigue declarando lo suyo.
+const title = 'Cómo hacemos los experimentos del Laboratorio';
+const seoTitle = 'Metodología del Laboratorio: cómo probamos a la IA';
+const description =
+  'Cómo se diseñan, se corren y se califican los experimentos del Laboratorio de glitchMentalMX: qué es común a todos, quién hace qué, qué se puede verificar por máquina y cómo repetir una prueba.';
+---
+
+<Layout
+  title={seoTitle}
+  description={description}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <Breadcrumbs items={[{ name: 'Laboratorio', url: RUTA_LABORATORIO }, { name: 'Metodología' }]} />
+  <PageHeader eyebrow="Laboratorio · Metodología" title={title} dek="Lo que se repite en los once experimentos, en un solo lugar. Cada pieza sigue declarando lo suyo en su sección «Protocolo y límites»." />
+
+  <div class="content container">
+    <div class="prose">
+      <h2>Dos tipos de experimento</h2>
+      <p>
+        Los experimentos <strong>01 a 05</strong> son cruces de datos propios: parten de las fichas y los índices del sitio
+        (O*NET, el <em>Anthropic Economic Index</em> y fichas verificadas contra fuentes oficiales). No ponen a ningún modelo
+        como sujeto de prueba. Los experimentos <strong>06 a 11</strong> son pruebas de campo a ChatGPT, Claude y Gemini.
+      </p>
+
+      <h2>Cómo se corre una prueba a modelos</h2>
+      <ul>
+        <li><strong>El protocolo va antes.</strong> Los casos, los prompts, la verdad de campo y la rúbrica se fijan antes de ejecutar. Si después hay que corregir algo del protocolo, la pieza lo declara.</li>
+        <li><strong>Interfaz web estándar.</strong> Cada modelo corre en la interfaz web de consumo, con el modelo por defecto del servicio. Esa interfaz no expone el número de compilación, así que la versión exacta no queda registrada.</li>
+        <li><strong>Un chat nuevo por caso.</strong> Una sola respuesta por chat, el mismo prompt para los tres modelos, sin repreguntas ni pistas.</li>
+        <li><strong>Memoria de cuenta.</strong> Pedimos ventana limpia, pero las pruebas corren en las cuentas del editor y no podemos apagar toda la personalización. Cuando aparece huella de memoria (por ejemplo, un saludo por nombre, en los experimentos 07, 10 y 11), la pieza lo declara.</li>
+        <li><strong>Búsqueda web.</strong> No se controla. Se anota cuando hay evidencia visible (enlaces, fuentes, parámetros de rastreo) y no se puede aislar cuánto pesó frente al entrenamiento del modelo.</li>
+      </ul>
+
+      <h2>Cómo se califica</h2>
+      <p>
+        Cada caso vale 0, 1 o 2 puntos según una rúbrica cerrada que define cada experimento. El máximo por modelo es el doble
+        de los casos. Lo que cambia entre experimentos es el tipo de verdad de campo (una cifra, un documento oficial, un artículo de ley, un criterio de estilo) y la escala:
+      </p>
+      <table>
+        <thead><tr><th>Experimento</th><th>Casos</th><th>Ejecuciones</th><th>Máximo por modelo</th></tr></thead>
+        <tbody>
+          <tr><td>06 · Cálculo fiscal y laboral</td><td>6</td><td>18</td><td>12</td></tr>
+          <tr><td>07 · Citas y enlaces</td><td>6</td><td>18</td><td>12</td></tr>
+          <tr><td>08 · Letra chiquita en contratos</td><td>5</td><td>15</td><td>10</td></tr>
+          <tr><td>09 · Humanizar un texto</td><td>5</td><td>15</td><td>10</td></tr>
+          <tr><td>10 · Adulonería ante premisas falsas</td><td>10</td><td>30</td><td>20</td></tr>
+          <tr><td>11 · Español de México</td><td>15</td><td>45</td><td>30</td></tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Lo que verifica una máquina</strong> pesa más que lo que juzgamos: el conteo de palabras y la diversidad léxica
+        (experimentos 09 y 11, con script de Python) y el estado HTTP de las 50 URLs entregadas (07, con curl y navegador).
+        <strong>Lo que es juicio editorial</strong> se marca como tal: el fundamento legal de una respuesta, el tono, los «datos conservados» y los clichés.
+        Cuando una ambigüedad nuestra afecta el resultado (como la fecha de corte del aguinaldo en el 06), la pieza muestra cómo cambiaría el orden.
+      </p>
+
+      <h2>Quién hace qué</h2>
+      <ul>
+        <li><strong>Jorge A. Diaz Elizondo</strong> ejecuta las pruebas en las interfaces web y edita las piezas.</li>
+        <li><strong>Gemini</strong> diseña el protocolo antes de la prueba y audita los datos y el borrador al final.</li>
+        <li><strong>Claude</strong> arma el expediente: el CSV, el borrador y la calificación.</li>
+        <li><strong>ChatGPT</strong> hace una revisión ciega del borrador, sin haber leído el diseño previo.</li>
+        <li><strong>Claude Code</strong> extrae los datos del repositorio del sitio, verifica lo verificable por máquina (por ejemplo, las URLs del 07) y publica.</li>
+      </ul>
+
+      <h2>El conflicto de interés, de frente</h2>
+      <p>
+        En las pruebas a modelos, los tres modelos probados también participan en el proceso: uno califica, otro diseña y audita,
+        otro revisa. <strong>No hay un evaluador humano independiente.</strong> Por eso los puntajes describen cada muestra y no son un ranking general de los modelos,
+        y por eso publicamos todo lo que permite rehacer la cuenta.
+      </p>
+
+      <h2>Límites que se repiten</h2>
+      <ul>
+        <li>Una corrida por caso: no mide la variabilidad entre sesiones.</li>
+        <li>Muestras pequeñas, de entre 5 y 15 casos, elegidas por nosotros. No son tasas generales de error.</li>
+        <li>Sin hablantes nativos, abogados o contadores externos que recalifiquen.</li>
+        <li>Los modelos cambian: lo que midió una prueba el 17 o el 18 de noviembre de 2026 puede no repetirse mañana.</li>
+      </ul>
+
+      <h2>Datos abiertos y cómo repetir una prueba</h2>
+      <p>
+        Cada experimento publica su CSV con una fila por resultado y su diagnóstico, bajo licencia
+        <a href="https://creativecommons.org/licenses/by/4.0/deed.es" rel="license noopener" target="_blank">CC BY 4.0</a>.
+        Los experimentos 06 a 11 publican además el texto íntegro que devolvió cada modelo y los prompts exactos, en el mismo
+        archivo de <a href="/datos/">Datos abiertos</a>. Para repetir una prueba: abre un chat nuevo, pega el prompt tal cual,
+        compara con la verdad de campo y aplica la rúbrica de la pieza. Si tu resultado difiere, queremos verlo:
+        escríbenos desde el botón de reporte al final de cada pieza.
+      </p>
+      <p><a href={RUTA_LABORATORIO}>← Volver al Laboratorio</a></p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .content { padding: 0 24px 80px; display: flex; flex-direction: column; align-items: center; }
+  .prose :global(thead th) { background: var(--bg-inset); }
+</style>

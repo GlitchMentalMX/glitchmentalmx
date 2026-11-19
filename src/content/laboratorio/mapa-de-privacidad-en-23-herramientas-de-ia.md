@@ -7,6 +7,9 @@ pubDate: 2026-11-17
 heroImage: /images/laboratorio/laboratorio-02-mapa-privacidad/hero.webp
 heroImageAlt: "Gradilla de acero con viales que brillan en ámbar y liberan humo dorado, salvo unos pocos oscuros y sellados, y una mano enguantada sosteniendo uno de ellos."
 csv: /datos/laboratorio-02-mapa-privacidad.csv
+seoTitle: "19 de 23 herramientas de IA entrenan con tus datos por defecto"
+nota: datos
+roles: "Claude Code extrajo los datos de las fichas y los índices del propio sitio y Claude armó el expediente; Gemini diseñó el protocolo y audita; ChatGPT hizo una revisión ciega."
 draft: false
 ---
 
