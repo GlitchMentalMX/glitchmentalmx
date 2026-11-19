@@ -20,6 +20,10 @@ const description = BAJADA_LABORATORIO;
   <Breadcrumbs items={[{ name: 'Laboratorio' }]} />
   <PageHeader eyebrow="Datos abiertos · CC BY 4.0" title={title} dek={BAJADA_LABORATORIO} />
 
+  <figure class="container emblema">
+    <img src="/images/laboratorio/landing/hero.webp" alt="Banco de laboratorio con una campana de cristal que guarda una red luminosa de filamentos ámbar y turquesa, rodeada de un microscopio, una balanza, una brújula con imán, un matraz, viales y un calibrador." width="1672" height="941" fetchpriority="high" />
+  </figure>
+
   <section class="container lista">
     {piezas.length === 0 ? (
       <p class="vacio">Todavía no hay experimentos publicados.</p>
@@ -47,6 +51,8 @@ const description = BAJADA_LABORATORIO;
 
 <style>
   /* Contenedor editorial del sitio (--container); el grid se ajusta solo. */
+  .emblema { margin: 0 auto; padding: 0 24px 40px; }
+  .emblema img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius); }
   .lista { padding: 0 24px 96px; }
   ol { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 40px; }
   @media (min-width: 768px) {

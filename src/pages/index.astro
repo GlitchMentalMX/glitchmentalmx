@@ -41,10 +41,9 @@ const impactoPosts = await getImpactoPosts();
 // si faltaran, las globales más recientes.
 const impactoBanda = [...impactoPosts.filter(esLatam), ...impactoPosts.filter((p) => !esLatam(p))].slice(0, 2);
 
-// Card del Laboratorio: el total y la pieza más reciente salen de la colección
-// real (nunca a mano). Sin piezas publicadas, la card no se pinta.
+// Card del Laboratorio: el total sale de la colección real (nunca a mano).
+// Sin piezas publicadas, la card no se pinta. La imagen es fija (emblema).
 const labPiezas = await cargarLaboratorio();
-const labUltima = labPiezas[labPiezas.length - 1];
 
 const [featured] = allPosts;
 const recentThree = allPosts.slice(1, 4);
@@ -472,13 +471,11 @@ const signalPools = {
     </section>
   )}
 
-  {labUltima && (
+  {labPiezas.length > 0 && (
     <section class="laboratorio-band container" aria-labelledby="lab-h">
       <div class="lab-layout">
         <a href={RUTA_LABORATORIO} class="lab-hero" aria-label="Ver el Laboratorio">
-          {labUltima.data.heroImage && (
-            <img src={labUltima.data.heroImage} alt={labUltima.data.heroImageAlt ?? ''} loading="lazy" width="1672" height="941" />
-          )}
+          <img src="/images/laboratorio/landing/hero.webp" alt="Banco de laboratorio con una campana de cristal que guarda una red luminosa de filamentos ámbar y turquesa, rodeada de un microscopio, una balanza, una brújula con imán, un matraz, viales y un calibrador." loading="lazy" width="1672" height="941" />
         </a>
         <div class="lab-text">
           <p class="lab-eyebrow">Datos abiertos · CC BY 4.0</p>
@@ -968,7 +965,7 @@ const signalPools = {
     .insight-title { font-size: 1.7rem; }
   }
 
-  /* Laboratorio — banda con la portada del experimento más reciente. En
+  /* Laboratorio — banda con la imagen emblema del laboratorio. En
      zigzag respecto a Insights (imagen a la izquierda, texto a la derecha en
      escritorio; una columna en móvil), con el aire de "ficha de laboratorio". */
   section.laboratorio-band { padding: 44px 24px; border-top: 1px solid var(--border); }
