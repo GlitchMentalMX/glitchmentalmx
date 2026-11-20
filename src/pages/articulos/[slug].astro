@@ -237,6 +237,25 @@ const title = post.data.title;
 const description = post.data.description;
 const pubDate = post.data.pubDate;
 const updatedDate = post.data.updatedDate;
+
+// Fecha de "última modificación" que ve Google (dateModified, article:modified_time)
+// y el lector ("Actualizado el"). En las fichas de precio que se convierten de
+// USD a MXN, la cifra que muestra la página SÍ cambia con cada tipo de cambio de
+// Banxico (data/tipo-cambio.json, se actualiza a diario), y la propia oferta ya
+// declaraba validFrom = esa fecha. Antes dateModified se quedaba en la fecha de
+// publicación (p. ej. 19 de agosto) y contradecía al precio del 19 de noviembre.
+// Solo aplica a precios que dependen del tipo de cambio: una ficha con precio
+// directo en pesos, o cualquier otra colección, conserva updatedDate ?? pubDate
+// (no se inventa una modificación que no ocurrió).
+const precioFuenteUSD =
+  kind === 'preciosIA' ? preciosUSD : kind === 'preciosDigitales' ? preciosDigitalesUSD : undefined;
+const precioEntrada = precioFuenteUSD
+  ? (precioFuenteUSD as Record<string, { precioUSD?: number }>)[(post.data as any).herramientaId]
+  : undefined;
+const fechaTipoCambio = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+const fechaBase = updatedDate ?? pubDate;
+const modifiedDate =
+  precioEntrada?.precioUSD !== undefined && fechaTipoCambio > fechaBase ? fechaTipoCambio : fechaBase;
 const heroImage = post.data.heroImage;
 const heroImageAlt = (post.data as any).heroImageAlt;
 
@@ -350,7 +369,7 @@ const articleSchema =
         url: articleURL,
         image: articleImage,
         datePublished: pubDate.toISOString(),
-        dateModified: (updatedDate ?? pubDate).toISOString(),
+        dateModified: modifiedDate.toISOString(),
         author: {
           '@type': 'Person',
           name: 'Jorge A. Diaz Elizondo',
@@ -378,7 +397,7 @@ const articleSchema =
         url: articleURL,
         ...(articleImage ? { image: articleImage } : {}),
         datePublished: pubDate.toISOString(),
-        dateModified: (updatedDate ?? pubDate).toISOString(),
+        dateModified: modifiedDate.toISOString(),
         author: {
           '@type': 'Person',
           name: 'Jorge A. Diaz Elizondo',
@@ -705,7 +724,7 @@ if (toolKinds.includes(kind) && herramienta) {
 }
 ---
 
-<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={updatedDate ?? pubDate} titleSuffix={kind === 'posts'} hideFooterCta robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<Layout title={metaTitle} description={description} image={heroImage} type="article" publishedTime={pubDate} modifiedTime={modifiedDate} titleSuffix={kind === 'posts'} hideFooterCta robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
 
@@ -764,7 +783,7 @@ if (toolKinds.includes(kind) && herramienta) {
         <a href="/precios-digitales/" class="tag category-tag">Precios Digitales</a>
       )}
       <p class="eyebrow">
-        Por <a href="/acerca-de/" class="byline-link" rel="author">Jorge A. Diaz Elizondo</a> · {formatDate(pubDate)} · {minutes} min de lectura{updatedDate ? ` · Actualizado el ${formatDate(updatedDate)}` : ''}
+        Por <a href="/acerca-de/" class="byline-link" rel="author">Jorge A. Diaz Elizondo</a> · {formatDate(pubDate)} · {minutes} min de lectura{modifiedDate > pubDate ? ` · Actualizado el ${formatDate(modifiedDate)}` : ''}
       </p>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
