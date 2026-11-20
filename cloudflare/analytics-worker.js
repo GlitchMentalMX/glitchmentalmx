@@ -251,6 +251,31 @@ async function handleCollect(request, env, origin, matchedOrigin) {
   return new Response(null, { status: 204, headers: corsHeaders(matchedOrigin) });
 }
 
+// Navegadores falsos: tráfico automatizado que se anuncia como Chrome en Linux
+// de escritorio. Medido el 2026-11-20 en 14 días de búsqueda: 72 vistas con esa
+// firma, 70 sin un solo latido (66 de EE. UU., pantalla 1920, una página por
+// visitante); el resto del tráfico humano tenía solo 6 % sin latido, así que
+// el beacon funciona y un humano casi siempre manda al menos un latido al
+// salir. Se reclasifican como bot DESPUÉS de una hora (un latido legítimo
+// tardío ya habría llegado). Es el único caso que se reclasifica por no tener
+// latido; no se filtra por país ni por duración en general.
+const FAKE_BROWSER_SQL = `UPDATE hits SET is_bot = 1
+  WHERE is_bot = 0 AND duration IS NULL AND os = 'Linux' AND device = 'desktop' AND browser = 'Chrome' AND ts < ?`;
+const SWEEP_EVERY_MS = 10 * 60 * 1000;
+let lastSweepAt = 0;
+
+async function reclassifyFakeBrowsers(env) {
+  if (Date.now() - lastSweepAt < SWEEP_EVERY_MS) return;
+  lastSweepAt = Date.now();
+  try {
+    await env.DB.prepare(FAKE_BROWSER_SQL)
+      .bind(Math.floor(Date.now() / 1000) - 3600)
+      .run();
+  } catch (e) {
+    // si falla, se reintenta en la siguiente carga del panel
+  }
+}
+
 const STATS_CACHE = new Map();
 const STATS_CACHE_MS = 60 * 1000;
 
@@ -265,6 +290,10 @@ async function handleStats(request, env, url, matchedOrigin) {
   if (!expectedToken || token !== expectedToken) {
     return json({ error: 'No autorizado' }, 401, matchedOrigin);
   }
+
+  // Corre al abrir el panel (como máximo cada 10 min), así que las cifras
+  // siempre se ven ya depuradas y no hace falta tarea programada.
+  await reclassifyFakeBrowsers(env);
 
   const rangeParam = url.searchParams.get('range') || 'semana';
   const now = new Date();
