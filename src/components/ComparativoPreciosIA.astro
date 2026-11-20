@@ -106,7 +106,6 @@ const { filas, fecha } = Astro.props;
   button[data-sort]:hover, button[data-sort]:focus-visible { text-decoration: underline; }
   th[aria-sort='ascending'] button::after { content: ' ↑'; }
   th[aria-sort='descending'] button::after { content: ' ↓'; }
-  .sube { color: #b42318; }
-  .baja { color: #067647; }
+  .sube, .baja { white-space: nowrap; }
   .comparativo-nota { margin: 10px 0 0; font-size: 0.78rem; line-height: 1.5; color: var(--text-faint); }
 </style>

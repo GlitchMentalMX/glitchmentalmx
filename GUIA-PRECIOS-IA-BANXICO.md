@@ -39,3 +39,17 @@ El robot detecta que no hay dato nuevo y deja el archivo tal cual estaba — el 
 ## Si algún día cambia el precio oficial en dólares de una herramienta
 
 Eso **no** lo actualiza el robot — el robot solo mueve el tipo de cambio (dólares → pesos). El precio en dólares de cada herramienta vive en el archivo `src/data/precios-ia-usd.json` y hay que editarlo a mano cuando OpenAI, Anthropic, Google, etc. suban o bajen su precio. Avísame cuando eso pase y lo actualizo yo.
+
+
+## Historial de precios (2026-11)
+
+`src/data/precios-ia-historial.json` guarda el tipo de cambio FIX de cada día hábil y cada cambio de precio en USD
+de las herramientas. Lo mantiene `scripts/actualizar-historial-precios.mjs`, que el workflow
+`actualizar-tipo-cambio.yml` corre justo después de consultar a Banxico (es idempotente y el commit diario ahora
+incluye ese archivo). Alimenta la sección «Historial en pesos» de cada ficha y «Qué cambió de precio» + el comparativo
+de `/precios-ia/`.
+
+- Si cambias un precio en `precios-ia-usd.json`, el historial lo registra solo en la siguiente corrida del workflow con
+  fecha de ese día (o corre `node scripts/actualizar-historial-precios.mjs` a mano antes del commit para fijar la fecha).
+- La fecha de un cambio es la del día en que se verifica y registra, no necesariamente la del proveedor; las páginas lo dicen.
+- Nunca se borra historia: una herramienta que sale del catálogo conserva sus entradas.

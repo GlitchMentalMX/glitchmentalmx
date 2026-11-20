@@ -5,8 +5,11 @@ import CollectionArticleRow from '../../components/CollectionArticleRow.astro';
 import BuscadorPreciosIA from '../../components/BuscadorPreciosIA.astro';
 import NotaActualizacionBanxico from '../../components/NotaActualizacionBanxico.astro';
 import { getCollection } from 'astro:content';
+import ComparativoPreciosIA, { type FilaPrecio } from '../../components/ComparativoPreciosIA.astro';
 import tipoCambio from '../../data/tipo-cambio.json';
+import preciosUSD from '../../data/precios-ia-usd.json';
 import { formatDate } from '../../lib/format';
+import { cambiosDePrecio, variacionDolar, fechaDe, MXN, USD } from '../../lib/historialPreciosIA';
 
 const posts = (await getCollection('preciosIA', ({ data }) => !data.draft)).sort((a, b) =>
   a.data.herramienta.localeCompare(b.data.herramienta, 'es')
@@ -31,8 +34,37 @@ const buscadorItems = posts.map((post) => ({
 
 const title = 'Precios de IA: cuánto cuesta cada herramienta hoy en México';
 const description =
-  'Cuánto cuesta ChatGPT, Claude, Gemini y el resto de las herramientas de IA hoy en México, en pesos mexicanos, con el tipo de cambio oficial de Banxico actualizado a diario.';
+  'Cuánto cuesta ChatGPT, Claude, Gemini y el resto de las herramientas de IA hoy en México, en pesos, con el tipo de cambio de Banxico a diario, comparativo y cambios de precio.';
 const fechaDato = new Date(`${tipoCambio.fecha}T12:00:00-06:00`);
+
+// Comparativo y cambios de precio: todo se calcula en build-time desde los
+// mismos datos que usan las fichas (precios-ia-usd.json + tipo-cambio.json) y
+// desde el historial (precios-ia-historial.json). Nada escrito a mano.
+const filas: FilaPrecio[] = [];
+for (const post of posts) {
+  const p = (preciosUSD as Record<string, { nombre: string; precioUSD?: number; periodo: string }>)[post.data.herramientaId];
+  if (!p || p.precioUSD === undefined) continue;
+  const mxn = p.precioUSD * tipoCambio.valor;
+  const ultimo = cambiosDePrecio(post.data.herramientaId)[0];
+  filas.push({
+    slug: post.id,
+    herramienta: post.data.herramienta,
+    plan: p.nombre,
+    usd: p.precioUSD,
+    periodo: p.periodo,
+    mxn,
+    porMes: p.periodo === 'anual' ? mxn / 12 : mxn,
+    cambio: ultimo ? { de: ultimo.de, a: ultimo.a } : undefined,
+  });
+}
+
+const slugPorHerramienta = new Map(posts.map((p) => [p.data.herramientaId, p]));
+const cambios = cambiosDePrecio()
+  .map((c) => ({ ...c, post: slugPorHerramienta.get(c.id) }))
+  .filter((c) => c.post);
+const dolar = variacionDolar();
+const dolarPct = Math.abs(dolar.pct).toLocaleString('es-MX', { maximumFractionDigits: 1 });
+const fechaDatoTexto = formatDate(fechaDato);
 
 // Referencia a cada ficha de herramienta (que ya lleva su propio schema
 // Product/Offer) en vez de duplicar el precio aquí — así los dos nunca
@@ -75,6 +107,37 @@ const itemListSchema = {
     <NotaActualizacionBanxico />
   </section>
 
+  <section class="container block" id="cambios" aria-labelledby="cambios-titulo">
+    <h2 id="cambios-titulo">Qué cambió de precio desde el {formatDate(fechaDe(dolar.desde))}</h2>
+    <p>
+      El dólar pasó de {MXN(dolar.valorDesde)} a {MXN(dolar.valorHasta)} pesos (FIX de Banxico, del {formatDate(fechaDe(dolar.desde))} al {formatDate(fechaDe(dolar.hasta))}):{' '}
+      {dolar.pct >= 0 ? 'subió' : 'bajó'} {dolarPct} %. Por eso, cada herramienta que se cobra en dólares y no cambió de precio cuesta
+      {dolar.pct >= 0 ? ` ${dolarPct} % más` : ` ${dolarPct} % menos`} en pesos que entonces.
+    </p>
+    {cambios.length > 0 && (
+      <>
+        <p>Además, estas herramientas cambiaron su precio en dólares en ese periodo:</p>
+        <ul class="cambios">
+          {cambios.map((c) => (
+            <li>
+              <a href={`/articulos/${c.post!.id}/`}>{c.post!.data.herramienta}</a>: de {USD(c.de)} a {USD(c.a)} USD {c.periodo === 'anual' ? 'al año' : 'al mes'}{' '}
+              — {c.a > c.de ? 'sube' : 'baja'} a {MXN(c.a * tipoCambio.valor)} MXN hoy. Registrado el {formatDate(fechaDe(c.desde))}.
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+    <p class="nota-fecha">
+      La fecha de cada cambio es el día en que lo verificamos y registramos, no necesariamente el día
+      exacto en que el proveedor lo aplicó. Cada ficha muestra su propio historial en pesos.
+    </p>
+  </section>
+
+  <section class="container block wide" id="comparativo" aria-labelledby="comparativo-titulo">
+    <h2 id="comparativo-titulo">Comparativo de precios en pesos</h2>
+    <ComparativoPreciosIA filas={filas} fecha={fechaDatoTexto} />
+  </section>
+
   <section class="container list">
     <p class="eyebrow list-label">Las herramientas</p>
     <BuscadorPreciosIA items={buscadorItems} />
@@ -95,6 +158,13 @@ const itemListSchema = {
   .header { padding: 56px 24px 24px; max-width: 760px; }
   .header h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 4.6vw, 3rem); margin: 12px 0 16px; }
   .dek { color: var(--text-muted); font-size: 1.1rem; line-height: 1.55; }
+
+  .block { padding: 24px 24px 8px; max-width: 780px; }
+  .block.wide { max-width: 980px; }
+  .block h2 { font-family: var(--font-display); font-size: 1.5rem; margin: 0 0 12px; }
+  .block p { line-height: 1.55; }
+  .cambios { margin: 0 0 12px; padding-left: 1.2em; line-height: 1.6; }
+  .nota-fecha { font-size: 0.8rem; color: var(--text-faint); }
 
   .list { padding: 24px 24px 96px; max-width: 780px; }
   .list-label { margin-bottom: 6px; }
