@@ -1,0 +1,112 @@
+---
+// Tabla comparativa de /precios-ia/. Las filas llegan ya calculadas desde la
+// página (precio en USD × tipo de cambio FIX de Banxico vigente). El HTML sale
+// completo y legible sin JavaScript; el script de abajo solo agrega el orden
+// por columna (mejora progresiva).
+import { MXN, USD } from '../lib/historialPreciosIA';
+
+export interface FilaPrecio {
+  slug: string;
+  herramienta: string;
+  plan: string;
+  usd: number;
+  periodo: string;
+  mxn: number;
+  porMes: number;
+  cambio?: { de: number; a: number };
+}
+
+interface Props {
+  filas: FilaPrecio[];
+  fecha: string; // ya formateada: '19 de noviembre de 2026'
+}
+
+const { filas, fecha } = Astro.props;
+---
+
+<div class="comparativo" data-comparativo>
+  <div class="comparativo-scroll" tabindex="0" role="region" aria-label="Tabla comparativa de precios de IA">
+    <table>
+      <caption class="visually-hidden">Precio de cada herramienta de IA en dólares y en pesos mexicanos al tipo de cambio de Banxico del {fecha}</caption>
+      <thead>
+        <tr>
+          <th scope="col" aria-sort="ascending"><button type="button" data-sort="nombre">Herramienta</button></th>
+          <th scope="col" class="num"><button type="button" data-sort="usd">USD</button></th>
+          <th scope="col" class="num"><button type="button" data-sort="mxn">MXN hoy</button></th>
+          <th scope="col">Periodo</th>
+          <th scope="col" class="num"><button type="button" data-sort="pormes">MXN por mes</button></th>
+          <th scope="col">Cambio de precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        {filas.map((f) => (
+          <tr data-nombre={f.herramienta.toLocaleLowerCase('es')} data-usd={f.usd} data-mxn={f.mxn} data-pormes={f.porMes}>
+            <th scope="row">
+              <a href={`/articulos/${f.slug}/`}>{f.herramienta}</a>
+              <span class="plan">{f.plan}</span>
+            </th>
+            <td class="num">{f.usd === 0 ? 'Gratis' : USD(f.usd)}</td>
+            <td class="num">{f.usd === 0 ? '—' : MXN(f.mxn)}</td>
+            <td>{f.periodo === 'anual' ? 'Anual' : 'Mensual'}</td>
+            <td class="num">{f.usd === 0 ? '—' : MXN(f.porMes)}</td>
+            <td>{f.cambio ? <span class={f.cambio.a > f.cambio.de ? 'sube' : 'baja'}>{f.cambio.a > f.cambio.de ? '↑' : '↓'} {USD(f.cambio.de)} → {USD(f.cambio.a)}</span> : '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="comparativo-nota">
+    Precios de lista en dólares convertidos con el FIX de Banxico del {fecha}, antes de IVA y de
+    la comisión de tu banco. «Por mes» divide entre 12 los planes anuales para poder comparar.
+  </p>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-comparativo]').forEach((root) => {
+    const tbody = root.querySelector('tbody');
+    if (!tbody) return;
+    const filas = Array.from(tbody.querySelectorAll<HTMLTableRowElement>('tr'));
+    const botones = root.querySelectorAll<HTMLButtonElement>('button[data-sort]');
+    let clave = 'nombre';
+    let asc = true;
+
+    botones.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const nueva = btn.dataset.sort!;
+        asc = nueva === clave ? !asc : true;
+        clave = nueva;
+        const numerica = clave !== 'nombre';
+        filas
+          .slice()
+          .sort((a, b) => {
+            const va = a.dataset[clave] ?? '';
+            const vb = b.dataset[clave] ?? '';
+            const r = numerica ? Number(va) - Number(vb) : va.localeCompare(vb, 'es');
+            return asc ? r : -r;
+          })
+          .forEach((tr) => tbody.appendChild(tr));
+        root.querySelectorAll('th[aria-sort]').forEach((th) => th.removeAttribute('aria-sort'));
+        btn.closest('th')?.setAttribute('aria-sort', asc ? 'ascending' : 'descending');
+      });
+    });
+  });
+</script>
+
+<style>
+  .comparativo-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.9rem; min-width: 640px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+  thead th { font-weight: 600; font-size: 0.8rem; color: var(--text-muted); white-space: nowrap; background: var(--bg); position: sticky; top: 0; }
+  tbody tr:last-child th, tbody tr:last-child td { border-bottom: none; }
+  tbody th { font-weight: 500; }
+  tbody th a { font-weight: 600; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .plan { display: block; font-size: 0.78rem; font-weight: 400; color: var(--text-faint); }
+  button[data-sort] { all: unset; cursor: pointer; }
+  button[data-sort]:hover, button[data-sort]:focus-visible { text-decoration: underline; }
+  th[aria-sort='ascending'] button::after { content: ' ↑'; }
+  th[aria-sort='descending'] button::after { content: ' ↓'; }
+  .sube { color: #b42318; }
+  .baja { color: #067647; }
+  .comparativo-nota { margin: 10px 0 0; font-size: 0.78rem; line-height: 1.5; color: var(--text-faint); }
+</style>
