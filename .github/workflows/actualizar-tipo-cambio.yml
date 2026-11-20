@@ -42,17 +42,23 @@ jobs:
           BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
         run: node scripts/actualizar-tipo-cambio.mjs
 
+      # Registra el tipo de cambio del día y cualquier cambio de precio en USD
+      # en src/data/precios-ia-historial.json (alimenta el historial de las
+      # fichas y "Cambios de precio" en /precios-ia/). Es idempotente.
+      - name: Actualizar el historial de precios
+        run: node scripts/actualizar-historial-precios.mjs
+
       - name: Publicar el cambio (si hubo uno)
         id: publicar
         run: |
-          if git diff --quiet -- src/data/tipo-cambio.json; then
-            echo "Sin cambios en tipo-cambio.json — no hay nada que subir."
+          if git diff --quiet -- src/data/tipo-cambio.json src/data/precios-ia-historial.json; then
+            echo "Sin cambios en tipo-cambio.json ni en el historial — no hay nada que subir."
             echo "cambio=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/tipo-cambio.json
+          git add src/data/tipo-cambio.json src/data/precios-ia-historial.json
           git commit -m "Actualizar tipo de cambio Banxico"
 
           # Este repo recibe commits seguido (tú, el CMS). Si alguien sube

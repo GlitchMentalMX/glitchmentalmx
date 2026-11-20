@@ -6,6 +6,7 @@ import SeriesCallout from '../../components/SeriesCallout.astro';
 import BookPromo from '../../components/BookPromo.astro';
 import ToolPromo from '../../components/ToolPromo.astro';
 import TipoCambioCalculadora from '../../components/TipoCambioCalculadora.astro';
+import HistorialPrecioIA from '../../components/HistorialPrecioIA.astro';
 import VeredictoBadge from '../../components/VeredictoBadge.astro';
 import PruebaGratisBadge from '../../components/PruebaGratisBadge.astro';
 import CodigoDescuentoBadge from '../../components/CodigoDescuentoBadge.astro';
@@ -859,6 +860,9 @@ if (toolKinds.includes(kind) && herramienta) {
           </>
         )}
         <Content />
+        {kind === 'preciosIA' && precio && precioMXN !== undefined && (
+          <HistorialPrecioIA herramientaId={herramientaId} herramienta={herramienta} />
+        )}
         {estudiantesDeHerramienta && (
           <p class="estudiantes-enlace">
             ¿{herramienta} tiene descuento o plan gratis para estudiantes?{' '}

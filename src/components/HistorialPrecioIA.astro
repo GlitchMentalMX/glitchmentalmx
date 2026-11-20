@@ -1,0 +1,60 @@
+---
+// Historial en pesos de una ficha de Precios de IA. Todo sale de
+// src/data/precios-ia-historial.json: tipo de cambio FIX de Banxico de cada día
+// hábil × precio en USD vigente ese día. No se estima nada. Si todavía no hay
+// al menos una semana de datos, no se muestra.
+import { resumenHistorial, MXN, USD, fechaDe } from '../lib/historialPreciosIA';
+import { formatDate } from '../lib/format';
+
+interface Props {
+  herramientaId: string;
+  herramienta: string;
+}
+
+const { herramientaId, herramienta } = Astro.props;
+const r = resumenHistorial(herramientaId);
+const subio = r ? r.variacionPct > 0.05 : false;
+const bajo = r ? r.variacionPct < -0.05 : false;
+const pct = r ? Math.abs(r.variacionPct).toLocaleString('es-MX', { maximumFractionDigits: 1 }) : '';
+---
+
+{r && (
+  <section class="historial" aria-labelledby="historial-titulo">
+    <h2 id="historial-titulo">Historial del precio de {herramienta} en pesos</h2>
+    <p>
+      Lo seguimos desde el {formatDate(fechaDe(r.desde))}. Ese día costaba {MXN(r.primeroMXN)} MXN;
+      hoy cuesta {MXN(r.hoyMXN)} MXN
+      {subio && <> — {pct} % más</>}
+      {bajo && <> — {pct} % menos</>}
+      {!subio && !bajo && <> — sin cambio</>}.
+      {r.max.mxn - r.min.mxn >= 0.01 && (
+        <> En ese periodo el mínimo fue {MXN(r.min.mxn)} MXN ({formatDate(fechaDe(r.min.fecha))}) y el máximo {MXN(r.max.mxn)} MXN ({formatDate(fechaDe(r.max.fecha))}).</>
+      )}
+    </p>
+    {r.cambios.length === 0 ? (
+      <p class="historial-nota">
+        {(subio || bajo) ? 'El precio en dólares no cambió en ese periodo: la variación en pesos se debe solo al tipo de cambio de Banxico.' : 'El precio en dólares no ha cambiado desde que lo seguimos.'}
+      </p>
+    ) : (
+      <ul class="historial-cambios">
+        {r.cambios.map((c) => (
+          <li>
+            Cambio de precio registrado el {formatDate(fechaDe(c.desde))}: de {USD(c.de)} a {USD(c.a)} USD ({c.periodo === 'anual' ? 'al año' : 'al mes'}).
+          </li>
+        ))}
+      </ul>
+    )}
+    <p class="historial-nota">
+      La fecha de un cambio de precio es la del día en que lo verificamos y registramos, no
+      necesariamente el día exacto en que el proveedor lo aplicó.
+    </p>
+  </section>
+)}
+
+<style>
+  .historial { margin: 28px 0 8px; padding-top: 20px; border-top: 1px solid var(--border); }
+  .historial h2 { font-size: 1.15rem; margin: 0 0 10px; }
+  .historial p { margin: 0 0 8px; }
+  .historial-cambios { margin: 0 0 8px; padding-left: 1.2em; }
+  .historial-nota { font-size: 0.82rem; color: var(--text-faint); }
+</style>

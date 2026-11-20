@@ -1,0 +1,1148 @@
+{
+ "nota": "Historial de precios de IA. tipoCambio: FIX de Banxico por día hábil. precios: cada entrada es el precio en USD vigente DESDE la fecha en que lo verificamos y registramos (no necesariamente el día exacto en que el proveedor lo cambió). La primera entrada de cada herramienta es su alta en el catálogo. Lo mantiene scripts/actualizar-historial-precios.mjs.",
+ "tipoCambio": [
+  {
+   "fecha": "2026-08-17",
+   "valor": 17.0218
+  },
+  {
+   "fecha": "2026-08-18",
+   "valor": 17.0638
+  },
+  {
+   "fecha": "2026-08-19",
+   "valor": 16.9593
+  },
+  {
+   "fecha": "2026-08-20",
+   "valor": 16.9583
+  },
+  {
+   "fecha": "2026-08-21",
+   "valor": 16.9018
+  },
+  {
+   "fecha": "2026-08-24",
+   "valor": 16.9647
+  },
+  {
+   "fecha": "2026-08-25",
+   "valor": 16.946
+  },
+  {
+   "fecha": "2026-08-26",
+   "valor": 16.966
+  },
+  {
+   "fecha": "2026-08-27",
+   "valor": 16.9712
+  },
+  {
+   "fecha": "2026-08-28",
+   "valor": 17.0427
+  },
+  {
+   "fecha": "2026-08-31",
+   "valor": 17.0147
+  },
+  {
+   "fecha": "2026-09-01",
+   "valor": 16.9755
+  },
+  {
+   "fecha": "2026-09-02",
+   "valor": 16.9852
+  },
+  {
+   "fecha": "2026-09-03",
+   "valor": 16.956
+  },
+  {
+   "fecha": "2026-09-04",
+   "valor": 16.8748
+  },
+  {
+   "fecha": "2026-09-07",
+   "valor": 16.9237
+  },
+  {
+   "fecha": "2026-09-08",
+   "valor": 16.9202
+  },
+  {
+   "fecha": "2026-09-09",
+   "valor": 16.8947
+  },
+  {
+   "fecha": "2026-09-10",
+   "valor": 16.9722
+  },
+  {
+   "fecha": "2026-09-11",
+   "valor": 16.9707
+  },
+  {
+   "fecha": "2026-09-14",
+   "valor": 17.1277
+  },
+  {
+   "fecha": "2026-09-15",
+   "valor": 17.1527
+  },
+  {
+   "fecha": "2026-09-17",
+   "valor": 17.1872
+  },
+  {
+   "fecha": "2026-09-18",
+   "valor": 17.245
+  },
+  {
+   "fecha": "2026-09-21",
+   "valor": 17.2203
+  },
+  {
+   "fecha": "2026-09-22",
+   "valor": 17.3015
+  },
+  {
+   "fecha": "2026-09-23",
+   "valor": 17.503
+  },
+  {
+   "fecha": "2026-09-24",
+   "valor": 17.6425
+  },
+  {
+   "fecha": "2026-09-25",
+   "valor": 17.71
+  },
+  {
+   "fecha": "2026-09-28",
+   "valor": 17.8413
+  },
+  {
+   "fecha": "2026-09-29",
+   "valor": 18.071
+  },
+  {
+   "fecha": "2026-09-30",
+   "valor": 18.0692
+  },
+  {
+   "fecha": "2026-10-01",
+   "valor": 18.3688
+  },
+  {
+   "fecha": "2026-10-02",
+   "valor": 18.1903
+  },
+  {
+   "fecha": "2026-10-05",
+   "valor": 18.1343
+  },
+  {
+   "fecha": "2026-10-06",
+   "valor": 17.967
+  },
+  {
+   "fecha": "2026-10-07",
+   "valor": 17.978
+  },
+  {
+   "fecha": "2026-10-08",
+   "valor": 18.1128
+  },
+  {
+   "fecha": "2026-10-09",
+   "valor": 18.4163
+  },
+  {
+   "fecha": "2026-10-12",
+   "valor": 18.2542
+  },
+  {
+   "fecha": "2026-10-13",
+   "valor": 18.3528
+  },
+  {
+   "fecha": "2026-10-14",
+   "valor": 18.4888
+  },
+  {
+   "fecha": "2026-10-15",
+   "valor": 18.425
+  },
+  {
+   "fecha": "2026-10-16",
+   "valor": 18.493
+  },
+  {
+   "fecha": "2026-10-19",
+   "valor": 18.4253
+  },
+  {
+   "fecha": "2026-10-20",
+   "valor": 18.42
+  },
+  {
+   "fecha": "2026-10-21",
+   "valor": 18.6425
+  },
+  {
+   "fecha": "2026-10-22",
+   "valor": 18.7005
+  },
+  {
+   "fecha": "2026-10-23",
+   "valor": 18.667
+  },
+  {
+   "fecha": "2026-10-26",
+   "valor": 18.5798
+  },
+  {
+   "fecha": "2026-10-27",
+   "valor": 18.6525
+  },
+  {
+   "fecha": "2026-10-28",
+   "valor": 18.6673
+  },
+  {
+   "fecha": "2026-10-29",
+   "valor": 18.8148
+  },
+  {
+   "fecha": "2026-10-30",
+   "valor": 18.7962
+  },
+  {
+   "fecha": "2026-11-03",
+   "valor": 18.7592
+  },
+  {
+   "fecha": "2026-11-04",
+   "valor": 18.6285
+  },
+  {
+   "fecha": "2026-11-05",
+   "valor": 18.7147
+  },
+  {
+   "fecha": "2026-11-06",
+   "valor": 18.6297
+  },
+  {
+   "fecha": "2026-11-09",
+   "valor": 18.5983
+  },
+  {
+   "fecha": "2026-11-10",
+   "valor": 18.6678
+  },
+  {
+   "fecha": "2026-11-11",
+   "valor": 18.6192
+  },
+  {
+   "fecha": "2026-11-12",
+   "valor": 18.6188
+  },
+  {
+   "fecha": "2026-11-13",
+   "valor": 18.5525
+  },
+  {
+   "fecha": "2026-11-17",
+   "valor": 18.4677
+  },
+  {
+   "fecha": "2026-11-18",
+   "valor": 18.6723
+  },
+  {
+   "fecha": "2026-11-19",
+   "valor": 19.027
+  }
+ ],
+ "precios": {
+  "23andme-plus": [
+   {
+    "desde": "2026-08-30",
+    "precioUSD": 99,
+    "periodo": "anual"
+   }
+  ],
+  "adobe": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 54.99,
+    "periodo": "mensual"
+   }
+  ],
+  "adobe-firefly": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 9.99,
+    "periodo": "mensual"
+   }
+  ],
+  "adobe-firefly-pro": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "amazon-prime": [
+   {
+    "desde": "2026-08-30",
+    "precioUSD": 14.99,
+    "periodo": "mensual"
+   }
+  ],
+  "amazon-q-developer": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 19,
+    "periodo": "mensual"
+   }
+  ],
+  "beautiful-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 45,
+    "periodo": "mensual"
+   }
+  ],
+  "bolt-new": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 25,
+    "periodo": "mensual"
+   }
+  ],
+  "canva": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 18,
+    "periodo": "mensual"
+   }
+  ],
+  "canva-business": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 25,
+    "periodo": "mensual"
+   }
+  ],
+  "capcut": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "character-ai": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 9.99,
+    "periodo": "mensual"
+   }
+  ],
+  "chatgpt": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "chatgpt-go": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 8,
+    "periodo": "mensual"
+   }
+  ],
+  "chatgpt-pro": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 100,
+    "periodo": "mensual"
+   }
+  ],
+  "claude": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "claude-code": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "claude-max": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 100,
+    "periodo": "mensual"
+   }
+  ],
+  "clickup": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 16,
+    "periodo": "mensual"
+   }
+  ],
+  "codex": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "consensus-app": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "copilot": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "copy-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "copyleaks": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 13.99,
+    "periodo": "mensual"
+   }
+  ],
+  "cursor": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   },
+   {
+    "desde": "2026-10-17",
+    "precioUSD": 30,
+    "periodo": "mensual"
+   }
+  ],
+  "cursor-pro-plus": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 60,
+    "periodo": "mensual"
+   },
+   {
+    "desde": "2026-10-17",
+    "precioUSD": 100,
+    "periodo": "mensual"
+   }
+  ],
+  "deepl": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 10.49,
+    "periodo": "mensual"
+   }
+  ],
+  "deepseek": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 0,
+    "periodo": "mensual"
+   }
+  ],
+  "descript": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 35,
+    "periodo": "mensual"
+   }
+  ],
+  "discord": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 2.99,
+    "periodo": "mensual"
+   }
+  ],
+  "duolingo": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 12.99,
+    "periodo": "mensual"
+   }
+  ],
+  "elevenlabs": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 22,
+    "periodo": "mensual"
+   }
+  ],
+  "elicit": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 49,
+    "periodo": "mensual"
+   }
+  ],
+  "figma": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 16,
+    "periodo": "mensual"
+   }
+  ],
+  "fireflies-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 18,
+    "periodo": "mensual"
+   }
+  ],
+  "framer": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 30,
+    "periodo": "mensual"
+   }
+  ],
+  "freepik": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "gamma": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "gauth": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 11.99,
+    "periodo": "mensual"
+   }
+  ],
+  "gemini": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "genspark": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 24.99,
+    "periodo": "mensual"
+   }
+  ],
+  "github-copilot": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "github-copilot-max": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 100,
+    "periodo": "mensual"
+   }
+  ],
+  "github-copilot-pro-plus": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 39,
+    "periodo": "mensual"
+   }
+  ],
+  "google-ai-plus": [
+   {
+    "desde": "2026-09-15",
+    "precioUSD": 4.99,
+    "periodo": "mensual"
+   }
+  ],
+  "google-ai-ultra": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 99.99,
+    "periodo": "mensual"
+   }
+  ],
+  "google-workspace": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 8.4,
+    "periodo": "mensual"
+   }
+  ],
+  "grammarly": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 30,
+    "periodo": "mensual"
+   }
+  ],
+  "grok": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 30,
+    "periodo": "mensual"
+   }
+  ],
+  "hailuo-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 14.99,
+    "periodo": "mensual"
+   }
+  ],
+  "hailuo-ai-pro": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 54.99,
+    "periodo": "mensual"
+   }
+  ],
+  "heygen": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "higgsfield-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 15,
+    "periodo": "mensual"
+   }
+  ],
+  "ideogram": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "ideogram-pro": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 60,
+    "periodo": "mensual"
+   }
+  ],
+  "invideo-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 17,
+    "periodo": "mensual"
+   },
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 9,
+    "periodo": "mensual"
+   }
+  ],
+  "jasper-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 69,
+    "periodo": "mensual"
+   }
+  ],
+  "kimi": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 19,
+    "periodo": "mensual"
+   }
+  ],
+  "kimi-max": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 99,
+    "periodo": "mensual"
+   }
+  ],
+  "kling-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "krea-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 9,
+    "periodo": "mensual"
+   }
+  ],
+  "le-chat": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 14.99,
+    "periodo": "mensual"
+   }
+  ],
+  "leonardo-ai": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 12,
+    "periodo": "mensual"
+   }
+  ],
+  "linkedin": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 39.99,
+    "periodo": "mensual"
+   }
+  ],
+  "lovable": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 25,
+    "periodo": "mensual"
+   }
+  ],
+  "luma-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 30,
+    "periodo": "mensual"
+   }
+  ],
+  "manus-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "manychat": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "meta-ai": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 0,
+    "periodo": "mensual"
+   }
+  ],
+  "microsoft-365": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 9.99,
+    "periodo": "mensual"
+   }
+  ],
+  "microsoft-teams": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 4,
+    "periodo": "mensual"
+   }
+  ],
+  "midjourney": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "monica-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 9.9,
+    "periodo": "mensual"
+   }
+  ],
+  "murf-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "nest-aware": [
+   {
+    "desde": "2026-08-30",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "netflix": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "notebooklm": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "notion": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 12,
+    "periodo": "mensual"
+   }
+  ],
+  "notion-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "opus-clip": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 15,
+    "periodo": "mensual"
+   }
+  ],
+  "otter-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 16.99,
+    "periodo": "mensual"
+   }
+  ],
+  "perplexity": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "perplexity-max": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 200,
+    "periodo": "mensual"
+   }
+  ],
+  "photomath": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 9.99,
+    "periodo": "mensual"
+   }
+  ],
+  "photoroom": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 12.99,
+    "periodo": "mensual"
+   }
+  ],
+  "pictory": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "pika": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "pixverse": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "playground-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 15,
+    "periodo": "mensual"
+   }
+  ],
+  "poe": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 19.99,
+    "periodo": "mensual"
+   }
+  ],
+  "question-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 9.9,
+    "periodo": "mensual"
+   }
+  ],
+  "quillbot": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 19.95,
+    "periodo": "mensual"
+   }
+  ],
+  "recraft-ai": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 12,
+    "periodo": "mensual"
+   }
+  ],
+  "remove-bg": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 9,
+    "periodo": "mensual"
+   }
+  ],
+  "replit": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 25,
+    "periodo": "mensual"
+   },
+   {
+    "desde": "2026-10-17",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "ring-protect": [
+   {
+    "desde": "2026-08-30",
+    "precioUSD": 4.99,
+    "periodo": "mensual"
+   }
+  ],
+  "riverside-fm": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "runway": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 15,
+    "periodo": "mensual"
+   }
+  ],
+  "scispace": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "sider-ai": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 25,
+    "periodo": "mensual"
+   }
+  ],
+  "slack": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 8.75,
+    "periodo": "mensual"
+   }
+  ],
+  "snapchat-plus": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 3.99,
+    "periodo": "mensual"
+   }
+  ],
+  "speechify": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "spotify": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 12.99,
+    "periodo": "mensual"
+   }
+  ],
+  "spotify-duo": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 18.99,
+    "periodo": "mensual"
+   }
+  ],
+  "spotify-family": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 21.99,
+    "periodo": "mensual"
+   }
+  ],
+  "submagic": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 19,
+    "periodo": "mensual"
+   }
+  ],
+  "suno": [
+   {
+    "desde": "2026-08-19",
+    "precioUSD": 8,
+    "periodo": "mensual"
+   },
+   {
+    "desde": "2026-11-17",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "supergrok-heavy": [
+   {
+    "desde": "2026-10-04",
+    "precioUSD": 300,
+    "periodo": "mensual"
+   },
+   {
+    "desde": "2026-10-17",
+    "precioUSD": 200,
+    "periodo": "mensual"
+   }
+  ],
+  "synthesia": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29,
+    "periodo": "mensual"
+   }
+  ],
+  "tabnine": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 39,
+    "periodo": "mensual"
+   }
+  ],
+  "telegram-premium": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 4.99,
+    "periodo": "mensual"
+   }
+  ],
+  "tinder": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 24.99,
+    "periodo": "mensual"
+   }
+  ],
+  "udio": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "v0": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 30,
+    "periodo": "mensual"
+   }
+  ],
+  "veo": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 4.99,
+    "periodo": "mensual"
+   }
+  ],
+  "vidu": [
+   {
+    "desde": "2026-09-01",
+    "precioUSD": 10,
+    "periodo": "mensual"
+   }
+  ],
+  "windsurf": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 20,
+    "periodo": "mensual"
+   }
+  ],
+  "youtube": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 15.99,
+    "periodo": "mensual"
+   }
+  ],
+  "zapier": [
+   {
+    "desde": "2026-08-20",
+    "precioUSD": 29.99,
+    "periodo": "mensual"
+   }
+  ],
+  "zoom": [
+   {
+    "desde": "2026-08-31",
+    "precioUSD": 16.99,
+    "periodo": "mensual"
+   }
+  ]
+ }
+}
