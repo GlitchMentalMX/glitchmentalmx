@@ -104,7 +104,31 @@ const itemListSchema = {
       cambio FIX de Banxico, actualizado a diario. Sin hacer cuentas antes de contratar. Este es el
       precio de lista — si ese precio tiene un descuento real o solo cupones falsos, lo verificamos en <a href="/codigos-descuento-ia/">Códigos de descuento</a>; si puedes probarlo sin dar tu tarjeta, en <a href="/prueba-gratis-sin-tarjeta/">Prueba gratis sin tarjeta</a>; si la herramienta entrena su IA con tus datos, en <a href="/quien-entrena-con-tus-datos/">Quién entrena con tus datos</a>; y si eres estudiante y quieres saber qué ofertas aplican en México, en <a href="/descuentos-para-estudiantes-ia/">Descuentos para estudiantes</a>.
     </p>
+    <p class="saltos">
+      Más abajo: <a href="#comparativo">comparativo de precios en pesos</a> ·
+      <a href="#cambios">qué cambió de precio</a>
+    </p>
     <NotaActualizacionBanxico />
+  </section>
+
+  <section class="container list">
+    <p class="eyebrow list-label">Las herramientas</p>
+    <BuscadorPreciosIA items={buscadorItems} />
+    {posts.map((post, i) => (
+      <CollectionArticleRow
+        index={i + 1}
+        slug={post.id}
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        body={post.body}
+      />
+    ))}
+  </section>
+
+  <section class="container block wide" id="comparativo" aria-labelledby="comparativo-titulo">
+    <h2 id="comparativo-titulo">Comparativo de precios en pesos</h2>
+    <ComparativoPreciosIA filas={filas} fecha={fechaDatoTexto} />
   </section>
 
   <section class="container block" id="cambios" aria-labelledby="cambios-titulo">
@@ -132,26 +156,6 @@ const itemListSchema = {
       exacto en que el proveedor lo aplicó. Cada ficha muestra su propio historial en pesos.
     </p>
   </section>
-
-  <section class="container block wide" id="comparativo" aria-labelledby="comparativo-titulo">
-    <h2 id="comparativo-titulo">Comparativo de precios en pesos</h2>
-    <ComparativoPreciosIA filas={filas} fecha={fechaDatoTexto} />
-  </section>
-
-  <section class="container list">
-    <p class="eyebrow list-label">Las herramientas</p>
-    <BuscadorPreciosIA items={buscadorItems} />
-    {posts.map((post, i) => (
-      <CollectionArticleRow
-        index={i + 1}
-        slug={post.id}
-        title={post.data.title}
-        description={post.data.description}
-        pubDate={post.data.pubDate}
-        body={post.body}
-      />
-    ))}
-  </section>
 </Layout>
 
 <style>
@@ -166,6 +170,8 @@ const itemListSchema = {
   .cambios { margin: 0 0 12px; padding-left: 1.2em; line-height: 1.6; }
   .nota-fecha { font-size: 0.8rem; color: var(--text-faint); }
 
-  .list { padding: 24px 24px 96px; max-width: 780px; }
+  .list { padding: 24px 24px 8px; max-width: 780px; }
+  .saltos { margin: 14px 0 0; font-size: 0.9rem; color: var(--text-muted); }
+  #cambios { padding-bottom: 96px; }
   .list-label { margin-bottom: 6px; }
 </style>
