@@ -15,6 +15,7 @@ export interface EntradaPrecio {
 export interface PuntoMXN {
   fecha: string;
   mxn: number;
+  usd: number;
 }
 
 const precios = historial.precios as unknown as Record<string, EntradaPrecio[]>;
@@ -45,7 +46,7 @@ export function serieMXN(id: string): PuntoMXN[] {
     if (p.fecha < inicio) continue;
     const usd = precioUSDEn(id, p.fecha);
     if (usd === undefined) continue;
-    serie.push({ fecha: p.fecha, mxn: usd * p.valor });
+    serie.push({ fecha: p.fecha, mxn: usd * p.valor, usd });
   }
   return serie;
 }

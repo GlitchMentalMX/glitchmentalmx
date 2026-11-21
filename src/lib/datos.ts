@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import tipoCambio from '../data/tipo-cambio.json';
 import preciosIAUSD from '../data/precios-ia-usd.json';
 import preciosDigitalesUSD from '../data/precios-digitales-usd.json';
+import { serieMXN, cambiosDePrecio } from './historialPreciosIA';
 
 export const SITE = 'https://glitchmental.com';
 
@@ -168,6 +169,88 @@ export async function cargarPrecios() {
     }
   }
   filas.sort((a, b) => a.serie.localeCompare(b.serie, 'es') || a.plan.localeCompare(b.plan, 'es'));
+  return filas;
+}
+
+// Historial de Precios de IA (src/data/precios-ia-historial.json, lo mantiene
+// scripts/actualizar-historial-precios.mjs). Una fila por herramienta y por día
+// hábil con dato de Banxico, desde que la seguimos: precio en USD vigente ese
+// día × tipo de cambio FIX de ese día.
+export interface FilaHistorialPrecio {
+  fecha: string;
+  herramienta_id: string;
+  plan: string;
+  empresa: string;
+  periodo: string;
+  precio_usd: number;
+  tipo_cambio_fix: number;
+  precio_mxn: number;
+  url: string;
+}
+
+async function fichasPreciosIA() {
+  const posts = await getCollection('preciosIA', ({ data }) => !data.draft);
+  return posts
+    .map((p) => ({ slug: p.id, id: (p.data as any).herramientaId as string }))
+    .filter((f) => (preciosIAUSD as Record<string, any>)[f.id]?.precioUSD !== undefined);
+}
+
+export async function cargarHistorialPrecios() {
+  const filas: FilaHistorialPrecio[] = [];
+  for (const f of await fichasPreciosIA()) {
+    const e = (preciosIAUSD as Record<string, any>)[f.id];
+    for (const punto of serieMXN(f.id)) {
+      const fx = punto.mxn / punto.usd;
+      filas.push({
+        fecha: punto.fecha,
+        herramienta_id: f.id,
+        plan: e.nombre,
+        empresa: e.empresa,
+        periodo: e.periodo,
+        precio_usd: punto.usd,
+        tipo_cambio_fix: Math.round(fx * 1e6) / 1e6,
+        precio_mxn: Math.round(punto.mxn * 100) / 100,
+        url: `${SITE}/articulos/${f.slug}/`,
+      });
+    }
+  }
+  filas.sort((a, b) => a.herramienta_id.localeCompare(b.herramienta_id) || a.fecha.localeCompare(b.fecha));
+  return filas;
+}
+
+export interface FilaCambioPrecio {
+  fecha_registro: string;
+  herramienta_id: string;
+  plan: string;
+  empresa: string;
+  periodo: string;
+  precio_usd_anterior: number;
+  precio_usd_nuevo: number;
+  variacion_pct: number;
+  url: string;
+}
+
+// Cambios reales de precio en USD. fecha_registro es el día en que los
+// verificamos y registramos, no necesariamente el día en que el proveedor los aplicó.
+export async function cargarCambiosPrecio() {
+  const filas: FilaCambioPrecio[] = [];
+  for (const f of await fichasPreciosIA()) {
+    const e = (preciosIAUSD as Record<string, any>)[f.id];
+    for (const c of cambiosDePrecio(f.id)) {
+      filas.push({
+        fecha_registro: c.desde,
+        herramienta_id: f.id,
+        plan: e.nombre,
+        empresa: e.empresa,
+        periodo: c.periodo,
+        precio_usd_anterior: c.de,
+        precio_usd_nuevo: c.a,
+        variacion_pct: Math.round(((c.a - c.de) / c.de) * 1000) / 10,
+        url: `${SITE}/articulos/${f.slug}/`,
+      });
+    }
+  }
+  filas.sort((a, b) => b.fecha_registro.localeCompare(a.fecha_registro) || a.herramienta_id.localeCompare(b.herramienta_id));
   return filas;
 }
 

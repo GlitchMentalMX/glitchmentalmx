@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import { SITE, cargarVeredictos, cargarPrecios, type Veredicto } from '../../lib/datos';
+import { SITE, cargarVeredictos, cargarPrecios, cargarHistorialPrecios, cargarCambiosPrecio, type Veredicto } from '../../lib/datos';
 import { cargarFichas, edicion as edicionExp, RUTA as RUTA_EXP, AVISO as AVISO_EXP } from '../../lib/exposicion';
 
 const fichasExp = cargarFichas();
@@ -10,6 +10,8 @@ const conteoNivel = (n: string) => fichasExp.filter((f) => f.puntuacion.nivel ==
 
 const { filas, resumen, ultimaActualizacion, primeraPublicacion } = await cargarVeredictos();
 const precios = await cargarPrecios();
+const historialFilas = await cargarHistorialPrecios();
+const cambiosFilas = await cargarCambiosPrecio();
 
 const totalHerramientas = new Set(filas.map((f) => f.herramienta_id)).size;
 const pct = (n: number, total: number) => (total === 0 ? 0 : Math.round((n / total) * 100));
@@ -102,6 +104,18 @@ const datasetSchema = {
       name: 'Precios de entrada en USD y MXN (CSV)',
       contentUrl: csvPrecios,
     },
+    {
+      '@type': 'DataDownload',
+      encodingFormat: 'text/csv',
+      name: 'Historial diario del precio en pesos de cada herramienta de IA (CSV)',
+      contentUrl: `${SITE}/datos/precios-historial.csv`,
+    },
+    {
+      '@type': 'DataDownload',
+      encodingFormat: 'text/csv',
+      name: 'Cambios de precio en dólares de herramientas de IA (CSV)',
+      contentUrl: `${SITE}/datos/cambios-de-precio.csv`,
+    },
   ],
 };
 ---
@@ -161,13 +175,19 @@ const datasetSchema = {
 
   <section class="container texto">
     <h2>Descargas</h2>
-    <p>Tres archivos CSV (se abren en Excel, Google Sheets o cualquier herramienta de datos), generados con las mismas fichas que ves en el sitio:</p>
+    <p>Archivos CSV (se abren en Excel, Google Sheets o cualquier herramienta de datos), generados con las mismas fichas que ves en el sitio:</p>
     <ul class="descargas">
       <li>
         <a href="/datos/veredictos.csv" download>veredictos.csv</a> — {filas.length} filas, una por herramienta y serie. Columnas: serie, herramienta, herramienta_id, veredicto, veredicto_significado, frase_corta, fuente_verificada, publicada, actualizada, url.
       </li>
       <li>
         <a href="/datos/precios.csv" download>precios.csv</a> — {precios.length} filas, una por ficha de precios. Columnas: serie, herramienta_id, plan, empresa, precio_usd, precio_mxn_hoy, periodo, tipo_cambio_fix, fecha_tipo_cambio, url.
+      </li>
+      <li>
+        <a href="/datos/precios-historial.csv" download>precios-historial.csv</a> — {historialFilas.length} filas, una por herramienta de Precios de IA y por día hábil con dato de Banxico, desde que la seguimos: el precio en dólares vigente ese día por el tipo de cambio FIX de ese día. Columnas: fecha, herramienta_id, plan, empresa, periodo, precio_usd, tipo_cambio_fix, precio_mxn, url.
+      </li>
+      <li>
+        <a href="/datos/cambios-de-precio.csv" download>cambios-de-precio.csv</a> — {cambiosFilas.length} cambios reales de precio en dólares. Columnas: fecha_registro, herramienta_id, plan, empresa, periodo, precio_usd_anterior, precio_usd_nuevo, variacion_pct, url. La fecha es el día en que lo verificamos y registramos, no necesariamente el día exacto en que el proveedor lo aplicó.
       </li>
       <li>
         <a href="/datos/indice-exposicion.csv" download>indice-exposicion.csv</a> — {fichasExp.length} filas, una por ocupación (sin el detalle de actividades). Columnas: edicion, ocupacion, ocupacion_id, sector, puntuacion, nivel, rango_min, rango_max, exposicion_E, automatizacion_A, complementariedad_C, tope_aplicado, confianza, onet, isco08, revision, url.
