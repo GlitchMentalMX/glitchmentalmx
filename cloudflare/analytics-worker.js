@@ -259,8 +259,11 @@ async function handleCollect(request, env, origin, matchedOrigin) {
 // salir. Se reclasifican como bot DESPUÉS de una hora (un latido legítimo
 // tardío ya habría llegado). Es el único caso que se reclasifica por no tener
 // latido; no se filtra por país ni por duración en general.
+// `pid IS NOT NULL`: las vistas anteriores al latido (octubre 2026) tienen
+// duration NULL porque esa medición todavía no existía, no porque el visitante
+// fuera un bot — esas filas no tienen pid y no se tocan.
 const FAKE_BROWSER_SQL = `UPDATE hits SET is_bot = 1
-  WHERE is_bot = 0 AND duration IS NULL AND os = 'Linux' AND device = 'desktop' AND browser = 'Chrome' AND ts < ?`;
+  WHERE is_bot = 0 AND pid IS NOT NULL AND duration IS NULL AND os = 'Linux' AND device = 'desktop' AND browser = 'Chrome' AND ts < ?`;
 const SWEEP_EVERY_MS = 10 * 60 * 1000;
 let lastSweepAt = 0;
 
