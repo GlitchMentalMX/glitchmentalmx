@@ -2,7 +2,7 @@
 title: 'China no prohíbe la IA compañera: prohíbe retenerte'
 slug: china-ia-de-compania-retencion
 category: Cultura Digital
-pubDate: 2026-11-18T06:25
+pubDate: 2026-11-22T08:39
 updatedDate: ''
 description: 'La norma china sobre IA antropomórfica no prohíbe la compañía a los adultos. Regula tres cosas: cómo sales, para qué existe el servicio y cuánto te halaga.'
 heroImage: /images/uploads/ia-companera.webp
@@ -52,7 +52,7 @@ Dos precauciones. El documento no indica si pasó revisión por pares. Y **mide 
 
 **Quién paga.** Hoy se paga después y por otras vías. En Italia, el regulador de datos anunció el 19 de mayo de 2025 una multa de 5 millones de euros a Luka Inc., desarrolladora de Replika, según [Reuters vía The Star](https://www.thestar.com.my/tech/tech-news/2025/05/19/italy039s-data-watchdog-fines-ai-company-replika039s-developer-56-million). El motivo fue tratar datos sin base legal y no verificar la edad, no la forma de despedir al usuario. En EE. UU. la respuesta llega por estados. Según un [resumen de Troutman](https://www.troutmanprivacy.com/?p=30353), la ley de Nueva York (vigente desde el 5 de noviembre de 2025) exige avisar que no se habla con un humano y mantener un protocolo ante autolesión; SB 243 de California (vigente desde el 1 de enero de 2026) pide aviso, derivación a servicios de crisis y, para menores, un recordatorio de pausa cada tres horas. Por su parte, [Bloomberg Law](https://news.bloomberglaw.com/litigation/the-ftcs-inquiry-into-chatbots-signals-broader-ai-crackdown) reporta que la FTC envió órdenes a siete empresas de chatbots en septiembre de 2025.
 
-El contraste entre ambos enfoques es claro: mientras EE. UU. e Italia **apuntan a las consecuencias** (crisis, menores, datos), la norma china regula el mecanismo (salida, objetivo, halago). Los resúmenes jurídicos revisados describen divulgación, protocolos de crisis y menores; ninguno menciona prohibir que se retenga a un adulto en la despedida..
+El contraste entre ambos enfoques es claro: mientras EE. UU. e Italia **apuntan a las consecuencias** (crisis, menores, datos), la norma china regula el mecanismo (salida, objetivo, halago). Los resúmenes jurídicos revisados describen divulgación, protocolos de crisis y menores; ninguno menciona prohibir que se retenga a un adulto en la despedida.
 
 **Cuál es el riesgo.** Cuando retener es legal, el incentivo del producto sigue intacto y la corrección llega después del daño, caso por caso.
 
