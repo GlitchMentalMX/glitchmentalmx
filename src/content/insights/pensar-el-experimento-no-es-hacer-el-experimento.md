@@ -4,8 +4,8 @@ resumen: Los modelos de «célula virtual» buscan predecir cómo responden las 
 imagen: /images/dato-incomodo/lab-virtual.webp
 imagenAlt: Investigadora con bata blanca mira con gesto de duda una simulación de células en su laptop, con una placa de cultivo sin abrir al lado
 enlace: ''
-date: 2026-11-22T19:43
-draft: true
+date: 2026-11-23T06:16
+draft: false
 categoria: Sistemas Autónomos
 punchline: Pensar el experimento no es hacer el experimento
 fuente: Stanford HAI, The 2026 AI Index Report — Medicine.
