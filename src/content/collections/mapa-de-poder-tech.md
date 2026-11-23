@@ -85,6 +85,10 @@ postSlugs:
   - estamos-cerca-de-la-singularidad-evidencia-privada
   - ia-encuentra-fallas-quien-las-corrige
   - medicion-agua-centros-de-datos-queretaro
+  - apple-intelligence-china-europa
+  - tiktok-rabbit-hole-europa-algoritmo
+  - gas-natural-ia-mexico
+  - subestacion-centros-de-datos-mexico
 sections:
   - title: Geopolítica de la IA
     description: >-
@@ -104,6 +108,8 @@ sections:
       - slug: quien-responde-cuando-ia-hackea-hugging-face
       - slug: ia-hackeo-gobierno-pregunta-aburrida
       - slug: contrabando-chips-ia-como-se-cuelan-a-china
+      - slug: apple-intelligence-china-europa
+      - slug: tiktok-rabbit-hole-europa-algoritmo
   - title: Monopolios e Infraestructura
     description: >-
       Quién controla los cables, los chips, la nube y los modelos — y qué
@@ -203,6 +209,8 @@ sections:
         tag: serie
       - slug: datos-abiertos-el-poder-publico-que-nadie-te-explica
       - slug: el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla
+      - slug: gas-natural-ia-mexico
+      - slug: subestacion-centros-de-datos-mexico
   - title: Fronteras Tecnológicas
     description: >-
       Las tecnologías que redefinen lo que es posible — y quién decide

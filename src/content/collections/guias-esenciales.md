@@ -90,6 +90,10 @@ postSlugs:
   - como-aprenden-los-robots-humanoides-a-trabajar
   - estamos-cerca-de-la-singularidad-evidencia-privada
   - valor-medible-de-la-ia-kpmg
+  - miedo-colectivo-redes-sociales
+  - china-ia-de-compania-retencion
+  - tiktok-rabbit-hole-europa-algoritmo
+  - apple-intelligence-china-europa
 sections:
   - title: Cultura Digital
     description: Identidad, atención y vida en internet.
@@ -116,6 +120,8 @@ sections:
       - slug: el-diseno-detras-de-que-sintamos-que-la-ia-nos-entiende
       - slug: la-comodidad-que-el-algoritmo-no-te-impuso-la-elegiste
       - slug: necesitas-detox-de-ia-test-habitos
+      - slug: miedo-colectivo-redes-sociales
+      - slug: china-ia-de-compania-retencion
   - title: Tendencias Digitales
     description: Cómo cambian los formatos, el contenido y la forma de consumirlo.
     posts:
@@ -128,6 +134,7 @@ sections:
       - slug: dead-internet-theory-el-internet-ya-no-es-para-humanos
       - slug: lo-que-se-pierde-cuando-muere-una-plataforma-digital
       - slug: algoritmo-te-pregunta-que-quieres-y-no-te-cree
+      - slug: tiktok-rabbit-hole-europa-algoritmo
   - title: Inteligencia Artificial
     description: Qué es, cómo funciona y por qué importa.
     posts:
@@ -212,5 +219,6 @@ sections:
       - slug: la-vigilancia-en-tus-objetos-cotidianos-el-inventario-real
       - slug: pantalla-del-hogar-reconoce-quien-eres-y-quien-no
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
+      - slug: apple-intelligence-china-europa
 order: 4
 ---

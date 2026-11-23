@@ -8,7 +8,7 @@ description: >-
   tiene el poder, quién lo pierde y qué queda fuera de la conversación
   pública.
 intro: >-
-  134 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
+  140 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
   funciona sola: no hay orden obligatorio. ¿Primera visita? Empieza por la
   ruta recomendada.
 postSlugs:
@@ -146,6 +146,12 @@ postSlugs:
   - estamos-cerca-de-la-singularidad-evidencia-privada
   - valor-medible-de-la-ia-kpmg
   - medicion-agua-centros-de-datos-queretaro
+  - apple-intelligence-china-europa
+  - china-ia-de-compania-retencion
+  - tiktok-rabbit-hole-europa-algoritmo
+  - miedo-colectivo-redes-sociales
+  - gas-natural-ia-mexico
+  - subestacion-centros-de-datos-mexico
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -288,6 +294,8 @@ sections:
       - slug: disney-tiktok-trampa-oficializar-fan-edit
       - slug: aduana-comercio-ia-quien-decide-quien-entra
       - slug: algoritmo-te-pregunta-que-quieres-y-no-te-cree
+      - slug: tiktok-rabbit-hole-europa-algoritmo
+      - slug: miedo-colectivo-redes-sociales
   - title: Desinformación
     description: >-
       Cómo se fabrica, distribuye y monetiza la información falsa en la era
@@ -336,6 +344,8 @@ sections:
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
       - slug: php2shell-falla-ia-costo-explotar
       - slug: ia-encuentra-fallas-quien-las-corrige
+      - slug: apple-intelligence-china-europa
+      - slug: china-ia-de-compania-retencion
   - title: Tecnología y Cuerpo
     description: >-
       Cuando la biología deja de ser un límite fijo y se convierte en
@@ -372,6 +382,8 @@ sections:
         tag: serie
       - slug: el-6-de-latam-usar-la-ia-no-es-lo-mismo-que-tenerla
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
+      - slug: gas-natural-ia-mexico
+      - slug: subestacion-centros-de-datos-mexico
   - title: Historia y Contexto
     description: >-
       De dónde viene la tecnología que usamos — sin entender el pasado, el

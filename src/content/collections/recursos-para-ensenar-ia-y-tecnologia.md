@@ -120,6 +120,12 @@ postSlugs:
   - ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
   - valor-medible-de-la-ia-kpmg
   - medicion-agua-centros-de-datos-queretaro
+  - miedo-colectivo-redes-sociales
+  - tiktok-rabbit-hole-europa-algoritmo
+  - apple-intelligence-china-europa
+  - china-ia-de-compania-retencion
+  - gas-natural-ia-mexico
+  - subestacion-centros-de-datos-mexico
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -154,6 +160,7 @@ sections:
       - slug: por-que-sientes-que-conoces-a-tu-influencer-favorito
       - slug: por-que-lo-roto-se-volvio-arte-la-estetica-del-glitch
       - slug: necesitas-detox-de-ia-test-habitos
+      - slug: miedo-colectivo-redes-sociales
   - title: Para Universidad
     description: >-
       Artículos con densidad analítica para cursos de comunicación, derecho,
@@ -182,6 +189,7 @@ sections:
       - slug: debate-futuro-ia-coincidencias-choques
       - slug: que-importa-que-es-marketing-debate-ia
       - slug: como-aprenden-los-robots-humanoides-a-trabajar
+      - slug: tiktok-rabbit-hole-europa-algoritmo
   - title: Para Posgrado e Investigación
     description: >-
       Mayor profundidad analítica. Para seminarios, marcos teóricos y
@@ -358,6 +366,14 @@ sections:
       - slug: ia-en-el-trabajo-sin-capacitacion-quien-paga-el-riesgo
         tag: caso
       - slug: valor-medible-de-la-ia-kpmg
+        tag: caso
+      - slug: apple-intelligence-china-europa
+        tag: caso
+      - slug: china-ia-de-compania-retencion
+        tag: caso
+      - slug: gas-natural-ia-mexico
+        tag: caso
+      - slug: subestacion-centros-de-datos-mexico
         tag: caso
   - title: Perspectiva LATAM
     description: >-
