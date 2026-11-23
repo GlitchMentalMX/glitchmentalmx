@@ -103,7 +103,7 @@ collections:
     label_singular: "Insight visual"
     folder: "src/content/insights"
     create: true
-    slug: "{{titulo}}"
+    slug: "{{fields.slug}}"
     identifier_field: titulo
     sortable_fields: ["date", "titulo"]
     fields:
@@ -131,10 +131,11 @@ collections:
         name: "fuenteUrl"
         widget: "string"
         required: false
-      - label: "URL de la página individual (opcional — se genera sola del título; solo llena esto si quieres cambiarla a mano)"
+      - label: "URL de la página individual (slug), obligatorio. En una pieza NUEVA escribe la URL que quieres, antes del primer guardado (minúsculas y guiones, sin acentos ni espacios; máximo 90 caracteres). Es también el nombre del archivo."
         name: "slug"
         widget: "string"
-        required: false
+        required: true
+        pattern: ["^[a-z0-9]+(-[a-z0-9]+)*$", "Solo minúsculas, números y guiones; sin acentos, espacios ni guiones al inicio o al final."]
       - label: "Palabras clave (opcional, libres)"
         name: "keywords"
         widget: "list"
@@ -177,7 +178,7 @@ collections:
     label_singular: "Dato incómodo"
     folder: "src/content/dato-incomodo"
     create: true
-    slug: "dato-{{uuid_short}}"
+    slug: "{{fields.slug}}"
     identifier_field: resumen
     sortable_fields: ["date", "titulo"]
     fields:
@@ -192,10 +193,11 @@ collections:
         widget: "select"
         required: false
         options: ["Inteligencia Artificial", "Narrativa de la IA", "Sistemas Autónomos", "IA Agéntica", "Futuro del Trabajo", "Cultura Digital", "Psicología Digital", "Tecnología de Consumo", "Tendencias Digitales"]
-      - label: "URL de la página individual (opcional — se genera sola del dato; solo llena esto si quieres cambiarla a mano)"
+      - label: "URL de la página individual (slug), obligatorio. En un dato NUEVO escribe la URL que quieres, antes del primer guardado (minúsculas y guiones, sin acentos ni espacios; máximo 90 caracteres). Es también el nombre del archivo."
         name: "slug"
         widget: "string"
-        required: false
+        required: true
+        pattern: ["^[a-z0-9]+(-[a-z0-9]+)*$", "Solo minúsculas, números y guiones; sin acentos, espacios ni guiones al inicio o al final."]
       - label: "Palabras clave (opcional, libres)"
         name: "keywords"
         widget: "list"
