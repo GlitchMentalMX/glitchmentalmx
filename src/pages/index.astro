@@ -8,6 +8,10 @@ import { getImpactoPosts, esLatam, IMPACTO_LINEA_HOME } from '../lib/impacto';
 import { getCollection, getEntry } from 'astro:content';
 import { cargarFichas } from '../lib/exposicion';
 import { cargarLaboratorio, RUTA_LABORATORIO } from '../lib/laboratorio';
+// Video en bucle del Laboratorio (5 s, 16:9, sin audio), servido por el Worker
+// de R2 (cloudflare/glitchmental-video-worker.js). Vacío = solo la imagen
+// estática, que es el comportamiento actual. Se llena al desplegar el Worker.
+const LAB_VIDEO_URL = '';
 const nOcupaciones = cargarFichas().length;
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
@@ -475,7 +479,10 @@ const signalPools = {
     <section class="laboratorio-band container" aria-labelledby="lab-h">
       <div class="lab-layout">
         <a href={RUTA_LABORATORIO} class="lab-hero" aria-label="Ver el Laboratorio">
-          <img src="/images/laboratorio/landing/hero.webp" alt="Banco de laboratorio con una campana de cristal que guarda una red luminosa de filamentos ámbar y turquesa, rodeada de un microscopio, una balanza, una brújula con imán, un matraz, viales y un calibrador." loading="lazy" width="1672" height="941" />
+<img src="/images/laboratorio/landing/hero.webp" alt="Banco de laboratorio con una campana de cristal que guarda una red luminosa de filamentos ámbar y turquesa, rodeada de un microscopio, una balanza, una brújula con imán, un matraz, viales y un calibrador." loading="lazy" width="1672" height="941" />
+          {LAB_VIDEO_URL && (
+            <video class="lab-video" data-src={LAB_VIDEO_URL} poster="/images/laboratorio/landing/hero.webp" autoplay loop muted playsinline preload="none" aria-hidden="true" tabindex="-1" width="1672" height="941"></video>
+          )}
         </a>
         <div class="lab-text">
           <p class="lab-eyebrow">Datos abiertos · CC BY 4.0</p>
@@ -979,7 +986,22 @@ const signalPools = {
      escritorio; una columna en móvil), con el aire de "ficha de laboratorio". */
   section.laboratorio-band { padding: 44px 24px; border-top: 1px solid var(--border); }
   .lab-layout { display: flex; flex-direction: column; gap: 18px; }
-  .lab-hero { display: block; }
+  .lab-hero { display: block; position: relative; }
+  /* El video se superpone a la imagen (misma caja, cero CLS) y solo se hace
+     visible cuando ya está reproduciendo; si falla, queda la imagen. */
+  .lab-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .lab-video.is-playing { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) { .lab-video { display: none; } }
   .lab-hero img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: var(--radius); }
   .lab-eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0 0 8px; }
   .lab-title { font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; line-height: 1.2; margin: 0; }
@@ -1399,6 +1421,28 @@ const signalPools = {
     .explora-panel { flex: 0 0 84%; scroll-snap-align: start; }
   }
 </style>
+
+<script>
+  // Video del Laboratorio: no se descarga nada hasta que la sección está a
+  // ~200px del viewport, y nunca con movimiento reducido, ahorro de datos o
+  // si el video falla (en esos casos queda la imagen estática).
+  (() => {
+    const video = document.querySelector<HTMLVideoElement>('video.lab-video');
+    if (!video?.dataset.src) return;
+    const conn = (navigator as any).connection;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || conn?.saveData) return;
+    const abandonar = () => { video.removeAttribute('src'); video.load(); video.remove(); };
+    video.addEventListener('playing', () => video.classList.add('is-playing'), { once: true });
+    video.addEventListener('error', abandonar, { once: true });
+    const io = new IntersectionObserver((entries) => {
+      if (!entries.some((e) => e.isIntersecting)) return;
+      io.disconnect();
+      video.src = video.dataset.src!;
+      video.play().catch(abandonar);
+    }, { rootMargin: '200px' });
+    io.observe(video);
+  })();
+</script>
 
 <script>
   // Efecto "decode" en los títulos de Herramientas — se dispara al entrar en
