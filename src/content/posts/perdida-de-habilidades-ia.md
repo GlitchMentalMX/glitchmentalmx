@@ -2,12 +2,12 @@
 title: 'IA y pérdida de habilidades: qué está probado y qué no'
 slug: perdida-de-habilidades-ia
 category: Inteligencia Artificial
-pubDate: 2026-11-23T20:25
+pubDate: 2026-11-24T05:59
 updatedDate: ''
 description: La evidencia de que la IA nos hace perder habilidades es más estrecha de lo que parece. Qué midió cada estudio y qué sigue sin probarse.
 heroImage: /images/uploads/perdida-habilidades-ia.webp
 heroImageAlt: Mujer concentrada toma notas mientras consulta respuestas de una IA en su celular, en un espacio de trabajo con luz natural
-draft: true
+draft: false
 ---
 
 Seis puntos porcentuales: de 28.4% a 22.4%. Así cayó la detección de adenomas cuando unos médicos trabajaron sin IA tras haberla usado. **La pérdida de habilidades por IA tiene evidencia, pero es más estrecha y más incómoda de lo que sugieren los titulares.**
