@@ -11,7 +11,7 @@ import { cargarLaboratorio, RUTA_LABORATORIO } from '../lib/laboratorio';
 // Video en bucle del Laboratorio (5 s, 16:9, sin audio), servido por el Worker
 // de R2 (cloudflare/glitchmental-video-worker.js). Vacío = solo la imagen
 // estática, que es el comportamiento actual. Se llena al desplegar el Worker.
-const LAB_VIDEO_URL = '';
+const LAB_VIDEO_URL = 'https://glitchmental-video.contacto-fbf.workers.dev/laboratorio-loop.mp4';
 const nOcupaciones = cargarFichas().length;
 
 const allPosts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
