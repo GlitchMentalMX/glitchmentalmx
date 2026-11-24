@@ -399,6 +399,26 @@ const signalPools = {
     </div>
   </section>
 
+  {latestInsight && (
+    <section class="insights container">
+      <div class="section-head insights-head">
+        <h2>Insights Visuales</h2>
+        <p class="tagline">Una imagen. Una idea. Un momento para pensar.</p>
+      </div>
+      <div class="insight-layout">
+        <a href="/insights-visuales/" class="insight-hero">
+          <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
+        </a>
+        <div class="insight-text">
+          <h3 class="insight-title">{latestInsight.data.punchline?.trim() || latestInsight.data.titulo}</h3>
+          <p class="insight-excerpt">{latestInsight.data.resumen}</p>
+          <InsightFuente fuente={latestInsight.data.fuente} fuenteUrl={latestInsight.data.fuenteUrl} />
+          <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
+        </div>
+      </div>
+    </section>
+  )}
+
   <section class="novelas container">
     <div class="section-head novelas-head">
       <div>
@@ -447,26 +467,6 @@ const signalPools = {
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
         <a href="/impacto-y-negocios/" class="row-stretch" aria-label="Ver el radar de Impacto y Negocios"></a>
-      </div>
-    </section>
-  )}
-
-  {latestInsight && (
-    <section class="insights container">
-      <div class="section-head insights-head">
-        <h2>Insights Visuales</h2>
-        <p class="tagline">Una imagen. Una idea. Un momento para pensar.</p>
-      </div>
-      <div class="insight-layout">
-        <a href="/insights-visuales/" class="insight-hero">
-          <img src={latestInsight.data.imagen} alt={latestInsight.data.imagenAlt || ''} loading="lazy" width="1000" height="563" />
-        </a>
-        <div class="insight-text">
-          <h3 class="insight-title">{latestInsight.data.punchline?.trim() || latestInsight.data.titulo}</h3>
-          <p class="insight-excerpt">{latestInsight.data.resumen}</p>
-          <InsightFuente fuente={latestInsight.data.fuente} fuenteUrl={latestInsight.data.fuenteUrl} />
-          <p class="insight-cta"><a href="/insights-visuales/" class="link-accent">Sigue la pista →</a></p>
-        </div>
       </div>
     </section>
   )}
@@ -551,19 +551,25 @@ const signalPools = {
 
   <section class="dato-incomodo container">
     <div class="promo-pair">
-      <a href="/dato-incomodo/" class="dato-card">
-        <img src="/images/dato-incomodo/home.webp" alt="Ilustración de Dato Incómodo: un personaje de espaldas frente a un escritorio lleno de dispositivos rotos y notas manchadas de tinta." loading="lazy" width="380" height="214" />
-        <h3 class="dato-title">Dato Incómodo</h3>
-        <p class="dato-desc">Lo que no te conviene saber… publicado de todas formas.</p>
-        <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
+      <a href="/dato-incomodo/" class="promo-card">
+        <span class="promo-media">
+          <img src="/images/dato-incomodo/home.webp" alt="Ilustración de Dato Incómodo: un personaje de espaldas frente a un escritorio lleno de dispositivos rotos y notas manchadas de tinta." loading="lazy" width="380" height="214" />
+        </span>
+        <span class="promo-body">
+          <h3 class="dato-title">Dato Incómodo</h3>
+          <p class="dato-desc">Lo que no te conviene saber… publicado de todas formas.</p>
+          <span class="link-accent dato-cta">Ábrelo bajo tu propio riesgo →</span>
+        </span>
       </a>
-      <a href="/juego/" class="dato-card juego-card">
-        <span class="dato-media">
+      <a href="/juego/" class="promo-card promo-card--rev">
+        <span class="promo-media">
           <img src="/juego/card-home.webp" alt="Pulsa para Empeorar, el videojuego de glitchMentalMX: cinco personajes en una sala de espera con una máquina de cookies y un asistente robot." loading="lazy" width="960" height="436" />
         </span>
-        <h3 class="dato-title">El juego donde ganar es perder</h3>
-        <p class="dato-desc">Aunque no te guste.</p>
-        <span class="link-accent dato-cta">Juega bajo tu propio riesgo →</span>
+        <span class="promo-body">
+          <h3 class="dato-title">El juego donde ganar es perder</h3>
+          <p class="dato-desc">Aunque no te guste.</p>
+          <span class="link-accent dato-cta">Juega bajo tu propio riesgo →</span>
+        </span>
       </a>
     </div>
   </section>
@@ -738,62 +744,65 @@ const signalPools = {
     border-top: 1px solid var(--border);
   }
 
-  /* Dato Incómodo — deliberadamente pequeño y "pegado" (leve rotación, como
-     un volante), a diferencia de todo lo demás en el home: es la sección
-     con menos formalidad del sitio y así se lee de inmediato, sin competir
-     con el hero de Insights Visuales ni con el CTA de Archivo Total. */
-  /* container query en vez de un ancho fijo: así "100cqi" siempre refleja
-     el ancho real disponible en CUALQUIER viewport (no el máximo teórico
-     del contenedor), igual que .recent-card lo hace vía flex. */
-  .dato-incomodo { container-type: inline-size; padding: 32px 24px; border-top: 1px dashed var(--border); }
-  .dato-card {
+  /* Dato Incómodo + el juego — banners compactos con el mismo contenedor que
+     Impacto y Negocios (borde sutil, radio chico, padding vertical bajo).
+     Escritorio: dos banners apilados, el primero con la imagen a la izquierda y
+     el segundo con la imagen a la derecha. Móvil: carrusel horizontal con snap
+     y la segunda tarjeta asomando; cada tarjeta es una fila con miniatura. */
+  .dato-incomodo { padding: 28px 24px; border-top: 1px dashed var(--border); }
+  .promo-pair { display: flex; flex-direction: column; gap: 16px; }
+  .promo-card {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 16px;
-    /* misma anchura que una card de Coordenadas en cada punto de quiebre:
-       por debajo de 700px esa card es un rail de una sola tarjeta al 78%
-       del ancho disponible; de 700px en adelante son 3 columnas iguales
-       (espacio disponible menos los dos gaps de 14px, entre 3). */
-    max-width: calc(78cqi + 32px);
-    margin: 0 auto;
-    padding: 16px;
-    border-radius: var(--radius);
+    gap: 24px;
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
     background: var(--bg-inset);
-    text-align: center;
-    transform: rotate(-1.2deg);
-    transition: transform 0.15s ease, outline-color 0.15s ease;
-    outline: 1px solid transparent;
+    transition: border-color 0.15s ease;
   }
-  .dato-card:hover { transform: rotate(0deg); outline-color: var(--accent); }
-  @container (min-width: 700px) {
-    /* un poco más grande que una card de Coordenadas (factor 1.25) — en
-       desktop el detalle de la imagen lo pide; en móvil se deja igual. */
-    .dato-card { max-width: calc(((100cqi - 28px) / 3) * 1.25 + 32px); }
-  }
-  .dato-card img {
+  .promo-card:hover { border-color: var(--accent); }
+  .promo-card--rev { flex-direction: row-reverse; }
+  .promo-media { display: block; flex: 0 0 260px; width: 260px; }
+  .promo-media img {
+    display: block;
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
   }
-  /* Texto de la tarjeta Dato Incómodo: va sobre el fondo oscuro de la tarjeta,
-     no dentro de la imagen (la ilustración queda limpia). */
+  .promo-body { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; align-items: flex-start; }
+  .promo-card--rev .promo-body { align-items: flex-start; }
   .dato-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; line-height: 1.25; margin: 0; color: var(--text); }
-  .dato-desc { margin: -6px 0 0; font-size: 0.92rem; line-height: 1.5; color: var(--text-muted); }
-  .dato-cta { font-size: 0.88rem; margin-top: auto; }
-  .dato-media { display: block; width: 100%; }
-
-  /* Dato Incómodo + el juego, lado a lado en escritorio y apilados en móvil
-     (primero Dato, después el juego). Las dos tarjetas comparten exactamente el
-     mismo estilo (.dato-card): mismo volante pegado, misma inclinación y mismo
-     borde solo al pasar el cursor. */
-  .promo-pair { display: flex; flex-direction: column; align-items: center; gap: 28px; }
-  @container (min-width: 700px) {
-    .promo-pair { flex-direction: row; justify-content: center; align-items: stretch; gap: 36px; }
-    .promo-pair .dato-card { flex: 1 1 0; min-width: 0; }
-    /* La ilustración del juego es más panorámica que la de Dato Incómodo: se
-       centra en un espacio 16:9 para que las dos tarjetas midan lo mismo. */
-    .juego-card .dato-media { display: flex; align-items: center; aspect-ratio: 16 / 9; }
+  .dato-desc { margin: 0; font-size: 0.92rem; line-height: 1.5; color: var(--text-muted); }
+  .dato-cta { font-size: 0.88rem; margin-top: 4px; }
+  @media (max-width: 700px) {
+    .promo-pair {
+      flex-direction: row;
+      gap: 12px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      margin: 0 -24px;
+      padding: 0 24px 4px;
+      scroll-padding-left: 24px;
+    }
+    .promo-pair::-webkit-scrollbar { display: none; }
+    .promo-card,
+    .promo-card--rev {
+      flex: 0 0 84%;
+      flex-direction: row;
+      gap: 12px;
+      padding: 12px;
+      scroll-snap-align: start;
+    }
+    .promo-media { flex: 0 0 84px; width: 84px; }
+    .promo-media img { width: 84px; height: 84px; aspect-ratio: 1 / 1; border-radius: 6px; }
+    .promo-body { gap: 4px; }
+    .dato-title { font-size: 1.05rem; }
+    .dato-desc { font-size: 0.85rem; line-height: 1.4; }
+    .dato-cta { font-size: 0.82rem; margin-top: 2px; }
   }
 
   /* Coordenadas — la imagen va limpia (sin degradados) y el titular debajo,
