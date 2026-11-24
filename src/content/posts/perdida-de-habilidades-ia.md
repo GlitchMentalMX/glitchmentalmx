@@ -1,5 +1,5 @@
 ---
-title: 'IA y pérdida de habilidades: qué está probado y qué no'
+title: 'IA y la pérdida de habilidades: qué está probado y qué no'
 slug: perdida-de-habilidades-ia
 category: Inteligencia Artificial
 pubDate: 2026-11-24T05:59
