@@ -4,8 +4,8 @@ resumen: Biomni, un agente biomédico de Stanford, integra más de 150 herramien
 imagen: /images/dato-incomodo/nueva-app-equipo.webp
 imagenAlt: 'La nueva app podría ser un equipo: científica frente a una mesa con seis pantallas distintas como colegas'
 enlace: ''
-date: 2026-11-24T20:08
-draft: true
+date: 2026-11-25T05:11
+draft: false
 categoria: IA Agéntica
 punchline: La nueva app podría ser un equipo.
 fuente: Stanford HAI, Stanford Scientists Build an AI Lab Partner, julio de 2026.
