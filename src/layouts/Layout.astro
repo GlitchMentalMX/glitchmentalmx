@@ -42,6 +42,10 @@ const ogImage = image
 
 const authorURL = new URL('/acerca-de/', Astro.site).toString();
 const logoURL = new URL('/og-default.png', Astro.site).toString();
+// @id estables de la marca y del autor: las páginas individuales de Dato
+// Incómodo e Insights Visuales los referencian en vez de repetir el objeto.
+const orgId = new URL('/#organization', Astro.site).toString();
+const personId = new URL('/#jorge', Astro.site).toString();
 
 // Perfiles de marca (no personales) — el Organization de abajo usa estos.
 // personSchema, más abajo, tiene su propio sameAs aparte que sí incluye el
@@ -63,6 +67,7 @@ const websiteSchema = {
   editorialStyle: 'Análisis crítico, directo y sin hype sobre tecnología e inteligencia artificial',
   publisher: {
     '@type': 'Organization',
+    '@id': orgId,
     name: siteName,
     logo: { '@type': 'ImageObject', url: logoURL },
     sameAs: BRAND_SOCIAL_URLS,
@@ -77,6 +82,7 @@ const websiteSchema = {
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': personId,
   name: 'Jorge A. Diaz Elizondo',
   url: authorURL,
   sameAs: [

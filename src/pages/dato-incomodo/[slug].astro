@@ -43,25 +43,34 @@ const relatedPosts = await relatedPostsForPiece({
   text: `${item.data.titulo} ${resumen} ${(keywords ?? []).join(' ')}`,
 });
 
+// La pieza se declara como webcómic (ComicStory + VisualArtwork). El
+// ImageObject anterior se fusionó aquí como `image`, conservando licencia y
+// crédito (señal "Licenciable" de Google Imágenes) en vez de declarar dos
+// entidades en conflicto. author/publisher referencian los @id definidos en
+// src/layouts/Layout.astro.
 const imageSchema = {
   '@context': 'https://schema.org',
-  '@type': 'ImageObject',
-  contentUrl: imageURL,
-  thumbnailUrl: imageURL,
+  '@type': ['ComicStory', 'VisualArtwork'],
+  artform: 'Webcomic',
+  headline: title,
   name: title,
-  description: resumen,
+  text: resumen,
+  image: {
+    '@type': 'ImageObject',
+    url: imageURL,
+    contentUrl: imageURL,
+    representativeOfPage: true,
+    description: imagenAlt,
+    creditText: 'glitchMentalMX',
+    copyrightNotice: `© ${date.getFullYear()} glitchMentalMX`,
+    license: new URL('/aviso-legal-y-condiciones-de-uso/', Astro.site).toString(),
+    acquireLicensePage: new URL('/contacto/', Astro.site).toString(),
+  },
   ...(keywords && keywords.length ? { keywords: keywords.join(', ') } : {}),
   datePublished: date.toISOString(),
-  creator: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
-  creditText: 'glitchMentalMX',
-  copyrightNotice: `© ${date.getFullYear()} glitchMentalMX`,
-  license: new URL('/aviso-legal-y-condiciones-de-uso/', Astro.site).toString(),
-  acquireLicensePage: new URL('/contacto/', Astro.site).toString(),
-  publisher: {
-    '@type': 'Organization',
-    name: 'glitchMentalMX',
-    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
-  },
+  inLanguage: 'es-MX',
+  author: { '@id': new URL('/#jorge', Astro.site).toString() },
+  publisher: { '@id': new URL('/#organization', Astro.site).toString() },
   mainEntityOfPage: { '@type': 'WebPage', '@id': pageURL },
 };
 ---
