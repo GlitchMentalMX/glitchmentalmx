@@ -63,6 +63,7 @@ const imageSchema = {
     contentUrl: imageURL,
     representativeOfPage: true,
     description: imagenAlt || titulo,
+    creator: { '@type': 'Organization', name: 'glitchMentalMX', url: Astro.site?.toString() },
     creditText: 'glitchMentalMX',
     copyrightNotice: `© ${date.getFullYear()} glitchMentalMX`,
     license: new URL('/aviso-legal-y-condiciones-de-uso/', Astro.site).toString(),
