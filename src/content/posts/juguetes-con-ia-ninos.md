@@ -2,12 +2,12 @@
 title: 'Juguetes con IA: por qué California frenará su venta'
 slug: juguetes-con-ia-ninos
 category: Tecnología de Consumo
-pubDate: 2026-11-23T20:28
+pubDate: 2026-11-26T05:20
 updatedDate: ''
 description: California aprobó pausar la venta de juguetes con chatbot. Qué probaron PIRG y Common Sense, quién verifica para quién es el producto y qué es hipótesis.
 heroImage: /images/uploads/juguetes-ia.webp
 heroImageAlt: 'Juguetes con IA: mano con guante colocando un oso de peluche con bocina en una caja de cuarentena en laboratorio'
-draft: true
+draft: false
 ---
 
 El problema de los **juguetes con IA** no es lo que dicen, sino que nadie verifica para quién son. Investigadores de PIRG pidieron acceso de desarrollador a cinco de las principales empresas de IA, con un correo y una tarjeta de crédito. Solo una preguntó si era para niños.
