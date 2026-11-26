@@ -124,9 +124,8 @@ interface RelatedPostsOptions {
   max?: number;
 }
 
-// Nunca fabrica un match: si no hay categoría mapeable ni palabras en común
-// suficientes, regresa una lista vacía y la página no muestra la sección —
-// mismo criterio que el resto del sitio (ver [[feedback-jorge-work-style]]).
+// Prioridad: `enlace` curado > afinidad real (categoría/palabras) > relleno
+// por cercanía de fecha dentro de 'Inteligencia Artificial'.
 export async function relatedPostsForPiece(opts: RelatedPostsOptions): Promise<CollectionEntry<'posts'>[]> {
   const max = opts.max ?? 3;
   const allPosts = await getCollection('posts', ({ data }) => !data.draft);
@@ -155,6 +154,20 @@ export async function relatedPostsForPiece(opts: RelatedPostsOptions): Promise<C
         fill: false,
       }),
     );
+  }
+
+  // Siempre 3: si faltan (p. ej. 'Futuro del Trabajo', sin categoría
+  // equivalente), se completa con los artículos de 'Inteligencia Artificial'
+  // más cercanos en fecha — la categoría más afín. Los matches reales de
+  // arriba siempre van primero.
+  if (result.length < max) {
+    result.forEach((p) => usedIds.add(p.id));
+    const dist = (p: CollectionEntry<'posts'>) => Math.abs(p.data.pubDate.valueOf() - opts.date.valueOf());
+    const filler = allPosts
+      .filter((p) => p.data.category === 'Inteligencia Artificial' && !usedIds.has(p.id))
+      .sort((a, b) => dist(a) - dist(b))
+      .slice(0, max - result.length);
+    result.push(...filler);
   }
 
   return result;
