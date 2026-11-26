@@ -11,6 +11,7 @@ import InsightFuente from '../../components/InsightFuente.astro';
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import ShareBar from '../../components/ShareBar.astro';
 import { getCollection } from 'astro:content';
 import { insightCategoryLinks } from '../../data/insightCategoryLinks';
 import { truncate } from '../../lib/format';
@@ -37,7 +38,12 @@ const description = truncate(resumen, 155);
 const pageURL = new URL(Astro.url.pathname, Astro.site).toString();
 const imageURL = new URL(imagen, Astro.site).toString();
 const categoryHref = categoria ? insightCategoryLinks[categoria] : undefined;
-const relatedPosts = await relatedPostsForPiece({ categoria, date, enlace });
+const relatedPosts = await relatedPostsForPiece({
+  categoria,
+  date,
+  enlace,
+  text: `${titulo} ${resumen} ${(keywords ?? []).join(' ')}`,
+});
 
 const imageSchema = {
   '@context': 'https://schema.org',
@@ -88,6 +94,7 @@ const imageSchema = {
       {categoryHref && <a class="btn btn-ghost" href={categoryHref}>Explorar {categoria} →</a>}
       <a class="btn btn-ghost" href="/insights-visuales/">Ver todos los Insights Visuales →</a>
     </div>
+    <ShareBar title={title} url={pageURL} />
   </article>
 
   {relatedPosts.length > 0 && (

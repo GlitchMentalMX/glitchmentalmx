@@ -20,6 +20,7 @@ import { PATRON_OSCURO_ARTICULO, PATRON_OSCURO_ENLACES } from '../../data/patron
 import { getCollection, render } from 'astro:content';
 import { ALIAS_ENTRENA_IA } from '../../data/alias-entrena-ia';
 import { relatedInsightVisualByPostId } from '../../lib/relatedInsightVisual';
+import { relatedPostsForPost } from '../../lib/relatedPosts';
 import {
   formatDate,
   readingTime,
@@ -282,7 +283,6 @@ const allPosts =
   kind === 'posts'
     ? (await getCollection('posts', ({ data }) => !data.draft)).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
     : [];
-const relatedPool = allPosts.filter((p) => p.id !== post.id);
 
 // Enlaces hacia la serie "Sin Oráculos" desde artículos anteriores (lote fijo
 // y curado en src/data/sin-oraculos-enlaces.ts).
@@ -304,14 +304,9 @@ const patronOscuroEnlace =
 // artículo actual; si no hay 3 en la misma categoría (no debería pasar dado
 // el tamaño del archivo, pero por seguridad), se completa con lo más cercano
 // en fecha del resto del sitio.
-const sameCategoryPool = relatedPool.filter((p) => p.data.category === category);
-const sameCategoryIdx = sameCategoryPool.findIndex((p) => p.data.pubDate.valueOf() <= pubDate.valueOf());
-const anchorIdx = sameCategoryIdx === -1 ? sameCategoryPool.length : sameCategoryIdx;
-const relatedSameCategory = sameCategoryPool.slice(Math.max(0, anchorIdx - 2), Math.max(0, anchorIdx - 2) + 3);
-const relatedFinal =
-  relatedSameCategory.length === 3
-    ? relatedSameCategory
-    : [...relatedSameCategory, ...relatedPool.filter((p) => p.data.category !== category)].slice(0, 3);
+// Ahora además se ordena por afinidad de palabras (título/descripción, sin
+// stopwords) antes de la cercanía de fecha — ver src/lib/relatedPosts.ts.
+const relatedFinal = kind === 'posts' ? relatedPostsForPost(allPosts, post as any) : [];
 
 const novelaPromo = kind === 'posts' && NOVELA_POR_ARTICULO.has(post.id) ? getBook(NOVELA_POR_ARTICULO.get(post.id)!) : undefined;
 

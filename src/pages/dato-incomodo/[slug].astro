@@ -8,6 +8,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import ShareBar from '../../components/ShareBar.astro';
 import { getCollection } from 'astro:content';
 import { insightCategoryLinks } from '../../data/insightCategoryLinks';
 import { truncate } from '../../lib/format';
@@ -36,7 +37,11 @@ const description = truncate(resumen, 155);
 const pageURL = new URL(Astro.url.pathname, Astro.site).toString();
 const imageURL = new URL(imagen, Astro.site).toString();
 const categoryHref = categoria ? insightCategoryLinks[categoria] : undefined;
-const relatedPosts = await relatedPostsForPiece({ categoria, date });
+const relatedPosts = await relatedPostsForPiece({
+  categoria,
+  date,
+  text: `${item.data.titulo} ${resumen} ${(keywords ?? []).join(' ')}`,
+});
 
 const imageSchema = {
   '@context': 'https://schema.org',
@@ -79,16 +84,17 @@ const imageSchema = {
     <div class="frame">
       <img src={imagen} alt={imagenAlt} width="1200" height="675" data-lightbox />
     </div>
-    <p class="text">{resumen}</p>
+    <h1 class="text">{resumen}</h1>
     <div class="links">
       {categoryHref && <a class="btn btn-ghost" href={categoryHref}>Explorar {categoria} →</a>}
       <a class="btn btn-ghost" href="/dato-incomodo/">Ver todos los Datos Incómodos →</a>
     </div>
+    <ShareBar title={title} url={pageURL} />
   </article>
 
   {relatedPosts.length > 0 && (
     <section class="related container">
-      <h2>Más evidencia</h2>
+      <h2>¿Te incomodó? Aquí hay más</h2>
       <div class="grid">
         {relatedPosts.map((p) => (
           <ArticleCard
@@ -132,6 +138,8 @@ const imageSchema = {
   .text {
     font-family: var(--font-display);
     font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: normal;
     line-height: 1.45;
     margin: 0 0 32px;
   }

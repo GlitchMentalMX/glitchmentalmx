@@ -1,0 +1,53 @@
+---
+// Misma barra "Compartir" que cierra los artículos evergreen
+// (src/pages/articulos/[slug].astro): WhatsApp + Copiar enlace, mismos UTM.
+// Se usa al final de las páginas individuales de Dato Incómodo e Insights
+// Visuales. Los artículos conservan su bloque inline original.
+interface Props {
+  title: string;
+  url: string; // URL canónica absoluta, sin query
+}
+const { title, url } = Astro.props;
+const waHref = `https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent(`${url}?utm_source=compartir-whatsapp&utm_medium=social`)}`;
+---
+
+<div class="share">
+  <span class="eyebrow">Compartir</span>
+  <a class="btn btn-ghost" target="_blank" rel="noopener" href={waHref}>WhatsApp</a>
+  <button class="btn btn-ghost share-copy" type="button"><span>Copiar enlace</span></button>
+</div>
+
+<style>
+  .share {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+  .share .btn { padding: 0.55em 1.1em; font-size: 0.82rem; }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.share-copy').forEach((btn) => {
+    const label = btn.querySelector('span');
+    btn.addEventListener('click', () => {
+      const shareUrl = new URL(window.location.href);
+      ['utm_source', 'utm_medium', 'utm_campaign'].forEach((k) => shareUrl.searchParams.delete(k));
+      shareUrl.searchParams.set('utm_source', 'compartir-enlace');
+      shareUrl.searchParams.set('utm_medium', 'compartir');
+      navigator.clipboard.writeText(shareUrl.toString()).then(() => {
+        if (!label) return;
+        const original = label.textContent;
+        btn.classList.add('copied');
+        label.textContent = 'Copiado';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          label.textContent = original;
+        }, 2000);
+      });
+    });
+  });
+</script>
