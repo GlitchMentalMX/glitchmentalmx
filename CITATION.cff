@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Si usas estos datos o los experimentos del Laboratorio, cítalos con esta referencia y enlaza la página de origen."
+title: "glitchMentalMX: datos abiertos y experimentos del Laboratorio"
+type: dataset
+authors:
+  - family-names: "Diaz Elizondo"
+    given-names: "Jorge A."
+url: "https://glitchmental.com/datos/"
+repository-code: "https://github.com/GlitchMentalMX/glitchmentalmx"
+license: CC-BY-4.0
+keywords:
+  - inteligencia artificial
+  - México
+  - precios de IA
+  - privacidad
+  - experimentos con modelos de lenguaje

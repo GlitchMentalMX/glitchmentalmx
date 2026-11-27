@@ -49,6 +49,7 @@ const articleSchema = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
   articleSection: 'Laboratorio',
+  ...(csv ? { isBasedOn: { '@type': 'Dataset', '@id': `${url}#dataset` } } : {}),
   about: [{ '@type': 'Thing', name: 'Laboratorio' }],
   speakable: {
     '@type': 'SpeakableSpecification',

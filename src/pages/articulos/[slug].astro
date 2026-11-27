@@ -250,7 +250,11 @@ if (kind === 'posts') {
     const clave = c.url.replace(/#.*$/, '').replace(/\/$/, '');
     if (vistos.has(clave)) continue;
     vistos.add(clave);
-    fuentesCitadas.push({ url: c.url, host, texto: c.texto.replace(/[*_`]/g, '').trim() });
+    // Si el texto del enlace es una frase suelta ("ya había reconocido",
+    // "un texto del 21 de enero") no sirve como nombre de la fuente: se usa el
+    // dominio. Solo se conserva el texto si arranca con mayúscula o dígito.
+    const texto = c.texto.replace(/[*_`]/g, '').trim();
+    fuentesCitadas.push({ url: c.url, host, texto: /^[A-ZÁÉÍÓÚÑ0-9¿"“]/.test(texto) && texto.length >= 3 ? texto : '' });
   }
 }
 const mostrarFuentes = fuentesCitadas.length >= 1;
@@ -412,6 +416,9 @@ const articleSchema =
         about: [{ '@type': 'Thing', name: category }],
         isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
         articleSection: category,
+        ...(fuentesCitadas.length
+          ? { citation: fuentesCitadas.slice(0, 15).map((f) => ({ '@type': 'CreativeWork', name: f.texto || f.host, url: f.url })) }
+          : {}),
       }
     : {
         '@context': 'https://schema.org',

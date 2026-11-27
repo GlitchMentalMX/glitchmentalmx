@@ -163,7 +163,7 @@ const datasetSchema = {
     <ul class="niveles">
       {NIVELES.slice().reverse().map((n) => <li><strong>{n.nivel}</strong> {n.min}–{n.max}</li>)}
     </ul>
-    <h3>Evidencia por actividad</h3>
+    <h3 id="evidencia-por-actividad">Evidencia por actividad</h3>
     <p>Cada actividad lleva una insignia que dice de dónde sale su calificación, sin interpretarla:</p>
     <ul>
       <li><strong>{ETIQUETA_EVIDENCIA.capacidad_demostrada}:</strong> benchmarks o estudios técnicos. Mide lo que la IA puede hacer, no lo que se hace.</li>
@@ -171,7 +171,7 @@ const datasetSchema = {
       <li><strong>{ETIQUETA_EVIDENCIA.adopcion_empresarial}:</strong> estudios de implementación o datos laborales verificables.</li>
       <li><strong>{ETIQUETA_EVIDENCIA.sin_evidencia_directa}:</strong> juicio editorial fundado en tareas análogas. Se marca y baja la confianza.</li>
     </ul>
-    <h3>Límites</h3>
+    <h3 id="limites">Límites</h3>
     <ul>
       <li>Es un índice compuesto, no una probabilidad de desempleo. Exposición no significa sustitución.</li>
       <li>La capacidad por ocupación se compara con Eloundou et al. (2023) y se limita a ese promedio más 20 puntos, para no sobrestimar.</li>
@@ -179,7 +179,7 @@ const datasetSchema = {
       <li>Las tareas vienen de O*NET (Estados Unidos). {ACLARACION_PAIS} Algunas fichas añaden, aparte, contexto de empleo de México (ENOE del INEGI), que no entra en la puntuación.</li>
       <li>Cada ficha muestra un rango de sensibilidad y una confianza. Una puntuación con poca evidencia directa no es una cifra firme.</li>
     </ul>
-    <h3>Fuentes</h3>
+    <h3 id="fuentes">Fuentes</h3>
     <ul>
       <li><a href="https://www.onetcenter.org/database.html" target="_blank" rel="noopener noreferrer">O*NET 31.0</a> (CC BY 4.0): tareas e importancia.</li>
       <li><a href="https://huggingface.co/datasets/Anthropic/EconomicIndex/tree/main/labor_market_impacts" target="_blank" rel="noopener noreferrer">Anthropic Economic Index</a>: uso observado.</li>

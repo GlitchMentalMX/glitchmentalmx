@@ -89,15 +89,15 @@ const schema = {
 
       <div class="interpreta">
         <div>
-          <h2>¿Qué significa este resultado?</h2>
+          <h2 id="que-significa-este-resultado">¿Qué significa este resultado?</h2>
           <p>{ficha.interpretacion.significa}</p>
         </div>
         <div>
-          <h2>¿Qué debes entender?</h2>
+          <h2 id="que-debes-entender">¿Qué debes entender?</h2>
           <p>{ficha.interpretacion.entender}</p>
         </div>
         <div>
-          <h2>¿Dónde están las oportunidades?</h2>
+          <h2 id="donde-estan-las-oportunidades">¿Dónde están las oportunidades?</h2>
           <p>{ficha.interpretacion.oportunidades}</p>
         </div>
       </div>
@@ -109,7 +109,7 @@ const schema = {
     </header>
 
     <section>
-      <h2>Las actividades de la ocupación</h2>
+      <h2 id="actividades-de-la-ocupacion">Las actividades de la ocupación</h2>
       <p class="sub">
         El porcentaje es el peso de cada actividad dentro de la ocupación, según O*NET. No es el porcentaje de empleos ni de trabajo que pueda sustituirse. Las actividades se agrupan según cuánto puede ayudar la IA y cuánto pesa lo humano.
       </p>
@@ -117,7 +117,7 @@ const schema = {
 
     {asiste.length > 0 && (
       <section class="grupo">
-        <h2>Dónde la IA puede ayudar</h2>
+        <h2 id="donde-la-ia-puede-ayudar">Dónde la IA puede ayudar</h2>
         <p class="sub">Actividades en las que la capacidad de la IA es alta. Que pueda asistirlas no significa que ya se hagan así: la etiqueta de cada una dice si hay uso observado o es inferencia editorial. La capacidad demostrada de referencia (Eloundou et al., 2023) se mide por ocupación, no por actividad.</p>
         <ul class="lista">
           {asiste.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
@@ -127,7 +127,7 @@ const schema = {
 
     {asisteYDecide.length > 0 && (
       <section class="grupo">
-        <h2>Dónde la IA ayuda y la persona decide</h2>
+        <h2 id="donde-la-ia-ayuda-y-la-persona-decide">Dónde la IA ayuda y la persona decide</h2>
         <p class="sub">Actividades que la IA puede asistir, pero cuyo resultado depende del criterio o la responsabilidad de una persona.</p>
         <ul class="lista">
           {asisteYDecide.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
@@ -137,7 +137,7 @@ const schema = {
 
     {humano.length > 0 && (
       <section class="grupo">
-        <h2>Dónde pesa lo humano</h2>
+        <h2 id="donde-pesa-lo-humano">Dónde pesa lo humano</h2>
         <p class="sub">Actividades que dependen de criterio, presencia o responsabilidad de una persona.</p>
         <ul class="lista">
           {humano.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
@@ -147,7 +147,7 @@ const schema = {
 
     {otras.length > 0 && (
       <section class="grupo">
-        <h2>Otras actividades</h2>
+        <h2 id="otras-actividades">Otras actividades</h2>
         <p class="sub">Actividades administrativas o de apoyo que no encajan en los grupos anteriores: la IA las asiste poco y tampoco dependen especialmente de criterio humano.</p>
         <ul class="lista">
           {otras.map((a) => <li><span>{a.actividad}<small class="ev">{evidenciaDe(a)}</small></span><em>{pct(a.peso)} del peso</em></li>)}
@@ -156,7 +156,7 @@ const schema = {
     )}
 
     <section>
-      <h2>Oportunidades de transformación</h2>
+      <h2 id="oportunidades-de-transformacion">Oportunidades de transformación</h2>
       <ul class="oport">
         {ficha.oportunidades.map((o) => <li>{o}</li>)}
       </ul>
@@ -164,7 +164,7 @@ const schema = {
 
     {ficha.contexto.mx.nivel !== 'pendiente' && (
       <section>
-        <h2>Contexto de empleo en México</h2>
+        <h2 id="contexto-de-empleo-en-mexico">Contexto de empleo en México</h2>
         <p class="sub">Estas cifras describen el empleo en México. Son independientes de la puntuación de exposición, que no cambia por país.</p>
         <div class="geos">
           <div class="geo">
@@ -179,7 +179,7 @@ const schema = {
     )}
 
     <section>
-      <h2>Cómo sale esta puntuación</h2>
+      <h2 id="como-sale-la-puntuacion">Cómo sale esta puntuación</h2>
       <p class="sub">
         Cada actividad se califica de 0 a 4 en E, A y C; se promedian según su peso en O*NET y el resultado se multiplica por 25 para llevarlo a 0–100. Luego: {PESOS.E}·E + {PESOS.A}·A + {PESOS.C}·(100 − C), con E {p.E}, A {p.A} y C {p.C}.
         {p.tope_aplicado && ` La capacidad se limitó al tope de la fuente de referencia (sin tope, ${p.puntuacion_sin_tope}).`}
@@ -212,7 +212,7 @@ const schema = {
     </section>
 
     <section>
-      <h2>Fuentes</h2>
+      <h2 id="fuentes">Fuentes</h2>
       <ul class="fuentes">
         {ficha.fuentes.map((f) => <li><a href={f.url} target="_blank" rel="noopener noreferrer">{f.fuente}</a>{alcanceFuente[f.tipo] && <small class="ev">{alcanceFuente[f.tipo]}</small>}</li>)}
       </ul>
