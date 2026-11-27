@@ -30,9 +30,9 @@ function isLikelyBot(request, ua, width) {
 }
 
 // Asistentes de IA. Se evalúa ANTES que buscadores: gemini.google.com
-// también coincidiría con "google.". ChatGPT manda utm_source=chatgpt.com.
+// también coincidiría con "google.". ChatGPT manda utm_source=chatgpt.com; también se ha visto utm_source=openai.
 const AI_RE =
-  /chatgpt\.com|chat\.openai\.com|openai\.com|perplexity\.ai|claude\.ai|gemini\.google\.com|copilot\.microsoft\.com|copilot\.cloud\.microsoft|meta\.ai|grok\.com|chat\.mistral\.ai|poe\.com|deepseek\.com|phind\.com|you\.com/i;
+  /chatgpt\.com|chat\.openai\.com|openai|perplexity\.ai|claude\.ai|gemini\.google\.com|copilot\.microsoft\.com|copilot\.cloud\.microsoft|meta\.ai|grok\.com|chat\.mistral\.ai|poe\.com|deepseek\.com|phind\.com|you\.com/i;
 const SEARCH_HOST_RE = /google\.|bing\.|yahoo\.|duckduckgo\.|baidu\.|yandex\./i;
 const SOCIAL_HOST_RE =
   /facebook\.|instagram\.|twitter\.|x\.com|t\.co|linkedin\.|tiktok\.|reddit\.|pinterest\.|threads\.net|bsky\.app|mastodon\.|whatsapp\.|wa\.me|telegram\.|discord\./i;
@@ -84,7 +84,7 @@ function mxMonthStart(date) {
 // Worker distinguiera 'interno'), para que el historial también quede limpio.
 // Igual con 'ia': visitas viejas guardadas como referral/búsqueda/directo cuyo
 // referrer o utm_source es un asistente de IA (ChatGPT, Perplexity, Claude...).
-const AI_SQL_LIKES = ['chatgpt.com','openai.com','perplexity.ai','claude.ai','gemini.google.com','copilot.microsoft.com','meta.ai','grok.com','chat.mistral.ai','poe.com','deepseek.com','phind.com','you.com']
+const AI_SQL_LIKES = ['chatgpt.com','openai','perplexity.ai','claude.ai','gemini.google.com','copilot.microsoft.com','meta.ai','grok.com','chat.mistral.ai','poe.com','deepseek.com','phind.com','you.com']
   .map((h) => `referrer_host LIKE '%${h}%' OR utm_source LIKE '%${h}%'`).join(' OR ');
 // Origen que se muestra en "Referrers específicos". Si la visita trae sitio de
 // origen, ese sitio. Si no lo trae pero llegó con utm_source (un enlace
