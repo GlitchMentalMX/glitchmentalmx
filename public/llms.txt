@@ -43,6 +43,7 @@ Sitio editorial independiente. Los precios están en pesos mexicanos con el tipo
 
 - [Acerca de](https://glitchmental.com/acerca-de/)
 - [Política editorial y método](https://glitchmental.com/politica-editorial/): quién edita, de dónde salen los datos, cada cuánto se revisan y cómo se corrigen.
+- [Glosario](https://glitchmental.com/glosario/): qué significan los marcos propios del sitio y los conceptos de IA que explica.
 - [Política de privacidad](https://glitchmental.com/politica-de-privacidad/)
 - [Contacto](https://glitchmental.com/contacto/)
 - [Sitemap](https://glitchmental.com/sitemap-index.xml)

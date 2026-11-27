@@ -15,9 +15,9 @@ Toby Ord pone en «1 de cada 10» el **riesgo existencial de la IA** este siglo.
 
 ## Quiénes sostienen esta postura y en qué se distinguen
 
-Los tres autores tienen oficios distintos. **Nick Bostrom y Toby Ord son filósofos**. Bostrom fundó el Future of Humanity Institute de Oxford (cerrado en 2024) y hoy es investigador principal del Macrostrategy Research Initiative; Ord es investigador sénior en la Oxford Martin AI Governance Initiative. **Stuart Russell es informático** en la Universidad de California en Berkeley. Bostrom formuló su argumento técnico en 2012, Russell publicó _Human Compatible_ en 2019 y Ord, _The Precipice_ en 2020.
+Los tres autores tienen oficios distintos. **Nick Bostrom y Toby Ord son filósofos**. Bostrom fundó el Future of Humanity Institute de Oxford (cerrado en 2024) y hoy es investigador principal del Macrostrategy Research Initiative; Ord es investigador sénior en la Oxford Martin AI Governance Initiative. **Stuart Russell es informático** en la Universidad de California en Berkeley. Bostrom formuló su argumento técnico en 2012, Russell publicó _Human Compatible_ en 2019 y Ord, [_The Precipice_](https://theprecipice.com/) en 2020.
 
-Tampoco son equivalentes: Ord asigna probabilidades, el artículo de Bostrom de 2012 no, y Russell propone un rediseño técnico. Un **riesgo existencial**, según Ord, incluye la extinción humana y otras formas de perder de manera permanente todo el potencial de la humanidad. La **alineación** es el problema de lograr que los objetivos de un sistema coincidan con los valores humanos.
+Tampoco son equivalentes: Ord asigna probabilidades, el [artículo de Bostrom de 2012](https://nickbostrom.com/superintelligentwill.pdf) no, y Russell propone un rediseño técnico. Un **riesgo existencial**, según Ord, incluye la extinción humana y otras formas de perder de manera permanente todo el potencial de la humanidad. La **alineación** es el problema de lograr que los objetivos de un sistema coincidan con los valores humanos.
 
 ## El argumento de Bostrom: inteligencia y metas son ejes separados
 
@@ -55,7 +55,7 @@ HIPÓTESIS: Que llegue una IA superior a los humanos en lo general. Que esa IA s
 
 La objeción más fuerte la hizo el propio Ord. En su charla de febrero de 2024 explicó que los modelos de lenguaje no son **agentes** por diseño (un agente es un sistema que actúa sobre su entorno para lograr una meta), así que el escenario clásico de Yudkowsky y Bostrom no aplica directamente. Añadió que, al entrenarse con textos humanos, podrían estancarse cerca del nivel humano, y que el reto cambió: ya no es que conozcan los valores humanos, sino que les importen. Su balance global para el riesgo de la IA fue mixto, sin una dirección clara.
 
-Desde fuera, Arvind Narayanan y Sayash Kapoor, científicos de la computación de Princeton, publicaron en abril de 2025 «AI as Normal Technology» en el Knight First Amendment Institute. Sostienen que la IA debe tratarse como **tecnología normal** y no como una superinteligencia en potencia. Advierten que las medidas drásticas pensadas para controlar una superinteligencia empeorarían las cosas si la IA resulta ser normal. También señalan que buena parte de la literatura fundacional sobre los riesgos de la superinteligencia usa con imprecisión el término «inteligencia».
+Desde fuera, Arvind Narayanan y Sayash Kapoor, científicos de la computación de Princeton, publicaron en abril de 2025 [«AI as Normal Technology»](https://knightcolumbia.org/content/ai-as-normal-technology) en el Knight First Amendment Institute. Sostienen que la IA debe tratarse como **tecnología normal** y no como una superinteligencia en potencia. Advierten que las medidas drásticas pensadas para controlar una superinteligencia empeorarían las cosas si la IA resulta ser normal. También señalan que buena parte de la literatura fundacional sobre los riesgos de la superinteligencia usa con imprecisión el término «inteligencia».
 
 Ninguna de las dos críticas **dice que el riesgo sea cero**: cuestionan el escenario clásico y sus conclusiones de política.
 

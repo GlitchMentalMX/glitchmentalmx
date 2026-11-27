@@ -30,7 +30,7 @@ INFERENCIA (clasificación nuestra, no de los autores): las razones de los escé
 
 François Chollet, autor de _Deep Learning with Python_, sostuvo en Medium en noviembre de 2017 que la inteligencia es situacional: **no existe una inteligencia general** que se amplíe sin límite como quien sube el volumen, porque depende del cuerpo, del entorno y de la cultura. Su blanco es la explosión de inteligencia: la idea de I. J. Good (1965) de que una máquina que mejora su propio diseño se automejoraría cada vez más rápido. Chollet responde que la ciencia, que también se automejora, avanza de forma más bien lineal.
 
-En abril de 2025, Arvind Narayanan y Sayash Kapoor, autores de _AI Snake Oil_, publicaron en el Knight First Amendment Institute el ensayo "AI as Normal Technology". Sostienen que la literatura sobre superinteligencia **carece de precisión al usar la palabra "inteligencia"** y proponen medir el poder: la capacidad de modificar el entorno. Aceptan que las capacidades seguirán creciendo; discuten si eso se vuelve poder sin control. Ya desarmamos el término AGI en [AGI: el concepto más poderoso y menos definido de la tecnología](https://glitchmental.com/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/).
+En abril de 2025, Arvind Narayanan y Sayash Kapoor, autores de _AI Snake Oil_, publicaron en el Knight First Amendment Institute el ensayo ["AI as Normal Technology"](https://knightcolumbia.org/content/ai-as-normal-technology). Sostienen que la literatura sobre superinteligencia **carece de precisión al usar la palabra "inteligencia"** y proponen medir el poder: la capacidad de modificar el entorno. Aceptan que las capacidades seguirán creciendo; discuten si eso se vuelve poder sin control. Ya desarmamos el término AGI en [AGI: el concepto más poderoso y menos definido de la tecnología](https://glitchmental.com/articulos/agi-el-concepto-mas-poderoso-y-menos-definido-de-la-tecnologia/).
 
 HIPÓTESIS: que la inteligencia no se pueda ordenar en una escala es justo lo que está por demostrarse, y ambos textos **lo argumentan, no lo prueban**.
 
@@ -40,7 +40,7 @@ Yann LeCun, en una entrevista con The Hub previa al debate Munk de 2023, dijo qu
 
 Narayanan y Kapoor, por su parte, sostienen que **las defensas principales deben ubicarse río abajo**, no dentro del modelo, y que el desalineamiento catastrófico es el más especulativo de los riesgos.
 
-HECHO: en 2023, LeCun era científico jefe de IA de Meta, según The Hub. En marzo de 2026 era presidente ejecutivo de AMI Labs, startup que desarrolla alternativas a los grandes modelos de lenguaje (LLM) y anunció una ronda de 1,030 millones de dólares, según tech.eu. INFERENCIA: hay un **incentivo comercial coherente con su escepticismo**. Eso no refuta su argumento.
+HECHO: en 2023, LeCun era científico jefe de IA de Meta, según The Hub. En marzo de 2026 era presidente ejecutivo de AMI Labs, startup que desarrolla alternativas a los grandes modelos de lenguaje (LLM) y anunció una ronda de 1,030 millones de dólares, según [tech.eu](https://tech.eu/2026/03/10/yann-lecun-s-paris-based-ai-world-model-startup-raises-more-than-1bn/). INFERENCIA: hay un **incentivo comercial coherente con su escepticismo**. Eso no refuta su argumento.
 
 ## Los números sin base y las predicciones que sí se pueden refutar
 

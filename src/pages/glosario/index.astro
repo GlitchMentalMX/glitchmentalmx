@@ -1,0 +1,60 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { MARCOS_DEL_SITIO, CONCEPTOS_DE_IA } from '../../data/glosario';
+
+const title = 'Glosario de glitchMentalMX';
+const description =
+  'Qué significan los marcos, secciones y conceptos de IA que usa glitchMentalMX: exposición laboral, Paga / Gana / Riesgo, adulonería, capability overhang, agente de IA y más, cada uno con su fuente en el sitio.';
+const grupos = [
+  { titulo: 'Marcos y secciones del sitio', id: 'marcos', items: MARCOS_DEL_SITIO },
+  { titulo: 'Conceptos de IA explicados en el sitio', id: 'conceptos', items: CONCEPTOS_DE_IA },
+];
+---
+
+<Layout
+  title="Glosario"
+  description={description}
+  robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+>
+  <Breadcrumbs items={[{ name: 'Glosario' }]} />
+  <PageHeader
+    eyebrow="glitchMentalMX · Glosario"
+    title={title}
+    dek="Los términos propios del sitio y los conceptos de IA que explicamos, cada uno con su definición y el lugar donde se desarrolla."
+  />
+  <div class="content container">
+    <div class="prose">
+      {grupos.map((g) => (
+        <section aria-labelledby={`g-${g.id}`}>
+          <h2 id={`g-${g.id}`}>{g.titulo}</h2>
+          <dl>
+            {g.items.map((t) => (
+              <div class="entrada">
+                <dt id={t.id}><a href={`#${t.id}`} class="ancla">{t.termino}</a></dt>
+                <dd>
+                  <p>{t.definicion}</p>
+                  <p class="mas">{t.enlaces.map((e, i) => <><a href={e.href}>{e.texto} →</a>{i < t.enlaces.length - 1 ? ' · ' : ''}</>)}</p>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ))}
+      <p>Si falta un término o una definición te parece imprecisa, <a href="/contacto/">escríbenos</a>. La forma de verificar y corregir está en la <a href="/politica-editorial/">política editorial</a>.</p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .content { padding: 0 24px 80px; display: flex; flex-direction: column; align-items: center; }
+  dl { margin: 0; }
+  .entrada { padding: 18px 0; border-top: 1px solid var(--border); }
+  dt { font-family: var(--font-serif, inherit); font-size: 1.15rem; font-weight: 600; margin: 0 0 6px; }
+  dt .ancla { color: var(--text); text-decoration: none; }
+  dt .ancla:hover { text-decoration: underline; text-underline-offset: 3px; }
+  dd { margin: 0; }
+  dd p { margin: 0 0 6px; }
+  .mas { font-size: 0.9rem; color: var(--text-muted); }
+</style>

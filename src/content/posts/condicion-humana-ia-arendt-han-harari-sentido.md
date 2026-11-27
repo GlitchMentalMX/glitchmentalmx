@@ -31,7 +31,7 @@ HECHO: Roger Berkowitz, del mismo centro, precisa que la preocupación de Arendt
 
 ## Lo que sus lectores actuales le piden a Arendt
 
-Rosalie Waelen, de la Universidad de Bonn, publicó en 2025 en el _Journal of Business Ethics_ un artículo que aplica la fenomenología de Arendt al debate sobre la automatización. Solo se pudo leer el resumen, porque el texto completo es de pago. HECHO (es lo que el artículo afirma): según ese resumen, **una revaloración del trabajo y de la acción puede contrarrestar las amenazas de la automatización del trabajo.** También rescata la advertencia de Arendt sobre «una sociedad de laborantes sin labor» (traducción nuestra).
+[Rosalie Waelen, de la Universidad de Bonn](https://ideas.repec.org/a/kap/jbuset/v201y2025i1d10.1007_s10551-025-05991-1.html), publicó en 2025 en el _Journal of Business Ethics_ un artículo que aplica la fenomenología de Arendt al debate sobre la automatización. Solo se pudo leer el resumen, porque el texto completo es de pago. HECHO (es lo que el artículo afirma): según ese resumen, **una revaloración del trabajo y de la acción puede contrarrestar las amenazas de la automatización del trabajo.** También rescata la advertencia de Arendt sobre «una sociedad de laborantes sin labor» (traducción nuestra).
 
 INFERENCIA: aquí hay que ser estrictos: **el puente de Arendt a la IA lo tiende Waelen, no Arendt.** El propio Hannah Arendt Center hizo algo parecido en 2020, cuando recurrió a la misma distinción para leer el llamado a volver a trabajar durante la pandemia.
 
