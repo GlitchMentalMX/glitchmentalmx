@@ -94,6 +94,9 @@ postSlugs:
   - china-ia-de-compania-retencion
   - tiktok-rabbit-hole-europa-algoritmo
   - apple-intelligence-china-europa
+  - que-puede-hacer-la-ia
+  - juguetes-con-ia-ninos
+  - perdida-de-habilidades-ia
 sections:
   - title: Cultura Digital
     description: Identidad, atención y vida en internet.
@@ -146,6 +149,7 @@ sections:
       - slug: las-limitaciones-reales-de-la-ia-que-nadie-anuncia
       - slug: el-trabajo-humano-que-la-ia-ya-no-necesita-fingir-mas
       - slug: chatbot-se-equivoco-formato-lo-volvio-inteligencia
+      - slug: perdida-de-habilidades-ia
   - title: Modelos y Herramientas
     description: >-
       Qué herramienta usar, cómo usarla y qué puedes hacer realmente con
@@ -160,6 +164,7 @@ sections:
       - slug: deepseek-la-guia-practica-para-usarlo-bien
       - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
       - slug: el-prompt-no-murio-la-industria-aprendio-a-delegar
+      - slug: que-puede-hacer-la-ia
   - title: Narrativa de la IA
     description: Cómo el lenguaje moldea lo que creemos posible.
     posts:
@@ -220,5 +225,6 @@ sections:
       - slug: pantalla-del-hogar-reconoce-quien-eres-y-quien-no
       - slug: cancelar-cuesta-mas-que-contratar-patron-oscuro
       - slug: apple-intelligence-china-europa
+      - slug: juguetes-con-ia-ninos
 order: 4
 ---

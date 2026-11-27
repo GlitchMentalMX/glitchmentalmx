@@ -126,6 +126,9 @@ postSlugs:
   - china-ia-de-compania-retencion
   - gas-natural-ia-mexico
   - subestacion-centros-de-datos-mexico
+  - que-puede-hacer-la-ia
+  - juguetes-con-ia-ninos
+  - perdida-de-habilidades-ia
 sections:
   - title: Lecturas Introductorias
     description: >-
@@ -190,6 +193,7 @@ sections:
       - slug: que-importa-que-es-marketing-debate-ia
       - slug: como-aprenden-los-robots-humanoides-a-trabajar
       - slug: tiktok-rabbit-hole-europa-algoritmo
+      - slug: perdida-de-habilidades-ia
   - title: Para Posgrado e Investigación
     description: >-
       Mayor profundidad analítica. Para seminarios, marcos teóricos y
@@ -290,6 +294,8 @@ sections:
         tag: debate
       - slug: estamos-cerca-de-la-singularidad-evidencia-privada
         tag: debate
+      - slug: perdida-de-habilidades-ia
+        tag: debate
   - title: Casos de Estudio
     description: >-
       Situaciones reales documentadas para análisis estructurado, trabajos
@@ -375,6 +381,8 @@ sections:
         tag: caso
       - slug: subestacion-centros-de-datos-mexico
         tag: caso
+      - slug: juguetes-con-ia-ninos
+        tag: caso
   - title: Perspectiva LATAM
     description: >-
       Para docentes que enseñan tecnología desde América Latina — con
@@ -412,6 +420,7 @@ sections:
       - slug: deepseek-la-guia-practica-para-usarlo-bien
       - slug: la-ia-chiquita-que-ya-corre-en-tu-celular-sin-que-sepas
       - slug: cual-es-la-mejor-ia-pregunta-mal-planteada
+      - slug: que-puede-hacer-la-ia
 related:
   - biblioteca-de-ia-tecnologia-y-sociedad
   - mapa-de-poder-tech

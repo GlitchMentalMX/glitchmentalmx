@@ -8,7 +8,7 @@ description: >-
   tiene el poder, quién lo pierde y qué queda fuera de la conversación
   pública.
 intro: >-
-  140 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
+  142 artículos en diez secciones, de fundamentos a geopolítica. Cada sección
   funciona sola: no hay orden obligatorio. ¿Primera visita? Empieza por la
   ruta recomendada.
 postSlugs:
@@ -152,6 +152,8 @@ postSlugs:
   - miedo-colectivo-redes-sociales
   - gas-natural-ia-mexico
   - subestacion-centros-de-datos-mexico
+  - juguetes-con-ia-ninos
+  - perdida-de-habilidades-ia
 sections:
   - title: Inteligencia Artificial
     description: >-
@@ -219,6 +221,7 @@ sections:
         tag: serie
       - slug: anthropic-se-autocalifico-en-ciencia
       - slug: valor-medible-de-la-ia-kpmg
+      - slug: perdida-de-habilidades-ia
   - title: Privacidad y Vigilancia
     description: Lo que cedes cuando usas tecnología, quién lo recibe y para qué.
     posts:
@@ -346,6 +349,7 @@ sections:
       - slug: ia-encuentra-fallas-quien-las-corrige
       - slug: apple-intelligence-china-europa
       - slug: china-ia-de-compania-retencion
+      - slug: juguetes-con-ia-ninos
   - title: Tecnología y Cuerpo
     description: >-
       Cuando la biología deja de ser un límite fijo y se convierte en
