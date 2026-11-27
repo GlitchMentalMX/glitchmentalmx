@@ -2,12 +2,12 @@
 title: Qué puede hacer la IA que casi nadie le está pidiendo
 slug: que-puede-hacer-la-ia
 category: Inteligencia Artificial
-pubDate: 2026-11-26T06:09
+pubDate: 2026-11-27T05:10
 updatedDate: ''
 description: Casi todos usamos la IA para tres cosas. La diferencia no está solo en la herramienta, sino en qué tan lejos llega tu pregunta. Tres comparaciones.
 heroImage: /images/uploads/capacidad-ia.webp
 heroImageAlt: 'Qué puede hacer la IA: mujer sorprendida frente a laptop leyendo una respuesta extensa de chat con tres notas adhesivas en el marco'
-draft: true
+draft: false
 ---
 
 Un cortador láser sirve para cortar gelatina, pero nadie dice que ahí termina lo que puede hacer. Con la IA pasa igual: **qué puede hacer la IA depende en buena parte de qué tan lejos llega tu pregunta**, no solo de qué tan buena sea la herramienta.
