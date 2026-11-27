@@ -2,11 +2,29 @@
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import PageHeader from '../../components/PageHeader.astro';
-import { MARCOS_DEL_SITIO, CONCEPTOS_DE_IA } from '../../data/glosario';
+import { getCollection } from 'astro:content';
+import { MARCOS_DEL_SITIO, CONCEPTOS_DE_IA, type TerminoGlosario } from '../../data/glosario';
 
 const title = 'Glosario de glitchMentalMX';
 const description =
   'Qué significan los marcos, secciones y conceptos de IA que usa glitchMentalMX: exposición laboral, Paga / Gana / Riesgo, adulonería, capability overhang, agente de IA y más, cada uno con su fuente en el sitio.';
+const sinAcentos = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+// Lecturas relacionadas: artículos cuyo título o descripción mencionan el
+// término. Se calcula al compilar, así crece sola con cada artículo nuevo.
+const relacionados = (t: TerminoGlosario) => {
+  if (!t.buscar?.length) return [];
+  const yaEnlazados = new Set(t.enlaces.map((e) => e.href));
+  return posts
+    .filter((p) => !yaEnlazados.has(`/articulos/${p.id}/`))
+    .filter((p) => {
+      const texto = sinAcentos(`${p.data.title} ${p.data.description}`);
+      return t.buscar!.some((w) => texto.includes(w));
+    })
+    .slice(0, 4);
+};
 const grupos = [
   { titulo: 'Marcos y secciones del sitio', id: 'marcos', items: MARCOS_DEL_SITIO },
   { titulo: 'Conceptos de IA explicados en el sitio', id: 'conceptos', items: CONCEPTOS_DE_IA },
@@ -36,12 +54,18 @@ const grupos = [
                 <dd>
                   <p>{t.definicion}</p>
                   <p class="mas">{t.enlaces.map((e, i) => <><a href={e.href}>{e.texto} →</a>{i < t.enlaces.length - 1 ? ' · ' : ''}</>)}</p>
+                  {relacionados(t).length > 0 && (
+                    <p class="mas">Más lecturas: {relacionados(t).map((p, i, arr) => <><a href={`/articulos/${p.id}/`}>{p.data.title}</a>{i < arr.length - 1 ? ' · ' : ''}</>)}</p>
+                  )}
                 </dd>
               </div>
             ))}
           </dl>
         </section>
       ))}
+      <p>
+        Estos términos salen de {posts.length} artículos y varias series. Para recorrerlos todos, está el <a href="/archivo/">archivo completo</a>, las <a href="/series/">series</a> y las <a href="/colecciones/">colecciones</a>.
+      </p>
       <p>Si falta un término o una definición te parece imprecisa, <a href="/contacto/">escríbenos</a>. La forma de verificar y corregir está en la <a href="/politica-editorial/">política editorial</a>.</p>
     </div>
   </div>

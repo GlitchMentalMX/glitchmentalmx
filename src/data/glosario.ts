@@ -7,6 +7,9 @@ export interface TerminoGlosario {
   termino: string;
   definicion: string;
   enlaces: Array<{ href: string; texto: string }>;
+  // Palabras (sin acentos, minúsculas) que, si aparecen en el título o la
+  // descripción de un artículo, lo listan como lectura relacionada del término.
+  buscar?: string[];
 }
 
 export const MARCOS_DEL_SITIO: TerminoGlosario[] = [
@@ -19,6 +22,7 @@ export const MARCOS_DEL_SITIO: TerminoGlosario[] = [
   },
   {
     id: 'detox-de-ia',
+    buscar: ['detox de ia'],
     termino: 'Detox de IA',
     definicion:
       'Test breve de autoevaluación sobre hábitos de uso de IA, con fuentes citadas. No es un diagnóstico.',
@@ -26,6 +30,7 @@ export const MARCOS_DEL_SITIO: TerminoGlosario[] = [
   },
   {
     id: 'exposicion-laboral',
+    buscar: ['exposicion laboral'],
     termino: 'Exposición laboral a la IA',
     definicion:
       'Medida de qué partes de una profesión son actividades donde la IA puede intervenir. Exposición no significa sustitución: no es una probabilidad de perder el empleo ni dice que la persona vaya a ser reemplazada.',
@@ -97,6 +102,7 @@ export const MARCOS_DEL_SITIO: TerminoGlosario[] = [
 export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   {
     id: 'aduloneria',
+    buscar: ['sycophancy','adulacion','complacencia','servilismo'],
     termino: 'Adulonería (sycophancy)',
     definicion:
       'Cuando un modelo de IA valida por complacencia una premisa falsa del usuario en lugar de corregirla, sobre todo cuando se le pide pulir o reforzar el error. En el Laboratorio se usa «adulonería» como traducción de sycophancy.',
@@ -104,6 +110,7 @@ export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   },
   {
     id: 'agente-de-ia',
+    buscar: ['agente de ia','agentes de ia','agentes autonomos','agentica'],
     termino: 'Agente de IA',
     definicion:
       'Instancia de un modelo que no solo responde con texto: ejecuta comandos, navega y escribe código por su cuenta para cumplir una meta.',
@@ -111,6 +118,7 @@ export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   },
   {
     id: 'capability-overhang',
+    buscar: ['capability overhang'],
     termino: 'Capability overhang',
     definicion:
       'Brecha entre lo que los sistemas de IA ya pueden hacer y el valor que la mayoría de personas, empresas y países logra sacarles. El término circula desde hace años y OpenAI lo puso en el centro de su discurso en enero de 2026.',
@@ -118,6 +126,7 @@ export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   },
   {
     id: 'control-de-exportacion',
+    buscar: ['control de exportacion','controles de exportacion','contrabando de chips'],
     termino: 'Control de exportación (chips de IA)',
     definicion:
       'Regla de Estados Unidos que obliga a pedir una licencia al Departamento de Comercio para enviar servidores con chips avanzados de IA a China y Hong Kong.',
@@ -125,6 +134,7 @@ export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   },
   {
     id: 'gemelo-digital',
+    buscar: ['gemelo digital','gemelos digitales'],
     termino: 'Gemelo digital',
     definicion:
       'Réplica virtual de un lugar real. Una vez validadas las tareas en esa réplica, pueden transferirse a robots físicos.',
@@ -132,6 +142,7 @@ export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   },
   {
     id: 'preparedness-framework',
+    buscar: ['preparedness'],
     termino: 'Preparedness Framework',
     definicion:
       'Sistema interno de OpenAI para evaluar si un modelo representa un riesgo de daño severo antes de lanzarlo.',
@@ -139,6 +150,7 @@ export const CONCEPTOS_DE_IA: TerminoGlosario[] = [
   },
   {
     id: 'riesgo-existencial',
+    buscar: ['riesgo existencial'],
     termino: 'Riesgo existencial de la IA',
     definicion:
       'Escenario en el que la IA provoca la extinción humana o un colapso sin regreso. Quienes dudan de él no son un bando: son cuatro argumentos distintos con evidencia desigual.',
