@@ -86,6 +86,15 @@ function mxMonthStart(date) {
 // referrer o utm_source es un asistente de IA (ChatGPT, Perplexity, Claude...).
 const AI_SQL_LIKES = ['chatgpt.com','openai.com','perplexity.ai','claude.ai','gemini.google.com','copilot.microsoft.com','meta.ai','grok.com','chat.mistral.ai','poe.com','deepseek.com','phind.com','you.com']
   .map((h) => `referrer_host LIKE '%${h}%' OR utm_source LIKE '%${h}%'`).join(' OR ');
+// Origen que se muestra en "Referrers específicos". Si la visita trae sitio de
+// origen, ese sitio. Si no lo trae pero llegó con utm_source (un enlace
+// compartido con el botón Compartir, WhatsApp, un correo), se muestra como
+// "utm: <fuente>"; sin esto, esas visitas contaban en "Referral" pero no
+// aparecían en la lista y parecían referrers sin nombre.
+const ORIGIN_SQL = `(CASE
+  WHEN referrer_host != '' THEN referrer_host
+  WHEN utm_source IS NOT NULL AND utm_source != '' THEN 'utm: ' || utm_source
+  ELSE '' END)`;
 const SOURCE_SQL = `(CASE
   WHEN traffic_source IN ('referral','busqueda','directo') AND (${AI_SQL_LIKES}) THEN 'ia'
   WHEN traffic_source = 'directo' AND referrer_host LIKE '%glitchmental.com%' THEN 'interno'
@@ -339,7 +348,7 @@ async function handleStats(request, env, url, matchedOrigin) {
     try {
       const rows = await env.DB.prepare(
         `SELECT ts, path, duration, scroll, country, device, browser, is_bot FROM hits
-         WHERE ts >= ? AND ts < ? AND referrer_host = ? ORDER BY ts DESC LIMIT 50`
+         WHERE ts >= ? AND ts < ? AND ${ORIGIN_SQL} = ? ORDER BY ts DESC LIMIT 50`
       )
         .bind(sinceTs, untilTs, detailHost.slice(0, 200))
         .all();
@@ -406,8 +415,8 @@ async function handleStats(request, env, url, matchedOrigin) {
         .bind(sinceTs, untilTs)
         .all(),
       env.DB.prepare(
-        `SELECT referrer_host, COUNT(*) AS views FROM hits
-         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND referrer_host != '' GROUP BY referrer_host ORDER BY views DESC LIMIT 15`
+        `SELECT ${ORIGIN_SQL} AS referrer_host, COUNT(*) AS views FROM hits
+         WHERE ts >= ? AND ts < ? AND is_bot = 0 AND ${ORIGIN_SQL} != '' GROUP BY 1 ORDER BY views DESC LIMIT 15`
       )
         .bind(sinceTs, untilTs)
         .all(),
