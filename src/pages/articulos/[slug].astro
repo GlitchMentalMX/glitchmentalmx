@@ -229,6 +229,31 @@ const impactoResumen = impactoPost
   ? { lineas: impactoLineas(impactoPost), copiar: impactoTextoCopia(impactoPost, Astro.site!) }
   : undefined;
 const minutes = readingTime(post.body || '');
+
+// "Fuentes citadas": lista de los enlaces externos que ya están en el texto
+// del artículo (markdown o <a href>), sin duplicados. No inventa nada: solo
+// junta en un lugar visible lo que el artículo ya cita, para que lectores y
+// asistentes de IA vean de dónde sale cada dato. Se omiten enlaces propios,
+// de compra (Amazon) y de redes. Se muestra con al menos 1 fuente.
+const HOSTS_OMITIDOS = /(^|\.)(glitchmental\.com|amazon\.[a-z.]+|amzn\.to|x\.com|twitter\.com|facebook\.com|mastodon\.social|bsky\.app)$/i;
+const fuentesCitadas: Array<{ url: string; host: string; texto: string }> = [];
+if (kind === 'posts') {
+  const cuerpo = post.body || '';
+  const vistos = new Set<string>();
+  const candidatos: Array<{ url: string; texto: string }> = [];
+  for (const m of cuerpo.matchAll(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g)) candidatos.push({ url: m[2], texto: m[1] });
+  for (const m of cuerpo.matchAll(/<a\s[^>]*href="(https?:\/\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/g)) candidatos.push({ url: m[1], texto: m[2].replace(/<[^>]+>/g, '') });
+  for (const c of candidatos) {
+    let host = '';
+    try { host = new URL(c.url).hostname.replace(/^www\./, ''); } catch { continue; }
+    if (HOSTS_OMITIDOS.test(host)) continue;
+    const clave = c.url.replace(/#.*$/, '').replace(/\/$/, '');
+    if (vistos.has(clave)) continue;
+    vistos.add(clave);
+    fuentesCitadas.push({ url: c.url, host, texto: c.texto.replace(/[*_`]/g, '').trim() });
+  }
+}
+const mostrarFuentes = fuentesCitadas.length >= 1;
 const articleURL = new URL(`/articulos/${post.id}/`, Astro.site).toString();
 
 // ---------------------------------------------------------------------------
@@ -368,13 +393,16 @@ const articleSchema =
         dateModified: modifiedDate.toISOString(),
         author: {
           '@type': 'Person',
+          '@id': new URL('/#jorge', Astro.site).toString(),
           name: 'Jorge A. Diaz Elizondo',
           url: new URL('/acerca-de/', Astro.site).toString(),
         },
         publisher: {
           '@type': 'Organization',
+          '@id': new URL('/#organization', Astro.site).toString(),
           name: 'glitchMentalMX',
-          logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+          url: Astro.site?.toString(),
+          logo: { '@type': 'ImageObject', url: new URL('/apple-touch-icon.png', Astro.site).toString(), width: 180, height: 180 },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
         speakable: {
@@ -396,13 +424,16 @@ const articleSchema =
         dateModified: modifiedDate.toISOString(),
         author: {
           '@type': 'Person',
+          '@id': new URL('/#jorge', Astro.site).toString(),
           name: 'Jorge A. Diaz Elizondo',
           url: new URL('/acerca-de/', Astro.site).toString(),
         },
         publisher: {
           '@type': 'Organization',
+          '@id': new URL('/#organization', Astro.site).toString(),
           name: 'glitchMentalMX',
-          logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+          url: Astro.site?.toString(),
+          logo: { '@type': 'ImageObject', url: new URL('/apple-touch-icon.png', Astro.site).toString(), width: 180, height: 180 },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': articleURL },
         isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
@@ -779,7 +810,7 @@ if (toolKinds.includes(kind) && herramienta) {
         <a href="/precios-digitales/" class="tag category-tag">Precios Digitales</a>
       )}
       <p class="eyebrow">
-        Por <a href="/acerca-de/" class="byline-link" rel="author">Jorge A. Diaz Elizondo</a> · {formatDate(pubDate)} · {minutes} min de lectura{modifiedDate > pubDate ? ` · Actualizado el ${formatDate(modifiedDate)}` : ''}
+        Por <a href="/acerca-de/" class="byline-link" rel="author">Jorge A. Diaz Elizondo</a> · <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time> · {minutes} min de lectura{modifiedDate > pubDate && <> · Actualizado el <time datetime={modifiedDate.toISOString()}>{formatDate(modifiedDate)}</time></>}
       </p>
       <h1>{title}</h1>
       <p class="dek">{description}</p>
@@ -894,6 +925,17 @@ if (toolKinds.includes(kind) && herramienta) {
           <li><a href={`/articulos/${patronOscuroEnlace.id}/`}>{patronOscuroEnlace.data.title} →</a></li>
         </ul>
       </aside>
+    )}
+
+    {mostrarFuentes && (
+      <section class="fuentes-citadas container" aria-labelledby="fuentes-citadas-titulo">
+        <h2 id="fuentes-citadas-titulo">Fuentes citadas en este artículo</h2>
+        <ul>
+          {fuentesCitadas.slice(0, 15).map((f) => (
+            <li><a href={f.url} rel="noopener" target="_blank">{f.texto || f.host}</a> <span class="fuente-host">· {f.host}</span></li>
+          ))}
+        </ul>
+      </section>
     )}
 
     <div class="share container">
@@ -1246,6 +1288,12 @@ if (toolKinds.includes(kind) && herramienta) {
   .sigue-debate li a { color: var(--accent); font-weight: 500; text-decoration: none; }
   .sigue-debate li a:hover { text-decoration: underline; }
 
+  .fuentes-citadas { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border, rgba(127,127,127,0.25)); }
+  .fuentes-citadas h2 { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 10px; }
+  .fuentes-citadas ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: 0.9rem; }
+  .fuentes-citadas a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 2px; }
+  .fuentes-citadas a:hover { color: var(--text); }
+  .fuente-host { color: var(--text-muted); opacity: 0.7; font-size: 0.8rem; }
   .related-insight {
     max-width: var(--measure);
     margin: 18px auto 0;

@@ -41,7 +41,9 @@ const ogImage = image
   : new URL('/og-default.png', Astro.site).toString();
 
 const authorURL = new URL('/acerca-de/', Astro.site).toString();
-const logoURL = new URL('/og-default.png', Astro.site).toString();
+// Logo cuadrado (180×180) para el Organization: og-default.png es una imagen
+// social de 1200×630 y no sirve como logo de marca en el schema.
+const logoURL = new URL('/apple-touch-icon.png', Astro.site).toString();
 // @id estables de la marca y del autor: las páginas individuales de Dato
 // Incómodo e Insights Visuales los referencian en vez de repetir el objeto.
 const orgId = new URL('/#organization', Astro.site).toString();
@@ -69,7 +71,13 @@ const websiteSchema = {
     '@type': 'Organization',
     '@id': orgId,
     name: siteName,
-    logo: { '@type': 'ImageObject', url: logoURL },
+    url: Astro.site?.toString(),
+    description:
+      'Publicación editorial independiente en español sobre inteligencia artificial, tecnología y cultura digital, con datos verificados en fuente oficial y enfoque en México.',
+    logo: { '@type': 'ImageObject', url: logoURL, width: 180, height: 180 },
+    email: 'contacto@glitchmental.com',
+    founder: { '@type': 'Person', '@id': personId, name: 'Jorge A. Diaz Elizondo' },
+    publishingPrinciples: new URL('/politica-editorial/', Astro.site).toString(),
     sameAs: BRAND_SOCIAL_URLS,
   },
   potentialAction: {
@@ -92,8 +100,10 @@ const personSchema = {
     'https://mastodon.social/@GlitchMentalMX',
     'https://bsky.app/profile/glitchmentalmx.bsky.social',
   ],
+  description:
+    'Fundador y editor de glitchMentalMX. Escribe sobre inteligencia artificial, cultura digital y futuro del trabajo desde México, y es autor de tecnothrillers en español.',
   jobTitle: 'Fundador y Editor',
-  worksFor: { '@type': 'Organization', name: siteName, url: Astro.site?.toString() },
+  worksFor: { '@type': 'Organization', '@id': orgId, name: siteName, url: Astro.site?.toString() },
   knowsAbout: [
     'Inteligencia Artificial',
     'Agentic AI',

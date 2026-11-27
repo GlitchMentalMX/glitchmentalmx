@@ -126,8 +126,10 @@ const softwareAppSchema = {
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'MXN' },
   publisher: {
     '@type': 'Organization',
+    '@id': new URL('/#organization', Astro.site).toString(),
     name: 'glitchMentalMX',
-    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+    url: Astro.site?.toString(),
+    logo: { '@type': 'ImageObject', url: new URL('/apple-touch-icon.png', Astro.site).toString(), width: 180, height: 180 },
   },
 };
 

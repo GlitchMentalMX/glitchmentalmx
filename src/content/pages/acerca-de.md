@@ -20,6 +20,10 @@ En la era del algoritmo, donde el flujo de información es constante y la realid
 
 **→ Conectar los puntos.** Análisis profundo con relevancia cultural. Entender el *glitch* — la anomalía, el error — en el sistema digital es la clave para no ser víctima de él.
 
+## Cómo trabajamos
+
+glitchMentalMX es un sitio independiente. Los precios salen de las páginas oficiales de cada empresa, se muestran en pesos mexicanos con el tipo de cambio de Banxico y llevan la fecha de su verificación. Los datos abiertos están en [Datos abiertos](/datos/) y las pruebas con IA, en el [Laboratorio](/laboratorio/). La forma de verificar, corregir y separar lo patrocinado de lo editorial está en la [política editorial](/politica-editorial/).
+
 ## Para el lector crítico
 
 glitchMentalMX es para quienes buscan algo más que titulares: buscan el porqué. Si navegas el futuro del trabajo con IA, si entiendes que la tecnología transforma la cultura, o si simplemente desconfías de la primera impresión — has llegado a tu lugar.

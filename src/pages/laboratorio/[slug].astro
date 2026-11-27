@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ReportarDato from '../../components/ReportarDato.astro';
 import { render } from 'astro:content';
+import { existsSync } from 'node:fs';
 import { formatDate, readingTime } from '../../lib/format';
 import { cargarLaboratorio, RUTA_LABORATORIO } from '../../lib/laboratorio';
 
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
 
 const { pieza } = Astro.props;
 const { Content } = await render(pieza);
-const { title, seoTitle, description, kicker, pubDate, updatedDate, heroImage, heroImageAlt, draft, nota, roles } = pieza.data;
+const { title, seoTitle, description, kicker, pubDate, updatedDate, heroImage, heroImageAlt, draft, nota, roles, csv } = pieza.data;
 const tituloCorto = seoTitle ?? title;
 
 const url = new URL(`${RUTA_LABORATORIO}${pieza.id}/`, Astro.site).toString();
@@ -34,13 +35,16 @@ const articleSchema = {
   dateModified: (updatedDate ?? pubDate).toISOString(),
   author: {
     '@type': 'Person',
+    '@id': new URL('/#jorge', Astro.site).toString(),
     name: 'Jorge A. Diaz Elizondo',
     url: new URL('/acerca-de/', Astro.site).toString(),
   },
   publisher: {
     '@type': 'Organization',
+    '@id': new URL('/#organization', Astro.site).toString(),
     name: 'glitchMentalMX',
-    logo: { '@type': 'ImageObject', url: new URL('/og-default.png', Astro.site).toString() },
+    url: Astro.site?.toString(),
+    logo: { '@type': 'ImageObject', url: new URL('/apple-touch-icon.png', Astro.site).toString(), width: 180, height: 180 },
   },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   isPartOf: { '@type': 'WebSite', name: 'glitchMentalMX', url: Astro.site?.toString() },
@@ -51,6 +55,40 @@ const articleSchema = {
     cssSelector: ['h1', 'meta[name="description"]'],
   },
 };
+
+// Dataset del experimento: cada pieza publica su CSV bajo CC BY 4.0 (y, en los
+// experimentos 06 a 11, el texto íntegro de las respuestas de los modelos).
+// Se declara como Dataset para que buscadores y asistentes de IA lo reconozcan
+// como datos abiertos reutilizables y no solo como un artículo con un enlace.
+const absoluto = (ruta: string) => new URL(ruta, Astro.site).toString();
+const rutaRespuestas = csv ? csv.replace(/\.csv$/, '-respuestas.md') : undefined;
+const hayRespuestas = rutaRespuestas ? existsSync(`${process.cwd()}/public${rutaRespuestas}`) : false;
+const datasetSchema = csv
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      '@id': `${url}#dataset`,
+      name: `Datos del experimento: ${tituloCorto}`,
+      description,
+      url,
+      inLanguage: 'es',
+      license: 'https://creativecommons.org/licenses/by/4.0/',
+      isAccessibleForFree: true,
+      spatialCoverage: { '@type': 'Place', name: 'México' },
+      datePublished: pubDate.toISOString().slice(0, 10),
+      dateModified: (updatedDate ?? pubDate).toISOString().slice(0, 10),
+      creator: { '@type': 'Person', '@id': absoluto('/#jorge'), name: 'Jorge A. Diaz Elizondo', url: absoluto('/acerca-de/') },
+      publisher: { '@type': 'Organization', '@id': absoluto('/#organization'), name: 'glitchMentalMX', url: Astro.site?.toString() },
+      isPartOf: { '@type': 'CollectionPage', name: 'Laboratorio de glitchMentalMX', url: absoluto(RUTA_LABORATORIO) },
+      citation: absoluto(`${RUTA_LABORATORIO}metodologia/`),
+      distribution: [
+        { '@type': 'DataDownload', encodingFormat: 'text/csv', name: 'Resultados del experimento (CSV)', contentUrl: absoluto(csv) },
+        ...(hayRespuestas && rutaRespuestas
+          ? [{ '@type': 'DataDownload', encodingFormat: 'text/markdown', name: 'Respuestas íntegras de cada modelo (Markdown)', contentUrl: absoluto(rutaRespuestas) }]
+          : []),
+      ],
+    }
+  : undefined;
 ---
 
 <Layout
@@ -64,6 +102,7 @@ const articleSchema = {
   robots="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 >
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {datasetSchema && <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />}
   <Breadcrumbs items={[
     { name: 'Laboratorio', url: RUTA_LABORATORIO },
     { name: title },

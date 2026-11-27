@@ -1,0 +1,8 @@
+---
+import SimplePage from '../../components/SimplePage.astro';
+import { getEntry } from 'astro:content';
+
+const entry = await getEntry('pages', 'politica-editorial');
+---
+
+<SimplePage entry={entry} />

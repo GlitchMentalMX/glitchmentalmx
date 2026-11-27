@@ -77,6 +77,10 @@ collections:
         label: "Contacto"
         file: "src/content/pages/contacto.md"
         fields: *pageFields
+      - name: "politica-editorial"
+        label: "Política editorial"
+        file: "src/content/pages/politica-editorial.md"
+        fields: *pageFields
       - name: "suscribete"
         label: "Suscríbete"
         file: "src/content/pages/suscribete.md"

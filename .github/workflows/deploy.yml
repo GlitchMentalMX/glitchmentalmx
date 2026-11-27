@@ -51,3 +51,14 @@ jobs:
       - name: Publicar en GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Avisa a Bing y demás buscadores de IndexNow de las páginas con cambios
+      # recientes. continue-on-error: un fallo aquí nunca debe tumbar la
+      # publicación del sitio.
+      - name: Descargar el código (para IndexNow)
+        uses: actions/checkout@v4
+        continue-on-error: true
+
+      - name: Avisar a IndexNow
+        continue-on-error: true
+        run: node scripts/indexnow.mjs
