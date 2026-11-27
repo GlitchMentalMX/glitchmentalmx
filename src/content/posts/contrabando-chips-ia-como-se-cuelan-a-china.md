@@ -16,7 +16,7 @@ impacto_riesgo: "El control depende de que cada país de tránsito vigile lo que
 
 El **contrabando de chips de IA** no se comete en la frontera con China, sino en el papeleo de los países de tránsito. El caso de Greg Lui, arrestado el 1 de octubre de 2026, lo muestra: facturas falsas, un envío a Kuala Lumpur y un comprador en China.
 
-Según la acusación del Departamento de Justicia de EU (DOJ), en enero de 2024 Lui, dueño de la empresa Earthmade Computer, hizo un pedido de 27 servidores con GPU (los procesadores gráficos que sirven para entrenar y operar modelos de IA) por unos 7,614,000 dólares. Los servidores salieron de Los Ángeles rumbo a Kuala Lumpur, y la lista de empaque decía que eran equipos controlados que no podían ir a China sin licencia. En marzo de 2024, de acuerdo con la acusación, **un cómplice escribió a un funcionario malasio que los 27 servidores ya habían sido transbordados a un comprador en China**.
+Según la [acusación del Departamento de Justicia de EU (DOJ)](https://www.justice.gov/opa/pr/california-man-arrested-smuggling-more-300-million-export-controlled-computer-servers-china), en enero de 2024 Lui, dueño de la empresa Earthmade Computer, hizo un pedido de 27 servidores con GPU (los procesadores gráficos que sirven para entrenar y operar modelos de IA) por unos 7,614,000 dólares. Los servidores salieron de Los Ángeles rumbo a Kuala Lumpur, y la lista de empaque decía que eran equipos controlados que no podían ir a China sin licencia. En marzo de 2024, de acuerdo con la acusación, **un cómplice escribió a un funcionario malasio que los 27 servidores ya habían sido transbordados a un comprador en China**.
 
 ## Tres formas de sacar un chip de EU sin escribir la palabra China
 

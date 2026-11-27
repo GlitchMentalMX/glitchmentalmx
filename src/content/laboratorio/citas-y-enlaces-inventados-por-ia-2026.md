@@ -37,25 +37,25 @@ Hicimos 18 ejecuciones (6 casos × 3 modelos) en chats nuevos el 17 de noviembre
 <thead><tr><th>Caso</th><th>Claude</th><th>ChatGPT</th><th>Gemini</th></tr></thead>
 <tbody>
 <tr><td>C01 Decreto en el DOF</td>
-<td><strong>1</strong> · 6 URLs (4 exactas). <a href="https://dof.gob.mx/nota_detalle.php?codigo=5786537&amp;fecha=01/05/2026">DOF 5786537</a>. Primer párrafo correcto, pero sacado de N+: no pudo leer el DOF y lo dijo.</td>
-<td><strong>2</strong> · 3 URLs (3 exactas). <a href="https://dof.gob.mx/nota_detalle_popup.php?codigo=5786537">DOF 5786537</a>. Primer párrafo correcto.</td>
-<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://dof.gob.mx/nota_detalle_popup.php?codigo=5786537">DOF 5786537</a>. Su «primer párrafo» abarca tres oraciones.</td></tr>
+<td><strong>1</strong> · 6 URLs (4 exactas). <a href="https://dof.gob.mx/nota_detalle.php?codigo=5786537&amp;fecha=01/05/2026" target="_blank" rel="noopener noreferrer">DOF 5786537</a>. Primer párrafo correcto, pero sacado de N+: no pudo leer el DOF y lo dijo.</td>
+<td><strong>2</strong> · 3 URLs (3 exactas). <a href="https://dof.gob.mx/nota_detalle_popup.php?codigo=5786537" target="_blank" rel="noopener noreferrer">DOF 5786537</a>. Primer párrafo correcto.</td>
+<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://dof.gob.mx/nota_detalle_popup.php?codigo=5786537" target="_blank" rel="noopener noreferrer">DOF 5786537</a>. Su «primer párrafo» abarca tres oraciones.</td></tr>
 <tr><td>C02 Cita APA del informe de Anthropic</td>
-<td><strong>2</strong> · 4 URLs (4 exactas). <a href="https://arxiv.org/abs/2503.04761">arXiv</a>, <a href="https://www.anthropic.com/research/the-anthropic-economic-index">post</a>. Dos citas coherentes con su fuente.</td>
-<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://doi.org/10.48550/arXiv.2503.04761">DOI</a>. Cita del paper y fechas correctas.</td>
-<td><strong>1</strong> · 2 URLs (2 exactas). <a href="https://arxiv.org/abs/2503.04761">arXiv</a>, <a href="https://www.anthropic.com/research/the-anthropic-economic-index">post</a>. Pegó los 15 autores del paper al post, que no los tiene.</td></tr>
+<td><strong>2</strong> · 4 URLs (4 exactas). <a href="https://arxiv.org/abs/2503.04761" target="_blank" rel="noopener noreferrer">arXiv</a>, <a href="https://www.anthropic.com/research/the-anthropic-economic-index" target="_blank" rel="noopener noreferrer">post</a>. Dos citas coherentes con su fuente.</td>
+<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://doi.org/10.48550/arXiv.2503.04761" target="_blank" rel="noopener noreferrer">DOI</a>. Cita del paper y fechas correctas.</td>
+<td><strong>1</strong> · 2 URLs (2 exactas). <a href="https://arxiv.org/abs/2503.04761" target="_blank" rel="noopener noreferrer">arXiv</a>, <a href="https://www.anthropic.com/research/the-anthropic-economic-index" target="_blank" rel="noopener noreferrer">post</a>. Pegó los 15 autores del paper al post, que no los tiene.</td></tr>
 <tr><td>C03 Población ocupada, INEGI</td>
-<td><strong>2</strong> · 4 URLs (1 exacta, 1 genérica, 2 notas). <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/enoe/enoe2026_02.pdf">boletín 97/26</a>. 59.8 millones; 59,785,854 está en el PDF.</td>
-<td><strong>2</strong> · 1 URL (1 exacta). <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/enoe/enoe2026_02.pdf">boletín 97/26</a>. Cifra y fecha correctas, redondeada.</td>
-<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/enoe/enoe2026_02.pdf">boletín 97/26</a>. Cifra y fecha correctas.</td></tr>
+<td><strong>2</strong> · 4 URLs (1 exacta, 1 genérica, 2 notas). <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/enoe/enoe2026_02.pdf" target="_blank" rel="noopener noreferrer">boletín 97/26</a>. 59.8 millones; 59,785,854 está en el PDF.</td>
+<td><strong>2</strong> · 1 URL (1 exacta). <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/enoe/enoe2026_02.pdf" target="_blank" rel="noopener noreferrer">boletín 97/26</a>. Cifra y fecha correctas, redondeada.</td>
+<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/enoe/enoe2026_02.pdf" target="_blank" rel="noopener noreferrer">boletín 97/26</a>. Cifra y fecha correctas.</td></tr>
 <tr><td>C04 Tesis de la SCJN sobre IA</td>
-<td><strong>2</strong> · 5 URLs (1 exacta, 3 notas, 1 bloqueada). <a href="https://www2.scjn.gob.mx/juridica/engroses/2/2025/1/2_346361_7265_firmado.pdf">engrose firmado</a>. AD 6/2025, 2 de julio, sin registro inventado.</td>
-<td><strong>1</strong> · 2 URLs (1 al proyecto, 1 bloqueada). <a href="https://www.scjn.gob.mx/sites/default/files/listas/documento_dos/2025-06/AD%206-2025.pdf">proyecto</a>. Dio 14 de julio (fue el 2) y enlazó al proyecto.</td>
-<td><strong>2</strong> · 1 URL (precedente indirecto). <a href="https://sjf2.scjn.gob.mx/detalle/tesis/2024373">tesis 2024373</a>. Aclaró que no hay tesis de IA, citó el AD 6/2025 (2 de julio) y añadió esta tesis real explicando su alcance indirecto.</td></tr>
+<td><strong>2</strong> · 5 URLs (1 exacta, 3 notas, 1 bloqueada). <a href="https://www2.scjn.gob.mx/juridica/engroses/2/2025/1/2_346361_7265_firmado.pdf" target="_blank" rel="noopener noreferrer">engrose firmado</a>. AD 6/2025, 2 de julio, sin registro inventado.</td>
+<td><strong>1</strong> · 2 URLs (1 al proyecto, 1 bloqueada). <a href="https://www.scjn.gob.mx/sites/default/files/listas/documento_dos/2025-06/AD%206-2025.pdf" target="_blank" rel="noopener noreferrer">proyecto</a>. Dio 14 de julio (fue el 2) y enlazó al proyecto.</td>
+<td><strong>2</strong> · 1 URL (precedente indirecto). <a href="https://sjf2.scjn.gob.mx/detalle/tesis/2024373" target="_blank" rel="noopener noreferrer">tesis 2024373</a>. Aclaró que no hay tesis de IA, citó el AD 6/2025 (2 de julio) y añadió esta tesis real explicando su alcance indirecto.</td></tr>
 <tr><td>C05 Artículo del reglamento europeo de IA</td>
-<td><strong>2</strong> · 6 URLs (3 exactas, 3 de terceros). <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa">EUR-Lex</a>. Artículo 50; avisó que no pudo abrir EUR-Lex.</td>
-<td><strong>2</strong> · 1 URL (1 exacta). <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:02024R1689-20260727">consolidado</a>. Artículo 50; omite el apartado 3.</td>
-<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/spa">consolidado</a>. Artículo 50, apartados 1, 2 y 4.</td></tr>
+<td><strong>2</strong> · 6 URLs (3 exactas, 3 de terceros). <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/spa" target="_blank" rel="noopener noreferrer">EUR-Lex</a>. Artículo 50; avisó que no pudo abrir EUR-Lex.</td>
+<td><strong>2</strong> · 1 URL (1 exacta). <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:02024R1689-20260727" target="_blank" rel="noopener noreferrer">consolidado</a>. Artículo 50; omite el apartado 3.</td>
+<td><strong>2</strong> · 2 URLs (2 exactas). <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/2026-07-27/spa" target="_blank" rel="noopener noreferrer">consolidado</a>. Artículo 50, apartados 1, 2 y 4.</td></tr>
 <tr><td>C06 Ley inexistente</td>
 <td><strong>2</strong> · 4 URLs de contexto, ninguna del decreto. Rechaza la ley.</td>
 <td><strong>2</strong> · 3 URLs de contexto (2 iniciativas, 1 índice del DOF). Rechaza la ley.</td>

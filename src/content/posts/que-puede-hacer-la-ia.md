@@ -14,7 +14,7 @@ Un cortador láser sirve para cortar gelatina, pero nadie dice que ahí termina 
 
 ## Para qué usa la IA la mayoría de la gente
 
-Casi todos hacemos lo mismo. Según el estudio _How People Use ChatGPT_, publicado en septiembre de 2025 por el NBER (un centro privado de investigación económica de Estados Unidos) y escrito por investigadores de OpenAI y de Harvard, **la guía práctica, la búsqueda de información y la escritura suman casi 80% de las conversaciones**. Los autores analizaron una muestra representativa de conversaciones de ChatGPT. Ojo con un detalle: los datos son de la propia OpenAI.
+Casi todos hacemos lo mismo. Según el estudio [_How People Use ChatGPT_](https://www.nber.org/papers/w34255), publicado en septiembre de 2025 por el NBER (un centro privado de investigación económica de Estados Unidos) y escrito por investigadores de OpenAI y de Harvard, **la guía práctica, la búsqueda de información y la escritura suman casi 80% de las conversaciones**. Los autores analizaron una muestra representativa de conversaciones de ChatGPT. Ojo con un detalle: los datos son de la propia OpenAI.
 
 Nada de eso está mal. Son usos legítimos y útiles, y justo por eso se vuelven la costumbre. El detalle es que **buena parte se parece a lo que ya hacíamos con un buscador y un procesador de texto**. Funcionan, pero no son el techo.
 
@@ -22,7 +22,7 @@ Nada de eso está mal. Son usos legítimos y útiles, y justo por eso se vuelven
 
 La distancia entre lo que la IA puede y lo que usamos tiene nombre: _capability overhang_. El término no es nuevo; circula en el mundo de la IA desde hace años, y OpenAI lo puso en el centro de su discurso en enero de 2026. En su formulación, **es la brecha entre lo que los sistemas de IA ya pueden hacer y el valor que la mayoría de personas, empresas y países logra sacarles**.
 
-Ahí viene el dato. En un texto del 21 de enero de 2026, firmado por George Osborne, responsable de OpenAI for Countries, la empresa afirma que **el usuario avanzado típico se apoya en unas siete veces más capacidades de razonamiento avanzado que el usuario típico**. También afirma que la diferencia entre países no se explica solo por el ingreso. La página no precisa el periodo de la medición.
+Ahí viene el dato. En [un texto del 21 de enero de 2026](https://openai.com/index/how-countries-can-end-the-capability-overhang), firmado por George Osborne, responsable de OpenAI for Countries, la empresa afirma que **el usuario avanzado típico se apoya en unas siete veces más capacidades de razonamiento avanzado que el usuario típico**. También afirma que la diferencia entre países no se explica solo por el ingreso. La página no precisa el periodo de la medición.
 
 Ahora, un matiz. Si el problema se plantea como "la gente no aprovecha la herramienta", la solución parece ser que la gente aprenda. **Esa narrativa le conviene a quien vende la herramienta**, porque deja la responsabilidad en el usuario y no en el producto. Es una lectura nuestra, no un dato de OpenAI.
 
@@ -56,6 +56,6 @@ El tercero es **dividir el trabajo largo en etapas**. En lugar de _"hazme el inf
 
 ## Qué pasa en México y qué puedes probar hoy
 
-Aquí hay un hueco que conviene decir en voz alta: **no encontramos datos de profundidad de uso para México**. Lo que existe mide cuánta gente usa la IA, no qué tan lejos la lleva. Según lo reportado por DPL News, en mayo de 2026 la AIMX (Asociación de Internet MX) informó que 50% de los internautas en México ya la utiliza. Y según Excélsior, la encuesta ENIAG 2025 de la SEP en educación superior encontró que ocho de cada diez estudiantes dijeron haberla usado para generar textos en los últimos tres meses. Ambas cifras las recogimos de medios; no consultamos directamente las fuentes originales, y miden cuánta gente la usa y para qué tareas generales, no qué tan lejos la lleva.
+Aquí hay un hueco que conviene decir en voz alta: **no encontramos datos de profundidad de uso para México**. Lo que existe mide cuánta gente usa la IA, no qué tan lejos la lleva. Según lo reportado por [DPL News](https://dplnews.com/usuarios-de-internet-en-mexico-ya-usa-inteligencia-artificial-aimx/), en mayo de 2026 la AIMX (Asociación de Internet MX) informó que 50% de los internautas en México ya la utiliza. Y según [Excélsior](https://www.excelsior.com.mx/nacional/ia-invade-universidades-8-cada-10-estudiantes-usan-para-escribir-y-miles-para-desahogarse), la encuesta ENIAG 2025 de la SEP en educación superior encontró que ocho de cada diez estudiantes dijeron haberla usado para generar textos en los últimos tres meses. Ambas cifras las recogimos de medios; no consultamos directamente las fuentes originales, y miden cuánta gente la usa y para qué tareas generales, no qué tan lejos la lleva.
 
 Lo que sí puedes hacer hoy es una prueba chica. Elige algo que ya le pediste esta semana, repítelo y agrega dos frases: **"cuéntame qué supuestos hiciste" y "dime dónde está lo más débil de esto"**. Compara las dos respuestas. Si la segunda te dice algo que no habías considerado, ya viste la diferencia entre usar la herramienta y usarla a fondo.

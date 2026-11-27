@@ -25,7 +25,7 @@ Xinhua, la agencia estatal china, retrata el oficio con dos personas. Tang Zixia
 
 Conviene traducir los términos. Una **simulación** es un entorno virtual donde el robot puede equivocarse tantas veces como haga falta sin romper nada ni frenar una planta.
 
-Tang, según Xinhua, aplica dos métodos. El **aprendizaje por imitación** consiste en que el sistema aprende de ejemplos de cómo una persona hace la tarea; el aprendizaje por refuerzo, en que prueba, recibe una señal de acierto o error y ajusta.
+Tang, según [Xinhua](https://en.people.cn/n3/2026/1028/c90000-20513075.html), aplica dos métodos. El **aprendizaje por imitación** consiste en que el sistema aprende de ejemplos de cómo una persona hace la tarea; el aprendizaje por refuerzo, en que prueba, recibe una señal de acierto o error y ajusta.
 
 Jiang Lei, ingeniero de gemelos digitales, trabaja del otro lado. Reconstruye fábricas en 3D para que robots virtuales ensayen rutas de inspección. Un **gemelo digital** es una réplica virtual de un lugar real; una vez validadas las tareas en esa réplica, según Xinhua, pueden transferirse a robots físicos. Jiang afirma que esto puede reducir la puesta en operación en el sitio de dos o tres semanas a dos o tres días. Es una declaración del entrevistado, no una medición independiente.
 

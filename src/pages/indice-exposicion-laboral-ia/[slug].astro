@@ -171,7 +171,7 @@ const schema = {
             <p>{ficha.contexto.mx.texto}</p>
             {ficha.contexto.mx.verificacion && <p class="nota">{ficha.contexto.mx.verificacion}</p>}
             {ficha.contexto.mx.fuentes && ficha.contexto.mx.fuentes.length > 0 && (
-              <p class="nota">Fuentes: {ficha.contexto.mx.fuentes.map((f, i) => <><a href={f.url} rel="noopener">{f.fuente}</a>{i < ficha.contexto.mx.fuentes!.length - 1 ? ' · ' : ''}</>)}</p>
+              <p class="nota">Fuentes: {ficha.contexto.mx.fuentes.map((f, i) => <><a href={f.url} target="_blank" rel="noopener noreferrer">{f.fuente}</a>{i < ficha.contexto.mx.fuentes!.length - 1 ? ' · ' : ''}</>)}</p>
             )}
           </div>
         </div>
@@ -214,7 +214,7 @@ const schema = {
     <section>
       <h2>Fuentes</h2>
       <ul class="fuentes">
-        {ficha.fuentes.map((f) => <li><a href={f.url} rel="noopener">{f.fuente}</a>{alcanceFuente[f.tipo] && <small class="ev">{alcanceFuente[f.tipo]}</small>}</li>)}
+        {ficha.fuentes.map((f) => <li><a href={f.url} target="_blank" rel="noopener noreferrer">{f.fuente}</a>{alcanceFuente[f.tipo] && <small class="ev">{alcanceFuente[f.tipo]}</small>}</li>)}
       </ul>
       <p class="nota">Códigos: O*NET {ficha.codigos.onet} · CIUO/ISCO-08 {ficha.codigos.isco08}. Revisión: {ficha.revision.fecha}.</p>
       <p class="nota">Datos abiertos (CC BY 4.0): <a href="/datos/indice-exposicion.csv" download>CSV con todas las ocupaciones</a> · <a href="/datos/">cómo citarlos</a>.</p>

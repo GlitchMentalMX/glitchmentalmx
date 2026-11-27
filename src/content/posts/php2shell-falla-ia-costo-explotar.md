@@ -21,11 +21,11 @@ El origen es un descuido de limpieza. Según Imperva, cuando a PHP se le acaba l
 
 Wiz afirma que todas las versiones de PHP publicadas en la última década están afectadas por al menos una de las fallas, hasta llegar a la 5.4. Imperva matiza que no todas se probaron una por una, y cita que PHP lo usa **más del 69% de los sitios cuyo lenguaje de servidor se conoce**, una cifra que presenta sin desglose por país.
 
-Lo que está en juego no es solo el control del servidor, sino lo que este guarda en memoria. Según Wiz, se demostró que es posible leer contraseñas, tokens y llaves de API **sin necesidad de ejecutar código**, e Imperva calcula que un solo ataque de ese tipo expone unos 67 KB de memoria del proceso.
+Lo que está en juego no es solo el control del servidor, sino lo que este guarda en memoria. Según [Wiz](https://www.wiz.io/blog/php2shell-php-rce), se demostró que es posible leer contraseñas, tokens y llaves de API **sin necesidad de ejecutar código**, e Imperva calcula que un solo ataque de ese tipo expone unos 67 KB de memoria del proceso.
 
 El ataque tampoco es un interruptor universal. Imperva advierte que su complejidad es alta: hay que llegar al mismo proceso y colocar datos con precisión, y si el momento falla, **el proceso se cae o responde con normalidad**. Además, el código corre con los permisos del proceso de PHP, no necesariamente con los de administrador.
 
-El efecto más visible fue otro. Según Reuters, instituciones de gobierno, hospitales y centros educativos de Europa suspendieron sitios como precaución, entre ellos páginas de prefecturas en Francia y servicios del proveedor informático federal de Alemania.
+El efecto más visible fue otro. Según [Reuters](https://www.thestar.com.my/tech/tech-news/2026/10/21/factbox-websites-taken-offline-over-php-risks), instituciones de gobierno, hospitales y centros educativos de Europa suspendieron sitios como precaución, entre ellos páginas de prefecturas en Francia y servicios del proveedor informático federal de Alemania.
 
 El proyecto corrigió las ramas 8.5, 8.4, 8.3 y 8.2 el 21 de octubre de 2026, y aclaró que **PHP 8.1 y las versiones anteriores ya no reciben actualizaciones** del proyecto, con respaldos mínimos para las 7.4, 8.0 y 8.1.
 

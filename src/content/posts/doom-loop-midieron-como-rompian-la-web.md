@@ -21,7 +21,7 @@ El caso lo lleva el juez Sidney H. Stein, del Distrito Sur de Nueva York, y otro
 
 ## "Doom loop" no es metáfora de crítico: es telemetría propia
 
-Un _doom loop_ es un ciclo que se realimenta hacia abajo: cada vuelta empeora las condiciones que provocaron la anterior. El término no lo acuñó un columnista molesto con la industria. **Sale de un documento interno de Microsoft citado en el escrito, que describe cómo la estrategia de contenido con IA de la empresa daña al mismo tiempo el rendimiento de sus modelos y a la web entera.**
+Un _doom loop_ es un ciclo que se realimenta hacia abajo: cada vuelta empeora las condiciones que provocaron la anterior. El término no lo acuñó un columnista molesto con la industria. **Sale de un [documento interno de Microsoft](https://thenextweb.com/news/microsoft-theft-of-labor-doom-loop-unsealed-brief-openai) citado en el escrito, que describe cómo la estrategia de contenido con IA de la empresa daña al mismo tiempo el rendimiento de sus modelos y a la web entera.**
 
 El mismo documento, según el reporte de 404 Media, señala que resulta muy inusual que un producto final amenace los cimientos económicos de sus proveedores esenciales, y que eso es exactamente lo que la compañía creó para su negocio de modelos. **La formulación es contable, no moral: habla de una cadena de suministro, no de una injusticia.**
 

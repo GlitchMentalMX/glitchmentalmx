@@ -9,11 +9,11 @@ heroImageAlt: Empleada frente a su computadora con una tabla de datos abierta en
 draft: false
 ---
 
-**Uno de cada tres usuarios de IA en el trabajo** compartió datos sensibles de su empresa sin que su empleador lo supiera, según la National Cybersecurity Alliance. Y el 43% dice que no le explicaron con claridad qué compartir. Antes de culpar al empleado, conviene preguntar quién escribió la regla.
+**Uno de cada tres usuarios de IA en el trabajo** compartió datos sensibles de su empresa sin que su empleador lo supiera, según la [National Cybersecurity Alliance](https://staysafeonline.org/online-safety-privacy-basics/oh-behave/). Y el 43% dice que no le explicaron con claridad qué compartir. Antes de culpar al empleado, conviene preguntar quién escribió la regla.
 
 ## Qué mide el informe Oh, Behave! sobre IA y capacitación en seguridad
 
-Los datos salen de _Oh, Behave!_, el informe anual de la National Cybersecurity Alliance (NCA) sobre actitudes y conductas de ciberseguridad, producido en alianza con CybSafe. La edición 2026–2027, publicada el 22 de octubre de 2026, **encuestó a 5,000 adultos en Estados Unidos, Reino Unido, India, Brasil y Singapur**.
+Los datos salen de _Oh, Behave!_, el informe anual de la National Cybersecurity Alliance (NCA) sobre actitudes y conductas de ciberseguridad, producido en alianza con [CybSafe](https://www.cybsafe.com/whitepapers/oh-behave-the-annual-cybersecurity-attitudes-and-behaviors-report-2025-2026). La edición 2026–2027, publicada el 22 de octubre de 2026, **encuestó a 5,000 adultos en Estados Unidos, Reino Unido, India, Brasil y Singapur**.
 
 > En la encuesta de la National Cybersecurity Alliance, el 80% de los consultados ya usa IA y un 56% de esos usuarios nunca recibió formación en seguridad ni privacidad: la herramienta llegó antes que la regla.
 

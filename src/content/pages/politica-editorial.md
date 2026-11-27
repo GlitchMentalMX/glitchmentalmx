@@ -7,7 +7,7 @@ dek: Lo que puedes esperar de cada página del sitio y cómo comprobarlo tú mis
 ---
 ## Quién edita
 
-glitchMentalMX es un sitio editorial independiente en español, con enfoque en México. Lo fundó y lo edita **Jorge A. Diaz Elizondo**, que firma los artículos. Más sobre él en [Acerca de](/acerca-de/). Para escribirnos: [contacto@glitchmental.com](mailto:contacto@glitchmental.com).
+glitchMentalMX es un sitio editorial independiente en español, con enfoque en México, Latam y España. Lo fundó y lo edita **Jorge A. Diaz Elizondo**, que firma los artículos. Más sobre él en [Acerca de](/acerca-de/). Para escribirnos: [contacto@glitchmental.com](mailto:contacto@glitchmental.com).
 
 ## De dónde salen los datos
 

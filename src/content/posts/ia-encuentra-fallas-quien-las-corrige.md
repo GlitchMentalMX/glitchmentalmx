@@ -15,13 +15,13 @@ La **IA ya encuentra fallas de seguridad a escala**; lo que no escala es corregi
 
 El debate público se pregunta si la IA favorece a quien ataca o a quien defiende. Los datos sugieren otra cosa: **el cuello de botella se movió de descubrir a corregir**.
 
-Mandiant, la unidad de Google que investiga intrusiones, estima en su informe M-Trends 2026 que el **tiempo medio de explotación es de -7 días**. Es el promedio de días entre que se divulga una falla y se la explota por primera vez; un valor negativo significa que el ataque llega antes que el parche. Es una estimación global, no una medición exacta.
+Mandiant, la unidad de Google que investiga intrusiones, estima en su informe [M-Trends 2026](https://cloud.google.com/blog/topics/threat-intelligence/m-trends-2026) que el **tiempo medio de explotación es de -7 días**. Es el promedio de días entre que se divulga una falla y se la explota por primera vez; un valor negativo significa que el ataque llega antes que el parche. Es una estimación global, no una medición exacta.
 
 Del lado de la corrección, las cifras son más modestas. Anthropic, la empresa que desarrolla a Claude y cuyo modelo [Mythos](/articulos/claude-mythos-anthropic-filtro-su-modelo-mas-peligroso/) ya analizamos, informa en su tablero público que, al 2 de octubre de 2026, había notificado **6,157 vulnerabilidades en 591 proyectos de código abierto** y que, hasta donde tiene registro, 516 estaban parchadas. Código abierto es el software cuyo código puede revisar y reutilizar cualquiera, y que con frecuencia mantienen equipos pequeños. La empresa aclara que los parches son un indicador rezagado y que la revisión humana es el paso que limita el ritmo.
 
 Esas cifras son autorreportadas, y Anthropic vende la IA como escudo; OpenAI hace lo mismo con Patch the Planet. **Se leen como declaraciones de parte, no como auditorías independientes**.
 
-El caso de PHP lo ilustra. Según W3Techs, este lenguaje de programación lo usa cerca del **70% de los sitios web cuyo lenguaje de servidor se puede identificar** (corte de julio de 2026). El 21 de octubre de 2026 se publicaron los parches de dos fallas críticas, conocidas como PHP2Shell, que según la PHP Foundation permiten, en ciertas condiciones, que un atacante sin credenciales ejecute código en un servidor.
+El caso de PHP lo ilustra. Según [W3Techs](https://w3techs.com/technologies/details/pl-php), este lenguaje de programación lo usa cerca del **70% de los sitios web cuyo lenguaje de servidor se puede identificar** (corte de julio de 2026). El 21 de octubre de 2026 se publicaron los parches de dos fallas críticas, conocidas como PHP2Shell, que según la PHP Foundation permiten, en ciertas condiciones, que un atacante sin credenciales ejecute código en un servidor.
 
 Investigadores con modelos de IA las encontraron, pero los primeros indicios de una aparecieron en una auditoría de 2024. La Fundación reconoce que el **retraso fue una falla estructural** de su proceso de decisión y de sus recursos.
 
